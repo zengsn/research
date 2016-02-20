@@ -1,0 +1,95 @@
+{
+  "committer" : {
+    "login" : "lst1297907919",
+    "id" : 15097964,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097964?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/lst1297907919",
+    "html_url" : "https://github.com/lst1297907919",
+    "followers_url" : "https://api.github.com/users/lst1297907919/followers",
+    "following_url" : "https://api.github.com/users/lst1297907919/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/lst1297907919/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/lst1297907919/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/lst1297907919/subscriptions",
+    "organizations_url" : "https://api.github.com/users/lst1297907919/orgs",
+    "repos_url" : "https://api.github.com/users/lst1297907919/repos",
+    "events_url" : "https://api.github.com/users/lst1297907919/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/lst1297907919/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 13,
+    "additions" : 12,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "lst1297907919",
+    "id" : 15097964,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097964?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/lst1297907919",
+    "html_url" : "https://github.com/lst1297907919",
+    "followers_url" : "https://api.github.com/users/lst1297907919/followers",
+    "following_url" : "https://api.github.com/users/lst1297907919/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/lst1297907919/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/lst1297907919/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/lst1297907919/subscriptions",
+    "organizations_url" : "https://api.github.com/users/lst1297907919/orgs",
+    "repos_url" : "https://api.github.com/users/lst1297907919/repos",
+    "events_url" : "https://api.github.com/users/lst1297907919/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/lst1297907919/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/349aed8354f9453e12baaadd0a335cbbc0101c25",
+  "commit" : {
+    "author" : {
+      "name" : "lst1297907919",
+      "email" : "1297907919@qq.com",
+      "date" : "2015-10-28T16:38:00Z"
+    },
+    "committer" : {
+      "name" : "lst1297907919",
+      "email" : "1297907919@qq.com",
+      "date" : "2015-10-28T16:38:00Z"
+    },
+    "message" : "实验3",
+    "tree" : {
+      "sha" : "4b121b8c9d49ccb31f7e9df5fdc3e914372c7357",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/4b121b8c9d49ccb31f7e9df5fdc3e914372c7357"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/349aed8354f9453e12baaadd0a335cbbc0101c25",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/349aed8354f9453e12baaadd0a335cbbc0101c25/comments",
+  "files" : [ {
+    "sha" : "f51df344268dd5ef47e09548c04b5be2268763d1",
+    "filename" : "works/1314080901122/index.html",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 1,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/349aed8354f9453e12baaadd0a335cbbc0101c25/works/1314080901122/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/349aed8354f9453e12baaadd0a335cbbc0101c25/works/1314080901122/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901122/index.html?ref=349aed8354f9453e12baaadd0a335cbbc0101c25",
+    "patch" : "@@ -1,11 +1,22 @@\n <!DOCTYPE html>\n <html lang=\"zh-CN\">\n   <head>\n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var NewShoppinglist = {\n+            supplier: 'lst',\n+            shoppingdate: '2015-10-28',\n+            recievedate: '2015-10-28',\n+            linkman: 'sss'\n+            totalprice:'5000'\n+        };\n+        $scope.data = NewShoppinglist;\n+} </script>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>采购-订单信息 1314080901122</title>\n+    <title>采购-采购订单-新建采购订单 1314080901122</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901122/采购-采购订单-查询采购订单.txt",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/349aed8354f9453e12baaadd0a335cbbc0101c25/works/1314080901122/%E9%87%87%E8%B4%AD-%E9%87%87%E8%B4%AD%E8%AE%A2%E5%8D%95-%E6%9F%A5%E8%AF%A2%E9%87%87%E8%B4%AD%E8%AE%A2%E5%8D%95.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/349aed8354f9453e12baaadd0a335cbbc0101c25/works/1314080901122/%E9%87%87%E8%B4%AD-%E9%87%87%E8%B4%AD%E8%AE%A2%E5%8D%95-%E6%9F%A5%E8%AF%A2%E9%87%87%E8%B4%AD%E8%AE%A2%E5%8D%95.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901122/%E9%87%87%E8%B4%AD-%E9%87%87%E8%B4%AD%E8%AE%A2%E5%8D%95-%E6%9F%A5%E8%AF%A2%E9%87%87%E8%B4%AD%E8%AE%A2%E5%8D%95.txt?ref=349aed8354f9453e12baaadd0a335cbbc0101c25"
+  } ],
+  "sha" : "349aed8354f9453e12baaadd0a335cbbc0101c25",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/349aed8354f9453e12baaadd0a335cbbc0101c25",
+  "parents" : [ {
+    "sha" : "969d575ae58c0e5c74b221673987759334458bf5",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/969d575ae58c0e5c74b221673987759334458bf5",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/969d575ae58c0e5c74b221673987759334458bf5"
+  } ]
+}

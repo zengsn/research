@@ -1,0 +1,75 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 31,
+    "additions" : 12,
+    "deletions" : 19
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/f3e0fa171b58935363cc98c20f230bfa1580befe",
+  "commit" : {
+    "author" : {
+      "name" : "xuwenlang",
+      "email" : "xuwenlang",
+      "date" : "2015-10-27T04:19:07Z"
+    },
+    "committer" : {
+      "name" : "xuwenlang",
+      "email" : "xuwenlang",
+      "date" : "2015-10-27T04:19:07Z"
+    },
+    "message" : "实验4",
+    "tree" : {
+      "sha" : "5948d07059a2989c073ff0e2e7efb898ab65e5a1",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/5948d07059a2989c073ff0e2e7efb898ab65e5a1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/f3e0fa171b58935363cc98c20f230bfa1580befe",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/f3e0fa171b58935363cc98c20f230bfa1580befe/comments",
+  "files" : [ {
+    "sha" : "bdb0cabc87cf50106df6e15097dff816c8c3eb34",
+    "filename" : "works/1314080901139/.gitattributes",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 17,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae/works/1314080901139/.gitattributes",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae/works/1314080901139/.gitattributes",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901139/.gitattributes?ref=98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae",
+    "patch" : "@@ -1,17 +0,0 @@\n-# Auto detect text files and perform LF normalization\n-* text=auto\n-\n-# Custom for Visual Studio\n-*.cs     diff=csharp\n-\n-# Standard to msysgit\n-*.doc\t diff=astextplain\n-*.DOC\t diff=astextplain\n-*.docx diff=astextplain\n-*.DOCX diff=astextplain\n-*.dot  diff=astextplain\n-*.DOT  diff=astextplain\n-*.pdf  diff=astextplain\n-*.PDF\t diff=astextplain\n-*.rtf\t diff=astextplain\n-*.RTF\t diff=astextplain"
+  }, {
+    "sha" : "8584382e1c86cb0b1af5ac551b437d098338fd64",
+    "filename" : "works/1314080901139/index.html",
+    "status" : "modified",
+    "additions" : 11,
+    "deletions" : 2,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/f3e0fa171b58935363cc98c20f230bfa1580befe/works/1314080901139/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/f3e0fa171b58935363cc98c20f230bfa1580befe/works/1314080901139/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901139/index.html?ref=f3e0fa171b58935363cc98c20f230bfa1580befe",
+    "patch" : "@@ -24,8 +24,17 @@\n       <script src=\"js/materialModule.js\"></script>\n \n     <![endif]-->\n-  \n-  \n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var material = {\n+            wuliaoLeibie:\"五金\",\n+            wuliaoName:\" \",\n+            updatedDate:\" \",\n+            pingyinMa:\" \",\n+            wuliaoMiaoshu:\" \",\n+        };\n+        $scope.data = material;\n+} </script>\n   </head>\n   <body ng-controller=\"creatematerialCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">"
+  }, {
+    "sha" : "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "filename" : "works/1314080901139/物料 物料信息 物料信息.txt",
+    "status" : "added",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/f3e0fa171b58935363cc98c20f230bfa1580befe/works/1314080901139/%E7%89%A9%E6%96%99%20%E7%89%A9%E6%96%99%E4%BF%A1%E6%81%AF%20%E7%89%A9%E6%96%99%E4%BF%A1%E6%81%AF.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/f3e0fa171b58935363cc98c20f230bfa1580befe/works/1314080901139/%E7%89%A9%E6%96%99%20%E7%89%A9%E6%96%99%E4%BF%A1%E6%81%AF%20%E7%89%A9%E6%96%99%E4%BF%A1%E6%81%AF.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901139/%E7%89%A9%E6%96%99%20%E7%89%A9%E6%96%99%E4%BF%A1%E6%81%AF%20%E7%89%A9%E6%96%99%E4%BF%A1%E6%81%AF.txt?ref=f3e0fa171b58935363cc98c20f230bfa1580befe",
+    "patch" : "@@ -0,0 +1 @@\n+"
+  } ],
+  "sha" : "f3e0fa171b58935363cc98c20f230bfa1580befe",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/f3e0fa171b58935363cc98c20f230bfa1580befe",
+  "parents" : [ {
+    "sha" : "98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae"
+  }, {
+    "sha" : "a731b505e5aa7ad73ace7fd77703abf9791ac1cf",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a731b505e5aa7ad73ace7fd77703abf9791ac1cf",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/a731b505e5aa7ad73ace7fd77703abf9791ac1cf"
+  } ]
+}

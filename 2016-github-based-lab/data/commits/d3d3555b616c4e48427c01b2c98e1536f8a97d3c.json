@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "finalnbn",
+    "id" : 15099590,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15099590?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/finalnbn",
+    "html_url" : "https://github.com/finalnbn",
+    "followers_url" : "https://api.github.com/users/finalnbn/followers",
+    "following_url" : "https://api.github.com/users/finalnbn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/finalnbn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/finalnbn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/finalnbn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/finalnbn/orgs",
+    "repos_url" : "https://api.github.com/users/finalnbn/repos",
+    "events_url" : "https://api.github.com/users/finalnbn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/finalnbn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 36,
+    "additions" : 29,
+    "deletions" : 7
+  },
+  "author" : {
+    "login" : "finalnbn",
+    "id" : 15099590,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15099590?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/finalnbn",
+    "html_url" : "https://github.com/finalnbn",
+    "followers_url" : "https://api.github.com/users/finalnbn/followers",
+    "following_url" : "https://api.github.com/users/finalnbn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/finalnbn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/finalnbn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/finalnbn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/finalnbn/orgs",
+    "repos_url" : "https://api.github.com/users/finalnbn/repos",
+    "events_url" : "https://api.github.com/users/finalnbn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/finalnbn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/d3d3555b616c4e48427c01b2c98e1536f8a97d3c",
+  "commit" : {
+    "author" : {
+      "name" : "finalnbn",
+      "email" : "122250139@qq.com",
+      "date" : "2015-12-08T01:24:15Z"
+    },
+    "committer" : {
+      "name" : "finalnbn",
+      "email" : "122250139@qq.com",
+      "date" : "2015-12-08T01:24:15Z"
+    },
+    "message" : "实验六",
+    "tree" : {
+      "sha" : "2bb720ef89ec9728a4adf0d4e1832ba72042b8f6",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/2bb720ef89ec9728a4adf0d4e1832ba72042b8f6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/d3d3555b616c4e48427c01b2c98e1536f8a97d3c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/d3d3555b616c4e48427c01b2c98e1536f8a97d3c/comments",
+  "files" : [ {
+    "sha" : "c2f51997d81c88d19361a9138aa0aab16785aab3",
+    "filename" : "works/1314080901134/js/purchasingGroupDelModule.js",
+    "status" : "modified",
+    "additions" : 21,
+    "deletions" : 7,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/d3d3555b616c4e48427c01b2c98e1536f8a97d3c/works/1314080901134/js/purchasingGroupDelModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/d3d3555b616c4e48427c01b2c98e1536f8a97d3c/works/1314080901134/js/purchasingGroupDelModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901134/js/purchasingGroupDelModule.js?ref=d3d3555b616c4e48427c01b2c98e1536f8a97d3c",
+    "patch" : "@@ -4,14 +4,27 @@ var purchasingGroupDelModule = angular.module('purchasingGroupDelModule', []);\n \n // use the purchasingGroupDelModule variable to\n // configure the module with a controller\n-purchasingGroupDelModule.controller('purchasingGroupDelCtrl', function ($scope) {\n-       // controller code would go here\n-         var purchasingGroup1= { \n-             groupName:'小组名',\n-             groupId:'00002'\n-        };\n-         $scope.data = purchasingGroup1; \n+purchasingGroupDelModule.factory(\"purchasingGroupService\",function($http){\n+\tvar getpurchasingGroupData={};\n+\tgetpurchasingGroupData.getData=function(){\n+\t\tvar promise=$http({\n+\t\t\turl:\"json/purchasingGroup1.json\",\n+\t\t\tmethod:\"get\",\n+\t\t});\n+\t\treturn promise;\n+\t}\n+\treturn getpurchasingGroupData;\n \n+}).controller('purchasingGroupDelCtrl', function ($scope,purchasingGroupService) {\n+       // controller code would go here\n+         var promise=purchasingGroupService.getData();\n+      promise.success(function(data,status){\n+      \tvar purchasingGroupdata1=purchasingGroup1;\n+      \tpurchasingGroupdata1.groupName=data[\"groupName\"];\n+      \tpurchasingGroupdata1.groupID=data[\"groupID\"];\n+         $scope.data =purchasingGroupdata1; \n+      }\n+);\n     }\n );\n \n@@ -21,3 +34,4 @@ purchasingGroupDelModule.filter('stripDashes', function() {\n     return function(txt) {\n         // filter code would go here\n }; });\n+"
+  }, {
+    "sha" : "9607e0f5dd25409811604adf1863dd205980741f",
+    "filename" : "works/1314080901134/json/purchasingGroup1.json",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/d3d3555b616c4e48427c01b2c98e1536f8a97d3c/works/1314080901134/json/purchasingGroup1.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/d3d3555b616c4e48427c01b2c98e1536f8a97d3c/works/1314080901134/json/purchasingGroup1.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901134/json/purchasingGroup1.json?ref=d3d3555b616c4e48427c01b2c98e1536f8a97d3c",
+    "patch" : "@@ -0,0 +1,8 @@\n+{\n+    \"purchasingGroup1\": [\n+        {\n+            \"groupName\": \"小组一\",\n+            \"groupId\": \"00001\"\n+        }\n+    ]\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "d3d3555b616c4e48427c01b2c98e1536f8a97d3c",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/d3d3555b616c4e48427c01b2c98e1536f8a97d3c",
+  "parents" : [ {
+    "sha" : "64f5072fb92f640bdd736d0eb91bffcec3bf1a2d",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/64f5072fb92f640bdd736d0eb91bffcec3bf1a2d",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/64f5072fb92f640bdd736d0eb91bffcec3bf1a2d"
+  } ]
+}

@@ -1,0 +1,95 @@
+{
+  "committer" : {
+    "login" : "caonimabiyongwomingganma",
+    "id" : 15064913,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15064913?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/caonimabiyongwomingganma",
+    "html_url" : "https://github.com/caonimabiyongwomingganma",
+    "followers_url" : "https://api.github.com/users/caonimabiyongwomingganma/followers",
+    "following_url" : "https://api.github.com/users/caonimabiyongwomingganma/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/caonimabiyongwomingganma/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/caonimabiyongwomingganma/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/caonimabiyongwomingganma/subscriptions",
+    "organizations_url" : "https://api.github.com/users/caonimabiyongwomingganma/orgs",
+    "repos_url" : "https://api.github.com/users/caonimabiyongwomingganma/repos",
+    "events_url" : "https://api.github.com/users/caonimabiyongwomingganma/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/caonimabiyongwomingganma/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 16,
+    "additions" : 16,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "caonimabiyongwomingganma",
+    "id" : 15064913,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15064913?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/caonimabiyongwomingganma",
+    "html_url" : "https://github.com/caonimabiyongwomingganma",
+    "followers_url" : "https://api.github.com/users/caonimabiyongwomingganma/followers",
+    "following_url" : "https://api.github.com/users/caonimabiyongwomingganma/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/caonimabiyongwomingganma/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/caonimabiyongwomingganma/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/caonimabiyongwomingganma/subscriptions",
+    "organizations_url" : "https://api.github.com/users/caonimabiyongwomingganma/orgs",
+    "repos_url" : "https://api.github.com/users/caonimabiyongwomingganma/repos",
+    "events_url" : "https://api.github.com/users/caonimabiyongwomingganma/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/caonimabiyongwomingganma/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/7e2f4b496051974f949f2f652ec286af2e156188",
+  "commit" : {
+    "author" : {
+      "name" : "caonimabiyongwomingganma",
+      "email" : "502098244@qq.com",
+      "date" : "2015-12-15T01:20:09Z"
+    },
+    "committer" : {
+      "name" : "caonimabiyongwomingganma",
+      "email" : "502098244@qq.com",
+      "date" : "2015-12-15T01:20:09Z"
+    },
+    "message" : "shiyan2 from laiyuquan",
+    "tree" : {
+      "sha" : "da5f3121eec1cdfa8f9b367be4f9d041f4d226ad",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/da5f3121eec1cdfa8f9b367be4f9d041f4d226ad"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/7e2f4b496051974f949f2f652ec286af2e156188",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7e2f4b496051974f949f2f652ec286af2e156188/comments",
+  "files" : [ {
+    "sha" : "336053ba542c9a9c8ec0a762e9425659e8c9c6df",
+    "filename" : "works/1314080901218/index.html",
+    "status" : "modified",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7e2f4b496051974f949f2f652ec286af2e156188/works/1314080901218/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7e2f4b496051974f949f2f652ec286af2e156188/works/1314080901218/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901218/index.html?ref=7e2f4b496051974f949f2f652ec286af2e156188",
+    "patch" : "@@ -6,6 +6,20 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n     <title>采购1314080901218</title>\n+\n+<script>\n++    function MyFilterDemoCtrl($scope) {\n++        var someData = {\n+            side_plates:'侧板名'，\n+            laminates:'层板名'，\n+            backboard:'背板名'，\n+            door:'门板名'，\n+            veneer:'木皮名'\n+        };\n++        $scope.myData = someData;\n++} </script>\n+\n+\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,6 +34,7 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n@@ -49,6 +64,7 @@\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n+      \n \n     </div><!-- /.container -->\n "
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901218/工程板件新增板件类.txt",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7e2f4b496051974f949f2f652ec286af2e156188/works/1314080901218/%E5%B7%A5%E7%A8%8B%E6%9D%BF%E4%BB%B6%E6%96%B0%E5%A2%9E%E6%9D%BF%E4%BB%B6%E7%B1%BB.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7e2f4b496051974f949f2f652ec286af2e156188/works/1314080901218/%E5%B7%A5%E7%A8%8B%E6%9D%BF%E4%BB%B6%E6%96%B0%E5%A2%9E%E6%9D%BF%E4%BB%B6%E7%B1%BB.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901218/%E5%B7%A5%E7%A8%8B%E6%9D%BF%E4%BB%B6%E6%96%B0%E5%A2%9E%E6%9D%BF%E4%BB%B6%E7%B1%BB.txt?ref=7e2f4b496051974f949f2f652ec286af2e156188"
+  } ],
+  "sha" : "7e2f4b496051974f949f2f652ec286af2e156188",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7e2f4b496051974f949f2f652ec286af2e156188",
+  "parents" : [ {
+    "sha" : "ae42bc712621e816cbc01f778614a30a03c8349f",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ae42bc712621e816cbc01f778614a30a03c8349f",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/ae42bc712621e816cbc01f778614a30a03c8349f"
+  } ]
+}

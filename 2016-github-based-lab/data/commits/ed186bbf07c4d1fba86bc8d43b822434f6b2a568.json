@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 74,
+    "additions" : 64,
+    "deletions" : 10
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/ed186bbf07c4d1fba86bc8d43b822434f6b2a568",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:09:16Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:09:16Z"
+    },
+    "message" : "Merge pull request #265 from xiaoyaobrother/master\n\n补全了index里的代码--实验四",
+    "tree" : {
+      "sha" : "3ab6d64fcf7d57985a0d186d61b21f7329164772",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/3ab6d64fcf7d57985a0d186d61b21f7329164772"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/ed186bbf07c4d1fba86bc8d43b822434f6b2a568",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ed186bbf07c4d1fba86bc8d43b822434f6b2a568/comments",
+  "files" : [ {
+    "sha" : "39dc7cb6eacb4900a942b4d2723efbb08c0b83ac",
+    "filename" : "works/1314080901243/index.html",
+    "status" : "modified",
+    "additions" : 63,
+    "deletions" : 9,
+    "changes" : 72,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ed186bbf07c4d1fba86bc8d43b822434f6b2a568/works/1314080901243/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ed186bbf07c4d1fba86bc8d43b822434f6b2a568/works/1314080901243/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901243/index.html?ref=ed186bbf07c4d1fba86bc8d43b822434f6b2a568",
+    "patch" : "@@ -1,10 +1,64 @@\n-﻿<!DOCTYPE html >\n+﻿<!DOCTYPE html>\n <html ng-app=\"orderModule\"> <head lang=\"en\">\n-<meta charset=\"UTF-8\">\n-<title>人事-组织-新增部门</title>\n-    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n-\t<script src=\"js/orderModule.js\"></script>\n-</head>\n-<body ng-controller=\"createOrderCtrl\">\n-</body>\n-</html>\n+    <meta charset=\"utf-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n+    <title>人事-组织-新增部门 by 1314080901243</title>\n+    <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+    \n+    <!-- Bootstrap -->\n+    <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n+\n+    <!-- Custom styles for this template -->\n+    <link href=\"css/style.css\" rel=\"stylesheet\">\n+\n+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n+    <!--[if lt IE 9]>\n+      <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+      <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+    <![endif]-->\n+\n+        <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+\n+\t    <script src=\"js/orderModule.js\"></script>\n+\n+  </head>\n+  <body ng-controller=\"createOrderCtrl\">\n+    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+      <div class=\"container\">\n+        <div class=\"navbar-header\">\n+          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n+            <span class=\"sr-only\">Toggle navigation</span>\n+            <span class=\"icon-bar\"></span>\n+            <span class=\"icon-bar\"></span>\n+            <span class=\"icon-bar\"></span>\n+          </button>\n+          <a class=\"navbar-brand\" href=\"#\">Project name</a>\n+        </div>\n+        <div id=\"navbar\" class=\"collapse navbar-collapse\">\n+          <ul class=\"nav navbar-nav\">\n+            <li class=\"active\"><a href=\"#\">Home</a></li>\n+            <li><a href=\"#about\">About</a></li>\n+            <li><a href=\"#contact\">Contact</a></li>\n+          </ul>\n+        </div><!--/.nav-collapse -->\n+      </div>\n+    </nav>\n+\n+    <div class=\"container\">\n+\n+      <div class=\"starter-template\">\n+        <h1>Bootstrap starter template</h1>\n+        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n+      </div>\n+\n+    </div><!-- /.container -->\n+\n+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n+    <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n+    <!-- Include all compiled plugins (below), or include individual files as needed -->\n+    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+  </body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "d6d6396557dfd158de9b75db415edb9f0e9f6241",
+    "filename" : "works/1314080901243/js/orderModule.js",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ed186bbf07c4d1fba86bc8d43b822434f6b2a568/works/1314080901243/js/orderModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ed186bbf07c4d1fba86bc8d43b822434f6b2a568/works/1314080901243/js/orderModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901243/js/orderModule.js?ref=ed186bbf07c4d1fba86bc8d43b822434f6b2a568",
+    "patch" : "@@ -8,7 +8,7 @@ orderModule.controller('createOrderCtrl', function ($scope) {\n     // controller code would go here\n         var someData = {\n             bumenname:'�������',\n-            bumendaima:'���Ŵ���'��\n+            bumendaima:'���Ŵ���',\n             bumenzhuguan:'�������',\n             bumenmiaosu:'��������'\n         };"
+  } ],
+  "sha" : "ed186bbf07c4d1fba86bc8d43b822434f6b2a568",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ed186bbf07c4d1fba86bc8d43b822434f6b2a568",
+  "parents" : [ {
+    "sha" : "2baca78a92b8bb9236dd35ce1294f11fd840526b",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2baca78a92b8bb9236dd35ce1294f11fd840526b",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/2baca78a92b8bb9236dd35ce1294f11fd840526b"
+  }, {
+    "sha" : "a2b53abe7574ed81f7e8bfd90c4e07c68636b89f",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a2b53abe7574ed81f7e8bfd90c4e07c68636b89f",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/a2b53abe7574ed81f7e8bfd90c4e07c68636b89f"
+  } ]
+}

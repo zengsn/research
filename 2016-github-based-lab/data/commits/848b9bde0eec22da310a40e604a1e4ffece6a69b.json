@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 123,
+    "additions" : 70,
+    "deletions" : 53
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/848b9bde0eec22da310a40e604a1e4ffece6a69b",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-14T13:19:10Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-14T13:19:10Z"
+    },
+    "message" : "Merge pull request #430 from renrendashai/master\n\n实验五",
+    "tree" : {
+      "sha" : "3034ba069db6873566da8670f794766c51b5fcd5",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/3034ba069db6873566da8670f794766c51b5fcd5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/848b9bde0eec22da310a40e604a1e4ffece6a69b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/848b9bde0eec22da310a40e604a1e4ffece6a69b/comments",
+  "files" : [ {
+    "sha" : "b9dc2bb55684d8e8e1bdd736b77c26f08d478308",
+    "filename" : "works/1314080901109/index.html",
+    "status" : "modified",
+    "additions" : 63,
+    "deletions" : 52,
+    "changes" : 115,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/848b9bde0eec22da310a40e604a1e4ffece6a69b/works/1314080901109/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/848b9bde0eec22da310a40e604a1e4ffece6a69b/works/1314080901109/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901109/index.html?ref=848b9bde0eec22da310a40e604a1e4ffece6a69b",
+    "patch" : "@@ -53,62 +53,73 @@\n \n     </div><!-- /.container -->\n \n-<!DOCTYPE html >\n-<html ng-app=\"haloInformation\"> <head lang=\"en\">\n-<meta charset=\"UTF-8\">\n-<title>Listing 4-10</title>\n-    <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n-\t<script src=\"js/myAppModule.js\"></script>\n-</head>\n-<body ng-controller=\"MyFilterDemoCtrl\">\n-</body>\n-</html>\n-<script>\n-    function MyFilterDemoCtrl($scope) {\n-        var Danjumingxi = {\n-            XUHAO: '01',\n-            BIANMA: '1008611',\n-            LEIBIE: 'watch',\n-            NAME: 'SEIKO,\n-            XINGHAO: '1008612'\n-            DANWEI: '100',\n-            SHULIANG: '1000',\n-            SHOUHUOSHULIANG: '998',\n-            BEIZHU: 'NOTHING',\n-        };\n-        $scope.data = Danjumingxi;\n-} </script>\n-  </head>\n-  <body>\n-    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n-      <div class=\"container\">\n-        <div class=\"navbar-header\">\n-          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n-            <span class=\"sr-only\">Toggle navigation</span>\n-            <span class=\"icon-bar\"></span>\n-            <span class=\"icon-bar\"></span>\n-            <span class=\"icon-bar\"></span>\n-          </button>\n-          <a class=\"navbar-brand\" href=\"#\">Project name</a>\n+\n+\n+<div class=\"row col-lg-offset-2\">\n+   <form class=\"form-inline\" role=\"form\">\n+     <div class=\"form-group row\">\n+       <div class=\"row\">\n+        <label for=\"example1\">出库模式：</label>\n+        <input type=\"text\"\n+        class=\"form-control input-sm\" ng-model=\"danweiName\" id=\"example1\"/>\n+         <label for=\"example2\">仓库编号：</label>\n+           <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanfangshi\" id=\"example2\"/>\n+            <label for=\"example3\">经手人：</label>\n+            <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanDate\" id=\"example3\"/>\n+             <label for=\"example4\">经办日期：</label>\n+             <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanjine\" id=\"example4\"/>\n+                </div>\n+ </div>\n+  <br>\n+                <br>\n+\n+                <div class=\"form-group row\">\n+                    <div class=\"row\">\n+                        <label for=\"example5\">出库材料：</label>\n+                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanzhanghu\" id=\"example5\"/>\n+\n+                        <label for=\"example6\">出库数量：</label>\n+                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuankahao\" id=\"example6\"/>\n+\n+                         <label for=\"example7\">状态：</label>\n+                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"zhuangtai\" id=\"example7\"/>\n+\n+                        <label for=\"example8\">备注：</label>\n+                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"Other\" id=\"example8\"/>\n+                       \n+                    </div>\n+                </div>\n+\n+                <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n+                    <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\">\n+                        {{isHidden ? '提交' : '隐藏'}}\n+                    </button>\n+                </div>\n+            </form>\n+\n         </div>\n-        <div id=\"navbar\" class=\"collapse navbar-collapse\">\n-          <ul class=\"nav navbar-nav\">\n-            <li class=\"active\"><a href=\"#\">Home</a></li>\n-            <li><a href=\"#about\">About</a></li>\n-            <li><a href=\"#contact\">Contact</a></li>\n-          </ul>\n-        </div><!--/.nav-collapse -->\n-      </div>\n-    </nav>\n+    </div>\n+</div>\n \n-    <div class=\"container\">\n+<div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n+    <p class=\"lead\">\n+    <div ng-hide=\"isHidden\">您输入的数据为：</div>\n+    <div id=\"name\" ng-hide=\"isHidden\">出库模式->{{Pno}}</div>\n+    <div id=\"fangshi\" ng-hide=\"isHidden\">仓库编号->{{Sort}}</div>\n+    <div id=\"date\" ng-hide=\"isHidden\">经手人->{{Name}}</div>\n+    <div id=\"jine\" ng-hide=\"isHidden\">经办日期->{{Size}}</div>\n+    <div id=\"zhanghu\" ng-hide=\"isHidden\">出库材料->{{Color}}</div>\n+    <div id=\"zhanghao\" ng-hide=\"isHidden\">出库数量->{{Unit}}</div>\n+    <div id=\"zhuangtai\" ng-hide=\"isHidden\">状态->{{Num}}</div>\n+    <div id=\"Other\" ng-hide=\"isHidden\">备注->{{Other}}</div>\n+    </p>\n+</div>\n+<!-- /.container -->\n+\n+  \n+        \n \n-      <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n-        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-      </div>\n \n-    </div><!-- /.container -->\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  }, {
+    "sha" : "31a70546275001d5cc2c7963e4bfa2e15e57a1ed",
+    "filename" : "works/1314080901109/js/myAppModule.js",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 1,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/848b9bde0eec22da310a40e604a1e4ffece6a69b/works/1314080901109/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/848b9bde0eec22da310a40e604a1e4ffece6a69b/works/1314080901109/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901109/js/myAppModule.js?ref=848b9bde0eec22da310a40e604a1e4ffece6a69b",
+    "patch" : "@@ -10,7 +10,7 @@ myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n             XUHAO: '01',\n             BIANMA: '1008611',\n             LEIBIE: 'watch',\n-            NAME: 'SEIKO,\n+            NAME: 'SEIKO',\n             XINGHAO: '1008612'\n             DANWEI: '100',\n             SHULIANG: '1000',\n@@ -20,6 +20,12 @@ myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n         };\n         $scope.data = someData;\n        // controller code would go here\n+      $scope.isHidden = true;\n+      $scope.showHideColors = function () {\n+           $scope.isHidden = !$scope.isHidden;\n+    }\n+\n+\n     }\n );\n "
+  } ],
+  "sha" : "848b9bde0eec22da310a40e604a1e4ffece6a69b",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/848b9bde0eec22da310a40e604a1e4ffece6a69b",
+  "parents" : [ {
+    "sha" : "922860d8e28a3f9488b424bd06d1656993dfcebc",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/922860d8e28a3f9488b424bd06d1656993dfcebc",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/922860d8e28a3f9488b424bd06d1656993dfcebc"
+  }, {
+    "sha" : "89ad76a3658ed1d53f45f42e96990c3b5749b41d",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/89ad76a3658ed1d53f45f42e96990c3b5749b41d",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/89ad76a3658ed1d53f45f42e96990c3b5749b41d"
+  } ]
+}

@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 63,
+    "additions" : 58,
+    "deletions" : 5
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0f76995cba96f2aff866ffb6c72657a9739f73f3",
+  "commit" : {
+    "author" : {
+      "name" : "xuwenlang",
+      "email" : "xuwenlang",
+      "date" : "2015-12-03T12:39:57Z"
+    },
+    "committer" : {
+      "name" : "xuwenlang",
+      "email" : "xuwenlang",
+      "date" : "2015-12-03T12:39:57Z"
+    },
+    "message" : "实验5，",
+    "tree" : {
+      "sha" : "f1da5bcb8d2103c5fb98622b87923f18d12d68c8",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/f1da5bcb8d2103c5fb98622b87923f18d12d68c8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/0f76995cba96f2aff866ffb6c72657a9739f73f3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0f76995cba96f2aff866ffb6c72657a9739f73f3/comments",
+  "files" : [ {
+    "sha" : "f7847197bd43cc299b5949499a3e32aa34e6845c",
+    "filename" : "works/1314080901144/index.html",
+    "status" : "modified",
+    "additions" : 58,
+    "deletions" : 5,
+    "changes" : 63,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0f76995cba96f2aff866ffb6c72657a9739f73f3/works/1314080901144/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0f76995cba96f2aff866ffb6c72657a9739f73f3/works/1314080901144/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901144/index.html?ref=0f76995cba96f2aff866ffb6c72657a9739f73f3",
+    "patch" : "@@ -1,11 +1,11 @@\n <!DOCTYPE html>\n-<html lang=\"zh-CN\" ng-app=\"SuppliersFormAppModule\">\n-  <head>\n+<html ng-app=\"SuppliersFormAppModule\" >\n+    <head lang=\"zh-CN\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>物料-供应商-供应商1314080901144\n+    <title>物料-供应商-供应商信息-1314080901144-表单</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n     <script src=\"js/SuppliersFormAppModule.js\"></script>\n@@ -48,11 +48,64 @@\n     <div class=\"container\">\n \n       <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n-        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n+        <h1>SuppliersFormAppModule</h1>\n+        <p class=\"lead\">物料-供应商-供应商信息-1314080901144-表单</p>\n       </div>\n \n     </div><!-- /.container -->\n+     <h2 >物料-供应商-供应商信息</h2>\n+\n+  <div class=\"container\">\n+    <div class=\"row col-lg-offset-2\">\n+        <form class=\"form-inline\" role=\"form\">\n+            <div class=\"form-group row\">\n+                <div class=\"row\">\n+                    <label for=\"example2\">供应商编号：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+                     \n+                     <label for=\"example2\">建档日期：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+                    <label for=\"example2\">供应商类别：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>   \n+               </div>\n+            </div>\n+            <br>\n+            <br>\n+            <div class=\"form-group row\">\n+                <div class=\"row\">\n+                  <label for=\"example2\">供应商全称：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+                        <label for=\"example2\"> &nbsp;&nbsp;&nbsp;&nbsp;拼音码：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+\n+                    <label for=\"example2\">供应商主页：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+                    </div>\n+            </div>\n+            <br>\n+            <br>\n+\n+            <div class=\"form-group row\">\n+                <div class=\"row\">\n+                    <label for=\"example1\">供应商简称：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"UnitName\" id=\"example1\"/>\n+\n+                    <label for=\"example2\">行政区域：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+                    <label for=\"example2\">供应商简介：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+                    \n+            </div>\n+            </div>\n+        \n+        </form>\n+    </div>\n+</div>\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  } ],
+  "sha" : "0f76995cba96f2aff866ffb6c72657a9739f73f3",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0f76995cba96f2aff866ffb6c72657a9739f73f3",
+  "parents" : [ {
+    "sha" : "616e1deeb90f66d68f6fc3afe9d4f1e7043b599c",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/616e1deeb90f66d68f6fc3afe9d4f1e7043b599c",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/616e1deeb90f66d68f6fc3afe9d4f1e7043b599c"
+  } ]
+}

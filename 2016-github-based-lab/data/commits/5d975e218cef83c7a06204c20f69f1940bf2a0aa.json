@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "chzayi",
+    "id" : 14891896,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14891896?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chzayi",
+    "html_url" : "https://github.com/chzayi",
+    "followers_url" : "https://api.github.com/users/chzayi/followers",
+    "following_url" : "https://api.github.com/users/chzayi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chzayi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chzayi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chzayi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chzayi/orgs",
+    "repos_url" : "https://api.github.com/users/chzayi/repos",
+    "events_url" : "https://api.github.com/users/chzayi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chzayi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 29,
+    "additions" : 23,
+    "deletions" : 6
+  },
+  "author" : {
+    "login" : "chzayi",
+    "id" : 14891896,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14891896?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chzayi",
+    "html_url" : "https://github.com/chzayi",
+    "followers_url" : "https://api.github.com/users/chzayi/followers",
+    "following_url" : "https://api.github.com/users/chzayi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chzayi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chzayi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chzayi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chzayi/orgs",
+    "repos_url" : "https://api.github.com/users/chzayi/repos",
+    "events_url" : "https://api.github.com/users/chzayi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chzayi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/5d975e218cef83c7a06204c20f69f1940bf2a0aa",
+  "commit" : {
+    "author" : {
+      "name" : "chzayi",
+      "email" : "519511270@qq.com",
+      "date" : "2015-10-20T01:21:25Z"
+    },
+    "committer" : {
+      "name" : "chzayi",
+      "email" : "519511270@qq.com",
+      "date" : "2015-10-20T01:21:25Z"
+    },
+    "message" : "Update index.html",
+    "tree" : {
+      "sha" : "4391aa14a42b530127feda6991b457181011bd01",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/4391aa14a42b530127feda6991b457181011bd01"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/5d975e218cef83c7a06204c20f69f1940bf2a0aa",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5d975e218cef83c7a06204c20f69f1940bf2a0aa/comments",
+  "files" : [ {
+    "sha" : "5c057762e92eb44819f93a091bc603e8d1ef4819",
+    "filename" : "works/1314080901209/index.html",
+    "status" : "modified",
+    "additions" : 23,
+    "deletions" : 6,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/5d975e218cef83c7a06204c20f69f1940bf2a0aa/works/1314080901209/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/5d975e218cef83c7a06204c20f69f1940bf2a0aa/works/1314080901209/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901209/index.html?ref=5d975e218cef83c7a06204c20f69f1940bf2a0aa",
+    "patch" : "@@ -5,9 +5,27 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>1314080901209 人事->在岗查询</title>\n+    <title>1314080901209人事-在岗查询-考勤\n+-列表</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n-    \n+    <script>\n+    function emp($scope) {\n+        var someData = {\n+            empid: '员工编号',\n+            empname:'员工姓名',\n+            attendance:'考勤',\n+            morning:'上午',\n+            worktime,'上班时间',\n+            dangpai:'党派',\n+            jiguan:'籍贯',\n+            phone:'手机',\n+            \n+            dateJoined: new Date(2010, 2, 23),\n+            consumption: 123.659855,\n+            plan: 'super-basic-plan'\n+        };\n+        $scope.data = someData;\n+} </script>\n     <!-- Bootstrap -->\n     <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n \n@@ -22,14 +40,13 @@\n     <![endif]-->\n   </head>\n   <body>\n+    <div id=\"zaigang\">{{emp('zaigang')}}</div>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n           <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n             <span class=\"sr-only\">Toggle navigation</span>\n-            <span class=\"icon-bar\">西西</span>\n-            <span class=\"icon-bar\">哈哈</span>\n-            <span class=\"icon-bar\">嘿嘿</span>\n+        \n           </button>\n           <a class=\"navbar-brand\" href=\"#\">Project name</a>\n         </div>\n@@ -57,4 +74,4 @@\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n   </body>\n-</html>\n\\ No newline at end of file\n+</html>"
+  } ],
+  "sha" : "5d975e218cef83c7a06204c20f69f1940bf2a0aa",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5d975e218cef83c7a06204c20f69f1940bf2a0aa",
+  "parents" : [ {
+    "sha" : "1ec1a1c15d93f38520db09e44f7edd7ce567d91e",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/1ec1a1c15d93f38520db09e44f7edd7ce567d91e",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/1ec1a1c15d93f38520db09e44f7edd7ce567d91e"
+  } ]
+}

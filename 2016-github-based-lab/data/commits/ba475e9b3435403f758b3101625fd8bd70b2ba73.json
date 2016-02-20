@@ -1,0 +1,184 @@
+{
+  "committer" : {
+    "login" : "15767978771hxc",
+    "id" : 14266292,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14266292?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/15767978771hxc",
+    "html_url" : "https://github.com/15767978771hxc",
+    "followers_url" : "https://api.github.com/users/15767978771hxc/followers",
+    "following_url" : "https://api.github.com/users/15767978771hxc/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/15767978771hxc/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/15767978771hxc/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/15767978771hxc/subscriptions",
+    "organizations_url" : "https://api.github.com/users/15767978771hxc/orgs",
+    "repos_url" : "https://api.github.com/users/15767978771hxc/repos",
+    "events_url" : "https://api.github.com/users/15767978771hxc/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/15767978771hxc/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 349,
+    "additions" : 222,
+    "deletions" : 127
+  },
+  "author" : {
+    "login" : "15767978771hxc",
+    "id" : 14266292,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14266292?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/15767978771hxc",
+    "html_url" : "https://github.com/15767978771hxc",
+    "followers_url" : "https://api.github.com/users/15767978771hxc/followers",
+    "following_url" : "https://api.github.com/users/15767978771hxc/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/15767978771hxc/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/15767978771hxc/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/15767978771hxc/subscriptions",
+    "organizations_url" : "https://api.github.com/users/15767978771hxc/orgs",
+    "repos_url" : "https://api.github.com/users/15767978771hxc/repos",
+    "events_url" : "https://api.github.com/users/15767978771hxc/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/15767978771hxc/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/ba475e9b3435403f758b3101625fd8bd70b2ba73",
+  "commit" : {
+    "author" : {
+      "name" : "15767978771hxc",
+      "email" : "2929494460@QQ.COM",
+      "date" : "2015-12-27T14:36:29Z"
+    },
+    "committer" : {
+      "name" : "15767978771hxc",
+      "email" : "2929494460@QQ.COM",
+      "date" : "2015-12-27T14:36:29Z"
+    },
+    "message" : "实验7",
+    "tree" : {
+      "sha" : "9916b00a75aa7e78daf18e3ca86eb78358d9a4f3",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/9916b00a75aa7e78daf18e3ca86eb78358d9a4f3"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ba475e9b3435403f758b3101625fd8bd70b2ba73/comments",
+  "files" : [ {
+    "sha" : "32c0da4890d228915fe4060d4468bf01d5e3a0f4",
+    "filename" : "works/1314080901113/directives/chaxundingdan.html",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/directives/chaxundingdan.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/directives/chaxundingdan.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/directives/chaxundingdan.html?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -0,0 +1,39 @@\n+<div class=\"container\">\n+     <div class=\"row col-lg-offset-2\">\n+          <form class=\"form-inline\" role=\"form\" ng-submit=\"register()\" novalidate>\n+             <div class=\"form-group row\">\n+                 <div class=\"row\">\n+                    <P> <label for=\"example1\">订单状态：       </label>\n+            <select name=\"bumen\"class=\"style1\" style=\"width:145px\" ng-model=\"state\" id required>\n+                <option >全部</option>\n+                <option>已完成</option>\n+                <option>未完成</option>\n+                <option>新建</option>\n+              </select>\n+            </P>\n+ \n+                   <label for=\"example1\">起始日期：</label>\n+                    <input type=\"date\" class=\"form-control input-sm\" ng-model=\"Start date\" id=\"example1\" required/>\n+\n+                    <label for=\"example2\">终止日期：</label>\n+                    <input type=\"date\" class=\"form-control input-sm\" ng-model=\"Termination date\" id=\"example2\"\n+                           required/>\n+ \n+ \t\t\t         </div>\n+             </div>\n+           <br>\n+           <br>\n+           \n+            \n+          \n+       <br>\n+       <input type=\"reset\" name=\"button\" id=\"button\" value=\"查询\">\n+ <br>\n+              <!-- SHOW ERROR/SUCCESS MESSAGES\n+             <div id=\"messages\" class=\"ng-cloak\" ng-show=\"backMess\" ng-hide=\"isHidden\">\n+                 <p>{{ backMess[0].message }}</p>\n+             </div>-->\n+         </form>\n+     </div>\n+ </div>\n+  \n\\ No newline at end of file"
+  }, {
+    "sha" : "02bcf8b4bfc83795e1ee7607b36ba4a01013e673",
+    "filename" : "works/1314080901113/directives/hide.html",
+    "status" : "added",
+    "additions" : 11,
+    "deletions" : 0,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/directives/hide.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/directives/hide.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/directives/hide.html?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -0,0 +1,11 @@\n+\n+ <div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n+  <p class=\"lead\">\n+     <div ng-hide=\"isHidden\">您查询的数据为：</div>\n+    <div id=\"Startdate\" ng-hide=\"isHidden\">起始日期->{{Start date}}</div>\n+    <div id=\"Terminationdate\" ng-hide=\"isHidden\">终止日期->{{Termination date}}</div>\n+    <div id=\"state\" ng-hide=\"isHidden\">订单状态->{{state}}</div>\n+     </p>\n+\n+ </div>\n+  \n\\ No newline at end of file"
+  }, {
+    "sha" : "b15eb62efa0d6e513d9f4fbfb64268efcbbeddbb",
+    "filename" : "works/1314080901113/directives/nav.html",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/directives/nav.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/directives/nav.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/directives/nav.html?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -0,0 +1,21 @@\n+<nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+       <div class=\"container\">\n+         <div class=\"navbar-header\">\n+           <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n+             <span class=\"sr-only\">Toggle navigation</span>\n+             <span class=\"icon-bar\"></span>\n+             <span class=\"icon-bar\"></span>\n+             <span class=\"icon-bar\"></span>\n+           </button>\n+           <a class=\"navbar-brand\" href=\"#\">Project name</a>\n+         </div>\n+         <div id=\"navbar\" class=\"collapse navbar-collapse\">\n+           <ul class=\"nav navbar-nav\">\n+             <li class=\"active\"><a href=\"#\">Home</a></li>\n+             <li><a href=\"#about\">About</a></li>\n+              <li><a href=\"#input\">Input</a></li>\n+             <li><a href=\"#contact\">Contact</a></li>\n+           </ul>\n+         </div><!--/.nav-collapse -->\n+       </div>\n+      </nav>\n\\ No newline at end of file"
+  }, {
+    "sha" : "b562beb62a3d7fd1afe43741049897cbb473ffd6",
+    "filename" : "works/1314080901113/index.html",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 79,
+    "changes" : 84,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/index.html?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -6,7 +6,6 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n     <title>销售-查询订单 1314080901113</title>\n-    <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n     <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n@@ -21,91 +20,18 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-   <body ng-controller=\"MyFilter\">\n-     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n-       <div class=\"container\">\n-         <div class=\"navbar-header\">\n-           <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n-             <span class=\"sr-only\">Toggle navigation</span>\n-             <span class=\"icon-bar\"></span>\n-             <span class=\"icon-bar\"></span>\n-             <span class=\"icon-bar\"></span>\n-           </button>\n-           <a class=\"navbar-brand\" href=\"#\">Project name</a>\n-         </div>\n-         <div id=\"navbar\" class=\"collapse navbar-collapse\">\n-           <ul class=\"nav navbar-nav\">\n-             <li class=\"active\"><a href=\"#\">Home</a></li>\n-             <li><a href=\"#about\">About</a></li>\n-             <li><a href=\"#contact\">Contact</a></li>\n-           </ul>\n-         </div><!--/.nav-collapse -->\n-       </div>\n-      </nav>\n   \n-      <div class=\"container\">\n+     \n+ <body>\n+ <my-nav></my-nav>\n+ <my-show></my-show>\n  \n-        <div class=\"starter-template\">\n-          <h1>Bootstrap starter template</h1>\n-          <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> \n-           <p class=\"lead\">销售-查询订单</p>\n-  \t  </div>\n-     </div>\n- \t\n- <div class=\"container\">\n-     <div class=\"row col-lg-offset-2\">\n-          <form class=\"form-inline\" role=\"form\" ng-submit=\"register()\" novalidate>\n-             <div class=\"form-group row\">\n-                 <div class=\"row\">\n-                    <P> <label for=\"example1\">订单状态：       </label>\n-            <select name=\"bumen\"class=\"style1\" style=\"width:145px\" ng-model=\"state\" id required>\n-                <option >全部</option>\n-                <option>已完成</option>\n-                <option>未完成</option>\n-                <option>新建</option>\n-              </select>\n-            </P>\n- \n-                   <label for=\"example1\">起始日期：</label>\n-                    <input type=\"date\" class=\"form-control input-sm\" ng-model=\"Start date\" id=\"example1\" required/>\n-\n-                    <label for=\"example2\">终止日期：</label>\n-                    <input type=\"date\" class=\"form-control input-sm\" ng-model=\"Termination date\" id=\"example2\"\n-                           required/>\n- \n- \t\t\t         </div>\n-             </div>\n-           <br>\n-           <br>\n-           \n-            \n-          \n-       <br>\n-       <input type=\"reset\" name=\"button\" id=\"button\" value=\"查询\">\n- <br>\n-              <!-- SHOW ERROR/SUCCESS MESSAGES\n-             <div id=\"messages\" class=\"ng-cloak\" ng-show=\"backMess\" ng-hide=\"isHidden\">\n-                 <p>{{ backMess[0].message }}</p>\n-             </div>-->\n-         </form>\n-     </div>\n- </div>\n-  \n- <div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n-  <p class=\"lead\">\n-     <div ng-hide=\"isHidden\">您查询的数据为：</div>\n-    <div id=\"Startdate\" ng-hide=\"isHidden\">起始日期->{{Start date}}</div>\n-    <div id=\"Terminationdate\" ng-hide=\"isHidden\">终止日期->{{Termination date}}</div>\n-    <div id=\"state\" ng-hide=\"isHidden\">订单状态->{{state}}</div>\n-     </p>\n-\n- </div>\n-  \n  \t<!-- /.container -->\n       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n       <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n       <!-- Include all compiled plugins (below), or include individual files as needed --> \n      <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+     <script src=\"../../lib/angular-1.4.5/angular-route.min.js\"></script>\n      <script src=\"js/chaxundingdan.js\"></script>\n    </body>\n  </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "760f25f8281c7a66a391b054bb07041db42212df",
+    "filename" : "works/1314080901113/js/chaxundingdan.js",
+    "status" : "modified",
+    "additions" : 106,
+    "deletions" : 43,
+    "changes" : 149,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/js/chaxundingdan.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/js/chaxundingdan.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/js/chaxundingdan.js?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -1,49 +1,112 @@\n // create a new module called 'myAppModule' and save \n // a reference to it in a variable called myAppModule \n-var chaxundingdanModule = angular.module('chaxundingdan', []);\n-\n+var chaxundingdanModule = angular.module('chaxundingdanModule', ['ngRoute']);\n+ \n+ chaxundingdanModule.config(function ($routeProvider) {\n+     // configure the routes\n+     $routeProvider\n+         .when('/', {\n+             // route for the about page\n+             templateUrl: 'pages/home.html'\n+         })\n+         .when('/home', {\n+             templateUrl: 'pages/home.html'\n+         })\n+         .when('/input', {\n+             templateUrl: 'pages/input.html',\n+             controller: 'inputCtrl'\n+         })\n+         .when('/about', {\n+             templateUrl: 'pages/about.html',\n+             controller: 'aboutCtrl'\n+         })\n+         .when('/content', {\n+             templateUrl: 'pages/content.html',\n+             controller: 'contentCtrl'\n+         });\n+ });\n // use the myAppModule variable to\n // configure the module with a controller\n-chaxundingdanModule.controller('chaxundingdanService', function ($http) {\n-      var dataStroe = {};\n-         dataStroe.doRegistration = function (theData) {\n-             var promise = $http({method: 'POST',url: 'json/message.json',data: theData});\n-             return promise;\n-         }\n-         return dataStroe;\n-     }).controller('MyFilter', function ($scope,chaxundingdanService) {\n-        // controller code would go here\n-         var chaxundingdanData = {\n-             \n-         };\n-         $scope.data = chaxundingdanData;\n-         $scope.isHidden = true;\n-         $scope.showInput = function () {\n-             $scope.isHidden = !$scope.isHidden;\n-         }\n-         $scope.chaxundingdan = {};\n-         $scope.register = function () {\n-             var promise = chaxundingdanService.doRegistration($scope.chaxundingdan);\n-             promise.success(function (data, status, headers, config, statusText) {\n-                 $scope.backMess = data.success;\n-                 $scope.isHidden = !$scope.isHidden;\n-                 if(!$scope.isHidden){\n-                     alert($scope.backMess[0].message + \"\\n\" + \"\\n\" );\n-                 }\n-             });\n-             promise.error(function (data, status, headers, config, statusText) {\n-                 $scope.backMess = data.error;\n-                 $scope.isHidden = !$scope.isHidden;\n-                 if(!$scope.isHidden){\n-                     alert($scope.backMess[0].message);\n-                 }\n-             });\n-         }\n+chaxundingdanModule.factory('chaxundingdanService', function ($http) {\n+     var dataStroe = {};\n+     dataStroe.doRegistration = function (theData) {\n+         var promise = $http({method: 'POST', url: 'json/message.json', data: theData});\n+         return promise;\n+     }\n+     return dataStroe;\n  });\n  \n- // use the myAppModule variable to\n- // configure the module with a filter\n- chaxundingdanModule.filter('stripDashes', function() {\n-     return function(txt) {\n-         // filter code would go here\n- }; }); \n+ chaxundingdanModule.controller('inputCtrl', function ($scope, chaxundingdanService) {\n+     // controller code would go here\n+     $scope.chaxundingdanArray = {\n+         \n+         \n+     };\n+     $scope.isHidden = true;\n+     $scope.showInput = function () {\n+         $scope.isHidden = !$scope.isHidden;\n+     }\n+     $scope.chaxundingdan = {};\n+     $scope.register = function () {\n+         var promise = chaxundingdanService.doRegistration($scope.chaxundingdan);\n+         promise.success(function (data, status, headers, config, statusText) {\n+             $scope.backMess = data.success;\n+              $scope.isHidden = !$scope.isHidden;\n+\t\t\t   if (!$scope.isHidden) {\n+                 alert($scope.backMess[0].message + \"\\n\" + \"\\n\" );\n+             }\n+         });\n+         promise.error(function (data, status, headers, config, statusText) {\n+             $scope.backMess = '失败';\n+             alert($scope.backMess);\n+         });\n+     }\n+ }).controller('aboutCtrl', function ($scope) {\n+     var aboutData = {\n+         num: '销售-查询订单'\n+     };\n+     $scope.aboutData = aboutData;\n+ }).controller('contentCtrl', function ($scope) {\n+     $scope.chaxundingdanArray = [{\n+         Startdate: '2002-02-02',\n+         Terminationdate: '2003-03-03',\n+         state: '未完成',\n+         \n+     }];\n+  });\n+  \n+  // use the myAppModule variable to\n+  // configure the module with a filter\n+  chaxundingdanModule.filter('stripDashes', function () {\n+    return function (txt) {\n+          // filter code would go here\n+\t\t  };\n+ });\n+ \n+chaxundingdanModule.directive(\"mychaxundingdan\", function () {\n+     return {\n+         restrict: \"AE\",\n+         replace: true,\n+         templateUrl: 'directives/chaxundingdan.html'\n+ \n+     }\n+ }).directive(\"myHide\", function () {\n+     return {\n+         restrict: \"AE\",\n+         replace: true,\n+         templateUrl: 'directives/hide.html'\n+     }\n+ }).directive(\"myNav\", function () {\n+     return {\n+        restrict: \"AE\",\n+         replace: true,\n+         templateUrl: 'directives/nav.html'\n+     }\n+ }).directive(\"myShow\", function () {\n+     return {\n+         restrict: \"AE\",\n+         replace: true,\n+         template: '<div id=\"main\"><div ng-view></div></div>'\n+     }\n+ }); \n+ \n\\ No newline at end of file"
+  }, {
+    "sha" : "eec4aca64b75ba77e3fcde34a9976c850a836391",
+    "filename" : "works/1314080901113/json/message.json",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 5,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/json/message.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/json/message.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/json/message.json?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -3,10 +3,6 @@\n          {\n              \"message\": \"Thank you for taking the time to register!\"\n          }\n-     ],\n-     \"error\": [\n-         {\n-             \"message\": \"There appears to have been a problem with your registration.\"\n-         }\n+     \n      ]\n  } "
+  }, {
+    "sha" : "9edf09638e5cf72f50b7c2d563cfd380890bec0e",
+    "filename" : "works/1314080901113/pages/about.html",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/pages/about.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/pages/about.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/pages/about.html?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -0,0 +1,6 @@\n+<div class=\"container text-center\">\n+     <div class=\"jumbotron\">\n+         <h1>About Page</h1>\n+         <p>{{aboutData.num}}</p>\n+     </div>\n+ </div>\n\\ No newline at end of file"
+  }, {
+    "sha" : "cdd8d53e6fc10ae0c7100d289849c27e25e7188d",
+    "filename" : "works/1314080901113/pages/content.html",
+    "status" : "added",
+    "additions" : 22,
+    "deletions" : 0,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/pages/content.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/pages/content.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/pages/content.html?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -0,0 +1,22 @@\n+<div class=\"container text-center\">\n+ <div class=\"jumbotron\">\n+     <h2><p>销售-查询订单</p></h2>\n+     <table class=\"table table-bordered table-condensed\" align=\"center\">\n+         <thead>\n+         <tr>\n+             <th rowspan=\"2\" class=\"text-center\">起始日期</th>\n+             <th rowspan=\"2\" class=\"text-center\">终止日期</th>\n+             <th rowspan=\"2\" class=\"text-center\">订单状态</th>\n+             \n+         </tr>\n+         </thead>\n+         <tbody ng-repeat=\"chaxundingdanDataData in chaxundingdanDataArray\">\n+         <tr>\n+             <td rowspan=\"2\" class=\"text-center\">{{chaxundingdanData.Startdate}}</td>\n+             <td rowspan=\"2\" class=\"text-center\">{{chaxundingdanData.Terminationdate}}</td>\n+             <td rowspan=\"2\" class=\"text-center\">{{chaxundingdanData.state}}</td>\n+             \n+         </tr>\n+         </tbody>\n+     </table>\n+ </div> "
+  }, {
+    "sha" : "aee871a7a033f7c1f082c1b977e41fad44083808",
+    "filename" : "works/1314080901113/pages/home.html",
+    "status" : "added",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/pages/home.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/pages/home.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/pages/home.html?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -0,0 +1,7 @@\n+\n+        <div class=\"starter-template\">\n+          <h1>Bootstrap starter template</h1>\n+          <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> \n+           <p class=\"lead\">销售-查询订单</p>\n+  \t  </div>\n+  \n\\ No newline at end of file"
+  }, {
+    "sha" : "0f84bf90d6a00d7878bfb5da643e5d8ebf652e0e",
+    "filename" : "works/1314080901113/pages/input.html",
+    "status" : "added",
+    "additions" : 4,
+    "deletions" : 0,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/pages/input.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ba475e9b3435403f758b3101625fd8bd70b2ba73/works/1314080901113/pages/input.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901113/pages/input.html?ref=ba475e9b3435403f758b3101625fd8bd70b2ba73",
+    "patch" : "@@ -0,0 +1,4 @@\n+<div class=\"Absolute-Center\">\n+     <my-chaxundingdan></my-chaxundingdan>\n+     <my-hide></my-hide>\n+ </div> "
+  } ],
+  "sha" : "ba475e9b3435403f758b3101625fd8bd70b2ba73",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ba475e9b3435403f758b3101625fd8bd70b2ba73",
+  "parents" : [ {
+    "sha" : "dbc8abcf94b41905f9548d04aec69d89e756c230",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/dbc8abcf94b41905f9548d04aec69d89e756c230",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/dbc8abcf94b41905f9548d04aec69d89e756c230"
+  } ]
+}

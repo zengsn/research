@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zhouzebiao",
+    "id" : 14361910,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14361910?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhouzebiao",
+    "html_url" : "https://github.com/zhouzebiao",
+    "followers_url" : "https://api.github.com/users/zhouzebiao/followers",
+    "following_url" : "https://api.github.com/users/zhouzebiao/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhouzebiao/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhouzebiao/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhouzebiao/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhouzebiao/orgs",
+    "repos_url" : "https://api.github.com/users/zhouzebiao/repos",
+    "events_url" : "https://api.github.com/users/zhouzebiao/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhouzebiao/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 20,
+    "additions" : 19,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "zhouzebiao",
+    "id" : 14361910,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14361910?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhouzebiao",
+    "html_url" : "https://github.com/zhouzebiao",
+    "followers_url" : "https://api.github.com/users/zhouzebiao/followers",
+    "following_url" : "https://api.github.com/users/zhouzebiao/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhouzebiao/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhouzebiao/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhouzebiao/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhouzebiao/orgs",
+    "repos_url" : "https://api.github.com/users/zhouzebiao/repos",
+    "events_url" : "https://api.github.com/users/zhouzebiao/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhouzebiao/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/6225e2ca3439fa07e918ccc13c57a0926bab5347",
+  "commit" : {
+    "author" : {
+      "name" : "zhouzebiao",
+      "email" : "447523426@qq.com",
+      "date" : "2015-11-03T01:18:05Z"
+    },
+    "committer" : {
+      "name" : "zhouzebiao",
+      "email" : "447523426@qq.com",
+      "date" : "2015-11-03T01:18:05Z"
+    },
+    "message" : "experiment 3",
+    "tree" : {
+      "sha" : "63deb2a37c5c6c21a8e4313ade36db5edcb3b8d8",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/63deb2a37c5c6c21a8e4313ade36db5edcb3b8d8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/6225e2ca3439fa07e918ccc13c57a0926bab5347",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/6225e2ca3439fa07e918ccc13c57a0926bab5347/comments",
+  "files" : [ {
+    "sha" : "b9bf94340bc45353ce276ca860f33aec2680674e",
+    "filename" : "works/1314080901247/index.html",
+    "status" : "modified",
+    "additions" : 19,
+    "deletions" : 1,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/6225e2ca3439fa07e918ccc13c57a0926bab5347/works/1314080901247/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/6225e2ca3439fa07e918ccc13c57a0926bab5347/works/1314080901247/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901247/index.html?ref=6225e2ca3439fa07e918ccc13c57a0926bab5347",
+    "patch" : "@@ -5,7 +5,7 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>仓库_采购收货-1314080901247</title>\n+    <title>人事_考勤-1314080901247</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,6 +20,24 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+     <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var attenceData = {\n+         personNum:'001'，\n+         personName:'zhouzebiao',\n+         attenceDate:'2015-01-01',\n+         moring='true',\n+         moringOn='2015-01-01 08:00',\n+         moringOff='2015-01-01 11:30',\n+         afternoon='true',\n+         afternoonOn='2015-01-01 13:30',\n+         afternoonOff='2015-01-01 17:30',\n+         extra='true',\n+         start='2015-01-01 19:30',\n+         stop='2015-01-01 22:00'\n+        };\n+        $scope.data = attenceData;\n+} </script>\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">"
+  } ],
+  "sha" : "6225e2ca3439fa07e918ccc13c57a0926bab5347",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/6225e2ca3439fa07e918ccc13c57a0926bab5347",
+  "parents" : [ {
+    "sha" : "da4ad2ffcdf6d87b9f9a26f2b202090963f01f59",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/da4ad2ffcdf6d87b9f9a26f2b202090963f01f59",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/da4ad2ffcdf6d87b9f9a26f2b202090963f01f59"
+  } ]
+}

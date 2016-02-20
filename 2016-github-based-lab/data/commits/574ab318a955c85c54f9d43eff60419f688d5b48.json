@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "tanghuanqi",
+    "id" : 15097660,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097660?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/tanghuanqi",
+    "html_url" : "https://github.com/tanghuanqi",
+    "followers_url" : "https://api.github.com/users/tanghuanqi/followers",
+    "following_url" : "https://api.github.com/users/tanghuanqi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/tanghuanqi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/tanghuanqi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/tanghuanqi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/tanghuanqi/orgs",
+    "repos_url" : "https://api.github.com/users/tanghuanqi/repos",
+    "events_url" : "https://api.github.com/users/tanghuanqi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/tanghuanqi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 38,
+    "additions" : 38,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "tanghuanqi",
+    "id" : 15097660,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097660?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/tanghuanqi",
+    "html_url" : "https://github.com/tanghuanqi",
+    "followers_url" : "https://api.github.com/users/tanghuanqi/followers",
+    "following_url" : "https://api.github.com/users/tanghuanqi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/tanghuanqi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/tanghuanqi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/tanghuanqi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/tanghuanqi/orgs",
+    "repos_url" : "https://api.github.com/users/tanghuanqi/repos",
+    "events_url" : "https://api.github.com/users/tanghuanqi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/tanghuanqi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/574ab318a955c85c54f9d43eff60419f688d5b48",
+  "commit" : {
+    "author" : {
+      "name" : "tanghuanqi",
+      "email" : "980116165@qq.com",
+      "date" : "2015-12-01T00:43:53Z"
+    },
+    "committer" : {
+      "name" : "tanghuanqi",
+      "email" : "980116165@qq.com",
+      "date" : "2015-12-01T00:43:53Z"
+    },
+    "message" : "实验三",
+    "tree" : {
+      "sha" : "0159fc1fc6fc4f5f15aaf509bec4ce1ceb3ca055",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/0159fc1fc6fc4f5f15aaf509bec4ce1ceb3ca055"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/574ab318a955c85c54f9d43eff60419f688d5b48",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/574ab318a955c85c54f9d43eff60419f688d5b48/comments",
+  "files" : [ {
+    "sha" : "6a70bb571b999a88ff853c9d3c9e89bde572b2a8",
+    "filename" : "works/1314080901228/index.html",
+    "status" : "modified",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/574ab318a955c85c54f9d43eff60419f688d5b48/works/1314080901228/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/574ab318a955c85c54f9d43eff60419f688d5b48/works/1314080901228/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901228/index.html?ref=574ab318a955c85c54f9d43eff60419f688d5b48",
+    "patch" : "@@ -1,10 +1,48 @@\n ﻿<!DOCTYPE html>\n <html lang=\"zh-CN\">\n+\n+<script>\n+   function MyFilterDemoCtrl($scope) {\n+        var options = {\n+       order form state:'all','finish','unfinished',     \n+       start time:'2015-07-1',\n+\t   terminal time:'2015-12-31',\n+\t   \n+\t   provider:'abc',\n+\t   state:'finish','unfinished',\n+\t   Warehouse:'abc',\n+\t   remark:'abc',\n+\t   handler:'abc',\n+\t   Handling the date:'2015-12-31',\n+\t   \n+\t   number:   ,\n+\t   encoding:  ,\n+\t   classes:  ,\n+\t   name:  ,\n+\t   type:  ,\n+\t   long:  ,\n+\t   wide；  ,\n+\t   hight:  ,\n+\t   units:  ,\n+\t   count:  ,\n+\t   receiving count:  ,\n+\t   remark:  ,\n+\t   \n+        };\n+        $scope.data = options;\n+}\n+</script>\n+\n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n+\n+    \n+\n+\n+\n     <title>仓库-采购收货 by 1314080901228</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     "
+  } ],
+  "sha" : "574ab318a955c85c54f9d43eff60419f688d5b48",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/574ab318a955c85c54f9d43eff60419f688d5b48",
+  "parents" : [ {
+    "sha" : "f6da6ed9e7ffd374e922c54e81bc2d203332ab8d",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/f6da6ed9e7ffd374e922c54e81bc2d203332ab8d",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/f6da6ed9e7ffd374e922c54e81bc2d203332ab8d"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Liuqinwei",
+    "id" : 14356786,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14356786?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Liuqinwei",
+    "html_url" : "https://github.com/Liuqinwei",
+    "followers_url" : "https://api.github.com/users/Liuqinwei/followers",
+    "following_url" : "https://api.github.com/users/Liuqinwei/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Liuqinwei/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Liuqinwei/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Liuqinwei/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Liuqinwei/orgs",
+    "repos_url" : "https://api.github.com/users/Liuqinwei/repos",
+    "events_url" : "https://api.github.com/users/Liuqinwei/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Liuqinwei/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 41,
+    "additions" : 38,
+    "deletions" : 3
+  },
+  "author" : {
+    "login" : "Liuqinwei",
+    "id" : 14356786,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14356786?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Liuqinwei",
+    "html_url" : "https://github.com/Liuqinwei",
+    "followers_url" : "https://api.github.com/users/Liuqinwei/followers",
+    "following_url" : "https://api.github.com/users/Liuqinwei/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Liuqinwei/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Liuqinwei/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Liuqinwei/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Liuqinwei/orgs",
+    "repos_url" : "https://api.github.com/users/Liuqinwei/repos",
+    "events_url" : "https://api.github.com/users/Liuqinwei/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Liuqinwei/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/05565333fe7184c2b0dc75ba6093b589f005329f",
+  "commit" : {
+    "author" : {
+      "name" : "Liuqinwei",
+      "email" : "2997095840@qq.com",
+      "date" : "2015-10-27T03:17:01Z"
+    },
+    "committer" : {
+      "name" : "Liuqinwei",
+      "email" : "2997095840@qq.com",
+      "date" : "2015-10-27T03:17:01Z"
+    },
+    "message" : "第四次实验 1314080901121",
+    "tree" : {
+      "sha" : "e20dd74d44142d4bdbcb2eeab491ac12fd7f4e85",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/e20dd74d44142d4bdbcb2eeab491ac12fd7f4e85"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/05565333fe7184c2b0dc75ba6093b589f005329f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/05565333fe7184c2b0dc75ba6093b589f005329f/comments",
+  "files" : [ {
+    "sha" : "1c646c45a4cf18062da61512cd4a3d9c8616fea9",
+    "filename" : "works/1314080901121/index.html",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 3,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/05565333fe7184c2b0dc75ba6093b589f005329f/works/1314080901121/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/05565333fe7184c2b0dc75ba6093b589f005329f/works/1314080901121/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901121/index.html?ref=05565333fe7184c2b0dc75ba6093b589f005329f",
+    "patch" : "@@ -1,11 +1,11 @@\n <!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+<html lang=\"zh-CN\" ng-app=\"myAppModule\">\n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>物料-供应商-供应商联系人 1314080901121</title>\n+    <title>物料-供应商-添加供应商联系人-列表 1314080901121</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -19,9 +19,11 @@\n     <!--[if lt IE 9]>\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+      <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+      <script src=\"liuqinweiAppModule.js\"></script>\n     <![endif]-->\n   </head>\n-  <body>\n+  <body ng-controller=\"liuqinweiFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">"
+  }, {
+    "sha" : "72f2b433697c525a7ac32a84abfa37d605f5b88c",
+    "filename" : "works/1314080901121/liuqinweiAppModule.js",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/05565333fe7184c2b0dc75ba6093b589f005329f/works/1314080901121/liuqinweiAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/05565333fe7184c2b0dc75ba6093b589f005329f/works/1314080901121/liuqinweiAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901121/liuqinweiAppModule.js?ref=05565333fe7184c2b0dc75ba6093b589f005329f",
+    "patch" : "@@ -0,0 +1,33 @@\n+// create a new module called 'myAppModule' and save\n+// a reference to it in a variable called myAppModule\n+var liuqinweiAppModule = angular.module('liuqinweiAppModule', []);\n+\n+// use the myAppModule variable to\n+// configure the module with a controller\n+liuqinweiAppModule.controller('liuqinweiFilterDemoCtrl', function ($scope) {\n+        // controller code would go here\n+            var workerInformation = {\n+                name: 'Liuqinwei',\n+                phone: '1234567',\n+                telephone: '453452425255',\n+                code: '545324525545',\n+                qq: '122444',\n+                email: '34234234@qq.com',\n+                zhiwu: '董事长',\n+                beizhu: '男',\n+            };\n+            $scope.data = workerInformation;\n+        }\n+\n+    }\n+);\n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+liuqinweiAppModule.filter('liuqinweistripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+    }; });\n+\n+\n+"
+  } ],
+  "sha" : "05565333fe7184c2b0dc75ba6093b589f005329f",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/05565333fe7184c2b0dc75ba6093b589f005329f",
+  "parents" : [ {
+    "sha" : "869d5dc2d8c390fab87bb9bfb34fc6485e3da23a",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/869d5dc2d8c390fab87bb9bfb34fc6485e3da23a",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/869d5dc2d8c390fab87bb9bfb34fc6485e3da23a"
+  } ]
+}

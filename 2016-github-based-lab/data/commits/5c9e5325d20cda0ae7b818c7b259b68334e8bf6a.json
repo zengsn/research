@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "YashonCheung",
+    "id" : 14275753,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14275753?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/YashonCheung",
+    "html_url" : "https://github.com/YashonCheung",
+    "followers_url" : "https://api.github.com/users/YashonCheung/followers",
+    "following_url" : "https://api.github.com/users/YashonCheung/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/YashonCheung/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/YashonCheung/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/YashonCheung/subscriptions",
+    "organizations_url" : "https://api.github.com/users/YashonCheung/orgs",
+    "repos_url" : "https://api.github.com/users/YashonCheung/repos",
+    "events_url" : "https://api.github.com/users/YashonCheung/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/YashonCheung/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 26,
+    "additions" : 18,
+    "deletions" : 8
+  },
+  "author" : {
+    "login" : "YashonCheung",
+    "id" : 14275753,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14275753?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/YashonCheung",
+    "html_url" : "https://github.com/YashonCheung",
+    "followers_url" : "https://api.github.com/users/YashonCheung/followers",
+    "following_url" : "https://api.github.com/users/YashonCheung/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/YashonCheung/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/YashonCheung/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/YashonCheung/subscriptions",
+    "organizations_url" : "https://api.github.com/users/YashonCheung/orgs",
+    "repos_url" : "https://api.github.com/users/YashonCheung/repos",
+    "events_url" : "https://api.github.com/users/YashonCheung/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/YashonCheung/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/5c9e5325d20cda0ae7b818c7b259b68334e8bf6a",
+  "commit" : {
+    "author" : {
+      "name" : "YashonCheung",
+      "email" : "1446734764@qq.com",
+      "date" : "2015-12-03T12:21:18Z"
+    },
+    "committer" : {
+      "name" : "YashonCheung",
+      "email" : "1446734764@qq.com",
+      "date" : "2015-12-03T12:21:18Z"
+    },
+    "message" : "Update index.html\n\n制作新增工作组表单",
+    "tree" : {
+      "sha" : "a3485bc5ac05009b139bba2ae66f517b196e15ba",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/a3485bc5ac05009b139bba2ae66f517b196e15ba"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/5c9e5325d20cda0ae7b818c7b259b68334e8bf6a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5c9e5325d20cda0ae7b818c7b259b68334e8bf6a/comments",
+  "files" : [ {
+    "sha" : "29f0dc5696734c2cb02801a6e24c555b15b816af",
+    "filename" : "works/1314080901244/index.html",
+    "status" : "modified",
+    "additions" : 18,
+    "deletions" : 8,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/5c9e5325d20cda0ae7b818c7b259b68334e8bf6a/works/1314080901244/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/5c9e5325d20cda0ae7b818c7b259b68334e8bf6a/works/1314080901244/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901244/index.html?ref=5c9e5325d20cda0ae7b818c7b259b68334e8bf6a",
+    "patch" : "@@ -46,14 +46,24 @@\n       </div>\n     </nav>\n \n-    <div class=\"container\">\n-\n-      <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n-        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-      </div>\n-\n-    </div><!-- /.container -->\n+   <form class=\"form-inline\">\n+  <label for=\"WorkShop\">生产车间:</label>\n+  <select class=\"WorkShop\">\n+  <option>木工车间</option>\n+  <option>油漆车间</option>\n+  <option>包装车间</option>\n+  <option>橱柜车间</option>\n+</select>\n+  <div class=\"form-group\">\n+    <label for=\"NewGroName\">生产组别:</label>\n+    <input type=\"NewGroName\" class=\"form-control\" id=\"NewGroName\" placeholder=\"新增工作组组名\">\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"OfficerName\">负责人:</label>\n+    <input type=\"OfficerName\" class=\"form-control\" id=\"OfficerName\" placeholder=\"负责人\">\n+  </div>\n+  <button type=\"Save\" class=\"btn btn-default\">保存</button>\n+</form>\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  } ],
+  "sha" : "5c9e5325d20cda0ae7b818c7b259b68334e8bf6a",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5c9e5325d20cda0ae7b818c7b259b68334e8bf6a",
+  "parents" : [ {
+    "sha" : "6260eb18205d6974f27d6a48dd30b53776faa151",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/6260eb18205d6974f27d6a48dd30b53776faa151",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/6260eb18205d6974f27d6a48dd30b53776faa151"
+  } ]
+}

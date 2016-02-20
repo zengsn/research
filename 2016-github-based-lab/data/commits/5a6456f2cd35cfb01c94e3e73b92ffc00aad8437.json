@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 45,
+    "additions" : 36,
+    "deletions" : 9
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/5a6456f2cd35cfb01c94e3e73b92ffc00aad8437",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-30T14:44:57Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-30T14:44:57Z"
+    },
+    "message" : "Merge pull request #371 from zhouzebiao/master\n\nexperiment 51314080901247",
+    "tree" : {
+      "sha" : "b3ec888d333074d9c29349d72483ddcf438e856a",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/b3ec888d333074d9c29349d72483ddcf438e856a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/5a6456f2cd35cfb01c94e3e73b92ffc00aad8437",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5a6456f2cd35cfb01c94e3e73b92ffc00aad8437/comments",
+  "files" : [ {
+    "sha" : "67cfc2e34c340929925512cb699d231b4e4169ac",
+    "filename" : "works/1314080901247/index.html",
+    "status" : "modified",
+    "additions" : 4,
+    "deletions" : 4,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/5a6456f2cd35cfb01c94e3e73b92ffc00aad8437/works/1314080901247/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/5a6456f2cd35cfb01c94e3e73b92ffc00aad8437/works/1314080901247/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901247/index.html?ref=5a6456f2cd35cfb01c94e3e73b92ffc00aad8437",
+    "patch" : "@@ -1,5 +1,5 @@\n ﻿<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+<html ng-app=\"EmployeeAttendanceModule\"> \n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n@@ -21,7 +21,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body>\n+  <body ng-controller=\"MyFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -48,11 +48,11 @@\n       <div class=\"starter-template\">\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-        <p>{{data}}</p>\n       </div>\n \n     </div><!-- /.container -->\n-\n+    <list>\n+      </list>\n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->"
+  }, {
+    "sha" : "5b9159e8a1249bc8cdf49e49b187ef7aefb295f4",
+    "filename" : "works/1314080901247/js/EmployeeAttendance.js",
+    "status" : "modified",
+    "additions" : 32,
+    "deletions" : 5,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/5a6456f2cd35cfb01c94e3e73b92ffc00aad8437/works/1314080901247/js/EmployeeAttendance.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/5a6456f2cd35cfb01c94e3e73b92ffc00aad8437/works/1314080901247/js/EmployeeAttendance.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901247/js/EmployeeAttendance.js?ref=5a6456f2cd35cfb01c94e3e73b92ffc00aad8437",
+    "patch" : "@@ -6,8 +6,8 @@ var EmployeeAttendanceModule = angular.module('EmployeeAttendanceModule', []);\n // configure the module with a controller\n EmployeeAttendanceModule.controller('MyFilterDemoCtrl', function ($scope) {\n        // controller code would go here\n-       var EmployeeAttendanceData = {\n-         personNum:'001'，\n+       var EmployeeAttendanceData = [{\n+         personNum:'001',\n          personName:'zhouzebiao',\n          attenceDate:'2015-01-01',\n          moring:'true',\n@@ -19,11 +19,38 @@ EmployeeAttendanceModule.controller('MyFilterDemoCtrl', function ($scope) {\n          extra:'true',\n          start:'2015-01-01 19:30',\n          stop:'2015-01-01 22:00'\n-        };\n-        $scope.data = EmployeeAttendanceData;\n-    }\n+        },\n+        {\n+         personNum:'002',\n+         personName:'zhouzebiao',\n+         attenceDate:'2015-01-01',\n+         moring:'true',\n+         moringOn:'2015-01-01 08:00',\n+         moringOff:'2015-01-01 11:30',\n+         afternoon:'true',\n+         afternoonOn:'2015-01-01 13:30',\n+         afternoonOff:'2015-01-01 17:30',\n+         extra:'true',\n+         start:'2015-01-01 19:30',\n+         stop:'2015-01-01 22:00'\n+        }];\n+        $scope.attendance_data = EmployeeAttendanceData;\n+        }\n );\n \n+EmployeeAttendanceModule.directive('list',function(){\n+\treturn {\n+\trestrict:'AEC',\n+\ttemplate:\"<div  style='text-align: center;' ng-repeat='thedata in attendance_data'>{{thedata.personNum}} &nbsp; &nbsp; &nbsp;\"+\n+    \"{{thedata.personName}} &nbsp; &nbsp; &nbsp; {{thedata.attenceDate}} &nbsp; &nbsp; &nbsp; {{thedata.moring}} &nbsp; &nbsp; &nbsp;\"+\n+    \"{{thedata.moringOn}} &nbsp; &nbsp; &nbsp;{{thedata.moringOff}} &nbsp; &nbsp; &nbsp;{{thedata.afternoon}} &nbsp; &nbsp; &nbsp;\"+\n+    \"{{thedata.afternoonOn}} &nbsp; &nbsp; &nbsp;{{thedata.afternoonOff}} &nbsp; &nbsp; &nbsp;{{thedata.extra}} &nbsp; &nbsp; &nbsp;\"+\n+    \"{{thedata.start}} &nbsp; &nbsp; &nbsp;{{thedata.stop}} &nbsp; &nbsp; &nbsp;</div>\",\n+\n+    transclude:true \n+};\n+});\n+\n // use the myAppModule variable to\n // configure the module with a filter\n EmployeeAttendanceModule.filter('stripDashes', function() {"
+  } ],
+  "sha" : "5a6456f2cd35cfb01c94e3e73b92ffc00aad8437",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5a6456f2cd35cfb01c94e3e73b92ffc00aad8437",
+  "parents" : [ {
+    "sha" : "0016bd2510a49ce0c5e93d05c69e2e3c7ce841ab",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0016bd2510a49ce0c5e93d05c69e2e3c7ce841ab",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0016bd2510a49ce0c5e93d05c69e2e3c7ce841ab"
+  }, {
+    "sha" : "e33b223584aa7c5206533ccdcfd1182a70276732",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e33b223584aa7c5206533ccdcfd1182a70276732",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e33b223584aa7c5206533ccdcfd1182a70276732"
+  } ]
+}

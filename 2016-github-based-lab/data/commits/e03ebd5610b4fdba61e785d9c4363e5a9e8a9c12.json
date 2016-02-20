@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "YashonCheung",
+    "id" : 14275753,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14275753?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/YashonCheung",
+    "html_url" : "https://github.com/YashonCheung",
+    "followers_url" : "https://api.github.com/users/YashonCheung/followers",
+    "following_url" : "https://api.github.com/users/YashonCheung/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/YashonCheung/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/YashonCheung/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/YashonCheung/subscriptions",
+    "organizations_url" : "https://api.github.com/users/YashonCheung/orgs",
+    "repos_url" : "https://api.github.com/users/YashonCheung/repos",
+    "events_url" : "https://api.github.com/users/YashonCheung/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/YashonCheung/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 15,
+    "additions" : 13,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "YashonCheung",
+    "id" : 14275753,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14275753?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/YashonCheung",
+    "html_url" : "https://github.com/YashonCheung",
+    "followers_url" : "https://api.github.com/users/YashonCheung/followers",
+    "following_url" : "https://api.github.com/users/YashonCheung/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/YashonCheung/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/YashonCheung/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/YashonCheung/subscriptions",
+    "organizations_url" : "https://api.github.com/users/YashonCheung/orgs",
+    "repos_url" : "https://api.github.com/users/YashonCheung/repos",
+    "events_url" : "https://api.github.com/users/YashonCheung/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/YashonCheung/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e03ebd5610b4fdba61e785d9c4363e5a9e8a9c12",
+  "commit" : {
+    "author" : {
+      "name" : "YashonCheung",
+      "email" : "1446734764@qq.com",
+      "date" : "2015-11-03T00:59:59Z"
+    },
+    "committer" : {
+      "name" : "YashonCheung",
+      "email" : "1446734764@qq.com",
+      "date" : "2015-11-03T00:59:59Z"
+    },
+    "message" : "Update index.html\n\n实验三更新index",
+    "tree" : {
+      "sha" : "32495fc676e578e7b097cd8dc80ba00dcd08630e",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/32495fc676e578e7b097cd8dc80ba00dcd08630e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/e03ebd5610b4fdba61e785d9c4363e5a9e8a9c12",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e03ebd5610b4fdba61e785d9c4363e5a9e8a9c12/comments",
+  "files" : [ {
+    "sha" : "88e4094bc05d66966bca54187d27ca7896149631",
+    "filename" : "works/1314080901244/index.html",
+    "status" : "modified",
+    "additions" : 13,
+    "deletions" : 2,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e03ebd5610b4fdba61e785d9c4363e5a9e8a9c12/works/1314080901244/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e03ebd5610b4fdba61e785d9c4363e5a9e8a9c12/works/1314080901244/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901244/index.html?ref=e03ebd5610b4fdba61e785d9c4363e5a9e8a9c12",
+    "patch" : "@@ -5,7 +5,7 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>生产组别1314080901244</title>\n+    <title>生产组别-新增工作组1314080901244</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,6 +20,17 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+    <script>\n+    function MyFileDemoCtrl($scope){\n+      var someData={\n+        Name:'新增工作组'，\n+        Detailed:'新增工作组组名'，\n+        instructions:'新增'；\n+      }；\n+      $scope.data=someData;\n+    }\n+    </script>\n+\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n@@ -57,4 +68,4 @@\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n   </body>\n-</html>\n\\ No newline at end of file\n+</html>"
+  } ],
+  "sha" : "e03ebd5610b4fdba61e785d9c4363e5a9e8a9c12",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e03ebd5610b4fdba61e785d9c4363e5a9e8a9c12",
+  "parents" : [ {
+    "sha" : "60490fccda1be56d645b13744cafd2bd5d6da3f5",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/60490fccda1be56d645b13744cafd2bd5d6da3f5",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/60490fccda1be56d645b13744cafd2bd5d6da3f5"
+  } ]
+}

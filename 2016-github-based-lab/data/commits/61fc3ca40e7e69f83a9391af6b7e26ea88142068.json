@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 63,
+    "additions" : 58,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/61fc3ca40e7e69f83a9391af6b7e26ea88142068",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-07T13:42:36Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-07T13:42:36Z"
+    },
+    "message" : "Merge pull request #409 from zjhua/master\n\n实验5，",
+    "tree" : {
+      "sha" : "00ac4629662d30e9c311f827c21fc9b5254ae2e7",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/00ac4629662d30e9c311f827c21fc9b5254ae2e7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/61fc3ca40e7e69f83a9391af6b7e26ea88142068",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/61fc3ca40e7e69f83a9391af6b7e26ea88142068/comments",
+  "files" : [ {
+    "sha" : "f7847197bd43cc299b5949499a3e32aa34e6845c",
+    "filename" : "works/1314080901144/index.html",
+    "status" : "modified",
+    "additions" : 58,
+    "deletions" : 5,
+    "changes" : 63,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/61fc3ca40e7e69f83a9391af6b7e26ea88142068/works/1314080901144/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/61fc3ca40e7e69f83a9391af6b7e26ea88142068/works/1314080901144/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901144/index.html?ref=61fc3ca40e7e69f83a9391af6b7e26ea88142068",
+    "patch" : "@@ -1,11 +1,11 @@\n <!DOCTYPE html>\n-<html lang=\"zh-CN\" ng-app=\"SuppliersFormAppModule\">\n-  <head>\n+<html ng-app=\"SuppliersFormAppModule\" >\n+    <head lang=\"zh-CN\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>物料-供应商-供应商1314080901144\n+    <title>物料-供应商-供应商信息-1314080901144-表单</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n     <script src=\"js/SuppliersFormAppModule.js\"></script>\n@@ -48,11 +48,64 @@\n     <div class=\"container\">\n \n       <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n-        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n+        <h1>SuppliersFormAppModule</h1>\n+        <p class=\"lead\">物料-供应商-供应商信息-1314080901144-表单</p>\n       </div>\n \n     </div><!-- /.container -->\n+     <h2 >物料-供应商-供应商信息</h2>\n+\n+  <div class=\"container\">\n+    <div class=\"row col-lg-offset-2\">\n+        <form class=\"form-inline\" role=\"form\">\n+            <div class=\"form-group row\">\n+                <div class=\"row\">\n+                    <label for=\"example2\">供应商编号：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+                     \n+                     <label for=\"example2\">建档日期：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+                    <label for=\"example2\">供应商类别：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>   \n+               </div>\n+            </div>\n+            <br>\n+            <br>\n+            <div class=\"form-group row\">\n+                <div class=\"row\">\n+                  <label for=\"example2\">供应商全称：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+                        <label for=\"example2\"> &nbsp;&nbsp;&nbsp;&nbsp;拼音码：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+\n+                    <label for=\"example2\">供应商主页：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+                    </div>\n+            </div>\n+            <br>\n+            <br>\n+\n+            <div class=\"form-group row\">\n+                <div class=\"row\">\n+                    <label for=\"example1\">供应商简称：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"UnitName\" id=\"example1\"/>\n+\n+                    <label for=\"example2\">行政区域：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+                    <label for=\"example2\">供应商简介：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+                    \n+            </div>\n+            </div>\n+        \n+        </form>\n+    </div>\n+</div>\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  } ],
+  "sha" : "61fc3ca40e7e69f83a9391af6b7e26ea88142068",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/61fc3ca40e7e69f83a9391af6b7e26ea88142068",
+  "parents" : [ {
+    "sha" : "968d321c4dd24b25c6e5e275144bc67cb98a9497",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/968d321c4dd24b25c6e5e275144bc67cb98a9497",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/968d321c4dd24b25c6e5e275144bc67cb98a9497"
+  }, {
+    "sha" : "0f76995cba96f2aff866ffb6c72657a9739f73f3",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0f76995cba96f2aff866ffb6c72657a9739f73f3",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0f76995cba96f2aff866ffb6c72657a9739f73f3"
+  } ]
+}

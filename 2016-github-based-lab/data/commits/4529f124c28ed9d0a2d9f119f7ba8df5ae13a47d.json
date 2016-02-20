@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "xiaoqiannba",
+    "id" : 15009260,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15009260?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoqiannba",
+    "html_url" : "https://github.com/xiaoqiannba",
+    "followers_url" : "https://api.github.com/users/xiaoqiannba/followers",
+    "following_url" : "https://api.github.com/users/xiaoqiannba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoqiannba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoqiannba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoqiannba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoqiannba/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoqiannba/repos",
+    "events_url" : "https://api.github.com/users/xiaoqiannba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoqiannba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 36,
+    "additions" : 34,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "xiaoqiannba",
+    "id" : 15009260,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15009260?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoqiannba",
+    "html_url" : "https://github.com/xiaoqiannba",
+    "followers_url" : "https://api.github.com/users/xiaoqiannba/followers",
+    "following_url" : "https://api.github.com/users/xiaoqiannba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoqiannba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoqiannba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoqiannba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoqiannba/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoqiannba/repos",
+    "events_url" : "https://api.github.com/users/xiaoqiannba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoqiannba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d",
+  "commit" : {
+    "author" : {
+      "name" : "xiaoqiannba",
+      "email" : "229597145@qq.com",
+      "date" : "2015-11-03T04:34:15Z"
+    },
+    "committer" : {
+      "name" : "xiaoqiannba",
+      "email" : "229597145@qq.com",
+      "date" : "2015-11-03T04:34:15Z"
+    },
+    "message" : "实验四  1314080901235\n\n建js文件",
+    "tree" : {
+      "sha" : "2c4b436608dedc9b5d2edab244fbaf0f6838996c",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/2c4b436608dedc9b5d2edab244fbaf0f6838996c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d/comments",
+  "files" : [ {
+    "sha" : "25d282f7694b49e5e4f48c8c4323d9a138df0dbe",
+    "filename" : "works/1314080901235/index.html",
+    "status" : "modified",
+    "additions" : 8,
+    "deletions" : 2,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d/works/1314080901235/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d/works/1314080901235/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901235/index.html?ref=4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d",
+    "patch" : "@@ -1,16 +1,19 @@\n ﻿<!DOCTYPE html>\n <html lang=\"zh-CN\">\n   <head>\n+     <head ng-app=\"itmListModule\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>仓库-盘点-盘点信息1314080901235</title>\n+    <title>{{盘点物品列表}} by 1314080901235</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n++        <script src=\"js/itemListModule.js\"></script>\n     \n     <!-- Bootstrap -->\n     <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n-\n+ \n     <!-- Custom styles for this template -->\n     <link href=\"css/style.css\" rel=\"stylesheet\">\n \n@@ -20,8 +23,11 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+     $scope.data = someData;\n+     } </script>\n   </head>\n   <body>\n+    <body ng-controller=\"MyFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">"
+  }, {
+    "sha" : "7bfc068f101ea7623f8d4cd8c5abef4ca9d4484f",
+    "filename" : "works/1314080901235/js/itemListModule.js",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d/works/1314080901235/js/itemListModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d/works/1314080901235/js/itemListModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901235/js/itemListModule.js?ref=4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d",
+    "patch" : "@@ -0,0 +1,26 @@\n+// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+var itemListModule = angular.module('itemListModule', []);\n+\n+// use the myAppModule variable to\n+// configure the module with a controller\n+itemListModule.controller('MyFilterDemoCtrl', function ($scope) {\n+       // controller code would go here\n+        var someDate = {\n+            code: '编码',\n+            name: '品名',\n+            type: '类型',\n+            color: '颜色',\n+            inventory number: '库存数',\n+            check number:'盘点数'\n+        };\n+        $scope.data = someDate;\n+    }\n+);\n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+itemListModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901235/盘点-新建盘点清单-物品列表.txt",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d/works/1314080901235/%E7%9B%98%E7%82%B9-%E6%96%B0%E5%BB%BA%E7%9B%98%E7%82%B9%E6%B8%85%E5%8D%95-%E7%89%A9%E5%93%81%E5%88%97%E8%A1%A8.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d/works/1314080901235/%E7%9B%98%E7%82%B9-%E6%96%B0%E5%BB%BA%E7%9B%98%E7%82%B9%E6%B8%85%E5%8D%95-%E7%89%A9%E5%93%81%E5%88%97%E8%A1%A8.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901235/%E7%9B%98%E7%82%B9-%E6%96%B0%E5%BB%BA%E7%9B%98%E7%82%B9%E6%B8%85%E5%8D%95-%E7%89%A9%E5%93%81%E5%88%97%E8%A1%A8.txt?ref=4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d",
+    "previous_filename" : "works/1314080901235/仓库-盘点-盘点信息.txt"
+  } ],
+  "sha" : "4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/4529f124c28ed9d0a2d9f119f7ba8df5ae13a47d",
+  "parents" : [ {
+    "sha" : "59fed14c5269d0ecf14c3e1540fe2b83750fe8a1",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/59fed14c5269d0ecf14c3e1540fe2b83750fe8a1",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/59fed14c5269d0ecf14c3e1540fe2b83750fe8a1"
+  } ]
+}

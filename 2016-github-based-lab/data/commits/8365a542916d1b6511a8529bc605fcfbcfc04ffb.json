@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 53,
+    "additions" : 49,
+    "deletions" : 4
+  },
+  "author" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/8365a542916d1b6511a8529bc605fcfbcfc04ffb",
+  "commit" : {
+    "author" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2015-11-15T12:48:57Z"
+    },
+    "committer" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2015-11-15T12:48:57Z"
+    },
+    "message" : "实验5-1314080901110",
+    "tree" : {
+      "sha" : "123be10ed3204b46aace8940b36ef388ccc991c0",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/123be10ed3204b46aace8940b36ef388ccc991c0"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/8365a542916d1b6511a8529bc605fcfbcfc04ffb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8365a542916d1b6511a8529bc605fcfbcfc04ffb/comments",
+  "files" : [ {
+    "sha" : "d09b4a763c909923268d49ed680007b632d92ac7",
+    "filename" : "works/1314080901110/index.html",
+    "status" : "modified",
+    "additions" : 43,
+    "deletions" : 2,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/8365a542916d1b6511a8529bc605fcfbcfc04ffb/works/1314080901110/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/8365a542916d1b6511a8529bc605fcfbcfc04ffb/works/1314080901110/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901110/index.html?ref=8365a542916d1b6511a8529bc605fcfbcfc04ffb",
+    "patch" : "@@ -20,10 +20,40 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n       <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n-+     <script src=\"js/caiwushouruchaxunModule.js\"></script>\n+      <script src=\"js/caiwushouruchaxunModule.js\"></script>\n     <![endif]-->\n   </head>\n   <body ng-controller=\"MyFilterDemoCtrl\">\n+    <style>\n+       body {\n+           font-family: \"Lucida Grande\", \"Lucida Sans Unicode\", Helvetica, Arial, sans-serif;\n+       }\n+       div {\n+           margin: 20px;\n+           padding: 20px;\n+           font-size: 16px;\n+           color:#ffffff;\n+       }\n+       #red {\n+           background-color: red;\n+       }\n+       #green {\n+           background-color: green;\n+       }\n+       #blue {\n+           background-color: blue;\n+       }\n+       #purple {\n+           background-color: purple;\n+       }\n+       #gray {\n+           background-color: gray;\n+       }\n+       #olive {\n+           background-color: olive;\n+       }\n+   </style>\n+ <body ng-controller=\"MyFilterDemoCtrl\" ng-cloak>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -54,7 +84,18 @@\n       </div>\n \n     </div><!-- /.container -->\n-\n+       <h2>AngularJS Socks</h2>\n+    <p>Keep warm this winter with our 100% wool, 100% cool, AngularJS socks!</p>\n+    <button ng-click=\"showHideColors()\" type=\"button\">\n+        {{isHidden ? 'Show Available Colors' : 'Hide Available Colors'}}\n+    </button>\n+    <div id=\"red\" ng-hide=\"isHidden\">Red</div>\n+    <div id=\"green\" ng-hide=\"isHidden\">Green</div>\n+    <div id=\"blue\" ng-hide=\"isHidden\">Blue</div>\n+    <div id=\"purple\" ng-hide=\"isHidden\">Purple</div>\n+    <div id=\"gray\" ng-hide=\"isHidden\">Dark Slate Gray</div>\n+    <div id=\"olive\" ng-hide=\"isHidden\">Olive</div>\n+    <p ng-cloak style=\"text-align:center;\">{{data.operator}}</p>\n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->"
+  }, {
+    "sha" : "ec7014e6f5676411be9ed43f304a02d79815492c",
+    "filename" : "works/1314080901110/js/caiwushouruchaxun.js",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 2,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/8365a542916d1b6511a8529bc605fcfbcfc04ffb/works/1314080901110/js/caiwushouruchaxun.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/8365a542916d1b6511a8529bc605fcfbcfc04ffb/works/1314080901110/js/caiwushouruchaxun.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901110/js/caiwushouruchaxun.js?ref=8365a542916d1b6511a8529bc605fcfbcfc04ffb",
+    "patch" : "@@ -6,12 +6,16 @@ var caiwushouruchaxun = angular.module('caiwushouruchaxun', []);\n // configure the module with a controller\n caiwushouruchaxun.controller('MyFilterDemoCtrl', function ($scope) {\n       // controller code would go here\n-      var Queryoptions = {\n+   $scope.isHidden = true;\n+   $scope.showHideColors = function () {\n+   $scope.isHidden = !$scope.isHidden;\n+   }\n+      var chaxunxuanxiang = {\n             Incomestate:'未完成',\n             Startdate:'2015-1-1',\n             Terminationdate:'2015-2-13'\n         };\n-        $scope.data =  Queryoptions;\n+        $scope.data =  chaxunxuanxiang;\n     }\n );\n "
+  } ],
+  "sha" : "8365a542916d1b6511a8529bc605fcfbcfc04ffb",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8365a542916d1b6511a8529bc605fcfbcfc04ffb",
+  "parents" : [ {
+    "sha" : "df2adc5344869b922b503b649d5a27e69b02e2b7",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/df2adc5344869b922b503b649d5a27e69b02e2b7",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/df2adc5344869b922b503b649d5a27e69b02e2b7"
+  } ]
+}

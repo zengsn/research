@@ -1,0 +1,104 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 137,
+    "additions" : 91,
+    "deletions" : 46
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/841127f4e3302d90dee087776214c0eb6039638c",
+  "commit" : {
+    "author" : {
+      "name" : "hh-froal",
+      "email" : "15919568335hh",
+      "date" : "2015-12-28T02:30:59Z"
+    },
+    "committer" : {
+      "name" : "hh-froal",
+      "email" : "15919568335hh",
+      "date" : "2015-12-28T02:30:59Z"
+    },
+    "message" : "1314080901112 实验7",
+    "tree" : {
+      "sha" : "ed63ecefe8d7ad05fcad7295c127079bf13dffbb",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/ed63ecefe8d7ad05fcad7295c127079bf13dffbb"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/841127f4e3302d90dee087776214c0eb6039638c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/841127f4e3302d90dee087776214c0eb6039638c/comments",
+  "files" : [ {
+    "sha" : "bac2f7ced47c986eb0680073f56c4e462ed0a7a7",
+    "filename" : "works/1314080901112/about.html",
+    "status" : "added",
+    "additions" : 2,
+    "deletions" : 0,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/about.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/about.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901112/about.html?ref=841127f4e3302d90dee087776214c0eb6039638c",
+    "patch" : "@@ -0,0 +1,2 @@\n+<div id=\"head\" style=\"width:auto;height:32px;color:#fff;font-size:28px;padding-left:20px;text-align:center;\">\n+     学号： 1314080901112</div>\n\\ No newline at end of file"
+  }, {
+    "sha" : "cf6e2cb7b8db94f851fca4663ad346a32d90d35c",
+    "filename" : "works/1314080901112/contact.html",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/contact.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/contact.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901112/contact.html?ref=841127f4e3302d90dee087776214c0eb6039638c",
+    "patch" : "@@ -0,0 +1,34 @@\n+    <div>\n+    <div class=\"container\">\n+      <div class=\"con\">\n+      <h3>物料清单</h3>\n+      <table class=\"table table-bordered\"}>\n+        <thead>\n+          <tr>\n+            <th class=\"text-center \" colspan=\"6\">物料</th>\n+          </tr>\n+          <tr>\n+            <th class=\"text-center\">序号</th>\n+            <th class=\"text-center\">编号</th>\n+            <th class=\"text-center\">类别</th>\n+            <th class=\"text-center\">名称</th>\n+            <th class=\"text-center\">型号</th>\n+            <th class=\"text-center\">颜色</th>\n+          </tr>\n+        </thead>\n+          <tbody ng-repeat=\"item in data\">\n+            <tr >\n+              <td class=\"text-center\">{{$index + 1}}</td>\n+              <td class=\"text-center\">{{item.num}}</td>\n+              <td class=\"text-center\">{{item.type}}</td>\n+              <td class=\"text-center\">{{item.name}}</td>\n+              <td class=\"text-center\">{{item.model}}</td>\n+              <td class=\"text-center\">{{item.color}}</td>\n+            </tr>\n+          </tbody>\n+      </table>\n+\n+    </div>\n+\n+    </div>\n+      </div>\n\\ No newline at end of file"
+  }, {
+    "sha" : "f47a2ff0b3a67722d057c8d491ca0b8d9adf6b14",
+    "filename" : "works/1314080901112/home.html",
+    "status" : "added",
+    "additions" : 10,
+    "deletions" : 0,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/home.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/home.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901112/home.html?ref=841127f4e3302d90dee087776214c0eb6039638c",
+    "patch" : "@@ -0,0 +1,10 @@\n+  <div class=\"container\">\n+\n+      <div class=\"starter-template\">\n+        <h1>Bootstrap starter template</h1>\n+        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n+      </div>\n+\n+\n+ </div>\n+ <div id=\"head\" style=\"width:auto;height:32px;color:#fff;font-size:28px;padding-left:20px;text-align:center;\">请按 contact 和 about </div>"
+  }, {
+    "sha" : "eddd4992dd7e22dda9444df9091916b15b5d8f08",
+    "filename" : "works/1314080901112/index.html",
+    "status" : "modified",
+    "additions" : 15,
+    "deletions" : 39,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901112/index.html?ref=841127f4e3302d90dee087776214c0eb6039638c",
+    "patch" : "@@ -23,11 +23,13 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+     <script src=\"../../lib/angular-1.4.5/angular-route.js\"></script>\n+     <script src=\"../../lib/angular-1.4.5/angular-route.min.js\"></script>\n \n     <script src=\"js/materialListModule.js\"></script>\n \n   </head>\n-  <body ng-controller=\"MyFilterDemoCtrl\">\n+  <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -37,53 +39,27 @@\n             <span class=\"icon-bar\"></span>\n             <span class=\"icon-bar\"></span>\n           </button>\n-          <a class=\"navbar-brand\" href=\"#\">Project name</a>\n+          </button>\n+          <a class=\"navbar-brand\" href=\"#name\">Project name</a>\n         </div>\n         <div id=\"navbar\" class=\"collapse navbar-collapse\">\n           <ul class=\"nav navbar-nav\">\n-            <li class=\"active\"><a href=\"#\">Home</a></li>\n-            <li><a href=\"#about\">About</a></li>\n+            <li><a href=\"#home\">Home</a></li>\n             <li><a href=\"#contact\">Contact</a></li>\n+            <li><a href=\"#about\"><i class=\"fa fa-shield\"></i>About</a></li>\n+            \n           </ul>\n         </div><!--/.nav-collapse -->\n       </div>\n     </nav>\n \n-    <div class=\"container\">\n-      <div class=\"con\">\n-      <h3>物料清单</h3>\n-      <table class=\"table table-bordered\"}>\n-        <thead>\n-          <tr>\n-            <th class=\"text-center \" colspan=\"6\">物料</th>\n-          </tr>\n-          <tr>\n-            <th class=\"text-center\">序号</th>\n-            <th class=\"text-center\">编号</th>\n-            <th class=\"text-center\">类别</th>\n-            <th class=\"text-center\">名称</th>\n-            <th class=\"text-center\">型号</th>\n-            <th class=\"text-center\">颜色</th>\n-          </tr>\n-        </thead>\n-          <tbody ng-repeat=\"item in data\">\n-            <tr >\n-              <td class=\"text-center\">{{$index + 1}}</td>\n-              <td class=\"text-center\">{{item.num}}</td>\n-              <td class=\"text-center\">{{item.type}}</td>\n-              <td class=\"text-center\">{{item.name}}</td>\n-              <td class=\"text-center\">{{item.model}}</td>\n-              <td class=\"text-center\">{{item.color}}</td>\n-            </tr>\n-          </tbody>\n-      </table>\n-\n-    </div>\n-\n-    </div><!-- /.container -->\n-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n-\n-    <!-- Include all compiled plugins (below), or include individual files as needed -->\n+  <div id=\"content\" ng-view>\n+   \n+  </div>\n+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n+   <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n+   <!-- Include all compiled plugins (below), or include individual files as needed -->\n+   <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n \n   </body>\n </html>"
+  }, {
+    "sha" : "6222f1a3176d831768169277c531b19f23618574",
+    "filename" : "works/1314080901112/js/materialListModule.js",
+    "status" : "modified",
+    "additions" : 28,
+    "deletions" : 7,
+    "changes" : 35,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/js/materialListModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/js/materialListModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901112/js/materialListModule.js?ref=841127f4e3302d90dee087776214c0eb6039638c",
+    "patch" : "@@ -1,16 +1,37 @@\n // create a new module called 'myAppModule' and save \n // a reference to it in a variable called myAppModule \n-var materialListModule = angular.module('materialListModule', []);\n+var materialListModule = angular.module('materialListModule', ['ngRoute']);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-materialListModule.controller('MyFilterDemoCtrl', function ($http,$scope) {\n-        $http.get(\"item.json\").success(function(someData){\n-        $scope.data = someData;\n-       // controller code would go here\n-        });\n-})\n+ materialListModule.config(function ($routeProvider) {\n+      // configure the routes\n+    $routeProvider\n+    .when('/name', {\n+      // route for the home page\n+        templateUrl: 'title.html'\n+    })\n+    .when('/home', {\n+      // route for the home page\n+        templateUrl: 'home.html'\n+    })\n+    .when('/contact', {\n+      // route for the home page\n+        templateUrl: 'contact.html',\n+        controller: 'contactController'\n+    })\n+    .when('/about', {\n+      // route for the about page\n+        templateUrl:'about.html'\n+    });\n+});\n+\n \n+materialListModule.controller('contactController', function ($http,$scope) {\n+       // controller code would go here\n+       $http.get(\"item.json\").success(function(someData){$scope.data=someData;});\n+     \n+    });\n // use the myAppModule variable to\n // configure the module with a filter\n materialListModule.filter('stripDashes', function() {"
+  }, {
+    "sha" : "90ba9f8aea3c6a0c4224db6e3a6ab0e400c86ed3",
+    "filename" : "works/1314080901112/title.html",
+    "status" : "added",
+    "additions" : 2,
+    "deletions" : 0,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/title.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/841127f4e3302d90dee087776214c0eb6039638c/works/1314080901112/title.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901112/title.html?ref=841127f4e3302d90dee087776214c0eb6039638c",
+    "patch" : "@@ -0,0 +1,2 @@\n+  <div id=\"head\" style=\"width:auto;height:32px;color:#fff;font-size:28px;padding-left:20px;text-align:center;\">\n+     在岗查询 查询部门员工列表 </div>\n\\ No newline at end of file"
+  } ],
+  "sha" : "841127f4e3302d90dee087776214c0eb6039638c",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/841127f4e3302d90dee087776214c0eb6039638c",
+  "parents" : [ {
+    "sha" : "6a967544e271774d31847b6bc846b31c92b3c168",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/6a967544e271774d31847b6bc846b31c92b3c168",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/6a967544e271774d31847b6bc846b31c92b3c168"
+  } ]
+}

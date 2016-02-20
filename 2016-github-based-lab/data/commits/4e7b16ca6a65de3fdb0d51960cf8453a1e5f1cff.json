@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "TPGorTJK",
+    "id" : 15098134,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098134?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/TPGorTJK",
+    "html_url" : "https://github.com/TPGorTJK",
+    "followers_url" : "https://api.github.com/users/TPGorTJK/followers",
+    "following_url" : "https://api.github.com/users/TPGorTJK/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/TPGorTJK/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/TPGorTJK/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/TPGorTJK/subscriptions",
+    "organizations_url" : "https://api.github.com/users/TPGorTJK/orgs",
+    "repos_url" : "https://api.github.com/users/TPGorTJK/repos",
+    "events_url" : "https://api.github.com/users/TPGorTJK/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/TPGorTJK/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 39,
+    "additions" : 29,
+    "deletions" : 10
+  },
+  "author" : {
+    "login" : "TPGorTJK",
+    "id" : 15098134,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098134?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/TPGorTJK",
+    "html_url" : "https://github.com/TPGorTJK",
+    "followers_url" : "https://api.github.com/users/TPGorTJK/followers",
+    "following_url" : "https://api.github.com/users/TPGorTJK/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/TPGorTJK/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/TPGorTJK/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/TPGorTJK/subscriptions",
+    "organizations_url" : "https://api.github.com/users/TPGorTJK/orgs",
+    "repos_url" : "https://api.github.com/users/TPGorTJK/repos",
+    "events_url" : "https://api.github.com/users/TPGorTJK/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/TPGorTJK/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff",
+  "commit" : {
+    "author" : {
+      "name" : "TPGorTJK",
+      "email" : "779446297@qq.com",
+      "date" : "2016-01-15T17:43:34Z"
+    },
+    "committer" : {
+      "name" : "TPGorTJK",
+      "email" : "779446297@qq.com",
+      "date" : "2016-01-15T17:43:34Z"
+    },
+    "message" : "实验2和实验3",
+    "tree" : {
+      "sha" : "7203d8e109e8bd67f165fe0f9755ccd8e113ec2a",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/7203d8e109e8bd67f165fe0f9755ccd8e113ec2a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff/comments",
+  "files" : [ {
+    "sha" : "fb5ee0bce1adaebe115787ae0666faf926d27dd1",
+    "filename" : "works/1314080901132/index.html",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 9,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff/works/1314080901132/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff/works/1314080901132/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901132/index.html?ref=4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff",
+    "patch" : "@@ -1,18 +1,14 @@\n ﻿<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+<html lang=\"zh-CN\" ng-app=\"myapp\">\n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n    <title>物料设置 1314080901132</title>\n-    function MyFilterDemoCtrl($scope) {\n-          var myData = {\n-              className: \"灯具\",\n-             classNumber: '11'\n-          };\n-          $scope.myData = someData;\n-  } </script>\n+   <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+   <script src=\"js/myModule.js\"></script>\n+    \n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -28,7 +24,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body>\n+  <body ng-controller=\"myController\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -57,6 +53,13 @@\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n \n+       <div style=\"margin-left:250px;\"> \n+            <div style=\"display:inline-block;width:100px;\">类别名称</div> <div style=\"display:inline-block;width:100px;\">类别代码</div>\n+            <div ng-repeat=\"theData in datas\">\n+              <div style=\"display:inline-block;width:100px;\">{{theData.theClassName}}</div>\n+               <div style=\"display:inline-block;width:100px;\">{{theData.classNumber}}</div>\n+             </div>\n+       </div>\n     </div><!-- /.container -->\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->"
+  }, {
+    "sha" : "9d423d93044030f44b8b3ea8d95176637ea0a6fd",
+    "filename" : "works/1314080901132/js/javascript.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 1,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/84329c6c91cfa7d1a1a0d41694c7cdb4e34b5f8a/works/1314080901132/js/javascript.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/84329c6c91cfa7d1a1a0d41694c7cdb4e34b5f8a/works/1314080901132/js/javascript.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901132/js/javascript.js?ref=84329c6c91cfa7d1a1a0d41694c7cdb4e34b5f8a",
+    "patch" : "@@ -1 +0,0 @@\n-// javascript.js\n\\ No newline at end of file"
+  }, {
+    "sha" : "8d0539d1aaaf6c7dcbe39cf8e8b7d8d5931fc50a",
+    "filename" : "works/1314080901132/js/myModule.js",
+    "status" : "added",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff/works/1314080901132/js/myModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff/works/1314080901132/js/myModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901132/js/myModule.js?ref=4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff",
+    "patch" : "@@ -0,0 +1,17 @@\n+// javascript.js\n+\n+\n+ var myData = {\n+             theClassName: \"灯具\",\n+             classNumber: '11'\n+               };\n+              \n+var myModule = angular.module(\"myapp\", []);\n+  myModule.controller(\"myController\", function ($scope) {\n+      var data1 = myData;\n+      data1.theClassName =\"灯具\" ;\n+      data1.classNumber = \"12\";\n+      $scope.datas = [data1];\n+  });\n+  \n+ \n\\ No newline at end of file"
+  } ],
+  "sha" : "4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/4e7b16ca6a65de3fdb0d51960cf8453a1e5f1cff",
+  "parents" : [ {
+    "sha" : "84329c6c91cfa7d1a1a0d41694c7cdb4e34b5f8a",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/84329c6c91cfa7d1a1a0d41694c7cdb4e34b5f8a",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/84329c6c91cfa7d1a1a0d41694c7cdb4e34b5f8a"
+  } ]
+}

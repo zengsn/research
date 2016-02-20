@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "xuwenlang",
+    "id" : 14369806,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14369806?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xuwenlang",
+    "html_url" : "https://github.com/xuwenlang",
+    "followers_url" : "https://api.github.com/users/xuwenlang/followers",
+    "following_url" : "https://api.github.com/users/xuwenlang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xuwenlang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xuwenlang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xuwenlang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xuwenlang/orgs",
+    "repos_url" : "https://api.github.com/users/xuwenlang/repos",
+    "events_url" : "https://api.github.com/users/xuwenlang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xuwenlang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 15,
+    "additions" : 13,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "xuwenlang",
+    "id" : 14369806,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14369806?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xuwenlang",
+    "html_url" : "https://github.com/xuwenlang",
+    "followers_url" : "https://api.github.com/users/xuwenlang/followers",
+    "following_url" : "https://api.github.com/users/xuwenlang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xuwenlang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xuwenlang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xuwenlang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xuwenlang/orgs",
+    "repos_url" : "https://api.github.com/users/xuwenlang/repos",
+    "events_url" : "https://api.github.com/users/xuwenlang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xuwenlang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/8a3456b1b64902c7019128fe8246f6f4fd8a4355",
+  "commit" : {
+    "author" : {
+      "name" : "xuwenlang",
+      "email" : "1542295969@qq.com",
+      "date" : "2015-10-20T01:06:53Z"
+    },
+    "committer" : {
+      "name" : "xuwenlang",
+      "email" : "1542295969@qq.com",
+      "date" : "2015-10-20T01:06:53Z"
+    },
+    "message" : "new title & copy 4.1",
+    "tree" : {
+      "sha" : "cebd2b7c82ea549bb2b41800ae85ac4ac0b57a1c",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/cebd2b7c82ea549bb2b41800ae85ac4ac0b57a1c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/8a3456b1b64902c7019128fe8246f6f4fd8a4355",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8a3456b1b64902c7019128fe8246f6f4fd8a4355/comments",
+  "files" : [ {
+    "sha" : "faa184206e729a7e5d9ae25eb527895885cedabf",
+    "filename" : "works/1314080901139/index.html",
+    "status" : "modified",
+    "additions" : 13,
+    "deletions" : 2,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/8a3456b1b64902c7019128fe8246f6f4fd8a4355/works/1314080901139/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/8a3456b1b64902c7019128fe8246f6f4fd8a4355/works/1314080901139/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901139/index.html?ref=8a3456b1b64902c7019128fe8246f6f4fd8a4355",
+    "patch" : "@@ -5,7 +5,7 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>物料供应商 1314080901139</title>\n+    <title>物料 物料信息 物料信息 1314080901139</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,6 +20,17 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var someData = {\n+            firstName: 'JENNA',\n+            surname: 'GRANT',\n+            dateJoined: new Date(2010, 2, 23),\n+            consumption: 123.659855,\n+            plan: 'super-basic-plan'\n+        };\n+        $scope.data = someData;\n+} </script>\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n@@ -57,4 +68,4 @@\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n   </body>\n-</html>\n\\ No newline at end of file\n+</html>"
+  } ],
+  "sha" : "8a3456b1b64902c7019128fe8246f6f4fd8a4355",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8a3456b1b64902c7019128fe8246f6f4fd8a4355",
+  "parents" : [ {
+    "sha" : "2088e767b6a318334c468d96eb8e2711dfb96642",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2088e767b6a318334c468d96eb8e2711dfb96642",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/2088e767b6a318334c468d96eb8e2711dfb96642"
+  } ]
+}

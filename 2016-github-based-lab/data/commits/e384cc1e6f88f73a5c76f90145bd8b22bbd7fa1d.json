@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "czgshy",
+    "id" : 15098123,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098123?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/czgshy",
+    "html_url" : "https://github.com/czgshy",
+    "followers_url" : "https://api.github.com/users/czgshy/followers",
+    "following_url" : "https://api.github.com/users/czgshy/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/czgshy/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/czgshy/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/czgshy/subscriptions",
+    "organizations_url" : "https://api.github.com/users/czgshy/orgs",
+    "repos_url" : "https://api.github.com/users/czgshy/repos",
+    "events_url" : "https://api.github.com/users/czgshy/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/czgshy/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 32,
+    "additions" : 31,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "czgshy",
+    "id" : 15098123,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098123?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/czgshy",
+    "html_url" : "https://github.com/czgshy",
+    "followers_url" : "https://api.github.com/users/czgshy/followers",
+    "following_url" : "https://api.github.com/users/czgshy/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/czgshy/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/czgshy/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/czgshy/subscriptions",
+    "organizations_url" : "https://api.github.com/users/czgshy/orgs",
+    "repos_url" : "https://api.github.com/users/czgshy/repos",
+    "events_url" : "https://api.github.com/users/czgshy/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/czgshy/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e384cc1e6f88f73a5c76f90145bd8b22bbd7fa1d",
+  "commit" : {
+    "author" : {
+      "name" : "czgshy",
+      "email" : "532247474@qq.com",
+      "date" : "2015-11-23T15:20:22Z"
+    },
+    "committer" : {
+      "name" : "czgshy",
+      "email" : "532247474@qq.com",
+      "date" : "2015-11-23T15:20:22Z"
+    },
+    "message" : "实验5",
+    "tree" : {
+      "sha" : "90d7349ce0a31fc995cfe9f9d1a82d27eb1228b2",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/90d7349ce0a31fc995cfe9f9d1a82d27eb1228b2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/e384cc1e6f88f73a5c76f90145bd8b22bbd7fa1d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e384cc1e6f88f73a5c76f90145bd8b22bbd7fa1d/comments",
+  "files" : [ {
+    "sha" : "72e2dc5051490af48139187ef381d4e801d2d324",
+    "filename" : "works/1314080901108/index.html",
+    "status" : "modified",
+    "additions" : 31,
+    "deletions" : 1,
+    "changes" : 32,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e384cc1e6f88f73a5c76f90145bd8b22bbd7fa1d/works/1314080901108/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e384cc1e6f88f73a5c76f90145bd8b22bbd7fa1d/works/1314080901108/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901108/index.html?ref=e384cc1e6f88f73a5c76f90145bd8b22bbd7fa1d",
+    "patch" : "@@ -24,7 +24,6 @@\n \t<script src=\"js/news_TemplateModule.js\"></script>\n   </head>\n   <body ng-controller=\"news_TemplateModuleDemoCtrl\">\n-<p>{{data.price}}</p>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -59,5 +58,36 @@\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+    <form class=\"form-inline\">\n+    <div class=\"container\">\n+    <div class=\"row col-lg-offset-2\" role=\"form\">\n+  <div class=\"form-group\">\n+  <div class=\"row\">\n+    <label for=\"data.template_Name\">模板名称:</label>\n+    <input type=\"text\" class=\"form-control\" ng-model=\"template_Name\" id=\"data.template_Name\" >\n+ \n+    <label for=\"data.other_Name\">别名:</label>\n+    <input type=\"text\" class=\"form-control\" ng-model=\"other_Name\" id=\"data.other_Name\" >\n+ \n+    <label for=\"data.news_People\">建模人:</label>\n+    <input type=\"text\" class=\"form-control\" ng-model=\"news_Name\" id=\"data.news_People\" >\n+  </div>\n+  </div>\n+  <br>\n+  <br>\n+  <div class=\"form-group\">\n+  <div class=\"row\">\n+    <label for=\"data.price\">计价方式:</label>\n+    <input type=\"text\" class=\"form-control\" ng-model=\"price\" id=\"data.price\" >\n+\n+    <label for=\"data.type\">类别:</label>\n+    <input type=\"text\" class=\"form-control\" ng-model=\"type\" id=\"data.type\" >\n+  </div>\n+  </div>\n+  <br>\n+<button type=\"button\" class=\"btn btn-default\">新建</button>\n+</form>\n+</div>\n+</div>\n   </body>\n </html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "e384cc1e6f88f73a5c76f90145bd8b22bbd7fa1d",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e384cc1e6f88f73a5c76f90145bd8b22bbd7fa1d",
+  "parents" : [ {
+    "sha" : "7ab6709edb3ba9dbe203336bd93de013ead5b6a6",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7ab6709edb3ba9dbe203336bd93de013ead5b6a6",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/7ab6709edb3ba9dbe203336bd93de013ead5b6a6"
+  } ]
+}

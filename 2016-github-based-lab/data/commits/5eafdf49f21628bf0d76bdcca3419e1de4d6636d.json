@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zengyt",
+    "id" : 14934810,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14934810?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengyt",
+    "html_url" : "https://github.com/zengyt",
+    "followers_url" : "https://api.github.com/users/zengyt/followers",
+    "following_url" : "https://api.github.com/users/zengyt/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengyt/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengyt/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengyt/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengyt/orgs",
+    "repos_url" : "https://api.github.com/users/zengyt/repos",
+    "events_url" : "https://api.github.com/users/zengyt/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengyt/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 36,
+    "additions" : 19,
+    "deletions" : 17
+  },
+  "author" : {
+    "login" : "zengyt",
+    "id" : 14934810,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14934810?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengyt",
+    "html_url" : "https://github.com/zengyt",
+    "followers_url" : "https://api.github.com/users/zengyt/followers",
+    "following_url" : "https://api.github.com/users/zengyt/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengyt/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengyt/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengyt/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengyt/orgs",
+    "repos_url" : "https://api.github.com/users/zengyt/repos",
+    "events_url" : "https://api.github.com/users/zengyt/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengyt/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/5eafdf49f21628bf0d76bdcca3419e1de4d6636d",
+  "commit" : {
+    "author" : {
+      "name" : "zengyt",
+      "email" : "1781262224@qq.com",
+      "date" : "2015-10-25T01:04:31Z"
+    },
+    "committer" : {
+      "name" : "zengyt",
+      "email" : "1781262224@qq.com",
+      "date" : "2015-10-25T01:04:31Z"
+    },
+    "message" : "1314080901201曾雨婷实验3",
+    "tree" : {
+      "sha" : "444f9fc218c56ba27fbd08dc262ec9ac41a97e67",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/444f9fc218c56ba27fbd08dc262ec9ac41a97e67"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/5eafdf49f21628bf0d76bdcca3419e1de4d6636d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5eafdf49f21628bf0d76bdcca3419e1de4d6636d/comments",
+  "files" : [ {
+    "sha" : "18720c6ec60f46920926ca1e0cf9934f2c1d4e96",
+    "filename" : "works/1314080901201/index.html",
+    "status" : "modified",
+    "additions" : 19,
+    "deletions" : 17,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/5eafdf49f21628bf0d76bdcca3419e1de4d6636d/works/1314080901201/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/5eafdf49f21628bf0d76bdcca3419e1de4d6636d/works/1314080901201/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901201/index.html?ref=5eafdf49f21628bf0d76bdcca3419e1de4d6636d",
+    "patch" : "@@ -20,6 +20,25 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]--> \n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var someData = {\n+            number:100,\n+            date:'建档日期',\n+            sort:'供应商类别',\n+            name:'供应商全称',\n+            code:'拼音码',\n+            homepage:'供应商主页',\n+            jc:'供应商简称',\n+            area:'行政区域',\n+            synposis:'供应商简介',\n+            dateJoined: new Date(2015, 10, 20),\n+            consumption: 123.659855,\n+            plan: 'super-basic-plan'\n+        };\n+        $scope.data = someData;\n+} </script>\n+\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n@@ -79,23 +98,6 @@\n     <input type=\"checkbox\" value=\"\" name=\"stop or not\" checked=\"checked\" >\n     <input type=\"submit\" value=\"+保存/修改\" name=\"submit\"/>\n   </div>\n-  \n-\n-  <div>\n-  <table style=\"background-color:#c5c5c5;margin:0px;width:614px;right:auto;left:0px;top:0px;border:1px solid black\">\n-   <caption style=\"background-color:#99bce8;color:blue;font-weight:bold\">供应商联系人</caption>\n-     <tr> \n-      <th>名称</th>\n-      <th>手机</th>\n-      <th>办公电话</th>\n-      <th>传真号码</th>\n-      <th>QQ</th>\n-      <th>邮箱地址</th>\n-      <th>职务</th>\n-      <th>备注</th>\n-     </tr>\n-      </table>\n-  </div>\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  } ],
+  "sha" : "5eafdf49f21628bf0d76bdcca3419e1de4d6636d",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5eafdf49f21628bf0d76bdcca3419e1de4d6636d",
+  "parents" : [ {
+    "sha" : "e8c15e8bb849e2da09e9339c73f74b1ecdc40d79",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e8c15e8bb849e2da09e9339c73f74b1ecdc40d79",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e8c15e8bb849e2da09e9339c73f74b1ecdc40d79"
+  } ]
+}

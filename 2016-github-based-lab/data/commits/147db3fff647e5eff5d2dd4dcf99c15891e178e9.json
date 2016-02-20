@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 56,
+    "additions" : 48,
+    "deletions" : 8
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/147db3fff647e5eff5d2dd4dcf99c15891e178e9",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:58:52Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:58:52Z"
+    },
+    "message" : "Merge pull request #311 from finalnbn/master\n\n实验五",
+    "tree" : {
+      "sha" : "7bd0339ea683093f9f56d9b4ae11d8da610d0698",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/7bd0339ea683093f9f56d9b4ae11d8da610d0698"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/147db3fff647e5eff5d2dd4dcf99c15891e178e9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/147db3fff647e5eff5d2dd4dcf99c15891e178e9/comments",
+  "files" : [ {
+    "sha" : "900de336f809184653dc0606f71d42f74d6d3878",
+    "filename" : "works/1314080901134/index.html",
+    "status" : "modified",
+    "additions" : 41,
+    "deletions" : 4,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/147db3fff647e5eff5d2dd4dcf99c15891e178e9/works/1314080901134/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/147db3fff647e5eff5d2dd4dcf99c15891e178e9/works/1314080901134/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901134/index.html?ref=147db3fff647e5eff5d2dd4dcf99c15891e178e9",
+    "patch" : "@@ -22,6 +22,35 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n+  <style>\n+        body {\n+            font-family: \"Lucida Grande\", \"Lucida Sans Unicode\", Helvetica, Arial, sans-serif;\n+        }\n+        div {\n+            margin: 20px;\n+            padding: 20px;\n+            font-size: 16px;\n+            color:#ffffff;\n+        }\n+        #red {\n+            background-color: red;\n+        }\n+        #green {\n+            background-color: green;\n+        }\n+        #blue {\n+            background-color: blue;\n+        }\n+        #purple {\n+            background-color: purple;\n+        }\n+        #gray {\n+            background-color: gray;\n+        }\n+        #olive {\n+            background-color: olive;\n+        }\n+    </style>\n  <body ng-controller=\"purchasingGroupDelCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n@@ -43,16 +72,24 @@\n         </div><!--/.nav-collapse -->\n       </div>\n     </nav>\n-\n     <div class=\"container\">\n-\n       <div class=\"starter-template\">\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n-\n     </div><!-- /.container -->\n-  <p>{{data.groupName}}</p>\n+       <h2>AngularJS Socks</h2>\n+    <p>Keep warm this winter with our 100% wool, 100% cool, AngularJS socks!</p>\n+    <button ng-click=\"showHideColors()\" type=\"button\">\n+        {{isHidden ? 'Show Available Colors' : 'Hide Available Colors'}}\n+    </button>\n+    <div id=\"red\" ng-hide=\"isHidden\">Red</div>\n+    <div id=\"green\" ng-hide=\"isHidden\">Green</div>\n+    <div id=\"blue\" ng-hide=\"isHidden\">Blue</div>\n+    <div id=\"purple\" ng-hide=\"isHidden\">Purple</div>\n+    <div id=\"gray\" ng-hide=\"isHidden\">Dark Slate Gray</div>\n+    <div id=\"olive\" ng-hide=\"isHidden\">Olive</div>\n+  <p ng-cloak>{{data.groupName}}</p>\n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->"
+  }, {
+    "sha" : "9f6ab1a78bccbd18e641aa83f25bcb3bcfe47356",
+    "filename" : "works/1314080901134/js/purchasingGroupDelModule.js",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 4,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/147db3fff647e5eff5d2dd4dcf99c15891e178e9/works/1314080901134/js/purchasingGroupDelModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/147db3fff647e5eff5d2dd4dcf99c15891e178e9/works/1314080901134/js/purchasingGroupDelModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901134/js/purchasingGroupDelModule.js?ref=147db3fff647e5eff5d2dd4dcf99c15891e178e9",
+    "patch" : "@@ -6,11 +6,14 @@ var purchasingGroupDelModule = angular.module('purchasingGroupDelModule', []);\n // configure the module with a controller\n purchasingGroupDelModule.controller('purchasingGroupDelCtrl', function ($scope) {\n        // controller code would go here\n-\n-         var purchasingGroup1 = { \n-             groupName: '小组名', \n+          $scope.isHidden = true;\n+          $scope.showHideColors = function () {\n+\t      $scope.isHidden = !$scope.isHidden;\n+\t    }\n+         var purchasingGroup1= { \n+             groupName:'小组名',\n              groupId:'00002'\n-         }; \n+        };\n          $scope.data = purchasingGroup1; \n \n     }"
+  } ],
+  "sha" : "147db3fff647e5eff5d2dd4dcf99c15891e178e9",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/147db3fff647e5eff5d2dd4dcf99c15891e178e9",
+  "parents" : [ {
+    "sha" : "ef1008ac945ed5e3296b29a890ea7c1b7d410966",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ef1008ac945ed5e3296b29a890ea7c1b7d410966",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/ef1008ac945ed5e3296b29a890ea7c1b7d410966"
+  }, {
+    "sha" : "07ec122cc49a4cc639137ec39cb77bc20ac1a344",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/07ec122cc49a4cc639137ec39cb77bc20ac1a344",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/07ec122cc49a4cc639137ec39cb77bc20ac1a344"
+  } ]
+}

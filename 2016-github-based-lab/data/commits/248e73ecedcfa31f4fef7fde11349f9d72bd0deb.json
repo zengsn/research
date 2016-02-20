@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "sakcmhhjjkk5",
+    "id" : 15097607,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097607?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/sakcmhhjjkk5",
+    "html_url" : "https://github.com/sakcmhhjjkk5",
+    "followers_url" : "https://api.github.com/users/sakcmhhjjkk5/followers",
+    "following_url" : "https://api.github.com/users/sakcmhhjjkk5/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/sakcmhhjjkk5/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/sakcmhhjjkk5/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/sakcmhhjjkk5/subscriptions",
+    "organizations_url" : "https://api.github.com/users/sakcmhhjjkk5/orgs",
+    "repos_url" : "https://api.github.com/users/sakcmhhjjkk5/repos",
+    "events_url" : "https://api.github.com/users/sakcmhhjjkk5/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/sakcmhhjjkk5/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 46,
+    "additions" : 30,
+    "deletions" : 16
+  },
+  "author" : {
+    "login" : "sakcmhhjjkk5",
+    "id" : 15097607,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097607?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/sakcmhhjjkk5",
+    "html_url" : "https://github.com/sakcmhhjjkk5",
+    "followers_url" : "https://api.github.com/users/sakcmhhjjkk5/followers",
+    "following_url" : "https://api.github.com/users/sakcmhhjjkk5/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/sakcmhhjjkk5/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/sakcmhhjjkk5/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/sakcmhhjjkk5/subscriptions",
+    "organizations_url" : "https://api.github.com/users/sakcmhhjjkk5/orgs",
+    "repos_url" : "https://api.github.com/users/sakcmhhjjkk5/repos",
+    "events_url" : "https://api.github.com/users/sakcmhhjjkk5/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/sakcmhhjjkk5/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/248e73ecedcfa31f4fef7fde11349f9d72bd0deb",
+  "commit" : {
+    "author" : {
+      "name" : "sakcmhhjjkk5",
+      "email" : "503809815@qq.com",
+      "date" : "2015-11-24T03:01:14Z"
+    },
+    "committer" : {
+      "name" : "sakcmhhjjkk5",
+      "email" : "503809815@qq.com",
+      "date" : "2015-11-24T03:01:14Z"
+    },
+    "message" : "实验四",
+    "tree" : {
+      "sha" : "3383f044164adbd6112fc3b7e36660551074b181",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/3383f044164adbd6112fc3b7e36660551074b181"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/248e73ecedcfa31f4fef7fde11349f9d72bd0deb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/248e73ecedcfa31f4fef7fde11349f9d72bd0deb/comments",
+  "files" : [ {
+    "sha" : "4b8b097e55179037c83b2312729cb837f6131c6a",
+    "filename" : "works/1314080901136/index.html",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 16,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/248e73ecedcfa31f4fef7fde11349f9d72bd0deb/works/1314080901136/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/248e73ecedcfa31f4fef7fde11349f9d72bd0deb/works/1314080901136/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901136/index.html?ref=248e73ecedcfa31f4fef7fde11349f9d72bd0deb",
+    "patch" : "@@ -1,24 +1,14 @@\n ﻿<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n-  <head>\n-<script>\n-    function MyFilterDemoCtrl($scope) {\n-        var typeSet = {\n-\t\tsuoshubuemn: '111',\n-\t\tgangweimingcheng: '111',\n-\t\tgangweicengci: '111',\n-\t\tgangweileixing: '111',\n-\t\tjibenxinzi: '111',\n-\t\tgangweizhize: '111',\n-        };\n-        $scope.data = typeSet;\n-} </script>\n+<html ng-app=\"hasakiModule\"> <head lang=\"en\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>人事组织 1314080901136</title>\n+    <title>人事组织岗位 1314080901136</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+\n+ <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+\t<script src=\"js/hasakiModule.js\"></script>\n     \n     <!-- Bootstrap -->\n     <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n@@ -33,7 +23,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body>\n+  <body ng-controller=\"MyfilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -63,6 +53,7 @@\n       </div>\n \n     </div><!-- /.container -->\n+    <p>{{data.groupName}}</p>\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  }, {
+    "sha" : "182dd32e03de490e7b0433634c9057ae28abe815",
+    "filename" : "works/1314080901136/js/hasakiModule.js",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/248e73ecedcfa31f4fef7fde11349f9d72bd0deb/works/1314080901136/js/hasakiModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/248e73ecedcfa31f4fef7fde11349f9d72bd0deb/works/1314080901136/js/hasakiModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901136/js/hasakiModule.js?ref=248e73ecedcfa31f4fef7fde11349f9d72bd0deb",
+    "patch" : "@@ -0,0 +1,23 @@\n+// create a new module called 'hasakiModule' and save \n+// a reference to it in a variable called hasakiModule\n+var hasakiModule = angular.module('hasakiModule', []);\n+\n+// use the hasakiModule variable to\n+// configure the module with a controller\n+hasakiModule.controller('MyfilterDemoCtrl', function ($scope) {\n+       // controller code would go here\n+        var hasaki = {\n+            groupName: '小组名', \n+            groupId:'00002'\n+            \n+        };\n+        $scope.data = hasaki;\n+    }\n+);\n+\n+// use the Financialsales variable to\n+// configure the module with a filter\n+hasakiModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });\n\\ No newline at end of file"
+  } ],
+  "sha" : "248e73ecedcfa31f4fef7fde11349f9d72bd0deb",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/248e73ecedcfa31f4fef7fde11349f9d72bd0deb",
+  "parents" : [ {
+    "sha" : "e399c478645df45a76945e37a4af2ef77bddb567",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e399c478645df45a76945e37a4af2ef77bddb567",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e399c478645df45a76945e37a4af2ef77bddb567"
+  } ]
+}

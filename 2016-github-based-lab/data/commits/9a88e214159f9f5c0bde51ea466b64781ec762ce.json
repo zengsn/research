@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "berrychong",
+    "id" : 13120460,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13120460?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/berrychong",
+    "html_url" : "https://github.com/berrychong",
+    "followers_url" : "https://api.github.com/users/berrychong/followers",
+    "following_url" : "https://api.github.com/users/berrychong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/berrychong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/berrychong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/berrychong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/berrychong/orgs",
+    "repos_url" : "https://api.github.com/users/berrychong/repos",
+    "events_url" : "https://api.github.com/users/berrychong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/berrychong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 39,
+    "additions" : 25,
+    "deletions" : 14
+  },
+  "author" : {
+    "login" : "berrychong",
+    "id" : 13120460,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13120460?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/berrychong",
+    "html_url" : "https://github.com/berrychong",
+    "followers_url" : "https://api.github.com/users/berrychong/followers",
+    "following_url" : "https://api.github.com/users/berrychong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/berrychong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/berrychong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/berrychong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/berrychong/orgs",
+    "repos_url" : "https://api.github.com/users/berrychong/repos",
+    "events_url" : "https://api.github.com/users/berrychong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/berrychong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9a88e214159f9f5c0bde51ea466b64781ec762ce",
+  "commit" : {
+    "author" : {
+      "name" : "berrychong",
+      "email" : "1090014784@qq.com",
+      "date" : "2015-12-08T02:48:45Z"
+    },
+    "committer" : {
+      "name" : "berrychong",
+      "email" : "1090014784@qq.com",
+      "date" : "2015-12-24T02:09:24Z"
+    },
+    "message" : "实验4\n\n添加JS文件",
+    "tree" : {
+      "sha" : "0e173f96b87643b042a217e8291f71bddb508ccd",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/0e173f96b87643b042a217e8291f71bddb508ccd"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/9a88e214159f9f5c0bde51ea466b64781ec762ce",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9a88e214159f9f5c0bde51ea466b64781ec762ce/comments",
+  "files" : [ {
+    "sha" : "469abf9693bfadb465f14647ece2807bb953d2b1",
+    "filename" : "works/1314080901233/index.html",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 14,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9a88e214159f9f5c0bde51ea466b64781ec762ce/works/1314080901233/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9a88e214159f9f5c0bde51ea466b64781ec762ce/works/1314080901233/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901233/index.html?ref=9a88e214159f9f5c0bde51ea466b64781ec762ce",
+    "patch" : "@@ -9,25 +9,13 @@\n      \n      <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n      <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+     <script type=\"text/javascript\" src=\"js/queryProcessing.js\"></script>\n     <!-- Bootstrap -->\n     <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n \n     <!-- Custom styles for this template -->\n     <link href=\"css/style.css\" rel=\"stylesheet\">\n-    <script>\n-     var queryProcessing = angular.module('queryProcessing', []);\n-      queryProcessing.controller('queryProcessingCtrl', function ($scope) {\n-             // controller code would go here\n-              var someData = {\n-                  name: 'a',\n-                  operation: '无',\n-                  status:'待审核'\n-              };\n-              $scope.data = someData;\n-          }\n-      );\n-\n-    </script>\n+   \n     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n     <!--[if lt IE 9]>"
+  }, {
+    "sha" : "3ba837bf7764f4e02c4b47890451f29e0bba2f10",
+    "filename" : "works/1314080901233/js/queryProcessing.js",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9a88e214159f9f5c0bde51ea466b64781ec762ce/works/1314080901233/js/queryProcessing.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9a88e214159f9f5c0bde51ea466b64781ec762ce/works/1314080901233/js/queryProcessing.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901233/js/queryProcessing.js?ref=9a88e214159f9f5c0bde51ea466b64781ec762ce",
+    "patch" : "@@ -0,0 +1,23 @@\n+// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+var queryProcessing = angular.module('queryProcessing', []);\n+\n+// use the myAppModule variable to\n+// configure the module with a controller\n+queryProcessing.controller('queryProcessingCtrl', function ($scope) {\n+       // controller code would go here\n+        var someData = {\n+            name: 'a',\n+            operation: '无',\n+            status:'待审核'\n+        };\n+        $scope.data = someData;\n+    }\n+);\n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+queryProcessing.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });"
+  } ],
+  "sha" : "9a88e214159f9f5c0bde51ea466b64781ec762ce",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9a88e214159f9f5c0bde51ea466b64781ec762ce",
+  "parents" : [ {
+    "sha" : "eda3a5a2b1eaecce15b0ff70912a15e7077ae2cf",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/eda3a5a2b1eaecce15b0ff70912a15e7077ae2cf",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/eda3a5a2b1eaecce15b0ff70912a15e7077ae2cf"
+  } ]
+}

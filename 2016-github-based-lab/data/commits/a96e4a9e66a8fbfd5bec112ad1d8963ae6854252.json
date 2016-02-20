@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "fanrenaren",
+    "id" : 14196142,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14196142?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fanrenaren",
+    "html_url" : "https://github.com/fanrenaren",
+    "followers_url" : "https://api.github.com/users/fanrenaren/followers",
+    "following_url" : "https://api.github.com/users/fanrenaren/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fanrenaren/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fanrenaren/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fanrenaren/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fanrenaren/orgs",
+    "repos_url" : "https://api.github.com/users/fanrenaren/repos",
+    "events_url" : "https://api.github.com/users/fanrenaren/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fanrenaren/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 12,
+    "additions" : 11,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "fanrenaren",
+    "id" : 14196142,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14196142?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fanrenaren",
+    "html_url" : "https://github.com/fanrenaren",
+    "followers_url" : "https://api.github.com/users/fanrenaren/followers",
+    "following_url" : "https://api.github.com/users/fanrenaren/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fanrenaren/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fanrenaren/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fanrenaren/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fanrenaren/orgs",
+    "repos_url" : "https://api.github.com/users/fanrenaren/repos",
+    "events_url" : "https://api.github.com/users/fanrenaren/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fanrenaren/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/a96e4a9e66a8fbfd5bec112ad1d8963ae6854252",
+  "commit" : {
+    "author" : {
+      "name" : "fanrenaren",
+      "email" : "fanrenaren608@163.com",
+      "date" : "2015-10-20T04:01:28Z"
+    },
+    "committer" : {
+      "name" : "fanrenaren",
+      "email" : "fanrenaren608@163.com",
+      "date" : "2015-10-20T04:01:28Z"
+    },
+    "message" : "第三次试验\n\n添加Script代码",
+    "tree" : {
+      "sha" : "e513be596094740bfd2dfc5ebbd4a6a94f750fac",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/e513be596094740bfd2dfc5ebbd4a6a94f750fac"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/a96e4a9e66a8fbfd5bec112ad1d8963ae6854252",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a96e4a9e66a8fbfd5bec112ad1d8963ae6854252/comments",
+  "files" : [ {
+    "sha" : "82a1741c0242bcddfdd84ef77c4daad499006a03",
+    "filename" : "works/1314080901231/index.html",
+    "status" : "modified",
+    "additions" : 11,
+    "deletions" : 1,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/a96e4a9e66a8fbfd5bec112ad1d8963ae6854252/works/1314080901231/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/a96e4a9e66a8fbfd5bec112ad1d8963ae6854252/works/1314080901231/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901231/index.html?ref=a96e4a9e66a8fbfd5bec112ad1d8963ae6854252",
+    "patch" : "@@ -5,7 +5,7 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>  物料设置  by   1314080901231  </title>\n+    <title>  物料设置_物料类别设置  by  1314080901231  </title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,6 +20,16 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+\t\n+\t<script>\n+    function MyFilterDemoCtrl($scope) {\n+        var meterialSet = {\n+            typeName:\" 板材 \",\n+            typeCode:\" bc \"\n+        };\n+        $scope.data = meterialSet;\n+} </script>\n+\t\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901231/物料设置_物料类别设置.txt",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/a96e4a9e66a8fbfd5bec112ad1d8963ae6854252/works/1314080901231/%E7%89%A9%E6%96%99%E8%AE%BE%E7%BD%AE_%E7%89%A9%E6%96%99%E7%B1%BB%E5%88%AB%E8%AE%BE%E7%BD%AE.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/a96e4a9e66a8fbfd5bec112ad1d8963ae6854252/works/1314080901231/%E7%89%A9%E6%96%99%E8%AE%BE%E7%BD%AE_%E7%89%A9%E6%96%99%E7%B1%BB%E5%88%AB%E8%AE%BE%E7%BD%AE.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901231/%E7%89%A9%E6%96%99%E8%AE%BE%E7%BD%AE_%E7%89%A9%E6%96%99%E7%B1%BB%E5%88%AB%E8%AE%BE%E7%BD%AE.txt?ref=a96e4a9e66a8fbfd5bec112ad1d8963ae6854252",
+    "previous_filename" : "works/1314080901231/物料设置.txt"
+  } ],
+  "sha" : "a96e4a9e66a8fbfd5bec112ad1d8963ae6854252",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a96e4a9e66a8fbfd5bec112ad1d8963ae6854252",
+  "parents" : [ {
+    "sha" : "4c6696aa0581e62b31ffff87181b2e6478d8620b",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/4c6696aa0581e62b31ffff87181b2e6478d8620b",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/4c6696aa0581e62b31ffff87181b2e6478d8620b"
+  } ]
+}

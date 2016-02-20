@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "zengyt",
+    "id" : 14934810,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14934810?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengyt",
+    "html_url" : "https://github.com/zengyt",
+    "followers_url" : "https://api.github.com/users/zengyt/followers",
+    "following_url" : "https://api.github.com/users/zengyt/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengyt/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengyt/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengyt/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengyt/orgs",
+    "repos_url" : "https://api.github.com/users/zengyt/repos",
+    "events_url" : "https://api.github.com/users/zengyt/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengyt/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 50,
+    "additions" : 30,
+    "deletions" : 20
+  },
+  "author" : {
+    "login" : "zengyt",
+    "id" : 14934810,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14934810?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengyt",
+    "html_url" : "https://github.com/zengyt",
+    "followers_url" : "https://api.github.com/users/zengyt/followers",
+    "following_url" : "https://api.github.com/users/zengyt/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengyt/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengyt/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengyt/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengyt/orgs",
+    "repos_url" : "https://api.github.com/users/zengyt/repos",
+    "events_url" : "https://api.github.com/users/zengyt/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengyt/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/c4153e6462431dec0b35f46600f68135cc7baaea",
+  "commit" : {
+    "author" : {
+      "name" : "zengyt",
+      "email" : "1781262224@qq.com",
+      "date" : "2015-10-27T13:57:25Z"
+    },
+    "committer" : {
+      "name" : "zengyt",
+      "email" : "1781262224@qq.com",
+      "date" : "2015-10-27T13:57:25Z"
+    },
+    "message" : "修改后的实验四（增加JS文件和修改html)",
+    "tree" : {
+      "sha" : "c9916049c5dbcee1a740f5618b8063e1579ac19c",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/c9916049c5dbcee1a740f5618b8063e1579ac19c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/c4153e6462431dec0b35f46600f68135cc7baaea",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c4153e6462431dec0b35f46600f68135cc7baaea/comments",
+  "files" : [ {
+    "sha" : "4740bd9e8a34261903a8488250984fd0a7da7d25",
+    "filename" : "works/1314080901201/index.html",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 19,
+    "changes" : 24,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c4153e6462431dec0b35f46600f68135cc7baaea/works/1314080901201/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c4153e6462431dec0b35f46600f68135cc7baaea/works/1314080901201/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901201/index.html?ref=c4153e6462431dec0b35f46600f68135cc7baaea",
+    "patch" : "@@ -1,5 +1,7 @@\n <!DOCTYPE html>\n <html lang=\"zh-CN\">\n+<!DOCTYPE html>\n+<html lang=\"zh-CN\" ng-app=\"MymaterialsModule\">\n   <head>\n     <meta http-equiv=\"Content-Type\" charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n@@ -19,28 +21,12 @@\n     <!--[if lt IE 9]>\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+      <script src\"../..lib/angular-1.4.5/angular.min.js></script>\n+      <script src=\"js/MymaterialsModule.js\"></script>\n     <![endif]--> \n-    <script>\n-    function MyFilterDemoCtrl($scope) {\n-        var someData = {\n-            number:100,\n-            date:'建档日期',\n-            sort:'供应商类别',\n-            name:'供应商全称',\n-            code:'拼音码',\n-            homepage:'供应商主页',\n-            jc:'供应商简称',\n-            area:'行政区域',\n-            synposis:'供应商简介',\n-            dateJoined: new Date(2015, 10, 20),\n-            consumption: 123.659855,\n-            plan: 'super-basic-plan'\n-        };\n-        $scope.data = someData;\n-} </script>\n-\n   </head>\n   <body>\n+  <body ng-controller=\"MymaterialsCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">"
+  }, {
+    "sha" : "a8f9946fe7713cbdbb3ff9533a3d6328fd5c6103",
+    "filename" : "works/1314080901201/js/MymaterialsModule.js",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c4153e6462431dec0b35f46600f68135cc7baaea/works/1314080901201/js/MymaterialsModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c4153e6462431dec0b35f46600f68135cc7baaea/works/1314080901201/js/MymaterialsModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901201/js/MymaterialsModule.js?ref=c4153e6462431dec0b35f46600f68135cc7baaea",
+    "patch" : "@@ -0,0 +1,25 @@\n+// javascript.js\n+// create a new module called 'MymaterialsModule' and save \n+// a reference to it in a variable called MymaterialsModule \n+var MymaterialsModule = angular.module('MymaterialsModule', []);\n+\n+ MymaterialsModule.controller('createMymaterialsCtrl', function ($scope) {\n+        var someData = {\n+            number:100,\n+            date:'建档日期',\n+            sort:'供应商类别',\n+            name:'供应商全称',\n+            code:'拼音码',\n+            homepage:'供应商主页',\n+            jc:'供应商简称',\n+            area:'行政区域',\n+            synposis:'供应商简介',\n+            dateJoined: new Date(2015, 10, 20),\n+        };\n+        $scope.data = someData;\n+});\n+ MymaterialsModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });\n+\\ No newline at end of file\n\\ No newline at end of file"
+  }, {
+    "sha" : "9d423d93044030f44b8b3ea8d95176637ea0a6fd",
+    "filename" : "works/1314080901201/js/javascript.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 1,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/8e8cfc9e0a093042b8c5fcecea95f4797317fbd7/works/1314080901201/js/javascript.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/8e8cfc9e0a093042b8c5fcecea95f4797317fbd7/works/1314080901201/js/javascript.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901201/js/javascript.js?ref=8e8cfc9e0a093042b8c5fcecea95f4797317fbd7",
+    "patch" : "@@ -1 +0,0 @@\n-// javascript.js\n\\ No newline at end of file"
+  } ],
+  "sha" : "c4153e6462431dec0b35f46600f68135cc7baaea",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c4153e6462431dec0b35f46600f68135cc7baaea",
+  "parents" : [ {
+    "sha" : "8e8cfc9e0a093042b8c5fcecea95f4797317fbd7",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8e8cfc9e0a093042b8c5fcecea95f4797317fbd7",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/8e8cfc9e0a093042b8c5fcecea95f4797317fbd7"
+  } ]
+}

@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "xinxin06",
+    "id" : 15074302,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15074302?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xinxin06",
+    "html_url" : "https://github.com/xinxin06",
+    "followers_url" : "https://api.github.com/users/xinxin06/followers",
+    "following_url" : "https://api.github.com/users/xinxin06/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xinxin06/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xinxin06/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xinxin06/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xinxin06/orgs",
+    "repos_url" : "https://api.github.com/users/xinxin06/repos",
+    "events_url" : "https://api.github.com/users/xinxin06/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xinxin06/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 160,
+    "additions" : 99,
+    "deletions" : 61
+  },
+  "author" : {
+    "login" : "xinxin06",
+    "id" : 15074302,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15074302?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xinxin06",
+    "html_url" : "https://github.com/xinxin06",
+    "followers_url" : "https://api.github.com/users/xinxin06/followers",
+    "following_url" : "https://api.github.com/users/xinxin06/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xinxin06/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xinxin06/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xinxin06/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xinxin06/orgs",
+    "repos_url" : "https://api.github.com/users/xinxin06/repos",
+    "events_url" : "https://api.github.com/users/xinxin06/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xinxin06/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9b9c7e571006f4f710f4761929b6fa5908da6cf4",
+  "commit" : {
+    "author" : {
+      "name" : "xinxin06",
+      "email" : "952751382@qq.com",
+      "date" : "2015-12-15T02:47:26Z"
+    },
+    "committer" : {
+      "name" : "xinxin06",
+      "email" : "952751382@qq.com",
+      "date" : "2015-12-15T02:47:26Z"
+    },
+    "message" : "实验六",
+    "tree" : {
+      "sha" : "f90b32fbf5212075b3a187af2c368313bb30494e",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/f90b32fbf5212075b3a187af2c368313bb30494e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/9b9c7e571006f4f710f4761929b6fa5908da6cf4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9b9c7e571006f4f710f4761929b6fa5908da6cf4/comments",
+  "files" : [ {
+    "sha" : "c5adece1e19ec831e2255939249e3c8c15688fac",
+    "filename" : "works/1314080901106/index.html",
+    "status" : "modified",
+    "additions" : 59,
+    "deletions" : 57,
+    "changes" : 116,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9b9c7e571006f4f710f4761929b6fa5908da6cf4/works/1314080901106/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9b9c7e571006f4f710f4761929b6fa5908da6cf4/works/1314080901106/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901106/index.html?ref=9b9c7e571006f4f710f4761929b6fa5908da6cf4",
+    "patch" : "@@ -1,5 +1,5 @@\n <!DOCTYPE html>\n-<html ng-app=\"chaidanxinxiModule\">\n+<html ng-app=\"myAppModule\">\n   <head lang=\"en\">\n    <style type=\"text/css\">\n    </style>\n@@ -15,7 +15,8 @@\n \n     <!-- Custom styles for this template -->\n     <link href=\"css/style.css\" rel=\"stylesheet\">\n-\n+   \n+  </head>\n     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n     <!--[if lt IE 9]>\n@@ -23,9 +24,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n \n-    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n-\t<script src=\"js/chaidanxinxi.js\"></script>\n-  </head>\n+    \n   <body ng-controller=\"MyFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n@@ -41,55 +40,56 @@\n         </div><!--/.nav-collapse -->\n       </div>\n     </nav>\n-<div class=\"container\" style=\"padding-top:50px;\">\n+\t<div class=\"container\" style=\"padding-top:50px;\">\n         <div class=\"row\">\n-            <form class=\"form-inline\" role=\"form\">\n-         \n-         <div class=\"form-group row\" style=\"text:algin\">\n-           <div class=\"row\">\n-              <label for=\"number1\">订单编号：</label>\n-              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"Orderform\" id=\"000001\"/>\n-              <label for=\"date1\">产品名称：</label>\n-              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"Productname\" id=\"商品A\"/>\n-              <label for=\"sort1\">客户名称：</label>\n-              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"Customername\" id=\"王某某\">\n-              <label for=\"sort1\">拆单员：</label>\n-              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"Sealoffmember\" id=\"李某某\">\n-            </div>\n-        </div> \n-        </br>\n-        </br>\n-        <div class=\"form-group row\">\n-           <div class=\"row\">\n-              <label for=\"fullname1\">订单进度：</label>\n-              <input type=\"text\"class=\"form-control input-sm\" ng-model=\"Orderformrate\" id=\"10\" />\n-              <label for=\"code1\">拆单日期：</label>\n-              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"Sealoffdate\" id=\"date1\" />\n-              <label for=\"homepage1\">完成日期：</label>\n-              <input type=\"text\" class=\"form-control input-sm\"  ng-model=\"Finishdate\" id=\"date2\" />\n-            </div>\n-        </div> \n-     <br>\n-     </br>\n-     </br>\n-      <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n-      <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\">\n-            {{isHidden ? '提交' : '隐藏'}}\n-      </button>     </div>\n-     </form>\n-     </div>\n-    \n-  <div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n-    <p class=\"lead\">\n-      <div ng-hide=\"isHidden\">您输入的数据为：</div>    \n-      <div id=\"Orderform\" ng-hide=\"isHidden\">订单编号->{{Orderform}}</div>\n-      <div id=\"Productname\" ng-hide=\"isHidden\">产品名称->{{Productname}}</div>\n-      <div id=\"Customername\" ng-hide=\"isHidden\">客户名称->{{Customername}}</div>\n-      <div id=\" Sealoffmember\" ng-hide=\"isHidden\">拆单员->{{ Sealoffmember}}</div>\n-      <div id=\"Orderformrate\" ng-hide=\"isHidden\">订单进度->{{Orderformrate}}</div>\n-      <div id=\"Sealoffdate\" ng-hide=\"isHidden\">拆单日期->{{Sealoffdate}}</div>\n-      <div id=\"Finishdate\" ng-hide=\"isHidden\">完成日期->{{Finishdate}}</div>\n-      </p>\n+            <form class=\"form-inline\" role=\"form\" ng-submit=\"register()\" novalidate>\n+        \t\t<div class=\"form-group row\" style=\"text:algin\">\n+        \t\t    <div class=\"row\">\n+        \t\t      \t<label for=\"Orderform\">订单编号：</label>\n+        \t\t      \t<input type=\"text\" class=\"form-control input-sm\" ng-model=\"Orderform\" id=\"Orderform\" required/>\n+        \t\t      \t<label for=\"Productname\">产品名称：</label>\n+        \t\t      \t<input type=\"text\" class=\"form-control input-sm\" ng-model=\"Productname\" id=\"Productname\" required/>\n+       \t\t \t\t  \t<label for=\"Customername\">客户名称：</label>\n+        \t\t      \t<input type=\"text\" class=\"form-control input-sm\" ng-model=\"Customername\" id=\"Customername\" required/>\n+        \t\t      \t<label for=\"Sealoffmember\">拆单员：</label>\n+        \t\t      \t<input type=\"text\" class=\"form-control input-sm\" ng-model=\"Sealoffmember\" id=\"Sealoffmember\" required/>\n+        \t\t    </div>\n+       \t\t \t</div> \n+        \t\t</br>\n+        \t\t</br>\n+        \t\t<div class=\"form-group row\">\n+           \t\t\t<div class=\"row\">\n+              \t\t\t<label for=\"Orderformrate\">订单进度：</label>\n+              \t\t\t<input type=\"text\"class=\"form-control input-sm\" ng-model=\"Orderformrate\" id=\"Orderformrate\" required/>\n+              \t\t\t<label for=\"Sealoffdate\">拆单日期：</label>\n+              \t\t\t<input type=\"text\" class=\"form-control input-sm\" ng-model=\"Sealoffdate\" id=\"Sealoffdate\" required/>\n+              \t\t\t<label for=\"Finishdate\">完成日期：</label>\n+              \t\t\t<input type=\"text\" class=\"form-control input-sm\"  ng-model=\"Finishdate\" id=\"Finishdate\" required/>\n+            \t\t</div>\n+        \t\t</div> \n+     \t\t\t<br>\n+     \t\t\t<br/>\n+     \t\t\t<br/>\n+      \t\t\t<div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n+      \t\t\t\t<button type=\"submit\" class=\"btn btn-default\">\n+           \t\t\t {{isHidden ? '提交' : '隐藏'}}\n+      \t\t\t\t</button> \n+      \t\t\t</div>\n+     \t\t</form>\n+     \t</div>\n+<div>   \n+  \t<div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n+    \t<p class=\"lead\">\n+      \t\t<div ng-hide=\"isHidden\">您输入的数据为：</div>    \n+      \t\t<div id=\"Orderform\" ng-hide=\"isHidden\">订单编号->{{Orderform}}</div>\n+      \t\t<div id=\"Productname\" ng-hide=\"isHidden\">产品名称->{{Productname}}</div>\n+      \t\t<div id=\"Customername\" ng-hide=\"isHidden\">客户名称->{{Customername}}</div>\n+      \t\t<div id=\" Sealoffmember\" ng-hide=\"isHidden\">拆单员->{{Sealoffmember}}</div>\n+      \t\t<div id=\"Orderformrate\" ng-hide=\"isHidden\">订单进度->{{Orderformrate}}</div>\n+      \t\t<div id=\"Sealoffdate\" ng-hide=\"isHidden\">拆单日期->{{Sealoffdate}}</div>\n+      \t\t<div id=\"Finishdate\" ng-hide=\"isHidden\">完成日期->{{Finishdate}}</div>\n+      \t</p>\n+  \t\t</div>\n     </div>\n     <!-- /.container -->\n \n@@ -97,10 +97,12 @@\n     \n \n    \n-\n+    \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n-    <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n+   <!--<script src=\"http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script> -->\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n-    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n-  </body>\n+        <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+  \t<script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+    <script src=\"js/chaidanxinxi.js\"></script>\n+    </body>\n </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "67cfef68a799f324d92f32de9d9de6bcb2e2f071",
+    "filename" : "works/1314080901106/js/chaidanxinxi.js",
+    "status" : "modified",
+    "additions" : 28,
+    "deletions" : 4,
+    "changes" : 32,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9b9c7e571006f4f710f4761929b6fa5908da6cf4/works/1314080901106/js/chaidanxinxi.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9b9c7e571006f4f710f4761929b6fa5908da6cf4/works/1314080901106/js/chaidanxinxi.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901106/js/chaidanxinxi.js?ref=9b9c7e571006f4f710f4761929b6fa5908da6cf4",
+    "patch" : "@@ -1,10 +1,18 @@\n // create a new module called 'myAppModule' and save \n // a reference to it in a variable called myAppModule \n-var myAppModule = angular.module('chaidanxinxiModule', []);\n+var myAppModule = angular.module('myAppModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n+myAppModule.factory('prividerService',function($http){\n+   var dataSvc={};\n+   dataSvc.getData=function(theData){\n+    var promise=$http({method: 'POST',url: 'json/message.json',data: theData});\n+    return promise;\n+  }\n+    return dataSvc;\n+\n+}).controller('MyFilterDemoCtrl', function ($scope,prividerService) {\n        // controller code would go here\n        var someData = {\n             Orderform: 00000001,\n@@ -20,8 +28,24 @@ myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n        $scope.showInput=function(){\n         \t$scope.isHidden=!$scope.isHidden;\n         }\n-    }\n-);\n+        $scope.register=function(){\n+              var promise=prividerService.getData($scope.provider);\n+              promise.success(function(data,status,headers,config,statusText){\n+                  $scope.backMess=data.success;\n+                  $scope.isHidden = !$scope.isHidden;\n+                  if (!$scope.isHidden) {\n+                    alert($scope.backMess[0].message+\"\\n\");\n+                  }\n+              });\n+                promise.error(function(data,status,headers,config,statusText){\n+                    $scope.backMess=data.error;\n+                    $scope.isHidden = !$scope.isHidden;\n+                    if (!$scope.isHidden) {\n+                        alert($scope.backMess[0].message);\n+                    }\n+                });\n+        }\n+});\n \n // use the myAppModule variable to\n // configure the module with a filter"
+  }, {
+    "sha" : "c3b7f844671a6e0ba4f85f2b1f1f36643746d25e",
+    "filename" : "works/1314080901106/json/message.json",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9b9c7e571006f4f710f4761929b6fa5908da6cf4/works/1314080901106/json/message.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9b9c7e571006f4f710f4761929b6fa5908da6cf4/works/1314080901106/json/message.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901106/json/message.json?ref=9b9c7e571006f4f710f4761929b6fa5908da6cf4",
+    "patch" : "@@ -0,0 +1,12 @@\n+{\n+\t\"success\":[\n+\t\t{\n+\t\t\t\"message\":\"Submit success!\"\n+\t\t}\n+\t],\n+\t\"error\":[\n+\t\t{\n+\t\t\t\"message\":\"There appears to have been a problem .\"\n+\t\t}\n+\t]\n+} \n\\ No newline at end of file"
+  } ],
+  "sha" : "9b9c7e571006f4f710f4761929b6fa5908da6cf4",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9b9c7e571006f4f710f4761929b6fa5908da6cf4",
+  "parents" : [ {
+    "sha" : "3b5697e5e3bb97f90aa9a60bd3081899752ffd98",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/3b5697e5e3bb97f90aa9a60bd3081899752ffd98",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/3b5697e5e3bb97f90aa9a60bd3081899752ffd98"
+  } ]
+}

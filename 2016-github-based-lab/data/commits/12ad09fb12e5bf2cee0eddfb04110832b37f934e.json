@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "qingtian1993",
+    "id" : 15007816,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15007816?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qingtian1993",
+    "html_url" : "https://github.com/qingtian1993",
+    "followers_url" : "https://api.github.com/users/qingtian1993/followers",
+    "following_url" : "https://api.github.com/users/qingtian1993/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qingtian1993/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qingtian1993/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qingtian1993/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qingtian1993/orgs",
+    "repos_url" : "https://api.github.com/users/qingtian1993/repos",
+    "events_url" : "https://api.github.com/users/qingtian1993/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qingtian1993/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 153,
+    "additions" : 106,
+    "deletions" : 47
+  },
+  "author" : {
+    "login" : "qingtian1993",
+    "id" : 15007816,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15007816?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qingtian1993",
+    "html_url" : "https://github.com/qingtian1993",
+    "followers_url" : "https://api.github.com/users/qingtian1993/followers",
+    "following_url" : "https://api.github.com/users/qingtian1993/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qingtian1993/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qingtian1993/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qingtian1993/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qingtian1993/orgs",
+    "repos_url" : "https://api.github.com/users/qingtian1993/repos",
+    "events_url" : "https://api.github.com/users/qingtian1993/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qingtian1993/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/12ad09fb12e5bf2cee0eddfb04110832b37f934e",
+  "commit" : {
+    "author" : {
+      "name" : "qingtian1993",
+      "email" : "15767979110@163.com",
+      "date" : "2015-12-08T01:36:09Z"
+    },
+    "committer" : {
+      "name" : "qingtian1993",
+      "email" : "15767979110@163.com",
+      "date" : "2015-12-08T01:36:09Z"
+    },
+    "message" : "创建service并获取json文件",
+    "tree" : {
+      "sha" : "182214178eaafbed961969a9aa67df9c79b112ae",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/182214178eaafbed961969a9aa67df9c79b112ae"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/12ad09fb12e5bf2cee0eddfb04110832b37f934e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/12ad09fb12e5bf2cee0eddfb04110832b37f934e/comments",
+  "files" : [ {
+    "sha" : "c25325adaf70b0a8e0511c4cd96feeac2d8dd103",
+    "filename" : "works/1314080901225/index.html",
+    "status" : "modified",
+    "additions" : 18,
+    "deletions" : 21,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/12ad09fb12e5bf2cee0eddfb04110832b37f934e/works/1314080901225/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/12ad09fb12e5bf2cee0eddfb04110832b37f934e/works/1314080901225/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901225/index.html?ref=12ad09fb12e5bf2cee0eddfb04110832b37f934e",
+    "patch" : "@@ -58,31 +58,26 @@\n \n \n     \n-\t<form class=\"form-horizontal\" role=\"form\">\n+\t<form class=\"form-horizontal\" role=\"form\" ng-submit=\"create()\">\n     <fieldset>\n \n         <div class=\"form-group\">\n             <label for=\"ManifestNum\"  class=\"col-md-1 control-label\">订单编码：</label>\n             <div class=\"col-md-2\">\n-                <select id=\"ManifestNum\" class=\"form-control\">\n-                    <option>001</option>\n-                    <option>002</option>\n-                    <option>003</option>\n-                    <option>004</option>\n+                <select id=\"ManifestNum\" class=\"form-control\" ng-model=\"seleted\" ng-options=\"a.ManifestNum for a in SelectItem\">\n+                    \n                 </select>\n             </div>\n             <label for=\"Wearhouse\"  class=\"col-md-1 control-label\">仓库：</label>\n             <div class=\"col-md-2\">\n-                <select id=\"Wearhouse\" class=\"form-control\">\n-                    <option>1号仓库</option>\n-                    <option>2号仓库</option>\n+                <select id=\"Wearhouse\" class=\"form-control\" ng-model=\"seleted\" ng-options=\"a.Wearhouse for a in SelectItem\">\n+                    \n                 </select>\n             </div>\n             <label for=\"Handler\"  class=\"col-md-1 control-label\">经手人：</label>\n             <div class=\"col-md-2\">\n-                <select id=\"Handler\" class=\"form-control\">\n-                    <option>富土康质检员张全蛋</option>\n-                    <option>隔壁老王</option>\n+                <select id=\"Handler\" class=\"form-control\" ng-model=\"seleted\" ng-options=\"a.Handler for a in SelectItem\">\n+                   \n                 </select>\n             </div>\n             <label for=\"HandlingData\"  class=\"col-md-1 control-label\">经办日期：</label>\n@@ -108,8 +103,8 @@\n \t\t         点我\n \t\t \t\t</button> -->\t\n         <div class=\"btn-group col-lg-push-1\" >\n-            <button ng-click=\"showCreat()\" type=\"button\" class=\"btn btn-default btn-sm\" >新建</button>\n-            <button ng-click=\"showSave()\"type=\"button\" class=\"btn btn-default btn-sm\" >保存</button>\n+            <button type=\"submit\" class=\"btn btn-default btn-sm\" >新建</button>\n+            <button type=\"button\" class=\"btn btn-default btn-sm\" >保存</button>\n             <button type=\"button\" class=\"btn btn-default btn-sm\" disabled=\"disabled\">删除</button>\n             <button type=\"button\" class=\"btn btn-default btn-sm\" disabled=\"disabled\">确定</button>\n             <button type=\"button\" class=\"btn btn-default btn-sm\" disabled=\"disabled\">导出excel</button>\n@@ -117,15 +112,17 @@\n         </div>\n     </fieldset>\n \n-\t<div class=\"container\">\n \n-      <div class=\"starter-template\">\n-        \n-        <p id=\"creat\" ng-hide=\"isCreat\" class=\"lead\">成功创建.</p>\n-\t\t <p id=\"save\" ng-hide=\"isSave\" class=\"lead\">成功保存.</p>\n-      </div>\n-\t</div>\n+\n+\n \t\n+\t<div class=\"errorMessage\" ng-show=\"showErrorMessage\">\n+    {{errorsMessage}}\n+\t<br/>\n+\t</div>\n+\t<div class=\"successMessage\" ng-show=\"showSuccessMessage\">\n+\t{{successMessage}}    \n+\t</div>\n \n </form>\n    "
+  }, {
+    "sha" : "ef2437e739e9a68b3aed909e28260a721a7d0eac",
+    "filename" : "works/1314080901225/js/ManifestDataModule.js",
+    "status" : "modified",
+    "additions" : 82,
+    "deletions" : 26,
+    "changes" : 108,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/12ad09fb12e5bf2cee0eddfb04110832b37f934e/works/1314080901225/js/ManifestDataModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/12ad09fb12e5bf2cee0eddfb04110832b37f934e/works/1314080901225/js/ManifestDataModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901225/js/ManifestDataModule.js?ref=12ad09fb12e5bf2cee0eddfb04110832b37f934e",
+    "patch" : "@@ -1,36 +1,92 @@\n-// create a new module called 'myAppModule' and save \n-// a reference to it in a variable called myAppModule \n+\n+//初始化表单数据\n+var ManifestData = {\n+\t\tManifestNum: '001',\n+        Wearhouse: '001',\n+        Handler: 'Ayden',\n+        HandlingData: '2000-10-15',\n+        State: ' ',\n+\t    Remark: ' ',\n+\t\t\n+\n+};\n+\n+\n+//创建模块\n var ManifestDataModule = angular.module('ManifestDataModule', []);\n \n-// use the myAppModule variable to\n-// configure the module with a controller\n-angular.module('ManifestDataModule').controller('MyFilterDemoCtrl', function($scope) {\n+//创建服务\n+ManifestDataModule.factory(\"ManifestService\",function($http){\n+      var getManifestData={};\n+      \n+\t  //getData方法\n+      getManifestData.getData=function(buttondata){\n+            var promise=$http({\n+              url:\"jsonData/buttonData.json\",\n+              method:\"GET\",\n+\t\t\t  data:buttondata\n+            });\n+            return promise;\n+      }\n       \n-        \t$scope.isCreat=true;\n-\t\t$scope.showCreat=function(){\n-\t\t\t$scope.isCreat=!$scope.isCreat;\n-\t\t}\n-\n-\t\t$scope.isSave=true;\n-\t\t$scope.showSave=function(){\n-\t\t\t$scope.isSave=!$scope.isSave;\n-\t\t}\n+      return getManifestData;\n+\n+});\n+\n+//定义控制器\n+\n+angular.module('ManifestDataModule').controller('MyFilterDemoCtrl', function($scope,ManifestService) {\n+          var promise=ManifestService.getData();\n+\t\t  \n+\t\t  $scope.create = function () {\n+\t\t\t$scope.showSuccessMessage=false;\n+\t\t\t$scope.showErrorMessage=false;\n+\t\t\t//promise的成功方法\n+\t\t\tpromise.success(function(data,status){\n \t\t\t\n-\t\tvar ManifestData = {\n-            \tManifestNum: '001',\n-            \tWearhouse: '001',\n-            \tHandler: 'Ayden',\n-            \tHandlingData: '2000-10-15',\n-            \tState: ' ',\n-\t    \tRemark: ' ',\n-            \n-       \t\t};\n-        \t$scope.data =ManifestData;\n+\t\t  \n+\t\t\t$scope.successMessage =data[0].SMessage;\n+   \t\t    $scope.showSuccessMessage=true;\n+\t\t\t});\n+\t\t  \n+\t\t\t//promise的失败方法\n+\t\t\tpromise.error(function(data,status){\n+\t\t  \n+\t\t  \n+\t\t\t$scope.errorsMessage =data[0].EMessage;\n+\t\t\t$scope.showErrorMessage=true; \n+\t\t  \n+\t\t\t});\n+\t\t  }\n+\n+\t\t\t\n+\t\t\t\n+\t\t\t$scope.SelectItem = [\n+\t\t\t {\n+\t\t\t\tManifestNum:'00001',\n+\t\t\t\tWearhouse:'1号仓库',\n+\t\t\t\tHandler:'富土康质检员张全蛋',\n+\n+\t\t\t },\n+\t\t\t {\n+\t\t\t\tManifestNum:'00002',\n+\t\t\t\tWearhouse:'2号仓库',\n+\t\t\t\tHandler:'隔壁老王',\n+\t\t\t }\n+\t\t\t \n+\t\t\t];\n+\t\t\t\n+\t\t\t\n+\t\t\t\n+\n+\t\t\t\n+\n \n });\n \n-// use the myAppModule variable to\n-// configure the module with a filter\n+\n+\n+//定义过滤器\n ManifestDataModule.filter('stripDashes', function() {\n \treturn function(txt) {\n \t\t// filter code would go here"
+  }, {
+    "sha" : "38898905765e3abf0303d8fa6a4114525b0c1da7",
+    "filename" : "works/1314080901225/jsonData/buttonData.json",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/12ad09fb12e5bf2cee0eddfb04110832b37f934e/works/1314080901225/jsonData/buttonData.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/12ad09fb12e5bf2cee0eddfb04110832b37f934e/works/1314080901225/jsonData/buttonData.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901225/jsonData/buttonData.json?ref=12ad09fb12e5bf2cee0eddfb04110832b37f934e",
+    "patch" : "@@ -0,0 +1,6 @@\n+[\n+    {\n+        \"SMessage\": \"create successfully!\",\n+        \"EMessage\": \"error!Try again\"\n+    }\n+]\n\\ No newline at end of file"
+  } ],
+  "sha" : "12ad09fb12e5bf2cee0eddfb04110832b37f934e",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/12ad09fb12e5bf2cee0eddfb04110832b37f934e",
+  "parents" : [ {
+    "sha" : "7b072c3d2b52751c14d77faf9716bd679c5d9c89",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7b072c3d2b52751c14d77faf9716bd679c5d9c89",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/7b072c3d2b52751c14d77faf9716bd679c5d9c89"
+  } ]
+}

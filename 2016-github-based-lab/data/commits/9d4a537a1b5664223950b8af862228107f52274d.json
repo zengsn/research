@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "fangrenye",
+    "id" : 14156487,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14156487?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fangrenye",
+    "html_url" : "https://github.com/fangrenye",
+    "followers_url" : "https://api.github.com/users/fangrenye/followers",
+    "following_url" : "https://api.github.com/users/fangrenye/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fangrenye/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fangrenye/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fangrenye/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fangrenye/orgs",
+    "repos_url" : "https://api.github.com/users/fangrenye/repos",
+    "events_url" : "https://api.github.com/users/fangrenye/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fangrenye/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 27,
+    "additions" : 27,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "fangrenye",
+    "id" : 14156487,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14156487?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fangrenye",
+    "html_url" : "https://github.com/fangrenye",
+    "followers_url" : "https://api.github.com/users/fangrenye/followers",
+    "following_url" : "https://api.github.com/users/fangrenye/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fangrenye/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fangrenye/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fangrenye/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fangrenye/orgs",
+    "repos_url" : "https://api.github.com/users/fangrenye/repos",
+    "events_url" : "https://api.github.com/users/fangrenye/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fangrenye/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9d4a537a1b5664223950b8af862228107f52274d",
+  "commit" : {
+    "author" : {
+      "name" : "fangrenye",
+      "email" : "1249868832@qq.com",
+      "date" : "2015-12-08T00:46:37Z"
+    },
+    "committer" : {
+      "name" : "fangrenye",
+      "email" : "1249868832@qq.com",
+      "date" : "2015-12-08T00:46:37Z"
+    },
+    "message" : "Create myAppModule.js\n\n修改的实验四",
+    "tree" : {
+      "sha" : "7a91d2541520bd52e26db8fb8a86c51d8810db23",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/7a91d2541520bd52e26db8fb8a86c51d8810db23"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/9d4a537a1b5664223950b8af862228107f52274d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9d4a537a1b5664223950b8af862228107f52274d/comments",
+  "files" : [ {
+    "sha" : "14337ddf31d9bc445ae2bf5b7f6e6a0eff974344",
+    "filename" : "works/1314080901129/js/myAppModule.js",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9d4a537a1b5664223950b8af862228107f52274d/works/1314080901129/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9d4a537a1b5664223950b8af862228107f52274d/works/1314080901129/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901129/js/myAppModule.js?ref=9d4a537a1b5664223950b8af862228107f52274d",
+    "patch" : "@@ -0,0 +1,27 @@\n+// create a new module called 'myAppModule' and save \n++// a reference to it in a variable called myAppModule \n++var myAppModule = angular.module('myAppModule', []);\n++\n++// use the myAppModule variable to\n++// configure the module with a controller\n++myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\t\t\n+\t        // controller code would go here\n++       var danjuData = {\n++            danweiName:'changchengzhuangshi',\n++            shoukuanfangshi:'zhifubao',\n++            shoukuanData:'2015-11-12',\n++            shoukuanren:'yeliangchen',\n++            shoukuanjine:'2000',\n++            shoukuanzhanghu:'zhaoritian',\n++            yinghangkahao:'12345678',\n++            zhuangtai:'wubianhua',\n++        };\n++        $scope.data = danjuData;\n+     }\t\t   \n+  }\n++// use the myAppModule variable to\n++// configure the module with a filter\n++myAppModule.filter('stripDashes', function() {\n++    return function(txt) {\n++        // filter code would go here\n++}; }); "
+  } ],
+  "sha" : "9d4a537a1b5664223950b8af862228107f52274d",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9d4a537a1b5664223950b8af862228107f52274d",
+  "parents" : [ {
+    "sha" : "0010db9985e0aca872bb18b594125053b92632ed",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0010db9985e0aca872bb18b594125053b92632ed",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0010db9985e0aca872bb18b594125053b92632ed"
+  } ]
+}

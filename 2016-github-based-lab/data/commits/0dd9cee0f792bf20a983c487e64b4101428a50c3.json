@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zhouzebiao",
+    "id" : 14361910,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14361910?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhouzebiao",
+    "html_url" : "https://github.com/zhouzebiao",
+    "followers_url" : "https://api.github.com/users/zhouzebiao/followers",
+    "following_url" : "https://api.github.com/users/zhouzebiao/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhouzebiao/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhouzebiao/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhouzebiao/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhouzebiao/orgs",
+    "repos_url" : "https://api.github.com/users/zhouzebiao/repos",
+    "events_url" : "https://api.github.com/users/zhouzebiao/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhouzebiao/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 12,
+    "additions" : 7,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "zhouzebiao",
+    "id" : 14361910,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14361910?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhouzebiao",
+    "html_url" : "https://github.com/zhouzebiao",
+    "followers_url" : "https://api.github.com/users/zhouzebiao/followers",
+    "following_url" : "https://api.github.com/users/zhouzebiao/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhouzebiao/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhouzebiao/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhouzebiao/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhouzebiao/orgs",
+    "repos_url" : "https://api.github.com/users/zhouzebiao/repos",
+    "events_url" : "https://api.github.com/users/zhouzebiao/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhouzebiao/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0dd9cee0f792bf20a983c487e64b4101428a50c3",
+  "commit" : {
+    "author" : {
+      "name" : "zhouzebiao",
+      "email" : "447523426@qq.com",
+      "date" : "2016-01-16T08:17:39Z"
+    },
+    "committer" : {
+      "name" : "zhouzebiao",
+      "email" : "447523426@qq.com",
+      "date" : "2016-01-16T08:17:39Z"
+    },
+    "message" : "experiment 7",
+    "tree" : {
+      "sha" : "70839d8b440eb1396c8de57b8ecf2521c3a40042",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/70839d8b440eb1396c8de57b8ecf2521c3a40042"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/0dd9cee0f792bf20a983c487e64b4101428a50c3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0dd9cee0f792bf20a983c487e64b4101428a50c3/comments",
+  "files" : [ {
+    "sha" : "5bbdbef0b4f30e2604af6e48f888c1e8690e2922",
+    "filename" : "works/1314080901247/index.html",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 5,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0dd9cee0f792bf20a983c487e64b4101428a50c3/works/1314080901247/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0dd9cee0f792bf20a983c487e64b4101428a50c3/works/1314080901247/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901247/index.html?ref=0dd9cee0f792bf20a983c487e64b4101428a50c3",
+    "patch" : "@@ -21,7 +21,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body ng-controller=\"EmployeeAttendanceController\">\n+  <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -35,7 +35,7 @@\n         </div>\n         <div id=\"navbar\" class=\"collapse navbar-collapse\">\n           <ul class=\"nav navbar-nav\">\n-            <li class=\"active\"><a href=\"#\">Home</a></li>\n+            <li class=\"active\"><a href=\"#home\">Home</a></li>\n             <li><a href=\"#about\">About</a></li>\n             <li><a href=\"#contact\">Contact</a></li>\n           </ul>\n@@ -50,14 +50,16 @@\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n \n-    </div><!-- /.container -->\n-    <list>\n-      </list>\n+    </div>  \n+    <div id=\"main\">\n+      <div ng-view ></div>\n+    <div>\n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n     <script src=\"js/EmployeeAttendance.js\"></script>\n+    <script src=\"../../lib/angular-1.4.5/angular-route.min.js\"></script>\n   </body>\n </html>"
+  } ],
+  "sha" : "0dd9cee0f792bf20a983c487e64b4101428a50c3",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0dd9cee0f792bf20a983c487e64b4101428a50c3",
+  "parents" : [ {
+    "sha" : "89ea1c1ae067239137b406fc746922b7aade0311",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/89ea1c1ae067239137b406fc746922b7aade0311",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/89ea1c1ae067239137b406fc746922b7aade0311"
+  } ]
+}

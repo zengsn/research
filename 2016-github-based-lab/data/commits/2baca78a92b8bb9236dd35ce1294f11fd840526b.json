@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 49,
+    "additions" : 35,
+    "deletions" : 14
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/2baca78a92b8bb9236dd35ce1294f11fd840526b",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:08:52Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:08:52Z"
+    },
+    "message" : "Merge pull request #264 from berrychong/master\n\n还原index.html文件",
+    "tree" : {
+      "sha" : "fad203abe9204f212533504db1859b3e9621b5ee",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/fad203abe9204f212533504db1859b3e9621b5ee"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/2baca78a92b8bb9236dd35ce1294f11fd840526b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2baca78a92b8bb9236dd35ce1294f11fd840526b/comments",
+  "files" : [ {
+    "sha" : "6eea04fb6973bb6688e844f6815f02df9ed52a4a",
+    "filename" : "works/1314080901211/index.html",
+    "status" : "modified",
+    "additions" : 34,
+    "deletions" : 13,
+    "changes" : 47,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/2baca78a92b8bb9236dd35ce1294f11fd840526b/works/1314080901211/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/2baca78a92b8bb9236dd35ce1294f11fd840526b/works/1314080901211/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901211/index.html?ref=2baca78a92b8bb9236dd35ce1294f11fd840526b",
+    "patch" : "@@ -1,13 +1,34 @@\n-<!DOCTYPE html >\n-<html ng-app=\"wuliaoSelect\"> <head lang=\"en\">\n-<meta charset=\"UTF-8\">\n-<title>工程-配件物料选择列表-1314080901211</title>\n-    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n-    <script src=\"js/wuliaoSelect.js\"></script>\n-</head>\n-<body ng-controller=\"wuliaoSelectCtrl\">\n-<p>\n-  名字：{{data.name}}\n-</p>\n-</body>\n-</html>\n\\ No newline at end of file\n+<!DOCTYPE html>\n+-<html lang=\"zh-CN\" ng-app=\"wuliaoSelect\">\n+-  <head>\n+-    <meta charset=\"utf-8\">\n+-    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n+-    <title>工程-配件物料选择列表-1314080901211</title>\n+     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+     <script src=\"js/wuliaoSelect.js\"></script>\n+-    <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+-    \n+-    <!-- Bootstrap -->\n+-    <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n+-\n+-    <!-- Custom styles for this template -->\n+-    <link href=\"css/style.css\" rel=\"stylesheet\">\n+-\n+-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n+-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n+-    <!--[if lt IE 9]>\n+-      <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+-      <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+-    <![endif]-->\n+-    \n+-  </head>\n+-  <body ng-controller=\"wuliaoSelectCtrl\">\n+       名字：{{data.name}}\n+-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n+-    <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n+-    <!-- Include all compiled plugins (below), or include individual files as needed -->\n+-    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+-  </body>\n+-</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "ebd7b85faa5b4b75ddc274d6bee7301e110667a7",
+    "filename" : "works/1314080901211/js/wuliaoSelect.js",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/2baca78a92b8bb9236dd35ce1294f11fd840526b/works/1314080901211/js/wuliaoSelect.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/2baca78a92b8bb9236dd35ce1294f11fd840526b/works/1314080901211/js/wuliaoSelect.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901211/js/wuliaoSelect.js?ref=2baca78a92b8bb9236dd35ce1294f11fd840526b",
+    "patch" : "@@ -20,7 +20,7 @@ wuliaoSelect.controller('wuliaoSelectCtrl', function ($scope) {\n \n // use the myAppModule variable to\n // configure the module with a filter\n-myAppModule.filter('stripDashes', function() {\n+wuliaoSelect.filter('stripDashes', function() {\n     return function(txt) {\n         // filter code would go here\n }; });\n\\ No newline at end of file"
+  } ],
+  "sha" : "2baca78a92b8bb9236dd35ce1294f11fd840526b",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2baca78a92b8bb9236dd35ce1294f11fd840526b",
+  "parents" : [ {
+    "sha" : "221d96e61dc7fa7af41bc05e46c232af78fadf96",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/221d96e61dc7fa7af41bc05e46c232af78fadf96",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/221d96e61dc7fa7af41bc05e46c232af78fadf96"
+  }, {
+    "sha" : "18aa9342bce784e23a6e1e28ce5c6d9848c0a533",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/18aa9342bce784e23a6e1e28ce5c6d9848c0a533",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/18aa9342bce784e23a6e1e28ce5c6d9848c0a533"
+  } ]
+}

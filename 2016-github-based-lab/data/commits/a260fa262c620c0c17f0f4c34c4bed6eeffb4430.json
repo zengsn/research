@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "jinhaoxu",
+    "id" : 14164922,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14164922?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jinhaoxu",
+    "html_url" : "https://github.com/jinhaoxu",
+    "followers_url" : "https://api.github.com/users/jinhaoxu/followers",
+    "following_url" : "https://api.github.com/users/jinhaoxu/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jinhaoxu/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jinhaoxu/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jinhaoxu/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jinhaoxu/orgs",
+    "repos_url" : "https://api.github.com/users/jinhaoxu/repos",
+    "events_url" : "https://api.github.com/users/jinhaoxu/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jinhaoxu/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 17,
+    "additions" : 7,
+    "deletions" : 10
+  },
+  "author" : {
+    "login" : "jinhaoxu",
+    "id" : 14164922,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14164922?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jinhaoxu",
+    "html_url" : "https://github.com/jinhaoxu",
+    "followers_url" : "https://api.github.com/users/jinhaoxu/followers",
+    "following_url" : "https://api.github.com/users/jinhaoxu/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jinhaoxu/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jinhaoxu/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jinhaoxu/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jinhaoxu/orgs",
+    "repos_url" : "https://api.github.com/users/jinhaoxu/repos",
+    "events_url" : "https://api.github.com/users/jinhaoxu/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jinhaoxu/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/a260fa262c620c0c17f0f4c34c4bed6eeffb4430",
+  "commit" : {
+    "author" : {
+      "name" : "jinhaoxu",
+      "email" : "xujinhao1995@gmail.com",
+      "date" : "2015-10-27T02:56:11Z"
+    },
+    "committer" : {
+      "name" : "jinhaoxu",
+      "email" : "xujinhao1995@gmail.com",
+      "date" : "2015-10-27T02:56:11Z"
+    },
+    "message" : "把原来在index里面的controller分离到module文件里面",
+    "tree" : {
+      "sha" : "3f1a2cd18002b67010a2c17724a2bde1623ef5df",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/3f1a2cd18002b67010a2c17724a2bde1623ef5df"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/a260fa262c620c0c17f0f4c34c4bed6eeffb4430",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a260fa262c620c0c17f0f4c34c4bed6eeffb4430/comments",
+  "files" : [ {
+    "sha" : "91ac97ea1d3939bd8eae798dcff7a26abdf15b11",
+    "filename" : "works/1314080901138/index.html",
+    "status" : "modified",
+    "additions" : 0,
+    "deletions" : 10,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/a260fa262c620c0c17f0f4c34c4bed6eeffb4430/works/1314080901138/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/a260fa262c620c0c17f0f4c34c4bed6eeffb4430/works/1314080901138/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901138/index.html?ref=a260fa262c620c0c17f0f4c34c4bed6eeffb4430",
+    "patch" : "@@ -21,16 +21,6 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n     <script src=\"js/myStoreModule.js\"></script>\n-    <script>\n-    function MyFilterDemoCtrl($scope) {\n-        var someData = {\n-            operator: \"jinxiaohao\",\n-            dateJoined: new Date(2010, 2, 23),\n-            dateEnd: new Date(2015, 10, 22),\n-            remark: \"i'm a handsome boy!\"\n-        };\n-        $scope.data = someData;\n-} </script>\n   </head>\n   <body ng-controller=\"MyFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">"
+  }, {
+    "sha" : "a1178bd208d3ee5df2dac90d1178a9a777680b11",
+    "filename" : "works/1314080901138/js/myStoreModule.js",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/a260fa262c620c0c17f0f4c34c4bed6eeffb4430/works/1314080901138/js/myStoreModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/a260fa262c620c0c17f0f4c34c4bed6eeffb4430/works/1314080901138/js/myStoreModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901138/js/myStoreModule.js?ref=a260fa262c620c0c17f0f4c34c4bed6eeffb4430",
+    "patch" : "@@ -6,6 +6,13 @@ var myAppModule = angular.module('myStoreModule', []);\n // configure the module with a controller\n myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n        // controller code would go here\n+\tvar someData = {\n+            operator: \"jinxiaohao\",\n+            dateJoined: new Date(2010, 2, 23),\n+            dateEnd: new Date(2015, 10, 22),\n+            remark: \"i'm a handsome boy!\"\n+        };\n+        $scope.data = someData;\n     }\n );\n "
+  } ],
+  "sha" : "a260fa262c620c0c17f0f4c34c4bed6eeffb4430",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a260fa262c620c0c17f0f4c34c4bed6eeffb4430",
+  "parents" : [ {
+    "sha" : "b343a56265e6a62f413313ff61e69eafbb3c9aa3",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b343a56265e6a62f413313ff61e69eafbb3c9aa3",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/b343a56265e6a62f413313ff61e69eafbb3c9aa3"
+  } ]
+}

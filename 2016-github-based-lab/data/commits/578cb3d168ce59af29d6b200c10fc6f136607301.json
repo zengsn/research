@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 32,
+    "additions" : 28,
+    "deletions" : 4
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/578cb3d168ce59af29d6b200c10fc6f136607301",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:52:37Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:52:37Z"
+    },
+    "message" : "Merge pull request #329 from l651640527/master\n\n实验四",
+    "tree" : {
+      "sha" : "15d55f6bf0b0b6f2debeeca9055ee69dbbf5b7a6",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/15d55f6bf0b0b6f2debeeca9055ee69dbbf5b7a6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/578cb3d168ce59af29d6b200c10fc6f136607301",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/578cb3d168ce59af29d6b200c10fc6f136607301/comments",
+  "files" : [ {
+    "sha" : "ae4645240c60118251ce6999cfa9761fd1ad65bf",
+    "filename" : "works/1314080901120/index.html",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 4,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/578cb3d168ce59af29d6b200c10fc6f136607301/works/1314080901120/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/578cb3d168ce59af29d6b200c10fc6f136607301/works/1314080901120/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901120/index.html?ref=578cb3d168ce59af29d6b200c10fc6f136607301",
+    "patch" : "@@ -1,11 +1,12 @@\n <!DOCTYPE html>\n-<html lang=\"zh-CN\">\n-  <head>\n+<html ng-app=\"mytypeModule\"> <head lang=\"en\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>系统数据导入导出 1314080901120</title>\n+    <title>工资-人事-计件工资 1314080901120</title>\n+     <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n+\t<script src=\"js/mytypeModule.js\"></script>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -21,7 +22,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body>\n+  <body ng-controller=\"mytypeCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">"
+  }, {
+    "sha" : "515c0585ded252fa62c10d859c46c00712d7bbca",
+    "filename" : "works/1314080901120/js/mytypeModule.js",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/578cb3d168ce59af29d6b200c10fc6f136607301/works/1314080901120/js/mytypeModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/578cb3d168ce59af29d6b200c10fc6f136607301/works/1314080901120/js/mytypeModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901120/js/mytypeModule.js?ref=578cb3d168ce59af29d6b200c10fc6f136607301",
+    "patch" : "@@ -0,0 +1,23 @@\n+// create a new module called 'mytypeModule' and save \n+// a reference to it in a variable called myAppModule \n+var mytypeModule = angular.module('mytypeModule', []);\n+\n+// use the mytypeModule variable to\n+// configure the module with a controller\n+mytypeModule.controller('mytypeCtrl', function ($scope) {\n+       // controller code would go here\n+        \n+        var type = {\n+            typeName: 'һ',\n+            \n+        };\n+        $scope.data = someData;\n+} \n+);\n+\n+// use the mytypeModule variable to\n+// configure the module with a filter\n+mytypeModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });\n\\ No newline at end of file"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901120/工资-人事-计件工资.txt",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/578cb3d168ce59af29d6b200c10fc6f136607301/works/1314080901120/%E5%B7%A5%E8%B5%84-%E4%BA%BA%E4%BA%8B-%E8%AE%A1%E4%BB%B6%E5%B7%A5%E8%B5%84.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/578cb3d168ce59af29d6b200c10fc6f136607301/works/1314080901120/%E5%B7%A5%E8%B5%84-%E4%BA%BA%E4%BA%8B-%E8%AE%A1%E4%BB%B6%E5%B7%A5%E8%B5%84.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901120/%E5%B7%A5%E8%B5%84-%E4%BA%BA%E4%BA%8B-%E8%AE%A1%E4%BB%B6%E5%B7%A5%E8%B5%84.txt?ref=578cb3d168ce59af29d6b200c10fc6f136607301",
+    "previous_filename" : "works/1314080901120/系统数据导入导出.txt"
+  } ],
+  "sha" : "578cb3d168ce59af29d6b200c10fc6f136607301",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/578cb3d168ce59af29d6b200c10fc6f136607301",
+  "parents" : [ {
+    "sha" : "28604c48e53fd06faf5dc1f30b2abeb51b243d7d",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/28604c48e53fd06faf5dc1f30b2abeb51b243d7d",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/28604c48e53fd06faf5dc1f30b2abeb51b243d7d"
+  }, {
+    "sha" : "48263765fc599cbd99bd424c60c755d875ec85f3",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/48263765fc599cbd99bd424c60c755d875ec85f3",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/48263765fc599cbd99bd424c60c755d875ec85f3"
+  } ]
+}

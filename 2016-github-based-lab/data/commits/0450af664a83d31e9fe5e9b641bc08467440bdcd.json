@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 35,
+    "additions" : 31,
+    "deletions" : 4
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0450af664a83d31e9fe5e9b641bc08467440bdcd",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-10-30T01:08:32Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-10-30T01:08:32Z"
+    },
+    "message" : "Merge pull request #206 from Wanghengdan/master\n\n实验三",
+    "tree" : {
+      "sha" : "d506592a4d6d10b5713efe2ae5d75b065bbf0848",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/d506592a4d6d10b5713efe2ae5d75b065bbf0848"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/0450af664a83d31e9fe5e9b641bc08467440bdcd",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0450af664a83d31e9fe5e9b641bc08467440bdcd/comments",
+  "files" : [ {
+    "sha" : "cf27da0b91d2788d280b18eb8f86c0b0576eedf5",
+    "filename" : "works/1314080901133/index.html",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 4,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0450af664a83d31e9fe5e9b641bc08467440bdcd/works/1314080901133/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0450af664a83d31e9fe5e9b641bc08467440bdcd/works/1314080901133/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901133/index.html?ref=0450af664a83d31e9fe5e9b641bc08467440bdcd",
+    "patch" : "@@ -1,11 +1,11 @@\n <!DOCTYPE html>\n-<html lang=\"zh-CN\">\n-  <head>\n+<html ng-app=\"supplierInformationModule\">\n+  <head lang=\"en\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>{{物料供应商}} by 1314080901133</title>\n+    <title>{{物料_供应商_供应商资料}} by 1314080901133</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,8 +20,10 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+    <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n+    <script src=\"js/supplierInformationModule.js\"></script>\n   </head>\n-  <body>\n+  <body ng-controller=\"MyFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">"
+  }, {
+    "sha" : "c0128138b80a3a3c3d9d0190bbad5f20b0181502",
+    "filename" : "works/1314080901133/js/supplierInformation.js",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0450af664a83d31e9fe5e9b641bc08467440bdcd/works/1314080901133/js/supplierInformation.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0450af664a83d31e9fe5e9b641bc08467440bdcd/works/1314080901133/js/supplierInformation.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901133/js/supplierInformation.js?ref=0450af664a83d31e9fe5e9b641bc08467440bdcd",
+    "patch" : "@@ -0,0 +1,25 @@\n+// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+var myAppModule = angular.module('supplierInformationModule', []);\n+\n+// use the myAppModule variable to\n+// configure the module with a controller\n+myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n+\tvar someData = {\n+            no.: '001',\n+            name: 'xidada',\n+            code: '110120119',\n+            photo: '20151020.jpg',\n+            createTime: '2015-10-20'\n+        };\n+        $scope.data = someData;\n+       // controller code would go here\n+    }\n+);\n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+myAppModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });\n\\ No newline at end of file"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901133/物料_供应商_供应商资料.txt",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0450af664a83d31e9fe5e9b641bc08467440bdcd/works/1314080901133/%E7%89%A9%E6%96%99_%E4%BE%9B%E5%BA%94%E5%95%86_%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E6%96%99.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0450af664a83d31e9fe5e9b641bc08467440bdcd/works/1314080901133/%E7%89%A9%E6%96%99_%E4%BE%9B%E5%BA%94%E5%95%86_%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E6%96%99.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901133/%E7%89%A9%E6%96%99_%E4%BE%9B%E5%BA%94%E5%95%86_%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E6%96%99.txt?ref=0450af664a83d31e9fe5e9b641bc08467440bdcd",
+    "previous_filename" : "works/1314080901133/物料供应商.txt"
+  } ],
+  "sha" : "0450af664a83d31e9fe5e9b641bc08467440bdcd",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0450af664a83d31e9fe5e9b641bc08467440bdcd",
+  "parents" : [ {
+    "sha" : "c591f982720f64182ac8d5c76e47612e023d4d19",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c591f982720f64182ac8d5c76e47612e023d4d19",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/c591f982720f64182ac8d5c76e47612e023d4d19"
+  }, {
+    "sha" : "3ef211769cc1fbb0224df1836745de85f89fc956",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/3ef211769cc1fbb0224df1836745de85f89fc956",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/3ef211769cc1fbb0224df1836745de85f89fc956"
+  } ]
+}

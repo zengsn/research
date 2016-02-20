@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "11hks11",
+    "id" : 15126402,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15126402?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/11hks11",
+    "html_url" : "https://github.com/11hks11",
+    "followers_url" : "https://api.github.com/users/11hks11/followers",
+    "following_url" : "https://api.github.com/users/11hks11/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/11hks11/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/11hks11/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/11hks11/subscriptions",
+    "organizations_url" : "https://api.github.com/users/11hks11/orgs",
+    "repos_url" : "https://api.github.com/users/11hks11/repos",
+    "events_url" : "https://api.github.com/users/11hks11/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/11hks11/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 63,
+    "additions" : 59,
+    "deletions" : 4
+  },
+  "author" : {
+    "login" : "11hks11",
+    "id" : 15126402,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15126402?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/11hks11",
+    "html_url" : "https://github.com/11hks11",
+    "followers_url" : "https://api.github.com/users/11hks11/followers",
+    "following_url" : "https://api.github.com/users/11hks11/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/11hks11/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/11hks11/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/11hks11/subscriptions",
+    "organizations_url" : "https://api.github.com/users/11hks11/orgs",
+    "repos_url" : "https://api.github.com/users/11hks11/repos",
+    "events_url" : "https://api.github.com/users/11hks11/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/11hks11/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0d58827b32c358add6c2d18cd1768801352c71b9",
+  "commit" : {
+    "author" : {
+      "name" : "11hks11",
+      "email" : "912702351@qq.com",
+      "date" : "2015-12-30T12:44:26Z"
+    },
+    "committer" : {
+      "name" : "11hks11",
+      "email" : "912702351@qq.com",
+      "date" : "2015-12-30T12:44:26Z"
+    },
+    "message" : "实验6",
+    "tree" : {
+      "sha" : "5d2a58bf40a06385721728feab41cfc16559f642",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/5d2a58bf40a06385721728feab41cfc16559f642"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/0d58827b32c358add6c2d18cd1768801352c71b9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0d58827b32c358add6c2d18cd1768801352c71b9/comments",
+  "files" : [ {
+    "sha" : "e596304374889ffac32f921a3a34f82e02f536ad",
+    "filename" : "works/1314080901214/js/myAppModule.js",
+    "status" : "modified",
+    "additions" : 44,
+    "deletions" : 4,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0d58827b32c358add6c2d18cd1768801352c71b9/works/1314080901214/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0d58827b32c358add6c2d18cd1768801352c71b9/works/1314080901214/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901214/js/myAppModule.js?ref=0d58827b32c358add6c2d18cd1768801352c71b9",
+    "patch" : "@@ -21,14 +21,54 @@ var documentsDetail = {\n                  BOM:\"bom1\"\n                 };\n \n-myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n+myAppModule.controller('MyFilterDemoCtrl', function ($scope,$http) {\n        // controller code would go here\n-         \n-        $scope.data1 = documentsDetail;\n-        \n+         var promise=$http({\n+               url:\"js/myData.json\",\n+               method:\"get\",\n+             });\n+        promise.success(function(data,status){\n+             var documentsDetail1=documentsDetail;\n+                 documentsDetail1.laiyuan=data.laiyuan;\n+                 documentsDetail1.leibie=data.leibie;\n+                 documentsDetail1.mingchen=data.mingchen;\n+                 documentsDetail1.xinhao=data.xinhao;\n+                 documentsDetail1.yanse=data.yanse;\n+                 documentsDetail1.changdu=data.changdu;\n+                 documentsDetail1.kuandu=data.kuandu;\n+                 documentsDetail1.houdu=data.houdu;\n+                 documentsDetail1.zhuangtai=data.zhuangtai;\n+                documentsDetail1.kucunshu=data.kucunshu;\n+                 documentsDetail1.xuqiushu=data.xuqiushu;\n+                 documentsDetail1.caigoushu=data.caigoushu;\n+                 documentsDetail1.BOM=data.BOM;\n+                  $scope.data1 = documentsDetail1;\n+        });\n+        promise.error(function(data,status){\n+            alert(status);\n+            alert(\"请求出现错误，具体是什么错误还有待检查\");\n+      });\n+       \n+\n     }\n );\n \n+\n+myOrderModule.directive(\"myorderdata\",function(){\n+  return{\n+      restrict:\"AEC\",\n+      template:'<div id=\"tableBody-data\" style=\"margin-top:5px;\" ng-repeat=\"thedata in theOrderDatas\">'\n+                 +'<div id=\"orderId\" class=\"order orderId\" style=\"\">{{thedata.orderId}}</div>'\n+                 +'<div id=\"storage\" class=\"order storage\" style=\"\">{{thedata.storage}}</div>'\n+                 +'<div id=\"people\" class=\"order people\" style=\"\">{{thedata.people}}</div>'\n+                 +'<div id=\"dateTime\" class=\"order dateTime\" style=\"\">{{thedata.orderDateTime}}</div>'\n+                 +'<div id=\"status\" class=\"order status\" style=\"\">{{thedata.orderStatus}}</div>'\n+                 +'<div id=\"notes\" class=\"order notes\" style=\"\">{{thedata.notes}}</div>'\n+                 +'</div>',\n+      transclude: true\n+  };\n+});\n+\n // use the myAppModule variable to\n // configure the module with a filter\n myAppModule.filter('stripDashes', function() {"
+  }, {
+    "sha" : "4a478c3c7b8672111bda36ce135cef1b6fd4123a",
+    "filename" : "works/1314080901214/js/myData.json",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0d58827b32c358add6c2d18cd1768801352c71b9/works/1314080901214/js/myData.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0d58827b32c358add6c2d18cd1768801352c71b9/works/1314080901214/js/myData.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901214/js/myData.json?ref=0d58827b32c358add6c2d18cd1768801352c71b9",
+    "patch" : "@@ -0,0 +1,15 @@\n+{\n+    \"laiyuan\": \"laiyuan1\",\n+    \"leibie\": \"leibie1\",\n+    \"mingchen\": \"mingchen1\",\n+    \"xinhao\": \"xinhao1\",\n+    \"yanse\": \"red\",\n+    \"changdu\": \"changdu1\",\n+    \"kuandu\": \"kuandu1\",\n+    \"houdu\": \"houdu1\",\n+    \"zhuangtai\": \"zhuangtai1\",\n+    \"kucunshu\": \"kucunshu1\",\n+    \"xuqiushu\": \"xuqiushu1\",\n+    \"caigoushu\": \"caigoushu1\",\n+    \"BOM\": \"bom1\"\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "0d58827b32c358add6c2d18cd1768801352c71b9",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0d58827b32c358add6c2d18cd1768801352c71b9",
+  "parents" : [ {
+    "sha" : "20bde2e6002501c4af3cde0fd6b4011ad41388a4",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/20bde2e6002501c4af3cde0fd6b4011ad41388a4",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/20bde2e6002501c4af3cde0fd6b4011ad41388a4"
+  } ]
+}

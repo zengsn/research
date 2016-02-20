@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "TPGorTJK",
+    "id" : 15098134,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098134?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/TPGorTJK",
+    "html_url" : "https://github.com/TPGorTJK",
+    "followers_url" : "https://api.github.com/users/TPGorTJK/followers",
+    "following_url" : "https://api.github.com/users/TPGorTJK/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/TPGorTJK/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/TPGorTJK/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/TPGorTJK/subscriptions",
+    "organizations_url" : "https://api.github.com/users/TPGorTJK/orgs",
+    "repos_url" : "https://api.github.com/users/TPGorTJK/repos",
+    "events_url" : "https://api.github.com/users/TPGorTJK/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/TPGorTJK/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 21,
+    "additions" : 16,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "TPGorTJK",
+    "id" : 15098134,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098134?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/TPGorTJK",
+    "html_url" : "https://github.com/TPGorTJK",
+    "followers_url" : "https://api.github.com/users/TPGorTJK/followers",
+    "following_url" : "https://api.github.com/users/TPGorTJK/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/TPGorTJK/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/TPGorTJK/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/TPGorTJK/subscriptions",
+    "organizations_url" : "https://api.github.com/users/TPGorTJK/orgs",
+    "repos_url" : "https://api.github.com/users/TPGorTJK/repos",
+    "events_url" : "https://api.github.com/users/TPGorTJK/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/TPGorTJK/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/21c66e000a73b1fd2f9cee19070cfd2c31f7414f",
+  "commit" : {
+    "author" : {
+      "name" : "TPGorTJK",
+      "email" : "779446297@qq.com",
+      "date" : "2016-01-15T17:57:31Z"
+    },
+    "committer" : {
+      "name" : "TPGorTJK",
+      "email" : "779446297@qq.com",
+      "date" : "2016-01-15T17:57:31Z"
+    },
+    "message" : "实验6",
+    "tree" : {
+      "sha" : "c95c5eda910fd2a7cb41217e933d394ea1e69afc",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/c95c5eda910fd2a7cb41217e933d394ea1e69afc"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/21c66e000a73b1fd2f9cee19070cfd2c31f7414f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/21c66e000a73b1fd2f9cee19070cfd2c31f7414f/comments",
+  "files" : [ {
+    "sha" : "801ffe64b6677142055def24451f183ee7de875e",
+    "filename" : "works/1314080901132/js/myModule.js",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 5,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/21c66e000a73b1fd2f9cee19070cfd2c31f7414f/works/1314080901132/js/myModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/21c66e000a73b1fd2f9cee19070cfd2c31f7414f/works/1314080901132/js/myModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901132/js/myModule.js?ref=21c66e000a73b1fd2f9cee19070cfd2c31f7414f",
+    "patch" : "@@ -7,11 +7,18 @@\n                };\n               \n var myModule = angular.module(\"myapp\", []);\n-  myModule.controller(\"myController\", function ($scope) {\n-      var data1 = myData;\n-      data1.theClassName =\"灯具\" ;\n-      data1.classNumber = \"12\";\n-      $scope.datas = [data1];\n+  myModule.controller(\"myController\", function ($scope,$http) {\n+  \t  var promise=$http({\n+  \t  \turl:\"myJson.json\",\n+  \t  \tmethod:\"get\"\n+  \t  });\n+  \t  promise.success(function(data,status){\n+      $scope.datas = [data];\n+  \t  });\n+  \t   promise.error(function(data,status){\n+              alert(\"请求出错\");\n+  \t  });\n+     \n   });\n \n myModule.directive(\"mydata\",function(){"
+  }, {
+    "sha" : "6f6f3d43cf8f4044b6b15f805c388025e613b188",
+    "filename" : "works/1314080901132/myJson.json",
+    "status" : "added",
+    "additions" : 4,
+    "deletions" : 0,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/21c66e000a73b1fd2f9cee19070cfd2c31f7414f/works/1314080901132/myJson.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/21c66e000a73b1fd2f9cee19070cfd2c31f7414f/works/1314080901132/myJson.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901132/myJson.json?ref=21c66e000a73b1fd2f9cee19070cfd2c31f7414f",
+    "patch" : "@@ -0,0 +1,4 @@\n+{\n+\t\"theClassName\": \"灯具\",\n+    \"classNumber\": \"111\"\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "21c66e000a73b1fd2f9cee19070cfd2c31f7414f",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/21c66e000a73b1fd2f9cee19070cfd2c31f7414f",
+  "parents" : [ {
+    "sha" : "4973810d39e162ec3d7f88e5ed383f8284db3b92",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/4973810d39e162ec3d7f88e5ed383f8284db3b92",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/4973810d39e162ec3d7f88e5ed383f8284db3b92"
+  } ]
+}

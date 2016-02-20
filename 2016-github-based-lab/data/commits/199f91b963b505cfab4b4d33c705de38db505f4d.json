@@ -1,0 +1,144 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 476,
+    "additions" : 184,
+    "deletions" : 292
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/199f91b963b505cfab4b4d33c705de38db505f4d",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-01-06T12:26:17Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-01-06T12:26:17Z"
+    },
+    "message" : "Merge pull request #515 from mumuLOVEanni/master\n\n实验六",
+    "tree" : {
+      "sha" : "2b74a4cf25fe1040c025466cdd36b83470df7ddc",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/2b74a4cf25fe1040c025466cdd36b83470df7ddc"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/199f91b963b505cfab4b4d33c705de38db505f4d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/199f91b963b505cfab4b4d33c705de38db505f4d/comments",
+  "files" : [ {
+    "sha" : "01e837981b2054718ac97e8ae4a97c5f9ccc7f92",
+    "filename" : "works/1314080901147/index.html",
+    "status" : "modified",
+    "additions" : 44,
+    "deletions" : 274,
+    "changes" : 318,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901147/index.html?ref=199f91b963b505cfab4b4d33c705de38db505f4d",
+    "patch" : "@@ -1,278 +1,48 @@\n <!DOCTYPE html>\n-<html lang=\"en\">\n-<head>\n-\t<meta charset=\"UTF-8\">\n-\t<title>财务销售收款收款明细 1314080901147</title>\n-\t<!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"css/bootstrap-responsive.min.css\"> -->\n+<html ng-app=\"FinancialsalesModule\"> \n+  <head lang=\"zh-CN\">\n+    <meta charset=\"utf-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n+    <title>财务销售收款收款明细 1314080901147</title>\n+    <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+    <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n+    <link href=\"css/style.css\" rel=\"stylesheet\">\n+  </head>\n+\n+\n+  <body>\n+    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+      <div class=\"container\">\n+        <div class=\"navbar-header\">\n+          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n+            <span class=\"sr-only\">Toggle navigation</span>\n+            <span class=\"icon-bar\"></span>\n+            <span class=\"icon-bar\"></span>\n+            <span class=\"icon-bar\"></span>\n+          </button>\n+          <a class=\"navbar-brand\" href=\"#\">Project name</a>\n+        </div>\n+        <div id=\"navbar\" class=\"collapse navbar-collapse\">\n+          <ul class=\"nav navbar-nav\">\n+            <li class=\"active\"><a href=\"#home\">Home</a></li>\n+            <li><a href=\"#contact\">Contact</a></li>\n+            <li><a href=\"#about\">About</a></li>\n+          </ul>\n+        </div>\n+      </div>\n+    </nav>\n+    <div id=\"main\">\n+      <div ng-view></div>\n+    </div>\n \n-<style type=\"text/css\">\n-body,ul,li{margin:0;padding:0;color:gray;font-size:12px;}\n-body{background:white;}\n-div li{ list-style:none;float:left;width:100px;background:gray; text-align:center;margin:0 1px;line-height:30px;}\n-div a{display:block;color:black; text-decoration:none;}\n-div a:hover{display:block;color:black;background:#000000}\n-div li .wwww{display:none;}\n-div li:hover .wwww{display:block;}\n-div li .wwww li .eeee{\n-    display:none;\n-    position: relative;\n-    left: 100px;\n-    top:-28px;\n-}\n-div li .wwww li:hover .eeee{display:block;}\n-div li li li{clear:both;}\n-</style>\n-</head>\n-<body>\n-<table width=\"720\" height=\"500\" border=\"1\" cellspacing=\"0\" bgcolor=\"white\" cellspacing=\"0\" align=\"left\">\n-<tr>\n-\t<th >\n-\t\t<a href=\"#\" color=\"\" ><b>收款明细</b></a>\n-\t</th>\n-</tr>\n-<tr> \n-        <th valign=\"top\">\n-<div >\n-    <ul>\n-        <li><a href=\"#\">订单编号</a>\n-            <ul class=\"wwww\">\n-                <li><a href=\"#\">列</a>\n-                    <ul class=\"eeee\">\n-                        <li><a href=\"#\">订单编号</a></li>\n-                        <li><a href=\"#\">订单名称</a></li>\n-                        <li><a href=\"#\">摘要</a></li>\n-                        <li><a href=\"#\">应收金额</a></li>\n-                        <li><a href=\"#\">已收金额</a></li>\n-                        <li><a href=\"#\">未收金额</a></li>\n-                        <li><a href=\"#\">备注</a></li>\n-                        <li><a href=\"#\">orderid</a></li>\n-                    </ul>\n-                </li>\n-                <li><a href=\"#\">正序</a></li>\n-                <li><a href=\"#\">倒序</a></li>\n-\n-                        <ul class=\"eeee\">\n-                      <!--   <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li> -->\n-                    </ul>  \n-                </li>\n-            </ul>\n-        </li>\n-       \n-\n-\n-         <li><a href=\"#\">订单名称</a>\n-            <ul class=\"wwww\">\n-                <li><a href=\"#\">列</a>\n-                    <ul class=\"eeee\">\n-                        <li><a href=\"#\">订单编号</a></li>\n-                        <li><a href=\"#\">订单名称</a></li>\n-                        <li><a href=\"#\">摘要</a></li>\n-                        <li><a href=\"#\">应收金额</a></li>\n-                        <li><a href=\"#\">已收金额</a></li>\n-                        <li><a href=\"#\">未收金额</a></li>\n-                        <li><a href=\"#\">备注</a></li>\n-                        <li><a href=\"#\">orderid</a></li>\n-                    </ul>\n-                </li>\n-                <li><a href=\"#\">正序</a></li>\n-                <li><a href=\"#\">倒序</a></li>\n-\n-                        <ul class=\"eeee\">\n-                      <!--   <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li> -->\n-                    </ul>  \n-                </li>\n-            </ul>\n-        </li>\n-    <!--     <li><a href=\"#\">a</a></li>\n-        <li><a href=\"#\">a</a></li>\n-        <li><a href=\"#\">a</a></li>\n-        <li><a href=\"#\">a</a>\n-            <ul class=\"wwww\">\n-                <li><a href=\"#\">b</a>\n-                    <ul class=\"eeee\">\n-                        <li><a href=\"#\">c</a></li>\n-                        <li><a href=\"#\">c</a></li>\n-                        <li><a href=\"#\">c</a></li>\n-                    </ul>\n-                </li>\n-                <li><a href=\"#\">b</a></li>\n-                <li><a href=\"#\">b</a></li>\n-                <li><a href=\"#\">b</a></li>\n-                <li><a href=\"#\"></a>b\n-                    <ul class=\"eeee\">\n-                        <li><a href=\"#\">c</a></li>\n-                        <li><a href=\"#\">c</a></li>\n-                        <li><a href=\"#\">c</a></li>\n-                    </ul>\n-                </li>\n-            </ul>\n-        </li> -->\n-        <li><a href=\"#\">摘要</a>\n-            <ul class=\"wwww\">\n-                <li><a href=\"#\">列</a>\n-                    <ul class=\"eeee\">\n-                        <li><a href=\"#\">订单编号</a></li>\n-                        <li><a href=\"#\">订单名称</a></li>\n-                        <li><a href=\"#\">摘要</a></li>\n-                        <li><a href=\"#\">应收金额</a></li>\n-                        <li><a href=\"#\">已收金额</a></li>\n-                        <li><a href=\"#\">未收金额</a></li>\n-                        <li><a href=\"#\">备注</a></li>\n-                        <li><a href=\"#\">orderid</a></li>\n-                    </ul>\n-                </li>\n-                <li><a href=\"#\">正序</a></li>\n-                <li><a href=\"#\">倒序</a></li>\n-\n-                        <ul class=\"eeee\">\n-                      <!--   <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li> -->\n-                    </ul>  \n-                </li>\n-            </ul>\n-        </li>\n-\n-        <li><a href=\"#\">应收金额</a>\n-            <ul class=\"wwww\">\n-                <li><a href=\"#\">列</a>\n-                    <ul class=\"eeee\">\n-                        <li><a href=\"#\">订单编号</a></li>\n-                        <li><a href=\"#\">订单名称</a></li>\n-                        <li><a href=\"#\">摘要</a></li>\n-                        <li><a href=\"#\">应收金额</a></li>\n-                        <li><a href=\"#\">已收金额</a></li>\n-                        <li><a href=\"#\">未收金额</a></li>\n-                        <li><a href=\"#\">备注</a></li>\n-                        <li><a href=\"#\">orderid</a></li>\n-                    </ul>\n-                </li>\n-                <li><a href=\"#\">正序</a></li>\n-                <li><a href=\"#\">倒序</a></li>\n-\n-                        <ul class=\"eeee\">\n-                      <!--   <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li> -->\n-                    </ul>  \n-                </li>\n-            </ul>\n-        </li>\n-\n-        <li><a href=\"#\">已收金额</a>\n-            <ul class=\"wwww\">\n-                <li><a href=\"#\">列</a>\n-                    <ul class=\"eeee\">\n-                        <li><a href=\"#\">订单编号</a></li>\n-                        <li><a href=\"#\">订单名称</a></li>\n-                        <li><a href=\"#\">摘要</a></li>\n-                        <li><a href=\"#\">应收金额</a></li>\n-                        <li><a href=\"#\">已收金额</a></li>\n-                        <li><a href=\"#\">未收金额</a></li>\n-                        <li><a href=\"#\">备注</a></li>\n-                        <li><a href=\"#\">orderid</a></li>\n-                    </ul>\n-                </li>\n-                <li><a href=\"#\">正序</a></li>\n-                <li><a href=\"#\">倒序</a></li>\n-\n-                        <ul class=\"eeee\">\n-                      <!--   <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li> -->\n-                    </ul>  \n-                </li>\n-            </ul>\n-        </li>\n-\n-        <li><a href=\"#\">未收金额</a>\n-            <ul class=\"wwww\">\n-                <li><a href=\"#\">列</a>\n-                    <ul class=\"eeee\">\n-                        <li><a href=\"#\">订单编号</a></li>\n-                        <li><a href=\"#\">订单名称</a></li>\n-                        <li><a href=\"#\">摘要</a></li>\n-                        <li><a href=\"#\">应收金额</a></li>\n-                        <li><a href=\"#\">已收金额</a></li>\n-                        <li><a href=\"#\">未收金额</a></li>\n-                        <li><a href=\"#\">备注</a></li>\n-                        <li><a href=\"#\">orderid</a></li>\n-                    </ul>\n-                </li>\n-                <li><a href=\"#\">正序</a></li>\n-                <li><a href=\"#\">倒序</a></li>\n-\n-                        <ul class=\"eeee\">\n-                      <!--   <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li> -->\n-                    </ul>  \n-                </li>\n-            </ul>\n-        </li>\n-    </ul>\n-\n-    <li><a href=\"#\">备注</a>\n-            <ul class=\"wwww\">\n-                <li><a href=\"#\">列</a>\n-                    <ul class=\"eeee\">\n-                        <li><a href=\"#\">订单编号</a></li>\n-                        <li><a href=\"#\">订单名称</a></li>\n-                        <li><a href=\"#\">摘要</a></li>\n-                        <li><a href=\"#\">应收金额</a></li>\n-                        <li><a href=\"#\">已收金额</a></li>\n-                        <li><a href=\"#\">未收金额</a></li>\n-                        <li><a href=\"#\">备注</a></li>\n-                        <li><a href=\"#\">orderid</a></li>\n-                    </ul>\n-                </li>\n-                <li><a href=\"#\">正序</a></li>\n-                <li><a href=\"#\">倒序</a></li>\n-\n-                        <ul class=\"eeee\">\n-                      <!--   <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li>\n-                        <li><a href=\"#\">b</a></li> -->\n-                    </ul>  \n-                </li>\n-            </ul>\n-        </li>\n-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>\n-        <br><br><br><br><br><br>\n-       <table   width=\"720\" height=\"30\" border=\"1\" cellspacing=\"0\" bgcolor=\"blue\">\n-       <tr>\n-       \t<th>\n-       \t<form >\n     \n-     <li><a href=\"#\" ><input type=\"submit\" value=\"添加款项\" ></input></a></li>\n-      <li><a href=\"#\"><input type=\"submit\" value=\"自动收款\"></input></a></li>\n-       <li><a href=\"#\"><input type=\"submit\" value=\"删除\" ></a></li>\n-        <li ><a href=\"#\">落单人:</a></li>\n-         <li><a href=\"#\"><input type=\"text\" size=\"10\" ></a></li>\n-          <li><a href=\"#\">落款日期：</input></a></li>\n-           <li><a href=\"#\"><input type=\"text\" size=\"10\" ></a></li>\n-      \n-           </form>\n-           </th>\n-       </tr>\n-      \n-</table>\n-        </th>\n-    </tr> \n-    \n-</div>\n-\n-</table>\n-\n-        \n-     <!--    <br><br><br><br><br><br><br><br><br><br><br><br>\n-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>\n-        -->\n-\n-\t\n-</body>\n+    <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n+  \n+    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+    <script src=\"../../lib/angular-1.4.5/angular-route.min.js\"></script>\n+    <script src=\"js/FinancialsalesModule.js\"></script>\n+  </body>\n </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "3cbfe64219f2797db9c655fbb3e24e43db2cfe50",
+    "filename" : "works/1314080901147/js/FinancialsalesModule.js",
+    "status" : "modified",
+    "additions" : 68,
+    "deletions" : 18,
+    "changes" : 86,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/js/FinancialsalesModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/js/FinancialsalesModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901147/js/FinancialsalesModule.js?ref=199f91b963b505cfab4b4d33c705de38db505f4d",
+    "patch" : "@@ -1,27 +1,77 @@\n-// create a new module called 'FinancialsalesModule' and save \n-// a reference to it in a variable called FinancialsalesModule\n-var FinancialsalesModule = angular.module('FinancialsalesModule', []);\n+// create a new module called 'myAppModule' and save     Financialsales1Data Financialsales1  Financialsales \n+// a reference to it in a variable called myAppModule \n+var FinancialsalesModule = angular.module('FinancialsalesModule', ['ngRoute']);\n \n-// use the FinancialsalesModule variable to\n+FinancialsalesModule.config(function ($routeProvider) {\n+    // configure the routes\n+    $routeProvider\n+        .when('/', {\n+            // route for the about page\n+            templateUrl: 'pages/home.html'\n+        })\n+        .when('/home', {\n+            templateUrl: 'pages/home.html'  \n+        })\n+        .when('/contact', {\n+            templateUrl: 'pages/Financialsales.html',\n+            controller: 'FinancialsalesCtrl'\n+        })\n+        .when('/about', {\n+            templateUrl: 'pages/about.html',\n+            controller: 'aboutCtrl'\n+        });\n+});\n+\n+// use the myAppModule variable to\n // configure the module with a controller\n-FinancialsalesModule.controller('MyfilterDemoCtrl', function ($scope) {\n+\n+\n+\n+FinancialsalesModule.factory('Financialsales1Service',function($http){\n+        var dataStroe = {};\n+        dataStroe.getData = function () {\n+            var promise = $http({method: 'GET',url: 'json/Financialsales.json'});\n+            return promise;\n+        }\n+        return dataStroe;\n+\n+\n+    }).controller('FinancialsalesCtrl', function ($scope,Financialsales1Service) {\n        // controller code would go here\n-      var Financialsales1 = {\n-            orderNumber:'123',\n-            ordername:'123',\n-            summary:'abc',\n-            moneyed:'123',\n-            money:'123',\n-            beizhu:'abc',\n-            \n+\n+        // var Financialsales1 = {\n+        //     orderNumber:'123',\n+        //     ordername:'123',\n+        //     summary:'abc',\n+        //     moneyed:'123',\n+        //     money:'123',\n+        //     beizhu:'abc',\n+        // };\n+        // $scope.data = Financialsales1;\n+\n+        \n+\n+        var promise = Financialsales1Service.getData();\n+        promise.success(function (data, status, headers, config, statusText) {\n+            $scope.shuju = data.FinancialsalesData;\n+        });\n+        promise.error(function(data,status){\n+           alert('请求出错，请重试');\n+        });\n+    }).controller('aboutCtrl', function ($scope) {\n+\n+        var data = {\n+            xuehao: '邹远潮 计科一班 1314080901147'\n         };\n-        $scope.data = Financialsales1;\n-    }\n-);\n+        $scope.data = data;\n \n-// use the Financialsales variable to\n+});\n+\n+// use the myAppModule variable to\n // configure the module with a filter\n+\n+\n FinancialsalesModule.filter('stripDashes', function() {\n     return function(txt) {\n         // filter code would go here\n-}; });\n\\ No newline at end of file\n+}; });"
+  }, {
+    "sha" : "bc9b21e9707c1b2da0fcd1f7c624c1fd3bd723c3",
+    "filename" : "works/1314080901147/json/Financialsales.json",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/json/Financialsales.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/json/Financialsales.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901147/json/Financialsales.json?ref=199f91b963b505cfab4b4d33c705de38db505f4d",
+    "patch" : "@@ -0,0 +1,34 @@\n+{\n+    \"FinancialsalesData\": [\n+        {\n+            \"ordernumber\": \"1314080901101\",\n+            \"ordername\": \"客机\",\n+            \"summary\": \"收付款说明\",\n+            \"money\": \"100万\",\n+            \"moneyed\": \"50万\",\n+            \"beizhu\": \"客机收付款说明\",\n+            \"width\": \"\",\n+            \"thickness\": \"\"\n+        },\n+        {\n+            \"ordernumber\": \"1314080901102\",\n+            \"ordername\": \"轰炸机\",\n+            \"summary\": \"收付款说明\",\n+            \"money\": \"200万\",\n+            \"moneyed\": \"60万\",\n+            \"beizhu\": \"轰炸机收付款说明\",\n+            \"width\": \"\",\n+            \"thickness\": \"\"\n+        },\n+        {\n+            \"ordernumber\": \"1314080901103\",\n+            \"ordername\": \"直升机\",\n+            \"summary\": \"收付款说明\",\n+            \"money\": \"300万\",\n+            \"moneyed\": \"70万\",\n+            \"beizhu\": \"直升机收付款说明\",\n+            \"width\": \"\",\n+            \"thickness\": \"\"\n+        }\n+    ]\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "17511813eec2aae553d4839b9e22be522f2772f2",
+    "filename" : "works/1314080901147/pages/Financialsales.html",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/pages/Financialsales.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/pages/Financialsales.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901147/pages/Financialsales.html?ref=199f91b963b505cfab4b4d33c705de38db505f4d",
+    "patch" : "@@ -0,0 +1,28 @@\n+<div class=\"container\">\n+    <div class=\"starter-template\">\n+        <table class=\"table table-bordered table-condensed\" align=\"center\">\n+            <thead>\n+            <tr>\n+                <th rowspan=\"2\" class=\"text-center\">NO.</th>\n+                <th rowspan=\"2\" class=\"text-center\">订单编号</th>\n+                <th rowspan=\"2\" class=\"text-center\">订单名称</th>\n+                <th rowspan=\"2\" class=\"text-center\">摘要</th>\n+                <th colspan=\"2\" class=\"text-center\">已收金额</th>\n+                <th rowspan=\"2\" class=\"text-center\">未收金额</th>\n+                <th rowspan=\"2\" class=\"text-center\">备注</th>\n+            </tr>\n+      \n+            <tbody ng-repeat=\"shujudata in shuju\">\n+            <tr>\n+                <td rowspan=\"2\" class=\"text-center\">{{$index + 1}}</td>\n+                <td rowspan=\"2\" class=\"text-center\">{{shujudata.ordernumber}}</td>\n+                <td rowspan=\"2\" class=\"text-center\">{{shujudata.ordername}}</td>\n+                <td rowspan=\"2\" class=\"text-center\">{{shujudata.summary}}</td>\n+                <td colspan=\"2\" class=\"text-center\">{{shujudata.money}}</td>\n+                <td rowspan=\"2\" class=\"text-center\">{{shujudata.moneyed}}</td>\n+                <td rowspan=\"2\" class=\"text-center\">{{shujudata.beizhu}}</td>\n+            </tr>\n+            </tbody>\n+        </table>\n+    </div>\n+</div>\n\\ No newline at end of file"
+  }, {
+    "sha" : "b164608beb6faf5afeb95a1844fa3d24d7a8dbdc",
+    "filename" : "works/1314080901147/pages/about.html",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/pages/about.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/pages/about.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901147/pages/about.html?ref=199f91b963b505cfab4b4d33c705de38db505f4d",
+    "patch" : "@@ -0,0 +1,6 @@\n+<div class=\"container text-center\">\n+    <div class=\"jumbotron\">\n+        <h1>About Page</h1>\n+        <p><u>{{data.xuehao}}</u></p>\n+    </div>\n+</div>\n\\ No newline at end of file"
+  }, {
+    "sha" : "1706308366bbb988397fca067e2b556e9e42659b",
+    "filename" : "works/1314080901147/pages/home.html",
+    "status" : "added",
+    "additions" : 4,
+    "deletions" : 0,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/pages/home.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/199f91b963b505cfab4b4d33c705de38db505f4d/works/1314080901147/pages/home.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901147/pages/home.html?ref=199f91b963b505cfab4b4d33c705de38db505f4d",
+    "patch" : "@@ -0,0 +1,4 @@\n+<div class=\"container starter-template\">\n+    <h1>Bootstrap starter template</h1>\n+    <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n+</div>\n\\ No newline at end of file"
+  } ],
+  "sha" : "199f91b963b505cfab4b4d33c705de38db505f4d",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/199f91b963b505cfab4b4d33c705de38db505f4d",
+  "parents" : [ {
+    "sha" : "670c588845d03ab5d190573573b3140e301eae95",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/670c588845d03ab5d190573573b3140e301eae95",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/670c588845d03ab5d190573573b3140e301eae95"
+  }, {
+    "sha" : "99431735d11a7e852166d53acb7e6c3eac6833db",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/99431735d11a7e852166d53acb7e6c3eac6833db",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/99431735d11a7e852166d53acb7e6c3eac6833db"
+  } ]
+}

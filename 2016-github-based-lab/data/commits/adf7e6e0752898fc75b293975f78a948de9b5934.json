@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 72,
+    "additions" : 31,
+    "deletions" : 41
+  },
+  "author" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/adf7e6e0752898fc75b293975f78a948de9b5934",
+  "commit" : {
+    "author" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-11-10T02:57:10Z"
+    },
+    "committer" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-11-10T02:57:10Z"
+    },
+    "message" : "Update index.html\n\n修改",
+    "tree" : {
+      "sha" : "b8bb8377f3eddbbd9940fb182f17f46264dd03a9",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/b8bb8377f3eddbbd9940fb182f17f46264dd03a9"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/adf7e6e0752898fc75b293975f78a948de9b5934",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/adf7e6e0752898fc75b293975f78a948de9b5934/comments",
+  "files" : [ {
+    "sha" : "85a3bf41ed0e80a174ec10cb881d871e5389f7b6",
+    "filename" : "works/1314080901212/index.html",
+    "status" : "modified",
+    "additions" : 31,
+    "deletions" : 41,
+    "changes" : 72,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/adf7e6e0752898fc75b293975f78a948de9b5934/works/1314080901212/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/adf7e6e0752898fc75b293975f78a948de9b5934/works/1314080901212/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901212/index.html?ref=adf7e6e0752898fc75b293975f78a948de9b5934",
+    "patch" : "@@ -59,59 +59,49 @@\n     </nav>\n     \n     <div margin:0px;width:614px;right:auto;left:0px;top:0px;height:154px;>\n-    <p style=\"background-color:#99bce8;color:blue;font-weight:bold\">供应商信息</p>\n-    <label for=\"number\">供应商编号：</label>\n+    <p style=\"background-color:#99bce8;color:blue;font-weight:bold\">单据信息</p>\n+    <label for=\"number\">供应商：</label>\n     <input type=\"text\" name=\"number\" id=\"number\" value=\"\"/>\n-    <label for=\"date\">建档日期：</label>\n-    <input type=\"text\" name=\"date\" id=\"date\" value=\"\"/>\n-    <label for=\"sort\">供应商类别：</label>\n+    \n+    <label for=\"sort\">仓库：</label>\n+   <select> \n+    <option value=\"001\" >001</option>\n+    <option value=\"002\">002</option>\n+    <option value=\"003\">003</option>\n+    <option value=\"004\">004</option>\n+    <option value=\"005\">005</option>\n+    <option value=\"006\">006</option>\n+   </select>\n+   \n+    <label for=\"Hand\">经手人：</label>\n    <select> \n-    <option value=\"五金类\" >五金类</option>\n-    <option value=\"电器类\">电器类</option>\n-    <option value=\"板材类\">板材类</option>\n-    <option value=\"油漆类\">油漆类</option>\n-    <option value=\"刀具类\">刀具类</option>\n-    <option value=\"其它\">其它</option>\n+    <option value=\"礼品盒\" >礼品盒</option>\n+    <option value=\"按时\">按时</option>\n+    <option value=\"6564564\">6564564</option>\n+    <option value=\"叶良辰\">叶良辰</option>\n+    <option value=\"李哲\">李哲</option>\n+    <option value=\"泽拉图\">泽拉图</option>\n    </select>\n+   \n+    <label for=\"Handing date\">经办日期：</label>\n+-    <input type=\"text\" name=\"Handing date\" id=\"Handing date\" value=\"\"/>\n+\n    </div>\n    \n    <div>\n-    <label for=\"name\">供应商全称：</label>\n-    <input type=\"text\" name=\"name\" id=\"name\" value=\"\"/>\n-    <label for=\"code\">拼音码：</label>\n-    <input type=\"text\" name=\"code\" id=\"code\" value=\"\"/>\n-    <label for=\"homepage\">供应商主页：</label>\n-    <input type=\"text\" name=\"homepage\" id=\"homepage\" value=\"\"/>\n+    <label for=\"State\">状态：</label>\n+    <input type=\"text\" name=\"State\" id=\"State\" value=\"\"/>\n+    <label for=\"Remark\">备注：</label>\n+    <input type=\"text\" name=\"Remark\" id=\"Remark\" value=\"\"/>\n+   \n     </div>\n     \n   <div style=\"width: 1270px;height: 155px\">\n-  <label for=\"jc\">供应商简称：</label>\n-    <input type=\"text\" name=\"jc\" id=\"jc\" value=\"\"/>\n-    <label for=\"area\">行政区域：</label>\n-    <input type=\"text\" name=\"area\" id=\"area\" value=\"\"/>\n-    <label for=\"synposis\">供应商简介：</label>\n-    <input type=\"text\" name=\"synposis\" id=\"synposis\" value=\"\"/><br/>\n-    <lable for=\"stop or not\">是否停用：</lable>\n-    <input type=\"checkbox\" value=\"\" name=\"stop or not\" checked=\"checked\" >\n-    <input type=\"submit\" value=\"+保存/修改\" name=\"submit\"/>\n+    <input type=\"submit\" value=\"+新建\" name=\"submit\"/>\n+    <input type=\"submit\" value=\"+保存\" name=\"submit\"/>\n   </div>\n   \n \n-  <div>\n-  <table style=\"background-color:#c5c5c5;margin:0px;width:614px;right:auto;left:0px;top:0px;border:1px solid black\">\n-   <caption style=\"background-color:#99bce8;color:blue;font-weight:bold\">供应商联系人</caption>\n-     <tr> \n-      <th>名称</th>\n-      <th>手机</th>\n-      <th>办公电话</th>\n-      <th>传真号码</th>\n-      <th>QQ</th>\n-      <th>邮箱地址</th>\n-      <th>职务</th>\n-      <th>备注</th>\n-     </tr>\n-      </table>\n-  </div>\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  } ],
+  "sha" : "adf7e6e0752898fc75b293975f78a948de9b5934",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/adf7e6e0752898fc75b293975f78a948de9b5934",
+  "parents" : [ {
+    "sha" : "762149b3a7e28ade242a41a6bf8c393f9c21fead",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/762149b3a7e28ade242a41a6bf8c393f9c21fead",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/762149b3a7e28ade242a41a6bf8c393f9c21fead"
+  } ]
+}

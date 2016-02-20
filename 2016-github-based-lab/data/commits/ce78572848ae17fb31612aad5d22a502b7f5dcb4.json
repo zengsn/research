@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 18,
+    "additions" : 17,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/ce78572848ae17fb31612aad5d22a502b7f5dcb4",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:13:44Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:13:44Z"
+    },
+    "message" : "Merge pull request #274 from zhonghanying/master\n\n实验三1314080901246",
+    "tree" : {
+      "sha" : "45cda3ad814f1edbb5cd2529c6127586f8a4afdc",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/45cda3ad814f1edbb5cd2529c6127586f8a4afdc"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/ce78572848ae17fb31612aad5d22a502b7f5dcb4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ce78572848ae17fb31612aad5d22a502b7f5dcb4/comments",
+  "files" : [ {
+    "sha" : "d9381d3a1c167365cb774a39b60d76434aaaa2df",
+    "filename" : "works/1314080901246/index.html",
+    "status" : "modified",
+    "additions" : 17,
+    "deletions" : 1,
+    "changes" : 18,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ce78572848ae17fb31612aad5d22a502b7f5dcb4/works/1314080901246/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ce78572848ae17fb31612aad5d22a502b7f5dcb4/works/1314080901246/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901246/index.html?ref=ce78572848ae17fb31612aad5d22a502b7f5dcb4",
+    "patch" : "@@ -20,6 +20,22 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var Yuekaoqin = {\n+            yuangongbianhao: '123',\n+            yuangongxingming: ' ',\n+            yuefen: '123',\n+            shijiatianshu: '123',\n+            bingjiatianshu: '123',\n+            kuanggongtianshu:'123',\n+            jiabantianshu:'123',\n+            dangyueqiandaoshu:'123',\n+            shijiqiandaoshu:'123',\n+        };\n+        $scope.data = Yuekaoqin;\n+} </script> \n+\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n@@ -57,4 +73,4 @@\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n   </body>\n-</html>\n\\ No newline at end of file\n+</html>"
+  } ],
+  "sha" : "ce78572848ae17fb31612aad5d22a502b7f5dcb4",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ce78572848ae17fb31612aad5d22a502b7f5dcb4",
+  "parents" : [ {
+    "sha" : "60ec50aa7503ae0fee61bab662c33e5b7cd09931",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/60ec50aa7503ae0fee61bab662c33e5b7cd09931",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/60ec50aa7503ae0fee61bab662c33e5b7cd09931"
+  }, {
+    "sha" : "617444a152d0f595aa0f00e00b3641a5e3523546",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/617444a152d0f595aa0f00e00b3641a5e3523546",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/617444a152d0f595aa0f00e00b3641a5e3523546"
+  } ]
+}
