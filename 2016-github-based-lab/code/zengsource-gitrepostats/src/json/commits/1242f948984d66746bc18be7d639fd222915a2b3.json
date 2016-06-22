@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "qingtian1993",
+    "id" : 15007816,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15007816?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qingtian1993",
+    "html_url" : "https://github.com/qingtian1993",
+    "followers_url" : "https://api.github.com/users/qingtian1993/followers",
+    "following_url" : "https://api.github.com/users/qingtian1993/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qingtian1993/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qingtian1993/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qingtian1993/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qingtian1993/orgs",
+    "repos_url" : "https://api.github.com/users/qingtian1993/repos",
+    "events_url" : "https://api.github.com/users/qingtian1993/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qingtian1993/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 36,
+    "additions" : 33,
+    "deletions" : 3
+  },
+  "author" : {
+    "login" : "qingtian1993",
+    "id" : 15007816,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15007816?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qingtian1993",
+    "html_url" : "https://github.com/qingtian1993",
+    "followers_url" : "https://api.github.com/users/qingtian1993/followers",
+    "following_url" : "https://api.github.com/users/qingtian1993/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qingtian1993/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qingtian1993/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qingtian1993/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qingtian1993/orgs",
+    "repos_url" : "https://api.github.com/users/qingtian1993/repos",
+    "events_url" : "https://api.github.com/users/qingtian1993/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qingtian1993/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/1242f948984d66746bc18be7d639fd222915a2b3",
+  "commit" : {
+    "author" : {
+      "name" : "qingtian1993",
+      "email" : "15767979110@163.com",
+      "date" : "2015-11-03T11:24:18Z"
+    },
+    "committer" : {
+      "name" : "qingtian1993",
+      "email" : "15767979110@163.com",
+      "date" : "2015-11-03T11:24:18Z"
+    },
+    "message" : "实验4",
+    "tree" : {
+      "sha" : "b55eab716703f85863ead962594d77bbb27a04bf",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/b55eab716703f85863ead962594d77bbb27a04bf"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/1242f948984d66746bc18be7d639fd222915a2b3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/1242f948984d66746bc18be7d639fd222915a2b3/comments",
+  "files" : [ {
+    "sha" : "01fe51329957f48161e1c8fdb4f19c13bd0814a2",
+    "filename" : "works/1314080901225/index.html",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 3,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/1242f948984d66746bc18be7d639fd222915a2b3/works/1314080901225/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/1242f948984d66746bc18be7d639fd222915a2b3/works/1314080901225/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901225/index.html?ref=1242f948984d66746bc18be7d639fd222915a2b3",
+    "patch" : "@@ -1,11 +1,11 @@\n ﻿<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+<html ng-app=\"ManifestDataModule\"><lang=\"zh-CN\">\n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>{{uiName}} by 1314080901225</title>\n+    <title>产品出库</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,9 +20,13 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+    <script src=\"js/ManifestDataModule.js\"></script>\n+\n   </head>\n-  <body>\n+  <body ng-controller=\"MyFilterDemoCtrl\" >\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+\t\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n           <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">"
+  }, {
+    "sha" : "bf330f3fbbd4d6768255cee94051defb5738aa6c",
+    "filename" : "works/1314080901225/js/ManifestDataModule.js",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/1242f948984d66746bc18be7d639fd222915a2b3/works/1314080901225/js/ManifestDataModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/1242f948984d66746bc18be7d639fd222915a2b3/works/1314080901225/js/ManifestDataModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901225/js/ManifestDataModule.js?ref=1242f948984d66746bc18be7d639fd222915a2b3",
+    "patch" : "@@ -0,0 +1,26 @@\n+// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+var ManifestDataModule = angular.module('ManifestDataModule', []);\n+\n+// use the myAppModule variable to\n+// configure the module with a controller\n+ManifestDataModule.controller('MyFilterDemoCtrl', function($scope) {\n+        var ManifestData = {\n+            \tManifestNum: '001',\n+            \tWearhouse: '001',\n+            \tHandler: 'Ayden',\n+            \tHandlingData: '2000-10-15',\n+            \tState: ' ',\n+\t    \tRemark: ' ',\n+            \n+       };\n+        $scope.data =ManifestData;\n+});\n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+ManifestDataModule.filter('stripDashes', function() {\n+\treturn function(txt) {\n+\t\t// filter code would go here\n+\t};\n+});\n\\ No newline at end of file"
+  } ],
+  "sha" : "1242f948984d66746bc18be7d639fd222915a2b3",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/1242f948984d66746bc18be7d639fd222915a2b3",
+  "parents" : [ {
+    "sha" : "59fed14c5269d0ecf14c3e1540fe2b83750fe8a1",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/59fed14c5269d0ecf14c3e1540fe2b83750fe8a1",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/59fed14c5269d0ecf14c3e1540fe2b83750fe8a1"
+  } ]
+}

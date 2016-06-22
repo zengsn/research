@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "baoleng5980",
+    "id" : 14287769,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14287769?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/baoleng5980",
+    "html_url" : "https://github.com/baoleng5980",
+    "followers_url" : "https://api.github.com/users/baoleng5980/followers",
+    "following_url" : "https://api.github.com/users/baoleng5980/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/baoleng5980/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/baoleng5980/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/baoleng5980/subscriptions",
+    "organizations_url" : "https://api.github.com/users/baoleng5980/orgs",
+    "repos_url" : "https://api.github.com/users/baoleng5980/repos",
+    "events_url" : "https://api.github.com/users/baoleng5980/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/baoleng5980/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 26,
+    "additions" : 10,
+    "deletions" : 16
+  },
+  "author" : {
+    "login" : "baoleng5980",
+    "id" : 14287769,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14287769?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/baoleng5980",
+    "html_url" : "https://github.com/baoleng5980",
+    "followers_url" : "https://api.github.com/users/baoleng5980/followers",
+    "following_url" : "https://api.github.com/users/baoleng5980/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/baoleng5980/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/baoleng5980/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/baoleng5980/subscriptions",
+    "organizations_url" : "https://api.github.com/users/baoleng5980/orgs",
+    "repos_url" : "https://api.github.com/users/baoleng5980/repos",
+    "events_url" : "https://api.github.com/users/baoleng5980/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/baoleng5980/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/555d3a3539862ba6ce1fb707d38bc36cc70f8f46",
+  "commit" : {
+    "author" : {
+      "name" : "baoleng5980",
+      "email" : "15627388597@163.com",
+      "date" : "2015-10-20T01:44:23Z"
+    },
+    "committer" : {
+      "name" : "baoleng5980",
+      "email" : "15627388597@163.com",
+      "date" : "2015-10-20T01:44:23Z"
+    },
+    "message" : "Update index.html",
+    "tree" : {
+      "sha" : "63ebfef9c7c507b083e370046ab9e7e82b28d82b",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/63ebfef9c7c507b083e370046ab9e7e82b28d82b"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/555d3a3539862ba6ce1fb707d38bc36cc70f8f46",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/555d3a3539862ba6ce1fb707d38bc36cc70f8f46/comments",
+  "files" : [ {
+    "sha" : "fed1dda0ec28767e6610d676d15b8333adf05f59",
+    "filename" : "works/1314080901203/index.html",
+    "status" : "modified",
+    "additions" : 10,
+    "deletions" : 16,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/555d3a3539862ba6ce1fb707d38bc36cc70f8f46/works/1314080901203/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/555d3a3539862ba6ce1fb707d38bc36cc70f8f46/works/1314080901203/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901203/index.html?ref=555d3a3539862ba6ce1fb707d38bc36cc70f8f46",
+    "patch" : "@@ -5,24 +5,18 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>财务-费用付款 by 1314080901203</title>\n+    <title>财务-费用单 by 1314080901203</title>\n     <script>\n     function MyFilterDemoCtrl($scope) {\n-           var msgCt;\n-\t    function createBox(t, s){\n-\t        return '<div class=\"msg\"><h3>' + t + '</h3><p>' + s + '</p></div>';\n-\t    }\n-\t    return {\n-\t        msg : function(title, format){\n-\t            if(!msgCt){\n-\t                msgCt = Ext.DomHelper.insertFirst(document.body, {id:'msg-div'}, true);\n-\t            }\n-\t            var s = Ext.String.format.apply(String, Array.prototype.slice.call(arguments, 1));\n-\t            var m = Ext.DomHelper.append(msgCt, createBox(title, s), true);\n-\t            m.hide();\n-\t            m.slideIn('t').ghost(\"t\", { delay: 1000, remove: true});\n-\t        }\n-\t    };\n+                var someData = {\n+            firstName: '费用类型',\n+            surname: '报表单位',\n+            dateJoined: '报账人',\n+            consumption: '报账日期',\n+            plan: '报账日期'\n+            ''\n+        };\n+        $scope.data = someData;\n } </script>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     "
+  } ],
+  "sha" : "555d3a3539862ba6ce1fb707d38bc36cc70f8f46",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/555d3a3539862ba6ce1fb707d38bc36cc70f8f46",
+  "parents" : [ {
+    "sha" : "066012658aa56dbc524eebed219b74a1e0364d50",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/066012658aa56dbc524eebed219b74a1e0364d50",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/066012658aa56dbc524eebed219b74a1e0364d50"
+  } ]
+}

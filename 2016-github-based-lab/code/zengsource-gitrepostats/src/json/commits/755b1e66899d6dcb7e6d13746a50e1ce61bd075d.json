@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zhonghanying",
+    "id" : 15098323,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098323?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhonghanying",
+    "html_url" : "https://github.com/zhonghanying",
+    "followers_url" : "https://api.github.com/users/zhonghanying/followers",
+    "following_url" : "https://api.github.com/users/zhonghanying/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhonghanying/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhonghanying/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhonghanying/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhonghanying/orgs",
+    "repos_url" : "https://api.github.com/users/zhonghanying/repos",
+    "events_url" : "https://api.github.com/users/zhonghanying/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhonghanying/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 9,
+    "additions" : 5,
+    "deletions" : 4
+  },
+  "author" : {
+    "login" : "zhonghanying",
+    "id" : 15098323,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098323?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhonghanying",
+    "html_url" : "https://github.com/zhonghanying",
+    "followers_url" : "https://api.github.com/users/zhonghanying/followers",
+    "following_url" : "https://api.github.com/users/zhonghanying/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhonghanying/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhonghanying/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhonghanying/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhonghanying/orgs",
+    "repos_url" : "https://api.github.com/users/zhonghanying/repos",
+    "events_url" : "https://api.github.com/users/zhonghanying/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhonghanying/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/755b1e66899d6dcb7e6d13746a50e1ce61bd075d",
+  "commit" : {
+    "author" : {
+      "name" : "zhonghanying",
+      "email" : "1344434474@qq.com",
+      "date" : "2015-12-01T01:02:32Z"
+    },
+    "committer" : {
+      "name" : "zhonghanying",
+      "email" : "1344434474@qq.com",
+      "date" : "2015-12-01T01:02:32Z"
+    },
+    "message" : "实验5",
+    "tree" : {
+      "sha" : "bcf44dcc7cafa65d333f1b87713a7e79ea5f3b77",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/bcf44dcc7cafa65d333f1b87713a7e79ea5f3b77"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/755b1e66899d6dcb7e6d13746a50e1ce61bd075d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/755b1e66899d6dcb7e6d13746a50e1ce61bd075d/comments",
+  "files" : [ {
+    "sha" : "270473f37d5e6f360b0cfcbde50c72bd6239cdce",
+    "filename" : "works/1314080901246/index.html",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 4,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/755b1e66899d6dcb7e6d13746a50e1ce61bd075d/works/1314080901246/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/755b1e66899d6dcb7e6d13746a50e1ce61bd075d/works/1314080901246/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901246/index.html?ref=755b1e66899d6dcb7e6d13746a50e1ce61bd075d",
+    "patch" : "@@ -1,5 +1,5 @@\n ﻿<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+<html ng-app=\"EmployeeAttendanceModule\"> \n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n@@ -22,7 +22,7 @@\n     <![endif]-->\n \n   </head>\n-  <body>\n+  <body ng-controller=\"MyFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -49,11 +49,12 @@\n       <div class=\"starter-template\">\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-        <p>{{data}}</p>\n+        \n       </div>\n \n     </div><!-- /.container -->\n-\n+<liebiao>\n+      </liebiao>\n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->"
+  } ],
+  "sha" : "755b1e66899d6dcb7e6d13746a50e1ce61bd075d",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/755b1e66899d6dcb7e6d13746a50e1ce61bd075d",
+  "parents" : [ {
+    "sha" : "c6d4c0904742044e7acc8ef124e778671650fb04",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c6d4c0904742044e7acc8ef124e778671650fb04",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/c6d4c0904742044e7acc8ef124e778671650fb04"
+  } ]
+}

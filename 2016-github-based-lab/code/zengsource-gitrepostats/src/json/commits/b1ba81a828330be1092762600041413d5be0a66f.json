@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "fangrenye",
+    "id" : 14156487,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14156487?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fangrenye",
+    "html_url" : "https://github.com/fangrenye",
+    "followers_url" : "https://api.github.com/users/fangrenye/followers",
+    "following_url" : "https://api.github.com/users/fangrenye/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fangrenye/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fangrenye/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fangrenye/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fangrenye/orgs",
+    "repos_url" : "https://api.github.com/users/fangrenye/repos",
+    "events_url" : "https://api.github.com/users/fangrenye/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fangrenye/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 50,
+    "additions" : 30,
+    "deletions" : 20
+  },
+  "author" : {
+    "login" : "fangrenye",
+    "id" : 14156487,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14156487?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fangrenye",
+    "html_url" : "https://github.com/fangrenye",
+    "followers_url" : "https://api.github.com/users/fangrenye/followers",
+    "following_url" : "https://api.github.com/users/fangrenye/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fangrenye/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fangrenye/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fangrenye/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fangrenye/orgs",
+    "repos_url" : "https://api.github.com/users/fangrenye/repos",
+    "events_url" : "https://api.github.com/users/fangrenye/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fangrenye/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/b1ba81a828330be1092762600041413d5be0a66f",
+  "commit" : {
+    "author" : {
+      "name" : "fangrenye",
+      "email" : "1249868832@qq.com",
+      "date" : "2015-12-08T12:19:20Z"
+    },
+    "committer" : {
+      "name" : "fangrenye",
+      "email" : "1249868832@qq.com",
+      "date" : "2015-12-08T12:19:20Z"
+    },
+    "message" : "Update index.html\n\n实验6",
+    "tree" : {
+      "sha" : "0bbd0075a784aca6aa4c71751c2a2dcd1749a2af",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/0bbd0075a784aca6aa4c71751c2a2dcd1749a2af"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/b1ba81a828330be1092762600041413d5be0a66f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b1ba81a828330be1092762600041413d5be0a66f/comments",
+  "files" : [ {
+    "sha" : "55fb387a0842b0b24206072c2df3223b795253c3",
+    "filename" : "works/1314080901129/index.html",
+    "status" : "modified",
+    "additions" : 30,
+    "deletions" : 20,
+    "changes" : 50,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/b1ba81a828330be1092762600041413d5be0a66f/works/1314080901129/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/b1ba81a828330be1092762600041413d5be0a66f/works/1314080901129/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901129/index.html?ref=b1ba81a828330be1092762600041413d5be0a66f",
+    "patch" : "@@ -22,7 +22,7 @@\n     <![endif]-->\n     \n   </head>\n-  <body ng-controller=\"MyFilterDemoCtrl\">\n+  <body ng-controller=\"MyFilter\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -50,20 +50,23 @@\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n-    </div><!-- /.container -->\n+    </div>\n+    \n+    <div class=\"container\">\n+    <!-- /.container -->\n <div class=\"row col-lg-offset-2\">\n-   <form class=\"form-inline\" role=\"form\">\n+   <form class=\"form-inline\" role=\"form\"ng-submit=\"register()\" novalidate>\n      <div class=\"form-group row\">\n        <div class=\"row\">\n         <label for=\"example1\">单位名称：</label>\n         <input type=\"text\"\n         class=\"form-control input-sm\" ng-model=\"danweiName\" id=\"example1\"/>\n          <label for=\"example2\">收款方式：</label>\n-           <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanfangshi\" id=\"example2\"/>\n+           <input type=\"text\" class=\"form-control input-sm\" ng-model=\"danju.fangshi\" id=\"example2\"/>\n             <label for=\"example3\">收款日期：</label>\n-            <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanDate\" id=\"example3\"/>\n+            <input type=\"text\" class=\"form-control input-sm\" ng-model=\"danju.Date\" id=\"example3\"/>\n              <label for=\"example4\">收款金额：</label>\n-             <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanjine\" id=\"example4\"/>\n+             <input type=\"text\" class=\"form-control input-sm\" ng-model=\"danju.jine\" id=\"example4\"/>\n                 </div>\n  </div>\n   <br>\n@@ -72,42 +75,49 @@\n +                <div class=\"form-group row\">\n +                    <div class=\"row\">\n +                        <label for=\"example5\">收款账户：</label>\n-+                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanzhanghu\" id=\"example5\"/>\n++                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"danju.zhanghu\" id=\"example5\"/>\n +\n +                        <label for=\"example6\">银行账号：</label>\n-+                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuankahao\" id=\"example6\"/>\n++                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"danju.zhanghao\" id=\"example6\"/>\n +\n +                         <label for=\"example7\">状态：</label>\n-+                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"zhuangtai\" id=\"example7\"/>\n++                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"danju.zhuangtai\" id=\"example7\"/>\n +\n +                        <label for=\"example8\">备注：</label>\n-+                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"Other\" id=\"example8\"/>\n++                        <input type=\"text\" class=\"form-control input-sm\" ng-model=\"danju.Other\" id=\"example8\"/>\n +                       \n +                    </div>\n +                </div>\n +\n +                <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n-+                    <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\">\n++                    <button type=\"submit\" class=\"btn btn-default\" ></button>\n +                        {{isHidden ? '提交' : '隐藏'}}\n +                    </button>\n +                </div>\n +            </form>\n +\n +        </div>\n+     <br>\n++            <br>\n++\n++            <!-- SHOW ERROR/SUCCESS MESSAGES\n++            <div id=\"messages\" class=\"ng-cloak\" ng-show=\"backMess\" ng-hide=\"isHidden\">\n++                <p>{{ backMess[0].message }}</p>\n++            </div>-->\n +    </div>\n +</div>\n +\n +<div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n +    <p class=\"lead\">\n +    <div ng-hide=\"isHidden\">您输入的数据为：</div>\n-+    <div id=\"name\" ng-hide=\"isHidden\">单位名称->{{Pno}}</div>\n-+    <div id=\"fangshi\" ng-hide=\"isHidden\">收款方式->{{Sort}}</div>\n-+    <div id=\"date\" ng-hide=\"isHidden\">收款日期->{{Name}}</div>\n-+    <div id=\"jine\" ng-hide=\"isHidden\">收款金额->{{Size}}</div>\n-+    <div id=\"zhanghu\" ng-hide=\"isHidden\">收款账户->{{Color}}</div>\n-+    <div id=\"zhanghao\" ng-hide=\"isHidden\">银行账号->{{Unit}}</div>\n-+    <div id=\"zhuangtai\" ng-hide=\"isHidden\">状态->{{Num}}</div>\n-+    <div id=\"Other\" ng-hide=\"isHidden\">备注->{{Other}}</div>\n++    <div id=\"name\" ng-hide=\"isHidden\">单位名称->{{danju.name}}</div>\n++    <div id=\"fangshi\" ng-hide=\"isHidden\">收款方式->{{danju.fangshi}}</div>\n++    <div id=\"date\" ng-hide=\"isHidden\">收款日期->{{daju.date}}</div>\n++    <div id=\"jine\" ng-hide=\"isHidden\">收款金额->{{danju.jine}}</div>\n++    <div id=\"zhanghu\" ng-hide=\"isHidden\">收款账户->{{daju.zhanghur}}</div>\n++    <div id=\"zhanghao\" ng-hide=\"isHidden\">银行账号->{{danju.zhanghao}}</div>\n++    <div id=\"zhuangtai\" ng-hide=\"isHidden\">状态->{{danju.zhuangtai}}</div>\n++    <div id=\"Other\" ng-hide=\"isHidden\">备注->{{danju.Other}}</div>\n +    </p>\n +</div>\n +<!-- /.container -->\n@@ -118,4 +128,4 @@\n      <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n +    <script src=\"js/providerModule.js\"></script>\n   </body>\n-</html>\n\\ No newline at end of file\n+</html>"
+  } ],
+  "sha" : "b1ba81a828330be1092762600041413d5be0a66f",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b1ba81a828330be1092762600041413d5be0a66f",
+  "parents" : [ {
+    "sha" : "9d4a537a1b5664223950b8af862228107f52274d",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9d4a537a1b5664223950b8af862228107f52274d",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9d4a537a1b5664223950b8af862228107f52274d"
+  } ]
+}

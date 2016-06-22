@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 65,
+    "additions" : 28,
+    "deletions" : 37
+  },
+  "author" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/df2adc5344869b922b503b649d5a27e69b02e2b7",
+  "commit" : {
+    "author" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2015-11-08T14:41:50Z"
+    },
+    "committer" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2015-11-08T14:41:50Z"
+    },
+    "message" : "实验4修改-1314080901110\n\n实验4修改",
+    "tree" : {
+      "sha" : "bbdf9e425716cd93dc9f874aa8a93690bb11ef21",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/bbdf9e425716cd93dc9f874aa8a93690bb11ef21"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/df2adc5344869b922b503b649d5a27e69b02e2b7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/df2adc5344869b922b503b649d5a27e69b02e2b7/comments",
+  "files" : [ {
+    "sha" : "cbe2fa0dce5ff0c576373ae4affcf9a5fb5cdc15",
+    "filename" : "works/1314080901110/index.html",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 16,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/df2adc5344869b922b503b649d5a27e69b02e2b7/works/1314080901110/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/df2adc5344869b922b503b649d5a27e69b02e2b7/works/1314080901110/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901110/index.html?ref=df2adc5344869b922b503b649d5a27e69b02e2b7",
+    "patch" : "@@ -1,7 +1,6 @@\n -<!DOCTYPE html>\n--<html lang=\"zh-CN\">\n-+<html lang=\"zh-CN\" ng-app=\"caiwushouruchaxunModule\">\n-   <head>\n+<html ng-app=\"caiwushouruchaxun\"> \n+  <head lang=\"en\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n@@ -23,19 +22,8 @@\n       <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n +     <script src=\"js/caiwushouruchaxunModule.js\"></script>\n     <![endif]-->\n-    <script>\n-+    function MyFilterDemoCtrl($scope) {\n-+        var Query options = {\n-+            Income state: 'δ���',\n-+            Start date:  '2015-1-1',\n-+     Termination date: '2015-2-13',\n-+        };\n-+        $scope.data =  Query options;\n-+} \n-+</script>\n   </head>\n-  <body>\n-  <body ng-controller=\"caiwushouruchaxunDemoCtrl\">\n+  <body ng-controller=\"MyFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -62,6 +50,7 @@\n       <div class=\"starter-template\">\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n+        <p>{{data}}</p>\n       </div>\n \n     </div><!-- /.container -->\n@@ -69,6 +58,7 @@\n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n-    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+    <script src=\"js/caiwushouruchaxun.js\"></script>\n   </body>\n </html>"
+  }, {
+    "sha" : "ea924d637f6415efc770c378cda779dd59527e4c",
+    "filename" : "works/1314080901110/js/caiwushouruchaxun.js",
+    "status" : "modified",
+    "additions" : 22,
+    "deletions" : 21,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/df2adc5344869b922b503b649d5a27e69b02e2b7/works/1314080901110/js/caiwushouruchaxun.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/df2adc5344869b922b503b649d5a27e69b02e2b7/works/1314080901110/js/caiwushouruchaxun.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901110/js/caiwushouruchaxun.js?ref=df2adc5344869b922b503b649d5a27e69b02e2b7",
+    "patch" : "@@ -1,22 +1,23 @@\n // create a new module called 'myAppModule' and save \n-+// a reference to it in a variable called myAppModule \n-+var myAppModule = angular.module('caiwushouruchaxunModule', []);\n-+\n-+// use the myAppModule variable to\n-+// configure the module with a controller\n-+myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n-+       // controller code would go here\n-+      var Query options = {\n-+            Income state: '未完成',\n-+            Start date:  '2015-1-1',\n-+     Termination date: '2015-2-13',\n-+        };\n-+        $scope.data =  Query options;\n-+} \n-+\n-+// use the myAppModule variable to\n-+// configure the module with a filter\n-+myAppModule.filter('stripDashes', function() {\n-+    return function(txt) {\n-+        // filter code would go here\n-+}; }); \n+// a reference to it in a variable called myAppModule \n+var caiwushouruchaxun = angular.module('caiwushouruchaxun', []);\n+\n+// use the myAppModule variable to\n+// configure the module with a controller\n+caiwushouruchaxun.controller('MyFilterDemoCtrl', function ($scope) {\n+      // controller code would go here\n+      var Queryoptions = {\n+            Incomestate:'未完成',\n+            Startdate:'2015-1-1',\n+            Terminationdate:'2015-2-13'\n+        };\n+        $scope.data =  Queryoptions;\n+    }\n+);\n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+caiwushouruchaxun.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; }); "
+  } ],
+  "sha" : "df2adc5344869b922b503b649d5a27e69b02e2b7",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/df2adc5344869b922b503b649d5a27e69b02e2b7",
+  "parents" : [ {
+    "sha" : "c226eafb7f8175f4fe8788440963df60ff191aa7",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c226eafb7f8175f4fe8788440963df60ff191aa7",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/c226eafb7f8175f4fe8788440963df60ff191aa7"
+  } ]
+}

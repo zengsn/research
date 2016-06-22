@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 74,
+    "additions" : 58,
+    "deletions" : 16
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/8a11a1096535a7ac1c7c23922d43a087251e4452",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-14T13:16:32Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-14T13:16:32Z"
+    },
+    "message" : "Merge pull request #435 from zhongdingjun/master\n\n1314080901146 钟定钧 实验6 （服务）",
+    "tree" : {
+      "sha" : "591f5dfdf0eb6c76df39f6d9adbbc7a5fa14ea2a",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/591f5dfdf0eb6c76df39f6d9adbbc7a5fa14ea2a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/8a11a1096535a7ac1c7c23922d43a087251e4452",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8a11a1096535a7ac1c7c23922d43a087251e4452/comments",
+  "files" : [ {
+    "sha" : "a4c858927d19df3d04d7ee8d2d680db98b12d6ad",
+    "filename" : "works/1314080901146/index.html",
+    "status" : "modified",
+    "additions" : 18,
+    "deletions" : 13,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/8a11a1096535a7ac1c7c23922d43a087251e4452/works/1314080901146/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/8a11a1096535a7ac1c7c23922d43a087251e4452/works/1314080901146/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901146/index.html?ref=8a11a1096535a7ac1c7c23922d43a087251e4452",
+    "patch" : "@@ -21,7 +21,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body ng-controller=\"MyFilterDemoCtrl\">\n+  <body ng-controller=\"MyFilter\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -52,21 +52,21 @@\n \t\n <div class=\"container\">\n     <div class=\"row col-lg-offset-2\">\n-        <form class=\"form-inline\" role=\"form\">\n+        <form class=\"form-inline\" role=\"form\"  ng-submit=\"register()\" novalidate>\n \n             <div class=\"form-group row\">\n                 <div class=\"row\">\n                     <label for=\"example1\">工厂名称：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"factoryName\" id=\"example1\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"factory.Name\" id=\"example1\" required/>\n \n                     <label for=\"example2\">工厂代号：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"factoryNum\" id=\"example2\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"factory.Num\" id=\"example2\" required/>\n \n                     <label for=\"example3\">工厂位置：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"factoryLocation\" id=\"example3\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"factory.Location\" id=\"example3\" required/>\n \t\t\t\t\t\n \t\t\t\t\t<label for=\"example4\">工厂描述：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"factoryDescription\" id=\"example4\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"factory.Description\" id=\"example4\" required/>\n \n \t\t\t   </div>\n             </div>\n@@ -74,11 +74,17 @@\n             <br>\n           \n             <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n-                <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\">\n+                <button type=\"submit\" class=\"btn btn-default\">\n                     {{isHidden ? '提交' : '隐藏'}}\n                 </button>\n             </div>\n-        \n+\t\t\t\n+            <br>\n+            <br>\n+            <!-- SHOW ERROR/SUCCESS MESSAGES\n+            <div id=\"messages\" class=\"ng-cloak\" ng-show=\"backMess\" ng-hide=\"isHidden\">\n+                <p>{{ backMess[0].message }}</p>\n+            </div>-->           \n         </form>\n     </div>\n </div>\n@@ -86,10 +92,10 @@\n <div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n     <p class=\"lead\">\n     <div ng-hide=\"isHidden\">您输入的数据为：</div>\n-    <div id=\"factoryName\" ng-hide=\"isHidden\">工程名称->{{factoryName}}</div>\n-    <div id=\"factoryNum\" ng-hide=\"isHidden\">工厂代号->{{factoryNum}}</div>\n-    <div id=\"factoryLocation\" ng-hide=\"isHidden\">工厂位置->{{factoryLocation}}</div>\n-    <div id=\"factoryDescription\" ng-hide=\"isHidden\">工厂描述->{{factoryDescription}}</div>   \n+    <div id=\"factoryName\" ng-hide=\"isHidden\">工程名称->{{factory.Name}}</div>\n+    <div id=\"factoryNum\" ng-hide=\"isHidden\">工厂代号->{{factory.Num}}</div>\n+    <div id=\"factoryLocation\" ng-hide=\"isHidden\">工厂位置->{{factory.Location}}</div>\n+    <div id=\"factoryDescription\" ng-hide=\"isHidden\">工厂描述->{{factory.Description}}</div>   \n     </p>\n </div>\n \n@@ -97,7 +103,6 @@\n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n-    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n     <script src=\"js/factoryModule.js\"></script>\n   </body>"
+  }, {
+    "sha" : "9055f0a59921632ff1ae6040993b5a4c17562c41",
+    "filename" : "works/1314080901146/js/factoryModule.js",
+    "status" : "modified",
+    "additions" : 28,
+    "deletions" : 3,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/8a11a1096535a7ac1c7c23922d43a087251e4452/works/1314080901146/js/factoryModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/8a11a1096535a7ac1c7c23922d43a087251e4452/works/1314080901146/js/factoryModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901146/js/factoryModule.js?ref=8a11a1096535a7ac1c7c23922d43a087251e4452",
+    "patch" : "@@ -5,7 +5,14 @@ var factoryModule = angular.module('factoryModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-factoryModule.controller('MyFilterDemoCtrl', function ($scope) {\n+factoryModule.factory('factoryService', function ($http) {\n+\tvar dataStroe = {};\n+        dataStroe.doRegistration = function (theData) {\n+            var promise = $http({method: 'POST',url: 'json/message.json',data: theData});\n+            return promise;\n+        }\n+        return dataStroe;\n+    }).controller('MyFilter', function ($scope,factoryService) {\n        // controller code would go here\n \tvar factoryData = {\n             factoryName: 'kaixin',\n@@ -19,8 +26,26 @@ factoryModule.controller('MyFilterDemoCtrl', function ($scope) {\n \t\t{\n             $scope.isHidden = !$scope.isHidden;\n         }\n-}\n-);\n+\t\t$scope.factory = {};\n+        $scope.register = function () {\n+            var promise = factoryService.doRegistration($scope.factory);\n+            promise.success(function (data, status, headers, config, statusText) {\n+                $scope.backMess = data.success;\n+                $scope.isHidden = !$scope.isHidden;\n+                if(!$scope.isHidden){\n+                    alert($scope.backMess[0].message + \"\\n\" + \"\\n\" + \"Your factoryNum is \" + $scope.factory.Num);\n+                }\n+            });\n+            promise.error(function (data, status, headers, config, statusText) {\n+                $scope.backMess = data.error;\n+                $scope.isHidden = !$scope.isHidden;\n+                if(!$scope.isHidden){\n+                    alert($scope.backMess[0].message);\n+                }\n+            });\n+        }\n+});\n+\n \n // use the myAppModule variable to\n // configure the module with a filter"
+  }, {
+    "sha" : "ff9363d61a9285db7106fb120e676ca57f1ec367",
+    "filename" : "works/1314080901146/json/message.json",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/8a11a1096535a7ac1c7c23922d43a087251e4452/works/1314080901146/json/message.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/8a11a1096535a7ac1c7c23922d43a087251e4452/works/1314080901146/json/message.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901146/json/message.json?ref=8a11a1096535a7ac1c7c23922d43a087251e4452",
+    "patch" : "@@ -0,0 +1,12 @@\n+{\n+    \"success\": [\n+        {\n+            \"message\": \"Thank you for taking the time to register!\"\n+        }\n+    ],\n+    \"error\": [\n+        {\n+            \"message\": \"There appears to have been a problem with your registration.\"\n+        }\n+    ]\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "8a11a1096535a7ac1c7c23922d43a087251e4452",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8a11a1096535a7ac1c7c23922d43a087251e4452",
+  "parents" : [ {
+    "sha" : "9cede1b989267b4cd67a300ea7d50b4d18eb426c",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9cede1b989267b4cd67a300ea7d50b4d18eb426c",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9cede1b989267b4cd67a300ea7d50b4d18eb426c"
+  }, {
+    "sha" : "7dca0d9cbcbf4c29284c8ac8b045f67f83606703",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7dca0d9cbcbf4c29284c8ac8b045f67f83606703",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/7dca0d9cbcbf4c29284c8ac8b045f67f83606703"
+  } ]
+}

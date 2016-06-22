@@ -1,0 +1,60 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 85,
+    "additions" : 63,
+    "deletions" : 22
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/927d1e6ef043e77d8d80c34ca5ba69b4385d928b",
+  "commit" : {
+    "author" : {
+      "name" : "111",
+      "email" : "222",
+      "date" : "2015-11-10T03:01:08Z"
+    },
+    "committer" : {
+      "name" : "111",
+      "email" : "222",
+      "date" : "2015-11-10T03:01:08Z"
+    },
+    "message" : "之前有些内容被我删除了，现在复原回来",
+    "tree" : {
+      "sha" : "27403abaec8fd4aa04e5e67207615940ca386300",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/27403abaec8fd4aa04e5e67207615940ca386300"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/927d1e6ef043e77d8d80c34ca5ba69b4385d928b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/927d1e6ef043e77d8d80c34ca5ba69b4385d928b/comments",
+  "files" : [ {
+    "sha" : "1dbcadc4dabbd07ff9be87681d72b0b563d8affd",
+    "filename" : "works/1314080901208/index.html",
+    "status" : "modified",
+    "additions" : 60,
+    "deletions" : 19,
+    "changes" : 79,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/927d1e6ef043e77d8d80c34ca5ba69b4385d928b/works/1314080901208/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/927d1e6ef043e77d8d80c34ca5ba69b4385d928b/works/1314080901208/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901208/index.html?ref=927d1e6ef043e77d8d80c34ca5ba69b4385d928b",
+    "patch" : "@@ -5,27 +5,35 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>产品出库-新建产品出库单-表单 by 1314080901208</title>\n-      <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n-      <script src=\"js/myOrderModule.js\"></script>\n-       \n-   <script>\n-     \n-   </script>\n-      <style>\n-       \n-      </style>\n-  </head>\n+<title>产品出库-新建产品出库单-表单 by 1314080901208</title>\n+<script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+<script src=\"js/myOrderModule.js\"></script>\n \n-  <body ng-controller=\"CreateOrderInformation\">\n-      \n-      <style>\n+\n+    <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+\n+    <!-- Bootstrap -->\n+    <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n+\n+    <!-- Custom styles for this template -->\n+    <link href=\"css/style.css\" rel=\"stylesheet\">\n+\n+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n+    <!--[if lt IE 9]>\n+      <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+      <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+    <![endif]-->\n+\n+    <style>\n           .table {\n+            background-color:#f2f6f7;\n               height: 350px;\n               width: 750px;\n               display: inline-block;\n-              margin-left: 300px;\n-              margin-top: 50px;\n+              margin-left: 200px;\n+              margin-top: 0px;\n+              margin-bottom: 250PX;\n               text-align: center;\n               padding-top: 20px;\n               box-shadow: 2px 3px 4px #808080;\n@@ -61,7 +69,34 @@\n               width: 100px;\n           }\n       </style>\n-     <div style=\"\" id=\"table\" class=\"table\">\n+  </head>\n+  <body ng-controller=\"CreateOrderInformation\">\n+    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+      <div class=\"container\">\n+        <div class=\"navbar-header\">\n+          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n+            <span class=\"sr-only\">Toggle navigation</span>\n+        \n+          </button>\n+          <a class=\"navbar-brand\" href=\"#\">Project name</a>\n+        </div>\n+        <div id=\"navbar\" class=\"collapse navbar-collapse\">\n+          <ul class=\"nav navbar-nav\">\n+            <li class=\"active\"><a href=\"#\">Home</a></li>\n+            <li><a href=\"#about\">About</a></li>\n+            <li><a href=\"#contact\">Contact</a></li>\n+          </ul>\n+        </div><!--/.nav-collapse -->\n+      </div>\n+    </nav>\n+\n+    <div class=\"container\">\n+\n+      <div class=\"starter-template\">\n+        <h1>Bootstrap starter template</h1>\n+        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n+      </div>\n+      <div style=\"\" id=\"table\" class=\"table\">\n          <div id=\"tableHead\" class=\"tableHead\">\n              <div id=\"orderId\" class=\"order orderId\" style=\"\">订单编号</div>\n              <div id=\"storage\" class=\"order storage\" style=\"\">仓库</div>\n@@ -81,6 +116,12 @@\n              </div>\n          </div>\n      </div>\n-  </body>\n \n-</html>\n\\ No newline at end of file\n+    </div><!-- /.container -->\n+\n+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n+    <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n+    <!-- Include all compiled plugins (below), or include individual files as needed -->\n+    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "522295b24e9cfdbe3cfb9697c7ca11798d6f6804",
+    "filename" : "works/1314080901208/js/myOrderModule.js",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 3,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/927d1e6ef043e77d8d80c34ca5ba69b4385d928b/works/1314080901208/js/myOrderModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/927d1e6ef043e77d8d80c34ca5ba69b4385d928b/works/1314080901208/js/myOrderModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901208/js/myOrderModule.js?ref=927d1e6ef043e77d8d80c34ca5ba69b4385d928b",
+    "patch" : "@@ -1,5 +1,5 @@\n \n-//��������ʵ��\n+//¶¨Òå±íµ¥Êý¾ÝÊµÌå\n       var orderData = {\n           orderId: 1,\n           storage: 'myStorage',\n@@ -30,5 +30,5 @@ myOrderModule.filter(\"\", function () {\n \n \n \n-//��������js�ļ��Ƿ�ɹ��ĺ������\n-function a() { alert(\"����js�ļ��ɹ�\");}\n\\ No newline at end of file\n+//²âÊÔÒýÓÃjsÎÄ¼þÊÇ·ñ³É¹¦µÄº¯Êýµ÷ÓÃ\n+function a() { alert(\"ÒýÓÃjsÎÄ¼þ³É¹¦\");}\n\\ No newline at end of file"
+  } ],
+  "sha" : "927d1e6ef043e77d8d80c34ca5ba69b4385d928b",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/927d1e6ef043e77d8d80c34ca5ba69b4385d928b",
+  "parents" : [ {
+    "sha" : "59fed14c5269d0ecf14c3e1540fe2b83750fe8a1",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/59fed14c5269d0ecf14c3e1540fe2b83750fe8a1",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/59fed14c5269d0ecf14c3e1540fe2b83750fe8a1"
+  } ]
+}

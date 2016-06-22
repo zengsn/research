@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Egg903",
+    "id" : 14357439,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14357439?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Egg903",
+    "html_url" : "https://github.com/Egg903",
+    "followers_url" : "https://api.github.com/users/Egg903/followers",
+    "following_url" : "https://api.github.com/users/Egg903/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Egg903/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Egg903/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Egg903/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Egg903/orgs",
+    "repos_url" : "https://api.github.com/users/Egg903/repos",
+    "events_url" : "https://api.github.com/users/Egg903/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Egg903/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 19,
+    "additions" : 10,
+    "deletions" : 9
+  },
+  "author" : {
+    "login" : "Egg903",
+    "id" : 14357439,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14357439?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Egg903",
+    "html_url" : "https://github.com/Egg903",
+    "followers_url" : "https://api.github.com/users/Egg903/followers",
+    "following_url" : "https://api.github.com/users/Egg903/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Egg903/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Egg903/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Egg903/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Egg903/orgs",
+    "repos_url" : "https://api.github.com/users/Egg903/repos",
+    "events_url" : "https://api.github.com/users/Egg903/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Egg903/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0aea54f5fb19f7a3a41bdd882364d1d6347feea8",
+  "commit" : {
+    "author" : {
+      "name" : "Egg903",
+      "email" : "809694954@qq.com",
+      "date" : "2015-12-01T00:58:54Z"
+    },
+    "committer" : {
+      "name" : "Egg903",
+      "email" : "809694954@qq.com",
+      "date" : "2015-12-01T00:58:54Z"
+    },
+    "message" : "修改实验5\n\n能加载JS文件了",
+    "tree" : {
+      "sha" : "1c90c6fb19a1da1128143a132bd8229a4ed69664",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/1c90c6fb19a1da1128143a132bd8229a4ed69664"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/0aea54f5fb19f7a3a41bdd882364d1d6347feea8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0aea54f5fb19f7a3a41bdd882364d1d6347feea8/comments",
+  "files" : [ {
+    "sha" : "6d7fc7f6a71beb9d860e534be976a75e425816a2",
+    "filename" : "works/1314080901124/index.html",
+    "status" : "modified",
+    "additions" : 8,
+    "deletions" : 7,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0aea54f5fb19f7a3a41bdd882364d1d6347feea8/works/1314080901124/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0aea54f5fb19f7a3a41bdd882364d1d6347feea8/works/1314080901124/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901124/index.html?ref=0aea54f5fb19f7a3a41bdd882364d1d6347feea8",
+    "patch" : "@@ -1,19 +1,20 @@\n ﻿<!DOCTYPE html>\n-\n+ <head>\n+    \n     <script src=\"js/jquery.min.js\"></script>\n     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n-    <!<script type=\"text/javascript\" src=\"js/PaymentDetailsModule.js\"></script>\n-    <!<script src=\"js/PaymentDetailsModule.js\"></script>\n+    <script type=\"text/javascript\" src=\"js/PaymentDetailsModule.js\"></script>\n+    <script src=\"js/PaymentDetailsModule.js\"></script>\n     <![endif]-->\n \t\n \n   </head>\n-   <div id=\"content\">\n+   <div id=\"content\" ng-app=\"PaymentDetailsModule\">\n         <div id=\"head\" style=\"width:auto;height:32px;background-color:#0066c0;color:#ff0;font-size:28px;padding-left:20px;\">\n         付款明细\n         </div>\n-    <div>\n-      <table class=\"table\">\n+    <div ng-controller=\"MyFilterDemoCtrl\">\n+      <table class=\"table\" border=\"2\">\n       <tr style=\"background-color:#e3e3e3\">\n         <td>单据编号</td>\n         <td>摘要</td>\n@@ -22,7 +23,7 @@\n         <td>未付金额</td>\n         <td>备注</td>\n       </tr>\n-      <tr ng-repeat=\"item in someData\">\n+      <tr ng-repeat=\"item in data\">\n         <td>{{item.danjubianhao}}</td>\n         <td>{{item.zhaiyao}}</td>\n         <td>{{item.yingfujine}}</td>"
+  }, {
+    "sha" : "ca4709519ce023748677a2e9043d6bae67c83eea",
+    "filename" : "works/1314080901124/js/PaymentDetailsModule.js",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0aea54f5fb19f7a3a41bdd882364d1d6347feea8/works/1314080901124/js/PaymentDetailsModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0aea54f5fb19f7a3a41bdd882364d1d6347feea8/works/1314080901124/js/PaymentDetailsModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901124/js/PaymentDetailsModule.js?ref=0aea54f5fb19f7a3a41bdd882364d1d6347feea8",
+    "patch" : "@@ -1,4 +1,4 @@\n-// create a new module called 'myAppModule' and save \n+﻿// create a new module called 'myAppModule' and save \n // a reference to it in a variable called myAppModule \n var PaymentDetailsModule = angular.module('PaymentDetailsModule', []);\n \n@@ -6,7 +6,7 @@ var PaymentDetailsModule = angular.module('PaymentDetailsModule', []);\n // configure the module with a controller\n PaymentDetailsModule.controller('MyFilterDemoCtrl', function ($scope) {\n        // controller code would go here\n-        $scope.someData = [\n+        someData = [\n            { danjubianhao: '1234567',zhaiyao: '付款完成',yingfujine:'532.2',fukuanjine:'532.2', weifujine:'0.0',beizhu:'交易完成'},\n            { danjubianhao: '1234568',zhaiyao: '等待付款',yingfujine:'533.2',fukuanjine:'532.2', weifujine:'1.0',beizhu:'交易未完成'},\n            { danjubianhao: '1234569',zhaiyao: '等待付款',yingfujine:'534.2',fukuanjine:'532.2', weifujine:'2.0',beizhu:'交易未完成'},"
+  } ],
+  "sha" : "0aea54f5fb19f7a3a41bdd882364d1d6347feea8",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0aea54f5fb19f7a3a41bdd882364d1d6347feea8",
+  "parents" : [ {
+    "sha" : "9b8f19bfd12aa13067eb5492b1cf67d9d8e8cc13",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9b8f19bfd12aa13067eb5492b1cf67d9d8e8cc13",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9b8f19bfd12aa13067eb5492b1cf67d9d8e8cc13"
+  } ]
+}

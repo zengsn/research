@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "30-wangweixin",
+    "id" : 15066163,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15066163?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/30-wangweixin",
+    "html_url" : "https://github.com/30-wangweixin",
+    "followers_url" : "https://api.github.com/users/30-wangweixin/followers",
+    "following_url" : "https://api.github.com/users/30-wangweixin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/30-wangweixin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/30-wangweixin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/30-wangweixin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/30-wangweixin/orgs",
+    "repos_url" : "https://api.github.com/users/30-wangweixin/repos",
+    "events_url" : "https://api.github.com/users/30-wangweixin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/30-wangweixin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 22,
+    "additions" : 22,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "30-wangweixin",
+    "id" : 15066163,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15066163?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/30-wangweixin",
+    "html_url" : "https://github.com/30-wangweixin",
+    "followers_url" : "https://api.github.com/users/30-wangweixin/followers",
+    "following_url" : "https://api.github.com/users/30-wangweixin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/30-wangweixin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/30-wangweixin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/30-wangweixin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/30-wangweixin/orgs",
+    "repos_url" : "https://api.github.com/users/30-wangweixin/repos",
+    "events_url" : "https://api.github.com/users/30-wangweixin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/30-wangweixin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e60118fc82c15b0d67fd9c88896ecf96e1978364",
+  "commit" : {
+    "author" : {
+      "name" : "30-wangweixin",
+      "email" : "498837428@qq.com",
+      "date" : "2015-11-09T04:49:17Z"
+    },
+    "committer" : {
+      "name" : "30-wangweixin",
+      "email" : "498837428@qq.com",
+      "date" : "2015-11-09T04:49:17Z"
+    },
+    "message" : "Create chaxundanModule",
+    "tree" : {
+      "sha" : "ed35764c186bd304ae49da315bc5f466877d90bf",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/ed35764c186bd304ae49da315bc5f466877d90bf"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/e60118fc82c15b0d67fd9c88896ecf96e1978364",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e60118fc82c15b0d67fd9c88896ecf96e1978364/comments",
+  "files" : [ {
+    "sha" : "84019f9ed9c73241269450248989faf6ea6c6504",
+    "filename" : "works/1314080901230/js/chaxundanModule",
+    "status" : "added",
+    "additions" : 22,
+    "deletions" : 0,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e60118fc82c15b0d67fd9c88896ecf96e1978364/works/1314080901230/js/chaxundanModule",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e60118fc82c15b0d67fd9c88896ecf96e1978364/works/1314080901230/js/chaxundanModule",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901230/js/chaxundanModule?ref=e60118fc82c15b0d67fd9c88896ecf96e1978364",
+    "patch" : "@@ -0,0 +1,22 @@\n+// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+var chaxundanModule = angular.module('chaxundanModule', []);\n+\n+// use the myAppModule variable tos\n+// configure the module with a controller\n+chaxundanModule.controller('createchaxundanDemoCtrl', function ($scope) {\n+       // controller code would go here\n+        var chaxundanSet = {\n+         付款状态:\"全部\"，\n+         起始日期:\"2015-10-20\",\n+         终止日期:\"2015-10-20\"        };\n+        $scope.data = chaxundanSet;\n+    }\n+);\n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+chaxundanModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; }); // javascript.js"
+  } ],
+  "sha" : "e60118fc82c15b0d67fd9c88896ecf96e1978364",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e60118fc82c15b0d67fd9c88896ecf96e1978364",
+  "parents" : [ {
+    "sha" : "787f9b1862e893d0a35f1ebc1b8b0026ce28cc5d",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/787f9b1862e893d0a35f1ebc1b8b0026ce28cc5d",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/787f9b1862e893d0a35f1ebc1b8b0026ce28cc5d"
+  } ]
+}

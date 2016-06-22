@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Wanghengdan",
+    "id" : 14288002,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14288002?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Wanghengdan",
+    "html_url" : "https://github.com/Wanghengdan",
+    "followers_url" : "https://api.github.com/users/Wanghengdan/followers",
+    "following_url" : "https://api.github.com/users/Wanghengdan/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Wanghengdan/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Wanghengdan/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Wanghengdan/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Wanghengdan/orgs",
+    "repos_url" : "https://api.github.com/users/Wanghengdan/repos",
+    "events_url" : "https://api.github.com/users/Wanghengdan/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Wanghengdan/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 13,
+    "additions" : 12,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "Wanghengdan",
+    "id" : 14288002,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14288002?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Wanghengdan",
+    "html_url" : "https://github.com/Wanghengdan",
+    "followers_url" : "https://api.github.com/users/Wanghengdan/followers",
+    "following_url" : "https://api.github.com/users/Wanghengdan/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Wanghengdan/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Wanghengdan/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Wanghengdan/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Wanghengdan/orgs",
+    "repos_url" : "https://api.github.com/users/Wanghengdan/repos",
+    "events_url" : "https://api.github.com/users/Wanghengdan/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Wanghengdan/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/82c5e887322c64721c6226260433bc5ff41b6311",
+  "commit" : {
+    "author" : {
+      "name" : "Wanghengdan",
+      "email" : "452950236@qq.com",
+      "date" : "2015-10-26T10:57:51Z"
+    },
+    "committer" : {
+      "name" : "Wanghengdan",
+      "email" : "452950236@qq.com",
+      "date" : "2015-10-26T10:57:51Z"
+    },
+    "message" : "实验三",
+    "tree" : {
+      "sha" : "659431f229289f8e4a568610abc97f6097786164",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/659431f229289f8e4a568610abc97f6097786164"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/82c5e887322c64721c6226260433bc5ff41b6311",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/82c5e887322c64721c6226260433bc5ff41b6311/comments",
+  "files" : [ {
+    "sha" : "a69878907ed3254142056d1ceb818869d1726437",
+    "filename" : "works/1314080901133/index.html",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 1,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/82c5e887322c64721c6226260433bc5ff41b6311/works/1314080901133/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/82c5e887322c64721c6226260433bc5ff41b6311/works/1314080901133/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901133/index.html?ref=82c5e887322c64721c6226260433bc5ff41b6311",
+    "patch" : "@@ -5,7 +5,7 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>{{物料供应商}} by 1314080901133</title>\n+    <title>{{物料_供应商_供应商资料}} by 1314080901133</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,6 +20,17 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var someData = {\n+            no.: '001',\n+            name: 'xidada',\n+            code: '110120119',\n+            photo: '20151020.jpg',\n+            createTime: '2015-10-20'\n+        };\n+        $scope.data = someData;\n+    } </script>\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901133/物料_供应商_供应商资料.txt",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/82c5e887322c64721c6226260433bc5ff41b6311/works/1314080901133/%E7%89%A9%E6%96%99_%E4%BE%9B%E5%BA%94%E5%95%86_%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E6%96%99.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/82c5e887322c64721c6226260433bc5ff41b6311/works/1314080901133/%E7%89%A9%E6%96%99_%E4%BE%9B%E5%BA%94%E5%95%86_%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E6%96%99.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901133/%E7%89%A9%E6%96%99_%E4%BE%9B%E5%BA%94%E5%95%86_%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E6%96%99.txt?ref=82c5e887322c64721c6226260433bc5ff41b6311",
+    "previous_filename" : "works/1314080901133/物料供应商.txt"
+  } ],
+  "sha" : "82c5e887322c64721c6226260433bc5ff41b6311",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/82c5e887322c64721c6226260433bc5ff41b6311",
+  "parents" : [ {
+    "sha" : "6a37f100ac60c0fff85132c3d51a240e217c5b69",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/6a37f100ac60c0fff85132c3d51a240e217c5b69",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/6a37f100ac60c0fff85132c3d51a240e217c5b69"
+  } ]
+}

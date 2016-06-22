@@ -1,0 +1,217 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 276,
+    "additions" : 276,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+  "commit" : {
+    "author" : {
+      "name" : "zengsn",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:42:34Z"
+    },
+    "committer" : {
+      "name" : "zengsn",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:42:34Z"
+    },
+    "message" : "上传第7章例子",
+    "tree" : {
+      "sha" : "d9adc655db92b3a74d410b7fef1d695d824acffc",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/d9adc655db92b3a74d410b7fef1d695d824acffc"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/comments",
+  "files" : [ {
+    "sha" : "a30c221cd51dc14ae3b06055c623eb7c170e3221",
+    "filename" : "angularjs/7.1-window-service.html",
+    "status" : "added",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.1-window-service.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.1-window-service.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.1-window-service.html?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,17 @@\n+<!DOCTYPE html >\n+<html ng-app=\"myapp\">\n+<head>\n+    <title>Angular Services</title>\n+    <script src=\"js/angular.min.js\"></script>\n+    <script>\n+        var module = angular.module('myapp', []);\n+        module.controller(\"MyController\", function ($scope, $window) { \n+        \t$scope.winWidth = $window.innerWidth;\n+        });\n+    </script>\n+</head>\n+<body ng-controller=\"MyController\">\n+    <p>Window width: {{winWidth}}px</p>\n+</body>\n+</html>\n+"
+  }, {
+    "sha" : "996140a4a3aba2e625f23e838819188ab527795b",
+    "filename" : "angularjs/7.10-loading.html",
+    "status" : "added",
+    "additions" : 4,
+    "deletions" : 0,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.10-loading.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.10-loading.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.10-loading.html?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,4 @@\n+<input ng-disabled=\"working\" type=\"submit\" value=\"Register\"/> \n+<span ng-show=\"working\" style=\"padding-left:10px;\">\n+    <img src=\"images/loading.gif\"/>\n+</span>"
+  }, {
+    "sha" : "b43a60a644bd93c4c54ba2cd390ec0c0fc1a2bfd",
+    "filename" : "angularjs/7.11-handle-loading.js",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.11-handle-loading.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.11-handle-loading.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.11-handle-loading.js?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,16 @@\n+// If the registration form is valid, use the\n+// memberDataStoreService to submit the form data\n+if ($scope.registrationForm.$valid) {\n+    $scope.working = true;\n+    var promise = memberDataStoreService.doRegistration($scope.person);\n+    promise.success(function (data, status) {\n+        $scope.showSuccessMessage = true;\n+});\n+    promise.error(function (data, status) {\n+        $scope.showErrorMessage = true;\n+});\n+    promise.finally(function () {\n+        $scope.working = false;\n+});\n+    $scope.doShow = true;\n+}"
+  }, {
+    "sha" : "d0c5d88043038d72606e85c311d718feb351d510",
+    "filename" : "angularjs/7.12-success.js",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.12-success.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.12-success.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.12-success.js?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,6 @@\n+promise.success(function (data, status) {\n+   $scope.successMessage = \"\"\n+   \t+ \"Your transaction identifier is \" \n+   \t+ data.transactionID;\n+   $scope.showSuccessMessage = true;\n+});"
+  }, {
+    "sha" : "0a1af3645fb484a6231ab16dc4625e32f8162c02",
+    "filename" : "angularjs/7.13-error.js",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.13-error.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.13-error.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.13-error.js?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,8 @@\n+promise.error(function (data, status) {\n+\tif (status === 0) {\n+\t\t$scope.errorMessage = \"network or http level issue\";\n+\t} else {\n+\t\t$scope.errorMessage = \"response HTTP status is \" + status;\n+\t}\n+    $scope.showErrorMessage = true;\n+});"
+  }, {
+    "sha" : "377082899178d34ec0b21bbfc92ab765118d6f54",
+    "filename" : "angularjs/7.2-location-service.html",
+    "status" : "added",
+    "additions" : 24,
+    "deletions" : 0,
+    "changes" : 24,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.2-location-service.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.2-location-service.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.2-location-service.html?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,24 @@\n+<!DOCTYPE html >\n+<html ng-app=\"myapp\">\n+<head>\n+    <title>Angular Services</title>\n+    <script src=\"js/angular.min.js\"></script>\n+    <script>\n+        var module = angular.module('myapp', []);\n+        module.controller(\"MyController\", function ($scope, $location) {\n+            $scope.url = $location.absUrl();\n+            $scope.protocol = $location.protocol();\n+            $scope.host = $location.host();\n+            $scope.port = $location.port();\n+        });\n+    </script>\n+</head>\n+<body ng-controller=\"MyController\">\n+<p>The URL is: {{url}}</p>\n+<ul>\n+    <li>{{protocol}}</li>\n+    <li>{{host}}</li>\n+    <li>{{port}}</li>\n+</ul>\n+</body>\n+</html>"
+  }, {
+    "sha" : "0d640dc23a15a0cb0a1501932919b57d4a74674e",
+    "filename" : "angularjs/7.3-document-service.html",
+    "status" : "added",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.3-document-service.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.3-document-service.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.3-document-service.html?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,17 @@\n+<!DOCTYPE html >\n+<html ng-app=\"myapp\">\n+<head>\n+    <title>Angular Services</title>\n+    <script src=\"js/angular.min.js\"></script>\n+    <script>\n+\t\tvar module = angular.module('myapp', []); \n+\t\tmodule.controller(\"MyController\", function ($scope, $document) {\n+\t\t\t$scope.docTitle = $document[0].title;\n+        });\n+    </script>\n+</head>\n+<body ng-controller=\"MyController\">\n+    <p>The page title is: {{docTitle}}</p>\n+</body>\n+</html>\n+"
+  }, {
+    "sha" : "c7d3b1174fb57d4951202fe0c886b3840c6fe9d4",
+    "filename" : "angularjs/7.4-angular-service.html",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.4-angular-service.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.4-angular-service.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.4-angular-service.html?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,27 @@\n+<!DOCTYPE html >\n+<html ng-app=\"myapp\">\n+<head>\n+    <title>Angular Services</title>\n+    <script src=\"js/angular.min.js\"></script>\n+    <script>\n+\t\tvar module = angular.module('myapp', []); \n+\t\tmodule.factory('dateTimeService', function () {\n+            var dateTimeSvc = {};\n+            dateTimeSvc.getDate = function () {\n+                return new Date().toDateString();\n+            }\n+            dateTimeSvc.getTime = function () {\n+                return new Date().toTimeString();\n+\t\t\t}\n+\t\t\treturn dateTimeSvc;\n+\t\t}).controller(\"MyController\", function ($scope, dateTimeService) {\n+            $scope.theDate = dateTimeService.getDate();\n+            $scope.theTime = dateTimeService.getTime();\n+        });\n+    </script>\n+</head>\n+<body ng-controller=\"MyController\">\n+    <p>{{theDate}}</p>\n+    <p>{{theTime}}</p>\n+</body>\n+</html>"
+  }, {
+    "sha" : "9943282899f1eb55698bc961785eef50dcb6c66a",
+    "filename" : "angularjs/7.5-http-service.js",
+    "status" : "added",
+    "additions" : 9,
+    "deletions" : 0,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.5-http-service.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.5-http-service.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.5-http-service.js?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,9 @@\n+var promise = $http({method: 'POST', url: 'memberservices/register', data: theData});\n+promise.success(function (data, status, headers, config, statusText) {\n+    // this callback will be called asynchronously\n+    // when the response is available\n+});\n+promise.error(function (data, status, headers, config, statusText) {\n+    // called asynchronously if an error occurs\n+    // or server returns response with an error status.\n+});"
+  }, {
+    "sha" : "9d4b0be78b30e7e1597807c892cb3d1912880203",
+    "filename" : "angularjs/7.6-reg-service.js",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.6-reg-service.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.6-reg-service.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.6-reg-service.js?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,13 @@\n+var module = angular.module('myapp', []);\n+module.factory('memberDataStoreService', function ($http) {\n+\tvar memberDataStore = {};\n+\tmemberDataStore.doRegistration = function (theData) {\n+\t\tvar promise = $http({\n+\t\t\tmethod: 'POST', \n+\t\t\turl: 'memberservices/register', \n+\t\t\tdata: theData\n+\t\t}); \n+\t\treturn promise;\n+\t}\n+\treturn  memberDataStore;\n+});"
+  }, {
+    "sha" : "4a0de820ddae105aca662cdd227f766aedc9c111",
+    "filename" : "angularjs/7.7-app.html",
+    "status" : "added",
+    "additions" : 116,
+    "deletions" : 0,
+    "changes" : 116,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.7-app.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.7-app.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.7-app.html?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,116 @@\n+<!DOCTYPE html>\n+<html ng-app=\"myapp\">\n+<head lang=\"en\">\n+    <meta charset=\"UTF-8\">\n+    <title>Registration Form</title>\n+    <script src=\"js/angular.min.js\"></script>\n+    <script>\n+        var module = angular.module('myapp', []);\n+        module.factory('memberDataStoreService', function ($http) {\n+            var memberDataStore = {};\n+            memberDataStore.doRegistration = function (theData) {\n+                var promise = $http({\n+                    method: 'POST', \n+                    url: 'memberservices/register', \n+                    data: theData\n+                }); \n+                return promise;\n+            }\n+            return memberDataStore;\n+        }).controller(\"MyController\", function ($scope, memberDataStoreService) {\n+            $scope.person = {};\n+            $scope.person.newsletterOptIn = true;\n+            $scope.person.channels = [\n+                { value: \"television\", label: \"Television\" },\n+                { value: \"radio\", label: \"Radio\" },\n+                { value: \"social-media\", label: \"Social Media\"},\n+                { value: \"other\", label: \"Other\"}\n+            ];\n+            $scope.register = function () {\n+                $scope.firstNameInvalid = false;\n+                $scope.lastNameInvalid = false;\n+                $scope.emailInvalid = false;\n+                $scope.researchInvalid = false;\n+                $scope.showSuccessMessage = false;\n+                $scope.showErrorMessage = false;\n+                if (!$scope.registrationForm.firstName.$valid) {\n+                    $scope.firstNameInvalid = true;\n+                }\n+                if (!$scope.registrationForm.lastName.$valid) {\n+                    $scope.lastNameInvalid = true;\n+                }\n+                if (!$scope.registrationForm.email.$valid) {\n+                                $scope.emailInvalid = true;\n+                }\n+                if (!$scope.registrationForm.research.$valid) {\n+                    $scope.researchInvalid = true;\n+                }\n+                // If the registration form is valid, use the\n+                // memberDataStoreService to submit the form data if ($scope.registrationForm.$valid) {\n+                var promise = memberDataStoreService.doRegistration($scope.person);\n+                promise.success(function (data, status) {\n+                    $scope.showSuccessMessage = true;\n+                });\n+                promise.error(function (data, status) {\n+                    $scope.showErrorMessage = true;\n+                });\n+                $scope.doShow = true;\n+            }\n+        } \n+    })\n+    </script>\n+    <style>\n+        body, input, select {\n+            font: normal 16px/1.4 Georgia;\n+        }\n+        input:not([type='checkbox']), select {\n+            width: 250px;\n+        }\n+        input, select {\n+            padding: 5px;\n+            margin-top: 12px;\n+        }\n+        input[name='email'].ng-dirty.ng-invalid-email {\n+            color: red;\n+        }\n+        input[name='email'].ng-dirty.ng-valid-email {\n+                    color: green;\n+        }\n+        form span, .error {\n+            color: red;\n+        } \n+    </style>\n+</head>\n+<body>\n+<div>\n+    <div ng-controller=\"MyController\">\n+        <form name=\"registrationForm\" ng-submit=\"register()\" novalidate>\n+            <div ng-show=\"showSuccessMessage\">\n+                Thank you for taking the time to register!\n+            </div>\n+            <div class=\"error\" ng-show=\"showErrorMessage\">\n+                There appears to have been a problem with your registration.<br/>\n+            </div>\n+            <input type=\"text\" placeholder=\"First Name\" name=\"firstName\" ng-model=\"person.firstName\" required/> <span ng-show=\"firstNameInvalid\"><br/>Please enter a value for First name</span>\n+            <br/>\n+            <input type=\"text\" placeholder=\"Last Name\" name=\"lastName\" ng-model=\"person.lastName\" required/> <span ng-show=\"lastNameInvalid\"><br/>Please enter a value for Last name</span>\n+            <br/>\n+            <input type=\"email\" placeholder=\"Email\" name=\"email\" ng-model=\"person.email\" required/>\n+            <span ng-show=\"emailInvalid\"><br/>A valid email address is required</span>\n+            <br/>\n+            <select name=\"research\" ng-model=\"person.levels\"\n+                    ng-options=\"obj.label as obj.value for obj in person.channels\" required>\n+                <option value=\"\">Where did you hear about us?</option>\n+            </select>\n+            <span ng-show=\"researchInvalid\"><br/>Please tell us where you heard about us</span>\n+            <br/>\n+            <input ng-model=\"person.newsletterOptIn\" type=\"checkbox\" name=\"newsletterOptIn\"\n+                   id=\"newsletterOptIn\" value=\"newsletterOptIn\"/>\n+            <label for=\"newsletterOptIn\">Recieve monthly newsletter</label>\n+            <br/>\n+            <input type=\"submit\" value=\"Register\"/>\n+        </form>\n+    </div>\n+</div>\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "64f574bae014f0ea3cdb8f04989020c30b7a3a8d",
+    "filename" : "angularjs/7.8-memberDataStoreService.js",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.8-memberDataStoreService.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.8-memberDataStoreService.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.8-memberDataStoreService.js?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,13 @@\n+// If the registration form is valid, use the\n+// memberDataStoreService to submit the form data\n+if ($scope.registrationForm.$valid) {\n+    var promise = memberDataStoreService.doRegistration($scope.person);\n+    promise.success(function (data, status) {\n+        $scope.showSuccessMessage = true;\n+\t});\n+    promise.error(function (data, status) {\n+        $scope.showErrorMessage = true;\n+\t});\n+    $scope.doShow = true;\n+}\n+"
+  }, {
+    "sha" : "9a8a4f3541510e8329365c4224bd034f86fd9ab1",
+    "filename" : "angularjs/7.9-messages.html",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.9-messages.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7fc72d622ac35b9eec6d191cbaed2dd304a737cc/angularjs/7.9-messages.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/7.9-messages.html?ref=7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+    "patch" : "@@ -0,0 +1,6 @@\n+<div ng-show=\"showSuccessMessage\">\n+    Thank you for taking the time to register!\n+</div>\n+<div class=\"error\" ng-show=\"showErrorMessage\">\n+    There appears to have been a problem with your registration.<br/>\n+</div>\n\\ No newline at end of file"
+  } ],
+  "sha" : "7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7fc72d622ac35b9eec6d191cbaed2dd304a737cc",
+  "parents" : [ {
+    "sha" : "623f179776b92a43dd0a5e2f23e89f6ba938dcf6",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/623f179776b92a43dd0a5e2f23e89f6ba938dcf6",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/623f179776b92a43dd0a5e2f23e89f6ba938dcf6"
+  } ]
+}

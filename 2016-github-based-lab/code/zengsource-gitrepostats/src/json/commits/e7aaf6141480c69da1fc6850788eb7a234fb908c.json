@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "xiaoyaobrother",
+    "id" : 14306145,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14306145?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoyaobrother",
+    "html_url" : "https://github.com/xiaoyaobrother",
+    "followers_url" : "https://api.github.com/users/xiaoyaobrother/followers",
+    "following_url" : "https://api.github.com/users/xiaoyaobrother/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoyaobrother/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoyaobrother/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoyaobrother/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoyaobrother/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoyaobrother/repos",
+    "events_url" : "https://api.github.com/users/xiaoyaobrother/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoyaobrother/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 137,
+    "additions" : 110,
+    "deletions" : 27
+  },
+  "author" : {
+    "login" : "xiaoyaobrother",
+    "id" : 14306145,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14306145?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoyaobrother",
+    "html_url" : "https://github.com/xiaoyaobrother",
+    "followers_url" : "https://api.github.com/users/xiaoyaobrother/followers",
+    "following_url" : "https://api.github.com/users/xiaoyaobrother/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoyaobrother/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoyaobrother/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoyaobrother/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoyaobrother/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoyaobrother/repos",
+    "events_url" : "https://api.github.com/users/xiaoyaobrother/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoyaobrother/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e7aaf6141480c69da1fc6850788eb7a234fb908c",
+  "commit" : {
+    "author" : {
+      "name" : "xiaoyaobrother",
+      "email" : "392205128@qq.com",
+      "date" : "2015-12-08T02:33:13Z"
+    },
+    "committer" : {
+      "name" : "xiaoyaobrother",
+      "email" : "392205128@qq.com",
+      "date" : "2015-12-08T02:33:13Z"
+    },
+    "message" : "实验6",
+    "tree" : {
+      "sha" : "bda7450abb0d0ebc34a7cf63eb5bf5086f839159",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/bda7450abb0d0ebc34a7cf63eb5bf5086f839159"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/e7aaf6141480c69da1fc6850788eb7a234fb908c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e7aaf6141480c69da1fc6850788eb7a234fb908c/comments",
+  "files" : [ {
+    "sha" : "5b46d4a2a8aca2d542df1c2af3cf6bcdb09c3768",
+    "filename" : "works/1314080901243/index.html",
+    "status" : "modified",
+    "additions" : 34,
+    "deletions" : 20,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e7aaf6141480c69da1fc6850788eb7a234fb908c/works/1314080901243/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e7aaf6141480c69da1fc6850788eb7a234fb908c/works/1314080901243/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901243/index.html?ref=e7aaf6141480c69da1fc6850788eb7a234fb908c",
+    "patch" : "@@ -20,12 +20,12 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n \n-        <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+        <!--<script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n \n-\t    <script src=\"js/bumenModule.js\"></script>\n+\t    <script src=\"js/bumenModule.js\"></script>-->\n \n   </head>\n-  <body ng-controller=\"MyFilterDemoCtrl\">\n+  <body ng-controller=\"MyFilter\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -48,57 +48,71 @@\n     </nav>\n \n \n-\n-\n-    <div class=\"container\">\n-\n-      <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n-        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-      </div>\n+  \n <div class=\"container\">\n     <div class=\"row col-lg-offset-2\">\n-        <form class=\"form-inline\" role=\"form\">\n+        <form class=\"form-inline\" role=\"form\" ng-submit=\"register()\" novalidate>\n \n             <div class=\"form-group row\">\n                 <div class=\"row\">\n                     <label for=\"example1\">部门名称：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumenname\" id=\"example1\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumen.Name\" id=\"example1\" required/>\n                     <br/>\n                      <br/>\n \n                     <label for=\"example2\">部门代码：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumendaima\" id=\"example2\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumen.Daima\" id=\"example2\" required/>\n                     <br/>\n                      <br/>\n \n                     <label for=\"example3\">部门主管：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumenzhuguan\" id=\"example3\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumen.Zhuguan\" id=\"example3\" required/>\n                     <br/>\n                      <br/>\n \n                     <label for=\"example4\">部门描述：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumenmianshu\" id=\"example4\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumen.Mianshu\" id=\"example4\" required/>\n                 </div>\n             </div>\n         \n                   <br/>\n                   <br/>\n             <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n-                <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\"> 保存</button>\n-                <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\"> 重置</button>\n+                <button type=\"submit\" class=\"btn btn-default\">  {{isHidden ? '保存': '隐藏'}}</button>\n+                <button type=\"submit\" class=\"btn btn-default\">  {{isHidden ? '重置': '隐藏'}}</button>\n             </div>\n            \n         </form>\n     </div>\n </div>\n \n+<div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n+\n+    <p class=\"lead\">\n+\n+\n+    <div ng-hide=\"isHidden\">您输入的数据为：</div>\n+\n+    <div id=\"bumenName\" ng-hide=\"isHidden\">部门名称->{{bumen.Name}}</div>\n+\n+    <div id=\"bumenDaima\" ng-hide=\"isHidden\">部门代码->{{bumen.Daima}}</div>\n+\n+    <div id=\"bumenZhuguan\" ng-hide=\"isHidden\">部门主管->{{bumen.Zhuguan}}</div>\n+\n+    <div id=\"bumenMiaosu\" ng-hide=\"isHidden\">部门描述->{{bumen.Miaosu}}</div>\n+\n+    </p>\n+\n+</div>\n+\n \n-    </div><!-- /.container -->\n+    <!-- /.container -->\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n-    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+\n+    <script src=\"js/bumenModule.js\"></script>\n   </body>\n </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "3c3e30d0164e9b207ac0b1766139baf9ca37f55b",
+    "filename" : "works/1314080901243/js/bumenModule.js",
+    "status" : "modified",
+    "additions" : 64,
+    "deletions" : 7,
+    "changes" : 71,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e7aaf6141480c69da1fc6850788eb7a234fb908c/works/1314080901243/js/bumenModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e7aaf6141480c69da1fc6850788eb7a234fb908c/works/1314080901243/js/bumenModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901243/js/bumenModule.js?ref=e7aaf6141480c69da1fc6850788eb7a234fb908c",
+    "patch" : "@@ -4,17 +4,74 @@ var bumenModule = angular.module('bumenModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-bumenModule.controller('MyFilterDemoCtrl', function ($scope) {\n+\n+bumenModule.factory('bumenService',function($http){\n+ \n+       var dataStroe = {};\n+\n+       dataStroe.doRegistration = function (theData) {\n+            var promise = $http({method: 'POST',url: 'json/message.json',data: theData});\n+ \n+           return promise;\n+  \n+      }\n+ \n+       return dataStroe;\n+\n+bumenModule.controller('MyFilter', function ($scope,bumenService) {\n     // controller code would go here\n         var bumenData = {\n-            bumenname:'�������',\n-            bumendaima:'���Ŵ���',\n-            bumenzhuguan:'�������',\n-            bumenmiaoshu:'��������'\n+            bumenName:'id',\n+            bumenDaima:'code',\n+            bumenZhuguan:'inter',\n+            bumenMiaoshu:'inter'\n         };\n         $scope.data = bumenData;\n-    }\n-);\n+\n+$scope.isHidden = true;\n+\n+        $scope.showInput = function () {\n+\n+            $scope.isHidden = !$scope.isHidden;\n+\n+        }\n+\n+        $scope.bumen = {};\n+\n+        $scope.register = function () {\n+\n+            var promise = bumenService.doRegistration($scope.bumen);\n+\n+            promise.success(function (data, status, headers, config, statusText) {\n+                $scope.backMess = data.success;\n+\n+                $scope.isHidden = !$scope.isHidden;\n+\n+                if(!$scope.isHidden){\n+\n+                    alert($scope.backMess[0].message + \"\\n\" + \"\\n\" + \"Your bumenName is \" + $scope.provider.Name);\n+\n+                }\n+\n+            });\n+\n+            promise.error(function (data, status, headers, config, statusText) {\n+\n+                $scope.backMess = data.error;\n+\n+                $scope.isHidden = !$scope.isHidden;\n+\n+                if(!$scope.isHidden){\n+\n+                    alert($scope.backMess[0].message);\n+\n+                }\n+\n+            });\n+\n+        }\n+\n+    });\n \n // use the myAppModule variable to\n // configure the module with a filter"
+  }, {
+    "sha" : "ff9363d61a9285db7106fb120e676ca57f1ec367",
+    "filename" : "works/1314080901243/json/message.json",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e7aaf6141480c69da1fc6850788eb7a234fb908c/works/1314080901243/json/message.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e7aaf6141480c69da1fc6850788eb7a234fb908c/works/1314080901243/json/message.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901243/json/message.json?ref=e7aaf6141480c69da1fc6850788eb7a234fb908c",
+    "patch" : "@@ -0,0 +1,12 @@\n+{\n+    \"success\": [\n+        {\n+            \"message\": \"Thank you for taking the time to register!\"\n+        }\n+    ],\n+    \"error\": [\n+        {\n+            \"message\": \"There appears to have been a problem with your registration.\"\n+        }\n+    ]\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "e7aaf6141480c69da1fc6850788eb7a234fb908c",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e7aaf6141480c69da1fc6850788eb7a234fb908c",
+  "parents" : [ {
+    "sha" : "c525b28da937751bd546f8b8f3a9103fc4e455ea",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c525b28da937751bd546f8b8f3a9103fc4e455ea",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/c525b28da937751bd546f8b8f3a9103fc4e455ea"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "JPCat",
+    "id" : 14892029,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14892029?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/JPCat",
+    "html_url" : "https://github.com/JPCat",
+    "followers_url" : "https://api.github.com/users/JPCat/followers",
+    "following_url" : "https://api.github.com/users/JPCat/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/JPCat/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/JPCat/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/JPCat/subscriptions",
+    "organizations_url" : "https://api.github.com/users/JPCat/orgs",
+    "repos_url" : "https://api.github.com/users/JPCat/repos",
+    "events_url" : "https://api.github.com/users/JPCat/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/JPCat/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 10,
+    "additions" : 10,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "JPCat",
+    "id" : 14892029,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14892029?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/JPCat",
+    "html_url" : "https://github.com/JPCat",
+    "followers_url" : "https://api.github.com/users/JPCat/followers",
+    "following_url" : "https://api.github.com/users/JPCat/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/JPCat/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/JPCat/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/JPCat/subscriptions",
+    "organizations_url" : "https://api.github.com/users/JPCat/orgs",
+    "repos_url" : "https://api.github.com/users/JPCat/repos",
+    "events_url" : "https://api.github.com/users/JPCat/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/JPCat/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/a4dab5b6c86f0e330defba62ec9eaadd063175bf",
+  "commit" : {
+    "author" : {
+      "name" : "JPCat",
+      "email" : "chen751362655@qq.com",
+      "date" : "2015-11-24T02:24:39Z"
+    },
+    "committer" : {
+      "name" : "JPCat",
+      "email" : "chen751362655@qq.com",
+      "date" : "2015-11-24T02:24:39Z"
+    },
+    "message" : "实验五修改",
+    "tree" : {
+      "sha" : "4b9bdd11f635b2f2f02bf65c20626400fe9983ec",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/4b9bdd11f635b2f2f02bf65c20626400fe9983ec"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/a4dab5b6c86f0e330defba62ec9eaadd063175bf",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a4dab5b6c86f0e330defba62ec9eaadd063175bf/comments",
+  "files" : [ {
+    "sha" : "8e6d55ef7f0893b3723233da7695a810806f48fa",
+    "filename" : "works/1314080901204/js/myAppModule.js",
+    "status" : "modified",
+    "additions" : 10,
+    "deletions" : 0,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/a4dab5b6c86f0e330defba62ec9eaadd063175bf/works/1314080901204/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/a4dab5b6c86f0e330defba62ec9eaadd063175bf/works/1314080901204/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901204/js/myAppModule.js?ref=a4dab5b6c86f0e330defba62ec9eaadd063175bf",
+    "patch" : "@@ -19,6 +19,16 @@ myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n     }\n );\n \n+myAppModule.directive('productList',function(){\n+console.log();\n+\treturn {\n+\trestrict:'AE',\n+\ttemplate:\"<div ng-repeat=\\\"data in data\\\">\"+\n+\t\t\t\"{{data.dep}}   &nbsp; &nbsp; &nbsp;  {{data.quartersName}} &nbsp; &nbsp; &nbsp; {{data.salary}}</div>\"\n+};\n+});\n+\n+\n // use the myAppModule variable to\n // configure the module with a filter\n myAppModule.filter('stripDashes', function() {"
+  } ],
+  "sha" : "a4dab5b6c86f0e330defba62ec9eaadd063175bf",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a4dab5b6c86f0e330defba62ec9eaadd063175bf",
+  "parents" : [ {
+    "sha" : "27bbec786d40a288655244914ce7d4e237954c4b",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/27bbec786d40a288655244914ce7d4e237954c4b",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/27bbec786d40a288655244914ce7d4e237954c4b"
+  } ]
+}

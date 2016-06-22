@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "mrjiashuo",
+    "id" : 15065421,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15065421?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mrjiashuo",
+    "html_url" : "https://github.com/mrjiashuo",
+    "followers_url" : "https://api.github.com/users/mrjiashuo/followers",
+    "following_url" : "https://api.github.com/users/mrjiashuo/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mrjiashuo/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mrjiashuo/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mrjiashuo/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mrjiashuo/orgs",
+    "repos_url" : "https://api.github.com/users/mrjiashuo/repos",
+    "events_url" : "https://api.github.com/users/mrjiashuo/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mrjiashuo/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 39,
+    "additions" : 27,
+    "deletions" : 12
+  },
+  "author" : {
+    "login" : "mrjiashuo",
+    "id" : 15065421,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15065421?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mrjiashuo",
+    "html_url" : "https://github.com/mrjiashuo",
+    "followers_url" : "https://api.github.com/users/mrjiashuo/followers",
+    "following_url" : "https://api.github.com/users/mrjiashuo/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mrjiashuo/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mrjiashuo/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mrjiashuo/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mrjiashuo/orgs",
+    "repos_url" : "https://api.github.com/users/mrjiashuo/repos",
+    "events_url" : "https://api.github.com/users/mrjiashuo/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mrjiashuo/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/17098eddb8bfe70bf45835dab3dc412ca8ca84f8",
+  "commit" : {
+    "author" : {
+      "name" : "shuo",
+      "email" : "495978900@qq.com",
+      "date" : "2015-11-01T15:08:30Z"
+    },
+    "committer" : {
+      "name" : "shuo",
+      "email" : "495978900@qq.com",
+      "date" : "2015-11-01T15:08:30Z"
+    },
+    "message" : "实验四\n\n新建了myappmodule.js文件，把原来在index里面的controller分离到myappmodule文件里面",
+    "tree" : {
+      "sha" : "c82bd5acf78fdf615b1a9d6a0d37f958d7dcc9b2",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/c82bd5acf78fdf615b1a9d6a0d37f958d7dcc9b2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/17098eddb8bfe70bf45835dab3dc412ca8ca84f8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/17098eddb8bfe70bf45835dab3dc412ca8ca84f8/comments",
+  "files" : [ {
+    "sha" : "8327c9ecedc79274ef4e72f141a377ff44fb5cd1",
+    "filename" : "works/1314080901217/index.html",
+    "status" : "modified",
+    "additions" : 4,
+    "deletions" : 11,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/17098eddb8bfe70bf45835dab3dc412ca8ca84f8/works/1314080901217/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/17098eddb8bfe70bf45835dab3dc412ca8ca84f8/works/1314080901217/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901217/index.html?ref=17098eddb8bfe70bf45835dab3dc412ca8ca84f8",
+    "patch" : "@@ -1,15 +1,6 @@\n-<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+﻿<!DOCTYPE html>\n+<html ng-app=\"myStoreModule>\n   <head>\n-  <script>\n-    function MyFilterDemoCtrl($scope) {\n-        var someData = {\n-            Name: '仓库-盘点-新建盘点清单',\n-            interface: '表单',\n-            dateJoined: new Date(2015, 10, 20),\n-        };\n-        $scope.data = someData;\n-} </script>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n@@ -29,6 +20,8 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+\t    <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n+    <script src=\"js/myStoreModule.js\"></script>\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">"
+  }, {
+    "sha" : "26d4b35af01f24d6b7ce1330481dcc50e7f86c6f",
+    "filename" : "works/1314080901217/js/myAppModule.js",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/17098eddb8bfe70bf45835dab3dc412ca8ca84f8/works/1314080901217/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/17098eddb8bfe70bf45835dab3dc412ca8ca84f8/works/1314080901217/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901217/js/myAppModule.js?ref=17098eddb8bfe70bf45835dab3dc412ca8ca84f8",
+    "patch" : "@@ -0,0 +1,23 @@\n+﻿// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+var myAppModule = angular.module('myAppModule', []);\n+\n+// use the myAppModule variable to\n+// configure the module with a controller\n+myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n+       // controller code would go here\n+        var someData = {\n+            Name: '仓库-盘点-新建盘点清单',\n+            interface: '表单',\n+            dateJoined: new Date(2015, 10, 20)\n+        };\n+        $scope.data = someData;\n+\n+    }\n+);\n+// use the myAppModule variable to\n+// configure the module with a filter\n+myAppModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });\n\\ No newline at end of file"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901217/仓库-盘点-新建盘点清单.txt",
+    "status" : "modified",
+    "additions" : 0,
+    "deletions" : 1,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/17098eddb8bfe70bf45835dab3dc412ca8ca84f8/works/1314080901217/%E4%BB%93%E5%BA%93-%E7%9B%98%E7%82%B9-%E6%96%B0%E5%BB%BA%E7%9B%98%E7%82%B9%E6%B8%85%E5%8D%95.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/17098eddb8bfe70bf45835dab3dc412ca8ca84f8/works/1314080901217/%E4%BB%93%E5%BA%93-%E7%9B%98%E7%82%B9-%E6%96%B0%E5%BB%BA%E7%9B%98%E7%82%B9%E6%B8%85%E5%8D%95.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901217/%E4%BB%93%E5%BA%93-%E7%9B%98%E7%82%B9-%E6%96%B0%E5%BB%BA%E7%9B%98%E7%82%B9%E6%B8%85%E5%8D%95.txt?ref=17098eddb8bfe70bf45835dab3dc412ca8ca84f8",
+    "patch" : "@@ -1 +0,0 @@\n-\r"
+  } ],
+  "sha" : "17098eddb8bfe70bf45835dab3dc412ca8ca84f8",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/17098eddb8bfe70bf45835dab3dc412ca8ca84f8",
+  "parents" : [ {
+    "sha" : "b3b670aac2214a92ffd6cb8805c8294985715731",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b3b670aac2214a92ffd6cb8805c8294985715731",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/b3b670aac2214a92ffd6cb8805c8294985715731"
+  } ]
+}

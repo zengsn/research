@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 71,
+    "additions" : 57,
+    "deletions" : 14
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-21T11:45:58Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-21T11:45:58Z"
+    },
+    "message" : "Merge pull request #463 from liwenjie0/master\n\n实验六",
+    "tree" : {
+      "sha" : "c626d472decf75633a59b20affdc4534721ffef8",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/c626d472decf75633a59b20affdc4534721ffef8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65/comments",
+  "files" : [ {
+    "sha" : "b0703f5e7da9b7c38195826eacb2bc020a7b78fa",
+    "filename" : "works/1314080901221/index.html",
+    "status" : "modified",
+    "additions" : 15,
+    "deletions" : 14,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65/works/1314080901221/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65/works/1314080901221/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901221/index.html?ref=24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65",
+    "patch" : "@@ -57,30 +57,31 @@\n       <div style=\"width:330px; height:500px; background:#FFFFFF;\" align=\"center\" >\n         <h3 style=\"background-color:#FFF0F5;\">岗位管理</h3>\n         <hr/>\n-        <form>\n+        <form ng-submit=\"register()\" novalidate>\n           <P>所属部门：       \n-            <select name=\"bumen\"class=\"style1\" style=\"width:200px\">\n+            <select name=\"bumen\"class=\"style1\" style=\"width:200px\" ng-model=\"gangwei.department\" >\n+              <option >请选择</option>\n               <option>人事</option>\n               <option>仓库</option>\n             </select>\n           </P>\n-          <p>岗位名称：<input class=\"style1\" style=\"width:200px\" /></p>\n-          <p>岗位层次：<input class=\"style1\"/></p>\n-          <p>岗位类型：<input class=\"style1\"/></p>\n-          <p>基本薪资：<input class=\"style1\"/></p>\n-          <p>岗位职责：<input class=\"style1\" style=\"height:70px;\"/></p>\n-          <button ng-click=\"showInput()\" type=\"button\" >{{isHidden ? '提交' : '返回'}}</button>\n+          <p>岗位名称：<input class=\"style1\" placeholder=\"input\" ng-model=\"gangwei.job_name\"/></p>\n+          <p>岗位层次：<input class=\"style1\" ng-model=\"gangwei.job_level\"/></p>\n+          <p>岗位类型：<input class=\"style1\" ng-model=\"gangwei.job_type\"/></p>\n+          <p>基本薪资：<input class=\"style1\" ng-model=\"gangwei.salary\"/></p>\n+          <p>岗位职责：<input class=\"style1\" ng-model=\"gangwei.job_statement\" style=\"height:70px;\"/></p>\n+          <button ng-click=\"showInput()\" type=\"summit\" >{{isHidden ? '提交' : '返回'}}</button>\n           <button>重置</button>\n         </form>\n         <div ng-hide=\"isHidden\">\n         <p >\n           <div ng-hide=\"isHidden\">您输入的数据为：</div>    \n-          <div ng-hide=\"isHidden\">所属部门：->{{mydata.department}}</div>\n-          <div ng-hide=\"isHidden\">岗位名称：->{{mydata.job_name}}</div>\n-          <div ng-hide=\"isHidden\">岗位层次：->{{mydata.job_level}}</div>\n-          <div ng-hide=\"isHidden\">岗位类型：->{{mydata.job_type}}</div>\n-          <div ng-hide=\"isHidden\">基本薪资：->{{mydata.salary}}</div>\n-          <div ng-hide=\"isHidden\">岗位职责：->{{mydata.job_statement}}</div>\n+          <div ng-hide=\"isHidden\">所属部门：->{{gangwei.department}}</div>\n+          <div ng-hide=\"isHidden\">岗位名称：->{{gangwei.job_name}}</div>\n+          <div ng-hide=\"isHidden\">岗位层次：->{{gangwei.job_level}}</div>\n+          <div ng-hide=\"isHidden\">岗位类型：->{{gangwei.job_type}}</div>\n+          <div ng-hide=\"isHidden\">基本薪资：->{{gangwei.salary}}</div>\n+          <div ng-hide=\"isHidden\">岗位职责：->{{gangwei.job_statement}}</div>\n         </p>\n         </div>\n       </div>"
+  }, {
+    "sha" : "90625c0fc3a1a453810fb8cfa648dec35d0785e7",
+    "filename" : "works/1314080901221/js/myAppModule.js",
+    "status" : "modified",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65/works/1314080901221/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65/works/1314080901221/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901221/js/myAppModule.js?ref=24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65",
+    "patch" : "@@ -20,9 +20,39 @@ myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n         $scope.showInput=function(){\n             $scope.isHidden=!$scope.isHidden;\n         }\n+        var gangwei = {};\n+        $scope.register = function () {\n+            var promise = providerService.doRegistration($scope.gangwei);\n+            promise.success(function (data, status, headers, config, statusText) {\n+                $scope.backMess = data.success;\n+                $scope.isHidden = !$scope.isHidden;\n+                if(!$scope.isHidden){\n+                    alert($scope.backMess[0].message + \"\\n\" + \"\\n\" + \"Your providerId is \" + $scope.gangwei.department);\n+                }\n+            });\n+            promise.error(function (data, status, headers, config, statusText) {\n+                $scope.backMess = data.error;\n+                $scope.isHidden = !$scope.isHidden;\n+                if(!$scope.isHidden){\n+                    alert($scope.backMess[0].message);\n+                }\n+            });\n+        }\n     }\n );\n \n+myAppModule.factory('providerService',function($http){\n+    var dataStroe = {};\n+    dataStroe.doRegistration = function (theData) {\n+        var promise = $http({\n+            method: 'POST',\n+            url: 'json/message.json',\n+            data: theData});\n+        return promise;\n+    }\n+    return dataStroe;\n+});\n+\n // use the myAppModule variable to\n // configure the module with a filter\n myAppModule.filter('stripDashes', function() {"
+  }, {
+    "sha" : "f3e7c83f6d0fa064d050571758bad049acc512b6",
+    "filename" : "works/1314080901221/json/message.json",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65/works/1314080901221/json/message.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65/works/1314080901221/json/message.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901221/json/message.json?ref=24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65",
+    "patch" : "@@ -0,0 +1,12 @@\n+{\n+    \"success\": [\n+        {\n+            \"message\": \"you are success!\"\n+        }\n+    ],\n+    \"error\": [\n+        {\n+            \"message\": \"fail to get the message!.\"\n+        }\n+    ]\n+} "
+  } ],
+  "sha" : "24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/24e7dcf88a7d7af75bf9cd6021f0b5eaace7ee65",
+  "parents" : [ {
+    "sha" : "260c162810b7e41bea107329b36adfd7d1ddaa8e",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/260c162810b7e41bea107329b36adfd7d1ddaa8e",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/260c162810b7e41bea107329b36adfd7d1ddaa8e"
+  }, {
+    "sha" : "b3e033fb0ce192c19d52471bea41d81776836542",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b3e033fb0ce192c19d52471bea41d81776836542",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/b3e033fb0ce192c19d52471bea41d81776836542"
+  } ]
+}

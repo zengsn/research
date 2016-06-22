@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "YUPING02",
+    "id" : 15091471,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15091471?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/YUPING02",
+    "html_url" : "https://github.com/YUPING02",
+    "followers_url" : "https://api.github.com/users/YUPING02/followers",
+    "following_url" : "https://api.github.com/users/YUPING02/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/YUPING02/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/YUPING02/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/YUPING02/subscriptions",
+    "organizations_url" : "https://api.github.com/users/YUPING02/orgs",
+    "repos_url" : "https://api.github.com/users/YUPING02/repos",
+    "events_url" : "https://api.github.com/users/YUPING02/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/YUPING02/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 142,
+    "additions" : 142,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "YUPING02",
+    "id" : 15091471,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15091471?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/YUPING02",
+    "html_url" : "https://github.com/YUPING02",
+    "followers_url" : "https://api.github.com/users/YUPING02/followers",
+    "following_url" : "https://api.github.com/users/YUPING02/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/YUPING02/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/YUPING02/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/YUPING02/subscriptions",
+    "organizations_url" : "https://api.github.com/users/YUPING02/orgs",
+    "repos_url" : "https://api.github.com/users/YUPING02/repos",
+    "events_url" : "https://api.github.com/users/YUPING02/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/YUPING02/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/267c9a9e7f4725f23564546c678a3f709458be67",
+  "commit" : {
+    "author" : {
+      "name" : "YUPING02",
+      "email" : "391392705@qq.com",
+      "date" : "2016-01-07T05:17:38Z"
+    },
+    "committer" : {
+      "name" : "YUPING02",
+      "email" : "391392705@qq.com",
+      "date" : "2016-01-07T05:17:38Z"
+    },
+    "message" : "实验7 1314080901232",
+    "tree" : {
+      "sha" : "96024900e15961ff204f005c016fdc33c4f6d28a",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/96024900e15961ff204f005c016fdc33c4f6d28a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/267c9a9e7f4725f23564546c678a3f709458be67",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/267c9a9e7f4725f23564546c678a3f709458be67/comments",
+  "files" : [ {
+    "sha" : "a9f657a50c498976b85b8a823b345ed119751794",
+    "filename" : "works/1314080901232/js/shiyan7.js",
+    "status" : "added",
+    "additions" : 142,
+    "deletions" : 0,
+    "changes" : 142,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/267c9a9e7f4725f23564546c678a3f709458be67/works/1314080901232/js/shiyan7.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/267c9a9e7f4725f23564546c678a3f709458be67/works/1314080901232/js/shiyan7.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901232/js/shiyan7.js?ref=267c9a9e7f4725f23564546c678a3f709458be67",
+    "patch" : "@@ -0,0 +1,142 @@\n+﻿ <div id=\"head\" style=\"width:auto;height:32px;background-color:#0066c0;color:#fff;font-size:28px;padding-left:20px;\">\n+       计件工资\n+     </div>\n+     <div>\n+       <table class=\"table\">\n+       <tr style=\"background-color:#e3e3e3\">\n+         <td>类型</td>\n+        <td>单价</td>\n+        <td>数量</td>\n+        <td>金额</td>\n+        <td> IdCard</td>\n+       </tr>\n+     <tr  ng-repeat=\"item in data\">\n+         <td>{{item.Type}}</td>\n+        <td>{{item.price}}</td>\n+        <td>{{item.number}}</td>\n+        <td>{{item.money}}</td>\n+        <td>{{item. IdCard }}</td>\n+      </tr>\n+      </table>\n+    </div> \n+View 111  works/1314080901211/index.html\n+@@ -1,56 +1,59 @@\n+  <!DOCTYPE html>\n+\n+<html lang=\"zh-CN\" ng-app=\"JijianGongziSelect\">\n+  <head>\n+    <meta charset=\"utf-8\">\n+   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n+    <title>工资-计件工资-1314080901232</title>\n+    <script src=\"js/jquery.min.js\"></script>\n+    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script> \n+    <script src=\"../../lib/angular-1.4.5/angular-route.js\"></script>\n+    <script src=\"../../lib/angular-1.4.5/angular-route.min.js\"></script>\n+    <script src=\"js/JijianGongziSelect.js\"></script>                                                                                                                                                 \n+    <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+    \n+    <!-- Bootstrap -->\n+    <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n+\n+    <!-- Custom styles for this template -->\n+    <link href=\"css/style.css\" rel=\"stylesheet\">\n+\n+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n+   <!--[if lt IE 9]>\n+      <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+      <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+    <![endif]-->\n+ \n+    </head>\n+  <body>\n+  <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+      <div class=\"container\">\n+        <div class=\"navbar-header\" class=\"active\">\n+          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n+            <span class=\"sr-only\">Toggle navigation</span>\n+            <span class=\"icon-bar\"></span>\n+            <span class=\"icon-bar\"></span>\n+            <span class=\"icon-bar\"></span>\n+          </button>\n+          <a class=\"navbar-brand\"  href=\"#index\">Project name</a>\n+        </div>\n+        <div id=\"navbar\" class=\"collapse navbar-collapse\">\n+          <ul class=\"nav navbar-nav active\">\n+            <li><a href=\"#home\">Home</a></li>\n+           <li><a href=\"#about\"><i class=\"fa fa-shield\"></i>About</a></li>\n+           <li><a href=\"#contact\">Contact</a></li>\n+          </ul>\n+        </div><!--/.nav-collapse -->\n+      </div>\n+    </nav>\n+  <div id=\"content\" ng-view>\n+   \n+    </div>\n+  \n+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n+   <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n+   <!-- Include all compiled plugins (below), or include individual files as needed -->\n+   <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+  </body>\n+</html> \n+View 34  works/1314080901232/js/JijianGongziSelect.js\n+@@ -1,16 +1,38 @@\n+      // create a new module called 'myAppModule' and save \n+  // a reference to it in a variable called myAppModule \n+\n+ +var wuliaoSelect = angular.module('JijianGongziSelect', ['ngRoute']);\n+  \n+  // use the myAppModule variable to\n+  // configure the module with a controller\n+ JijianGongziSelect.config(function ($routeProvider) {\n+      // configure the routes\n+   $routeProvider\n+    .when('/index', {\n+      // route for the home page\n+        templateUrl: 'title.html',\n+     })\n+    .when('/home', {\n+      // route for the home page\n+        templateUrl: 'home.html',\n+        controller: 'homeController'\n+    })\n+    .when('/about', {\n+      // route for the about page\n+        templateUrl:'about.html',\n+        controller:'aboutController'\n+    });\n+});\n+  \n+\n+JijianGongziSelect.controller('aboutController', function ($scope) {\n+      $scope.title = ' 学号1314080901232';\n+    });\n+\n+\n+JijianGongziSelect.controller('homeController', function ($http,$scope) {\n+         // controller code would go here\n+       $http.get(\"materialList_JSON.txt\").success(function(someData){\n+        $scope.data=someData;\n+       });\n+     })\n+       $http.get(\"materialList_JSON.txt\").success(function(someData){$scope.data=someData;});\n+     \n+    });\n+  \n+  \n+  // use the myAppModule variable to\n+View 10  works/1314080901232/title.html\n+@@ -0,0 +1,10 @@\n+<!DOCTYPE html>\n+<html lang=\"en\">\n+<head>\n+    <meta charset=\"UTF-8\">\n+    <title>title</title>\n+</head>\n+<body>\n+    <h1>工资-计件工资</h1>\n+</body>\n+</html> "
+  } ],
+  "sha" : "267c9a9e7f4725f23564546c678a3f709458be67",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/267c9a9e7f4725f23564546c678a3f709458be67",
+  "parents" : [ {
+    "sha" : "db456b6f5e165f532ed731bb5be646b14c2e77c1",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/db456b6f5e165f532ed731bb5be646b14c2e77c1",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/db456b6f5e165f532ed731bb5be646b14c2e77c1"
+  } ]
+}

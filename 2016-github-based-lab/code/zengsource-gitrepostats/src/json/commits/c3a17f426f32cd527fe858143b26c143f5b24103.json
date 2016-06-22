@@ -1,0 +1,144 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 299,
+    "additions" : 262,
+    "deletions" : 37
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/c3a17f426f32cd527fe858143b26c143f5b24103",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-01-07T03:53:43Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-01-07T03:53:43Z"
+    },
+    "message" : "Merge pull request #534 from jayhoo95/master\n\n1314080901236 实验7",
+    "tree" : {
+      "sha" : "036e76bee1d1a044adb97710f3b014bd6483068a",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/036e76bee1d1a044adb97710f3b014bd6483068a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/c3a17f426f32cd527fe858143b26c143f5b24103",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c3a17f426f32cd527fe858143b26c143f5b24103/comments",
+  "files" : [ {
+    "sha" : "3c145f4aefd6f1bb70f4b825d327f2ee4fd37b6a",
+    "filename" : "works/1314080901236/index.html",
+    "status" : "modified",
+    "additions" : 40,
+    "deletions" : 16,
+    "changes" : 56,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901236/index.html?ref=c3a17f426f32cd527fe858143b26c143f5b24103",
+    "patch" : "@@ -1,6 +1,6 @@\n <!DOCTYPE html>\n-<html  ng-app=\"myAppModule\">\n-  <head lang=\"zh-CN\">\n+<html  ng-app=\"myAppModule\"><lang=\"zh-CN\">\n+  <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n@@ -14,7 +14,18 @@\n     <script src=\"js/myAppModule.js\"></script>\n     <!-- Custom styles for this template -->\n     <link href=\"css/style.css\" rel=\"stylesheet\">\n-\n+\t<style type=\"text/css\">\n+\t  .header{\n+\t\tpadding:0;\n+\t\tmargin:0;\n+\t  }\n+\t  .body{\n+\t\tfont-weight:bold;\n+\t\tcolor:white\n+\t  }.color{\n+\t\tbackground-color:#e6e8eb;\n+\t  }\n+  </style>\n     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n     <!--[if lt IE 9]>\n@@ -22,8 +33,13 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body ng-controller=\"SuppInfor\">\n-    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+ <body ng-controller=\"MyFilterDemoCtrl\" >\n+        \n+\n+\t\n+\t\n+   <nav class=\"navbar navbar-inverse navbar-fixed-top main-navigation\">\n+\t\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n           <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n@@ -32,30 +48,38 @@\n             <span class=\"icon-bar\"></span>\n             <span class=\"icon-bar\"></span>\n           </button>\n-          <a class=\"navbar-brand\" href=\"#\">Project name</a>\n+          <a class=\"navbar-brand\" href=\"#myWebsite\">My Website</a>\n         </div>\n         <div id=\"navbar\" class=\"collapse navbar-collapse\">\n-          <ul class=\"nav navbar-nav\">\n-            <li class=\"active\"><a href=\"#\">Home</a></li>\n-            <li><a href=\"#about\">About</a></li>\n-            <li><a href=\"#contact\">Contact</a></li>\n+          <ul class=\"nav navbar-nav \">\n+\t\t\t<li><a href=\"#tableData\"><span class=\"glyphicon glyphicon-hand-right\" aria-hidden=\"true\"></span>My Table</a></li>\n+            <li><a href=\"#aboutMe\"><span class=\"glyphicon glyphicon-heart-empty\" aria-hidden=\"true\"></span>About Me</a></li>\n+            \n           </ul>\n         </div><!--/.nav-collapse -->\n       </div>\n     </nav>\n+                          \n \n-    <div class=\"container\">\n \n-      <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n-        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-      </div>\n \n-    </div><!-- /.container -->\n+    </main>\n+\n+\t\n+\n+\n+      \n+    <div ng-view >\n+\t\n+\t</div>\n+      \n+   \n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+\t\n+   <script src=\"../../lib/angular-1.4.5/angular-route.min.js\"></script>\n   </body>\n </html>"
+  }, {
+    "sha" : "4b934e581527dde54df11f992c0ef11d66d4a7fe",
+    "filename" : "works/1314080901236/js/myAppModule.js",
+    "status" : "modified",
+    "additions" : 118,
+    "deletions" : 21,
+    "changes" : 139,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901236/js/myAppModule.js?ref=c3a17f426f32cd527fe858143b26c143f5b24103",
+    "patch" : "@@ -1,29 +1,126 @@\n-// create a new module called 'myAppModule' and save \n-// a reference to it in a variable called myAppModule \n-var myAppModule = angular.module('myAppModule', []);\n-\n-// use the myAppModule variable to\n-// configure the module with a controller\n-myAppModule.controller('SuppInfor', function ($scope)\n-\t{\n-\t\tvar SuppInfor= \n+﻿//初始化表单数据\n+\n+var SuppInfor= \n \t\t\t{  SuppId: '001',\n-\t\t\t    CreatDate: new Date(2015, 10, 18),\n+\t\t\t    CreatDate:'2015-10-23' ,\n \t\t\t    SuppType: '五金类',\n \t\t\t    SuppFullName: '供应商全称',\n \t\t\t    pinyincode: 'null',\n-\t\t\t    SuppPage: 'http://',\n+\t\t\t    SuppPage: ' ',\n \t\t\t    SuppShortName:'供应商简称',\n \t\t\t    AdministrativeDivision :'行政区域',\n \t\t\t    SuppDesc :'供应商简介',\n \t\t\t};\n-\t\t\t$scope.data = SuppInfor;\n-\t}\n-);\n-\n-// use the myAppModule variable to\n-// configure the module with a filter\n-myAppModule.filter('stripDashes', function() {\n-    return function(txt) {\n-        // filter code would go here\n-}; });\n+\n+\n+//创建模块\n+var myAppModule = angular.module(\"myAppModule\", ['ngRoute']);\n+      \n+      myAppModule.config(['$routeProvider',\n+         function($routeProvider) {\n+            $routeProvider.\n+               when('/myWebsite', {\n+                  templateUrl: 'pages/myWebsite.html',\n+                  //controller: 'myWebsiteController'\n+               }).\n+\t\t\t   when('/tableData', {\n+                  templateUrl: 'pages/tableData.html',\n+                  //controller: 'myWebsiteController'\n+               }).\n+               when('/aboutMe', {\n+                  templateUrl: 'pages/aboutMe.html',\n+                  //controller: 'aboutMeController'\n+               }).\n+               otherwise({\n+                  redirectTo: '/myWebsite'\n+               });\n+         }]);\n+\n+         /*myAppModule.controller('myWebsiteController', function($scope) {\n+            $scope.message = \"Welcome to my Website\";\n+         });\n+         myAppModule.controller('aboutMeController', function($scope) {\n+            $scope.message = \"machaorong 1314080901225\";\n+         });*/\n+\n+\n+\n+//创建服务\n+myAppModule.factory(\"AppService\",function($http){\n+      var getmyAppData={};\n+      \n+\t  //getData方法\n+      getmyAppData.getData=function(buttondata){\n+            var promise=$http({\n+              url:\"json/buttonData.json\",\n+              method:\"GET\",\n+\t\t\t  data:buttondata\n+            });\n+            return promise;\n+      }\n+      \n+      return getmyAppData;\n+\n+});\n+\n+//定义控制器\n+\n+angular.module('myAppModule').controller('MyFilterDemoCtrl', function($scope,AppService) {\n+          var promise=AppService.getData();\n+\t\t  \n+\t\t  $scope.create = function () {\n+\t\t\t$scope.showSuccessMessage=false;\n+\t\t\t$scope.showErrorMessage=false;\n+\t\t\t//promise的成功方法\n+\t\t\tpromise.success(function(data,status){\n+\t\t\t\n+\t\t  \n+\t\t\t$scope.successMessage =data[0].SMessage;\n+\t\t\talert($scope.successMessage);\n+   \t\t    //$scope.showSuccessMessage=true;\n+\t\t\t});\n+\t\t  \n+\t\t\t//promise的失败方法\n+\t\t\tpromise.error(function(data,status){\n+\t\t  \n+\t\t  \n+\t\t\t$scope.errorsMessage =data[0].EMessage;\n+\t\t\talert($scope.errorsMessage);\n+\t\t  \n+\t\t\t});\n+\t\t  }\n+\n+\t\t\t\n+\t\t\t\n+\t\t\t$scope.SelectItem = [\n+\t\t\t {\n+\t\t\t    SuppType: '五金类',\n+\t\t\t },\n+\t\t\t {\n+\t\t\t    SuppType: '电器类',\n+\t\t\t },\n+\t\t\t {\n+\t\t\t    SuppType: '板材类',\n+\t\t\t },\n+\t\t\t {\n+\t\t\t    SuppType: '油漆类',\n+\t\t\t },\n+\t\t\t {\n+\t\t\t    SuppType: '刀具类',\n+\t\t\t },\n+\t\t\t {\n+\t\t\t    SuppType: '其他',\n+\t\t\t },\n+\t\t\t];\n+\t\t\t\n+\n+});\n+\n+\n+\n+//定义过滤器\n+ManifestDataModule.filter('stripDashes', function() {\n+\treturn function(txt) {\n+\t\t// filter code would go here\n+\t};\n+});\n\\ No newline at end of file"
+  }, {
+    "sha" : "c3ebf4a8327959c49b0c218347b4b4eb7a25184d",
+    "filename" : "works/1314080901236/json/buttonData.json",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/json/buttonData.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/json/buttonData.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901236/json/buttonData.json?ref=c3a17f426f32cd527fe858143b26c143f5b24103",
+    "patch" : "@@ -0,0 +1,6 @@\n+﻿[\n+    {\n+        \"SMessage\": \"恭喜你新建数据成功!\",\n+        \"EMessage\": \"新建数据失败，请再试一次！\"\n+    }\n+]\n\\ No newline at end of file"
+  }, {
+    "sha" : "a072fc8269c3051b1a6eb20c0d8ab7a77fe0c713",
+    "filename" : "works/1314080901236/pages/aboutMe.html",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/pages/aboutMe.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/pages/aboutMe.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901236/pages/aboutMe.html?ref=c3a17f426f32cd527fe858143b26c143f5b24103",
+    "patch" : "@@ -0,0 +1,8 @@\n+﻿<div class=\"container\" >\n+\n+      <div class=\"starter-template\">\n+        <h1>个人信息</h1>\n+        <p class=\"lead\">姓名：徐炯濠<br>学号：13140809012236</p>\n+      </div>\n+\n+</div>\n\\ No newline at end of file"
+  }, {
+    "sha" : "5e178c7d8f40b2a933686e31c689b4439794ae61",
+    "filename" : "works/1314080901236/pages/myWebsite.html",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/pages/myWebsite.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/pages/myWebsite.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901236/pages/myWebsite.html?ref=c3a17f426f32cd527fe858143b26c143f5b24103",
+    "patch" : "@@ -0,0 +1,6 @@\n+﻿<div class=\"container\">\n+\n+      <div class=\"starter-template\">\n+        <h1>Welcome come to My Website </h1><br/>\n+\t<h2>欢迎来到我的主页</h2>\n+</div>\n\\ No newline at end of file"
+  }, {
+    "sha" : "1f6eb3207d8be11ac326c80925710b2836815798",
+    "filename" : "works/1314080901236/pages/tableData.html",
+    "status" : "added",
+    "additions" : 84,
+    "deletions" : 0,
+    "changes" : 84,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/pages/tableData.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c3a17f426f32cd527fe858143b26c143f5b24103/works/1314080901236/pages/tableData.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901236/pages/tableData.html?ref=c3a17f426f32cd527fe858143b26c143f5b24103",
+    "patch" : "@@ -0,0 +1,84 @@\n+﻿\n+<div class=\"container\">\n+\n+      <div class=\"starter-template\">\n+        <h1>供应商信息表单创建</h1>\n+       \n+      </div>\n+\n+   \n+\n+\n+    \n+\t<form class=\"form-horizontal\" role=\"form\" ng-submit=\"create()\">\n+    <fieldset>\n+\n+        <div class=\"form-group\">\n+            <label for=\"SuppId\"  class=\"col-sm-2  control-label\">供应商编号：</label>\n+            <div class=\"col-md-2\">\n+               <input id=\"SuppId\"  type=\"text\"/>\n+            </div>\n+            <label for=\"CreatDate\"  class=\"col-sm-2  control-label\">建档日期：</label>\n+            <div class=\"col-md-2\">\n+             <input id=\"CreatDate\"  type=\"text\"/>\n+            </div>\n+            <label for=\"SuppType\"  class=\"col-sm-2 control-label\">供应商类别：</label>\n+            <div class=\"col-md-2\">\n+                <select id=\"SuppType\" class=\"form-control\" ng-model=\"seleted\" ng-options=\"a.SuppType for a in SelectItem\">\n+                   \n+                </select>\n+            </div>\n+            \n+        </div>\n+        <div class=\"form-group\">\n+\t\t<label for=\"SuppFullName\"  class=\"col-sm-2 control-label\">供应商全称：</label>\n+            <div class=\"col-md-2\">\n+              <input id=\"SuppFullName\"  type=\"text\"/>\n+\n+            </div>\n+            <label for=\"pinyincode\"  class=\"col-sm-2 control-label \">拼音码：</label>\n+            <div class=\"col-md-2\">\n+               <input id=\"pinyincode\"  type=\"text\"/>\n+\n+            </div>\n+            <label for=\"SuppPage\"  class=\"col-sm-2 control-label\">供应商主页：</label>\n+            <div class=\"col-md-2\">\n+             <input id=\"SuppPage\"  type=\"text\"/>\n+\n+            </div>\n+        </div>\n+\t <div class=\"form-group\">\n+\t\t<label for=\"SuppShortName\"  class=\"col-sm-2 control-label\">供应商简称：</label>\n+            <div class=\"col-md-2\">\n+              <input id=\"SuppShortName\"  type=\"text\"/>\n+\n+            </div>\n+            <label for=\"AdministrativeDivision\"  class=\"col-sm-2 control-label \">行政区域：</label>\n+            <div class=\"col-md-2\">\n+               <input id=\"AdministrativeDivision\"  type=\"text\"/>\n+\n+            </div>\n+            <label for=\"SuppDesc\"  class=\"col-sm-2 control-label\">供应商简介：</label>\n+            <div class=\"col-md-2\">\n+             <input id=\"SuppDesc\"  type=\"text\"/>\n+\n+            </div>\n+        </div>\n+\t\t \n+\t<div class=\"form-group\">\t\n+\t          <label class=\"col-sm-2 control-label\"><b>是否停用：</b><input type=\"checkbox\">\n+    </label>\n+        <div class=\"btn-group col-lg-push-1\" >\n+            <button type=\"submit\" class=\"btn btn-default btn-sm\" >+保存/修改</button>\n+       \n+        </div>\n+\t </div>\n+    </fieldset>\n+\n+\n+\n+\n+\n+\t   \n+ </form>\n+ </div><!-- /.container -->"
+  } ],
+  "sha" : "c3a17f426f32cd527fe858143b26c143f5b24103",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c3a17f426f32cd527fe858143b26c143f5b24103",
+  "parents" : [ {
+    "sha" : "02f6fc5b63fed274f5bb201c7c8e5e0db2a0926c",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/02f6fc5b63fed274f5bb201c7c8e5e0db2a0926c",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/02f6fc5b63fed274f5bb201c7c8e5e0db2a0926c"
+  }, {
+    "sha" : "7f3de91d17aa15d5cd5a4da3dc85639fab2c0c1c",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7f3de91d17aa15d5cd5a4da3dc85639fab2c0c1c",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/7f3de91d17aa15d5cd5a4da3dc85639fab2c0c1c"
+  } ]
+}

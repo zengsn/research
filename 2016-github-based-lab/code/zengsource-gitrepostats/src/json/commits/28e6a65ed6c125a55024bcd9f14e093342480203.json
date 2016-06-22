@@ -1,0 +1,95 @@
+{
+  "committer" : {
+    "login" : "yanTingwww",
+    "id" : 15097619,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097619?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yanTingwww",
+    "html_url" : "https://github.com/yanTingwww",
+    "followers_url" : "https://api.github.com/users/yanTingwww/followers",
+    "following_url" : "https://api.github.com/users/yanTingwww/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yanTingwww/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yanTingwww/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yanTingwww/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yanTingwww/orgs",
+    "repos_url" : "https://api.github.com/users/yanTingwww/repos",
+    "events_url" : "https://api.github.com/users/yanTingwww/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yanTingwww/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 15,
+    "additions" : 13,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "yanTingwww",
+    "id" : 15097619,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097619?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yanTingwww",
+    "html_url" : "https://github.com/yanTingwww",
+    "followers_url" : "https://api.github.com/users/yanTingwww/followers",
+    "following_url" : "https://api.github.com/users/yanTingwww/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yanTingwww/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yanTingwww/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yanTingwww/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yanTingwww/orgs",
+    "repos_url" : "https://api.github.com/users/yanTingwww/repos",
+    "events_url" : "https://api.github.com/users/yanTingwww/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yanTingwww/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/28e6a65ed6c125a55024bcd9f14e093342480203",
+  "commit" : {
+    "author" : {
+      "name" : "yanTingwww",
+      "email" : "839693121@qq.com",
+      "date" : "2015-10-20T01:34:58Z"
+    },
+    "committer" : {
+      "name" : "yanTingwww",
+      "email" : "839693121@qq.com",
+      "date" : "2015-10-20T01:34:58Z"
+    },
+    "message" : "题目修改",
+    "tree" : {
+      "sha" : "04f2249c2c58b4e1c173b2576626bda9dae0e2e9",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/04f2249c2c58b4e1c173b2576626bda9dae0e2e9"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/28e6a65ed6c125a55024bcd9f14e093342480203",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/28e6a65ed6c125a55024bcd9f14e093342480203/comments",
+  "files" : [ {
+    "sha" : "24ab9c00d722efa05d530501a7b2aa2d8169babc",
+    "filename" : "works/1314080901234/index.html",
+    "status" : "modified",
+    "additions" : 13,
+    "deletions" : 2,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/28e6a65ed6c125a55024bcd9f14e093342480203/works/1314080901234/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/28e6a65ed6c125a55024bcd9f14e093342480203/works/1314080901234/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901234/index.html?ref=28e6a65ed6c125a55024bcd9f14e093342480203",
+    "patch" : "@@ -1,11 +1,22 @@\n <!DOCTYPE html>\n <html lang=\"zh-CN\">\n-  <head>\n+  <head><script> \n+2     function MyFilterDemoCtrl($scope) { \n+3         var someData = { \n+4             firstName: '采购设置新增列表', \n+5             surname: 'GRANT', \n+6             dateJoined: new Date(2010, 2, 23), \n+7             consumption: 123.659855, \n+8             plan: 'super-basic-plan' \n+9         }; \n+10         $scope.data = someData; \n+11 } </script> \n+\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>人事报表1314080901234</title>\n+    <title>采购设置新增列表1314080901234</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901234/采购设置新增列表.txt",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/28e6a65ed6c125a55024bcd9f14e093342480203/works/1314080901234/%E9%87%87%E8%B4%AD%E8%AE%BE%E7%BD%AE%E6%96%B0%E5%A2%9E%E5%88%97%E8%A1%A8.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/28e6a65ed6c125a55024bcd9f14e093342480203/works/1314080901234/%E9%87%87%E8%B4%AD%E8%AE%BE%E7%BD%AE%E6%96%B0%E5%A2%9E%E5%88%97%E8%A1%A8.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901234/%E9%87%87%E8%B4%AD%E8%AE%BE%E7%BD%AE%E6%96%B0%E5%A2%9E%E5%88%97%E8%A1%A8.txt?ref=28e6a65ed6c125a55024bcd9f14e093342480203"
+  } ],
+  "sha" : "28e6a65ed6c125a55024bcd9f14e093342480203",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/28e6a65ed6c125a55024bcd9f14e093342480203",
+  "parents" : [ {
+    "sha" : "89511e02f9c7f7fc8b30fd8080105b2aa7fbd1a4",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/89511e02f9c7f7fc8b30fd8080105b2aa7fbd1a4",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/89511e02f9c7f7fc8b30fd8080105b2aa7fbd1a4"
+  } ]
+}

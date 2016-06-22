@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 59,
+    "additions" : 50,
+    "deletions" : 9
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/026278ec76b5559ca34151cb5aa302635da632f9",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:04:39Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:04:39Z"
+    },
+    "message" : "Merge pull request #259 from qq379701982/master\n\n第四次实验 修改了index",
+    "tree" : {
+      "sha" : "2f2fb7ea1955f8ea6509778eeab04e44df62d3d9",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/2f2fb7ea1955f8ea6509778eeab04e44df62d3d9"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/026278ec76b5559ca34151cb5aa302635da632f9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/026278ec76b5559ca34151cb5aa302635da632f9/comments",
+  "files" : [ {
+    "sha" : "561473662b1dbf2ba45183f7e1f2c9a864a6cbf6",
+    "filename" : "works/1314080901219/index.html",
+    "status" : "modified",
+    "additions" : 50,
+    "deletions" : 9,
+    "changes" : 59,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/026278ec76b5559ca34151cb5aa302635da632f9/works/1314080901219/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/026278ec76b5559ca34151cb5aa302635da632f9/works/1314080901219/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901219/index.html?ref=026278ec76b5559ca34151cb5aa302635da632f9",
+    "patch" : "@@ -1,10 +1,51 @@\n-﻿<!DOCTYPE html >\n-<html ng-app=\"orderModule\"> <head lang=\"en\">\n-<meta charset=\"UTF-8\">\n-<title>仓库库存_查询库存清单列表</title>\n-    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n-\t<script src=\"js/orderModule.js\"></script>\n-</head>\n-<body ng-controller=\"createOrderCtrl\">\n-</body>\n+﻿<!DOCTYPE html>\n+ <html ng-app=\"orderModule\"> <head lang=\"en\">\n+     <meta charset=\"utf-8\">\n+     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n+     <title>仓库库存_查询库存清单列表 by 1314080901219</title>\n+     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+     \t\t     \n+     <!-- Bootstrap -->\n+     <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n+ \t\t \n+     <!-- Custom styles for this template -->\n+     <link href=\"css/style.css\" rel=\"stylesheet\">\n+ \t\t \n+     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n+     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n+     <!--[if lt IE 9]>\n+       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+     <![endif]-->\n+\n+   </head>\n+   <body ng-controller=\"createOrderCtrl\">\n+     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+                   <ul class=\"nav navbar-nav\">\n+             <li class=\"active\"><a href=\"#\">Home</a></li>\n+             <li><a href=\"#about\">About</a></li>\n+             <li><a href=\"#contact\">Contact</a></li>\n+           </ul>\n+         </div><!--/.nav-collapse -->\n+       </div>\n+     </nav>\n+ \t\t \n+     <div class=\"container\">\n+ \t\t \n+       <div class=\"starter-template\">\n+         <h1>Bootstrap starter template</h1>\n+         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\t\t    \n+       </div>\n+ \t\t \n+     </div><!-- /.container -->\n+ \t\t \n+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\t\t    \n+     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\t\n+     <!-- Include all compiled plugins (below), or include individual files as needed -->\n+     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+        <script src=\"js/orderModule.js\"></script>\n+   </body>\n </html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "026278ec76b5559ca34151cb5aa302635da632f9",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/026278ec76b5559ca34151cb5aa302635da632f9",
+  "parents" : [ {
+    "sha" : "59fed14c5269d0ecf14c3e1540fe2b83750fe8a1",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/59fed14c5269d0ecf14c3e1540fe2b83750fe8a1",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/59fed14c5269d0ecf14c3e1540fe2b83750fe8a1"
+  }, {
+    "sha" : "dc5086cebd5bcc62f8f66414a3a09bcb9eb8f929",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/dc5086cebd5bcc62f8f66414a3a09bcb9eb8f929",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/dc5086cebd5bcc62f8f66414a3a09bcb9eb8f929"
+  } ]
+}

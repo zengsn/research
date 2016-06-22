@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 71,
+    "additions" : 71,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/a3a96428bab13033a0b2cc08d2cfbd31961ccb70",
+  "commit" : {
+    "author" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-12-31T04:45:23Z"
+    },
+    "committer" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-12-31T04:45:23Z"
+    },
+    "message" : "Create homeData.html\n\n完成表单的制作",
+    "tree" : {
+      "sha" : "3a309d2b7c7cfa3e8abb22e8e635aa843402dfa5",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/3a309d2b7c7cfa3e8abb22e8e635aa843402dfa5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/a3a96428bab13033a0b2cc08d2cfbd31961ccb70",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a3a96428bab13033a0b2cc08d2cfbd31961ccb70/comments",
+  "files" : [ {
+    "sha" : "fabeab137c97aff13216f591d4af258f80043e38",
+    "filename" : "works/1314080901212/pages/homeData.html",
+    "status" : "added",
+    "additions" : 71,
+    "deletions" : 0,
+    "changes" : 71,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/a3a96428bab13033a0b2cc08d2cfbd31961ccb70/works/1314080901212/pages/homeData.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/a3a96428bab13033a0b2cc08d2cfbd31961ccb70/works/1314080901212/pages/homeData.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901212/pages/homeData.html?ref=a3a96428bab13033a0b2cc08d2cfbd31961ccb70",
+    "patch" : "@@ -0,0 +1,71 @@\n+<div class=\"color\">\n+<div class=\"container\">\n+\n+      <div class=\"starter-template\">\n+        <h1>仓库的入库表单创建</h1>\n+        <h2 style=\"background-color:rgb(250,155,255);color:blue;font-weight:bold\">单据信息</h2>\n+       \n+             </div>\n+    </div><!-- /.container -->\n+\n+\n+    \n+\t<form class=\"form-horizontal\" role=\"form\" ng-submit=\"create()\">\n+    <fieldset>\n+\n+        <div class=\"form-group\">\n+            <label for=\"ID\"  class=\"col-md-1 control-label\">订单编码：</label>\n+            <div class=\"col-md-2\">\n+                <select id=\"ID\" class=\"form-control\" ng-model=\"seleted\" ng-options=\"a.ID for a in SelectItem\">\n+                    \n+                </select>\n+            </div>\n+            <label for=\"Storage\"  class=\"col-md-1 control-label\">仓库：</label>\n+            <div class=\"col-md-2\">\n+                <select id=\"Storage\" class=\"form-control\" ng-model=\"seleted\" ng-options=\"a.Storage for a in SelectItem\">\n+                    \n+                </select>\n+            </div>\n+            <label for=\"Hand\"  class=\"col-md-1 control-label\">经手人：</label>\n+            <div class=\"col-md-2\">\n+                <select id=\"Hand\" class=\"form-control\" ng-model=\"seleted\" ng-options=\"a.Hand for a in SelectItem\">\n+                   \n+                </select>\n+            </div>\n+            <label for=\"Handling data\"  class=\"col-md-1 control-label\">经办日期：</label>\n+            <div class=\"col-md-2\">\n+                <input id=\"Handling data\"  type=\"date\"/>\n+\n+            </div>\n+        </div>\n+        <div class=\"form-group\">\n+            <label for=\"State\"  class=\"col-md-1 control-label \">状态：</label>\n+            <div class=\"col-md-2\">\n+                <input class=\"form-control \" id=\"State\" type=\"text\" placeholder=\"不可编辑\" disabled/>\n+\n+            </div>\n+            <label for=\"Remark\"  class=\"col-md-1 control-label\">备注：</label>\n+            <div class=\"col-md-7\">\n+                <input class=\"form-control disabled\" id=\"Remark\" type=\"text\" />\n+\n+            </div>\n+        </div>\n+\t\t \n+\t\t\t\n+        <div class=\"btn-group col-lg-push-1\" >\n+            <button type=\"submit\" class=\"btn btn-default btn-sm\" >新建</button>\n+            <button type=\"button\" class=\"btn btn-default btn-sm\" disabled=\"disabled\">保存</button>\n+            <button type=\"button\" class=\"btn btn-default btn-sm\" disabled=\"disabled\">删除</button>\n+            <button type=\"button\" class=\"btn btn-default btn-sm\" disabled=\"disabled\">确定</button>\n+            <button type=\"button\" class=\"btn btn-default btn-sm\" disabled=\"disabled\">导出excel</button>\n+            <button type=\"button\" class=\"btn btn-default btn-sm\" disabled=\"disabled\">出库</button>\n+        </div>\n+    </fieldset>\n+\n+\n+\n+\n+\n+\t   \n+ </form>\n+ </div>"
+  } ],
+  "sha" : "a3a96428bab13033a0b2cc08d2cfbd31961ccb70",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a3a96428bab13033a0b2cc08d2cfbd31961ccb70",
+  "parents" : [ {
+    "sha" : "9432ff408fd0485f23862442f03f105960eb8e39",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9432ff408fd0485f23862442f03f105960eb8e39",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9432ff408fd0485f23862442f03f105960eb8e39"
+  } ]
+}

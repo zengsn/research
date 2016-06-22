@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "liwenjie0",
+    "id" : 14371574,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14371574?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liwenjie0",
+    "html_url" : "https://github.com/liwenjie0",
+    "followers_url" : "https://api.github.com/users/liwenjie0/followers",
+    "following_url" : "https://api.github.com/users/liwenjie0/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liwenjie0/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liwenjie0/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liwenjie0/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liwenjie0/orgs",
+    "repos_url" : "https://api.github.com/users/liwenjie0/repos",
+    "events_url" : "https://api.github.com/users/liwenjie0/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liwenjie0/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 58,
+    "additions" : 57,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "liwenjie0",
+    "id" : 14371574,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14371574?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liwenjie0",
+    "html_url" : "https://github.com/liwenjie0",
+    "followers_url" : "https://api.github.com/users/liwenjie0/followers",
+    "following_url" : "https://api.github.com/users/liwenjie0/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liwenjie0/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liwenjie0/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liwenjie0/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liwenjie0/orgs",
+    "repos_url" : "https://api.github.com/users/liwenjie0/repos",
+    "events_url" : "https://api.github.com/users/liwenjie0/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liwenjie0/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d",
+  "commit" : {
+    "author" : {
+      "name" : "lwj000",
+      "email" : "602078721@qq.com",
+      "date" : "2015-12-01T00:06:40Z"
+    },
+    "committer" : {
+      "name" : "lwj000",
+      "email" : "602078721@qq.com",
+      "date" : "2015-12-01T00:06:40Z"
+    },
+    "message" : "修正后的实验五\n\n解决冲突",
+    "tree" : {
+      "sha" : "073c602076155b3a8d32a051696363130ae4e1ec",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/073c602076155b3a8d32a051696363130ae4e1ec"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d/comments",
+  "files" : [ {
+    "sha" : "6858ff725aa1a9df488806b42efe520c0ccbf5b2",
+    "filename" : "works/1314080901221/index.html",
+    "status" : "modified",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d/works/1314080901221/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d/works/1314080901221/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901221/index.html?ref=a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d",
+    "patch" : "@@ -58,9 +58,42 @@\n \n     <div class=\"container\">\n \n+<<<<<<< HEAD\n+      <div style=\"width:330px; height:500px; background:#cc1100;\"align=\"center\" >\n+        <h3 style=\"background-color:#99bce8;\">岗位管理</h3>\n+        <hr/>\n+        <form>\n+          <P>所属部门：       \n+            <select name=\"bumen\"class=\"style1\" style=\"width:200px\">\n+              <option>人事</option>\n+              <option>仓库</option>\n+            </select>\n+          </P>\n+          <p>岗位名称：<input class=\"style1\" style=\"width:200px\" /></p>\n+          <p>岗位层次：<input class=\"style1\"/></p>\n+          <p>岗位类型：<input class=\"style1\"/></p>\n+          <p>基本薪资：<input class=\"style1\"/></p>\n+          <p>岗位职责：<input class=\"style1\" style=\"height:70px;\"/></p>\n+          <button ng-click=\"showInput()\" type=\"button\">{{isHidden ? '提交' : '返回'}}</button>\n+          <button>重置</button>\n+        </form>\n+=======\n       <div class=\"starter-template\">\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n+>>>>>>> parent of 0503540... 合并一些操作\n+      </div>\n+      <div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n+        <p class=\"lead\">\n+          <div ng-hide=\"isHidden\">您输入的数据为：</div>    \n+          <div id=\"Orderform\" ng-hide=\"isHidden\">订单编号->{{Orderform}}</div>\n+          <div id=\"Productname\" ng-hide=\"isHidden\">产品名称->{{Productname}}</div>\n+          <div id=\"Customername\" ng-hide=\"isHidden\">客户名称->{{Customername}}</div>\n+          <div id=\" Sealoffmember\" ng-hide=\"isHidden\">拆单员->{{ Sealoffmember}}</div>\n+          <div id=\"Orderformrate\" ng-hide=\"isHidden\">订单进度->{{Orderformrate}}</div>\n+          <div id=\"Sealoffdate\" ng-hide=\"isHidden\">拆单日期->{{Sealoffdate}}</div>\n+          <div id=\"Finishdate\" ng-hide=\"isHidden\">完成日期->{{Finishdate}}</div>\n+        </p>\n       </div>\n \n     </div><!-- /.container -->"
+  }, {
+    "sha" : "a738986890a9ee6147b03bc9c1aeae852ae06b8a",
+    "filename" : "works/1314080901221/js/myAppModule",
+    "status" : "modified",
+    "additions" : 24,
+    "deletions" : 1,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d/works/1314080901221/js/myAppModule",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d/works/1314080901221/js/myAppModule",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901221/js/myAppModule?ref=a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d",
+    "patch" : "@@ -16,12 +16,35 @@ myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n         };\n         $scope.data = someData;\n \n+<<<<<<< HEAD:works/1314080901221/js/myAppModule.js\n+        $scope.isHidden=true;\n+       $scope.showInput=function(){\n+            $scope.isHidden=!$scope.isHidden;\n+        }\n+    \n+});\n+=======\n     }\n );\n+>>>>>>> parent of 0503540... 合并一些操作:works/1314080901221/js/myAppModule\n \n // use the myAppModule variable to\n // configure the module with a filter\n myAppModule.filter('stripDashes', function() {\n     return function(txt) {\n         // filter code would go here\n-}; });\n\\ No newline at end of file\n+<<<<<<< HEAD:works/1314080901221/js/myAppModule.js\n+}; });\n+\n+myAppModule.directive('quartersList',function(){\n+console.log();\n+    return {\n+    restrict:'AE',\n+    template:\"<div ng-repeat=\\\"data in data\\\">\"+\n+            \"{{data.dep}}   &nbsp; &nbsp; &nbsp;  {{data.quartersName}} &nbsp; &nbsp; &nbsp; {{data.salary}}</div>\"\n+};\n+});\n+\n+=======\n+}; });\n+>>>>>>> parent of 0503540... 合并一些操作:works/1314080901221/js/myAppModule"
+  } ],
+  "sha" : "a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a60aa6c6d67ec80b8b7aa0a9dfd5fced0124297d",
+  "parents" : [ {
+    "sha" : "616e1deeb90f66d68f6fc3afe9d4f1e7043b599c",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/616e1deeb90f66d68f6fc3afe9d4f1e7043b599c",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/616e1deeb90f66d68f6fc3afe9d4f1e7043b599c"
+  } ]
+}

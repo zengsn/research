@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "jayhoo95",
+    "id" : 14249130,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14249130?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jayhoo95",
+    "html_url" : "https://github.com/jayhoo95",
+    "followers_url" : "https://api.github.com/users/jayhoo95/followers",
+    "following_url" : "https://api.github.com/users/jayhoo95/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jayhoo95/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jayhoo95/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jayhoo95/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jayhoo95/orgs",
+    "repos_url" : "https://api.github.com/users/jayhoo95/repos",
+    "events_url" : "https://api.github.com/users/jayhoo95/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jayhoo95/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 19,
+    "additions" : 9,
+    "deletions" : 10
+  },
+  "author" : {
+    "login" : "jayhoo95",
+    "id" : 14249130,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14249130?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jayhoo95",
+    "html_url" : "https://github.com/jayhoo95",
+    "followers_url" : "https://api.github.com/users/jayhoo95/followers",
+    "following_url" : "https://api.github.com/users/jayhoo95/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jayhoo95/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jayhoo95/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jayhoo95/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jayhoo95/orgs",
+    "repos_url" : "https://api.github.com/users/jayhoo95/repos",
+    "events_url" : "https://api.github.com/users/jayhoo95/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jayhoo95/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/b01b8ec1435e7436bedb8ba8ced50631f2eb76d1",
+  "commit" : {
+    "author" : {
+      "name" : "jayhoo95",
+      "email" : "1063200319@qq.com",
+      "date" : "2015-11-03T01:32:15Z"
+    },
+    "committer" : {
+      "name" : "jayhoo95",
+      "email" : "1063200319@qq.com",
+      "date" : "2015-11-03T01:32:15Z"
+    },
+    "message" : "修改了运行时报错的地方",
+    "tree" : {
+      "sha" : "9f7c4655e43b6181575a0876e1ca47dd613368b8",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/9f7c4655e43b6181575a0876e1ca47dd613368b8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/b01b8ec1435e7436bedb8ba8ced50631f2eb76d1",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b01b8ec1435e7436bedb8ba8ced50631f2eb76d1/comments",
+  "files" : [ {
+    "sha" : "bcf676ec8e4e75b2def7cb340d71e81bed365fc5",
+    "filename" : "works/1314080901236/js/myAppModule.js",
+    "status" : "modified",
+    "additions" : 9,
+    "deletions" : 10,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/b01b8ec1435e7436bedb8ba8ced50631f2eb76d1/works/1314080901236/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/b01b8ec1435e7436bedb8ba8ced50631f2eb76d1/works/1314080901236/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901236/js/myAppModule.js?ref=b01b8ec1435e7436bedb8ba8ced50631f2eb76d1",
+    "patch" : "@@ -6,17 +6,16 @@ var myAppModule = angular.module('myAppModule', []);\n // configure the module with a controller\n myAppModule.controller('SuppInfor', function ($scope)\n \t{\n-\t     function SuppInfor($scope) {\n-\t\t\tvar SuppInfor= {\n-\t\t\t    SuppId: '001',\n+\t\tvar SuppInfor= \n+\t\t\t{  SuppId: '001',\n \t\t\t    CreatDate: new Date(2015, 10, 18),\n-\t\t\t    SuppType: '�����',\n-\t\t\t    SuppFullName: '��Ӧ��ȫ��',\n-\t\t\t    pinyincode: 'null'\n-\t\t\t    SuppPage: 'http://'\n-\t\t\t    SuppShortName:'��Ӧ�̼��'\n-\t\t\t    AdministrativeDivision :'��������'\n-\t\t\t    SuppDesc :'��Ӧ�̼��'\n+\t\t\t    SuppType: '五金类',\n+\t\t\t    SuppFullName: '供应商全称',\n+\t\t\t    pinyincode: 'null',\n+\t\t\t    SuppPage: 'http://',\n+\t\t\t    SuppShortName:'供应商简称',\n+\t\t\t    AdministrativeDivision :'行政区域',\n+\t\t\t    SuppDesc :'供应商简介',\n \t\t\t};\n \t\t\t$scope.data = someData;\n \t}"
+  } ],
+  "sha" : "b01b8ec1435e7436bedb8ba8ced50631f2eb76d1",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b01b8ec1435e7436bedb8ba8ced50631f2eb76d1",
+  "parents" : [ {
+    "sha" : "e6978b68a682e9222c89b195b5f4d3f1d5977625",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e6978b68a682e9222c89b195b5f4d3f1d5977625",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e6978b68a682e9222c89b195b5f4d3f1d5977625"
+  } ]
+}

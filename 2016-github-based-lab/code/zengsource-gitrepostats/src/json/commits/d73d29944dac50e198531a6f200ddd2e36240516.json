@@ -1,0 +1,97 @@
+{
+  "committer" : {
+    "login" : "xiaoyaobrother",
+    "id" : 14306145,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14306145?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoyaobrother",
+    "html_url" : "https://github.com/xiaoyaobrother",
+    "followers_url" : "https://api.github.com/users/xiaoyaobrother/followers",
+    "following_url" : "https://api.github.com/users/xiaoyaobrother/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoyaobrother/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoyaobrother/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoyaobrother/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoyaobrother/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoyaobrother/repos",
+    "events_url" : "https://api.github.com/users/xiaoyaobrother/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoyaobrother/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 60,
+    "additions" : 10,
+    "deletions" : 50
+  },
+  "author" : {
+    "login" : "xiaoyaobrother",
+    "id" : 14306145,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14306145?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoyaobrother",
+    "html_url" : "https://github.com/xiaoyaobrother",
+    "followers_url" : "https://api.github.com/users/xiaoyaobrother/followers",
+    "following_url" : "https://api.github.com/users/xiaoyaobrother/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoyaobrother/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoyaobrother/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoyaobrother/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoyaobrother/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoyaobrother/repos",
+    "events_url" : "https://api.github.com/users/xiaoyaobrother/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoyaobrother/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/d73d29944dac50e198531a6f200ddd2e36240516",
+  "commit" : {
+    "author" : {
+      "name" : "xiaoyaobrother",
+      "email" : "392205128@qq.com",
+      "date" : "2015-11-23T15:49:10Z"
+    },
+    "committer" : {
+      "name" : "xiaoyaobrother",
+      "email" : "392205128@qq.com",
+      "date" : "2015-11-23T15:49:10Z"
+    },
+    "message" : "Revert \"修改实验四\"",
+    "tree" : {
+      "sha" : "298ef0613dfeabe3bacc09c17b167930caf1ba75",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/298ef0613dfeabe3bacc09c17b167930caf1ba75"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/d73d29944dac50e198531a6f200ddd2e36240516",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/d73d29944dac50e198531a6f200ddd2e36240516/comments",
+  "files" : [ {
+    "sha" : "39dc7cb6eacb4900a942b4d2723efbb08c0b83ac",
+    "filename" : "works/1314080901243/index.html",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 43,
+    "changes" : 46,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/d73d29944dac50e198531a6f200ddd2e36240516/works/1314080901243/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/d73d29944dac50e198531a6f200ddd2e36240516/works/1314080901243/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901243/index.html?ref=d73d29944dac50e198531a6f200ddd2e36240516",
+    "patch" : "@@ -1,5 +1,5 @@\n ﻿<!DOCTYPE html>\n-<html ng-app=\"bumenModule\"> <head lang=\"en\">\n+<html ng-app=\"orderModule\"> <head lang=\"en\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n@@ -22,10 +22,10 @@\n \n         <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n \n-\t    <script src=\"js/bumenModule.js\"></script>\n+\t    <script src=\"js/orderModule.js\"></script>\n \n   </head>\n-  <body ng-controller=\"MyFilterDemoCtrl\">\n+  <body ng-controller=\"createOrderCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -47,52 +47,12 @@\n       </div>\n     </nav>\n \n-\n-\n-\n     <div class=\"container\">\n \n       <div class=\"starter-template\">\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n-<div class=\"container\">\n-    <div class=\"row col-lg-offset-2\">\n-        <form class=\"form-inline\" role=\"form\">\n-\n-            <div class=\"form-group row\">\n-                <div class=\"row\">\n-                    <label for=\"example1\">部门名称：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumenname\" id=\"example1\"/>\n-                    <br/>\n-                     <br/>\n-\n-                    <label for=\"example2\">部门代码：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumendaima\" id=\"example2\"/>\n-                    <br/>\n-                     <br/>\n-\n-                    <label for=\"example3\">部门主管：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumenzhuguan\" id=\"example3\"/>\n-                    <br/>\n-                     <br/>\n-\n-                    <label for=\"example4\">部门描述：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"bumenmianshu\" id=\"example4\"/>\n-                </div>\n-            </div>\n-        \n-                  <br/>\n-                  <br/>\n-            <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n-                <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\"> 保存</button>\n-                <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\"> 重置</button>\n-            </div>\n-           \n-        </form>\n-    </div>\n-</div>\n-\n \n     </div><!-- /.container -->\n "
+  }, {
+    "sha" : "d6d6396557dfd158de9b75db415edb9f0e9f6241",
+    "filename" : "works/1314080901243/js/orderModule.js",
+    "status" : "renamed",
+    "additions" : 7,
+    "deletions" : 7,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/d73d29944dac50e198531a6f200ddd2e36240516/works/1314080901243/js/orderModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/d73d29944dac50e198531a6f200ddd2e36240516/works/1314080901243/js/orderModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901243/js/orderModule.js?ref=d73d29944dac50e198531a6f200ddd2e36240516",
+    "patch" : "@@ -1,24 +1,24 @@\n-// create a new module called 'bumenModule' and save \n+// create a new module called 'myAppModule' and save \n // a reference to it in a variable called myAppModule \n-var bumenModule = angular.module('bumenModule', []);\n+var orderModule = angular.module('orderModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-bumenModule.controller('MyFilterDemoCtrl', function ($scope) {\n+orderModule.controller('createOrderCtrl', function ($scope) {\n     // controller code would go here\n-        var bumenData = {\n+        var someData = {\n             bumenname:'�������',\n             bumendaima:'���Ŵ���',\n             bumenzhuguan:'�������',\n-            bumenmiaoshu:'��������'\n+            bumenmiaosu:'��������'\n         };\n-        $scope.data = bumenData;\n+        $scope.data = someData;\n     }\n );\n \n // use the myAppModule variable to\n // configure the module with a filter\n-myAppModule.filter('stripDashes', function () {\n+orderModule.filter('stripDashes', function () {\n     return function (txt) {\n         // filter code would go here\n     };",
+    "previous_filename" : "works/1314080901243/js/bumenModule.js"
+  } ],
+  "sha" : "d73d29944dac50e198531a6f200ddd2e36240516",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/d73d29944dac50e198531a6f200ddd2e36240516",
+  "parents" : [ {
+    "sha" : "bd737043d08c669d75ec2a61a3f946036cfc7d1f",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/bd737043d08c669d75ec2a61a3f946036cfc7d1f",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/bd737043d08c669d75ec2a61a3f946036cfc7d1f"
+  } ]
+}

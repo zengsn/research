@@ -1,0 +1,71 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 48,
+    "additions" : 32,
+    "deletions" : 16
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e961b44d9266da1b40f7acd0d452f02825d33d37",
+  "commit" : {
+    "author" : {
+      "name" : "phm",
+      "email" : "632305424@qq.com",
+      "date" : "2015-12-28T06:45:42Z"
+    },
+    "committer" : {
+      "name" : "phm",
+      "email" : "632305424@qq.com",
+      "date" : "2015-12-28T06:45:42Z"
+    },
+    "message" : "实验6+实验7",
+    "tree" : {
+      "sha" : "a84d535bae215583e32229d1fbd415cb232ea24f",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/a84d535bae215583e32229d1fbd415cb232ea24f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/e961b44d9266da1b40f7acd0d452f02825d33d37",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e961b44d9266da1b40f7acd0d452f02825d33d37/comments",
+  "files" : [ {
+    "sha" : "735ac79838ffa390a7c2cfa4ed312b89794a94d8",
+    "filename" : "works/1314080901127/index.html",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 2,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e961b44d9266da1b40f7acd0d452f02825d33d37/works/1314080901127/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e961b44d9266da1b40f7acd0d452f02825d33d37/works/1314080901127/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901127/index.html?ref=e961b44d9266da1b40f7acd0d452f02825d33d37",
+    "patch" : "@@ -48,7 +48,6 @@\n       <div class=\"starter-template\">\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-        {{data}}\n       </div>\n     </div>\n \t\n@@ -73,7 +72,7 @@\n             <br>\n           \n             <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n-                <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\">\n+                <button type=\"button\" class=\"btn btn-default\" ng-click=\"show()\">\n                     {{isHidden ? '提交' : '隐藏'}}\n                 </button>\n             </div>"
+  }, {
+    "sha" : "1c9d92b81567d92e0cc5fe5e068c20601bf7e3bb",
+    "filename" : "works/1314080901127/js/bumenModule.js",
+    "status" : "modified",
+    "additions" : 24,
+    "deletions" : 14,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e961b44d9266da1b40f7acd0d452f02825d33d37/works/1314080901127/js/bumenModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e961b44d9266da1b40f7acd0d452f02825d33d37/works/1314080901127/js/bumenModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901127/js/bumenModule.js?ref=e961b44d9266da1b40f7acd0d452f02825d33d37",
+    "patch" : "@@ -1,24 +1,34 @@\n-// create a new module called 'myAppModule' and save \n-// a reference to it in a variable called myAppModule \n var bumenModule = angular.module('bumenModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-bumenModule.controller('MyFilterDemoCtrl', function ($scope) {\n-       // controller code would go here\n-       var bumen = {\n+bumenModule.controller('MyFilterDemoCtrl', function ($scope,$http) {\n+       var promise=$http({\n+               url:\"json/phm.json\",\n+                method:\"get\",\n+              });\n+        promise.success(function(data,status){\n+        alert(status);\n+ \n+          var bu = {\n             name: '123',\n             code: '123',\n-            workernumber: 3\n+            workernumber: '3',\n         };\n-        $scope.data = bumenData;\n-\t\t$scope.isHidden = true;\n-        $scope.showInput = function () \n-\t\t{\n-            $scope.isHidden = !$scope.isHidden;\n-        }\n-}\n-);\n+          $scope.data =bu;\n+           $scope.isHidden = true;\n+         $scope.show = function(){\n+             $scope.isHidden = !$scope.isHidden;\n+             }\n+       });\n+       promise.error(function(data,status){\n+         alert(status);\n+       });\n+        // controller code would go here\n+     \n+      }\n+  );\n+\n \n // use the myAppModule variable to\n // configure the module with a filter"
+  }, {
+    "sha" : "5a1e3d69e7446b4e90b60dacd977cba2b2f80ac3",
+    "filename" : "works/1314080901127/json/phm.json",
+    "status" : "added",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e961b44d9266da1b40f7acd0d452f02825d33d37/works/1314080901127/json/phm.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e961b44d9266da1b40f7acd0d452f02825d33d37/works/1314080901127/json/phm.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901127/json/phm.json?ref=e961b44d9266da1b40f7acd0d452f02825d33d37",
+    "patch" : "@@ -0,0 +1,7 @@\n+ {\n+     \"name\": \"123\",\n+     \"code\": \"123\",\n+     \"workernumber\": \"3\"\n+ } \n+\n+     "
+  } ],
+  "sha" : "e961b44d9266da1b40f7acd0d452f02825d33d37",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e961b44d9266da1b40f7acd0d452f02825d33d37",
+  "parents" : [ {
+    "sha" : "b890215eabe1b7ec64f7fcda3422c386c6cb96dc",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b890215eabe1b7ec64f7fcda3422c386c6cb96dc",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/b890215eabe1b7ec64f7fcda3422c386c6cb96dc"
+  } ]
+}

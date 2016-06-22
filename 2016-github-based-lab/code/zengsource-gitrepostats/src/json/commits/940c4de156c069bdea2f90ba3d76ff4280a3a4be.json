@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "HeyLK",
+    "id" : 15097865,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097865?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HeyLK",
+    "html_url" : "https://github.com/HeyLK",
+    "followers_url" : "https://api.github.com/users/HeyLK/followers",
+    "following_url" : "https://api.github.com/users/HeyLK/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HeyLK/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HeyLK/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HeyLK/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HeyLK/orgs",
+    "repos_url" : "https://api.github.com/users/HeyLK/repos",
+    "events_url" : "https://api.github.com/users/HeyLK/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HeyLK/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 107,
+    "additions" : 106,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "HeyLK",
+    "id" : 15097865,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097865?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HeyLK",
+    "html_url" : "https://github.com/HeyLK",
+    "followers_url" : "https://api.github.com/users/HeyLK/followers",
+    "following_url" : "https://api.github.com/users/HeyLK/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HeyLK/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HeyLK/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HeyLK/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HeyLK/orgs",
+    "repos_url" : "https://api.github.com/users/HeyLK/repos",
+    "events_url" : "https://api.github.com/users/HeyLK/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HeyLK/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/940c4de156c069bdea2f90ba3d76ff4280a3a4be",
+  "commit" : {
+    "author" : {
+      "name" : "HeyLK",
+      "email" : "374843192@qq.com",
+      "date" : "2015-12-23T08:48:43Z"
+    },
+    "committer" : {
+      "name" : "HeyLK",
+      "email" : "374843192@qq.com",
+      "date" : "2015-12-23T08:48:43Z"
+    },
+    "message" : "Revert \"实验 6 7重新修改\"\n\nThis reverts commit daa6fad53bb7851a03d6fe7205698b2e579bc3ff.",
+    "tree" : {
+      "sha" : "6c0f6e13d1ce1ef6a17a030272c172a26538c913",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/6c0f6e13d1ce1ef6a17a030272c172a26538c913"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/940c4de156c069bdea2f90ba3d76ff4280a3a4be",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/940c4de156c069bdea2f90ba3d76ff4280a3a4be/comments",
+  "files" : [ {
+    "sha" : "6231a9fc870cb69cd18f98b8402169209a6f8b02",
+    "filename" : "works/1314080901123/index.html",
+    "status" : "modified",
+    "additions" : 81,
+    "deletions" : 1,
+    "changes" : 82,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/940c4de156c069bdea2f90ba3d76ff4280a3a4be/works/1314080901123/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/940c4de156c069bdea2f90ba3d76ff4280a3a4be/works/1314080901123/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901123/index.html?ref=940c4de156c069bdea2f90ba3d76ff4280a3a4be",
+    "patch" : "@@ -1,11 +1,27 @@\n ﻿<!DOCTYPE html>\n-<html ng-app=\"procedureModule\">\n+<html>\n <head lang=\"zh-CN\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n     <title>审批-查询待处理流程 1314080901123</title>\n+<<<<<<< HEAD\n+=======\n+<<<<<<< HEAD\n+=======\n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var flow = {\n+            ID:'ID',\n+            name: '名称',\n+            operation: '操作',\n+            condition: '状态'\n+        };\n+        $scope.data = flow;\n+    } </script>\n+>>>>>>> origin/master\n+>>>>>>> origin/master\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -22,7 +38,15 @@\n     <![endif]-->\n     \n   </head>\n+<<<<<<< HEAD\n   <body>\n+=======\n+<<<<<<< HEAD\n+  <body>\n+=======\n+  <body ng-controller=\"procedureModuleDemoCtrl\">\n+>>>>>>> origin/master\n+>>>>>>> origin/master\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -43,15 +67,71 @@\n       </div>\n     </nav>\n \n+<<<<<<< HEAD\n         <div id=\"main\">\n       <div ng-view></div>\n     </div>\n \n+=======\n+<<<<<<< HEAD\n+    <div class=\"container\"  ng-app=\"procedureModule\">\n+      <div class=\"starter-template\">\n+      \n+      <div class=\"x-panel x-grid-with-row-lines x-border-item x-box-item x-panel-default x-grid\" style=\"width: 520px; right: auto; left: 5px; top: 5px; margin: 0px; height: 195px;\">\n+      <div id=\"head\" style=\"width:auto;height:32px;background-color:#5599FF;color:0000FF;font-size:28px;padding-right:400px;\">待处理</div>\n+      <div  ng-controller=\"procedureModuleDemoCtrl\">\n+=======\n+    <div class=\"container\">\n+      <div class=\"starter-template\">\n+\n+      <div class=\"x-panel x-grid-with-row-lines x-border-item x-box-item x-panel-default x-grid\" style=\"width: 520px; right: auto; left: 5px; top: 5px; margin: 0px; height: 195px;\">\n+      <div id=\"head\" style=\"width:auto;height:32px;background-color:#5599FF;color:0000FF;font-size:28px;padding-right:400px;\">待处理</div>\n+>>>>>>> origin/master\n+      <table class=\"table\">\n+      <tr style=\"background-color:#e3e3e3\">\n+        <td>ID</td>\n+        <td>名称</td>\n+        <td>操作</td>\n+        <td>状态</td>\n+      </tr>\n+<<<<<<< HEAD\n+       <tr ng-controller=\"procedureModuleDemoCtrl\" ng-repeat=\"item in theOrderDatas\">\n+        <td>{{item.procedureID}}</td>\n+        <td>{{item.procedureName}}</td>\n+        <td>{{item.procedureOperation}}</td>\n+        <td>{{item.procedureCondition}}</td>\n+      </tr>\n+      </table>\n+                </div>\n+            </div>\n+          </div>\n+        </div>\n+=======\n+       <tr >\n+        <td>{{data.procedureID}}</td>\n+        <td>{{data.procedureName}}</td>\n+        <td>{{data.procedureOperation}}</td>\n+        <td>{{data.procedureCondition}}</td>\n+      </tr>\n+      </table>\n+      </div>\n+>>>>>>> origin/master\n+\n+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n+>>>>>>> origin/master\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+<<<<<<< HEAD\n     <script src=\"../../lib/angular-1.4.5/angular-route.min.js\"></script>\n     <script src=\"js/procedureModule.js\"></script>\n     <script src=\"js/jquery.min.js\"></script>\n+=======\n+    <script src=\"js/procedureModule.js\"></script>\n+<<<<<<< HEAD\n+    <script src=\"js/jquery.min.js\"></script>\n+=======\n+>>>>>>> origin/master\n+>>>>>>> origin/master\n   </body>\n </html>"
+  }, {
+    "sha" : "da92265a935eda2d7547dfd7ce57ac4f3891cc13",
+    "filename" : "works/1314080901123/js/procedureModule.js",
+    "status" : "modified",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/940c4de156c069bdea2f90ba3d76ff4280a3a4be/works/1314080901123/js/procedureModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/940c4de156c069bdea2f90ba3d76ff4280a3a4be/works/1314080901123/js/procedureModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901123/js/procedureModule.js?ref=940c4de156c069bdea2f90ba3d76ff4280a3a4be",
+    "patch" : "@@ -1,3 +1,4 @@\n+<<<<<<< HEAD\n var procedureModule = angular.module('procedureModule', ['ngRoute']);\n \n procedureModule.config(function ($routeProvider) {\n@@ -18,6 +19,30 @@ procedureModule.config(function ($routeProvider) {\n             templateUrl: 'pages/About.html'\n         });       \n });\n+=======\n+<<<<<<< HEAD\n+var procedureModule = angular.module('procedureModule', []);\n+=======\n+// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+\n+var procedureModule = angular.module('procedureModule', []);\n+// use the myAppModule variable to\n+// configure the module with a controller\n+procedureModule.controller('procedureModuleDemoCtrl', function ($scope) {\n+       // controller code would go here\n+        var procedureData = \n+          {   \n+            procedureID: '001',      \n+            procedureName: 'test',\n+            procedureOperation: 'execute',\n+            procedureCondition: 'Loading'           \n+           };\n+        $scope.data = procedureData;\n+}\n+);\n+>>>>>>> origin/master\n+>>>>>>> origin/master\n \n procedureModule.factory('procedureModuleService',function($http){\n      var procedureData={};"
+  } ],
+  "sha" : "940c4de156c069bdea2f90ba3d76ff4280a3a4be",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/940c4de156c069bdea2f90ba3d76ff4280a3a4be",
+  "parents" : [ {
+    "sha" : "daa6fad53bb7851a03d6fe7205698b2e579bc3ff",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/daa6fad53bb7851a03d6fe7205698b2e579bc3ff",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/daa6fad53bb7851a03d6fe7205698b2e579bc3ff"
+  } ]
+}

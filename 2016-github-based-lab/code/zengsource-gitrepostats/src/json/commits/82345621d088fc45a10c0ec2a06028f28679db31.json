@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 73,
+    "additions" : 60,
+    "deletions" : 13
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/82345621d088fc45a10c0ec2a06028f28679db31",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-14T13:20:51Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-14T13:20:51Z"
+    },
+    "message" : "Merge pull request #428 from baijihui416/master\n\n实验6 1314080901101",
+    "tree" : {
+      "sha" : "bcb22e656a6cb45055f5388cf6a706d51ed8212e",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/bcb22e656a6cb45055f5388cf6a706d51ed8212e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/82345621d088fc45a10c0ec2a06028f28679db31",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/82345621d088fc45a10c0ec2a06028f28679db31/comments",
+  "files" : [ {
+    "sha" : "ed7c204347271ffa37db5eec2b08a772d6285c6c",
+    "filename" : "works/1314080901101/index.html",
+    "status" : "modified",
+    "additions" : 10,
+    "deletions" : 10,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/82345621d088fc45a10c0ec2a06028f28679db31/works/1314080901101/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/82345621d088fc45a10c0ec2a06028f28679db31/works/1314080901101/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901101/index.html?ref=82345621d088fc45a10c0ec2a06028f28679db31",
+    "patch" : "@@ -21,7 +21,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body ng-controller=\"MyFilterDemoCtrl\">\n+  <body ng-controller=\"documentsDetailFilter\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -69,17 +69,17 @@\n               <th class=\"text-center\">宽</th>\n               <th class=\"text-center\">厚</th>\n             </tr>\n-          <tbody ng-repeat=\"item in items\">\n+          <tbody ng-repeat=\"backMessOne in backMess\">\n             <tr>\n               <td rowspan=\"2\" class=\"text-center\">{{$index + 1}}</td>\n-              <td rowspan=\"2\" class=\"text-center\">{{item.code}}</td>\n-              <td rowspan=\"2\" class=\"text-center\">{{item.type}}</td>\n-              <td rowspan=\"2\" class=\"text-center\">{{item.name}}</td>\n-              <td colspan=\"1\" class=\"text-center\">{{item.length}}</td>\n-              <td colspan=\"1\" class=\"text-center\">{{item.width}}</td>\n-              <td colspan=\"1\" class=\"text-center\">{{item.thickness}}</td>\n-              <td rowspan=\"2\" class=\"text-center\">{{item.unit}}</td>\n-              <td rowspan=\"2\" class=\"text-center\">{{item.number}}</td>\n+              <td rowspan=\"2\" class=\"text-center\">{{backMessOne.code}}</td>\n+              <td rowspan=\"2\" class=\"text-center\">{{backMessOne.type}}</td>\n+              <td rowspan=\"2\" class=\"text-center\">{{backMessOne.name}}</td>\n+              <td colspan=\"1\" class=\"text-center\">{{backMessOne.length}}</td>\n+              <td colspan=\"1\" class=\"text-center\">{{backMessOne.width}}</td>\n+              <td colspan=\"1\" class=\"text-center\">{{backMessOne.thickness}}</td>\n+              <td rowspan=\"2\" class=\"text-center\">{{backMessOne.unit}}</td>\n+              <td rowspan=\"2\" class=\"text-center\">{{backMessOne.number}}</td>\n             </tr>\n           </tbody>\n         </table>"
+  }, {
+    "sha" : "496055d2b4ca46f24ed1bbc1809ab2d5f83f5cbb",
+    "filename" : "works/1314080901101/js/documentsDetailModule.js",
+    "status" : "modified",
+    "additions" : 16,
+    "deletions" : 3,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/82345621d088fc45a10c0ec2a06028f28679db31/works/1314080901101/js/documentsDetailModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/82345621d088fc45a10c0ec2a06028f28679db31/works/1314080901101/js/documentsDetailModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901101/js/documentsDetailModule.js?ref=82345621d088fc45a10c0ec2a06028f28679db31",
+    "patch" : "@@ -4,7 +4,14 @@ var documentsDetailModule = angular.module('documentsDetailModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-documentsDetailModule.controller('MyFilterDemoCtrl', function ($scope) {\n+documentsDetailModule.factory('documentsDetailService',function($http){\n+        var dataStroe = {};\n+        dataStroe.getData = function () {\n+            var promise = $http({method: 'GET',url: 'json/data.json'});\n+            return promise;\n+        }\n+        return dataStroe;\n+    }).controller('documentsDetailFilter', function ($scope,documentsDetailService) {\n        // controller code would go here\n         var documentsDetail = {\n             number: '001',\n@@ -22,8 +29,14 @@ documentsDetailModule.controller('MyFilterDemoCtrl', function ($scope) {\n             {code: '002',type: 'dress',name: 'flower dress',unit: 'mm',number: \"99\",length: 1.8,width: 0.9,thickness: 0.3},\n             {code: '003',type: 'book',name: 'AngularJS',unit: 'cm',number: \"99\",length: 98,width: 56,thickness: 27} \n         ];\n-    }\n-);\n+        var promise = documentsDetailService.getData();\n+        promise.success(function (data, status, headers, config, statusText) {\n+            $scope.backMess = data.documentsDetailData;\n+        });\n+        promise.error(function(data,status){\n+           alert('请求出错，请重试');\n+        });\n+});\n \n // use the myAppModule variable to\n // configure the module with a filter"
+  }, {
+    "sha" : "f0c01fff7618503423cd49b9f2bef8286c5b01d7",
+    "filename" : "works/1314080901101/json/data.json",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/82345621d088fc45a10c0ec2a06028f28679db31/works/1314080901101/json/data.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/82345621d088fc45a10c0ec2a06028f28679db31/works/1314080901101/json/data.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901101/json/data.json?ref=82345621d088fc45a10c0ec2a06028f28679db31",
+    "patch" : "@@ -0,0 +1,34 @@\n+{\n+    \"documentsDetailData\": [\n+        {\n+            \"code\": \"001\",\n+            \"type\": \"cake\",\n+            \"name\": \"ice cake\",\n+            \"unit\": \"kg\",\n+            \"number\": \"99\",\n+            \"length\": \"2\",\n+            \"width\": \"1\",\n+            \"thickness\": \"1.5\"\n+        },\n+        {\n+            \"code\": \"002\",\n+            \"type\": \"dress\",\n+            \"name\": \"flower dress\",\n+            \"unit\": \"mm\",\n+            \"number\": \"99\",\n+            \"length\": \"1.8\",\n+            \"width\": \"0.9\",\n+            \"thickness\": \"0.3\"\n+        },\n+        {\n+            \"code\": \"003\",\n+            \"type\": \"book\",\n+            \"name\": \"AngularJS\",\n+            \"unit\": \"cm\",\n+            \"number\": \"99\",\n+            \"length\": \"98\",\n+            \"width\": \"56\",\n+            \"thickness\": \"27\"\n+        }\n+    ]\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "82345621d088fc45a10c0ec2a06028f28679db31",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/82345621d088fc45a10c0ec2a06028f28679db31",
+  "parents" : [ {
+    "sha" : "9f42a59d27a596af217a67ebe3817a141d264b4b",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9f42a59d27a596af217a67ebe3817a141d264b4b",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9f42a59d27a596af217a67ebe3817a141d264b4b"
+  }, {
+    "sha" : "c205c9aaa0b9dd5fb72f68c197da0799a945ef0b",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c205c9aaa0b9dd5fb72f68c197da0799a945ef0b",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/c205c9aaa0b9dd5fb72f68c197da0799a945ef0b"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 26,
+    "additions" : 21,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/005bfd5c053d1e984a6f86951fa4fb08569fb389",
+  "commit" : {
+    "author" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-12-08T01:01:50Z"
+    },
+    "committer" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-12-08T01:01:50Z"
+    },
+    "message" : "修改HTML",
+    "tree" : {
+      "sha" : "5b8a20fa5f35294e87b0b5216ffde064a4f34d87",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/5b8a20fa5f35294e87b0b5216ffde064a4f34d87"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/005bfd5c053d1e984a6f86951fa4fb08569fb389",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/005bfd5c053d1e984a6f86951fa4fb08569fb389/comments",
+  "files" : [ {
+    "sha" : "533b5eb45c0ec3d14e91f9217c3fd38fb0d5447d",
+    "filename" : "works/1314080901212/index.html",
+    "status" : "modified",
+    "additions" : 21,
+    "deletions" : 5,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/005bfd5c053d1e984a6f86951fa4fb08569fb389/works/1314080901212/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/005bfd5c053d1e984a6f86951fa4fb08569fb389/works/1314080901212/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901212/index.html?ref=005bfd5c053d1e984a6f86951fa4fb08569fb389",
+    "patch" : "@@ -22,6 +22,15 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]--> \n+    \n+    <div class=\"container\">\n+\n+      <div class=\"starter-template\">\n+        <h1>仓库的出库表单创建</h1>\n+             </div>\n+\n+    </div><!-- /.container -->\n+    \n     <script>\n     function Crate Product Storage ($scope) {\n         var someData = {\n@@ -84,22 +93,29 @@\n    </select>\n    \n     <label for=\"Handing date\">经办日期：</label>\n--    <input type=\"text\" name=\"Handing date\" id=\"Handing date\" value=\"\"/>\n+    <div class=\"col-md-2\">\n+-    <input type=\"date\" name=\"Handing date\" id=\"Handing date\" value=\"\"/>\n \n    </div>\n    \n    <div>\n     <label for=\"State\">状态：</label>\n     <input type=\"text\" name=\"State\" id=\"State\" value=\"\"/>\n+    \n     <label for=\"Remark\">备注：</label>\n-    <input type=\"text\" name=\"Remark\" id=\"Remark\" value=\"\"/>\n-   \n+     <div class=\"col-md-7\">\n+                <input class=\"form-control disabled\" id=\"Remark\" type=\"text\" />\n+\n     </div>\n     \n \t\n   <div style=\"width: 1270px;height: 155px\">\n-    <input type=\"submit\" value=\"+新建\" name=\"submit\"/>\n-    <input type=\"submit\" value=\"+保存\" name=\"submit\"/>\n+    <input type=\"button\" value=\"新建\" name=\"submit\"/>\n+    <input type=\"button\" value=\"保存\" name=\"submit\"/>\n+    <input type=\"button\" value=\"删除\" name=\"submit\"/>\n+    <input type=\"button\" value=\"确定\" name=\"submit\"/>\n+    <input type=\"button\" value=\"导出excel\" name=\"submit\"/>\n+    <input type=\"button\" value=\"入库\" name=\"submit\"/>\n   </div>\n   \n <DIV style=\"position:relative; top:0px; left:0px; width:80px; height:120px;  overflow: hidden\">"
+  } ],
+  "sha" : "005bfd5c053d1e984a6f86951fa4fb08569fb389",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/005bfd5c053d1e984a6f86951fa4fb08569fb389",
+  "parents" : [ {
+    "sha" : "93f8366636c585a91887bf6e10bd30f5b8b6d546",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/93f8366636c585a91887bf6e10bd30f5b8b6d546",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/93f8366636c585a91887bf6e10bd30f5b8b6d546"
+  } ]
+}
