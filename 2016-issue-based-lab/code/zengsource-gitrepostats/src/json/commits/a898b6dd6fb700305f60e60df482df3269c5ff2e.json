@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "Yuntun21",
+    "id" : 18065650,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18065650?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Yuntun21",
+    "html_url" : "https://github.com/Yuntun21",
+    "followers_url" : "https://api.github.com/users/Yuntun21/followers",
+    "following_url" : "https://api.github.com/users/Yuntun21/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Yuntun21/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Yuntun21/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Yuntun21/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Yuntun21/orgs",
+    "repos_url" : "https://api.github.com/users/Yuntun21/repos",
+    "events_url" : "https://api.github.com/users/Yuntun21/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Yuntun21/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 346,
+    "additions" : 346,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Yuntun21",
+    "id" : 18065650,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18065650?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Yuntun21",
+    "html_url" : "https://github.com/Yuntun21",
+    "followers_url" : "https://api.github.com/users/Yuntun21/followers",
+    "following_url" : "https://api.github.com/users/Yuntun21/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Yuntun21/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Yuntun21/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Yuntun21/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Yuntun21/orgs",
+    "repos_url" : "https://api.github.com/users/Yuntun21/repos",
+    "events_url" : "https://api.github.com/users/Yuntun21/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Yuntun21/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/a898b6dd6fb700305f60e60df482df3269c5ff2e",
+  "commit" : {
+    "author" : {
+      "name" : "Yuntun21",
+      "email" : "624445482@qq.com",
+      "date" : "2016-04-28T16:05:54Z"
+    },
+    "committer" : {
+      "name" : "Yuntun21",
+      "email" : "624445482@qq.com",
+      "date" : "2016-04-28T16:05:54Z"
+    },
+    "message" : "#88 #126 lab2的activity代码",
+    "tree" : {
+      "sha" : "3b9ab79c2c295a745419a99550f48c46957fcbba",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/3b9ab79c2c295a745419a99550f48c46957fcbba"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/a898b6dd6fb700305f60e60df482df3269c5ff2e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a898b6dd6fb700305f60e60df482df3269c5ff2e/comments",
+  "files" : [ {
+    "sha" : "7f86df6343da4c9bd7e27b66fc59c9b0311be2b5",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221MainActivity.java",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a898b6dd6fb700305f60e60df482df3269c5ff2e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a898b6dd6fb700305f60e60df482df3269c5ff2e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221MainActivity.java?ref=a898b6dd6fb700305f60e60df482df3269c5ff2e",
+    "patch" : "@@ -0,0 +1,61 @@\n+package com.example.account;\n+\n+import android.os.Bundle;\n+//import android.app.Activity;\n+import android.app.TabActivity;\n+import android.content.Intent;\n+import android.content.res.Resources;\n+import android.view.Menu;\n+import android.widget.TabHost;\n+\n+@SuppressWarnings(\"deprecation\")\n+public class Net1314080903221MainActivity extends TabActivity {\n+\tprivate TabHost tabHost;\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\t//setContentView(R.layout.activity_main);\n+\t\t\n+\t\ttabHost=getTabHost();\n+\t\tResources localResources = getResources();\n+\t\t\n+\t\tIntent localIntent2 = new Intent();\n+\t    localIntent2.setClass(this, QueryBill.class);\n+        tabHost.addTab(tabHost.newTabSpec(\"�˵���ѯ\")\n+                .setIndicator(\"�˵���ѯ\",localResources.getDrawable(R.drawable.zhangdanchaxun))\n+                .setContent(localIntent2));  \n+\t\t\n+\t\tIntent localIntent1 = new Intent();\n+\t    localIntent1.setClass(this, AddEvent.class);\n+\n+\t\tTabHost.TabSpec localTabSpec1=tabHost.newTabSpec(\"���֧��\");\n+\t\tlocalTabSpec1.setIndicator(\"���֧��\",localResources.getDrawable(R.drawable.tianjiazhangdan));\n+        //localTabSpec1.setContent(R.id.RelativeLayout01);\n+\t\tlocalTabSpec1.setContent(localIntent1);\n+\t\ttabHost.addTab(localTabSpec1);\n+        /*\n+\t\tLayoutInflater.from(this).inflate(R.layout.baobiao, tabHost.getTabContentView(), true);*/\n+        Intent localIntent4 = new Intent();\n+\t    localIntent4.setClass(this, shouru.class);\n+        tabHost.addTab(tabHost.newTabSpec(\"�������\")\n+                .setIndicator(\"�������\",localResources.getDrawable(R.drawable.tongjibaobiao))\n+                .setContent(localIntent4));\n+\t\t//LayoutInflater.from(this).inflate(R.layout.activity_main, tabHost.getTabContentView(), true);\n+        Intent localIntent3 = new Intent();\n+\t    localIntent3.setClass(this, shezhi.class);\n+        tabHost.addTab(tabHost.newTabSpec(\"�������\")\n+                .setIndicator(\"�������\",localResources.getDrawable(R.drawable.fenleichaxun))\n+                .setContent(localIntent3));\n+        \n+\n+\n+\t}\n+\n+\t@Override\n+\tpublic boolean onCreateOptionsMenu(Menu menu) {\n+\t\t// Inflate the menu; this adds items to the action bar if it is present.\n+\t\tgetMenuInflater().inflate(R.menu.main, menu);\n+\t\treturn true;\n+\t}\n+\n+}"
+  }, {
+    "sha" : "e7ac5afe10b4a1abd336ba4fcfc666292bfefde2",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221QueryByMouthActivity.java",
+    "status" : "added",
+    "additions" : 127,
+    "deletions" : 0,
+    "changes" : 127,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a898b6dd6fb700305f60e60df482df3269c5ff2e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221QueryByMouthActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a898b6dd6fb700305f60e60df482df3269c5ff2e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221QueryByMouthActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221QueryByMouthActivity.java?ref=a898b6dd6fb700305f60e60df482df3269c5ff2e",
+    "patch" : "@@ -0,0 +1,127 @@\n+package com.example.account;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.ListView;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+import java.util.ArrayList;\n+import java.util.Calendar;\n+import java.util.HashMap;\n+import java.util.Iterator;\n+import java.util.List;\n+import java.util.Map;\n+\n+import models.MyPackage;\n+import models.TradeClass;\n+import models.consumeClass;\n+\n+public class Net1314080903221QueryByMouthActivity extends Activity\n+{\n+\tString[] bill_array=null;\n+\tprivate ListView listView;\n+\tprivate Map<Integer, Boolean> localmap;\n+\tprivate Adapter_LS myadapter;\n+\tprivate TextView textView;\n+\tprivate void fillList()\n+\t{\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\t//ArrayAdapter<String>  adapter=null;\n+\t\t\tlistView =(ListView)findViewById(R.id.listViewlisi);\n+\t\t\ttextView =(TextView)findViewById(R.id.textViewlisi);\n+\t\t\t\n+\t\t    Calendar localCalendar = Calendar.getInstance();\n+\t\t    int year = localCalendar.get(Calendar.YEAR);\n+\t\t    int month = localCalendar.get(Calendar.MONTH)+1;\n+\t\t\tString str1=new String(year+\"-\"+month);\n+\t\t\tString str;\n+\t\t\tList<Map<String, Object>> list=new ArrayList<Map<String, Object>>();\n+\t\t\tfloat todaymenoy=0;\n+\t\t\tMyPackage pack=new MyPackage(this);\n+\t\t\tList<TradeClass> List=pack.getAlltrade();\n+\t\t\tfor(TradeClass con:List){\n+\t\t\t\tstr = con.gettime();\n+\t\t\t\tstr=str.substring(0, str.lastIndexOf('-'));\n+\t\t\t\tif(str1.equals(str)){\n+\t\t\t\t\t\ttodaymenoy+=con.getMoney();\n+\t\t\t\t\t\tMap<String,Object> map=new HashMap<String,Object>();\n+\t\t\t\t\t\tmap.put(\"_id\", con.getId());\n+\t\t\t\t\t\tmap.put(\"money\", \"\"+con.getMoney());\n+\t\t\t\t\t\tif(con.getPocketType().equals(\"�ճ�����\")){\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.richanggouwu);\n+\t\t\t\t\t\t}else if(con.getPocketType().equals(\"��������\")){\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.jiaojisongli);\n+\t\t\t\t\t\t}else if(con.getPocketType().equals(\"������\")){\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.canyingkaixiao);\n+\t\t\t\t\t\t}else if(con.getPocketType().equals(\"��������\")){\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.gouziyiwu);\n+\t\t\t\t\t\t}else if(con.getPocketType().equals(\"���ֿ���\")){\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.yulekaixiao);\n+\t\t\t\t\t\t}else if(con.getPocketType().equals(\"ˮ��ú��\")){\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.shuidianmeiqi);\n+\t\t\t\t\t\t}else if(con.getPocketType().equals(\"��ѻ���\")){\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.wannluohuafei);\n+\t\t\t\t\t\t}else if(con.getPocketType().equals(\"��ͨ����\")){\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.jiaotongchuxing);\n+\t\t\t\t\t\t}else if(con.getPocketType().equals(\"�����\")){\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.qita);\n+\t\t\t\t\t\t}else{\n+\t\t\t\t\t\t\tmap.put(\"icon\",R.drawable.qita);\n+\t\t\t\t\t\t}\t\t\t\t\n+\t\t\t\t\t\tmap.put(\"time\", con.gettime());\n+\t\t\t\t\t\tmap.put(\"type\", con.getPocketType());\n+\t\t\t\t\t\tlist.add(map);\n+\t\t\t\t\t}\n+\t\t\t\t}\n+\t\t\tlocalmap = new HashMap<Integer, Boolean>();\n+\t\t\tmyadapter=new Adapter_LS(this, list, localmap);\n+\t\t\ttextView.setText(\"���¹����ѣ�\"+(-todaymenoy)+\"Ԫ\");\n+\t\t\tlistView.setAdapter(myadapter);\n+\t}\n+\n+\t  public void onCreate(Bundle paramBundle)\n+\t  {\n+\t    super.onCreate(paramBundle);\n+\t    setContentView(R.layout.all_bill);\n+\t    fillList();\n+\t  }\n+\t\n+\t  public boolean onCreateOptionsMenu(Menu paramMenu)\n+\t  {\n+\t    paramMenu.add(0, 1, 1, \"ɾ��\").setIcon(R.drawable.delete);\n+\t    return super.onCreateOptionsMenu(paramMenu);\n+\t  }\n+\t\n+\t  public boolean onOptionsItemSelected(MenuItem paramMenuItem){\n+\t\t  \t// = Adapter_TD.isSelected;\n+\t\t  Toast.makeText(this, \"���������Ŷ!\", 0).show();\n+\t\t  /*\n+\t\t    if (localmap.size() <= 0)\n+\t\t    {\n+\t\t      Toast.makeText(this, \"����ѡ��Ҫɾ�����Ѽ�¼!\", 0).show();\n+\t\t      return true;\n+\t\t    }\n+\t        consumeClass trade=new consumeClass(0, 0, \"\", \"123\", \"\", Net1314080903221QueryByMouthActivity.this);\n+\t\t    Iterator<?> it = localmap.entrySet().iterator();\n+\t\t    while (it.hasNext()) {\n+\t\t\t     Map.Entry entry = (Map.Entry) it.next();\n+\t\t\t     Object key = entry.getKey();\n+\t\t\t     Object value = entry.getValue();\n+\t\t\t     if((Boolean)value){\n+\t\t\t    \t trade.trade_delect((Integer)key);\n+\t\t\t     }\n+\t\t\t     //Log.i(\"nihao\",\"key=\" + key + \" value=\" + value);\n+\t\t    }\n+\t\t    fillList(); */\n+\t\t    return true;  \n+\t  }\n+\t\n+\t  protected void onResume()\n+\t  {\n+\t    fillList();\n+\t    super.onResume();\n+\t  }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "67a4bd32db147ad832775d3d7d13d6517ff14f0a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221QueryByTodayActivity.java",
+    "status" : "added",
+    "additions" : 158,
+    "deletions" : 0,
+    "changes" : 158,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a898b6dd6fb700305f60e60df482df3269c5ff2e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221QueryByTodayActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a898b6dd6fb700305f60e60df482df3269c5ff2e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221QueryByTodayActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903221/Net1314080903221QueryByTodayActivity.java?ref=a898b6dd6fb700305f60e60df482df3269c5ff2e",
+    "patch" : "@@ -0,0 +1,158 @@\n+package com.example.account;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.ListView;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+import java.util.ArrayList;\n+import java.util.Calendar;\n+import java.util.HashMap;\n+import java.util.Iterator;\n+import java.util.List;\n+import java.util.Map;\n+\n+import models.MyPackage;\n+import models.TradeClass;\n+import models.consumeClass;\n+import models.incomeClass;\n+\n+public class Net1314080903221QueryByTodayActivity extends Activity\n+{\n+  private ListView listView;\n+  private TextView textView;\n+  private Adapter_TD myadapter;\n+  Map<typeClass, Boolean> localmap;\n+  public void onCreate(Bundle paramBundle)\n+  {\n+    super.onCreate(paramBundle);\n+    setContentView(R.layout.querybytoday);\n+    //ivinfo=(ListView)findViewById(R.id.listView);\n+    //setAdapter();\n+    GetTodayBill();\n+  }\n+  \n+\n+\n+  private void GetTodayBill() {\n+\t// TODO Auto-generated method stub\n+\t//ArrayAdapter<String>  adapter=null;\n+\tlistView =(ListView)findViewById(R.id.listView);\n+\ttextView =(TextView)findViewById(R.id.textView);\n+\tList<Map<String, Object>> list=new ArrayList<Map<String, Object>>();\n+\tfloat todaymenoy=0;\n+\tMyPackage pack=new MyPackage(this);\n+\tList<TradeClass> List=pack.getAlltrade();\n+\t//bill_array=new String[List.size()];\n+\tint i=0;\n+    Calendar localCalendar = Calendar.getInstance();\n+    int year = localCalendar.get(Calendar.YEAR);\n+    int month = localCalendar.get(Calendar.MONTH)+1;\n+    int day = localCalendar.get(Calendar.DAY_OF_MONTH);\n+\tString str1=new String(year+\"-\"+month+\"-\"+day);\n+\tString str;\n+\tfor(TradeClass con:List){\n+\t\t\tstr=con.gettime();\n+\t\t\tif(str1.equals(str)){\n+\t\t\t\t//bill_array[i]=con.getId()+\"|*****|\"+con.getMoney()+\"\\n\"+con.getPocketType()+\"|****|\"+con.gettime();\n+\t\t\t\ttodaymenoy+=con.getMoney();\n+\t\t\t\tMap<String,Object> map=new HashMap<String,Object>();\n+\t\t\t\tmap.put(\"_id\", con.getId());\n+\t\t\t\tmap.put(\"money\", \"\"+con.getMoney());\n+\t\t\t\tif(con.getPocketType().equals(\"�ճ�����\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.richanggouwu);\n+\t\t\t\t\tmap.put(\"classtype\",0);\n+\t\t\t\t}else if(con.getPocketType().equals(\"��������\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.jiaojisongli);\n+\t\t\t\t\tmap.put(\"classtype\",0);\n+\t\t\t\t}else if(con.getPocketType().equals(\"������\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.canyingkaixiao);\n+\t\t\t\t\tmap.put(\"classtype\",0);\n+\t\t\t\t}else if(con.getPocketType().equals(\"��������\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.gouziyiwu);\n+\t\t\t\t\tmap.put(\"classtype\",0);\n+\t\t\t\t}else if(con.getPocketType().equals(\"���ֿ���\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.yulekaixiao);\n+\t\t\t\t\tmap.put(\"classtype\",0);\n+\t\t\t\t}else if(con.getPocketType().equals(\"ˮ��ú��\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.shuidianmeiqi);\n+\t\t\t\t\tmap.put(\"classtype\",0);\n+\t\t\t\t}else if(con.getPocketType().equals(\"��ѻ���\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.wannluohuafei);\n+\t\t\t\t\tmap.put(\"classtype\",0);\n+\t\t\t\t}else if(con.getPocketType().equals(\"��ͨ����\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.jiaotongchuxing);\n+\t\t\t\t\tmap.put(\"classtype\",0);\n+\t\t\t\t}else if(con.getPocketType().equals(\"�����\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.qita);\n+\t\t\t\t\tmap.put(\"classtype\",0);\n+\t\t\t\t}else if(con.getPocketType().equals(\"��������\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.gongzi);\n+\t\t\t\t\tmap.put(\"classtype\",1);\n+\t\t\t\t}else if(con.getPocketType().equals(\"��Ʊ����\")){\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.gupiao);\n+\t\t\t\t\tmap.put(\"classtype\",1);\n+\t\t\t\t}else {\n+\t\t\t\t\tmap.put(\"icon\",R.drawable.qita);\n+\t\t\t\t\tmap.put(\"classtype\",1);\n+\t\t\t\t}\n+\t\t\t\tmap.put(\"time\", con.gettime());\n+\t\t\t\tmap.put(\"type\", con.getPocketType());\n+\t\t\t\tlist.add(map);\n+\t\t\t\ti++;\n+\t\t\t}\n+\t}\n+\tlocalmap=new HashMap<typeClass, Boolean>();\n+\tmyadapter=new Adapter_TD(this, list, localmap);\n+\ttextView.setText(\"���չ����ѣ�\"+(-todaymenoy)+\"Ԫ\");\n+\tlistView.setAdapter(myadapter);\n+\tif(i==0){\n+\t\tToast.makeText(getApplicationContext(), \"������û�����Ŷ��\", Toast.LENGTH_SHORT);\n+\t}\n+}\n+\n+public boolean onCreateOptionsMenu(Menu paramMenu)\n+  {\n+    paramMenu.add(0, 1, 1, \"ɾ��\").setIcon(R.drawable.delete);\n+    return super.onCreateOptionsMenu(paramMenu);\n+  }\n+\n+\n+  public boolean onOptionsItemSelected(MenuItem paramMenuItem){\n+\t  \t// = Adapter_TD.isSelected;\n+\t    if (localmap.size() <= 0)\n+\t    {\n+\t      Toast.makeText(this, \"����ѡ��Ҫɾ�����Ѽ�¼!\", 0).show();\n+\t      return true;\n+\t    }\n+        consumeClass tradeconsume=new consumeClass(0, 0, \"\", \"123\", \"\", Net1314080903221QueryByTodayActivity.this);\n+        incomeClass tradeincome=new incomeClass(0, 0, \"\", \"123\", \"\", Net1314080903221QueryByTodayActivity.this);\n+\t    Iterator it = localmap.entrySet().iterator();\n+\t    while (it.hasNext()) {\n+\t\t     Map.Entry entry = (Map.Entry) it.next();\n+\t\t     Object key = entry.getKey();\n+\t\t     Object value = entry.getValue();\n+\t\t     if((Boolean)value){\n+\t\t    \t if(((typeClass)key).type==0){\n+\t\t    \t\t int success=tradeconsume.trade_delect(((typeClass)key)._id);\n+\t\t    \t\t if(success==1)Toast.makeText(this, \"ɾ����Ѽ�¼�ɹ�!\", 0).show();\n+\t\t    \t }else{\n+\t\t    \t\t int success=tradeincome.trade_delect(((typeClass)key)._id);\n+\t\t    \t\t if(success==1)Toast.makeText(this, \"ɾ�������¼�ɹ�!\", 0).show();\n+\t\t    \t }\n+\t\t    }\n+\t\t     //Log.i(\"nihao\",\"key=\" + key + \" value=\" + value);\n+\t    }\n+\t    GetTodayBill(); \n+\t    return true;  \n+  }\n+  \n+  protected void onResume()\n+  {\n+\tGetTodayBill();  \n+    super.onResume();\n+  }\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "a898b6dd6fb700305f60e60df482df3269c5ff2e",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a898b6dd6fb700305f60e60df482df3269c5ff2e",
+  "parents" : [ {
+    "sha" : "550ec2cc08d6449674b57baf68df9fa17ac5e3df",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/550ec2cc08d6449674b57baf68df9fa17ac5e3df",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/550ec2cc08d6449674b57baf68df9fa17ac5e3df"
+  } ]
+}

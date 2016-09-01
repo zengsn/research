@@ -1,0 +1,162 @@
+{
+  "committer" : {
+    "login" : "benguadesenlin",
+    "id" : 18374738,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18374738?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/benguadesenlin",
+    "html_url" : "https://github.com/benguadesenlin",
+    "followers_url" : "https://api.github.com/users/benguadesenlin/followers",
+    "following_url" : "https://api.github.com/users/benguadesenlin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/benguadesenlin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/benguadesenlin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/benguadesenlin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/benguadesenlin/orgs",
+    "repos_url" : "https://api.github.com/users/benguadesenlin/repos",
+    "events_url" : "https://api.github.com/users/benguadesenlin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/benguadesenlin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 357,
+    "additions" : 352,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "benguadesenlin",
+    "id" : 18374738,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18374738?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/benguadesenlin",
+    "html_url" : "https://github.com/benguadesenlin",
+    "followers_url" : "https://api.github.com/users/benguadesenlin/followers",
+    "following_url" : "https://api.github.com/users/benguadesenlin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/benguadesenlin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/benguadesenlin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/benguadesenlin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/benguadesenlin/orgs",
+    "repos_url" : "https://api.github.com/users/benguadesenlin/repos",
+    "events_url" : "https://api.github.com/users/benguadesenlin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/benguadesenlin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+  "commit" : {
+    "author" : {
+      "name" : "benguadesenlin",
+      "email" : "772687101@qq.com",
+      "date" : "2016-05-19T02:59:50Z"
+    },
+    "committer" : {
+      "name" : "benguadesenlin",
+      "email" : "772687101@qq.com",
+      "date" : "2016-05-19T02:59:50Z"
+    },
+    "message" : "#95 #83 lab9 所有java文件",
+    "tree" : {
+      "sha" : "3249e2c18446332e84f062e7c46c91c95711ced1",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/3249e2c18446332e84f062e7c46c91c95711ced1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/comments",
+  "files" : [ {
+    "sha" : "b52e14577f61df59a41d8e118d0824bf9c8cf021",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/AndroidManifest.xml?ref=06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+    "patch" : "@@ -0,0 +1,33 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"com.bengua.whiteblock\"\n+    android:versionCode=\"1\"\n+    android:versionName=\"1.0\" >\n+\n+    <uses-sdk\n+        android:minSdkVersion=\"14\"\n+        android:targetSdkVersion=\"14\" />\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@drawable/ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:theme=\"@style/AppTheme\" >\n+        <activity\n+            android:name=\"edu.hzuapps.androidworks.homeworks.net134080903206.Net1314080903206MainActivity\"\n+            android:label=\"@string/app_name\" >\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+        <activity\n+            android:name=\"edu.hzuapps.androidworks.homeworks.net134080903206.Net1314080903206StepOnWhiteActivity\" >\n+        </activity>\n+        <activity\n+            android:name=\"edu.hzuapps.androidworks.homeworks.net134080903206.Net1314080903206GameRuleActivity\" >\n+        </activity>\n+    </application>\n+\n+</manifest>"
+  }, {
+    "sha" : "54cb753e36b60135c87ca74ba63f5072ba4a7a57",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ActivityCollector.java",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ActivityCollector.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ActivityCollector.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ActivityCollector.java?ref=06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+    "patch" : "@@ -1,4 +1,4 @@\n-package com.bengua.whiteblock;\n+package edu.hzuapps.androidworks.homeworks.net134080903206;\n \n import java.util.ArrayList;\n import java.util.List;"
+  }, {
+    "sha" : "49a7dbaab8bca2f16a425c737c97012d2740c9eb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206BaseActivity.java",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206BaseActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206BaseActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206BaseActivity.java?ref=06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+    "patch" : "@@ -1,4 +1,4 @@\n-package com.bengua.whiteblock;\n+package edu.hzuapps.androidworks.homeworks.net134080903206;\n \n import android.app.Activity;\n import android.os.Bundle;"
+  }, {
+    "sha" : "1b48aa8f02d6ff56dbe1f87fec6315dc2ddce23b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206Blocks.java",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206Blocks.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206Blocks.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206Blocks.java?ref=06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+    "patch" : "@@ -0,0 +1,43 @@\n+package edu.hzuapps.androidworks.homeworks.net134080903206;\n+\n+import android.content.Context;\n+import android.graphics.Color;\n+import android.util.AttributeSet;\n+import android.view.Gravity;\n+import android.widget.FrameLayout;\n+import android.widget.TextView;\n+\n+public class Net1314080903206Blocks extends FrameLayout {\n+\t\n+\tTextView label;\n+\tprivate int color;\n+\n+\tpublic Net1314080903206Blocks(Context context) {\n+\t\tsuper(context);\n+\t\t\n+\t\tlabel = new TextView(getContext());\n+\t\tlabel.setTextSize(1);\n+\t\tlabel.setTextColor(Color.RED);\n+\t\tlabel.setBackgroundColor(Color.BLACK);\n+\t\tlabel.setTextSize(10);\n+\t\t//label.setText(\"w\");\n+\t\t\n+\t\tLayoutParams lp = new LayoutParams(-1, -1);\n+\t\tlp.setMargins(5, 5, 0, 0);\n+\t\taddView(label, lp);\n+\t\t\n+\t\t\n+\t}\n+\n+\tpublic void setColor(int i) {\n+\t\tthis.color=i;\n+\t\tlabel.setBackgroundColor(i);\n+\t}\n+}\n+\n+\n+\n+\n+\n+\n+"
+  }, {
+    "sha" : "453ffc1484359c94967b8c88afc903139ffdb976",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206GameRuleActivity.java",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 1,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206GameRuleActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206GameRuleActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206GameRuleActivity.java?ref=06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+    "patch" : "@@ -1,4 +1,6 @@\n-package com.bengua.whiteblock;\n+package edu.hzuapps.androidworks.homeworks.net134080903206;\n+\n+import com.bengua.whiteblock.R;\n \n import android.os.Bundle;\n import android.widget.TextView;"
+  }, {
+    "sha" : "3f37641a0742a8883d5172b9e6b992a0b4f265b5",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206MainActivity.java",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 1,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206MainActivity.java?ref=06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+    "patch" : "@@ -1,4 +1,6 @@\n-package com.bengua.whiteblock;\n+package edu.hzuapps.androidworks.homeworks.net134080903206;\n+\n+import com.bengua.whiteblock.R;\n \n import android.app.Activity;\n import android.content.Intent;"
+  }, {
+    "sha" : "65c251aa057e270d11f70935bccb41e7c8d82a2d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ShowGameView.java",
+    "status" : "added",
+    "additions" : 265,
+    "deletions" : 0,
+    "changes" : 265,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ShowGameView.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ShowGameView.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ShowGameView.java?ref=06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+    "patch" : "@@ -0,0 +1,265 @@\n+package edu.hzuapps.androidworks.homeworks.net134080903206;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+\n+import android.app.AlertDialog;\n+import android.content.Context;\n+import android.content.DialogInterface;\n+import android.content.Intent;\n+import android.graphics.Color;\n+import android.graphics.Point;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.util.AttributeSet;\n+import android.util.Log;\n+import android.view.MotionEvent;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.GridLayout;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+public class Net1314080903206ShowGameView extends GridLayout  {\n+\t\n+\tprotected static final int C = 0;\n+\tprivate Net1314080903206Blocks[][] blocksMap = new Net1314080903206Blocks[5][5];\n+\tprivate List<Point> emptyPoints = new ArrayList<Point>();\t\n+\tprivate Point p;\t\t\n+\tprivate int blockWidth;\t\n+\tprivate int i=0,j=0,n,m=0;\n+\tprivate boolean complete=false,check;\n+\tprivate boolean frist=false;\n+\tprivate boolean start=true;\n+\n+\t\n+\n+\n+\tpublic Net1314080903206ShowGameView(Context context, AttributeSet attrs) {\n+\t\tsuper(context, attrs);\n+\t\t\n+\t\tinitGameView();\n+\t\t\n+\t}\n+\n+\t\n+\t\n+\tprivate void initGameView() {\n+\t\tsetColumnCount(5);\n+\t\tsetBackgroundColor(Color.GRAY);\n+\t\t\n+\t\tsetOnClickListener(new View.OnClickListener() {\n+\t\t\t\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View v) {\n+\t\t\t\t\n+\t\t\t\tif(start)\n+\t\t\t\t{\n+\t\t\t\t\t\n+\t\t\t\t\tNet1314080903206StepOnWhiteActivity.getSOWActivity().showStart();\t\n+\t\t\t\t\tNet1314080903206StepOnWhiteActivity.getSOWActivity().TimeStart();\n+\t\t\t\t}\n+\t\t\t\tstart=false;\n+\t\t\t\tchangeColor();\n+\n+\t\t\t\t\n+\t\t\t}\n+\t\t});\n+\t\t\n+\t\t\t\t\n+\t}\n+\t\n+\t\n+\t\n+\tprivate void changeColor()\n+\t{\n+\t\t\n+\t\t\n+\t\tfor (int x = 0; x < 5; x++) \n+\t\t{\n+\t\t\tfor (int y = 0; y < 5; y++) \n+\t\t\t{\n+\t\t\t\t\n+\t\t\t\t\tfinal Net1314080903206Blocks bl;\n+\t\t\t\t\tbl=blocksMap[x][y];\n+\t\t\t\t\tbl.setOnClickListener(new View.OnClickListener() {\n+\t\t\t\t\t\t\n+\t\t\t\t\t\t@Override\n+\t\t\t\t\t\tpublic void onClick(View v) {\n+\t\t\t\t\t\t\tcheckComplete();\n+\t\t\t\t\t\t\tif(complete)\n+\t\t\t\t\t\t\t\tgameOver();\n+\t\t\t\t\t\t\telse\n+\t\t\t\t\t\t\t{\n+\t\t\t\t\t\t\t\tif(bl.label.getTextSize()>=100)\n+\t\t\t\t\t\t\t\t{\n+\t\t\t\t\t\t\t\n+\t\t\t\t\t\t\t\t\tbl.setColor(Color.BLACK);\n+\t\t\t\t\t\t\t\t\tbl.label.setTextSize(1);\n+\t\t\t\t\t\t\t\t\tNet1314080903206StepOnWhiteActivity.getSOWActivity().addScore(1);\n+\t\t\t\t\t\t\t\t\n+\t\t\t\t\t\t\t\t\tn=0;\n+\t\t\t\t\t\t\t\t\n+\t\t\t\t\t\t\t\t\tint k;\n+\t\t\t\t\t\t\t\t\tk=(int)(Math.random()*2+1);\n+\t\t\t\t\t\t\t\t\tfor (int x = 0; x < 5; x++) \n+\t\t\t\t\t\t\t\t\t{\n+\t\t\t\t\t\t\t\t\t\tfor (int y = 0; y < 5; y++) \n+\t\t\t\t\t\t\t\t\t\t{\n+\t\t\t\t\t\t\t\t\t\t\tif(blocksMap[x][y].label.getTextSize()<=100)\n+\t\t\t\t\t\t\t\t\t\t\t\tn++;\n+\t\t\t\t\t\t\t\t\t\t\telse\n+\t\t\t\t\t\t\t\t\t\t\t\tm++;\n+\t\t\t\t\t\t\t\t\t\t}\n+\t\t\t\t\t\t\t\t\t}\n+\t\t\t\t\t\t\t\t\tif(k>n)\n+\t\t\t\t\t\t\t\t\t\tk=n;\n+\t\t\t\t\t\t\t\t\tif(m>0)\n+\t\t\t\t\t\t\t\t\t\tcheck=false;\n+\t\t\t\t\t\t\t\t\telse check=true;\n+\t\t\t\t\t\t\t\t\tif(check)\n+\t\t\t\t\t\t\t\t\t{\n+\t\t\t\t\t\t\t\t\t\twhile(k>=0)\n+\t\t\t\t\t\t\t\t\t\t{\n+\t\t\t\t\t\t\t\t\t\t\taddRandomColor();\n+\t\t\t\t\t\t\t\t\t\t\tk--;\n+\t\t\t\t\t\t\t\t\t\t}\n+\t\t\t\t\t\t\t\t\t}\n+\t\t\t\t\t\t\t\t\twhile(m>0)\n+\t\t\t\t\t\t\t\t\t{\n+\t\t\t\t\t\t\t\t\t\tm--;\n+\t\t\t\t\t\t\t\t\t}\n+\t\t\t\t\t\t\t\t\ti=1;\n+\t\t\t\t\t\t\t\t}\n+\t\t\t\t\t\t\t\telse Net1314080903206StepOnWhiteActivity.getSOWActivity().addScore(-5);\t\t\t\t\t\t\t\t\t\t\t\n+\t\t\t\t\t\t\t}\n+\t\t\t\t\t\t}\n+\t\t\t\t\t});\t\n+\t\t\t\t\n+\t\t\t\tif(i==1)\n+\t\t\t\t\tbreak;\n+\t\t\t}\n+\t\t\tif(i==1)\n+\t\t\t\tbreak;\n+\t\t}\n+\t\t\t\t\t\n+\t}\n+\t\n+\t\t\n+\t\n+\t@Override  \n+\tprotected void onSizeChanged(int w, int h, int oldw, int oldh) \n+\t{\n+\t\tsuper.onSizeChanged(w, h, oldw, oldh);\n+\t\t\t\n+\t\tblockWidth = (Math.min(w, h)-10)/5;\t\t\n+\t\taddBlocks(blockWidth,blockWidth);\n+\t\t\n+\t\tstartGame();\n+\t\t\n+\t}\n+\n+\t\n+\tprivate void addBlocks(int blockWidth,int blockHeight)\n+\t{\n+\t\tNet1314080903206Blocks b;\n+\t\t\n+\t\tfor (int x = 0; x < 5; x++) {\n+\t\t\tfor (int y = 0; y < 5; y++) {\n+\t\t\t\t\n+\t\t\t\tb = new Net1314080903206Blocks(getContext());\n+\t\t\t\taddView(b, blockWidth, blockHeight);\n+\t\t\t\t\n+\t\t\t\tblocksMap[x][y] = b;\n+\t\t\t}\n+\t\t}\n+\n+\t}\n+\n+\tprivate void startGame()\n+\t{\n+\t\t\n+\t\tNet1314080903206StepOnWhiteActivity sowa = Net1314080903206StepOnWhiteActivity.getSOWActivity();\n+\t\tsowa.showBestScore(sowa.getBestScore());\n+\t\tsowa.clearScore();\n+\t\n+\t\tfor (int x = 0; x < 5; x++) {\n+\t\t\tfor (int y = 0; y < 5; y++) {\n+\t\t\t\tblocksMap[x][y].setColor(Color.BLACK);\n+\t\t\t\tblocksMap[x][y].label.setTextSize(10);\n+\t\t\t}\n+\t\t}\n+\t\tcomplete=false;\n+\t\tNet1314080903206StepOnWhiteActivity.getSOWActivity().setTime();\n+\t\tif(frist)\t\t\n+\t\t\tNet1314080903206StepOnWhiteActivity.getSOWActivity().TimeStart();\t\t\t\t\t\t\t\t\n+\t\tfrist=true;\n+\t\t\n+\t\taddRandomColor();\n+\t\tLog.d(\"SowGameView\",Net1314080903206StepOnWhiteActivity.getSOWActivity().t+\"\");\n+\t}\n+\n+\tprivate void addRandomColor() \n+\t{\n+\t\n+\t\temptyPoints.clear();\n+\t\t\n+\t\tif(complete==false)\n+\t\t{\n+\t\t\tfor (int x = 0; x < 5; x++) {\n+\t\t\t\tfor (int y = 0; y < 5; y++) {\t\t\t\t\t\n+\t\t\t\t\temptyPoints.add(new Point(x, y));\t\t\t\t\t\t\t\t\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\n+\t\t\tp = emptyPoints.remove((int)(Math.random()*emptyPoints.size()));\n+\t\t\tif(blocksMap[p.x][p.y].label.getTextSize()>=100)\n+\t\t\t\taddRandomColor();\n+\t\t\tblocksMap[p.x][p.y].setColor(Color.WHITE);\t\n+\t\t\tblocksMap[p.x][p.y].label.setTextSize(200);\n+\t\t}\n+\n+\t}\n+\t\n+\t\n+\t\n+\tprivate void checkComplete(){\n+\t\t\n+\t\tcomplete = false;\n+\t\t\n+\t\tj=Net1314080903206StepOnWhiteActivity.getSOWActivity().getTime();\n+\t\tif(j<=0)\n+\t\t\tcomplete=true;\n+\t}\n+\t\n+\tprivate void gameOver()\n+\t{\n+\t\tString s=\"��ķ����ǣ�\"+Net1314080903206StepOnWhiteActivity.getSOWActivity().getScore();\n+\t\tnew AlertDialog.Builder(getContext()).setTitle(\"gameover\").setMessage(s).setCancelable(false).setPositiveButton(\"���\", new DialogInterface.OnClickListener() {\n+\t\t\t\t\n+\t\t\t\t@Override\n+\t\t\t\tpublic void onClick(DialogInterface dialog, int which) {\n+\t\t\t\t\tstartGame();\n+\t\t\t\t}\n+\t\t\t}).setNegativeButton(\"������\",new DialogInterface.OnClickListener()\n+\t\t\t{\n+\n+\t\t\t\t@Override\n+\t\t\t\tpublic void onClick(DialogInterface dialog, int which) {\n+\t\t\t\t\tNet1314080903206StepOnWhiteActivity.getSOWActivity().exitGame();\n+\t\t\t\t\t\n+\t\t\t\t}\n+\t\t\t\t\n+\t\t\t}).show();\n+\t}\n+\t\n+}\n+\n+\n+\n+\n+\n+\n+\n+"
+  }, {
+    "sha" : "ca22bf905b7fc9bd26bf01ea5779ab65457ac8cd",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206StepOnWhiteActivity.java",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 1,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206StepOnWhiteActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206StepOnWhiteActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206StepOnWhiteActivity.java?ref=06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+    "patch" : "@@ -1,4 +1,6 @@\n-package com.bengua.whiteblock;\n+package edu.hzuapps.androidworks.homeworks.net134080903206;\n+\n+import com.bengua.whiteblock.R;\n \n import android.app.Activity;\n import android.content.Intent;"
+  } ],
+  "sha" : "06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/06fe1f6c337cfc9a714b5dda5ceb682bcdefdf87",
+  "parents" : [ {
+    "sha" : "182559c404536daf7791013a880e679c93bfa85f",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/182559c404536daf7791013a880e679c93bfa85f",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/182559c404536daf7791013a880e679c93bfa85f"
+  } ]
+}

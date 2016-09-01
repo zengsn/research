@@ -1,0 +1,392 @@
+{
+  "committer" : {
+    "login" : "yjf2213939",
+    "id" : 18651626,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18651626?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yjf2213939",
+    "html_url" : "https://github.com/yjf2213939",
+    "followers_url" : "https://api.github.com/users/yjf2213939/followers",
+    "following_url" : "https://api.github.com/users/yjf2213939/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yjf2213939/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yjf2213939/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yjf2213939/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yjf2213939/orgs",
+    "repos_url" : "https://api.github.com/users/yjf2213939/repos",
+    "events_url" : "https://api.github.com/users/yjf2213939/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yjf2213939/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 740,
+    "additions" : 740,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "yjf2213939",
+    "id" : 18651626,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18651626?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yjf2213939",
+    "html_url" : "https://github.com/yjf2213939",
+    "followers_url" : "https://api.github.com/users/yjf2213939/followers",
+    "following_url" : "https://api.github.com/users/yjf2213939/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yjf2213939/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yjf2213939/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yjf2213939/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yjf2213939/orgs",
+    "repos_url" : "https://api.github.com/users/yjf2213939/repos",
+    "events_url" : "https://api.github.com/users/yjf2213939/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yjf2213939/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+  "commit" : {
+    "author" : {
+      "name" : "yjf2213939",
+      "email" : "675930534@qq.com",
+      "date" : "2016-05-12T09:16:02Z"
+    },
+    "committer" : {
+      "name" : "yjf2213939",
+      "email" : "675930534@qq.com",
+      "date" : "2016-05-12T09:16:02Z"
+    },
+    "message" : "#91 #92 #93 #94 #95 #395已完成全部实验\n\n全部实验已完成",
+    "tree" : {
+      "sha" : "05c0abcc6fcc1418e94b984153f094fc13d87f36",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/05c0abcc6fcc1418e94b984153f094fc13d87f36"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/comments",
+  "files" : [ {
+    "sha" : "167c10e9ffccefc4a6e6b160012ffad8156f1005",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138ChessBoard.java",
+    "status" : "added",
+    "additions" : 446,
+    "deletions" : 0,
+    "changes" : 446,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138ChessBoard.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138ChessBoard.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138ChessBoard.java?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+    "patch" : "@@ -0,0 +1,446 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903138;\n+\n+\n+import android.app.AlertDialog;\n+import android.content.Context;\n+import android.content.DialogInterface;\n+import android.util.AttributeSet;\n+import android.view.Gravity;\n+import android.view.MotionEvent;\n+import android.view.View;\n+import android.widget.GridLayout;\n+import android.widget.Toast;\n+\n+\n+/**\n+ * Created by Administrator on 2016/4/26.\n+ */\n+public class Net1314080903138ChessBoard extends GridLayout {\n+    public Net1314080903138ChessBoard(Context context) {\n+        super(context);\n+        initChessBoard();\n+    }\n+\n+    public Net1314080903138ChessBoard(Context context, AttributeSet attrs) {\n+        super(context, attrs);\n+        initChessBoard();\n+\n+    }\n+\n+    public Net1314080903138ChessBoard(Context context, AttributeSet attrs, int defStyleAttr) {\n+        super(context, attrs, defStyleAttr);\n+        initChessBoard();\n+\n+    }\n+\n+    private void initChessBoard(){\n+\n+        //设置边界\n+        for(int y=0; y<10; y++){\n+            for(int x=0; x<10; x++){\n+                if(x==0||x==9||y==0||y==9){\n+                    cardsMap[x][y] = new Net1314080903138Card(getContext());\n+                    cardsMap[x][y].setNum(3);\n+                }\n+            }\n+        }\n+\n+        setOnTouchListener(new View.OnTouchListener() {\n+            int x;\n+            int y;\n+\n+            @Override\n+            public boolean onTouch(View v, MotionEvent event) {\n+                if (event.getAction() == MotionEvent.ACTION_DOWN) {\n+\n+                    //getSituation();\n+\n+                    //相对于父组件的坐标\n+                    x = (int) event.getX();\n+                    y = (int) event.getY();\n+\n+                    //在竖屏是，width 比 height 短； 在横屏的时候， height 比 width 短。\n+                    int length = Math.min(getWidth(), getHeight()) / 8;\n+\n+                    //row 和 colu 的值在任何时候应该都小于9\n+                    int row = (int) Math.floor(y / length) + 1;\n+                    int colu = (int) Math.floor(x / length) + 1;\n+\n+                    if (row < 9 && colu < 9) {\n+                        int[] temp = isValid(colu, row, current_color);\n+\n+\n+                        if (temp != null) {\n+//                            //************************** Test Information ***************************************\n+//                            System.out.println(\"Position: (\" + colu + \", \" + row + \") is valid!!\");\n+//                            for (int i = 0; i < 10; i++) {\n+//                                for (int j = 0; j < 10; j++) {\n+//                                    System.out.print(temp[i * 10 + j] + \"\");\n+//                                }\n+//                                System.out.println();\n+//                            }\n+//                            //************************** Test Information ***************************************\n+\n+\n+\n+                            getSituation();\n+                            blackCount = 0;\n+                            whiteCount = 0;\n+\n+                            Net1314080903138Game.getGame().setRetractCount(0);\n+                            Net1314080903138Game.getGame().setNotfirstStep(true);\n+\n+                            for (int y = 1; y <= 8; y++) {\n+                                for (int x = 1; x <= 8; x++) {\n+                                    //对棋盘进行刷新\n+                                    cardsMap[x][y].setNum(temp[10 * y + x]);\n+\n+                                    switch (temp[10 * y + x]) {\n+                                        case 1:\n+                                            blackCount++;\n+                                            break;\n+                                        case 2:\n+                                            whiteCount++;\n+                                            break;\n+                                        default:\n+                                            break;\n+                                    }\n+                                }\n+                            }\n+\n+                            emptyCount = 64 - blackCount - whiteCount;\n+                            Net1314080903138Game.getGame().setTvBlackCount(blackCount);\n+                            Net1314080903138Game.getGame().setTvWhiteCount(whiteCount);\n+\n+                            load();\n+                            current_color = 3 - current_color;\n+                            Net1314080903138Game.getGame().setIvCurrentTurn(current_color);\n+                            hint();\n+\n+                            if (pass(current_color)) {\n+                                //Toast.makeText(getContext(), \"No valid empty position\", Toast.LENGTH_SHORT).show();\n+                                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());\n+                                builder.setMessage(\"No valid empty position.\" + \"\\n\" + \"Please pass to the rival!\");\n+                                builder.setView(Net1314080903138Game.getGame().getLlDialog(5));\n+                                builder.setPositiveButton(\"Yes\", new DialogInterface.OnClickListener() {\n+                                    @Override\n+                                    public void onClick(DialogInterface dialog, int which) {\n+                                        passTimes++;\n+                                        current_color = 3 - current_color;\n+                                        hint();\n+                                        Net1314080903138Game.getGame().setIvCurrentTurn(current_color);\n+                                        dialog.dismiss();\n+                                    }\n+                                });\n+\n+//                                builder.setNegativeButton(\"No\", new DialogInterface.OnClickListener() {\n+//                                    @Override\n+//                                    public void onClick(DialogInterface dialog, int which) {\n+//                                        dialog.dismiss();\n+//                                    }\n+//                                });\n+                                builder.create().show();\n+\n+//                                passTimes++;\n+//                                current_color = 3 - current_color;\n+//                                hint();\n+\n+\n+                            } else {\n+                                passTimes = 0;\n+                            }\n+\n+                            if (emptyCount == 0 || passTimes > 1) {\n+                                int winer;\n+\n+                                if (blackCount > whiteCount) {\n+                                    winer = 1;\n+                                } else if (blackCount < whiteCount) {\n+                                    winer = 2;\n+                                } else {\n+                                    winer = 0;\n+                                }\n+                                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());\n+                                builder.setMessage(\"The game is over. \" + \"\\n\" + \"Do you want to start a new game?\");\n+                                builder.setView(Net1314080903138Game.getGame().getLlDialog(winer));\n+                                builder.setPositiveButton(\"Yes\", new DialogInterface.OnClickListener() {\n+                                    @Override\n+                                    public void onClick(DialogInterface dialog, int which) {\n+                                        startNewGame();\n+                                        dialog.dismiss();\n+                                    }\n+                                });\n+\n+                                builder.setNegativeButton(\"No\", new DialogInterface.OnClickListener() {\n+                                    @Override\n+                                    public void onClick(DialogInterface dialog, int which) {\n+                                        dialog.dismiss();\n+                                    }\n+                                });\n+                                builder.create().show();\n+                            }\n+\n+                        } else {\n+                            Toast.makeText(getContext(), \"This position is invalid!\", Toast.LENGTH_SHORT).show();\n+                        }\n+                    }\n+\n+                    //cardsMap[colu][row].setNum(1);\n+//                    System.out.println((colu + \"\") + \"---\" + (row + \"\"));\n+                }\n+                return true;\n+            }\n+        });\n+    }\n+\n+    public void startNewGame(){\n+        //初始化棋盘\n+        for(int y=1; y<=8; y++){\n+            for(int x=1; x<=8; x++){\n+                cardsMap[x][y].setNum(0);\n+            }\n+        }\n+\n+        cardsMap[4][4].setNum(2);\n+        cardsMap[5][5].setNum(2);\n+        cardsMap[4][5].setNum(1);\n+        cardsMap[5][4].setNum(1);\n+        blackCount = 2;\n+        whiteCount = 2;\n+\n+        //清除比分等记录\n+        Net1314080903138Game.getGame().clearRecord();\n+\n+        //黑子先走\n+        current_color = 1;\n+\n+        //重新载入棋盘的情况\n+        load();\n+        getSituation();\n+\n+        hint();\n+        Net1314080903138Game.getGame().setNotfirstStep(false);\n+\n+    }\n+\n+    public void retract(){\n+        for(int y=1; y<=8; y++){\n+            for(int x=1; x<=8; x++){\n+                cardsMap[x][y].setNum(preSituation[10*y+x]);\n+            }\n+        }\n+\n+        emptyCount = 64 - blackCount - whiteCount;\n+        Net1314080903138Game.getGame().setTvBlackCount(blackCount);\n+        Net1314080903138Game.getGame().setTvWhiteCount(whiteCount);\n+\n+        load();\n+        //current_color = 3-current_color;\n+        current_color = preCurrentcolor;\n+        passTimes=0;\n+        Net1314080903138Game.getGame().setIvCurrentTurn(current_color);\n+\n+        if(hint_on_off){\n+            for(int y=1; y<=8; y++){\n+                for(int x=1; x<=8; x++){\n+                    if((isValid(x,y,current_color) != null)){\n+                        cardsMap[x][y].setHint();\n+                    }\n+                }\n+            }\n+        }\n+\n+    }\n+\n+    private void getSituation(){\n+        for(int y=0; y<100; y++){\n+            preSituation[y] = situation[y];\n+        }\n+\n+        preBlackCount = blackCount;\n+        preWhiteCount = whiteCount;\n+        preCurrentcolor = current_color;\n+    }\n+\n+    @Override\n+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {\n+        Net1314080903138Card net1314080903138Card;\n+        super.onSizeChanged(w, h, oldw, oldh);\n+        int width = this.getWidth();\n+        int height = this.getHeight();\n+        int cardWidth = (Math.min(width, height)-4)/8;\n+\n+        for(int y=1; y<=8; y++){\n+            for(int x=1; x<=8; x++){\n+                //card = new Card(getContext(),x,y);\n+                net1314080903138Card = new Net1314080903138Card(getContext());\n+                GridLayout.Spec rowSpec = GridLayout.spec(y-1);\n+                GridLayout.Spec ColumnSpec = GridLayout.spec(x-1);\n+                GridLayout.LayoutParams params = new GridLayout.LayoutParams(rowSpec, ColumnSpec);\n+                params.width = cardWidth;\n+                params.height = cardWidth;\n+                params.setGravity(Gravity.TOP);\n+                addView(net1314080903138Card, params);\n+\n+                cardsMap[x][y] = net1314080903138Card;\n+            }\n+        }\n+\n+        cardsMap[4][4].setNum(2);\n+        cardsMap[5][5].setNum(2);\n+        cardsMap[4][5].setNum(1);\n+        cardsMap[5][4].setNum(1);\n+        blackCount = 2;\n+        Net1314080903138Game.getGame().setTvBlackCount(blackCount);\n+        whiteCount = 2;\n+        Net1314080903138Game.getGame().setTvWhiteCount(whiteCount);\n+        emptyCount = 64 - blackCount - whiteCount;\n+\n+\n+//        //************************** Test Information ***************************************\n+//        System.out.println(\"************onSizechange: cardsMap************\");\n+//        for(int y=0; y<10; y++){\n+//            for(int x=0; x<10; x++){\n+//                System.out.print(cardsMap[x][y].getNum()+\" \");\n+//            }\n+//            System.out.println();\n+//        }\n+//        //************************** Test Information ***************************************\n+\n+        load();\n+\n+    }\n+\n+\n+    private void load(){\n+        for(int y=0; y<10; y++){\n+            for(int x=0; x<10; x++){\n+                situation[y*10+x] = cardsMap[x][y].getNum();\n+            }\n+        }\n+    }\n+\n+    //此轮是否没有可以下的位置了？ 如果没有就轮到对手下\n+    private boolean pass(int current_color){\n+        if(emptyCount == 0){\n+            return false;\n+        }\n+\n+        boolean canPass = true;\n+\n+        for(int y=1; y<=8; y++){\n+            for(int x=1; x<=8; x++){\n+                if((isValid(x,y,current_color) != null)){\n+\n+                    canPass = false;\n+                    return canPass;\n+                }\n+            }\n+        }\n+        return canPass;\n+    }\n+\n+    private void hint(){\n+        if(hint_on_off){\n+            for(int y=1; y<=8; y++){\n+                for(int x=1; x<=8; x++){\n+                    if((isValid(x,y,current_color) != null)){\n+                        cardsMap[x][y].setHint();\n+                    }\n+                }\n+            }\n+        }\n+    }\n+\n+    private int[] isValid(int x, int y, int current_color){\n+        //load();\n+        boolean canKill = false;\n+\n+        int[] tempSituation = situation.clone();\n+\n+//        //************************** Test Information ***************************************\n+//        System.out.println(\"$$$$$$$$$$$$$$$$$$ isValid: tempSituation, the copy of situation $$$$$$$$$$$$$$$$$$$$$$\");\n+//        for(int i=0; i<10; i++){\n+//            for(int j=0; j<10; j++){\n+//                System.out.print(tempSituation[i*10+j]+\" \");\n+//            }\n+//            System.out.println();\n+//        }\n+//        //************************** Test Information ***************************************\n+\n+        //如果（x，y）不为空则不需要判断\n+        if(tempSituation[y*10+x]!=0) return null;\n+\n+        //搜索（x,y）的八个方向，找可以吃的子\n+        for(int i=0; i<8; i++){\n+            int p =y*10+x+directions[i];\n+\n+            //如果在一个方向找到颜色不一样的子则往这个方向继续搜索\n+            if(tempSituation[p]==3-current_color){\n+                while(tempSituation[p]!=0 && tempSituation[p]!=3){\n+                    p += directions[i];\n+\n+                    //再找到一个同色的子就满足吃子的条件了\n+                    if(tempSituation[p]==current_color){\n+                        canKill=true;\n+\n+                        //将中间夹着的对手的子翻转\n+                        while ((p = p-directions[i]) != 10*y+x){\n+                            tempSituation[p] = current_color;\n+                        }\n+                        tempSituation[p] = current_color;\n+                        break;\n+                    }\n+\n+                }\n+            }\n+            else{\n+                continue;\n+            }\n+\n+        }\n+\n+        if(canKill){\n+            return tempSituation;\n+        }\n+        else{\n+            return null;\n+        }\n+    }\n+\n+    public void hint_switch(){\n+        hint_on_off = !hint_on_off;\n+        for(int y=1; y<=8; y++){\n+            for(int x=1; x<=8; x++){\n+                if((isValid(x,y,current_color) != null)){\n+                    if(hint_on_off){\n+                        cardsMap[x][y].setHint();\n+                    }\n+                    else {\n+                        cardsMap[x][y].moveHInt();\n+                    }\n+\n+\n+                }\n+            }\n+        }\n+    }\n+\n+    private int[] directions = {-11,-10,-9,-1,1,9,10,11};\n+    private int[] situation = new int[100];\n+    private int[] preSituation = new int[100];\n+    private int emptyCount = 0;\n+    private int preEmptyCount = 0;\n+    private int blackCount = 0;\n+    private int preBlackCount = 0;\n+    private int whiteCount = 0;\n+    private int preWhiteCount = 0;\n+    private boolean hint_on_off = false;\n+\n+    private Net1314080903138Card[][] cardsMap = new Net1314080903138Card[10][10];\n+    private int current_color=1;\n+    private int passTimes = 0;\n+    private int preCurrentcolor=1;\n+\n+\n+}"
+  }, {
+    "sha" : "9ee3354feae52709d65bff88b49974f162510086",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Game.java",
+    "status" : "added",
+    "additions" : 189,
+    "deletions" : 0,
+    "changes" : 189,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Game.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Game.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Game.java?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+    "patch" : "@@ -0,0 +1,189 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903138;\n+\n+import android.app.Activity;\n+import android.app.AlertDialog;\n+import android.content.DialogInterface;\n+import android.os.SystemClock;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.Chronometer;\n+import android.widget.ImageButton;\n+import android.widget.ImageView;\n+import android.widget.LinearLayout;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+public class Net1314080903138Game extends Activity {\n+\n+    public Net1314080903138Game() {\n+        Game = this;\n+    }\n+\n+    private ImageButton buttonNewGame;\n+    private Net1314080903138ChessBoard Net1314080903138ChessBoard;\n+    private TextView tvBlackCount;\n+    private TextView tvWhiteCount;\n+    private ImageView ivCurrentTurn;\n+    private Chronometer chTime;\n+    private ImageButton buttonRetract;\n+    private ImageButton buttonHint;\n+\n+    public LinearLayout getLlDialog(int i) {\n+        LinearLayout llDialog = null;\n+        switch (i){\n+            case 0:\n+                llDialog = (LinearLayout) getLayoutInflater().inflate(R.layout.net1314080903138draw,null);\n+                break;\n+            case 1:\n+                llDialog = (LinearLayout) getLayoutInflater().inflate(R.layout.net1314080903138black_win,null);\n+                break;\n+            case 2:\n+                llDialog = (LinearLayout) getLayoutInflater().inflate(R.layout.net1314080903138white_win,null);\n+                break;\n+            case 3:\n+                llDialog = (LinearLayout) getLayoutInflater().inflate(R.layout.net1314080903138retract,null);\n+                break;\n+            case 4:\n+                llDialog = (LinearLayout) getLayoutInflater().inflate(R.layout.net1314080903138new_game_layout,null);\n+                break;\n+            case 5:\n+                llDialog = (LinearLayout) getLayoutInflater().inflate(R.layout.net1314080903138pass,null);\n+                break;\n+            default:\n+                break;\n+        }\n+        return llDialog;\n+    }\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.net1314080903138activity_game);\n+\n+        Net1314080903138ChessBoard = (Net1314080903138ChessBoard) findViewById(R.id.ChessBoard);\n+        buttonNewGame = (ImageButton) findViewById(R.id.new_game);\n+        tvBlackCount = (TextView) findViewById(R.id.black_count);\n+        tvWhiteCount = (TextView) findViewById(R.id.white_count);\n+        ivCurrentTurn = (ImageView) findViewById(R.id.current_turn);\n+        chTime = (Chronometer) findViewById(R.id.cosumed_time);\n+        buttonRetract = (ImageButton) findViewById(R.id.retract);\n+        buttonHint = (ImageButton) findViewById(R.id.ButtonHint);\n+\n+        toast = Toast.makeText(this, \"Only one move can be retracted!\", Toast.LENGTH_SHORT);\n+        toast2 = Toast.makeText(this,\"Please put the first move!\",Toast.LENGTH_SHORT);\n+\n+        chTime.setFormat(\"Timing: %s\");\n+        chTime.setBase(SystemClock.elapsedRealtime());\n+        chTime.start();\n+\n+        buttonHint.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                Net1314080903138ChessBoard.hint_switch();\n+            }\n+        });\n+\n+        buttonNewGame.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                setNotfirstStep(false);\n+                LinearLayout ll = getLlDialog(4);\n+\n+                AlertDialog.Builder builder = new AlertDialog.Builder(Net1314080903138Game.this);\n+                builder.setMessage(\"Are you sure to start a new game？\");\n+                builder.setView(ll);\n+                builder.setPositiveButton(\"Yes\", new DialogInterface.OnClickListener() {\n+                    @Override\n+                    public void onClick(DialogInterface dialog, int which) {\n+                        dialog.dismiss();\n+                        Net1314080903138ChessBoard.startNewGame();\n+                    }\n+                });\n+\n+                builder.setNegativeButton(\"Cancel\", new DialogInterface.OnClickListener() {\n+                    @Override\n+                    public void onClick(DialogInterface dialog, int which) {\n+                        dialog.dismiss();\n+                    }\n+                });\n+                builder.create().show();\n+            }\n+        });\n+\n+        buttonRetract.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                if(!notfirstStep){\n+                    toast2.show();\n+                    return;\n+                }\n+                retractCount++;\n+\n+                if(retractCount>=2){\n+                    toast.show();\n+                }\n+                else {\n+                    LinearLayout ll = getLlDialog(3);\n+\n+                    AlertDialog.Builder builder = new AlertDialog.Builder(Net1314080903138Game.this);\n+                    builder.setMessage(\"Are you sure to retract？\");\n+                    builder.setView(ll);\n+                    builder.setPositiveButton(\"Yes\", new DialogInterface.OnClickListener() {\n+                        @Override\n+                        public void onClick(DialogInterface dialog, int which) {\n+                            Net1314080903138ChessBoard.retract();\n+                            dialog.dismiss();\n+                        }\n+                    });\n+\n+                    builder.setNegativeButton(\"Cancel\", new DialogInterface.OnClickListener() {\n+                        @Override\n+                        public void onClick(DialogInterface dialog, int which) {\n+                            retractCount--;\n+                            dialog.dismiss();\n+                        }\n+                    });\n+                    builder.create().show();\n+                }\n+\n+            }\n+        });\n+    }\n+\n+    public void clearRecord(){\n+        tvBlackCount.setText(\"2\");\n+        tvWhiteCount.setText(\"2\");\n+        ivCurrentTurn.setImageResource(R.drawable.net13140803138black_chess);\n+        chTime.setBase(SystemClock.elapsedRealtime());\n+        chTime.start();\n+    }\n+\n+    public void setIvCurrentTurn(int n){\n+        ivCurrentTurn.setImageResource(chessColor[n]);\n+    }\n+\n+    public void setTvBlackCount(int n){\n+        tvBlackCount.setText(n+\"\");\n+    }\n+\n+    public void setTvWhiteCount(int n){\n+        tvWhiteCount.setText(n+\"\");\n+    }\n+\n+    private static int[] chessColor = new int[] {0,R.drawable.net13140803138black_chess,R.drawable.net13140803138white_chess};\n+    private static Net1314080903138Game Game;\n+\n+    public void setRetractCount(int retractCount) {\n+        this.retractCount = retractCount;\n+    }\n+\n+    private int retractCount=0;\n+\n+    public  void setNotfirstStep(boolean b){ notfirstStep = b;}\n+    private Toast toast,toast2;\n+    private boolean notfirstStep=false;\n+\n+    public static Net1314080903138Game getGame() {\n+        return Game;\n+    }\n+}"
+  }, {
+    "sha" : "8809c1902e370798640055823cf2560ed9e853ae",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Sound.java",
+    "status" : "added",
+    "additions" : 57,
+    "deletions" : 0,
+    "changes" : 57,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Sound.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Sound.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Sound.java?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+    "patch" : "@@ -0,0 +1,57 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903138;\n+\n+/**\n+ * Created by Administrator on 2016/4/26.\n+ */\n+import android.app.Service;\n+import android.content.Intent;\n+import android.media.MediaPlayer;\n+import android.os.IBinder;\n+\n+public class Net1314080903138Sound extends Service {\n+    private MediaPlayer mp;\n+\n+\n+    @Override\n+    public void onCreate() {\n+        super.onCreate();\n+        mp = MediaPlayer.create(this, R.raw.net1314080903138dididi);\n+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {\n+            @Override\n+            public void onCompletion(MediaPlayer mp) {\n+                mp.start();\n+                mp.setLooping(true);\n+            }\n+        });\n+\n+    }\n+\n+    @Override\n+    public void onDestroy() {\n+        super.onDestroy();\n+        mp.release();\n+        stopSelf();\n+    }\n+\n+    @Override\n+    public int onStartCommand(Intent intent, int flags, int startId) {\n+        //boolean playing = intent.getBooleanExtra(\"playing\", false);\n+        //if (playing) {\n+        if(!mp.isPlaying()){\n+            mp.start();\n+        }\n+        return START_STICKY;\n+//        //} else {\n+//            mp.pause();\n+//        }\n+        //return super.onStartCommand(intent, flags, startId);\n+    }\n+\n+\n+\n+    @Override\n+    public IBinder onBind(Intent intent) {\n+        return null;\n+    }\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "cd9b3ac4ab0ad01c3115c9d031f62f1ca1b35ecd",
+    "filename" : "app/src/main/res/drawable/net13140803138a.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138a.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138a.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138a.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "a7eb903c33265fb961715110b90c4a7d3756bed1",
+    "filename" : "app/src/main/res/drawable/net13140803138b.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138b.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138b.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138b.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "8b37e2daeb900c3343f7b82abcc81de6f93c7dbf",
+    "filename" : "app/src/main/res/drawable/net13140803138background.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138background.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138background.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138background.jpg?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "23097b87a275abfb977a8ae10f04898a6af2336a",
+    "filename" : "app/src/main/res/drawable/net13140803138background2.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138background2.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138background2.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138background2.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "369cc13e2e8651bac1625cdea92d3ca267012f52",
+    "filename" : "app/src/main/res/drawable/net13140803138bar.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138bar.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138bar.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138bar.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "7d16c4f2a1303c22ccbc38835478179539f249ce",
+    "filename" : "app/src/main/res/drawable/net13140803138c.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138c.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138c.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138c.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "8f1e622b680393272bb71de6976179d531481098",
+    "filename" : "app/src/main/res/drawable/net13140803138daojian.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138daojian.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138daojian.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138daojian.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "69e9a502a1abfdb9f599d4cf028c9bf8816e66e9",
+    "filename" : "app/src/main/res/drawable/net13140803138dialogbackground.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138dialogbackground.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138dialogbackground.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138dialogbackground.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "b503e757550fb918cab27b64864f776a8acdf2bc",
+    "filename" : "app/src/main/res/drawable/net13140803138hint.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138hint.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138hint.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138hint.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "166e3d68e8042f120253ec5593be8f35db0db087",
+    "filename" : "app/src/main/res/drawable/net13140803138icon.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138icon.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138icon.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138icon.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "1f718c13f905c5929188aa4929afd0d5a50d44f4",
+    "filename" : "app/src/main/res/drawable/net13140803138left.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138left.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138left.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138left.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "9fef831420951dcdbfb8d521ff5d9f6365cc2842",
+    "filename" : "app/src/main/res/drawable/net13140803138name.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138name.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138name.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138name.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "f9a5389cb99fc779b5745825cc10684b4c69c07b",
+    "filename" : "app/src/main/res/drawable/net13140803138newgame.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138newgame.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138newgame.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138newgame.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "f562670e962b9472325456702911a07bece7ac4b",
+    "filename" : "app/src/main/res/drawable/net13140803138pass.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138pass.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138pass.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138pass.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "20a029537ec92481598ed72eaf847605b0d832f7",
+    "filename" : "app/src/main/res/drawable/net13140803138q.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138q.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138q.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138q.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "cf66976f0f91564d0928452e10d99a8e6733a40e",
+    "filename" : "app/src/main/res/drawable/net13140803138retract.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138retract.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138retract.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138retract.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "9a440254a5db1f28479cd47f0e03e9388b1a868b",
+    "filename" : "app/src/main/res/drawable/net13140803138start.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138start.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138start.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138start.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "7911c990e6b8b3c21bb63e98bb4593eb1e804d85",
+    "filename" : "app/src/main/res/drawable/net13140803138top.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138top.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138top.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138top.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "f5f5bf7446b1af778ce35e15d9d9ca4c4c787a90",
+    "filename" : "app/src/main/res/drawable/net13140803138topboard.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138topboard.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138topboard.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138topboard.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "964af3037b09b3ffaab8ca3df34c1b9256ce4815",
+    "filename" : "app/src/main/res/drawable/net13140803138vs2.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138vs2.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138vs2.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138vs2.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "aa87723a383f775e2981584614f1a11e4b0eb0c6",
+    "filename" : "app/src/main/res/drawable/net13140803138white_chess_t.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138white_chess_t.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138white_chess_t.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138white_chess_t.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "b66d94cda39569ae64849adcef2f609db0e72b6e",
+    "filename" : "app/src/main/res/drawable/net13140803138win.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138win.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/drawable/net13140803138win.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138win.png?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "05be80d825b61a4df101d29bc194031596715aa2",
+    "filename" : "app/src/main/res/raw/net1314080903138dididi.mp3",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/raw/net1314080903138dididi.mp3",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/raw/net1314080903138dididi.mp3",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903138dididi.mp3?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048"
+  }, {
+    "sha" : "65d0c39df5e93a707a2da180b5125cf37e4dd3fc",
+    "filename" : "app/src/main/res/values-w820dp/net1314080903138styles.xml",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values-w820dp/net1314080903138styles.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values-w820dp/net1314080903138styles.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values-w820dp/net1314080903138styles.xml?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+    "patch" : "@@ -0,0 +1,8 @@\n+<resources>>\n+    <style name=\"AppTheme.NoActionBar\">\n+        <item name=\"windowActionBar\">false</item>\n+        <item name=\"windowNoTitle\">true</item>\n+        <item name=\"android:windowDrawsSystemBarBackgrounds\">true</item>\n+        <item name=\"android:statusBarColor\">@android:color/transparent</item>\n+    </style>\n+</resources>"
+  }, {
+    "sha" : "eb323271785d1b39c5529fd785b7e976d0d379b2",
+    "filename" : "app/src/main/res/values/net13140803138dimens.xml",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values/net13140803138dimens.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values/net13140803138dimens.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net13140803138dimens.xml?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+    "patch" : "@@ -0,0 +1,8 @@\n+<resources>\n+    <!-- Default screen margins, per the Android Design guidelines. -->\n+    <dimen name=\"activity_horizontal_margin\">16dp</dimen>\n+    <dimen name=\"activity_vertical_margin\">16dp</dimen>\n+    <dimen name=\"fab_margin\">16dp</dimen>\n+    <dimen name=\"width_of_chess1\">40dp</dimen>\n+    <dimen name=\"chess_margin1\">5dp</dimen>\n+</resources>"
+  }, {
+    "sha" : "bd3445e5ed643c28b801fd0b246c185a5fc249d7",
+    "filename" : "app/src/main/res/values/net1314080903138colors.xml",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values/net1314080903138colors.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values/net1314080903138colors.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903138colors.xml?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+    "patch" : "@@ -0,0 +1,6 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+    <color name=\"colorPrimary\">#CCCC66</color>\n+    <color name=\"colorPrimaryDark\">#000000</color>\n+    <color name=\"colorAccent\">#FF4081</color>\n+</resources>"
+  }, {
+    "sha" : "a37c83aae07f9b7a0de62dc194d4c67ad900ac28",
+    "filename" : "app/src/main/res/values/net1314080903138strings.xml",
+    "status" : "added",
+    "additions" : 9,
+    "deletions" : 0,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values/net1314080903138strings.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values/net1314080903138strings.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903138strings.xml?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+    "patch" : "@@ -0,0 +1,9 @@\n+<resources>\n+    <string name=\"app_name\">yjf黑白棋</string>\n+    <string name=\"white\">WHITE :</string>\n+    <string name=\"X\">X</string>\n+    <string name=\"Retract\">Retract</string>\n+    <string name=\"hint\">Hint Switch</string>\n+    <string name=\"New_Game\">New Game</string>\n+    <string name=\"title_activity_game\">Game</string>\n+</resources>"
+  }, {
+    "sha" : "44f664f202f9d6d4e66caf32cb970fc90a7d553c",
+    "filename" : "app/src/main/res/values/net1314080903138styles.xml",
+    "status" : "added",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values/net1314080903138styles.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048/app/src/main/res/values/net1314080903138styles.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903138styles.xml?ref=f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+    "patch" : "@@ -0,0 +1,17 @@\n+<resources>\n+\n+    <!-- Base application theme. -->\n+    <style name=\"AppTheme\" parent=\"Theme.AppCompat.Light.DarkActionBar\">\n+        <!-- Customize your theme here. -->\n+        <item name=\"colorPrimary\">@color/colorPrimary</item>\n+        <item name=\"colorPrimaryDark\">@color/colorPrimaryDark</item>\n+        <item name=\"colorAccent\">@color/colorAccent</item>\n+    </style>\n+    <style name=\"AppTheme.NoActionBar\">\n+        <item name=\"windowActionBar\">false</item>\n+        <item name=\"windowNoTitle\">true</item>\n+    </style>\n+    <style name=\"AppTheme.AppBarOverlay\" parent=\"ThemeOverlay.AppCompat.Dark.ActionBar\" />\n+    <style name=\"AppTheme.PopupOverlay\" parent=\"ThemeOverlay.AppCompat.Light\" />\n+\n+</resources>"
+  } ],
+  "sha" : "f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f913481fdb4ae7097efcf2ad5ad7dff81b3ad048",
+  "parents" : [ {
+    "sha" : "557257747e98fe39f70748703b841b9f13efa523",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/557257747e98fe39f70748703b841b9f13efa523",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/557257747e98fe39f70748703b841b9f13efa523"
+  } ]
+}

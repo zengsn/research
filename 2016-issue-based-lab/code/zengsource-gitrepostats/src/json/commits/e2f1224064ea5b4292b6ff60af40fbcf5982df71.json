@@ -1,0 +1,211 @@
+{
+  "committer" : {
+    "login" : "xunzai",
+    "id" : 10172993,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/10172993?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xunzai",
+    "html_url" : "https://github.com/xunzai",
+    "followers_url" : "https://api.github.com/users/xunzai/followers",
+    "following_url" : "https://api.github.com/users/xunzai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xunzai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xunzai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xunzai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xunzai/orgs",
+    "repos_url" : "https://api.github.com/users/xunzai/repos",
+    "events_url" : "https://api.github.com/users/xunzai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xunzai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 751,
+    "additions" : 703,
+    "deletions" : 48
+  },
+  "author" : {
+    "login" : "xunzai",
+    "id" : 10172993,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/10172993?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xunzai",
+    "html_url" : "https://github.com/xunzai",
+    "followers_url" : "https://api.github.com/users/xunzai/followers",
+    "following_url" : "https://api.github.com/users/xunzai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xunzai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xunzai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xunzai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xunzai/orgs",
+    "repos_url" : "https://api.github.com/users/xunzai/repos",
+    "events_url" : "https://api.github.com/users/xunzai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xunzai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+  "commit" : {
+    "author" : {
+      "name" : "xunzai",
+      "email" : "1475002112@qq.com",
+      "date" : "2016-04-20T07:00:45Z"
+    },
+    "committer" : {
+      "name" : "xunzai",
+      "email" : "1475002112@qq.com",
+      "date" : "2016-04-20T07:00:45Z"
+    },
+    "message" : "Merge branch 'master' of https://github.com/hzuapps/android-labs",
+    "tree" : {
+      "sha" : "d5c496b2ab3b86dcdcb23a27ed6313d3b2da76e6",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/d5c496b2ab3b86dcdcb23a27ed6313d3b2da76e6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e2f1224064ea5b4292b6ff60af40fbcf5982df71/comments",
+  "files" : [ {
+    "sha" : "98c68a2baaf1b8adf63c752b3a072721ae1e8bec",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/ClientThread.java",
+    "status" : "added",
+    "additions" : 102,
+    "deletions" : 0,
+    "changes" : 102,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/ClientThread.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/ClientThread.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/ClientThread.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,102 @@\n+package com.example.dell.multichat;\n+\n+import android.os.Looper;\n+import android.os.Message;\n+\n+import java.io.BufferedReader;\n+import java.io.IOException;\n+import java.io.InputStreamReader;\n+import java.io.OutputStream;\n+import java.net.Socket;\n+import java.net.SocketTimeoutException;\n+import android.os.Handler;                  ////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n+//import java.util.logging.Handler;\n+\n+import java.util.logging.LogRecord;\n+\n+/**\n+ * Created by dell on 2016/4/12.\n+ */\n+public class ClientThread implements Runnable {\n+    private Socket      s;\n+    private Handler     handler;        //定义向UI发送消息的Handler对象\n+    public Handler     revHandler;     //定义接收UI线程消息的Handler对象\n+    BufferedReader       br =null;        //输入流\n+    OutputStream         os = null;       //输出流\n+\n+    public ClientThread(Handler handler)\n+    {\n+        this.handler = handler;\n+    }\n+\n+    public void run()\n+    {\n+        try {\n+            System.out.println(\"Socket before!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\n+            s = new Socket(\"192.168.240.19\", 30000);\n+            br = new BufferedReader((new InputStreamReader(s.getInputStream())));\n+            os = s.getOutputStream();       //为什么br不是类似这样？\n+\n+            //启动一条子线程来读取服务器响应的数据\n+            new Thread()\n+            {\n+                @Override\n+                public void run()\n+                {\n+                    String content = null;\n+                    //不断读取Socket输入流中的内容\n+                    try\n+                    {\n+                        while((content = br.readLine()) != null)\n+                        {\n+                            //读到来自服务器的数据后， 发送消息通知程序\n+                            //界面显示该数据\n+                            Message msg = new Message();\n+                            msg.what = 0x123;                               //?????\n+                            msg.obj = content;                              //????\n+                            handler.sendMessage(msg);                      //???\n+                        }\n+                    }\n+                    catch (IOException e)\n+                    {\n+                        e.printStackTrace();\n+                    }\n+                }\n+            }.start();                                                     //????\n+\n+            //当前线程初始化\n+            Looper.prepare();                                             //????\n+            revHandler = new Handler()\n+            {\n+                @Override\n+                public void handleMessage(Message msg)\n+                {\n+                    //接收到UI线程中用户输入的数据\n+                    if (msg.what == 0x345)\n+                    {\n+                        //将用户在文本框输入的内容写入网络\n+                        try\n+                        {\n+                            os.write((msg.obj.toString() + \"\\r\\n\").getBytes(\"utf-8\"));\n+                            //并写到历史文件，格式：时间+【名称】+ 消息\n+                        }\n+                        catch (Exception e)\n+                        {\n+                            e.printStackTrace();\n+                        }\n+                    }\n+                }\n+            };\n+            //启动Looper\n+            Looper.loop();\n+        }\n+        catch (SocketTimeoutException e1)\n+        {\n+            System.out.println(\"网络连接超时!!!\");\n+        }\n+        catch (Exception e)\n+        {\n+            e.printStackTrace();\n+        }\n+    }\n+}"
+  }, {
+    "sha" : "85bf75530240011109125d7fb9e2a03ce344ab52",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/MultiThreadClient.java",
+    "status" : "added",
+    "additions" : 76,
+    "deletions" : 0,
+    "changes" : 76,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/MultiThreadClient.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/MultiThreadClient.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/MultiThreadClient.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,76 @@\n+package com.example.dell.multichat;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.os.Message;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.TextView;\n+\n+//import java.util.logging.Handler;\n+import android.os.Handler;\n+/**\n+ * Created by dell on 2016/4/12.\n+ */\n+public class MultiThreadClient extends Activity {\n+    //定义界面的两个文本框\n+    EditText input;\n+    TextView show;\n+    //定义一个界面上的按钮\n+    Button send;\n+    Handler handler;\n+    //定义与服务器通信的子线程\n+    ClientThread clientThread;\n+\n+    @Override\n+    public void onCreate(Bundle savedInstanceState)\n+    {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.main);\n+        input = (EditText) findViewById(R.id.input);\n+        send = (Button) findViewById(R.id.send);\n+        show = (TextView) findViewById(R.id.show);\n+\n+        handler = new Handler()                         //????不懂！！！\n+        {\n+            @Override\n+            public void handleMessage(Message msg)\n+            {\n+                //如果消息来自于子线程\n+                if (msg.what == 0x123)                  //????不懂！！！\n+                {\n+                    //将读取的内容追加显示到文本框\n+                    show.append(\"\\n\" + msg.obj.toString());\n+                    //并写到文件！                                    //!!!!\n+                }\n+            }\n+        };\n+        clientThread = new ClientThread(handler);\n+        //客户端启动ClientThread线程创建网络连接、读取来自服务器的数据\n+        new Thread(clientThread).start();\n+\n+        send.setOnClickListener(new View.OnClickListener()              ///!!!\n+        {\n+            @Override\n+            public void onClick(View v)\n+            {\n+                try {\n+                    //当用户按下发送按钮后， 将用户输入的数据封装成Message\n+                    //然后发送给子线程的Handler\n+                    Message msg = new Message();\n+                    msg.what = 0x345;                   ///???????不懂!!!\n+                    clientThread.revHandler.sendMessage(msg);\n+\n+                    //清空input文本框\n+                    input.setText(\"\");\n+                }\n+                catch (Exception e)\n+                {\n+                    e.printStackTrace();\n+                }\n+            }\n+        });                                                                   ///note!!!!不懂!!!\n+    }\n+\n+}"
+  }, {
+    "sha" : "2524e4be89e12736e11598aebe181b9df7f0ac99",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/ReadHistory.java",
+    "status" : "added",
+    "additions" : 57,
+    "deletions" : 0,
+    "changes" : 57,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/ReadHistory.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/ReadHistory.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/ReadHistory.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,57 @@\n+package com.example.dell.multichat;\n+\n+//import java.io.*;\n+import java.io.BufferedReader;\n+import java.io.File;\n+import java.io.FileInputStream;\n+import java.io.FileNotFoundException;\n+import java.io.IOException;\n+import java.io.InputStreamReader;\n+import java.net.FileNameMap;\n+\n+/**\n+ * Created by dell on 2016/4/18.\n+ */\n+\n+/*读历史记录，如果没有指定目录或文件，只需直接返回，\n+    不需要创建， 创建会在写历史记录的时候执行\n+ */\n+public class ReadHistory  {\n+\n+    public void file_read()\n+    {\n+        File    get_path = this.getAbsolutePath();      //\n+        String  path_str = get_path.toString() + \"/history\";\n+        File    path = new File(path_str);\n+        String  file_str = path_str + \"/ChatHistory\";\n+        File    file = new File(path_str, \"ChatHistory\");\n+\n+\n+        //如果目录不存在或者目录不存在， 什么也不做\n+        if (!path.exists() || !file.exists()){\n+            //nothing to do\n+        }\n+\n+        //两个都存在，这读取历史记录，显示到show区域。一行一行存储历史记录。\n+\n+        BufferedReader read_file = null;\n+        try {\n+            read_file = new BufferedReader(new InputStreamReader(new FileInputStream(file_str)));\n+        } catch (FileNotFoundException e) {\n+            e.printStackTrace();\n+        }\n+        String line_data = null;\n+        try {\n+            while ((line_data = read_file.readLine()) != null)\n+            {\n+                //显示到show区域\n+\n+            }\n+        } catch (IOException e) {\n+            e.printStackTrace();\n+        }\n+    }\n+\n+\n+\n+}"
+  }, {
+    "sha" : "e5b1a96258f78c6d8d46f91f49b68c658f9238f3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/WriteHistory.java",
+    "status" : "added",
+    "additions" : 19,
+    "deletions" : 0,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/WriteHistory.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/WriteHistory.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Activity/WriteHistory.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,19 @@\n+package com.example.dell.multichat;\n+\n+/**\n+ * Created by dell on 2016/4/18.\n+ */\n+public class WriteHistory {\n+\n+    public void write_file()\n+    {\n+        //判断历史记录目录是否存在，不存在则创建\n+\n+        //判断历史记录文件是否存在， 不存在则创建\n+\n+        //获取时间+历史记录写入文件 ； 从服务器接收到的信息写入文件\n+        // （自己发送的信息不用写入，因为服务器还会返回发送出去的信息，如果再写会有重复）\n+\n+    }\n+\n+}"
+  }, {
+    "sha" : "f9a71e25d32f9162ea9d61a509b3825ffb7e4a32",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212Activity.java",
+    "status" : "renamed",
+    "additions" : 48,
+    "deletions" : 48,
+    "changes" : 96,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212Activity.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -1,48 +1,48 @@\n-package edu.hzuapps.androidworks.homeworks;\r\n-\r\n-import android.os.Bundle;\r\n-import android.util.Log;\r\n-import android.view.Menu;\r\n-import android.view.MenuItem;\r\n-import android.view.ViewGroup;\r\n-import android.widget.LinearLayout;\r\n-import android.widget.TextView;\r\n-\r\n-import edu.hzuapps.androidworks.R;\r\n-//import edu.hzuapps.androidworks.homeworks.Net1314080903212;\r\n-\r\n-/**\r\n- * Created by dell on 2016/3/21.\r\n- */\r\n-public class Net1314080903212 extends BackActivity {\r\n-\r\n-    private LinearLayout mTextContainer;\r\n-\r\n-    protected void onCreate(Bundle savedInstanceState) {\r\n-        super.onCreate(savedInstanceState);\r\n-\r\n-//      TextView textView = new TextView(this);\r\n-//      textView.setText(\"isshe\");\r\n-\r\n-        createViewInJava();\r\n-        setContentView(mTextContainer);\r\n-\r\n-//      默认使用XML创建的View\r\n-//      setContentView(R.layout.net1314080903212);\r\n-\r\n-}\r\n-\r\n-    private void createViewInJava() {\r\n-        mTextContainer = new LinearLayout(this);\r\n-        ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams( //\r\n-                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);\r\n-        mTextContainer.setLayoutParams(layoutParams);\r\n-        mTextContainer.setOrientation(LinearLayout.HORIZONTAL);\r\n-\r\n-        TextView textView = new TextView(this);\r\n-        textView.setText(\"isshe: Net13140809032122\");\r\n-\r\n-        mTextContainer.addView(textView);\r\n-    }\r\n-\r\n-}\r\n+package edu.hzuapps.androidworks.homeworks;\n+\n+import android.os.Bundle;\n+import android.util.Log;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.ViewGroup;\n+import android.widget.LinearLayout;\n+import android.widget.TextView;\n+\n+import edu.hzuapps.androidworks.R;\n+//import edu.hzuapps.androidworks.homeworks.Net1314080903212;\n+\n+/**\n+ * Created by dell on 2016/3/21.\n+ */\n+public class Net1314080903212 extends BackActivity {\n+\n+    private LinearLayout mTextContainer;\n+\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+\n+//      TextView textView = new TextView(this);\n+//      textView.setText(\"isshe\");\n+\n+        createViewInJava();\n+        setContentView(mTextContainer);\n+\n+//      默认使用XML创建的View\n+//      setContentView(R.layout.net1314080903212);\n+\n+}\n+\n+    private void createViewInJava() {\n+        mTextContainer = new LinearLayout(this);\n+        ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams( //\n+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);\n+        mTextContainer.setLayoutParams(layoutParams);\n+        mTextContainer.setOrientation(LinearLayout.HORIZONTAL);\n+\n+        TextView textView = new TextView(this);\n+        textView.setText(\"isshe: Net13140809032122\");\n+\n+        mTextContainer.addView(textView);\n+    }\n+\n+}",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212Activity.java"
+  }, {
+    "sha" : "96f9d53fad413d752e77a5c8a183351945000763",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901113/Com1314080901113Activity.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901113/Com1314080901113Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901113/Com1314080901113Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901113/Com1314080901113Activity.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,52 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901113;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+\n+public class Com1314080901113Activity extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_com1314080901113);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n+\n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_main, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901113/找颜色.txt",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901113/%E6%89%BE%E9%A2%9C%E8%89%B2.txt",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901113/%E6%89%BE%E9%A2%9C%E8%89%B2.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901113/%E6%89%BE%E9%A2%9C%E8%89%B2.txt?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "previous_filename" : "edu.hzuapps.androidworks.homeworks.com1314080901219/电子时钟.txt"
+  }, {
+    "sha" : "45373eb033419f5aed3764523775b333a970ef6e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903203/Net1314080903203activity.java",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903203/Net1314080903203activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903203/Net1314080903203activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903203/Net1314080903203activity.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,15 @@\n+package com.example.myapplication;\n+\n+import org.junit.Test;\n+\n+import static org.junit.Assert.*;\n+\n+/**\n+ * To work on unit tests, switch the Test Artifact in the Build Variants view.\n+ */\n+public class Net1314080903203activity {\n+    @Test\n+    public void addition_isCorrect() throws Exception {\n+        assertEquals(4, 2 + 2);\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "f7f6a47fabe7054fdc8d1836b0af94f884b6bc42",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903207/Net1314080903207Activity.java",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903207/Net1314080903207Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903207/Net1314080903207Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903207/Net1314080903207Activity.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,15 @@\n+package edu.hzuapps.androidworks.homeworks.net13124080903207;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+\n+public class Net13124080903207Activity extends Activity {\n+\n+   @Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_main);\n+\t}\n+}"
+  }, {
+    "sha" : "ad67ecc906d0f999391e8e6ed50d7015071b2722",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903220/Net1314080903220Activity.java",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903220/Net1314080903220Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903220/Net1314080903220Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903220/Net1314080903220Activity.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,13 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903220;\n+\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+\n+public class Net131480903220Activity extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net131480903220);\n+    }\n+}"
+  }, {
+    "sha" : "9264900a1a7f44776730d80ce0a582da6a8d457b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234_GPS.java",
+    "status" : "added",
+    "additions" : 283,
+    "deletions" : 0,
+    "changes" : 283,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234_GPS.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234_GPS.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234_GPS.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,283 @@\n+package com.example.ljl.mygps;\n+\n+import android.app.Activity;\n+import android.app.ListActivity;\n+import android.content.ContentValues;\n+import android.content.Context;\n+import android.content.Intent;\n+import android.database.Cursor;\n+import android.database.sqlite.SQLiteDatabase;\n+import android.location.Criteria;\n+import android.location.GpsSatellite;\n+import android.location.GpsStatus;\n+import android.location.Location;\n+import android.location.LocationListener;\n+import android.location.LocationManager;\n+import android.location.LocationProvider;\n+import android.os.Bundle;\n+import android.provider.Settings;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.util.Log;\n+import android.view.View;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.ListView;\n+import android.widget.SimpleCursorAdapter;\n+import android.widget.Toast;\n+\n+import java.text.SimpleDateFormat;\n+import java.util.Date;\n+import java.util.Iterator;\n+\n+public class Net1314080903234_GPS extends ListActivity {\n+\n+    private EditText editText;\n+    private LocationManager lm;\n+    private SQLiteDatabase dbRead,dbWrite;\n+    private Db db;\n+    private SimpleCursorAdapter adapter;\n+    private Button button;\n+    private static final String TAG=\"GpsActivity\";\n+\n+    //获取当前时间\n+    SimpleDateFormat formatter= new SimpleDateFormat (\"yyyy.MM.dd HH:mm:ss\");\n+    Date curDate  = new Date(System.currentTimeMillis());\n+    String str = formatter.format(curDate);\n+\n+    //设置按钮\n+    private View.OnClickListener btnListener= new View.OnClickListener() {\n+        @Override\n+        public void onClick(View v) {\n+            if(getListView().getVisibility()==View.VISIBLE) {\n+                Toast.makeText(getApplicationContext(),\"显示历史记录\",Toast.LENGTH_SHORT).show();\n+                setListAdapter(adapter);\n+                refresh();\n+            }\n+\n+\n+        }\n+    };\n+\n+\n+\n+\n+    @Override\n+    public void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+        button= (Button) findViewById(R.id.button);\n+        button.setOnClickListener(btnListener);\n+\n+\n+        //读数据库\n+        db =new Db(this);\n+        dbRead = db.getReadableDatabase();\n+        dbWrite=db.getWritableDatabase();\n+\n+        adapter = new SimpleCursorAdapter(this,R.layout.where_you,null,\n+                new String[]{\"longitude\",\"latitude\"},\n+                new int[]{R.id.tvLong,R.id.tvLat});\n+//        setListAdapter(adapter);\n+//        refresh();\n+\n+\n+\n+\n+        editText=(EditText)findViewById(R.id.editText);\n+        lm=(LocationManager)getSystemService(Context.LOCATION_SERVICE);\n+\n+        //判断GPS是否正常启动\n+        if(!lm.isProviderEnabled(LocationManager.GPS_PROVIDER)){\n+            Toast.makeText(this, \"请开启GPS导航...\", Toast.LENGTH_SHORT).show();\n+            //返回开启GPS导航设置界面\n+            Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);\n+            startActivityForResult(intent,0);\n+            return;\n+        }\n+\n+        //为获取地理位置信息时设置查询条件\n+        String bestProvider = lm.getBestProvider(getCriteria(), true);\n+        //获取位置信息\n+        //如果不设置查询要求，getLastKnownLocation方法传人的参数为LocationManager.GPS_PROVIDER\n+        Location location= lm.getLastKnownLocation(bestProvider);\n+        updateView(location);\n+        //监听状态\n+        lm.addGpsStatusListener(listener);\n+        //绑定监听，有4个参数\n+        //参数1，设备：有GPS_PROVIDER和NETWORK_PROVIDER两种\n+        //参数2，位置信息更新周期，单位毫秒\n+        //参数3，位置变化最小距离：当位置距离变化超过此值时，将更新位置信息\n+        //参数4，监听\n+        //备注：参数2和3，如果参数3不为0，则以参数3为准；参数3为0，则通过时间来定时更新；两者为0，则随时刷新\n+\n+        // 1秒更新一次，或最小位移变化超过1米更新一次；\n+        //注意：此处更新准确度非常低，推荐在service里面启动一个Thread，在run中sleep(10000);然后执行handler.sendMessage(),更新位置\n+        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, locationListener);\n+    }\n+\n+    //位置监听\n+    private LocationListener locationListener=new LocationListener() {\n+\n+        /**\n+         * 位置信息变化时触发\n+         */\n+             public void onLocationChanged(Location location) {\n+            updateView(location);\n+\n+                 ContentValues cv = new ContentValues();\n+                 cv.put(\"longitude\",String.valueOf(location.getLongitude()));\n+                 cv.put(\"latitude\", String.valueOf(location.getLatitude()));\n+                 dbWrite.insert(\"whereYou\", null, cv);\n+                 refresh();\n+\n+\n+\n+\n+//\n+//            Log.i(TAG, \"时间：\" + location.getTime());\n+//            Log.i(TAG, \"经度：\"+location.getLongitude());\n+//            Log.i(TAG, \"纬度：\"+location.getLatitude());\n+//            Log.i(TAG, \"海拔：\"+location.getAltitude());\n+        }\n+\n+        /**\n+         * GPS状态变化时触发\n+         */\n+        public void onStatusChanged(String provider, int status, Bundle extras) {\n+            switch (status) {\n+                //GPS状态为可见时\n+                case LocationProvider.AVAILABLE:\n+                    Log.i(TAG, \"当前GPS状态为可见状态\");\n+                    break;\n+                //GPS状态为服务区外时\n+                case LocationProvider.OUT_OF_SERVICE:\n+                    Log.i(TAG, \"当前GPS状态为服务区外状态\");\n+                    break;\n+                //GPS状态为暂停服务时\n+                case LocationProvider.TEMPORARILY_UNAVAILABLE:\n+                    Log.i(TAG, \"当前GPS状态为暂停服务状态\");\n+                    break;\n+            }\n+        }\n+\n+        /**\n+         * GPS开启时触发\n+         */\n+        public void onProviderEnabled(String provider) {\n+            Location location=lm.getLastKnownLocation(provider);\n+            updateView(location);\n+        }\n+\n+        /**\n+         * GPS禁用时触发\n+         */\n+        public void onProviderDisabled(String provider) {\n+            updateView(null);\n+        }\n+\n+\n+    };\n+\n+    //状态监听\n+    GpsStatus.Listener listener = new GpsStatus.Listener() {\n+        public void onGpsStatusChanged(int event) {\n+            switch (event) {\n+                //第一次定位\n+                case GpsStatus.GPS_EVENT_FIRST_FIX:\n+                    Log.i(TAG, \"第一次定位\");\n+                    break;\n+                //卫星状态改变\n+                case GpsStatus.GPS_EVENT_SATELLITE_STATUS:\n+                    Log.i(TAG, \"卫星状态改变\");\n+                    //获取当前状态\n+                    GpsStatus gpsStatus=lm.getGpsStatus(null);\n+                    //获取卫星颗数的默认最大值\n+                    int maxSatellites = gpsStatus.getMaxSatellites();\n+                    //创建一个迭代器保存所有卫星\n+                    Iterator<GpsSatellite> iters = gpsStatus.getSatellites().iterator();\n+                    int count = 0;\n+                    while (iters.hasNext() && count <= maxSatellites) {\n+                        GpsSatellite s = iters.next();\n+                        count++;\n+                    }\n+                    System.out.println(\"搜索到：\"+count+\"颗卫星\");\n+                    break;\n+                //定位启动\n+                case GpsStatus.GPS_EVENT_STARTED:\n+                    Log.i(TAG, \"定位启动\");\n+                    break;\n+                //定位结束\n+                case GpsStatus.GPS_EVENT_STOPPED:\n+                    Log.i(TAG, \"定位结束\");\n+                    break;\n+            }\n+        };\n+    };\n+\n+    /**\n+     * 实时更新文本内容\n+     *\n+     * @param location\n+     */\n+    private void updateView(Location location){\n+        if(location!=null){\n+            editText.setText(\"位置信息\\n\\n经度：\");\n+            editText.append(String.valueOf(location.getLongitude()));\n+            editText.append(\"\\n纬度：\");\n+            editText.append(String.valueOf(location.getLatitude()));\n+            editText.append(\"\\n海拔：\");\n+            editText.append(String.valueOf(location.getAltitude()));\n+\n+\n+\n+            editText.append(\"\\n时间：\");\n+            editText.append(str);\n+\n+\n+        }else{\n+            //清空EditText对象\n+            editText.getEditableText().clear();\n+        }\n+    }\n+\n+    /**\n+     * 返回查询条件\n+     * @return\n+     */\n+    private Criteria getCriteria(){\n+        Criteria criteria=new Criteria();\n+        //设置定位精确度 Criteria.ACCURACY_COARSE比较粗略，Criteria.ACCURACY_FINE则比较精细\n+        criteria.setAccuracy(Criteria.ACCURACY_FINE);\n+        //设置是否要求速度\n+        criteria.setSpeedRequired(false);\n+        // 设置是否允许运营商收费\n+        criteria.setCostAllowed(false);\n+        //设置是否需要方位信息\n+        criteria.setBearingRequired(false);\n+        //设置是否需要海拔信息\n+        criteria.setAltitudeRequired(false);\n+        // 设置对电源的需求\n+        criteria.setPowerRequirement(Criteria.POWER_LOW);\n+        return criteria;\n+    }\n+\n+    @Override\n+    protected void onDestroy() {\n+        // TODO Auto-generated method stub\n+        super.onDestroy();\n+        lm.removeUpdates(locationListener);\n+    }\n+\n+    private void refresh(){\n+        Cursor c= dbRead.query(\"whereYou\", null, null, null, null, null, null);\n+        adapter.changeCursor(c);\n+    }\n+\n+\n+}\n+"
+  }, {
+    "sha" : "7e472b76837fe3691930ba947bfd81cae8a5fae1",
+    "filename" : "edu/hzuapps/androidworks/homeworks/net1314080903133/lab01_hello/MainActivity.java",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e2f1224064ea5b4292b6ff60af40fbcf5982df71/edu/hzuapps/androidworks/homeworks/net1314080903133/lab01_hello/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e2f1224064ea5b4292b6ff60af40fbcf5982df71/edu/hzuapps/androidworks/homeworks/net1314080903133/lab01_hello/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/edu/hzuapps/androidworks/homeworks/net1314080903133/lab01_hello/MainActivity.java?ref=e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+    "patch" : "@@ -0,0 +1,23 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903133.lab01_hello;\n+\n+import android.os.Bundle;\n+import android.app.Activity;\n+import android.view.Menu;\n+\n+public class MainActivity extends Activity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+    }\n+\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.main, menu);\n+        return true;\n+    }\n+    \n+}"
+  } ],
+  "sha" : "e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e2f1224064ea5b4292b6ff60af40fbcf5982df71",
+  "parents" : [ {
+    "sha" : "8ac35b8ee9fa884ff5c6a2c8c29c110af592a68e",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/8ac35b8ee9fa884ff5c6a2c8c29c110af592a68e",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/8ac35b8ee9fa884ff5c6a2c8c29c110af592a68e"
+  }, {
+    "sha" : "5b95090e4a353394b92670db5989b2561e59254c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5b95090e4a353394b92670db5989b2561e59254c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5b95090e4a353394b92670db5989b2561e59254c"
+  } ]
+}

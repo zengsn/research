@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "xieGF",
+    "id" : 18419239,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18419239?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xieGF",
+    "html_url" : "https://github.com/xieGF",
+    "followers_url" : "https://api.github.com/users/xieGF/followers",
+    "following_url" : "https://api.github.com/users/xieGF/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xieGF/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xieGF/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xieGF/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xieGF/orgs",
+    "repos_url" : "https://api.github.com/users/xieGF/repos",
+    "events_url" : "https://api.github.com/users/xieGF/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xieGF/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 31,
+    "additions" : 0,
+    "deletions" : 31
+  },
+  "author" : {
+    "login" : "xieGF",
+    "id" : 18419239,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18419239?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xieGF",
+    "html_url" : "https://github.com/xieGF",
+    "followers_url" : "https://api.github.com/users/xieGF/followers",
+    "following_url" : "https://api.github.com/users/xieGF/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xieGF/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xieGF/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xieGF/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xieGF/orgs",
+    "repos_url" : "https://api.github.com/users/xieGF/repos",
+    "events_url" : "https://api.github.com/users/xieGF/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xieGF/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/49a7a190836a5c164982ad2ad09db5e9214e3162",
+  "commit" : {
+    "author" : {
+      "name" : "xieGF",
+      "email" : "1154780572@qq.com",
+      "date" : "2016-05-30T03:08:49Z"
+    },
+    "committer" : {
+      "name" : "xieGF",
+      "email" : "1154780572@qq.com",
+      "date" : "2016-05-30T03:08:49Z"
+    },
+    "message" : "Delete AndroidManifest.xml",
+    "tree" : {
+      "sha" : "278edf392f1505d6a3d89dc52c8ef0d4f7c84d17",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/278edf392f1505d6a3d89dc52c8ef0d4f7c84d17"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/49a7a190836a5c164982ad2ad09db5e9214e3162",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/49a7a190836a5c164982ad2ad09db5e9214e3162/comments",
+  "files" : [ {
+    "sha" : "49a911afe095d06718d764a03eae823884c41da5",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903242/AndroidManifest.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 31,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a24064771f40d8ee79967aec4fca0f595f208f4d/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903242/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a24064771f40d8ee79967aec4fca0f595f208f4d/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903242/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903242/AndroidManifest.xml?ref=a24064771f40d8ee79967aec4fca0f595f208f4d",
+    "patch" : "@@ -1,31 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    package=\"com.lws.camerpreview\"\n-    android:versionCode=\"1\"\n-    android:versionName=\"1.0\" >\n-\n-    <uses-sdk\n-        android:minSdkVersion=\"8\"\n-        android:targetSdkVersion=\"18\" />\n-\n-    <application\n-        android:allowBackup=\"true\"\n-        android:icon=\"@drawable/jiqi\"\n-        android:label=\"@string/app_name\"\n-        android:theme=\"@style/AppTheme\" >\n-        <activity\n-            android:name=\"com.lws.camerpreview.MainActivity\"\n-            android:label=\"@string/app_name\" >\n-            <intent-filter>\n-                <action android:name=\"android.intent.action.MAIN\" />\n-\n-                <category android:name=\"android.intent.category.LAUNCHER\" />\n-            </intent-filter>\n-        </activity>\n-    </application>\n-\t<uses-permission android:name=\"android.permission.CAMERA\"/>\n-\t\n-        <uses-feature android:name=\"android.hardware.camera\"/>\n-\t\n-        <uses-feature android:name=\"android.hardware.camera.autofocus\"/>\n-</manifest>"
+  } ],
+  "sha" : "49a7a190836a5c164982ad2ad09db5e9214e3162",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/49a7a190836a5c164982ad2ad09db5e9214e3162",
+  "parents" : [ {
+    "sha" : "a24064771f40d8ee79967aec4fca0f595f208f4d",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a24064771f40d8ee79967aec4fca0f595f208f4d",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/a24064771f40d8ee79967aec4fca0f595f208f4d"
+  } ]
+}

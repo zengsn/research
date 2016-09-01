@@ -1,0 +1,153 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 427,
+    "additions" : 427,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/cee5c548353a8025a8438e058f39378fcd37bbac",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-30T00:43:23Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-30T00:43:23Z"
+    },
+    "message" : "Merge pull request #858 from zhenglide/master\n\n#89 #90 #91 #92 #95 #23 实验3-实验9",
+    "tree" : {
+      "sha" : "b2682ce4a37b635030ae4cccb592ea645884b64d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/b2682ce4a37b635030ae4cccb592ea645884b64d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/cee5c548353a8025a8438e058f39378fcd37bbac",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/cee5c548353a8025a8438e058f39378fcd37bbac/comments",
+  "files" : [ {
+    "sha" : "594b7a4f77ba663fc903baba4a70f2a0e0f1bff6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/DBservice.java",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/DBservice.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/DBservice.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/DBservice.java?ref=cee5c548353a8025a8438e058f39378fcd37bbac",
+    "patch" : "@@ -0,0 +1,43 @@\n+package com.example.zhenglide.exam;\n+\n+import android.database.Cursor;\n+import android.database.sqlite.SQLiteDatabase;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+/**\n+ * Created by zhenglide on 2016/4/4.\n+ */\n+public class DBservice {\n+    private SQLiteDatabase db;\n+\n+    public DBservice() {\n+        db = SQLiteDatabase.openDatabase(\"data/data/com.example.zhenglide.exam/databases/question.db\", null, SQLiteDatabase.OPEN_READONLY);\n+    }\n+\n+    public List<Question> getQuestion() {\n+        List<Question> list =new ArrayList<Question>();\n+        Cursor cursor = db.rawQuery(\"select * from question\", null);\n+        if (cursor.getCount() > 0) {\n+            cursor.moveToFirst();\n+            int count = cursor.getCount();\n+            for (int i = 0; i < count; i++) {\n+                cursor.moveToPosition(i);\n+                Question question = new Question();\n+                question.question = cursor.getString(cursor.getColumnIndex(\"question\"));\n+\n+                question.AnswerA = cursor.getString(cursor.getColumnIndex(\"answerA\"));\n+                question.answerB = cursor.getString(cursor.getColumnIndex(\"answerB\"));\n+                question.answerC = cursor.getString(cursor.getColumnIndex(\"answerC\"));\n+                question.answerD = cursor.getString(cursor.getColumnIndex(\"answerD\"));\n+                question.answer = cursor.getInt(cursor.getColumnIndex(\"answer\"));\n+                question.explaination = cursor.getString(cursor.getColumnIndex(\"explaination\"));\n+                question.selectedAnswer = -1;\n+                list.add(question);\n+\n+\n+            }\n+        }return  list;\n+    }\n+}"
+  }, {
+    "sha" : "89bcd400a033f13ca0af2aab39f4098b6a2c1b4d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/ExamActivity.java",
+    "status" : "added",
+    "additions" : 256,
+    "deletions" : 0,
+    "changes" : 256,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/ExamActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/ExamActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/ExamActivity.java?ref=cee5c548353a8025a8438e058f39378fcd37bbac",
+    "patch" : "@@ -0,0 +1,256 @@\n+package com.example.zhenglide.exam;\n+\n+import android.annotation.TargetApi;\n+import android.content.DialogInterface;\n+import android.net.Uri;\n+import android.os.Build;\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AlertDialog;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.RadioButton;\n+import android.widget.RadioGroup;\n+import android.widget.TextView;\n+import android.database.*;\n+\n+import com.google.android.gms.appindexing.Action;\n+import com.google.android.gms.appindexing.AppIndex;\n+import com.google.android.gms.common.api.GoogleApiClient;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+public class ExamActivity extends AppCompatActivity {\n+    private int count;\n+    private int current;\n+    private boolean wrongMode;\n+    /**\n+     * ATTENTION: This was auto-generated to implement the App Indexing API.\n+     * See https://g.co/AppIndexing/AndroidStudio for more information.\n+     */\n+    private GoogleApiClient client;\n+\n+    @TargetApi(Build.VERSION_CODES.M)\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_exam);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n+        DBservice dBservice = new DBservice();\n+        final List<Question> list = dBservice.getQuestion();\n+        count = list.size();\n+        current = 0;\n+        wrongMode=false;\n+        final TextView tv_question = (TextView) findViewById(R.id.question);\n+        final RadioButton[] radioButtons = new RadioButton[4];\n+        radioButtons[0] = (RadioButton) findViewById(R.id.answerA);\n+        radioButtons[1] = (RadioButton) findViewById(R.id.answerB);\n+        radioButtons[2] = (RadioButton) findViewById(R.id.answerC);\n+        radioButtons[3] = (RadioButton) findViewById(R.id.answerD);\n+        final TextView tv_explaination = (TextView) findViewById(R.id.explaination);\n+        Button btn_next = (Button) findViewById(R.id.btn_next);\n+        Button btn_previous = (Button) findViewById(R.id.btn_previous);\n+        final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.RadioGroup);\n+        Question q = list.get(0);\n+        tv_question.setText(q.question);\n+        tv_explaination.setText(q.explaination);\n+        radioButtons[0].setText(q.AnswerA);\n+        radioButtons[1].setText(q.answerB);\n+        radioButtons[2].setText(q.answerC);\n+        radioButtons[3].setText(q.answerD);\n+        btn_next.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                if (current < count - 1) {\n+                    current++;\n+                    Question q = list.get(current);\n+                    tv_question.setText(q.question);\n+                    tv_explaination.setText(q.explaination);\n+                    radioButtons[0].setText(q.AnswerA);\n+                    radioButtons[1].setText(q.answerB);\n+                    radioButtons[2].setText(q.answerC);\n+                    radioButtons[3].setText(q.answerD);\n+                    radioGroup.clearCheck();\n+                    if (q.selectedAnswer != -1) {\n+                        radioButtons[q.selectedAnswer].setChecked(true);\n+\n+                    }\n+                }\n+                else if(current==count-1 && wrongMode==true){\n+                    new AlertDialog.Builder(ExamActivity.this)\n+                            .setTitle(\"提示\")\n+                            .setMessage(\"已经到最后一提，是否退出？\")\n+                            .setPositiveButton(\"确定\", new DialogInterface.OnClickListener() {\n+                                @Override\n+                                public void onClick(DialogInterface dialog, int which) {\n+                                    ExamActivity.this.finish();\n+                                }\n+                            })\n+                            .setNegativeButton(\"取消\",null)\n+                            .show();\n+\n+                }\n+                else\n+                {\n+                    final List<Integer> wrongList=checkAnswer(list);\n+                    if (wrongList.size()==0){\n+                        new AlertDialog.Builder(ExamActivity.this)\n+                                .setTitle(\"提示\")\n+                                .setMessage(\"恭喜你全部答对\")\n+                                .setPositiveButton(\"确定\", new DialogInterface.OnClickListener() {\n+                                    @Override\n+                                    public void onClick(DialogInterface dialog, int which) {\n+                                        ExamActivity.this.finish();\n+                                    }\n+                                }).show();\n+                    }\n+                    new AlertDialog.Builder(ExamActivity.this)\n+                            .setTitle(\"提示\")\n+                            .setMessage(\"您答对了\"+(list.size()-wrongList.size())+\"您打错了\" + wrongList.size() + \"道题目，是否查看错题\")\n+                            .setPositiveButton(\"确定\", new DialogInterface.OnClickListener() {\n+                                @Override\n+                                public void onClick(DialogInterface dialog, int which) {\n+                                    wrongMode=true;\n+                                    List<Question> newList =new ArrayList<Question>();\n+                                    for (int i=0;i<wrongList.size();i++)\n+                                    {\n+                                        newList.add(list.get(wrongList.get(i)));\n+                                    }\n+                                    list.clear();\n+                                    for(int i=0;i<newList.size();i++){\n+                                        list.add(newList.get(i));\n+                                    }\n+                                    current=0;\n+                                    count=list.size();\n+                                    Question q = list.get(current);\n+                                    tv_question.setText(q.question);\n+                                    tv_explaination.setText(q.explaination);\n+                                    radioButtons[0].setText(q.AnswerA);\n+                                    radioButtons[1].setText(q.answerB);\n+                                    radioButtons[2].setText(q.answerC);\n+                                    radioButtons[3].setText(q.answerD);\n+                                    tv_explaination.setVisibility(View.VISIBLE);\n+\n+                                    }\n+                                }\n+                            )\n+                            .setNegativeButton(\"取消\", new DialogInterface.OnClickListener() {\n+                                @Override\n+                                public void onClick(DialogInterface dialog, int which) {\n+                                    ExamActivity.this.finish();\n+                                }\n+                            })\n+                            .show();\n+\n+                }\n+\n+            }\n+        });\n+\n+        btn_previous.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                if (current > 0) {\n+                    current--;\n+                    Question q = list.get(current);\n+                    tv_question.setText(q.question);\n+                    tv_explaination.setText(q.explaination);\n+                    radioButtons[0].setText(q.AnswerA);\n+                    radioButtons[1].setText(q.answerB);\n+                    radioButtons[2].setText(q.answerC);\n+                    radioButtons[3].setText(q.answerD);\n+                    radioGroup.clearCheck();\n+                    if (q.selectedAnswer != -1) {\n+                        radioButtons[q.selectedAnswer].setChecked(true);\n+\n+                    }\n+\n+\n+                }\n+\n+            }\n+        });\n+\n+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {\n+            @Override\n+            public void onCheckedChanged(RadioGroup group, int checkedId) {\n+                for (int i=0;i<4;i++){\n+                    if(radioButtons[i].isChecked()==true){\n+                        list.get(current).selectedAnswer=i;\n+                        break;\n+                    }\n+\n+                }\n+\n+            }\n+        });\n+\n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+        // ATTENTION: This was auto-generated to implement the App Indexing API.\n+        // See https://g.co/AppIndexing/AndroidStudio for more information.\n+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();\n+    }\n+\n+    private  List<Integer> checkAnswer(List<Question> list){\n+\n+        List<Integer> wrongList =new ArrayList<Integer>();\n+        for(int i=0;i<list.size();i++)\n+        {\n+            if(list.get(i).answer != list.get(i).selectedAnswer){\n+                wrongList.add(i);\n+            }\n+        }\n+        return wrongList;\n+    }\n+    @Override\n+    public void onStart() {\n+        super.onStart();\n+\n+        // ATTENTION: This was auto-generated to implement the App Indexing API.\n+        // See https://g.co/AppIndexing/AndroidStudio for more information.\n+        client.connect();\n+        Action viewAction = Action.newAction(\n+                Action.TYPE_VIEW, // TODO: choose an action type.\n+                \"Exam Page\", // TODO: Define a title for the content shown.\n+                // TODO: If you have web page content that matches this app activity's content,\n+                // make sure this auto-generated web page URL is correct.\n+                // Otherwise, set the URL to null.\n+                Uri.parse(\"http://host/path\"),\n+                // TODO: Make sure this auto-generated app URL is correct.\n+                Uri.parse(\"android-app://com.example.zhenglide.exam/http/host/path\")\n+        );\n+        AppIndex.AppIndexApi.start(client, viewAction);\n+    }\n+\n+    @Override\n+    public void onStop() {\n+        super.onStop();\n+\n+        // ATTENTION: This was auto-generated to implement the App Indexing API.\n+        // See https://g.co/AppIndexing/AndroidStudio for more information.\n+        Action viewAction = Action.newAction(\n+                Action.TYPE_VIEW, // TODO: choose an action type.\n+                \"Exam Page\", // TODO: Define a title for the content shown.\n+                // TODO: If you have web page content that matches this app activity's content,\n+                // make sure this auto-generated web page URL is correct.\n+                // Otherwise, set the URL to null.\n+                Uri.parse(\"http://host/path\"),\n+                // TODO: Make sure this auto-generated app URL is correct.\n+                Uri.parse(\"android-app://com.example.zhenglide.exam/http/host/path\")\n+        );\n+        AppIndex.AppIndexApi.end(client, viewAction);\n+        client.disconnect();\n+    }\n+}"
+  }, {
+    "sha" : "56d99821e538e8d82b08473f21604640d44d327b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Question.java",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Question.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Question.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Question.java?ref=cee5c548353a8025a8438e058f39378fcd37bbac",
+    "patch" : "@@ -0,0 +1,16 @@\n+package com.example.zhenglide.exam;\n+\n+/**\n+ * Created by zhenglide on 2016/4/4.\n+ */\n+public class Question {\n+    public String question;\n+    public  String AnswerA;\n+    public  String answerB;\n+     public  String answerC;\n+    public String answerD;\n+    public  int answer;\n+    public String explaination;\n+    public int ID;\n+    public int selectedAnswer;\n+}"
+  }, {
+    "sha" : "c29336961f1ba1e705c956c1f4403852f5b36575",
+    "filename" : "app/src/main/res/drawable/android.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/res/drawable/android.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/res/drawable/android.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/android.jpg?ref=cee5c548353a8025a8438e058f39378fcd37bbac"
+  }, {
+    "sha" : "227bb9bed588dcb5b967aba97e5e3b7367ad096d",
+    "filename" : "app/src/main/res/drawable/anzhuo.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/res/drawable/anzhuo.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/res/drawable/anzhuo.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/anzhuo.jpg?ref=cee5c548353a8025a8438e058f39378fcd37bbac"
+  }, {
+    "sha" : "3578cbdea53a4ce4291ca39280e4fc5c938f4d9c",
+    "filename" : "app/src/main/res/layout/content_com1314080901145.xml",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/res/layout/content_com1314080901145.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/res/layout/content_com1314080901145.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/content_com1314080901145.xml?ref=cee5c548353a8025a8438e058f39378fcd37bbac",
+    "patch" : "@@ -0,0 +1,25 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:background=\"@drawable/android\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"\n+    tools:context=\"com.example.zhenglide.exam.MainActivity\"\n+    tools:showIn=\"@layout/activity_main\">\n+\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"答题\"\n+        android:id=\"@+id/btn\"\n+        android:layout_marginTop=\"203dp\"\n+        android:layout_alignParentTop=\"true\"\n+        android:layout_centerHorizontal=\"true\" />\n+</RelativeLayout>"
+  }, {
+    "sha" : "1704e49c92ccf48d6678193367d68e19c93c5a94",
+    "filename" : "app/src/main/res/layout/content_exam1314080901145.xml",
+    "status" : "added",
+    "additions" : 87,
+    "deletions" : 0,
+    "changes" : 87,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/res/layout/content_exam1314080901145.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/cee5c548353a8025a8438e058f39378fcd37bbac/app/src/main/res/layout/content_exam1314080901145.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/content_exam1314080901145.xml?ref=cee5c548353a8025a8438e058f39378fcd37bbac",
+    "patch" : "@@ -0,0 +1,87 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:orientation=\"vertical\"\n+    app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"\n+    tools:context=\"com.example.zhenglide.exam.ExamActivity\"\n+    android:background=\"@drawable/anzhuo\"\n+    tools:showIn=\"@layout/activity_exam\">\n+<ScrollView\n+    android:layout_weight=\"1\"\n+\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\">\n+    <LinearLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:orientation=\"vertical\">\n+        <TextView\n+            android:text=\"Question Desciption\"\n+            android:id=\"@+id/question\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\" />\n+        <RadioGroup\n+\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\"\n+            android:id=\"@+id/RadioGroup\">\n+            <RadioButton\n+                android:text=\"AnswerA\"\n+                android:layout_width=\"match_parent\"\n+                android:layout_height=\"wrap_content\"\n+                android:id=\"@+id/answerA\"/>\n+            <RadioButton\n+                android:text=\"AnswerB\"\n+                android:layout_width=\"match_parent\"\n+                android:layout_height=\"wrap_content\"\n+                android:id=\"@+id/answerB\"/>\n+            <RadioButton\n+                android:text=\"AnswerC\"\n+                android:layout_width=\"match_parent\"\n+                android:layout_height=\"wrap_content\"\n+                android:id=\"@+id/answerC\"/>\n+            <RadioButton\n+                android:text=\"AnswerD\"\n+                android:layout_width=\"match_parent\"\n+                android:layout_height=\"wrap_content\"\n+                android:id=\"@+id/answerD\"/>\n+\n+\n+\n+        </RadioGroup>\n+        <TextView\n+            android:visibility=\"invisible\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"match_parent\"\n+            android:id=\"@+id/explaination\"\n+            android:text=\"Question Explanation\"/>\n+    </LinearLayout>\n+</ScrollView>\n+    <LinearLayout\n+        android:layout_weight=\"5\"\n+        android:orientation=\"horizontal\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\">\n+        <Button\n+            android:layout_weight=\"1\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\"\n+            android:id=\"@+id/btn_previous\"\n+            android:text=\"上一题\"/>\n+        <Button\n+            android:layout_weight=\"1\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\"\n+            android:id=\"@+id/btn_next\"\n+            android:text=\"下一题\"/>\n+\n+    </LinearLayout>\n+\n+</LinearLayout>"
+  } ],
+  "sha" : "cee5c548353a8025a8438e058f39378fcd37bbac",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/cee5c548353a8025a8438e058f39378fcd37bbac",
+  "parents" : [ {
+    "sha" : "dbf323aa14301537263677613d3f56ea6ec47f1a",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dbf323aa14301537263677613d3f56ea6ec47f1a",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/dbf323aa14301537263677613d3f56ea6ec47f1a"
+  }, {
+    "sha" : "1668a66127eccccedac84972449f138a6fe43b49",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1668a66127eccccedac84972449f138a6fe43b49",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1668a66127eccccedac84972449f138a6fe43b49"
+  } ]
+}

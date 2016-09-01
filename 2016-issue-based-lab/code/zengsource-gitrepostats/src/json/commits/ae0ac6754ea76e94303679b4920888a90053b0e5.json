@@ -1,0 +1,60 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 25,
+    "additions" : 25,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/ae0ac6754ea76e94303679b4920888a90053b0e5",
+  "commit" : {
+    "author" : {
+      "name" : "chzayi",
+      "email" : "chzayi@163.com",
+      "date" : "2016-04-14T07:18:38Z"
+    },
+    "committer" : {
+      "name" : "chzayi",
+      "email" : "chzayi@163.com",
+      "date" : "2016-04-14T07:18:38Z"
+    },
+    "message" : "AddActivity",
+    "tree" : {
+      "sha" : "6ad47d080b3f4817a246ec3d219415ab3a7ae219",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/6ad47d080b3f4817a246ec3d219415ab3a7ae219"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/ae0ac6754ea76e94303679b4920888a90053b0e5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ae0ac6754ea76e94303679b4920888a90053b0e5/comments",
+  "files" : [ {
+    "sha" : "d9ebca13d22bd87b8243f09cc2d76282a3808d7e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Com1314080901209IndexAction.java",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/ae0ac6754ea76e94303679b4920888a90053b0e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Com1314080901209IndexAction.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/ae0ac6754ea76e94303679b4920888a90053b0e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Com1314080901209IndexAction.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Com1314080901209IndexAction.java?ref=ae0ac6754ea76e94303679b4920888a90053b0e5",
+    "patch" : "@@ -0,0 +1,25 @@\n+﻿package com.example.administrator.chzayi;\n+\n+\n+import android.os.Bundle;\n+import android.support.v7.app.ActionBarActivity;\n+import android.widget.TextView;\n+\n+public class Com1314080901209IndexAction extends ActionBarActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+\t\t/*\n+\t\t1.\t编写一个Activity；\n+\t\t2.\t将标题设置为自己的学号+选题题目；\n+\t\t3.\t运行后截图存入实验报告；\n+\t\t4.\tActivity内容根据自己选择的题目编写。\n+*/\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_index);\n+        TextView t=new TextView(this);\n+        t.setText(\"这是主页\");\n+        setContentView(t);\n+    }\n+\n+}"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/防盗软件.txt",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/ae0ac6754ea76e94303679b4920888a90053b0e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/%E9%98%B2%E7%9B%97%E8%BD%AF%E4%BB%B6.txt",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/ae0ac6754ea76e94303679b4920888a90053b0e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/%E9%98%B2%E7%9B%97%E8%BD%AF%E4%BB%B6.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/%E9%98%B2%E7%9B%97%E8%BD%AF%E4%BB%B6.txt?ref=ae0ac6754ea76e94303679b4920888a90053b0e5",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/test.txt"
+  } ],
+  "sha" : "ae0ac6754ea76e94303679b4920888a90053b0e5",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ae0ac6754ea76e94303679b4920888a90053b0e5",
+  "parents" : [ {
+    "sha" : "ce60b5bb4fc143ff347ce730316bd90be980eae6",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ce60b5bb4fc143ff347ce730316bd90be980eae6",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/ce60b5bb4fc143ff347ce730316bd90be980eae6"
+  } ]
+}

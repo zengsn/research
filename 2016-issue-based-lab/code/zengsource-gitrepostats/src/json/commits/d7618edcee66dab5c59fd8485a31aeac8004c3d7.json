@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "zengyt",
+    "id" : 14934810,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14934810?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengyt",
+    "html_url" : "https://github.com/zengyt",
+    "followers_url" : "https://api.github.com/users/zengyt/followers",
+    "following_url" : "https://api.github.com/users/zengyt/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengyt/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengyt/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengyt/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengyt/orgs",
+    "repos_url" : "https://api.github.com/users/zengyt/repos",
+    "events_url" : "https://api.github.com/users/zengyt/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengyt/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 383,
+    "additions" : 196,
+    "deletions" : 187
+  },
+  "author" : {
+    "login" : "zengyt",
+    "id" : 14934810,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14934810?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengyt",
+    "html_url" : "https://github.com/zengyt",
+    "followers_url" : "https://api.github.com/users/zengyt/followers",
+    "following_url" : "https://api.github.com/users/zengyt/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengyt/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengyt/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengyt/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengyt/orgs",
+    "repos_url" : "https://api.github.com/users/zengyt/repos",
+    "events_url" : "https://api.github.com/users/zengyt/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengyt/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/d7618edcee66dab5c59fd8485a31aeac8004c3d7",
+  "commit" : {
+    "author" : {
+      "name" : "zengyt",
+      "email" : "1781262224@qq.com",
+      "date" : "2016-06-15T10:56:01Z"
+    },
+    "committer" : {
+      "name" : "zengyt",
+      "email" : "1781262224@qq.com",
+      "date" : "2016-06-15T10:56:01Z"
+    },
+    "message" : "Revert \"Revert \"#93 #71监听短信内容成功，获取Json数据\"\"\n\nThis reverts commit 86d5cb51a96881609bf8baf664ff12e375e77b7e.",
+    "tree" : {
+      "sha" : "2a7ed394e231ee70bb8bf106e10ca054f91a1958",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/2a7ed394e231ee70bb8bf106e10ca054f91a1958"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/d7618edcee66dab5c59fd8485a31aeac8004c3d7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d7618edcee66dab5c59fd8485a31aeac8004c3d7/comments",
+  "files" : [ {
+    "sha" : "4e6adbdc5051de3081b6244fefb2012065fc0c01",
+    "filename" : "app/src/main/AndroidManifest.xml",
+    "status" : "modified",
+    "additions" : 13,
+    "deletions" : 162,
+    "changes" : 175,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d7618edcee66dab5c59fd8485a31aeac8004c3d7/app/src/main/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d7618edcee66dab5c59fd8485a31aeac8004c3d7/app/src/main/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/AndroidManifest.xml?ref=d7618edcee66dab5c59fd8485a31aeac8004c3d7",
+    "patch" : "@@ -1,178 +1,29 @@\n <?xml version=\"1.0\" encoding=\"utf-8\"?>\n <manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-          package=\"edu.hzuapps.androidworks\">\n+    package=\"com.example.contentprovider\"\n+    android:versionCode=\"1\"\n+    android:versionName=\"1.0\" >\n \n-    <!-- 使用外部存储的权限 -->\n-    <uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>\n-\n-    <!-- 访问网络的权限 -->\n+ <uses-sdk\n+        android:minSdkVersion=\"8\"\n+        android:targetSdkVersion=\"18\" />\n     <uses-permission android:name=\"android.permission.INTERNET\"/>\n-    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>\n+    \n \n     <application\n         android:allowBackup=\"true\"\n-        android:icon=\"@mipmap/ic_launcher\"\n+        android:icon=\"@drawable/ic_launcher\"\n         android:label=\"@string/app_name\"\n-        android:supportsRtl=\"true\"\n-        android:theme=\"@style/AppTheme\">\n+        android:theme=\"@style/AppTheme\" >\n         <activity\n-            android:name=\".MainActivity\"\n-            android:label=\"@string/app_name\">\n+            android:name=\"com.example.contentprovider.Com1314080901201Activity\"\n+            android:label=\"@string/app_name\" >\n             <intent-filter>\n-                <action android:name=\"android.intent.action.MAIN\"/>\n+                <action android:name=\"android.intent.action.MAIN\" />\n \n-                <category android:name=\"android.intent.category.LAUNCHER\"/>\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n             </intent-filter>\n         </activity>\n-        <activity\n-            android:name=\".homeworks.BackActivity\"\n-            android:label=\"@string/title_activity_back\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.ViewBasicActivity\"\n-            android:label=\"@string/title_activity_view_basic\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.ActivityBasicActivity\"\n-            android:label=\"@string/title_activity_activity_basic\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.ActivityBasic2Activity\"\n-            android:label=\"@string/title_activity_activity_basic2\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.FragmentDemoActivity\"\n-            android:label=\"@string/title_activity_fragment\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.FragmentDemoContentActivity\"\n-            android:label=\"@string/title_activity_fragment_content\">\n-        </activity>\n-        <activity\n-            android:name=\".homeworks.net123456.Net123456Activity\"\n-            android:label=\"@string/title_activity_net123456\">\n-        </activity>\n-        <activity\n-            android:name=\".homeworks.com123456.Com123456Activity\"\n-            android:label=\"@string/title_activity_com123456\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.ServiceDemoActivity\"\n-            android:label=\"@string/title_activity_service_demo\">\n-        </activity>\n-\n-        <service\n-            android:name=\".examples.ServiceDemo\"\n-            android:enabled=\"true\"\n-            android:exported=\"true\">\n-        </service>\n-        <service\n-            android:name=\".examples.IntentServiceDemo\"\n-            android:exported=\"false\">\n-        </service>\n-\n-        <activity\n-            android:name=\".examples.BroadcastReceiverActivity\"\n-            android:label=\"@string/title_activity_broadcast_receiver\">\n-        </activity>\n-\n-        <receiver\n-            android:name=\".examples.BroadcastReceiverDemo\"\n-            android:enabled=\"true\"\n-            android:exported=\"true\">\n-            <intent-filter>\n-                <action android:name=\"edu.androidlabs.DETECTION\"/>\n-            </intent-filter>\n-        </receiver>\n-\n-        <activity\n-            android:name=\".examples.ContentProviderActivity\"\n-            android:label=\"@string/title_activity_content_provider\">\n-        </activity>\n-\n-        <provider\n-            android:name=\".examples.ContentProviderOfBooks\"\n-            android:authorities=\"edu.hzuapps.androidworks.Library\"\n-            android:enabled=\"true\"\n-            android:exported=\"true\">\n-        </provider>\n-\n-        <activity\n-            android:name=\".examples.LinearLayoutActivity\"\n-            android:label=\"@string/title_activity_linear_layout\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.RelativeLayoutActivity\"\n-            android:label=\"@string/title_activity_relative_layout\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.FrameLayoutActivity\"\n-            android:label=\"@string/title_activity_frame_layout\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.TableLayoutActivity\"\n-            android:label=\"@string/title_activity_table_layout\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.AbsoluteLayoutActivity\"\n-            android:label=\"@string/title_activity_absolute_layout\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.ListViewActivity\"\n-            android:label=\"@string/title_activity_list_view\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.ViewDemoActivity\"\n-            android:label=\"@string/title_activity_view_demo\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.GridViewActivity\"\n-            android:label=\"@string/title_activity_grid_view\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.GridViewOneActivity\"\n-            android:label=\"@string/title_activity_grid_view_one\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.SharedPreferencesActivity\"\n-            android:label=\"@string/title_activity_shared_preferences\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.FileStorageActivity\"\n-            android:label=\"@string/title_activity_file_storage\">\n-        </activity>\n-\n-        <provider\n-            android:name=\"android.support.v4.content.FileProvider\"\n-            android:authorities=\"edu.hzuapps.androidworks.FILE_PROVIDER\"\n-            android:exported=\"false\"\n-            android:grantUriPermissions=\"true\">\n-            <meta-data\n-                android:name=\"android.support.FILE_PROVIDER_PATHS\"\n-                android:resource=\"@xml/file_paths\"/>\n-        </provider>\n-\n-        <activity\n-            android:name=\".examples.FileSelectActivity\"\n-            android:label=\"@string/title_activity_file_select\">\n-            <intent-filter>\n-                <action android:name=\"android.intent.action.PICK\"/>\n-\n-                <category android:name=\"android.intent.category.DEFAULT\"/>\n-                <category android:name=\"android.intent.category.OPENABLE\"/>\n-\n-                <data android:mimeType=\"text/plain\"/>\n-                <data android:mimeType=\"image/*\"/>\n-            </intent-filter>\n-        </activity>\n-        <activity\n-            android:name=\".examples.FileShareActivity\"\n-            android:label=\"@string/title_activity_file_share\">\n-        </activity>\n-        <activity\n-            android:name=\".examples.NetworkActivity\"\n-            android:label=\"@string/title_activity_network\">\n-        </activity>\n     </application>\n \n </manifest>"
+  }, {
+    "sha" : "1271df92f4bf165c50e3f1e8fcca36039398dc00",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901201/Com1314080901201Activity.java",
+    "status" : "modified",
+    "additions" : 171,
+    "deletions" : 10,
+    "changes" : 181,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d7618edcee66dab5c59fd8485a31aeac8004c3d7/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901201/Com1314080901201Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d7618edcee66dab5c59fd8485a31aeac8004c3d7/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901201/Com1314080901201Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901201/Com1314080901201Activity.java?ref=d7618edcee66dab5c59fd8485a31aeac8004c3d7",
+    "patch" : "@@ -1,22 +1,183 @@\n-package com.example.personalinformation;\n+package com.example.contentprovider;\n \n-import android.os.Bundle;\n import android.app.Activity;\n-import android.view.Menu;\n+import android.content.ContentResolver;\n+import android.database.ContentObserver;\n+import android.database.Cursor;\n+import android.net.Uri;\n+import android.os.Bundle;\n+import android.os.Handler;\n \n-public class Com1314080901201Activity extends Activity {\n+import java.io.ByteArrayOutputStream;\n+import java.io.IOException;\n+import java.io.InputStream;\n+import java.net.HttpURLConnection;\n+import java.net.MalformedURLException;\n+import java.net.URL;\n+\n+import org.json.JSONObject;\n \n+\n+import android.os.Message;\n+import android.view.View;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+public class Com1314080901201Activity extends Activity {\n+\t\n+\tprivate ContentResolver resolver;\n \t@Override\n \tprotected void onCreate(Bundle savedInstanceState) {\n \t\tsuper.onCreate(savedInstanceState);\n \t\tsetContentView(R.layout.activity_com1314080901201);\n+\t\ttv=(TextView) findViewById(R.id.tv);\n+\t\tresolver=getContentResolver();\n+\t\t//arg0��ʾ������һ��Ӧ��\n+\t\tresolver.registerContentObserver(Uri.parse(\"content://sms\"), true,new MyObserver(new Handler()));\n \t}\n \n-\t@Override\n-\tpublic boolean onCreateOptionsMenu(Menu menu) {\n-\t\t// Inflate the menu; this adds items to the action bar if it is present.\n-\t\tgetMenuInflater().inflate(R.menu.com1314080901201, menu);\n-\t\treturn true;\n-\t}\n+\t\n+\t\n+\tclass MyObserver extends ContentObserver{\n \n+\t\tpublic MyObserver(Handler handler) {\n+\t\t\tsuper(handler);\n+\t\t\t// TODO Auto-generated constructor stub\n+\t\t}\n+\t\t\n+\t\t//ÿ������Ӧ�÷���ı�͵��ø÷���\n+\t\t@Override\n+\t\tpublic void onChange(boolean selfChange) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tSystem.out.println(\"����Ӧ�÷���ı�\");\n+\t\t\t//���л�ȡ����Ӧ���еĶ��Ų���\n+\t\t\tCursor cursor=resolver.query(Uri.parse(\"content://sms\"), new String[]{\"address\",\"date\",\"body\",\"type\"}, null, null, null);\n+\t\t\twhile(cursor.moveToNext()){\n+\t\t\t\tString address=cursor.getString(0);\n+\t\t\t\tString date=cursor.getString(1);\n+\t\t\t\tString body=cursor.getString(2);\n+\t\t\t\tString type=cursor.getString(3);\n+\t\t\t\tSystem.out.println(address+\"--\"+date+\"--\"+body+\"--\"+type);\n+\t\t\t}\n+\t\t\tsuper.onChange(selfChange);\n+\t\t}\n+\t}\n+\tprivate final int SUCCESS = 1;\n+\tprivate final int FAILURE = 0;\n+\tprivate final int ERRORCODE = 2;\n+\tprivate TextView tv;\n+\t\n+\tprivate Handler handler=new Handler(){\n+\t\tpublic void handleMessage(Message msg){\n+\t\t\tswitch (msg.what) {\n+\t\t\tcase SUCCESS:\n+\t\t\t\tString result=getJson(msg.obj.toString());\n+\t\t\t\t//���̸߳���UI\n+\t\t\t\ttv.setText(result);\n+\t\t\t\tToast.makeText(Com1314080901201Activity.this, \"��ȡ��ݳɹ�\", Toast.LENGTH_SHORT)\n+\t\t\t\t.show();\n+\t\t\t\tbreak;\n+\t\t\tcase FAILURE:\n+\t\t\t\tToast.makeText(Com1314080901201Activity.this, \"��ȡ���ʧ��\", Toast.LENGTH_SHORT)\n+\t\t\t\t.show();\n+\t\t\tcase ERRORCODE:\n+\t\t\t\tToast.makeText(Com1314080901201Activity.this, \"��ȡ��CODE�벻Ϊ200��\",\n+\t\t\t\t\t\tToast.LENGTH_SHORT).show();\n+\t\t\tdefault:\n+\t\t\t\tbreak;\n+\t\t\t}\n+\t\t}\n+\t};\n+\t\n+\t\n+\tpublic String getJson(String string){\n+\t\tJSONObject jObject= null;\n+\t\ttry {\n+\t\t\tjObject =new JSONObject(string);\n+\t\t} catch (Exception e) {\n+\t\t\t// TODO Auto-generated catch block\n+\t\t\te.printStackTrace();\n+\t\t\tSystem.out.println(\"����JsonObjectʧ��\");\n+\t\t}\n+\t\t//����JSON���\n+\t\tString city=jObject.optString(\"city\");\n+\t\tString city_en=jObject.optString(\"city_en\");\n+\t\tString date_y=jObject.optString(\"date_y\");\n+\t\tString week=jObject.optString(\"week\");\n+\t\tint cityid=jObject.optInt(\"cityid\");\n+\t\tString temp1=jObject.optString(\"temp1\");\n+\t\tSystem.out.println(temp1+\"\"+date_y+\"\"+city_en+\"\"+cityid+\"\"+week+\"\"+city);\n+\t\tString weatherResult=\"���У�\"+city+\"\\n����Ӣ����\"+city_en+\"\\n���ڣ�\"+date_y+\"\\n���ڣ�\"+week+\"\\n���б�ţ�\"+cityid+\"\\n�¶ȣ�\"+temp1;\n+\t\treturn weatherResult;\n+\t}\n+\t\n+\tpublic void click(View v){\n+\t\t//�����̻߳�ȡ��������\n+\t\tnew Thread(){\n+\t\t\tint code=0;\n+\t\t\tpublic void run() {\n+\t\t\t\t// TODO Auto-generated method stub\n+\t\t\t\ttry {\n+\t\t\t\t\t\n+\t\t\t\t\tString path=\"https://raw.githubusercontent.com/hzuapps/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901201/city.json\";\n+\t\t\t\t\tURL url=new URL(path);\n+\t\t\t\t\tHttpURLConnection conn=(HttpURLConnection) url.openConnection();\n+\t\t\t\t\t//����GET����\n+\t\t\t\t\tconn.setRequestMethod(\"GET\");\n+\t\t\t\t\t//��������ʱʱ��\n+\t\t\t\t\tconn.setConnectTimeout(5000);\n+\t\t\t\t\tcode=conn.getResponseCode();\n+\t\t\t\t\tSystem.out.println(code);\n+\t\t\t\t\t//200��ʾ��ȡ����ɹ�\n+\t\t\t\t\tif(code==200){\n+\t\t\t\t\t\tSystem.out.println(\"��ȡ��ݳɹ�\");\n+\t\t\t\t\t\tInputStream is=conn.getInputStream();\n+\t\t\t\t\t\tString result = readMyInputStream(is);\n+\t\t\t\t\t\t\n+\t\t\t\t\t\t//handle Message\n+\t\t\t\t\t\tMessage msg=new Message();\n+\t\t\t\t\t\tmsg.obj= result;\n+\t\t\t\t\t\tmsg.what=SUCCESS;\n+\t\t\t\t\t\thandler.sendMessage(msg);\n+\t\t\t\t\t} else {\n+\t\t\t\t\t\tMessage msg = new Message();\n+\t\t\t\t\t\tmsg.what = ERRORCODE;\n+\t\t\t\t\t\thandler.sendMessage(msg);\n+\t\t\t\t\t}\n+\t\t\t\t} catch (Exception e) {\n+\t\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\t\tSystem.out.println(\"��ȡ���ʧ��\");\n+\t\t\t\t\te.printStackTrace();\n+\t\t\t\t\tMessage msg = new Message();\n+\t\t\t\t\tmsg.what = FAILURE;\n+\t\t\t\t\thandler.sendMessage(msg);\n+\t\t\t\t}\n+\t\t\t\t\n+\t\t\t\t\t\n+\t\t\t\tsuper.run();\n+\t\t\t}\n+\t\t}.start();\n+\t}\n+\t\n+\t//�������ʽ��ȡ���\n+\tpublic String readMyInputStream(InputStream is){\n+\t\tbyte[] result;\n+\t\ttry {\n+\t\t\tByteArrayOutputStream baos=new ByteArrayOutputStream();\n+\t\t\tbyte[] buffer=new byte[1024];\n+\t\t\tint len;\n+\t\t\twhile((len = is.read(buffer))!= -1){\n+\t\t\t\tbaos.write(buffer,0,len);\n+\t\t\t}\n+\t\t\tis.close();\n+\t\t\tbaos.close();\n+\t\t\tresult =baos.toByteArray();\n+\t\t} catch (Exception e) {\n+\t\t\t// TODO Auto-generated catch block\n+\t\t\te.printStackTrace();\n+\t\t\tString errorString=\"��ȡ���ʧ��\";\n+\t\t\treturn errorString;\n+\t\t}\n+\t\treturn new String(result);\n+\t}\n }"
+  }, {
+    "sha" : "296f15b4a9fb4451b67e116a8aae44a3e4dde852",
+    "filename" : "app/src/main/res/layout/activity_com1314080901201.xml",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 15,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d7618edcee66dab5c59fd8485a31aeac8004c3d7/app/src/main/res/layout/activity_com1314080901201.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d7618edcee66dab5c59fd8485a31aeac8004c3d7/app/src/main/res/layout/activity_com1314080901201.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901201.xml?ref=d7618edcee66dab5c59fd8485a31aeac8004c3d7",
+    "patch" : "@@ -7,23 +7,20 @@\n     android:paddingRight=\"@dimen/activity_horizontal_margin\"\n     android:paddingTop=\"@dimen/activity_vertical_margin\"\n     tools:context=\".Com1314080901201Activity\" >\n+    \n+    <TextView \n+        android:id=\"@+id/tv\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"hello\"\n+        />\n \n     <Button\n-        android:id=\"@+id/send\"\n         android:layout_width=\"wrap_content\"\n         android:layout_height=\"wrap_content\"\n-        android:layout_alignParentRight=\"true\"\n-        android:layout_below=\"@+id/imageView1\"\n-        android:layout_marginTop=\"130dp\"\n-        android:text=\"一键发送\"\n-        android:textSize=\"24dp\" />\n-\n-    <ImageView\n-        android:id=\"@+id/imageView1\"\n-        android:layout_width=\"100dp\"\n-        android:layout_height=\"100dp\"\n-        android:layout_alignParentRight=\"true\"\n-        android:layout_alignParentTop=\"true\"\n-        android:src=\"@drawable/sms\" />\n+        android:layout_alignLeft=\"@+id/tv\"\n+        android:layout_below=\"@+id/tv\"\n+        android:onClick=\"click\"\n+        android:text=\"获取Json数据\" />\n \n-</RelativeLayout>\n\\ No newline at end of file\n+</RelativeLayout>"
+  } ],
+  "sha" : "d7618edcee66dab5c59fd8485a31aeac8004c3d7",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d7618edcee66dab5c59fd8485a31aeac8004c3d7",
+  "parents" : [ {
+    "sha" : "86d5cb51a96881609bf8baf664ff12e375e77b7e",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/86d5cb51a96881609bf8baf664ff12e375e77b7e",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/86d5cb51a96881609bf8baf664ff12e375e77b7e"
+  } ]
+}

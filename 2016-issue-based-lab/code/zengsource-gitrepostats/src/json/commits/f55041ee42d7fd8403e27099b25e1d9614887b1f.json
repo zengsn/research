@@ -1,0 +1,258 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 885,
+    "additions" : 885,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/f55041ee42d7fd8403e27099b25e1d9614887b1f",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-08T08:06:55Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-08T08:06:55Z"
+    },
+    "message" : "Merge pull request #912 from Xyy0135/master\n\n#141  #90 #91 #95 lab4-9",
+    "tree" : {
+      "sha" : "0650588673386ea897607a51db353f89e13d7f57",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/0650588673386ea897607a51db353f89e13d7f57"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f55041ee42d7fd8403e27099b25e1d9614887b1f/comments",
+  "files" : [ {
+    "sha" : "b26eb9b55bc2b204b0ffa531a5bcc9324526edc0",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Activitymain.java",
+    "status" : "added",
+    "additions" : 205,
+    "deletions" : 0,
+    "changes" : 205,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Activitymain.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Activitymain.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Activitymain.java?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,205 @@\n+package edu.hzuapps.androidworks.homeworks.Net1314080903135;\n+\n+\n+\n+import edu.hzuapps.androidworks.homeworks.Net1314080903135.Net1314080903135Filechooser;\n+import android.os.Bundle;\n+import android.os.Environment;\n+import android.os.Looper;\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.util.Log;\n+import android.view.Menu;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.Toast;\n+import android.support.v7.appcompat.*;\n+import android.os.Bundle;\n+\n+public class Net1314080903135Activitymain extends Activity implements OnClickListener{\n+    public static String SDCARD_ROOT_PATH = \"\";\n+    public static final String SAVE_PATH_IN_SDCARD = \"/iwsns/\";\n+    private static String SAVE_PATH_IN_NAME = \"zipData.zip\";\n+    private static String TAG = \"MainActivity\";\n+    private Intent fileChooserIntent ;\n+    private static final int REQUEST_CODE = 1;\n+    public static final String EXTRA_FILE_CHOOSER = \"file_chooser\";\n+    private String savepath=Environment.getExternalStorageDirectory().toString()+\"baocun.zip\";\n+    private String savepath2=Environment.getExternalStorageDirectory().toString();\n+    private String sss[]={\"a\",\"zip\"};\n+    private String ssss[]={\"a\",\"a\"};\n+    private EditText filepathet;\n+    private boolean isfile=false;\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net131408093135_activitymain);\n+\n+        filepathet=(EditText)findViewById(R.id.yasuopathet);\n+\n+\n+        Button zipButton = (Button) findViewById(R.id.button_zip);\n+        zipButton.setOnClickListener(this);\n+\n+        Button unzipButton=(Button) findViewById(R.id.button_unzip);\n+        unzipButton.setOnClickListener(this);\n+\n+        Button ysdirbt=(Button)findViewById(R.id.chooseysdirbt);\n+        ysdirbt.setOnClickListener(this);\n+\n+\n+        fileChooserIntent =  new Intent(this ,Net1314080903135Filechooser.class);\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.main, menu);\n+        return true;\n+    }\n+\n+    private void toast(CharSequence hint){\n+        Toast.makeText(this, hint , Toast.LENGTH_SHORT).show();\n+    }\n+\n+    @Override\n+    public void onClick(View v) {\n+        switch (v.getId()) {\n+            case R.id.button_zip:\n+                if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){\n+                    SDCARD_ROOT_PATH = Environment.getExternalStorageDirectory().toString();\n+                }else{\n+                    SDCARD_ROOT_PATH = Environment.getDownloadCacheDirectory().toString();\n+                }\n+                Log.e(\"dh\", \"path:  \"+SDCARD_ROOT_PATH);\n+                try {\n+//\t\t\t\tZipUitl.zipFile(SDCARD_ROOT_PATH+\"/apps\", SAVE_PATH_IN_NAME, SDCARD_ROOT_PATH+\n+//                       SAVE_PATH_IN_SDCARD);\n+//\t\t\t\tZipUitl.zipFolder(SDCARD_ROOT_PATH+\"/jay.png\", SDCARD_ROOT_PATH+\n+//                        SAVE_PATH_IN_SDCARD+SAVE_PATH_IN_NAME);\n+//\t\t\t\tZipUitl.zipFolder(\"/storage/sdcard0/DCIM/a.jpg\", SDCARD_ROOT_PATH+\n+//                       SAVE_PATH_IN_NAME);\n+                    if(sss[sss.length-1].equalsIgnoreCase(\"zip\")){\n+                        toast(\"请选择一个文件（非zip）进行压缩!\");\n+                        return;\n+                    }\n+                    toast(\"压缩中，请稍后....\");\n+                    new Thread(new Runnable() {\n+\n+                        @Override\n+                        public void run() {\n+                            // TODO Auto-generated method stub\n+                            try {\n+                                Net1314080903135ZipUi.zipFolder(filepathet.getText().toString(), savepath);\n+                                Looper.prepare();\n+                                Toast.makeText(getApplicationContext(), \"文件压缩成功并保存到当前目录\", Toast.LENGTH_LONG).show();\n+                                Looper.loop();\n+                            } catch (Exception e) {\n+                                // TODO Auto-generated catch block\n+                                e.printStackTrace();\n+                            }\n+                        }\n+                    }).start();\n+\n+                } catch (Exception e) {\n+                    // TODO Auto-generated catch block\n+                    e.printStackTrace();\n+                    Log.e(\"dh\", \"error:  \"+e.toString());\n+                }\n+\n+                break;\n+\n+            case R.id.button_unzip:\n+                Log.e(\"dh\", \"path:  \"+SDCARD_ROOT_PATH);\n+                try {\n+                    if(!ssss[ssss.length-1].equalsIgnoreCase(\"zip\")){\n+                        toast(\"请选择一个zip文件进行解压!\");\n+                        return;\n+                    }\n+                    toast(\"解压中，请稍后....\");\n+                    new Thread(new Runnable() {\n+                        @Override\n+                        public void run() {\n+                            // TODO Auto-generated method stub\n+                            try {\n+                                Net1314080903135ZipUi.unZipFolder(filepathet.getText().toString(),savepath2);\n+                                Looper.prepare();\n+                                Toast.makeText(getApplicationContext(), \"文件解压成功并保存到当前目录\", Toast.LENGTH_LONG).show();\n+                                Looper.loop();\n+                            } catch (Exception e) {\n+                                // TODO Auto-generated catch block\n+                                e.printStackTrace();\n+                            }\n+\n+                        }\n+                    }).start();\n+\n+                } catch (Exception e) {\n+                    // TODO Auto-generated catch block\n+                    e.printStackTrace();\n+                    Log.e(\"dh\", \"error:  \"+e.toString());\n+                }\n+                //System.out.println(\"printed\");\n+                break;\n+\n+\n+            case R.id.chooseysdirbt:\n+                if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED))\n+                    startActivityForResult(fileChooserIntent , REQUEST_CODE);\n+                else\n+                    toast(getText(R.string.sdcard_unmonted_hint));\n+                break ;\n+\n+\n+            default:\n+                break;\n+        }\n+\n+    }\n+\n+    public void onActivityResult(int requestCode , int resultCode , Intent data){\n+\n+        Log.v(TAG, \"onActivityResult#requestCode:\"+ requestCode  + \"#resultCode:\" +resultCode);\n+        if(resultCode == RESULT_CANCELED){\n+            toast(getText(R.string.open_file_none));\n+            return ;\n+        }\n+        if(resultCode == RESULT_OK && requestCode == REQUEST_CODE)\n+        {\n+            String filePath = data.getStringExtra(EXTRA_FILE_CHOOSER);\n+            System.out.println(filePath);\n+            Log.v(TAG, \"onActivityResult # pptPath : \"+ filePath );\n+            if(filePath != null){\n+                if(filePath.startsWith(\"Dir\")){\n+                    filePath=filePath.substring(3);\n+                    toast(\"Choose File : \" + filePath);\n+                    String ss[]=filePath.split(\"/\");\n+                    sss[0]=ss[ss.length-1];\n+                    sss[sss.length-1]=\"a\";\n+                    savepath=filePath.substring(0,filePath.length()-ss[ss.length-1].length())+sss[0]+\".zip\";\n+                    filepathet.setText(filePath);\n+                }\n+                else if(filePath.startsWith(\"File\")){\n+                    filePath=filePath.substring(4);\n+                    toast(\"Choose File : \" + filePath);\n+                    String ss[]=filePath.split(\"/\");\n+                    sss=ss[ss.length-1].split(\"\\\\.\");\n+                    ssss=ss[ss.length-1].split(\"\\\\.\");\n+                    //String\n+                    savepath=filePath.substring(0,filePath.length()-ss[ss.length-1].length())+ss[ss.length-1]+\".zip\";\n+                    savepath2=filePath.substring(0,filePath.length()-ss[ss.length-1].length());\n+                    System.out.println(savepath2);\n+                    System.out.println(sss[sss.length-1]);\n+                    filepathet.setText(filePath);\n+                }\n+                //System.out.println(sss.length);\n+\n+            }\n+            else\n+                toast(getText(R.string.open_file_failed));\n+        }\n+    }\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "02a71ee2df954873fa0c9d57535f15d11623200e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Fileadapter.java",
+    "status" : "added",
+    "additions" : 156,
+    "deletions" : 0,
+    "changes" : 156,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Fileadapter.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Fileadapter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Fileadapter.java?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,156 @@\n+package edu.hzuapps.androidworks.homeworks.Net1314080903135;\n+\n+import java.util.ArrayList;\n+import android.content.Context;\n+import android.graphics.Color;\n+import android.view.LayoutInflater;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.widget.BaseAdapter;\n+import android.widget.ImageView;\n+import android.widget.TextView;\n+\n+\n+public class Net1314080903135Fileadapter extends BaseAdapter {\n+\n+    private ArrayList<FileInfo> mFileLists;\n+    private LayoutInflater mLayoutInflater = null;\n+\n+    private static ArrayList<String> PPT_SUFFIX = new ArrayList<String>();\n+\n+    static {\n+        PPT_SUFFIX.add(\".\");\n+        //PPT_SUFFIX.add(\".zip\");\n+    }\n+\n+    public Net1314080903135Fileadapter(Context context, ArrayList<FileInfo> fileLists) {\n+        super();\n+        mFileLists = fileLists;\n+        mLayoutInflater = (LayoutInflater) context\n+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);\n+    }\n+\n+    @Override\n+    public int getCount() {\n+        // TODO Auto-generated method stub\n+        return mFileLists.size();\n+    }\n+\n+    @Override\n+    public FileInfo getItem(int position) {\n+        // TODO Auto-generated method stub\n+        return mFileLists.get(position);\n+    }\n+\n+    @Override\n+    public long getItemId(int position) {\n+        // TODO Auto-generated method stub\n+        return 0;\n+    }\n+\n+    @Override\n+    public View getView(int position, View convertView, ViewGroup parent) {\n+        // TODO Auto-generated method stub\n+        View view = null;\n+        ViewHolder holder = null;\n+        if (convertView == null || convertView.getTag() == null) {\n+            view = mLayoutInflater.inflate(R.layout.net1314080903135filechooser_gridview_item,\n+                    null);\n+            holder = new ViewHolder(view);\n+            view.setTag(holder);\n+        } else {\n+            view = convertView;\n+            holder = (ViewHolder) convertView.getTag();\n+        }\n+\n+        FileInfo fileInfo = getItem(position);\n+        //TODO\n+\n+        holder.tvFileName.setText(fileInfo.getFileName());\n+\n+        if(fileInfo.isDirectory()){      //文件夹\n+            holder.imgFileIcon.setImageResource(R.drawable.ic_folder);\n+            holder.tvFileName.setTextColor(Color.GRAY);\n+        }\n+        else if(fileInfo.isPPTFile()){   //PPT文件\n+            holder.imgFileIcon.setImageResource(R.drawable.ic_ppt);\n+            holder.tvFileName.setTextColor(Color.RED);\n+        }\n+        else {                           //未知文件\n+            holder.imgFileIcon.setImageResource(R.drawable.ic_file_unknown);\n+            holder.tvFileName.setTextColor(Color.GRAY);\n+        }\n+        return view;\n+    }\n+\n+    static class ViewHolder {\n+        ImageView imgFileIcon;\n+        TextView tvFileName;\n+\n+        public ViewHolder(View view) {\n+            imgFileIcon = (ImageView) view.findViewById(R.id.imgFileIcon);\n+            tvFileName = (TextView) view.findViewById(R.id.tvFileName);\n+        }\n+    }\n+\n+\n+    enum FileType {\n+        FILE , DIRECTORY;\n+    }\n+\n+    // =========================\n+    // Model\n+    // =========================\n+    static class FileInfo {\n+        private FileType fileType;\n+        private String fileName;\n+        private String filePath;\n+\n+        public FileInfo(String filePath, String fileName, boolean isDirectory) {\n+            this.filePath = filePath;\n+            this.fileName = fileName;\n+            fileType = isDirectory ? FileType.DIRECTORY : FileType.FILE;\n+        }\n+\n+        public boolean isPPTFile(){\n+            if(fileName.lastIndexOf(\".\") < 0)  //Don't have the suffix\n+                return false ;\n+            String fileSuffix = fileName.substring(fileName.lastIndexOf(\".\"));\n+            //if(!isDirectory() && PPT_SUFFIX.contains(fileSuffix))\n+            if(!isDirectory() )\n+                return true ;\n+            else\n+                return false ;\n+        }\n+\n+        public boolean isDirectory(){\n+            if(fileType == FileType.DIRECTORY)\n+                return true ;\n+            else\n+                return false ;\n+        }\n+\n+        public String getFileName() {\n+            return fileName;\n+        }\n+\n+        public void setFileName(String fileName) {\n+            this.fileName = fileName;\n+        }\n+\n+        public String getFilePath() {\n+            return filePath;\n+        }\n+\n+        public void setFilePath(String filePath) {\n+            this.filePath = filePath;\n+        }\n+\n+        @Override\n+        public String toString() {\n+            return \"FileInfo [fileType=\" + fileType + \", fileName=\" + fileName\n+                    + \", filePath=\" + filePath + \"]\";\n+        }\n+    }\n+\n+}"
+  }, {
+    "sha" : "a9e0b4bae416ab784b92f86bedda35f3d334709c",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Filechooser.java",
+    "status" : "added",
+    "additions" : 182,
+    "deletions" : 0,
+    "changes" : 182,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Filechooser.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Filechooser.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135Filechooser.java?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,182 @@\n+package edu.hzuapps.androidworks.homeworks.Net1314080903135;\n+\n+\n+import java.io.File;\n+import java.util.ArrayList;\n+import edu.hzuapps.androidworks.homeworks.Net1314080903135.Net1314080903135Fileadapter.FileInfo;\n+import edu.hzuapps.androidworks.homeworks.Net1314080903135.Net1314080903135Activitymain;\n+import android.os.Bundle;\n+import android.os.Environment;\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.view.Window;\n+import android.widget.AdapterView;\n+import android.widget.AdapterView.OnItemClickListener;\n+import android.widget.AdapterView.OnItemLongClickListener;\n+import android.widget.GridView;\n+import android.widget.Toast;\n+import android.view.KeyEvent;\n+import android.widget.TextView;\n+import android.support.v7.appcompat.*;\n+import android.os.Bundle;\n+\n+public class Net1314080903135Filechooser extends Activity {\n+\n+    private GridView mGridView;\n+    private View mBackView;\n+    private View mBtExit;\n+    private TextView mTvPath;\n+\n+    private String mSdcardRootPath;  //sdcard 根路径\n+    private String mLastFilePath;    //当前显示的路径\n+\n+    private ArrayList<FileInfo> mFileLists;\n+    private Net1314080903135Fileadapter mAdatper;\n+\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        requestWindowFeature(Window.FEATURE_NO_TITLE);\n+        setContentView(R.layout.activity_net1314080903135_filechooser);\n+\n+        mSdcardRootPath = Environment.getExternalStorageDirectory().getAbsolutePath();\n+\n+        mBackView = findViewById(R.id.imgBackFolder);\n+        mBackView.setOnClickListener(mClickListener);\n+        mBtExit = findViewById(R.id.btExit);\n+        mBtExit.setOnClickListener(mClickListener);\n+\n+        mTvPath = (TextView) findViewById(R.id.tvPath);\n+\n+        mGridView = (GridView) findViewById(R.id.gvFileChooser);\n+        mGridView.setEmptyView(findViewById(R.id.tvEmptyHint));\n+        mGridView.setOnItemClickListener(mItemClickListener);\n+        mGridView.setOnItemLongClickListener(mlongclicklistener);\n+        setGridViewAdapter(mSdcardRootPath);\n+    }\n+\n+    //配置适配器\n+    private void setGridViewAdapter(String filePath) {\n+        updateFileItems(filePath);\n+        mAdatper = new Net1314080903135Fileadapter(this, mFileLists);\n+        mGridView.setAdapter(mAdatper);\n+    }\n+\n+    //根据路径更新数据\n+    private void updateFileItems(String filePath) {\n+        mLastFilePath = filePath;\n+        mTvPath.setText(mLastFilePath);\n+\n+        if (mFileLists == null)\n+            mFileLists = new ArrayList<FileInfo>();\n+        if (!mFileLists.isEmpty())\n+            mFileLists.clear();\n+\n+        File[] files = folderScan(filePath);\n+        if (files == null)\n+            return;\n+\n+        for (int i = 0; i < files.length; i++) {\n+            if (files[i].isHidden())\n+                continue;\n+\n+            String fileAbsolutePath = files[i].getAbsolutePath();\n+            String fileName = files[i].getName();\n+            boolean isDirectory = false;\n+            if (files[i].isDirectory()) {\n+                isDirectory = true;\n+            }\n+            FileInfo fileInfo = new FileInfo(fileAbsolutePath, fileName, isDirectory);\n+            mFileLists.add(fileInfo);\n+        }\n+        //When first enter , the object of mAdatper don't initialized\n+        if (mAdatper != null)\n+            mAdatper.notifyDataSetChanged();\n+    }\n+\n+    //获得当前路径的所有文件\n+    private File[] folderScan(String path) {\n+        File file = new File(path);\n+        File[] files = file.listFiles();\n+        return files;\n+    }\n+\n+    private View.OnClickListener mClickListener = new OnClickListener() {\n+        public void onClick(View v) {\n+            switch (v.getId()) {\n+                case R.id.imgBackFolder:\n+                    backProcess();\n+                    break;\n+                case R.id.btExit:\n+                    setResult(RESULT_CANCELED);\n+                    finish();\n+                    break;\n+                default:\n+                    break;\n+            }\n+        }\n+    };\n+    //gridview点击事件\n+    private AdapterView.OnItemClickListener mItemClickListener = new OnItemClickListener() {\n+        public void onItemClick(AdapterView<?> adapterView, View view, int position,\n+                                long id) {\n+            FileInfo fileInfo = (FileInfo) (((Net1314080903135Fileadapter) adapterView.getAdapter()).getItem(position));\n+            if (fileInfo.isDirectory())\n+                updateFileItems(fileInfo.getFilePath());\n+            else if (fileInfo.isPPTFile()) {\n+                Intent intent = new Intent();\n+                intent.putExtra(Net1314080903135Activitymain.EXTRA_FILE_CHOOSER, \"File\" + fileInfo.getFilePath());\n+                setResult(RESULT_OK, intent);\n+                finish();\n+            } else {\n+                toast(getText(R.string.open_file_error_format));\n+            }\n+        }\n+    };\n+\n+    //gridview长按时间\n+    private AdapterView.OnItemLongClickListener mlongclicklistener = new OnItemLongClickListener() {\n+\n+        @Override\n+        public boolean onItemLongClick(AdapterView<?> parent, View view,\n+                                       int position, long id) {\n+            // TODO Auto-generated method stub\n+\n+            FileInfo fileInfo = (FileInfo) (((Net1314080903135Fileadapter) parent.getAdapter()).getItem(position));\n+            if (fileInfo.isDirectory()) {\n+                Intent intent = new Intent();\n+                intent.putExtra(Net1314080903135Activitymain.EXTRA_FILE_CHOOSER, \"Dir\" + fileInfo.getFilePath());\n+                setResult(RESULT_OK, intent);\n+                finish();\n+            }\n+            return false;\n+\n+        }\n+    };\n+\n+    public boolean onKeyDown(int keyCode, KeyEvent event) {\n+        if (event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode()\n+                == KeyEvent.KEYCODE_BACK) {\n+            backProcess();\n+            return true;\n+        }\n+        return super.onKeyDown(keyCode, event);\n+    }\n+\n+    //返回上一层目录的操作\n+    public void backProcess() {\n+        if (!mLastFilePath.equals(mSdcardRootPath)) {\n+            File thisFile = new File(mLastFilePath);\n+            String parentFilePath = thisFile.getParent();\n+            updateFileItems(parentFilePath);\n+        } else {\n+            setResult(RESULT_CANCELED);\n+            finish();\n+        }\n+    }\n+\n+    private void toast(CharSequence hint) {\n+        Toast.makeText(this, hint, Toast.LENGTH_SHORT).show();\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "a491646d5b0725ae8d6117042701934cc36375aa",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135ZipUi.java",
+    "status" : "added",
+    "additions" : 200,
+    "deletions" : 0,
+    "changes" : 200,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135ZipUi.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135ZipUi.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903135/Net1314080903135ZipUi.java?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,200 @@\n+package edu.hzuapps.androidworks.homeworks.Net1314080903135;\n+\n+\n+import java.io.BufferedInputStream;\n+import java.io.File;\n+import java.io.FileInputStream;\n+import java.io.FileNotFoundException;\n+import java.io.IOException;\n+import java.io.InputStream;\n+import java.util.zip.ZipOutputStream;\n+import java.util.zip.ZipEntry;\n+import android.os.Environment;\n+import android.util.Log;\n+import android.widget.Toast;\n+import android.support.v7.appcompat.*;\n+import android.os.Bundle;\n+\n+\n+public final class Net1314080903135ZipUi {\n+    private static final int BUFF_SIZE = 1024 * 1024; // 1M Byte\n+\n+    private Net1314080903135ZipUi(){\n+    }\n+\n+    /**\n+     * 取得压缩包中的 文件列表(文件夹,文件自选)\n+     * @param zipFileString                压缩包名字\n+     * @param bContainFolder        是否包括 文件夹\n+     * @param bContainFile                是否包括 文件\n+     * @return\n+     * @throws Exception\n+     */\n+    public static java.util.List<java.io.File> getFileList(String zipFileString, boolean bContainFolder,\n+                                                           boolean bContainFile)throws Exception {\n+\n+        java.util.List<java.io.File> fileList = new java.util.ArrayList<java.io.File>();\n+        java.util.zip.ZipInputStream inZip =\n+                new java.util.zip.ZipInputStream(new java.io.FileInputStream(zipFileString));\n+        java.util.zip.ZipEntry zipEntry;\n+        String szName = \"\";\n+        while ((zipEntry = inZip.getNextEntry()) != null) {\n+            szName = zipEntry.getName();\n+            if (zipEntry.isDirectory()) {\n+                // get the folder name of the widget\n+                szName = szName.substring(0, szName.length() - 1);\n+                java.io.File folder = new java.io.File(szName);\n+                if (bContainFolder) {\n+                    fileList.add(folder);\n+                }\n+            } else {\n+                java.io.File file = new java.io.File(szName);\n+                if (bContainFile) {\n+                    fileList.add(file);\n+                }\n+            }\n+        }//end of while\n+        inZip.close();\n+        return fileList;\n+    }\n+\n+    /**\n+     * 返回压缩包中的文件InputStream\n+     *\n+     * @param zipFilePath                压缩文件的名字\n+     * @param fileString        解压文件的名字\n+     * @return InputStream\n+     * @throws Exception\n+     */\n+    public static java.io.InputStream upZip(String zipFilePath, String fileString)throws Exception {\n+        java.util.zip.ZipFile zipFile = new java.util.zip.ZipFile(zipFilePath);\n+        java.util.zip.ZipEntry zipEntry = zipFile.getEntry(fileString);\n+\n+        return zipFile.getInputStream(zipEntry);\n+    }\n+\n+\n+    public static void unZipFolder(InputStream input, String outPathString)throws Exception {\n+        java.util.zip.ZipInputStream inZip = new java.util.zip.ZipInputStream(input);\n+        java.util.zip.ZipEntry zipEntry = null;\n+        String szName = \"\";\n+\n+        while ((zipEntry = inZip.getNextEntry()) != null) {\n+            szName = zipEntry.getName();\n+\n+            if (zipEntry.isDirectory()) {\n+                // get the folder name of the widget\n+                szName = szName.substring(0, szName.length() - 1);\n+                java.io.File folder = new java.io.File(outPathString + java.io.File.separator + szName);\n+                folder.mkdirs();\n+            } else {\n+                java.io.File file = new java.io.File(outPathString + java.io.File.separator + szName);\n+                file.createNewFile();\n+                // get the output stream of the file\n+                java.io.FileOutputStream out = new java.io.FileOutputStream(file);\n+                int len;\n+                byte[] buffer = new byte[1024];\n+                // read (len) bytes into buffer\n+                while ((len = inZip.read(buffer)) != -1) {\n+                    // write (len) byte from buffer at the position 0\n+                    out.write(buffer, 0, len);\n+                    out.flush();\n+                }\n+                out.close();\n+            }\n+        }//end of while\n+        inZip.close();\n+    }\n+\n+    /**\n+     * 解压一个压缩文档 到指定位置\n+     * @param zipFileString        压缩包的名字\n+     * @param outPathString        指定的路径\n+     * @throws Exception\n+     */\n+    public static void unZipFolder(String zipFileString, String outPathString)throws Exception {\n+        unZipFolder(new java.io.FileInputStream(zipFileString),outPathString);\n+    }//end of func\n+\n+\n+    /**\n+     * 压缩文件,文件夹\n+     *\n+     * @param srcFilePath        要压缩的文件/文件夹名字\n+     * @param zipFilePath        指定压缩的目的和名字\n+     * @throws Exception\n+     */\n+    public static void zipFolder(String srcFilePath, String zipFilePath)throws Exception {\n+        //创建Zip包\n+        File file1 = new File(zipFilePath);\n+        Log.i(\"dh\",\" file path + \" + file1.getPath());\n+        if(file1.exists()){\n+            Log.i(\"dh\",\"file exist\");\n+        }else{\n+            Log.i(\"dh\",\"file not exist\");\n+            file1.createNewFile();\n+        }\n+        java.util.zip.ZipOutputStream outZip =\n+                new java.util.zip.ZipOutputStream(new java.io.FileOutputStream(file1));\n+\n+        //打开要输出的文件\n+        java.io.File file = new java.io.File(srcFilePath);\n+        //压缩\n+        zipFiles(file.getParent()+java.io.File.separator, file.getName(), outZip);\n+\n+        //完成,关闭\n+        outZip.finish();\n+        outZip.close();\n+    }//end of func\n+\n+    /**\n+     * 压缩文件\n+     * @param folderPath\n+     * @param filePath\n+     * @param zipOut\n+     * @throws Exception\n+     */\n+    private static void zipFiles(String folderPath, String filePath,\n+                                 java.util.zip.ZipOutputStream zipOut)throws Exception{\n+        if(zipOut == null){\n+            return;\n+        }\n+\n+        java.io.File file = new java.io.File(folderPath+filePath);\n+\n+        //判断是不是文件\n+        if (file.isFile()) {\n+            java.util.zip.ZipEntry zipEntry =  new java.util.zip.ZipEntry(filePath);\n+            java.io.FileInputStream inputStream = new java.io.FileInputStream(file);\n+            zipOut.putNextEntry(zipEntry);\n+\n+            int len;\n+            byte[] buffer = new byte[100000];\n+\n+            while((len=inputStream.read(buffer)) != -1) {\n+                zipOut.write(buffer, 0, len);\n+            }\n+\n+            zipOut.closeEntry();\n+        } else {\n+            //文件夹的方式,获取文件夹下的子文件\n+            String fileList[] = file.list();\n+\n+            //如果没有子文件, 则添加进去即可\n+            if (fileList.length <= 0) {\n+                java.util.zip.ZipEntry zipEntry =\n+                        new java.util.zip.ZipEntry(filePath+java.io.File.separator);\n+                zipOut.putNextEntry(zipEntry);\n+                zipOut.closeEntry();\n+            }\n+\n+            //如果有子文件, 遍历子文件\n+            for (int i = 0; i < fileList.length; i++) {\n+                zipFiles(folderPath, filePath+java.io.File.separator+fileList[i], zipOut);\n+            }//end of for\n+\n+        }//end of if\n+\n+    }//end of func\n+\n+}"
+  }, {
+    "sha" : "b123baf79c5bc739adb5ce8819cf0beee1145929",
+    "filename" : "app/src/main/res/drawable/net1314080903135/bg.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/bg.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/bg.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903135/bg.png?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f"
+  }, {
+    "sha" : "67de12decbd60613f6716de113daae46dc7d6ff9",
+    "filename" : "app/src/main/res/drawable/net1314080903135/ic_action_search.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_action_search.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_action_search.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903135/ic_action_search.png?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f"
+  }, {
+    "sha" : "24eca2da1a2899a11f064f58019633e6bd8b7423",
+    "filename" : "app/src/main/res/drawable/net1314080903135/ic_file_unknown.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_file_unknown.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_file_unknown.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903135/ic_file_unknown.png?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f"
+  }, {
+    "sha" : "8a3a372d9353b1caaefa9d71bc351da735e99f21",
+    "filename" : "app/src/main/res/drawable/net1314080903135/ic_folder.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_folder.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_folder.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903135/ic_folder.png?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f"
+  }, {
+    "sha" : "9198bf203bc7a3851048098abd1cf4c5036b71ff",
+    "filename" : "app/src/main/res/drawable/net1314080903135/ic_launcher.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_launcher.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_launcher.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903135/ic_launcher.png?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f"
+  }, {
+    "sha" : "c0eda5ebceb15250edd5f75e9e270e2de52661e4",
+    "filename" : "app/src/main/res/drawable/net1314080903135/ic_ppt.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_ppt.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/ic_ppt.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903135/ic_ppt.png?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f"
+  }, {
+    "sha" : "77c348c521ff779156154a0ca497eeb2533c9c31",
+    "filename" : "app/src/main/res/drawable/net1314080903135/net1314080903135title.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/net1314080903135title.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/drawable/net1314080903135/net1314080903135title.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903135/net1314080903135title.png?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f"
+  }, {
+    "sha" : "536b1435a819bc3ed9e97f4f1e23b1f24b09a591",
+    "filename" : "app/src/main/res/layout/activity_net1314080903135_fileadapter.xml",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/activity_net1314080903135_fileadapter.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/activity_net1314080903135_fileadapter.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903135_fileadapter.xml?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,12 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.Net1314080903135.Net1314080903135Fileadapter\">\n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "e759db5db393383e22f0eb4ba4f4aeec411a2892",
+    "filename" : "app/src/main/res/layout/activity_net1314080903135_filechooser.xml",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/activity_net1314080903135_filechooser.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/activity_net1314080903135_filechooser.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903135_filechooser.xml?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,12 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.Net1314080903135.Net1314080903135Filechooser\">\n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "32081bfd746fdc8672e50d88c73e2b0d8b9081af",
+    "filename" : "app/src/main/res/layout/activity_net1314080903135_zip_ui.xml",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/activity_net1314080903135_zip_ui.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/activity_net1314080903135_zip_ui.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903135_zip_ui.xml?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,12 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.Net1314080903135.Net1314080903135ZipUi\">\n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "5ce7f1f5424a146ee778a574fa5ac35660e60a59",
+    "filename" : "app/src/main/res/layout/activity_net131408093135_activitymain.xml",
+    "status" : "added",
+    "additions" : 72,
+    "deletions" : 0,
+    "changes" : 72,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/activity_net131408093135_activitymain.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/activity_net131408093135_activitymain.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net131408093135_activitymain.xml?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,72 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:id=\"@+id/RelativeLayout1\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:background=\"@drawable/bg\"\n+    tools:context=\".Net1314080903135Activitymain\" >\n+\n+    <RelativeLayout\n+        android:id=\"@+id/relativeLayout2\"\n+        android:layout_width=\"250dp\"\n+        android:layout_height=\"150dp\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_centerVertical=\"true\" >\n+\n+        <TextView\n+            android:id=\"@+id/textView1\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:layout_alignParentLeft=\"true\"\n+            android:text=\"文件路径\" />\n+\n+        <Button\n+            android:id=\"@+id/chooseysdirbt\"\n+            android:layout_width=\"100dp\"\n+            android:layout_height=\"40dp\"\n+            android:layout_alignParentLeft=\"true\"\n+            android:layout_below=\"@+id/yasuopathet\"\n+            android:text=\"选择路径\" />\n+\n+        <Button\n+            android:id=\"@+id/button_unzip\"\n+            android:layout_width=\"80dp\"\n+            android:layout_height=\"40dp\"\n+            android:layout_alignParentBottom=\"true\"\n+            android:layout_alignParentRight=\"true\"\n+            android:text=\"解压\" />\n+\n+        <EditText\n+            android:id=\"@+id/yasuopathet\"\n+            android:layout_width=\"230dp\"\n+            android:layout_height=\"100dp\"\n+            android:layout_above=\"@+id/button_unzip\"\n+            android:layout_centerHorizontal=\"true\"\n+            android:ems=\"10\" >\n+\n+            <requestFocus />\n+        </EditText>\n+\n+        <Button\n+            android:id=\"@+id/button_zip\"\n+            android:layout_width=\"80dp\"\n+            android:layout_height=\"40dp\"\n+            android:layout_alignParentBottom=\"true\"\n+            android:layout_toRightOf=\"@+id/chooseysdirbt\"\n+            android:text=\"压缩\" />\n+    </RelativeLayout>\n+\n+    <TextView\n+        android:id=\"@+id/textView2\"\n+        android:layout_width=\"300dp\"\n+        android:layout_height=\"110dp\"\n+        android:layout_above=\"@+id/relativeLayout2\"\n+        android:layout_alignLeft=\"@+id/relativeLayout2\"\n+        android:text=\"操作提示：\\n1.短击文件为选定文件，可以对文件压缩\\n2.短击目录则进入下一级目录\\n3.长按目录则选定目录，可以对目录压缩\\n4.文件压缩或解压后和源文件在同一目录下\\n5.所选文件须有后缀名称，否则视为非法文件\" />\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "cfa43a0d131d55b6f99b37fd768b99216b58ea9e",
+    "filename" : "app/src/main/res/layout/net1314080903135filechooser_gridview_item.xml",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/net1314080903135filechooser_gridview_item.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/layout/net1314080903135filechooser_gridview_item.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903135filechooser_gridview_item.xml?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,25 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:paddingBottom=\"4dip\" >\n+\n+        <ImageView\n+            android:id=\"@+id/imgFileIcon\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:layout_centerHorizontal=\"true\"\n+            android:scaleType=\"center\" >\n+        </ImageView>\n+\n+        <TextView\n+            android:id=\"@+id/tvFileName\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:layout_below=\"@id/imgFileIcon\"\n+            android:layout_centerHorizontal=\"true\"\n+            android:gravity=\"center\">\"\n+        </TextView>\n+\n+    </RelativeLayout>\n+"
+  }, {
+    "sha" : "c00202823049e8d5b1590e1223f20fef8a966353",
+    "filename" : "app/src/main/res/menu/main_Net1314080903135.xml",
+    "status" : "added",
+    "additions" : 9,
+    "deletions" : 0,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/menu/main_Net1314080903135.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f55041ee42d7fd8403e27099b25e1d9614887b1f/app/src/main/res/menu/main_Net1314080903135.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/menu/main_Net1314080903135.xml?ref=f55041ee42d7fd8403e27099b25e1d9614887b1f",
+    "patch" : "@@ -0,0 +1,9 @@\n+<menu xmlns:android=\"http://schemas.android.com/apk/res/android\" >\n+\n+    <item\n+        android:id=\"@+id/action_settings\"\n+        android:orderInCategory=\"100\"\n+        android:showAsAction=\"never\"\n+        android:title=\"@string/action_settings\"/>\n+\n+</menu>"
+  } ],
+  "sha" : "f55041ee42d7fd8403e27099b25e1d9614887b1f",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f55041ee42d7fd8403e27099b25e1d9614887b1f",
+  "parents" : [ {
+    "sha" : "27eb08f2fb6d8b6968df58fe2d48e47b93220c9a",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/27eb08f2fb6d8b6968df58fe2d48e47b93220c9a",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/27eb08f2fb6d8b6968df58fe2d48e47b93220c9a"
+  }, {
+    "sha" : "c323f3ae87cf2a908693d6e860d60135bc2defdd",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c323f3ae87cf2a908693d6e860d60135bc2defdd",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/c323f3ae87cf2a908693d6e860d60135bc2defdd"
+  } ]
+}

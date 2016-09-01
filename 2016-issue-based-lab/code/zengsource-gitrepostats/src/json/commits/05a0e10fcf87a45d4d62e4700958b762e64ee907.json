@@ -1,0 +1,95 @@
+{
+  "committer" : {
+    "login" : "OldFatPHP",
+    "id" : 16937303,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/16937303?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/OldFatPHP",
+    "html_url" : "https://github.com/OldFatPHP",
+    "followers_url" : "https://api.github.com/users/OldFatPHP/followers",
+    "following_url" : "https://api.github.com/users/OldFatPHP/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/OldFatPHP/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/OldFatPHP/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/OldFatPHP/subscriptions",
+    "organizations_url" : "https://api.github.com/users/OldFatPHP/orgs",
+    "repos_url" : "https://api.github.com/users/OldFatPHP/repos",
+    "events_url" : "https://api.github.com/users/OldFatPHP/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/OldFatPHP/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 19,
+    "additions" : 12,
+    "deletions" : 7
+  },
+  "author" : {
+    "login" : "OldFatPHP",
+    "id" : 16937303,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/16937303?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/OldFatPHP",
+    "html_url" : "https://github.com/OldFatPHP",
+    "followers_url" : "https://api.github.com/users/OldFatPHP/followers",
+    "following_url" : "https://api.github.com/users/OldFatPHP/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/OldFatPHP/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/OldFatPHP/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/OldFatPHP/subscriptions",
+    "organizations_url" : "https://api.github.com/users/OldFatPHP/orgs",
+    "repos_url" : "https://api.github.com/users/OldFatPHP/repos",
+    "events_url" : "https://api.github.com/users/OldFatPHP/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/OldFatPHP/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/05a0e10fcf87a45d4d62e4700958b762e64ee907",
+  "commit" : {
+    "author" : {
+      "name" : "OldFat",
+      "email" : "linjunfeng163mail@163.com",
+      "date" : "2016-06-13T14:56:31Z"
+    },
+    "committer" : {
+      "name" : "OldFat",
+      "email" : "linjunfeng163mail@163.com",
+      "date" : "2016-06-13T14:56:31Z"
+    },
+    "message" : "#95 #97 Lab9",
+    "tree" : {
+      "sha" : "27f142ff73d7ebc0ba17aee578f6c4581c2bc86f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/27f142ff73d7ebc0ba17aee578f6c4581c2bc86f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/05a0e10fcf87a45d4d62e4700958b762e64ee907",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/05a0e10fcf87a45d4d62e4700958b762e64ee907/comments",
+  "files" : [ {
+    "sha" : "ca6e00b0022894085ece612fcb57bc54c7e2f5d3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903121/Net1314080903121Activity.java",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 7,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/05a0e10fcf87a45d4d62e4700958b762e64ee907/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903121/Net1314080903121Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/05a0e10fcf87a45d4d62e4700958b762e64ee907/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903121/Net1314080903121Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903121/Net1314080903121Activity.java?ref=05a0e10fcf87a45d4d62e4700958b762e64ee907",
+    "patch" : "@@ -1,4 +1,4 @@\n-package edu.hzuapps.androidworks.homeworks.net1314080903121;\n+﻿package com.xiaoyuantong.activity;\n \n import android.content.Context;\n import android.hardware.SensorManager;\n@@ -13,6 +13,8 @@\n import android.widget.ImageView;\n import android.widget.TextView;\n \n+import com.xiaoyuantong.R;\n+\n public class Net1314080903121Activity extends Activity {\n     private ImageView iv;\n     private TextView mint;\n@@ -35,7 +37,7 @@ public void handleMessage(Message msg) {\n                     // 添加更新ui的代码\n                     if (!isstop) {\n                         updateView();\n-                        mHandler.sendEmptyMessageDelayed(1, 1000);\n+                        mHandler.sendEmptyMessageDelayed(1, 1000);//一秒重新运行一次\n                     }\n                     break;\n                 case 0:\n@@ -57,29 +59,31 @@ private void initViews() {\n         sec = (TextView) findViewById(R.id.sec);\n         reset = (Button) findViewById(R.id.reset);\n         start = (Button) findViewById(R.id.start);\n+        //reset点击事件\n         reset.setOnClickListener(new OnClickListener() {\n             @Override\n             public void onClick(View arg0) {\n                 // TODO Auto-generated method stub\n-\n+                //把时间设为0\n                 mint.setText(\"00\");\n                 sec.setText(\"00\");\n                 start.setText(\"start\");\n-                timeusedinsec=0;\n-                isstop=true;\n+                timeusedinsec=0;//计时置0\n+                isstop=true;//停止\n             }\n         });\n+        //start点击事件\n         start.setOnClickListener(new OnClickListener() {\n             @Override\n             public void onClick(View arg0) {\n                 // TODO Auto-generated method stub\n                 mHandler.removeMessages(1);\n                 String aaa=start.getText().toString();\n-                if(aaa.equals(\"start\")){\n+                if(aaa.equals(\"start\")){//如果是\"start\"开始计时\n                     mHandler.sendEmptyMessage(1);\n                     isstop = false;\n                     start.setText(\"pause\");\n-                }else {\n+                }else {//如果是\"pause\"\n                     mHandler.sendEmptyMessage(0);\n                     isstop = true;\n                     start.setText(\"start\");\n@@ -88,6 +92,7 @@ public void onClick(View arg0) {\n             }\n         });\n     }\n+    //更新时间的显示\n     private void updateView() {\n         timeusedinsec += 1;\n         int minute = (int) (timeusedinsec / 60)%60;"
+  }, {
+    "sha" : "731c102ad204abe43a37d674e3a8297169882bb9",
+    "filename" : "app/src/main/res/drawable/linjunfeng.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/05a0e10fcf87a45d4d62e4700958b762e64ee907/app/src/main/res/drawable/linjunfeng.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/05a0e10fcf87a45d4d62e4700958b762e64ee907/app/src/main/res/drawable/linjunfeng.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/linjunfeng.jpg?ref=05a0e10fcf87a45d4d62e4700958b762e64ee907"
+  } ],
+  "sha" : "05a0e10fcf87a45d4d62e4700958b762e64ee907",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/05a0e10fcf87a45d4d62e4700958b762e64ee907",
+  "parents" : [ {
+    "sha" : "3b10555acd83f51b92e6a64d801b4bf77eecdf16",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3b10555acd83f51b92e6a64d801b4bf77eecdf16",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/3b10555acd83f51b92e6a64d801b4bf77eecdf16"
+  } ]
+}

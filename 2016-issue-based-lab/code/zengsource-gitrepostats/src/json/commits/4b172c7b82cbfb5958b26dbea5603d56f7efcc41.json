@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "helloSingleDog",
+    "id" : 18065141,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18065141?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/helloSingleDog",
+    "html_url" : "https://github.com/helloSingleDog",
+    "followers_url" : "https://api.github.com/users/helloSingleDog/followers",
+    "following_url" : "https://api.github.com/users/helloSingleDog/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/helloSingleDog/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/helloSingleDog/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/helloSingleDog/subscriptions",
+    "organizations_url" : "https://api.github.com/users/helloSingleDog/orgs",
+    "repos_url" : "https://api.github.com/users/helloSingleDog/repos",
+    "events_url" : "https://api.github.com/users/helloSingleDog/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/helloSingleDog/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 42,
+    "additions" : 40,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "helloSingleDog",
+    "id" : 18065141,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18065141?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/helloSingleDog",
+    "html_url" : "https://github.com/helloSingleDog",
+    "followers_url" : "https://api.github.com/users/helloSingleDog/followers",
+    "following_url" : "https://api.github.com/users/helloSingleDog/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/helloSingleDog/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/helloSingleDog/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/helloSingleDog/subscriptions",
+    "organizations_url" : "https://api.github.com/users/helloSingleDog/orgs",
+    "repos_url" : "https://api.github.com/users/helloSingleDog/repos",
+    "events_url" : "https://api.github.com/users/helloSingleDog/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/helloSingleDog/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/4b172c7b82cbfb5958b26dbea5603d56f7efcc41",
+  "commit" : {
+    "author" : {
+      "name" : "helloSingleDog",
+      "email" : "1163601218@qq.com",
+      "date" : "2016-04-27T04:51:19Z"
+    },
+    "committer" : {
+      "name" : "helloSingleDog",
+      "email" : "1163601218@qq.com",
+      "date" : "2016-04-27T04:51:19Z"
+    },
+    "message" : "Update Net1314080903219lab2.java",
+    "tree" : {
+      "sha" : "bb362e1a3857d711cbbbfc16cfdab32c7a959dbf",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/bb362e1a3857d711cbbbfc16cfdab32c7a959dbf"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/4b172c7b82cbfb5958b26dbea5603d56f7efcc41",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4b172c7b82cbfb5958b26dbea5603d56f7efcc41/comments",
+  "files" : [ {
+    "sha" : "e86e6cb4a1bb271c38df33e661bdcd4c3ca72eaf",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903219/Net1314080903219lab2.java",
+    "status" : "modified",
+    "additions" : 40,
+    "deletions" : 2,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4b172c7b82cbfb5958b26dbea5603d56f7efcc41/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903219/Net1314080903219lab2.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4b172c7b82cbfb5958b26dbea5603d56f7efcc41/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903219/Net1314080903219lab2.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903219/Net1314080903219lab2.java?ref=4b172c7b82cbfb5958b26dbea5603d56f7efcc41",
+    "patch" : "@@ -1,8 +1,46 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903219;\n \n-public class Net1314080903219lab2{\n+public class Net1314080903219lab2 extends AppCompatActivity{\n+   @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n \n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+    }\n \n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_main, menu);\n+        return true;\n+    }\n \n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n \n-}\n\\ No newline at end of file\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    } \n+   \n+\n+\n+\n+}"
+  } ],
+  "sha" : "4b172c7b82cbfb5958b26dbea5603d56f7efcc41",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4b172c7b82cbfb5958b26dbea5603d56f7efcc41",
+  "parents" : [ {
+    "sha" : "0d16de107fcbc3365376d4b5172de6d6177c86d4",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0d16de107fcbc3365376d4b5172de6d6177c86d4",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/0d16de107fcbc3365376d4b5172de6d6177c86d4"
+  } ]
+}

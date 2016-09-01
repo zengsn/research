@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "Hackergeek",
+    "id" : 9377994,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/9377994?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hackergeek",
+    "html_url" : "https://github.com/Hackergeek",
+    "followers_url" : "https://api.github.com/users/Hackergeek/followers",
+    "following_url" : "https://api.github.com/users/Hackergeek/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hackergeek/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hackergeek/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hackergeek/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hackergeek/orgs",
+    "repos_url" : "https://api.github.com/users/Hackergeek/repos",
+    "events_url" : "https://api.github.com/users/Hackergeek/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hackergeek/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 131,
+    "additions" : 131,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Hackergeek",
+    "id" : 9377994,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/9377994?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hackergeek",
+    "html_url" : "https://github.com/Hackergeek",
+    "followers_url" : "https://api.github.com/users/Hackergeek/followers",
+    "following_url" : "https://api.github.com/users/Hackergeek/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hackergeek/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hackergeek/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hackergeek/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hackergeek/orgs",
+    "repos_url" : "https://api.github.com/users/Hackergeek/repos",
+    "events_url" : "https://api.github.com/users/Hackergeek/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hackergeek/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/4f61309efb20c420e788258290356826098f2a25",
+  "commit" : {
+    "author" : {
+      "name" : "Hackergeek",
+      "email" : "1224085894@qq.com",
+      "date" : "2016-05-11T01:40:58Z"
+    },
+    "committer" : {
+      "name" : "Hackergeek",
+      "email" : "1224085894@qq.com",
+      "date" : "2016-05-11T01:40:58Z"
+    },
+    "message" : "lab04 #90",
+    "tree" : {
+      "sha" : "9bd8952f36742543fb37d1d8717c663059d1e29a",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/9bd8952f36742543fb37d1d8717c663059d1e29a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/4f61309efb20c420e788258290356826098f2a25",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4f61309efb20c420e788258290356826098f2a25/comments",
+  "files" : [ {
+    "sha" : "8644e45d578d6414821e577259428320094ebfe2",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/MainActivity.java",
+    "status" : "added",
+    "additions" : 75,
+    "deletions" : 0,
+    "changes" : 75,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4f61309efb20c420e788258290356826098f2a25/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4f61309efb20c420e788258290356826098f2a25/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/MainActivity.java?ref=4f61309efb20c420e788258290356826098f2a25",
+    "patch" : "@@ -0,0 +1,75 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903208;\n+\n+import android.content.ComponentName;\n+import android.content.Intent;\n+import android.net.Uri;\n+import android.os.PersistableBundle;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+import android.util.Log;\n+import android.view.View;\n+import android.widget.TextView;\n+\n+public class MainActivity extends AppCompatActivity {\n+    private static final String TAG = \"MainActivity\";\n+\n+    public void next(View view) {\n+        startActivity(new Intent(MainActivity.this, NextActivity.class));\n+        finish();\n+    }\n+\n+    @Override\n+    protected void onSaveInstanceState(Bundle outState) {\n+        Log.d(TAG, \"onSaveInstanceState: \");\n+        super.onSaveInstanceState(outState);\n+        outState.putString(\"test\", \"skyward\");\n+    }\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_ma);\n+        TextView tv = (TextView) findViewById(R.id.tv);\n+        Log.d(TAG, \"onCreate: \");\n+        if (savedInstanceState != null) {\n+            Log.d(TAG, savedInstanceState.getString(\"test\"));\n+            tv.setText( savedInstanceState.getString(\"test\"));\n+        }\n+    }\n+\n+    @Override\n+    protected void onResume() {\n+        super.onResume();\n+        Log.d(TAG, \"onResume: \");\n+    }\n+\n+    @Override\n+    protected void onStart() {\n+        super.onStart();\n+        Log.d(TAG, \"onStart: \");\n+    }\n+\n+    @Override\n+    protected void onStop() {\n+        super.onStop();\n+        Log.d(TAG, \"onStop: \");\n+    }\n+\n+    @Override\n+    protected void onPause() {\n+        super.onPause();\n+        Log.d(TAG, \"onPause: \");\n+    }\n+\n+    @Override\n+    protected void onRestart() {\n+        super.onRestart();\n+        Log.d(TAG, \"onRestart: \");\n+    }\n+\n+    @Override\n+    protected void onDestroy() {\n+        super.onDestroy();\n+        Log.d(TAG, \"onDestroy: \");\n+    }\n+}"
+  }, {
+    "sha" : "85ffa714599af3420b1d27571936ad112f5ce4a9",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NextActivity.java",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4f61309efb20c420e788258290356826098f2a25/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NextActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4f61309efb20c420e788258290356826098f2a25/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NextActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NextActivity.java?ref=4f61309efb20c420e788258290356826098f2a25",
+    "patch" : "@@ -0,0 +1,13 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903208;\n+\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+\n+public class NextActivity extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_next);\n+    }\n+}"
+  }, {
+    "sha" : "061f215004025ad82763d80748ff7ffc3bcf2773",
+    "filename" : "app/src/main/res/layout/activity_ma.xml",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4f61309efb20c420e788258290356826098f2a25/app/src/main/res/layout/activity_ma.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4f61309efb20c420e788258290356826098f2a25/app/src/main/res/layout/activity_ma.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_ma.xml?ref=4f61309efb20c420e788258290356826098f2a25",
+    "patch" : "@@ -0,0 +1,26 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout\n+    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"skyward.com.activity.MainActivity\">\n+\n+    <TextView\n+        android:id=\"@+id/tv\"\n+        android:text=\"Hello World!\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\" />\n+\n+    <Button\n+        android:onClick=\"next\"\n+        android:layout_centerInParent=\"true\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"next activity\"/>\n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "65d185b6ff19343c07564e13b8ec7d538b96f951",
+    "filename" : "app/src/main/res/layout/activity_next.xml",
+    "status" : "added",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4f61309efb20c420e788258290356826098f2a25/app/src/main/res/layout/activity_next.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4f61309efb20c420e788258290356826098f2a25/app/src/main/res/layout/activity_next.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_next.xml?ref=4f61309efb20c420e788258290356826098f2a25",
+    "patch" : "@@ -0,0 +1,17 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"skyward.com.activity.NextActivity\">\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"nextActivity\"/>\n+\n+</RelativeLayout>"
+  } ],
+  "sha" : "4f61309efb20c420e788258290356826098f2a25",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4f61309efb20c420e788258290356826098f2a25",
+  "parents" : [ {
+    "sha" : "41f76ac45a6ee0751fe1987f01db6b14712fe673",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/41f76ac45a6ee0751fe1987f01db6b14712fe673",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/41f76ac45a6ee0751fe1987f01db6b14712fe673"
+  } ]
+}

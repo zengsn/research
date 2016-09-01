@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "zhongdingjun",
+    "id" : 14164243,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14164243?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhongdingjun",
+    "html_url" : "https://github.com/zhongdingjun",
+    "followers_url" : "https://api.github.com/users/zhongdingjun/followers",
+    "following_url" : "https://api.github.com/users/zhongdingjun/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhongdingjun/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhongdingjun/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhongdingjun/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhongdingjun/orgs",
+    "repos_url" : "https://api.github.com/users/zhongdingjun/repos",
+    "events_url" : "https://api.github.com/users/zhongdingjun/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhongdingjun/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 290,
+    "additions" : 290,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zhongdingjun",
+    "id" : 14164243,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14164243?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhongdingjun",
+    "html_url" : "https://github.com/zhongdingjun",
+    "followers_url" : "https://api.github.com/users/zhongdingjun/followers",
+    "following_url" : "https://api.github.com/users/zhongdingjun/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhongdingjun/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhongdingjun/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhongdingjun/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhongdingjun/orgs",
+    "repos_url" : "https://api.github.com/users/zhongdingjun/repos",
+    "events_url" : "https://api.github.com/users/zhongdingjun/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhongdingjun/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/be35469e463f9beaccc653cde63545857b7001e8",
+  "commit" : {
+    "author" : {
+      "name" : "zhongdingjun",
+      "email" : "1178090249@qq.com",
+      "date" : "2016-05-03T15:28:08Z"
+    },
+    "committer" : {
+      "name" : "zhongdingjun",
+      "email" : "1178090249@qq.com",
+      "date" : "2016-05-03T15:28:08Z"
+    },
+    "message" : "#90 #363 lab-4",
+    "tree" : {
+      "sha" : "fcaf71a80c7114c70a236739ff014b3f42ac4ddb",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/fcaf71a80c7114c70a236739ff014b3f42ac4ddb"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/be35469e463f9beaccc653cde63545857b7001e8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/be35469e463f9beaccc653cde63545857b7001e8/comments",
+  "files" : [ {
+    "sha" : "001c63af2c5e39c5dc174c446ebd70d886b18686",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/ColorLightActivity.java",
+    "status" : "added",
+    "additions" : 219,
+    "deletions" : 0,
+    "changes" : 219,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/ColorLightActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/ColorLightActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/ColorLightActivity.java?ref=be35469e463f9beaccc653cde63545857b7001e8",
+    "patch" : "@@ -0,0 +1,219 @@\n+package com.zzci.light;\n+\n+\n+import android.app.Activity;\n+import android.app.AlertDialog;\n+import android.content.DialogInterface;\n+import android.content.res.Resources;\n+import android.graphics.drawable.Drawable;\n+import android.hardware.SensorManager;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.MotionEvent;\n+import android.view.Window;\n+import android.view.WindowManager;\n+import android.widget.LinearLayout;\n+import android.widget.Toast;\n+\n+public class ColorLightActivity extends Activity {\n+    \n+\tprivate LinearLayout mylayout;\n+\tprivate Resources myColor;\n+\tprivate int li;\n+    @Override\n+    public void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        HideStatusBase();\n+        setContentView(R.layout.main);\n+        \n+        //�ı�layout������ɫ\n+        mylayout=(LinearLayout)findViewById(R.id.mylayout);\n+        \n+        SetColor(R.color.white);\n+        //����ı䱳����ɫ\n+        //�ı���Ļ���\n+        li=0;\n+        SetBright(1.0f);\n+        \n+    }\n+    \n+   \n+    /**\n+     * ��Ļ����¼���ʾ�˵�\n+     */\n+    @Override\n+    public boolean onTouchEvent(MotionEvent event){\n+    \t//Toast.makeText(ColorLightActivity.this, \"����\", Toast.LENGTH_SHORT).show();\n+    \topenOptionsMenu();\n+    \treturn false;\n+    }\n+    /**\n+     * ����˵�\n+     */\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu){\n+    \tsuper.onCreateOptionsMenu(menu);\n+    \tgetMenuInflater().inflate(R.menu.menu, menu);\n+    \t//menu.findItem(R.id.about).setEnabled(false);\n+    \treturn true;\n+    }\n+    \n+    /**\n+     * ��׽�˵��¼�\n+     */\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item){\n+    switch(item.getItemId())\n+    {\n+    case R.id.about:\n+    \t//Toast.makeText(ColorLightActivity.this, \"���ڲ˵�\", Toast.LENGTH_LONG).show();\n+    \tabout();\n+    \treturn true;\n+    case R.id.setcolor:\n+    \t//Toast.makeText(ColorLightActivity.this, R.string.setcolor, Toast.LENGTH_SHORT).show();\n+    \tselectColor();\n+    \treturn true;\n+    case R.id.setbright:\n+    \tselectBright();\n+    \t//Toast.makeText(ColorLightActivity.this, \"���ڲ˵�\", Toast.LENGTH_LONG).show();\n+    \treturn true;\n+    case R.id.seteffer:\n+    \t//Toast.makeText(ColorLightActivity.this, \"���ڲ˵�\", Toast.LENGTH_LONG).show();\n+    \tfinish();\n+    \treturn true;\n+    \n+    }\n+    return false;\n+    }\n+    /**\n+     * ѡ����ɫ\n+     */\n+    public void selectColor()\n+    {\n+    \tfinal String[] items = {\"��ɫ\", \"��ɫ\", \"��ɫ\",\"��ɫ\",\"��ɫ\"}; \n+    \tnew AlertDialog.Builder(this) \n+    \t.setTitle(\"ѡ����ɫ\") //�˴� this ���ǰActivity \n+    \t.setItems(items, new DialogInterface.OnClickListener() { \n+    \tpublic void onClick(DialogInterface dialog, int item) { \n+    \tToast.makeText(getApplicationContext(), items[item], Toast.LENGTH_SHORT).show(); \n+    \tswitch (item) {\n+\t\tcase 0:\n+\t\t\tSetColor(R.color.white);\n+\t\t\tbreak;\n+\t\tcase 1:\n+\t\t\tSetColor(R.color.red);\n+\t\t\tbreak;\n+\t\tcase 2:\n+\t\t\tSetColor(R.color.black);\n+\t\t\tbreak;\n+\t\tcase 3:\n+\t\t\tSetColor(R.color.yellow);\n+\t\t\tbreak;\n+\t\tcase 4:\n+\t\t\tSetColor(R.color.fs);\n+\t\t\tbreak;\n+\t\tdefault:\n+\t\t\tSetColor(R.color.white);\n+\t\t\tbreak;\n+\t\t}\n+    \t} \n+    \t}).show();//��ʾ�Ի��� \n+    }\n+    \n+    /**\n+     * ѡ�����\n+     */\n+    public void selectBright()\n+    {\n+    \tfinal String[] items = {\"100%\", \"75%\", \"50%\",\"25%\",\"10%\"}; \n+    \tnew AlertDialog.Builder(this) \n+    \t.setTitle(\"ѡ�����\") \n+    \t.setSingleChoiceItems(items, li, new DialogInterface.OnClickListener() { //�˴�����Ϊѡ����±꣬��0��ʼ�� ��ʾĬ�����ѡ�� \n+    \tpublic void onClick(DialogInterface dialog, int item) { \n+    \tToast.makeText(getApplicationContext(), items[item],Toast.LENGTH_SHORT).show(); \n+    \tli=item;\n+    \tswitch (item) {\n+\t\tcase 0:\n+\t\t\tSetBright(1.0F);\n+\t\t\tbreak;\n+\t\tcase 1:\n+\t\t\tSetBright(0.75F);\n+\t\t\tbreak;\n+\t\tcase 2:\n+\t\t\tSetBright(0.5F);\n+\t\t\tbreak;\n+\t\tcase 3:\n+\t\t\tSetBright(0.25F);\n+\t\t\tbreak;\n+\t\tcase 4:\n+\t\t\tSetBright(0.1F);\n+\t\t\tbreak;\n+\t\tdefault:\n+\t\t\tSetBright(1.0F);\n+\t\t\tbreak;\n+\t\t}\t\n+    \tdialog.cancel(); \n+    \t} \n+    \t}).show();//��ʾ�Ի��� \n+    }\n+    /**\n+     * ��ʾ��������\n+     */\n+    public void about(){\n+    \tnew AlertDialog.Builder(ColorLightActivity.this).setTitle(\"About us\")\n+\t\t\t\t.setMessage(\"�ֵ�Ͳ\").setIcon(R.drawable.icon)\n+\t\t\t\t.setPositiveButton(\"ȷ��\", new DialogInterface.OnClickListener() {\n+\t\t\t\t\tpublic void onClick(DialogInterface dialog, int whichButton) {\n+\t\t\t\t\t\t// finish();\n+\t\t\t\t\t}\n+\t\t\t\t}).setNegativeButton(\"����\",\n+\t\t\t\t\t\tnew DialogInterface.OnClickListener() {\n+\n+\t\t\t\t\t\t\t@Override\n+\t\t\t\t\t\t\tpublic void onClick(DialogInterface dialog,\n+\t\t\t\t\t\t\t\t\tint which) {\n+\t\t\t\t\t\t\t\t// TODO Auto-generated method stub\n+\n+\t\t\t\t\t\t\t}\n+\n+\t\t\t\t\t\t}).show();\n+    }\n+    \n+    \n+    /**\n+     * ȫ������\n+     */\n+    private void HideStatusBase()\n+\t{\n+\t\trequestWindowFeature(Window.FEATURE_NO_TITLE);\n+\t\tint flag=WindowManager.LayoutParams.FLAG_FULLSCREEN;\n+\t\tWindow myWindow=this.getWindow();\n+\t\tmyWindow.setFlags(flag,flag);\n+\t}\n+    \n+    \n+    /**\n+     * ������Ļ��ɫ\n+     * @param color_M\n+     */\n+    private void SetColor(int color_1)\n+    {\n+    \tmyColor = getBaseContext().getResources();\n+\t\tDrawable color_M = myColor.getDrawable(color_1);\n+    \tmylayout.setBackgroundDrawable(color_M);\n+        //mylayout.setBackgroundColor(Color.argb(255, 255, 255, 255));\n+    }\n+    \n+    /**\n+     * ������Ļ���\n+     * @param light\n+     */\n+    private void SetBright(float light)\n+    {\n+    \tWindowManager.LayoutParams lp=getWindow().getAttributes();\n+    \tlp.screenBrightness=light;\n+    \tgetWindow().setAttributes(lp);\n+    \t\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "4ff35ff4cbdea7ae12e8516f288111b036678f68",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/R.java",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/R.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/R.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/R.java?ref=be35469e463f9beaccc653cde63545857b7001e8",
+    "patch" : "@@ -0,0 +1,38 @@\n+package com.zzci.light;\n+\n+public final class R {\n+    public static final class attr {\n+    }\n+    public static final class color {\n+        public static final int black=0x7f040004;\n+        public static final int fs=0x7f040003;\n+        public static final int red=0x7f040002;\n+        public static final int white=0x7f040000;\n+        public static final int yellow=0x7f040001;\n+    }\n+    public static final class drawable {\n+        public static final int icon=0x7f020000;\n+        public static final int myicon=0x7f020001;\n+    }\n+    public static final class id {\n+        public static final int about=0x7f070004;\n+        public static final int mylayout=0x7f070000;\n+        public static final int setbright=0x7f070002;\n+        public static final int setcolor=0x7f070001;\n+        public static final int seteffer=0x7f070003;\n+    }\n+    public static final class layout {\n+        public static final int main=0x7f030000;\n+    }\n+    public static final class menu {\n+        public static final int menu=0x7f060000;\n+    }\n+    public static final class string {\n+        public static final int about=0x7f050005;\n+        public static final int app_name=0x7f050001;\n+        public static final int hello=0x7f050000;\n+        public static final int setbright=0x7f050003;\n+        public static final int setcolor=0x7f050002;\n+        public static final int seteffer=0x7f050004;\n+    }\n+}"
+  }, {
+    "sha" : "1329b5403b65a611a7b79e61cab29dfc40198269",
+    "filename" : "app/src/main/res/layout/Color.xml",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/res/layout/Color.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/res/layout/Color.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/Color.xml?ref=be35469e463f9beaccc653cde63545857b7001e8",
+    "patch" : "@@ -0,0 +1,8 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+<color name=\"white\">#FFFFFF</color>\n+<color name=\"yellow\">#FFD700</color>\n+<color name=\"red\">#FF0000</color>\n+<color name=\"fs\">#FF34B3</color>\n+<color name=\"black\">#000000</color>\n+</resources>"
+  }, {
+    "sha" : "c633474fafdc651aed6a81b3aa8a606afac3adac",
+    "filename" : "app/src/main/res/layout/menu.xml",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/res/layout/menu.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/res/layout/menu.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/menu.xml?ref=be35469e463f9beaccc653cde63545857b7001e8",
+    "patch" : "@@ -0,0 +1,16 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<menu\n+  xmlns:android=\"http://schemas.android.com/apk/res/android\">\n+<item android:id=\"@+id/setcolor\"\n+android:title=\"@string/setcolor\"\n+/>\n+ <item android:id=\"@+id/setbright\"\n+android:title=\"@string/setbright\"\n+ />\n+<item android:id=\"@+id/seteffer\"\n+android:title=\"@string/seteffer\"\n+ />\n+ <item android:id=\"@+id/about\"\n+android:title=\"@string/about\"\n+ />\n+</menu>"
+  }, {
+    "sha" : "ce9e6da20897de8ad0fe4c72b3b4e924b65fc84c",
+    "filename" : "app/src/main/res/layout/strings.xml",
+    "status" : "added",
+    "additions" : 9,
+    "deletions" : 0,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/res/layout/strings.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/be35469e463f9beaccc653cde63545857b7001e8/app/src/main/res/layout/strings.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/strings.xml?ref=be35469e463f9beaccc653cde63545857b7001e8",
+    "patch" : "@@ -0,0 +1,9 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+    <string name=\"hello\">欢迎使用手电筒!</string>\n+    <string name=\"app_name\">手电筒</string>\n+    <string name=\"setcolor\">更换颜色</string>\n+    <string name=\"setbright\">更换亮度</string>\n+    <string name=\"seteffer\">退出软件</string>\n+    <string name=\"about\">About us</string>\n+</resources>"
+  } ],
+  "sha" : "be35469e463f9beaccc653cde63545857b7001e8",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/be35469e463f9beaccc653cde63545857b7001e8",
+  "parents" : [ {
+    "sha" : "fbc5916a3318cd374f61bfa3c262bbede0933f9a",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fbc5916a3318cd374f61bfa3c262bbede0933f9a",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/fbc5916a3318cd374f61bfa3c262bbede0933f9a"
+  } ]
+}

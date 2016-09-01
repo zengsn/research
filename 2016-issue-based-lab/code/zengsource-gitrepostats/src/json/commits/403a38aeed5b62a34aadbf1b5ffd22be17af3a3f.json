@@ -1,0 +1,95 @@
+{
+  "committer" : {
+    "login" : "linxiaohao123",
+    "id" : 17928846,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17928846?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/linxiaohao123",
+    "html_url" : "https://github.com/linxiaohao123",
+    "followers_url" : "https://api.github.com/users/linxiaohao123/followers",
+    "following_url" : "https://api.github.com/users/linxiaohao123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/linxiaohao123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/linxiaohao123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/linxiaohao123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/linxiaohao123/orgs",
+    "repos_url" : "https://api.github.com/users/linxiaohao123/repos",
+    "events_url" : "https://api.github.com/users/linxiaohao123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/linxiaohao123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 116,
+    "additions" : 116,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "linxiaohao123",
+    "id" : 17928846,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17928846?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/linxiaohao123",
+    "html_url" : "https://github.com/linxiaohao123",
+    "followers_url" : "https://api.github.com/users/linxiaohao123/followers",
+    "following_url" : "https://api.github.com/users/linxiaohao123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/linxiaohao123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/linxiaohao123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/linxiaohao123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/linxiaohao123/orgs",
+    "repos_url" : "https://api.github.com/users/linxiaohao123/repos",
+    "events_url" : "https://api.github.com/users/linxiaohao123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/linxiaohao123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/403a38aeed5b62a34aadbf1b5ffd22be17af3a3f",
+  "commit" : {
+    "author" : {
+      "name" : "linxiaohao123",
+      "email" : "623557112@qq.com",
+      "date" : "2016-04-27T14:10:02Z"
+    },
+    "committer" : {
+      "name" : "linxiaohao123",
+      "email" : "623557112@qq.com",
+      "date" : "2016-04-27T14:10:02Z"
+    },
+    "message" : "#2 #21 lab2",
+    "tree" : {
+      "sha" : "dd7c4f9b09b2ed440bff326ef906e82bb3f174d6",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/dd7c4f9b09b2ed440bff326ef906e82bb3f174d6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/403a38aeed5b62a34aadbf1b5ffd22be17af3a3f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/403a38aeed5b62a34aadbf1b5ffd22be17af3a3f/comments",
+  "files" : [ {
+    "sha" : "7691c037a4a5225cd75b493f9d6fc595632944bb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903226/Net1314080903226NewsClient.java",
+    "status" : "added",
+    "additions" : 116,
+    "deletions" : 0,
+    "changes" : 116,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/403a38aeed5b62a34aadbf1b5ffd22be17af3a3f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903226/Net1314080903226NewsClient.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/403a38aeed5b62a34aadbf1b5ffd22be17af3a3f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903226/Net1314080903226NewsClient.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903226/Net1314080903226NewsClient.java?ref=403a38aeed5b62a34aadbf1b5ffd22be17af3a3f",
+    "patch" : "@@ -0,0 +1,116 @@\n+package com.yuedong.csdn.activity;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.TabLayout;\n+import android.support.v4.app.Fragment;\n+import android.support.v4.app.FragmentPagerAdapter;\n+import android.support.v4.view.ViewPager;\n+import android.widget.LinearLayout;\n+\n+import com.qhad.ads.sdk.adcore.Qhad;\n+import com.qhad.ads.sdk.interfaces.IQhAdEventListener;\n+import com.qhad.ads.sdk.interfaces.IQhBannerAd;\n+import com.yuedong.csdn.R;\n+import com.yuedong.csdn.fragment.MainFragment;\n+\n+public class MainActivity extends BaseActivity {\n+\n+    private TabLayout mTab;\n+    private ViewPager mViewpager;\n+    private FragmentPagerAdapter mAdapter;\n+    private String[] titles;\n+    private  LinearLayout mainadv;\n+    private  IQhBannerAd bannerad;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+        mTab = (TabLayout) findViewById(R.id.id_tablayout);\n+        mViewpager = (ViewPager) findViewById(R.id.id_viewpager);\n+        mainadv=(LinearLayout)findViewById(R.id.mainadv);\n+//        mViewpager.setOffscreenPageLimit(4);\n+        initData();\n+        init360adv();\n+        bannerad.showAds(this);\n+    }\n+\n+    private void initData() {\n+        titles = new String[]{getResources().getString(R.string.yejie), getResources().getString(R.string.yidong)\n+                , getResources().getString(R.string.yunjisuan), getResources().getString(R.string.yanfa)};\n+        mAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {\n+            @Override\n+            public Fragment getItem(int position) {\n+                return MainFragment.newInstance(position);\n+            }\n+\n+            @Override\n+            public int getCount() {\n+                return titles.length;\n+            }\n+\n+            @Override\n+            public CharSequence getPageTitle(int position) {\n+                return titles[position % titles.length];\n+            }\n+        };\n+        mViewpager.setAdapter(mAdapter);\n+        mTab.setupWithViewPager(mViewpager);\n+    }\n+    private void init360adv(){\n+        bannerad = Qhad.showBanner(mainadv, MainActivity.this, \"5kklueDWau\", false);\n+        bannerad.setAdEventListener(new IQhAdEventListener() {\n+            @Override\n+            public void onAdviewGotAdSucceed() {\n+\n+            }\n+\n+            @Override\n+            public void onAdviewGotAdFail() {\n+\n+            }\n+\n+            @Override\n+            public void onAdviewRendered() {\n+\n+            }\n+\n+            @Override\n+            public void onAdviewIntoLandpage() {\n+\n+            }\n+\n+            @Override\n+            public void onAdviewDismissedLandpage() {\n+\n+            }\n+\n+            @Override\n+            public void onAdviewClicked() {\n+\n+            }\n+\n+            @Override\n+            public void onAdviewClosed() {\n+\n+            }\n+\n+            @Override\n+            public void onAdviewDestroyed() {\n+\n+            }\n+        });\n+    }\n+\n+    @Override\n+    protected void onDestroy() {\n+        super.onDestroy();\n+        bannerad.closeAds();\n+    }\n+\n+//    @Override\n+//    protected void onResume() {\n+//        super.onResume();\n+//        bannerad.showAds(this);\n+//    }\n+}"
+  }, {
+    "sha" : "4771c1043877610da8dbee67bbe23b5a73bb8bd3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903226/Net1314080903226NewsClient.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/403a38aeed5b62a34aadbf1b5ffd22be17af3a3f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903226/Net1314080903226NewsClient.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/403a38aeed5b62a34aadbf1b5ffd22be17af3a3f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903226/Net1314080903226NewsClient.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903226/Net1314080903226NewsClient.png?ref=403a38aeed5b62a34aadbf1b5ffd22be17af3a3f"
+  } ],
+  "sha" : "403a38aeed5b62a34aadbf1b5ffd22be17af3a3f",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/403a38aeed5b62a34aadbf1b5ffd22be17af3a3f",
+  "parents" : [ {
+    "sha" : "35724629c2b7f5d393c64307183a9f3ea3468126",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/35724629c2b7f5d393c64307183a9f3ea3468126",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/35724629c2b7f5d393c64307183a9f3ea3468126"
+  } ]
+}

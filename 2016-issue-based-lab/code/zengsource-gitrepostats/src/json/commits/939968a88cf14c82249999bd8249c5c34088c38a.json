@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "mengyi520",
+    "id" : 18068937,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18068937?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mengyi520",
+    "html_url" : "https://github.com/mengyi520",
+    "followers_url" : "https://api.github.com/users/mengyi520/followers",
+    "following_url" : "https://api.github.com/users/mengyi520/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mengyi520/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mengyi520/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mengyi520/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mengyi520/orgs",
+    "repos_url" : "https://api.github.com/users/mengyi520/repos",
+    "events_url" : "https://api.github.com/users/mengyi520/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mengyi520/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 28,
+    "additions" : 28,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "mengyi520",
+    "id" : 18068937,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18068937?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mengyi520",
+    "html_url" : "https://github.com/mengyi520",
+    "followers_url" : "https://api.github.com/users/mengyi520/followers",
+    "following_url" : "https://api.github.com/users/mengyi520/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mengyi520/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mengyi520/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mengyi520/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mengyi520/orgs",
+    "repos_url" : "https://api.github.com/users/mengyi520/repos",
+    "events_url" : "https://api.github.com/users/mengyi520/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mengyi520/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/939968a88cf14c82249999bd8249c5c34088c38a",
+  "commit" : {
+    "author" : {
+      "name" : "mengyi520",
+      "email" : "834874378@qq.com",
+      "date" : "2016-06-06T17:05:00Z"
+    },
+    "committer" : {
+      "name" : "mengyi520",
+      "email" : "834874378@qq.com",
+      "date" : "2016-06-06T17:05:00Z"
+    },
+    "message" : "#90 #95 #13 labs4 labs9",
+    "tree" : {
+      "sha" : "78887f4bd7f7778d50452bda6437b7d2cdd168c1",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/78887f4bd7f7778d50452bda6437b7d2cdd168c1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/939968a88cf14c82249999bd8249c5c34088c38a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/939968a88cf14c82249999bd8249c5c34088c38a/comments",
+  "files" : [ {
+    "sha" : "12e9e6deca32c4e70f429f7a24c88a74f7f638cb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214MainActivity.java",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/939968a88cf14c82249999bd8249c5c34088c38a/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/939968a88cf14c82249999bd8249c5c34088c38a/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214MainActivity.java?ref=939968a88cf14c82249999bd8249c5c34088c38a",
+    "patch" : "@@ -0,0 +1,28 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903214;\n+\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+import android.widget.TabHost;\n+\n+public class Net1314080903214MainActivity extends AppCompatActivity {\n+\n+    private TabHost tabHost;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903214_main);\n+\n+        tabHost = (TabHost) findViewById(R.id.tabHost);\n+        // 对TabHost初始化\n+        tabHost.setup();\n+\n+        tabHost.addTab(tabHost.newTabSpec(\"tabTime\").setIndicator(\"时钟\").setContent(R.id.tabTime));\n+        tabHost.addTab(tabHost.newTabSpec(\"tabAlarm\").setIndicator(\"闹钟\").setContent(R.id.tabAlarm));\n+        tabHost.addTab(tabHost.newTabSpec(\"tabTimer\").setIndicator(\"计时器\").setContent(R.id.tabTimer));\n+        tabHost.addTab(tabHost.newTabSpec(\"tabStopWatch\").setIndicator(\"秒表\").setContent(R.id.tabStopWatch));\n+\n+    }\n+\n+\n+}"
+  } ],
+  "sha" : "939968a88cf14c82249999bd8249c5c34088c38a",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/939968a88cf14c82249999bd8249c5c34088c38a",
+  "parents" : [ {
+    "sha" : "965b6f02b6e5b911604116aed7c3bca577467749",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/965b6f02b6e5b911604116aed7c3bca577467749",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/965b6f02b6e5b911604116aed7c3bca577467749"
+  } ]
+}

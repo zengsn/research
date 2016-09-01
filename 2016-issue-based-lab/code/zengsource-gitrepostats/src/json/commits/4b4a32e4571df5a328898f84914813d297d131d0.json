@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 2,
+    "additions" : 1,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "1019940946",
+    "id" : 18134037,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18134037?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1019940946",
+    "html_url" : "https://github.com/1019940946",
+    "followers_url" : "https://api.github.com/users/1019940946/followers",
+    "following_url" : "https://api.github.com/users/1019940946/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1019940946/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1019940946/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1019940946/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1019940946/orgs",
+    "repos_url" : "https://api.github.com/users/1019940946/repos",
+    "events_url" : "https://api.github.com/users/1019940946/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1019940946/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/4b4a32e4571df5a328898f84914813d297d131d0",
+  "commit" : {
+    "author" : {
+      "name" : "1019940946",
+      "email" : "1019940946@qq.com",
+      "date" : "2016-06-16T18:09:46Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-06-16T18:09:46Z"
+    },
+    "message" : "#94 #297\n\n主界面下方的Button绑定一个事件\r\n点击Button调用系统相机。拍照。\r\n拍照得到的图片保存路径设定为内存储器根目录\r\n命名为“lzf.jpg”\r\n再读取这张图片，将这张图片在主界面的ImageView上显示出来",
+    "tree" : {
+      "sha" : "4efdd8ee5d0ceabee5b31ffdb2db8f4a1a956a45",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/4efdd8ee5d0ceabee5b31ffdb2db8f4a1a956a45"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/4b4a32e4571df5a328898f84914813d297d131d0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4b4a32e4571df5a328898f84914813d297d131d0/comments",
+  "files" : [ {
+    "sha" : "3f69f69fea154111c7e122c29bbaf3c4525bbc6a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/Net1314080903115MainActivity.java",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4b4a32e4571df5a328898f84914813d297d131d0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/Net1314080903115MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4b4a32e4571df5a328898f84914813d297d131d0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/Net1314080903115MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/Net1314080903115MainActivity.java?ref=4b4a32e4571df5a328898f84914813d297d131d0",
+    "patch" : "@@ -162,7 +162,7 @@ public void onClick(View v) {\n         if (v.getId() == R.id.main_portrait) {\r\n             if(Account.State == 2)\r\n             {\r\n-                //跳转账户资料界面\r\n+                //跳转登录\r\n             }else{\r\n                 Intent intent = new Intent(Net1314080903115MainActivity.this, Net1314080903115LoginActivity.class);\r\n                 startActivity(intent);\r"
+  } ],
+  "sha" : "4b4a32e4571df5a328898f84914813d297d131d0",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4b4a32e4571df5a328898f84914813d297d131d0",
+  "parents" : [ {
+    "sha" : "dd87b8e5ef0e6037b9a97b2a2f247a23f640af83",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dd87b8e5ef0e6037b9a97b2a2f247a23f640af83",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/dd87b8e5ef0e6037b9a97b2a2f247a23f640af83"
+  } ]
+}

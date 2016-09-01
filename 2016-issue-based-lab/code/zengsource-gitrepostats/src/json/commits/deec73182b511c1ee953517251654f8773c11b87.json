@@ -1,0 +1,148 @@
+{
+  "committer" : {
+    "login" : "CanaceYang",
+    "id" : 18029667,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18029667?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/CanaceYang",
+    "html_url" : "https://github.com/CanaceYang",
+    "followers_url" : "https://api.github.com/users/CanaceYang/followers",
+    "following_url" : "https://api.github.com/users/CanaceYang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/CanaceYang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/CanaceYang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/CanaceYang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/CanaceYang/orgs",
+    "repos_url" : "https://api.github.com/users/CanaceYang/repos",
+    "events_url" : "https://api.github.com/users/CanaceYang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/CanaceYang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 357,
+    "additions" : 95,
+    "deletions" : 262
+  },
+  "author" : {
+    "login" : "CanaceYang",
+    "id" : 18029667,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18029667?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/CanaceYang",
+    "html_url" : "https://github.com/CanaceYang",
+    "followers_url" : "https://api.github.com/users/CanaceYang/followers",
+    "following_url" : "https://api.github.com/users/CanaceYang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/CanaceYang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/CanaceYang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/CanaceYang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/CanaceYang/orgs",
+    "repos_url" : "https://api.github.com/users/CanaceYang/repos",
+    "events_url" : "https://api.github.com/users/CanaceYang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/CanaceYang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/deec73182b511c1ee953517251654f8773c11b87",
+  "commit" : {
+    "author" : {
+      "name" : "CanaceYang",
+      "email" : "943546561@qq.com",
+      "date" : "2016-05-17T11:51:11Z"
+    },
+    "committer" : {
+      "name" : "CanaceYang",
+      "email" : "943546561@qq.com",
+      "date" : "2016-05-17T11:51:11Z"
+    },
+    "message" : "#88 #89 #90 #94 #95 #39 lab2 lab3 lab4 lab8 lab9",
+    "tree" : {
+      "sha" : "1887226b0e1c2e6ba63a96175277ed5a94414b5b",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/1887226b0e1c2e6ba63a96175277ed5a94414b5b"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/deec73182b511c1ee953517251654f8773c11b87",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/deec73182b511c1ee953517251654f8773c11b87/comments",
+  "files" : [ {
+    "sha" : "93f42f45da843add7331849cc2e79d5fa07d1e08",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/Clazz.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 199,
+    "changes" : 199,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f8a4f02921a4f675e08c1d612a693ca8f1e8e5df/app/src/main/java/edu/hzuapps/androidworks/Clazz.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f8a4f02921a4f675e08c1d612a693ca8f1e8e5df/app/src/main/java/edu/hzuapps/androidworks/Clazz.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/Clazz.java?ref=f8a4f02921a4f675e08c1d612a693ca8f1e8e5df",
+    "patch" : "@@ -1,199 +0,0 @@\n-package edu.hzuapps.androidworks;\n-\n-// java.lang.*\n-\n-import android.widget.TextView;\n-\n-import java.math.BigInteger;\n-import java.util.Date;\n-import java.io.File;\n-import java.util.StringTokenizer;\n-\n-import edu.hzuapps.androidworks.demo.StaticMethods;\n-\n-import static edu.hzuapps.androidworks.demo.StaticMethods.*;\n-\n-/**\n- * javadoc\n- * Created by zengsn on 16/3/11.\n- */\n-public class Clazz {\n-\n-    protected int i = 0;\n-    private float f = 0.0f;\n-    boolean b = false;\n-\n-\n-    String str = \"abc def ghi\";\n-    Integer ii = null;\n-\n-    StringBuffer strBuff = null;\n-    StringBuilder strBui = null;\n-\n-\n-    Clazz1 mClazz1 = new Clazz1();\n-\n-    int[] arr = new int[10];\n-\n-    public Clazz() {\n-    }\n-\n-    public Clazz(int i) {\n-        this.i = i;\n-    }\n-\n-    void func() {\n-\n-\n-        StringTokenizer strTok = new StringTokenizer(str);\n-        while (strTok.hasMoreTokens()) {\n-            String token = strTok.nextToken();\n-        }\n-\n-        int bigInt = 1111111111;\n-        BigInteger bi = new BigInteger(\"111111111111111111111111111111\");\n-\n-        Integer iiii = 1;\n-        Float fffff = 0.0f;\n-        Boolean bbbbb = true;\n-\n-        System.out.print(\"\");\n-        System.currentTimeMillis();\n-\n-        int iii = MAX;\n-\n-        Date date = new Date();\n-\n-        File file = new File(\"\");\n-\n-        if (b) {\n-\n-        }\n-\n-        for (int j = 0; j < 10; j++) {\n-\n-        }\n-\n-        while (b) {\n-            ;\n-        }\n-\n-        Class oneClass = this.getClass();\n-\n-    }\n-\n-    public static void main(String[] args) throws ClassNotFoundException {\n-        int i = 1;\n-        int j = 2;\n-        j = 0;\n-        try {\n-            int k = i / j;\n-            //\n-            //\n-        } catch (RuntimeException e) {\n-            // unchecked exception\n-            throw new MyRuntimeException();\n-        }\n-        Clazz clazz = new Clazz();\n-\n-        Class oneClass = Class.forName(\"edu.hzuapps.androidworks.Clazz\");\n-        oneClass = Clazz.class;\n-        // Method, Field, Contructor, Package,\n-        try {\n-            Object object = oneClass.newInstance();\n-            if (object instanceof  Clazz) {\n-\n-            }\n-            clazz = (Clazz) object; // ClassCastException\n-        } catch (InstantiationException e) {\n-            e.printStackTrace();\n-        } catch (IllegalAccessException e) {\n-            e.printStackTrace();\n-        }\n-\n-\n-        Object object1 = clazz;\n-        clazz.func();\n-\n-\n-        try {\n-            Thread.sleep(1000*3);\n-        } catch (InterruptedException e) {\n-            e.printStackTrace();\n-        }\n-\n-        Thread current = Thread.currentThread();\n-\n-        Thread thread = new Thread(new Runnable() {\n-            @Override\n-            public void run() {\n-                System.out.print(\">>>\");\n-            }\n-        });\n-        thread.run();\n-\n-    }\n-}\n-\n-class Clazz1 {\n-    //private int i;\n-    protected int j;\n-    int k;\n-    public int l;\n-\n-\n-    void func() {\n-        Clazz clazz = new Clazz();\n-    }\n-\n-    public int getI() {\n-        return 0;\n-    }\n-\n-    public int getJ() {\n-        return j;\n-    }\n-\n-    public int getK() {\n-        return k;\n-    }\n-\n-    public int getL() {\n-        return l;\n-    }\n-\n-    public void setJ(int j) {\n-        this.j = j;\n-    }\n-\n-    public void setK(int k) {\n-        this.k = k;\n-    }\n-\n-    public void setL(int l) {\n-        this.l = l;\n-    }\n-}\n-\n-class Clazz2 {\n-\n-    void func() throws MyException {\n-        //this.j = 1;\n-        throw new MyException();\n-    }\n-}\n-\n-class Clazz3 {\n-\n-    void func() throws MyRuntimeException {\n-        //this.j = 1;\n-        throw new MyRuntimeException();\n-    }\n-}\n-\n-class MyException extends Exception {\n-}\n-\n-class MyRuntimeException extends RuntimeException {\n-}\n-"
+  }, {
+    "sha" : "2ee5d347778034cbc54c8475b9c727f7739f06ef",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903244/Net1314080903244activity.java",
+    "status" : "modified",
+    "additions" : 78,
+    "deletions" : 47,
+    "changes" : 125,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/deec73182b511c1ee953517251654f8773c11b87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903244/Net1314080903244activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/deec73182b511c1ee953517251654f8773c11b87/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903244/Net1314080903244activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903244/Net1314080903244activity.java?ref=deec73182b511c1ee953517251654f8773c11b87",
+    "patch" : "@@ -1,52 +1,83 @@\n-package com.example.administrator.myapplication;\n+package edu.hzuapps.androidworks.homeworks.net1314080903244;\n \n+import com.app.R;\n+import com.app.FlashlightActivity;\n+\n+import android.app.Activity;\n+import android.app.AlertDialog;\n+import android.app.AlertDialog.Builder;\n+import android.content.DialogInterface;\n+import android.hardware.Camera;\n+import android.hardware.Camera.Parameters;\n import android.os.Bundle;\n-import android.support.design.widget.FloatingActionButton;\n-import android.support.design.widget.Snackbar;\n-import android.support.v7.app.AppCompatActivity;\n-import android.support.v7.widget.Toolbar;\n-import android.view.View;\n+import android.view.KeyEvent;\n import android.view.Menu;\n import android.view.MenuItem;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.view.Window;\n+import android.view.WindowManager;\n+import android.widget.Button;\n+import android.widget.Toast;\n+\n+public class Net1314080903244Activity extends Activity {\n+\tprivate Button statusButton = null;\n+\tprivate Camera camera = null;\n+\tprivate Parameters parameters = null;\n+\tpublic static boolean statusFlag = true;\n+\tprivate int back = 0;// �жϰ�����back\n+\n+\t/** Called when the activity is first created. */\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\n+\t\tsetContentView(R.layout.main);\n+\n+\t\tstatusButton = (Button) findViewById(R.id.statusButton);\n+\t\tstatusButton.setOnClickListener(new Mybutton());\n+\t}\n+\n+\tclass Mybutton implements OnClickListener {\n+\t\t@Override\n+\t\tpublic void onClick(View v) {\n+\t\t\tif (statusFlag) {\n+\t\t\t\tstatusButton.setBackgroundResource(R.drawable.switchon);\n+\t\t\t\tcamera = Camera.open();\n+\t\t\t\tparameters = camera.getParameters();\n+\t\t\t\tparameters.setFlashMode(Parameters.FLASH_MODE_TORCH);// ����\n+\t\t\t\tcamera.setParameters(parameters);\n+\t\t\t\tstatusFlag = false;\n+\t\t\t} else {\n+\t\t\t\tstatusButton.setBackgroundResource(R.drawable.switchoff);\n+\t\t\t\tparameters.setFlashMode(Parameters.FLASH_MODE_OFF);// �ر�\n+\t\t\t\tcamera.setParameters(parameters);\n+\t\t\t\tstatusFlag = true;\n+\t\t\t\tcamera.release();\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tpublic boolean onKeyDown(int keyCode, KeyEvent event) {\n+\t\tif (keyCode == KeyEvent.KEYCODE_BACK) {\n+\t\t\tback++;\n+\n+\t\t\tCloseApp();\n+\n+\t\t}\n+\t\treturn false;// ���ó�false��backʧЧ ��true��ʾ ��ʧЧ\n+\n+\t}\n \n-public class Net1314080903244activity extends AppCompatActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_main);\n-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n-        setSupportActionBar(toolbar);\n-\n-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n-        fab.setOnClickListener(new View.OnClickListener() {\n-            @Override\n-            public void onClick(View view) {\n-                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n-                        .setAction(\"Action\", null).show();\n-            }\n-        });\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_main, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            return true;\n-        }\n-\n-        return super.onOptionsItemSelected(item);\n-    }\n-}\n+\tpublic void CloseApp() { // �رճ���\n+\t\tif (statusFlag) {// ���عر�ʱ\n+\t\t\tFlashlightActivity.this.finish();\n+\t\t\tandroid.os.Process.killProcess(android.os.Process.myPid());// �رս��\n+\t\t} else if (!statusFlag) {// ���ش�ʱ\n+\t\t\tcamera.release();\n+\t\t\tFlashlightActivity.this.finish();\n+\t\t\tandroid.os.Process.killProcess(android.os.Process.myPid());// �رս��\n+\t\t\tstatusFlag = true;// ���⣬�򿪿��غ��˳�����ٴν��벻�򿪿���ֱ���˳�ʱ���������\n+\t\t}\n+\t}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "50536d6c40281cac55cd7aec575f31ffcd087fc9",
+    "filename" : "app/src/main/res/drawable/net1314080903244icon.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/deec73182b511c1ee953517251654f8773c11b87/app/src/main/res/drawable/net1314080903244icon.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/deec73182b511c1ee953517251654f8773c11b87/app/src/main/res/drawable/net1314080903244icon.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903244icon.png?ref=deec73182b511c1ee953517251654f8773c11b87"
+  }, {
+    "sha" : "d6444d6325cea4815bb0bbe708df966b0d9e94be",
+    "filename" : "app/src/main/res/drawable/net1314080903244switchoff.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/deec73182b511c1ee953517251654f8773c11b87/app/src/main/res/drawable/net1314080903244switchoff.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/deec73182b511c1ee953517251654f8773c11b87/app/src/main/res/drawable/net1314080903244switchoff.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903244switchoff.png?ref=deec73182b511c1ee953517251654f8773c11b87"
+  }, {
+    "sha" : "902bd38dfcc5f8be62055248731e1bd29530f4a4",
+    "filename" : "app/src/main/res/drawable/net1314080903244switchon.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/deec73182b511c1ee953517251654f8773c11b87/app/src/main/res/drawable/net1314080903244switchon.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/deec73182b511c1ee953517251654f8773c11b87/app/src/main/res/drawable/net1314080903244switchon.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903244switchon.png?ref=deec73182b511c1ee953517251654f8773c11b87"
+  }, {
+    "sha" : "8af8f47f6e98d7826f1f1018e328a8efe8b9ca6a",
+    "filename" : "app/src/main/res/layout/activity_net1314080903244.xml",
+    "status" : "added",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/deec73182b511c1ee953517251654f8773c11b87/app/src/main/res/layout/activity_net1314080903244.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/deec73182b511c1ee953517251654f8773c11b87/app/src/main/res/layout/activity_net1314080903244.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903244.xml?ref=deec73182b511c1ee953517251654f8773c11b87",
+    "patch" : "@@ -0,0 +1,17 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:id=\"@+id/relativelayout\"\n+    android:background=\"@drawable/white\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    >\n+\n+<Button\n+    android:id=\"@+id/statusButton\"\n+    android:layout_width=\"wrap_content\"\n+    android:layout_height=\"wrap_content\"\n+    android:layout_centerHorizontal=\"true\"\n+    android:layout_centerVertical=\"true\"\n+    android:background=\"@drawable/net1314080903244switchoff\" />\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "d5c37af7b080699dbfe2552e8a16cf5e5f63a565",
+    "filename" : "app/src/main/res/layout/net1314080903244activity_main.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 16,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f8a4f02921a4f675e08c1d612a693ca8f1e8e5df/app/src/main/res/layout/net1314080903244activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f8a4f02921a4f675e08c1d612a693ca8f1e8e5df/app/src/main/res/layout/net1314080903244activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903244activity_main.xml?ref=f8a4f02921a4f675e08c1d612a693ca8f1e8e5df",
+    "patch" : "@@ -1,16 +0,0 @@\n-<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:id=\"@+id/container\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903244.Net1314080903244Activity\"\n-    tools:ignore=\"MergeRootFrame\" >\n-\n-    <Button\n-        android:id=\"@+id/btnStart\"\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\"\n-        android:layout_marginTop=\"@android:dimen/thumbnail_height\"\n-        android:text=\"开始\" />\n-\n-</FrameLayout>"
+  } ],
+  "sha" : "deec73182b511c1ee953517251654f8773c11b87",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/deec73182b511c1ee953517251654f8773c11b87",
+  "parents" : [ {
+    "sha" : "f8a4f02921a4f675e08c1d612a693ca8f1e8e5df",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f8a4f02921a4f675e08c1d612a693ca8f1e8e5df",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/f8a4f02921a4f675e08c1d612a693ca8f1e8e5df"
+  } ]
+}

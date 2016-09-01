@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 62,
+    "additions" : 62,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/5b8516f4db93cfee51b1d31157e4283a7b55fca8",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-12T05:24:35Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-12T05:24:35Z"
+    },
+    "message" : "Merge pull request #724 from Hackergeek/master\n\nlab07 #93",
+    "tree" : {
+      "sha" : "c65c72f7d2f79dda3f6bc696af6196da67f0619d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/c65c72f7d2f79dda3f6bc696af6196da67f0619d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/5b8516f4db93cfee51b1d31157e4283a7b55fca8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5b8516f4db93cfee51b1d31157e4283a7b55fca8/comments",
+  "files" : [ {
+    "sha" : "f69f19e25985d58374e7166f5c58b37ae0a74bd0",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NetActivity.java",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5b8516f4db93cfee51b1d31157e4283a7b55fca8/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NetActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5b8516f4db93cfee51b1d31157e4283a7b55fca8/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NetActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NetActivity.java?ref=5b8516f4db93cfee51b1d31157e4283a7b55fca8",
+    "patch" : "@@ -0,0 +1,41 @@\n+package skyward.com.testvolley;\n+\n+import android.support.annotation.Nullable;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.TextView;\n+import com.android.volley.Request;\n+import com.android.volley.RequestQueue;\n+import com.android.volley.Response;\n+import com.android.volley.VolleyError;\n+import com.android.volley.toolbox.StringRequest;\n+import com.android.volley.toolbox.Volley;\n+public class NetActivity extends AppCompatActivity {\n+    public static final String url = \"https://github.com/Hackergeek/android-labs/tree/master/app/src/main/AndroidManifest.xml\";\n+    public TextView tv_data;\n+\n+    @Override\n+    protected void onCreate(@Nullable Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net);\n+        tv_data = (TextView) findViewById(R.id.tv_data);\n+    }\n+\n+    public void getData(View view) {\n+        RequestQueue queue = Volley.newRequestQueue(this);\n+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {\n+            @Override\n+            public void onResponse(String s) {\n+                tv_data.setText(s);\n+\n+            }\n+        }, new Response.ErrorListener() {\n+            @Override\n+            public void onErrorResponse(VolleyError volleyError) {\n+\n+            }\n+        });\n+        queue.add(stringRequest);\n+    }\n+}"
+  }, {
+    "sha" : "91e6e2ead4b7a20d217d81b889b11bea2ce29e12",
+    "filename" : "app/src/main/res/layout/activity_net.xml",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5b8516f4db93cfee51b1d31157e4283a7b55fca8/app/src/main/res/layout/activity_net.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5b8516f4db93cfee51b1d31157e4283a7b55fca8/app/src/main/res/layout/activity_net.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net.xml?ref=5b8516f4db93cfee51b1d31157e4283a7b55fca8",
+    "patch" : "@@ -0,0 +1,21 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\">\n+    <LinearLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:orientation=\"vertical\">\n+        <Button\n+            android:onClick=\"getData\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:text=\"Get Data\"/>\n+\n+        <TextView\n+            android:id=\"@+id/tv_data\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"match_parent\" />\n+    </LinearLayout>\n+</ScrollView>"
+  } ],
+  "sha" : "5b8516f4db93cfee51b1d31157e4283a7b55fca8",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5b8516f4db93cfee51b1d31157e4283a7b55fca8",
+  "parents" : [ {
+    "sha" : "d71018dfbe0e14412a89d50b2762ca3057db1f4f",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d71018dfbe0e14412a89d50b2762ca3057db1f4f",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/d71018dfbe0e14412a89d50b2762ca3057db1f4f"
+  }, {
+    "sha" : "ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f"
+  } ]
+}

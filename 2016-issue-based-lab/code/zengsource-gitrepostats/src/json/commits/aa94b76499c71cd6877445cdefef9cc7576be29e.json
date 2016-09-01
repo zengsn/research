@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "1040003585",
+    "id" : 13864758,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13864758?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1040003585",
+    "html_url" : "https://github.com/1040003585",
+    "followers_url" : "https://api.github.com/users/1040003585/followers",
+    "following_url" : "https://api.github.com/users/1040003585/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1040003585/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1040003585/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1040003585/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1040003585/orgs",
+    "repos_url" : "https://api.github.com/users/1040003585/repos",
+    "events_url" : "https://api.github.com/users/1040003585/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1040003585/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 37,
+    "additions" : 0,
+    "deletions" : 37
+  },
+  "author" : {
+    "login" : "1040003585",
+    "id" : 13864758,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13864758?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1040003585",
+    "html_url" : "https://github.com/1040003585",
+    "followers_url" : "https://api.github.com/users/1040003585/followers",
+    "following_url" : "https://api.github.com/users/1040003585/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1040003585/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1040003585/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1040003585/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1040003585/orgs",
+    "repos_url" : "https://api.github.com/users/1040003585/repos",
+    "events_url" : "https://api.github.com/users/1040003585/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1040003585/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/aa94b76499c71cd6877445cdefef9cc7576be29e",
+  "commit" : {
+    "author" : {
+      "name" : "1040003585",
+      "email" : "1040003585@qq.com",
+      "date" : "2016-04-13T02:38:13Z"
+    },
+    "committer" : {
+      "name" : "1040003585",
+      "email" : "1040003585@qq.com",
+      "date" : "2016-04-13T02:38:13Z"
+    },
+    "message" : "rm -r edu...nopeople",
+    "tree" : {
+      "sha" : "b5dd08afa802e1d2942e3febf0ae0caca95bbdda",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/b5dd08afa802e1d2942e3febf0ae0caca95bbdda"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/aa94b76499c71cd6877445cdefef9cc7576be29e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/aa94b76499c71cd6877445cdefef9cc7576be29e/comments",
+  "files" : [ {
+    "sha" : "f201412d21bad0b52eb3ad58ede382434e200e01",
+    "filename" : "edu.hzuapps.nopeople/MainActivity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 37,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/008e72110b8b2fda26a3583e1da7ec77deebf808/edu.hzuapps.nopeople/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/008e72110b8b2fda26a3583e1da7ec77deebf808/edu.hzuapps.nopeople/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/edu.hzuapps.nopeople/MainActivity.java?ref=008e72110b8b2fda26a3583e1da7ec77deebf808",
+    "patch" : "@@ -1,37 +0,0 @@\n-package com.homeworks.androidworks.hzuapps.edu.desktopmemo;\n-\n-import android.os.Bundle;\n-import android.support.v7.app.ActionBarActivity;\n-import android.view.Menu;\n-import android.view.MenuItem;\n-\n-public class MainActivity extends ActionBarActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_main);\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_main, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            return true;\n-        }\n-\n-        return super.onOptionsItemSelected(item);\n-    }\n-}"
+  } ],
+  "sha" : "aa94b76499c71cd6877445cdefef9cc7576be29e",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/aa94b76499c71cd6877445cdefef9cc7576be29e",
+  "parents" : [ {
+    "sha" : "008e72110b8b2fda26a3583e1da7ec77deebf808",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/008e72110b8b2fda26a3583e1da7ec77deebf808",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/008e72110b8b2fda26a3583e1da7ec77deebf808"
+  } ]
+}

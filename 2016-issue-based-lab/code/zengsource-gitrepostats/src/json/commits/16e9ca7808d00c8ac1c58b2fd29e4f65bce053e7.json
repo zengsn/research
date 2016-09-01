@@ -1,0 +1,106 @@
+{
+  "committer" : {
+    "login" : "ZaakLim",
+    "id" : 17907273,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17907273?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ZaakLim",
+    "html_url" : "https://github.com/ZaakLim",
+    "followers_url" : "https://api.github.com/users/ZaakLim/followers",
+    "following_url" : "https://api.github.com/users/ZaakLim/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ZaakLim/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ZaakLim/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ZaakLim/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ZaakLim/orgs",
+    "repos_url" : "https://api.github.com/users/ZaakLim/repos",
+    "events_url" : "https://api.github.com/users/ZaakLim/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ZaakLim/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 112,
+    "additions" : 112,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "ZaakLim",
+    "id" : 17907273,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17907273?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ZaakLim",
+    "html_url" : "https://github.com/ZaakLim",
+    "followers_url" : "https://api.github.com/users/ZaakLim/followers",
+    "following_url" : "https://api.github.com/users/ZaakLim/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ZaakLim/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ZaakLim/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ZaakLim/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ZaakLim/orgs",
+    "repos_url" : "https://api.github.com/users/ZaakLim/repos",
+    "events_url" : "https://api.github.com/users/ZaakLim/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ZaakLim/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7",
+  "commit" : {
+    "author" : {
+      "name" : "ZaakLim",
+      "email" : "245500710@qq.com",
+      "date" : "2016-04-27T08:37:42Z"
+    },
+    "committer" : {
+      "name" : "ZaakLim",
+      "email" : "245500710@qq.com",
+      "date" : "2016-04-27T08:37:42Z"
+    },
+    "message" : "#89 #82 实验3",
+    "tree" : {
+      "sha" : "d065395127f320fc95255cb4f8188d8ace6ba324",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/d065395127f320fc95255cb4f8188d8ace6ba324"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7/comments",
+  "files" : [ {
+    "sha" : "d8e8c4933da891de6a5abf4ab19933662135cdcb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/Net1314080903125Activity.java",
+    "status" : "modified",
+    "additions" : 73,
+    "deletions" : 0,
+    "changes" : 73,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/Net1314080903125Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/Net1314080903125Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/Net1314080903125Activity.java?ref=16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7",
+    "patch" : "@@ -1,11 +1,23 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903125;\n \n import android.content.Intent;\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.net.Uri;\n+import android.os.Environment;\n import android.provider.MediaStore;\n import android.support.v7.app.AppCompatActivity;\n import android.os.Bundle;\n import android.view.View;\n import android.widget.Button;\n+import android.widget.ImageView;\n+import android.widget.Toast;\n+\n+import java.io.File;\n+import java.io.FileNotFoundException;\n+import java.io.FileOutputStream;\n+import java.io.IOException;\n+import java.io.InputStream;\n \n public class Net1314080903125Activity extends AppCompatActivity {\n \n@@ -35,7 +47,68 @@ public void onClick(View v){\n             }\n         });\n     }\n+    private Uri saveBitmap(Bitmap bm)\n+    {\n+        File tmpDir = new File(Environment.getExternalStorageDirectory() +\"/com.zaak.zaaklim\");\n+        if(!tmpDir.exists())\n+        {\n+            tmpDir.mkdir();\n+        }\n+        File img = new File(tmpDir.getAbsolutePath() +\"zaaklim.png\");\n+        try{\n+            FileOutputStream fos = new FileOutputStream(img);\n+            bm.compress(Bitmap.CompressFormat.PNG,85,fos);\n+            fos.flush();\n+            fos.close();\n+            return Uri.fromFile(img);\n+        }catch (FileNotFoundException e){\n+            e.printStackTrace();\n+            return null;\n+        }catch(IOException e){\n+            e.printStackTrace();\n+            return null;\n+        }\n+    }\n+\n+    private Uri convertUri(Uri uri)\n+    {\n+        InputStream is = null;\n+        try{\n+            is = getContentResolver().openInputStream(uri);\n+            Bitmap bitmap = BitmapFactory.decodeStream(is);\n+            is.close();\n+            return saveBitmap(bitmap);\n+        }catch (FileNotFoundException e){\n+            e.printStackTrace();\n+            return null;\n+        }catch (IOException e){\n+            e.printStackTrace();\n+            return null;\n+        }\n+    }\n \n+    @Override\n+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {\n+        if (requestCode == CAMERA_REQUEST_CODE) {\n+            if (data == null) {\n+                return;\n+            } else {\n+                Bundle extras = data.getExtras();\n+                if (extras != null) {\n+                    Bitmap bm = extras.getParcelable(\"data\");\n+                    ImageView imageView = (ImageView) findViewById(R.id.imageView);\n+                    imageView.setImageBitmap(bm);\n+                }\n+            }\n+        } else if (requestCode == GALLERY_REQUEST_CODE) {\n+            if (data == null) {\n+                return;\n+            }\n+            Uri uri;\n+            uri = data.getData();\n+            Toast.makeText(Net1314080903125Activity.this, uri.toString(), Toast.LENGTH_LONG).show();\n \n+        }\n+    }\n \n }"
+  }, {
+    "sha" : "61fb29ec37c637ae9c732d29aaa7034d4607e199",
+    "filename" : "app/src/main/res/drawable/net1314080903125.JPG",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7/app/src/main/res/drawable/net1314080903125.JPG",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7/app/src/main/res/drawable/net1314080903125.JPG",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903125.JPG?ref=16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7"
+  }, {
+    "sha" : "e9165bd5865c2ed00f07c41a099973951bbadbc7",
+    "filename" : "app/src/main/res/layout/net1314080903125.xml",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7/app/src/main/res/layout/net1314080903125.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7/app/src/main/res/layout/net1314080903125.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903125.xml?ref=16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7",
+    "patch" : "@@ -0,0 +1,39 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\".Net1314080903125Activity\">\n+\n+    <ImageView\n+        android:layout_width=\"400px\"\n+        android:layout_height=\"400px\"\n+        android:id=\"@+id/imageView\"\n+        android:layout_alignParentTop=\"true\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:layout_marginTop=\"45dp\"\n+        android:src=\"@drawable/net1314080903125\"/>\n+\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"摄像头\"\n+        android:id=\"@+id/btn_camera\"\n+        android:layout_marginTop=\"80dp\"\n+        android:layout_below=\"@+id/imageView\"\n+        android:layout_centerHorizontal=\"true\" />\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\" 图库 \"\n+        android:id=\"@+id/btn_gallery\"\n+        android:layout_below=\"@+id/btn_camera\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:layout_marginTop=\"29dp\" />\n+</RelativeLayout>"
+  } ],
+  "sha" : "16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7",
+  "parents" : [ {
+    "sha" : "40268c7e6d2f6b8d33d3a39ede7fcde9a3eddd93",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/40268c7e6d2f6b8d33d3a39ede7fcde9a3eddd93",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/40268c7e6d2f6b8d33d3a39ede7fcde9a3eddd93"
+  } ]
+}

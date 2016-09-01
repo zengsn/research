@@ -1,0 +1,121 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 166,
+    "additions" : 166,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/1bdedd23904da60b8f8f48010b58fdff2d927642",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-15T12:17:46Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-06-15T12:17:46Z"
+    },
+    "message" : "Merge pull request #954 from hzmrwu/master\n\n#115 #89实验三",
+    "tree" : {
+      "sha" : "859aa27e0c6d3478735aa229e1011649b0d91a30",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/859aa27e0c6d3478735aa229e1011649b0d91a30"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/1bdedd23904da60b8f8f48010b58fdff2d927642",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1bdedd23904da60b8f8f48010b58fdff2d927642/comments",
+  "files" : [ {
+    "sha" : "661d7d96cc92b9f534c5fda995928dea9a38ef18",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903240/MainActivity_exp4.java",
+    "status" : "added",
+    "additions" : 92,
+    "deletions" : 0,
+    "changes" : 92,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1bdedd23904da60b8f8f48010b58fdff2d927642/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903240/MainActivity_exp4.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1bdedd23904da60b8f8f48010b58fdff2d927642/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903240/MainActivity_exp4.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903240/MainActivity_exp4.java?ref=1bdedd23904da60b8f8f48010b58fdff2d927642",
+    "patch" : "@@ -0,0 +1,92 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903240;\n+\n+\n+import java.util.Timer;\n+import java.util.TimerTask;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.TextView;\n+\n+\n+public class MainActivity extends Activity implements OnClickListener{\n+\n+    private EditText inputet;\n+    private Button getTime,startTime,stopTime;\n+    private TextView time;\n+    private int i = 0;\n+    private Timer timer = null;\n+    private TimerTask task = null;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+        initView();\n+    }\n+\n+    private void initView(){\n+        inputet = (EditText) findViewById(R.id.inputtime);\n+        getTime = (Button) findViewById(R.id.gettime);\n+        startTime = (Button) findViewById(R.id.starttime);\n+        stopTime = (Button) findViewById(R.id.stoptime);\n+        time = (TextView) findViewById(R.id.time);\n+        getTime.setOnClickListener(this);\n+        startTime.setOnClickListener(this);\n+        stopTime.setOnClickListener(this);\n+    }\n+\n+    @Override\n+    public void onClick(View v) {\n+        switch (v.getId()) {\n+            case R.id.gettime:\n+                time.setText(inputet.getText().toString());\n+                i = Integer.parseInt(inputet.getText().toString());\n+                break;\n+\n+            case R.id.starttime:\n+                startTime();\n+                break;\n+            case R.id.stoptime:\n+                stopTime();\n+                break;\n+        }\n+    }\n+\n+    private Handler mHandler = new Handler(){\n+        public void handleMessage(Message msg) {\n+            time.setText(msg.arg1+\"\");\n+            startTime();\n+        };\n+    };\n+\n+    public void startTime(){\n+        timer = new Timer();\n+        task = new TimerTask() {\n+\n+            @Override\n+            public void run() {\n+                if(i>0)\n+                i--;\n+                Message  message = mHandler.obtainMessage();\n+                message.arg1 = i;\n+                mHandler.sendMessage(message);\n+\n+            }\n+        };\n+        timer.schedule(task, 1000);\n+    }\n+\n+    public void stopTime(){\n+        timer.cancel();\n+    }\n+\n+}"
+  }, {
+    "sha" : "5b2149efe93b132b7dfb3142245ef54ec52bc11b",
+    "filename" : "app/src/main/res/drawable/sixiashenghuo.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1bdedd23904da60b8f8f48010b58fdff2d927642/app/src/main/res/drawable/sixiashenghuo.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1bdedd23904da60b8f8f48010b58fdff2d927642/app/src/main/res/drawable/sixiashenghuo.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/sixiashenghuo.jpg?ref=1bdedd23904da60b8f8f48010b58fdff2d927642"
+  }, {
+    "sha" : "91c9b33adfaa81f3a02852b3491dc016743be591",
+    "filename" : "app/src/main/res/layout/activity_net1314080903240.xml",
+    "status" : "added",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1bdedd23904da60b8f8f48010b58fdff2d927642/app/src/main/res/layout/activity_net1314080903240.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1bdedd23904da60b8f8f48010b58fdff2d927642/app/src/main/res/layout/activity_net1314080903240.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903240.xml?ref=1bdedd23904da60b8f8f48010b58fdff2d927642",
+    "patch" : "@@ -0,0 +1,17 @@\n+﻿<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903240.MainActivity\">\n+\n+    <ImageView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:src=\"@drawable/sixiashenghuo\"\n+        android:layout_below=\"@+id/stoptime\" />\n+</RelativeLayout>"
+  }, {
+    "sha" : "3aebb57d3a646a2e646405a3dd77afb87fd6592d",
+    "filename" : "app/src/main/res/layout/activity_net1314080903240_exp4.xml",
+    "status" : "added",
+    "additions" : 57,
+    "deletions" : 0,
+    "changes" : 57,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1bdedd23904da60b8f8f48010b58fdff2d927642/app/src/main/res/layout/activity_net1314080903240_exp4.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1bdedd23904da60b8f8f48010b58fdff2d927642/app/src/main/res/layout/activity_net1314080903240_exp4.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903240_exp4.xml?ref=1bdedd23904da60b8f8f48010b58fdff2d927642",
+    "patch" : "@@ -0,0 +1,57 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903240.MainActivity\">\n+\n+    <EditText\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:id=\"@+id/inputtime\"\n+        android:hint=\"请输入倒计时时间\" />\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"获取倒计时时间\"\n+        android:id=\"@+id/gettime\"\n+        android:layout_alignParentTop=\"true\"\n+        android:layout_alignParentStart=\"true\"\n+        android:layout_marginTop=\"48dp\" />\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"开始倒计时\"\n+        android:id=\"@+id/starttime\"\n+        android:layout_below=\"@+id/gettime\"\n+        android:layout_alignParentStart=\"true\" />\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"停止\"\n+        android:id=\"@+id/stoptime\"\n+        android:layout_below=\"@+id/starttime\"\n+        android:layout_alignParentStart=\"true\" />\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:textAppearance=\"?android:attr/textAppearanceLarge\"\n+        android:id=\"@+id/time\"\n+        android:layout_alignBottom=\"@+id/gettime\"\n+        android:layout_toEndOf=\"@+id/gettime\"\n+        android:layout_marginStart=\"50dp\" />\n+\n+    <ImageView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:src=\"@drawable/sixiashenghuo\"\n+        android:layout_below=\"@+id/stoptime\" />\n+</RelativeLayout>"
+  } ],
+  "sha" : "1bdedd23904da60b8f8f48010b58fdff2d927642",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1bdedd23904da60b8f8f48010b58fdff2d927642",
+  "parents" : [ {
+    "sha" : "2c7c0cdcae78dee033ea0ebd63c1f0171ce367a3",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2c7c0cdcae78dee033ea0ebd63c1f0171ce367a3",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/2c7c0cdcae78dee033ea0ebd63c1f0171ce367a3"
+  }, {
+    "sha" : "1fdf15cc9fad14cbdcc6a50dce93a7ca1edc7a01",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1fdf15cc9fad14cbdcc6a50dce93a7ca1edc7a01",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1fdf15cc9fad14cbdcc6a50dce93a7ca1edc7a01"
+  } ]
+}

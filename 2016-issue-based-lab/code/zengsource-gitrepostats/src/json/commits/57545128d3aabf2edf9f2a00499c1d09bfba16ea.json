@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "xiaoqiannba",
+    "id" : 15009260,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15009260?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoqiannba",
+    "html_url" : "https://github.com/xiaoqiannba",
+    "followers_url" : "https://api.github.com/users/xiaoqiannba/followers",
+    "following_url" : "https://api.github.com/users/xiaoqiannba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoqiannba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoqiannba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoqiannba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoqiannba/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoqiannba/repos",
+    "events_url" : "https://api.github.com/users/xiaoqiannba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoqiannba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 188,
+    "additions" : 177,
+    "deletions" : 11
+  },
+  "author" : {
+    "login" : "xiaoqiannba",
+    "id" : 15009260,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15009260?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoqiannba",
+    "html_url" : "https://github.com/xiaoqiannba",
+    "followers_url" : "https://api.github.com/users/xiaoqiannba/followers",
+    "following_url" : "https://api.github.com/users/xiaoqiannba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoqiannba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoqiannba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoqiannba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoqiannba/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoqiannba/repos",
+    "events_url" : "https://api.github.com/users/xiaoqiannba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoqiannba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/57545128d3aabf2edf9f2a00499c1d09bfba16ea",
+  "commit" : {
+    "author" : {
+      "name" : "xiaoqiannba",
+      "email" : "229597145@qq.com",
+      "date" : "2016-06-14T07:50:53Z"
+    },
+    "committer" : {
+      "name" : "xiaoqiannba",
+      "email" : "229597145@qq.com",
+      "date" : "2016-06-14T10:40:17Z"
+    },
+    "message" : "#93 #34 lab7\n\n网络编程",
+    "tree" : {
+      "sha" : "a5c7a942d97c17d58b80847edeba8f4cef004405",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/a5c7a942d97c17d58b80847edeba8f4cef004405"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/57545128d3aabf2edf9f2a00499c1d09bfba16ea",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/57545128d3aabf2edf9f2a00499c1d09bfba16ea/comments",
+  "files" : [ {
+    "sha" : "a48493e84ed0383146211730e91577371af1d231",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901235/Com1314080901235Activity.java",
+    "status" : "modified",
+    "additions" : 177,
+    "deletions" : 11,
+    "changes" : 188,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/57545128d3aabf2edf9f2a00499c1d09bfba16ea/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901235/Com1314080901235Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/57545128d3aabf2edf9f2a00499c1d09bfba16ea/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901235/Com1314080901235Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901235/Com1314080901235Activity.java?ref=57545128d3aabf2edf9f2a00499c1d09bfba16ea",
+    "patch" : "@@ -1,22 +1,188 @@\n-package com.example.nba;\n+package com.example.okhttp;\n+\n+import java.io.BufferedReader;\n+import java.io.BufferedWriter;\n+import java.io.IOException;\n+import java.io.InputStream;\n+import java.io.InputStreamReader;\n+import java.io.OutputStream;\n+import java.io.OutputStreamWriter;\n+import java.net.HttpURLConnection;\n+import java.net.URL;\n+\n+import org.json.JSONException;\n+import org.json.JSONObject;\n \n-import android.os.Bundle;\n import android.app.Activity;\n-import android.view.Menu;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.TextView;\n \n-public class Com1314080901235Activity extends Activity {\n+import com.squareup.okhttp.Call;\n+import com.squareup.okhttp.Callback;\n+import com.squareup.okhttp.OkHttpClient;\n+import com.squareup.okhttp.Request;\n+import com.squareup.okhttp.Response;\n+\n+public class MainActivity extends Activity {\n+\tprotected static final int MSG_WHERE = 0;\n+\tprotected static final int MSG_WHAT = 1;\n+\tTextView tv_show, tv_show_return_code;\n+\n+\tString htmlStr, htmlStr_return_code;\n+\tString realStrToken;\n+\tButton bt_get_token, bt_return_code;\n \n-\t@Override\n \tprotected void onCreate(Bundle savedInstanceState) {\n \t\tsuper.onCreate(savedInstanceState);\n-\t\tsetContentView(R.layout.activity_com1314080901235);\n+\t\tsetContentView(R.layout.activity_main);\n+\t\tfindViewById();\n+\n+\t\t// ��ȡtoken\n+\t\tbt_get_token.setOnClickListener(new OnClickListener() {\n+\t\t\tpublic void onClick(View arg0) {\n+\t\t\t\tnew Thread(new Runnable() {\n+\t\t\t\t\tpublic void run() {\n+\t\t\t\t\t\ttry {\n+\t\t\t\t\t\t\tgetToken();\n+\t\t\t\t\t\t} catch (Exception e) {\n+\t\t\t\t\t\t\te.printStackTrace();\n+\t\t\t\t\t\t}\n+\t\t\t\t\t}\n+\n+\t\t\t\t}).start();\n+\t\t\t}\n+\t\t});\n+\n+\t\t// ��ȡ������\n+\t\tbt_return_code.setOnClickListener(new OnClickListener() {\n+\t\t\tpublic void onClick(View arg0) {\n+\t\t\t\tnew Thread(new Runnable() {\n+\t\t\t\t\tpublic void run() {\n+\t\t\t\t\t\ttry {\n+\t\t\t\t\t\t\tpush_my_content();\n+\t\t\t\t\t\t} catch (Exception e) {\n+\t\t\t\t\t\t\te.printStackTrace();\n+\t\t\t\t\t\t}\n+\t\t\t\t\t}\n+\n+\t\t\t\t}).start();\n+\t\t\t}\n+\t\t});\n+\n+\t}\n+\n+\t// ��ʼ��\n+\tprivate void findViewById() {\n+\t\ttv_show = (TextView) findViewById(R.id.tv_show_token);\n+\t\ttv_show_return_code = (TextView) findViewById(R.id.tv_return_code);\n+\t\tbt_get_token = (Button) this.findViewById(R.id.bt);\n+\t\tbt_return_code = (Button) this.findViewById(R.id.bt_getdata_next);\n+\n \t}\n \n-\t@Override\n-\tpublic boolean onCreateOptionsMenu(Menu menu) {\n-\t\t// Inflate the menu; this adds items to the action bar if it is present.\n-\t\tgetMenuInflater().inflate(R.menu.com1314080901235, menu);\n-\t\treturn true;\n+\tprivate void push_my_content() throws IOException {\n+\t\t//���Ե������\n+\t\t/*final MediaType MEDIA_TYPE_MARKDOWN = MediaType\n+\t\t\t\t.parse(\"text/x-markdown; charset=utf-8\");\n+\n+\t\tfinal OkHttpClient client = new OkHttpClient();\n+\n+\t\tString postBody = \"{\\\"filter\\\":{\\\"is_to_all\\\":true,\\\"group_id\\\":\\\"\\\"},\\\"text\\\":{\\\"content\\\":\\\"cON\\\"},\\\"msgtype\\\":\\\"text\\\"}\";\n+\n+\t\tString myurl=\"https://api.weixin.qq.com/cgi-bin/message/mass/sendall?access_token=\"+realStrToken;\n+\t\tRequest request = new Request.Builder()\n+\t\t\t\t.url(myurl)\n+\t\t\t\t.post(RequestBody.create(MEDIA_TYPE_MARKDOWN, postBody))\n+\t\t\t\t.build();\n+\n+\t\tResponse response = client.newCall(request).execute();\n+\t\tif (!response.isSuccessful())\n+\t\t\tthrow new IOException(\"Unexpected code \" + response);\n+\n+\t\tSystem.out.println(response.body().string());\n+*/\n+\t\t\n+\t\tURL url1=new URL(\"https://api.weixin.qq.com/cgi-bin/message/mass/sendall?access_token=\"+realStrToken);\n+\t\tHttpURLConnection connection1=(HttpURLConnection)url1.openConnection();\t\t\t\n+\t\tconnection1.setDoOutput(true);\n+\t\tconnection1.setDoInput(true);\n+\t\tconnection1.setConnectTimeout(5000);\n+\t\tconnection1.setReadTimeout(5000);\n+\t\tconnection1.setRequestMethod(\"POST\");\n+\t\t\n+\t\tString s2=\"{\\\"filter\\\":{\\\"is_to_all\\\":true,\\\"group_id\\\":\\\"\\\"},\\\"text\\\":{\\\"content\\\":\\\"cON\\\"},\\\"msgtype\\\":\\\"text\\\"}\";\n+\t\tSystem.out.println(s2);\n+\t\tOutputStream out=connection1.getOutputStream();\n+\t\tBufferedWriter sender=new BufferedWriter(new OutputStreamWriter(out));\n+\t\tsender.write(s2);\n+\t\tsender.flush();\n+\t\tsender.close();\n+\t\t\n+\t\tInputStream in1=connection1.getInputStream();\n+\t\tBufferedReader reader1=new BufferedReader(new InputStreamReader(in1));\n+\t\tString s3=reader1.readLine();\n+\t\tSystem.out.println(s3);\n+\t\t\n+\t\tconnection1.disconnect();\n \t}\n \n+\tprivate void getToken() {\n+\t\t// ����okHttpClient����\n+\t\tOkHttpClient mOkHttpClient = new OkHttpClient();\n+\t\t// ����Request���󣬲���������url��ͨ��Request.Builder���ø��Ĳ�����磺header��method�ȡ�\n+\t\tfinal Request mRequest = new Request.Builder()\n+\t\t\t\t.url(\n+\t\t\t\t// \"http://169.254.176.143:8080/listview_item.xml\").build();\n+\t\t\t\t\"https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx1a1531ba312f34d0&secret=cb12c83dcef984692f8c771535eb9132\")\n+\t\t\t\t.build();\n+\n+\t\t// ͨ��request����ȥ����õ�Call����=�������װ�����񣬵���execute()��cancel()�ȷ�����\n+\t\tCall mCall = mOkHttpClient.newCall(mRequest);\n+\t\t// ���첽�ķ�ʽȥִ�����󣬵���call.enqueue����call��������ȶ��У��ȴ�����ִ����ɣ���Callback�еõ����\n+\t\tmCall.enqueue(new Callback() {\n+\t\t\tpublic void onFailure(Request request, IOException e) {\n+\t\t\t}\n+\n+\t\t\tpublic void onResponse(final Response response) throws IOException {\n+\t\t\t\thtmlStr = response.body().string();\n+\t\t\t\t// Log.d(\"123\", htmlStr);\n+\t\t\t\tmHandler.sendEmptyMessage(MSG_WHAT);\n+\t\t\t}\n+\t\t});\n+\t}\n+\n+\tprivate String getRealStringFromJSON(String htmlStr) {\n+\t\tJSONObject json;\n+\t\tString tmp = null;\n+\t\ttry {\n+\t\t\tjson = new JSONObject(htmlStr);\n+\t\t\ttmp = json.get(\"access_token\").toString();\n+\t\t} catch (JSONException e) {\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t\treturn tmp;\n+\t};\n+\n+\tHandler mHandler = new Handler() {\n+\t\tpublic void handleMessage(Message msg) {\n+\t\t\tswitch (msg.what) {\n+\t\t\tcase MSG_WHAT:\n+\t\t\t\ttv_show.setText(htmlStr);\n+\t\t\t\trealStrToken = getRealStringFromJSON(htmlStr);\n+\t\t\t\tbreak;\n+\t\t\tcase MSG_WHERE:\n+\t\t\t\ttv_show_return_code.setText(htmlStr_return_code);\n+\t\t\tdefault:\n+\t\t\t\tbreak;\n+\t\t\t}\n+\t\t\tsuper.handleMessage(msg);\n+\t\t}\n+\n+\t};\n+\n }"
+  } ],
+  "sha" : "57545128d3aabf2edf9f2a00499c1d09bfba16ea",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/57545128d3aabf2edf9f2a00499c1d09bfba16ea",
+  "parents" : [ {
+    "sha" : "f1ae4810d0f0a82b8d1325c58ece3c9b43ba729d",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f1ae4810d0f0a82b8d1325c58ece3c9b43ba729d",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/f1ae4810d0f0a82b8d1325c58ece3c9b43ba729d"
+  } ]
+}

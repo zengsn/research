@@ -1,0 +1,140 @@
+{
+  "committer" : {
+    "login" : "thegoodboy1234",
+    "id" : 14990980,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14990980?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/thegoodboy1234",
+    "html_url" : "https://github.com/thegoodboy1234",
+    "followers_url" : "https://api.github.com/users/thegoodboy1234/followers",
+    "following_url" : "https://api.github.com/users/thegoodboy1234/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/thegoodboy1234/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/thegoodboy1234/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/thegoodboy1234/subscriptions",
+    "organizations_url" : "https://api.github.com/users/thegoodboy1234/orgs",
+    "repos_url" : "https://api.github.com/users/thegoodboy1234/repos",
+    "events_url" : "https://api.github.com/users/thegoodboy1234/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/thegoodboy1234/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 239,
+    "additions" : 239,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "thegoodboy1234",
+    "id" : 14990980,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14990980?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/thegoodboy1234",
+    "html_url" : "https://github.com/thegoodboy1234",
+    "followers_url" : "https://api.github.com/users/thegoodboy1234/followers",
+    "following_url" : "https://api.github.com/users/thegoodboy1234/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/thegoodboy1234/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/thegoodboy1234/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/thegoodboy1234/subscriptions",
+    "organizations_url" : "https://api.github.com/users/thegoodboy1234/orgs",
+    "repos_url" : "https://api.github.com/users/thegoodboy1234/repos",
+    "events_url" : "https://api.github.com/users/thegoodboy1234/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/thegoodboy1234/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/eda98b8d74356729fb41b206ba3fc2f5a618531b",
+  "commit" : {
+    "author" : {
+      "name" : "thegoodboy1234",
+      "email" : "1019389480@qq.com",
+      "date" : "2016-05-02T14:37:45Z"
+    },
+    "committer" : {
+      "name" : "thegoodboy1234",
+      "email" : "1019389480@qq.com",
+      "date" : "2016-05-02T14:37:45Z"
+    },
+    "message" : "#90 #57 Lab3 -设置布局和界面，及窗体切换逻辑",
+    "tree" : {
+      "sha" : "d16e3b816cb370ed4fb4e16dd051a72c71f84ead",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/d16e3b816cb370ed4fb4e16dd051a72c71f84ead"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/eda98b8d74356729fb41b206ba3fc2f5a618531b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/eda98b8d74356729fb41b206ba3fc2f5a618531b/comments",
+  "files" : [ {
+    "sha" : "0de80ea637e8f5739f527ab9c2464db18cb9693b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Com1314080901118Activity.java",
+    "status" : "modified",
+    "additions" : 67,
+    "deletions" : 0,
+    "changes" : 67,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Com1314080901118Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Com1314080901118Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Com1314080901118Activity.java?ref=eda98b8d74356729fb41b206ba3fc2f5a618531b",
+    "patch" : "@@ -1,13 +1,80 @@\n package com.hzu.lxh.mencard;\n \n+import android.app.Dialog;\n+import android.content.DialogInterface;\n+import android.content.Intent;\n+import android.support.v7.app.AlertDialog;\n import android.support.v7.app.AppCompatActivity;\n import android.os.Bundle;\n+import android.view.KeyEvent;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.Toast;\n \n public class Com1314080901118Activity extends AppCompatActivity {\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_com1314080901118);\n+        Button btn_st = (Button) findViewById(R.id.btn_start); //开始按钮设置\n+        btn_st.setOnClickListener(new Button.OnClickListener() {\n+                                      public void onClick(View view)  //创建监听\n+                                      {\n+                                          Intent in = new Intent();\n+                                          in.setClassName(getApplicationContext(), \"com.hzu.lxh.mencard.Game\");\n+                                          startActivity(in);\n+                                      }\n+                                  }\n+        );\n+        Button btn_set = (Button) findViewById(R.id.btn_set);     //设置按钮设置\n+        btn_set.setOnClickListener(new Button.OnClickListener() {\n+                                       public void onClick(View view) {\n+                                           Intent intent = new Intent();\n+                                           intent.setClassName(getApplicationContext(), \"com.hzu.lxh.mencard.Setting\");\n+                                           startActivity(intent);\n+                                       }\n+                                   }\n+        );\n+        Button btn_ex = (Button) findViewById(R.id.btn_exit);      //退出按钮设置\n+        btn_ex.setOnClickListener(new Button.OnClickListener() {\n+                                      public void onClick(View view) {\n+                                          dialog();\n+                                          /*\n+                                          Toast toast = Toast.makeText(Com1314080901118Activity.this, \"提示信息\", Toast.LENGTH_LONG);\n+                                          toast.show();\n+                                          */\n+                                      }\n+                                  }\n+        );\n+    }\n+\n+  protected void dialog(){\n+        AlertDialog.Builder builder=new AlertDialog.Builder(Com1314080901118Activity.this);\n+        builder.setMessage(\"是否退出游戏？\");\n+        builder.setTitle(\"提示\");\n+        builder.setPositiveButton(\"是\",\n+                new DialogInterface.OnClickListener() {\n+                    @Override\n+                    public void onClick(DialogInterface dialog, int which) {\n+                        dialog.dismiss();                                      //关闭提示框\n+                        Com1314080901118Activity.this.finish();                 //退出\n+                    }\n+                });\n+        builder.setNegativeButton(\"否\",\n+                new DialogInterface.OnClickListener() {\n+                    @Override\n+                    public void onClick(DialogInterface dialog, int which) {\n+                        dialog.dismiss();\n+                    }\n+                });\n+        builder.create().show();\n+    }\n+    public boolean onKeyDown(int keyCode, KeyEvent event)  //设置返回键\n+    {\n+        if(keyCode==KeyEvent.KEYCODE_BACK&&event.getRepeatCount()==0){\n+            dialog();\n+        }\n+        return false;\n     }\n }"
+  }, {
+    "sha" : "2d0d4d8ef7ea00180d808acaaa6fdc522f9a6aa3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Game.java",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Game.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Game.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Game.java?ref=eda98b8d74356729fb41b206ba3fc2f5a618531b",
+    "patch" : "@@ -0,0 +1,13 @@\n+package com.hzu.lxh.mencard;\n+\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+//游戏窗口\n+public class Game extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_game1314080901118);\n+    }\n+}"
+  }, {
+    "sha" : "1b55999bd130852e87c36cad67ba4c6a603cb563",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Setting.java",
+    "status" : "added",
+    "additions" : 37,
+    "deletions" : 0,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Setting.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Setting.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901118/Setting.java?ref=eda98b8d74356729fb41b206ba3fc2f5a618531b",
+    "patch" : "@@ -0,0 +1,37 @@\n+package com.hzu.lxh.mencard;\n+\n+import android.content.Intent;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.Toast;\n+\n+//设置窗口\n+public class Setting extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_setting1314080901118);\n+        Button btn_ok = (Button) findViewById(R.id.ok_btn); //确定按钮设置\n+        btn_ok.setOnClickListener(new Button.OnClickListener() {\n+                                      public void onClick(View view)  //创建监听\n+                                      {\n+                                          Toast toast = Toast.makeText(Setting.this, \"设置完成\", Toast.LENGTH_LONG);\n+                                          toast.show();\n+                                          Setting.this.finish();\n+                                      }\n+                                  }\n+        );\n+        Button btn_cncel = (Button) findViewById(R.id.cncel_btn);     //取消按钮设置\n+        btn_cncel.setOnClickListener(new Button.OnClickListener() {\n+                                       public void onClick(View view) {\n+                                           Intent in = new Intent();\n+                                           in.setClassName(getApplicationContext(), \"com.hzu.lxh.mencard.Com1314080901118Activity\");\n+                                           startActivity(in);\n+                                       }\n+                                   }\n+        );\n+    }\n+}"
+  }, {
+    "sha" : "7f136bda289c233e11fb412c191a7d51c20a17e4",
+    "filename" : "app/src/main/res/layout/activity_com1314080901118.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/res/layout/activity_com1314080901118.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/res/layout/activity_com1314080901118.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901118.xml?ref=eda98b8d74356729fb41b206ba3fc2f5a618531b",
+    "patch" : "@@ -9,6 +9,7 @@\n     android:paddingTop=\"@dimen/activity_vertical_margin\"\n     android:background=\"@drawable/mc\"\n     tools:context=\".Com1314080901118Activity\">\n+    <!--设置背景图片-->\n \n     <Button\n         android:layout_width=\"wrap_content\""
+  }, {
+    "sha" : "61c96f186f39796e5996deb8d74795afae12f568",
+    "filename" : "app/src/main/res/layout/activity_game1314080901118.xml",
+    "status" : "added",
+    "additions" : 22,
+    "deletions" : 0,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/res/layout/activity_game1314080901118.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/res/layout/activity_game1314080901118.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_game1314080901118.xml?ref=eda98b8d74356729fb41b206ba3fc2f5a618531b",
+    "patch" : "@@ -0,0 +1,22 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:background=\"#40ffd2\"\n+    tools:context=\"com.hzu.lxh.mencard.Game\">\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"游戏窗口\"\n+        android:id=\"@+id/t_game\"\n+        android:layout_alignParentTop=\"true\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:textSize=\"60dp\"\n+        android:layout_marginTop=\"119dp\" />\n+</RelativeLayout>"
+  }, {
+    "sha" : "a67da23f9476f97dda780ee36c0fe8b90e8db77c",
+    "filename" : "app/src/main/res/layout/activity_setting1314080901118.xml",
+    "status" : "added",
+    "additions" : 99,
+    "deletions" : 0,
+    "changes" : 99,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/res/layout/activity_setting1314080901118.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eda98b8d74356729fb41b206ba3fc2f5a618531b/app/src/main/res/layout/activity_setting1314080901118.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_setting1314080901118.xml?ref=eda98b8d74356729fb41b206ba3fc2f5a618531b",
+    "patch" : "@@ -0,0 +1,99 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:background=\"#ffb340\"\n+    tools:context=\"com.hzu.lxh.mencard.Setting\">\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"确定\"\n+        android:id=\"@+id/ok_btn\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentStart=\"true\"\n+        android:layout_marginLeft=\"27dp\"\n+        android:layout_marginStart=\"27dp\"\n+        android:layout_marginBottom=\"36dp\"\n+        android:textSize=\"40dp\"/>\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"取消\"\n+        android:id=\"@+id/cncel_btn\"\n+        android:layout_alignBottom=\"@+id/ok_btn\"\n+        android:layout_alignParentRight=\"true\"\n+        android:layout_alignParentEnd=\"true\"\n+        android:layout_marginRight=\"40dp\"\n+        android:layout_marginEnd=\"20dp\"\n+        android:textSize=\"40dp\"/>\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:textAppearance=\"?android:attr/textAppearanceLarge\"\n+        android:text=\"音频设置\"\n+        android:id=\"@+id/vol_set\"\n+        android:layout_alignParentTop=\"true\"\n+        android:textSize=\"40dp\"\n+        android:gravity=\"center\"\n+        android:layout_alignParentRight=\"true\"\n+        android:layout_alignParentEnd=\"true\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentStart=\"true\" />\n+    <ProgressBar\n+        android:id=\"@+id/prebox\"\n+        android:layout_width=\"200dp\"\n+        android:layout_height=\"wrap_content\"\n+        style=\"?android:attr/progressBarStyleHorizontal\"\n+        android:max=\"100\"\n+        android:progress=\"50\"\n+        android:layout_below=\"@+id/vol_set\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentStart=\"true\"\n+        android:layout_marginTop=\"92dp\"\n+        android:layout_alignRight=\"@+id/vol_set\"\n+        android:layout_alignEnd=\"@+id/vol_set\"\n+        android:indeterminate=\"false\" />\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:textAppearance=\"?android:attr/textAppearanceLarge\"\n+        android:text=\"最小\"\n+        android:id=\"@+id/t_min\"\n+        android:layout_below=\"@+id/prebox\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentStart=\"true\"\n+        android:layout_marginTop=\"29dp\" />\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:textAppearance=\"?android:attr/textAppearanceLarge\"\n+        android:text=\"最大\"\n+        android:id=\"@+id/textView\"\n+        android:layout_alignBottom=\"@+id/t_min\"\n+        android:layout_alignParentRight=\"true\"\n+        android:layout_alignParentEnd=\"true\" />\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"音量大小\"\n+        android:textSize=\"30dp\"\n+        android:id=\"@+id/textView2\"\n+        android:layout_marginBottom=\"24dp\"\n+        android:layout_alignBottom=\"@+id/prebox\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentStart=\"true\" />\n+\n+\n+</RelativeLayout>"
+  } ],
+  "sha" : "eda98b8d74356729fb41b206ba3fc2f5a618531b",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/eda98b8d74356729fb41b206ba3fc2f5a618531b",
+  "parents" : [ {
+    "sha" : "b0db2bf3bac4015a24257ab33e9e30c399d38406",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/b0db2bf3bac4015a24257ab33e9e30c399d38406",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/b0db2bf3bac4015a24257ab33e9e30c399d38406"
+  } ]
+}

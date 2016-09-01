@@ -1,0 +1,59 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 38,
+    "additions" : 38,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/a1a7d5b0fb1a38e1c89ca173c624f411095500c4",
+  "commit" : {
+    "author" : {
+      "name" : "ranine",
+      "email" : "632305424@qq.com",
+      "date" : "2016-04-14T07:39:21Z"
+    },
+    "committer" : {
+      "name" : "ranine",
+      "email" : "632305424@qq.com",
+      "date" : "2016-04-14T07:39:21Z"
+    },
+    "message" : "#2 #65 创建一个activity",
+    "tree" : {
+      "sha" : "405e7b881180559f049377c0e00dd5d333083158",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/405e7b881180559f049377c0e00dd5d333083158"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/a1a7d5b0fb1a38e1c89ca173c624f411095500c4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a1a7d5b0fb1a38e1c89ca173c624f411095500c4/comments",
+  "files" : [ {
+    "sha" : "99a07214c11f83c7e06f047d646ea16e1296286b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901131/COM1314080901131Activity.java",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a1a7d5b0fb1a38e1c89ca173c624f411095500c4/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901131/COM1314080901131Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a1a7d5b0fb1a38e1c89ca173c624f411095500c4/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901131/COM1314080901131Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901131/COM1314080901131Activity.java?ref=a1a7d5b0fb1a38e1c89ca173c624f411095500c4",
+    "patch" : "@@ -0,0 +1,38 @@\n+package com.example.ranine99.worldtimer;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+\n+\n+public class COM1314080901131Activity extends Activity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_com1314080901131);\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_com1314080901131, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901131/世界时钟.txt",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a1a7d5b0fb1a38e1c89ca173c624f411095500c4/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901131/%E4%B8%96%E7%95%8C%E6%97%B6%E9%92%9F.txt",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a1a7d5b0fb1a38e1c89ca173c624f411095500c4/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901131/%E4%B8%96%E7%95%8C%E6%97%B6%E9%92%9F.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901131/%E4%B8%96%E7%95%8C%E6%97%B6%E9%92%9F.txt?ref=a1a7d5b0fb1a38e1c89ca173c624f411095500c4"
+  } ],
+  "sha" : "a1a7d5b0fb1a38e1c89ca173c624f411095500c4",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a1a7d5b0fb1a38e1c89ca173c624f411095500c4",
+  "parents" : [ {
+    "sha" : "524beff656f3191d1da18b2b698dbefd7a4a9117",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/524beff656f3191d1da18b2b698dbefd7a4a9117",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/524beff656f3191d1da18b2b698dbefd7a4a9117"
+  } ]
+}

@@ -1,0 +1,158 @@
+{
+  "committer" : {
+    "login" : "Zhang41",
+    "id" : 18030418,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18030418?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zhang41",
+    "html_url" : "https://github.com/Zhang41",
+    "followers_url" : "https://api.github.com/users/Zhang41/followers",
+    "following_url" : "https://api.github.com/users/Zhang41/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zhang41/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zhang41/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zhang41/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zhang41/orgs",
+    "repos_url" : "https://api.github.com/users/Zhang41/repos",
+    "events_url" : "https://api.github.com/users/Zhang41/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zhang41/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 265,
+    "additions" : 189,
+    "deletions" : 76
+  },
+  "author" : {
+    "login" : "Zhang41",
+    "id" : 18030418,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18030418?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zhang41",
+    "html_url" : "https://github.com/Zhang41",
+    "followers_url" : "https://api.github.com/users/Zhang41/followers",
+    "following_url" : "https://api.github.com/users/Zhang41/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zhang41/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zhang41/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zhang41/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zhang41/orgs",
+    "repos_url" : "https://api.github.com/users/Zhang41/repos",
+    "events_url" : "https://api.github.com/users/Zhang41/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zhang41/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/abddfd7a8c66fc17bf29a703cc27b5ea122931d5",
+  "commit" : {
+    "author" : {
+      "name" : "zhang41",
+      "email" : "964842648@qq.com",
+      "date" : "2016-05-17T05:00:05Z"
+    },
+    "committer" : {
+      "name" : "zhang41",
+      "email" : "964842648@qq.com",
+      "date" : "2016-05-17T05:00:05Z"
+    },
+    "message" : "#1 #88 #89 #90 #94 #95 #42 lab1 lab2 lab3 lab4 lab8 lab9",
+    "tree" : {
+      "sha" : "790cab1c0cc612d93e4944f8ef2fa4af2d28a38a",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/790cab1c0cc612d93e4944f8ef2fa4af2d28a38a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/abddfd7a8c66fc17bf29a703cc27b5ea122931d5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/comments",
+  "files" : [ {
+    "sha" : "8177c6fd0a01f9271dadc0a3f674956881df5d05",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141Activity.java",
+    "status" : "modified",
+    "additions" : 73,
+    "deletions" : 47,
+    "changes" : 120,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141Activity.java?ref=abddfd7a8c66fc17bf29a703cc27b5ea122931d5",
+    "patch" : "@@ -1,52 +1,78 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903141;\n \n+\n+import edu.hzuapps.androidworks.homeworks.net131240809031413.R;\n+import edu.hzuapps.androidworks.homeworks.net13140809031412.Net1314080903141runActivity;\n+\n import android.os.Bundle;\n-import android.support.design.widget.FloatingActionButton;\n-import android.support.design.widget.Snackbar;\n-import android.support.v7.app.AppCompatActivity;\n-import android.support.v7.widget.Toolbar;\n+import android.app.Activity;\n+import android.view.KeyEvent;\n import android.view.View;\n-import android.view.Menu;\n-import android.view.MenuItem;\n-\n-public class Net1314080903141Activity extends AppCompatActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_net1314080903141);\n-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n-        setSupportActionBar(toolbar);\n-\n-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n-        fab.setOnClickListener(new View.OnClickListener() {\n-            @Override\n-            public void onClick(View view) {\n-                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n-                        .setAction(\"Action\", null).show();\n-            }\n-        });\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_net1314080903141, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            return true;\n-        }\n-\n-        return super.onOptionsItemSelected(item);\n-    }\n+import android.view.View.OnClickListener;\n+import android.widget.ImageButton;\n+\n+public class Net1314080903141Activity extends Activity {\n+\n+\t// ��˷翪��ͼƬButton\n+\tprivate ImageButton state;\n+\tNet1314080903141runActivity run_Metned = new Net1314080903141runActivity();\n+\tThread thread = null;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_net1314080903141);\n+\n+\t\t// �󶨿ؼ�\n+\t\tthis.state = (ImageButton) findViewById(R.id.state);\n+\t\tthis.state.setOnClickListener(new ocl());\n+\t}\n+\n+\t// ��¼��˷�״̬�Ĳ���ֵ\n+\tprivate boolean is = false;\n+\n+\t// ������\n+\tclass ocl implements OnClickListener {\n+\n+\t\t@Override\n+\t\tpublic void onClick(View v) {\n+\n+\t\t\tif (v.getId() == R.id.state && is == true) {\n+\t\t\t\t// �л�ͼƬ��ť�ı���ͼ���������������������ء�\n+\t\t\t\tstate.setImageDrawable(getResources().getDrawable(\n+\t\t\t\t\t\tR.drawable.net1314080903141close));\n+\t\t\t\trun_Metned.no();\n+\n+\t\t\t\t// �ı�״̬\n+\t\t\t\tis = false;\n+\t\t\t} else if (v.getId() == R.id.state && is == false) {\n+\t\t\t\t// �л�ͼƬ��ť�ı���ͼ���ء�������������������\n+\t\t\t\tstate.setImageDrawable(getResources().getDrawable(\n+\t\t\t\t\t\tR.drawable.net1314080903141open));\n+\t\t\t\t// �ı�״̬\n+\t\t\t\ttry {\n+\t\t\t\t\tThread thread = new Thread(run_Metned);\n+\n+\t\t\t\t\tthread.start();\n+\t\t\t\t} catch (Exception e) {\n+\n+\t\t\t\t}\n+\t\t\t\tis = true;\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tint i = 0;\n+\n+\tpublic boolean onKeyDown(int keyCode, KeyEvent event) {\n+\t\tif (keyCode == KeyEvent.KEYCODE_BACK\n+\t\t\t\t&& event.getAction() == KeyEvent.ACTION_DOWN) {\n+\t\t\ti++;\n+\t\t\tif (i == 3) {\n+\t\t\t\tfinish();\n+\t\t\t}\n+\n+\t\t}\n+\t\treturn true;\n+\t}\n }"
+  }, {
+    "sha" : "557337a8161f9c673985d8c66e806a6562f7bac4",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141runActivity.java",
+    "status" : "added",
+    "additions" : 70,
+    "deletions" : 0,
+    "changes" : 70,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141runActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141runActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141runActivity.java?ref=abddfd7a8c66fc17bf29a703cc27b5ea122931d5",
+    "patch" : "@@ -0,0 +1,70 @@\n+package edu.hzuapps.androidworks.homeworks.net13140809031412;\n+\n+import android.media.AudioFormat;\n+import android.media.AudioManager;\n+import android.media.AudioRecord;\n+import android.media.AudioTrack;\n+import android.media.MediaRecorder;\n+\n+public class Net1314080903141runActivity implements Runnable {\n+\t// �Ƿ�¼�ŵı��\n+\tboolean isRecording = false;\n+\tstatic final int frequency = 44100;\n+\t@SuppressWarnings(\"deprecation\")\n+\tstatic final int channelConfiguration = AudioFormat.CHANNEL_CONFIGURATION_MONO;\n+\tstatic final int audioEncoding = AudioFormat.ENCODING_PCM_16BIT;\n+\t// ����¼��������С\n+\tint recBufSize, playBufSize;\n+\t// ʵ��¼�����\n+\tAudioRecord audioRecord;\n+\t// ʵ��Ŷ���\n+\tAudioTrack audioTrack;\n+\n+\tpublic Net1314080903141runActivity() {\n+\t\t// ����getMinBufferSize�������¼�����С����ռ�\n+\t\trecBufSize = AudioRecord.getMinBufferSize(frequency,\n+\t\t\t\tchannelConfiguration, audioEncoding);\n+\n+\t\t// ����getMinBufferSize������÷�����С�Ļ������С\n+\t\tplayBufSize = AudioTrack.getMinBufferSize(frequency,\n+\t\t\t\tchannelConfiguration, audioEncoding);\n+\t\t// -----------------------------------------��\n+\t\t// ���ù��캯��ʵ��¼�����\n+\t\taudioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, frequency,\n+\t\t\t\tchannelConfiguration, audioEncoding, recBufSize);\n+\n+\t\t// ���ù��캯��ʵ��������\n+\t\taudioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, frequency,\n+\t\t\t\tchannelConfiguration, audioEncoding, playBufSize,\n+\t\t\t\tAudioTrack.MODE_STREAM);\n+\t}\n+\n+\t// �߳���\n+\tpublic void run() {\n+\n+\t\ttry {\n+\t\t\tbyte[] buffer = new byte[recBufSize];\n+\t\t\taudioRecord.startRecording();// ��ʼ¼��\n+\t\t\taudioTrack.play();// ��ʼ����\n+\t\t\tthis.isRecording = true;\n+\t\t\twhile (isRecording) {\n+\t\t\t\t// ��MIC������ݵ�������\n+\t\t\t\tint bufferReadResult = audioRecord.read(buffer, 0, recBufSize);\n+\n+\t\t\t\tbyte[] tmpBuf = new byte[bufferReadResult];\n+\t\t\t\tSystem.arraycopy(buffer, 0, tmpBuf, 0, bufferReadResult);\n+\t\t\t\t// д����ݾͲ���\n+\t\t\t\taudioTrack.write(tmpBuf, 0, tmpBuf.length);\n+\t\t\t}\n+\t\t\taudioTrack.stop();\n+\t\t\taudioRecord.stop();\n+\t\t} catch (Throwable t) {\n+\t\t}\n+\t}\n+\n+\t// ֹͣ����\n+\tpublic void no() {\n+\t\tisRecording = false;\n+\t}\n+\n+}"
+  }, {
+    "sha" : "e853b71efa6133ea25bdd4de90775fbe847933b5",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141trackActivity.java",
+    "status" : "added",
+    "additions" : 29,
+    "deletions" : 0,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141trackActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141trackActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141trackActivity.java?ref=abddfd7a8c66fc17bf29a703cc27b5ea122931d5",
+    "patch" : "@@ -0,0 +1,29 @@\n+package edu.hzuapps.androidworks.homeworks.net13140809031412;\n+\n+import android.media.AudioFormat;\n+import android.media.AudioManager;\n+import android.media.AudioTrack;\n+\n+public class Net1314080903141trackActivity implements Runnable {\n+\n+\t// �����ݴ�\n+\tint out_size;\n+\t// �������\n+\tAudioTrack track = null;\n+\n+\tpublic void run() {\n+\n+\t}\n+\n+\t// ���ͷ���\n+\tpublic void track() {\n+\t\tout_size = android.media.AudioTrack.getMinBufferSize(8000,\n+\t\t\t\tAudioFormat.CHANNEL_CONFIGURATION_MONO,\n+\t\t\t\tAudioFormat.ENCODING_PCM_16BIT);\n+\n+\t\ttrack = new AudioTrack(AudioManager.STREAM_MUSIC, 8000,\n+\t\t\t\tAudioFormat.CHANNEL_CONFIGURATION_MONO,\n+\t\t\t\tAudioFormat.ENCODING_PCM_16BIT, out_size,\n+\t\t\t\tAudioTrack.MODE_STREAM);\n+\t}\n+}"
+  }, {
+    "sha" : "73e004e961d83e82ea491890451637f0d6a00de7",
+    "filename" : "app/src/main/res/drawable/net1314080903141.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/drawable/net1314080903141.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/drawable/net1314080903141.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903141.png?ref=abddfd7a8c66fc17bf29a703cc27b5ea122931d5"
+  }, {
+    "sha" : "4497c5f805f652b6073126de8d8e9bbd292b6156",
+    "filename" : "app/src/main/res/drawable/net1314080903141close.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/drawable/net1314080903141close.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/drawable/net1314080903141close.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903141close.jpg?ref=abddfd7a8c66fc17bf29a703cc27b5ea122931d5"
+  }, {
+    "sha" : "3af065e2924fa8d0296d2371eecd5e7d21e61698",
+    "filename" : "app/src/main/res/drawable/net1314080903141mic2.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/drawable/net1314080903141mic2.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/drawable/net1314080903141mic2.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903141mic2.jpg?ref=abddfd7a8c66fc17bf29a703cc27b5ea122931d5"
+  }, {
+    "sha" : "50b4686d2779ac9520ad5a55872d6dc9b1e3db36",
+    "filename" : "app/src/main/res/drawable/net1314080903141open.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/drawable/net1314080903141open.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/drawable/net1314080903141open.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903141open.jpg?ref=abddfd7a8c66fc17bf29a703cc27b5ea122931d5"
+  }, {
+    "sha" : "3df84d354f4f906f9f011ca814dd8119d90925a2",
+    "filename" : "app/src/main/res/layout/activity_net1314080903141.xml",
+    "status" : "modified",
+    "additions" : 17,
+    "deletions" : 29,
+    "changes" : 46,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/layout/activity_net1314080903141.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/abddfd7a8c66fc17bf29a703cc27b5ea122931d5/app/src/main/res/layout/activity_net1314080903141.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903141.xml?ref=abddfd7a8c66fc17bf29a703cc27b5ea122931d5",
+    "patch" : "@@ -1,34 +1,22 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<android.support.design.widget.CoordinatorLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n     android:layout_height=\"match_parent\"\n-    android:fitsSystemWindows=\"true\"\n-    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903141.Net1314080903141Activity\">\n+    android:background=\"@drawable/net1314080903141mic2\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\".Net1314080903141Activity\" >\n \n-    <android.support.design.widget.AppBarLayout\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:theme=\"@style/AppTheme.AppBarOverlay\">\n+    <ImageButton\n+        android:id=\"@+id/state\"\n+        android:layout_width=\"160sp\"\n+        android:layout_height=\"40sp\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_marginBottom=\"46dp\"\n+        android:layout_marginLeft=\"23dp\"\n+        android:src=\"@drawable/net1314080903141close\" />\n \n-        <android.support.v7.widget.Toolbar\n-            android:id=\"@+id/toolbar\"\n-            android:layout_width=\"match_parent\"\n-            android:layout_height=\"?attr/actionBarSize\"\n-            android:background=\"?attr/colorPrimary\"\n-            app:popupTheme=\"@style/AppTheme.PopupOverlay\" />\n-\n-    </android.support.design.widget.AppBarLayout>\n-\n-    <include layout=\"@layout/content_net1314080903141\" />\n-\n-    <android.support.design.widget.FloatingActionButton\n-        android:id=\"@+id/fab\"\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\"\n-        android:layout_gravity=\"bottom|end\"\n-        android:layout_margin=\"@dimen/fab_margin\"\n-        android:src=\"@android:drawable/ic_dialog_email\" />\n-\n-</android.support.design.widget.CoordinatorLayout>\n+</RelativeLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "abddfd7a8c66fc17bf29a703cc27b5ea122931d5",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/abddfd7a8c66fc17bf29a703cc27b5ea122931d5",
+  "parents" : [ {
+    "sha" : "5b74276948ae2c522c8ee943f5cfcd94d66b42cb",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5b74276948ae2c522c8ee943f5cfcd94d66b42cb",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5b74276948ae2c522c8ee943f5cfcd94d66b42cb"
+  } ]
+}

@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 189,
+    "additions" : 189,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/e893344ec57a352918bc2c51ad28880e7f6c2668",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-26T14:57:49Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-26T14:57:49Z"
+    },
+    "message" : "Merge pull request #396 from yjf2213939/master\n\n#88 #395 实验二",
+    "tree" : {
+      "sha" : "5311cccd6cf9db996654076f6fb5a04cdf749dc5",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/5311cccd6cf9db996654076f6fb5a04cdf749dc5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/e893344ec57a352918bc2c51ad28880e7f6c2668",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e893344ec57a352918bc2c51ad28880e7f6c2668/comments",
+  "files" : [ {
+    "sha" : "13766e71a6db8458dead064d84497c6547656be0",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138MainActivity.java",
+    "status" : "added",
+    "additions" : 189,
+    "deletions" : 0,
+    "changes" : 189,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e893344ec57a352918bc2c51ad28880e7f6c2668/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e893344ec57a352918bc2c51ad28880e7f6c2668/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138MainActivity.java?ref=e893344ec57a352918bc2c51ad28880e7f6c2668",
+    "patch" : "@@ -0,0 +1,189 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903138;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.media.MediaPlayer;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.view.KeyEvent;\n+import android.view.View;\n+import android.view.animation.Animation;\n+import android.view.animation.ScaleAnimation;\n+import android.widget.CheckBox;\n+import android.widget.CompoundButton;\n+import android.widget.ImageButton;\n+import android.widget.ImageView;\n+import android.widget.Toast;\n+\n+import java.util.Timer;\n+import java.util.TimerTask;\n+\n+public class Net1314080903138MainActivity extends Activity {\n+\n+    private ImageButton ibStart;\n+    private CheckBox cbSoundSwitch;\n+    private MediaPlayer mp;\n+    private ScaleAnimation anim1 = new ScaleAnimation(1, 0, 1, 1,\n+            Animation.RELATIVE_TO_SELF, 0.5f,Animation.RELATIVE_TO_SELF, 0.5f );\n+    private ScaleAnimation anim2 = new ScaleAnimation(0, 1, 1, 1,\n+            Animation.RELATIVE_TO_SELF, 0.5f,Animation.RELATIVE_TO_SELF, 0.5f );\n+\n+    private ImageView[] ivs = new ImageView[12];\n+    private int[] ivIds = {R.id.iv1, R.id.iv2, R.id.iv3, R.id.iv4,\n+            R.id.iv5, R.id.iv6, R.id.iv7, R.id.iv8,\n+            R.id.iv9, R.id.iv10, R.id.iv11, R.id.iv12};\n+\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+        ibStart = (ImageButton) findViewById(R.id.startButton);\n+        cbSoundSwitch = (CheckBox) findViewById(R.id.soundSwitch);\n+        mp = MediaPlayer.create(this,R.raw.dididi);\n+\n+        ibStart.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                Intent intent = new Intent(Net1314080903138MainActivity.this, Game.class);\n+                startActivity(intent);\n+            }\n+        });\n+\n+        cbSoundSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {\n+            @Override\n+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {\n+                if (isChecked) {\n+                    mp.start();\n+                    System.out.println(\"!!!!!!Music!!!!!!!!\");\n+\n+                } else {\n+                    mp.pause();\n+                }\n+            }\n+        });\n+\n+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {\n+\n+            @Override\n+            public void onCompletion(MediaPlayer arg0) {\n+                mp.start();\n+                mp.setLooping(true);\n+            }\n+        });\n+\n+\n+        for(int i=0;i<12; i++){\n+            ivs[i] = (ImageView) findViewById(ivIds[i]);\n+        }\n+\n+\n+        anim1.setDuration(500);\n+        anim2.setDuration(500);\n+\n+\n+//        handler.postDelayed(task, 5000);//延迟调用\n+        handler.post(task1);//立即调用\n+    }\n+\n+    @Override\n+    public boolean onKeyDown(int keyCode, KeyEvent event) {\n+        // TODO Auto-generated method stub\n+        if(keyCode == KeyEvent.KEYCODE_BACK)\n+        {\n+            exitBy2Click(); //调用双击退出函数\n+        }\n+        return false;\n+    }\n+    /**\n+     * double-click exit\n+     */\n+    private static Boolean isExit = false;\n+\n+    private void exitBy2Click() {\n+        Timer tExit = null;\n+        if (isExit == false) {\n+            isExit = true; // 准备退出\n+            Toast.makeText(this, \"lick again will exit\", Toast.LENGTH_SHORT).show();\n+            tExit = new Timer();\n+            tExit.schedule(new TimerTask() {\n+                @Override\n+                public void run() {\n+                    isExit = false; // 取消退出\n+                }\n+            }, 2000); // 如果2秒钟内没有按下返回键，则启动定时器取消掉刚才执行的任务\n+\n+        } else {\n+            finish();\n+            System.exit(0);\n+        }\n+    }\n+\n+    private Handler handler = new Handler();\n+\n+    private boolean flag1=true;\n+    private int count = 0;\n+\n+    private Runnable task1 =new Runnable() {\n+        public void run() {\n+            // TODOAuto-generated method stub\n+            count++;\n+            handler.postDelayed(this, 500);\n+            //需要执行的代码\n+            if(count<8){\n+                if(flag1){\n+                    start1(3);\n+                    start1(5);\n+                    start1(8);\n+                    start1(10);\n+                    flag1 = !flag1;\n+                }\n+                else {\n+                    start2(3);\n+                    start2(5);\n+                    start2(8);\n+                    start2(10);\n+                    flag1 = !flag1;\n+                }\n+            }\n+            else if(count ==8){\n+                flag1 =true;\n+            }\n+            else if(count<16) {\n+                if(flag1){\n+                    start1(1);\n+                    start1(4);\n+                    start1(6);\n+                    start1(11);\n+                    flag1 = !flag1;\n+                }\n+                else {\n+                    start2(1);\n+                    start2(4);\n+                    start2(6);\n+                    start2(11);\n+                    flag1 = !flag1;\n+                }\n+            }\n+            else if(count ==16){\n+                flag1 =true;\n+            }\n+            else {\n+                count=0;\n+            }\n+\n+        }\n+    };\n+\n+\n+    private void start1(int n){\n+        ivs[n].startAnimation(anim1);\n+    }\n+\n+    private void start2(int n){\n+        ivs[n].startAnimation(anim2);\n+    }\n+\n+\n+}\n+"
+  } ],
+  "sha" : "e893344ec57a352918bc2c51ad28880e7f6c2668",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e893344ec57a352918bc2c51ad28880e7f6c2668",
+  "parents" : [ {
+    "sha" : "0a2c67f1a4f00745e6f8fd2b90c77660d560ebe0",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0a2c67f1a4f00745e6f8fd2b90c77660d560ebe0",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/0a2c67f1a4f00745e6f8fd2b90c77660d560ebe0"
+  }, {
+    "sha" : "d806ae2e76d932ca1e5cee3b63caca71e7eb42a3",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d806ae2e76d932ca1e5cee3b63caca71e7eb42a3",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/d806ae2e76d932ca1e5cee3b63caca71e7eb42a3"
+  } ]
+}

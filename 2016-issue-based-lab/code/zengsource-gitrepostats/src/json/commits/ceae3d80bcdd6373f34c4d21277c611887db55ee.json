@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "freedom0",
+    "id" : 17795287,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17795287?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/freedom0",
+    "html_url" : "https://github.com/freedom0",
+    "followers_url" : "https://api.github.com/users/freedom0/followers",
+    "following_url" : "https://api.github.com/users/freedom0/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/freedom0/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/freedom0/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/freedom0/subscriptions",
+    "organizations_url" : "https://api.github.com/users/freedom0/orgs",
+    "repos_url" : "https://api.github.com/users/freedom0/repos",
+    "events_url" : "https://api.github.com/users/freedom0/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/freedom0/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 46,
+    "additions" : 23,
+    "deletions" : 23
+  },
+  "author" : {
+    "login" : "freedom0",
+    "id" : 17795287,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17795287?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/freedom0",
+    "html_url" : "https://github.com/freedom0",
+    "followers_url" : "https://api.github.com/users/freedom0/followers",
+    "following_url" : "https://api.github.com/users/freedom0/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/freedom0/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/freedom0/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/freedom0/subscriptions",
+    "organizations_url" : "https://api.github.com/users/freedom0/orgs",
+    "repos_url" : "https://api.github.com/users/freedom0/repos",
+    "events_url" : "https://api.github.com/users/freedom0/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/freedom0/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/ceae3d80bcdd6373f34c4d21277c611887db55ee",
+  "commit" : {
+    "author" : {
+      "name" : "freedom0",
+      "email" : "15767973390@163.com",
+      "date" : "2016-05-11T01:01:17Z"
+    },
+    "committer" : {
+      "name" : "freedom0",
+      "email" : "15767973390@163.com",
+      "date" : "2016-05-11T01:01:17Z"
+    },
+    "message" : "#90 #150 lab-4",
+    "tree" : {
+      "sha" : "eb5a54d1211c14985c9266b43dee85aeab61dca4",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/eb5a54d1211c14985c9266b43dee85aeab61dca4"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/ceae3d80bcdd6373f34c4d21277c611887db55ee",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ceae3d80bcdd6373f34c4d21277c611887db55ee/comments",
+  "files" : [ {
+    "sha" : "629b955d7d744b7bb044724d9b034cd6ae146688",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903220/RSSActivity.java",
+    "status" : "modified",
+    "additions" : 23,
+    "deletions" : 23,
+    "changes" : 46,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/ceae3d80bcdd6373f34c4d21277c611887db55ee/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903220/RSSActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/ceae3d80bcdd6373f34c4d21277c611887db55ee/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903220/RSSActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903220/RSSActivity.java?ref=ceae3d80bcdd6373f34c4d21277c611887db55ee",
+    "patch" : "@@ -1,4 +1,4 @@\n-package com.example.administrator.rssdemo;\n+package edu.hzuapps.androidworks.homeworks.net1314080903220;\n \n import android.app.ListActivity;\n import android.app.ProgressDialog;\n@@ -80,12 +80,12 @@ public RSSFeed loadData(String rssUrl) {\n \t\t@Override\n \t\tpublic void handleMessage(Message msg) {\n \t\t\tswitch (msg.what) {\n-\t\t\tcase GUIUPDATEIDENTIFIER:\n-\t\t\t\tpDialog.dismiss();\n-\t\t\t\tupdata();\n-\t\t\t\tbreak;\n-\t\t\tdefault:\n-\t\t\t\tbreak;\n+\t\t\t\tcase GUIUPDATEIDENTIFIER:\n+\t\t\t\t\tpDialog.dismiss();\n+\t\t\t\t\tupdata();\n+\t\t\t\t\tbreak;\n+\t\t\t\tdefault:\n+\t\t\t\t\tbreak;\n \t\t\t}\n \t\t}\n \t};\n@@ -98,7 +98,7 @@ public void run() {\n \t\t\tSystem.out.println(strUrl);\n \t\t\tMessage msg = new Message();\n \t\t\tmsg.what = GUIUPDATEIDENTIFIER;\n-\t\t\tRSSActivity.this.myHandler.sendMessage(msg);\n+\t\t\tedu.hzuapps.androidworks.homeworks.net1314080903220.RSSActivity.this.myHandler.sendMessage(msg);\n \t\t}\n \t}\n \n@@ -126,16 +126,16 @@ public boolean onCreateOptionsMenu(Menu menu) {\n \tpublic boolean onOptionsItemSelected(MenuItem item) {\n \t\tIntent intent = null;\n \t\tswitch (item.getItemId()) {\n-\t\tcase Rss_Item1:\n-\t\t\tintent = new Intent(RSSActivity.this, RSSList.class);\n-\t\t\tstartActivityForResult(intent, 0);\n-\t\t\tbreak;\n-\t\tcase Rss_Item2:\n-\t\t\tintent = new Intent(RSSActivity.this, About.class);\n-\t\t\tstartActivity(intent);\n-\t\t\tbreak;\n-\t\tdefault:\n-\t\t\tbreak;\n+\t\t\tcase Rss_Item1:\n+\t\t\t\tintent = new Intent(edu.hzuapps.androidworks.homeworks.net1314080903220.RSSActivity.this, RSSList.class);\n+\t\t\t\tstartActivityForResult(intent, 0);\n+\t\t\t\tbreak;\n+\t\t\tcase Rss_Item2:\n+\t\t\t\tintent = new Intent(edu.hzuapps.androidworks.homeworks.net1314080903220.RSSActivity.this, About.class);\n+\t\t\t\tstartActivity(intent);\n+\t\t\t\tbreak;\n+\t\t\tdefault:\n+\t\t\t\tbreak;\n \t\t}\n \t\treturn super.onOptionsItemSelected(item);\n \t}\n@@ -144,15 +144,15 @@ public boolean onOptionsItemSelected(MenuItem item) {\n \tprotected void onListItemClick(ListView l, View v, int position, long id) {\n \t\t// TODO Auto-generated method stub\n \t\tRSSItem rItem = rsFeed.getItem(position);\n-\t\tIntent intent = new Intent(RSSActivity.this,RSSShowItem.class);\n-\t\t\n+\t\tIntent intent = new Intent(edu.hzuapps.androidworks.homeworks.net1314080903220.RSSActivity.this,RSSShowItem.class);\n+\n \t\tBundle bundle = new Bundle();\n \t\tbundle.putString(\"title\", rItem.getTitle());\n \t\tbundle.putString(\"pubDate\", rItem.getPubDate());\n \t\tbundle.putString(\"description\", rItem.getDescription());\n \t\tbundle.putString(\"link\", rItem.getLink());\n \t\tintent.putExtra(\"com.lq.showitem\", bundle);\n-\t\t\n+\n \t\tstartActivity(intent);\n \t\tsuper.onListItemClick(l, v, position, id);\n \t}\n@@ -170,8 +170,8 @@ protected void onPause() {\n \t\t}\n \t}\n \n-\t\n-\t\n+\n+\n \t@Override\n \tprotected void onActivityResult(int requestCode, int resultCode, Intent data) {\n \t\t// TODO Auto-generated method stub"
+  } ],
+  "sha" : "ceae3d80bcdd6373f34c4d21277c611887db55ee",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ceae3d80bcdd6373f34c4d21277c611887db55ee",
+  "parents" : [ {
+    "sha" : "6e3361177a2513d7573f4f1aa7acb45c69d342c1",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/6e3361177a2513d7573f4f1aa7acb45c69d342c1",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/6e3361177a2513d7573f4f1aa7acb45c69d342c1"
+  } ]
+}

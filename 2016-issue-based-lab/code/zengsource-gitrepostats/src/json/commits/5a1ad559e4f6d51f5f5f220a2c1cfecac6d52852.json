@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "30-wangweixin",
+    "id" : 15066163,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15066163?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/30-wangweixin",
+    "html_url" : "https://github.com/30-wangweixin",
+    "followers_url" : "https://api.github.com/users/30-wangweixin/followers",
+    "following_url" : "https://api.github.com/users/30-wangweixin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/30-wangweixin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/30-wangweixin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/30-wangweixin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/30-wangweixin/orgs",
+    "repos_url" : "https://api.github.com/users/30-wangweixin/repos",
+    "events_url" : "https://api.github.com/users/30-wangweixin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/30-wangweixin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 83,
+    "additions" : 83,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "30-wangweixin",
+    "id" : 15066163,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15066163?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/30-wangweixin",
+    "html_url" : "https://github.com/30-wangweixin",
+    "followers_url" : "https://api.github.com/users/30-wangweixin/followers",
+    "following_url" : "https://api.github.com/users/30-wangweixin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/30-wangweixin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/30-wangweixin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/30-wangweixin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/30-wangweixin/orgs",
+    "repos_url" : "https://api.github.com/users/30-wangweixin/repos",
+    "events_url" : "https://api.github.com/users/30-wangweixin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/30-wangweixin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/5a1ad559e4f6d51f5f5f220a2c1cfecac6d52852",
+  "commit" : {
+    "author" : {
+      "name" : "30-wangweixin",
+      "email" : "498837428@qq.com",
+      "date" : "2016-04-27T15:34:58Z"
+    },
+    "committer" : {
+      "name" : "30-wangweixin",
+      "email" : "498837428@qq.com",
+      "date" : "2016-04-27T15:34:58Z"
+    },
+    "message" : "shiyan2",
+    "tree" : {
+      "sha" : "c015d78b6c0e0feeef538a4df3d8145711cee079",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/c015d78b6c0e0feeef538a4df3d8145711cee079"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/5a1ad559e4f6d51f5f5f220a2c1cfecac6d52852",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5a1ad559e4f6d51f5f5f220a2c1cfecac6d52852/comments",
+  "files" : [ {
+    "sha" : "397357e092f7f7275ac62dea5277b4ef7a0c2cfa",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901230/Com1314080901230Activity.java",
+    "status" : "modified",
+    "additions" : 83,
+    "deletions" : 0,
+    "changes" : 83,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5a1ad559e4f6d51f5f5f220a2c1cfecac6d52852/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901230/Com1314080901230Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5a1ad559e4f6d51f5f5f220a2c1cfecac6d52852/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901230/Com1314080901230Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901230/Com1314080901230Activity.java?ref=5a1ad559e4f6d51f5f5f220a2c1cfecac6d52852",
+    "patch" : "@@ -1 +1,84 @@\n+package Ld.videoPlayer;\n+\n+import java.io.File;\n+import android.app.Activity;\n+import android.graphics.PixelFormat;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.MediaController;\n+import android.widget.Toast;\n+import android.widget.VideoView;\n+\n+public class VideoPlayerActivity extends Activity {\n+    /** Called when the activity is first created. */\n+\tVideoView videoView;\n+\tprivate String fielname;\n+\tMediaController mediaController;\n+\tEditText editText;\n+\tButton openButton;\n+\tButton qiutButton;\n+    @Override\n+    public void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        //public Window getWindow () 返回当前activity的window\n+        //void android.view.Window.setFormat(int format)\n+        //public void setFormat (int format)  设置窗口的像素格式\n+        //PixelFormat.TRANSLUCENT 透明格式\n+        getWindow().setFormat(PixelFormat.TRANSLUCENT);\n+        setContentView(R.layout.main);\n+        videoView=(VideoView)findViewById(R.id.video);\n+        editText=(EditText)findViewById(R.id.edittext);\n+        openButton=(Button)findViewById(R.id.starttoplay);\n+        openButton.setOnClickListener(new startlistener());\n+        qiutButton=(Button)findViewById(R.id.quit);\n+        qiutButton.setOnClickListener(new qiutlistener());\n+        mediaController=new MediaController(this);\n+        /*\n+        File video=new File(\"/sdcard/re.mp4\");\n+        //若文件被找到\n+        if(video.exists()){\n+        \tvideoView.setVideoPath(video.getAbsolutePath());//文件绝对路径\n+        \tvideoView.setMediaController(mediaController);//设置videoView与mediaControler的关联\n+        \tmediaController.setMediaPlayer(videoView);\n+        \tvideoView.requestFocus();\n+        }\n+        */\n+    }\n+    class startlistener implements OnClickListener{\n+\n+\t\t@Override\n+\t\tpublic void onClick(View v)\n+\t\t{\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tfielname=editText.getText().toString();\n+\t\t\tSystem.out.println(fielname);\n+\t\t\t//File video=new File(\"/sdcard/re.mp4\");\n+\t\t\tFile video=new File(fielname);\n+\t        //若文件被找到\n+\t        if(video.exists()){\n+\t        \tvideoView.setVideoPath(video.getAbsolutePath());//文件绝对路径\n+\t        \tvideoView.setMediaController(mediaController);//设置videoView与mediaControler的关联\n+\t        \tmediaController.setMediaPlayer(videoView);\n+\t        \tvideoView.requestFocus();\n+\t        }\n+\t        else{\n+\t\t\t\t Toast.makeText(VideoPlayerActivity.this,\"很抱歉，您输入的文件不存在，请重新输入\", Toast.LENGTH_LONG).show();\n+\t        }\n+\t\t\t\n+\t\t}\n+    }\n+    class qiutlistener implements OnClickListener{\n+\n+\t\t@Override\n+\t\tpublic void onClick(View v)\n+\t\t{\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tfinish();\n+\t\t}\n+    }\n+}\n+\n "
+  } ],
+  "sha" : "5a1ad559e4f6d51f5f5f220a2c1cfecac6d52852",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5a1ad559e4f6d51f5f5f220a2c1cfecac6d52852",
+  "parents" : [ {
+    "sha" : "fb97fe36d614923fb1237d72db58776a963d3391",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fb97fe36d614923fb1237d72db58776a963d3391",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/fb97fe36d614923fb1237d72db58776a963d3391"
+  } ]
+}

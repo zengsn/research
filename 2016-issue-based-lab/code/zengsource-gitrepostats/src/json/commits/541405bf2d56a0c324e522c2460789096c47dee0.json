@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "WL101ZYF",
+    "id" : 17779014,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17779014?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WL101ZYF",
+    "html_url" : "https://github.com/WL101ZYF",
+    "followers_url" : "https://api.github.com/users/WL101ZYF/followers",
+    "following_url" : "https://api.github.com/users/WL101ZYF/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WL101ZYF/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WL101ZYF/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WL101ZYF/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WL101ZYF/orgs",
+    "repos_url" : "https://api.github.com/users/WL101ZYF/repos",
+    "events_url" : "https://api.github.com/users/WL101ZYF/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WL101ZYF/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 52,
+    "additions" : 52,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "WL101ZYF",
+    "id" : 17779014,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17779014?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WL101ZYF",
+    "html_url" : "https://github.com/WL101ZYF",
+    "followers_url" : "https://api.github.com/users/WL101ZYF/followers",
+    "following_url" : "https://api.github.com/users/WL101ZYF/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WL101ZYF/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WL101ZYF/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WL101ZYF/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WL101ZYF/orgs",
+    "repos_url" : "https://api.github.com/users/WL101ZYF/repos",
+    "events_url" : "https://api.github.com/users/WL101ZYF/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WL101ZYF/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/541405bf2d56a0c324e522c2460789096c47dee0",
+  "commit" : {
+    "author" : {
+      "name" : "WL101ZYF",
+      "email" : "2687292764@qq.com",
+      "date" : "2016-04-27T08:08:37Z"
+    },
+    "committer" : {
+      "name" : "WL101ZYF",
+      "email" : "2687292764@qq.com",
+      "date" : "2016-04-27T08:08:37Z"
+    },
+    "message" : "#1 #38 labs1",
+    "tree" : {
+      "sha" : "9a7f5b1ef58746d23e501846ce5e8d3bd0cd6a14",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/9a7f5b1ef58746d23e501846ce5e8d3bd0cd6a14"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/541405bf2d56a0c324e522c2460789096c47dee0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/541405bf2d56a0c324e522c2460789096c47dee0/comments",
+  "files" : [ {
+    "sha" : "e920e1429a1822532343106615e33e4efe0d4d58",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/541405bf2d56a0c324e522c2460789096c47dee0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/541405bf2d56a0c324e522c2460789096c47dee0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java?ref=541405bf2d56a0c324e522c2460789096c47dee0",
+    "patch" : "@@ -0,0 +1,52 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903101;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+\n+public class Net1314080903101activity extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903101);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n+\n+       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_net1314080903101, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  } ],
+  "sha" : "541405bf2d56a0c324e522c2460789096c47dee0",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/541405bf2d56a0c324e522c2460789096c47dee0",
+  "parents" : [ {
+    "sha" : "cfd0b3349f880182513a4808af5cc63e512ed26e",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/cfd0b3349f880182513a4808af5cc63e512ed26e",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/cfd0b3349f880182513a4808af5cc63e512ed26e"
+  } ]
+}

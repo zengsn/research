@@ -1,0 +1,181 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 398,
+    "additions" : 385,
+    "deletions" : 13
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-17T06:44:51Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-17T06:44:51Z"
+    },
+    "message" : "Merge pull request #758 from Wanghengdan/master\n\n#90 #45 lab4",
+    "tree" : {
+      "sha" : "6c3ef004969a619af4eee3ef0bceae1a3f8fc4fd",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/6c3ef004969a619af4eee3ef0bceae1a3f8fc4fd"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/comments",
+  "files" : [ {
+    "sha" : "4387f02296b38acf29f1fedaafab36c918bfd1bf",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901133/Com1314080901133_ImageCycleView.java",
+    "status" : "added",
+    "additions" : 341,
+    "deletions" : 0,
+    "changes" : 341,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901133/Com1314080901133_ImageCycleView.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901133/Com1314080901133_ImageCycleView.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901133/Com1314080901133_ImageCycleView.java?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875",
+    "patch" : "@@ -0,0 +1,341 @@\n+package com.example.test;\n+\n+import java.util.ArrayList;\n+\n+import android.annotation.SuppressLint;\n+import android.content.Context;\n+import android.os.Handler;\n+import android.support.v4.view.PagerAdapter;\n+import android.support.v4.view.ViewPager;\n+import android.support.v4.view.ViewPager.OnPageChangeListener;\n+import android.util.AttributeSet;\n+import android.util.Log;\n+import android.view.LayoutInflater;\n+import android.view.MotionEvent;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.widget.ImageView;\n+import android.widget.ImageView.ScaleType;\n+import android.widget.LinearLayout;\n+import android.widget.TextView;\n+\n+import com.loopj.android.image.SmartImageView;\n+import com.example.test.R;\n+\n+public class Com1314080901133_ImageCycleView extends LinearLayout {\n+\t\n+\t\n+\tprivate Context mContext;\n+\t/**\n+\t * 图片轮播视图\n+\t */\n+\tprivate ViewPager mAdvPager = null;\n+\t/**\n+\t * 滚动图片视图适配\n+\t */\n+\tprivate ImageCycleAdapter mAdvAdapter;\n+\t/**\n+\t * 图片轮播指示器控\n+\t */\n+\tprivate ViewGroup mGroup;\n+\n+\t\n+\tprivate TextView viewGroup2;\n+\t/**\n+\t * 图片轮播指示个图\n+\t */\n+\tprivate ImageView mImageView = null;\n+\t\n+\tprivate TextView mTitleView = null;\n+\n+\t/**\n+\t * 滚动图片指示视图列表\n+\t */\n+\tprivate ImageView[] mImageViews = null;\n+\n+\t\n+\tprivate TextView[] mTitleViews = null;\n+\t/**\n+\t * 图片滚动当前图片下标\n+\t */\n+\n+\tprivate boolean isStop;\n+\n+\t/**\n+\t * 游标是圆形还是长条，要是设置0是长条，要是1就是圆形 默认是圆\n+\t */\n+\tpublic int stype=1;\n+\n+\t/**\n+\t * @param context\n+\t */\n+\tpublic Com1314080901133_ImageCycleView(Context context) {\n+\t\tsuper(context);\n+\t}\n+\n+\t/**\n+\t * @param context\n+\t * @param attrs\n+\t */\n+\t@SuppressLint(\"Recycle\")\n+\tpublic Com1314080901133_ImageCycleView(Context context, AttributeSet attrs) {\n+\t\tsuper(context, attrs);\n+\t\tmContext = context;\n+\t\tLayoutInflater.from(context).inflate(R.layout.com1314080901133_ad_cycle_view, this);\n+\t\tmAdvPager = (ViewPager) findViewById(R.id.adv_pager);\n+\t\tmAdvPager.setOnPageChangeListener(new GuidePageChangeListener());\n+\t\t// 滚动图片右下指示器视\n+\t\tmGroup = (ViewGroup) findViewById(R.id.viewGroup);\t\n+\t\t\n+\t\tviewGroup2  = (TextView) findViewById(R.id.viewGroup2);\t\n+\t}\n+\n+\t/**\n+\t * 触摸停止计时器，抬起启动计时器\n+\t */\n+\t@Override\n+\tpublic boolean dispatchTouchEvent(MotionEvent event) {\n+\t\tif(event.getAction()==MotionEvent.ACTION_UP){\n+\t\t\t// 开始始图片滚动\n+\t\t\tstartImageTimerTask();\n+\t\t}else{\n+\t\t\t// 停止图片滚动\n+\t\t\tstopImageTimerTask();\n+\t\t}\n+\t\treturn super.dispatchTouchEvent(event);\n+\t}\n+\t/**\n+\t * 装填图片数据\n+\t * \n+\t * @param imageUrlList\n+\t * @param imageCycleViewListener\n+\t */\n+\tpublic void setImageResources(ArrayList<String> imageUrlList ,ArrayList<String> imageTitle,ImageCycleViewListener imageCycleViewListener,int stype){\n+\t\tthis.stype=stype;\n+\t\t// 清除\n+\t\tmGroup.removeAllViews();\n+\t\t//viewGroup2.removeAllViews();\n+\t\t// 图片广告数量\n+\t\tfinal int imageCount = imageUrlList.size();\n+\t\tmImageViews = new ImageView[imageCount];\n+\t\t\n+\t\tmTitleViews  = new TextView[imageCount];\n+\t\tfor (int i = 0; i < imageCount; i++) {\n+\t\t\tmImageView = new ImageView(mContext);\n+\t\t\tmTitleView = new TextView(mContext);\n+\t\t\tLayoutParams params=new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);\n+\t\t\tparams.leftMargin=30; \n+\t\t\tmImageView.setScaleType(ScaleType.CENTER_CROP);\n+\t\t\tmImageView.setLayoutParams(params);\n+\n+\t\t\tmImageViews[i] = mImageView;\n+\t\t\t\n+\t\t\t\n+\t\t\tmTitleViews[i] = mTitleView;\n+\t\t\n+\t\t\t//mTitleViews[i] = mTitleView;\n+\t\t\tif (i == 0) {\n+\t\t\t\tif(this.stype==1)\n+\t\t\t\t\tmImageViews[i].setBackgroundResource(R.drawable.com1314080901133_banner_dian_focus);\n+\t\t\t\telse\n+\t\t\t\t\tmImageViews[i].setBackgroundResource(R.drawable.com1314080901133_cicle_banner_dian_focus);\n+\t\t\t} else {\n+\t\t\t\tif(this.stype==1)\n+\t\t\t\t\tmImageViews[i].setBackgroundResource(R.drawable.com131408090113_banner_dian_blur);\n+\t\t\t\telse\n+\t\t\t\t\tmImageViews[i].setBackgroundResource(R.drawable.com1314080901133_cicle_banner_dian_blur);\n+\t\t\t}\n+\t\t\tmGroup.addView(mImageViews[i]);\n+\t\t\t\n+\t\t\t\n+\t\t\t//viewGroup2.addView(mTitleViews[i]);\n+\t\t}\n+\n+\t\tmAdvAdapter = new ImageCycleAdapter(mContext, imageUrlList ,imageTitle,imageCycleViewListener);\n+\t\tmAdvPager.setAdapter(mAdvAdapter);\n+\t\tmAdvPager.setCurrentItem(Integer.MAX_VALUE/2);\n+\t\tstartImageTimerTask();\n+\t}\n+\n+\t/**\n+\t * 图片轮播(手动控制自动轮播与否，便于资源控件）\n+\t */\n+\tpublic void startImageCycle() {\n+\t\tstartImageTimerTask();\n+\t}\n+\n+\t/**\n+\t * 暂停轮播—用于节省资源\n+\t */\n+\tpublic void pushImageCycle() {\n+\t\tstopImageTimerTask();\n+\t}\n+\n+\t/**\n+\t * 图片滚动任务\n+\t */\n+\tprivate void startImageTimerTask() {\n+\t\tstopImageTimerTask();\n+\t\t// 图片滚动\n+\t\tmHandler.postDelayed(mImageTimerTask, 3000);\n+\t}\n+\n+\t/**\n+\t * 停止图片滚动任务\n+\t */\n+\tprivate void stopImageTimerTask() {\n+\t\tisStop=true;\n+\t\tmHandler.removeCallbacks(mImageTimerTask);\n+\t}\n+\n+\tprivate Handler mHandler = new Handler();\n+\n+\t/**\n+\t * 图片自动轮播Task\n+\t */\n+\tprivate Runnable mImageTimerTask = new Runnable() {\n+\t\t@Override\n+\t\tpublic void run() {\n+\t\t\tif (mImageViews != null) {\n+\t\t\t\tmAdvPager.setCurrentItem(mAdvPager.getCurrentItem()+1);\n+\t\t\t\tif(!isStop){  //if  isStop=true   //当你�??出后 要把这个给停下来 不然 这个�??直存�?? 就一直在后台循环 \n+\t\t\t\t\tmHandler.postDelayed(mImageTimerTask, 3000);\n+\t\t\t\t}\n+\n+\t\t\t}\n+\t\t}\n+\t};\n+\n+\t/**\n+\t * 轮播图片监听\n+\t * \n+\t * @author minking\n+\t */\n+\tprivate final class GuidePageChangeListener implements OnPageChangeListener {\n+\t\t@Override\n+\t\tpublic void onPageScrollStateChanged(int state) {\n+\t\t\tif (state == ViewPager.SCROLL_STATE_IDLE)\n+\t\t\t\tstartImageTimerTask(); \n+\t\t}\n+\t\t@Override\n+\t\tpublic void onPageScrolled(int arg0, float arg1, int arg2) {\n+\t\t}\n+\t\t@Override\n+\t\tpublic void onPageSelected(int index) {\n+\t\t\tindex=index%mImageViews.length;\n+\t\t\t// 设置当前显示的图�??\n+\t\t\t// 设置图片滚动指示器背\n+\t\t\tif(stype==1)\n+\t\t\t\tmImageViews[index].setBackgroundResource(R.drawable.com1314080901133_banner_dian_focus);\n+\t\t\telse\n+\t\t\t\tmImageViews[index].setBackgroundResource(R.drawable.com1314080901133_cicle_banner_dian_focus);\n+\t\t\tfor (int i = 0; i < mImageViews.length; i++) {\n+\t\t\t\tif (index != i) {\n+\t\t\t\t\tif(stype==1)\n+\t\t\t\t\t\tmImageViews[i].setBackgroundResource(R.drawable.com131408090113_banner_dian_blur);\n+\t\t\t\t\telse\n+\t\t\t\t\t\tmImageViews[i].setBackgroundResource(R.drawable.com1314080901133_cicle_banner_dian_blur);\n+\t\t\t\t}\n+\t\t\t\t\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tprivate class ImageCycleAdapter extends PagerAdapter {\n+\n+\t\t/**\n+\t\t * 图片视图缓存列表\n+\t\t */\n+\t\tprivate ArrayList<SmartImageView> mImageViewCacheList;\n+\n+\t\t/**\n+\t\t * 图片资源列表\n+\t\t */\n+\t\tprivate ArrayList<String> mAdList = new ArrayList<String>();\n+\t\tprivate ArrayList<String> mATitle = new ArrayList<String>();\n+\t\t/**\n+\t\t * 广告图片点击监听\n+\t\t */\n+\t\tprivate ImageCycleViewListener mImageCycleViewListener;\n+\n+\t\tprivate Context mContext;\n+\t\tpublic ImageCycleAdapter(Context context, ArrayList<String> adList ,ArrayList<String> title, ImageCycleViewListener imageCycleViewListener) {\n+\t\t\tthis.mContext = context;\n+\t\t\tthis.mAdList = adList;\n+\t\t\tthis.mATitle = title;\n+\t\t\tmImageCycleViewListener = imageCycleViewListener;\n+\t\t\tmImageViewCacheList = new ArrayList<SmartImageView>();\n+\t\t}\n+\n+\t\t@Override\n+\t\tpublic int getCount() {\n+\t\t\treturn Integer.MAX_VALUE;\n+\t\t}\n+\t\t@Override\n+\t\tpublic boolean isViewFromObject(View view, Object obj) {\n+\t\t\treturn view == obj;\n+\t\t}\n+\n+\t\t@Override\n+        public Object instantiateItem(ViewGroup container, final int position) {\n+                String imageUrl = mAdList.get(position%mAdList.size());\n+                String title = mATitle.get(position%mATitle.size());\n+                Log.i(\"imageUrl\",imageUrl+title);\n+                \n+                \n+                \n+            \tviewGroup2.setText(title);\n+                SmartImageView imageView = null;\n+                if (mImageViewCacheList.isEmpty()) {\n+                        imageView = new SmartImageView(mContext);\n+                        imageView.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));\n+                       //之前设置图片点击监听写在了这里�?�是错误�??\n+                        //test\n+                        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);\n+                        \n+                } \n+                else {\n+                        imageView = mImageViewCacheList.remove(0);\n+                }\n+                \n+                \n+           // 设置图片点击监听\n+                imageView.setOnClickListener(new OnClickListener() {\n+                        @Override\n+                        public void onClick(View v) {\n+                                mImageCycleViewListener.onImageClick(position%mAdList.size(), v);\n+                        }\n+                });\n+                imageView.setTag(imageUrl);\n+                container.addView(imageView);\n+                imageView.setImageUrl(imageUrl);\n+                return imageView;\n+        }\n+\n+\t\t@Override\n+\t\tpublic void destroyItem(ViewGroup container, int position, Object object) {\n+\t\t\tSmartImageView view = (SmartImageView) object;\n+\t\t\tmAdvPager.removeView(view);\n+\t\t\tmImageViewCacheList.add(view);\n+\n+\t\t}\n+\n+\t}\n+\n+\t/**\n+\t * 轮播控件的监听事�??\n+\t * \n+\t * @author minking\n+\t */\n+\tpublic static interface ImageCycleViewListener {\n+\n+\t\t/**\n+\t\t * 单击图片事件\n+\t\t * \n+\t\t * @param position\n+\t\t * @param imageView\n+\t\t */\n+\t\tpublic void onImageClick(int position, View imageView);\n+\t}\n+\n+}"
+  }, {
+    "sha" : "469b9e695407c105873a5ffd9dfc2eb075e8be8f",
+    "filename" : "app/src/main/res/drawable/com1314080901133_banner_dian_focus.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_banner_dian_focus.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_banner_dian_focus.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901133_banner_dian_focus.png?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875"
+  }, {
+    "sha" : "1fa1110ab03a7a947ae4d66edbd6cb0ce420b588",
+    "filename" : "app/src/main/res/drawable/com1314080901133_cicle_banner_dian_blur.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_cicle_banner_dian_blur.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_cicle_banner_dian_blur.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901133_cicle_banner_dian_blur.png?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875"
+  }, {
+    "sha" : "11cd8bc416ee7ce4f06d416a060671c3ff0100e2",
+    "filename" : "app/src/main/res/drawable/com1314080901133_cicle_banner_dian_focus.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_cicle_banner_dian_focus.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_cicle_banner_dian_focus.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901133_cicle_banner_dian_focus.png?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875"
+  }, {
+    "sha" : "b76dd8706721ddf8e283bf98d2ccc3b1f37b1dfc",
+    "filename" : "app/src/main/res/drawable/com1314080901133_ic_empty.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_ic_empty.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_ic_empty.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901133_ic_empty.png?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875"
+  }, {
+    "sha" : "1e6dab0fc2dfb1df350f5d1616eb259942cf2e0c",
+    "filename" : "app/src/main/res/drawable/com1314080901133_ic_error.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_ic_error.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_ic_error.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901133_ic_error.png?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875"
+  }, {
+    "sha" : "087f8ebbd039899699765daa3686b7a05d43ea4f",
+    "filename" : "app/src/main/res/drawable/com1314080901133_ic_stub.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_ic_stub.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com1314080901133_ic_stub.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901133_ic_stub.png?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875"
+  }, {
+    "sha" : "4e54d700d8b7998f2aa307c016148919e654ebf0",
+    "filename" : "app/src/main/res/drawable/com131408090113_banner_dian_blur.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com131408090113_banner_dian_blur.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/drawable/com131408090113_banner_dian_blur.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com131408090113_banner_dian_blur.png?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875"
+  }, {
+    "sha" : "66996bcdcf83f1d7f0a6f0b2cf2e4f5e94154be5",
+    "filename" : "app/src/main/res/layout/activity_com1314080901133_main.xml",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 13,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/layout/activity_com1314080901133_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/layout/activity_com1314080901133_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901133_main.xml?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875",
+    "patch" : "@@ -1,18 +1,11 @@\n <RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\".Com1314080901133\" >\n+    android:layout_height=\"match_parent\" >\n+\n+    <com.whd.imageviewpager.ImageCycleView\n+        android:id=\"@+id/ad_view\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"200dp\" />\n \n-  \t\n-\t<ImageView \n-\t    android:layout_width=\"wrap_content\"\n-\t    android:layout_height=\"wrap_content\"\n-\t    android:src=\"@drawable/picture\"\n-\t    android:layout_centerInParent=\"true\"\n-\t    />\n </RelativeLayout>"
+  }, {
+    "sha" : "fc5fa2f00de680259ad728fa942c7931c82ab1ee",
+    "filename" : "app/src/main/res/layout/com1314080901133_ad_cycle_view.xml",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/layout/com1314080901133_ad_cycle_view.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875/app/src/main/res/layout/com1314080901133_ad_cycle_view.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/com1314080901133_ad_cycle_view.xml?ref=eb41b4bd51ac72885e5c31bd5904ffe7be6a7875",
+    "patch" : "@@ -0,0 +1,38 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:id=\"@+id/ad_rl\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\" >\n+\n+    <android.support.v4.view.ViewPager\n+        android:id=\"@+id/adv_pager\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\" >\n+    </android.support.v4.view.ViewPager>\n+\n+    <LinearLayout\n+        android:id=\"@+id/viewGroup\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:layout_marginBottom=\"8dp\"\n+        android:gravity=\"center\"\n+        android:orientation=\"horizontal\" >\n+    </LinearLayout>\n+\n+    <TextView\n+        android:id=\"@+id/viewGroup2\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:gravity=\"center\"\n+        android:textColor=\"#ff0000\"\n+        android:textSize=\"18sp\"\n+        android:padding=\"15dp\"\n+        android:layout_above=\"@+id/viewGroup\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentRight=\"true\"\n+        android:layout_marginBottom=\"25dp\"\n+        android:orientation=\"horizontal\"\n+        android:visibility=\"gone\" >\n+    </TextView>\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "eb41b4bd51ac72885e5c31bd5904ffe7be6a7875",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/eb41b4bd51ac72885e5c31bd5904ffe7be6a7875",
+  "parents" : [ {
+    "sha" : "0d44908268e8428d66567df9f1c4fbd93aaf3978",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0d44908268e8428d66567df9f1c4fbd93aaf3978",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/0d44908268e8428d66567df9f1c4fbd93aaf3978"
+  }, {
+    "sha" : "073442e2b50441a56cc405299f55d4d8c821819f",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/073442e2b50441a56cc405299f55d4d8c821819f",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/073442e2b50441a56cc405299f55d4d8c821819f"
+  } ]
+}

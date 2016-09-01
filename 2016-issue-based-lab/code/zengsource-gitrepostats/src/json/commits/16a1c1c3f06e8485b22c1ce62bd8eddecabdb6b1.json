@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "WL101ZYF",
+    "id" : 17779014,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17779014?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WL101ZYF",
+    "html_url" : "https://github.com/WL101ZYF",
+    "followers_url" : "https://api.github.com/users/WL101ZYF/followers",
+    "following_url" : "https://api.github.com/users/WL101ZYF/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WL101ZYF/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WL101ZYF/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WL101ZYF/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WL101ZYF/orgs",
+    "repos_url" : "https://api.github.com/users/WL101ZYF/repos",
+    "events_url" : "https://api.github.com/users/WL101ZYF/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WL101ZYF/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 272,
+    "additions" : 208,
+    "deletions" : 64
+  },
+  "author" : {
+    "login" : "WL101ZYF",
+    "id" : 17779014,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17779014?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WL101ZYF",
+    "html_url" : "https://github.com/WL101ZYF",
+    "followers_url" : "https://api.github.com/users/WL101ZYF/followers",
+    "following_url" : "https://api.github.com/users/WL101ZYF/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WL101ZYF/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WL101ZYF/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WL101ZYF/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WL101ZYF/orgs",
+    "repos_url" : "https://api.github.com/users/WL101ZYF/repos",
+    "events_url" : "https://api.github.com/users/WL101ZYF/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WL101ZYF/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1",
+  "commit" : {
+    "author" : {
+      "name" : "WL101ZYF",
+      "email" : "2687292764@qq.com",
+      "date" : "2016-05-11T14:42:22Z"
+    },
+    "committer" : {
+      "name" : "WL101ZYF",
+      "email" : "2687292764@qq.com",
+      "date" : "2016-05-11T14:42:22Z"
+    },
+    "message" : "#1 #88 #89 #90 #91 #94 #95 lab1 lab2 lab3 lab4 lab5 lab8 lab9",
+    "tree" : {
+      "sha" : "6cfc4cd9a340dc4a203eb5fd376604b5c2e0043f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/6cfc4cd9a340dc4a203eb5fd376604b5c2e0043f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1/comments",
+  "files" : [ {
+    "sha" : "27b82f2e1d97b55f3f72280e20ad1e62d3fac03f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java",
+    "status" : "modified",
+    "additions" : 166,
+    "deletions" : 37,
+    "changes" : 203,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java?ref=16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1",
+    "patch" : "@@ -1,63 +1,192 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903101;\n \n+import android.support.v7.app.ActionBarActivity;\n import android.os.Bundle;\n-import android.support.v7.app.AppCompatActivity;\n-import android.view.Menu;\n \n-import java.io.FileNotFoundException;\n+import java.io.File;\n+import java.io.FileOutputStream;\n+import java.io.IOException;\n \n-import android.net.Uri;\n-import android.provider.MediaStore;\n-import android.app.Activity;\n-import android.content.Intent;\n-import android.graphics.Bitmap;\n-import android.graphics.BitmapFactory;\n-import android.widget.ImageButton;\n-import android.widget.ImageView;\n+import android.os.Environment;\n+import android.hardware.Camera;\n+import android.hardware.Camera.PictureCallback;\n+import android.view.MotionEvent;\n+import android.view.SurfaceHolder;\n+import android.view.SurfaceView;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.view.Window;\n+import android.view.WindowManager;\n \n-public class Net1314080903101Activity extends AppCompatActivity {\n+public class Net1314080903101Activity extends ActionBarActivity {\n+\n+    private View layout;\n+    private Camera camera;\n \n-    private Uri imageUri;\n-    private ImageButton imageView;\n \n     @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n+    protected void onCreate(Bundle savedInstanceState)\n+    {\n+\n         super.onCreate(savedInstanceState);\n+        //设置窗口没有标题\n+        requestWindowFeature(Window.FEATURE_NO_TITLE);\n+        //设置窗口全屏\n+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,\n+                WindowManager.LayoutParams.FLAG_FULLSCREEN);\n         setContentView(R.layout.activity_net1314080903101);\n \n-        imageView = (ImageButton) findViewById(R.id.imageView);\n-        imageUri = Uri.parse(\"file:///sdcard/temp.jpg\");\n \n-        Intent intent;\n-        intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);      //调用照相机\n-        intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);        //指定照相机拍到的照片原图存放位置\n-        startActivityForResult(intent, 1);\n+\n+        //利用layout方法，找到两个按钮控件\n+        layout = this.findViewById(R.id.buttonlayout);\n+        //获取摄像头窗口\n+        SurfaceView surfaceView = (SurfaceView) this.findViewById(R.id.surfaceview);\n+        //将获取的摄像头填满整个窗口\n+        surfaceView.getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);\n+        //设置窗口分辨率\n+        surfaceView.getHolder().setFixedSize(176, 144);\n+        //保持屏幕高亮，不要锁机\n+        surfaceView.getHolder().setKeepScreenOn(true);\n+        //设置摄像头被调用监听事件\n+        surfaceView.getHolder().addCallback(new SurfaceCallback());\n \n \n     }\n \n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_main_net1314080903101, menu);\n-        return true;\n+    /*\n+     * 通过switch (v.getId()) 选择拍照事件和对焦事件\n+     */\n+    public void takepicture(View v)\n+    {\n+        if(camera != null)\n+        {\n+            switch (v.getId())\n+            {\n+                case R.id.takepicture:\n+                    //拍照片经过压缩处理后的图片调用MyPictureCallback方法\n+                    camera.takePicture(null, null, new MyPictureCallback());\n+                    break;\n+                case R.id.autofocus:\n+                    //如果不想得到对焦事件，传送NULL事件进去\n+                    camera.autoFocus(null);\n+\n+                default:\n+                    break;\n+            }\n+\n+\n+        }\n+\n     }\n \n-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {\n-        super.onActivityResult(requestCode, resultCode, data);\n-\n-// onActivityResult需要按提示修改\n-        if(resultCode == Activity.RESULT_OK)\n-        {Bitmap bitmap;\n-            try {\n-                bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));\n-                imageView.setImageBitmap(bitmap);\n-            } catch (FileNotFoundException e) {\n-                // TODO 自动生成的 catch 块\n+\n+    /*\n+     * 获取图片对象\n+     */\n+    private final class MyPictureCallback implements PictureCallback\n+    {\n+\n+        public void onPictureTaken(byte[] data, Camera camera)\n+        {\n+\n+            try\n+            {\n+                //将文件存储在SD卡的根目录，并以系统时间将文件命名\n+                File jpgFile = new File(Environment.getExternalStorageDirectory(),\n+                        java.lang.System.currentTimeMillis() + \".jpg\");\n+                //文件输出流对象\n+                FileOutputStream outStream = new FileOutputStream(jpgFile);\n+                //将文件数据存储到文件中\n+                outStream.write(data);\n+                //关闭输出流\n+                outStream.close();\n+                //开始预览照片\n+                camera.startPreview();\n+            }\n+            catch (IOException e)\n+            {\n                 e.printStackTrace();\n             }\n+        }\n+\n+    }\n+\n+\n+    /*\n+     * 设置摄像头参数\n+     */\n+    private final class SurfaceCallback implements android.view.SurfaceHolder.Callback\n+    {\n+\n+        public void surfaceCreated(SurfaceHolder holder)\n+        {\n+            try\n+            {\n+                //打开摄像头\n+                camera = Camera.open();\n+                //获取摄像头参数对象\n+                Camera.Parameters parameters = camera.getParameters();\n+                //设置摄像头分辨率\n+                parameters.setPreviewSize(800, 480);\n+                //设置摄像头捕获画面的频率为每秒5个画面\n+                parameters.setPreviewFrameRate(5);\n+                //设置拍摄照片的大小\n+                parameters.setPictureSize(1024, 768);\n+                //设置捕捉图像的JPEG画质\n+                parameters.setJpegQuality(80);\n+                //把参数返回给摄像头\n+                camera.setParameters(parameters);\n+                //显示摄像头捕获画面\n+                camera.setPreviewDisplay(holder);\n+                //开始预览摄像头\n+                camera.startPreview();\n+                //获取摄像头详细参数，并且打印出来\n+                //Log.i(\"MainActivity\", parameters.flatten());\n+\n+            }\n+            catch (Exception e)\n+            {\n+                e.printStackTrace();\n+            }\n+\n+        }\n+\n+        public void surfaceChanged(SurfaceHolder holder, int format, int width, int heigh)\n+        {\n+\n+        }\n+\n+        public void surfaceDestroyed(SurfaceHolder holder)\n+        {\n+            //如果摄像头不使用时，关闭摄像头\n+            if(camera != null)\n+            {\n+                camera.release();\n+                camera = null;\n+            }\n \n \n         }\n+\n+    }\n+\n+\n+    /*\n+     *屏幕被触摸事件\n+     *屏幕被按下后，显示相对布局里面的两个按钮\n+     */\n+    @Override\n+    public boolean onTouchEvent(MotionEvent event)\n+    {\n+        if(event.getAction() == MotionEvent.ACTION_DOWN)\n+        {\n+            layout.setVisibility(ViewGroup.VISIBLE);\n+\n+        }\n+\n+        return super.onTouchEvent(event);\n+\n     }\n+\n }"
+  }, {
+    "sha" : "b1ab8e8b33ad93d51adb009dd334b3d6a065d240",
+    "filename" : "app/src/main/res/layout/activity_net1314080903101.xml",
+    "status" : "modified",
+    "additions" : 4,
+    "deletions" : 5,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1/app/src/main/res/layout/activity_net1314080903101.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1/app/src/main/res/layout/activity_net1314080903101.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903101.xml?ref=16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1",
+    "patch" : "@@ -1,16 +1,15 @@\n <?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<android.support.design.widget.CoordinatorLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+<android.support.design.widget.CoordinatorLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n     xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n     android:layout_height=\"match_parent\"\n     android:fitsSystemWindows=\"true\"\n-    tools:context=\".Net1314080903101activity\">\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903101.Net1314080903101Activity\">\n \n     <android.support.design.widget.AppBarLayout\n-        android:layout_height=\"wrap_content\"\n         android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n         android:theme=\"@style/AppTheme.AppBarOverlay\">\n \n         <android.support.v7.widget.Toolbar\n@@ -22,7 +21,7 @@\n \n     </android.support.design.widget.AppBarLayout>\n \n-    <include layout=\"@layout/content_net1314080903101\"/>\n+    <include layout=\"@layout/content_net1314080903101\" />\n \n     <android.support.design.widget.FloatingActionButton\n         android:id=\"@+id/fab\""
+  }, {
+    "sha" : "affcad2325d9b44a3fe902c3855434c682e007e5",
+    "filename" : "app/src/main/res/layout/content_net1314080903101.xml",
+    "status" : "modified",
+    "additions" : 38,
+    "deletions" : 22,
+    "changes" : 60,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1/app/src/main/res/layout/content_net1314080903101.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1/app/src/main/res/layout/content_net1314080903101.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/content_net1314080903101.xml?ref=16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1",
+    "patch" : "@@ -1,33 +1,49 @@\n <?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n+<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-\tandroid:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"fill_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n     android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n     android:paddingRight=\"@dimen/activity_horizontal_margin\"\n     android:paddingTop=\"@dimen/activity_vertical_margin\"\n     app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"\n-    tools:showIn=\"@layout/activity_net1314080903101\"\n-    tools:context=\"edu.hzuapps.androidworks.homeworks.net13140809031013101.Net1314080903101activity\">\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903101.Net1314080903101Activity\"\n+    tools:showIn=\"@layout/activity_net1314080903101\">\n+\n+    <SurfaceView\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"fill_parent\"\n+        android:id=\"@+id/surfaceview\"/>\n+\n+    <RelativeLayout\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"fill_parent\"\n+        android:visibility=\"gone\"\n+        android:id=\"@+id/buttonlayout\">\n \n-    <LinearLayout\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"90dp\"\n-        android:orientation=\"vertical\" >\n+        <Button\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:layout_alignParentRight=\"true\"\n+            android:layout_alignParentBottom=\"true\"\n+            android:layout_marginRight=\"5dp\"\n+            android:text=\"@string/takepicture\"\n+            android:onClick=\"takepicture\"\n+            android:id=\"@+id/takepicture\" />\n \n-        <ImageButton\n-            android:id=\"@+id/imageView\"\n-            android:layout_width=\"65dp\"\n-            android:layout_height=\"70dp\"\n-            android:layout_marginLeft=\"10dp\"\n-            android:src=\"@drawable/net1314080903101\" />\n \n-        <TextView\n+\n+        <Button\n             android:layout_width=\"wrap_content\"\n             android:layout_height=\"wrap_content\"\n-            android:layout_marginLeft=\"25dp\"\n-            android:text=\"相机\" />\n-    </LinearLayout>\n-</RelativeLayout>\n+            android:layout_toLeftOf=\"@id/takepicture\"\n+            android:layout_alignTop=\"@id/takepicture\"\n+            android:layout_marginRight=\"20dp\"\n+            android:text=\"@string/autofocus\"\n+            android:onClick=\"takepicture\"\n+            android:id=\"@+id/autofocus\" />\n+\n+    </RelativeLayout>\n+</FrameLayout>"
+  } ],
+  "sha" : "16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/16a1c1c3f06e8485b22c1ce62bd8eddecabdb6b1",
+  "parents" : [ {
+    "sha" : "f2a5dbaffb562037aa2876cac3335a2a95ca63d8",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f2a5dbaffb562037aa2876cac3335a2a95ca63d8",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/f2a5dbaffb562037aa2876cac3335a2a95ca63d8"
+  } ]
+}

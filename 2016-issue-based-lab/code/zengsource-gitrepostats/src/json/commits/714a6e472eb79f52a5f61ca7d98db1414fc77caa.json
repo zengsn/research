@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "woyizhidouz",
+    "id" : 18082239,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18082239?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/woyizhidouz",
+    "html_url" : "https://github.com/woyizhidouz",
+    "followers_url" : "https://api.github.com/users/woyizhidouz/followers",
+    "following_url" : "https://api.github.com/users/woyizhidouz/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/woyizhidouz/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/woyizhidouz/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/woyizhidouz/subscriptions",
+    "organizations_url" : "https://api.github.com/users/woyizhidouz/orgs",
+    "repos_url" : "https://api.github.com/users/woyizhidouz/repos",
+    "events_url" : "https://api.github.com/users/woyizhidouz/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/woyizhidouz/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 14,
+    "additions" : 7,
+    "deletions" : 7
+  },
+  "author" : {
+    "login" : "woyizhidouz",
+    "id" : 18082239,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18082239?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/woyizhidouz",
+    "html_url" : "https://github.com/woyizhidouz",
+    "followers_url" : "https://api.github.com/users/woyizhidouz/followers",
+    "following_url" : "https://api.github.com/users/woyizhidouz/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/woyizhidouz/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/woyizhidouz/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/woyizhidouz/subscriptions",
+    "organizations_url" : "https://api.github.com/users/woyizhidouz/orgs",
+    "repos_url" : "https://api.github.com/users/woyizhidouz/repos",
+    "events_url" : "https://api.github.com/users/woyizhidouz/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/woyizhidouz/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/714a6e472eb79f52a5f61ca7d98db1414fc77caa",
+  "commit" : {
+    "author" : {
+      "name" : "woyizhidouz",
+      "email" : "1319078701@qq.com",
+      "date" : "2016-04-20T04:55:35Z"
+    },
+    "committer" : {
+      "name" : "woyizhidouz",
+      "email" : "1319078701@qq.com",
+      "date" : "2016-04-20T04:55:35Z"
+    },
+    "message" : "Update Net1314080903207Activity.java",
+    "tree" : {
+      "sha" : "a1495b5fb372820cf046f403a2f4bb95aaffd9ff",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/a1495b5fb372820cf046f403a2f4bb95aaffd9ff"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/714a6e472eb79f52a5f61ca7d98db1414fc77caa",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/714a6e472eb79f52a5f61ca7d98db1414fc77caa/comments",
+  "files" : [ {
+    "sha" : "f7f6a47fabe7054fdc8d1836b0af94f884b6bc42",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903207/Net1314080903207Activity.java",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 7,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/714a6e472eb79f52a5f61ca7d98db1414fc77caa/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903207/Net1314080903207Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/714a6e472eb79f52a5f61ca7d98db1414fc77caa/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903207/Net1314080903207Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903207/Net1314080903207Activity.java?ref=714a6e472eb79f52a5f61ca7d98db1414fc77caa",
+    "patch" : "@@ -2,14 +2,14 @@\n \n import android.app.Activity;\n import android.os.Bundle;\n-import android.view.Window;\n+import android.view.Menu;\n+import android.view.MenuItem;\n \n public class Net13124080903207Activity extends Activity {\n \n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        requestWindowFeature(Window.FEATURE_NO_TITLE);\n-        setContentView(R.layout.activity_com1314080901103);\n-    }\n+   @Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_main);\n+\t}\n }"
+  } ],
+  "sha" : "714a6e472eb79f52a5f61ca7d98db1414fc77caa",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/714a6e472eb79f52a5f61ca7d98db1414fc77caa",
+  "parents" : [ {
+    "sha" : "132ca4f544ba6bfdf8b66f678338cec46c95e62d",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/132ca4f544ba6bfdf8b66f678338cec46c95e62d",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/132ca4f544ba6bfdf8b66f678338cec46c95e62d"
+  } ]
+}

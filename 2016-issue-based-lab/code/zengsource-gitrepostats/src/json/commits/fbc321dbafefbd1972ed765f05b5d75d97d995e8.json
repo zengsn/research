@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 194,
+    "additions" : 194,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/fbc321dbafefbd1972ed765f05b5d75d97d995e8",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-21T01:52:31Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-06-21T01:52:31Z"
+    },
+    "message" : "Merge pull request #1002 from linxingwei/master\n\n#95 #107 lab9",
+    "tree" : {
+      "sha" : "6b05c604315d49f84a3c6031d5ccbf174ff106d1",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/6b05c604315d49f84a3c6031d5ccbf174ff106d1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/fbc321dbafefbd1972ed765f05b5d75d97d995e8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fbc321dbafefbd1972ed765f05b5d75d97d995e8/comments",
+  "files" : [ {
+    "sha" : "f3127a8d91b2bd9fc5ea0ef2e5f0c56f67098959",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901224/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fbc321dbafefbd1972ed765f05b5d75d97d995e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901224/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fbc321dbafefbd1972ed765f05b5d75d97d995e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901224/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901224/AndroidManifest.xml?ref=fbc321dbafefbd1972ed765f05b5d75d97d995e8",
+    "patch" : "@@ -0,0 +1,27 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"com.example.pictureviewing\"\n+    android:versionCode=\"1\"\n+    android:versionName=\"1.0\" >\n+\n+    <uses-sdk\n+        android:minSdkVersion=\"8\"\n+        android:targetSdkVersion=\"18\" />\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@drawable/ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:theme=\"@style/AppTheme\" >\n+        <activity\n+            android:name=\"com.example.pictureviewing.Com1314080901224Activity\"\n+            android:label=\"@string/app_name\" >\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+    </application>\n+\n+</manifest>"
+  }, {
+    "sha" : "9f0db16cf1f51947f29b6716d97358c850a23205",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901224/Com1314080901224Activity.java",
+    "status" : "added",
+    "additions" : 149,
+    "deletions" : 0,
+    "changes" : 149,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fbc321dbafefbd1972ed765f05b5d75d97d995e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901224/Com1314080901224Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fbc321dbafefbd1972ed765f05b5d75d97d995e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901224/Com1314080901224Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901224/Com1314080901224Activity.java?ref=fbc321dbafefbd1972ed765f05b5d75d97d995e8",
+    "patch" : "@@ -0,0 +1,149 @@\n+package com.example.pictureviewing;\n+\n+import java.io.File;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import android.app.Activity;\n+import android.content.Context;\n+import android.content.res.TypedArray;\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.widget.AdapterView;\n+import android.widget.AdapterView.OnItemClickListener;\n+import android.widget.BaseAdapter;\n+import android.widget.Gallery;\n+import android.widget.ImageView;\n+import android.widget.ImageView.ScaleType;\n+import android.widget.Toast;\n+\n+public class Com1314080901224Activity extends Activity {\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_com1314080901224);\n+\t\t// ͨ��findViewById�ҵ���Դ\n+\t\tGallery mygallery = (Gallery) findViewById(R.id.mygallery);\n+\t\t// ���һ��adapter�����Gallery\n+\t\tmygallery.setAdapter(new ImageAdapter(this,getFromSd()));\n+\t\t// ���ͼƬʱ��ʾͼƬ�ı��\n+\t\tmygallery.setOnItemClickListener(new OnItemClickListener() {\n+\n+\t\t\t@Override\n+\t\t\tpublic void onItemClick(AdapterView<?> arg0, View arg1, int arg2,\n+\t\t\t\t\tlong arg3) {\n+\t\t\t\t// TODO Auto-generated method stub\n+\t\t\t\tToast.makeText(Com1314080901224Activity.this,\n+\t\t\t\t\t\t\"����ͼƬ\" + arg2 + \"��\", Toast.LENGTH_SHORT).show();\n+\t\t\t}\n+\n+\t\t});\n+\t}\n+\n+\tprivate List<String> getFromSd() {\n+\t\t// ����·��\n+\t\tList<String> it = new ArrayList<String>();\n+\t\tFile f = new File(\"/mnt/sdcard\");\n+\t\t//����f�ļ��µ�����Ԫ��\n+\t\tFile[] files = f.listFiles();\n+\t\tfor (int i = 0; i < files.length; i++) {\n+\t\t\tFile file = files[i];\n+\t\t\tif (getImageFile(file.getPath())) {\n+\t\t\t\tit.add(file.getPath());\n+\t\t\t}\n+\t\t}\n+\t\treturn it;\n+\t\t\n+\t}\n+\t\n+\t//�ж�ͼƬ������\n+\tprivate boolean getImageFile(String fName){\n+\t\tboolean re;\n+\t\t//substring(from,to)����start��end\n+\t\t//lastIndexOf��ȡfName�����һ��.���ַ�\n+\t\t//toLowerCase��ת��ΪСд�ַ�\n+\t\tString end=fName.substring(fName.lastIndexOf(\".\")+1,\n+                 fName.length()).toLowerCase(); \n+\t\tif(end.equals(\"jpg\")||end.equals(\"gif\")||end.equals(\"png\")\n+\t            ||end.equals(\"jpeg\")||end.equals(\"bmp\"))\n+\t    {\n+\t      re=true;\n+\t    }\n+\t    else\n+\t    {\n+\t      re=false;\n+\t    }\n+\t    return re; \n+\t}\n+\n+\t// ��дBaseAdapter\n+\tpublic class ImageAdapter extends BaseAdapter {\n+\n+\t\tprivate int mGalleryItemBackground;\n+\t\tprivate Context mContext;\n+\t\tprivate List<String> list;\n+\t\t// ���캯��\n+\t\tpublic ImageAdapter(Context c,List<String> li) {\n+\t\t\tmContext = c;\n+\t\t\tlist=li;\n+\t\t\tTypedArray a = obtainStyledAttributes(R.styleable.Gallery);\n+\t\t\t// ��ȡGallery���Ե�id\n+\t\t\tmGalleryItemBackground = a.getResourceId(\n+\t\t\t\t\tR.styleable.Gallery_android_galleryItemBackground, 0);\n+\t\t\t// ʹ�ö���styleable�����ܹ�����ʹ��\n+\t\t\ta.recycle();\n+\t\t}\n+\n+\t\t// ����ͼƬ��Ŀ\n+\t\t@Override\n+\t\tpublic int getCount() {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\treturn list.size();\n+\t\t}\n+\n+\t\t@Override\n+\t\tpublic Object getItem(int arg0) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\treturn arg0;\n+\t\t}\n+\n+\t\t@Override\n+\t\tpublic long getItemId(int arg0) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\treturn arg0;\n+\t\t}\n+\n+\t\t@Override\n+\t\tpublic View getView(int arg0, View arg1, ViewGroup arg2) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tImageView iv = new ImageView(mContext);\n+\t\t\t// ����ͼƬ\n+\t\t\t//iv.setImageResource(myImageIds[arg0]);\n+\t\t\tBitmap bm=BitmapFactory.decodeFile(list.get(arg0).toString());\n+\t\t\tiv.setImageBitmap(bm);\n+\t\t\t// ����ͼƬ���\n+\t\t\tiv.setScaleType(ScaleType.FIT_XY);\n+\t\t\t// ����Layout���\n+\t\t\tiv.setLayoutParams(new Gallery.LayoutParams(300, 250));\n+\t\t\t// ���ñ���ͼ\n+\t\t\tiv.setBackgroundResource(mGalleryItemBackground);\n+\t\t\treturn iv;\n+\t\t}\n+\n+//\t\tprivate Integer[] myImageIds = { \n+//\t\t\t\tR.drawable.q1, \n+//\t\t\t\tR.drawable.q2,\n+//\t\t\t\tR.drawable.q3, \n+//\t\t\t\tR.drawable.q4, \n+//\t\t\t\tR.drawable.q5, \n+//\t\t\t\tR.drawable.q6,\n+//\t\t\t\tR.drawable.q7, \n+//\t\t\t\tR.drawable.q8,\n+//\t\t};\n+\n+\t}\n+}"
+  }, {
+    "sha" : "ad08ca845d4892c2cc2eb68ab14ebda8b7663ff3",
+    "filename" : "app/src/main/res/layout/activity_com1314080901224.xml",
+    "status" : "added",
+    "additions" : 18,
+    "deletions" : 0,
+    "changes" : 18,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fbc321dbafefbd1972ed765f05b5d75d97d995e8/app/src/main/res/layout/activity_com1314080901224.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fbc321dbafefbd1972ed765f05b5d75d97d995e8/app/src/main/res/layout/activity_com1314080901224.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901224.xml?ref=fbc321dbafefbd1972ed765f05b5d75d97d995e8",
+    "patch" : "@@ -0,0 +1,18 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\".Com1314080901224Activity\" >\n+\n+    <Gallery \n+        android:id=\"@+id/mygallery\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_centerInParent=\"true\"\n+        />\n+\n+</RelativeLayout>"
+  } ],
+  "sha" : "fbc321dbafefbd1972ed765f05b5d75d97d995e8",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fbc321dbafefbd1972ed765f05b5d75d97d995e8",
+  "parents" : [ {
+    "sha" : "1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7"
+  }, {
+    "sha" : "26ee312c4ba49cba340ead0e8d03650f59e93725",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/26ee312c4ba49cba340ead0e8d03650f59e93725",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/26ee312c4ba49cba340ead0e8d03650f59e93725"
+  } ]
+}

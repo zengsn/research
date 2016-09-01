@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "zjhua",
+    "id" : 15087440,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15087440?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zjhua",
+    "html_url" : "https://github.com/zjhua",
+    "followers_url" : "https://api.github.com/users/zjhua/followers",
+    "following_url" : "https://api.github.com/users/zjhua/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zjhua/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zjhua/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zjhua/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zjhua/orgs",
+    "repos_url" : "https://api.github.com/users/zjhua/repos",
+    "events_url" : "https://api.github.com/users/zjhua/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zjhua/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 70,
+    "additions" : 3,
+    "deletions" : 67
+  },
+  "author" : {
+    "login" : "zjhua",
+    "id" : 15087440,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15087440?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zjhua",
+    "html_url" : "https://github.com/zjhua",
+    "followers_url" : "https://api.github.com/users/zjhua/followers",
+    "following_url" : "https://api.github.com/users/zjhua/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zjhua/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zjhua/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zjhua/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zjhua/orgs",
+    "repos_url" : "https://api.github.com/users/zjhua/repos",
+    "events_url" : "https://api.github.com/users/zjhua/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zjhua/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/57ce630c564fbdf38d154396ea6c758f9b73f858",
+  "commit" : {
+    "author" : {
+      "name" : "zjhua",
+      "email" : "544630551@qq.com",
+      "date" : "2016-04-27T07:54:23Z"
+    },
+    "committer" : {
+      "name" : "zjhua",
+      "email" : "544630551@qq.com",
+      "date" : "2016-04-27T07:54:23Z"
+    },
+    "message" : "#88 #169 lab2\n\n修改了类名",
+    "tree" : {
+      "sha" : "a07a1ddbdca115e7cbd8f3ddb40f8264c3d18d32",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/a07a1ddbdca115e7cbd8f3ddb40f8264c3d18d32"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/57ce630c564fbdf38d154396ea6c758f9b73f858",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/57ce630c564fbdf38d154396ea6c758f9b73f858/comments",
+  "files" : [ {
+    "sha" : "70c51b5306f93aece9f6fea5ed701c756c9c8d09",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/BackActivity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 49,
+    "changes" : 49,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/b69ac4c0c671f31105b125ea6c69b18f5feb2d9e/app/src/main/java/edu/hzuapps/androidworks/homeworks/BackActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/b69ac4c0c671f31105b125ea6c69b18f5feb2d9e/app/src/main/java/edu/hzuapps/androidworks/homeworks/BackActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/BackActivity.java?ref=b69ac4c0c671f31105b125ea6c69b18f5feb2d9e",
+    "patch" : "@@ -1,49 +0,0 @@\n-package edu.hzuapps.androidworks.homeworks;\n-\n-import android.os.Bundle;\n-import android.support.v7.app.ActionBarActivity;\n-import android.util.Log;\n-import android.view.Menu;\n-import android.view.MenuItem;\n-\n-import edu.hzuapps.androidworks.R;\n-\n-/**\n- * 实现的默认返回按钮,所有作业可继续此类.\n- */\n-public class BackActivity extends ActionBarActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_back);\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        getMenuInflater().inflate(R.menu.menu_subactivity, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        int id = item.getItemId();\n-        if (id == R.id.action_back) {\n-            finish();\n-            return true;\n-        }\n-        return super.onOptionsItemSelected(item);\n-    }\n-\n-    @Override\n-    protected void onStop() {\n-        super.onStop();\n-        Log.i(this.getClass().getSimpleName(), \"停止!\");\n-    }\n-\n-    @Override\n-    protected void onDestroy() {\n-        super.onDestroy();\n-        Log.i(this.getClass().getSimpleName(), \"回收!\");\n-    }\n-}"
+  }, {
+    "sha" : "4f9c274feb512559898138483ffe935fe2528dbd",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/com1314080901144Activity.java",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 3,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/57ce630c564fbdf38d154396ea6c758f9b73f858/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/com1314080901144Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/57ce630c564fbdf38d154396ea6c758f9b73f858/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/com1314080901144Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/com1314080901144Activity.java?ref=57ce630c564fbdf38d154396ea6c758f9b73f858",
+    "patch" : "@@ -1,14 +1,14 @@\n-﻿package edu.hzuapps.androidworks.homeworks.com1314080901144;\n+﻿package edu.hzuapps.androidworks.homeworks.Com1314080901144;\n \n import android.app.Activity;\n import android.os.Bundle;\n \n-public class com1314080901144Activity extends Activity {\n+public class Com1314080901144Activity extends Activity {\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_com1314080901144);\n+        setContentView(R.layout.activity_Com1314080901144Activity);\n     }\n }\n Status API Training Shop Blog About"
+  }, {
+    "sha" : "fccbc0a514a63dbc8adb9775991e9536f02cc140",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144Activity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 15,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/b69ac4c0c671f31105b125ea6c69b18f5feb2d9e/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/b69ac4c0c671f31105b125ea6c69b18f5feb2d9e/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144Activity.java?ref=b69ac4c0c671f31105b125ea6c69b18f5feb2d9e",
+    "patch" : "@@ -1,15 +0,0 @@\n-﻿package edu.hzuapps.androidworks.homeworks.com1314080901144;\n-\n-import android.app.Activity;\n-import android.os.Bundle;\n-\n-public class com1314080901144Activity extends Activity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_com1314080901144);\n-    }\n-}\n-Status API Training Shop Blog About\n-© 2016 GitHub, Inc. Terms Privac"
+  } ],
+  "sha" : "57ce630c564fbdf38d154396ea6c758f9b73f858",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/57ce630c564fbdf38d154396ea6c758f9b73f858",
+  "parents" : [ {
+    "sha" : "b69ac4c0c671f31105b125ea6c69b18f5feb2d9e",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/b69ac4c0c671f31105b125ea6c69b18f5feb2d9e",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/b69ac4c0c671f31105b125ea6c69b18f5feb2d9e"
+  } ]
+}

@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 226,
+    "additions" : 226,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-21T01:50:15Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-06-21T01:50:15Z"
+    },
+    "message" : "Merge pull request #999 from fanrenaren/master\n\n#88 #100 实验二",
+    "tree" : {
+      "sha" : "cbacc509238e998982b87eff434c1dc866b33d00",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/cbacc509238e998982b87eff434c1dc866b33d00"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7/comments",
+  "files" : [ {
+    "sha" : "51e7041816721ff49217a103a97b4fbb374479a2",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Com1314080901231Activity.java",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Com1314080901231Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Com1314080901231Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Com1314080901231Activity.java?ref=1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7",
+    "patch" : "@@ -0,0 +1,30 @@\n+package com.example.activity;\n+\n+import java.util.GregorianCalendar;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+\n+import com.example.R;\n+import com.example.view.CalendarView;\n+\n+public class Com1314080901231Activity extends Activity {\n+\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tCalendarView calView = new CalendarView(this);\n+\t\tsetContentView(calView);\n+\t\tcalView.requestFocus();\n+\t\tsetTitle(getString(R.string.app_name) + \"-\"\n+\t\t\t\t+ getString(R.string.view_diary));\n+\n+\t}\n+\n+\tpublic void showDiaryList(int year, int month, int day) {\n+\t\tIntent k = new Intent(this, DiaryList.class);\n+\t\tk.putExtra(\"cal\", new GregorianCalendar(year,month,day));\n+\t\tstartActivity(k);\n+\t}\n+}"
+  }, {
+    "sha" : "28692c962310049a2442a9fb8c9e8cb16a4caaef",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Com1314080901231Activity.xml",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Com1314080901231Activity.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Com1314080901231Activity.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Com1314080901231Activity.xml?ref=1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7",
+    "patch" : "@@ -0,0 +1,13 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<TabHost xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:id=\"@android:id/tabhost\" android:layout_width=\"fill_parent\"\n+\tandroid:layout_height=\"fill_parent\" android:background=\"@drawable/background\">\n+\t<LinearLayout android:orientation=\"vertical\" style=\"@style/TabStyle\"\n+\t\tandroid:layout_width=\"fill_parent\" android:layout_height=\"fill_parent\">\n+\t\t<TabWidget android:id=\"@android:id/tabs\" \n+\t\t\tandroid:layout_width=\"fill_parent\" android:layout_height=\"wrap_content\" />\n+\t\t<FrameLayout android:id=\"@android:id/tabcontent\"\n+\t\t\tandroid:layout_width=\"fill_parent\" android:layout_height=\"fill_parent\"\n+\t\t\tandroid:padding=\"5dp\" />\n+\t</LinearLayout>\n+</TabHost> \n\\ No newline at end of file"
+  }, {
+    "sha" : "39f214f1089be11c1d0e699a22793d93a1a13029",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Main.java",
+    "status" : "added",
+    "additions" : 183,
+    "deletions" : 0,
+    "changes" : 183,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Main.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Main.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901231/Main.java?ref=1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7",
+    "patch" : "@@ -0,0 +1,183 @@\n+package com.example;\n+\n+import android.app.TabActivity;\n+import android.content.Intent;\n+import android.content.res.Resources;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.widget.TabHost;\n+import android.widget.TabWidget;\n+import android.widget.TextView;\n+import android.widget.TabHost.OnTabChangeListener;\n+\n+import com.example.activity.About;\n+import com.example.activity.CalendarActivity;\n+import com.example.activity.DiaryList;\n+import com.example.activity.DiaryNew;\n+import com.example.activity.Settings;\n+import com.example.activity.ThoughtsActivity;\n+import com.example.activity.TypeActivity;\n+import com.example.provider.DiaryAdapter;\n+\n+public class Main extends TabActivity {\n+\t//设置菜单\n+\tprivate static final int CONFIG_ID = Menu.FIRST;\n+\t//类别菜单\n+\tprivate static final int TYPE_ID = Menu.FIRST + 1;\n+\t//关于菜单\n+\tprivate static final int ABOUT_ID = Menu.FIRST + 2;\n+\t\n+\tprivate static final int INSERT_ID = Menu.FIRST+3;\n+\tprivate static final int THOUGHTS_ID = Menu.FIRST + 4;\n+\tprivate static final int EXIT_ID = Menu.FIRST + 5;\n+\t\n+\tprivate static final int ACTIVITY_CREATE = 0;\n+\t\n+\tString mSelectDate;\n+\t\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.main);\n+\n+\t\t// 得到TabHost对象，正对TabActivity的操作通常都有这个对象完成\n+\t\tTabHost tabHost = getTabHost();\n+\n+\t\tIntent listIntent = new Intent(this, DiaryList.class);\n+\t\t// 生成一个TabSpec对象，这个对象代表了一个页\n+\t\tTabHost.TabSpec listSpec = tabHost.newTabSpec(\"DiaryList\");\n+\t\tResources res = getResources();\n+\t\t// 设置该页的indicator\n+\t\tlistSpec.setIndicator(\"\", res.getDrawable(R.drawable.icon_list));\n+\t\t// 设置该页的内容\n+\t\tlistSpec.setContent(listIntent);\n+\t\t// 将设置好的TabSpec对象添加到TabHost当中\n+\t\ttabHost.addTab(listSpec);\n+\n+\t\tIntent newIntent = new Intent(this, DiaryNew.class);\n+\t\tTabHost.TabSpec newSpec = tabHost.newTabSpec(\"DiaryNew\");\n+\t\tnewSpec.setIndicator(\"\", res.getDrawable(R.drawable.icon_newnote));\n+\t\tnewSpec.setContent(newIntent);\n+\t\ttabHost.addTab(newSpec);\n+\n+\t\tIntent canlendarIntent = new Intent(this, CalendarActivity.class);\n+\t\tTabHost.TabSpec cldSpec = tabHost.newTabSpec(\"Calendar\");\n+\t\tcldSpec.setIndicator(\"\", res.getDrawable(R.drawable.calendar));\n+\t\tcldSpec.setContent(canlendarIntent);\n+\t\t\n+\t\ttabHost.addTab(cldSpec);\n+\n+\t\tinitTabs();\n+\n+\t}\n+\t\n+\t/**\n+\t * 创建底部菜单\n+\t * */\n+\tpublic boolean onCreateOptionsMenu(Menu menu) {\n+\t\tsuper.onCreateOptionsMenu(menu);\n+\t\tmenu.add(0, INSERT_ID, 1, R.string.menu_diary);\n+\t\tmenu.add(0, THOUGHTS_ID, 4, R.string.menu_thoughts);\n+\t\tmenu.add(0, TYPE_ID, 3, R.string.menu_type);\n+\t\tmenu.add(0, CONFIG_ID, 4, R.string.menu_config);\n+\t\tmenu.add(0, ABOUT_ID, 5, R.string.menu_about);\n+\t\tmenu.add(0, EXIT_ID, 6, R.string.menu_exit);\n+\t\treturn true;\n+\t}\n+\t\n+\t/**\n+\t * 点击底部菜单项时的处理\n+\t */\n+\t@Override\n+\tpublic boolean onOptionsItemSelected(MenuItem item) {\n+\t\t\n+\t\tswitch (item.getItemId()) {\n+\t\tcase TYPE_ID:\n+\t\t\tIntent intent = new Intent(this,TypeActivity.class);\n+\t\t\tMain.this.startActivity(intent);\n+\t\t\treturn true;\n+\t\tcase INSERT_ID:\n+\t\t\tcreateDiary();\n+\t\t\treturn true;\n+\t\tcase THOUGHTS_ID:\n+\t\t\tcreateThoughts();\n+\t\t\treturn true;\n+\t\tcase ABOUT_ID:\n+\t\t\tintent = new Intent(this,About.class);\n+\t\t\tMain.this.startActivity(intent);\n+\t\t\treturn true;\n+\t\tcase CONFIG_ID:\n+\t\t\tintent = new Intent(this,Settings.class);\n+\t\t\tMain.this.startActivity(intent);\n+\t\t\treturn true;\n+\t\tcase EXIT_ID:\n+\t\t\tfinish();\n+\t\t\treturn true;\n+\t\t}\n+\t\treturn super.onOptionsItemSelected(item);\n+\t}\n+\t\n+\t\tprivate void createDiary() {\n+\t\t\tIntent i = new Intent(this, DiaryNew.class);\n+\t\t\tTextView mSelectDateView = (TextView) getTabHost().getCurrentView().findViewById(R.id.select_date);\n+\t\t\tif(mSelectDateView!=null)\n+\t\t\t{\n+\t\t\t  mSelectDate = mSelectDateView.getText().toString();\n+\t\t\t  i.putExtra(DiaryAdapter.KEY_DATE, mSelectDate);\n+\t\t\t}\n+\t\t\tMain.this.startActivity(i);\n+\t\t}\n+\n+\t\tprivate void createThoughts() {\n+\t\t\tIntent i = new Intent(this, ThoughtsActivity.class);\n+\t\t\tTextView mSelectDateView = (TextView) getTabHost().getCurrentView().findViewById(R.id.select_date);\n+\t\t\tif(mSelectDateView!=null)\n+\t\t\t{\n+\t\t\t  mSelectDate = mSelectDateView.getText().toString();\n+\t\t\t  i.putExtra(DiaryAdapter.KEY_DATE, mSelectDate);\n+\t\t\t}\n+\t\t\tMain.this.startActivity(i);\n+\t\t}\n+\t/**\n+\t * 设置Tab标签的背景\n+\t * */\n+\tprivate void initTabs() {\n+\t\tfinal TabHost tabs = getTabHost();\n+\t\tfinal TabWidget tabWidget = tabs.getTabWidget();\n+\n+\t\tfor (int i = 0; i < tabWidget.getChildCount(); i++) {\n+\t\t\tView vvv = tabWidget.getChildAt(i);\n+\t\t\tif (tabs.getCurrentTab() == i) {\n+\t\t\t\tvvv.setBackgroundColor(R.color.hit_color);\n+\t\t\t\t//vvv.setBackgroundDrawable(getResources().getDrawable(R.drawable.flower3));\n+\t\t\t} else {\n+\t\t\t\tvvv.setBackgroundDrawable(getResources().getDrawable(R.drawable.leaves4));\n+\t\t\t}\n+\n+\t\t}\n+\t\t/**\n+\t\t * 当点击tab选项卡的时候，更改当前的背景\n+\t\t */\n+\t\ttabs.setOnTabChangedListener(new OnTabChangeListener() {\n+\t\t\t@Override\n+\t\t\tpublic void onTabChanged(String tabId) {\n+\t\t\t\t\n+\t\t\t\tfor (int i = 0; i < tabWidget.getChildCount(); i++) {\n+\t\t\t\t\tView vvv = tabWidget.getChildAt(i);\n+\t\t\t\t\tif (tabs.getCurrentTab() == i) {\n+\t\t\t\t\t\tvvv.setBackgroundColor(R.color.hit_color);\n+\t\t\t\t\t\t//vvv.setBackgroundDrawable(getResources().getDrawable(R.drawable.flower3));\n+\t\t\t\t\t} else {\n+\t\t\t\t\t\tvvv.setBackgroundDrawable(getResources().getDrawable(\n+\t\t\t\t\t\t\t\tR.drawable.leaves4));\n+\t\t\t\t\t}\n+\t\t\t\t}\n+\t\t\t}\n+\t\t});\n+\n+\t}\n+\n+\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1d1c4cb4657c6fc14bd5c32e4d2a8d58014d72d7",
+  "parents" : [ {
+    "sha" : "07f93c27771644ad68893aed59c772aedffc7a26",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/07f93c27771644ad68893aed59c772aedffc7a26",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/07f93c27771644ad68893aed59c772aedffc7a26"
+  }, {
+    "sha" : "7f6001924827494739e1a1fb62e41535f858bb08",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/7f6001924827494739e1a1fb62e41535f858bb08",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/7f6001924827494739e1a1fb62e41535f858bb08"
+  } ]
+}

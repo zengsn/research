@@ -1,0 +1,121 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 97,
+    "additions" : 84,
+    "deletions" : 13
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/9461329c290a156bd98b2de5e7a2c54f189ecdf6",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T07:54:43Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T07:54:43Z"
+    },
+    "message" : "Merge pull request #422 from tanlanz/master\n\n#88 #89 #90 #61 Lab2/Lab3/Lab4",
+    "tree" : {
+      "sha" : "8625f33c6e1e72c085786d2f31c9c09cf6d97f1f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/8625f33c6e1e72c085786d2f31c9c09cf6d97f1f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/9461329c290a156bd98b2de5e7a2c54f189ecdf6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9461329c290a156bd98b2de5e7a2c54f189ecdf6/comments",
+  "files" : [ {
+    "sha" : "7f2fea5f89f827fd8456e57fa11a39313dad4719",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/Net1314080903146Activity.java",
+    "status" : "added",
+    "additions" : 60,
+    "deletions" : 0,
+    "changes" : 60,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/9461329c290a156bd98b2de5e7a2c54f189ecdf6/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/Net1314080903146Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/9461329c290a156bd98b2de5e7a2c54f189ecdf6/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/Net1314080903146Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/Net1314080903146Activity.java?ref=9461329c290a156bd98b2de5e7a2c54f189ecdf6",
+    "patch" : "@@ -0,0 +1,60 @@\n+﻿package edu.hzuapps.androidworks.homeworks.net1314080903146;\n+\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+\n+import android.content.Context;\n+import android.hardware.Sensor;\n+import android.hardware.SensorEvent;\n+import android.hardware.SensorEventListener;\n+import android.hardware.SensorManager;\n+import android.view.animation.Animation;\n+import android.view.animation.RotateAnimation;\n+import android.widget.ImageView;\n+\n+public class Net1314080903146Activity extends AppCompatActivity {\n+    private ImageView imageView;\n+    private SensorManager manager;\n+    private SensorListener listener = new SensorListener();\n+//\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903146);\n+\n+        imageView = (ImageView) this.findViewById(R.id.imageView);\n+        imageView.setKeepScreenOn(true);\n+        manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);\n+    }\n+    @Override\n+    protected void onResume() {\n+        Sensor sensor = manager.getDefaultSensor(Sensor.TYPE_ORIENTATION);\n+        manager.registerListener(listener, sensor,\n+                SensorManager.SENSOR_DELAY_GAME);\n+        super.onResume();\n+    }\n+\n+    @Override\n+    protected void onPause() {\n+        manager.unregisterListener(listener);\n+        super.onPause();\n+    }\n+\n+    private final class SensorListener implements SensorEventListener {\n+        private float predegree = 0;\n+\n+        public void onSensorChanged(SensorEvent event) {\n+            float degree = event.values[0];// 存放了方向值 90\n+            RotateAnimation animation = new RotateAnimation(predegree, -degree,\n+                    Animation.RELATIVE_TO_SELF, 0.5f,\n+                    Animation.RELATIVE_TO_SELF, 0.5f);\n+            animation.setDuration(200);\n+            imageView.startAnimation(animation);\n+            predegree = -degree;\n+        }\n+\n+        public void onAccuracyChanged(Sensor sensor, int accuracy) {\n+        }\n+    }\n+\n+}"
+  }, {
+    "sha" : "8a595a2aefaa898351b24bcd0b81d6f72b42b490",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/Net1314080904136Activity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 13,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4111d4760d939804fb4f041b958d42e74f9e7d8b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/Net1314080904136Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4111d4760d939804fb4f041b958d42e74f9e7d8b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/Net1314080904136Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/Net1314080904136Activity.java?ref=4111d4760d939804fb4f041b958d42e74f9e7d8b",
+    "patch" : "@@ -1,13 +0,0 @@\n-package edu.hzuapps.androidworks.homeworks.net1314080903146;\n-\n-import android.support.v7.app.AppCompatActivity;\n-import android.os.Bundle;\n-\n-public class Net1314080904136Activity extends AppCompatActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_net1314080904136);\n-    }\n-}"
+  }, {
+    "sha" : "85ba1c7e3c062df8ca846afec4cb244358aed766",
+    "filename" : "app/src/main/res/drawable/north.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/9461329c290a156bd98b2de5e7a2c54f189ecdf6/app/src/main/res/drawable/north.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/9461329c290a156bd98b2de5e7a2c54f189ecdf6/app/src/main/res/drawable/north.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/north.png?ref=9461329c290a156bd98b2de5e7a2c54f189ecdf6"
+  }, {
+    "sha" : "2101314eba086a182484895a081b80fc673f0f1f",
+    "filename" : "app/src/main/res/layout/activity_net1314080903146.xml",
+    "status" : "added",
+    "additions" : 24,
+    "deletions" : 0,
+    "changes" : 24,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/9461329c290a156bd98b2de5e7a2c54f189ecdf6/app/src/main/res/layout/activity_net1314080903146.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/9461329c290a156bd98b2de5e7a2c54f189ecdf6/app/src/main/res/layout/activity_net1314080903146.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903146.xml?ref=9461329c290a156bd98b2de5e7a2c54f189ecdf6",
+    "patch" : "@@ -0,0 +1,24 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:gravity=\"center\"\n+    android:orientation=\"vertical\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903146.Net1314080903146Activity\">\n+\n+    <ImageView\n+        android:id=\"@+id/imageView\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:src=\"@drawable/north\" />\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"Compass\" />\n+</RelativeLayout>"
+  } ],
+  "sha" : "9461329c290a156bd98b2de5e7a2c54f189ecdf6",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9461329c290a156bd98b2de5e7a2c54f189ecdf6",
+  "parents" : [ {
+    "sha" : "4111d4760d939804fb4f041b958d42e74f9e7d8b",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4111d4760d939804fb4f041b958d42e74f9e7d8b",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/4111d4760d939804fb4f041b958d42e74f9e7d8b"
+  }, {
+    "sha" : "84df58a8ca229f00e59e3eb3a5f0fa0e0f7764da",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/84df58a8ca229f00e59e3eb3a5f0fa0e0f7764da",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/84df58a8ca229f00e59e3eb3a5f0fa0e0f7764da"
+  } ]
+}

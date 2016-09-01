@@ -1,0 +1,236 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 404,
+    "additions" : 403,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-25T12:37:58Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-25T12:37:58Z"
+    },
+    "message" : "Merge pull request #829 from SimpleCodeCX/master\n\n实验二，更新activity文件 #88",
+    "tree" : {
+      "sha" : "bf9b44bc06e879121131a0756f4e60316c19c93e",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/bf9b44bc06e879121131a0756f4e60316c19c93e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/comments",
+  "files" : [ {
+    "sha" : "8ea5e82c36147a17808185957ec271dafde08eb8",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/Com1314080901208.java",
+    "status" : "modified",
+    "additions" : 51,
+    "deletions" : 1,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/Com1314080901208.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/Com1314080901208.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/Com1314080901208.java?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+    "patch" : "@@ -1,15 +1,65 @@\n-package com.example.myapp;\n+package com.example.passwordbox;\n \n import android.os.Bundle;\n import android.app.Activity;\n+import android.content.Intent;\n+import android.database.Cursor;\n+import android.database.sqlite.SQLiteDatabase;\n import android.view.Menu;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.Toast;\n \n public class Com1314080901208 extends Activity {\n \n+\tprivate MyDatabaseHelper dbHelper;\n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_com1314080901208);\n+        dbHelper=new MyDatabaseHelper(this, \"PasswordBox.db\", null, 2);\n+        Button TiJiaoBtn=(Button)findViewById(R.id.TiJiaoBtn);\n+        TiJiaoBtn.setOnClickListener(new View.OnClickListener() {\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View arg0) {\n+\t\t\t\t// TODO Auto-generated method stub\n+\t\t\t\t\n+\t\t\t\tEditText userNameText=(EditText)findViewById(R.id.userName);\n+\t\t\t\tEditText paddwordText=(EditText)findViewById(R.id.password);\n+\t\t\t\tSQLiteDatabase db=dbHelper.getWritableDatabase();\n+\t\t\t\t// ��ѯLogin�������е����\n+\t\t\t\tCursor cursor=db.rawQuery(\"select * from Login where userName='\"+userNameText.getText().toString()+\"'\", null);\t\t\t\t\n+\t\t\t\tif(cursor.getCount()==0)\n+\t\t\t\t{\n+\t\t\t\t\tToast.makeText(Com1314080901208.this,\"�û������\",Toast.LENGTH_LONG).show();\t\n+\t\t\t\t}\n+\t\t\t\telse\n+\t\t\t\t{\n+\t\t\t\t\tToast.makeText(Com1314080901208.this,\"��¼�ɹ�\",Toast.LENGTH_LONG).show();\n+\t\t\t\t\tIntent intent=new Intent(Com1314080901208.this,AcountListView.class);//��ʾIntent\n+\t\t\t\t\tstartActivity(intent);\n+\t\t\t\t}\n+\t\t\t\t\n+\t\t\t\t//Toast.makeText(Com1314080901208.this,cursor.getCount(),Toast.LENGTH_LONG).show();\n+//\t\t\t\tIntent intent = new Intent(\"com.example.passwordbox.ACTION_START\");//��ʽIntent\n+//\t\t\t     intent.addCategory(\"android.intent.category.MY_CATEGORY\");//����ָ����CategoryΪMY_CATEGORY�����û��ָ�����ʱĬ��Ϊdefault\n+//\t\t\t\t  //Intent intent=new Intent(Com1314080901208.this,activity2.class);//��ʾIntent\n+//\t\t\t\t startActivity(intent);\n+\t\t\t}\n+\t\t});\n+        \n+        //���ע����ת��ע��ҳ��\n+        Button RegisterBtn=(Button)findViewById(R.id.RegisterBtn);\n+        RegisterBtn.setOnClickListener(new View.OnClickListener() {\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View arg0) {\n+\t\t\t\t// TODO Auto-generated method stub\n+\t\t\t\tIntent intent=new Intent(Com1314080901208.this,Register.class);\n+\t\t\t\t startActivity(intent);\n+\t\t\t}\n+\t\t});\n+        \n     }\n \n "
+  }, {
+    "sha" : "0a110127d5040394aa58a9fa72be0e6b0fc60793",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/activity_com1314080901208.xml",
+    "status" : "added",
+    "additions" : 81,
+    "deletions" : 0,
+    "changes" : 81,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/activity_com1314080901208.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/activity_com1314080901208.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/activity_com1314080901208.xml?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+    "patch" : "@@ -0,0 +1,81 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:background=\"@drawable/login_bg\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\".Com1314080901208\" >\n+\n+    \n+      <RelativeLayout\n+        android:id=\"@+id/rl1\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\">\n+\n+        <EditText\n+            android:id=\"@+id/userName\"\n+            android:layout_width=\"fill_parent\"\n+            android:layout_height=\"50px\"\n+            android:layout_centerVertical=\"true\"\n+            android:layout_margin=\"20dp\"\n+            android:background=\"#7FFFD4\"\n+            android:hint=\"请输入用户名\" />\n+    </RelativeLayout>\n+    \n+    <RelativeLayout\n+        android:id=\"@+id/rl2\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\" \n+        android:layout_below=\"@id/rl1\" >\n+\n+        <EditText\n+            android:id=\"@+id/password\"\n+            android:layout_width=\"fill_parent\"\n+            android:layout_height=\"50px\"\n+            android:layout_centerVertical=\"true\"\n+            android:layout_margin=\"20dp\"\n+            android:background=\"#7FFFD4\"\n+            android:hint=\"请输入密码\"\n+            android:textColor=\"#FFF\" />\n+    </RelativeLayout>\n+\n+  \n+\n+    <RelativeLayout\n+        android:id=\"@+id/rl3\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_below=\"@id/rl2\" >\n+\n+        <Button\n+            android:id=\"@+id/TiJiaoBtn\"\n+            android:layout_width=\"fill_parent\"\n+            android:layout_height=\"60px\"\n+            android:layout_centerVertical=\"true\"\n+            android:layout_margin=\"30dp\"\n+            android:text=\"登录\"\n+            android:background=\"#458B74\"\n+            android:textColor=\"#FFF\" />\n+    </RelativeLayout>\n+    <RelativeLayout\n+        android:id=\"@+id/rl4\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_below=\"@id/rl3\" >\n+\n+        <Button\n+            android:id=\"@+id/RegisterBtn\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"60px\"\n+            android:layout_centerVertical=\"true\"\n+            \n+            android:layout_marginTop=\"200dp\"\n+            android:text=\"注册\"\n+            android:background=\"#458B74\"\n+            android:textColor=\"#FFF\" />\n+    </RelativeLayout>\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "736a0dea36822eaa4bfcb2b7039375910558ad3e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/drawable-hdpi/login_bg.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/drawable-hdpi/login_bg.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/drawable-hdpi/login_bg.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/drawable-hdpi/login_bg.jpg?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26"
+  }, {
+    "sha" : "0e6d3a6a93cca2aafa07880efb93647589faebbb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验3.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C3.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C3.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C3.png?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26"
+  }, {
+    "sha" : "5c6deb3e1e4b281e1bbccecd802b16991d3da7aa",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验4/AcountListView.java",
+    "status" : "added",
+    "additions" : 70,
+    "deletions" : 0,
+    "changes" : 70,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/AcountListView.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/AcountListView.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/AcountListView.java?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+    "patch" : "@@ -0,0 +1,70 @@\n+package com.example.passwordbox;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.database.Cursor;\n+import android.database.sqlite.SQLiteDatabase;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.AdapterView;\n+import android.widget.AdapterView.OnItemClickListener;\n+import android.widget.ArrayAdapter;\n+import android.widget.Button;\n+import android.widget.ListView;\n+import android.widget.Toast;\n+\n+public class AcountListView extends Activity{\n+\tprivate List<AcountData> acountList=new ArrayList<AcountData>();\n+\tprivate MyDatabaseHelper dbHelper;\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.acount_listview);\n+\t\tinitAcount();\n+\t\tAcountAdapter adapter=new AcountAdapter(AcountListView.this,R.layout.acount_item, acountList);\n+\t\tListView listView=(ListView)findViewById(R.id.list_view_acount);\n+\t\tlistView.setAdapter(adapter);\n+\t\tlistView.setOnItemClickListener(new OnItemClickListener() {\n+\t\t\tpublic void onItemClick(AdapterView<?> parent, View view,int position, long id)\n+\t\t\t{\n+\t\t\t\tAcountData acountData = acountList.get(position);\n+\t\t\t\tIntent intent=new Intent(AcountListView.this,AcountDetails.class);//��ʾIntent\n+\t\t\t\tintent.putExtra(\"acountId\", String.valueOf(acountData.getAcountId()));\n+\t\t\t\tstartActivity(intent);\n+\t\t\t}\n+\t\t});\n+\t\tButton addAcountBtn=(Button)findViewById(R.id.addAcountBtn);\n+\t\taddAcountBtn.setOnClickListener(new OnClickListener() {\n+\t\t\t\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View arg0) {\n+\t\t\t\t// TODO Auto-generated method stub\n+\t\t\t\tIntent intent=new Intent(AcountListView.this,AddAcount.class);//��ʾIntent\n+\t\t\t\tstartActivity(intent);\n+\t\t\t}\n+\t\t});\n+\t}\n+\tprivate void initAcount()\n+\t{\n+\t\tdbHelper=new MyDatabaseHelper(this, \"PasswordBox.db\", null, 2);\n+\t\tSQLiteDatabase db=dbHelper.getWritableDatabase();\n+\t\t// ��ѯAcount�������е����\n+\t\tCursor cursor=db.rawQuery(\"select * from Acount\", null);\n+\t\tif(cursor.moveToFirst())\n+\t\t{\n+\t\t\tdo{\n+\t\t\t\tint id=cursor.getInt(cursor.getColumnIndex(\"id\"));\n+\t\t\t\tString acountLabel=cursor.getString(cursor.getColumnIndex(\"acountLabel\"));\n+\t\t\t\tAcountData acountData=new AcountData(id,acountLabel);\n+\t\t\t\tacountList.add(acountData);\n+\t\t\t}\n+\t\t\twhile(cursor.moveToNext());\n+\t\t}\n+\t\tcursor.close();\n+\t}\n+}"
+  }, {
+    "sha" : "1f983746301dc0fd86abc9087a039fe807b58fd2",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验4/AddAcount.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/AddAcount.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/AddAcount.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/AddAcount.java?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+    "patch" : "@@ -0,0 +1,45 @@\n+package com.example.passwordbox;\n+\n+import android.app.Activity;\n+import android.content.ContentValues;\n+import android.content.Intent;\n+import android.database.sqlite.SQLiteDatabase;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.Toast;\n+\n+public class AddAcount extends Activity{\n+\tprivate MyDatabaseHelper dbHelper;\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.add_acount);\n+\t\tdbHelper=new MyDatabaseHelper(this, \"PasswordBox.db\", null, 2);\n+\t\tButton addCountBtn=(Button)findViewById(R.id.addCount);\n+\t\taddCountBtn.setOnClickListener(new OnClickListener() {\n+\t\t\t\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View arg0) {\n+\t\t\t\t// TODO Auto-generated method stub\n+\t\t\t\tEditText userName = (EditText) findViewById(R.id.userName);\n+\t\t\t\tEditText password = (EditText) findViewById(R.id.password);\n+\t\t\t\tEditText notes = (EditText) findViewById(R.id.notes);\n+\t\t\t\tEditText acountLabel = (EditText) findViewById(R.id.acountLabel);\n+\t\t\t\tSQLiteDatabase db = dbHelper.getWritableDatabase();\n+\t\t\t\tContentValues values = new ContentValues();\n+\t\t\t\tvalues.put(\"acountLabel\", acountLabel.getText().toString());\n+\t\t\t\tvalues.put(\"userName\", password.getText().toString());\n+\t\t\t\tvalues.put(\"password\", userName.getText().toString());\n+\t\t\t\tvalues.put(\"notes\", notes.getText().toString());\n+\t\t\t\tdb.insert(\"Acount\", null, values);\n+\t\t\t\tToast.makeText(AddAcount.this,\"����˺ųɹ�\",Toast.LENGTH_LONG).show();\n+\t\t\t\tIntent intent=new Intent(AddAcount.this,AcountListView.class);//��ʾIntent\n+\t\t\t\tstartActivity(intent);\n+\t\t\t}\n+\t\t});\n+\t}\n+}"
+  }, {
+    "sha" : "606f2490d79e103887df4062cdf82d85b5d55e8a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验4/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 60,
+    "deletions" : 0,
+    "changes" : 60,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/AndroidManifest.xml?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+    "patch" : "@@ -0,0 +1,60 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"com.example.passwordbox\"\n+    android:versionCode=\"1\"\n+    android:versionName=\"1.0\" >\n+\n+    <uses-sdk\n+        android:minSdkVersion=\"8\"\n+        android:targetSdkVersion=\"18\" />\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@drawable/ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:theme=\"@style/AppTheme\" >\n+        <activity\n+            android:name=\"com.example.passwordbox.Com1314080901208\"\n+            android:label=\"@string/app_name\" >\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+        \n+         <!-- 这里是activity2 -->\n+        <activity\n+            android:name=\"com.example.passwordbox.activity2\"\n+            android:label=\"activity2\">\n+             <intent-filter>\n+                 <!-- 在<action> 标签中我们指明了当前活动可以响应com.example.passwordbox.ACTION_START 这个action -->\n+                  <action android:name=\"com.example.passwordbox.ACTION_START\" />\n+                  <category android:name=\"android.intent.category.DEFAULT\" />\n+                  <category android:name=\"android.intent.category.MY_CATEGORY\" />\n+             </intent-filter>\n+        </activity>\n+         <!-- 这里是 register-->\n+        <activity\n+            android:name=\"com.example.passwordbox.Register\"\n+            android:label=\"Register\">\n+        </activity>\n+         <!-- 这里是 AddAcount-->\n+        <activity\n+            android:name=\"com.example.passwordbox.AddAcount\"\n+            android:label=\"AddAcount\">\n+        </activity>\n+        \n+         <!-- 这里是 AcountListView-->\n+        <activity\n+            android:name=\"com.example.passwordbox.AcountListView\"\n+            android:label=\"AcountListView\">\n+        </activity>\n+        <!-- 这里是 AcountDetails-->\n+        <activity\n+            android:name=\"com.example.passwordbox.AcountDetails\"\n+            android:label=\"AcountDetails\">\n+        </activity>\n+    </application>\n+\n+</manifest>"
+  }, {
+    "sha" : "afb526f06ebeb2098cddc13fe06c9281e8bdf2cc",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验4/acount_listview.xml",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/acount_listview.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/acount_listview.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/acount_listview.xml?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+    "patch" : "@@ -0,0 +1,26 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:orientation=\"vertical\" >\n+    <RelativeLayout\n+        android:id=\"@+id/rl\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\">\n+\n+        <Button\n+            android:id=\"@+id/addAcountBtn\"\n+            android:layout_width=\"fill_parent\"\n+            android:layout_height=\"60px\"\n+            android:layout_centerVertical=\"true\"\n+            android:layout_margin=\"30dp\"\n+            android:text=\"添加账号\"\n+            android:background=\"#458B74\"\n+            android:textColor=\"#FFF\" />\n+    </RelativeLayout>\n+    <ListView\n+      android:id=\"@+id/list_view_acount\"\n+      android:layout_width=\"match_parent\"\n+      android:layout_height=\"match_parent\" >\n+    </ListView>\n+</LinearLayout>"
+  }, {
+    "sha" : "48274986a711867239695f080b32940f47b0849f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验4/add_acount.xml",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/add_acount.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/add_acount.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C4/add_acount.xml?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+    "patch" : "@@ -0,0 +1,27 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:orientation=\"vertical\" >\n+    \n+      <EditText android:id=\"@+id/acountLabel\"\n+              android:layout_width=\"fill_parent\"\n+              android:layout_height=\"wrap_content\"\n+              android:hint=\"标签如：淘宝账号\" />\n+      <EditText android:id=\"@+id/userName\"\n+              android:layout_width=\"fill_parent\"\n+              android:layout_height=\"wrap_content\"\n+              android:hint=\"请输入用户名\" />\n+      <EditText android:id=\"@+id/password\"\n+              android:layout_width=\"fill_parent\"\n+              android:layout_height=\"wrap_content\"\n+              android:hint=\"请输入密码\" />\n+      <EditText android:id=\"@+id/notes\"\n+              android:layout_width=\"fill_parent\"\n+              android:layout_height=\"150px\"\n+              android:hint=\"请输入账号描述\" />\n+      <Button android:id=\"@+id/addCount\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:text=\"添加账号\"/>\n+</LinearLayout>"
+  }, {
+    "sha" : "c67ac39966cf7345ca80cd9ab016574bf6b96fb3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验6-sqllite的使用/Acount表结构图.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/Acount%E8%A1%A8%E7%BB%93%E6%9E%84%E5%9B%BE.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/Acount%E8%A1%A8%E7%BB%93%E6%9E%84%E5%9B%BE.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/Acount%E8%A1%A8%E7%BB%93%E6%9E%84%E5%9B%BE.png?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26"
+  }, {
+    "sha" : "708e928d7a5452732f6c57fd0ba4869bfdb0308b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验6-sqllite的使用/Login表结构图.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/Login%E8%A1%A8%E7%BB%93%E6%9E%84%E5%9B%BE.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/Login%E8%A1%A8%E7%BB%93%E6%9E%84%E5%9B%BE.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/Login%E8%A1%A8%E7%BB%93%E6%9E%84%E5%9B%BE.png?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26"
+  }, {
+    "sha" : "7117880b2dfe771f105cbe9cfdf76554ee1ab4bf",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验6-sqllite的使用/MyDatabaseHelper.java",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/MyDatabaseHelper.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/MyDatabaseHelper.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/MyDatabaseHelper.java?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+    "patch" : "@@ -0,0 +1,43 @@\n+package com.example.passwordbox;\n+\n+import android.content.Context;\n+import android.database.sqlite.SQLiteDatabase;\n+import android.database.sqlite.SQLiteDatabase.CursorFactory;\n+import android.database.sqlite.SQLiteOpenHelper;\n+import android.widget.Toast;\n+\n+public class MyDatabaseHelper extends SQLiteOpenHelper{\n+\n+\tpublic static final String CREATE_Login=\"create table Login (\"\n+            + \"id integer primary key autoincrement, \"\n+            + \"userName text, \"\n+            + \"password text) \";\n+\tpublic static final String CREATE_Acount=\"create table Acount (\"\n+            + \"id integer primary key autoincrement, \"\n+\t\t\t+ \"acountLabel text, \"\n+            + \"userName text, \"\n+            + \"password text,\" \n+            + \"notes text) \";\n+\tprivate Context myContext;\n+\tpublic MyDatabaseHelper(Context context, String name,\n+\t\t\tCursorFactory factory, int version) {\n+\t\tsuper(context, name, factory, version);\n+\t\t// TODO Auto-generated constructor stub\n+\t\tmyContext=context;\n+\t}\n+\t@Override\n+\tpublic void onCreate(SQLiteDatabase db) {\n+\t\t// TODO Auto-generated method stub\n+\t\tdb.execSQL(CREATE_Login);\n+\t\tdb.execSQL(CREATE_Acount);\n+\t\tToast.makeText(myContext, \"Create Login And Acount table Succeed\", Toast.LENGTH_SHORT).show();\n+\t}\n+\t@Override\n+\tpublic void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {\n+\t\t// TODO Auto-generated method stub\n+\t\t\n+\t}\n+\t\n+\t\n+\n+}"
+  }, {
+    "sha" : "edfe288f8bb4dd74761b79d71f3c4f961dfce437",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验6-sqllite的使用/实验6.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%AE%9E%E9%AA%8C6.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%AE%9E%E9%AA%8C6.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%AE%9E%E9%AA%8C6.png?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26"
+  }, {
+    "sha" : "df86ec26544de38d1c91c8f9433439782a8a3e5f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验6-sqllite的使用/运行结果-登录前.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-%E7%99%BB%E5%BD%95%E5%89%8D.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-%E7%99%BB%E5%BD%95%E5%89%8D.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-%E7%99%BB%E5%BD%95%E5%89%8D.png?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26"
+  }, {
+    "sha" : "028673b8ba6354c0c2ca0305d34b6b63c71323b4",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/实验6-sqllite的使用/运行结果-登录后.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-%E7%99%BB%E5%BD%95%E5%90%8E.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dd43319c9683be4fe7275e338eaf2cfa3abbdf26/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-%E7%99%BB%E5%BD%95%E5%90%8E.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901208/%E5%AE%9E%E9%AA%8C6-sqllite%E7%9A%84%E4%BD%BF%E7%94%A8/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-%E7%99%BB%E5%BD%95%E5%90%8E.png?ref=dd43319c9683be4fe7275e338eaf2cfa3abbdf26"
+  } ],
+  "sha" : "dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dd43319c9683be4fe7275e338eaf2cfa3abbdf26",
+  "parents" : [ {
+    "sha" : "d092f4981dcd166e1c2c842e7abb65305d426051",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d092f4981dcd166e1c2c842e7abb65305d426051",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/d092f4981dcd166e1c2c842e7abb65305d426051"
+  }, {
+    "sha" : "232641c9f02c5e158b60650d2f5ae51631100bc3",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/232641c9f02c5e158b60650d2f5ae51631100bc3",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/232641c9f02c5e158b60650d2f5ae51631100bc3"
+  } ]
+}

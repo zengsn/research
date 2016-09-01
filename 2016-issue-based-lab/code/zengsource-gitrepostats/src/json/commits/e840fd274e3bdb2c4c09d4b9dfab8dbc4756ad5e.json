@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "liuyuquan123",
+    "id" : 18431711,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18431711?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liuyuquan123",
+    "html_url" : "https://github.com/liuyuquan123",
+    "followers_url" : "https://api.github.com/users/liuyuquan123/followers",
+    "following_url" : "https://api.github.com/users/liuyuquan123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liuyuquan123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liuyuquan123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liuyuquan123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liuyuquan123/orgs",
+    "repos_url" : "https://api.github.com/users/liuyuquan123/repos",
+    "events_url" : "https://api.github.com/users/liuyuquan123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liuyuquan123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 63,
+    "additions" : 63,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "liuyuquan123",
+    "id" : 18431711,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18431711?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liuyuquan123",
+    "html_url" : "https://github.com/liuyuquan123",
+    "followers_url" : "https://api.github.com/users/liuyuquan123/followers",
+    "following_url" : "https://api.github.com/users/liuyuquan123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liuyuquan123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liuyuquan123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liuyuquan123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liuyuquan123/orgs",
+    "repos_url" : "https://api.github.com/users/liuyuquan123/repos",
+    "events_url" : "https://api.github.com/users/liuyuquan123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liuyuquan123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/e840fd274e3bdb2c4c09d4b9dfab8dbc4756ad5e",
+  "commit" : {
+    "author" : {
+      "name" : "liuyuquan123",
+      "email" : "540761047@qq.com",
+      "date" : "2016-04-27T09:53:20Z"
+    },
+    "committer" : {
+      "name" : "liuyuquan123",
+      "email" : "540761047@qq.com",
+      "date" : "2016-04-27T09:53:20Z"
+    },
+    "message" : "#1 #131",
+    "tree" : {
+      "sha" : "243afe747613a6ee03711e04de5f029bf18d707e",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/243afe747613a6ee03711e04de5f029bf18d707e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/e840fd274e3bdb2c4c09d4b9dfab8dbc4756ad5e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e840fd274e3bdb2c4c09d4b9dfab8dbc4756ad5e/comments",
+  "files" : [ {
+    "sha" : "dd53b749e1b6a0cb64e38ba86cc784aa0a17b11e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/Net1314080903233.java",
+    "status" : "added",
+    "additions" : 63,
+    "deletions" : 0,
+    "changes" : 63,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e840fd274e3bdb2c4c09d4b9dfab8dbc4756ad5e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/Net1314080903233.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e840fd274e3bdb2c4c09d4b9dfab8dbc4756ad5e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/Net1314080903233.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/Net1314080903233.java?ref=e840fd274e3bdb2c4c09d4b9dfab8dbc4756ad5e",
+    "patch" : "@@ -0,0 +1,63 @@\n+import android.app.Activity;\n+import android.media.MediaPlayer;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.view.Window;\n+import android.view.WindowManager;\n+\n+public class Net1314080903233 ChessActivity extends Activity {\n+\tboolean isSound = true;//�Ƿ񲥷�����\n+\tMediaPlayer startSound;//��ʼ�Ͳ˵�ʱ������\n+\tMediaPlayer gamesound;//��Ϸ����\n+\t\n+\tHandler myHandler = new Handler(){//�������UI�߳��еĿؼ�\n+        public void handleMessage(Message msg) {\n+        \tif(msg.what == 1){\t//WelcomeView��HelpView��GameView�������Ϣ���л���MenuView\n+        \t\tinitMenuView();//��ʼ�����л����˵�����\n+        \t}\n+        \telse if(msg.what == 2){//MenuView�������Ϣ���л���GameView\n+        \t\tinitGameView();//��ʼ�����л�����Ϸ����\n+        \t}\n+        \telse if(msg.what == 3){//MenuView�������Ϣ���л���HelpView\n+        \t\tinitHelpView();//��ʼ�����л����������\n+        \t}\n+        }\n+\t}; \t\n+    public void onCreate(Bundle savedInstanceState) {//��д��onCreate\n+        super.onCreate(savedInstanceState);\n+\t\t//ȫ��\n+\t\trequestWindowFeature(Window.FEATURE_NO_TITLE);\n+\t\tgetWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN ,  \n+\t\t              WindowManager.LayoutParams.FLAG_FULLSCREEN);\n+\t\tstartSound = MediaPlayer.create(this, R.raw.startsound);//���ػ�ӭ����\n+\t\tstartSound.setLooping(true);//������Ϸ����ѭ������ \n+\t\tgamesound  = MediaPlayer.create(this, R.raw.gamesound);//��Ϸ��̵ı�������\n+\t\tgamesound.setLooping(true);//������Ϸ����ѭ������ \n+        this.initWelcomeView();//��ʼ����ӭ����\n+    }\n+    public void initWelcomeView(){//��ʼ����ӭ���� \n+    \tthis.setContentView(new WelcomeView(this,this));//�л�����ӭ����\n+    \tif(isSound){//��Ҫ��������ʱ\n+    \t\tstartSound.start();//��������\n+\t\t}\n+    }\n+    \n+    public void initGameView(){//��ʼ����Ϸ����\n+    \tthis.setContentView(new GameView(this,this)); //�л�����Ϸ����\n+    }\n+    \n+    public void initMenuView(){//��ʼ���˵�����\n+    \tif(startSound != null){//ֹͣ\n+    \t\tstartSound.stop();//ֹͣ��������\n+    \t\tstartSound = null;\n+    \t}\n+    \tif(this.isSound){//�Ƿ񲥷�����\n+    \t\tgamesound.start();//��������\n+    \t}\n+    \tthis.setContentView(new MenuView(this,this));//�л�View\n+    } \n+    public void initHelpView(){//��ʼ���������\n+    \tthis.setContentView(new HelpView(this,this));//�л����������\n+    }\n+}"
+  } ],
+  "sha" : "e840fd274e3bdb2c4c09d4b9dfab8dbc4756ad5e",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e840fd274e3bdb2c4c09d4b9dfab8dbc4756ad5e",
+  "parents" : [ {
+    "sha" : "76a24beba922cc5875a82a05e6639b6f8da26bd1",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/76a24beba922cc5875a82a05e6639b6f8da26bd1",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/76a24beba922cc5875a82a05e6639b6f8da26bd1"
+  } ]
+}

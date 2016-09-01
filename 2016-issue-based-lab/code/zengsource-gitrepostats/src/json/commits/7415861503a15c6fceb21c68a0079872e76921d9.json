@@ -1,0 +1,257 @@
+{
+  "committer" : {
+    "login" : "JERR-lxm",
+    "id" : 18563645,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18563645?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/JERR-lxm",
+    "html_url" : "https://github.com/JERR-lxm",
+    "followers_url" : "https://api.github.com/users/JERR-lxm/followers",
+    "following_url" : "https://api.github.com/users/JERR-lxm/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/JERR-lxm/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/JERR-lxm/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/JERR-lxm/subscriptions",
+    "organizations_url" : "https://api.github.com/users/JERR-lxm/orgs",
+    "repos_url" : "https://api.github.com/users/JERR-lxm/repos",
+    "events_url" : "https://api.github.com/users/JERR-lxm/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/JERR-lxm/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 708,
+    "additions" : 708,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "JERR-lxm",
+    "id" : 18563645,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18563645?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/JERR-lxm",
+    "html_url" : "https://github.com/JERR-lxm",
+    "followers_url" : "https://api.github.com/users/JERR-lxm/followers",
+    "following_url" : "https://api.github.com/users/JERR-lxm/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/JERR-lxm/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/JERR-lxm/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/JERR-lxm/subscriptions",
+    "organizations_url" : "https://api.github.com/users/JERR-lxm/orgs",
+    "repos_url" : "https://api.github.com/users/JERR-lxm/repos",
+    "events_url" : "https://api.github.com/users/JERR-lxm/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/JERR-lxm/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/7415861503a15c6fceb21c68a0079872e76921d9",
+  "commit" : {
+    "author" : {
+      "name" : "JREE-lxm",
+      "email" : "276696365@qq.com",
+      "date" : "2016-05-23T16:14:55Z"
+    },
+    "committer" : {
+      "name" : "JREE-lxm",
+      "email" : "276696365@qq.com",
+      "date" : "2016-05-23T16:14:55Z"
+    },
+    "message" : "#88 #89 #90 #550",
+    "tree" : {
+      "sha" : "4539b8a26b1d6981f9c18e2e32191e729b4db5e2",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/4539b8a26b1d6981f9c18e2e32191e729b4db5e2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/7415861503a15c6fceb21c68a0079872e76921d9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/7415861503a15c6fceb21c68a0079872e76921d9/comments",
+  "files" : [ {
+    "sha" : "d723d0bbf4cd11122c09dd3f4569832745c2c6ad",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Fragment/Net1314080903122_Category.java",
+    "status" : "added",
+    "additions" : 63,
+    "deletions" : 0,
+    "changes" : 63,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Fragment/Net1314080903122_Category.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Fragment/Net1314080903122_Category.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Fragment/Net1314080903122_Category.java?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,63 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903122.Fragment;\n+\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.support.annotation.Nullable;\n+import android.support.v4.app.Fragment;\n+import android.view.LayoutInflater;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.widget.AdapterView;\n+import android.widget.ArrayAdapter;\n+import android.widget.GridView;\n+import android.widget.TextView;\n+\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.Net1314080903122_ChooseMsg;\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.R;\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.bean.Net1314080903122_Festival;\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.bean.Net1314080903122_FestivalLab;\n+\n+/**\n+ * Created by Administrator on 2016/5/20.\n+ */\n+public class Net1314080903122_Category extends Fragment{\n+    public static final String ID_FESTIVAL = \"festival_id\";\n+    private GridView mGridView;\n+    private ArrayAdapter<Net1314080903122_Festival> mAdapter;\n+    private LayoutInflater mInflater;\n+\n+    @Nullable\n+    @Override\n+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {\n+        return inflater.inflate(R.layout.net1314080903122_category, container, false);\n+    }\n+\n+\n+    @Override\n+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {\n+        mInflater = LayoutInflater.from(getActivity());\n+        mGridView = (GridView) view.findViewById(R.id.id_gv_festival_category);\n+        mGridView.setAdapter(mAdapter = new ArrayAdapter<Net1314080903122_Festival>(getActivity(), -1, Net1314080903122_FestivalLab.getInstance().getmFestivals()) {\n+            @Override\n+            public View getView(int position, View convertView, ViewGroup parent) {\n+                if (convertView == null) {\n+                    convertView = mInflater.inflate(R.layout.net1314080903122_item_fes, parent, false);\n+                }\n+                TextView tv = (TextView) convertView.findViewById(R.id.id_tv_festival_name);\n+                tv.setText(getItem(position).getName());\n+                return convertView;\n+            }\n+        });\n+\n+        mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {\n+            @Override\n+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {\n+                Intent intent = new Intent(getActivity(), Net1314080903122_ChooseMsg.class);\n+                intent.putExtra(ID_FESTIVAL, mAdapter.getItem(position).getId());\n+                startActivity(intent);\n+            }\n+        });\n+\n+\n+    }\n+}"
+  }, {
+    "sha" : "2e07b9e4726ec88d03dba01c8895684cef1999cd",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_ChooseMsg.java",
+    "status" : "added",
+    "additions" : 88,
+    "deletions" : 0,
+    "changes" : 88,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_ChooseMsg.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_ChooseMsg.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_ChooseMsg.java?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,88 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903122;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.v7.app.AppCompatActivity;\n+import android.view.LayoutInflater;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.widget.ArrayAdapter;\n+import android.widget.Button;\n+import android.widget.ListView;\n+import android.widget.TextView;\n+\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.Fragment.Net1314080903122_Category;\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.bean.Net1314080903122_FestivalLab;\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.bean.Net1314080903122_Msg;\n+\n+public class Net1314080903122_ChooseMsg extends AppCompatActivity {\n+\n+    private ListView mLvMsgs;\n+    private FloatingActionButton mFabTodsend;\n+    private ArrayAdapter<Net1314080903122_Msg> mAdapter;\n+    private int mFestivalId;\n+    private LayoutInflater mInflater;\n+\n+\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903122__choose_msg);\n+\n+\n+        mInflater = LayoutInflater.from(this);\n+        mFestivalId = getIntent().getIntExtra(Net1314080903122_Category.ID_FESTIVAL, -1);\n+\n+        setTitle(Net1314080903122_FestivalLab.getInstance().getFestivalById(mFestivalId).getName());\n+\n+        initViews();\n+        initEvent();\n+\n+\n+    }\n+\n+    private void initEvent() {\n+\n+        mFabTodsend.setOnClickListener(new View.OnClickListener(){\n+            @Override\n+            public void onClick(View v) {\n+                Net1314080903122_SendMsg.toActivity(Net1314080903122_ChooseMsg.this, mFestivalId, -1);\n+            }\n+        });\n+    }\n+\n+    private void initViews() {\n+\n+        mLvMsgs = (ListView) findViewById(R.id.id_lv_msgs);\n+        mFabTodsend = (FloatingActionButton) findViewById(R.id.id_fab_toSent);\n+\n+        mLvMsgs.setAdapter(mAdapter = new ArrayAdapter<Net1314080903122_Msg>(this,-1,\n+                        Net1314080903122_FestivalLab.getInstance().getmMsgsByFestivalId(mFestivalId)){\n+                    @Override\n+                    public View getView(final int position, View convertView, ViewGroup parent) {\n+                        if (convertView == null)\n+                        {\n+                            convertView = mInflater.inflate(R.layout.net1314080903122_item_msg,parent,false);\n+                        }\n+                        TextView content = (TextView) convertView.findViewById(R.id.id_tv_content);\n+                        Button toSend = (Button) convertView.findViewById(R.id.id_btn_toSend);\n+\n+                        content.setText(\"    \" + getItem(position).getContent());\n+                        toSend.setOnClickListener(new View.OnClickListener() {\n+                            @Override\n+                            public void onClick(View v) {\n+                                Net1314080903122_SendMsg.toActivity(Net1314080903122_ChooseMsg.this,mFestivalId,getItem(position).getId());\n+                            }\n+                        });\n+                        return convertView;\n+                    }\n+                }\n+\n+        );\n+\n+\n+\n+    }\n+\n+}"
+  }, {
+    "sha" : "24fa6603f0e44273d6193e5dbfc164cb0eedc762",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_MainActivity.java",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_MainActivity.java?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,61 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903122;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.design.widget.TabLayout;\n+import android.support.v4.app.Fragment;\n+import android.support.v4.app.FragmentPagerAdapter;\n+import android.support.v4.view.ViewPager;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.Fragment.Net1314080903122_Category;\n+\n+public class Net1314080903122_MainActivity extends AppCompatActivity {\n+\n+\n+    private TabLayout mTabLayout;\n+    private ViewPager mViewPager;\n+\n+    private String[] mTitles = new String[]{\"节日短信\",\"发送记录\"};\n+\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903122__main);\n+\n+        initViews();\n+\n+    }\n+\n+    private void initViews() {\n+        mTabLayout = (TabLayout) findViewById(R.id.id_tablayout);\n+        mViewPager = (ViewPager) findViewById(R.id.id_viewpager);\n+\n+        mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager())\n+        {\n+            @Override\n+            public Fragment getItem(int position) {\n+                return new Net1314080903122_Category();\n+            }\n+\n+            @Override\n+            public int getCount() {\n+                return  mTitles.length;\n+            }\n+\n+            @Override\n+            public CharSequence getPageTitle(int position) {\n+                return mTitles[position];\n+            }\n+        });\n+        mTabLayout.setupWithViewPager(mViewPager);\n+    }\n+\n+\n+}"
+  }, {
+    "sha" : "b8121d69cddd82cab9823831e6af76d56b1ee69e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_SendMsg.java",
+    "status" : "added",
+    "additions" : 91,
+    "deletions" : 0,
+    "changes" : 91,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_SendMsg.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_SendMsg.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/Net1314080903122_SendMsg.java?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,91 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903122;\n+\n+import android.content.Context;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.EditText;\n+\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.R;\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.bean.Net1314080903122_Festival;\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.bean.Net1314080903122_FestivalLab;\n+import edu.hzuapps.androidworks.homeworks.net1314080903122.bean.Net1314080903122_Msg;\n+\n+public class Net1314080903122_SendMsg extends AppCompatActivity {\n+\n+    public static final String KEY_FESTIVAL_ID = \"festivalId\";\n+    public static final String KEY_MSG_ID = \"msgId\";\n+    private int mFstivalId;\n+    private int msgId;\n+\n+    private Net1314080903122_Festival mFestival;\n+    private Net1314080903122_Msg mMsg;\n+\n+    private EditText mEdMsg;\n+    private Button mBtnAdd;\n+    private FloatingActionButton mFabSend;\n+    private View mLayoutLoading;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903122__send_msg);\n+\n+        initDatas();\n+        initView();\n+\n+\n+    }\n+\n+    private void initView() {\n+        mEdMsg = (EditText) findViewById(R.id.id_et_content);\n+        mBtnAdd = (Button) findViewById(R.id.id_btn_add);\n+        mFabSend = (FloatingActionButton) findViewById(R.id.id_fab_send);\n+        mLayoutLoading = findViewById(R.id.id_layout_loading);\n+\n+\n+        mLayoutLoading.setVisibility(View.GONE);\n+\n+        mFabSend.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                if (mLayoutLoading.getVisibility() == View.GONE) ;\n+                {\n+                    mLayoutLoading.setVisibility(View.VISIBLE);\n+                }\n+            }\n+        });\n+\n+\n+\n+        if (msgId !=-1)\n+        {\n+            mMsg = Net1314080903122_FestivalLab.getInstance().getMsgByMsgId(msgId);\n+            mEdMsg.setText(mMsg.getContent());\n+        }\n+\n+    }\n+\n+    private void initDatas() {\n+        mFstivalId = getIntent().getIntExtra(KEY_FESTIVAL_ID,-1);\n+        msgId = getIntent().getIntExtra(KEY_MSG_ID, -1);\n+        mFestival = Net1314080903122_FestivalLab.getInstance().getFestivalById(mFstivalId);\n+        setTitle(mFestival.getName());\n+    }\n+\n+\n+    public static void toActivity(Context context,int festivalId,int msgId){\n+        Intent intent = new Intent(context,Net1314080903122_SendMsg.class);\n+        intent.putExtra(KEY_FESTIVAL_ID,festivalId);\n+        intent.putExtra(KEY_MSG_ID,msgId);\n+        context.startActivity(intent);\n+\n+    }\n+\n+\n+}"
+  }, {
+    "sha" : "58c9d74b64fa27e504c1c3abbf612a9149947359",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_Festival.java",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_Festival.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_Festival.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_Festival.java?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,38 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903122.bean;\n+\n+import java.util.Date;\n+\n+/**\n+ * Created by Administrator on 2016/5/20.\n+ */\n+public class Net1314080903122_Festival {\n+\n+    private  int id;\n+    private String name;\n+    private String desc;\n+    private Date date;\n+\n+    public int getId() {\n+        return id;\n+    }\n+\n+    public void setId(int id) {\n+        this.id = id;\n+    }\n+\n+    public String getName() {\n+        return name;\n+    }\n+\n+    public void setName(String name) {\n+        this.name = name;\n+    }\n+\n+    public Net1314080903122_Festival(int id, String name){\n+        this.id = id;\n+        this.name = name;\n+    }\n+\n+\n+\n+}"
+  }, {
+    "sha" : "dd10628b7d0a8c9bf6c7bc28d15a4108b25f0bb1",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_FestivalLab.java",
+    "status" : "added",
+    "additions" : 96,
+    "deletions" : 0,
+    "changes" : 96,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_FestivalLab.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_FestivalLab.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_FestivalLab.java?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,96 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903122.bean;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+/**\n+ * Created by Administrator on 2016/5/20.\n+ */\n+public class Net1314080903122_FestivalLab {\n+\n+    public static  Net1314080903122_FestivalLab mInstance;\n+    private List<Net1314080903122_Festival> mFestivals = new ArrayList<Net1314080903122_Festival>();\n+    private List<Net1314080903122_Msg> mMsgs = new ArrayList<Net1314080903122_Msg>();\n+\n+\n+    private Net1314080903122_FestivalLab(){\n+        mFestivals.add(new Net1314080903122_Festival(1,\"国庆节\"));\n+        mFestivals.add(new Net1314080903122_Festival(1,\"中秋节\"));\n+        mFestivals.add(new Net1314080903122_Festival(1,\"元旦\"));\n+        mFestivals.add(new Net1314080903122_Festival(1,\"春节\"));\n+        mFestivals.add(new Net1314080903122_Festival(1,\"端午节\"));\n+        mFestivals.add(new Net1314080903122_Festival(1,\"七夕节\"));\n+        mFestivals.add(new Net1314080903122_Festival(1,\"圣诞节\"));\n+        mFestivals.add(new Net1314080903122_Festival(1,\"儿童节\"));\n+\n+        mMsgs.add(new Net1314080903122_Msg(1,1,\"(ﾉ≧ڡ≦)秋高气爽贺华诞，金秋十月度国庆，神州大地花似锦，国强民盛家繁荣，歌舞升平七天乐，吉祥如意事事顺！祝你国庆快乐，心想事成！\"));\n+        mMsgs.add(new Net1314080903122_Msg(2,1,\"٩(●˙ε˙●)۶无论天南与海北，不论相聚与离别，在中秋佳节，来！把酒话佳节！举杯邀明月！！ \"));\n+        mMsgs.add(new Net1314080903122_Msg(3,1,\"o(*////▽////*)o一丝真诚，胜过千两黄金；一丝温暖，能抵万里寒霜，一声问候，送来温馨甜蜜；一条短信，捎去我万般心意！愿我的朋友兔年元旦万事如意！\"));\n+        mMsgs.add(new Net1314080903122_Msg(4,1,\"(ฅ´ω`ฅ)相聚的日子都只为酝一杯浓酒，酿流动相思，在新年的鞭炮声中凝视你如此迷人的面庞，只想对你说：爱你一万年！\"));\n+        mMsgs.add(new Net1314080903122_Msg(5,1,\"٩۹(๑•̀ω•́ ๑)۶端午节，吃粽子，甜枣儿，颗颗红，糯米儿，粒粒晶，闻一闻，溢芳香，吃一口，情意长，忆先驱，送健康，祝大家，幸福路，万年长。\"));\n+        mMsgs.add(new Net1314080903122_Msg(6,1,\"(๑•̀ㅁ•́ฅ)爱是牛郎织女痴情的等待，银河两畔遥遥相望不离不弃；爱是你我真情的相守，彼此关怀执子之手与子偕老！七夕到来之前，想对你浪漫的说三个字：我爱你！\"));\n+        mMsgs.add(new Net1314080903122_Msg(7,1,\"o(〃｀Θ´〃)♂圣诞之夜，请把你的愿望袜子放在床边，我在一定会让你梦想成真，收到我那份真挚的祝福。\"));\n+        mMsgs.add(new Net1314080903122_Msg(8,1,\"φ(￣∇￣o)你的生命刚刚翻开了第一页，愿初升的太阳照耀你诗一般美丽的岁月。明天属于你们。\"));\n+        mMsgs.add(new Net1314080903122_Msg(9,1,\"✧٩(ˊωˋ*)و✧\"));\n+        mMsgs.add(new Net1314080903122_Msg(10,1,\"(*˘︶˘*).。.:*♡\"));\n+        mMsgs.add(new Net1314080903122_Msg(11,1,\"(っ╥╯﹏╰╥c)\"));\n+\n+    }\n+\n+    public List<Net1314080903122_Msg> getmMsgsByFestivalId(int fesId){\n+        List<Net1314080903122_Msg> msgs = new ArrayList<Net1314080903122_Msg>();\n+        for (Net1314080903122_Msg msg : mMsgs){\n+            if(msg.getFestivalId() == fesId){\n+                msgs.add(msg);\n+            }\n+        }\n+        return msgs;\n+    }\n+\n+\n+    public Net1314080903122_Msg getMsgByMsgId(int id)\n+    {\n+        for (Net1314080903122_Msg msg : mMsgs)\n+        {\n+            if (msg.getId() == id)\n+                return msg;\n+        }\n+        return null;\n+    }\n+\n+\n+    public List<Net1314080903122_Festival> getmFestivals()\n+    {\n+        return new ArrayList<Net1314080903122_Festival>(mFestivals);\n+    }\n+\n+\n+\n+    public Net1314080903122_Festival getFestivalById(int fesId)\n+    {\n+        for (Net1314080903122_Festival festival:mFestivals)\n+        {\n+            if (festival.getId() == fesId)\n+                return festival;\n+        }\n+        return null;\n+    }\n+\n+\n+    public static Net1314080903122_FestivalLab getInstance()\n+    {\n+        if (mInstance == null)\n+        {\n+            synchronized (Net1314080903122_FestivalLab.class)\n+            {\n+                if (mInstance == null)\n+                    mInstance = new Net1314080903122_FestivalLab();\n+            }\n+        }\n+        return mInstance;\n+    }\n+\n+\n+\n+\n+}"
+  }, {
+    "sha" : "aa4e90092a776d5fd504cdef04aea105d5f20326",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_Msg.java",
+    "status" : "added",
+    "additions" : 40,
+    "deletions" : 0,
+    "changes" : 40,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_Msg.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_Msg.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903122/bean/Net1314080903122_Msg.java?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,40 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903122.bean;\n+\n+/**\n+ * Created by Administrator on 2016/5/20.\n+ */\n+public class Net1314080903122_Msg {\n+    private int id;\n+    private int festivalId;\n+    private String content;\n+\n+    public Net1314080903122_Msg(int id, int festivalId, String content) {\n+        this.id = id;\n+        this.festivalId = festivalId;\n+        this.content = content;\n+    }\n+\n+    public int getId() {\n+        return id;\n+    }\n+\n+    public void setId(int id) {\n+        this.id = id;\n+    }\n+\n+    public int getFestivalId() {\n+        return festivalId;\n+    }\n+\n+    public void setFestivalId(int festivalId) {\n+        this.festivalId = festivalId;\n+    }\n+\n+    public String getContent() {\n+        return content;\n+    }\n+\n+    public void setContent(String content) {\n+        this.content = content;\n+    }\n+}"
+  }, {
+    "sha" : "6e924d3132c8f4eaafcb4408fe2635bce5b3969f",
+    "filename" : "app/src/main/res/drawable-hdpi/net1314080903122_icon_send.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/drawable-hdpi/net1314080903122_icon_send.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/drawable-hdpi/net1314080903122_icon_send.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable-hdpi/net1314080903122_icon_send.png?ref=7415861503a15c6fceb21c68a0079872e76921d9"
+  }, {
+    "sha" : "99fb1599dd6971d37a8f464b8d5a9182d7ccfd40",
+    "filename" : "app/src/main/res/drawable-hdpi/net1314080903122_icon_to_send.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/drawable-hdpi/net1314080903122_icon_to_send.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/drawable-hdpi/net1314080903122_icon_to_send.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable-hdpi/net1314080903122_icon_to_send.png?ref=7415861503a15c6fceb21c68a0079872e76921d9"
+  }, {
+    "sha" : "1d077e35d27b4d2dd747eec01843e8139b5bc793",
+    "filename" : "app/src/main/res/drawable-hdpi/net1314080903122_panda.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/drawable-hdpi/net1314080903122_panda.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/drawable-hdpi/net1314080903122_panda.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable-hdpi/net1314080903122_panda.png?ref=7415861503a15c6fceb21c68a0079872e76921d9"
+  }, {
+    "sha" : "b37e1971be3a127e71fcde4916279e46b76e2345",
+    "filename" : "app/src/main/res/drawable-hdpi/net1314080903122_sms_item.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/drawable-hdpi/net1314080903122_sms_item.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/drawable-hdpi/net1314080903122_sms_item.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable-hdpi/net1314080903122_sms_item.png?ref=7415861503a15c6fceb21c68a0079872e76921d9"
+  }, {
+    "sha" : "e23e2f5db94a0ea8b19358002e56f29b385980b6",
+    "filename" : "app/src/main/res/layout/activity_net1314080903122__choose_msg.xml",
+    "status" : "added",
+    "additions" : 36,
+    "deletions" : 0,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/activity_net1314080903122__choose_msg.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/activity_net1314080903122__choose_msg.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903122__choose_msg.xml?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,36 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+    <RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+        xmlns:tools=\"http://schemas.android.com/tools\"\n+        xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:paddingLeft=\"16dp\"\n+        android:paddingRight=\"16dp\"\n+        android:paddingTop=\"16dp\"\n+        android:paddingBottom=\"16dp\"\n+        tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903122.Net1314080903122_ChooseMsg\">\n+\n+\n+        <ListView\n+            android:id=\"@+id/id_lv_msgs\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"match_parent\"\n+            ></ListView>\n+\n+        <android.support.design.widget.FloatingActionButton\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:id=\"@+id/id_fab_toSent\"\n+            android:layout_alignParentBottom=\"true\"\n+            android:layout_centerHorizontal=\"true\"\n+            android:src=\"@drawable/net1314080903122_icon_to_send\"\n+            app:backgroundTint=\"#0ddcff\"\n+            app:borderWidth=\"0dp\"\n+            android:layout_marginBottom=\"@dimen/fab_margin\"\n+            />\n+\n+\n+\n+\n+    </RelativeLayout>\n+"
+  }, {
+    "sha" : "f404f4bc8d0c39c8e00e3fb1ab7079621b7d6251",
+    "filename" : "app/src/main/res/layout/activity_net1314080903122__main.xml",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/activity_net1314080903122__main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/activity_net1314080903122__main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903122__main.xml?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,45 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+    <LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+        xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+        xmlns:tools=\"http://schemas.android.com/tools\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:orientation=\"vertical\"\n+        tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903122.Net1314080903122_MainActivity\">\n+\n+\n+        <android.support.design.widget.TabLayout\n+            android:id=\"@+id/id_tablayout\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\"\n+            android:background=\"#ffffff\"\n+            app:tabGravity=\"fill\"\n+            app:tabMode=\"fixed\"\n+            app:tabTextColor=\"#000000\"\n+            app:tabIndicatorColor=\"#0ddcff\"\n+            app:tabSelectedTextColor=\"#0ddcff\"\n+            >\n+        </android.support.design.widget.TabLayout>\n+\n+        <android.support.v4.view.ViewPager\n+            android:id=\"@+id/id_viewpager\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"0dp\"\n+            android:layout_weight=\"1\"\n+            android:background=\"@drawable/net1314080903122_panda\"\n+            >\n+\n+        </android.support.v4.view.ViewPager>\n+</LinearLayout>\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+"
+  }, {
+    "sha" : "4adffd61c3c6de57e627cc074b65ca8f178be84f",
+    "filename" : "app/src/main/res/layout/activity_net1314080903122__send_msg.xml",
+    "status" : "added",
+    "additions" : 85,
+    "deletions" : 0,
+    "changes" : 85,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/activity_net1314080903122__send_msg.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/activity_net1314080903122__send_msg.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903122__send_msg.xml?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,85 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+    <FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+        xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+        xmlns:tools=\"http://schemas.android.com/tools\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:paddingBottom=\"16dp\"\n+        android:paddingTop=\"16dp\"\n+\n+\n+        tools:context=\".Net1314080903122_SendMsg\">\n+\n+\n+        <LinearLayout\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"match_parent\"\n+            android:orientation=\"vertical\">\n+\n+\n+            <EditText\n+                android:paddingLeft=\"16dp\"\n+                android:paddingRight=\"16dp\"\n+                android:id=\"@+id/id_et_content\"\n+                android:layout_width=\"match_parent\"\n+                android:layout_height=\"wrap_content\"\n+                android:maxHeight=\"200dp\"\n+                android:layout_gravity=\"left|top\"\n+                android:textSize=\"14sp\"\n+                android:textColor=\"#777\"\n+                android:background=\"@drawable/net1314080903122_sms_item\"\n+                />\n+\n+            <Button\n+                android:id=\"@+id/id_btn_add\"\n+                android:layout_width=\"wrap_content\"\n+                android:layout_height=\"wrap_content\"\n+                android:layout_gravity=\"right\"\n+                android:backgroundTint=\"#ffffff\"\n+                android:text=\"添加联系人\"\n+                android:backgroundTintMode=\"src_over\"\n+                />\n+\n+\n+            <android.support.design.widget.FloatingActionButton\n+                android:id=\"@+id/id_fab_send\"\n+                android:layout_width=\"wrap_content\"\n+                android:layout_height=\"wrap_content\"\n+                android:layout_gravity=\"bottom|center_horizontal\"\n+                android:layout_marginBottom=\"@dimen/fab_margin\"\n+                android:src=\"@drawable/net1314080903122_icon_to_send\"\n+                app:borderWidth=\"0dp\"\n+\n+                app:backgroundTint=\"#0ddcff\"\n+                />\n+\n+            <FrameLayout\n+                android:id=\"@+id/id_layout_loading\"\n+                android:layout_width=\"match_parent\"\n+                android:layout_height=\"match_parent\"\n+                android:clickable=\"true\"\n+                >\n+\n+                <LinearLayout\n+                    android:layout_width=\"wrap_content\"\n+                    android:layout_height=\"wrap_content\"\n+                    android:orientation=\"horizontal\"\n+                    android:layout_gravity=\"center_horizontal\">\n+                    <ProgressBar\n+                        android:layout_width=\"wrap_content\"\n+                        android:layout_height=\"wrap_content\" />\n+                    <TextView\n+                        android:layout_width=\"wrap_content\"\n+                        android:layout_height=\"wrap_content\"\n+                        android:text=\"发送中...\"\n+                        android:layout_gravity=\"center_vertical\"/>\n+\n+                </LinearLayout>\n+\n+            </FrameLayout>\n+\n+        </LinearLayout>\n+\n+\n+\n+    </FrameLayout>"
+  }, {
+    "sha" : "285d5ac41605d0e60d0d5a6ef938a44bbc0b5e9d",
+    "filename" : "app/src/main/res/layout/net1314080903122_category.xml",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/net1314080903122_category.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/net1314080903122_category.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903122_category.xml?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,12 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<GridView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:id=\"@+id/id_gv_festival_category\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:numColumns=\"3\"\n+    android:padding=\"16dp\"\n+    android:verticalSpacing=\"2dp\"\n+\n+    >\n+\n+</GridView>\n\\ No newline at end of file"
+  }, {
+    "sha" : "a8d2e0d0de1e5950219d762bf1f3a6aa6b3b36fd",
+    "filename" : "app/src/main/res/layout/net1314080903122_item_fes.xml",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/net1314080903122_item_fes.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/net1314080903122_item_fes.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903122_item_fes.xml?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,21 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+\n+\n+\n+<android.support.v7.widget.CardView\n+    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    >\n+\n+    <TextView\n+\n+        android:id=\"@+id/id_tv_festival_name\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:gravity=\"center\"\n+        android:padding=\"8dp\"\n+\n+        />\n+\n+</android.support.v7.widget.CardView>"
+  }, {
+    "sha" : "39220147ef400a6b25744c01a1f89744826f85d0",
+    "filename" : "app/src/main/res/layout/net1314080903122_item_msg.xml",
+    "status" : "added",
+    "additions" : 32,
+    "deletions" : 0,
+    "changes" : 32,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/net1314080903122_item_msg.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7415861503a15c6fceb21c68a0079872e76921d9/app/src/main/res/layout/net1314080903122_item_msg.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903122_item_msg.xml?ref=7415861503a15c6fceb21c68a0079872e76921d9",
+    "patch" : "@@ -0,0 +1,32 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:orientation=\"vertical\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+\n+    >\n+    <TextView\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:padding=\"8dp\"\n+        android:id=\"@+id/id_tv_content\"\n+        android:background=\"@drawable/net1314080903122_sms_item\"\n+        />\n+\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:minHeight=\"0dp\"\n+        android:minWidth=\"0dp\"\n+        android:id=\"@+id/id_btn_toSend\"\n+        android:layout_gravity=\"right\"\n+        android:drawableLeft=\"@drawable/net1314080903122_icon_send\"\n+        android:text=\"发送\"\n+\n+        />\n+\n+\n+\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "7415861503a15c6fceb21c68a0079872e76921d9",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/7415861503a15c6fceb21c68a0079872e76921d9",
+  "parents" : [ {
+    "sha" : "9d9c648f0b1ad7ce0e5bec477a5c1828a88f2352",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9d9c648f0b1ad7ce0e5bec477a5c1828a88f2352",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/9d9c648f0b1ad7ce0e5bec477a5c1828a88f2352"
+  } ]
+}

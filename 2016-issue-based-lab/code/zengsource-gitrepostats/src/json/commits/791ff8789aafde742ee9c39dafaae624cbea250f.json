@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "woyizhidouzai",
+    "id" : 15842142,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15842142?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/woyizhidouzai",
+    "html_url" : "https://github.com/woyizhidouzai",
+    "followers_url" : "https://api.github.com/users/woyizhidouzai/followers",
+    "following_url" : "https://api.github.com/users/woyizhidouzai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/woyizhidouzai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/woyizhidouzai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/woyizhidouzai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/woyizhidouzai/orgs",
+    "repos_url" : "https://api.github.com/users/woyizhidouzai/repos",
+    "events_url" : "https://api.github.com/users/woyizhidouzai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/woyizhidouzai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 249,
+    "additions" : 249,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "woyizhidouzai",
+    "id" : 15842142,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15842142?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/woyizhidouzai",
+    "html_url" : "https://github.com/woyizhidouzai",
+    "followers_url" : "https://api.github.com/users/woyizhidouzai/followers",
+    "following_url" : "https://api.github.com/users/woyizhidouzai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/woyizhidouzai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/woyizhidouzai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/woyizhidouzai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/woyizhidouzai/orgs",
+    "repos_url" : "https://api.github.com/users/woyizhidouzai/repos",
+    "events_url" : "https://api.github.com/users/woyizhidouzai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/woyizhidouzai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/791ff8789aafde742ee9c39dafaae624cbea250f",
+  "commit" : {
+    "author" : {
+      "name" : "woyizhidouz",
+      "email" : "1786041432@qq.com",
+      "date" : "2016-05-26T16:26:06Z"
+    },
+    "committer" : {
+      "name" : "woyizhidouz",
+      "email" : "1786041432@qq.com",
+      "date" : "2016-05-26T16:26:06Z"
+    },
+    "message" : "#95 #86 实验九",
+    "tree" : {
+      "sha" : "3ab86f54d9521c9c252341247269003d3b034278",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/3ab86f54d9521c9c252341247269003d3b034278"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/791ff8789aafde742ee9c39dafaae624cbea250f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/791ff8789aafde742ee9c39dafaae624cbea250f/comments",
+  "files" : [ {
+    "sha" : "abdbc1e121db88421376753c0bf51c76b8e16458",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201_MyRenderer.java",
+    "status" : "added",
+    "additions" : 204,
+    "deletions" : 0,
+    "changes" : 204,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/791ff8789aafde742ee9c39dafaae624cbea250f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201_MyRenderer.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/791ff8789aafde742ee9c39dafaae624cbea250f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201_MyRenderer.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201_MyRenderer.java?ref=791ff8789aafde742ee9c39dafaae624cbea250f",
+    "patch" : "@@ -0,0 +1,204 @@\n+/**\n+ *\n+ */\n+package edu.hzuapps.androidworks.homeworks;\n+\n+import java.nio.ByteBuffer;\n+import java.nio.ByteOrder;\n+import java.nio.FloatBuffer;\n+import java.nio.IntBuffer;\n+\n+import javax.microedition.khronos.egl.EGLConfig;\n+import javax.microedition.khronos.opengles.GL10;\n+\n+import android.opengl.GLSurfaceView.Renderer;\n+\n+/**\n+ * Description:\n+ * <br/>��վ: <a href=\"http://www.crazyit.org\">���Java���</a>\n+ * <br/>Copyright (C), 2001-2014, Yeeku.H.Lee\n+ * <br/>This program is protected by copyright laws.\n+ * <br/>Program Name:\n+ * <br/>Date:\n+ * @author  Yeeku.H.Lee kongyeeku@163.com\n+ * @version  1.0\n+ */\n+public class Net1314080903201_MyRenderer implements Renderer\n+{\n+\t// ��������׵��4���\n+\tfloat[] taperVertices = new float[] {\n+\t\t0.0f, 0.5f, 0.0f,\n+\t\t-0.5f, -0.5f, -0.2f,\n+\t\t0.5f, -0.5f, -0.2f,\n+\t\t0.0f, -0.2f, 0.2f\n+\t};\n+\t// ��������׵��4������ɫ\n+\tint[] taperColors = new int[]{\n+\t\t65535, 0, 0, 0,  // ��ɫ\n+\t\t0, 65535, 0, 0,\t // ��ɫ\n+\t\t0, 0, 65535, 0,  // �ɫ\n+\t\t65535, 65535, 0, 0 //��ɫ\n+\t};\n+\t// ��������׵��4�������\n+\tprivate byte[] taperFacets = new byte[]{\n+\t\t0, 1, 2, //0��1��2�������һ����\n+\t\t0, 1, 3, //0��1��3�������һ����\n+\t\t1, 2, 3, //1��2��3�������һ����\n+\t\t0, 2, 3  //0��2��3�������һ����\n+\t};\n+\t// ����������8���\n+\tfloat[] cubeVertices = new float[] {\n+\t\t// �϶������ε��ĸ��\n+\t\t0.5f, 0.5f, 0.5f,\n+\t\t0.5f, -0.5f, 0.5f,\n+\t\t-0.5f, -0.5f, 0.5f,\n+\t\t-0.5f, 0.5f, 0.5f,\n+\t\t// �µ������ε��ĸ��\n+\t\t0.5f, 0.5f, -0.5f,\n+\t\t0.5f, -0.5f, -0.5f,\n+\t\t-0.5f, -0.5f, -0.5f,\n+\t\t-0.5f, 0.5f, -0.5f\n+\t};\n+\t// �������������Ҫ��6���棨һ����12�����������Ķ��㣩\n+\tprivate byte[] cubeFacets = new byte[]{\n+\t\t0, 1, 2,\n+\t\t0, 2, 3,\n+\t\t2, 3, 7,\n+\t\t2, 6, 7,\n+\t\t0, 3, 7,\n+\t\t0, 4, 7,\n+\t\t4, 5, 6,\n+\t\t4, 6, 7,\n+\t\t0, 1, 4,\n+\t\t1, 4, 5,\n+\t\t1, 2, 6,\n+\t\t1, 5, 6\n+\t};\n+\t// ����Open GL ES��������Ҫ��Buffer����\n+\tFloatBuffer taperVerticesBuffer;\n+\tIntBuffer taperColorsBuffer;\n+\tByteBuffer taperFacetsBuffer;\n+\tFloatBuffer cubeVerticesBuffer;\n+\tByteBuffer cubeFacetsBuffer;\n+\t// ������ת�ĽǶ�\n+\tprivate float rotate;\n+\tpublic Net1314080903201_MyRenderer()\n+\t{\n+\t\t// ������׵�Ķ���λ����������װ��FloatBuffer;\n+\t\ttaperVerticesBuffer = floatBufferUtil(taperVertices);\n+\t\t// ������׵���ĸ���������װ��ByteBuffer\n+\t\ttaperFacetsBuffer = ByteBuffer.wrap(taperFacets);\n+\t\t// ������׵���ĸ�����ɫ�����װ��IntBuffer\n+\t\ttaperColorsBuffer = intBufferUtil(taperColors);\n+\t\t// �������Ķ���λ����������װ��FloatBuffer;\n+\t\tcubeVerticesBuffer = floatBufferUtil(cubeVertices);\n+\t\t// ��������6���棨12������Σ��������װ��ByteBuffer\n+\t\tcubeFacetsBuffer = ByteBuffer.wrap(cubeFacets);\n+\t}\n+\n+\t@Override\n+\tpublic void onSurfaceCreated(GL10 gl, EGLConfig config)\n+\t{\n+\t\t// �رտ�����\n+\t\tgl.glDisable(GL10.GL_DITHER);\n+\t\t// ����ϵͳ��͸�ӽ�������\n+\t\tgl.glHint(GL10.GL_PERSPECTIVE_CORRECTION_HINT, GL10.GL_FASTEST);\n+\t\tgl.glClearColor(0, 0, 0, 0);\n+\t\t// ������Ӱƽ��ģʽ\n+\t\tgl.glShadeModel(GL10.GL_SMOOTH);\n+\t\t// ������Ȳ���\n+\t\tgl.glEnable(GL10.GL_DEPTH_TEST);\n+\t\t// ������Ȳ��Ե�����\n+\t\tgl.glDepthFunc(GL10.GL_LEQUAL);\n+\t}\n+\n+\t@Override\n+\tpublic void onSurfaceChanged(GL10 gl, int width, int height)\n+\t{\n+\t\t// ����3D�Ӵ��Ĵ�С��λ��\n+\t\tgl.glViewport(0, 0, width, height);\n+\t\t// ����ǰ����ģʽ��ΪͶӰ����\n+\t\tgl.glMatrixMode(GL10.GL_PROJECTION);\n+\t\t// ��ʼ����λ����\n+\t\tgl.glLoadIdentity();\n+\t\t// ����͸���Ӵ��Ŀ�ȡ��߶ȱ�\n+\t\tfloat ratio = (float) width / height;\n+\t\t// ���ô˷�������͸���Ӵ��Ŀռ��С��\n+\t\tgl.glFrustumf(-ratio, ratio, -1, 1, 1, 10);\n+\t}\n+\n+\t// ����ͼ�εķ���\n+\t@Override\n+\tpublic void onDrawFrame(GL10 gl)\n+\t{\n+\t\t// �����Ļ�������Ȼ���\n+\t\tgl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);\n+\t\t// ���ö���������\n+\t\tgl.glEnableClientState(GL10.GL_VERTEX_ARRAY);\n+\t\t// ���ö�����ɫ���\n+\t\tgl.glEnableClientState(GL10.GL_COLOR_ARRAY);\n+\t\t// ���õ�ǰ����ģʽΪģ����ͼ��\n+\t\tgl.glMatrixMode(GL10.GL_MODELVIEW);\n+\t\t// --------------------���Ƶ�һ��ͼ��---------------------\n+\t\t// ���õ�ǰ��ģ����ͼ����\n+\t\tgl.glLoadIdentity();\n+\t\tgl.glTranslatef(-0.6f, 0.0f, -1.5f);\n+\t\t// ����Y����ת\n+\t\tgl.glRotatef(rotate, 0f, 0.2f, 0f);\n+\t\t// ���ö����λ�����\n+\t\tgl.glVertexPointer(3, GL10.GL_FLOAT, 0, taperVerticesBuffer);\n+\t\t// ���ö������ɫ���\n+\t\tgl.glColorPointer(4, GL10.GL_FIXED, 0, taperColorsBuffer);\n+\t\t// ��taperFacetsBufferָ��������������\n+\t\tgl.glDrawElements(GL10.GL_TRIANGLE_STRIP\n+\t\t\t, taperFacetsBuffer.remaining(),\n+\t\t\tGL10.GL_UNSIGNED_BYTE, taperFacetsBuffer);\n+\t\t// --------------------���Ƶڶ���ͼ��---------------------\n+\t\t// ���õ�ǰ��ģ����ͼ����\n+\t\tgl.glLoadIdentity();\n+\t\tgl.glTranslatef(0.7f, 0.0f, -2.2f);\n+\t\t// ����Y����ת\n+\t\tgl.glRotatef(rotate, 0f, 0.2f, 0f);\n+\t\t// ����X����ת\n+\t\tgl.glRotatef(rotate, 1f, 0f, 0f);\n+\t\t// ���ö����λ�����\n+\t\tgl.glVertexPointer(3, GL10.GL_FLOAT, 0, cubeVerticesBuffer);\n+\t\t// �����ö������ɫ��ݣ�������ǰ����ɫ���\n+\t\t// ��cubeFacetsBufferָ��������������\n+\t\tgl.glDrawElements(GL10.GL_TRIANGLE_STRIP\n+\t\t\t, cubeFacetsBuffer.remaining(),\n+\t\t\tGL10.GL_UNSIGNED_BYTE, cubeFacetsBuffer);\n+\n+\t\t// ���ƽ���\n+\t\tgl.glFinish();\n+\t\tgl.glDisableClientState(GL10.GL_VERTEX_ARRAY);\n+\t\t// ��ת�Ƕ����1\n+\t\trotate+=1;\n+\t}\n+\t// ����һ��߷�������int[]����ת��ΪOpenGL ES�����IntBuffer\n+\tprivate IntBuffer intBufferUtil(int[] arr)\n+\t{\n+\t\tIntBuffer mBuffer;\n+\t\t// ��ʼ��ByteBuffer������Ϊarr����ĳ���*4����Ϊһ��intռ4���ֽ�\n+\t\tByteBuffer qbb = ByteBuffer.allocateDirect(arr.length * 4);\n+\t\t// ����������nativeOrder\n+\t\tqbb.order(ByteOrder.nativeOrder());\n+\t\tmBuffer = qbb.asIntBuffer();\n+\t\tmBuffer.put(arr);\n+\t\tmBuffer.position(0);\n+\t\treturn mBuffer;\n+\t}\n+\t// ����һ��߷�������float[]����ת��ΪOpenGL ES�����FloatBuffer\n+\tprivate FloatBuffer floatBufferUtil(float[] arr)\n+\t{\n+\t\tFloatBuffer mBuffer;\n+\t\t// ��ʼ��ByteBuffer������Ϊarr����ĳ���*4����Ϊһ��intռ4���ֽ�\n+\t\tByteBuffer qbb = ByteBuffer.allocateDirect(arr.length * 4);\n+\t\t// ����������nativeOrder\n+\t\tqbb.order(ByteOrder.nativeOrder());\n+\t\tmBuffer = qbb.asFloatBuffer();\n+\t\tmBuffer.put(arr);\n+\t\tmBuffer.position(0);\n+\t\treturn mBuffer;\n+\t}\t\n+}"
+  }, {
+    "sha" : "4303bc392c6edbfe873fd95dac878275060e17cd",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201_Simple3D.java",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/791ff8789aafde742ee9c39dafaae624cbea250f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201_Simple3D.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/791ff8789aafde742ee9c39dafaae624cbea250f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201_Simple3D.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201_Simple3D.java?ref=791ff8789aafde742ee9c39dafaae624cbea250f",
+    "patch" : "@@ -0,0 +1,31 @@\n+package edu.hzuapps.androidworks.homeworks;\n+\n+import android.app.Activity;\n+import android.opengl.GLSurfaceView;\n+import android.os.Bundle;\n+\n+/**\n+ * Description:\n+ * <br/>site: <a href=\"http://www.crazyit.org\">crazyit.org</a>\n+ * <br/>Copyright (C), 2001-2014, Yeeku.H.Lee\n+ * <br/>This program is protected by copyright laws.\n+ * <br/>Program Name:\n+ * <br/>Date:\n+ * @author  Yeeku.H.Lee kongyeeku@163.com\n+ * @version  1.0\n+ */\n+public class Net1314080903201_Simple3D extends Activity\n+{\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState)\n+\t{\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\t// ����һ��GLSurfaceView��������ʾOpenGL���Ƶ�ͼ��\n+\t\tGLSurfaceView glView = new GLSurfaceView(this);\n+\t\t// ����GLSurfaceView�����ݻ�����\n+\t\tNet1314080903201_MyRenderer myRender = new Net1314080903201_MyRenderer();\n+\t\t// ΪGLSurfaceView���û�����\n+\t\tglView.setRenderer(myRender);\n+\t\tsetContentView(glView);\n+\t}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "a3ee5ab64f5e1901414e83e26717725e035b2aae",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/project.properties",
+    "status" : "added",
+    "additions" : 14,
+    "deletions" : 0,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/791ff8789aafde742ee9c39dafaae624cbea250f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/project.properties",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/791ff8789aafde742ee9c39dafaae624cbea250f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/project.properties",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/project.properties?ref=791ff8789aafde742ee9c39dafaae624cbea250f",
+    "patch" : "@@ -0,0 +1,14 @@\n+# This file is automatically generated by Android Tools.\n+# Do not modify this file -- YOUR CHANGES WILL BE ERASED!\n+#\n+# This file must be checked in Version Control Systems.\n+#\n+# To customize properties used by the Ant build system edit\n+# \"ant.properties\", and override values to adapt the script to your\n+# project structure.\n+#\n+# To enable ProGuard to shrink and obfuscate your code, uncomment this (available properties: sdk.dir, user.home):\n+#proguard.config=${sdk.dir}/tools/proguard/proguard-android.txt:proguard-project.txt\n+\n+# Project target.\n+target=android-17"
+  } ],
+  "sha" : "791ff8789aafde742ee9c39dafaae624cbea250f",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/791ff8789aafde742ee9c39dafaae624cbea250f",
+  "parents" : [ {
+    "sha" : "28275994199e7b34a15f357afddd6717b42448fb",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/28275994199e7b34a15f357afddd6717b42448fb",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/28275994199e7b34a15f357afddd6717b42448fb"
+  } ]
+}

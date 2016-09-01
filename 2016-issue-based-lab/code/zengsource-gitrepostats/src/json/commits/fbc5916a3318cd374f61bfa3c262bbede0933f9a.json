@@ -1,0 +1,116 @@
+{
+  "committer" : {
+    "login" : "zhongdingjun",
+    "id" : 14164243,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14164243?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhongdingjun",
+    "html_url" : "https://github.com/zhongdingjun",
+    "followers_url" : "https://api.github.com/users/zhongdingjun/followers",
+    "following_url" : "https://api.github.com/users/zhongdingjun/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhongdingjun/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhongdingjun/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhongdingjun/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhongdingjun/orgs",
+    "repos_url" : "https://api.github.com/users/zhongdingjun/repos",
+    "events_url" : "https://api.github.com/users/zhongdingjun/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhongdingjun/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 51,
+    "additions" : 51,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zhongdingjun",
+    "id" : 14164243,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14164243?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhongdingjun",
+    "html_url" : "https://github.com/zhongdingjun",
+    "followers_url" : "https://api.github.com/users/zhongdingjun/followers",
+    "following_url" : "https://api.github.com/users/zhongdingjun/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhongdingjun/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhongdingjun/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhongdingjun/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhongdingjun/orgs",
+    "repos_url" : "https://api.github.com/users/zhongdingjun/repos",
+    "events_url" : "https://api.github.com/users/zhongdingjun/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhongdingjun/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/fbc5916a3318cd374f61bfa3c262bbede0933f9a",
+  "commit" : {
+    "author" : {
+      "name" : "zhongdingjun",
+      "email" : "1178090249@qq.com",
+      "date" : "2016-04-27T09:00:28Z"
+    },
+    "committer" : {
+      "name" : "zhongdingjun",
+      "email" : "1178090249@qq.com",
+      "date" : "2016-04-27T09:00:28Z"
+    },
+    "message" : "#89  #363 lab-3",
+    "tree" : {
+      "sha" : "4989599f577d057aa5e9b06821b8f1bc5ec3a259",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/4989599f577d057aa5e9b06821b8f1bc5ec3a259"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/fbc5916a3318cd374f61bfa3c262bbede0933f9a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fbc5916a3318cd374f61bfa3c262bbede0933f9a/comments",
+  "files" : [ {
+    "sha" : "bd12214d40a8759835f38a7762158d2292abd7fc",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/Com1314080901146Activity.java",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fbc5916a3318cd374f61bfa3c262bbede0933f9a/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/Com1314080901146Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fbc5916a3318cd374f61bfa3c262bbede0933f9a/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/Com1314080901146Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901146/Com1314080901146Activity.java?ref=fbc5916a3318cd374f61bfa3c262bbede0933f9a",
+    "patch" : "@@ -0,0 +1,41 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901146;\n+\n+import android.os.Bundle;\n+import android.support.v7.app.ActionBarActivity;\n+import android.view.View;\n+import android.widget.Button;\n+\n+import edu.hzuapps.androidworks.R;\n+import edu.hzuapps.androidworks.homeworks.BackActivity;\n+\n+public class Com1314080901146Activity extends BackActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_com123456);\n+\n+        Button closeBtn = (Button) findViewById(R.id.button_close);\n+        closeBtn.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                finish();\n+            }\n+        });\n+    }\n+\n+    @Override\n+    protected void onStart() {\n+        super.onStart();\n+    }\n+\n+    @Override\n+    protected void onPause() {\n+        super.onPause();\n+    }\n+\n+    @Override\n+    protected void onStop() {\n+        super.onStop();\n+    }\n+}"
+  }, {
+    "sha" : "a07c69fa5a0f4da5d5efe96eea12a543154dbab6",
+    "filename" : "app/src/main/res/drawable/icon.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fbc5916a3318cd374f61bfa3c262bbede0933f9a/app/src/main/res/drawable/icon.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fbc5916a3318cd374f61bfa3c262bbede0933f9a/app/src/main/res/drawable/icon.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/icon.png?ref=fbc5916a3318cd374f61bfa3c262bbede0933f9a"
+  }, {
+    "sha" : "c8a81e1721ce6ed3c5bd560e7b803501df104dc0",
+    "filename" : "app/src/main/res/drawable/myicon.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fbc5916a3318cd374f61bfa3c262bbede0933f9a/app/src/main/res/drawable/myicon.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fbc5916a3318cd374f61bfa3c262bbede0933f9a/app/src/main/res/drawable/myicon.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/myicon.png?ref=fbc5916a3318cd374f61bfa3c262bbede0933f9a"
+  }, {
+    "sha" : "871d74d10ff2a4cbec008ba956ec93e21f2c5932",
+    "filename" : "app/src/main/res/layout/com1314080901146activity.xml",
+    "status" : "added",
+    "additions" : 10,
+    "deletions" : 0,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fbc5916a3318cd374f61bfa3c262bbede0933f9a/app/src/main/res/layout/com1314080901146activity.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fbc5916a3318cd374f61bfa3c262bbede0933f9a/app/src/main/res/layout/com1314080901146activity.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/com1314080901146activity.xml?ref=fbc5916a3318cd374f61bfa3c262bbede0933f9a",
+    "patch" : "@@ -0,0 +1,10 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:orientation=\"vertical\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"fill_parent\"\n+    android:id=\"@+id/mylayout\"\n+    >\n+\n+\n+</LinearLayout>"
+  } ],
+  "sha" : "fbc5916a3318cd374f61bfa3c262bbede0933f9a",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fbc5916a3318cd374f61bfa3c262bbede0933f9a",
+  "parents" : [ {
+    "sha" : "5015ff6e51e2811f079e882d79bed4b41f0f1b82",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5015ff6e51e2811f079e882d79bed4b41f0f1b82",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5015ff6e51e2811f079e882d79bed4b41f0f1b82"
+  } ]
+}

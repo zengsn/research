@@ -1,0 +1,173 @@
+{
+  "committer" : {
+    "login" : "KnightCIQIANG",
+    "id" : 17646179,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17646179?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/KnightCIQIANG",
+    "html_url" : "https://github.com/KnightCIQIANG",
+    "followers_url" : "https://api.github.com/users/KnightCIQIANG/followers",
+    "following_url" : "https://api.github.com/users/KnightCIQIANG/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/KnightCIQIANG/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/KnightCIQIANG/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/KnightCIQIANG/subscriptions",
+    "organizations_url" : "https://api.github.com/users/KnightCIQIANG/orgs",
+    "repos_url" : "https://api.github.com/users/KnightCIQIANG/repos",
+    "events_url" : "https://api.github.com/users/KnightCIQIANG/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/KnightCIQIANG/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 605,
+    "additions" : 605,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "KnightCIQIANG",
+    "id" : 17646179,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17646179?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/KnightCIQIANG",
+    "html_url" : "https://github.com/KnightCIQIANG",
+    "followers_url" : "https://api.github.com/users/KnightCIQIANG/followers",
+    "following_url" : "https://api.github.com/users/KnightCIQIANG/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/KnightCIQIANG/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/KnightCIQIANG/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/KnightCIQIANG/subscriptions",
+    "organizations_url" : "https://api.github.com/users/KnightCIQIANG/orgs",
+    "repos_url" : "https://api.github.com/users/KnightCIQIANG/repos",
+    "events_url" : "https://api.github.com/users/KnightCIQIANG/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/KnightCIQIANG/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/45075df7b230cac40f779e807ffaa0165ccab220",
+  "commit" : {
+    "author" : {
+      "name" : "KNIGTCIQNAG",
+      "email" : "957539129@qq.com",
+      "date" : "2016-06-08T11:46:32Z"
+    },
+    "committer" : {
+      "name" : "KNIGTCIQNAG",
+      "email" : "957539129@qq.com",
+      "date" : "2016-06-08T11:46:32Z"
+    },
+    "message" : "#90 #94 #95 #79 labs4 8 and 9",
+    "tree" : {
+      "sha" : "e3e6dd1d4cb300feeb3495e4838fff7d50198ec7",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/e3e6dd1d4cb300feeb3495e4838fff7d50198ec7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/45075df7b230cac40f779e807ffaa0165ccab220",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/45075df7b230cac40f779e807ffaa0165ccab220/comments",
+  "files" : [ {
+    "sha" : "d7b1c9baa830cd67d2a0dfe652cd11b6dfa29152",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/GestureLock.java",
+    "status" : "added",
+    "additions" : 265,
+    "deletions" : 0,
+    "changes" : 265,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/GestureLock.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/GestureLock.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/GestureLock.java?ref=45075df7b230cac40f779e807ffaa0165ccab220",
+    "patch" : "@@ -0,0 +1,265 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903246;\n+\n+import android.content.Context;\n+import android.content.res.TypedArray;\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.graphics.Canvas;\n+import android.graphics.Color;\n+import android.graphics.Paint;\n+import android.graphics.drawable.Drawable;\n+import android.text.TextPaint;\n+import android.util.AttributeSet;\n+import android.view.MotionEvent;\n+import android.view.View;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import static android.view.MotionEvent.ACTION_MOVE;\n+\n+\n+public class GestureLock extends View {\n+\n+    private Point[][] points = new Point[3][3];\n+    private boolean inited = false;\n+\n+    private boolean isDraw = false;\n+    private ArrayList<Point> pointList = new ArrayList<Point>();\n+    private ArrayList<Integer> passList = new ArrayList<Integer>();\n+\n+    private Bitmap bitmapPointError;\n+    private Bitmap bitmapPointNormal;\n+    private Bitmap bitmapPointPress;\n+\n+    private OnDrawFinishedListener listener;\n+\n+    float mouseX, mouseY;\n+\n+    private float bitmapR;\n+\n+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);\n+    Paint pressPaint = new Paint();\n+    Paint errorPaint = new Paint();\n+\n+    public GestureLock(Context context) {\n+        super(context);\n+    }\n+\n+    public GestureLock(Context context, AttributeSet attrs) {\n+        super(context, attrs);\n+    }\n+\n+    public GestureLock(Context context, AttributeSet attrs, int defStyle) {\n+        super(context, attrs, defStyle);\n+    }\n+\n+    @Override\n+    public boolean onTouchEvent(MotionEvent event) {\n+        mouseX = event.getX();\n+        mouseY = event.getY();\n+        int[] ij;\n+        int i, j;\n+        switch (event.getAction())\n+        {\n+            case MotionEvent.ACTION_DOWN:\n+                resetPoints();\n+                ij = getSelectedPoint();\n+                if (ij != null)\n+                {\n+                    isDraw = true;\n+                    i = ij[0];\n+                    j = ij[1];\n+                    points[i][j].state = Point.STATE_PRESS;\n+                    pointList.add(points[i][j]);\n+                    passList.add(i * 3 + j);\n+                }\n+                break;\n+            case MotionEvent.ACTION_MOVE:\n+                if (isDraw)\n+                {\n+                    ij = getSelectedPoint();\n+                    if (ij != null)\n+                    {\n+                        i = ij[0];\n+                        j = ij[1];\n+                        if(!pointList.contains(points[i][j]))\n+                        {\n+                            points[i][j].state = Point.STATE_PRESS;\n+                            pointList.add(points[i][j]);\n+                            passList.add(i * 3 + j);\n+                        }\n+                    }\n+                }\n+                break;\n+            case MotionEvent.ACTION_UP:\n+                boolean valid = false;\n+                if (listener != null && isDraw)\n+                {\n+                    valid = listener.OnDrawFinished(passList);\n+                }\n+                if (!valid)\n+                {\n+                    for (Point p : pointList)\n+                    {\n+                        p.state = Point.STATE_ERROR;\n+                    }\n+                }\n+                isDraw = false;\n+                break;\n+        }\n+        this.postInvalidate();\n+        return true;\n+    }\n+\n+    private int[] getSelectedPoint()\n+    {\n+        Point pMouse = new Point(mouseX, mouseY);\n+        for (int i = 0; i < points.length; i++)\n+        {\n+            for (int j = 0; j < points[i].length; j++)\n+            {\n+                if (points[i][j].distance(pMouse) < bitmapR)\n+                {\n+                    int[] result = new int[2];\n+                    result[0] = i;\n+                    result[1] = j;\n+                    return result;\n+                }\n+            }\n+        }\n+        return null;\n+    }\n+\n+    @Override\n+    protected void onDraw(Canvas canvas) {\n+        super.onDraw(canvas);\n+        if (!inited)\n+        {\n+            init();\n+        }\n+\n+        drawPoints(canvas);\n+\n+        if (pointList.size() > 0)\n+        {\n+            Point a = pointList.get(0);\n+            for (int i = 1;i < pointList.size(); i++)\n+            {\n+                Point b = pointList.get(i);\n+                drawLine(canvas, a, b);\n+                a = b;\n+            }\n+            if (isDraw)\n+            {\n+                drawLine(canvas, a, new Point(mouseX, mouseY));\n+            }\n+        }\n+    }\n+\n+    private void drawLine(Canvas canvas, Point a, Point b)\n+    {\n+        if (a.state == Point.STATE_PRESS)\n+        {\n+            canvas.drawLine(a.x, a.y, b.x, b.y, pressPaint);\n+        }\n+        else if(a.state == Point.STATE_ERROR)\n+        {\n+            canvas.drawLine(a.x, a.y, b.x, b.y, errorPaint);\n+        }\n+    }\n+\n+    private void drawPoints(Canvas canvas)\n+    {\n+        for (int i = 0; i < points.length; i++)\n+        {\n+            for (int j = 0; j < points[i].length; j++)\n+            {\n+                if (points[i][j].state == Point.STATE_NORMAL)\n+                {\n+                    //Normal\n+                    canvas.drawBitmap(bitmapPointNormal, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);\n+                }\n+                else if (points[i][j].state == Point.STATE_PRESS)\n+                {\n+                    //Press\n+                    canvas.drawBitmap(bitmapPointPress, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);\n+\n+                }\n+                else {\n+                    //ERROR\n+                    canvas.drawBitmap(bitmapPointError, points[i][j].x - bitmapR, points[i][j].y - bitmapR, paint);\n+\n+                }\n+            }\n+        }\n+    }\n+\n+    private void init()\n+    {\n+        pressPaint.setColor(Color.YELLOW);\n+        pressPaint.setStrokeWidth(5);\n+        errorPaint.setColor(Color.RED);\n+        errorPaint.setStrokeWidth(5);\n+\n+        bitmapPointError = BitmapFactory.decodeResource(getResources(), R.drawable.error);\n+        bitmapPointNormal = BitmapFactory.decodeResource(getResources(), R.drawable.normal);\n+        bitmapPointPress = BitmapFactory.decodeResource(getResources(), R.drawable.press);\n+\n+        bitmapR = bitmapPointError.getHeight() / 2;\n+        int width = getWidth();\n+        int height = getHeight();\n+        int offset = Math.abs(width - height) / 2;\n+        int offsetX, offsetY;\n+        int space;\n+        if(width > height)\n+        {\n+            space = height / 4;\n+            offsetX = offset;\n+            offsetY = 0;\n+        }\n+        else\n+        {\n+            space = width / 4;\n+            offsetX = 0;\n+            offsetY = offset;\n+        }\n+        points[0][0] = new Point(offsetX + space, offsetY + space);\n+        points[0][1] = new Point(offsetX + space * 2, offsetY + space);\n+        points[0][2] = new Point(offsetX + space * 3, offsetY + space);\n+\n+        points[1][0] = new Point(offsetX + space, offsetY + space * 2);\n+        points[1][1] = new Point(offsetX + space * 2, offsetY + space * 2);\n+        points[1][2] = new Point(offsetX + space * 3, offsetY + space * 2);\n+\n+        points[2][0] = new Point(offsetX + space, offsetY + space * 3);\n+        points[2][1] = new Point(offsetX + space * 2, offsetY + space * 3);\n+        points[2][2] = new Point(offsetX + space * 3, offsetY + space * 3);\n+\n+        inited = true;\n+    }\n+\n+    public void resetPoints()\n+    {\n+        passList.clear();\n+        pointList.clear();\n+        for (int i = 0; i < points.length; i++)\n+        {\n+            for (int j = 0; j < points[i].length; j++)\n+            {\n+                points[i][j].state = Point.STATE_NORMAL;\n+            }\n+        }\n+        this.postInvalidate();\n+    }\n+\n+    public interface OnDrawFinishedListener\n+    {\n+        boolean OnDrawFinished(List<Integer> passList);\n+    }\n+\n+    public void setOnDrawFinishedListener(OnDrawFinishedListener listener)\n+    {\n+        this.listener = listener;\n+    }\n+}"
+  }, {
+    "sha" : "b3528b6ba5bdc0217fbde691c871b86d2e6e131d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/LockActivity.java",
+    "status" : "added",
+    "additions" : 65,
+    "deletions" : 0,
+    "changes" : 65,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/LockActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/LockActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/LockActivity.java?ref=45075df7b230cac40f779e807ffaa0165ccab220",
+    "patch" : "@@ -0,0 +1,65 @@\n+﻿package edu.hzuapps.androidworks.homeworks.net1314080903246;\n+\n+import android.content.SharedPreferences;\n+import android.support.v7.app.ActionBarActivity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.Toast;\n+\n+import java.util.List;\n+\n+\n+public class LockActivity extends ActionBarActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_lock);\n+        SharedPreferences sp = getSharedPreferences(\"password\", this.MODE_PRIVATE);\n+        final String password = sp.getString(\"password\", \"\");\n+\n+        GestureLock lock = (GestureLock)findViewById(R.id.LockView);\n+        lock.setOnDrawFinishedListener(new GestureLock.OnDrawFinishedListener() {\n+            @Override\n+            public boolean OnDrawFinished(List<Integer> passList) {\n+                StringBuilder sb = new StringBuilder();\n+                for (Integer i : passList)\n+                {\n+                    sb.append(i);\n+                }\n+                if (sb.toString().equals(password)){\n+                    Toast.makeText(LockActivity.this, \"正确\", Toast.LENGTH_SHORT).show();\n+                    return true;\n+                }\n+                else\n+                {\n+                    Toast.makeText(LockActivity.this, \"错误\", Toast.LENGTH_SHORT).show();\n+                    return false;\n+                }\n+            }\n+        });\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_lock, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  }, {
+    "sha" : "ca5a86ce7cea283d0f53d95b8bedee9fd73b8c59",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/MainActivity.java",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/MainActivity.java?ref=45075df7b230cac40f779e807ffaa0165ccab220",
+    "patch" : "@@ -0,0 +1,62 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903246;\n+\n+import android.content.Intent;\n+import android.support.v7.app.ActionBarActivity;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.widget.Button;\n+\n+public class MainActivity extends ActionBarActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+\n+        Button btn_setting = (Button)findViewById(R.id.button);\n+        Button btn_lock = (Button)findViewById(R.id.button2);\n+\n+        btn_setting.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                Intent intent = new Intent(MainActivity.this, SettingActivity.class);\n+                startActivity(intent);\n+            }\n+        });\n+\n+        btn_lock.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                Intent intent = new Intent(MainActivity.this, LockActivity.class);\n+                startActivity(intent);\n+            }\n+        });\n+\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_main, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}\n+"
+  }, {
+    "sha" : "f902ad247fb6e685e42f055f7ca4bcece2e528d5",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/Point.java",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/Point.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/Point.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/Point.java?ref=45075df7b230cac40f779e807ffaa0165ccab220",
+    "patch" : "@@ -0,0 +1,25 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903246;\n+\n+public class Point {\n+    public static int STATE_NORMAL = 0;\n+    public static int STATE_PRESS = 1;\n+    public static int STATE_ERROR = 2;\n+\n+    float x;\n+    float y;\n+    int state = STATE_NORMAL;\n+\n+    public Point(float x, float y)\n+    {\n+        this.x = x;\n+        this.y = y;\n+    }\n+\n+    public float distance(Point a)\n+    {\n+        float distance = (float)Math.sqrt((x - a.x) * (x - a.x) + (y - a.y) * (y - a.y));\n+        return distance;\n+    }\n+\n+}\n+"
+  }, {
+    "sha" : "802e6893074c42034ac5ac1d2e5453c659795c5c",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/SettingActivity.java",
+    "status" : "added",
+    "additions" : 91,
+    "deletions" : 0,
+    "changes" : 91,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/SettingActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/SettingActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/SettingActivity.java?ref=45075df7b230cac40f779e807ffaa0165ccab220",
+    "patch" : "@@ -0,0 +1,91 @@\n+﻿package edu.hzuapps.androidworks.homeworks.net1314080903246;\n+\n+import android.content.SharedPreferences;\n+import android.support.v7.app.ActionBarActivity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.Toast;\n+\n+import java.util.List;\n+\n+\n+public class SettingActivity extends ActionBarActivity {\n+\n+    List<Integer> passList;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_setting);\n+        final GestureLock lock = (GestureLock)findViewById(R.id.LockView);\n+        Button btn_reset = (Button)findViewById(R.id.btn_reset);\n+        Button btn_save = (Button)findViewById(R.id.btn_save);\n+\n+        lock.setOnDrawFinishedListener(new GestureLock.OnDrawFinishedListener() {\n+            @Override\n+            public boolean OnDrawFinished(List<Integer> passList) {\n+                if (passList.size() < 3)\n+                {\n+                    Toast.makeText(SettingActivity.this, \"密码不能少于3个点\", Toast.LENGTH_SHORT).show();\n+                    return false;\n+                }\n+                else {\n+                    SettingActivity.this.passList = passList;\n+                    return true;\n+                }\n+            }\n+        });\n+\n+        btn_reset.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                lock.resetPoints();\n+            }\n+        });\n+\n+        btn_save.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                if (passList != null)\n+                {\n+                    StringBuilder sb = new StringBuilder();\n+                    for (Integer i : passList)\n+                    {\n+                        sb.append(i);\n+                    }\n+                    SharedPreferences sp = SettingActivity.this.getSharedPreferences(\"password\", SettingActivity.this.MODE_PRIVATE);\n+                    SharedPreferences.Editor editor = sp.edit();\n+                    editor.putString(\"password\", sb.toString());\n+                    editor.commit();\n+\n+                    Toast.makeText(SettingActivity.this, \"保存完成\", Toast.LENGTH_SHORT).show();\n+                }\n+            }\n+        });\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_setting, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  }, {
+    "sha" : "1de0a96340d20dd8b6017763f54e60fb2fa2aa57",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_lock.xml",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_lock.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_lock.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_lock.xml?ref=45075df7b230cac40f779e807ffaa0165ccab220",
+    "patch" : "@@ -0,0 +1,21 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903246.LockActivity\">\n+\n+    <view\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        class=\"com.zkh.screenlock.GestureLock\"\n+        android:id=\"@+id/LockView\"\n+        android:layout_alignParentTop=\"true\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentStart=\"true\" />\n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "1c58843d5f14bc5187e53d966763f5eee68381e7",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_main.xml",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_main.xml?ref=45075df7b230cac40f779e807ffaa0165ccab220",
+    "patch" : "@@ -0,0 +1,16 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout\n+    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\" android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    tools:context=\".MainActivity\">\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"Hello World!\" />\n+</RelativeLayout>"
+  }, {
+    "sha" : "d104233d4f41475f32b41c9d0e3a63018ae26193",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_setting.xml",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_setting.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_setting.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/activity_setting.xml?ref=45075df7b230cac40f779e807ffaa0165ccab220",
+    "patch" : "@@ -0,0 +1,43 @@\n+﻿<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903246.SettingActivity\">\n+\n+    <view\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        class=\"com.zkh.screenlock.GestureLock\"\n+        android:id=\"@+id/LockView\"\n+        android:layout_alignParentTop=\"true\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentStart=\"true\" />\n+\n+    <LinearLayout\n+        android:orientation=\"horizontal\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:layout_alignParentRight=\"true\"\n+        android:layout_alignParentEnd=\"true\">\n+        <Button\n+            android:layout_gravity=\"bottom\"\n+            android:id=\"@+id/btn_reset\"\n+            android:text=\"重置密码\"\n+            android:layout_weight=\"1\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\" />\n+        <Button\n+            android:layout_gravity=\"bottom\"\n+            android:id=\"@+id/btn_save\"\n+            android:text=\"保存密码\"\n+            android:layout_weight=\"1\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\" />\n+    </LinearLayout>\n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "4dad1830c6fb070519e86144d30158300dcf9f31",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/sample_gesture_lock.xml",
+    "status" : "added",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/sample_gesture_lock.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/45075df7b230cac40f779e807ffaa0165ccab220/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/sample_gesture_lock.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903246/sample_gesture_lock.xml?ref=45075df7b230cac40f779e807ffaa0165ccab220",
+    "patch" : "@@ -0,0 +1,17 @@\n+<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res/com.zkh.screenlock\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\">\n+\n+    <com.zkh.screenlock.GestureLock\n+        android:background=\"#ccc\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:paddingBottom=\"40dp\"\n+        android:paddingLeft=\"20dp\"\n+        app:exampleColor=\"#33b5e5\"\n+        app:exampleDimension=\"24sp\"\n+        app:exampleString=\"Hello, GestureLock\"\n+        app:exampleDrawable=\"@android:drawable/ic_menu_add\"/>\n+\n+</FrameLayout>"
+  } ],
+  "sha" : "45075df7b230cac40f779e807ffaa0165ccab220",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/45075df7b230cac40f779e807ffaa0165ccab220",
+  "parents" : [ {
+    "sha" : "de0bd06988ac390fa9ebfd129de387c4ffaf450f",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/de0bd06988ac390fa9ebfd129de387c4ffaf450f",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/de0bd06988ac390fa9ebfd129de387c4ffaf450f"
+  } ]
+}

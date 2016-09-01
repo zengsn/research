@@ -1,0 +1,154 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 372,
+    "additions" : 372,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T15:05:40Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T15:05:40Z"
+    },
+    "message" : "Merge pull request #469 from benguadesenlin/master\n\n#88 #83 lab2的Activity和lab3的XML",
+    "tree" : {
+      "sha" : "baba2a011b02960773512abd1ac632e0ec34306c",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/baba2a011b02960773512abd1ac632e0ec34306c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/384cf83e9da453423dd4fb2751f220f49c8dc5fd/comments",
+  "files" : [ {
+    "sha" : "861e54d14bb14499f940d52b1da4f501f3fd1c8d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ActivityCollector.java",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ActivityCollector.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ActivityCollector.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206ActivityCollector.java?ref=384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+    "patch" : "@@ -0,0 +1,34 @@\n+package com.bengua.whiteblock;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import android.app.Activity;\n+\n+public class Net1314080903206ActivityCollector {\n+\t\n+\tpublic static List<Activity> activities=new ArrayList<Activity>();\n+\t\n+\tpublic static void addActivity(Activity activity)\n+\t{\n+\t\t\n+\t\tactivities.add(activity);\n+\t\t\n+\t}\n+\t\n+\tpublic static void removeActivity(Activity activity)\n+\t{\n+\t\tactivities.remove(activity);\n+\t}\n+\t\n+\tpublic static void finishAll()\n+\t{\n+\t\tfor(Activity activity:activities)\n+\t\t{\n+\t\t\tif(!activity.isFinishing());\n+\t\t\t\tactivity.finish();\n+\t\t}\n+\t}\n+\t\n+\t\t\n+}"
+  }, {
+    "sha" : "ed9fb7984e646e4a6cc953c56122d7e42ccf0de6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206BaseActivity.java",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206BaseActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206BaseActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206BaseActivity.java?ref=384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+    "patch" : "@@ -0,0 +1,20 @@\n+package com.bengua.whiteblock;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+\n+public class Net1314080903206BaseActivity extends Activity{\n+\t\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState)\n+\t{\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tNet1314080903206ActivityCollector.addActivity(this);\t\t\n+\t}\n+\t\t\n+\t@Override\n+\tprotected void onDestroy(){\n+\t\tsuper.onDestroy();\n+\t\tNet1314080903206ActivityCollector.removeActivity(this);\n+\t}\n+}"
+  }, {
+    "sha" : "da66ddab075f34fd7ae522f82a09e3b503784264",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206GameRuleActivity.java",
+    "status" : "added",
+    "additions" : 37,
+    "deletions" : 0,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206GameRuleActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206GameRuleActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206GameRuleActivity.java?ref=384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+    "patch" : "@@ -0,0 +1,37 @@\n+package com.bengua.whiteblock;\n+\n+import android.os.Bundle;\n+import android.widget.TextView;\n+\n+public class Net1314080903206GameRuleActivity extends Net1314080903206BaseActivity{\n+\t\n+\tprivate TextView mGameRule1TextView,mGameRule2TextView,mGameRule3TextView,mGameRule4TextView;\n+\tprivate String mGameRule1,mGameRule2,mGameRule3,mGameRule4;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\t\n+\t\tsetContentView(R.layout.net1314080903206_activity_game_rule);\n+\t\t\n+\t\tmGameRule1 = \"��Ϸ���� \";\n+\t\tmGameRule2 = \"�ȵ��׿��1��\";\n+\t\tmGameRule3 = \"�ȵ��ڿ��5��\";\n+\t\tmGameRule4 = \"��Ϸʱ��Ϊ30s\";\n+\t\t\n+\t\tmGameRule1TextView = (TextView) findViewById(R.id.game_rule_1_text_view);\n+\t\tmGameRule1TextView.setText(mGameRule1);\n+\t\t\n+\t\tmGameRule2TextView = (TextView) findViewById(R.id.game_rule_2_text_view);\n+\t\tmGameRule2TextView.setText(mGameRule2);\n+\t\t\n+\t\tmGameRule3TextView = (TextView) findViewById(R.id.game_rule_3_text_view);\n+\t\tmGameRule3TextView.setText(mGameRule3);\n+\t\t\n+\t\tmGameRule4TextView = (TextView) findViewById(R.id.game_rule_4_text_view);\n+\t\tmGameRule4TextView.setText(mGameRule4);\n+\t}\n+\n+\t\n+\t\n+}"
+  }, {
+    "sha" : "6c27f28d97a5831b57b60e58ec224bb21f40e22f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206MainActivity.java",
+    "status" : "added",
+    "additions" : 60,
+    "deletions" : 0,
+    "changes" : 60,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206MainActivity.java?ref=384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+    "patch" : "@@ -0,0 +1,60 @@\n+package com.bengua.whiteblock;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.widget.Button;\n+\n+public class Net1314080903206MainActivity extends Net1314080903206BaseActivity {\n+\t\n+\tprivate Button startsow;\n+\tprivate Button exit;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.net1314080903206_activity_main);\n+\t\tstartsow=(Button) findViewById(R.id.startsow);\n+\t\tstartsow.setOnClickListener(new View.OnClickListener() {\n+\t\t\t\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View v) {\n+\t\t\t\tIntent intent=new Intent(Net1314080903206MainActivity.this,Net1314080903206StepOnWhiteActivity.class);\n+\t\t\t\tstartActivity(intent);\n+\t\t\t\t\n+\t\t\t}\n+\t\t});\n+\t\t\n+\t\texit=(Button) findViewById(R.id.exit);\n+\t\texit.setOnClickListener(new View.OnClickListener() {\n+\t\t\t\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View v) {\n+\t\t\t\tNet1314080903206ActivityCollector.finishAll();\n+\t\t\t\t\n+\t\t\t}\n+\t\t});\n+\t}\n+\n+\t@Override\n+\tpublic boolean onCreateOptionsMenu(Menu menu) {\n+\t\t// Inflate the menu; this adds items to the action bar if it is present.\n+\t\tgetMenuInflater().inflate(R.menu.main, menu);\n+\t\treturn true;\n+\t}\n+\n+\t@Override\n+\tpublic boolean onOptionsItemSelected(MenuItem item) {\n+\t\t// Handle action bar item clicks here. The action bar will\n+\t\t// automatically handle clicks on the Home/Up button, so long\n+\t\t// as you specify a parent activity in AndroidManifest.xml.\n+\t\tint id = item.getItemId();\n+\t\tif (id == R.id.action_settings) {\n+\t\t\treturn true;\n+\t\t}\n+\t\treturn super.onOptionsItemSelected(item);\n+\t}\n+}"
+  }, {
+    "sha" : "09e2b7e56f19cc862b682291a945468ac9032715",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206StepOnWhiteActivity.java",
+    "status" : "added",
+    "additions" : 188,
+    "deletions" : 0,
+    "changes" : 188,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206StepOnWhiteActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206StepOnWhiteActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903206/Net1314080903206StepOnWhiteActivity.java?ref=384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+    "patch" : "@@ -0,0 +1,188 @@\n+package com.bengua.whiteblock;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.content.SharedPreferences.Editor;\n+import android.graphics.Color;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.util.Log;\n+import android.view.MotionEvent;\n+import android.view.View;\n+import android.view.View.OnTouchListener;\n+import android.widget.Button;\n+import android.widget.GridLayout;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+public class Net1314080903206StepOnWhiteActivity extends Net1314080903206BaseActivity {\n+\t\n+\t\n+\tprivate int score = 0;\n+\tprivate TextView nowScore;\n+\tprivate TextView bestScore;\n+\tprivate Button mGameRule;\n+\tprivate GridLayout gl;\n+\tprivate TextView showtime;\n+\tpublic static final String SP_KEY_BEST_SCORE = \"bestScore\";\n+\tprivate static int time=0;\n+\tprivate static final int sendtime=1;\n+\t int t=30;\n+\tprivate Handler h=new Handler()\n+\t{\n+\t\tpublic void handleMessage(Message msg)\n+\t\t{\n+\t\t\tswitch(msg.what)\n+\t\t\t{\n+\t\t\tcase sendtime:\n+\t\t\t\t\n+\t\t\t\tshowtime.setText(time+\"s\");\n+\t\t\t\tshowtime.setTextColor(Color.RED);\n+\n+\t\t\t\tbreak;\n+\t\t\tdefault:\n+\t\t\t\tbreak;\n+\t\t\t\t\n+\t\t\t}\n+\t\t}\n+\t};;\n+\t\n+\t\n+\tprivate static Net1314080903206StepOnWhiteActivity SOWActivity = null;\n+\t\n+\tpublic static Net1314080903206StepOnWhiteActivity getSOWActivity() {\n+\t\treturn SOWActivity;\n+\t}\n+\t\n+\tpublic Net1314080903206StepOnWhiteActivity() {\n+\t\tSOWActivity = this;\n+\t}\n+\t\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.net1314080903206_step_on_white);\n+\t\t\n+\t\tnowScore=(TextView) findViewById(R.id.nowscore);\n+\t\tbestScore=(TextView) findViewById(R.id.bestscore);\n+\t\tshowtime=(TextView) findViewById(R.id.showtime);\n+\t\tgl=(GridLayout) findViewById(R.layout.net1314080903206_step_on_white);\t\n+\t\tmGameRule = (Button) findViewById(R.id.game_rule_button);\n+\t\t\n+\t\tmGameRule.setOnClickListener(new View.OnClickListener() {\n+\t\t\t\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View v) {\n+\n+\t\t\t\tIntent i = new Intent(Net1314080903206StepOnWhiteActivity.this, Net1314080903206GameRuleActivity.class);\n+\t\t\t\tstartActivity(i);\n+\t\t\t\t\n+\t\t\t}\n+\t\t});\n+\t\t\n+\t\t\n+\t}\n+\n+\n+\tpublic void clearScore(){\n+\t\tscore = 0;\n+\t\tshowScore();\n+\t}\n+\t\n+\tpublic void showScore(){\n+\t\tnowScore.setText(score+\"\");\n+\t}\n+\t\n+\tpublic String getScore()\n+\t{\n+\t\treturn (String) nowScore.getText();\n+\t}\n+\t\n+\tpublic void addScore(int s){\n+\t\tscore+=s;\n+\t\tshowScore();\n+\t\t\n+\t\tint maxScore = Math.max(score, getBestScore());\n+\t\tsaveBestScore(maxScore);\n+\t\tshowBestScore(maxScore);\n+\t}\n+\t\n+\tpublic void saveBestScore(int s){\n+\t\tEditor e = getPreferences(MODE_PRIVATE).edit();\n+\t\te.putInt(SP_KEY_BEST_SCORE, s);\n+\t\te.commit();\n+\t}\n+\n+\tpublic int getBestScore(){\n+\t\treturn getPreferences(MODE_PRIVATE).getInt(SP_KEY_BEST_SCORE, 0);\n+\t}\n+\n+\tpublic void showBestScore(int s){\n+\t\tbestScore.setText(s+\"\");\n+\t}\n+\t\n+\t\n+\tprivate void time()\n+\t{\n+\t\tLog.d(\"StepOnWhiteActivity\", t+\"\");\n+\t\tnew Thread(new Runnable()\n+\t\t{\n+\t\t\t\n+\t\t\t@Override\n+\t\t\tpublic void run() {\n+\t\t\t\tfor(time=t;time>=0;time--)\n+\t\t\t\t{\n+\t\t\t\t\tMessage m=new Message();\n+\t\t\t\t\tm.what=sendtime;\n+\t\t\t\t\th.sendMessage(m);\n+\t\t\t\t\ttry \n+\t\t\t\t\t{\n+\t\t\t\t\t\tThread.sleep(1000);\n+\t\t\t\t\t} catch (InterruptedException e) {\n+\t\t\t\t\t\te.printStackTrace();\n+\t\t\t\t\t} \n+\t\t\t\t\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}).start();\n+\t\t\n+\n+\n+\t}\t\n+\t\n+\tpublic void TimeStart()\n+\t{\n+\t\ttime();\n+\t}\n+\t\n+\tpublic int getTime()\n+\t{\n+\t\treturn time;\n+\t}\n+\t\n+\tpublic void setTime()\n+\t{\n+\t\tt=30;\n+\t}\n+\t\n+\tpublic void exitGame()\n+\t{\n+\t\tIntent i=new Intent(Net1314080903206StepOnWhiteActivity.this,Net1314080903206MainActivity.class);\n+\t\tstartActivity(i);\n+\t}\n+\tpublic void showStart()\n+\t{\n+\t\tToast.makeText(Net1314080903206StepOnWhiteActivity.this, \"��Ϸ��ʼ\", Toast.LENGTH_SHORT).show();\n+\t}\n+\t\n+}\n+\n+\n+\n+\n+\n+\n+\n+\n+"
+  }, {
+    "sha" : "288b66551d1efd1f13dd06f20a67534d2df57946",
+    "filename" : "app/src/main/res/drawable/ic_launcher.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/res/drawable/ic_launcher.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/res/drawable/ic_launcher.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/ic_launcher.png?ref=384cf83e9da453423dd4fb2751f220f49c8dc5fd"
+  }, {
+    "sha" : "b6a262f3fd26b046dec2848eb895c83e0dcc7cdd",
+    "filename" : "app/src/main/res/layout/net1314080903206_activity_game_rule.xml",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/res/layout/net1314080903206_activity_game_rule.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/384cf83e9da453423dd4fb2751f220f49c8dc5fd/app/src/main/res/layout/net1314080903206_activity_game_rule.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903206_activity_game_rule.xml?ref=384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+    "patch" : "@@ -0,0 +1,33 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:gravity=\"center\"\n+    android:orientation=\"vertical\" >\n+    \n+    <ImageView \n+        android:id=\"@+id/use_image\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:src=\"@drawable/ic_launcher\"\n+        />\n+    \n+    <TextView \n+        android:id=\"@+id/game_rule_1_text_view\"\n+        style=\"@style/GameRuleTextView\"\n+        />\n+    <TextView \n+        android:id=\"@+id/game_rule_2_text_view\"\n+        style=\"@style/GameRuleTextView\"\n+        />\n+    <TextView \n+        android:id=\"@+id/game_rule_3_text_view\"\n+        style=\"@style/GameRuleTextView\"\n+        />\n+    <TextView \n+        android:id=\"@+id/game_rule_4_text_view\"\n+        style=\"@style/GameRuleTextView\"\n+        />\n+    \n+\n+</LinearLayout>"
+  } ],
+  "sha" : "384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/384cf83e9da453423dd4fb2751f220f49c8dc5fd",
+  "parents" : [ {
+    "sha" : "852225d2fa45d0b6daaaef835c9cc8db41d6c410",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/852225d2fa45d0b6daaaef835c9cc8db41d6c410",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/852225d2fa45d0b6daaaef835c9cc8db41d6c410"
+  }, {
+    "sha" : "102333a582e1ed2f4704e782dc9ad804654f9613",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/102333a582e1ed2f4704e782dc9ad804654f9613",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/102333a582e1ed2f4704e782dc9ad804654f9613"
+  } ]
+}

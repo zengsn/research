@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "wxuanguang",
+    "id" : 15140893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15140893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wxuanguang",
+    "html_url" : "https://github.com/wxuanguang",
+    "followers_url" : "https://api.github.com/users/wxuanguang/followers",
+    "following_url" : "https://api.github.com/users/wxuanguang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wxuanguang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wxuanguang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wxuanguang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wxuanguang/orgs",
+    "repos_url" : "https://api.github.com/users/wxuanguang/repos",
+    "events_url" : "https://api.github.com/users/wxuanguang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wxuanguang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 62,
+    "additions" : 62,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "wxuanguang",
+    "id" : 15140893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15140893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wxuanguang",
+    "html_url" : "https://github.com/wxuanguang",
+    "followers_url" : "https://api.github.com/users/wxuanguang/followers",
+    "following_url" : "https://api.github.com/users/wxuanguang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wxuanguang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wxuanguang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wxuanguang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wxuanguang/orgs",
+    "repos_url" : "https://api.github.com/users/wxuanguang/repos",
+    "events_url" : "https://api.github.com/users/wxuanguang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wxuanguang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/61201eb57312ef126ea3f695f0f5bc443611f718",
+  "commit" : {
+    "author" : {
+      "name" : "wxuanguang",
+      "email" : "247017271@qq.com",
+      "date" : "2016-06-16T06:01:21Z"
+    },
+    "committer" : {
+      "name" : "wxuanguang",
+      "email" : "247017271@qq.com",
+      "date" : "2016-06-16T06:01:21Z"
+    },
+    "message" : "#89 #90 #95 #165 已完成全部实验",
+    "tree" : {
+      "sha" : "a30ddc9a7de65ef2597ba0dda97a126fa343e69c",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/a30ddc9a7de65ef2597ba0dda97a126fa343e69c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/61201eb57312ef126ea3f695f0f5bc443611f718",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/61201eb57312ef126ea3f695f0f5bc443611f718/comments",
+  "files" : [ {
+    "sha" : "abae05f2f6bd01fce5fa786b608d8db5072b034d",
+    "filename" : "app/src/main/res/layout/activity_main.xml",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/61201eb57312ef126ea3f695f0f5bc443611f718/app/src/main/res/layout/activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/61201eb57312ef126ea3f695f0f5bc443611f718/app/src/main/res/layout/activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_main.xml?ref=61201eb57312ef126ea3f695f0f5bc443611f718",
+    "patch" : "@@ -0,0 +1,62 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout \n+    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:orientation=\"vertical\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.MainActivity\">\n+\n+    <Button\n+        android:id=\"@+id/button_activitybasic\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"Activity 基本用法\"/>\n+\n+    <Button\n+        android:id=\"@+id/button_viewbasic\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"View 基本用法\"/>\n+\n+    <Button\n+        android:id=\"@+id/button_fragmentdemo\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"Fragment 功能演示\"/>\n+\n+    <Button\n+        android:id=\"@+id/button_servicedemo\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"Service 功能演示\"/>\n+\n+    <Button\n+        android:id=\"@+id/button_broadcastdemo\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"Broadcast 功能演示\"/>\n+\n+    <Button\n+        android:id=\"@+id/button_contentprovidedemo\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"ContentProvider 功能演示\"/>\n+\n+    <Button\n+        android:id=\"@+id/button_viewdemo\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"各种布局及界面演示\"/>\n+\n+    <Button\n+        android:id=\"@+id/button_random\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"随机看一位同学的作业\"/>\n+\n+</LinearLayout>"
+  } ],
+  "sha" : "61201eb57312ef126ea3f695f0f5bc443611f718",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/61201eb57312ef126ea3f695f0f5bc443611f718",
+  "parents" : [ {
+    "sha" : "3fc7bfed2625f51e9f422ca75f8c8c30fa90e50d",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3fc7bfed2625f51e9f422ca75f8c8c30fa90e50d",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/3fc7bfed2625f51e9f422ca75f8c8c30fa90e50d"
+  } ]
+}

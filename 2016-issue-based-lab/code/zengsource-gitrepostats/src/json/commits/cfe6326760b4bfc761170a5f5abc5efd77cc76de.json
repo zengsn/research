@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 141,
+    "additions" : 130,
+    "deletions" : 11
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/cfe6326760b4bfc761170a5f5abc5efd77cc76de",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-26T14:59:33Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-26T14:59:33Z"
+    },
+    "message" : "Merge pull request #400 from qingtian1993/master\n\n#90 #43 lab4",
+    "tree" : {
+      "sha" : "6a49ddc2bbbccb106aca6ae6cc90bbd88f30a7c7",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/6a49ddc2bbbccb106aca6ae6cc90bbd88f30a7c7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/cfe6326760b4bfc761170a5f5abc5efd77cc76de",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/cfe6326760b4bfc761170a5f5abc5efd77cc76de/comments",
+  "files" : [ {
+    "sha" : "40fbab1a399a30de321e4401f861bbfb627d6243",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901225/Com1314080901225Activity.java",
+    "status" : "modified",
+    "additions" : 85,
+    "deletions" : 5,
+    "changes" : 90,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/cfe6326760b4bfc761170a5f5abc5efd77cc76de/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901225/Com1314080901225Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/cfe6326760b4bfc761170a5f5abc5efd77cc76de/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901225/Com1314080901225Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901225/Com1314080901225Activity.java?ref=cfe6326760b4bfc761170a5f5abc5efd77cc76de",
+    "patch" : "@@ -2,21 +2,101 @@\n \n import android.os.Bundle;\n import android.app.Activity;\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.graphics.Canvas;\n+import android.graphics.Color;\n+import android.graphics.Matrix;\n+import android.graphics.Paint;\n import android.view.Menu;\n+import android.view.MotionEvent;\n+import android.view.View;\n+import android.view.View.OnTouchListener;\n+import android.widget.ImageView;\n+import android.widget.Toast;\n \n public class Com1314080901225Activity extends Activity {\n+\tprivate ImageView iv;\n+\tprivate int startX, startY, endX, endY;\n+\tBitmap bitSrc, bitCopy;\n+\tPaint paint;\n+\tCanvas canvas;\n \n \t@Override\n \tprotected void onCreate(Bundle savedInstanceState) {\n \t\tsuper.onCreate(savedInstanceState);\n \t\tsetContentView(R.layout.activity_com1314080901225);\n+\t\tiv = (ImageView) findViewById(R.id.iv);\n+\t\tBitmap bitmap=copyBitmap();\n+\t\tiv.setImageBitmap(bitmap);\n+\t\tiv.setOnTouchListener(new OnTouchListener() {\n+\n+\t\t\t@Override\n+\t\t\tpublic boolean onTouch(View v, MotionEvent event) {\n+\t\t\t\t// TODO Auto-generated method stub\n+\t\t\t\tswitch (event.getAction()) {\n+\t\t\t\t// ��ָ����\n+\t\t\t\tcase MotionEvent.ACTION_DOWN:\n+\t\t\t\t\t// ��ȡ���µ�xy\n+\t\t\t\t\tstartX = (int) event.getX();\n+\t\t\t\t\tstartY = (int) event.getY();\n+\t\t\t\t\tbreak;\n+\n+\t\t\t\t// ��ָ����\n+\t\t\t\tcase MotionEvent.ACTION_MOVE:\n+\t\t\t\t\tendX = (int) event.getX();\n+\t\t\t\t\tendY = (int) event.getY();\n+\t\t\t\t\tcanvas.drawLine(startX, startY, endX, endY, paint);\n+\t\t\t\t\tiv.setImageBitmap(bitCopy);\n+\n+\t\t\t\t\t// �ı仭���ٴε����\n+\t\t\t\t\tstartX = endX;\n+\t\t\t\t\tstartY = endY;\n+\t\t\t\t\tbreak;\n+\n+\t\t\t\t// ��ָ�뿪\n+\t\t\t\tcase MotionEvent.ACTION_UP:\n+\n+\t\t\t\t\tbreak;\n+\n+\t\t\t\t}\n+\t\t\t\treturn true;\n+\t\t\t}\n+\t\t});\n \t}\n \n-\t@Override\n-\tpublic boolean onCreateOptionsMenu(Menu menu) {\n-\t\t// Inflate the menu; this adds items to the action bar if it is present.\n-\t\tgetMenuInflater().inflate(R.menu.com1314080901225, menu);\n-\t\treturn true;\n+\t// �����ɱ༭����\n+\tpublic Bitmap copyBitmap() {\n+\t\tbitSrc = BitmapFactory.decodeResource(getResources(), R.drawable.bg);\n+\t\tbitCopy = Bitmap.createBitmap(bitSrc.getWidth(), bitSrc.getHeight(),\n+\t\t\t\tbitSrc.getConfig());\n+\t\tpaint = new Paint();\n+\t\tcanvas = new Canvas(bitCopy);\n+\t\tcanvas.drawBitmap(bitSrc, new Matrix(), paint);\n+\t\treturn bitCopy;\n \t}\n \n+\t// ��ɫ����\n+\tpublic void red(View v) {\n+\t\tpaint.setColor(Color.RED);\n+\t\tToast.makeText(getApplicationContext(), \"��ѡ���˺�ɫ\", 0).show();\n+\t}\n+\n+\t// ��ɫ����\n+\tpublic void black(View v) {\n+\t\tpaint.setColor(Color.BLACK);\n+\t\tToast.makeText(getApplicationContext(), \"��ѡ���˺�ɫ\", 0).show();\n+\t}\n+\n+\t// ���ʼӴ�\n+\tpublic void brush(View v) {\n+\t\tpaint.setStrokeWidth(9);\n+\t\tToast.makeText(getApplicationContext(), \"���ʱ����\", 0).show();\n+\t}\n+\t\n+\t//����ͼƬ��sd��\n+\tpublic void save(View v){\n+\t\t//����ͼƬ��sd��\n+\t\t//Toast.makeText(getApplicationContext(), \"����ͼƬ\", 0).show();\n+\t}\n }"
+  }, {
+    "sha" : "f346e325e07cc55427818c434b8604bc648219b3",
+    "filename" : "app/src/main/res/layout/activity_com1314080901225.xml",
+    "status" : "modified",
+    "additions" : 45,
+    "deletions" : 6,
+    "changes" : 51,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/cfe6326760b4bfc761170a5f5abc5efd77cc76de/app/src/main/res/layout/activity_com1314080901225.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/cfe6326760b4bfc761170a5f5abc5efd77cc76de/app/src/main/res/layout/activity_com1314080901225.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901225.xml?ref=cfe6326760b4bfc761170a5f5abc5efd77cc76de",
+    "patch" : "@@ -1,18 +1,57 @@\n-<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n     android:layout_height=\"match_parent\"\n     android:paddingBottom=\"@dimen/activity_vertical_margin\"\n     android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n     android:paddingRight=\"@dimen/activity_horizontal_margin\"\n     android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\".Com1314080901225Activity\" >\n+    tools:context=\".Com1314080901225Activity\" \n+    android:orientation=\"vertical\"\n+    >\n \n     <ImageView\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\"\n+        android:id=\"@+id/iv\"\n+        android:layout_width=\"300dp\"\n+        android:layout_height=\"300dp\"\n \t\tandroid:layout_centerInParent=\"true\"\n-\t\tandroid:src=\"@drawable/c\"     \n+\t\tandroid:src=\"@drawable/bg\"     \n         />\n+    \n+    <LinearLayout \n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:orientation=\"horizontal\"\n+        android:layout_gravity=\"center\"\n+        >\n+        <Button \n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:text=\"红色\"\n+          \tandroid:onClick=\"red\"\n+            \n+            />\n+          <Button \n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:onClick=\"black\"\n+            android:text=\"黑色\"\n+            />\n+            <Button \n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:onClick=\"brush\"\n+            android:text=\"加粗\"\n+            />\n+              <Button \n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:onClick=\"save\"\n+            android:text=\"保存\"\n+            />\n+            \n+           \n+        \n+    </LinearLayout>\n \n-</RelativeLayout>\n+</LinearLayout>"
+  } ],
+  "sha" : "cfe6326760b4bfc761170a5f5abc5efd77cc76de",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/cfe6326760b4bfc761170a5f5abc5efd77cc76de",
+  "parents" : [ {
+    "sha" : "2760a7d3a30306f5a20ac6b9dcad66f639118933",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2760a7d3a30306f5a20ac6b9dcad66f639118933",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/2760a7d3a30306f5a20ac6b9dcad66f639118933"
+  }, {
+    "sha" : "93d0aa5cde50a699e12f3807429ae6b99b794183",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/93d0aa5cde50a699e12f3807429ae6b99b794183",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/93d0aa5cde50a699e12f3807429ae6b99b794183"
+  } ]
+}

@@ -1,0 +1,110 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 178,
+    "additions" : 167,
+    "deletions" : 11
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/51bacfc4a6f10b46469cf85710d34e3709e5f93d",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-11T00:26:30Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-11T00:26:30Z"
+    },
+    "message" : "Merge pull request #682 from linjiejie/master\n\n#2 #3 #4 #680 实验2 实验3 实验4",
+    "tree" : {
+      "sha" : "dc892c0223f89de03530094946a7b8ffa6d7715f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/dc892c0223f89de03530094946a7b8ffa6d7715f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/51bacfc4a6f10b46469cf85710d34e3709e5f93d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/51bacfc4a6f10b46469cf85710d34e3709e5f93d/comments",
+  "files" : [ {
+    "sha" : "155b70379f468a214f137ec782348eb92b0f5706",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903123/Net1314080903123Activity.java",
+    "status" : "modified",
+    "additions" : 61,
+    "deletions" : 11,
+    "changes" : 72,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51bacfc4a6f10b46469cf85710d34e3709e5f93d/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903123/Net1314080903123Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51bacfc4a6f10b46469cf85710d34e3709e5f93d/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903123/Net1314080903123Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903123/Net1314080903123Activity.java?ref=51bacfc4a6f10b46469cf85710d34e3709e5f93d",
+    "patch" : "@@ -1,15 +1,65 @@\n-package edu.hzuapps.androidworks.homeworks.net1314080903123;\n+package net1314080903123.homeworks.androidworks.hzuapps.edu.net1314080903123;\n \n-import org.junit.Test;\n+import android.os.Bundle;\n+import android.app.Activity;\n+import android.view.Menu;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.RadioButton;\n+import android.widget.TextView;\n \n-import static org.junit.Assert.*;\n+public class Net1314080903123Activity extends Activity implements OnClickListener {\n+    TextView dollars;\n+    TextView eros;\n+    RadioButton dtoe;\n+    RadioButton etod;\n+    Button convert;\n+    @Override\n+    protected void onCreate(Bundle icicle) {\n+        super.onCreate(icicle);\n+        setContentView(R.layout.activity_net1314080903123);\n+        dollars = (TextView)this.findViewById(R.id.dollars);\n+        eros = (TextView)this.findViewById(R.id.Eros);\n \n-/**\n- * To work on unit tests, switch the Test Artifact in the Build Variants view.\n- */\n-public class Net1314080903123Activity {\n-    @Test\n-    public void addition_isCorrect() throws Exception {\n-        assertEquals(4, 2 + 2);\n+        dtoe = (RadioButton)this.findViewById(R.id.dtoe);\n+        dtoe.setChecked(true);\n+        etod = (RadioButton)this.findViewById(R.id.etod);\n+\n+        convert = (Button)this.findViewById(R.id.convert);\n+        convert.setOnClickListener(this);\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_net1314080903123, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public void onClick(View v) {\n+        // TODO Auto-generated method stub\n+        if (dtoe.isChecked()) {\n+            convertDollarsToEuros();\n+        }\n+        if (etod.isChecked()) {\n+            convertEurosToDollars();\n+        }\n     }\n-}\n\\ No newline at end of file\n+\n+    private void convertEurosToDollars() {\n+        // TODO Auto-generated method stub\n+        double val = Double.parseDouble(eros.getText().toString());\n+        // in a real app, we'd get this off the 'net\n+        dollars.setText(Double.toString(val / 0.67));\n+    }\n+\n+    private void convertDollarsToEuros() {\n+        // TODO Auto-generated method stub\n+        double val = Double.parseDouble(dollars.getText().toString());\n+        // in a real app, we'd get this off the 'net\n+        eros.setText(Double.toString(val*0.67));\n+    }\n+\n+}"
+  }, {
+    "sha" : "4f80f009b8db247b95f56daf0ece8c541dd7e447",
+    "filename" : "app/src/main/res/drawable/huilv.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51bacfc4a6f10b46469cf85710d34e3709e5f93d/app/src/main/res/drawable/huilv.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51bacfc4a6f10b46469cf85710d34e3709e5f93d/app/src/main/res/drawable/huilv.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/huilv.png?ref=51bacfc4a6f10b46469cf85710d34e3709e5f93d"
+  }, {
+    "sha" : "1211a0d7dd9da0313f86e81343e1bf0def60cd84",
+    "filename" : "app/src/main/res/layout/activity_net1314080903123.xml",
+    "status" : "added",
+    "additions" : 106,
+    "deletions" : 0,
+    "changes" : 106,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51bacfc4a6f10b46469cf85710d34e3709e5f93d/app/src/main/res/layout/activity_net1314080903123.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51bacfc4a6f10b46469cf85710d34e3709e5f93d/app/src/main/res/layout/activity_net1314080903123.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903123.xml?ref=51bacfc4a6f10b46469cf85710d34e3709e5f93d",
+    "patch" : "@@ -0,0 +1,106 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<android.support.design.widget.CoordinatorLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:fitsSystemWindows=\"true\"\n+    tools:context=\".Net1314080903123Activity\">\n+\n+    <RelativeLayout\n+        android:id=\"@+id/widget32\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"fill_parent\"\n+        xmlns:android=\"http://schemas.android.com/apk/res/android\">\n+\n+        <LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\n+\n+            android:id=\"@+id/widget33\"\n+            android:layout_width=\"fill_parent\"\n+            android:layout_height=\"fill_parent\"\n+            android:layout_alignParentTop=\"true\"\n+            android:layout_centerHorizontal=\"true\"\n+            android:orientation=\"vertical\"\n+            android:background=\"@drawable/huilv\"\n+            >\n+\n+            <TextView\n+\n+                android:id=\"@+id/widget34\"\n+                android:layout_width=\"wrap_content\"\n+                android:layout_height=\"wrap_content\"\n+                android:text=\"美元\"\n+                android:textStyle=\"bold\"\n+                android:layout_gravity=\"center_horizontal\"\n+                android:textColor=\"#030303\"/>\n+\n+            <EditText\n+                android:id=\"@+id/dollars\"\n+                android:layout_width=\"160dp\"\n+                android:layout_height=\"wrap_content\"\n+                android:textSize=\"18sp\"\n+                android:layout_gravity=\"center_horizontal\"\n+                android:textColor=\"#030303\">\n+\n+                <requestFocus />\n+            </EditText>\n+\n+            <TextView\n+                android:id=\"@+id/widget36\"\n+                android:layout_width=\"wrap_content\"\n+                android:layout_height=\"wrap_content\"\n+                android:text=\"欧元\"\n+                android:textStyle=\"bold\"\n+                android:layout_gravity=\"center_horizontal\"\n+                android:textColor=\"#030303\"/>\n+\n+            <EditText\n+                android:id=\"@+id/Eros\"\n+                android:layout_width=\"160dp\"\n+                android:layout_height=\"wrap_content\"\n+                android:textSize=\"18sp\"\n+                android:layout_gravity=\"center_horizontal\"\n+                android:textColor=\"#030303\"/>\n+\n+            <RadioGroup\n+                android:id=\"@+id/widget39\"\n+                android:layout_width=\"160dp\"\n+                android:layout_height=\"84dp\"\n+                android:layout_gravity=\"center_horizontal\"\n+                android:textColor=\"#030303\">\n+\n+                <RadioButton\n+                    android:id=\"@+id/dtoe\"\n+                    android:layout_width=\"143dp\"\n+                    android:layout_height=\"41dp\"\n+                    android:text=\"美元 转 欧元\"\n+                    android:layout_gravity=\"center_horizontal\"\n+                    android:textColor=\"#030303\"/>\n+\n+                <RadioButton\n+                    android:id=\"@+id/etod\"\n+                    android:layout_width=\"142dp\"\n+                    android:layout_height=\"wrap_content\"\n+                    android:text=\"欧元 转 美元\"\n+                    android:layout_gravity=\"center_horizontal\"\n+                    android:textColor=\"#030303\"/>\n+            </RadioGroup>\n+\n+            <Button\n+                android:id=\"@+id/convert\"\n+                android:layout_width=\"wrap_content\"\n+                android:layout_height=\"wrap_content\"\n+                android:layout_alignRight=\"@+id/widget33\"\n+                android:layout_below=\"@+id/widget33\"\n+                android:layout_marginTop=\"20dp\"\n+                android:text=\"转换\"\n+                android:layout_gravity=\"center_horizontal\"\n+                android:textColor=\"#030303\"/>\n+        </LinearLayout>\n+\n+\n+\n+    </RelativeLayout>\n+\n+    </android.support.design.widget.CoordinatorLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "51bacfc4a6f10b46469cf85710d34e3709e5f93d",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/51bacfc4a6f10b46469cf85710d34e3709e5f93d",
+  "parents" : [ {
+    "sha" : "4be32d860d4d9a9a6211907b17bd5f3cea81c938",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4be32d860d4d9a9a6211907b17bd5f3cea81c938",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/4be32d860d4d9a9a6211907b17bd5f3cea81c938"
+  }, {
+    "sha" : "e675cf224ee50e4478d30df3bb40d9de9304aa82",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e675cf224ee50e4478d30df3bb40d9de9304aa82",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/e675cf224ee50e4478d30df3bb40d9de9304aa82"
+  } ]
+}

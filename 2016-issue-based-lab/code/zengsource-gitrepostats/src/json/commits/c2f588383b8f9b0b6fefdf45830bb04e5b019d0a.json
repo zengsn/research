@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "JPCat",
+    "id" : 14892029,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14892029?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/JPCat",
+    "html_url" : "https://github.com/JPCat",
+    "followers_url" : "https://api.github.com/users/JPCat/followers",
+    "following_url" : "https://api.github.com/users/JPCat/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/JPCat/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/JPCat/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/JPCat/subscriptions",
+    "organizations_url" : "https://api.github.com/users/JPCat/orgs",
+    "repos_url" : "https://api.github.com/users/JPCat/repos",
+    "events_url" : "https://api.github.com/users/JPCat/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/JPCat/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 334,
+    "additions" : 295,
+    "deletions" : 39
+  },
+  "author" : {
+    "login" : "JPCat",
+    "id" : 14892029,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14892029?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/JPCat",
+    "html_url" : "https://github.com/JPCat",
+    "followers_url" : "https://api.github.com/users/JPCat/followers",
+    "following_url" : "https://api.github.com/users/JPCat/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/JPCat/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/JPCat/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/JPCat/subscriptions",
+    "organizations_url" : "https://api.github.com/users/JPCat/orgs",
+    "repos_url" : "https://api.github.com/users/JPCat/repos",
+    "events_url" : "https://api.github.com/users/JPCat/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/JPCat/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/c2f588383b8f9b0b6fefdf45830bb04e5b019d0a",
+  "commit" : {
+    "author" : {
+      "name" : "JPCat",
+      "email" : "chen751362655@qq.com",
+      "date" : "2016-05-24T07:42:47Z"
+    },
+    "committer" : {
+      "name" : "JPCat",
+      "email" : "chen751362655@qq.com",
+      "date" : "2016-05-24T07:42:47Z"
+    },
+    "message" : "#90 #102 实验四-包括整体布局的xml和界面操作控制代码",
+    "tree" : {
+      "sha" : "d26544dcb2241b72996b6692d50e1171005238e1",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/d26544dcb2241b72996b6692d50e1171005238e1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/c2f588383b8f9b0b6fefdf45830bb04e5b019d0a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c2f588383b8f9b0b6fefdf45830bb04e5b019d0a/comments",
+  "files" : [ {
+    "sha" : "290d25fbd3d6a4fa6e57a24232d34b5620126f4b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901204/Com1314080901204Activity.java",
+    "status" : "modified",
+    "additions" : 261,
+    "deletions" : 28,
+    "changes" : 289,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c2f588383b8f9b0b6fefdf45830bb04e5b019d0a/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901204/Com1314080901204Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c2f588383b8f9b0b6fefdf45830bb04e5b019d0a/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901204/Com1314080901204Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901204/Com1314080901204Activity.java?ref=c2f588383b8f9b0b6fefdf45830bb04e5b019d0a",
+    "patch" : "@@ -1,36 +1,269 @@\n-package com.example.com1314080901204;\n+package com.example.Com1314080901204Activity;\n+\n+import java.util.Timer;\n+import java.util.TimerTask;\n \n import android.app.Activity;\n+import android.app.AlertDialog;\n+import android.content.DialogInterface;\n+import android.media.AudioManager;\n+import android.media.SoundPool;\n import android.os.Bundle;\n-import android.view.Menu;\n-import android.view.MenuItem;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.view.MotionEvent;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.TextView;\n \n+import com.example.link2link.board.GameService;\n+import com.example.link2link.board.impl.GameServiceImpl;\n+import com.example.link2link.object.GameConf;\n+import com.example.link2link.object.LinkInfo;\n+import com.example.link2link.view.GameView;\n+import com.example.link2link.view.Piece;\n \n public class Com1314080901204Activity extends Activity {\n \n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_main);\n-    }\n-\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.main, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-        if (id == R.id.action_settings) {\n-            return true;\n-        }\n-        return super.onOptionsItemSelected(item);\n-    }\n+\t// 游戏配置对象\n+\tprivate GameConf config;\n+\t// 游戏业务逻辑接口\n+\tprivate GameService gameService;\n+\t// 游戏界面\n+\tprivate GameView gameView;\n+\t// 开始按钮\n+\tprivate Button startButton;\n+\t// 记录剩余时间的TextView\n+\tprivate TextView timeTextView;\n+\t// 失败后弹出的对话框\n+\tprivate AlertDialog.Builder lostDialog;\n+\t// 游戏胜利后的对话框\n+\tprivate AlertDialog.Builder successDialog;\n+\t// 定时器\n+\tprivate Timer timer = new Timer();\n+\t// 记录游戏的剩余时间\n+\tprivate int gameTime;\n+\t// 记录是否处于游戏状态\n+\tprivate boolean isPlaying;\n+\t// 播放音效\n+\tSoundPool soundPool = new SoundPool(2, AudioManager.STREAM_SYSTEM, 8);\n+\tint dis;\n+\t// 记录已经选中的方块\n+\tprivate Piece selected = null;\n+\tprivate Handler handler = new Handler() {\n+\t\tpublic void handleMessage(Message msg) {\n+\t\t\tswitch (msg.what) {\n+\t\t\tcase 0x123:\n+\t\t\t\ttimeTextView.setText(\"剩余时间： \" + gameTime);\n+\t\t\t\tgameTime--;\n+\t\t\t\t// 时间小于0, 游戏失败\n+\t\t\t\tif (gameTime < 0) {\n+\t\t\t\t\tstopTimer();\n+\t\t\t\t\t// 更改游戏的状态\n+\t\t\t\t\tisPlaying = false;\n+\t\t\t\t\tlostDialog.show();\n+\t\t\t\t\treturn;\n+\t\t\t\t}\n+\t\t\t\tbreak;\n+\t\t\t}\n+\t\t}\n+\t};\n+\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_main);\n+\t\t// 初始化界面\n+\t\tinit();\n+\t}\n+\n+\t// 初始化游戏的方法\n+\tprivate void init() {\n+\t\tconfig = new GameConf(8, 9, 2, 10, 100000, this);\n+\t\t// 得到游戏区域对象\n+\t\tgameView = (GameView) findViewById(R.id.gameView);\n+\t\t// 获取显示剩余时间的文本框\n+\t\ttimeTextView = (TextView) findViewById(R.id.timeText);\n+\t\t// 获取开始按钮\n+\t\tstartButton = (Button) this.findViewById(R.id.startButton);\n+\t\t// 初始化音效\n+\t\tdis = soundPool.load(this, R.raw.dis, 1);\n+\t\tgameService = new GameServiceImpl(this.config);\n+\t\tgameView.setGameService(gameService);\n+\t\t// 为开始按钮的单击事件绑定事件监听器\n+\t\tstartButton.setOnClickListener(new View.OnClickListener() {\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View source) {\n+\t\t\t\tstartGame(GameConf.DEFAULT_TIME);\n+\t\t\t}\n+\t\t});\n+\t\t// 为游戏区域的触碰事件绑定监听器\n+\t\tthis.gameView.setOnTouchListener(new View.OnTouchListener() {\n+\t\t\tpublic boolean onTouch(View view, MotionEvent e) {\n+\t\t\t\tif (!isPlaying) {\n+\t\t\t\t\treturn false;\n+\t\t\t\t}\n+\t\t\t\tif (e.getAction() == MotionEvent.ACTION_DOWN) {\n+\t\t\t\t\tgameViewTouchDown(e);\n+\t\t\t\t}\n+\t\t\t\tif (e.getAction() == MotionEvent.ACTION_UP) {\n+\t\t\t\t\tgameViewTouchUp(e);\n+\t\t\t\t}\n+\t\t\t\treturn true;\n+\t\t\t}\n+\t\t});\n+\t\t// 初始化游戏失败的对话框\n+\t\tlostDialog = createDialog(\"Lost\", \"游戏失败！ 重新开始\", R.drawable.lost)\n+\t\t\t\t.setPositiveButton(\"确定\", new DialogInterface.OnClickListener() {\n+\t\t\t\t\tpublic void onClick(DialogInterface dialog, int which) {\n+\t\t\t\t\t\tstartGame(GameConf.DEFAULT_TIME);\n+\t\t\t\t\t}\n+\t\t\t\t});\n+\t\t// 初始化游戏胜利的对话框\n+\t\tsuccessDialog = createDialog(\"Success\", \"游戏胜利！ 重新开始\",\n+\t\t\t\tR.drawable.success).setPositiveButton(\"确定\",\n+\t\t\t\tnew DialogInterface.OnClickListener() {\n+\t\t\t\t\tpublic void onClick(DialogInterface dialog, int which) {\n+\t\t\t\t\t\tstartGame(GameConf.DEFAULT_TIME);\n+\t\t\t\t\t}\n+\t\t\t\t});\n+\t}\n+\n+\t@Override\n+\tprotected void onPause() {\n+\t\t// 暂停游戏\n+\t\tstopTimer();\n+\t\tsuper.onPause();\n+\t}\n+\n+\t@Override\n+\tprotected void onResume() {\n+\t\t// 如果处于游戏状态中\n+\t\tif (isPlaying) {\n+\t\t\t// 以剩余时间重写开始游戏\n+\t\t\tstartGame(gameTime);\n+\t\t}\n+\t\tsuper.onResume();\n+\t}\n+\n+\t// 触碰游戏区域的处理方法\n+\tprivate void gameViewTouchDown(MotionEvent event) {\n+\t\t// 获取GameServiceImpl中的Piece[][]数组\n+\t\tPiece[][] pieces = gameService.getPieces();\n+\t\t// 获取用户点击的x座标\n+\t\tfloat touchX = event.getX();\n+\t\t// 获取用户点击的y座标\n+\t\tfloat touchY = event.getY();\n+\t\t// 根据用户触碰的座标得到对应的Piece对象\n+\t\tPiece currentPiece = gameService.findPiece(touchX, touchY);\n+\t\t// 如果没有选中任何Piece对象(即鼠标点击的地方没有图片), 不再往下执行\n+\t\tif (currentPiece == null)\n+\t\t\treturn;\n+\t\t// 将gameView中的选中方块设为当前方块\n+\t\tthis.gameView.setSelectedPiece(currentPiece);\n+\t\t// 表示之前没有选中任何一个Piece\n+\t\tif (this.selected == null) {\n+\t\t\t// 将当前方块设为已选中的方块, 重新将GamePanel绘制, 并不再往下执行\n+\t\t\tthis.selected = currentPiece;\n+\t\t\tthis.gameView.postInvalidate();\n+\t\t\treturn;\n+\t\t}\n+\t\t// 表示之前已经选择了一个\n+\t\tif (this.selected != null) {\n+\t\t\t// 在这里就要对currentPiece和prePiece进行判断并进行连接\n+\t\t\tLinkInfo linkInfo = this.gameService.link(this.selected,\n+\t\t\t\t\tcurrentPiece); // ③\n+\t\t\t// 两个Piece不可连, linkInfo为null\n+\t\t\tif (linkInfo == null) {\n+\t\t\t\t// 如果连接不成功, 将当前方块设为选中方块\n+\t\t\t\tthis.selected = currentPiece;\n+\t\t\t\tthis.gameView.postInvalidate();\n+\t\t\t} else {\n+\t\t\t\t// 处理成功连接\n+\t\t\t\thandleSuccessLink(linkInfo, this.selected, currentPiece, pieces);\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\t// 触碰游戏区域的处理方法\n+\tprivate void gameViewTouchUp(MotionEvent e) {\n+\t\tthis.gameView.postInvalidate();\n+\t}\n+\n+\t// 以gameTime作为剩余时间开始或恢复游戏\n+\tprivate void startGame(int gameTime) {\n+\t\t// 如果之前的timer还未取消，取消timer\n+\t\tif (this.timer != null) {\n+\t\t\tstopTimer();\n+\t\t}\n+\t\t// 重新设置游戏时间\n+\t\tthis.gameTime = gameTime;\n+\t\t// 如果游戏剩余时间与总游戏时间相等，即为重新开始新游戏\n+\t\tif (gameTime == GameConf.DEFAULT_TIME) {\n+\t\t\t// 开始新的游戏游戏\n+\t\t\tgameView.startGame();\n+\t\t}\n+\t\tisPlaying = true;\n+\t\tthis.timer = new Timer();\n+\t\t// 启动计时器 ， 每隔1秒发送一次消息\n+\t\tthis.timer.schedule(new TimerTask() {\n+\t\t\tpublic void run() {\n+\t\t\t\thandler.sendEmptyMessage(0x123);\n+\t\t\t}\n+\t\t}, 0, 1000);\n+\t\t// 将选中方块设为null。\n+\t\tthis.selected = null;\n+\t}\n+\n+\t/**\n+\t * 成功连接后处理\n+\t * \n+\t * @param linkInfo\n+\t *            连接信息\n+\t * @param prePiece\n+\t *            前一个选中方块\n+\t * @param currentPiece\n+\t *            当前选择方块\n+\t * @param pieces\n+\t *            系统中还剩的全部方块\n+\t */\n+\tprivate void handleSuccessLink(LinkInfo linkInfo, Piece prePiece,\n+\t\t\tPiece currentPiece, Piece[][] pieces) {\n+\t\t// 它们可以相连, 让GamePanel处理LinkInfo\n+\t\tthis.gameView.setLinkInfo(linkInfo);\n+\t\t// 将gameView中的选中方块设为null\n+\t\tthis.gameView.setSelectedPiece(null);\n+\t\tthis.gameView.postInvalidate();\n+\t\t// 将两个Piece对象从数组中删除\n+\t\tpieces[prePiece.getIndexX()][prePiece.getIndexY()] = null;\n+\t\tpieces[currentPiece.getIndexX()][currentPiece.getIndexY()] = null;\n+\t\t// 将选中的方块设置null。\n+\t\tthis.selected = null;\n+\t\t// 播放音效\n+\t\tsoundPool.play(dis, 1, 1, 0, 0, 1);\n+\t\t// 判断是否还有剩下的方块, 如果没有, 游戏胜利\n+\t\tif (!this.gameService.hasPieces()) {\n+\t\t\t// 游戏胜利\n+\t\t\tthis.successDialog.show();\n+\t\t\t// 停止定时器\n+\t\t\tstopTimer();\n+\t\t\t// 更改游戏状态\n+\t\t\tisPlaying = false;\n+\t\t}\n+\t}\n+\n+\t// 创建对话框的工具方法\n+\tprivate AlertDialog.Builder createDialog(String title, String message,\n+\t\t\tint imageResource) {\n+\t\treturn new AlertDialog.Builder(this).setTitle(title)\n+\t\t\t\t.setMessage(message).setIcon(imageResource);\n+\t}\n+\n+\tprivate void stopTimer() {\n+\t\t// 停止定时器\n+\t\tthis.timer.cancel();\n+\t\tthis.timer = null;\n+\t}\n+\n }\n+"
+  }, {
+    "sha" : "17e22007dbfec733593411d012a5bec591892625",
+    "filename" : "app/src/main/res/layout/activity_com1314080901204.xml",
+    "status" : "modified",
+    "additions" : 34,
+    "deletions" : 11,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c2f588383b8f9b0b6fefdf45830bb04e5b019d0a/app/src/main/res/layout/activity_com1314080901204.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c2f588383b8f9b0b6fefdf45830bb04e5b019d0a/app/src/main/res/layout/activity_com1314080901204.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901204.xml?ref=c2f588383b8f9b0b6fefdf45830bb04e5b019d0a",
+    "patch" : "@@ -2,15 +2,38 @@\n     xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n     android:layout_height=\"match_parent\"\n-  \tandroid:background=\"@drawable/Com1314080901204bg\"\n-    tools:context=\"com.example.com1314080901204.Com1314080901204Activity\" >\n+    android:background=\"@drawable/bg\" >\n \n-   <ImageView\n-       android:id=\"@+id/sun\"\n-       android:layout_width=\"50dp\"\n-       android:layout_height=\"50dp\"\n-       android:layout_centerHorizontal=\"true\"\n-       android:layout_centerVertical=\"true\"\n-       android:src=\"@drawable/Com1314080901204sun\" />\n-   \n-</RelativeLayout>\n+    <!-- �������� -->\n+    <com.example.link2link.view.GameView\n+        android:id=\"@+id/gameView\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\" />\n+\t\n+    <!-- ��ʼ��ť����ʾʣ��ʱ�䲼�� -->\n+    <LinearLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:background=\"#1e72bb\"\n+        android:gravity=\"center\"\n+        android:orientation=\"horizontal\" >\n+\n+        <Button\n+            android:id=\"@+id/startButton\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:background=\"@drawable/button_selector\" />\n+\n+        <TextView\n+            android:id=\"@+id/timeText\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:gravity=\"center\"\n+            android:textColor=\"#ff9\"\n+            android:textSize=\"20dp\"\n+            android:width=\"150dp\" />\n+\n+    </LinearLayout>\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "c2f588383b8f9b0b6fefdf45830bb04e5b019d0a",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c2f588383b8f9b0b6fefdf45830bb04e5b019d0a",
+  "parents" : [ {
+    "sha" : "bee9eb892afb44233be561dd0dd70ffbe999f727",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/bee9eb892afb44233be561dd0dd70ffbe999f727",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/bee9eb892afb44233be561dd0dd70ffbe999f727"
+  } ]
+}

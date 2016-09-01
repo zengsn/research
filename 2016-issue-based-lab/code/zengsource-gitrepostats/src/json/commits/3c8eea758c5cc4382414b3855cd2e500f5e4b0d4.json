@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "zyz1995",
+    "id" : 18563460,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18563460?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zyz1995",
+    "html_url" : "https://github.com/zyz1995",
+    "followers_url" : "https://api.github.com/users/zyz1995/followers",
+    "following_url" : "https://api.github.com/users/zyz1995/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zyz1995/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zyz1995/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zyz1995/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zyz1995/orgs",
+    "repos_url" : "https://api.github.com/users/zyz1995/repos",
+    "events_url" : "https://api.github.com/users/zyz1995/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zyz1995/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 157,
+    "additions" : 152,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "zyz1995",
+    "id" : 18563460,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18563460?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zyz1995",
+    "html_url" : "https://github.com/zyz1995",
+    "followers_url" : "https://api.github.com/users/zyz1995/followers",
+    "following_url" : "https://api.github.com/users/zyz1995/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zyz1995/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zyz1995/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zyz1995/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zyz1995/orgs",
+    "repos_url" : "https://api.github.com/users/zyz1995/repos",
+    "events_url" : "https://api.github.com/users/zyz1995/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zyz1995/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/3c8eea758c5cc4382414b3855cd2e500f5e4b0d4",
+  "commit" : {
+    "author" : {
+      "name" : "zyz1995",
+      "email" : "625757518@qq.com",
+      "date" : "2016-06-07T15:11:49Z"
+    },
+    "committer" : {
+      "name" : "zyz1995",
+      "email" : "625757518@qq.com",
+      "date" : "2016-06-07T15:11:49Z"
+    },
+    "message" : "#362",
+    "tree" : {
+      "sha" : "fd9f92c5b47de7b7ee3ba0072099ff42e03f167e",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/fd9f92c5b47de7b7ee3ba0072099ff42e03f167e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/3c8eea758c5cc4382414b3855cd2e500f5e4b0d4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3c8eea758c5cc4382414b3855cd2e500f5e4b0d4/comments",
+  "files" : [ {
+    "sha" : "58547b120df187c1a8abbeced3a637801fdf6634",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903147/Net1314080903147Activity.java",
+    "status" : "modified",
+    "additions" : 136,
+    "deletions" : 5,
+    "changes" : 141,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/3c8eea758c5cc4382414b3855cd2e500f5e4b0d4/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903147/Net1314080903147Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/3c8eea758c5cc4382414b3855cd2e500f5e4b0d4/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903147/Net1314080903147Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903147/Net1314080903147Activity.java?ref=3c8eea758c5cc4382414b3855cd2e500f5e4b0d4",
+    "patch" : "@@ -1,16 +1,147 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903147;\n \n-import android.support.v7.app.AppCompatActivity;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import android.app.Activity;\n import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.util.Log;\n+import android.view.View;\n+import android.view.animation.Animation;\n+import android.view.animation.AnimationSet;\n+import android.view.animation.RotateAnimation;\n+import android.widget.Button;\n+import android.widget.ImageView;\n+import android.widget.TextView;\n \n-import com.example.administrator.myapplication.R;\n+public class Net1314080903147Activity extends Activity {\n+    private String url = \"http://c5.97you.net/download/mac%E7%89%88Adobe_11@22415.exe\";\n \n-public class Net1314080903147Activity extends AppCompatActivity {\n+    byte[] imageData = null;\n+    Button b;\n+    Net1314080903147NetWorkSpeedInfo net1314080903147NetWorkSpeedInfo = null;\n+    private final int UPDATE_SPEED = 1;// 进行中\n+    private final int UPDATE_DNOE = 0;// 完成下载\n+    private ImageView imageView;\n+    private long begin = 0;\n+    private Button startButton;\n+    private TextView connectionType, nowSpeed, avageSpeed;\n+    long tem = 0;\n+    long falg = 0;\n+    long numberTotal = 0;\n+    List<Long> list = new ArrayList<Long>();\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n+        // TODO Auto-generated method stub\n         super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_net1314080903147);\n-        setTitle(\"\");\n+        setContentView(R.layout.net1314080903147_equipment);\n+        imageView = (ImageView) findViewById(R.id.iv_needle);\n+        startButton = (Button) findViewById(R.id.start_button);\n+        connectionType = (TextView) findViewById(R.id.connection_type);\n+        nowSpeed = (TextView) findViewById(R.id.now_speed);\n+        avageSpeed = (TextView) findViewById(R.id.average_speed);\n+        net1314080903147NetWorkSpeedInfo = new Net1314080903147NetWorkSpeedInfo();\n+\n+        startButton.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View arg0) {\n+\n+                list.clear();\n+                tem = 0;\n+                falg = 0;\n+                numberTotal = 0;\n+\n+                new Thread() {\n+                    @Override\n+                    public void run() {\n+                        Log.i(\"开始\", \"**********开始  Net1314080903147_ReadFile*******\");\n+                        imageData = Net1314080903147_ReadFile.getFileFromUrl(url, net1314080903147NetWorkSpeedInfo);\n+                    }\n+                }.start();\n+\n+                new Thread() {\n+                    @Override\n+                    public void run() {\n+                        Log.i(\"开始\", \"**********开始  netWorkSpeedInfo1*******\");\n+                        while (net1314080903147NetWorkSpeedInfo.hadFinishedBytes < net1314080903147NetWorkSpeedInfo.totalBytes) {\n+                            try {\n+                                sleep(1000);\n+                            } catch (InterruptedException e) {\n+                                e.printStackTrace();\n+                            }\n+                            handler.sendEmptyMessage(UPDATE_SPEED);\n+                        }\n+                        if (net1314080903147NetWorkSpeedInfo.hadFinishedBytes == net1314080903147NetWorkSpeedInfo.totalBytes) {\n+                            handler.sendEmptyMessage(UPDATE_SPEED);\n+                            net1314080903147NetWorkSpeedInfo.hadFinishedBytes = 0;\n+                        }\n+\n+                    }\n+                }.start();\n+            }\n+        });\n+    }\n+\n+    protected void startAnimation(double d) {\n+        AnimationSet animationSet = new AnimationSet(true);\n+        /**\n+         * 前两个参数定义旋转的起始和结束的度数，后两个参数定义圆心的位置\n+         */\n+        // Random random = new Random();\n+        int end = getDuShu(d);\n+\n+        Log.i(\"\", \"********************begin:\" + begin + \"***end:\" + end);\n+        RotateAnimation rotateAnimation = new RotateAnimation(begin, end, Animation.RELATIVE_TO_SELF, 1f, Animation.RELATIVE_TO_SELF, 1f);\n+        rotateAnimation.setDuration(1000);\n+        animationSet.addAnimation(rotateAnimation);\n+        imageView.startAnimation(animationSet);\n+        begin = end;\n+    }\n+\n+    public int getDuShu(double number) {\n+        double a = 0;\n+        if (number >= 0 && number <= 512) {\n+            a = number / 128 * 15;\n+        } else if (number > 512 && number <= 1024) {\n+            a = number / 256 * 15 + 30;\n+        } else if (number > 1024 && number <= 10 * 1024) {\n+            a = number / 512 * 5 + 80;\n+        } else {\n+            a = 180;\n+        }\n+        return (int) a;\n     }\n+\n+    private Handler handler = new Handler() {\n+        long tem = 0;\n+        long falg = 0;\n+        long numberTotal = 0;\n+        List<Long> list = new ArrayList<Long>();\n+\n+        @Override\n+        public void handleMessage(Message msg) {\n+            int value = msg.what;\n+            switch (value) {\n+                case UPDATE_SPEED:\n+                    tem = net1314080903147NetWorkSpeedInfo.speed / 1024;\n+                    list.add(tem);\n+                    Log.i(\"a\", \"tem****\" + tem);\n+                    for (Long numberLong : list) {\n+                        numberTotal += numberLong;\n+                    }\n+                    falg = numberTotal / list.size();\n+                    numberTotal = 0;\n+                    nowSpeed.setText(tem + \"kb/s\");\n+                    avageSpeed.setText(falg + \"kb/s\");\n+                    startAnimation(Double.parseDouble(tem+\"\"));\n+                    break;\n+                default:\n+                    break;\n+            }\n+        }\n+    };\n+\n }"
+  }, {
+    "sha" : "428079c1f0701dbc665445a22c01ff005885e5bb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903147/Net1314080903147NetWorkSpeedInfo.java",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/3c8eea758c5cc4382414b3855cd2e500f5e4b0d4/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903147/Net1314080903147NetWorkSpeedInfo.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/3c8eea758c5cc4382414b3855cd2e500f5e4b0d4/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903147/Net1314080903147NetWorkSpeedInfo.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903147/Net1314080903147NetWorkSpeedInfo.java?ref=3c8eea758c5cc4382414b3855cd2e500f5e4b0d4",
+    "patch" : "@@ -0,0 +1,16 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903147;\n+\n+public class Net1314080903147NetWorkSpeedInfo {\n+\t/** Network speed */\n+\tpublic long speed = 0;\n+\t/** Had finished bytes */\n+\tpublic long hadFinishedBytes = 0;\n+\t/** Total bytes of a file, default is 1024 bytes,1K */\n+\tpublic long totalBytes = 1024;\n+\n+\t/** The net work type, 3G or GSM and so on */\n+\tpublic int networkType = 0;\n+\n+\t/** Down load the file percent 0----100 */\n+\tpublic int downloadPercent = 0;\n+}"
+  } ],
+  "sha" : "3c8eea758c5cc4382414b3855cd2e500f5e4b0d4",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3c8eea758c5cc4382414b3855cd2e500f5e4b0d4",
+  "parents" : [ {
+    "sha" : "3d54a55fb0d6d8b89dd41fbd00c534456e79c6d1",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3d54a55fb0d6d8b89dd41fbd00c534456e79c6d1",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/3d54a55fb0d6d8b89dd41fbd00c534456e79c6d1"
+  } ]
+}

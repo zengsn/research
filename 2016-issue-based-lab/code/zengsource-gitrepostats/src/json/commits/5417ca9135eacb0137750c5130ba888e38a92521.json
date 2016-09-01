@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "chensongkui",
+    "id" : 15098181,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098181?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chensongkui",
+    "html_url" : "https://github.com/chensongkui",
+    "followers_url" : "https://api.github.com/users/chensongkui/followers",
+    "following_url" : "https://api.github.com/users/chensongkui/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chensongkui/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chensongkui/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chensongkui/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chensongkui/orgs",
+    "repos_url" : "https://api.github.com/users/chensongkui/repos",
+    "events_url" : "https://api.github.com/users/chensongkui/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chensongkui/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 12,
+    "additions" : 6,
+    "deletions" : 6
+  },
+  "author" : {
+    "login" : "chensongkui",
+    "id" : 15098181,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098181?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chensongkui",
+    "html_url" : "https://github.com/chensongkui",
+    "followers_url" : "https://api.github.com/users/chensongkui/followers",
+    "following_url" : "https://api.github.com/users/chensongkui/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chensongkui/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chensongkui/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chensongkui/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chensongkui/orgs",
+    "repos_url" : "https://api.github.com/users/chensongkui/repos",
+    "events_url" : "https://api.github.com/users/chensongkui/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chensongkui/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/5417ca9135eacb0137750c5130ba888e38a92521",
+  "commit" : {
+    "author" : {
+      "name" : "chensongkui",
+      "email" : "625246330@qq.com",
+      "date" : "2016-06-15T16:19:53Z"
+    },
+    "committer" : {
+      "name" : "chensongkui",
+      "email" : "625246330@qq.com",
+      "date" : "2016-06-15T16:19:53Z"
+    },
+    "message" : "#90 #91 #92 #93 #94 #171 实验全部上交",
+    "tree" : {
+      "sha" : "740e50f19d35b34eda892727c4ba344ac55ae585",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/740e50f19d35b34eda892727c4ba344ac55ae585"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/5417ca9135eacb0137750c5130ba888e38a92521",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5417ca9135eacb0137750c5130ba888e38a92521/comments",
+  "files" : [ {
+    "sha" : "80924bf7407c3ebc3ebbb143de964a2d48abef3c",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901107/Com1314080901107Activity.java",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 6,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5417ca9135eacb0137750c5130ba888e38a92521/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901107/Com1314080901107Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5417ca9135eacb0137750c5130ba888e38a92521/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901107/Com1314080901107Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901107/Com1314080901107Activity.java?ref=5417ca9135eacb0137750c5130ba888e38a92521",
+    "patch" : "@@ -1,4 +1,4 @@\n-package com.example.chensongkui.shejiao;\n+package com.example.chensongkui.Dict\n \n \n import android.os.Bundle;\n@@ -39,7 +39,7 @@\n     @Override\n     public void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n-        setContentView(R.layout.main1314080901107);\n+        setContentView(R.layout.main);\n         // ����MyDatabaseHelper����ָ����ݿ�汾Ϊ1���˴�ʹ�����·������\n         // ��ݿ��ļ��Զ��ᱣ���ڳ��������ļ��е�databasesĿ¼��\n         dbHelper = new MyDatabaseHelper(this, \"myDict.db3\", 1);\n@@ -57,7 +57,7 @@ public void onClick(View source) {\n                 // ������ʼ�¼\n                 insertData(dbHelper.getReadableDatabase(), word, detail);\n                 // ��ʾ��ʾ��Ϣ\n-                Toast.makeText(Com1314080901107A.this, \"�����ʳɹ���\"\n+                Toast.makeText(MainActivity.this, \"�����ʳɹ���\"\n                         , Toast.LENGTH_LONG).show();\n             }\n         });\n@@ -75,8 +75,8 @@ public void onClick(View source) {\n                 Bundle data = new Bundle();\n                 data.putSerializable(\"data\", converCursorToList(cursor));\n                 // ����һ��Intent\n-                Intent intent = new Intent(Com1314080901107Activity.this\n-                        , ResultActivity1314080901107.class);\n+                Intent intent = new Intent(MainActivity.this\n+                        , ResultActivity.class);\n                 intent.putExtras(data);\n                 // ��Activity\n                 startActivity(intent);\n@@ -86,7 +86,7 @@ public void onClick(View source) {\n             @Override\n             public void onClick(View v) {\n                 deleteData(dbHelper.getReadableDatabase());\n-                Toast.makeText(Com1314080901107Activity.this, \"ɾ����ʳɹ���\"\n+                Toast.makeText(MainActivity.this, \"ɾ����ʳɹ���\"\n                         , Toast.LENGTH_LONG).show();\n             }\n         });"
+  } ],
+  "sha" : "5417ca9135eacb0137750c5130ba888e38a92521",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5417ca9135eacb0137750c5130ba888e38a92521",
+  "parents" : [ {
+    "sha" : "8cfb39a4df63cfeadb7bda0188273781ff9a5f0b",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/8cfb39a4df63cfeadb7bda0188273781ff9a5f0b",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/8cfb39a4df63cfeadb7bda0188273781ff9a5f0b"
+  } ]
+}

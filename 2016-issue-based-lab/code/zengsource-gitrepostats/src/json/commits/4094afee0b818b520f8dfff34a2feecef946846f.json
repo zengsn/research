@@ -1,0 +1,367 @@
+{
+  "committer" : {
+    "login" : "renrendashai",
+    "id" : 15085143,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085143?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/renrendashai",
+    "html_url" : "https://github.com/renrendashai",
+    "followers_url" : "https://api.github.com/users/renrendashai/followers",
+    "following_url" : "https://api.github.com/users/renrendashai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/renrendashai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/renrendashai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/renrendashai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/renrendashai/orgs",
+    "repos_url" : "https://api.github.com/users/renrendashai/repos",
+    "events_url" : "https://api.github.com/users/renrendashai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/renrendashai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 906,
+    "additions" : 880,
+    "deletions" : 26
+  },
+  "author" : {
+    "login" : "renrendashai",
+    "id" : 15085143,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085143?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/renrendashai",
+    "html_url" : "https://github.com/renrendashai",
+    "followers_url" : "https://api.github.com/users/renrendashai/followers",
+    "following_url" : "https://api.github.com/users/renrendashai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/renrendashai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/renrendashai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/renrendashai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/renrendashai/orgs",
+    "repos_url" : "https://api.github.com/users/renrendashai/repos",
+    "events_url" : "https://api.github.com/users/renrendashai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/renrendashai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/4094afee0b818b520f8dfff34a2feecef946846f",
+  "commit" : {
+    "author" : {
+      "name" : "renrendashai",
+      "email" : "297259225@qq.com",
+      "date" : "2016-05-18T08:48:45Z"
+    },
+    "committer" : {
+      "name" : "renrendashai",
+      "email" : "297259225@qq.com",
+      "date" : "2016-05-18T08:48:45Z"
+    },
+    "message" : "#95 #64 lab9\n\n#95 #64 lab9",
+    "tree" : {
+      "sha" : "256a7e947872adfc81898387506cf22b70177500",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/256a7e947872adfc81898387506cf22b70177500"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/4094afee0b818b520f8dfff34a2feecef946846f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4094afee0b818b520f8dfff34a2feecef946846f/comments",
+  "files" : [ {
+    "sha" : "60497bee0f5b9deb28de3efc38b4c4e3edcd3fe9",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CalendarCard.java",
+    "status" : "added",
+    "additions" : 241,
+    "deletions" : 0,
+    "changes" : 241,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CalendarCard.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CalendarCard.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CalendarCard.java?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,241 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109;\n+\n+import java.text.SimpleDateFormat;\n+import java.util.ArrayList;\n+import java.util.Calendar;\n+import java.util.Locale;\n+\n+import android.content.Context;\n+import android.util.AttributeSet;\n+import android.view.LayoutInflater;\n+import android.view.View;\n+import android.widget.LinearLayout;\n+import android.widget.RelativeLayout;\n+import android.widget.TextView;\n+\n+import com.wt.calendar_card.R;\n+\n+public class CalendarCard extends RelativeLayout {\n+\t\n+\tprivate TextView cardTitle;\n+\tprivate int itemLayout = R.layout.card_item_simple;\n+\tprivate OnItemRender mOnItemRender;\n+\tprivate OnItemRender mOnItemRenderDefault;\n+\tprivate OnCellItemClick mOnCellItemClick;\n+\tprivate Calendar dateDisplay;\n+\tprivate ArrayList<CheckableLayout> cells = new ArrayList<CheckableLayout>();\n+\tprivate LinearLayout cardGrid;\n+\n+\tpublic CalendarCard(Context context, AttributeSet attrs, int defStyle) {\n+\t\tsuper(context, attrs, defStyle);\n+\t\tinit(context);\n+\t}\n+\t\n+\tpublic CalendarCard(Context context, AttributeSet attrs) {\n+\t\tsuper(context, attrs);\n+\t\tinit(context);\n+\t}\n+\t\n+\tpublic CalendarCard(Context context) {\n+\t\tsuper(context);\n+\t\tinit(context);\n+\t}\n+\t\n+\tprivate void init(Context ctx) {\n+\t\tif (isInEditMode()) return;\n+\t\tView layout = LayoutInflater.from(ctx).inflate(R.layout.card_view, null, false);\n+\t\t\n+\t\tif (dateDisplay == null)\n+\t\t\tdateDisplay = Calendar.getInstance();\n+\t\t\n+\t\tcardTitle = (TextView)layout.findViewById(R.id.cardTitle);\n+\t\tcardGrid = (LinearLayout)layout.findViewById(R.id.cardGrid);\n+\t\t\n+\t\tcardTitle.setText(new SimpleDateFormat(\"MMM yyyy\", Locale.getDefault()).format(dateDisplay.getTime()));\n+\n+\t\tCalendar cal = Calendar.getInstance();\n+\t\tcal.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);\n+\t\t((TextView)layout.findViewById(R.id.cardDay1)).setText(cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault()));\n+\t\tcal.add(Calendar.DAY_OF_WEEK, 1);\n+\t\t((TextView)layout.findViewById(R.id.cardDay2)).setText(cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault()));\n+\t\tcal.add(Calendar.DAY_OF_WEEK, 1);\n+\t\t((TextView)layout.findViewById(R.id.cardDay3)).setText(cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault()));\n+\t\tcal.add(Calendar.DAY_OF_WEEK, 1);\n+\t\t((TextView)layout.findViewById(R.id.cardDay4)).setText(cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault()));\n+\t\tcal.add(Calendar.DAY_OF_WEEK, 1);\n+\t\t((TextView)layout.findViewById(R.id.cardDay5)).setText(cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault()));\n+\t\tcal.add(Calendar.DAY_OF_WEEK, 1);\n+\t\t((TextView)layout.findViewById(R.id.cardDay6)).setText(cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault()));\n+\t\tcal.add(Calendar.DAY_OF_WEEK, 1);\n+\t\t((TextView)layout.findViewById(R.id.cardDay7)).setText(cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault()));\n+\t\t\n+\t\tLayoutInflater la = LayoutInflater.from(ctx);//该函数作用是加载网格和行数的布局到当前页面\n+\t\tfor(int y=0; y<cardGrid.getChildCount(); y++) {\n+\t\t\tLinearLayout row = (LinearLayout)cardGrid.getChildAt(y);\n+\t\t\tfor(int x=0; x<row.getChildCount(); x++) {\n+\t\t\t\tCheckableLayout cell = (CheckableLayout)row.getChildAt(x);\n+\t\t\t\tcell.setOnClickListener(new View.OnClickListener() {\n+\t\t\t\t\t@Override\n+\t\t\t\t\tpublic void onClick(View v) {\n+\t\t\t\t\t\tfor(CheckableLayout c : cells)\n+\t\t\t\t\t\t\tc.setChecked(false);\n+\t\t\t\t\t\t((CheckableLayout)v).setChecked(true);//实现点击小网格该网格北京产生灰度显示的功能\n+\n+\t\t\t\t\t\tif (getOnCellItemClick()!= null)\n+\t\t\t\t\t\t\tgetOnCellItemClick().onCellClick(v, (CardGridItem)v.getTag()); // TODO create item\n+\t\t\t\t\t}\n+\t\t\t\t});\n+\t\t\t\t\n+\t\t\t\tView cellContent = la.inflate(itemLayout, cell, false);//获取系统时间，加载到itemLayout\n+\t\t\t\tcell.addView(cellContent);\n+\t\t\t\tcells.add(cell);//将获取到的系统时间加载成一个小网格视图，再加载成一个大网格视图\n+\t\t\t}\n+\t\t}\n+\t\t\n+\t\taddView(layout);\n+\t\t\n+\t\tmOnItemRenderDefault = new OnItemRender() {\n+\t\t\t@Override\n+\t\t\tpublic void onRender(CheckableLayout v, CardGridItem item) {\n+\t\t\t\t((TextView)v.getChildAt(0)).setText(item.getDayOfMonth().toString());//加载到item,getDayMonth()是获取系统具体日期，转化成字符串\n+\t\t\t}\n+\t\t};\n+\t\t\n+\t\tupdateCells();\n+\t}\n+\t\n+\tprivate int getDaySpacing(int dayOfWeek) {\n+\t\tif (Calendar.SUNDAY == dayOfWeek)\n+\t\t\treturn 6;\n+\t\telse\n+\t\t\treturn dayOfWeek - 2;\n+\t}\n+\t\n+\tprivate int getDaySpacingEnd(int dayOfWeek) {\n+\t\treturn 8 - dayOfWeek;\n+\t}\n+\t\n+\tprivate void updateCells() {\n+\t\tCalendar cal;\n+\t\tInteger counter = 0;\n+\t\tif (dateDisplay != null) \n+\t\t\tcal = (Calendar)dateDisplay.clone();\n+\t\telse\n+\t\t\tcal = Calendar.getInstance();\n+\t\t\n+\t\tcal.set(Calendar.DAY_OF_MONTH, 1);\n+\t\t\n+\t\tint daySpacing = getDaySpacing(cal.get(Calendar.DAY_OF_WEEK));\n+\t\t\n+\t\t// INFO : wrong calculations of first line - fixed\n+\t\tif (daySpacing > 0) {\n+\t\t\tCalendar prevMonth = (Calendar)cal.clone();\n+\t\t\tprevMonth.add(Calendar.MONTH, -1);\n+\t\t\tprevMonth.set(Calendar.DAY_OF_MONTH, prevMonth.getActualMaximum(Calendar.DAY_OF_MONTH) - daySpacing + 1);\n+\t\t\tfor(int i=0; i<daySpacing; i++) {\n+\t\t\t\tCheckableLayout cell = cells.get(counter);\n+\t\t\t\tcell.setTag(new CardGridItem(Integer.valueOf(prevMonth.get(Calendar.DAY_OF_MONTH))).setEnabled(false));\n+\t\t\t\tcell.setEnabled(false);\n+\t\t\t\t(mOnItemRender == null ? mOnItemRenderDefault : mOnItemRender).onRender(cell, (CardGridItem)cell.getTag());\n+\t\t\t\tcounter++;\n+\t\t\t\tprevMonth.add(Calendar.DAY_OF_MONTH, 1);\n+\t\t\t}\n+\t\t}\n+\t\t\n+\t\tint firstDay = cal.get(Calendar.DAY_OF_MONTH);\n+\t\tcal.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DAY_OF_MONTH));\n+\t\tint lastDay = cal.get(Calendar.DAY_OF_MONTH)+1;\n+\t\tfor(int i=firstDay; i<lastDay; i++) {\n+\t\t\tcal.set(Calendar.DAY_OF_MONTH, i-1);\n+\t\t\tCalendar date = (Calendar)cal.clone();\n+\t\t\tdate.add(Calendar.DAY_OF_MONTH, 1);\n+\t\t\tCheckableLayout cell = cells.get(counter);\n+\t\t\tcell.setTag(new CardGridItem(i).setEnabled(true).setDate(date));\n+\t\t\tcell.setEnabled(true);\n+\t\t\tcell.setVisibility(View.VISIBLE);\n+\t\t\t(mOnItemRender == null ? mOnItemRenderDefault : mOnItemRender).onRender(cell, (CardGridItem)cell.getTag());\n+\t\t\tcounter++;\n+\t\t}\n+\t\t\n+\t\tif (dateDisplay != null) \n+\t\t\tcal = (Calendar)dateDisplay.clone();\n+\t\telse\n+\t\t\tcal = Calendar.getInstance();\n+\t\t\n+\t\tcal.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DAY_OF_MONTH));\n+\t\t\n+\t\tdaySpacing = getDaySpacingEnd(cal.get(Calendar.DAY_OF_WEEK));\n+\n+\t\tif (daySpacing > 0) {\n+\t\t\tfor(int i=0; i<daySpacing; i++) {\n+\t\t\t\tCheckableLayout cell = cells.get(counter);\n+\t\t\t\tcell.setTag(new CardGridItem(i+1).setEnabled(false)); // .setDate((Calendar)cal.clone())\n+\t\t\t\tcell.setEnabled(false);\n+\t\t\t\tcell.setVisibility(View.VISIBLE);\n+\t\t\t\t(mOnItemRender == null ? mOnItemRenderDefault : mOnItemRender).onRender(cell, (CardGridItem)cell.getTag());\n+\t\t\t\tcounter++;\n+\t\t\t}\n+\t\t}\n+\t\t\n+\t\tif (counter < cells.size()) {\n+\t\t\tfor(int i=counter; i<cells.size(); i++) {\n+\t\t\t\tcells.get(i).setVisibility(View.GONE);\n+\t\t\t}\n+\t\t}\n+\t}\n+\t\n+\t@Override\n+\tprotected void onLayout(boolean changed, int l, int t, int r, int b) {\n+\t\tsuper.onLayout(changed, l, t, r, b);\n+\t\tif (changed && cells.size() > 0) {\n+\t\t\tint size = (r - l) / 7;\n+\t\t\tfor(CheckableLayout cell : cells) {\n+\t\t\t\tcell.getLayoutParams().height = size;\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tpublic int getItemLayout() {\n+\t\treturn itemLayout;\n+\t}\n+\n+\tpublic void setItemLayout(int itemLayout) {\n+\t\tthis.itemLayout = itemLayout;\n+\t\t//mCardGridAdapter.setItemLayout(itemLayout);\n+\t}\n+\n+\tpublic OnItemRender getOnItemRender() {\n+\t\treturn mOnItemRender;\n+\t}\n+\n+\tpublic void setOnItemRender(OnItemRender mOnItemRender) {\n+\t\tthis.mOnItemRender = mOnItemRender;\n+\t\t//mCardGridAdapter.setOnItemRender(mOnItemRender);\n+\t}\n+\n+\tpublic Calendar getDateDisplay() {\n+\t\treturn dateDisplay;\n+\t}\n+\n+\tpublic void setDateDisplay(Calendar dateDisplay) {\n+\t\tthis.dateDisplay = dateDisplay;\n+\t\tcardTitle.setText(new SimpleDateFormat(\"MMM yyyy\", Locale.getDefault()).format(dateDisplay.getTime()));\n+\t}\n+\n+\tpublic OnCellItemClick getOnCellItemClick() {\n+\t\treturn mOnCellItemClick;\n+\t}\n+\n+\tpublic void setOnCellItemClick(OnCellItemClick mOnCellItemClick) {\n+\t\tthis.mOnCellItemClick = mOnCellItemClick;\n+\t}\n+\t\n+\t/**\n+\t * call after change any input data - to refresh view\n+\t */\n+\tpublic void notifyChanges() {\n+\t\t//mCardGridAdapter.init();\n+\t\tupdateCells();\n+\t}\n+\n+}"
+  }, {
+    "sha" : "bddc3a0334e725110175fe0011821d47d1b2c03b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CalendarCardPager.java",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CalendarCardPager.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CalendarCardPager.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CalendarCardPager.java?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,54 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109;\n+\n+import android.content.Context;\n+import android.support.v4.view.ViewPager;\n+import android.util.AttributeSet;\n+import android.view.View;\n+\n+public class CalendarCardPager extends ViewPager {\n+\t\n+\tprivate CardPagerAdapter mCardPagerAdapter;\n+\tprivate OnCellItemClick mOnCellItemClick;\n+\t\n+\tpublic CalendarCardPager(Context context, AttributeSet attrs, int defStyle) {\n+\t\tsuper(context, attrs);\n+\t\tinit(context);\n+\t}\n+\n+\tpublic CalendarCardPager(Context context, AttributeSet attrs) {\n+\t\tsuper(context, attrs);\n+\t\tinit(context);\n+\t}\n+\t\n+\tpublic CalendarCardPager(Context context) {\n+\t\tsuper(context);\n+\t\tinit(context);\n+\t}\n+\t\n+\tprivate void init(Context context) {\n+\t\t mCardPagerAdapter = new CardPagerAdapter(context);\n+\t\t setAdapter(mCardPagerAdapter);\n+\t}\n+\t\n+\tpublic CardPagerAdapter getCardPagerAdapter() {\n+\t\treturn mCardPagerAdapter;\n+\t}\n+\n+\tpublic OnCellItemClick getOnCellItemClick() {\n+\t\treturn mOnCellItemClick;\n+\t}\n+\n+\tpublic void setOnCellItemClick(OnCellItemClick mOnCellItemClick) {\n+\t\tthis.mOnCellItemClick = mOnCellItemClick;\n+\t\tmCardPagerAdapter.setDefaultOnCellItemClick(this.mOnCellItemClick);\n+\t\tif (getChildCount() > 0) {\n+\t\t\tfor(int i=0; i<getChildCount(); i++) {\n+\t\t\t\tView v = getChildAt(i);\n+\t\t\t\tif (v instanceof CalendarCard) {\n+\t\t\t\t\t((CalendarCard) v).setOnCellItemClick(this.mOnCellItemClick);\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "973cf6b4dfc3def3e40b729f3dce53124d02cacb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CardGridItem.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CardGridItem.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CardGridItem.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CardGridItem.java?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,52 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109;\n+\n+import java.util.Calendar;\n+\n+public class CardGridItem {\n+\n+\tprivate Integer dayOfMonth;\n+\tprivate Object data;\n+\tprivate boolean enabled = true;\n+\tprivate Calendar date;\n+\t\n+\tpublic CardGridItem(Integer dom) { \n+\t\tsetDayOfMonth(dom);\n+\t}\n+\n+\tpublic Integer getDayOfMonth() {\n+\t\treturn dayOfMonth;\n+\t}\n+\n+\tpublic CardGridItem setDayOfMonth(Integer dayOfMonth) {\n+\t\tthis.dayOfMonth = dayOfMonth;\n+\t\treturn this;\n+\t}\n+\n+\tpublic Object getData() {\n+\t\treturn data;\n+\t}\n+\n+\tpublic CardGridItem setData(Object data) {\n+\t\tthis.data = data;\n+\t\treturn this;\n+\t}\n+\n+\tpublic boolean isEnabled() {\n+\t\treturn enabled;\n+\t}\n+\n+\tpublic CardGridItem setEnabled(boolean enabled) {\n+\t\tthis.enabled = enabled;\n+\t\treturn this;\n+\t}\n+\n+\tpublic Calendar getDate() {\n+\t\treturn date;\n+\t}\n+\n+\tpublic CardGridItem setDate(Calendar date) {\n+\t\tthis.date = date;\n+\t\treturn this;\n+\t}\n+\t\n+}"
+  }, {
+    "sha" : "8c722a966f6705f08ce1bf0f0722688f0045f449",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CardPagerAdapter.java",
+    "status" : "added",
+    "additions" : 68,
+    "deletions" : 0,
+    "changes" : 68,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CardPagerAdapter.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CardPagerAdapter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CardPagerAdapter.java?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,68 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109;\n+\n+import java.util.Calendar;\n+\n+import android.content.Context;\n+import android.os.Parcelable;\n+import android.support.v4.view.PagerAdapter;\n+import android.support.v4.view.ViewPager;\n+import android.view.View;\n+\n+public class CardPagerAdapter extends PagerAdapter {\n+\t\n+\tprivate Context mContext;\n+\tprivate OnCellItemClick defaultOnCellItemClick;\n+\t\n+\tpublic CardPagerAdapter(Context ctx) {\n+\t\tmContext = ctx;\n+\t}\n+\n+\t@Override\n+\tpublic Object instantiateItem(View collection, final int position) {\n+\t\tCalendar cal = Calendar.getInstance();\n+\t\tcal.add(Calendar.MONTH, position);\n+\t\tCalendarCard card = new CalendarCard(mContext);\n+\t\tcard.setDateDisplay(cal);\n+\t\tcard.notifyChanges();\n+\t\tif (card.getOnCellItemClick() == null)\n+\t\t\tcard.setOnCellItemClick(defaultOnCellItemClick);\n+\t\t\n+\t\t((ViewPager) collection).addView(card,0);\n+\t\t\n+\t\treturn card;\n+\t}\n+\t\n+\t@Override\n+\tpublic void destroyItem(View collection, int position, Object view) {\n+\t\t((ViewPager) collection).removeView((View) view);\n+\t}\n+\t\n+\t@Override\n+\tpublic boolean isViewFromObject(View view, Object object) {\n+\t\treturn view==((View)object);\n+\t}\n+\t\n+\t@Override\n+\tpublic void finishUpdate(View arg0) {}\n+\t@Override\n+\tpublic void restoreState(Parcelable arg0, ClassLoader arg1) {}\n+\t@Override\n+\tpublic Parcelable saveState() { return null; }\n+\t@Override\n+\tpublic void startUpdate(View arg0) {}\n+\n+\t@Override\n+\tpublic int getCount() {\n+\t\t// TODO almoast ifinite ;-)\n+\t\treturn Integer.MAX_VALUE;\n+\t}\n+\n+\tpublic OnCellItemClick getDefaultOnCellItemClick() {\n+\t\treturn defaultOnCellItemClick;\n+\t}\n+\n+\tpublic void setDefaultOnCellItemClick(OnCellItemClick defaultOnCellItemClick) {\n+\t\tthis.defaultOnCellItemClick = defaultOnCellItemClick;\n+\t}\n+\n+}"
+  }, {
+    "sha" : "2eeeaca3e5ba0de79b1a6c827c54bb786c9b3f9e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CheckableLayout.java",
+    "status" : "added",
+    "additions" : 84,
+    "deletions" : 0,
+    "changes" : 84,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CheckableLayout.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CheckableLayout.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/CheckableLayout.java?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,84 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109;\n+\n+import android.annotation.SuppressLint;\n+import android.content.Context;\n+import android.util.AttributeSet;\n+import android.view.View;\n+import android.widget.Checkable;\n+import android.widget.RelativeLayout;\n+\n+public class CheckableLayout extends RelativeLayout implements Checkable {\n+\n+    private static final int[] CHECKED_STATE_SET = {\n+        android.R.attr.state_checked\n+    };\n+    \n+    private boolean checked = false;\n+\n+    @SuppressLint(\"NewApi\")\n+    public CheckableLayout(Context context, AttributeSet attrs, int defStyle) {\n+        super(context, attrs, defStyle);\n+        init();\n+    }\n+\n+    public CheckableLayout(Context context, AttributeSet attrs) {\n+        super(context, attrs);\n+        init();\n+    }\n+\n+    public CheckableLayout(Context context) {\n+        super(context);\n+        init();\n+    }\n+    \n+    private void init() {\n+    \t/*setOnClickListener(new View.OnClickListener() {\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View v) {\n+\t\t\t\tsetChecked(!isChecked());\n+\t\t\t}\n+\t\t});*/\n+    }\n+\n+    @Override\n+    public boolean isChecked() {\n+        return checked;\n+    }\n+    \n+    @Override\n+    public void setChecked(boolean checked) {\n+        this.checked = checked;\n+        \n+        refreshDrawableState();\n+    \n+        //Propagate to childs\n+        final int count = getChildCount();\n+        for (int i = 0; i < count; i++) {\n+            final View child = getChildAt(i);\n+            if(child instanceof Checkable) {\n+                ((Checkable)child).setChecked(checked);//检测系统日期与当前星期是否对应\n+            }\n+        }\n+    }\n+    \n+    @Override\n+    protected int[] onCreateDrawableState(int extraSpace) {\n+        final int[] drawableState = super.onCreateDrawableState(extraSpace + 1);\n+        if (isChecked()) {\n+            mergeDrawableStates(drawableState, CHECKED_STATE_SET);\n+        }\n+        return drawableState;\n+    }\n+\n+    @Override\n+    public void toggle() {\n+        this.checked = !this.checked;\n+    }\n+\n+\t@Override\n+\tprotected void onLayout(boolean changed, int l, int t, int r, int b) {\n+\t\tsuper.onLayout(changed, l, t, r, b);\n+\t\t//if (changed)\n+\t\t//\tgetLayoutParams().height = r - l;\n+\t}\n+}"
+  }, {
+    "sha" : "1873bd49db81735b8655560c246ab184d02855ee",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109MainActivity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 13,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1ca3355eea75a5b41ed573eb0a83b1d43662ff36/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1ca3355eea75a5b41ed573eb0a83b1d43662ff36/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109MainActivity.java?ref=1ca3355eea75a5b41ed573eb0a83b1d43662ff36",
+    "patch" : "@@ -1,13 +0,0 @@\n-package com.example.administrator.myapplication;\n-\n-import android.support.v7.app.AppCompatActivity;\n-import android.os.Bundle;\n-\n-public class MainActivity extends AppCompatActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_main);\n-    }\n-}"
+  }, {
+    "sha" : "40ce774193736fc23f378558efc74e2c571556b7",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/OnCellItemClick.java",
+    "status" : "added",
+    "additions" : 9,
+    "deletions" : 0,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/OnCellItemClick.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/OnCellItemClick.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/OnCellItemClick.java?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,9 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109;\n+\n+import android.view.View;\n+\n+public interface OnCellItemClick {\n+\t\n+\tpublic void onCellClick(View v, CardGridItem item);\n+\n+}"
+  }, {
+    "sha" : "4c97f6fd5c09443ca69af9890abb236a946d66a3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/OnItemRender.java",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/OnItemRender.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/OnItemRender.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/OnItemRender.java?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,8 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109;\n+\n+\n+public interface OnItemRender {\n+\t\n+\tpublic void onRender(CheckableLayout v, CardGridItem item);\n+\n+}"
+  }, {
+    "sha" : "8ab866635e253118c82b5806a96e2e53c376ef87",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Sample1.java",
+    "status" : "added",
+    "additions" : 36,
+    "deletions" : 0,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Sample1.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Sample1.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Sample1.java?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,36 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109;\n+\n+import java.text.SimpleDateFormat;\n+import java.util.Locale;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.TextView;\n+\n+import com.wt.calendarcard.CalendarCard;\n+import com.wt.calendarcard.CardGridItem;\n+import com.wt.calendarcard.OnCellItemClick;\n+\n+public class Sample1 extends Activity {\n+\t\n+\tprivate CalendarCard mCalendarCard;\n+\tprivate TextView mTextView;\n+\t\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.sample1);\n+\t\tmCalendarCard = (CalendarCard)findViewById(R.id.calendarCard1);\n+\t\tmCalendarCard.setOnCellItemClick(new OnCellItemClick() {\n+\t\t\t@Override\n+\t\t\tpublic void onCellClick(View v, CardGridItem item) {\n+\t\t\t\tmTextView.setText(getResources().getString(R.string.sel_date, new SimpleDateFormat(\"yyyy-MM-dd\", Locale.getDefault()).format(item.getDate().getTime())));\n+\t\t\t}\n+\t\t}); // 实现点击网格后表格下方显示“Selected date:yyyy-MM-dd\"\n+\t\t\n+\t\t\n+\t\tmTextView = (TextView)findViewById(R.id.textView1);\n+\t}\n+\n+}"
+  }, {
+    "sha" : "a53a8bfb6c3e905da65a053f3ec985246dfe5812",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Sample2.java",
+    "status" : "added",
+    "additions" : 14,
+    "deletions" : 0,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Sample2.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Sample2.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Sample2.java?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,14 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+\n+public class Sample2 extends Activity {\n+\t\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.sample2);\n+\t}\n+\n+}"
+  }, {
+    "sha" : "1873bd49db81735b8655560c246ab184d02855ee",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/com1314080901109MainActivity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 13,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1ca3355eea75a5b41ed573eb0a83b1d43662ff36/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/com1314080901109MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1ca3355eea75a5b41ed573eb0a83b1d43662ff36/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/com1314080901109MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/com1314080901109MainActivity.java?ref=1ca3355eea75a5b41ed573eb0a83b1d43662ff36",
+    "patch" : "@@ -1,13 +0,0 @@\n-package com.example.administrator.myapplication;\n-\n-import android.support.v7.app.AppCompatActivity;\n-import android.os.Bundle;\n-\n-public class MainActivity extends AppCompatActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_main);\n-    }\n-}"
+  }, {
+    "sha" : "ec1a4fec5f12ebd2ebc9461ffe43b41190bd6644",
+    "filename" : "app/src/main/res/drawable/card_grid_bg.xml",
+    "status" : "added",
+    "additions" : 5,
+    "deletions" : 0,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/drawable/card_grid_bg.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/drawable/card_grid_bg.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/card_grid_bg.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,5 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<shape xmlns:android=\"http://schemas.android.com/apk/res/android\">\n+    <solid android:color=\"@color/grid_border\" />\n+<!--     <stroke android:width=\"1dp\" android:color=\"@color/grid_border\" /> -->\n+</shape>\n\\ No newline at end of file"
+  }, {
+    "sha" : "ed58beb6613aecb856aa50178e0219d0addea24b",
+    "filename" : "app/src/main/res/drawable/card_item_bg.xml",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/drawable/card_item_bg.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/drawable/card_item_bg.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/card_item_bg.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,27 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<selector xmlns:android=\"http://schemas.android.com/apk/res/android\">\n+    \n+    <item android:state_pressed=\"true\" android:state_enabled=\"true\">\n+        <shape>\n+            <solid android:color=\"#77FFFFFF\"/>\n+        </shape>\n+    </item>\n+    \n+    <item android:state_checked=\"true\" android:state_enabled=\"true\">\n+        <shape>\n+            <solid android:color=\"#77DBDBDB\"/>\n+        </shape>\n+    </item>\n+    \n+    <item android:state_enabled=\"false\">\n+        <shape>\n+            <solid android:color=\"#FFF0F0F0\"/>\n+        </shape>\n+    </item>\n+    \n+    <item>\n+        <shape>\n+            <solid android:color=\"#FFFFFFFF\"/>\n+        </shape>\n+    </item>\n+</selector>\n\\ No newline at end of file"
+  }, {
+    "sha" : "16c9511ecf3a9edc7bb59f2b87d6393aef89737c",
+    "filename" : "app/src/main/res/layout/activity_com1314080901109.xml",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/activity_com1314080901109.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/activity_com1314080901109.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901109.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,39 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+xmlns:tools=\"http://schemas.android.com/tools\"\n+android:layout_width=\"match_parent\"\n+android:layout_height=\"match_parent\"\n+android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+android:paddingTop=\"@dimen/activity_vertical_margin\"\n+tools:context=\".Com1314080901109Activity\" >\n+\n+<TextView\n+    android:id=\"@+id/textView1\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:layout_alignParentLeft=\"true\"\n+    android:layout_alignParentTop=\"true\"\n+    android:text=\"@string/title\"\n+    android:textAppearance=\"?android:attr/textAppearanceLarge\" />\n+\n+<Button\n+    android:id=\"@+id/button1\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:layout_alignParentLeft=\"true\"\n+    android:layout_below=\"@+id/textView1\"\n+    android:layout_marginTop=\"27dp\"\n+    android:onClick=\"handleSample1\"\n+    android:text=\"@string/card\" />\n+\n+<Button\n+    android:id=\"@+id/button2\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:layout_alignParentLeft=\"true\"\n+    android:layout_below=\"@+id/button1\"\n+    android:onClick=\"handleSample2\"\n+    android:text=\"@string/card_pager\" />\n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "a3af44b5f94d16b7f786bf184d68d7532a2b5761",
+    "filename" : "app/src/main/res/layout/card_cell.xml",
+    "status" : "added",
+    "additions" : 9,
+    "deletions" : 0,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/card_cell.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/card_cell.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/card_cell.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,9 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<edu.hzuapps.androidworks.homeworks.com1314080901109.CheckableLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:layout_weight=\"1\"\n+    style=\"@style/CalendarCard.Cell\"\n+    android:clickable=\"true\">\n+\n+</edu.hzuapps.androidworks.homeworks.com1314080901109.CheckableLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "e396b57b6b0b27dc8183b339d17e5b3d8ce407c9",
+    "filename" : "app/src/main/res/layout/card_item_simple.xml",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/card_item_simple.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/card_item_simple.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/card_item_simple.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,6 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<CheckedTextView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:padding=\"10dp\"\n+    android:gravity=\"center\" />"
+  }, {
+    "sha" : "6abde219fa88e3d835051757816d5f517a447f48",
+    "filename" : "app/src/main/res/layout/card_row.xml",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/card_row.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/card_row.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/card_row.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,15 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:orientation=\"horizontal\">\n+    \n+    <include layout=\"@layout/card_cell\"/>\n+    <include layout=\"@layout/card_cell\"/>\n+    <include layout=\"@layout/card_cell\"/>\n+    <include layout=\"@layout/card_cell\"/>\n+    <include layout=\"@layout/card_cell\"/>\n+    <include layout=\"@layout/card_cell\"/>\n+    <include layout=\"@layout/card_cell\"/>\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "4fa00c9ecbbfb69ec781e509305aa0d166a6a8bc",
+    "filename" : "app/src/main/res/layout/card_view.xml",
+    "status" : "added",
+    "additions" : 97,
+    "deletions" : 0,
+    "changes" : 97,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/card_view.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/card_view.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/card_view.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,97 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    style=\"@style/CalendarCard.Root\">\n+    \n+    <TextView \n+        style=\"@style/CalendarCard.Title\"\n+        android:id=\"@+id/cardTitle\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_alignParentTop=\"true\"\n+        android:layout_alignParentLeft=\"true\" />\n+    \n+    <LinearLayout \n+        style=\"@style/CalendarCard.Days\"\n+        android:id=\"@+id/cardDays\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:orientation=\"horizontal\"\n+        android:layout_below=\"@+id/cardTitle\">\n+        \n+        <TextView \n+\t        android:id=\"@+id/cardDay1\"\n+\t        android:layout_width=\"0dp\"\n+\t        android:layout_height=\"wrap_content\"\n+\t        android:layout_weight=\"1\"\n+\t        style=\"@style/CalendarCard.Day\" />\n+        \n+        <TextView \n+\t        android:id=\"@+id/cardDay2\"\n+\t        android:layout_width=\"0dp\"\n+\t        android:layout_height=\"wrap_content\"\n+\t        android:layout_weight=\"1\"\n+\t        style=\"@style/CalendarCard.Day\" />\n+        \n+        <TextView \n+\t        android:id=\"@+id/cardDay3\"\n+\t        android:layout_width=\"0dp\"\n+\t        android:layout_height=\"wrap_content\"\n+\t        android:layout_weight=\"1\"\n+\t        style=\"@style/CalendarCard.Day\" />\n+        \n+        <TextView \n+\t        android:id=\"@+id/cardDay4\"\n+\t        android:layout_width=\"0dp\"\n+\t        android:layout_height=\"wrap_content\"\n+\t        android:layout_weight=\"1\"\n+\t        style=\"@style/CalendarCard.Day\" />\n+        \n+        <TextView \n+\t        android:id=\"@+id/cardDay5\"\n+\t        android:layout_width=\"0dp\"\n+\t        android:layout_height=\"wrap_content\"\n+\t        android:layout_weight=\"1\"\n+\t        style=\"@style/CalendarCard.Day\" />\n+        \n+        <TextView \n+\t        android:id=\"@+id/cardDay6\"\n+\t        android:layout_width=\"0dp\"\n+\t        android:layout_height=\"wrap_content\"\n+\t        android:layout_weight=\"1\"\n+\t        style=\"@style/CalendarCard.Day\" />\n+        \n+        <TextView \n+\t        android:id=\"@+id/cardDay7\"\n+\t        android:layout_width=\"0dp\"\n+\t        android:layout_height=\"wrap_content\"\n+\t        android:layout_weight=\"1\"\n+\t        style=\"@style/CalendarCard.Day\" />\n+        \n+    </LinearLayout>\n+    \n+    <ScrollView \n+        android:layout_width=\"match_parent\"\n+\t\tandroid:layout_height=\"wrap_content\"\n+\t\tandroid:layout_below=\"@+id/cardDays\">\n+\n+\t    <LinearLayout\n+\t        style=\"@style/CalendarCard.Grid\"\n+\t        android:id=\"@+id/cardGrid\"\n+\t        android:layout_width=\"match_parent\"\n+\t\t    android:layout_height=\"wrap_content\"\n+\t        android:orientation=\"vertical\">\n+\t        \n+\t        <include layout=\"@layout/card_row\"/>\n+\t        <include layout=\"@layout/card_row\"/>\n+\t        <include layout=\"@layout/card_row\"/>\n+\t        <include layout=\"@layout/card_row\"/>\n+\t        <include layout=\"@layout/card_row\"/>\n+\t        <include layout=\"@layout/card_row\"/>\n+\t        \n+\t    </LinearLayout>\n+    \n+    </ScrollView>\n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "4e583277d3a689f9a776f4f36a8e9e2001c526d0",
+    "filename" : "app/src/main/res/layout/sample1.xml",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/sample1.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/sample1.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/sample1.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,20 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"fill_parent\" >\n+\n+    <TextView\n+        android:id=\"@+id/textView1\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_below=\"@+id/calendarCard1\"\n+        android:layout_marginTop=\"10dp\"\n+        android:layout_marginLeft=\"10dp\" />\n+\n+    <edu.hzuapps.androidworks.homeworks.com1314080901109.CalendarCard\n+        android:id=\"@+id/calendarCard1\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\" />\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "da60993992b214698d6c83127e4531a5177c7c7d",
+    "filename" : "app/src/main/res/layout/sample2.xml",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/sample2.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/layout/sample2.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/sample2.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,21 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"fill_parent\" >\n+\n+    <edu.hzuapps.androidworks.homeworks.com1314080901109.CalendarCardPager\n+        android:id=\"@+id/calendarCard1\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\" />\n+\n+    <TextView\n+        android:id=\"@+id/textView1\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_below=\"@+id/calendarCard1\"\n+        android:text=\"@string/app_name\"\n+        android:layout_marginTop=\"10dp\"\n+        android:layout_marginLeft=\"10dp\" />\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "472c2f795f26a2b498f9c9e2ec59ec4e9fdb382a",
+    "filename" : "app/src/main/res/mipmap-hdpi/com1314080901109ic_launcher.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/mipmap-hdpi/com1314080901109ic_launcher.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/mipmap-hdpi/com1314080901109ic_launcher.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/mipmap-hdpi/com1314080901109ic_launcher.png?ref=4094afee0b818b520f8dfff34a2feecef946846f"
+  }, {
+    "sha" : "3f6ecb14cca01cbf7b2e5e3462dd619bfc028d8c",
+    "filename" : "app/src/main/res/mipmap-mdpi/com1314080901109ic_launcher.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/mipmap-mdpi/com1314080901109ic_launcher.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/mipmap-mdpi/com1314080901109ic_launcher.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/mipmap-mdpi/com1314080901109ic_launcher.png?ref=4094afee0b818b520f8dfff34a2feecef946846f"
+  }, {
+    "sha" : "4281a7dd58f880cbb3a67a0fef9b369928131d2f",
+    "filename" : "app/src/main/res/mipmap-xhdpi/com1314080901109ic_launcher.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/mipmap-xhdpi/com1314080901109ic_launcher.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/mipmap-xhdpi/com1314080901109ic_launcher.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/mipmap-xhdpi/com1314080901109ic_launcher.png?ref=4094afee0b818b520f8dfff34a2feecef946846f"
+  }, {
+    "sha" : "2493b83dcfc3e7c7ee92233020ea4933bb05ef67",
+    "filename" : "app/src/main/res/mipmap-xxhdpi/com1314080901109ic_launcher.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/mipmap-xxhdpi/com1314080901109ic_launcher.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/mipmap-xxhdpi/com1314080901109ic_launcher.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/mipmap-xxhdpi/com1314080901109ic_launcher.png?ref=4094afee0b818b520f8dfff34a2feecef946846f"
+  }, {
+    "sha" : "e130b3cae8fb6bd3a690de7a9573b732ccdb51c9",
+    "filename" : "app/src/main/res/values/com1314080901109colors.xml",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/values/com1314080901109colors.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/values/com1314080901109colors.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/com1314080901109colors.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,6 @@\n+<resources>\n+\n+    <color name=\"grid_bg\">#FFFFFFFF</color>\n+    <color name=\"grid_border\">#FFC6C6C6</color>\n+\n+</resources>"
+  }, {
+    "sha" : "39f8424173ba98c7a08af61d132412562d8ce73f",
+    "filename" : "app/src/main/res/values/com1314080901109strings.xml",
+    "status" : "added",
+    "additions" : 11,
+    "deletions" : 0,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/values/com1314080901109strings.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/values/com1314080901109strings.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/com1314080901109strings.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,11 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+\n+    <string name=\"app_name\">calendar card sample</string>\n+    <string name=\"action_settings\">Settings</string>\n+    <string name=\"title\">Calendar Card Sample</string>\n+    <string name=\"card\">Calendar Card</string>\n+    <string name=\"card_pager\">Calendar Card Pager</string>\n+    <string name=\"sel_date\">Selected date: %s</string>\n+\n+</resources>"
+  }, {
+    "sha" : "ace3249d01e3adb9dfdd478424c7c5cb6c207b66",
+    "filename" : "app/src/main/res/values/com1314080901109styles.xml",
+    "status" : "added",
+    "additions" : 58,
+    "deletions" : 0,
+    "changes" : 58,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/values/com1314080901109styles.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4094afee0b818b520f8dfff34a2feecef946846f/app/src/main/res/values/com1314080901109styles.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/com1314080901109styles.xml?ref=4094afee0b818b520f8dfff34a2feecef946846f",
+    "patch" : "@@ -0,0 +1,58 @@\n+<resources>\n+\n+    <!--\n+        Base application theme, dependent on API level. This theme is replaced\n+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.\n+    -->\n+    <style name=\"AppBaseTheme\" parent=\"android:Theme.Light.NoTitleBar\">\n+        <!--\n+            Theme customizations available in newer API levels can go in\n+            res/values-vXX/styles.xml, while customizations related to\n+            backward-compatibility can go here.\n+        -->\n+    </style>\n+\n+    <!-- Application theme. -->\n+    <style name=\"AppTheme\" parent=\"AppBaseTheme\">\n+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->\n+    </style>\n+    \n+    <style name=\"CalendarCard\">\n+        \n+    </style>\n+    \n+    <style name=\"CalendarCard.Root\">\n+        <item name=\"android:padding\">10dp</item>\n+    </style>\n+    \n+\n+    \n+    <style name=\"CalendarCard.Day\">\n+        <item name=\"android:paddingBottom\">5dp</item>\n+        <item name=\"android:textSize\">12sp</item>\n+        <item name=\"android:gravity\">center</item>\n+    </style>\n+    \n+    <style name=\"CalendarCard.Days\">\n+        <item name=\"android:padding\">0dp</item>\n+    </style>\n+    \n+    <style name=\"CalendarCard.Title\">\n+        <item name=\"android:padding\">5dp</item>\n+        <item name=\"android:textSize\">20sp</item>\n+        <item name=\"android:gravity\">center</item>\n+    </style>\n+    \n+    <style name=\"CalendarCard.Grid\">\n+        <item name=\"android:background\">@drawable/card_grid_bg</item>\n+        <item name=\"android:paddingRight\">1dp</item>\n+        <item name=\"android:paddingBottom\">1dp</item>\n+    </style>\n+    \n+    <style name=\"CalendarCard.Cell\">\n+        <item name=\"android:background\">@drawable/card_item_bg</item>\n+        <item name=\"android:layout_marginLeft\">1dp</item>\n+        <item name=\"android:layout_marginTop\">1dp</item>\n+    </style>\n+\n+</resources>"
+  } ],
+  "sha" : "4094afee0b818b520f8dfff34a2feecef946846f",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4094afee0b818b520f8dfff34a2feecef946846f",
+  "parents" : [ {
+    "sha" : "1ca3355eea75a5b41ed573eb0a83b1d43662ff36",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1ca3355eea75a5b41ed573eb0a83b1d43662ff36",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1ca3355eea75a5b41ed573eb0a83b1d43662ff36"
+  } ]
+}

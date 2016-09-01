@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "1245183042",
+    "id" : 18563570,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18563570?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1245183042",
+    "html_url" : "https://github.com/1245183042",
+    "followers_url" : "https://api.github.com/users/1245183042/followers",
+    "following_url" : "https://api.github.com/users/1245183042/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1245183042/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1245183042/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1245183042/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1245183042/orgs",
+    "repos_url" : "https://api.github.com/users/1245183042/repos",
+    "events_url" : "https://api.github.com/users/1245183042/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1245183042/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 10,
+    "additions" : 5,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "1245183042",
+    "id" : 18563570,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18563570?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1245183042",
+    "html_url" : "https://github.com/1245183042",
+    "followers_url" : "https://api.github.com/users/1245183042/followers",
+    "following_url" : "https://api.github.com/users/1245183042/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1245183042/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1245183042/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1245183042/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1245183042/orgs",
+    "repos_url" : "https://api.github.com/users/1245183042/repos",
+    "events_url" : "https://api.github.com/users/1245183042/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1245183042/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/5e74c2489577cd38d90ba2d301d19ea9adbba891",
+  "commit" : {
+    "author" : {
+      "name" : "1245183042",
+      "email" : "1245183042@qq.com",
+      "date" : "2016-06-22T11:25:17Z"
+    },
+    "committer" : {
+      "name" : "1245183042",
+      "email" : "1245183042@qq.com",
+      "date" : "2016-06-22T11:25:17Z"
+    },
+    "message" : "#95 实验9  完善代码，完成实验",
+    "tree" : {
+      "sha" : "da2ecb43b5ce30c098e09f98b45617dcaab72b61",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/da2ecb43b5ce30c098e09f98b45617dcaab72b61"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/5e74c2489577cd38d90ba2d301d19ea9adbba891",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5e74c2489577cd38d90ba2d301d19ea9adbba891/comments",
+  "files" : [ {
+    "sha" : "6ae4820aed07814d0f50976604f3544b95733da6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903131/Net1314080903131RGBActivity.java",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 5,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5e74c2489577cd38d90ba2d301d19ea9adbba891/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903131/Net1314080903131RGBActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5e74c2489577cd38d90ba2d301d19ea9adbba891/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903131/Net1314080903131RGBActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903131/Net1314080903131RGBActivity.java?ref=5e74c2489577cd38d90ba2d301d19ea9adbba891",
+    "patch" : "@@ -1,8 +1,5 @@\n package com.rgb;\n \n-import java.io.ByteArrayInputStream;\n-import java.io.ByteArrayOutputStream;\n-\n import android.app.Activity;\n import android.content.Intent;\n import android.graphics.Bitmap;\n@@ -20,6 +17,9 @@\n import android.widget.ImageView;\n import android.widget.TextView;\n \n+import java.io.ByteArrayInputStream;\n+import java.io.ByteArrayOutputStream;\n+\n public class Net1314080903131RGBActivity extends Activity {\n \tprivate TextView tv_rgb;\n \tprivate ImageView iv_image;\n@@ -38,7 +38,7 @@ protected void onCreate(Bundle savedInstanceState) {\n \t\tsuper.onCreate(savedInstanceState);\n \t\tsetContentView(R.layout.net1314080903131activity_rgb);\n \n-\t\t\n+\n \t\ttv_rgb = (TextView) findViewById(R.id.textview);\n \t\tbtnColor = (Button) findViewById(R.id.btnColor);\n \t\tiv_image = (ImageView) findViewById(R.id.iv_image);\n@@ -67,7 +67,7 @@ public boolean onTouch(View v, MotionEvent event) {\n \t\t\t\t\tLog.i(TAG, \"r=\" + r + \",g=\" + g + \",b=\" + b);\n \t\t\t\t\ttv_rgb.setText(\"a=\" + a + \",r=\" + r + \",g=\" + g + \",b=\"\n \t\t\t\t\t\t\t+ b);\n-\t\t\t\t\tbtnColor.setTextColor(Color.rgb(r, g, b));\n+\t\t\t\t\tbtnColor.setBackgroundColor(Color.rgb(r, g, b));\n \t\t\t\t}\n \t\t\t\treturn true;\n \t\t\t}"
+  } ],
+  "sha" : "5e74c2489577cd38d90ba2d301d19ea9adbba891",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5e74c2489577cd38d90ba2d301d19ea9adbba891",
+  "parents" : [ {
+    "sha" : "03dcdd1899da1c6adef0db125ed2df32f11dafad",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/03dcdd1899da1c6adef0db125ed2df32f11dafad",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/03dcdd1899da1c6adef0db125ed2df32f11dafad"
+  } ]
+}

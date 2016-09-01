@@ -1,0 +1,136 @@
+{
+  "committer" : {
+    "login" : "chenbinsong",
+    "id" : 18431622,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18431622?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chenbinsong",
+    "html_url" : "https://github.com/chenbinsong",
+    "followers_url" : "https://api.github.com/users/chenbinsong/followers",
+    "following_url" : "https://api.github.com/users/chenbinsong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chenbinsong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chenbinsong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chenbinsong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chenbinsong/orgs",
+    "repos_url" : "https://api.github.com/users/chenbinsong/repos",
+    "events_url" : "https://api.github.com/users/chenbinsong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chenbinsong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 52,
+    "additions" : 39,
+    "deletions" : 13
+  },
+  "author" : {
+    "login" : "chenbinsong",
+    "id" : 18431622,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18431622?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chenbinsong",
+    "html_url" : "https://github.com/chenbinsong",
+    "followers_url" : "https://api.github.com/users/chenbinsong/followers",
+    "following_url" : "https://api.github.com/users/chenbinsong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chenbinsong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chenbinsong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chenbinsong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chenbinsong/orgs",
+    "repos_url" : "https://api.github.com/users/chenbinsong/repos",
+    "events_url" : "https://api.github.com/users/chenbinsong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chenbinsong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/a3546c796ee271788ef90ecd5d882262032f08a3",
+  "commit" : {
+    "author" : {
+      "name" : "chenbinsong",
+      "email" : "631373606@qq.com",
+      "date" : "2016-04-27T16:45:32Z"
+    },
+    "committer" : {
+      "name" : "chenbinsong",
+      "email" : "631373606@qq.com",
+      "date" : "2016-04-27T16:45:32Z"
+    },
+    "message" : "#89 #130",
+    "tree" : {
+      "sha" : "807eeed11d4be854b45d9e00deb0421ce8bd5227",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/807eeed11d4be854b45d9e00deb0421ce8bd5227"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/a3546c796ee271788ef90ecd5d882262032f08a3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a3546c796ee271788ef90ecd5d882262032f08a3/comments",
+  "files" : [ {
+    "sha" : "e75e9b2a967b1d06974e7eff625190aea0e26445",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903102/Net1314080903102Activity.java",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 12,
+    "changes" : 24,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903102/Net1314080903102Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903102/Net1314080903102Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903102/Net1314080903102Activity.java?ref=a3546c796ee271788ef90ecd5d882262032f08a3",
+    "patch" : "@@ -10,31 +10,31 @@\n import android.widget.TextView;\n \n public class Net1314080903102Activity extends Activity {\n+    private ImageView imav1;\n+    private ImageView imav2;\n+    private ImageView imav3;\n     private Button reset;\n     private TextView content;\n     private int[] arr;\n-    /** Called when the activity is first created. */\n+\n+    /**\n+     * Called when the activity is first created.\n+     */\n     @Override\n     public void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_net1314080903102);\n+        imav1 = (ImageView) findViewById(R.id.imv1);\n+        imav2 = (ImageView) findViewById(R.id.imv2);\n+        imav3 = (ImageView) findViewById(R.id.imv3);\n         reset = (Button) findViewById(R.id.reset);\n         content = (TextView) findViewById(R.id.content);\n-        reset.setOnClickListener(new resetOnClickListener());\n-    }\n-\n-\n \n+    }\n+}\n \n \n \n-    public class resetOnClickListener implements OnClickListener{\n-        @Override\n-        public void onClick(View v) {\n \n-            content.setText(\"猜猜看\");\n \n-        }\n-    }\n \n-}\n\\ No newline at end of file"
+  }, {
+    "sha" : "7f2e13d67749ce4f019b77e410ee78fd42304baf",
+    "filename" : "app/src/main/res/drawable/p01.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/drawable/p01.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/drawable/p01.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/p01.png?ref=a3546c796ee271788ef90ecd5d882262032f08a3"
+  }, {
+    "sha" : "395f163ed6b340aa813cb4153cb167dee2f0bf18",
+    "filename" : "app/src/main/res/drawable/p02.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/drawable/p02.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/drawable/p02.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/p02.png?ref=a3546c796ee271788ef90ecd5d882262032f08a3"
+  }, {
+    "sha" : "0c5fa3db264bb61e0c5bdf6c9a9fbfc9c28ab185",
+    "filename" : "app/src/main/res/drawable/p03.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/drawable/p03.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/drawable/p03.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/p03.png?ref=a3546c796ee271788ef90ecd5d882262032f08a3"
+  }, {
+    "sha" : "0136178d5d7ad4b24638bb6eed9105290d60b84b",
+    "filename" : "app/src/main/res/drawable/p04.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/drawable/p04.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/drawable/p04.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/p04.png?ref=a3546c796ee271788ef90ecd5d882262032f08a3"
+  }, {
+    "sha" : "9d39294e9a64d05337f6ca0ec2d1f1085f709df5",
+    "filename" : "app/src/main/res/layout/activity_net1314080903102.xml",
+    "status" : "modified",
+    "additions" : 27,
+    "deletions" : 1,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/layout/activity_net1314080903102.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a3546c796ee271788ef90ecd5d882262032f08a3/app/src/main/res/layout/activity_net1314080903102.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903102.xml?ref=a3546c796ee271788ef90ecd5d882262032f08a3",
+    "patch" : "@@ -9,7 +9,33 @@\n         android:textSize=\"20px\"\n         android:text=\"猜猜看\" />\n \n-\n+    <LinearLayout\n+        android:orientation=\"horizontal\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        >\n+        <ImageView\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:src=\"@drawable/p04\"\n+            android:id=\"@+id/imv1\"\n+            android:onClick=\"click\"\n+            />\n+        <ImageView\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:src=\"@drawable/p04\"\n+            android:id=\"@+id/imv2\"\n+            android:onClick=\"click\"\n+            />\n+        <ImageView\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:src=\"@drawable/p04\"\n+            android:id=\"@+id/imv3\"\n+            android:onClick=\"click\"\n+            />\n+    </LinearLayout>\n \n     <Button\n         android:layout_width=\"wrap_content\""
+  } ],
+  "sha" : "a3546c796ee271788ef90ecd5d882262032f08a3",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a3546c796ee271788ef90ecd5d882262032f08a3",
+  "parents" : [ {
+    "sha" : "556199a2bab6a84f1be35e39b9101ba4990439f9",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/556199a2bab6a84f1be35e39b9101ba4990439f9",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/556199a2bab6a84f1be35e39b9101ba4990439f9"
+  } ]
+}

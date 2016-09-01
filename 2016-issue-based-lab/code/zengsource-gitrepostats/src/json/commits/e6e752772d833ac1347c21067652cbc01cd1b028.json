@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "tanlanz",
+    "id" : 17428376,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17428376?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/tanlanz",
+    "html_url" : "https://github.com/tanlanz",
+    "followers_url" : "https://api.github.com/users/tanlanz/followers",
+    "following_url" : "https://api.github.com/users/tanlanz/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/tanlanz/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/tanlanz/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/tanlanz/subscriptions",
+    "organizations_url" : "https://api.github.com/users/tanlanz/orgs",
+    "repos_url" : "https://api.github.com/users/tanlanz/repos",
+    "events_url" : "https://api.github.com/users/tanlanz/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/tanlanz/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 23,
+    "additions" : 23,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "tanlanz",
+    "id" : 17428376,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17428376?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/tanlanz",
+    "html_url" : "https://github.com/tanlanz",
+    "followers_url" : "https://api.github.com/users/tanlanz/followers",
+    "following_url" : "https://api.github.com/users/tanlanz/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/tanlanz/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/tanlanz/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/tanlanz/subscriptions",
+    "organizations_url" : "https://api.github.com/users/tanlanz/orgs",
+    "repos_url" : "https://api.github.com/users/tanlanz/repos",
+    "events_url" : "https://api.github.com/users/tanlanz/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/tanlanz/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/e6e752772d833ac1347c21067652cbc01cd1b028",
+  "commit" : {
+    "author" : {
+      "name" : "tanlanz",
+      "email" : "1398643108@qq.com",
+      "date" : "2016-05-19T01:27:07Z"
+    },
+    "committer" : {
+      "name" : "tanlanz",
+      "email" : "1398643108@qq.com",
+      "date" : "2016-05-19T01:27:07Z"
+    },
+    "message" : "#61 #94 #95 传感器的调用",
+    "tree" : {
+      "sha" : "3b54344bc2eed728b679bc23b0fb4be3535bb22a",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/3b54344bc2eed728b679bc23b0fb4be3535bb22a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/e6e752772d833ac1347c21067652cbc01cd1b028",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e6e752772d833ac1347c21067652cbc01cd1b028/comments",
+  "files" : [ {
+    "sha" : "1554f4845c9259c5d9a4664f01f56bdeb74e1e6e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e6e752772d833ac1347c21067652cbc01cd1b028/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e6e752772d833ac1347c21067652cbc01cd1b028/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903146/AndroidManifest.xml?ref=e6e752772d833ac1347c21067652cbc01cd1b028",
+    "patch" : "@@ -0,0 +1,23 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"edu.hzuapps.androidworks.homeworks.net1314080903146\">\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@mipmap/ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:supportsRtl=\"true\"\n+        android:theme=\"@style/AppTheme\">\n+        <activity android:name=\".Net1314080903146Activity\">\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for\n+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->\n+        <!--<meta-data\n+            android:name=\"com.google.android.gms.version\"\n+            android:value=\"@integer/google_play_services_version\" />-->\n+    </application>\n+\n+</manifest>\n\\ No newline at end of file"
+  } ],
+  "sha" : "e6e752772d833ac1347c21067652cbc01cd1b028",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e6e752772d833ac1347c21067652cbc01cd1b028",
+  "parents" : [ {
+    "sha" : "d345a35f85dd15c5aeead5967b8b28d670c6dbb4",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d345a35f85dd15c5aeead5967b8b28d670c6dbb4",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/d345a35f85dd15c5aeead5967b8b28d670c6dbb4"
+  } ]
+}

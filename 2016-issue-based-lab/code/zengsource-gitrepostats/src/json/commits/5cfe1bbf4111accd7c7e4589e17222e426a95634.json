@@ -1,0 +1,344 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 1201,
+    "additions" : 1201,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/5cfe1bbf4111accd7c7e4589e17222e426a95634",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-12T05:23:15Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-12T05:23:15Z"
+    },
+    "message" : "Merge pull request #720 from LiuJingXin/master\n\n课程表和日记功能的实现",
+    "tree" : {
+      "sha" : "b0370aa68f7f91eb9e496cd20357d26851f74e08",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/b0370aa68f7f91eb9e496cd20357d26851f74e08"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5cfe1bbf4111accd7c7e4589e17222e426a95634/comments",
+  "files" : [ {
+    "sha" : "3869e9d3e7c0020e1687ae7e3b3d87859646417c",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_DiaryEditActivity.java",
+    "status" : "added",
+    "additions" : 64,
+    "deletions" : 0,
+    "changes" : 64,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_DiaryEditActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_DiaryEditActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_DiaryEditActivity.java?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,64 @@\n+\n+\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import edu.hzuapps.androidworks.net1314080903127.R;\n+public class Net1314080903127_DiaryEditActivity extends Activity {\n+\n+\tprivate EditText mTitleText;\n+\tprivate EditText mBodyText;\n+\tprivate Long mRowId;\n+\tprivate Net1314080903127_DbAdapter mDbHelper;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tmDbHelper = new Net1314080903127_DbAdapter(this);\n+\t\tsetContentView(R.layout.net1314080903127_diary_edit);\n+\n+\t\tmTitleText = (EditText) findViewById(R.id.title);\n+\t\tmBodyText = (EditText) findViewById(R.id.body);\n+\n+\t\tButton confirmButton = (Button) findViewById(R.id.confirm);\n+\n+\t\tmRowId = null;\n+\t\tBundle extras = getIntent().getExtras();\n+\t\t//�ж��Ƿ�Ϊ�༭״̬\n+\t\tif (extras != null) {\n+\t\t\tString title = extras.getString(Net1314080903127_DbAdapter.KEY_TITLE);\n+\t\t\tString body = extras.getString(Net1314080903127_DbAdapter.KEY_BODY);\n+\t\t\tmRowId = extras.getLong(Net1314080903127_DbAdapter.KEY_ROWID);\n+\n+\t\t\tif (title != null) {\n+\t\t\t\tmTitleText.setText(title);\n+\t\t\t}\n+\t\t\tif (body != null) {\n+\t\t\t\tmBodyText.setText(body);\n+\t\t\t}\n+\t\t}\n+\n+\t\tconfirmButton.setOnClickListener(new View.OnClickListener() {\n+\t\t\tpublic void onClick(View view) {\n+\t\t\t\tmDbHelper.open();\n+\t\t\t\tString title = mTitleText.getText().toString();\n+\t\t\t\tString body = mBodyText.getText().toString();\n+\t\t\t\tif (mRowId != null) {\n+\t\t\t\t\tmDbHelper.updateDiary(mRowId, title, body);\n+\t\t\t\t} else\n+\t\t\t\t\tmDbHelper.createDiary(title, body);\n+\t\t\t\tIntent mIntent = new Intent();\n+\t\t\t\tsetResult(RESULT_OK, mIntent);\n+\t\t\t\tmDbHelper.closeclose();\n+\t\t\t\tfinish();\n+\t\t\t}\n+\n+\t\t});\n+\t}\n+}"
+  }, {
+    "sha" : "ee6a6c86ee1f16c326eec033733a913ee4c23ad6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_MainActivity.java",
+    "status" : "added",
+    "additions" : 93,
+    "deletions" : 0,
+    "changes" : 93,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_MainActivity.java?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,93 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.Toast;\n+import edu.hzuapps.androidworks.net1314080903127.R;\n+public class Net1314080903127_MainActivity extends Activity {\n+\t\n+\t//�˵�ѡ��\n+\tpublic static final int HELP = Menu.FIRST;\n+\tpublic static final int EXIT = Menu.FIRST + 1;\n+\tpublic static final int SCORE = Menu.FIRST + 2; \n+\t\n+    /** Called when the activity is first created. */\n+    @Override\n+    public void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.net1314080903127_main);\n+        setTitle(\"��ѧ����������\");\n+        find_and_modify_button();\n+        Toast.makeText(Net1314080903127_MainActivity.this,  \n+                \"��ӭʹ�ô�ѧ����������\", Toast.LENGTH_SHORT).show();\n+    }\n+\n+\tprivate void find_and_modify_button() {\n+\t\t// TODO Auto-generated method stub\n+\t\tButton btn_course = (Button) findViewById(R.id.btn_course);\n+\t\tbtn_course.setOnClickListener(course_listener);\n+\t\tButton btn_diary = (Button) findViewById(R.id.btn_diary);\n+\t\tbtn_diary.setOnClickListener(diary_listener);\n+\t}\n+\tprivate Button.OnClickListener course_listener = new OnClickListener()\n+\t{\n+\t\t@Override\n+\t\tpublic void onClick(View v) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tIntent intent = new Intent();\n+\t\t\tintent.setClass(Net1314080903127_MainActivity.this, Net1314080903127_course_activity.class);\n+\t\t\tstartActivity(intent);\n+\t\t}\n+\t};\n+\tprivate Button.OnClickListener diary_listener = new OnClickListener()\n+\t{\n+\t\t@Override\n+\t\tpublic void onClick(View v) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tIntent intent = new Intent();\n+\t\t\tintent.setClass(Net1314080903127_MainActivity.this, Net1314080903127_diary_activity.class);\n+\t\t\tstartActivity(intent);\n+\t\t}\n+\t};\n+\n+\n+\t@Override\n+\t/*\n+\t * menu.findItem(EXIT_ID);�ҵ��ض���MenuItem\n+\t * MenuItem.setIcon.��������menu��ť�ı���\n+\t */\n+\tpublic boolean onCreateOptionsMenu(Menu menu) {\n+\t\tsuper.onCreateOptionsMenu(menu);\n+\t\tmenu.add(0, HELP, 0, \"����\").setIcon(R.drawable.net1314080903127_helps);\n+\t\tmenu.add(0, EXIT, 0, \"�˳�\").setIcon(R.drawable.net1314080903127_exit);\n+\t\tmenu.add(0, SCORE, 0, \"���\").setIcon(R.drawable.net1314080903127_score);\n+\t\treturn true;\n+\t}\n+\t\n+\tpublic boolean onOptionsItemSelected(MenuItem item) {\n+\t\tswitch (item.getItemId()) {\n+\t\tcase HELP: \n+\t\t\t Intent help_intent = new Intent();\n+\t\t\t help_intent.setClass(Net1314080903127_MainActivity.this, Net1314080903127_help_activity.class);\n+\t\t\t startActivity(help_intent);\n+\t\tbreak;\n+\t\tcase SCORE:\n+\t\t\t Intent score_intent = new Intent();\n+\t\t\t score_intent.setClass(Net1314080903127_MainActivity.this, Net1314080903127_score_activity.class);\n+\t\t\t startActivity(score_intent);\n+\t\tbreak;\n+\t\tcase EXIT: \n+\t\t\tfinish();\n+\t\t break;\n+\n+\t\t}\n+\t\treturn super.onOptionsItemSelected(item);\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "5f2ae1957778672e9869d5f75dd248a5f20628b4",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_activity.java",
+    "status" : "added",
+    "additions" : 196,
+    "deletions" : 0,
+    "changes" : 196,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_activity.java?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,196 @@\n+/**\n+ * \n+ */\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+import java.sql.Date;\n+import java.util.Calendar;\n+\n+import android.app.ListActivity;\n+import android.content.Intent;\n+import android.database.Cursor;\n+import android.os.Bundle;\n+import android.util.Log;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.SimpleCursorAdapter;\n+import android.widget.Toast;\n+import edu.hzuapps.androidworks.net1314080903127.R;\n+\n+\n+public class Net1314080903127_course_activity extends ListActivity {\n+\t\n+\t//�˵�ѡ��\n+\tpublic static final int NEW = Menu.FIRST;\n+\tpublic static final int SET = Menu.FIRST + 1;\n+\tpublic static final int DELETE = Menu.FIRST + 2;\n+\tpublic static final int HELP = Menu.FIRST + 3;\n+\t\n+\t//��ֵȷ�ϵĹؼ���\n+\tprivate static final int REQUEST_SET = 0;\n+\tprivate static final int REQUEST_NEW = 1;\n+\t\n+\t//Ĭ�ϵĵ�һ�ܿ�ʼʱ��\n+\tint first_year = 2010;\n+\tint first_month = 9;\n+\tint first_day = 1;\t\n+\tDate start_date = new Date(first_year,first_month,first_day);\n+\t\n+\t//�½��Ŀγ���Ϣ\n+\tString course_name = \"\";\n+\tString week_start  = \"\";\n+\tString week_end  = \"\";\n+\tString course_index1  = \"\";\n+\tString course_place  = \"\";\n+\tString week_index  = \"\";\n+\t\n+\t//��ǰ����\n+\tCalendar c = Calendar.getInstance();\n+\tint now_year = c.get(Calendar.YEAR);\n+\tint now_month = c.get(Calendar.MONTH);\n+\tint now_day = c.get(Calendar.DAY_OF_MONTH);\n+\tDate now_date = new Date(now_year,now_month,now_day);\n+\t\n+\t//�����ǵڼ���\n+\tint interval_weeks = 1;\n+\t\n+\t//��ݿ����\n+\tprivate Net1314080903127_DbAdapter mDbHelper;\n+\tprivate Cursor mCourseCursor;\n+\t\n+\t/* (non-Javadoc)\n+\t * @see android.app.Activity#onCreate(android.os.Bundle)\n+\t */\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetTitle(\"���ܿγ���Ϣ\");\n+\t\tsetContentView(R.layout.net1314080903127_course_activity);\n+\t\t\n+\t\tmDbHelper = new Net1314080903127_DbAdapter(this);\n+\t\tupdateCourseView();\n+\t}\n+\t/**\n+\t * ����listactivity�����\n+\t */\n+\tprivate void updateCourseView() {\n+\t\t// TODO Auto-generated method stub\n+\t\tLog.e(\"done\", \"getcourse\");\n+\t\tmDbHelper.open();\n+\t\tmCourseCursor = mDbHelper.getAllCourses(interval_weeks);\n+        Toast.makeText(Net1314080903127_course_activity.this,  \n+                \"��ǰ�ǵ�\"+interval_weeks +\"��,���menu����\", Toast.LENGTH_SHORT).show();\n+\t\tLog.e(\"weeks\",\" \" +interval_weeks);\n+\t\tLog.e(\"done\", \"donegetcourse\");\n+\t\tsetTitle(\"��\"+interval_weeks +\"�� \"+\"�γ���Ϣ\");\n+\t\tstartManagingCursor(mCourseCursor);\n+\t\t\n+\t\tString[] from = new String[] { Net1314080903127_DbAdapter.KEY_NAME, Net1314080903127_DbAdapter.KEY_PLACE, Net1314080903127_DbAdapter.KEY_INDEX, Net1314080903127_DbAdapter.KEY_WEEK_INDEX};\n+\t\tint[] to = new int[] { R.id.item_name, R.id.item_place, R.id.item_index, R.id.item_week_index };\n+\t\tSimpleCursorAdapter courses = new SimpleCursorAdapter(this,\n+\t\t\t\tR.layout.net1314080903127_course_list_item, mCourseCursor, from, to);\n+\t\tsetListAdapter(courses);\n+\t\tmDbHelper.closeclose();\n+\t}\n+\t/* (non-Javadoc)\n+\t * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)\n+\t */\n+\t@Override\n+\tpublic boolean onCreateOptionsMenu(Menu menu) {\n+\t\t// TODO Auto-generated method stub\n+\t\t super.onCreateOptionsMenu(menu);\n+\t\t menu.add(0, NEW, 0, \"�½�\").setIcon(R.drawable.net1314080903127_new_course);\n+\t\tmenu.add(0, SET, 0, \"����\").setIcon(R.drawable.net1314080903127_setting);\n+\t\tmenu.add(0, DELETE, 0, \"ɾ��\").setIcon(R.drawable.net1314080903127_delete);\n+\t\tmenu.add(0, HELP, 0, \"����\").setIcon(R.drawable.net1314080903127_helps);\n+\t\treturn true;\n+\t}\n+\t\n+\t/* (non-Javadoc)\n+\t * @see android.app.Activity#onOptionsItemSelected(android.view.MenuItem)\n+\t */\n+\t@Override\n+\tpublic boolean onMenuItemSelected(int featureId, MenuItem item) {\n+\t\t// TODO Auto-generated method stub\n+\t\tswitch (item.getItemId()) {\n+\t\tcase HELP: \n+\t\t\t Intent help_intent = new Intent();\n+\t\t\t help_intent.setClass(Net1314080903127_course_activity.this, Net1314080903127_help_activity.class);\n+\t\t\t startActivity(help_intent);\n+\t\t\t return true;\n+\t\tcase NEW:\n+\t\t\t Intent new_course_intent = new Intent();\n+\t\t\t new_course_intent.setClass(Net1314080903127_course_activity.this, Net1314080903127_course_new_activity.class);\n+\t\t\t startActivityForResult(new_course_intent, REQUEST_NEW);\n+\t\t\t return true;\n+\t\tcase SET: \n+\t\t\tIntent set_intent = new Intent();\n+\t\t\tset_intent.setClass(Net1314080903127_course_activity.this, Net1314080903127_course_set_activity.class);\n+\t\t\tstartActivityForResult(set_intent, REQUEST_SET);\n+\t\t\t return true;\n+\t\tcase DELETE:\n+\t\t\tmDbHelper.open();\n+\t\t\tmDbHelper.deleteCourse(getListView().getSelectedItemId());\n+\t\t\tmDbHelper.closeclose();\n+\t\t\tupdateCourseView();\n+\t\t\treturn true;\n+\t\t}\n+\t\treturn super.onOptionsItemSelected(item);\n+\t}\n+\t\n+\t//�õ������ǵڼ���\n+\tprivate int get_interval_weeks(Date ds, Date de)\n+\t{\n+\t\t   long total = (de.getTime()-ds.getTime())/(24*60*60*1000);\n+\t\t\tLog.e(\"total\",\" \" +total);\n+\t\t   return ((int)(total/7.0) + 1);\n+\t}\n+\t\n+\t/* (non-Javadoc)\n+\t * @see android.app.Activity#onActivityResult(int, int, android.content.Intent)\n+\t */\n+\t@Override\n+\tprotected void onActivityResult(int requestCode, int resultCode, Intent data) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onActivityResult(requestCode, resultCode, data);\n+\t\t\n+\t\t//���õ�һ�ܵĻظ�\n+\t\tif(requestCode == REQUEST_SET)\n+\t\t{\n+\t\t\tif(resultCode == RESULT_OK)\n+\t\t\t{\n+\t\t\t\tBundle extras = data.getExtras();\n+\t\t\t\tif(extras != null)\n+\t\t\t\t{\n+\t\t\t\t\tfirst_year = extras.getInt(\"year\");\n+\t\t\t\t\tfirst_month = extras.getInt(\"month\");\n+\t\t\t\t\tfirst_day = extras.getInt(\"day\");\n+\t\t\t\t\tstart_date = new Date(first_year,first_month,first_day);\n+\t\t\t\t\tLog.e(\"now_month\",\" \" +now_month);\n+\t\t\t\t\tLog.e(\"now_day\",\" \" +now_day);\n+\t\t\t\t\tinterval_weeks = get_interval_weeks(start_date, now_date);\n+\t\t\t        Toast.makeText(Net1314080903127_course_activity.this,  \n+\t\t\t                \"��ǰ�ǵ�\"+interval_weeks +\"��\", Toast.LENGTH_LONG).show();\n+\t\t\t\t\tsetTitle(\"��\"+interval_weeks +\"�� \"+\"�γ���Ϣ\");\n+\t\t\t\t\tLog.e(\"weeks\",\" \" +interval_weeks);\n+\t\t\t\t}\n+\t\t\t\t\n+\t\t\t}\n+\t\t}\n+\t\t\n+\t\t//����¿γ���Ϣ�Ļظ�\n+\t\telse if(requestCode == REQUEST_NEW)\n+\t\t{\n+\t\t\tif(resultCode == RESULT_OK)\n+\t\t\t{\n+\t\t\t\tupdateCourseView();\n+\t\t\t}\n+\t\t}\n+\t}\n+}\n+\n+\n+\n+\n+"
+  }, {
+    "sha" : "b522b5f93042986035f8fafa9c454aacebbe4d53",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_new_activity.java",
+    "status" : "added",
+    "additions" : 192,
+    "deletions" : 0,
+    "changes" : 192,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_new_activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_new_activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_new_activity.java?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,192 @@\n+/**\n+ * \n+ */\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.util.Log;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.AdapterView;\n+import android.widget.AdapterView.OnItemClickListener;\n+import android.widget.AdapterView.OnItemSelectedListener;\n+import edu.hzuapps.androidworks.net1314080903127.R;\n+import android.widget.ArrayAdapter;\n+import android.widget.AutoCompleteTextView;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.Spinner;\n+\n+public class Net1314080903127_course_new_activity extends Activity {\n+\t\n+\t//��ݿ����\n+\tprivate Net1314080903127_DbAdapter mDbHelper;\n+\t\n+\t//�γ���Ϣ��Ĭ������\n+\tString course_name = \"default\";;\n+\tString week_start = \"1\";\n+\tString week_end = \"15\";\n+\tString course_index = \"1\";\n+\tString week_index = \"��һ\";\n+\tCharSequence course_place = \"��ѧ¥\";\n+\t\n+\t//TextWatcher place_watcher;\n+\t\n+\t/* (non-Javadoc)\n+\t * @see android.app.Activity#onCreate(android.os.Bundle)\n+\t */\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\t\n+\t\tmDbHelper = new Net1314080903127_DbAdapter(this);\n+\t\t\n+\t\tsetContentView(R.layout.net1314080903127_course_new);\n+\t\tsetTitle(\"�½�һ��γ���Ϣ\");\n+\t\t\n+\t\t//�γ����Զ���������\n+\t\tAutoCompleteTextView course_name_autocompelete = (AutoCompleteTextView) findViewById(R.id.course_input_autocompelte);\n+\t\tcourse_name_autocompelete.setThreshold(1);//��������һ���ַ�����ʾ\n+\t\tString[] course_name_array = getResources().getStringArray(R.array.course_name_array);\n+\t\tfinal ArrayAdapter<String> name_adapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, course_name_array);\n+\t\tcourse_name_autocompelete.setAdapter(name_adapter);\n+\t\t\n+\t\t//�õ��γ�����\n+\t\t\n+\t\tcourse_name_autocompelete.setOnItemClickListener(new OnItemClickListener() {\n+\t\t\t\n+\t\t    @Override \n+\t\t    public void onItemClick(AdapterView parent, View view, int position, long id) { \t \n+\t\t    \t//course_name = (String) adapter.getItemAtPosition(arg2).toString();\n+\t\t    \tcourse_name = name_adapter.getItem(position); \n+\t\t    };\n+\t\t});\n+\t\t\n+\t\t//course_name = \"software\";\n+\t\t//ȷ�ϰ�ť\n+\t\tButton btn_course_new_confirm = (Button) findViewById(R.id.btn_course_new_confirm);\n+\t\tbtn_course_new_confirm.setOnClickListener(btn_confirm_listener);\n+\t\t\n+\t\t//�ܴ�ѡ��  ���ܡ�������\n+\t\tfinal ArrayAdapter<CharSequence> week_adapter = ArrayAdapter.createFromResource(\n+\t\t\t\tthis, R.array.week_array, android.R.layout.simple_spinner_dropdown_item);\n+\t\tweek_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);\n+\t\t\n+\t\t//��ʼ��\n+\t\tSpinner course_time_start_spinner = (Spinner) findViewById(R.id.course_time_start_spinner);\t\t\n+\t\tcourse_time_start_spinner.setAdapter(week_adapter);\n+\t\t\n+\t\t\n+\t\tOnItemSelectedListener start_listener = new  OnItemSelectedListener(){  \n+\t\t    \t//week_start = week_adapter.getItemAtPosition(arg2).toString(); \n+\t\t    \t\n+\t\t    \t public void onItemSelected(AdapterView<?> adapter,View v,   \n+\t\t                 int pos, long id) {   \n+\t\t    \t\t week_start = week_adapter.getItem(pos).toString();\n+\t\t         }   \n+\n+\t\t         public void onNothingSelected(AdapterView<?> arg0) {   \n+\t\t             // TODO Auto-generated method stub   \n+\t\t               week_start = \"1\";\n+\t\t         }   \n+\t\t};\n+\t\t course_time_start_spinner.setOnItemSelectedListener(start_listener);\n+\t\t\n+\t\t\n+\t\t\t\t\n+\t\t//������\n+\t\tSpinner course_time_end_spinner = (Spinner) findViewById(R.id.course_time_end_spinner);\n+\t\tcourse_time_end_spinner.setAdapter(week_adapter);\n+\t\t\n+\t\tOnItemSelectedListener end_listener = new  OnItemSelectedListener(){  \n+\t    \t//week_start = week_adapter.getItemAtPosition(arg2).toString(); \n+\t    \t\n+\t    \t public void onItemSelected(AdapterView<?> adapter,View v,   \n+\t                 int pos, long id) {   \n+\t    \t\t week_end =  week_adapter.getItem(pos).toString();\n+\t         }   \n+\n+\t         public void onNothingSelected(AdapterView<?> arg0) {   \n+\t             // TODO Auto-generated method stub   \n+\t        \t week_end= \"1\";\n+\t         }   \n+\t\t};\n+\t\tcourse_time_end_spinner.setOnItemSelectedListener(end_listener);\n+\t\t\n+\t\t//�γ̽ڴ�ѡ��\n+\t\tSpinner course_index_spinner = (Spinner) findViewById(R.id.course_index_spinner);\n+\t\tcourse_index_spinner.setAdapter(week_adapter);\n+\t\t\n+\t\tOnItemSelectedListener index_listener = new  OnItemSelectedListener(){  \n+\t    \t//week_start = week_adapter.getItemAtPosition(arg2).toString(); \n+\t    \t\n+\t    \t public void onItemSelected(AdapterView<?> adapter,View v,   \n+\t                 int pos, long id) {   \n+\t    \t\t course_index =  \"��\" + week_adapter.getItem(pos).toString() + \"��\";\n+\t         }   \n+\n+\t         public void onNothingSelected(AdapterView<?> arg0) {   \n+\t             // TODO Auto-generated method stub   \n+\t        \t course_index= \"1\";\n+\t         }   \n+\t\t};\n+\t\tcourse_index_spinner.setOnItemSelectedListener(index_listener);\n+\t\t\n+\t\t//�γ��ܴ�\n+\t\tfinal ArrayAdapter<CharSequence> week_index_adapter = ArrayAdapter.createFromResource(\n+\t\t\t\tthis, R.array.week_index_array, android.R.layout.simple_spinner_dropdown_item);\n+\t\tweek_index_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);\n+\t\tSpinner week_index_spinner = (Spinner) findViewById(R.id.week_index_spinner);\n+\t\tweek_index_spinner.setAdapter(week_index_adapter);\n+\t\t\n+\t\tOnItemSelectedListener week_index_spinner_listener = new  OnItemSelectedListener(){  \n+\t    \t//week_start = week_adapter.getItemAtPosition(arg2).toString(); \n+\t    \t\n+\t    \t public void onItemSelected(AdapterView<?> adapter,View v,   \n+\t                 int pos, long id) {   \n+\t    \t\t week_index =  week_index_adapter.getItem(pos).toString();\n+\t         }   \n+\n+\t         public void onNothingSelected(AdapterView<?> arg0) {   \n+\t             // TODO Auto-generated method stub   \n+\t        \t week_index= \"��һ\";\n+\t         }   \n+\t\t};\n+\t\tweek_index_spinner.setOnItemSelectedListener(week_index_spinner_listener);\n+\t\t\n+\t\t\n+\t\t//place   �γ̵ص�\n+\t\tEditText course_place_edittext = (EditText)findViewById(R.id.course_place_edittext);\n+\t\tcourse_place = course_place_edittext.getText();\n+\t\t\n+\t\tLog.e(\"place\", course_place.toString());\n+\t}\n+\n+\t//��ť������\n+\tprivate Button.OnClickListener btn_confirm_listener = new OnClickListener()\n+\t{\n+\t\t@Override\n+\t\tpublic void onClick(View v) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tsetTitle(course_name + \"\\\\\" + course_place+ \"\\\\\"  +week_start+ \"\\\\\"+week_end + \"\\\\\"+ course_index);\n+\t\t\tIntent intent = new Intent();\n+\t\t\tsetResult(RESULT_OK, intent);\n+\t\t\tLog.e(\"name\", \"\"+course_name);\n+\t\t\tLog.e(\"start\", week_start);\n+\t\t\tLog.e(\"end\", week_end);\n+\t\t\tLog.e(\"index\", course_index);\n+\t\t\tLog.e(\"place\", course_place.toString());\n+\t\t\t//���γ���Ϣ��ӵ���ݿ�\n+\t\t\tmDbHelper.open();\n+\t\t\tmDbHelper.createCourse(course_name, Integer.parseInt(week_start), Integer.parseInt(week_end), course_index, course_place.toString(),week_index);\n+\t\t\tmDbHelper.closeclose();\n+\t\t\tfinish();\n+\t\t}\n+\t};\n+}\n+\n+\n+"
+  }, {
+    "sha" : "ff29069f18e4c9ee6f2d72e52278597be8c8d0a7",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_set_activity.java",
+    "status" : "added",
+    "additions" : 66,
+    "deletions" : 0,
+    "changes" : 66,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_set_activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_set_activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_course_set_activity.java?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,66 @@\n+/**\n+ * \n+ */\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.util.Log;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.DatePicker;\n+import edu.hzuapps.androidworks.net1314080903127.R;\n+public class Net1314080903127_course_set_activity extends Activity {\n+\t\n+\tButton btn_course_set_confirm;\n+\tDatePicker course_first_week;\n+\tint year = 0;\n+\tint month = 0;\n+\tint day = 0;\n+\n+\t/* (non-Javadoc)\n+\t * @see android.app.Activity#onCreate(android.os.Bundle)\n+\t */\n+\t@Override \n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.net1314080903127_course_set);\n+\t\t\n+\t\tbtn_course_set_confirm = (Button)findViewById(R.id.btn_course_set_confirm);\n+\t\tbtn_course_set_confirm.setOnClickListener(btn_confirm_listener);\n+\t\t\n+\t\tcourse_first_week = (DatePicker) findViewById(R.id.course_first_week);\n+\t\tday = course_first_week.getDayOfMonth();\n+\t\tmonth = course_first_week.getMonth();\n+\t\tyear = course_first_week.getYear();\n+\t\tLog.e(\"y1\", \" \" +year);\n+\t}\n+\t\n+\t//��ť������\n+\tprivate Button.OnClickListener btn_confirm_listener = new OnClickListener()\n+\t{\n+\t\t@Override\n+\t\tpublic void onClick(View v) {\n+\t\t\t\n+\t\t\tday = course_first_week.getDayOfMonth();\n+\t\t\tmonth = course_first_week.getMonth();\n+\t\t\tyear = course_first_week.getYear();\n+\t\t\t//Log.e(\"y\", \" \" +year);\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tBundle bundle = new Bundle();\n+\t\t\tbundle.putInt(\"year\", year);\n+\t\t\tbundle.putInt(\"month\", month);\n+\t\t\tbundle.putInt(\"day\", day);\n+\t\t\t\n+\t\t\tIntent intent = new Intent();\n+\t\t\tintent.putExtras(bundle);\n+\t\t\tsetResult(RESULT_OK, intent);\n+\t\t\tLog.e(\"y2\", \" \" +year);\n+\t\t\tfinish();\n+\t\t}\n+\t};\n+\n+}"
+  }, {
+    "sha" : "83988f03805903ec94e1f4e350eb587ccc27dc00",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java",
+    "status" : "added",
+    "additions" : 104,
+    "deletions" : 0,
+    "changes" : 104,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,104 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+import android.app.ListActivity;\n+import android.content.Intent;\n+import android.database.Cursor;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.widget.ListView;\n+import android.widget.SimpleCursorAdapter;\n+import edu.hzuapps.androidworks.net1314080903127.R;\n+public class Net1314080903127_diary_activity extends ListActivity {\n+\t\n+\t//�ظ��Ĺؼ���\n+\tprivate static final int ACTIVITY_CREATE = 0;\n+\tprivate static final int ACTIVITY_EDIT = 1;\n+\n+\t//�˵���ѡ��\n+\tprivate static final int INSERT_ID = Menu.FIRST;\n+\tprivate static final int DELETE_ID = Menu.FIRST + 1;\n+\n+\tprivate Net1314080903127_DbAdapter mDbHelper;\n+\tprivate Cursor mDiaryCursor;\n+\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.net1314080903127_diary_list);\n+\t\tmDbHelper = new Net1314080903127_DbAdapter(this);\n+\t\tupdateListView();\n+\n+\t}\n+\n+\t//���µ�ǰ��listacvitity\n+\tprivate void updateListView() {\n+\t\tmDbHelper.open();\n+\t\tmDiaryCursor = mDbHelper.getAllNotes();\n+\t\t//����Activity�����α�\n+\t\tstartManagingCursor(mDiaryCursor);\n+\t\tString[] from = new String[] { Net1314080903127_DbAdapter.KEY_TITLE,\n+\t\t\t\tNet1314080903127_DbAdapter.KEY_CREATED };\n+\t\tint[] to = new int[] { R.id.text1, R.id.created };\n+\t\tSimpleCursorAdapter notes = new SimpleCursorAdapter(this,\n+\t\t\t\tR.layout.net1314080903127_diary_row, mDiaryCursor, from, to);\n+\t\tsetListAdapter(notes);\n+\t\tmDbHelper.closeclose();\n+\t}\n+\n+\t//����һ��˵�\n+\t@Override\n+\tpublic boolean onCreateOptionsMenu(Menu menu) {\n+\t\tsuper.onCreateOptionsMenu(menu);\n+\t\tmenu.add(0, INSERT_ID, 0,\"�½�\").setIcon(R.drawable.net1314080903127_new_course);\n+\t\tmenu.add(0, DELETE_ID, 0, \"ɾ��\").setIcon(R.drawable.net1314080903127_delete);\n+\t\treturn true;\n+\t}\n+\n+\t//�˵�ѡ��\n+\t@Override\n+\tpublic boolean onMenuItemSelected(int featureId, MenuItem item) {\n+\t\tswitch (item.getItemId()) {\n+\t\tcase INSERT_ID:\n+\t\t\tcreateDiary();\n+\t\t\treturn true;\n+\t\tcase DELETE_ID:\n+\t\t\tmDbHelper.open();\n+\t\t\tmDbHelper.deleteDiary(getListView().getSelectedItemId());\n+\t\t\tmDbHelper.closeclose();\n+\t\t\tupdateListView();\n+\t\t\treturn true;\n+\t\t}\n+\t\treturn super.onMenuItemSelected(featureId, item);\n+\t}\n+\n+\tprivate void createDiary() {\n+\t\tIntent i = new Intent(this, Net1314080903127_DiaryEditActivity.class);\n+\t\tstartActivityForResult(i, ACTIVITY_CREATE);\n+\t}\n+\n+\t@Override\n+\t// ��Ҫ��position��id����һ��ܺõ����\n+\t// positionָ���ǵ������ViewItem�ڵ�ǰListView�е�λ��\n+\t// ÿһ���ViewItem�󶨵���ݣ��϶�����һ��id��ͨ�����id�����ҵ�������ݡ�\n+\tprotected void onListItemClick(ListView l, View v, int position, long id) {\n+\t\tsuper.onListItemClick(l, v, position, id);\n+\t\tCursor c = mDiaryCursor;\n+\t\tc.moveToPosition(position);\n+\t\tIntent i = new Intent(this, Net1314080903127_DiaryEditActivity.class);\n+\t\ti.putExtra(Net1314080903127_DbAdapter.KEY_ROWID, id);\n+\t\ti.putExtra(Net1314080903127_DbAdapter.KEY_TITLE, c.getString(c\n+\t\t\t\t.getColumnIndexOrThrow(Net1314080903127_DbAdapter.KEY_TITLE)));\n+\t\ti.putExtra(Net1314080903127_DbAdapter.KEY_BODY, c.getString(c\n+\t\t\t\t.getColumnIndexOrThrow(Net1314080903127_DbAdapter.KEY_BODY)));\n+\t\tstartActivityForResult(i, ACTIVITY_EDIT);\n+\t}\n+\n+\t@Override\n+\tprotected void onActivityResult(int requestCode, int resultCode,\n+\t\t\tIntent intent) {\n+\t\tsuper.onActivityResult(requestCode, resultCode, intent);\n+\t\tupdateListView();\n+\t}\n+}"
+  }, {
+    "sha" : "4a0118fbfd2685045a3ccaa69ac0b4c6088d0479",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_help_activity.java",
+    "status" : "added",
+    "additions" : 22,
+    "deletions" : 0,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_help_activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_help_activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_help_activity.java?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,22 @@\n+/**\n+ * \n+ */\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import edu.hzuapps.androidworks.net1314080903127.R;\n+public class Net1314080903127_help_activity extends Activity {\n+\t\n+\t/* (non-Javadoc)\n+\t * @see android.app.Activity#onCreate(android.os.Bundle)\n+\t */\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.net1314080903127_help);\n+\t\tsetTitle(\"����\");\n+\t}\n+\n+}"
+  }, {
+    "sha" : "9074ea2540c109c8b9e3b0e097eddd6ba024ef01",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_score_activity.java",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_score_activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_score_activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_score_activity.java?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,38 @@\n+/**\n+ * \n+ */\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.widget.RatingBar;\n+import android.widget.Toast;\n+import edu.hzuapps.androidworks.net1314080903127.R;\n+public class Net1314080903127_score_activity extends Activity {\n+\t/* (non-Javadoc)\n+\t * @see android.app.Activity#onCreate(android.os.Bundle)\n+\t */\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.net1314080903127_score);\n+\t\tsetTitle(\"���ְ�O(��_��)O~\");\n+\n+\tRatingBar ratingBar = (RatingBar) findViewById(R.id.rating_bar);\n+\tratingBar.setOnRatingBarChangeListener(\n+\t\t\tnew RatingBar.OnRatingBarChangeListener() {  \n+\t        @Override  \n+\t        public void onRatingChanged(RatingBar ratingBar,  \n+\t                float rating, boolean fromUser) {  \n+\t            // TODO Auto-generated method stub  \n+\t            ratingBar.setRating(rating);  \n+\t            Toast.makeText(Net1314080903127_score_activity.this,  \n+\t                    \"лл��֣�\", Toast.LENGTH_SHORT).show();\n+\t            finish();\n+\t        \t}         \n+\t\t\t}\n+\t\t\t);  \n+\t}\n+}"
+  }, {
+    "sha" : "e421cddfcb73fa97ee44d438cabcaef58d34464f",
+    "filename" : "app/src/main/res/drawable/net1314080903127_delete.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_delete.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_delete.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903127_delete.png?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634"
+  }, {
+    "sha" : "30dfed6b14617ef3607c3e820efd68d6ace4e3af",
+    "filename" : "app/src/main/res/drawable/net1314080903127_exit.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_exit.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_exit.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903127_exit.png?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634"
+  }, {
+    "sha" : "d25e03f0c7d4263ee9ac0d69fd71dbf99f0c3651",
+    "filename" : "app/src/main/res/drawable/net1314080903127_helps.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_helps.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_helps.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903127_helps.png?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634"
+  }, {
+    "sha" : "abd82eead31d21e2bec63dd2357251cf074f0132",
+    "filename" : "app/src/main/res/drawable/net1314080903127_main_back.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_main_back.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_main_back.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903127_main_back.png?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634"
+  }, {
+    "sha" : "2f1517531235023df4668b77d10178e38c0d5386",
+    "filename" : "app/src/main/res/drawable/net1314080903127_myicon.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_myicon.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_myicon.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903127_myicon.png?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634"
+  }, {
+    "sha" : "011b47ce4611338e39a3afa9a80633e83d3aa465",
+    "filename" : "app/src/main/res/drawable/net1314080903127_new_course.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_new_course.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_new_course.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903127_new_course.png?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634"
+  }, {
+    "sha" : "1bc2e8c48148d7b0b57559aa157426079bfeab68",
+    "filename" : "app/src/main/res/drawable/net1314080903127_nwpu.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_nwpu.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_nwpu.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903127_nwpu.png?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634"
+  }, {
+    "sha" : "9ab92de210b3f04a6a9b24ae659534aaa2c554e7",
+    "filename" : "app/src/main/res/drawable/net1314080903127_score.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_score.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_score.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903127_score.png?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634"
+  }, {
+    "sha" : "d935079cf28369471b702b88c691a5143f3b9c34",
+    "filename" : "app/src/main/res/drawable/net1314080903127_setting.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_setting.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/drawable/net1314080903127_setting.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903127_setting.png?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634"
+  }, {
+    "sha" : "6cabc74295e7c215fc5e923caa2333d3c90911a9",
+    "filename" : "app/src/main/res/layout/net1314080903127_course_activity.xml",
+    "status" : "added",
+    "additions" : 14,
+    "deletions" : 0,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_course_activity.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_course_activity.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_course_activity.xml?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,14 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout\n+  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+  android:layout_width=\"wrap_content\"\n+  android:layout_height=\"wrap_content\">\n+  \t<ListView android:id=\"@+id/android:list\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" />\n+ <TextView android:id=\"@+id/android:empty\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" \n+\t\tandroid:text=\"本周暂无课程信息!点击Menu按钮新建\" /> \n+  \n+</LinearLayout>"
+  }, {
+    "sha" : "13d6fd3e6c91e3ecdb3ac0f9f2796fea04e952fd",
+    "filename" : "app/src/main/res/layout/net1314080903127_course_list_item.xml",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_course_list_item.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_course_list_item.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_course_list_item.xml?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,31 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<ScrollView\n+xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+  android:layout_width=\"wrap_content\"\n+  android:layout_height=\"wrap_content\" >\n+\n+<LinearLayout\n+  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+  android:layout_width=\"wrap_content\"\n+  android:layout_height=\"wrap_content\"\n+  android:orientation = \"horizontal\">\n+  \n+  \t<TextView android:id=\"@+id/item_name\" \n+  \tandroid:layout_width=\"wrap_content\"\n+  \tandroid:textSize = \"20px\"\n+\tandroid:layout_height=\"wrap_content\" />\n+\t\n+\t<TextView android:id=\"@+id/item_place\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" \n+\t\tandroid:textSize = \"20px\"/>\n+\t<TextView android:id=\"@+id/item_index\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\"\n+\t\tandroid:textSize = \"20px\" />\n+  \t<TextView android:id=\"@+id/item_week_index\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\"\n+\t\tandroid:textSize = \"20px\" />\n+</LinearLayout>\n+</ScrollView>\n\\ No newline at end of file"
+  }, {
+    "sha" : "e0f467cc689579dea28a1456dbcd477bd6395b58",
+    "filename" : "app/src/main/res/layout/net1314080903127_course_new.xml",
+    "status" : "added",
+    "additions" : 151,
+    "deletions" : 0,
+    "changes" : 151,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_course_new.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_course_new.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_course_new.xml?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,151 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+  android:layout_width=\"fill_parent\"\n+  android:layout_height=\"wrap_content\">\n+<LinearLayout\n+  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+  android:layout_width=\"fill_parent\"\n+  android:layout_height=\"wrap_content\"\n+  android:orientation = \"vertical\">\n+\t\n+\t  <LinearLayout\n+\t  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\t  android:layout_width=\"fill_parent\"\n+\t  android:layout_height=\"wrap_content\"\n+\t  android:orientation = \"horizontal\">\n+\t\t <TextView android:text=\"课程名称\" \n+\t\t android:id=\"@+id/course_name_textview\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t android:textSize = \"15sp\">\n+\t\t </TextView>\n+\t\t <AutoCompleteTextView\n+\t\t android:text=\"自动完成课程名称\" \n+\t\t android:id=\"@+id/course_input_autocompelte\" \n+\t\t android:layout_width=\"fill_parent\" \n+\t\t android:layout_height=\"wrap_content\">\n+\t\t </AutoCompleteTextView>\n+\t</LinearLayout>\n+\t\n+\t<TextView android:text=\"课程时间\" \n+\t android:id=\"@+id/course_time_textview\" \n+\t android:layout_width=\"wrap_content\" \n+\t android:layout_height=\"wrap_content\"\n+\t android:textSize = \"15sp\">\n+\t </TextView>\n+\t \n+\t <LinearLayout\n+\t  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\t  android:layout_width=\"fill_parent\"\n+\t  android:layout_height=\"wrap_content\"\n+\t  android:orientation = \"horizontal\">\n+\t\t <TextView android:text=\"第\" \n+\t\t android:id=\"@+id/course_time_start_textview\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t android:textSize = \"15sp\">\n+\t\t </TextView>\n+\t\t <Spinner\n+\t\t android:id=\"@+id/course_time_start_spinner\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"50sp\"\n+\t\t >\n+\t\t </Spinner>\n+\t\t <TextView android:text=\"周到第\" \n+\t\t android:id=\"@+id/course_time_middle_textview\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t android:textSize = \"15sp\">\n+\t\t </TextView>\n+\t\t <Spinner\n+\t\t android:id=\"@+id/course_time_end_spinner\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"50sp\"\n+\t\t >\n+\t\t </Spinner>\n+\t\t <TextView android:text=\"周\" \n+\t\t android:id=\"@+id/course_time_end_textview\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t android:textSize = \"15sp\">\n+\t\t </TextView>\n+\t</LinearLayout>\n+\t\n+\t<LinearLayout\n+\t  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\t  android:layout_width=\"fill_parent\"\n+\t  android:layout_height=\"wrap_content\"\n+\t  android:orientation = \"horizontal\">\n+\t\t <TextView android:text=\"课程周次\" \n+\t\t android:id=\"@+id/week_index_textview\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t android:textSize = \"15sp\">\n+\t\t </TextView>\n+\t\t <Spinner\n+\t\t android:id=\"@+id/week_index_spinner\" \n+\t\t android:layout_width=\"fill_parent\" \n+\t\t android:layout_height=\"50sp\"\n+\t\t >\n+\t\t </Spinner>\n+\t </LinearLayout>\n+\t\n+\t  <LinearLayout\n+\t  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\t  android:layout_width=\"fill_parent\"\n+\t  android:layout_height=\"wrap_content\"\n+\t  android:orientation = \"horizontal\">\n+\t\t  <TextView android:text=\"课程节次\" \n+\t\t android:id=\"@+id/course_index_textview\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t android:textSize = \"15sp\">\n+\t\t </TextView>\n+\t\t <TextView android:text=\"第\" \n+\t\t android:id=\"@+id/course_index_start_textview\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t android:textSize = \"15sp\">\n+\t\t </TextView>\n+\t\t <Spinner\n+\t\t android:id=\"@+id/course_index_spinner\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"50sp\"\n+\t\t >\n+\t\t </Spinner>\n+\t\t <TextView android:text=\"节\" \n+\t\t android:id=\"@+id/course_index_end_textview\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t android:textSize = \"15sp\">\n+\t\t </TextView>\n+\t</LinearLayout>\n+\n+\t\n+\t<LinearLayout\n+\t  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\t  android:layout_width=\"fill_parent\"\n+\t  android:layout_height=\"wrap_content\"\n+\t  android:orientation = \"horizontal\">\n+\t\t\t <TextView android:text=\"课程地点\" \n+\t\t\t android:id=\"@+id/course_place_textview\" \n+\t\t\t android:layout_width=\"wrap_content\" \n+\t\t\t android:layout_height=\"wrap_content\"\n+\t\t\t android:textSize = \"15sp\">\n+\t\t\t </TextView>\n+\t\t\t <EditText\n+\t\t\t android:text=\"点击输入课程地点\" \n+\t\t\t android:id=\"@+id/course_place_edittext\" \n+\t\t\t android:layout_width=\"fill_parent\" \n+\t\t\t android:layout_height=\"wrap_content\">\n+\t\t\t </EditText>\n+\t</LinearLayout>\n+\t\n+<Button android:text=\"确认\" \n+android:id=\"@+id/btn_course_new_confirm\" \n+android:layout_width=\"fill_parent\" \n+android:layout_height=\"wrap_content\">\n+</Button>\n+\n+</LinearLayout>\n+</ScrollView>"
+  }, {
+    "sha" : "073781ecb2286ce5930dc45c354a5449b1144a92",
+    "filename" : "app/src/main/res/layout/net1314080903127_course_set.xml",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_course_set.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_course_set.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_course_set.xml?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,30 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout\n+  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+  android:layout_width=\"fill_parent\"\n+  android:layout_height=\"wrap_content\"\n+  android:orientation = \"vertical\">\n+  \t<LinearLayout\n+\t  xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\t  android:layout_width=\"fill_parent\"\n+\t  android:layout_height=\"wrap_content\"\n+\t  android:orientation = \"vertical\">\n+\t\t <TextView android:text=\"第一周是\" \n+\t\t android:id=\"@+id/course_first_week_textview\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t android:textSize = \"25sp\">\n+\t\t </TextView>\n+\t\t <DatePicker\n+\t\t android:id=\"@+id/course_first_week\" \n+\t\t android:layout_width=\"wrap_content\" \n+\t\t android:layout_height=\"wrap_content\"\n+\t\t >\n+\t\t </DatePicker>\n+\t</LinearLayout>\n+<Button android:text=\"确定\" \n+\tandroid:id=\"@+id/btn_course_set_confirm\" \n+\tandroid:layout_width=\"fill_parent\" \n+\tandroid:layout_height=\"wrap_content\">\n+</Button>\n+</LinearLayout>"
+  }, {
+    "sha" : "dc7a8e0bba08bad530b78661a009e987283fd140",
+    "filename" : "app/src/main/res/layout/net1314080903127_diary_edit.xml",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_diary_edit.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_diary_edit.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_diary_edit.xml?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,30 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:orientation=\"vertical\" android:layout_width=\"fill_parent\"\n+\tandroid:layout_height=\"fill_parent\">\n+\n+\t<LinearLayout android:orientation=\"vertical\"\n+\t\tandroid:layout_width=\"fill_parent\"\n+\t\tandroid:layout_height=\"wrap_content\">\n+\n+\t\t<TextView android:layout_width=\"wrap_content\"\n+\t\t\tandroid:layout_height=\"wrap_content\" android:text=\"标题\"\n+\t\t\tandroid:padding=\"2px\" />\n+\t\t<EditText android:id=\"@+id/title\"\n+\t\t\tandroid:layout_width=\"fill_parent\"\n+\t\t\tandroid:layout_height=\"wrap_content\" android:layout_weight=\"1\" />\n+\t</LinearLayout>\n+\n+\t<TextView android:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" android:text=\"内容\" />\n+\t\t\n+\t<EditText android:id=\"@+id/body\" android:layout_width=\"fill_parent\"\n+\t\tandroid:layout_height=\"fill_parent\" android:layout_weight=\"1\"\n+\t\tandroid:scrollbars=\"vertical\" android:gravity=\"top\" />\n+\n+\t<Button android:id=\"@+id/confirm\" android:text=\"保存\"\n+\t\tandroid:layout_width=\"fill_parent\"\n+\t\tandroid:layout_height=\"wrap_content\" />\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "71a4c162e2ed2c440e18f89ff33f7fd0731e5e69",
+    "filename" : "app/src/main/res/layout/net1314080903127_diary_list.xml",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_diary_list.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_diary_list.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_diary_list.xml?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,13 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:layout_width=\"wrap_content\"\n+\tandroid:layout_height=\"wrap_content\">\n+\n+\t<ListView android:id=\"@+id/android:list\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" />\n+\t<TextView android:id=\"@+id/android:empty\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" \n+\t\tandroid:text=\"您还没有开始写日记呢!点击Menu按钮开始写日记吧\" />\n+</LinearLayout>"
+  }, {
+    "sha" : "204a669fa12c7323ab9a680dbee1e0b6bdebaebb",
+    "filename" : "app/src/main/res/layout/net1314080903127_diary_row.xml",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_diary_row.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/layout/net1314080903127_diary_row.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_diary_row.xml?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,20 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout android:id=\"@+id/row\"\n+\txmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:layout_width=\"fill_parent\"\n+\tandroid:layout_height=\"fill_parent\">\n+\n+\t<TextView android:id=\"@+id/text1\"\n+\t\tandroid:layout_width=\"wrap_content\" android:layout_height=\"30px\"\n+\t\tandroid:maxWidth=\"200dip\" \n+\t\tandroid:textSize=\"22sp\"\n+\t\tandroid:layout_marginTop=\"10dip\"\n+\t\tandroid:text=\"第一组第一项\" />\n+\t<TextView android:id=\"@+id/created\" android:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"35px\" android:layout_alignParentRight=\"true\"\n+\t\tandroid:layout_marginLeft=\"10dip\" \n+\t\tandroid:layout_marginTop=\"10dip\"\n+\t\tandroid:text=\"1999年12月3号\" />\n+\n+</RelativeLayout>\n+"
+  }, {
+    "sha" : "88a12818a42f4d09d67d2848e0d360cd85e8c5d3",
+    "filename" : "app/src/main/res/values/net1314080903127_strings.xml",
+    "status" : "added",
+    "additions" : 137,
+    "deletions" : 0,
+    "changes" : 137,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/values/net1314080903127_strings.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cfe1bbf4111accd7c7e4589e17222e426a95634/app/src/main/res/values/net1314080903127_strings.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903127_strings.xml?ref=5cfe1bbf4111accd7c7e4589e17222e426a95634",
+    "patch" : "@@ -0,0 +1,137 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+    <string name=\"hello\">Hello World, MainActivity!</string>\n+    <string name=\"app_name\">CollegeLifeManager</string>\n+    <string-array name = \"course_name_array\">\n+     <item>\tC++程序设计\t</item>\n+\t <item>\tC语言程序设计I\t</item>\n+\t <item>\tC语言程序设计I实验\t</item>\n+\t <item>\tJ2EE架构与程序设计\t</item>\n+\t <item>\tJ2EE架构与程序设计实验\t</item>\n+\t <item>\tLinux操作系统及编程\t</item>\n+\t <item>\tLinux操作系统及编程\t</item>\n+\t <item>\tWeb服务实用技术\t</item>\n+\t <item>\t编译原理与实践\t</item>\n+\t <item>\t创新性综合实验\t</item>\n+\t <item>\t大型软件综合课程设计\t</item>\n+\t <item>\t大学日语（二）\t</item>\n+\t <item>\t大学日语（三）\t</item>\n+\t <item>\t大学日语（四）\t</item>\n+\t <item>\t大学日语（一）\t</item>\n+\t <item>\t大学物理（1）\t</item>\n+\t <item>\t大学物理（2）\t</item>\n+\t <item>\t大学英语二级\t</item>\n+\t <item>\t大学英语三级\t</item>\n+\t <item>\t大学英语四级\t</item>\n+\t <item>\t大学英语一级\t</item>\n+\t <item>\t电路分析基础\t</item>\n+\t <item>\t电路分析基础实验\t</item>\n+\t <item>\t电子服务技术基础\t</item>\n+\t <item>\t多媒体软件开发技术\t</item>\n+\t <item>\t服务科学与工程概论\t</item>\n+\t <item>\t概论社会实践课\t</item>\n+\t <item>\t概率论与数理统计\t</item>\n+\t <item>\t高等数学（1）\t</item>\n+\t <item>\t高等数学（2）\t</item>\n+\t <item>\t工程实践、毕业设计\t</item>\n+\t <item>\t公益活动\t</item>\n+\t <item>\t公益活动\t</item>\n+\t <item>\t汇编与接口\t</item>\n+\t <item>\t计算机操作系统\t</item>\n+\t <item>\t计算机仿真技术\t</item>\n+\t <item>\t计算机图形学原理与实践\t</item>\n+\t <item>\t计算机系统导论\t</item>\n+\t <item>\t计算机系统导论实验\t</item>\n+\t <item>\t计算机组成原理与系统结构\t</item>\n+\t <item>\t军事理论\t</item>\n+\t <item>\t开源软件及中间件技术\t</item>\n+\t <item>\t离散数学\t</item>\n+\t <item>\t马克思主义基本原理\t</item>\n+\t <item>\t毛泽东思想和中国特色社会主义理论体系概论\t</item>\n+\t <item>\t面向对象编程与设计实验\t</item>\n+\t <item>\t面向对象程序设计\t</item>\n+\t <item>\t企业文化\t</item>\n+\t <item>\t嵌入式系统\t</item>\n+\t <item>\t人机界面技术\t</item>\n+\t <item>\t人机界面技术实验\t</item>\n+\t <item>\t日本企业文化\t</item>\n+\t <item>\t日语强化1\t</item>\n+\t <item>\t日语强化2\t</item>\n+\t <item>\t软件测试\t</item>\n+\t <item>\t软件工程\t</item>\n+\t <item>\t软件工程实验\t</item>\n+\t <item>\t软件开发和软件项目管理\t</item>\n+\t <item>\t软件项目组织与管理\t</item>\n+\t <item>\t软件项目组织与管理实验\t</item>\n+\t <item>\t数据结构与算法\t</item>\n+\t <item>\t数据结构与算法实验\t</item>\n+\t <item>\t数据库系统\t</item>\n+\t <item>\t数据库系统实验\t</item>\n+\t <item>\t数字逻辑\t</item>\n+\t <item>\t数字逻辑实验\t</item>\n+\t <item>\t数字媒体技术\t</item>\n+\t <item>\t思想道德修养与法律基础\t</item>\n+\t <item>\t体 育1\t</item>\n+\t <item>\t体 育2\t</item>\n+\t <item>\t体 育3\t</item>\n+\t <item>\t体 育4\t</item>\n+\t <item>\t网络技术与实践（上）\t</item>\n+\t <item>\t网络技术与实践（下）\t</item>\n+\t <item>\t网络与分布计算\t</item>\n+\t <item>\t网络与分布计算实验\t</item>\n+\t <item>\t物理实验（1）\t</item>\n+\t <item>\t物理实验（2）\t</item>\n+\t <item>\t系统级编程\t</item>\n+\t <item>\t系统级编程实验\t</item>\n+\t <item>\t现代IT服务管理\t</item>\n+\t <item>\t线性代数\t</item>\n+\t <item>\t信息系统导论\t</item>\n+\t <item>\t信息系统导论实验\t</item>\n+\t <item>\t形势与政策\t</item>\n+\t <item>\t英语听说（1）\t</item>\n+\t <item>\t英语听说（2）\t</item>\n+\t <item>\t英语写作\t</item>\n+\t <item>\t游戏编程\t</item>\n+\t <item>\t职业设计与发展\t</item>\n+\t <item>\t中国近现代史纲要\t</item>\n+\t <item>\t专业技术需求调研与研讨\t</item>\n+    \n+    </string-array>\n+\n+\t<string-array name = \"week_array\">\n+\t\t<item>\t1\t</item>\n+\t\t<item>\t2\t</item>\n+\t\t<item>\t3\t</item>\n+\t\t<item>\t4\t</item>\n+\t\t<item>\t5\t</item>\n+\t\t<item>\t6\t</item>\n+\t\t<item>\t7\t</item>\n+\t\t<item>\t8\t</item>\n+\t\t<item>\t9\t</item>\n+\t\t<item>\t10\t</item>\n+\t\t<item>\t11\t</item>\n+\t\t<item>\t12\t</item>\n+\t\t<item>\t13\t</item>\n+\t\t<item>\t14\t</item>\n+\t\t<item>\t15\t</item>\n+\t\t<item>\t16\t</item>\n+\t\t<item>\t17\t</item>\n+\t\t<item>\t18\t</item>\n+\t\t<item>\t19\t</item>\n+\t\t<item>\t20\t</item>\n+\t\t<item>\t21\t</item>\n+\t\t<item>\t22\t</item>\n+\n+\t</string-array>\n+\t\n+\t\t<string-array name = \"week_index_array\">\n+\t\t<item>\t周一\t</item>\n+\t\t<item>\t周二</item>\n+\t\t<item>\t周三</item>\n+\t\t<item>\t周四</item>\n+\t\t<item>\t周五</item>\n+\t\t<item>\t周六</item>\n+\t\t<item>\t周日</item>\n+\n+\t</string-array>\n+</resources>"
+  } ],
+  "sha" : "5cfe1bbf4111accd7c7e4589e17222e426a95634",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5cfe1bbf4111accd7c7e4589e17222e426a95634",
+  "parents" : [ {
+    "sha" : "28aff2dcadd6ac1f570fac039631ec684e742130",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/28aff2dcadd6ac1f570fac039631ec684e742130",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/28aff2dcadd6ac1f570fac039631ec684e742130"
+  }, {
+    "sha" : "0f0889cb3c6b8c2ee79bce95086f9422d82b60f2",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0f0889cb3c6b8c2ee79bce95086f9422d82b60f2",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/0f0889cb3c6b8c2ee79bce95086f9422d82b60f2"
+  } ]
+}

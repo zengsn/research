@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 235,
+    "additions" : 235,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "1019940946",
+    "id" : 18134037,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18134037?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1019940946",
+    "html_url" : "https://github.com/1019940946",
+    "followers_url" : "https://api.github.com/users/1019940946/followers",
+    "following_url" : "https://api.github.com/users/1019940946/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1019940946/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1019940946/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1019940946/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1019940946/orgs",
+    "repos_url" : "https://api.github.com/users/1019940946/repos",
+    "events_url" : "https://api.github.com/users/1019940946/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1019940946/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/f8a6c1866eefd6cf4619419a0f535163fd07b4a9",
+  "commit" : {
+    "author" : {
+      "name" : "1019940946",
+      "email" : "1019940946@qq.com",
+      "date" : "2016-06-16T10:31:42Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-06-16T10:31:42Z"
+    },
+    "message" : "主界面设计",
+    "tree" : {
+      "sha" : "1643e106acdae587995667cb412f3430e9733cb1",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/1643e106acdae587995667cb412f3430e9733cb1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/f8a6c1866eefd6cf4619419a0f535163fd07b4a9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f8a6c1866eefd6cf4619419a0f535163fd07b4a9/comments",
+  "files" : [ {
+    "sha" : "d898b02adc181cab7e66299c2be3a264882f09cc",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/Net1314080903115MainActivity.java",
+    "status" : "added",
+    "additions" : 235,
+    "deletions" : 0,
+    "changes" : 235,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f8a6c1866eefd6cf4619419a0f535163fd07b4a9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/Net1314080903115MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f8a6c1866eefd6cf4619419a0f535163fd07b4a9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/Net1314080903115MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/Net1314080903115MainActivity.java?ref=f8a6c1866eefd6cf4619419a0f535163fd07b4a9",
+    "patch" : "@@ -0,0 +1,235 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903115;\r\n+\r\n+import android.app.Activity;\r\n+import android.content.Intent;\r\n+import android.database.Cursor;\r\n+import android.database.sqlite.SQLiteDatabase;\r\n+import android.graphics.Bitmap;\r\n+import android.graphics.BitmapFactory;\r\n+import android.net.Uri;\r\n+import android.os.Bundle;\r\n+import android.os.Environment;\r\n+import android.os.Handler;\r\n+import android.os.Message;\r\n+import android.provider.MediaStore;\r\n+import android.view.View;\r\n+import android.view.Window;\r\n+import android.widget.Button;\r\n+import android.widget.ImageButton;\r\n+import android.widget.ImageSwitcher;\r\n+import android.widget.ImageView;\r\n+import android.widget.TextView;\r\n+import android.widget.Toast;\r\n+\r\n+import org.apache.http.HttpEntity;\r\n+import org.apache.http.HttpResponse;\r\n+import org.apache.http.client.methods.HttpGet;\r\n+import org.apache.http.impl.client.DefaultHttpClient;\r\n+import org.apache.http.util.EntityUtils;\r\n+import org.json.JSONArray;\r\n+import org.json.JSONException;\r\n+import org.json.JSONObject;\r\n+\r\n+import java.io.IOException;\r\n+import java.util.ArrayList;\r\n+import java.util.List;\r\n+\r\n+import edu.hzuapps.androidworks.R;\r\n+import edu.hzuapps.androidworks.homeworks.net1314080903115.db.Net1314080903115_Account;\r\n+import edu.hzuapps.androidworks.homeworks.net1314080903115.db.Net1314080903115_Constant;\r\n+import edu.hzuapps.androidworks.homeworks.net1314080903115.db.Net1314080903115_MySQLiteOpenHelper;\r\n+import edu.hzuapps.androidworks.homeworks.net1314080903115.view.Net1314080903115_MySlidingMenuView;\r\n+import org.apache.http.HttpEntity;\r\n+import org.apache.http.HttpResponse;\r\n+import org.apache.http.client.methods.HttpGet;\r\n+import org.apache.http.impl.client.DefaultHttpClient;\r\n+import org.apache.http.util.EntityUtils;\r\n+import org.json.JSONArray;\r\n+import org.json.JSONException;\r\n+import org.json.JSONObject;\r\n+\r\n+public class Net1314080903115MainActivity extends Activity implements View.OnClickListener {\r\n+\r\n+    private Net1314080903115_MySlidingMenuView slidingMenu;\r\n+    private ImageButton main_portrait;\r\n+    private Net1314080903115_MySQLiteOpenHelper helper;\r\n+    public static Net1314080903115_Account Account=new Net1314080903115_Account();\r\n+    private ImageView imageview;\r\n+    private Button zhaoxiang;\r\n+\r\n+    private  Uri OutImageUri = Uri.parse(\"file://\"\r\n+            + Environment.getExternalStorageDirectory() + \"/temp.jpg\");\r\n+    //public static Activity THIS2;\r\n+    private TextView name_text1, name_text2;\r\n+\r\n+    public Handler handler = new Handler(){\r\n+        @Override\r\n+        public void handleMessage(Message msg) {\r\n+            String json=(String)msg.obj;\r\n+            List<JSONObject> listjsonObject = getJSON(json);\r\n+            JSONObject j = listjsonObject.get(0);\r\n+            String state = null;\r\n+            String NoteTable;\r\n+            try {\r\n+                state = j.getString(\"state\");\r\n+                NoteTable = j.getString(\"content\");\r\n+            } catch (JSONException e) {\r\n+                e.printStackTrace();\r\n+            }\r\n+            if(state.equals(\"1\"))\r\n+            {//登录成功\r\n+                Account.State=2;\r\n+                name_text1.setText(Account.UserName);\r\n+                name_text2.setText(Account.UserName);\r\n+            }else{//登录失败\r\n+                Account.State=0;\r\n+                name_text1.setText(\"请登录\");\r\n+                name_text2.setText(\"请登录\");\r\n+            }\r\n+\r\n+        }\r\n+    };\r\n+\r\n+    @Override\r\n+    protected void onCreate(Bundle savedInstanceState) {\r\n+        requestWindowFeature(Window.FEATURE_NO_TITLE);\r\n+        super.onCreate(savedInstanceState);\r\n+        //requestWindowFeature(Window.FEATURE_NO_TITLE);\r\n+        setContentView(R.layout.net1314080903115main);\r\n+\r\n+\r\n+        slidingMenu = (Net1314080903115_MySlidingMenuView) findViewById(R.id.sliding_menu);\r\n+        slidingMenu.setlSlidingMenuState(Net1314080903115_MySlidingMenuView.SLIDING_MENU_COVER);\r\n+\r\n+        main_portrait = (ImageButton) findViewById(R.id.main_portrait);\r\n+        main_portrait.setOnClickListener(this);\r\n+\r\n+        //http = new Net1314080903115_HTTP();\r\n+\r\n+        name_text1 = (TextView) findViewById(R.id.name_text1);\r\n+        name_text2 = (TextView) findViewById(R.id.name_text2);\r\n+        imageview = (ImageView) findViewById(R.id.imageview);\r\n+        zhaoxiang = (Button)findViewById(R.id.zhaoxiang);\r\n+        zhaoxiang.setOnClickListener(this);\r\n+\r\n+        helper = new Net1314080903115_MySQLiteOpenHelper(this);\r\n+        Login();\r\n+        if (Account.State == 0) {\r\n+            name_text1.setText(\"请登录\");\r\n+            name_text2.setText(\"请登录\");\r\n+        } else if (Account.State == 1) {\r\n+            new Thread(new Runnable() {\r\n+                @Override\r\n+                public void run() {\r\n+                    try {\r\n+                        HttpGet httpGet = new HttpGet(\"http://lyongsb.cn:81/CloudNotes.asmx/Login?Phone=\" + Account.Phone + \"&PassWord=\" + Account.PassWord);//编者按：与HttpPost区别所在，这里是将参数在地址中传递\r\n+                        HttpResponse response = new DefaultHttpClient().execute(httpGet);\r\n+                        if (response.getStatusLine().getStatusCode() == 200) {\r\n+                            HttpEntity entity = response.getEntity();\r\n+                            String json3 = EntityUtils.toString(entity);//这里取得的是带xml头的字符串\r\n+                            String json2 = json3.substring(json3.indexOf(\"{\"), json3.indexOf(\"}\") + 1);//去掉头和尾取得中间的json字符串\r\n+                            Message msg = Message.obtain();\r\n+                            msg.obj = json2;\r\n+                            handler.sendMessage(msg);\r\n+                        }\r\n+                    } catch (IOException e) {\r\n+                    }\r\n+                }\r\n+            }).start();\r\n+        } else if (Account.State == 2) {\r\n+            name_text1.setText(Account.UserName);\r\n+            name_text2.setText(Account.UserName);\r\n+        }\r\n+    }\r\n+\r\n+    public void onClick(View v) {\r\n+\r\n+\r\n+        if (v.getId() == R.id.zhaoxiang) {\r\n+\r\n+            Uri OutImageUri = Uri.parse(\"file://\"\r\n+                    + Environment.getExternalStorageDirectory() + \"/temp.jpg\");\r\n+            Intent intent;\r\n+            intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);\r\n+            intent.putExtra(\"return-data\", false);// 是否返回数据\r\n+            // 部分手机，不返回数据才能直接输出文件\r\n+            intent.putExtra(MediaStore.EXTRA_OUTPUT, OutImageUri);// 直接输出文件\r\n+            startActivityForResult(intent, 0);\r\n+\r\n+        }\r\n+\r\n+\r\n+        if (v.getId() == R.id.main_portrait) {\r\n+            if(Account.State == 2)\r\n+            {\r\n+                //跳转账户资料界面\r\n+            }else{\r\n+                Intent intent = new Intent(Net1314080903115MainActivity.this, Net1314080903115LoginActivity.class);\r\n+                startActivity(intent);\r\n+            }\r\n+\r\n+        }\r\n+    }\r\n+\r\n+    private void Login() {\r\n+        SQLiteDatabase db = helper.getReadableDatabase();\r\n+        Cursor cursor = db.rawQuery(\"select * from \" + Net1314080903115_Constant.TABLE_Account\r\n+                + \" where ID=?\", new String[]{\"1\"});\r\n+        if (cursor != null) {\r\n+            if (cursor.moveToFirst()) {\r\n+                Account.ID = cursor.getInt(cursor\r\n+                        .getColumnIndex(Net1314080903115_Constant.Account_ID));\r\n+                Account.Phone = cursor.getString(cursor\r\n+                        .getColumnIndex(Net1314080903115_Constant.Account_Phone));\r\n+                Account.PassWord = cursor.getString(cursor\r\n+                        .getColumnIndex(Net1314080903115_Constant.Account_PassWord));\r\n+                Account.UserName = cursor.getString(cursor\r\n+                        .getColumnIndex(Net1314080903115_Constant.Account_UserName));\r\n+                Account.HeadPortrait = cursor.getString(cursor\r\n+                        .getColumnIndex(Net1314080903115_Constant.Account_HeadPortrait));\r\n+                Account.NoteTable = cursor.getString(cursor\r\n+                        .getColumnIndex(Net1314080903115_Constant.Account_NoteTable));\r\n+            } else {\r\n+                //Toast.makeText(this, \"没有用户数据\", Toast.LENGTH_LONG).show();\r\n+            }\r\n+            cursor.close();\r\n+        }\r\n+        db.close();\r\n+    }\r\n+\r\n+    public List<JSONObject> getJSON(String json) {\r\n+        List<JSONObject> listjsonObject = new ArrayList<JSONObject>();\r\n+        try {\r\n+            JSONArray jsonArray = new JSONArray(json);\r\n+            for (int i = 0; i < jsonArray.length(); i++) {\r\n+                JSONObject jsonObject = (JSONObject) jsonArray.opt(i);\r\n+                listjsonObject.add(jsonObject);\r\n+            }\r\n+        } catch (JSONException e) {\r\n+            // TODO Auto-generated catch block\r\n+            e.printStackTrace();\r\n+        }\r\n+        return listjsonObject;\r\n+    }\r\n+\r\n+\r\n+    @Override\r\n+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {\r\n+        super.onActivityResult(requestCode, resultCode, data);\r\n+        if (resultCode != Activity.RESULT_OK) {\r\n+            return;\r\n+        } else {\r\n+            switch (requestCode) {\r\n+                case 0:// 拍照完回调这里\r\n+\r\n+                    String fileName =\r\n+                            Environment.getExternalStorageDirectory() + \"/temp.jpg\";\r\n+                    Bitmap bm = BitmapFactory.decodeFile(fileName);\r\n+                    imageview.setImageBitmap(bm);\r\n+                    break;\r\n+                default:\r\n+                    break;\r\n+            }\r\n+        }\r\n+    }\r\n+}\r"
+  } ],
+  "sha" : "f8a6c1866eefd6cf4619419a0f535163fd07b4a9",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f8a6c1866eefd6cf4619419a0f535163fd07b4a9",
+  "parents" : [ {
+    "sha" : "5455f24e1d80b3daf09b1d610339fb59d7193d46",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5455f24e1d80b3daf09b1d610339fb59d7193d46",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5455f24e1d80b3daf09b1d610339fb59d7193d46"
+  } ]
+}

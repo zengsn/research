@@ -1,0 +1,190 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 203,
+    "additions" : 164,
+    "deletions" : 39
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e",
+  "commit" : {
+    "author" : {
+      "name" : "lin",
+      "email" : "15767973204@163.com",
+      "date" : "2016-05-31T01:49:27Z"
+    },
+    "committer" : {
+      "name" : "lin",
+      "email" : "15767973204@163.com",
+      "date" : "2016-05-31T01:49:27Z"
+    },
+    "message" : "#90 #95 #255 刚才忘记添加音频文件",
+    "tree" : {
+      "sha" : "c46695deff4e30db3ae361d7601a492a3c9077e5",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/c46695deff4e30db3ae361d7601a492a3c9077e5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/comments",
+  "files" : [ {
+    "sha" : "d73b7c17aa75954249f8eefdbffc0f85760257c6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903228/Net1314080903228.java",
+    "status" : "modified",
+    "additions" : 37,
+    "deletions" : 39,
+    "changes" : 76,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903228/Net1314080903228.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903228/Net1314080903228.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903228/Net1314080903228.java?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e",
+    "patch" : "@@ -11,9 +11,7 @@\n \n import java.io.IOException;\n \n-/**\n- * @author: ZhangFL\n- */\n+\n public class Net1314080903228 extends Activity {\n \n     private ImageButton imageButton_white1;\n@@ -35,10 +33,10 @@\n     @Override\n     protected void onCreate(Bundle bundle) {\n         super.onCreate(bundle);\n-        setContentView(R.layout.main);\n+        setContentView(R.layout.net1314080903228);\n \n         mediaPlayer01 = new MediaPlayer();\n-//        mediaPlayer01 = MediaPlayer.create(Net1314080903228.this, R.raw.white1);\n+//        mediaPlayer01 = MediaPlayer.create(Net1314080903228.this, R.raw.net1314080903228white1);\n \n         imageButton_white1 = (ImageButton) findViewById(R.id.white1);\n         imageButton_white2 = (ImageButton) findViewById(R.id.white2);\n@@ -59,11 +57,11 @@ protected void onCreate(Bundle bundle) {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n \n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.white1);\n-                    imageButton_white1.setImageResource(R.drawable.whiteback1);\n+                    play(R.raw.net1314080903228white1);\n+                    imageButton_white1.setImageResource(R.drawable.net1314080903228whiteback1);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_white1.setImageResource(R.drawable.white1);\n+                    imageButton_white1.setImageResource(R.drawable.net1314080903228white1);\n                 }\n                 return false;\n             }\n@@ -74,11 +72,11 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n \n-                    play(R.raw.white2);\n-                    imageButton_white2.setImageResource(R.drawable.whiteback2);\n+                    play(R.raw.net1314080903228white2);\n+                    imageButton_white2.setImageResource(R.drawable.net1314080903228whiteback2);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_white2.setImageResource(R.drawable.white2);\n+                    imageButton_white2.setImageResource(R.drawable.net1314080903228white2);\n                 }\n                 return false;\n             }\n@@ -87,11 +85,11 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_white3.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.white3);\n-                    imageButton_white3.setImageResource(R.drawable.whiteback3);\n+                    play(R.raw.net1314080903228white3);\n+                    imageButton_white3.setImageResource(R.drawable.net1314080903228whiteback3);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_white3.setImageResource(R.drawable.white3);\n+                    imageButton_white3.setImageResource(R.drawable.net1314080903228white3);\n                 }\n                 return false;\n             }\n@@ -100,11 +98,11 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_white4.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.white4);\n-                    imageButton_white4.setImageResource(R.drawable.whiteback4);\n+                    play(R.raw.net1314080903228white4);\n+                    imageButton_white4.setImageResource(R.drawable.net1314080903228whiteback4);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_white4.setImageResource(R.drawable.white4);\n+                    imageButton_white4.setImageResource(R.drawable.net1314080903228white4);\n                 }\n                 return false;\n             }\n@@ -113,11 +111,11 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_white5.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.white5);\n-                    imageButton_white5.setImageResource(R.drawable.whiteback5);\n+                    play(R.raw.net1314080903228white5);\n+                    imageButton_white5.setImageResource(R.drawable.net1314080903228whiteback5);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_white5.setImageResource(R.drawable.white5);\n+                    imageButton_white5.setImageResource(R.drawable.net1314080903228white5);\n                 }\n                 return false;\n             }\n@@ -126,11 +124,11 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_white6.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.white6);\n-                    imageButton_white6.setImageResource(R.drawable.whiteback6);\n+                    play(R.raw.net1314080903228white6);\n+                    imageButton_white6.setImageResource(R.drawable.net1314080903228whiteback6);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_white6.setImageResource(R.drawable.white6);\n+                    imageButton_white6.setImageResource(R.drawable.net1314080903228white6);\n                 }\n                 return false;\n             }\n@@ -139,11 +137,11 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_white7.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.white7);\n-                    imageButton_white7.setImageResource(R.drawable.whiteback7);\n+                    play(R.raw.net1314080903228white7);\n+                    imageButton_white7.setImageResource(R.drawable.net1314080903228whiteback7);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_white7.setImageResource(R.drawable.white7);\n+                    imageButton_white7.setImageResource(R.drawable.net1314080903228white7);\n                 }\n                 return false;\n             }\n@@ -152,11 +150,11 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_white8.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.white8);\n-                    imageButton_white8.setImageResource(R.drawable.whiteback8);\n+                    play(R.raw.net1314080903228white8);\n+                    imageButton_white8.setImageResource(R.drawable.net1314080903228whiteback8);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_white8.setImageResource(R.drawable.white8);\n+                    imageButton_white8.setImageResource(R.drawable.net1314080903228white8);\n                 }\n                 return false;\n             }\n@@ -165,10 +163,10 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_black1.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.black1);\n+                    play(R.raw.net1314080903228black1);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_black1.setImageResource(R.drawable.black1);\n+                    imageButton_black1.setImageResource(R.drawable.net1314080903228black1);\n                 }\n                 return false;\n             }\n@@ -177,10 +175,10 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_black2.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.black2);\n+                    play(R.raw.net1314080903228black2);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_black2.setImageResource(R.drawable.black2);\n+                    imageButton_black2.setImageResource(R.drawable.net1314080903228black2);\n                 }\n                 return false;\n             }\n@@ -189,10 +187,10 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_black3.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.black3);\n+                    play(R.raw.net1314080903228black3);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_black3.setImageResource(R.drawable.black3);\n+                    imageButton_black3.setImageResource(R.drawable.net1314080903228black3);\n                 }\n                 return false;\n             }\n@@ -201,10 +199,10 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_black4.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.black4);\n+                    play(R.raw.net1314080903228black4);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_black4.setImageResource(R.drawable.black4);\n+                    imageButton_black4.setImageResource(R.drawable.net1314080903228black4);\n                 }\n                 return false;\n             }\n@@ -213,10 +211,10 @@ public boolean onTouch(View view, MotionEvent motionEvent) {\n         imageButton_black5.setOnTouchListener(new View.OnTouchListener() {\n             public boolean onTouch(View view, MotionEvent motionEvent) {\n                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {\n-                    play(R.raw.black5);\n+                    play(R.raw.net1314080903228black5);\n                 }\n                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {\n-                    imageButton_black5.setImageResource(R.drawable.black5);\n+                    imageButton_black5.setImageResource(R.drawable.net1314080903228black5);\n                 }\n                 return false;\n             }"
+  }, {
+    "sha" : "e0e9ce9bd2b88d24a2a61135f04be3f861af7c01",
+    "filename" : "app/src/main/res/layout/net1314080903228.xml",
+    "status" : "added",
+    "additions" : 127,
+    "deletions" : 0,
+    "changes" : 127,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/layout/net1314080903228.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/layout/net1314080903228.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903228.xml?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e",
+    "patch" : "@@ -0,0 +1,127 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<AbsoluteLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+                android:layout_width=\"fill_parent\"\n+                android:layout_height=\"fill_parent\">\n+\n+    <ImageView android:id=\"@+id/iv\"\n+               android:layout_width=\"480px\"\n+               android:layout_height=\"46px\"\n+               android:src=\"@drawable/net1314080903228header\"\n+               android:layout_x=\"0px\"\n+               android:layout_y=\"0px\"/>\n+    <ImageButton android:id=\"@+id/white1\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:src=\"@drawable/net1314080903228white1\"\n+                 android:layout_x=\"0px\"\n+                 android:layout_y=\"46px\"/>\n+\n+\n+    <ImageButton android:id=\"@+id/white2\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:src=\"@drawable/net1314080903228white2\"\n+                 android:layout_x=\"57px\"\n+                 android:layout_y=\"46px\"/>\n+\n+    <ImageButton android:id=\"@+id/white3\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:src=\"@drawable/net1314080903228white3\"\n+                 android:layout_x=\"117px\"\n+                 android:layout_y=\"46px\"/>\n+    <ImageButton android:id=\"@+id/white4\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:src=\"@drawable/net1314080903228white4\"\n+                 android:layout_x=\"177px\"\n+                 android:layout_y=\"46px\"/>\n+    <ImageButton android:id=\"@+id/white5\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:src=\"@drawable/net1314080903228white5\"\n+                 android:layout_x=\"236px\"\n+                 android:layout_y=\"46px\"/>\n+    <ImageButton android:id=\"@+id/white6\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:src=\"@drawable/net1314080903228white6\"\n+                 android:layout_x=\"295px\"\n+                 android:layout_y=\"46px\"/>\n+    <ImageButton android:id=\"@+id/white7\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:src=\"@drawable/net1314080903228white7\"\n+                 android:layout_x=\"354px\"\n+                 android:layout_y=\"46px\"/>\n+    <ImageButton android:id=\"@+id/white8\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:src=\"@drawable/net1314080903228white8\"\n+                 android:layout_x=\"413px\"\n+                 android:layout_y=\"46px\"/>\n+\n+    <ImageButton android:id=\"@+id/black1\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:layout_x=\"32px\"\n+                 android:layout_y=\"46px\"\n+                 android:src=\"@drawable/net1314080903228black1\"/>\n+    <ImageButton android:id=\"@+id/black2\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:layout_x=\"105px\"\n+                 android:layout_y=\"46px\"\n+                 android:src=\"@drawable/net1314080903228black2\"/>\n+    <ImageButton android:id=\"@+id/black3\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:layout_x=\"209px\"\n+                 android:layout_y=\"46px\"\n+                 android:src=\"@drawable/net1314080903228black3\"/>\n+    <ImageButton android:id=\"@+id/black4\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:layout_x=\"278px\"\n+                 android:layout_y=\"46px\"\n+                 android:src=\"@drawable/net1314080903228black4\"/>\n+    <ImageButton android:id=\"@+id/black5\"\n+                 android:layout_width=\"wrap_content\"\n+                 android:layout_height=\"wrap_content\"\n+                 android:padding=\"0px\"\n+                 android:layout_margin=\"0px\"\n+                 android:layout_x=\"344px\"\n+                 android:layout_y=\"46px\"\n+                 android:src=\"@drawable/net1314080903228black5\"/>\n+\n+    <!--<Button android:id=\"@+id/mybtn\"-->\n+            <!--android:layout_width=\"wrap_content\"-->\n+            <!--android:layout_height=\"wrap_content\"-->\n+            <!--android:text=\"测试\"-->\n+            <!--android:layout_x=\"0px\"-->\n+            <!--android:layout_y=\"186px\"/>-->\n+</AbsoluteLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "09d2064262a992229f0f9e65983feab5e5f967eb",
+    "filename" : "app/src/main/res/raw/net1314080903228black1.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black1.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black1.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228black1.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "dca3f3bc518de63414aabcd1b0cffb2c0eecc537",
+    "filename" : "app/src/main/res/raw/net1314080903228black2.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black2.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black2.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228black2.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "76850d9072e31f1f0002bd7fe738d87b111909ce",
+    "filename" : "app/src/main/res/raw/net1314080903228black3.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black3.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black3.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228black3.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "b5f1c540911add329bf23013c6bc0f98deb0ec21",
+    "filename" : "app/src/main/res/raw/net1314080903228black4.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black4.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black4.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228black4.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "853d645b7be80fb42cadd2f1700623862bccf221",
+    "filename" : "app/src/main/res/raw/net1314080903228black5.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black5.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228black5.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228black5.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "19802495785bae9db487128b6940c7a95bab4e7b",
+    "filename" : "app/src/main/res/raw/net1314080903228white1.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white1.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white1.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228white1.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "37196b9e9537b1c66993c888f92b76e0bbaaf437",
+    "filename" : "app/src/main/res/raw/net1314080903228white2.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white2.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white2.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228white2.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "b10182c6e23b03b1e318631633204e1a91001ef4",
+    "filename" : "app/src/main/res/raw/net1314080903228white3.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white3.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white3.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228white3.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "0fda6f9c5fdb7bf70c63e1c58ed5ed1be13e2b37",
+    "filename" : "app/src/main/res/raw/net1314080903228white4.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white4.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white4.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228white4.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "5ea7259ba53d66d7df3e4e4c9b36dfb8fe5d53cd",
+    "filename" : "app/src/main/res/raw/net1314080903228white5.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white5.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white5.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228white5.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "d72fb783060491ef2188209039c3d0cb02c32b93",
+    "filename" : "app/src/main/res/raw/net1314080903228white6.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white6.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white6.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228white6.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "4aeaa914f654d0f09791f439ca8beac16b38da56",
+    "filename" : "app/src/main/res/raw/net1314080903228white7.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white7.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white7.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228white7.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  }, {
+    "sha" : "4c15eee058735e5e1ab984d6f99105321a0280e9",
+    "filename" : "app/src/main/res/raw/net1314080903228white8.ogg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white8.ogg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e/app/src/main/res/raw/net1314080903228white8.ogg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/net1314080903228white8.ogg?ref=d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e"
+  } ],
+  "sha" : "d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d3fbc40583676a53ebdc1dd6d5a68b00eca0d82e",
+  "parents" : [ {
+    "sha" : "41c7438fc317c164397f4e8d8be5546b18a5e3e3",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/41c7438fc317c164397f4e8d8be5546b18a5e3e3",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/41c7438fc317c164397f4e8d8be5546b18a5e3e3"
+  } ]
+}

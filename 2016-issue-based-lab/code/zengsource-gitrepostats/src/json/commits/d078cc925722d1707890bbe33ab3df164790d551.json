@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zhongdingjun",
+    "id" : 14164243,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14164243?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhongdingjun",
+    "html_url" : "https://github.com/zhongdingjun",
+    "followers_url" : "https://api.github.com/users/zhongdingjun/followers",
+    "following_url" : "https://api.github.com/users/zhongdingjun/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhongdingjun/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhongdingjun/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhongdingjun/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhongdingjun/orgs",
+    "repos_url" : "https://api.github.com/users/zhongdingjun/repos",
+    "events_url" : "https://api.github.com/users/zhongdingjun/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhongdingjun/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 123,
+    "additions" : 0,
+    "deletions" : 123
+  },
+  "author" : {
+    "login" : "zhongdingjun",
+    "id" : 14164243,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14164243?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhongdingjun",
+    "html_url" : "https://github.com/zhongdingjun",
+    "followers_url" : "https://api.github.com/users/zhongdingjun/followers",
+    "following_url" : "https://api.github.com/users/zhongdingjun/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhongdingjun/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhongdingjun/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhongdingjun/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhongdingjun/orgs",
+    "repos_url" : "https://api.github.com/users/zhongdingjun/repos",
+    "events_url" : "https://api.github.com/users/zhongdingjun/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhongdingjun/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/d078cc925722d1707890bbe33ab3df164790d551",
+  "commit" : {
+    "author" : {
+      "name" : "zhongdingjun",
+      "email" : "1178090249@qq.com",
+      "date" : "2016-04-24T12:43:49Z"
+    },
+    "committer" : {
+      "name" : "zhongdingjun",
+      "email" : "1178090249@qq.com",
+      "date" : "2016-04-24T12:43:49Z"
+    },
+    "message" : "#88 #363 lab-2\n\n老师，我重新选了个题目",
+    "tree" : {
+      "sha" : "760c78e4fa65326278249a77f8b2e4f753271ff7",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/760c78e4fa65326278249a77f8b2e4f753271ff7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/d078cc925722d1707890bbe33ab3df164790d551",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d078cc925722d1707890bbe33ab3df164790d551/comments",
+  "files" : [ {
+    "sha" : "b189c91798e8f163bf166b5cb79ae524d16b8bcc",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/MainActivity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 123,
+    "changes" : 123,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d640c4cbfaf2fb1b518b036b222d94af5f583ec8/app/src/main/java/edu/hzuapps/androidworks/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d640c4cbfaf2fb1b518b036b222d94af5f583ec8/app/src/main/java/edu/hzuapps/androidworks/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/MainActivity.java?ref=d640c4cbfaf2fb1b518b036b222d94af5f583ec8",
+    "patch" : "@@ -1,123 +0,0 @@\n-package edu.hzuapps.androidworks;\n-\n-import android.app.Activity;\n-import android.content.Intent;\n-import android.os.Bundle;\n-import android.support.v7.app.ActionBarActivity;\n-import android.util.Log;\n-import android.view.Menu;\n-import android.view.MenuItem;\n-import android.view.View;\n-import android.widget.Button;\n-import android.widget.RelativeLayout;\n-\n-import edu.hzuapps.androidworks.examples.AbsoluteLayoutActivity;\n-import edu.hzuapps.androidworks.examples.ActivityBasicActivity;\n-import edu.hzuapps.androidworks.examples.BroadcastReceiverActivity;\n-import edu.hzuapps.androidworks.examples.ContentProviderActivity;\n-import edu.hzuapps.androidworks.examples.FragmentDemoActivity;\n-import edu.hzuapps.androidworks.examples.FrameLayoutActivity;\n-import edu.hzuapps.androidworks.examples.GridViewActivity;\n-import edu.hzuapps.androidworks.examples.LinearLayoutActivity;\n-import edu.hzuapps.androidworks.examples.ListViewActivity;\n-import edu.hzuapps.androidworks.examples.RelativeLayoutActivity;\n-import edu.hzuapps.androidworks.examples.ServiceDemoActivity;\n-import edu.hzuapps.androidworks.examples.TableLayoutActivity;\n-import edu.hzuapps.androidworks.examples.ViewBasicActivity;\n-import edu.hzuapps.androidworks.examples.ViewDemoActivity;\n-import edu.hzuapps.androidworks.homeworks.BackActivity;\n-import edu.hzuapps.androidworks.homeworks.com123456.Com123456Activity;\n-\n-public class MainActivity extends ActionBarActivity {\n-\n-    public static final String TAG = MainActivity.class.getSimpleName();\n-\n-    String mName;\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-//         TODO 解析学生实验目录\n-        setContentView(R.layout.activity_main);\n-\n-        // 显示例子按钮\n-        prepareExampleButton(R.id.button_activitybasic);\n-        prepareExampleButton(R.id.button_viewbasic);\n-        prepareExampleButton(R.id.button_fragmentdemo);\n-        prepareExampleButton(R.id.button_servicedemo);\n-        prepareExampleButton(R.id.button_broadcastdemo);\n-        prepareExampleButton(R.id.button_contentprovidedemo);\n-        prepareExampleButton(R.id.button_viewdemo);\n-\n-        // 随机显示一位同学的作业\n-        prepareExampleButton(R.id.button_random);\n-\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_main, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            System.out.println(\"Yes\");\n-//         Log.i(this.getClass().getSimpleName(), \"View created!\");\n-            Log.i(\"标题\", \"信息\");\n-            return true;\n-        }\n-\n-        return super.onOptionsItemSelected(item);\n-    }\n-\n-    private void openActivity(Activity activity, Class activityClass) {\n-        Intent intent = new Intent(activity, activityClass);\n-        activity.startActivity(intent);\n-    }\n-\n-    private void prepareExampleButton(final int buttonId) {\n-        final Activity thisActivity = this;\n-        Button button = (Button) findViewById(buttonId);\n-        if (button != null) {\n-            button.setOnClickListener(new View.OnClickListener() {\n-                @Override\n-                public void onClick(View view) {\n-                    openActivity(thisActivity, getActivity(buttonId));\n-                }\n-            });\n-        } else {\n-            Log.e(TAG, \"按钮不存在: \" + buttonId);\n-        }\n-    }\n-\n-    private Class getActivity(int id) {\n-        if (R.id.button_activitybasic == id) {\n-            return ActivityBasicActivity.class;\n-        } else if (R.id.button_viewbasic == id) {\n-            return ViewBasicActivity.class;\n-        } else if (R.id.button_fragmentdemo == id) {\n-            return FragmentDemoActivity.class;\n-        } else if (R.id.button_servicedemo == id) {\n-            return ServiceDemoActivity.class;\n-        } else if (R.id.button_broadcastdemo == id) {\n-            return BroadcastReceiverActivity.class;\n-        } else if (R.id.button_contentprovidedemo == id) {\n-            return ContentProviderActivity.class;\n-        } else if (R.id.button_viewdemo == id) {\n-            return ViewDemoActivity.class;\n-        } else if (R.id.button_random == id) {\n-            return GridViewActivity.class;\n-        } else {\n-            return BackActivity.class;\n-        }\n-    }\n-}"
+  } ],
+  "sha" : "d078cc925722d1707890bbe33ab3df164790d551",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d078cc925722d1707890bbe33ab3df164790d551",
+  "parents" : [ {
+    "sha" : "d640c4cbfaf2fb1b518b036b222d94af5f583ec8",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d640c4cbfaf2fb1b518b036b222d94af5f583ec8",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/d640c4cbfaf2fb1b518b036b222d94af5f583ec8"
+  } ]
+}

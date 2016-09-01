@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 48,
+    "additions" : 48,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/bba3a8022afa39f19bdf4687def9bce79a25d3d5",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-03-27T10:56:34Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-03-27T10:56:34Z"
+    },
+    "message" : "Merge pull request #4 from isshe/master\n\nNet1314080903212",
+    "tree" : {
+      "sha" : "28296a3f8e5424581366fb1a3cc371259fc59d3e",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/28296a3f8e5424581366fb1a3cc371259fc59d3e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/bba3a8022afa39f19bdf4687def9bce79a25d3d5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/bba3a8022afa39f19bdf4687def9bce79a25d3d5/comments",
+  "files" : [ {
+    "sha" : "9ad0412fd51b2c4d375509bbf251c0740cf9539b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212Activity.java",
+    "status" : "added",
+    "additions" : 48,
+    "deletions" : 0,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/bba3a8022afa39f19bdf4687def9bce79a25d3d5/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/bba3a8022afa39f19bdf4687def9bce79a25d3d5/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212Activity.java?ref=bba3a8022afa39f19bdf4687def9bce79a25d3d5",
+    "patch" : "@@ -0,0 +1,48 @@\n+package edu.hzuapps.androidworks.homeworks;\r\n+\r\n+import android.os.Bundle;\r\n+import android.util.Log;\r\n+import android.view.Menu;\r\n+import android.view.MenuItem;\r\n+import android.view.ViewGroup;\r\n+import android.widget.LinearLayout;\r\n+import android.widget.TextView;\r\n+\r\n+import edu.hzuapps.androidworks.R;\r\n+//import edu.hzuapps.androidworks.homeworks.Net1314080903212;\r\n+\r\n+/**\r\n+ * Created by dell on 2016/3/21.\r\n+ */\r\n+public class Net1314080903212 extends BackActivity {\r\n+\r\n+    private LinearLayout mTextContainer;\r\n+\r\n+    protected void onCreate(Bundle savedInstanceState) {\r\n+        super.onCreate(savedInstanceState);\r\n+\r\n+//      TextView textView = new TextView(this);\r\n+//      textView.setText(\"isshe\");\r\n+\r\n+        createViewInJava();\r\n+        setContentView(mTextContainer);\r\n+\r\n+//      默认使用XML创建的View\r\n+//      setContentView(R.layout.net1314080903212);\r\n+\r\n+}\r\n+\r\n+    private void createViewInJava() {\r\n+        mTextContainer = new LinearLayout(this);\r\n+        ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams( //\r\n+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);\r\n+        mTextContainer.setLayoutParams(layoutParams);\r\n+        mTextContainer.setOrientation(LinearLayout.HORIZONTAL);\r\n+\r\n+        TextView textView = new TextView(this);\r\n+        textView.setText(\"isshe: Net13140809032122\");\r\n+\r\n+        mTextContainer.addView(textView);\r\n+    }\r\n+\r\n+}\r"
+  } ],
+  "sha" : "bba3a8022afa39f19bdf4687def9bce79a25d3d5",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/bba3a8022afa39f19bdf4687def9bce79a25d3d5",
+  "parents" : [ {
+    "sha" : "e80dc5e4cfc885b69fa06abb05fbdfdf6d8320cc",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e80dc5e4cfc885b69fa06abb05fbdfdf6d8320cc",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/e80dc5e4cfc885b69fa06abb05fbdfdf6d8320cc"
+  }, {
+    "sha" : "5c8f59dcea9920e0fecd6ff26df95cbb9163abb9",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5c8f59dcea9920e0fecd6ff26df95cbb9163abb9",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5c8f59dcea9920e0fecd6ff26df95cbb9163abb9"
+  } ]
+}

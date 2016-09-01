@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 44,
+    "additions" : 44,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/06394e288581563d18833f263d2d9cd68bee56fe",
+  "commit" : {
+    "author" : {
+      "name" : "chzayi",
+      "email" : "chzayi@163.com",
+      "date" : "2016-05-19T05:51:34Z"
+    },
+    "committer" : {
+      "name" : "chzayi",
+      "email" : "chzayi@163.com",
+      "date" : "2016-05-19T05:51:34Z"
+    },
+    "message" : "实验7 #93 #75",
+    "tree" : {
+      "sha" : "9b13cef97062055a70f28209ae16361c5fd1b1db",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/9b13cef97062055a70f28209ae16361c5fd1b1db"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/06394e288581563d18833f263d2d9cd68bee56fe",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/06394e288581563d18833f263d2d9cd68bee56fe/comments",
+  "files" : [ {
+    "sha" : "aa1f1e4bac833774601d2d28915d6410316147cf",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/IndexAction.java",
+    "status" : "added",
+    "additions" : 44,
+    "deletions" : 0,
+    "changes" : 44,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/06394e288581563d18833f263d2d9cd68bee56fe/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/IndexAction.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/06394e288581563d18833f263d2d9cd68bee56fe/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/IndexAction.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/IndexAction.java?ref=06394e288581563d18833f263d2d9cd68bee56fe",
+    "patch" : "@@ -0,0 +1,44 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901209;\n+\n+import java.io.File;\n+import java.io.InputStream;\n+import java.net.MalformedURLException;\n+import java.net.URL;\n+\n+import android.os.Bundle;\n+import android.support.v7.app.ActionBarActivity;\n+import android.widget.TextView;\n+\n+public class IndexAction extends ActionBarActivity {\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t/*\n+\t\t * 1. 编写一个Activity； 2. 将标题设置为自己的学号+选题题目； 3. 运行后截图存入实验报告； 4.\n+\t\t * Activity内容根据自己选择的题目编写。\n+\t\t */\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_index);\n+\t\tString data=\"无信息！\";\n+\t\tString url=\"https://github.com/chzayi/android-labs/blob/master/app/src/main/java\" +\n+\t\t\t\t\"/edu/hzuapps/androidworks/homeworks/com1314080901209/data.json\";//json数据url\n+\t\ttry {\n+\t\t\tURL u = new URL(url);\n+\t\t\tInputStream is = u.openStream();\n+\t\t\tint size = is.available();\n+\t\t\tbyte b[]=new byte[size];\n+\t\t\tif(-1!=is.read(b)){\n+\t\t\t\t data=new String(b);\n+\t\t\t\t//System.out.println(data);\n+\t\t\t}\n+\t\t} catch (Exception e) {\n+\t\t\t// TODO Auto-generated catch block\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t\t\n+\t\tTextView t = new TextView(this);\n+\t\tt.setText(data);\n+\t\tsetContentView(t);\n+\t}\n+\n+}"
+  } ],
+  "sha" : "06394e288581563d18833f263d2d9cd68bee56fe",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/06394e288581563d18833f263d2d9cd68bee56fe",
+  "parents" : [ {
+    "sha" : "157d1127dd76969d2445c134933598e473efe495",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/157d1127dd76969d2445c134933598e473efe495",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/157d1127dd76969d2445c134933598e473efe495"
+  } ]
+}

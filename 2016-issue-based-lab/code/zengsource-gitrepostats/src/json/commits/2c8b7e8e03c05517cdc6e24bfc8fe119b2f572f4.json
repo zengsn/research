@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zyzpig",
+    "id" : 18029384,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18029384?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zyzpig",
+    "html_url" : "https://github.com/zyzpig",
+    "followers_url" : "https://api.github.com/users/zyzpig/followers",
+    "following_url" : "https://api.github.com/users/zyzpig/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zyzpig/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zyzpig/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zyzpig/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zyzpig/orgs",
+    "repos_url" : "https://api.github.com/users/zyzpig/repos",
+    "events_url" : "https://api.github.com/users/zyzpig/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zyzpig/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 109,
+    "additions" : 21,
+    "deletions" : 88
+  },
+  "author" : {
+    "login" : "zyzpig",
+    "id" : 18029384,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18029384?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zyzpig",
+    "html_url" : "https://github.com/zyzpig",
+    "followers_url" : "https://api.github.com/users/zyzpig/followers",
+    "following_url" : "https://api.github.com/users/zyzpig/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zyzpig/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zyzpig/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zyzpig/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zyzpig/orgs",
+    "repos_url" : "https://api.github.com/users/zyzpig/repos",
+    "events_url" : "https://api.github.com/users/zyzpig/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zyzpig/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/2c8b7e8e03c05517cdc6e24bfc8fe119b2f572f4",
+  "commit" : {
+    "author" : {
+      "name" : "zyzpig",
+      "email" : "451829679@qq.com",
+      "date" : "2016-04-27T06:00:08Z"
+    },
+    "committer" : {
+      "name" : "zyzpig",
+      "email" : "451829679@qq.com",
+      "date" : "2016-04-27T06:00:08Z"
+    },
+    "message" : "#88 #36 lab2",
+    "tree" : {
+      "sha" : "a0595f054441b47bfd773b1054b1466a51cfc11e",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/a0595f054441b47bfd773b1054b1466a51cfc11e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/2c8b7e8e03c05517cdc6e24bfc8fe119b2f572f4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2c8b7e8e03c05517cdc6e24bfc8fe119b2f572f4/comments",
+  "files" : [ {
+    "sha" : "85c504025a1ee52ac707ad8af22f48c57a380f46",
+    "filename" : "app/src/main/res/layout/activity_net1314080903249.xml",
+    "status" : "modified",
+    "additions" : 21,
+    "deletions" : 88,
+    "changes" : 109,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2c8b7e8e03c05517cdc6e24bfc8fe119b2f572f4/app/src/main/res/layout/activity_net1314080903249.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2c8b7e8e03c05517cdc6e24bfc8fe119b2f572f4/app/src/main/res/layout/activity_net1314080903249.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903249.xml?ref=2c8b7e8e03c05517cdc6e24bfc8fe119b2f572f4",
+    "patch" : "@@ -1,92 +1,25 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n <RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:tools=\"http://schemas.android.com/tools\"\n-     android:layout_width=\"fill_parent\"\n-    android:layout_height=\"wrap_content\"\n-    android:orientation=\"vertical\"\n-    android:padding=\"20dp\"\n-    tools:context=\".MainActivity\" >\n-    \n-     <LinearLayout\n-        android:id=\"@+id/linearLayout1\"\n-        android:layout_width=\"match_parent\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903249.Net1314080903249Activity\">\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n         android:layout_height=\"wrap_content\"\n-        android:orientation=\"horizontal\"\n-        android:weightSum=\"100\" >\n-        \n-          <EditText\n-            android:id=\"@+id/ea\"\n-            android:layout_height=\"35dp\" \n-            android:layout_width=\"80dp\" />\n-        \n-                <EditText\n-            android:id=\"@+id/eb\"\n-            android:layout_height=\"35dp\" \n-            android:layout_width=\"80dp\" />\n+        android:text=\"欢迎使用简易计算器\" />\n \n-        <EditText\n-            android:id=\"@+id/ec\"\n-            android:layout_width=\"80dp\"\n-            android:layout_height=\"35dp\" />  \n-    </LinearLayout>\n-\n- <EditText\n-     android:id=\"@+id/ed\"\n-     android:layout_width=\"80dp\"\n-     android:layout_height=\"35dp\"\n-     android:layout_alignBottom=\"@+id/tvDisplay\"\n-     android:layout_alignRight=\"@+id/linearLayout1\"\n-     android:layout_marginRight=\"14dp\"\n-     android:ems=\"10\" />\n-\n- <TextView\n-     android:id=\"@+id/tvDisplay\"\n-     android:layout_width=\"180dp\"\n-     android:layout_height=\"wrap_content\"\n-     android:layout_below=\"@+id/linearLayout1\"\n-     android:layout_toLeftOf=\"@+id/ec\"\n-     android:text=\"计算结果是\"\n-     android:textSize=\"30dp\" />\n-\n-      <LinearLayout\n-          android:id=\"@+id/linearLayout3\"\n-          android:layout_width=\"match_parent\"\n-          android:layout_height=\"wrap_content\"\n-          android:layout_below=\"@+id/ed\"\n-          android:layout_centerHorizontal=\"true\"\n-          android:orientation=\"horizontal\"\n-          android:weightSum=\"100\" >\n-\n-          <Button\n-              android:id=\"@+id/ba\"\n-              android:layout_width=\"45dp\"\n-              android:layout_height=\"60dp\"\n-              android:layout_gravity=\"center\"\n-              android:gravity=\"center\"\n-              android:text=\"+\" />\n-\n-          <Button\n-              android:id=\"@+id/bb\"\n-              android:layout_width=\"45dp\"\n-              android:layout_height=\"60dp\"\n-              android:text=\"-\" />\n-\n-          <Button\n-              android:id=\"@+id/bc\"\n-              android:layout_width=\"45dp\"\n-              android:layout_height=\"60dp\"\n-              android:text=\"*\" />\n-\n-          <Button\n-              android:id=\"@+id/bd\"\n-              android:layout_width=\"45dp\"\n-              android:layout_height=\"60dp\"\n-              android:text=\"/\" />\n-\n-          <Button\n-              android:id=\"@+id/be\"\n-              android:layout_width=\"wrap_content\"\n-              android:layout_height=\"60dp\"\n-              android:text=\"=\" />\n-      </LinearLayout>\n-\n-</RelativeLayout>\n\\ No newline at end of file\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"OK\"\n+        android:id=\"@+id/button\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:layout_marginBottom=\"175dp\" />\n+</RelativeLayout>"
+  } ],
+  "sha" : "2c8b7e8e03c05517cdc6e24bfc8fe119b2f572f4",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2c8b7e8e03c05517cdc6e24bfc8fe119b2f572f4",
+  "parents" : [ {
+    "sha" : "4eb1623476d110b43bd33bd171ee0cc71b2fab8c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4eb1623476d110b43bd33bd171ee0cc71b2fab8c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/4eb1623476d110b43bd33bd171ee0cc71b2fab8c"
+  } ]
+}

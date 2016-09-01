@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "WL101ZYF",
+    "id" : 17779014,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17779014?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WL101ZYF",
+    "html_url" : "https://github.com/WL101ZYF",
+    "followers_url" : "https://api.github.com/users/WL101ZYF/followers",
+    "following_url" : "https://api.github.com/users/WL101ZYF/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WL101ZYF/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WL101ZYF/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WL101ZYF/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WL101ZYF/orgs",
+    "repos_url" : "https://api.github.com/users/WL101ZYF/repos",
+    "events_url" : "https://api.github.com/users/WL101ZYF/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WL101ZYF/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 71,
+    "additions" : 41,
+    "deletions" : 30
+  },
+  "author" : {
+    "login" : "WL101ZYF",
+    "id" : 17779014,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17779014?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WL101ZYF",
+    "html_url" : "https://github.com/WL101ZYF",
+    "followers_url" : "https://api.github.com/users/WL101ZYF/followers",
+    "following_url" : "https://api.github.com/users/WL101ZYF/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WL101ZYF/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WL101ZYF/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WL101ZYF/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WL101ZYF/orgs",
+    "repos_url" : "https://api.github.com/users/WL101ZYF/repos",
+    "events_url" : "https://api.github.com/users/WL101ZYF/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WL101ZYF/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/162f19cafdc9df06f7b9be7b3bd1b8207625c357",
+  "commit" : {
+    "author" : {
+      "name" : "WL101ZYF",
+      "email" : "2687292764@qq.com",
+      "date" : "2016-05-04T01:15:08Z"
+    },
+    "committer" : {
+      "name" : "WL101ZYF",
+      "email" : "2687292764@qq.com",
+      "date" : "2016-05-04T01:15:08Z"
+    },
+    "message" : "#90 #38 lab4",
+    "tree" : {
+      "sha" : "69d255ca27195e92c430872e072f60a9ac996331",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/69d255ca27195e92c430872e072f60a9ac996331"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/162f19cafdc9df06f7b9be7b3bd1b8207625c357",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/162f19cafdc9df06f7b9be7b3bd1b8207625c357/comments",
+  "files" : [ {
+    "sha" : "75880c5e21076a0bd9c861411761c2ae19ab218a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java",
+    "status" : "modified",
+    "additions" : 41,
+    "deletions" : 30,
+    "changes" : 71,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/162f19cafdc9df06f7b9be7b3bd1b8207625c357/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/162f19cafdc9df06f7b9be7b3bd1b8207625c357/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903101/Net1314080903101activity.java?ref=162f19cafdc9df06f7b9be7b3bd1b8207625c357",
+    "patch" : "@@ -1,52 +1,63 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903101;\n \n import android.os.Bundle;\n-import android.support.design.widget.FloatingActionButton;\n-import android.support.design.widget.Snackbar;\n import android.support.v7.app.AppCompatActivity;\n-import android.support.v7.widget.Toolbar;\n-import android.view.View;\n import android.view.Menu;\n-import android.view.MenuItem;\n \n-public class Net1314080903101activity extends AppCompatActivity {\n+import java.io.FileNotFoundException;\n+\n+import android.net.Uri;\n+import android.provider.MediaStore;\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.widget.ImageButton;\n+import android.widget.ImageView;\n+\n+public class Net1314080903101Activity extends AppCompatActivity {\n+\n+    private Uri imageUri;\n+    private ImageButton imageView;\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_net1314080903101);\n-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n-        setSupportActionBar(toolbar);\n-\n-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n-        fab.setOnClickListener(new View.OnClickListener() {\n-            @Override\n-            public void onClick(View view) {\n-                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n-                        .setAction(\"Action\", null).show();\n-            }\n-        });\n+\n+        imageView = (ImageButton) findViewById(R.id.imageView);\n+        imageUri = Uri.parse(\"file:///sdcard/temp.jpg\");\n+\n+        Intent intent;\n+        intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);      //调用照相机\n+        intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);        //指定照相机拍到的照片原图存放位置\n+        startActivityForResult(intent, 1);\n+\n+\n     }\n \n     @Override\n     public boolean onCreateOptionsMenu(Menu menu) {\n         // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_net1314080903101, menu);\n+        getMenuInflater().inflate(R.menu.menu_main_net1314080903101, menu);\n         return true;\n     }\n \n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            return true;\n-        }\n+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {\n+        super.onActivityResult(requestCode, resultCode, data);\n+\n+// onActivityResult需要按提示修改\n+        if(resultCode == Activity.RESULT_OK)\n+        {Bitmap bitmap;\n+            try {\n+                bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));\n+                imageView.setImageBitmap(bitmap);\n+            } catch (FileNotFoundException e) {\n+                // TODO 自动生成的 catch 块\n+                e.printStackTrace();\n+            }\n+\n \n-        return super.onOptionsItemSelected(item);\n+        }\n     }\n }"
+  } ],
+  "sha" : "162f19cafdc9df06f7b9be7b3bd1b8207625c357",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/162f19cafdc9df06f7b9be7b3bd1b8207625c357",
+  "parents" : [ {
+    "sha" : "7e17beb39a8e506638cc35e30035fc736a654628",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/7e17beb39a8e506638cc35e30035fc736a654628",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/7e17beb39a8e506638cc35e30035fc736a654628"
+  } ]
+}

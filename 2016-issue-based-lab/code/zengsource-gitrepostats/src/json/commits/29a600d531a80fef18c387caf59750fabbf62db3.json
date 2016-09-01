@@ -1,0 +1,171 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 38,
+    "additions" : 33,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/29a600d531a80fef18c387caf59750fabbf62db3",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-11T06:35:37Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-11T06:35:37Z"
+    },
+    "message" : "Merge pull request #695 from isshe/master\n\n#95 #12 实验9:综合编程",
+    "tree" : {
+      "sha" : "befee238dbf1d5d8788731a8ef97f70c169be15d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/befee238dbf1d5d8788731a8ef97f70c169be15d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/29a600d531a80fef18c387caf59750fabbf62db3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/29a600d531a80fef18c387caf59750fabbf62db3/comments",
+  "files" : [ {
+    "sha" : "46e3afe43914cc76e952b5cf10f636c70356b877",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/AndroidManifest.xml?ref=29a600d531a80fef18c387caf59750fabbf62db3",
+    "patch" : "@@ -0,0 +1,28 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"edu.hzuapps.androidworks.homeworks.net1314080903212\">\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@mipmap/ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:supportsRtl=\"true\"\n+        android:theme=\"@style/AppTheme\">\n+\n+        <activity\n+            android:name=\".Net1314080903212MultiChat\"\n+            android:label=\"@string/app_name\"\n+            android:theme=\"@style/AppTheme.NoActionBar\">\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+\n+    </application>\n+    <uses-permission android:name=\"android.permission.INTERNET\"/>\n+    <uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>\n+    <uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>\n+    <uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>\n+</manifest>"
+  }, {
+    "sha" : "f9a71e25d32f9162ea9d61a509b3825ffb7e4a32",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212Activity.java",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212Activity.java?ref=29a600d531a80fef18c387caf59750fabbf62db3",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212Activity.java"
+  }, {
+    "sha" : "5c74ade7c4482b896f573a0579a1ba19272584a5",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212ClientThread.java",
+    "status" : "renamed",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212ClientThread.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212ClientThread.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212ClientThread.java?ref=29a600d531a80fef18c387caf59750fabbf62db3",
+    "patch" : "@@ -1,4 +1,4 @@\n-package com.example.dell.multichat;\n+package edu.hzuapps.androidworks.homeworks.net1314080903212;\n \n import android.os.Looper;\n import android.os.Message;",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212ClientThread.java"
+  }, {
+    "sha" : "0e2eb82afe25c81c4c0b665a07e7bf81072ba6ec",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212GetRemoteFile.java",
+    "status" : "renamed",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212GetRemoteFile.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212GetRemoteFile.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212GetRemoteFile.java?ref=29a600d531a80fef18c387caf59750fabbf62db3",
+    "patch" : "@@ -1,4 +1,4 @@\n-package com.example.dell.multichat;\n+package package edu.hzuapps.androidworks.homeworks.net1314080903212;\n \n import android.os.Environment;\n import android.os.Handler;",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212GetRemoteFile.java"
+  }, {
+    "sha" : "ad9a0f9bbd7d6a7e9b0a01ace1eaeee3a9737fc6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212MultiChat.java",
+    "status" : "renamed",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212MultiChat.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212MultiChat.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212MultiChat.java?ref=29a600d531a80fef18c387caf59750fabbf62db3",
+    "patch" : "@@ -1,4 +1,4 @@\n-package com.example.dell.multichat;\n+package edu.hzuapps.androidworks.homeworks.net1314080903212;\n \n import android.app.Activity;\n import android.os.Bundle;",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212MultiChat.java"
+  }, {
+    "sha" : "b53a0194ee8980fa58374e98e6bcd635647c19a8",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212MultiChat.xml",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212MultiChat.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212MultiChat.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212MultiChat.xml?ref=29a600d531a80fef18c387caf59750fabbf62db3",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212MultiChat.xml"
+  }, {
+    "sha" : "610529808b0d5fbe654e6a6a5308f76faffb1b30",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212RH.java",
+    "status" : "renamed",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212RH.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212RH.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212RH.java?ref=29a600d531a80fef18c387caf59750fabbf62db3",
+    "patch" : "@@ -1,4 +1,4 @@\n-package edu.hzuapps.androidworks.homeworks.Net1314080903212;\n+package edu.hzuapps.androidworks.homeworks.net1314080903212;\n \n //import java.io.*;\n import android.os.Environment;",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212RH.java"
+  }, {
+    "sha" : "794cbf3c1744db4566997ea3f08593beeb900dc3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212WH.java",
+    "status" : "renamed",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212WH.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/29a600d531a80fef18c387caf59750fabbf62db3/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212WH.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903212/Net1314080903212WH.java?ref=29a600d531a80fef18c387caf59750fabbf62db3",
+    "patch" : "@@ -1,4 +1,4 @@\n-package edu.hzuapps.androidworks.homeworks.Net1314080903212;\n+package edu.hzuapps.androidworks.homeworks.net1314080903212;\n \n import android.os.Environment;\n import android.provider.ContactsContract;",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212WH.java"
+  } ],
+  "sha" : "29a600d531a80fef18c387caf59750fabbf62db3",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/29a600d531a80fef18c387caf59750fabbf62db3",
+  "parents" : [ {
+    "sha" : "87ac8c75e1d51f59a105663e914667dede541f9c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/87ac8c75e1d51f59a105663e914667dede541f9c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/87ac8c75e1d51f59a105663e914667dede541f9c"
+  }, {
+    "sha" : "706f4d9eb69ed043990fa2f2116805da394fc5a7",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/706f4d9eb69ed043990fa2f2116805da394fc5a7",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/706f4d9eb69ed043990fa2f2116805da394fc5a7"
+  } ]
+}

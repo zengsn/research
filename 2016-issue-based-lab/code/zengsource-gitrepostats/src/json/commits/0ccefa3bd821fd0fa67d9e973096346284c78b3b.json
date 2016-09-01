@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "soleMemory",
+    "id" : 17998370,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17998370?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/soleMemory",
+    "html_url" : "https://github.com/soleMemory",
+    "followers_url" : "https://api.github.com/users/soleMemory/followers",
+    "following_url" : "https://api.github.com/users/soleMemory/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/soleMemory/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/soleMemory/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/soleMemory/subscriptions",
+    "organizations_url" : "https://api.github.com/users/soleMemory/orgs",
+    "repos_url" : "https://api.github.com/users/soleMemory/repos",
+    "events_url" : "https://api.github.com/users/soleMemory/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/soleMemory/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 29,
+    "additions" : 29,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "soleMemory",
+    "id" : 17998370,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17998370?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/soleMemory",
+    "html_url" : "https://github.com/soleMemory",
+    "followers_url" : "https://api.github.com/users/soleMemory/followers",
+    "following_url" : "https://api.github.com/users/soleMemory/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/soleMemory/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/soleMemory/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/soleMemory/subscriptions",
+    "organizations_url" : "https://api.github.com/users/soleMemory/orgs",
+    "repos_url" : "https://api.github.com/users/soleMemory/repos",
+    "events_url" : "https://api.github.com/users/soleMemory/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/soleMemory/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/0ccefa3bd821fd0fa67d9e973096346284c78b3b",
+  "commit" : {
+    "author" : {
+      "name" : "soleMemory",
+      "email" : "2995855759@qq.com",
+      "date" : "2016-05-11T05:05:04Z"
+    },
+    "committer" : {
+      "name" : "soleMemory",
+      "email" : "2995855759@qq.com",
+      "date" : "2016-05-11T05:05:04Z"
+    },
+    "message" : "#95 #20 lab9综合编程",
+    "tree" : {
+      "sha" : "a550dd6ef3db61f0cfedb6b27a015888197b0767",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/a550dd6ef3db61f0cfedb6b27a015888197b0767"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/0ccefa3bd821fd0fa67d9e973096346284c78b3b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0ccefa3bd821fd0fa67d9e973096346284c78b3b/comments",
+  "files" : [ {
+    "sha" : "3047342ee9766df6ad790a118d2416fd7754bd22",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 29,
+    "deletions" : 0,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0ccefa3bd821fd0fa67d9e973096346284c78b3b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0ccefa3bd821fd0fa67d9e973096346284c78b3b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/AndroidManifest.xml?ref=0ccefa3bd821fd0fa67d9e973096346284c78b3b",
+    "patch" : "@@ -0,0 +1,29 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"com.example.ljl.mygps\">\n+    <uses-permission android:name=\"android.permission.INTERNET\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>\n+    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_FIND_LOCATION\" />\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@mipmap/ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:supportsRtl=\"true\"\n+        android:theme=\"@style/AppTheme\">\n+        <activity\n+            android:name=\".Net1314080903234GPS\"\n+            android:label=\"@string/app_name\"\n+            android:theme=\"@style/AppTheme.NoActionBar\">\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+    </application>\n+\n+</manifest>"
+  } ],
+  "sha" : "0ccefa3bd821fd0fa67d9e973096346284c78b3b",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0ccefa3bd821fd0fa67d9e973096346284c78b3b",
+  "parents" : [ {
+    "sha" : "2057323322bf100001afeb9fa4d4ae8cefa1b0a1",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2057323322bf100001afeb9fa4d4ae8cefa1b0a1",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/2057323322bf100001afeb9fa4d4ae8cefa1b0a1"
+  } ]
+}

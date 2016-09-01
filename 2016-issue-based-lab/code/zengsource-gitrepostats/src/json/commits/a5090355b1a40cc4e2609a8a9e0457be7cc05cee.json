@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "LiuJingXin",
+    "id" : 17778775,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17778775?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LiuJingXin",
+    "html_url" : "https://github.com/LiuJingXin",
+    "followers_url" : "https://api.github.com/users/LiuJingXin/followers",
+    "following_url" : "https://api.github.com/users/LiuJingXin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LiuJingXin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LiuJingXin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LiuJingXin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LiuJingXin/orgs",
+    "repos_url" : "https://api.github.com/users/LiuJingXin/repos",
+    "events_url" : "https://api.github.com/users/LiuJingXin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LiuJingXin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 24,
+    "additions" : 12,
+    "deletions" : 12
+  },
+  "author" : {
+    "login" : "LiuJingXin",
+    "id" : 17778775,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17778775?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LiuJingXin",
+    "html_url" : "https://github.com/LiuJingXin",
+    "followers_url" : "https://api.github.com/users/LiuJingXin/followers",
+    "following_url" : "https://api.github.com/users/LiuJingXin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LiuJingXin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LiuJingXin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LiuJingXin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LiuJingXin/orgs",
+    "repos_url" : "https://api.github.com/users/LiuJingXin/repos",
+    "events_url" : "https://api.github.com/users/LiuJingXin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LiuJingXin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/a5090355b1a40cc4e2609a8a9e0457be7cc05cee",
+  "commit" : {
+    "author" : {
+      "name" : "LiuJingXin",
+      "email" : "1216219258@qq.com",
+      "date" : "2016-05-11T16:11:47Z"
+    },
+    "committer" : {
+      "name" : "LiuJingXin",
+      "email" : "1216219258@qq.com",
+      "date" : "2016-05-11T16:11:47Z"
+    },
+    "message" : "Update Net1314080903127_diary_activity.java",
+    "tree" : {
+      "sha" : "4d5586a3c68afe7231525f4ee30fe6ded242f9cc",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/4d5586a3c68afe7231525f4ee30fe6ded242f9cc"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/a5090355b1a40cc4e2609a8a9e0457be7cc05cee",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a5090355b1a40cc4e2609a8a9e0457be7cc05cee/comments",
+  "files" : [ {
+    "sha" : "be279df49e28e1d61134df6727db7303831b48e1",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 12,
+    "changes" : 24,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a5090355b1a40cc4e2609a8a9e0457be7cc05cee/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a5090355b1a40cc4e2609a8a9e0457be7cc05cee/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java?ref=a5090355b1a40cc4e2609a8a9e0457be7cc05cee",
+    "patch" : "@@ -1,6 +1,6 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903127;\n \n-import com.donglihan.CollegeLifeManager.R;\n+import edu.hzuapps.androidworks.homeworks.net1314080903127;\n \n import android.app.ListActivity;\n import android.content.Intent;\n@@ -14,11 +14,11 @@\n \n public class Net1314080903127_diary_activity extends ListActivity {\n \t\n-\t//�ظ��Ĺؼ���\n+\t//回复的关键字\n \tprivate static final int ACTIVITY_CREATE = 0;\n \tprivate static final int ACTIVITY_EDIT = 1;\n \n-\t//�˵���ѡ��\n+\t//菜单的选择\n \tprivate static final int INSERT_ID = Menu.FIRST;\n \tprivate static final int DELETE_ID = Menu.FIRST + 1;\n \n@@ -34,11 +34,11 @@ public void onCreate(Bundle savedInstanceState) {\n \n \t}\n \n-\t//���µ�ǰ��listacvitity\n+\t//更新当前的listacvitity\n \tprivate void updateListView() {\n \t\tmDbHelper.open();\n \t\tmDiaryCursor = mDbHelper.getAllNotes();\n-\t\t//����Activity�����α�\n+\t\t//交给Activity管理游标\n \t\tstartManagingCursor(mDiaryCursor);\n \t\tString[] from = new String[] { Net1314080903127_DbAdapter.KEY_TITLE,\n \t\t\t\tNet1314080903127_DbAdapter.KEY_CREATED };\n@@ -49,16 +49,16 @@ private void updateListView() {\n \t\tmDbHelper.closeclose();\n \t}\n \n-\t//����һ��˵�\n+\t//创建一个菜单\n \t@Override\n \tpublic boolean onCreateOptionsMenu(Menu menu) {\n \t\tsuper.onCreateOptionsMenu(menu);\n-\t\tmenu.add(0, INSERT_ID, 0,\"�½�\").setIcon(R.drawable.net1314080903127_new_course);\n-\t\tmenu.add(0, DELETE_ID, 0, \"ɾ��\").setIcon(R.drawable.net1314080903127_delete);\n+\t\tmenu.add(0, INSERT_ID, 0,\"新建\").setIcon(R.drawable.net1314080903127_new_course);\n+\t\tmenu.add(0, DELETE_ID, 0, \"删除\").setIcon(R.drawable.net1314080903127_delete);\n \t\treturn true;\n \t}\n \n-\t//�˵�ѡ��\n+\t//菜单选择\n \t@Override\n \tpublic boolean onMenuItemSelected(int featureId, MenuItem item) {\n \t\tswitch (item.getItemId()) {\n@@ -81,9 +81,9 @@ private void createDiary() {\n \t}\n \n \t@Override\n-\t// ��Ҫ��position��id����һ��ܺõ����\n-\t// positionָ���ǵ������ViewItem�ڵ�ǰListView�е�λ��\n-\t// ÿһ���ViewItem�󶨵���ݣ��϶�����һ��id��ͨ�����id�����ҵ�������ݡ�\n+\t// 需要对position和id进行一个很好的区分\n+\t// position指的是点击的这个ViewItem在当前ListView中的位置\n+\t// 每一个和ViewItem绑定的数据，肯定都有一个id，通过这个id可以找到那条数据。\n \tprotected void onListItemClick(ListView l, View v, int position, long id) {\n \t\tsuper.onListItemClick(l, v, position, id);\n \t\tCursor c = mDiaryCursor;"
+  } ],
+  "sha" : "a5090355b1a40cc4e2609a8a9e0457be7cc05cee",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a5090355b1a40cc4e2609a8a9e0457be7cc05cee",
+  "parents" : [ {
+    "sha" : "566253bbec21ba47f6cd5b63fe4c9630cc92497c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/566253bbec21ba47f6cd5b63fe4c9630cc92497c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/566253bbec21ba47f6cd5b63fe4c9630cc92497c"
+  } ]
+}

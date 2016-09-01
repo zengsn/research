@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "isshe",
+    "id" : 13636347,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13636347?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/isshe",
+    "html_url" : "https://github.com/isshe",
+    "followers_url" : "https://api.github.com/users/isshe/followers",
+    "following_url" : "https://api.github.com/users/isshe/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/isshe/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/isshe/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/isshe/subscriptions",
+    "organizations_url" : "https://api.github.com/users/isshe/orgs",
+    "repos_url" : "https://api.github.com/users/isshe/repos",
+    "events_url" : "https://api.github.com/users/isshe/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/isshe/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 85,
+    "additions" : 85,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "isshe",
+    "id" : 13636347,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13636347?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/isshe",
+    "html_url" : "https://github.com/isshe",
+    "followers_url" : "https://api.github.com/users/isshe/followers",
+    "following_url" : "https://api.github.com/users/isshe/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/isshe/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/isshe/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/isshe/subscriptions",
+    "organizations_url" : "https://api.github.com/users/isshe/orgs",
+    "repos_url" : "https://api.github.com/users/isshe/repos",
+    "events_url" : "https://api.github.com/users/isshe/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/isshe/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/f59d813432d276e8f8d118ebb11afe27f7f34665",
+  "commit" : {
+    "author" : {
+      "name" : "isshe",
+      "email" : "i.sshe@foxmail.com",
+      "date" : "2016-05-11T00:44:20Z"
+    },
+    "committer" : {
+      "name" : "isshe",
+      "email" : "i.sshe@foxmail.com",
+      "date" : "2016-05-11T00:44:20Z"
+    },
+    "message" : "#93 #12 实验7:网络编程",
+    "tree" : {
+      "sha" : "fe06548b8a896c640dc00b4909b91c7555f2b02a",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/fe06548b8a896c640dc00b4909b91c7555f2b02a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/f59d813432d276e8f8d118ebb11afe27f7f34665",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f59d813432d276e8f8d118ebb11afe27f7f34665/comments",
+  "files" : [ {
+    "sha" : "c71ea557d6a2fbab2777f0d8ae68329be39d172e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212GetRemoteFile.java",
+    "status" : "added",
+    "additions" : 84,
+    "deletions" : 0,
+    "changes" : 84,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f59d813432d276e8f8d118ebb11afe27f7f34665/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212GetRemoteFile.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f59d813432d276e8f8d118ebb11afe27f7f34665/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212GetRemoteFile.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212GetRemoteFile.java?ref=f59d813432d276e8f8d118ebb11afe27f7f34665",
+    "patch" : "@@ -0,0 +1,84 @@\n+package com.example.dell.multichat;\n+\n+import android.os.Environment;\n+import android.os.Handler;\n+import android.os.Looper;\n+import android.os.Message;\n+import android.renderscript.ScriptGroup;\n+import android.widget.TextView;\n+\n+import java.io.BufferedInputStream;\n+import java.io.File;\n+import java.io.IOException;\n+import java.io.InputStream;\n+import java.io.RandomAccessFile;\n+import java.net.MalformedURLException;\n+import java.net.URL;\n+import java.net.URLConnection;\n+\n+/**\n+ * Created by dell on 2016/4/28.\n+ */\n+public class Net1314080903212GetRemoteFile implements Runnable{\n+    public TextView GRFshow;\n+    public Handler sendHandler;\n+\n+    public void Net1314080903212GetRemoteFile(Handler handler)\n+    {\n+        sendHandler = handler;\n+    }\n+\n+    public void run()\n+    {\n+        try {\n+            System.out.println(\"before new URL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\n+            URL git_url = new URL(\"https://raw.githubusercontent.com/OurScream/PerIntBank/master/README.md\");\n+\n+            System.out.println(\"before new URLConnection!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\n+            //打开url链接\n+            URLConnection git_con = git_url.openConnection();\n+\n+            //获取数据\n+ //           InputStream is = git_con.getInputStream();                         //方法1\n+ //           BufferedInputStream bis = new BufferedInputStream(is);\n+            InputStream bis = git_url.openStream();                              //方法2\n+\n+            int read_len = 0;\n+            byte[] readbyte = new byte[1024];\n+\n+            System.out.println(\"before new get_path!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\n+            //新建文件\n+            File get_path =  Environment.getExternalStorageDirectory();     //\n+            File file =  new File(get_path.getCanonicalPath() , \"ChatHistory\");\n+\n+            //判断历史记录文件是否存在， 不存在则创建\n+            if (!file.exists()){\n+                    file.createNewFile();\n+                    System.out.println(\"GetRemoteFile: 创建文件!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\n+            }\n+\n+            while((read_len = bis.read(readbyte)) != -1)\n+            {\n+                RandomAccessFile raf = new RandomAccessFile(file,\"rw\");\n+                raf.seek(file.length());\n+                raf.write(readbyte);                    //这里的换行不知道可不可以！\n+                System.out.println(readbyte.toString() + \"GetRemoteFile: 看看一条记录大概都长:\" + file.length());\n+                raf.close();\n+            }\n+            //再读一次文件\n+            Message msg = new Message();\n+            msg.what = 0x789;\n+            sendHandler.sendMessage(msg);\n+\n+//            new Net1314080903212RH().file_read(new Net1314080903212MultiChat().show);\n+        }\n+        catch(MalformedURLException murle)\n+        {\n+            murle.printStackTrace();\n+        }\n+        catch(IOException ioe)\n+        {\n+            ioe.printStackTrace();\n+        }\n+    }\n+}"
+  }, {
+    "sha" : "b53a0194ee8980fa58374e98e6bcd635647c19a8",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212MultiChat.xml",
+    "status" : "added",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f59d813432d276e8f8d118ebb11afe27f7f34665/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212MultiChat.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f59d813432d276e8f8d118ebb11afe27f7f34665/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212MultiChat.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212MultiChat.xml?ref=f59d813432d276e8f8d118ebb11afe27f7f34665",
+    "patch" : "@@ -0,0 +1 @@\n+实验7：网络编程"
+  } ],
+  "sha" : "f59d813432d276e8f8d118ebb11afe27f7f34665",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f59d813432d276e8f8d118ebb11afe27f7f34665",
+  "parents" : [ {
+    "sha" : "bd6b7bd21f9b46d4818e7f8102d5be7acf5d9d66",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/bd6b7bd21f9b46d4818e7f8102d5be7acf5d9d66",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/bd6b7bd21f9b46d4818e7f8102d5be7acf5d9d66"
+  } ]
+}

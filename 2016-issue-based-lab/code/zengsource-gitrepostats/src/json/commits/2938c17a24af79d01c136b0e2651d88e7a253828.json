@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "renrendashai",
+    "id" : 15085143,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085143?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/renrendashai",
+    "html_url" : "https://github.com/renrendashai",
+    "followers_url" : "https://api.github.com/users/renrendashai/followers",
+    "following_url" : "https://api.github.com/users/renrendashai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/renrendashai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/renrendashai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/renrendashai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/renrendashai/orgs",
+    "repos_url" : "https://api.github.com/users/renrendashai/repos",
+    "events_url" : "https://api.github.com/users/renrendashai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/renrendashai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 40,
+    "additions" : 40,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "renrendashai",
+    "id" : 15085143,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085143?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/renrendashai",
+    "html_url" : "https://github.com/renrendashai",
+    "followers_url" : "https://api.github.com/users/renrendashai/followers",
+    "following_url" : "https://api.github.com/users/renrendashai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/renrendashai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/renrendashai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/renrendashai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/renrendashai/orgs",
+    "repos_url" : "https://api.github.com/users/renrendashai/repos",
+    "events_url" : "https://api.github.com/users/renrendashai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/renrendashai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/2938c17a24af79d01c136b0e2651d88e7a253828",
+  "commit" : {
+    "author" : {
+      "name" : "renrendashai",
+      "email" : "297259225@qq.com",
+      "date" : "2016-05-03T14:00:56Z"
+    },
+    "committer" : {
+      "name" : "renrendashai",
+      "email" : "297259225@qq.com",
+      "date" : "2016-05-03T14:00:56Z"
+    },
+    "message" : "#88 #64 lab2",
+    "tree" : {
+      "sha" : "d89198c9a347d195d071bf0e20e1bd91caed7851",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/d89198c9a347d195d071bf0e20e1bd91caed7851"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/2938c17a24af79d01c136b0e2651d88e7a253828",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2938c17a24af79d01c136b0e2651d88e7a253828/comments",
+  "files" : [ {
+    "sha" : "1f50d07099374bb2e934acd5f7c7bb9cd3341b76",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109 #64Citylist Activity.java",
+    "status" : "added",
+    "additions" : 40,
+    "deletions" : 0,
+    "changes" : 40,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2938c17a24af79d01c136b0e2651d88e7a253828/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109%20#64Citylist%20Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2938c17a24af79d01c136b0e2651d88e7a253828/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109%20#64Citylist%20Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109%20#64Citylist%20Activity.java?ref=2938c17a24af79d01c136b0e2651d88e7a253828",
+    "patch" : "@@ -0,0 +1,40 @@\n+package com.example.administrator.citylist;\n+\n+import android.app.Activity;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+\n+import com.baidu.mapapi.SDKInitializer;\n+import com.baidu.mapapi.map.MapView;\n+\n+public class MainActivity extends Activity {\n+    MapView mMapView = null;\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        //在使用SDK各组件之前初始化context信息，传入ApplicationContext\n+        //注意该方法要再setContentView方法之前实现\n+        SDKInitializer.initialize(getApplicationContext());\n+        setContentView(R.layout.activity_main);\n+        //获取地图控件引用\n+        mMapView = (MapView) findViewById(R.id.bmapView);\n+    }\n+    @Override\n+    protected void onDestroy() {\n+        super.onDestroy();\n+        //在activity执行onDestroy时执行mMapView.onDestroy()，实现地图生命周期管理\n+        mMapView.onDestroy();\n+    }\n+    @Override\n+    protected void onResume() {\n+        super.onResume();\n+        //在activity执行onResume时执行mMapView. onResume ()，实现地图生命周期管理\n+        mMapView.onResume();\n+    }\n+    @Override\n+    protected void onPause() {\n+        super.onPause();\n+        //在activity执行onPause时执行mMapView. onPause ()，实现地图生命周期管理\n+        mMapView.onPause();\n+    }\n+}"
+  } ],
+  "sha" : "2938c17a24af79d01c136b0e2651d88e7a253828",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2938c17a24af79d01c136b0e2651d88e7a253828",
+  "parents" : [ {
+    "sha" : "1d921b76016274f57a9b9177c770b05c09df0ce2",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1d921b76016274f57a9b9177c770b05c09df0ce2",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1d921b76016274f57a9b9177c770b05c09df0ce2"
+  } ]
+}

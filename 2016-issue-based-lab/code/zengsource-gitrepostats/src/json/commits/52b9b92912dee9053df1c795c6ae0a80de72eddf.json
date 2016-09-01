@@ -1,0 +1,173 @@
+{
+  "committer" : {
+    "login" : "WCTNOC",
+    "id" : 17809824,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17809824?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WCTNOC",
+    "html_url" : "https://github.com/WCTNOC",
+    "followers_url" : "https://api.github.com/users/WCTNOC/followers",
+    "following_url" : "https://api.github.com/users/WCTNOC/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WCTNOC/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WCTNOC/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WCTNOC/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WCTNOC/orgs",
+    "repos_url" : "https://api.github.com/users/WCTNOC/repos",
+    "events_url" : "https://api.github.com/users/WCTNOC/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WCTNOC/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 47,
+    "additions" : 46,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "WCTNOC",
+    "id" : 17809824,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17809824?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WCTNOC",
+    "html_url" : "https://github.com/WCTNOC",
+    "followers_url" : "https://api.github.com/users/WCTNOC/followers",
+    "following_url" : "https://api.github.com/users/WCTNOC/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WCTNOC/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WCTNOC/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WCTNOC/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WCTNOC/orgs",
+    "repos_url" : "https://api.github.com/users/WCTNOC/repos",
+    "events_url" : "https://api.github.com/users/WCTNOC/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WCTNOC/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/52b9b92912dee9053df1c795c6ae0a80de72eddf",
+  "commit" : {
+    "author" : {
+      "name" : "WCTNOC",
+      "email" : "1578979727@qq.com",
+      "date" : "2016-05-11T12:53:21Z"
+    },
+    "committer" : {
+      "name" : "WCTNOC",
+      "email" : "1578979727@qq.com",
+      "date" : "2016-05-11T12:53:21Z"
+    },
+    "message" : "#91 #92 #93 #94 #95 #125 实验5-9\n\n实验最后所有代码，其中AndroidManifest.xml无法修改所有放在我学号里面了。",
+    "tree" : {
+      "sha" : "f5af616ea1f47e762849be15d79cf1b9a728ad6c",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/f5af616ea1f47e762849be15d79cf1b9a728ad6c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/52b9b92912dee9053df1c795c6ae0a80de72eddf/comments",
+  "files" : [ {
+    "sha" : "90bb523bea40c7fd2f1d45514e05d405b19438c2",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 37,
+    "deletions" : 0,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/AndroidManifest.xml?ref=52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "patch" : "@@ -0,0 +1,37 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"edu.hzuapps.androidworks.homeworks.net1314080903112\">\n+\n+    <uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@mipmap/net1314080903112ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:supportsRtl=\"true\"\n+        android:theme=\"@style/AppTheme\">\n+        <activity android:name=\".Net1314080903112MainActivity\">\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+\n+        <service\n+            android:name=\".Net1314080903112MyAccessibilityService\"\n+            android:label=\"Apk智能安装服务\"\n+            android:permission=\"android.permission.BIND_ACCESSIBILITY_SERVICE\">\n+            <intent-filter>\n+                <action android:name=\"android.accessibilityservice.AccessibilityService\" />\n+            </intent-filter>\n+\n+            <meta-data\n+                android:name=\"android.accessibilityservice\"\n+                android:resource=\"@xml/net1314080903112accessibility_service_config\" />\n+        </service>\n+\n+        <activity android:name=\".Net1314080903112FileExplorerActivity\"/>\n+    </application>\n+\n+</manifest>\n\\ No newline at end of file"
+  }, {
+    "sha" : "b6742433c6e149f9c976d290e519509a748e6e30",
+    "filename" : "app/src/main/res/layout/net1314080903112activity_file_explorer.xml",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 1,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/layout/net1314080903112activity_file_explorer.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/layout/net1314080903112activity_file_explorer.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903112activity_file_explorer.xml?ref=52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "patch" : "@@ -8,6 +8,7 @@\n         android:id=\"@+id/list_view\"\n         android:layout_width=\"match_parent\"\n         android:layout_height=\"match_parent\"\n+\t\t\n         />\n-\n+\t\n </LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "6464ef34bb2fe11ac076a296f28714795980835a",
+    "filename" : "app/src/main/res/layout/net1314080903112list_item.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/layout/net1314080903112list_item.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/layout/net1314080903112list_item.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903112list_item.xml?ref=52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "patch" : "@@ -20,4 +20,5 @@\n         android:gravity=\"center_vertical\"\n         android:layout_height=\"50dp\"/>\n \n+\t\t\n </LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "02578ff0ca9b36142358f97d7c592d923fe8a82e",
+    "filename" : "app/src/main/res/values-w820dp/net1314080903112dimens.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values-w820dp/net1314080903112dimens.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values-w820dp/net1314080903112dimens.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values-w820dp/net1314080903112dimens.xml?ref=52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "patch" : "@@ -1,4 +1,5 @@\n <resources>\n+\n     <!-- Example customization of dimensions originally defined in res/values/dimens_net1314080903112.xml\n          (such as screen margins) for screens with more than 820dp of available width. This\n          would include 7\" and 10\" devices in landscape (~960dp and ~1280dp respectively). -->"
+  }, {
+    "sha" : "ba569e13bbc44c4dfbf6357bb7edca3c4968d475",
+    "filename" : "app/src/main/res/values/net1314080903112colors.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values/net1314080903112colors.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values/net1314080903112colors.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903112colors.xml?ref=52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "patch" : "@@ -1,5 +1,6 @@\n <?xml version=\"1.0\" encoding=\"utf-8\"?>\n <resources>\n+\n     <color name=\"colorPrimary\">#3F51B5</color>\n     <color name=\"colorPrimaryDark\">#303F9F</color>\n     <color name=\"colorAccent\">#FF4081</color>"
+  }, {
+    "sha" : "0bd0996f4243b50fe69670c35111aeabab1cc70b",
+    "filename" : "app/src/main/res/values/net1314080903112dimens.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values/net1314080903112dimens.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values/net1314080903112dimens.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903112dimens.xml?ref=52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "patch" : "@@ -1,4 +1,5 @@\n <resources>\n+\n     <!-- Default screen margins, per the Android Design guidelines. -->\n     <dimen name=\"activity_horizontal_margin\">16dp</dimen>\n     <dimen name=\"activity_vertical_margin\">16dp</dimen>"
+  }, {
+    "sha" : "c1cd37d3b6f46891f3ba7b7bb32abca68a5a4a17",
+    "filename" : "app/src/main/res/values/net1314080903112strings.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values/net1314080903112strings.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values/net1314080903112strings.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903112strings.xml?ref=52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "patch" : "@@ -1,4 +1,5 @@\n <resources>\n+\n     <string name=\"app_name\">Apk安装器</string>\n     <string name=\"accessibility_service_description\">智能安装服务，无需用户的任何操作就可以自动安装程序。</string>\n </resources>"
+  }, {
+    "sha" : "3f72a88634a524d09de256fc32a923e6ffc6c8bf",
+    "filename" : "app/src/main/res/values/net1314080903112styles.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values/net1314080903112styles.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/values/net1314080903112styles.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903112styles.xml?ref=52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "patch" : "@@ -1,5 +1,6 @@\n <resources>\n \n+\n     <!-- Base application theme. -->\n     <style name=\"AppTheme\" parent=\"Theme.AppCompat.Light.DarkActionBar\">\n         <!-- Customize your theme here. -->"
+  }, {
+    "sha" : "4313db67d73e77f2fc56c2fb268cdcffa594035c",
+    "filename" : "app/src/main/res/xml/net1314080903112accessibility_service_config.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/xml/net1314080903112accessibility_service_config.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/52b9b92912dee9053df1c795c6ae0a80de72eddf/app/src/main/res/xml/net1314080903112accessibility_service_config.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/xml/net1314080903112accessibility_service_config.xml?ref=52b9b92912dee9053df1c795c6ae0a80de72eddf",
+    "patch" : "@@ -5,4 +5,5 @@\n                        android:accessibilityFlags=\"flagDefault\"\n                        android:accessibilityFeedbackType=\"feedbackGeneric\"\n                        android:canRetrieveWindowContent=\"true\"\n+\t\t\t\t\t   \n     />\n\\ No newline at end of file"
+  } ],
+  "sha" : "52b9b92912dee9053df1c795c6ae0a80de72eddf",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/52b9b92912dee9053df1c795c6ae0a80de72eddf",
+  "parents" : [ {
+    "sha" : "db29202462c4fba723228457f1d1f72832184c1e",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/db29202462c4fba723228457f1d1f72832184c1e",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/db29202462c4fba723228457f1d1f72832184c1e"
+  } ]
+}

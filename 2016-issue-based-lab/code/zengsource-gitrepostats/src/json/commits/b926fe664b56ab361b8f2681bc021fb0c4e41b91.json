@@ -1,0 +1,195 @@
+{
+  "committer" : {
+    "login" : "handsome-handsome-handsome-boy",
+    "id" : 15083581,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15083581?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/handsome-handsome-handsome-boy",
+    "html_url" : "https://github.com/handsome-handsome-handsome-boy",
+    "followers_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/followers",
+    "following_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/subscriptions",
+    "organizations_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/orgs",
+    "repos_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/repos",
+    "events_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 337,
+    "additions" : 42,
+    "deletions" : 295
+  },
+  "author" : {
+    "login" : "handsome-handsome-handsome-boy",
+    "id" : 15083581,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15083581?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/handsome-handsome-handsome-boy",
+    "html_url" : "https://github.com/handsome-handsome-handsome-boy",
+    "followers_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/followers",
+    "following_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/subscriptions",
+    "organizations_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/orgs",
+    "repos_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/repos",
+    "events_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/handsome-handsome-handsome-boy/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/b926fe664b56ab361b8f2681bc021fb0c4e41b91",
+  "commit" : {
+    "author" : {
+      "name" : "handsome-handsome-handsome-boy",
+      "email" : "963705781@qq.com",
+      "date" : "2016-05-03T08:05:08Z"
+    },
+    "committer" : {
+      "name" : "handsome-handsome-handsome-boy",
+      "email" : "963705781@qq.com",
+      "date" : "2016-05-03T08:05:08Z"
+    },
+    "message" : "实验23",
+    "tree" : {
+      "sha" : "1b3a472507c130cadc4148ef8ef00fc55ed62ab5",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/1b3a472507c130cadc4148ef8ef00fc55ed62ab5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/b926fe664b56ab361b8f2681bc021fb0c4e41b91",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/b926fe664b56ab361b8f2681bc021fb0c4e41b91/comments",
+  "files" : [ {
+    "sha" : "35a5c2834f74c030df911932559b2a7d370af229",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/MainActivity.java",
+    "status" : "modified",
+    "additions" : 14,
+    "deletions" : 95,
+    "changes" : 109,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/b926fe664b56ab361b8f2681bc021fb0c4e41b91/app/src/main/java/edu/hzuapps/androidworks/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/b926fe664b56ab361b8f2681bc021fb0c4e41b91/app/src/main/java/edu/hzuapps/androidworks/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/MainActivity.java?ref=b926fe664b56ab361b8f2681bc021fb0c4e41b91",
+    "patch" : "@@ -1,99 +1,18 @@\n-package edu.hzuapps.androidworks;\n+package com.example.administrator.eat;\n \n-import android.app.Activity;\n-import android.content.Intent;\n-import android.nfc.Tag;\n+import android.graphics.Color;\n import android.os.Bundle;\n-import android.support.v7.app.ActionBarActivity;\n-import android.util.Log;\n+import android.support.v4.app.Fragment;\n+import android.support.v4.app.FragmentActivity;\n+import android.support.v4.view.ViewPager;\n+import android.util.DisplayMetrics;\n+import android.view.Display;\n+import android.view.LayoutInflater;\n import android.view.Menu;\n-import android.view.MenuItem;\n import android.view.View;\n-import android.widget.Button;\n-\n-import java.util.List;\n-\n-import edu.hzuapps.androidworks.exmaples.ActivityBasicActivity;\n-import edu.hzuapps.androidworks.exmaples.FragmentDemoActivity;\n-import edu.hzuapps.androidworks.exmaples.ViewBasicActivity;\n-import edu.hzuapps.androidworks.homeworks.BackActivity;\n-\n-public class MainActivity extends ActionBarActivity {\n-\n-    public static final String TAG = MainActivity.class.getSimpleName();\n-\n-    String mName;\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-//         TODO 解析学生实验目录\n-        setContentView(R.layout.activity_main);\n-\n-        // 显示例子按钮\n-        prepareExampleButton(R.id.button_activitybasic);\n-        prepareExampleButton(R.id.button_viewbasic);\n-        prepareExampleButton(R.id.button_fragmentdemo);\n-\n-        // 随机显示一位同学的作业\n-        prepareExampleButton(R.id.button_random);\n-\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_main, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            System.out.println(\"Yes\");\n-//         Log.i(this.getClass().getSimpleName(), \"View created!\");\n-            Log.i(\"标题\", \"信息\");\n-            return true;\n-        }\n-\n-        return super.onOptionsItemSelected(item);\n-    }\n-\n-    private void openActivity(Activity activity, Class activityClass) {\n-        Intent intent = new Intent(activity, activityClass);\n-        activity.startActivity(intent);\n-    }\n-\n-    private void prepareExampleButton(final int buttonId) {\n-        final Activity thisActivity = this;\n-        Button button = (Button) findViewById(buttonId);\n-        if (button != null) {\n-            button.setOnClickListener(new View.OnClickListener() {\n-                @Override\n-                public void onClick(View view) {\n-                    openActivity(thisActivity, getActivity(buttonId));\n-                }\n-            });\n-        } else {\n-            Log.e(TAG, \"按钮不存在: \" + buttonId);\n-        }\n-    }\n-\n-    private Class getActivity(int id) {\n-        if (R.id.button_activitybasic == id) {\n-            return ActivityBasicActivity.class;\n-        } else if (R.id.button_viewbasic == id) {\n-            return ViewBasicActivity.class;\n-        } else if (R.id.button_fragmentdemo == id) {\n-            return FragmentDemoActivity.class;\n-        } else {\n-            return BackActivity.class;\n-        }\n-    }\n-}\n+import android.view.ViewGroup;\n+import android.view.Window;\n+import android.widget.ImageView;\n+import android.widget.LinearLayout;\n+import android.widget.TextView;\n+import android.widget.Toast;"
+  }, {
+    "sha" : "e98795a1671e08533434c4d6bd57a0e3cc03ebee",
+    "filename" : "app/src/main/res/layout/activity_activity_basic.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 25,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_activity_basic.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_activity_basic.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_activity_basic.xml?ref=2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "patch" : "@@ -1,25 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:orientation=\"vertical\"\n-    android:layout_width=\"fill_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\"edu.hzuapps.androidworks.exmaples.ActivityBasicActivity\">\n-\n-    <TextView\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"仅用于演示打开和关闭活动.\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_open\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"打开\"/>\n-\n-</LinearLayout>"
+  }, {
+    "sha" : "8d1860024623cc70699ca3c62ee6440dcdde06f4",
+    "filename" : "app/src/main/res/layout/activity_activity_basic2.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 25,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_activity_basic2.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_activity_basic2.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_activity_basic2.xml?ref=2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "patch" : "@@ -1,25 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:orientation=\"vertical\"\n-    android:layout_width=\"fill_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\"edu.hzuapps.androidworks.exmaples.ActivityBasicActivity\">\n-\n-    <TextView\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"仅用于演示打开和关闭活动.\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_close\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"关闭\"/>\n-\n-</LinearLayout>"
+  }, {
+    "sha" : "b8be87194adc9e6d173dca828017067cb67d61af",
+    "filename" : "app/src/main/res/layout/activity_back.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 18,
+    "changes" : 18,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_back.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_back.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_back.xml?ref=2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "patch" : "@@ -1,18 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<RelativeLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\"edu.hzuapps.androidworks.homeworks.BackActivity\">\n-\n-    <TextView\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"这里实现作业效果.\"/>\n-\n-</RelativeLayout>"
+  }, {
+    "sha" : "8fac535b592e1ce4d70e7d9559bbf89ca20346ac",
+    "filename" : "app/src/main/res/layout/activity_com1314080901205.xml",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/b926fe664b56ab361b8f2681bc021fb0c4e41b91/app/src/main/res/layout/activity_com1314080901205.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/b926fe664b56ab361b8f2681bc021fb0c4e41b91/app/src/main/res/layout/activity_com1314080901205.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901205.xml?ref=b926fe664b56ab361b8f2681bc021fb0c4e41b91",
+    "patch" : "@@ -0,0 +1,28 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    tools:context=\".MainActivity\"\n+    android:orientation=\"vertical\"\n+    android:weightSum=\"1\">\n+    <include\n+        android:id=\"@+id/include_actionbar\"\n+        layout=\"@layout/layout_actionbar\"/>\n+\n+    <android.support.v4.view.ViewPager\n+        android:id=\"@+id/id_viewpager\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"100dp\"\n+        android:layout_weight=\"1.00\">\n+    </android.support.v4.view.ViewPager>\n+    <include\n+        android:id=\"@+id/include_bottom\"\n+        layout=\"@layout/layout_bottom\"/>\n+\n+\n+\n+\n+\n+\n+</LinearLayout>"
+  }, {
+    "sha" : "7e8e4bc34035e16a860fdb812a3c7274383e7cb4",
+    "filename" : "app/src/main/res/layout/activity_fragment.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 19,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_fragment.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_fragment.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_fragment.xml?ref=2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "patch" : "@@ -1,19 +0,0 @@\n-<LinearLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:orientation=\"horizontal\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\".exmaples.FragmentDemoTitlesFragment\">\n-\n-    <fragment\n-        class=\"edu.hzuapps.androidworks.exmaples.FragmentDemoTitlesFragment\"\n-        android:id=\"@+id/fragment_titles\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"match_parent\" />\n-\n-</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "88413762c402bc22c74a8031c9179202a34640bc",
+    "filename" : "app/src/main/res/layout/activity_fragment_content.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 13,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_fragment_content.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_fragment_content.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_fragment_content.xml?ref=2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "patch" : "@@ -1,13 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<RelativeLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\".exmaples.FragmentDemoContentActivity\">\n-\n-</RelativeLayout>"
+  }, {
+    "sha" : "6c43aca65b49463971c5e11e11cebe5f244853ce",
+    "filename" : "app/src/main/res/layout/activity_main.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 38,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_main.xml?ref=2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "patch" : "@@ -1,38 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:orientation=\"vertical\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\"edu.hzuapps.androidworks.MainActivity\">\n-\n-    <Button\n-        android:id=\"@+id/button_activitybasic\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"Activity 基本用法\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_viewbasic\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"View 基本用法\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_fragmentdemo\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"Fragment 功能演示\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_random\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"随机看一位同学的作业\"/>\n-\n-</LinearLayout>"
+  }, {
+    "sha" : "da46cdc7140c50c6812f8159c11a05a79c01e491",
+    "filename" : "app/src/main/res/layout/activity_view_basic.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 23,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_view_basic.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/activity_view_basic.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_view_basic.xml?ref=2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "patch" : "@@ -1,23 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<RelativeLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\".exmaples.ViewBasicActivity\">\n-\n-    <TextView\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"这里显示一些文字. 纯XML实现.\"/>\n-\n-    <TextView\n-        android:id=\"@+id/text_id\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\" />\n-\n-</RelativeLayout>"
+  }, {
+    "sha" : "adc8373962ceb793d97c324c35da85f55ebd64db",
+    "filename" : "app/src/main/res/layout/fragment_contentfragment.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 19,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/fragment_contentfragment.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/fragment_contentfragment.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/fragment_contentfragment.xml?ref=2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "patch" : "@@ -1,19 +0,0 @@\n-<LinearLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:orientation=\"vertical\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\".exmaples.FragmentDemoContentFragment\">\n-\n-    <TextView\n-        android:id=\"@+id/text_content\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"@string/text_demo\"/>\n-\n-</LinearLayout>"
+  }, {
+    "sha" : "76c7cda6b24bea0aab5c3938b5f17c48a94c2392",
+    "filename" : "app/src/main/res/layout/fragment_titlesfragment.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 20,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/fragment_titlesfragment.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2a92dc5509be6a41fbfb9075c9d1be7a301c06da/app/src/main/res/layout/fragment_titlesfragment.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/fragment_titlesfragment.xml?ref=2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "patch" : "@@ -1,20 +0,0 @@\n-<LinearLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:tools=\"http://schemas.android.com/tools\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:orientation=\"vertical\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\".exmaples.FragmentDemoTitlesFragment\">\n-\n-    <Button\n-        android:id=\"@+id/button_open\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"查看明细\"/>\n-\n-\n-</LinearLayout>"
+  } ],
+  "sha" : "b926fe664b56ab361b8f2681bc021fb0c4e41b91",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/b926fe664b56ab361b8f2681bc021fb0c4e41b91",
+  "parents" : [ {
+    "sha" : "2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2a92dc5509be6a41fbfb9075c9d1be7a301c06da",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/2a92dc5509be6a41fbfb9075c9d1be7a301c06da"
+  } ]
+}

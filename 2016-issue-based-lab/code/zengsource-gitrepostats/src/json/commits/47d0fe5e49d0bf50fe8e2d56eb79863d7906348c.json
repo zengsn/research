@@ -1,0 +1,128 @@
+{
+  "committer" : {
+    "login" : "helloSingleDog",
+    "id" : 18065141,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18065141?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/helloSingleDog",
+    "html_url" : "https://github.com/helloSingleDog",
+    "followers_url" : "https://api.github.com/users/helloSingleDog/followers",
+    "following_url" : "https://api.github.com/users/helloSingleDog/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/helloSingleDog/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/helloSingleDog/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/helloSingleDog/subscriptions",
+    "organizations_url" : "https://api.github.com/users/helloSingleDog/orgs",
+    "repos_url" : "https://api.github.com/users/helloSingleDog/repos",
+    "events_url" : "https://api.github.com/users/helloSingleDog/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/helloSingleDog/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 129,
+    "additions" : 129,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "helloSingleDog",
+    "id" : 18065141,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18065141?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/helloSingleDog",
+    "html_url" : "https://github.com/helloSingleDog",
+    "followers_url" : "https://api.github.com/users/helloSingleDog/followers",
+    "following_url" : "https://api.github.com/users/helloSingleDog/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/helloSingleDog/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/helloSingleDog/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/helloSingleDog/subscriptions",
+    "organizations_url" : "https://api.github.com/users/helloSingleDog/orgs",
+    "repos_url" : "https://api.github.com/users/helloSingleDog/repos",
+    "events_url" : "https://api.github.com/users/helloSingleDog/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/helloSingleDog/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c",
+  "commit" : {
+    "author" : {
+      "name" : "helloSingleDog",
+      "email" : "1163601218@qq.com",
+      "date" : "2016-05-06T04:24:24Z"
+    },
+    "committer" : {
+      "name" : "helloSingleDog",
+      "email" : "1163601218@qq.com",
+      "date" : "2016-05-06T04:24:24Z"
+    },
+    "message" : "#90 lab4",
+    "tree" : {
+      "sha" : "dd4cfd28d82b6bf62936060780b600c1c0a08938",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/dd4cfd28d82b6bf62936060780b600c1c0a08938"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/comments",
+  "files" : [ {
+    "sha" : "c25b953cef2316a7f39cc7117c51493d18e7ab2b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903219/Net1314080903219MainActivity.java",
+    "status" : "added",
+    "additions" : 63,
+    "deletions" : 0,
+    "changes" : 63,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903219/Net1314080903219MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903219/Net1314080903219MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903219/Net1314080903219MainActivity.java?ref=47d0fe5e49d0bf50fe8e2d56eb79863d7906348c",
+    "patch" : "@@ -0,0 +1,63 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903219;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.Button;\n+\n+public class Net1314080903219MainActivity extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903219_main);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n+\n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_net1314080903219_main, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+    public void onClick(View view){\n+        Button bu=(Button) findViewById(R.id.button);\n+        if(bu.getText().equals(\"OPEN THE DOOR\")){\n+            bu.setText(\"SEE YOUR SISTER\");\n+        }\n+        else {\n+            bu.setText(\"OPEN THE DOOR\");\n+        }\n+    }\n+\n+}"
+  }, {
+    "sha" : "05fb6d1481c33dd8a0d0a45e2592e4eb02b28cd5",
+    "filename" : "app/src/main/res/drawable/Net1314080903219second.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/res/drawable/Net1314080903219second.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/res/drawable/Net1314080903219second.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/Net1314080903219second.jpg?ref=47d0fe5e49d0bf50fe8e2d56eb79863d7906348c"
+  }, {
+    "sha" : "bdcb44399855e9894db94dea1857f56572dc56db",
+    "filename" : "app/src/main/res/layout/activity_net1314080903219_main.xml",
+    "status" : "added",
+    "additions" : 35,
+    "deletions" : 0,
+    "changes" : 35,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/res/layout/activity_net1314080903219_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/res/layout/activity_net1314080903219_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903219_main.xml?ref=47d0fe5e49d0bf50fe8e2d56eb79863d7906348c",
+    "patch" : "@@ -0,0 +1,35 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<android.support.design.widget.CoordinatorLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:fitsSystemWindows=\"true\"\n+    android:background=\"@drawable/Net1314080903219second\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903219.Net1314080903219MainActivity\">\n+\n+    <android.support.design.widget.AppBarLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:theme=\"@style/AppTheme.AppBarOverlay\">\n+\n+        <android.support.v7.widget.Toolbar\n+            android:id=\"@+id/toolbar\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"?attr/actionBarSize\"\n+            android:foreground=\"?attr/colorPrimary\"\n+            app:popupTheme=\"@style/AppTheme.PopupOverlay\" />\n+\n+    </android.support.design.widget.AppBarLayout>\n+\n+    <include layout=\"@layout/content_net1314080903219_main\" />\n+\n+    <android.support.design.widget.FloatingActionButton\n+        android:id=\"@+id/fab\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_gravity=\"bottom|end\"\n+        android:layout_margin=\"@dimen/fab_margin\"\n+        android:src=\"@android:drawable/ic_dialog_email\" />\n+\n+</android.support.design.widget.CoordinatorLayout>"
+  }, {
+    "sha" : "94e1b17e06883bf9691668faeca11809bf47ff47",
+    "filename" : "app/src/main/res/layout/content_net1314080903219_main.xml",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/res/layout/content_net1314080903219_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/res/layout/content_net1314080903219_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/content_net1314080903219_main.xml?ref=47d0fe5e49d0bf50fe8e2d56eb79863d7906348c",
+    "patch" : "@@ -0,0 +1,27 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+\n+    app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903219.Net1314080903219MainActivity\"\n+    tools:showIn=\"@layout/activity_net1314080903219_main\">\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"OPEN THE DOOR\"\n+        android:id=\"@+id/button\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:layout_marginBottom=\"139dp\"\n+        android:onClick=\"onClick\"/>\n+\n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "7ec08e12d87571c5c5d9e75da67f35a2b91ab745",
+    "filename" : "app/src/main/res/values/Net1314080903219strings.xml",
+    "status" : "added",
+    "additions" : 4,
+    "deletions" : 0,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/res/values/Net1314080903219strings.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c/app/src/main/res/values/Net1314080903219strings.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/Net1314080903219strings.xml?ref=47d0fe5e49d0bf50fe8e2d56eb79863d7906348c",
+    "patch" : "@@ -0,0 +1,4 @@\n+<resources>\n+    <string name=\"app_name\">Goon</string>\n+    <string name=\"action_settings\">Settings</string>\n+</resources>"
+  } ],
+  "sha" : "47d0fe5e49d0bf50fe8e2d56eb79863d7906348c",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/47d0fe5e49d0bf50fe8e2d56eb79863d7906348c",
+  "parents" : [ {
+    "sha" : "5f08906ca4ef2a511a1c07fc3a9160b4b5434742",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5f08906ca4ef2a511a1c07fc3a9160b4b5434742",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5f08906ca4ef2a511a1c07fc3a9160b4b5434742"
+  } ]
+}

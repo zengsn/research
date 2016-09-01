@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "ChenHauyu",
+    "id" : 17856142,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17856142?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ChenHauyu",
+    "html_url" : "https://github.com/ChenHauyu",
+    "followers_url" : "https://api.github.com/users/ChenHauyu/followers",
+    "following_url" : "https://api.github.com/users/ChenHauyu/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ChenHauyu/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ChenHauyu/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ChenHauyu/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ChenHauyu/orgs",
+    "repos_url" : "https://api.github.com/users/ChenHauyu/repos",
+    "events_url" : "https://api.github.com/users/ChenHauyu/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ChenHauyu/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 27,
+    "additions" : 27,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "ChenHauyu",
+    "id" : 17856142,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17856142?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ChenHauyu",
+    "html_url" : "https://github.com/ChenHauyu",
+    "followers_url" : "https://api.github.com/users/ChenHauyu/followers",
+    "following_url" : "https://api.github.com/users/ChenHauyu/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ChenHauyu/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ChenHauyu/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ChenHauyu/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ChenHauyu/orgs",
+    "repos_url" : "https://api.github.com/users/ChenHauyu/repos",
+    "events_url" : "https://api.github.com/users/ChenHauyu/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ChenHauyu/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/912c11fc2af58f4320027516428a734909300e33",
+  "commit" : {
+    "author" : {
+      "name" : "ChenHauyu",
+      "email" : "893769393@qq.com",
+      "date" : "2016-05-19T02:19:31Z"
+    },
+    "committer" : {
+      "name" : "ChenHauyu",
+      "email" : "893769393@qq.com",
+      "date" : "2016-05-19T02:19:31Z"
+    },
+    "message" : "lab7+9 #93 #95 #63",
+    "tree" : {
+      "sha" : "95a0b08ced719acf6fe5ed1d71cbd1c7ea8f4118",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/95a0b08ced719acf6fe5ed1d71cbd1c7ea8f4118"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/912c11fc2af58f4320027516428a734909300e33",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/912c11fc2af58f4320027516428a734909300e33/comments",
+  "files" : [ {
+    "sha" : "0baa27f533bfaf67a4fe4ba91e290ce9e6be4775",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903204/tcp_tester/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/912c11fc2af58f4320027516428a734909300e33/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903204/tcp_tester/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/912c11fc2af58f4320027516428a734909300e33/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903204/tcp_tester/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903204/tcp_tester/AndroidManifest.xml?ref=912c11fc2af58f4320027516428a734909300e33",
+    "patch" : "@@ -0,0 +1,27 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"edu.hzuapps.andriodworks.homeworks.net1314080903204.tcp_tester\">\n+\n+    <uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n+    <uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n+    <uses-permission android:name=\"android.permission.INTERNET\" />\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@drawable/icon2\"\n+        android:label=\"@string/app_name\"\n+        android:supportsRtl=\"true\"\n+        android:theme=\"@style/AppTheme\">\n+        <activity android:name=\".WelcomeActivity\" android:theme=\"@android:style/Theme.NoTitleBar.Fullscreen\">\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+        <activity android:name=\".SelectActivity\" android:theme=\"@android:style/Theme.NoTitleBar.Fullscreen\"></activity>\n+        <activity android:name=\".ServerActivity\" android:theme=\"@android:style/Theme.NoTitleBar.Fullscreen\"></activity>\n+        <activity android:name=\".ClientActivity\" android:theme=\"@android:style/Theme.NoTitleBar.Fullscreen\"></activity>\n+    </application>\n+\n+</manifest>\n\\ No newline at end of file"
+  } ],
+  "sha" : "912c11fc2af58f4320027516428a734909300e33",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/912c11fc2af58f4320027516428a734909300e33",
+  "parents" : [ {
+    "sha" : "d12472d8beba15299155d9a9895ea63c84843337",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d12472d8beba15299155d9a9895ea63c84843337",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/d12472d8beba15299155d9a9895ea63c84843337"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "wcx2635391125",
+    "id" : 18606869,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18606869?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wcx2635391125",
+    "html_url" : "https://github.com/wcx2635391125",
+    "followers_url" : "https://api.github.com/users/wcx2635391125/followers",
+    "following_url" : "https://api.github.com/users/wcx2635391125/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wcx2635391125/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wcx2635391125/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wcx2635391125/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wcx2635391125/orgs",
+    "repos_url" : "https://api.github.com/users/wcx2635391125/repos",
+    "events_url" : "https://api.github.com/users/wcx2635391125/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wcx2635391125/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 139,
+    "additions" : 139,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "wcx2635391125",
+    "id" : 18606869,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18606869?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wcx2635391125",
+    "html_url" : "https://github.com/wcx2635391125",
+    "followers_url" : "https://api.github.com/users/wcx2635391125/followers",
+    "following_url" : "https://api.github.com/users/wcx2635391125/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wcx2635391125/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wcx2635391125/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wcx2635391125/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wcx2635391125/orgs",
+    "repos_url" : "https://api.github.com/users/wcx2635391125/repos",
+    "events_url" : "https://api.github.com/users/wcx2635391125/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wcx2635391125/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/c3792b32c02730fee01c9c9c8d8128527686d11a",
+  "commit" : {
+    "author" : {
+      "name" : "wcx2635391125",
+      "email" : "2635391125@qq.com",
+      "date" : "2016-04-27T15:05:42Z"
+    },
+    "committer" : {
+      "name" : "wcx2635391125",
+      "email" : "2635391125@qq.com",
+      "date" : "2016-04-27T15:05:42Z"
+    },
+    "message" : "#88 #349 实验2 Activity",
+    "tree" : {
+      "sha" : "d766368201a9be6c751c1d4486a24d6d1e367e28",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/d766368201a9be6c751c1d4486a24d6d1e367e28"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/c3792b32c02730fee01c9c9c8d8128527686d11a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c3792b32c02730fee01c9c9c8d8128527686d11a/comments",
+  "files" : [ {
+    "sha" : "48e6dbd59476f1252eab0b5a470b1098472a062b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903132/Net1314080903132LocationActivity.java",
+    "status" : "added",
+    "additions" : 139,
+    "deletions" : 0,
+    "changes" : 139,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c3792b32c02730fee01c9c9c8d8128527686d11a/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903132/Net1314080903132LocationActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c3792b32c02730fee01c9c9c8d8128527686d11a/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903132/Net1314080903132LocationActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903132/Net1314080903132LocationActivity.java?ref=c3792b32c02730fee01c9c9c8d8128527686d11a",
+    "patch" : "@@ -0,0 +1,139 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903132;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.text.method.ScrollingMovementMethod;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.CheckBox;\n+import android.widget.EditText;\n+import android.widget.RadioGroup;\n+import android.widget.RadioGroup.OnCheckedChangeListener;\n+import android.widget.TextView;\n+\n+import com.baidu.location.LocationClient;\n+import com.baidu.location.LocationClientOption;\n+import com.baidu.location.LocationClientOption.LocationMode;\n+\n+public class Net1314080903132LocationActivity extends Activity{\n+    private LocationClient mLocationClient;\n+    private TextView LocationResult,ModeInfor;\n+    private Button startLocation;\n+    private RadioGroup selectMode,selectCoordinates;\n+    private EditText frequence;\n+    private LocationMode tempMode = LocationMode.Hight_Accuracy;\n+    private String tempcoor=\"gcj02\";\n+    private CheckBox checkGeoLocation;\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        // TODO Auto-generated method stub\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.location_net1314080903132);\n+\n+        mLocationClient = ((Net1314080903132LocationApplication)getApplication()).mLocationClient;\n+\n+        LocationResult = (TextView)findViewById(R.id.textView1);                //显示结果\n+        LocationResult.setMovementMethod(ScrollingMovementMethod.getInstance());\n+        ModeInfor= (TextView)findViewById(R.id.modeinfor);                       //选择提示\n+        ModeInfor.setText(getString(R.string.hight_accuracy_desc));\n+        ((Net1314080903132LocationApplication)getApplication()).mLocationResult = LocationResult;\n+        //上面这个牛逼  把参数这样传过来了(mLocationResult在类LocationActivitiy的文本框,而LocationResult是本身类里面的文本框，实现了信息传递\n+        ((Net1314080903132LocationApplication)getApplication()).trigger = ModeInfor;    //我也模仿一下\n+        frequence = (EditText)findViewById(R.id.frequence);                       //定位时间间隔\n+        checkGeoLocation = (CheckBox)findViewById(R.id.geolocation);               //反地理编码\n+        startLocation = (Button)findViewById(R.id.addfence);                       //开启定位按钮\n+        startLocation.setOnClickListener(new OnClickListener() {\n+\n+            @Override\n+            public void onClick(View v) {\n+                // TODO Auto-generated method stub\n+                initLocation();\n+\n+                if(startLocation.getText().equals(getString(R.string.startlocation))){\n+                    mLocationClient.start();//定位SDK start之后会默认发起一次定位请求，开发者无须判断isstart并主动调用request\n+                    startLocation.setText(getString(R.string.stoplocation));\n+                }else{\n+                    mLocationClient.stop();\n+                    startLocation.setText(getString(R.string.startlocation));\n+                }\n+\n+\n+            }\n+        });\n+        selectMode = (RadioGroup)findViewById(R.id.selectMode);                 //单选按钮组  选择定位精度\n+        selectCoordinates= (RadioGroup)findViewById(R.id.selectCoordinates);     //单选按钮组  选择定位类型\n+        selectMode.setOnCheckedChangeListener(new OnCheckedChangeListener() {   //监听单选按钮\n+\n+            @Override\n+            public void onCheckedChanged(RadioGroup group, int checkedId) {\n+                // TODO Auto-generated method stub\n+                String ModeInformation = null;\n+                switch (checkedId) {\n+                    case R.id.radio_hight:\n+                        tempMode = LocationMode.Hight_Accuracy;\n+                        ModeInformation = getString(R.string.hight_accuracy_desc);\n+                        break;\n+                    case R.id.radio_low:\n+                        tempMode = LocationMode.Battery_Saving;\n+                        ModeInformation = getString(R.string.saving_battery_desc);\n+                        break;\n+                    case R.id.radio_device:\n+                        tempMode = LocationMode.Device_Sensors;\n+                        ModeInformation = getString(R.string.device_sensor_desc);\n+                        break;\n+                    default:\n+                        break;\n+                }\n+                ModeInfor.setText(ModeInformation);\n+            }\n+        });\n+        selectCoordinates.setOnCheckedChangeListener(new OnCheckedChangeListener() {//监听单选按钮\n+\n+            @Override\n+            public void onCheckedChanged(RadioGroup group, int checkedId) {\n+                // TODO Auto-generated method stub\n+                switch (checkedId) {\n+                    case R.id.radio_gcj02:\n+                        tempcoor=\"gcj02\";//国家测绘局标准\n+                        break;\n+                    case R.id.radio_bd09ll:\n+                        tempcoor=\"bd09ll\";//百度经纬度标准\n+                        break;\n+                    case R.id.radio_bd09:\n+                        tempcoor=\"bd09\";//百度墨卡托标准\n+                        break;\n+                    default:\n+                        break;\n+                }\n+            }\n+        });\n+    }\n+    @Override\n+    protected void onStop() {\n+        // TODO Auto-generated method stub\n+        mLocationClient.stop();\n+        super.onStop();\n+    }\n+\n+    private void initLocation(){\n+        LocationClientOption option = new LocationClientOption();\n+        option.setLocationMode(tempMode);//可选，默认高精度，设置定位模式，高精度，低功耗，仅设备\n+        option.setCoorType(tempcoor);//可选，默认gcj02，设置返回的定位结果坐标系，\n+        int span=1000;\n+        try {\n+            span = Integer.valueOf(frequence.getText().toString());\n+        } catch (Exception e) {\n+            // TODO: handle exception\n+        }\n+        option.setScanSpan(span);//可选，默认0，即仅定位一次，设置发起定位请求的间隔需要大于等于1000ms才是有效的\n+        option.setIsNeedAddress(checkGeoLocation.isChecked());//可选，设置是否需要地址信息，默认不需要\n+        option.setOpenGps(false);//可选，默认false,设置是否使用gps\n+        option.setLocationNotify(true);//可选，默认false，设置是否当gps有效时按照1S1次频率输出GPS结果\n+        option.setIgnoreKillProcess(true);//可选，默认true，定位SDK内部是一个SERVICE，并放到了独立进程，设置是否在stop的时候杀死这个进程，默认不杀死\n+        option.setEnableSimulateGps(false);//可选，默认false，设置是否需要过滤gps仿真结果，默认需要\n+        option.setIsNeedLocationDescribe(true);//可选，默认false，设置是否需要位置语义化结果，可以在BDLocation.getLocationDescribe里得到，结果类似于“在北京天安门附近”\n+        option.setIsNeedLocationPoiList(true);//可选，默认false，设置是否需要POI结果，可以在BDLocation.getPoiList里得到\n+        mLocationClient.setLocOption(option);\n+    }\n+}"
+  } ],
+  "sha" : "c3792b32c02730fee01c9c9c8d8128527686d11a",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c3792b32c02730fee01c9c9c8d8128527686d11a",
+  "parents" : [ {
+    "sha" : "1223b4a61d7d31d8745457d6815650952cc13ce8",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1223b4a61d7d31d8745457d6815650952cc13ce8",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1223b4a61d7d31d8745457d6815650952cc13ce8"
+  } ]
+}

@@ -1,0 +1,69 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 43,
+    "additions" : 43,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/2076fc893fe80029148bbad7b21e6c6c9bdc915c",
+  "commit" : {
+    "author" : {
+      "name" : "i. sshe",
+      "email" : "i. sshe",
+      "date" : "2016-04-23T08:41:21Z"
+    },
+    "committer" : {
+      "name" : "i. sshe",
+      "email" : "i. sshe",
+      "date" : "2016-04-23T08:41:21Z"
+    },
+    "message" : "#89 #12 实验3：图片，结果截图，使用图片的代码",
+    "tree" : {
+      "sha" : "ee5d6bd6d413c6c7e8da131aed1a8cbadfb73be6",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/ee5d6bd6d413c6c7e8da131aed1a8cbadfb73be6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/2076fc893fe80029148bbad7b21e6c6c9bdc915c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2076fc893fe80029148bbad7b21e6c6c9bdc915c/comments",
+  "files" : [ {
+    "sha" : "9a55b9f939d952a24be3387885d719a217cd867b",
+    "filename" : "app/src/main/res/drawable/Net1314080903212result.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2076fc893fe80029148bbad7b21e6c6c9bdc915c/app/src/main/res/drawable/Net1314080903212result.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2076fc893fe80029148bbad7b21e6c6c9bdc915c/app/src/main/res/drawable/Net1314080903212result.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/Net1314080903212result.png?ref=2076fc893fe80029148bbad7b21e6c6c9bdc915c"
+  }, {
+    "sha" : "e5f37488d8c90141e2e3d3504fc4d465721b4efe",
+    "filename" : "app/src/main/res/drawable/pho.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2076fc893fe80029148bbad7b21e6c6c9bdc915c/app/src/main/res/drawable/pho.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2076fc893fe80029148bbad7b21e6c6c9bdc915c/app/src/main/res/drawable/pho.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/pho.jpg?ref=2076fc893fe80029148bbad7b21e6c6c9bdc915c"
+  }, {
+    "sha" : "712beb3d4eed220d488e35c72aa72f0f762b9d31",
+    "filename" : "app/src/main/res/layout/main.xml",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2076fc893fe80029148bbad7b21e6c6c9bdc915c/app/src/main/res/layout/main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2076fc893fe80029148bbad7b21e6c6c9bdc915c/app/src/main/res/layout/main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/main.xml?ref=2076fc893fe80029148bbad7b21e6c6c9bdc915c",
+    "patch" : "@@ -0,0 +1,43 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:orientation=\"vertical\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    >\n+\n+    <LinearLayout\n+        android:orientation=\"horizontal\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        >\n+\n+        <!--定义一个文本框， 它用于接收用户的输入 -->\n+        <EditText\n+            android:id=\"@+id/input\"\n+            android:layout_width=\"240dp\"\n+            android:layout_height=\"wrap_content\"\n+            />\n+\n+        <Button\n+            android:id=\"@+id/send\"\n+            android:layout_width=\"fill_parent\"\n+            android:layout_height=\"wrap_content\"\n+            android:paddingLeft=\"8dp\"\n+            android:text=\"@string/send\"\n+            />\n+    </LinearLayout>\n+\n+    <!--定义一个文本框， 它用于显示来自服务器的信息-->\n+    <TextView\n+        android:id=\"@+id/show\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:gravity=\"top\"\n+        android:background=\"@drawable/pho\"\n+        android:textSize=\"14dp\"\n+        android:textColor=\"#000\"\n+        android:maxLines=\"30\"\n+        android:scrollbars=\"vertical\"\n+        android:fadeScrollbars=\"false\"\n+        />\n+</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "2076fc893fe80029148bbad7b21e6c6c9bdc915c",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2076fc893fe80029148bbad7b21e6c6c9bdc915c",
+  "parents" : [ {
+    "sha" : "22466a95090c038ca0237540ea2c62b40236cc3c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/22466a95090c038ca0237540ea2c62b40236cc3c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/22466a95090c038ca0237540ea2c62b40236cc3c"
+  } ]
+}

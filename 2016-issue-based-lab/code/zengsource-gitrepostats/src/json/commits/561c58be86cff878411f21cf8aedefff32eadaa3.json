@@ -1,0 +1,232 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 879,
+    "additions" : 878,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/561c58be86cff878411f21cf8aedefff32eadaa3",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-20T00:53:39Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-20T00:53:39Z"
+    },
+    "message" : "Merge pull request #798 from chzayi/master\n\n实验4 #90 #75",
+    "tree" : {
+      "sha" : "82bf4b0e5a86d4e2c3754a8f0c8f8ed291bed32b",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/82bf4b0e5a86d4e2c3754a8f0c8f8ed291bed32b"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/561c58be86cff878411f21cf8aedefff32eadaa3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/561c58be86cff878411f21cf8aedefff32eadaa3/comments",
+  "files" : [ {
+    "sha" : "6598e100deb74440891efdf28875d40c9ee884c1",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/AndroidManifest.xml?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,39 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"edu.hzuapps.androidworks.homeworks.com1314080901209\"\n+    android:versionCode=\"1\"\n+    android:versionName=\"1.0\" >\n+    <uses-sdk\n+        android:minSdkVersion=\"11\"\n+        android:targetSdkVersion=\"19\" />\n+    <uses-permission android:name=\"android.permission.SEND_SMS\"></uses-permission><!--添加权限-->\n+    <uses-permission android:name=\"android.permission.RECEIVE_SMS\"></uses-permission> \n+    <uses-permission android:name=\"android.permission.READ_SMS\"></uses-permission> \n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@drawable/ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:theme=\"@style/AppTheme\" >\n+        <activity\n+            android:name=\".com1314080901209MainActivity\"\n+            android:label=\"@string/app_name\"\n+            android:launchMode=\"singleTask\" >\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+         <activity\n+            android:name=\".IndexAction\"\n+            android:label=\"@string/title_activity_send_sms\" >\n+            \n+        </activity>\n+          <receiver android:name=\".SMSBroadcastReceiver\">\n+            <intent-filter android:priority=\"1000\">\n+                <action android:name=\"android.provider.Telephony.SMS_RECEIVED\"/>\n+            </intent-filter>\n+        </receiver>\n+    </application>\n+\n+</manifest>\n\\ No newline at end of file"
+  }, {
+    "sha" : "ba510dc8eaf20ad05d3c4c65b3865a9c64c34dc3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ApplicationTest.java",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ApplicationTest.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ApplicationTest.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ApplicationTest.java?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,13 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901209;\n+\n+import android.app.Application;\n+import android.test.ApplicationTestCase;\n+\n+/**\n+ * <a href=\"http://d.android.com/tools/testing/testing_android.html\">Testing Fundamentals</a>\n+ */\n+public class ApplicationTest extends ApplicationTestCase<Application> {\n+    public ApplicationTest() {\n+        super(Application.class);\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "f8f3f32c87d25af2d055f1d16f0f14ba1c24a51e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Com1314080901209IndexAction.java",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Com1314080901209IndexAction.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Com1314080901209IndexAction.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Com1314080901209IndexAction.java?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -9,7 +9,7 @@\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n-\t\t/*\n+\t\t/*  \n \t\t1.\t编写一个Activity；\n \t\t2.\t将标题设置为自己的学号+选题题目；\n \t\t3.\t运行后截图存入实验报告；"
+  }, {
+    "sha" : "234628465495d25b2f833e9a5ec43d6f5868275e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ContentView.java",
+    "status" : "added",
+    "additions" : 112,
+    "deletions" : 0,
+    "changes" : 112,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ContentView.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ContentView.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ContentView.java?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,112 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901209;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import android.content.Context;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.widget.ImageView;\n+\n+import edu.hzuapps.androidworks.homeworks.com1314080901209.R;\n+import edu.hzuapps.androidworks.homeworks.com1314080901209.ScreenUtils;\n+import edu.hzuapps.androidworks.homeworks.com1314080901209.Point;\n+import edu.hzuapps.androidworks.homeworks.com1314080901209.Drawl.GestureCallBack;\n+\n+/**\n+ * \n+ * @author yinqiaoyin\n+ *\n+ */\n+public class ContentView extends ViewGroup {\n+\n+\tprivate int baseNum =6;\n+\n+\tprivate int[] screenDispaly;\n+\t\n+\tprivate int d;\n+\t/**\n+\t * 声明一个集合用来封装坐标集合\n+\t */\n+\tprivate List<Point> list;\n+\tprivate Context context;\n+\tprivate Drawl drawl;\n+\t\n+\t/**\n+\t * 包含9个ImageView的容器，初始化\n+\t * @param context\n+\t * @param passWord 用户传入密码\n+\t * @param callBack 手势绘制完毕的回调\n+\t */\n+\tpublic ContentView(Context context,String passWord,GestureCallBack callBack) {\n+\t\tsuper(context);\n+\t\tscreenDispaly = ScreenUtils.getScreenDispaly(context);\n+\t\td = screenDispaly[0]/3;\n+\t\tthis.list = new ArrayList<Point>();\n+\t\tthis.context = context;\n+\t\t// 添加9个图标\n+\t\taddChild();\n+\t\t// 初始化一个可以画线的view\n+\t\tdrawl = new Drawl(context, list,passWord,callBack);\n+\t}\n+\t\n+\tprivate void addChild(){\n+\t\tfor (int i = 0; i < 9; i++) {\n+\t\t\tImageView image = new ImageView(context);\n+\t\t\timage.setBackgroundResource(R.drawable.gesture_node_normal);\n+\t\t\tthis.addView(image);\n+\n+\t\t\t// 第几行\n+\t\t\tint row = i / 3;\n+\t\t\t// 第几列\n+\t\t\tint col = i % 3;\n+\n+\t\t\t// 定义点的每个属性\n+\t\t\tint leftX = col*d+d/baseNum;\n+\t\t\tint topY = row*d+d/baseNum;\n+\t\t\tint rightX = col*d+d-d/baseNum;\n+\t\t\tint bottomY = row*d+d-d/baseNum;\n+\t\t\t\n+\t\t\tPoint p = new Point(leftX, rightX, topY, bottomY, image,i+1);\n+\n+\t\t\tthis.list.add(p);\n+\t\t}\n+\t}\n+\n+\t\n+\tpublic void setParentView(ViewGroup parent){\n+\t\t// 得到屏幕的宽度\n+\t\tint width = screenDispaly[0];\n+\t\tLayoutParams layoutParams = new LayoutParams(width, screenDispaly[0]);\n+\t\t\n+\t\tthis.setLayoutParams(layoutParams);\n+\t\tdrawl.setLayoutParams(layoutParams);\n+\n+\t\tparent.addView(drawl);\n+\t\tparent.addView(this);\n+\t\t\n+\t}\n+\t\n+\t\n+\t@Override\n+\tprotected void onLayout(boolean changed, int l, int t, int r, int b) {\n+\t\tfor (int i = 0; i < getChildCount(); i++) {\n+\t\t\t//第几行\n+\t\t\tint row = i/3;\n+\t\t\t//第几列\n+\t\t\tint col = i%3;\n+\t\t\tView v = getChildAt(i);\n+\t\t\tv.layout(col*d+d/baseNum, row*d+d/baseNum, col*d+d-d/baseNum, row*d+d-d/baseNum);\n+\t\t}\n+\t}\n+\t\n+\t@Override\n+\tprotected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {\n+\t\tsuper.onMeasure(widthMeasureSpec, heightMeasureSpec);\n+\t\tfor (int i = 0; i < getChildCount(); i++) {\n+\t\t\tView v = getChildAt(i);\n+\t\t\tv.measure(widthMeasureSpec, heightMeasureSpec);\n+\t\t}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "6558a3c5f99da5179f94548d4056bdd53643a5cb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Drawl.java",
+    "status" : "added",
+    "additions" : 228,
+    "deletions" : 0,
+    "changes" : 228,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Drawl.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Drawl.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Drawl.java?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,228 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901209;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import android.content.Context;\n+import android.content.Intent;\n+import android.graphics.Bitmap;\n+import android.graphics.Canvas;\n+import android.graphics.Color;\n+import android.graphics.Paint;\n+import android.graphics.Paint.Style;\n+import android.graphics.PorterDuff;\n+import android.util.Pair;\n+import android.view.MotionEvent;\n+import android.view.View;\n+\n+/**\n+ * @author chzayi\n+ */\n+public class Drawl extends View {\n+    private int mov_x;// 声明起点坐标\n+    private int mov_y;\n+    private Paint paint;// 声明画笔\n+    private Canvas canvas;// 画布\n+    private Bitmap bitmap;// 位图\n+\n+    private List<Point> list;// 装有各个view坐标的集合\n+    private List<Pair<Point, Point>> lineList;// 记录画过的线\n+\n+    /**\n+     * 手指当前在哪个Point内\n+     */\n+    private Point currentPoint;\n+    /**\n+     * 用户绘图的回调\n+     */\n+    private GestureCallBack callBack;\n+\n+    /**\n+     * 用户当前绘制的图形密码\n+     */\n+    private StringBuilder passWordSb;\n+\n+    /**\n+     * 用户传入的passWord\n+     */\n+    private String passWord;\n+\n+    public Drawl(Context context, List<Point> list, String passWord, GestureCallBack callBack) {\n+        super(context);\n+        paint = new Paint(Paint.DITHER_FLAG);// 创建一个画笔\n+        bitmap = Bitmap.createBitmap(480, 854, Bitmap.Config.ARGB_8888); // 设置位图的宽高\n+        canvas = new Canvas();\n+        canvas.setBitmap(bitmap);\n+\n+        paint.setStyle(Style.STROKE);// 设置非填充\n+        paint.setStrokeWidth(10);// 笔宽5像素\n+        paint.setColor(Color.rgb(4, 115, 157));// 设置颜色\n+        paint.setAntiAlias(true);// 不显示锯齿\n+\n+        this.list = list;\n+        this.lineList = new ArrayList<Pair<Point, Point>>();\n+        this.callBack = callBack;\n+\n+        //初始化密码缓存\n+        this.passWordSb = new StringBuilder();\n+        this.passWord = passWord;\n+    }\n+\n+    // 画位图\n+    @Override\n+    protected void onDraw(Canvas canvas) {\n+        // super.onDraw(canvas);\n+        canvas.drawBitmap(bitmap, 0, 0, null);\n+    }\n+\n+    // 触摸事件\n+    @Override\n+    public boolean onTouchEvent(MotionEvent event) {\n+        switch (event.getAction()) {\n+            case MotionEvent.ACTION_DOWN:\n+\n+                mov_x = (int) event.getX();\n+                mov_y = (int) event.getY();\n+\n+                // 判断当前点击的位置是处于哪个点之内\n+                currentPoint = getPointAt(mov_x, mov_y);\n+                if (currentPoint != null) {\n+                    currentPoint.setHighLighted(true);\n+                    passWordSb.append(currentPoint.getNum());\n+                }\n+                // canvas.drawPoint(mov_x, mov_y, paint);// 画点\n+                invalidate();\n+                break;\n+            case MotionEvent.ACTION_MOVE:\n+                clearScreenAndDrawList();\n+\n+                // 得到当前移动位置是处于哪个点内\n+                Point pointAt = getPointAt((int) event.getX(), (int) event.getY());\n+                //代表当前用户手指处于点与点之前\n+                if (currentPoint == null && pointAt == null) {\n+                    return true;\n+                } else {//代表用户的手指移动到了点上\n+                    if (currentPoint == null) {//先判断当前的point是不是为null\n+                        //如果为空，那么把手指移动到的点赋值给currentPoint\n+                        currentPoint = pointAt;\n+                        //把currentPoint这个点设置选中为true;\n+                        currentPoint.setHighLighted(true);\n+                        passWordSb.append(currentPoint.getNum());\n+                    }\n+                }\n+\n+                if (pointAt == null || currentPoint.equals(pointAt)\n+                        || pointAt.isHighLighted()) {\n+                    // 点击移动区域不在圆的区域 或者\n+                    // 如果当前点击的点与当前移动到的点的位置相同\n+                    // 那么以当前的点中心为起点，以手指移动位置为终点画线\n+                    canvas.drawLine(currentPoint.getCenterX(),\n+                            currentPoint.getCenterY(), event.getX(), event.getY(),\n+                            paint);// 画线\n+\n+\n+                } else {\n+                    // 如果当前点击的点与当前移动到的点的位置不同\n+                    // 那么以前前点的中心为起点，以手移动到的点的位置画线\n+                    canvas.drawLine(currentPoint.getCenterX(),\n+                            currentPoint.getCenterY(), pointAt.getCenterX(),\n+                            pointAt.getCenterY(), paint);// 画线\n+\n+                    pointAt.setHighLighted(true);\n+\n+                    Pair<Point, Point> pair = new Pair<Point, Point>(currentPoint,\n+                            pointAt);\n+                    lineList.add(pair);\n+\n+                    // 赋值当前的point;\n+                    currentPoint = pointAt;\n+                    passWordSb.append(currentPoint.getNum());\n+                }\n+                invalidate();\n+                break;\n+            case MotionEvent.ACTION_UP:// 当手指抬起的时候\n+                // 清掉屏幕上所有的线，只画上集合里面保存的线\n+                if (passWord.equals(passWordSb.toString())) {\n+                    //代表用户绘制的密码手势与传入的密码相同\n+                    callBack.checkedSuccess();\n+                    Intent intent = new Intent(getContext(), IndexAction.class);\n+                    getContext().startActivity(intent);\n+                   android.os.Process.killProcess(android.os.Process.myPid());\n+                } else {\n+                    //用户绘制的密码与传入的密码不同。\n+                    callBack.checkedFail();\n+                }\n+                //重置passWordSb\n+                passWordSb = new StringBuilder();\n+                //清空保存点的集合\n+                lineList.clear();\n+                //重新绘制界面\n+                clearScreenAndDrawList();\n+                for (Point p : list) {\n+                    p.setHighLighted(false);\n+                }\n+                invalidate();\n+                break;\n+            default:\n+                break;\n+        }\n+        return true;\n+    }\n+\n+    /**\n+     * 通过点的位置去集合里面查找这个点是包含在哪个Point里面的\n+     *\n+     * @param x\n+     * @param y\n+     * @return 如果没有找到，则返回null，代表用户当前移动的地方属于点与点之间\n+     */\n+    private Point getPointAt(int x, int y) {\n+\n+        for (Point point : list) {\n+            // 先判断x\n+            int leftX = point.getLeftX();\n+            int rightX = point.getRightX();\n+            if (!(x >= leftX && x < rightX)) {\n+                // 如果为假，则跳到下一个对比\n+                continue;\n+            }\n+\n+            int topY = point.getTopY();\n+            int bottomY = point.getBottomY();\n+            if (!(y >= topY && y < bottomY)) {\n+                // 如果为假，则跳到下一个对比\n+                continue;\n+            }\n+\n+            // 如果执行到这，那么说明当前点击的点的位置在遍历到点的位置这个地方\n+            return point;\n+        }\n+\n+        return null;\n+    }\n+\n+    /**\n+     * 清掉屏幕上所有的线，然后画出集合里面的线\n+     */\n+    private void clearScreenAndDrawList() {\n+        canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);\n+        for (Pair<Point, Point> pair : lineList) {\n+            canvas.drawLine(pair.first.getCenterX(), pair.first.getCenterY(),\n+                    pair.second.getCenterX(), pair.second.getCenterY(), paint);// 画线\n+        }\n+    }\n+\n+    public interface GestureCallBack {\n+\n+        /**\n+         * 代表用户绘制的密码与传入的密码相同\n+         */\n+        public abstract void checkedSuccess();\n+\n+        /**\n+         * 代表用户绘制的密码与传入的密码不相同\n+         */\n+        public abstract void checkedFail();\n+    }\n+\n+}"
+  }, {
+    "sha" : "52d2dea589374cb14259078566040e1128dcc1a7",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/IndexAction.java",
+    "status" : "added",
+    "additions" : 89,
+    "deletions" : 0,
+    "changes" : 89,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/IndexAction.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/IndexAction.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/IndexAction.java?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,89 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901209;\n+\n+import java.util.ArrayList;\n+\n+import android.telephony.SmsManager;\n+import android.app.Activity;\n+import android.content.Context;\n+import android.media.MediaPlayer;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.EditText;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+public class IndexAction extends Activity {\n+\t  private EditText num;\n+\t  private  MediaPlayer music;\n+\t    private EditText content;\n+\t /*\n+\t\t * 爬虫\n+\t\t\n+\tpublic void spider(){\n+\t\tString data=\"无信息！\";\n+\t\tString url=\"https://github.com/chzayi/android-labs/blob/master/app/src/main/java\" +\n+\t\t\t\t\"/edu/hzuapps/androidworks/homeworks/com1314080901209/data.json\";//json数据url\n+\t\ttry {\n+\t\t\tURL u = new URL(url);\n+\t\t\tInputStream is = u.openStream();\n+\t\t\tint size = is.available();\n+\t\t\tbyte b[]=new byte[size];\n+\t\t\tif(-1!=is.read(b)){\n+\t\t\t\t data=new String(b);\n+\t\t\t\t//System.out.println(data);\n+\t\t\t}\n+\t\t} catch (Exception e) {\n+\t\t\t// TODO Auto-generated catch block\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t\tTextView t = new TextView(this);\n+\t\tt.setText(data);\n+\t\tsetContentView(t);\n+\t}\n+\t     */\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t/*\n+\t\t * 1. 编写一个Activity； 2. 将标题设置为自己的学号+选题题目； 3. 运行后截图存入实验报告； 4.\n+\t\t * Activity内容根据自己选择的题目编写。\n+\t\t */\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\t setContentView(R.layout.activity_index);\n+\t\t  num=(EditText) findViewById(R.id.Number);\n+\t      content=(EditText) findViewById(R.id.Content);\n+\t     \n+\t}\n+\t/**\n+\t * 发送短信\n+\t * @param view\n+\t */\n+\t  public void send(View view ) {\n+\t        String strNo=num.getText().toString();\n+\t        String strContent=content.getText().toString();\n+\t        \n+\t        SmsManager smsManager = SmsManager.getDefault();\n+\t        //如果字数超过5,需拆分成多条短信发送\n+\t        if (strContent.length() > 5) {\n+\t            ArrayList<String> msgs = smsManager.divideMessage(strContent);\n+\t            for (String msg : msgs) {\n+\t                smsManager.sendTextMessage(strNo, null, msg, null, null);                        \n+\t            }\n+\t        } else {\n+\t           smsManager.sendTextMessage(strNo, null, strContent, null, null);\n+\t        }\n+\t        num.setText(\"\");\n+\t       // PlayMusic(this,R.raw.baoj);\n+\t        content.setText(\"\");\n+\t        Toast.makeText(IndexAction.this, \"短信发送完成\", Toast.LENGTH_LONG).show();\n+\t    }\n+\t  /**\n+\t   * 测试播放音乐\n+\t   * @param context\n+\t   * @param MusicId\n+\t   */\n+\t \tprivate void PlayMusic(Context context, int MusicId) {\n+\t\t\t  music = MediaPlayer.create(context, MusicId);\n+\t\t\tmusic.start();\n+\n+\t\t}\n+}"
+  }, {
+    "sha" : "3357f8f083a8c0c45e7a1e32bcbf7f85ec111a2c",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Point.java",
+    "status" : "added",
+    "additions" : 187,
+    "deletions" : 0,
+    "changes" : 187,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Point.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Point.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/Point.java?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,187 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901209;\n+\n+import android.widget.ImageView;\n+\n+\n+/**\n+ * \n+ * @author chzayi\n+ *\n+ */\n+public class Point {\n+\t/**\n+\t * 左边x的值\n+\t */\n+\tprivate int leftX;\n+\t/**\n+\t * 右边x的值\n+\t */\n+\tprivate int rightX;\n+\t/**\n+\t * 上边y的值\n+\t */\n+\tprivate int topY;\n+\t/**\n+\t * 下边y的值\n+\t */\n+\tprivate int bottomY;\n+\t/**\n+\t * 这个点对应的ImageView控件\n+\t */\n+\tprivate ImageView image;\n+\n+\t/**\n+\t * 中心x值\n+\t */\n+\tprivate int centerX;\n+\n+\t/**\n+\t * 中心y值\n+\t */\n+\tprivate int centerY;\n+\n+\t/**\n+\t * 是否是高亮(划过)\n+\t */\n+\tprivate boolean highLighted;\n+\n+\t/**\n+\t * 代表这个Point对象代表的数字，从1开始(直接感觉从1开始)\n+\t */\n+\tprivate int num;\n+\n+\tpublic Point(int leftX, int rightX, int topY, int bottomY, ImageView image,int num) {\n+\t\tsuper();\n+\t\tthis.leftX = leftX;\n+\t\tthis.rightX = rightX;\n+\t\tthis.topY = topY;\n+\t\tthis.bottomY = bottomY;\n+\t\tthis.image = image;\n+\n+\t\tthis.centerX = (leftX + rightX) / 2;\n+\t\tthis.centerY = (topY + bottomY) / 2;\n+\t\t\n+\t\tthis.num = num;\n+\t}\n+\n+\tpublic int getLeftX() {\n+\t\treturn leftX;\n+\t}\n+\n+\tpublic void setLeftX(int leftX) {\n+\t\tthis.leftX = leftX;\n+\t}\n+\n+\tpublic int getRightX() {\n+\t\treturn rightX;\n+\t}\n+\n+\tpublic void setRightX(int rightX) {\n+\t\tthis.rightX = rightX;\n+\t}\n+\n+\tpublic int getTopY() {\n+\t\treturn topY;\n+\t}\n+\n+\tpublic void setTopY(int topY) {\n+\t\tthis.topY = topY;\n+\t}\n+\n+\tpublic int getBottomY() {\n+\t\treturn bottomY;\n+\t}\n+\n+\tpublic void setBottomY(int bottomY) {\n+\t\tthis.bottomY = bottomY;\n+\t}\n+\n+\tpublic ImageView getImage() {\n+\t\treturn image;\n+\t}\n+\n+\tpublic void setImage(ImageView image) {\n+\t\tthis.image = image;\n+\t}\n+\n+\tpublic int getCenterX() {\n+\t\treturn centerX;\n+\t}\n+\n+\tpublic void setCenterX(int centerX) {\n+\t\tthis.centerX = centerX;\n+\t}\n+\n+\tpublic int getCenterY() {\n+\t\treturn centerY;\n+\t}\n+\n+\tpublic void setCenterY(int centerY) {\n+\t\tthis.centerY = centerY;\n+\t}\n+\n+\tpublic boolean isHighLighted() {\n+\t\treturn highLighted;\n+\t}\n+\n+\tpublic void setHighLighted(boolean highLighted) {\n+\t\tthis.highLighted = highLighted;\n+\t\tif (highLighted) {\n+\t\t\tthis.image\n+\t\t\t\t\t.setBackgroundResource(R.drawable.gesture_node_highlighted);\n+\t\t} else {\n+\t\t\tthis.image.setBackgroundResource(R.drawable.gesture_node_normal);\n+\t\t}\n+\t}\n+\n+\tpublic int getNum() {\n+\t\treturn num;\n+\t}\n+\n+\tpublic void setNum(int num) {\n+\t\tthis.num = num;\n+\t}\n+\n+\t@Override\n+\tpublic int hashCode() {\n+\t\tfinal int prime = 31;\n+\t\tint result = 1;\n+\t\tresult = prime * result + bottomY;\n+\t\tresult = prime * result + ((image == null) ? 0 : image.hashCode());\n+\t\tresult = prime * result + leftX;\n+\t\tresult = prime * result + rightX;\n+\t\tresult = prime * result + topY;\n+\t\treturn result;\n+\t}\n+\n+\t@Override\n+\tpublic boolean equals(Object obj) {\n+\t\tif (this == obj)\n+\t\t\treturn true;\n+\t\tif (obj == null)\n+\t\t\treturn false;\n+\t\tif (getClass() != obj.getClass())\n+\t\t\treturn false;\n+\t\tPoint other = (Point) obj;\n+\t\tif (bottomY != other.bottomY)\n+\t\t\treturn false;\n+\t\tif (image == null) {\n+\t\t\tif (other.image != null)\n+\t\t\t\treturn false;\n+\t\t} else if (!image.equals(other.image))\n+\t\t\treturn false;\n+\t\tif (leftX != other.leftX)\n+\t\t\treturn false;\n+\t\tif (rightX != other.rightX)\n+\t\t\treturn false;\n+\t\tif (topY != other.topY)\n+\t\t\treturn false;\n+\t\treturn true;\n+\t}\n+\n+\t@Override\n+\tpublic String toString() {\n+\t\treturn \"Point [leftX=\" + leftX + \", rightX=\" + rightX + \", topY=\"\n+\t\t\t\t+ topY + \", bottomY=\" + bottomY + \"]\";\n+\t}\n+}"
+  }, {
+    "sha" : "20940783eb500913a146baf66fb447413d679370",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/SMSBroadcastReceiver.java",
+    "status" : "added",
+    "additions" : 68,
+    "deletions" : 0,
+    "changes" : 68,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/SMSBroadcastReceiver.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/SMSBroadcastReceiver.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/SMSBroadcastReceiver.java?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,68 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901209;\n+\n+import java.text.SimpleDateFormat;\n+import java.util.Date;\n+import android.content.BroadcastReceiver;\n+import android.content.Context;\n+import android.content.Intent;\n+import android.media.MediaPlayer;\n+import android.os.Bundle;\n+import android.telephony.SmsMessage;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+public class SMSBroadcastReceiver extends BroadcastReceiver {\n+\tprivate MediaPlayer music = null;// 播放器引用\n+\t private TextView tv;  \n+ \n+\t /**\n+\t  * 短信接收\n+\t  */\n+\t @Override\n+    public void onReceive(Context context, Intent intent) {\n+        SmsMessage msg = null;\n+            Bundle bundle = intent.getExtras();\n+            if (bundle != null) {\n+                Object[] pdusObj = (Object[]) bundle.get(\"pdus\");\n+                for (Object p : pdusObj) {\n+                    msg= SmsMessage.createFromPdu((byte[]) p);\n+                    String msgTxt =msg.getMessageBody();//得到消息的内容\n+                    Date date = new Date(msg.getTimestampMillis());//时间\n+                    SimpleDateFormat format = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\n+                    String receiveTime = format.format(date);\n+                    String senderNumber = msg.getOriginatingAddress();\n+                if (msgTxt.trim().equals(\"baojing\")) {\n+                    Toast.makeText(context, \"正在报警......\", Toast.LENGTH_LONG)\n+                            .show();\n+//                    tv = (TextView)(intent.findViewById(R.id.myTextView1));  \n+//                    View v= inflater.inflate(R.layout.activity_index, null);\n+                    PlayMusic(context,R.raw.baoj);\n+                    System.out.println(\"正在报警......\");\n+                    return;\n+                } else {\n+                \tString c=\"发送人：\"+senderNumber+\"  短信内容：\"+msgTxt+\"接受时间：\"+receiveTime;\n+                    Toast.makeText(context, c, Toast.LENGTH_LONG).show();\n+                    System.out.println(c);\n+                    return;\n+                }\n+            }\n+ \n+            return;\n+        }\n+            else {\n+            \tToast.makeText(context, \"is null\", Toast.LENGTH_LONG).show();\n+\t\t\t\t\n+\t\t\t}\n+    }\n+\t \n+\t/**\n+ \t* 播放音乐，参数是资源id\n+ \t* \n+ \t* @param MusicId\n+ \t*/ \n+ \tprivate void PlayMusic(Context context, int MusicId) {\n+\t\tmusic = MediaPlayer.create(context, MusicId);\n+\t\tmusic.start();\n+\n+\t}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "d76ae0e81a4e5bfdbe17bea6e346db4a46f4a6fb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ScreenUtils.java",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ScreenUtils.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ScreenUtils.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/ScreenUtils.java?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,16 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901209;\n+\n+import android.content.Context;\n+import android.view.WindowManager;\n+\n+public class ScreenUtils {\n+\n+\t@SuppressWarnings(\"deprecation\")\n+\tpublic static int[] getScreenDispaly(Context context){\n+\t\tWindowManager wm=(WindowManager)context.getSystemService(Context.WINDOW_SERVICE);\n+\t\tint width=wm.getDefaultDisplay().getWidth();//手机屏幕的宽度\n+\t\tint height=wm.getDefaultDisplay().getHeight();//手机屏幕的高度\n+\t\tint result[] = {width,height};\n+\t\treturn result;\n+\t}\n+}"
+  }, {
+    "sha" : "86b9ad31b598ddf020cba95c97d20ea9dcc6a188",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/activity_index.xml",
+    "status" : "added",
+    "additions" : 55,
+    "deletions" : 0,
+    "changes" : 55,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/activity_index.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/activity_index.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/activity_index.xml?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,55 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"fill_parent\"\n+    android:orientation=\"vertical\"\n+    android:padding=\"10sp\" >\n+\n+    <TextView\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"手机号码\" />\n+\n+    <EditText\n+        android:id=\"@+id/Number\"\n+        android:numeric=\"integer\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:hint=\"请输入电话号码\" />\n+\n+    <TextView\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"短信内容\" />\n+\n+    <EditText\n+        android:id=\"@+id/Content\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:hint=\"请输入短信内容\"\n+        android:lines=\"3\" />\n+\n+    <TextView\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\" >\n+    </TextView>\n+\n+    <Button\n+        android:id=\"@+id/btnSend\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:gravity=\"center\"\n+        android:paddingTop=\"20sp\"\n+        android:text=\"发送短信\" \n+        android:onClick=\"send\"\n+        />\n+   <TextView \n+    android:id=\"@+id/myTextView1\" \n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\" \n+    android:text=\"@string/zei\" \n+    android:layout_alignParentTop=\"true\" \n+    android:layout_alignParentLeft=\"true\" \n+ /> \n+\n+</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "648ea37ccc1156b75a78db629c151386c6bf1e71",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/com1314080901209MainActivity.java",
+    "status" : "added",
+    "additions" : 42,
+    "deletions" : 0,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/com1314080901209MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/com1314080901209MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/com1314080901209MainActivity.java?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,42 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901209;\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.widget.FrameLayout;\n+import android.widget.Toast;\n+\n+import edu.hzuapps.androidworks.homeworks.com1314080901209.Drawl.GestureCallBack;\n+\n+/**\n+ * \n+ * @author chzayi\n+ * \n+ */\n+public class com1314080901209MainActivity extends Activity {\n+\n+\tprivate FrameLayout body_layout;\n+\tprivate ContentView content;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.com1314080901209activity_main);//手势锁页面\n+\t\tbody_layout = (FrameLayout) findViewById(R.id.body_layout);\n+\n+\n+\t\t// 初始化一个显示各个点的viewGroup\n+\t\tGestureCallBack t =new GestureCallBack(){\n+\n+\t\t\tpublic void checkedSuccess() {\n+\t\t\t\tToast.makeText(com1314080901209MainActivity.this,\"校验成功\", Toast.LENGTH_SHORT).show();\n+\t\t\t}\n+\t\t\t@Override\n+\t\t\tpublic void checkedFail() {\n+\t\t\t\tToast.makeText(com1314080901209MainActivity.this,\"校验失败\", Toast.LENGTH_SHORT).show();\n+\t\t\t}\n+\t\t};\n+\t\tcontent = new ContentView(this,\"14753\",t);\n+\t\t//设置手势解锁显示到哪个布局里面\n+\t\tcontent.setParentView(body_layout);\n+\t}\n+\n+}"
+  }, {
+    "sha" : "1c6640a8044361c08440065f4cd7002393cd1961",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/com1314080901209activity_main.xml",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/com1314080901209activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/com1314080901209activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/com1314080901209activity_main.xml?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,15 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:background=\"@drawable/sky\"\n+    >\n+    <FrameLayout\n+        android:id=\"@+id/body_layout\"\n+        android:layout_centerInParent=\"true\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\" >\n+    </FrameLayout>\n+\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "0837b199ce629241a92d7df7f1d7e56d0b6da360",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/data.json",
+    "status" : "added",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/data.json",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/data.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/data.json?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1 @@\n+{\"code\":\"1314080901209\",\"data\":\"hello\"}\n\\ No newline at end of file"
+  }, {
+    "sha" : "fe8728c520dba13832f3d1de917710082ed0756a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/item.xml",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/item.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/561c58be86cff878411f21cf8aedefff32eadaa3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/item.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901209/item.xml?ref=561c58be86cff878411f21cf8aedefff32eadaa3",
+    "patch" : "@@ -0,0 +1,12 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:orientation=\"vertical\" >\n+\n+    <ImageView\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:background=\"@drawable/gesture_node_highlighted\" />\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "561c58be86cff878411f21cf8aedefff32eadaa3",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/561c58be86cff878411f21cf8aedefff32eadaa3",
+  "parents" : [ {
+    "sha" : "c04e4791c31c203af3fe38f342f3c7ec84c41b7d",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c04e4791c31c203af3fe38f342f3c7ec84c41b7d",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/c04e4791c31c203af3fe38f342f3c7ec84c41b7d"
+  }, {
+    "sha" : "07c6c044db20ca81ed45b521fc02669006892b6e",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/07c6c044db20ca81ed45b521fc02669006892b6e",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/07c6c044db20ca81ed45b521fc02669006892b6e"
+  } ]
+}

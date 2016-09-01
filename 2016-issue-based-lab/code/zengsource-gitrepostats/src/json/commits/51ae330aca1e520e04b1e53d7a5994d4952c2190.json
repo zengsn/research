@@ -1,0 +1,209 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 451,
+    "additions" : 446,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/51ae330aca1e520e04b1e53d7a5994d4952c2190",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-20T00:40:42Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-20T00:40:42Z"
+    },
+    "message" : "Merge pull request #786 from lgkk/master\n\n#95 #158 lab9",
+    "tree" : {
+      "sha" : "d5f3fb412fae41810723c1baf33e58aec549b3a5",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/d5f3fb412fae41810723c1baf33e58aec549b3a5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/51ae330aca1e520e04b1e53d7a5994d4952c2190/comments",
+  "files" : [ {
+    "sha" : "382465364930ce459984dec94a0408908f50b851",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 14,
+    "deletions" : 0,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/AndroidManifest.xml?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,14 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"edu.hzuapps.androidworks.homeworks.com1314080901119\">\n+    <application android:icon=\"@drawable/icon1314080901119\">\n+        <activity android:name=\".Com1314080901119Activity\" android:label=\"@string/app_name\">\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+        <activity android:name=\".NoteEdit\"></activity>\n+    </application>\n+</manifest>\n+"
+  }, {
+    "sha" : "fb4e4b6df839a02be702e066b50acb0b66522351",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/Com1314080901119Activity.java",
+    "status" : "modified",
+    "additions" : 139,
+    "deletions" : 5,
+    "changes" : 144,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/Com1314080901119Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/Com1314080901119Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/Com1314080901119Activity.java?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -1,13 +1,147 @@\n-package com.example.linguikai.com1314080901119;\n+/*\n+ * Copyright (C) 2008 Google Inc.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *      http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n \n-import android.support.v7.app.AppCompatActivity;\n+package edu.hzuapps.androidworks.homeworks.com1314080901119;\n+\n+import android.app.ListActivity;\n+import android.content.Intent;\n+import android.database.Cursor;\n import android.os.Bundle;\n+import android.view.ContextMenu;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.view.ContextMenu.ContextMenuInfo;\n+import android.widget.ListView;\n+import android.widget.SimpleCursorAdapter;\n+import android.widget.AdapterView.AdapterContextMenuInfo;\n+\n+public class Com1314080901119Activity extends ListActivity {\n+    private static final int ACTIVITY_CREATE=0;\n+    private static final int ACTIVITY_EDIT=1;\n+    \n+    private static final int INSERT_ID = Menu.FIRST;\n+    private static final int DELETE_ID = Menu.FIRST + 1;\n \n-public class Com1314080901119Activity extends AppCompatActivity {\n+    private NotesDbAdapter mDbHelper;\n+    private Cursor mNotesCursor;\n+    \n \n     @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n+    public void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_com1314080901119);\n+        setContentView(R.layout.notes_list);\n+        mDbHelper = new NotesDbAdapter(this);\n+        mDbHelper.open();\n+        fillData();\n+        registerForContextMenu(getListView());\n+    }\n+    \n+    private void fillData() {\n+\n+        mNotesCursor = mDbHelper.fetchAllNotes();\n+        startManagingCursor(mNotesCursor);\n+        \n+\n+        String[] from = new String[]{NotesDbAdapter.KEY_TITLE};\n+        \n+\n+        int[] to = new int[]{R.id.text1};\n+        \n+\n+        SimpleCursorAdapter notes = \n+        \t    new SimpleCursorAdapter(this, R.layout.notes_row, mNotesCursor, from, to);\n+        setListAdapter(notes);\n+    }\n+    \n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        super.onCreateOptionsMenu(menu);\n+        menu.add(0, INSERT_ID,0, R.string.menu_insert);\n+        return true;\n+    }\n+    \n+    @Override\n+    public boolean onMenuItemSelected(int featureId, MenuItem item) {\n+        switch(item.getItemId()) {\n+        case INSERT_ID:\n+            createNote();\n+            return true;\n+\t    }        \n+        return super.onMenuItemSelected(featureId, item);\n+    }\n+\n+    @Override\n+\tpublic void onCreateContextMenu(ContextMenu menu, View v,\n+\t\t\tContextMenuInfo menuInfo) {\n+\t\tsuper.onCreateContextMenu(menu, v, menuInfo);\n+        menu.add(0, DELETE_ID, 0, R.string.menu_delete);\n+\t}\n+\n+    @Override\n+\tpublic boolean onContextItemSelected(MenuItem item) {\n+\t\tswitch(item.getItemId()) {\n+    \tcase DELETE_ID:\n+    \t\tAdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();\n+\t        mDbHelper.deleteNote(info.id);\n+\t        fillData();\n+\t        return true;\n+\t\t}\n+\t\treturn super.onContextItemSelected(item);\n+\t}\n+\n+\tprivate void createNote() {\n+    \tIntent i = new Intent(this, NoteEdit.class);\n+    \t startActivityForResult(i, ACTIVITY_CREATE);\n+    }\n+    \n+    @Override\n+    protected void onListItemClick(ListView l, View v, int position, long id) {\n+    \tsuper.onListItemClick(l, v, position, id);\n+        Cursor c = mNotesCursor;\n+        c.moveToPosition(position);\n+        Intent i = new Intent(this, NoteEdit.class);\n+        i.putExtra(NotesDbAdapter.KEY_ROWID, id);\n+        i.putExtra(NotesDbAdapter.KEY_TITLE, c.getString(\n+                c.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));\n+        i.putExtra(NotesDbAdapter.KEY_BODY, c.getString(\n+                c.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));\n+        startActivityForResult(i, ACTIVITY_EDIT);\n+    }\n+\n+    @Override\n+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {\n+        super.onActivityResult(requestCode, resultCode, intent);\n+        Bundle extras = intent.getExtras();\n+        switch(requestCode) {\n+        case ACTIVITY_CREATE:\n+            String title = extras.getString(NotesDbAdapter.KEY_TITLE);\n+            String body = extras.getString(NotesDbAdapter.KEY_BODY);\n+            mDbHelper.createNote(title, body);\n+            fillData();\n+            break;\n+        case ACTIVITY_EDIT:\n+            Long rowId = extras.getLong(NotesDbAdapter.KEY_ROWID);\n+            if (rowId != null) {\n+                String editTitle = extras.getString(NotesDbAdapter.KEY_TITLE);\n+                String editBody = extras.getString(NotesDbAdapter.KEY_BODY);\n+                mDbHelper.updateNote(rowId, editTitle, editBody);\n+            }\n+            fillData();\n+            break;\n+        }\n     }\n }"
+  }, {
+    "sha" : "f9cf9e5c42efc74c334b2427784bf035c633c0cd",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/NoteEdit.java",
+    "status" : "added",
+    "additions" : 77,
+    "deletions" : 0,
+    "changes" : 77,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/NoteEdit.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/NoteEdit.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/NoteEdit.java?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,77 @@\n+/*\n+ * Copyright (C) 2008 Google Inc.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *      http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.savedInstanceState\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+\n+package edu.hzuapps.androidworks.homeworks.com1314080901119;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.EditText;\n+\n+public class NoteEdit extends Activity {\n+\n+\tprivate EditText mTitleText;\n+    private EditText mBodyText;\n+    private Long mRowId;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.note_edit);\n+       \n+        mTitleText = (EditText) findViewById(R.id.title);\n+        mBodyText = (EditText) findViewById(R.id.body);\n+      \n+        Button confirmButton = (Button) findViewById(R.id.confirm);\n+       \n+        mRowId = null;\n+        Bundle extras = getIntent().getExtras();\n+        if (extras != null) {\n+            String title = extras.getString(NotesDbAdapter.KEY_TITLE);\n+            String body = extras.getString(NotesDbAdapter.KEY_BODY);\n+            mRowId = extras.getLong(NotesDbAdapter.KEY_ROWID);\n+          \n+            if (title != null) {\n+                mTitleText.setText(title);\n+            }\n+            if (body != null) {\n+                mBodyText.setText(body);\n+            }\n+        }\n+       \n+        confirmButton.setOnClickListener(new View.OnClickListener() {\n+\n+            public void onClick(View view) {\n+                Bundle bundle = new  Bundle();\n+               \n+                bundle.putString(NotesDbAdapter.KEY_TITLE, mTitleText.getText().toString());\n+                bundle.putString(NotesDbAdapter.KEY_BODY, mBodyText.getText().toString());\n+                if (mRowId != null) {\n+                    bundle.putLong(NotesDbAdapter.KEY_ROWID, mRowId);\n+                }\n+                \n+                Intent mIntent = new Intent();\n+                mIntent.putExtras(bundle);\n+                setResult(RESULT_OK, mIntent);\n+                finish();\n+            }\n+            \n+        });\n+    }\n+}\n+"
+  }, {
+    "sha" : "6c63a18d2d2d44926d5c5f862b9ca6226aecf646",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/NotesDbAdapter.java",
+    "status" : "added",
+    "additions" : 131,
+    "deletions" : 0,
+    "changes" : 131,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/NotesDbAdapter.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/NotesDbAdapter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901119/NotesDbAdapter.java?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,131 @@\n+/*\n+ * Copyright (C) 2008 Google Inc.\n+ * \n+ * Licensed under the Apache License, Version 2.0 (the \"License\"); you may not\n+ * use this file except in compliance with the License. You may obtain a copy of\n+ * the License at\n+ * \n+ * http://www.apache.org/licenses/LICENSE-2.0\n+ * \n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\n+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the\n+ * License for the specific language governing permissions and limitations under\n+ * the License.\n+ */\n+\n+package edu.hzuapps.androidworks.homeworks.com1314080901119;\n+\n+import android.content.ContentValues;\n+import android.content.Context;\n+import android.database.Cursor;\n+import android.database.SQLException;\n+import android.database.sqlite.SQLiteDatabase;\n+import android.database.sqlite.SQLiteOpenHelper;\n+import android.util.Log;\n+\n+public class NotesDbAdapter {\n+\n+    public static final String KEY_TITLE = \"title\";\n+    public static final String KEY_BODY = \"body\";\n+    public static final String KEY_ROWID = \"_id\";\n+\n+    private static final String TAG = \"NotesDbAdapter\";\n+    private DatabaseHelper mDbHelper;\n+    private SQLiteDatabase mDb;\n+    \n+\n+    private static final String DATABASE_CREATE =\n+            \"create table notes (_id integer primary key autoincrement, \"\n+                    + \"title text not null, body text not null);\";\n+\n+    private static final String DATABASE_NAME = \"data\";\n+    private static final String DATABASE_TABLE = \"notes\";\n+    private static final int DATABASE_VERSION = 2;\n+\n+    private final Context mCtx;\n+\n+    private static class DatabaseHelper extends SQLiteOpenHelper {\n+\n+        DatabaseHelper(Context context) {\n+            super(context, DATABASE_NAME, null, DATABASE_VERSION);\n+        }\n+\n+        @Override\n+        public void onCreate(SQLiteDatabase db) {\n+\n+            db.execSQL(DATABASE_CREATE);\n+        }\n+\n+        @Override\n+        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {\n+            Log.w(TAG, \"Upgrading database from version \" + oldVersion + \" to \"\n+                    + newVersion + \", which will destroy all old data\");\n+            db.execSQL(\"DROP TABLE IF EXISTS notes\");\n+            onCreate(db);\n+        }\n+    }\n+\n+\n+    public NotesDbAdapter(Context ctx) {\n+        this.mCtx = ctx;\n+    }\n+\n+\n+    public NotesDbAdapter open() throws SQLException {\n+        mDbHelper = new DatabaseHelper(mCtx);\n+        mDb = mDbHelper.getWritableDatabase();\n+        return this;\n+    }\n+    \n+    public void close() {\n+        mDbHelper.close();\n+    }\n+\n+\n+\n+    public long createNote(String title, String body) {\n+        ContentValues initialValues = new ContentValues();\n+        initialValues.put(KEY_TITLE, title);\n+        initialValues.put(KEY_BODY, body);\n+\n+        return mDb.insert(DATABASE_TABLE, null, initialValues);\n+    }\n+\n+\n+    public boolean deleteNote(long rowId) {\n+\n+        return mDb.delete(DATABASE_TABLE, KEY_ROWID + \"=\" + rowId, null) > 0;\n+    }\n+\n+\n+    public Cursor fetchAllNotes() {\n+\n+        return mDb.query(DATABASE_TABLE, new String[] {KEY_ROWID, KEY_TITLE,\n+                KEY_BODY}, null, null, null, null, null);\n+    }\n+\n+\n+    public Cursor fetchNote(long rowId) throws SQLException {\n+\n+        Cursor mCursor =\n+\n+                mDb.query(true, DATABASE_TABLE, new String[] {KEY_ROWID,\n+                        KEY_TITLE, KEY_BODY}, KEY_ROWID + \"=\" + rowId, null,\n+                        null, null, null, null);\n+        if (mCursor != null) {\n+            mCursor.moveToFirst();\n+        }\n+        return mCursor;\n+\n+    }\n+\n+\n+    public boolean updateNote(long rowId, String title, String body) {\n+        ContentValues args = new ContentValues();\n+        args.put(KEY_TITLE, title);\n+        args.put(KEY_BODY, body);\n+\n+        return mDb.update(DATABASE_TABLE, args, KEY_ROWID + \"=\" + rowId, null) > 0;\n+    }\n+}"
+  }, {
+    "sha" : "c9efcde589b9b309a86edf5aca796d323b498173",
+    "filename" : "app/src/main/res/drawable/icon1314080901119.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/drawable/icon1314080901119.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/drawable/icon1314080901119.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/icon1314080901119.png?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190"
+  }, {
+    "sha" : "b254552c3f791ca6984276d311a858b67ad4ddc6",
+    "filename" : "app/src/main/res/layout/note_edit.xml",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/layout/note_edit.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/layout/note_edit.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/note_edit.xml?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,33 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:orientation=\"vertical\" android:layout_width=\"fill_parent\"\n+\tandroid:layout_height=\"fill_parent\">\n+\t\n+\t<LinearLayout android:orientation=\"horizontal\"\n+\t\tandroid:layout_width=\"fill_parent\"\n+\t\tandroid:layout_height=\"wrap_content\">\n+\n+\t\t<TextView android:layout_width=\"wrap_content\"\n+\t\t\tandroid:layout_height=\"wrap_content\" \n+\t\t\tandroid:text=\"@string/title\" />\n+\t\t<EditText android:id=\"@+id/title\" \n+\t\t  android:layout_width=\"wrap_content\"\n+\t\t\tandroid:layout_height=\"wrap_content\" \n+\t\t\tandroid:layout_weight=\"1\"/>\n+\t</LinearLayout>\n+\n+\t<TextView android:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" \n+\t\tandroid:text=\"@string/body\" />\n+\t<EditText android:id=\"@+id/body\" android:layout_width=\"fill_parent\"\n+\t\tandroid:layout_height=\"wrap_content\"\n+\t\tandroid:layout_weight=\"1\"\n+\t\tandroid:scrollbars=\"vertical\" />\n+\t\n+\t<Button android:id=\"@+id/confirm\" \n+\t  android:text=\"@string/confirm\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" />\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "29ae88631746a7445b14fd51497febc96306f4e7",
+    "filename" : "app/src/main/res/layout/notes_list.xml",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/layout/notes_list.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/layout/notes_list.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/notes_list.xml?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,13 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+      android:layout_width=\"wrap_content\"\n+    \tandroid:layout_height=\"wrap_content\">\n+    \n+    <ListView android:id=\"@+id/android:list\"\n+          android:layout_width=\"wrap_content\"\n+        \tandroid:layout_height=\"wrap_content\"/>\n+  \t<TextView android:id=\"@+id/android:empty\"\n+          android:layout_width=\"wrap_content\"\n+        \tandroid:layout_height=\"wrap_content\"\n+        \tandroid:text=\"No Notes!\"/>\n+</LinearLayout>"
+  }, {
+    "sha" : "f28a41bea9d5563a37dd0bb1e539c924289aa4e7",
+    "filename" : "app/src/main/res/layout/notes_row.xml",
+    "status" : "added",
+    "additions" : 4,
+    "deletions" : 0,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/layout/notes_row.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/layout/notes_row.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/notes_row.xml?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,4 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<TextView android:id=\"@+id/text1\" xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"wrap_content\"\n+    android:layout_height=\"wrap_content\"/>"
+  }, {
+    "sha" : "3ab3e9cbce07f7cdc941fc8ba424c05e83ed80f0",
+    "filename" : "app/src/main/res/values/colors1314080901119.xml",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/values/colors1314080901119.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/values/colors1314080901119.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/colors1314080901119.xml?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,6 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+    <color name=\"colorPrimary\">#3F51B5</color>\n+    <color name=\"colorPrimaryDark\">#303F9F</color>\n+    <color name=\"colorAccent\">#FF4081</color>\n+</resources>"
+  }, {
+    "sha" : "47c82246738c4d056e8030d3a259206f42e8e15d",
+    "filename" : "app/src/main/res/values/dimens1314080901119.xml",
+    "status" : "added",
+    "additions" : 5,
+    "deletions" : 0,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/values/dimens1314080901119.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/values/dimens1314080901119.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/dimens1314080901119.xml?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,5 @@\n+<resources>\n+    <!-- Default screen margins, per the Android Design guidelines. -->\n+    <dimen name=\"activity_horizontal_margin\">16dp</dimen>\n+    <dimen name=\"activity_vertical_margin\">16dp</dimen>\n+</resources>"
+  }, {
+    "sha" : "2c56838edc747afa9353090ce5257d3e325faf9b",
+    "filename" : "app/src/main/res/values/strings1314080901119.xml",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/values/strings1314080901119.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/values/strings1314080901119.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/strings1314080901119.xml?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,13 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+    <string name=\"app_name\">日记本</string>\n+    <string name=\"no_notes\">没有日记</string>\n+    <string name=\"menu_insert\">添加日记</string>\n+    <string name=\"menu_delete\">删除日记</string>\n+    <string name=\"title\">标题</string>\n+    <string name=\"body\">正文</string>\n+    <string name=\"confirm\">确定</string>\n+    <string name=\"edit_note\">编辑日记</string>\n+    \n+    \n+</resources>"
+  }, {
+    "sha" : "5885930df6d10edf3d6df40d6556297d11f953da",
+    "filename" : "app/src/main/res/values/styles1314080901119.xml",
+    "status" : "added",
+    "additions" : 11,
+    "deletions" : 0,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/values/styles1314080901119.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/51ae330aca1e520e04b1e53d7a5994d4952c2190/app/src/main/res/values/styles1314080901119.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/styles1314080901119.xml?ref=51ae330aca1e520e04b1e53d7a5994d4952c2190",
+    "patch" : "@@ -0,0 +1,11 @@\n+<resources>\n+\n+    <!-- Base application theme. -->\n+    <style name=\"AppTheme\" parent=\"Theme.AppCompat.Light.DarkActionBar\">\n+        <!-- Customize your theme here. -->\n+        <item name=\"colorPrimary\">@color/colorPrimary</item>\n+        <item name=\"colorPrimaryDark\">@color/colorPrimaryDark</item>\n+        <item name=\"colorAccent\">@color/colorAccent</item>\n+    </style>\n+\n+</resources>"
+  } ],
+  "sha" : "51ae330aca1e520e04b1e53d7a5994d4952c2190",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/51ae330aca1e520e04b1e53d7a5994d4952c2190",
+  "parents" : [ {
+    "sha" : "9d9c648f0b1ad7ce0e5bec477a5c1828a88f2352",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9d9c648f0b1ad7ce0e5bec477a5c1828a88f2352",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/9d9c648f0b1ad7ce0e5bec477a5c1828a88f2352"
+  }, {
+    "sha" : "27a1280b3b3de13a9c0dc7a1b0fc6abe0f360404",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/27a1280b3b3de13a9c0dc7a1b0fc6abe0f360404",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/27a1280b3b3de13a9c0dc7a1b0fc6abe0f360404"
+  } ]
+}
