@@ -34,6 +34,8 @@ CRC算法的融合算法及实验代码
   考虑到邮件发送，只留了一个库，其他库需要自行下载。
 
   注意：运行实验时请把 crc-abs-datasets 重命名为 datasets。
+  
+  论文：http://www.sciencedirect.com/science/article/pii/S2468232216300294 
 
   By Shaoning Zeng
   2016.6.6
