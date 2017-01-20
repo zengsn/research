@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "liudao-yupeng",
+    "id" : 22512233,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512233?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liudao-yupeng",
+    "html_url" : "https://github.com/liudao-yupeng",
+    "followers_url" : "https://api.github.com/users/liudao-yupeng/followers",
+    "following_url" : "https://api.github.com/users/liudao-yupeng/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liudao-yupeng/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liudao-yupeng/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liudao-yupeng/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liudao-yupeng/orgs",
+    "repos_url" : "https://api.github.com/users/liudao-yupeng/repos",
+    "events_url" : "https://api.github.com/users/liudao-yupeng/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liudao-yupeng/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 180,
+    "additions" : 180,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "liudao-yupeng",
+    "id" : 22512233,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512233?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liudao-yupeng",
+    "html_url" : "https://github.com/liudao-yupeng",
+    "followers_url" : "https://api.github.com/users/liudao-yupeng/followers",
+    "following_url" : "https://api.github.com/users/liudao-yupeng/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liudao-yupeng/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liudao-yupeng/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liudao-yupeng/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liudao-yupeng/orgs",
+    "repos_url" : "https://api.github.com/users/liudao-yupeng/repos",
+    "events_url" : "https://api.github.com/users/liudao-yupeng/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liudao-yupeng/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/9c53c34f61eb593a49dc99773aba8bf7f98bdbdd",
+  "commit" : {
+    "author" : {
+      "name" : "liudao-yupeng",
+      "email" : "569878028@qq.com",
+      "date" : "2016-07-21T02:59:20Z"
+    },
+    "committer" : {
+      "name" : "liudao-yupeng",
+      "email" : "569878028@qq.com",
+      "date" : "2016-07-21T02:59:20Z"
+    },
+    "message" : ".",
+    "tree" : {
+      "sha" : "a1854aabe359b025832a0b695a09b8a40f53e041",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/a1854aabe359b025832a0b695a09b8a40f53e041"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/9c53c34f61eb593a49dc99773aba8bf7f98bdbdd",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/9c53c34f61eb593a49dc99773aba8bf7f98bdbdd/comments",
+  "files" : [ {
+    "sha" : "07f89be03d937c0c7749476a8646fac5d2bc9f61",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1413071001206/Se1413071001206Servlet.java",
+    "status" : "added",
+    "additions" : 84,
+    "deletions" : 0,
+    "changes" : 84,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/9c53c34f61eb593a49dc99773aba8bf7f98bdbdd/jweb/src/edu/hzu/javaweb/labs/se1413071001206/Se1413071001206Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/9c53c34f61eb593a49dc99773aba8bf7f98bdbdd/jweb/src/edu/hzu/javaweb/labs/se1413071001206/Se1413071001206Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1413071001206/Se1413071001206Servlet.java?ref=9c53c34f61eb593a49dc99773aba8bf7f98bdbdd",
+    "patch" : "@@ -0,0 +1,84 @@\n+package edu.hzu.javaweb.labs.se1413071001206;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+ @WebServlet(\"/1413071001206\")\n+public class Se1413071001206Servlet extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic Se1413071001206Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tdoPost(request,response);\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tresponse.setCharacterEncoding(\"utf-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"�ύ�ɹ���\");\n+//\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+//\t\tout.println(\"<HTML>\");\n+//\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+//\t\tout.println(\"  <BODY>\");\n+//\t\tout.print(\"    This is \");\n+//\t\tout.print(this.getClass());\n+//\t\tout.println(\", using the POST method\");\n+//\t\tout.println(\"  </BODY>\");\n+//\t\tout.println(\"</HTML>\");\n+//\t\tout.flush();\n+//\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "03c48016352ff55c93b8d3b518a35de0514e3d00",
+    "filename" : "jweb/web/1413071001206/index.jsp",
+    "status" : "added",
+    "additions" : 96,
+    "deletions" : 0,
+    "changes" : 96,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/9c53c34f61eb593a49dc99773aba8bf7f98bdbdd/jweb/web/1413071001206/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/9c53c34f61eb593a49dc99773aba8bf7f98bdbdd/jweb/web/1413071001206/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1413071001206/index.jsp?ref=9c53c34f61eb593a49dc99773aba8bf7f98bdbdd",
+    "patch" : "@@ -0,0 +1,96 @@\n+<!DOCTYPE html>\n+<html>\n+<head>\n+\t<title> New Document </title> \n+\n+\n+<!-- 新 Bootstrap 核心 CSS 文件 -->\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\n+<!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\n+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\n+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+\n+<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+<script src=\"index.js\" type=\"text/javascript\"></script>\n+<meta name=\"Generator\" content=\"EditPlus\"> \n+<meta name=\"Author\" content=\"\"> \n+<meta name=\"Keywords\" content=\"\"> \n+<meta name=\"Description\" content=\"\"> \n+<meta charset=\"utf-8\"> \n+<style type=\"text/css\"> \n+div{ width:35%;margin-left:32%;} \n+</style> \n+</head>\n+<body>\n+<div> \n+<form class=\"f1\" action=\"http://www.baidu.com\" method=\"get\" > \n+<fieldset > \n+<legend>表单的注册</legend> \n+<table width=100% > \n+<tbody> \n+<tr ><td class=“left” width=40% align=\"right\"><label for=\"t1\">姓 名：</label></td> \n+<td class=\"right\"><input type=\"text\" id=\"t1\" name=\"Name\"></td> \n+</tr> \n+<tr><td class=“left” width=40% align=\"right\"><label for=\"Password1\">密 码：</label></td> \n+<td class=\"right\"><input id=\"Password1\" type=\"password\" name=\"Password\" /></td> \n+</tr> \n+<tr><td class=“left” width=40% align=\"right\"><label for=\"e1\">邮 箱：</label></td> \n+<td class=\"right\"><input type=\"email\" id=\"e1\" name=\"youxiang\" ></td> \n+</tr> \n+<tr><td class=“left” width=40% align=\"right\"><label for=\"1\">性 别：</label></td> \n+<td class=\"right\"><input type=\"radio\" id=\"1\" name=\"ssex\" value=\"nan\" />男<!-- name设置成一样的就行了--> \n+<input type=\"radio\" id=\"2\" name=\"ssex\" value=\"nv\" />女 \n+</td> \n+</tr> \n+<tr><td class=“left” width=40% align=\"right\">地 区：</td> \n+<td><select id=\"selc\" name=\"place\"> \n+<option value=\"quanzhou\">泉州</option> \n+<option value=\"xiamen\">厦门</option> \n+<option value=\"zhangzhou\" >漳州</option> \n+</select> \n+</td> \n+</tr> \n+<tr><td class=“left” width=40% align=\"right\"><label for=\"txtarea\">简 介：</label></td> \n+<td><textarea id=\"txtarea\"></textarea></td> \n+</tr> \n+<tr><td class=“left” width=40% align=\"right\">兴 趣：</td> \n+<td><input type=\"checkbox\" id=\"cbox1\" name=\"dushu\" value=\"c1\">读书 \n+<input type=\"checkbox\" id=\"cbox2\" name=\"yundong\" value=\"c2\">运动 \n+<input type=\"checkbox\" id=\"cbox3\"name=\"chihe\" value=\"c3\">吃喝 \n+</td> \n+</tr>\n+<button type=\"button\" id=\"sub\" class=\"btn btn-default\">确认</button>   \n+</tbody> \n+</table> \n+</fieldset> \n+</form> \n+</div> \n+\t\n+</body>\n+</html>\n+<script type=\"text/javascript\">\n+\twindow.onload = function(){\n+$(\"#sub\").click(function(event){\n+\t$.ajax({\n+\t\ttype: \"post\", \n+                                        url: \"servlet/Se1413071001206Servlet\", \n+                                    //    data:{},\n+                                        dataType: \"html\", \n+                                        success: function (data) { \n+                                        \t//   alert(\"yes\");\n+                                                alert(data);\n+                                                //$(\"input#showTime\").val(data[0].demoData); \n+                                        }, \n+                                        error: function (XMLHttpRequest, textStatus, errorThrown) { \n+                                              alert(XMLHttpRequest.readyState);\n+                                              //  alert(arguments[2]); \n+                                        } \n+\t})\n+});\n+}\n+</script>\n\\ No newline at end of file"
+  } ],
+  "sha" : "9c53c34f61eb593a49dc99773aba8bf7f98bdbdd",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9c53c34f61eb593a49dc99773aba8bf7f98bdbdd",
+  "parents" : [ {
+    "sha" : "66ed79ab52e71981211eafc767a2eef38a7cf503",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/66ed79ab52e71981211eafc767a2eef38a7cf503",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/66ed79ab52e71981211eafc767a2eef38a7cf503"
+  } ]
+}

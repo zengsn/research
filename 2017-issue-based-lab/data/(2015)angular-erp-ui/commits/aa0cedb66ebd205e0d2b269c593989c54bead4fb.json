@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "singlepep",
+    "id" : 14306412,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14306412?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/singlepep",
+    "html_url" : "https://github.com/singlepep",
+    "followers_url" : "https://api.github.com/users/singlepep/followers",
+    "following_url" : "https://api.github.com/users/singlepep/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/singlepep/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/singlepep/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/singlepep/subscriptions",
+    "organizations_url" : "https://api.github.com/users/singlepep/orgs",
+    "repos_url" : "https://api.github.com/users/singlepep/repos",
+    "events_url" : "https://api.github.com/users/singlepep/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/singlepep/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 166,
+    "additions" : 98,
+    "deletions" : 68
+  },
+  "author" : {
+    "login" : "singlepep",
+    "id" : 14306412,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14306412?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/singlepep",
+    "html_url" : "https://github.com/singlepep",
+    "followers_url" : "https://api.github.com/users/singlepep/followers",
+    "following_url" : "https://api.github.com/users/singlepep/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/singlepep/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/singlepep/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/singlepep/subscriptions",
+    "organizations_url" : "https://api.github.com/users/singlepep/orgs",
+    "repos_url" : "https://api.github.com/users/singlepep/repos",
+    "events_url" : "https://api.github.com/users/singlepep/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/singlepep/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/aa0cedb66ebd205e0d2b269c593989c54bead4fb",
+  "commit" : {
+    "author" : {
+      "name" : "singlepep",
+      "email" : "1719318832@qq.com",
+      "date" : "2015-12-30T06:35:15Z"
+    },
+    "committer" : {
+      "name" : "singlepep",
+      "email" : "1719318832@qq.com",
+      "date" : "2015-12-30T06:35:15Z"
+    },
+    "message" : "第六次实验",
+    "tree" : {
+      "sha" : "20330839cd5595e673ae7605408b1554c4a26360",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/20330839cd5595e673ae7605408b1554c4a26360"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/aa0cedb66ebd205e0d2b269c593989c54bead4fb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/aa0cedb66ebd205e0d2b269c593989c54bead4fb/comments",
+  "files" : [ {
+    "sha" : "a8e1c0baf5a7f2840cc699b0a3d2a4e13fea0d84",
+    "filename" : "works/1314080901237/index.html",
+    "status" : "modified",
+    "additions" : 28,
+    "deletions" : 12,
+    "changes" : 40,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/aa0cedb66ebd205e0d2b269c593989c54bead4fb/works/1314080901237/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/aa0cedb66ebd205e0d2b269c593989c54bead4fb/works/1314080901237/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901237/index.html?ref=aa0cedb66ebd205e0d2b269c593989c54bead4fb",
+    "patch" : "@@ -1,5 +1,5 @@\n <!DOCTYPE html>\n- <html ng-app=\"salesIncomeModule\"> <head lang=\"en\">\n+ <html ng-app=\"providerModule\"> <head lang=\"zh-CN\">\n      <meta charset=\"utf-8\">\n      <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n@@ -20,7 +20,7 @@\n +       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n +     <![endif]-->\n    </head>\n-   <body ng-controller=\"createSalesIncomeCtrl\">\n+   <body ng-controller=\"MyFilter\">\n      <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n                    <ul class=\"nav navbar-nav\">\n              <li class=\"active\"><a href=\"#\">Home</a></li>\n@@ -45,23 +45,23 @@\n             <div class=\"form-group row\">\n                 <div class=\"row\">\n                     <label for=\"example1\">单位名称：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"UnitName\" id=\"example1\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.UnitName\" id=\"example1\"/>\n                      \n                      <label for=\"example1\">收款方式：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"CollectMode\" id=\"example1\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.CollectMode\" id=\"example1\"/>\n \n                     <label for=\"example2\">收款日期：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\" CollectDay\" id=\"example2\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.CollectDay\" id=\"example2\"/>\n \n                      <label for=\"example2\">经手人：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"jingshouren\" id=\"example2\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.jingshouren\" id=\"example2\"/>\n \n                         <label for=\"example2\">收款金额：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.shoukuanyue\" id=\"example2\"/>\n \n \n                     <label for=\"example3\">收款账户：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanzhanghu\" id=\"example3\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.shoukuanzhanghu\" id=\"example3\"/>\n                 </div>\n             </div>\n             <br>\n@@ -70,18 +70,34 @@\n             <div class=\"form-group row\">\n                 <div class=\"row\">\n                     <label for=\"example4\">银行账号：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\" yinhangzhnanghu\" id=\"example4\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.yinhangzhnanghu\" id=\"example4\"/>\n \n                     <label for=\"example5\">状态：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"zhuangtai\" id=\"example5\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.zhuangtai\" id=\"example5\"/>\n \n                     <label for=\"example2\">核销金额：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\" hexiaoyue\" id=\"example2\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.hexiaoyue\" id=\"example2\"/>\n \n                     <label for=\"example6\">备注：</label>\n-                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"beizhu\" id=\"example6\"/>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"provider.beizhu\" id=\"example6\"/>\n                 </div>\n             </div>\n+            <div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n+    <p class=\"lead\">\n+\n+    <div ng-hide=\"isHidden\">您输入的数据为：</div>\n+    <div id=\"providerNum\" ng-hide=\"isHidden\">单位名称->{{provider.UnitName}}</div>\n+    <div id=\"providerFullName\" ng-hide=\"isHidden\">收款方式->{{provider.CollectMode}}</div>\n+    <div id=\"providerSimpName\" ng-hide=\"isHidden\">收款日期->{{provider.CollectDay}}</div>\n+    <div id=\"providerType\" ng-hide=\"isHidden\">经手人->{{provider.jingshouren}}</div>\n+    <div id=\"providerIntroduce\" ng-hide=\"isHidden\">收款金额->{{provider.shoukuanyue}}</div>\n+    <div id=\"address\" ng-hide=\"isHidden\">收款账户->{{provider.shoukuanzhanghu}}</div>\n+    <div id=\"provideryinhangzhnanghu\" ng-hide=\"isHidden\">银行账号->{{provider.yinhangzhnanghu}}</div>\n+    <div id=\"providerzhuangtai\" ng-hide=\"isHidden\">状态->{{provider.zhuangtai}}</div>\n+    <div id=\"providerhexiaoyue\" ng-hide=\"isHidden\">核销金额->{{provider.hexiaoyue}}</div>\n+    <div id=\"providerbeizhu\" ng-hide=\"isHidden\">备注->{{provider.beizhu}}</div>\n+    </p>\n+</div>\n \n              <!--   <button ng-click=\"showHideColors()\" type=\"button\">\n         {{isHidden ? 'Show Available Colors' : 'Hide Available Colors'}}"
+  }, {
+    "sha" : "c28fb63f43cfffc72af4f6ee485d7f44684c9eeb",
+    "filename" : "works/1314080901237/js/providerModule.js",
+    "status" : "added",
+    "additions" : 58,
+    "deletions" : 0,
+    "changes" : 58,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/aa0cedb66ebd205e0d2b269c593989c54bead4fb/works/1314080901237/js/providerModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/aa0cedb66ebd205e0d2b269c593989c54bead4fb/works/1314080901237/js/providerModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901237/js/providerModule.js?ref=aa0cedb66ebd205e0d2b269c593989c54bead4fb",
+    "patch" : "@@ -0,0 +1,58 @@\n+// create a new module called 'salesIncomeModule' and save \n+// a reference to it in a variable called salesIncomeModule \n+var providerModule = angular.module('providerModule', []);\n+\n+// use the salesIncomeModule variable to\n+// configure the module with a controller\n+providerModule.factory('providerService',function($http){\n+        var dataStroe = {};\n+        dataStroe.doRegistration = function (theData) {\n+            var promise = $http({method: 'POST',url: 'json/message.json',data: theData});\n+            return promise;\n+        }\n+        return dataStroe;\n+    }).controller('MyFilter', function ($scope,providerService) {\n+       // controller code would go here\n+        var providerData = {\n+            UnitName: ' ',\n+            CollectMode: ' ',\n+            CollectDay: 123,\n+            jingshouren: ' ',\n+            shoukuanyue: 123,\n+            shoukuanzhanghu:123,\n+            yinhangzhnanghu:123,\n+            zhuangtai:' ',\n+            hexiaoyue:123,\n+            beizhu:' '\n+        };\n+        $scope.data = providerData;\n+        $scope.isHidden = true;\n+        $scope.showInput = function () {\n+            $scope.isHidden = !$scope.isHidden;\n+        }\n+        $scope.provider = {};\n+        $scope.register = function () {\n+            var promise = providerService.doRegistration($scope.provider);\n+            promise.success(function (data, status, headers, config, statusText) {\n+                $scope.backMess = data.success;\n+                $scope.isHidden = !$scope.isHidden;\n+                if(!$scope.isHidden){\n+                    alert($scope.backMess[0].message + \"\\n\" + \"\\n\" + \"Your providerId is \" + $scope.provider.Id);\n+                }\n+            });\n+            promise.error(function (data, status, headers, config, statusText) {\n+                $scope.backMess = data.error;\n+                $scope.isHidden = !$scope.isHidden;\n+                if(!$scope.isHidden){\n+                    alert($scope.backMess[0].message);\n+                }\n+            });\n+        }\n+});\n+// use the salesIncomeModule variable to\n+// configure the module with a filter\n+salesIncomeModule.filter('stripDashes', function () {\n+    return function (txt) {\n+        // filter code would go here\n+    };\n+});// javascript.js "
+  }, {
+    "sha" : "8487745abde250822bc976267f716f20db5a73e2",
+    "filename" : "works/1314080901237/js/salesIncomeModule.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 56,
+    "changes" : 56,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c524969f66e44d5ef13432cd4cbfe5a01841594f/works/1314080901237/js/salesIncomeModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c524969f66e44d5ef13432cd4cbfe5a01841594f/works/1314080901237/js/salesIncomeModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901237/js/salesIncomeModule.js?ref=c524969f66e44d5ef13432cd4cbfe5a01841594f",
+    "patch" : "@@ -1,56 +0,0 @@\n-// create a new module called 'salesIncomeModule' and save \n-// a reference to it in a variable called salesIncomeModule \n-var salesIncomeModule = angular.module('salesIncomeModule', []);\n-\n-// use the salesIncomeModule variable to\n-// configure the module with a controller\n-salesIncomeModule.controller('createSalesIncomeCtrl', function ($scope) {\n-    // controller code would go here\n-        var salesIncome = {\n-            UnitName: ' ',\n-            CollectMode: ' ',\n-            CollectDay: 123,\n-            jingshouren: ' ',\n-            shoukuanyue: 123,\n-            shoukuanzhanghu:123,\n-            yinhangzhnanghu:123,\n-            zhuangtai:' ',\n-            hexiaoyue:123,\n-            beizhu:' '\n-        };\n-        $scope.data = salesIncome;\n-    }\n-);\n-\n-salesIncomeModule.controller('createSalesIncomeCtrl', function ($scope) {\n-        $scope.colorsArray = ['red', 'green', 'blue', 'purple', 'olive']\n-} );\n-salesIncomeModule.directive('colorList', function ($compile) {\n-return {\n-        restrict: 'AE',\n-        template: \"<button ng-click='showHideColors()' type='button'>\"\n-            + \"{{isHidden ? 'Show Available Colors' : 'Hide Available Colors'}}\"\n-            + \"</button><div ng-hide='isHidden' id='colorContainer'>\"\n-            + \"</div>\",\n-        link: function ($scope, $element) {\n-            // set default state of hide/show\n-            $scope.isHidden = true;\n-            // add function to manage hide/show state\n-            $scope.showHideColors = function () {\n-                $scope.isHidden = !$scope.isHidden;\n-            }\n-            // add colors divs to the document\n-            var colorContainer = $element.find('div'); angular.forEach($scope.colorsArray, function (color) {\n-                var appendString = \"<div style='background-color:\" + color + \"'>\" + color +  \"</div>\"\n-                colorContainer.append(appendString);\n-            });\n-        } \n-    };\n-});\n-// use the salesIncomeModule variable to\n-// configure the module with a filter\n-salesIncomeModule.filter('stripDashes', function () {\n-    return function (txt) {\n-        // filter code would go here\n-    };\n-});// javascript.js "
+  }, {
+    "sha" : "ff9363d61a9285db7106fb120e676ca57f1ec367",
+    "filename" : "works/1314080901237/json/message.json",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/aa0cedb66ebd205e0d2b269c593989c54bead4fb/works/1314080901237/json/message.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/aa0cedb66ebd205e0d2b269c593989c54bead4fb/works/1314080901237/json/message.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901237/json/message.json?ref=aa0cedb66ebd205e0d2b269c593989c54bead4fb",
+    "patch" : "@@ -0,0 +1,12 @@\n+{\n+    \"success\": [\n+        {\n+            \"message\": \"Thank you for taking the time to register!\"\n+        }\n+    ],\n+    \"error\": [\n+        {\n+            \"message\": \"There appears to have been a problem with your registration.\"\n+        }\n+    ]\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "aa0cedb66ebd205e0d2b269c593989c54bead4fb",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/aa0cedb66ebd205e0d2b269c593989c54bead4fb",
+  "parents" : [ {
+    "sha" : "c524969f66e44d5ef13432cd4cbfe5a01841594f",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c524969f66e44d5ef13432cd4cbfe5a01841594f",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/c524969f66e44d5ef13432cd4cbfe5a01841594f"
+  } ]
+}

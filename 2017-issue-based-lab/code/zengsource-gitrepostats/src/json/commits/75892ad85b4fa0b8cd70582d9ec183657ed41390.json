@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 158,
+    "additions" : 158,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/75892ad85b4fa0b8cd70582d9ec183657ed41390",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-04T06:53:44Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-04T06:53:44Z"
+    },
+    "message" : "Merge pull request #600 from SilentIce/master\n\n#89 #18 lab3",
+    "tree" : {
+      "sha" : "ce066aaa6acbdff2c794c7bcbef2f7ae26fd811e",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/ce066aaa6acbdff2c794c7bcbef2f7ae26fd811e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/75892ad85b4fa0b8cd70582d9ec183657ed41390",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/75892ad85b4fa0b8cd70582d9ec183657ed41390/comments",
+  "files" : [ {
+    "sha" : "8e8a4a828916e755e5b22390b024a3201c8f6119",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_MainActivity.java",
+    "status" : "added",
+    "additions" : 74,
+    "deletions" : 0,
+    "changes" : 74,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/75892ad85b4fa0b8cd70582d9ec183657ed41390/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/75892ad85b4fa0b8cd70582d9ec183657ed41390/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_MainActivity.java?ref=75892ad85b4fa0b8cd70582d9ec183657ed41390",
+    "patch" : "@@ -0,0 +1,74 @@\n+package com.example.ice.myapplication;\n+\n+import android.net.Uri;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.EditText;\n+\n+import com.example.ice.myapplication.SmsObserver;\n+\n+public class Net1314080903209_MainActivity extends AppCompatActivity {\n+\n+    public static final int MSG_RECEIVED_CODE = 1;\n+\n+    private EditText et_ValidateCode = null;\n+\n+    private SmsObserver mObserver;\n+    private Handler mHandler = new Handler() {\n+        @Override\n+        public void handleMessage(Message msg) {\n+            if (msg.what == MSG_RECEIVED_CODE) {\n+                String code = (String)msg.obj;\n+                //update the UI\n+                et_ValidateCode.setText(code);\n+            }\n+        }\n+    };\n+\n+    @Override\n+    protected void onPause() {\n+        super.onPause();\n+        getContentResolver().unregisterContentObserver(mObserver);\n+    }\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903209_main);\n+\n+        et_ValidateCode = (EditText)findViewById(R.id.et_validateCode);\n+\n+        mObserver = new SmsObserver(Net1314080903209_MainActivity.this, mHandler);\n+        Uri uri = Uri.parse(\"content://sms\");\n+        getContentResolver().registerContentObserver(uri, true, mObserver);\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+//        getMenuInflater().inflate(R.menu.menu_main, menu);\n+        getMenuInflater().inflate(R.menu.menu_net1314080903209__main, menu);\n+\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        //如果发送号码相同，执行验证码提取\n+        if (id == R.id.action_settings) {\n+           return true;\n+       }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  }, {
+    "sha" : "83eff53beaf5f15d17836336965f0eb8735979b4",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_SmsObserver.java",
+    "status" : "added",
+    "additions" : 69,
+    "deletions" : 0,
+    "changes" : 69,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/75892ad85b4fa0b8cd70582d9ec183657ed41390/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_SmsObserver.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/75892ad85b4fa0b8cd70582d9ec183657ed41390/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_SmsObserver.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_SmsObserver.java?ref=75892ad85b4fa0b8cd70582d9ec183657ed41390",
+    "patch" : "@@ -0,0 +1,69 @@\n+\n+package com.example.ice.myapplication;\n+import android.content.Context;\n+import android.database.ContentObserver;\n+\n+import android.database.Cursor;\n+import android.net.Uri;\n+import android.os.Handler;\n+import android.util.Log;\n+\n+import java.util.regex.Matcher;\n+import java.util.regex.Pattern;\n+\n+/**\n+ *\n+ */\n+public class Net1314080903209_SmsObserver extends ContentObserver {\n+\n+    private Context mContext;\n+    private Handler mHandler;\n+\n+    public Net1314080903209_SmsObserver(Context context, Handler handler) {\n+        super(handler);\n+        mContext = context;\n+        mHandler = handler;\n+    }\n+\n+    @Override\n+    public void onChange(boolean selfChange, Uri uri) {\n+        super.onChange(selfChange, uri);\n+\n+        Log.e(\"DEBUG\", \"SMS has changed!\");\n+        Log.e(\"DEBUG\", uri.toString());\n+\n+        String code = \"\";\n+\n+        if (uri.toString().equals(\"content://sms/raw\")) {\n+            return;\n+        }\n+\n+        Uri inboxUri = Uri.parse(\"content://sms/inbox\");\n+        Cursor c = mContext.getContentResolver().query(inboxUri, null, null, null, \"date desc\");\n+        if (c != null) {\n+            if (c.moveToFirst()) {\n+                String address = c.getString(c.getColumnIndex(\"address\"));\n+                String body = c.getString(c.getColumnIndex(\"body\"));\n+\n+                //if (!address.equals(\"15555215556\")) {\n+                  //  return;\n+                //}\n+\n+                Log.e(\"DEBUG\", \"发件人为：\" + address + \" \" + \"短信内容为：\" + body);\n+\n+                Pattern pattern = Pattern.compile(\"(\\\\d{6})\");\n+                Matcher matcher = pattern.matcher(body);\n+\n+                if (matcher.find()) {\n+                    code = matcher.group(0);\n+                    Log.e(\"DEBUG\", \"code is \" + code);\n+\n+                    mHandler.obtainMessage(Net1314080903209_MainActivity.MSG_RECEIVED_CODE, code).sendToTarget();\n+                }\n+\n+                c.close();\n+            }\n+\n+        }\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "c6aa41f47df085276739e5cf413b3062abafefa2",
+    "filename" : "app/src/main/res/layout/activity_net1314080903209_main.xml",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/75892ad85b4fa0b8cd70582d9ec183657ed41390/app/src/main/res/layout/activity_net1314080903209_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/75892ad85b4fa0b8cd70582d9ec183657ed41390/app/src/main/res/layout/activity_net1314080903209_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903209_main.xml?ref=75892ad85b4fa0b8cd70582d9ec183657ed41390",
+    "patch" : "@@ -0,0 +1,15 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\" android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\" android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\" tools:context=\".MainActivity\">\n+\n+    <EditText\n+        android:ems=\"10\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:id=\"@+id/et_validateCode\"\n+        android:layout_alignParentTop=\"true\"\n+        android:layout_centerHorizontal=\"true\" />\n+</RelativeLayout>"
+  } ],
+  "sha" : "75892ad85b4fa0b8cd70582d9ec183657ed41390",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/75892ad85b4fa0b8cd70582d9ec183657ed41390",
+  "parents" : [ {
+    "sha" : "2f3a1208b4434f78c7295f7fbc0d95412ee419b8",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2f3a1208b4434f78c7295f7fbc0d95412ee419b8",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/2f3a1208b4434f78c7295f7fbc0d95412ee419b8"
+  }, {
+    "sha" : "d13c0eb0b4655fcdfb2ad4868ebbaedc4cc0632c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d13c0eb0b4655fcdfb2ad4868ebbaedc4cc0632c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/d13c0eb0b4655fcdfb2ad4868ebbaedc4cc0632c"
+  } ]
+}

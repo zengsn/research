@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "1535703141",
+    "id" : 11920720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/11920720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1535703141",
+    "html_url" : "https://github.com/1535703141",
+    "followers_url" : "https://api.github.com/users/1535703141/followers",
+    "following_url" : "https://api.github.com/users/1535703141/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1535703141/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1535703141/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1535703141/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1535703141/orgs",
+    "repos_url" : "https://api.github.com/users/1535703141/repos",
+    "events_url" : "https://api.github.com/users/1535703141/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1535703141/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 61,
+    "additions" : 61,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "1535703141",
+    "id" : 11920720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/11920720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1535703141",
+    "html_url" : "https://github.com/1535703141",
+    "followers_url" : "https://api.github.com/users/1535703141/followers",
+    "following_url" : "https://api.github.com/users/1535703141/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1535703141/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1535703141/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1535703141/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1535703141/orgs",
+    "repos_url" : "https://api.github.com/users/1535703141/repos",
+    "events_url" : "https://api.github.com/users/1535703141/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1535703141/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/74c34d594ec7817be1232aec423d134de31ecb79",
+  "commit" : {
+    "author" : {
+      "name" : "zhangw",
+      "email" : "1535703141@qq.com",
+      "date" : "2016-10-15T05:41:52Z"
+    },
+    "committer" : {
+      "name" : "zhangw",
+      "email" : "1535703141@qq.com",
+      "date" : "2016-10-15T05:41:52Z"
+    },
+    "message" : "#3 提交实验代码",
+    "tree" : {
+      "sha" : "c60894a0482d02c01d3d6b90e73b5bf7fb618d0b",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/c60894a0482d02c01d3d6b90e73b5bf7fb618d0b"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/74c34d594ec7817be1232aec423d134de31ecb79",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/74c34d594ec7817be1232aec423d134de31ecb79/comments",
+  "files" : [ {
+    "sha" : "e422688f4e4d1b02981331a95d4012b1a7ea5bce",
+    "filename" : "labs/1414080902230/index.jsp",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/74c34d594ec7817be1232aec423d134de31ecb79/labs/1414080902230/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/74c34d594ec7817be1232aec423d134de31ecb79/labs/1414080902230/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902230/index.jsp?ref=74c34d594ec7817be1232aec423d134de31ecb79",
+    "patch" : "@@ -0,0 +1,61 @@\n+﻿<%@page import=\"java.util.Date\"%>\n+<html lang=\"en\">\n+  <head>\n+    <meta charset=\"utf-8\">\n+\n+    <title>登录页面</title>\n+\n+\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\t<style type=\"text/css\">\n+\t\t.center{\n+\t\tposition: absolute;\n+\t\ttop: 50%;\n+\t\tleft: 50%;\n+\t\ttransform: translate(-50%, -50%);\n+\t\t}\n+\t</style>\n+  </head>\n+\t\n+\t<body>\n+\t\t<%=new Date()%>\n+\t\t<div class=\"center\">\n+\t\t\t<form  role=\"form\" id=\"target\">\n+\t\t\t\t<div class=\"input-group\">\n+\t\t\t\t\t<input type=\"text\" class=\"form-control\" placeholder=\"用户名\" required autofocus></input><br>\n+\t\t\t\t\t<input type=\"password\" class=\"form-control\"placeholder=\"密码\" required></input>\n+\t\t\t\t\n+\t\t\t\t\t<div class=\"checkbox\">\n+\t\t\t\t\t\t<label>\n+\t\t\t\t\t\t\t<input type=\"checkbox\" value=\"记住密码\">记住密码</input>\n+\t\t\t\t\t\t</label>\n+\t\t\t\t\t</div>\n+\t\t\t\t\t\t<button class=\"btn btn-primary\"type=\"submit\">登录</button>\n+\t\t\t\t\t\t<button  class=\"btn btn-primary\"type=\"onclick\">注册</button><br>\n+\t\t\t\t\t<button class=\"btn btn-primary btn-block\"type=\"button\" onclick=\"requestJson()\">请求JSON文件</button>\n+\t\t\t\t\t\n+\t\t\t\t</div>\n+\t\t\t</form>\n+\t\t</div>\n+\t\t<script>\n+\t\t\t$( \"#target\" ).submit(function( event ) {\n+\t\t\t\talert( \"Handler for .submit() called.\" );\n+\t\t\t\tevent.preventDefault();\n+\t\t\t});\n+\t\t</script>\n+\t\t<script>\n+\t\t\tfunction requestJson(){\n+\t\t\t\t$.ajax({\n+\t\t\t\t\turl: \"success.json\"\n+\t\t\t\t}).done(function(data) {\n+\t\t\t\t\tif ( console && console.log ) {\n+\t\t\t\t\t\tconsole.dir(data);\n+\t\t\t\t\t\talert(data.msg);\n+\t\t\t\t\t}\n+\t\t\t\t});\n+\t\t\t}\n+\t\t</script>\n+\t</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "74c34d594ec7817be1232aec423d134de31ecb79",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/74c34d594ec7817be1232aec423d134de31ecb79",
+  "parents" : [ {
+    "sha" : "ca390ec947adb07e82684e937d40016e21070ac9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ca390ec947adb07e82684e937d40016e21070ac9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ca390ec947adb07e82684e937d40016e21070ac9"
+  } ]
+}

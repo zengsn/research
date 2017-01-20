@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "fanslead",
+    "id" : 22066473,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22066473?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fanslead",
+    "html_url" : "https://github.com/fanslead",
+    "followers_url" : "https://api.github.com/users/fanslead/followers",
+    "following_url" : "https://api.github.com/users/fanslead/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fanslead/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fanslead/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fanslead/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fanslead/orgs",
+    "repos_url" : "https://api.github.com/users/fanslead/repos",
+    "events_url" : "https://api.github.com/users/fanslead/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fanslead/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 59,
+    "additions" : 59,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "fanslead",
+    "id" : 22066473,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22066473?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fanslead",
+    "html_url" : "https://github.com/fanslead",
+    "followers_url" : "https://api.github.com/users/fanslead/followers",
+    "following_url" : "https://api.github.com/users/fanslead/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fanslead/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fanslead/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fanslead/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fanslead/orgs",
+    "repos_url" : "https://api.github.com/users/fanslead/repos",
+    "events_url" : "https://api.github.com/users/fanslead/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fanslead/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/6e8594f4ec80bee41b51d19dab86c3b6e70ac46a",
+  "commit" : {
+    "author" : {
+      "name" : "fanslead",
+      "email" : "136590076@qq.com",
+      "date" : "2016-11-07T02:49:45Z"
+    },
+    "committer" : {
+      "name" : "fanslead",
+      "email" : "136590076@qq.com",
+      "date" : "2016-11-07T02:49:45Z"
+    },
+    "message" : "#5提交实验代码",
+    "tree" : {
+      "sha" : "42684df10f611cd257695f3e834efcc245b12c8d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/42684df10f611cd257695f3e834efcc245b12c8d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/6e8594f4ec80bee41b51d19dab86c3b6e70ac46a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/6e8594f4ec80bee41b51d19dab86c3b6e70ac46a/comments",
+  "files" : [ {
+    "sha" : "82eca6cc20ddf950ab680566320e122f2e9ef4a5",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902120/Se1414080902120EncodingFilter.java",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e8594f4ec80bee41b51d19dab86c3b6e70ac46a/jweb/src/edu/hzu/javaweb/labs/se1414080902120/Se1414080902120EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e8594f4ec80bee41b51d19dab86c3b6e70ac46a/jweb/src/edu/hzu/javaweb/labs/se1414080902120/Se1414080902120EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902120/Se1414080902120EncodingFilter.java?ref=6e8594f4ec80bee41b51d19dab86c3b6e70ac46a",
+    "patch" : "@@ -0,0 +1,25 @@\n+package edu.hzu.javaweb.labs;\n+\n+import javax.servlet.*;\n+import javax.servlet.annotation.WebFilter;\n+import java.io.IOException;\n+\n+/**\n+ * Created by Administrator on 2016/11/7 0007.\n+ */\n+@WebFilter(filterName = \"Se1414080902120EncodingFilter\")\n+public class Se1414080902120EncodingFilter implements Filter {\n+    public void destroy() {\n+    }\n+\n+    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {\n+        chain.doFilter(req, resp);\n+        req.setCharacterEncoding(\"UTF-8\");\n+        chain.doFilter(req,resp);\n+    }\n+\n+    public void init(FilterConfig config) throws ServletException {\n+\n+    }\n+\n+}"
+  }, {
+    "sha" : "58b809a823eac360de0f6cfe7481fadf57bba4ef",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902120/Se1414080902120LoginFilter.java",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e8594f4ec80bee41b51d19dab86c3b6e70ac46a/jweb/src/edu/hzu/javaweb/labs/se1414080902120/Se1414080902120LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e8594f4ec80bee41b51d19dab86c3b6e70ac46a/jweb/src/edu/hzu/javaweb/labs/se1414080902120/Se1414080902120LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902120/Se1414080902120LoginFilter.java?ref=6e8594f4ec80bee41b51d19dab86c3b6e70ac46a",
+    "patch" : "@@ -0,0 +1,34 @@\n+package edu.hzu.javaweb.labs;\n+\n+import javax.servlet.*;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+import java.io.IOException;\n+\n+/**\n+ * Created by Administrator on 2016/11/7 0007.\n+ */\n+@WebFilter(filterName = \"Se141480902120LoginFilter\")\n+public class Se1414080902120LoginFilter implements javax.servlet.Filter {\n+    public void destroy() {\n+    }\n+\n+    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {\n+        chain.doFilter(req, resp);\n+        HttpServletRequest requuest = (HttpServletRequest)req;\n+        HttpServletResponse responsee = (HttpServletResponse)resp;\n+        HttpSession session = requuest.getSession(true);\n+        if(session.getAttribute(\"userName\")==null){\n+            responsee.sendRedirect(\"index.jsp\");\n+        }else{\n+            chain.doFilter(req,resp);\n+        }\n+    }\n+\n+    public void init(FilterConfig config) throws ServletException {\n+\n+    }\n+\n+}"
+  } ],
+  "sha" : "6e8594f4ec80bee41b51d19dab86c3b6e70ac46a",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6e8594f4ec80bee41b51d19dab86c3b6e70ac46a",
+  "parents" : [ {
+    "sha" : "09fe5ba3e603c98e3fc49be2ac0536055c88f52b",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/09fe5ba3e603c98e3fc49be2ac0536055c88f52b",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/09fe5ba3e603c98e3fc49be2ac0536055c88f52b"
+  } ]
+}

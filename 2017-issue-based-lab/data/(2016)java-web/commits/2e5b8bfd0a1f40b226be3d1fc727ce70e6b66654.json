@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "gyy1238",
+    "id" : 22110129,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22110129?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/gyy1238",
+    "html_url" : "https://github.com/gyy1238",
+    "followers_url" : "https://api.github.com/users/gyy1238/followers",
+    "following_url" : "https://api.github.com/users/gyy1238/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/gyy1238/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/gyy1238/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/gyy1238/subscriptions",
+    "organizations_url" : "https://api.github.com/users/gyy1238/orgs",
+    "repos_url" : "https://api.github.com/users/gyy1238/repos",
+    "events_url" : "https://api.github.com/users/gyy1238/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/gyy1238/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 33,
+    "additions" : 23,
+    "deletions" : 10
+  },
+  "author" : {
+    "login" : "gyy1238",
+    "id" : 22110129,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22110129?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/gyy1238",
+    "html_url" : "https://github.com/gyy1238",
+    "followers_url" : "https://api.github.com/users/gyy1238/followers",
+    "following_url" : "https://api.github.com/users/gyy1238/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/gyy1238/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/gyy1238/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/gyy1238/subscriptions",
+    "organizations_url" : "https://api.github.com/users/gyy1238/orgs",
+    "repos_url" : "https://api.github.com/users/gyy1238/repos",
+    "events_url" : "https://api.github.com/users/gyy1238/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/gyy1238/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654",
+  "commit" : {
+    "author" : {
+      "name" : "gyy1238",
+      "email" : "120972589@qq.com",
+      "date" : "2016-10-30T15:52:46Z"
+    },
+    "committer" : {
+      "name" : "gyy1238",
+      "email" : "120972589@qq.com",
+      "date" : "2016-10-30T15:52:46Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "5b860e884c314b64ed7196fad1524fa5f98583d0",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/5b860e884c314b64ed7196fad1524fa5f98583d0"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654/comments",
+  "files" : [ {
+    "sha" : "cbab05b2d8a4be13c401400e8fae3ef1dc203dba",
+    "filename" : "labs/1414080902115/index.jsp",
+    "status" : "modified",
+    "additions" : 10,
+    "deletions" : 10,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654/labs/1414080902115/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654/labs/1414080902115/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902115/index.jsp?ref=2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654",
+    "patch" : "@@ -76,22 +76,22 @@ $(function(){\n \t\n \t<div class=\"row\">\n \t\t<div class=\"span4\" style=\"float:left;width: 20%\" >\n-\t\t\t<form class=\"form-horizontal\" id=\"target\" style=\"height: 250px;margin-top:2%\">\n+\t\t\t<form class=\"form-horizontal\" id=\"target\" style=\"height: 250px;margin-top:2%\" action=\"loginServlet\" method=\"get\">\n \t\t\t\t<div class=\"control-group\">\n \t\t\t\t\t<label class=\"control-label\" for=\"inputEmail\">用&nbsp;户&nbsp;名</label>\n \t\t\t\t\t<div class=\"controls\">\n-\t\t\t\t\t\t<input id=\"inputEmail\" type=\"text\" />\n+\t\t\t\t\t\t<input id=\"inputEmail\" type=\"text\" name=\"username\" />\n \t\t\t\t\t</div>\n \t\t\t\t</div>\n \t\t\t\t<div class=\"control-group\">\n \t\t\t\t\t<label class=\"control-label\" for=\"inputPassword\">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label>\n \t\t\t\t\t<div class=\"controls\">\n-\t\t\t\t\t\t<input id=\"inputPassword\" type=\"password\" />\n+\t\t\t\t\t\t<input id=\"inputPassword\" type=\"password\" name=\"userpwd\" />\n \t\t\t\t\t</div>\n \t\t\t\t</div>\n \t\t\t\t<div class=\"control-group\">\n \t\t\t\t\t<div class=\"controls\"  style=\"margin-left: 10%\">\n-\t\t\t\t\t\t<label class=\"checkbox\"><input type=\"checkbox\" /> 记住账户</label>\n+\t\t\t\t\t\t<label class=\"checkbox\"><input type=\"checkbox\"   name=\"check\" checked=\"checked\" value=\"1 \" /> 记住账户</label>\n \t\t\t\t\t\t <button class=\"btn\" type=\"submit\"  style=\"margin-top: 10%\">登陆</button>\n \t\t\t\t\t</div>\n \t\t\t\t</div>\n@@ -199,26 +199,26 @@ $(\"#target\").submit(function (event) {\n \t var user = document.getElementById(\"inputEmail\");\n \tvar pwd= document.getElementById(\"inputPassword\"); \n if(user.value.length>0&&pwd.value.length>0){\n-\tevent.preventDefault();\n+\t//event.preventDefault();\n     $.ajax({\n             url: \"success.json\",\n             dataType: \"json\",\n             data:\"{}\",\n             success: function (data) {\n                 // Play with returned data in JSON format\n                 alert(data.msg);\n+                return true;\n             },\n             error: function (msg) {\n                 alert(\"登陆失败\");\n+                return false;\n             }\n         });\n- \n }else{\n \talert(\"请输入用户名或密码\");\n-}\n-\t \n-\t\n-});\n+\treturn false;\n+}\t\n+});   \n    \n   </script>\n   </body>"
+  }, {
+    "sha" : "a5c310b1879a3f717c7374b9c24ee36da76be8c0",
+    "filename" : "labs/1414080902115/web.xml",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654/labs/1414080902115/web.xml",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654/labs/1414080902115/web.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902115/web.xml?ref=2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654",
+    "patch" : "@@ -0,0 +1,13 @@\n+<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n+<web-app xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://java.sun.com/xml/ns/javaee\" xsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd\" id=\"WebApp_ID\" version=\"3.0\">\n+\n+ \n+  <servlet>\n+   <servlet-name>HelloServlet</servlet-name>\n+   <servlet-class>edu.hzu.javaweb.labs.se1414080902115.Se1414080902115Servlet</servlet-class>\n+  </servlet>\n+  <servlet-mapping>\n+   <servlet-name>HelloServlet</servlet-name>\n+   <url-pattern>/loginServlet</url-pattern>\n+</servlet-mapping>\n+</web-app>\n\\ No newline at end of file"
+  } ],
+  "sha" : "2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/2e5b8bfd0a1f40b226be3d1fc727ce70e6b66654",
+  "parents" : [ {
+    "sha" : "9fb0241d95348c94219f888bdd09b35e6c6439d8",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9fb0241d95348c94219f888bdd09b35e6c6439d8",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/9fb0241d95348c94219f888bdd09b35e6c6439d8"
+  } ]
+}

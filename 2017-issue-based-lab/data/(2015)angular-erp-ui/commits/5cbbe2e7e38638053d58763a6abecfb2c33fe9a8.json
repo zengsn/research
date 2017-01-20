@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 37,
+    "additions" : 17,
+    "deletions" : 20
+  },
+  "author" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/5cbbe2e7e38638053d58763a6abecfb2c33fe9a8",
+  "commit" : {
+    "author" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-11-10T03:23:34Z"
+    },
+    "committer" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-11-10T03:23:34Z"
+    },
+    "message" : "Update index.html",
+    "tree" : {
+      "sha" : "d972484853b48c2e40855aa4b604ab923ffb0eb4",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/d972484853b48c2e40855aa4b604ab923ffb0eb4"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/5cbbe2e7e38638053d58763a6abecfb2c33fe9a8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5cbbe2e7e38638053d58763a6abecfb2c33fe9a8/comments",
+  "files" : [ {
+    "sha" : "992cfbf36b6f1d705a81c772fdf1a5917f8f2fb1",
+    "filename" : "works/1314080901212/index.html",
+    "status" : "modified",
+    "additions" : 17,
+    "deletions" : 20,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/5cbbe2e7e38638053d58763a6abecfb2c33fe9a8/works/1314080901212/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/5cbbe2e7e38638053d58763a6abecfb2c33fe9a8/works/1314080901212/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901212/index.html?ref=5cbbe2e7e38638053d58763a6abecfb2c33fe9a8",
+    "patch" : "@@ -85,6 +85,23 @@\n    \n     <label for=\"Handing date\">经办日期：</label>\n -    <input type=\"text\" name=\"Handing date\" id=\"Handing date\" value=\"\"/>\n+\n+   </div>\n+   \n+   <div>\n+    <label for=\"State\">状态：</label>\n+    <input type=\"text\" name=\"State\" id=\"State\" value=\"\"/>\n+    <label for=\"Remark\">备注：</label>\n+    <input type=\"text\" name=\"Remark\" id=\"Remark\" value=\"\"/>\n+   \n+    </div>\n+    \n+\t\n+  <div style=\"width: 1270px;height: 155px\">\n+    <input type=\"submit\" value=\"+新建\" name=\"submit\"/>\n+    <input type=\"submit\" value=\"+保存\" name=\"submit\"/>\n+  </div>\n+  \n <DIV style=\"position:relative; top:0px; left:0px; width:80px; height:120px;  overflow: hidden\">\n <SCRIPT language=javascript>\n function Year_Month(){  \n@@ -154,26 +171,6 @@\n setInterval('refreshCalendarClock()',1000);\n       \n </SCRIPT></DIV>\n-   </div>\n-   \n-   <div>\n-    <label for=\"State\">状态：</label>\n-    <input type=\"text\" name=\"State\" id=\"State\" value=\"\"/>\n-    <label for=\"Remark\">备注：</label>\n-    <input type=\"text\" name=\"Remark\" id=\"Remark\" value=\"\"/>\n-   \n-    </div>\n-    \n-    <script language=“JavaScript”>\n-\tsetInterval(\"thistime.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());\",1000);\n-\t</script>\n-\t\n-  <div style=\"width: 1270px;height: 155px\">\n-    <input type=\"submit\" value=\"+新建\" name=\"submit\"/>\n-    <input type=\"submit\" value=\"+保存\" name=\"submit\"/>\n-  </div>\n-  \n-\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  } ],
+  "sha" : "5cbbe2e7e38638053d58763a6abecfb2c33fe9a8",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5cbbe2e7e38638053d58763a6abecfb2c33fe9a8",
+  "parents" : [ {
+    "sha" : "e01febedfc41bc305211e7e63655e6b9328cffed",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e01febedfc41bc305211e7e63655e6b9328cffed",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e01febedfc41bc305211e7e63655e6b9328cffed"
+  } ]
+}

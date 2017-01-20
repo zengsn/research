@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "zhengde",
+    "id" : 20748970,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/20748970?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhengde",
+    "html_url" : "https://github.com/zhengde",
+    "followers_url" : "https://api.github.com/users/zhengde/followers",
+    "following_url" : "https://api.github.com/users/zhengde/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhengde/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhengde/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhengde/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhengde/orgs",
+    "repos_url" : "https://api.github.com/users/zhengde/repos",
+    "events_url" : "https://api.github.com/users/zhengde/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhengde/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 83,
+    "additions" : 83,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zhengde",
+    "id" : 20748970,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/20748970?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhengde",
+    "html_url" : "https://github.com/zhengde",
+    "followers_url" : "https://api.github.com/users/zhengde/followers",
+    "following_url" : "https://api.github.com/users/zhengde/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhengde/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhengde/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhengde/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhengde/orgs",
+    "repos_url" : "https://api.github.com/users/zhengde/repos",
+    "events_url" : "https://api.github.com/users/zhengde/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhengde/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/e808431c5447f33ca8592b11bce6cc423b4b7bf3",
+  "commit" : {
+    "author" : {
+      "name" : "zhengde",
+      "email" : "czd3355@gmail.com",
+      "date" : "2016-11-21T11:25:59Z"
+    },
+    "committer" : {
+      "name" : "zhengde",
+      "email" : "czd3355@gmail.com",
+      "date" : "2016-11-21T11:25:59Z"
+    },
+    "message" : "#6 #66 提交实验代码",
+    "tree" : {
+      "sha" : "6f5bd91723cc29debdf99810c802b6dd9d648d0c",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/6f5bd91723cc29debdf99810c802b6dd9d648d0c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/e808431c5447f33ca8592b11bce6cc423b4b7bf3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/e808431c5447f33ca8592b11bce6cc423b4b7bf3/comments",
+  "files" : [ {
+    "sha" : "7c2461113b195e0668e9a4612b003b3a046bc88b",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902124/User.java",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/e808431c5447f33ca8592b11bce6cc423b4b7bf3/jweb/src/edu/hzu/javaweb/labs/se1414080902124/User.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/e808431c5447f33ca8592b11bce6cc423b4b7bf3/jweb/src/edu/hzu/javaweb/labs/se1414080902124/User.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902124/User.java?ref=e808431c5447f33ca8592b11bce6cc423b4b7bf3",
+    "patch" : "@@ -0,0 +1,54 @@\n+package se1414080902124;\n+\n+/**\n+ * Created by Administrator on 2016/11/17.\n+ */\n+public class User {\n+    private String mName;\n+    private String mId;\n+    private String mClass;\n+\n+    public String getName() {\n+        return mName;\n+    }\n+\n+    public void setName(String mName) {\n+        this.mName = mName;\n+    }\n+\n+    public String getId() {\n+        return mId;\n+    }\n+\n+    public void setId(String mId) {\n+        this.mId = mId;\n+    }\n+\n+    public String getClazz() {\n+        return mClass;\n+    }\n+\n+    public void setClazz(String mClass) {\n+        this.mClass = mClass;\n+    }\n+\n+    public String getCity() {\n+        return mCity;\n+    }\n+\n+    public void setCity(String mCity) {\n+        this.mCity = mCity;\n+    }\n+\n+    public String getSalary() {\n+        return mSalary;\n+    }\n+\n+    public void setSalary(String mSalary) {\n+        this.mSalary = mSalary;\n+    }\n+\n+    private String mCity;\n+    private String mSalary;\n+\n+}"
+  }, {
+    "sha" : "96c5cdef98f0048cc98a465e4b81bce4cbb54fea",
+    "filename" : "jweb/web/1414080902124/c.jsp",
+    "status" : "added",
+    "additions" : 29,
+    "deletions" : 0,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/e808431c5447f33ca8592b11bce6cc423b4b7bf3/jweb/web/1414080902124/c.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/e808431c5447f33ca8592b11bce6cc423b4b7bf3/jweb/web/1414080902124/c.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902124/c.jsp?ref=e808431c5447f33ca8592b11bce6cc423b4b7bf3",
+    "patch" : "@@ -0,0 +1,29 @@\n+<%--\n+  Created by IntelliJ IDEA.\n+  User: Administrator\n+  Date: 2016/11/19\n+  Time: 15:47\n+  To change this template use File | Settings | File Templates.\n+--%>\n+<%@ page contentType=\"text/html;charset=UTF-8\" language=\"java\" %>\n+<%@taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n+<html>\n+<head>\n+    <title></title>\n+</head>\n+<jsp:useBean id=\"user\" class=\"se1414080902124.User\" scope=\"request\"/>\n+<body>\n+test<br/>\n+\n+<c:if test=\"${user.name!=null && user.name.length()>0}\">\n+    <c:out value=\"user各属性为:\"> </c:out>\n+      <c:forEach items=\"user\" >\n+          <div>${user.name}</div>\n+          <div>${user.id}</div>\n+          <div>${user.clazz}</div>\n+          <div>${user.city}</div>\n+          <div>${user.salary}</div>\n+      </c:forEach>\n+</c:if>\n+</body>\n+</html>"
+  } ],
+  "sha" : "e808431c5447f33ca8592b11bce6cc423b4b7bf3",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/e808431c5447f33ca8592b11bce6cc423b4b7bf3",
+  "parents" : [ {
+    "sha" : "c71736b69919bc317ff5f9f978bf509c4497a5e7",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c71736b69919bc317ff5f9f978bf509c4497a5e7",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/c71736b69919bc317ff5f9f978bf509c4497a5e7"
+  } ]
+}

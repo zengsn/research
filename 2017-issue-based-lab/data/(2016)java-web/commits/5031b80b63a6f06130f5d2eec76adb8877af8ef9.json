@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 28,
+    "additions" : 0,
+    "deletions" : 28
+  },
+  "author" : {
+    "login" : "Hongsf",
+    "id" : 22068396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hongsf",
+    "html_url" : "https://github.com/Hongsf",
+    "followers_url" : "https://api.github.com/users/Hongsf/followers",
+    "following_url" : "https://api.github.com/users/Hongsf/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hongsf/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hongsf/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hongsf/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hongsf/orgs",
+    "repos_url" : "https://api.github.com/users/Hongsf/repos",
+    "events_url" : "https://api.github.com/users/Hongsf/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hongsf/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/5031b80b63a6f06130f5d2eec76adb8877af8ef9",
+  "commit" : {
+    "author" : {
+      "name" : "洪生锋",
+      "email" : "1083178465@qq.com",
+      "date" : "2016-10-24T02:26:14Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-24T02:26:14Z"
+    },
+    "message" : "Delete JDBCconnection.java",
+    "tree" : {
+      "sha" : "8beb8af1d891777f5f954af66507ffe1f982d8ed",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/8beb8af1d891777f5f954af66507ffe1f982d8ed"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/5031b80b63a6f06130f5d2eec76adb8877af8ef9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/5031b80b63a6f06130f5d2eec76adb8877af8ef9/comments",
+  "files" : [ {
+    "sha" : "f44b3088af2426607d281cccf818c11dda40de08",
+    "filename" : "jweb/web/1414080902110/JDBCconnection.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 28,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/18b92c585d5be94e583b90993c2d445b109643e0/jweb/web/1414080902110/JDBCconnection.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/18b92c585d5be94e583b90993c2d445b109643e0/jweb/web/1414080902110/JDBCconnection.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902110/JDBCconnection.java?ref=18b92c585d5be94e583b90993c2d445b109643e0",
+    "patch" : "@@ -1,28 +0,0 @@\n-package edu.hzu.javaweb.labs.se1414080902110;\n-\n-import java.sql.*;\n-\n-public class JDBCconnection {\n-\tpublic Connection connection() {\n-\t\tString driverName = \"com.mysql.jdbc.Driver\";\n-\t\tString userName = \"root\";\n-\t\tString userpwd = \"123456\";\n-\t\tString dbName = \"musicforum\";\n-\t\tString url1 = \"jdbc:mysql://localhost:3306/\" + dbName;\n-\t\tString url2 = \"?user=\" + userName + \"&password=\" + userpwd;\n-\t\tString url3 = \"&useUnicode=true&characterEncoding=UTF-8\";\n-\t\tString url = url1 + url2 + url3;\n-\t\ttry {\n-\t\t\tClass.forName(driverName);\n-\t\t} catch (ClassNotFoundException driver) {\n-\t\t\tdriver.printStackTrace();\n-\t\t}\n-\t\ttry {\n-\t\t\tConnection connection = DriverManager.getConnection(url);\n-\t\t\treturn connection;\n-\t\t} catch (SQLException sql) {\n-\t\t\tsql.printStackTrace();\n-\t\t}\n-\t\treturn null;\n-\t}\n-}"
+  } ],
+  "sha" : "5031b80b63a6f06130f5d2eec76adb8877af8ef9",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5031b80b63a6f06130f5d2eec76adb8877af8ef9",
+  "parents" : [ {
+    "sha" : "18b92c585d5be94e583b90993c2d445b109643e0",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/18b92c585d5be94e583b90993c2d445b109643e0",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/18b92c585d5be94e583b90993c2d445b109643e0"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Yveemi",
+    "id" : 22067630,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22067630?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Yveemi",
+    "html_url" : "https://github.com/Yveemi",
+    "followers_url" : "https://api.github.com/users/Yveemi/followers",
+    "following_url" : "https://api.github.com/users/Yveemi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Yveemi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Yveemi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Yveemi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Yveemi/orgs",
+    "repos_url" : "https://api.github.com/users/Yveemi/repos",
+    "events_url" : "https://api.github.com/users/Yveemi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Yveemi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 102,
+    "additions" : 102,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Yveemi",
+    "id" : 22067630,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22067630?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Yveemi",
+    "html_url" : "https://github.com/Yveemi",
+    "followers_url" : "https://api.github.com/users/Yveemi/followers",
+    "following_url" : "https://api.github.com/users/Yveemi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Yveemi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Yveemi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Yveemi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Yveemi/orgs",
+    "repos_url" : "https://api.github.com/users/Yveemi/repos",
+    "events_url" : "https://api.github.com/users/Yveemi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Yveemi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/068ace2c98dcc9d444eac6ad6ab01084377a5ef4",
+  "commit" : {
+    "author" : {
+      "name" : "Yveemi",
+      "email" : "258378002@qq.com",
+      "date" : "2016-10-27T16:33:41Z"
+    },
+    "committer" : {
+      "name" : "Yveemi",
+      "email" : "258378002@qq.com",
+      "date" : "2016-10-27T16:33:41Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "08e0c6aa4c839482a1b1d0618e85fa3d946e27d1",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/08e0c6aa4c839482a1b1d0618e85fa3d946e27d1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/068ace2c98dcc9d444eac6ad6ab01084377a5ef4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/068ace2c98dcc9d444eac6ad6ab01084377a5ef4/comments",
+  "files" : [ {
+    "sha" : "4726c4f27f98fda76e2b6d9e3733e3eefbbe1422",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902240/Se1414080902240Servlet.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/068ace2c98dcc9d444eac6ad6ab01084377a5ef4/jweb/src/edu/hzu/javaweb/labs/se1414080902240/Se1414080902240Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/068ace2c98dcc9d444eac6ad6ab01084377a5ef4/jweb/src/edu/hzu/javaweb/labs/se1414080902240/Se1414080902240Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902240/Se1414080902240Servlet.java?ref=068ace2c98dcc9d444eac6ad6ab01084377a5ef4",
+    "patch" : "@@ -0,0 +1,45 @@\n+package edu.hzu.javaweb.labs.se1414080902240;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+/**\n+ * Servlet implementation class Se1414080902240Servlet\n+ */\n+@WebServlet(\"/Se1414080902240Servlet\")\n+public class Se1414080902240Servlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public Se1414080902240Servlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+        request.setCharacterEncoding(\"UTF-8\");\n+        response.setContentType(\"text/html;charset=UTF-8\");\n+        PrintWriter out = response.getWriter();\n+        out.println(\"<ul><li>MUSIC 1</li><li>MUSIC 2</li><li>MUSIC 3</li></ul>\");\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\tdoGet(request, response);\n+\t}\n+\n+}"
+  }, {
+    "sha" : "97fdc225777d238b7036c7084b13f6df7adfbe05",
+    "filename" : "jweb/web/1414080902240/index.jsp",
+    "status" : "added",
+    "additions" : 57,
+    "deletions" : 0,
+    "changes" : 57,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/068ace2c98dcc9d444eac6ad6ab01084377a5ef4/jweb/web/1414080902240/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/068ace2c98dcc9d444eac6ad6ab01084377a5ef4/jweb/web/1414080902240/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902240/index.jsp?ref=068ace2c98dcc9d444eac6ad6ab01084377a5ef4",
+    "patch" : "@@ -0,0 +1,57 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\" %>\n+<!DOCTYPE html>\n+\n+\n+<head>\n+    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/> \n+\n+\t<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\"> \n+\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE-edge\"> \n+\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\"> \n+   <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script> \n+\n+   <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script> \n+   <script src=\"index.js\"></script> \n+   \n+    <style>\n+    #login_panel\n+    {\n+    width: 302px;\n+    height: 200px;\n+    top: 92px;\n+\tleft:500px;\n+    background-color: rgba(0,0,0,0.05);\n+    position: relative;\n+    border-radius: 5px;\n+    border: 1px solid rgba(201,201,201,0.5);\n+    float: none;\n+    padding-left: 80px;\n+    padding-right: 35px;\n+    padding-top: 45px;\n+    }\n+    .uk-margin {\n+        margin-bottom: 20px;\n+\t\t\n+    }\n+   \n+   \n+    </style>\n+\n+</head>\n+<body>\n+<div id=\"login_panel\">\n+   <form action=\"1414080902240\" method=\"post\" enctype=\"multipart/form-data\">\n+   <div class=\"uk-margin\" style=\"text-align:?center;\" >\n+            <h3 style=\"color:red;\">\n+                        分享你的音乐</h3>\n+        </div>\n+     <input type=\"file\" name=\"music\" />\n+\t </br>\n+     <input type=\"submit\" placeholder=\"上传\" name=\"submit\" value=\"上传\"  />\n+</form>\n+ <a href='1414080902240'>歌曲列表</a>\n+\n+</div>\n+\n+\n+</body></html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "068ace2c98dcc9d444eac6ad6ab01084377a5ef4",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/068ace2c98dcc9d444eac6ad6ab01084377a5ef4",
+  "parents" : [ {
+    "sha" : "4931012311ad55d822ac936d7af403860db6c3ca",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/4931012311ad55d822ac936d7af403860db6c3ca",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/4931012311ad55d822ac936d7af403860db6c3ca"
+  } ]
+}

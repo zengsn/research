@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "LiuJingXin",
+    "id" : 17778775,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17778775?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LiuJingXin",
+    "html_url" : "https://github.com/LiuJingXin",
+    "followers_url" : "https://api.github.com/users/LiuJingXin/followers",
+    "following_url" : "https://api.github.com/users/LiuJingXin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LiuJingXin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LiuJingXin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LiuJingXin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LiuJingXin/orgs",
+    "repos_url" : "https://api.github.com/users/LiuJingXin/repos",
+    "events_url" : "https://api.github.com/users/LiuJingXin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LiuJingXin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 234,
+    "additions" : 234,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "LiuJingXin",
+    "id" : 17778775,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17778775?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LiuJingXin",
+    "html_url" : "https://github.com/LiuJingXin",
+    "followers_url" : "https://api.github.com/users/LiuJingXin/followers",
+    "following_url" : "https://api.github.com/users/LiuJingXin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LiuJingXin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LiuJingXin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LiuJingXin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LiuJingXin/orgs",
+    "repos_url" : "https://api.github.com/users/LiuJingXin/repos",
+    "events_url" : "https://api.github.com/users/LiuJingXin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LiuJingXin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b",
+  "commit" : {
+    "author" : {
+      "name" : "LiuJingXin",
+      "email" : "1216219258@qq.com",
+      "date" : "2016-05-11T15:44:13Z"
+    },
+    "committer" : {
+      "name" : "LiuJingXin",
+      "email" : "1216219258@qq.com",
+      "date" : "2016-05-11T15:44:13Z"
+    },
+    "message" : "#95 #145 日记功能的实现",
+    "tree" : {
+      "sha" : "c24b0c1d30c8921d3d4ac02a23a448b0af659028",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/c24b0c1d30c8921d3d4ac02a23a448b0af659028"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/comments",
+  "files" : [ {
+    "sha" : "005b6ff7a13a37d395576588e6b0ad18d518203c",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_DiaryEditActivity.java",
+    "status" : "added",
+    "additions" : 65,
+    "deletions" : 0,
+    "changes" : 65,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_DiaryEditActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_DiaryEditActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_DiaryEditActivity.java?ref=dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b",
+    "patch" : "@@ -0,0 +1,65 @@\n+\n+\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+import com.donglihan.CollegeLifeManager.R;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.EditText;\n+\n+public class Net1314080903127_DiaryEditActivity extends Activity {\n+\n+\tprivate EditText mTitleText;\n+\tprivate EditText mBodyText;\n+\tprivate Long mRowId;\n+\tprivate Net1314080903127_DbAdapter mDbHelper;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tmDbHelper = new Net1314080903127_DbAdapter(this);\n+\t\tsetContentView(R.layout.net1314080903127_diary_edit);\n+\n+\t\tmTitleText = (EditText) findViewById(R.id.title);\n+\t\tmBodyText = (EditText) findViewById(R.id.body);\n+\n+\t\tButton confirmButton = (Button) findViewById(R.id.confirm);\n+\n+\t\tmRowId = null;\n+\t\tBundle extras = getIntent().getExtras();\n+\t\t//�ж��Ƿ�Ϊ�༭״̬\n+\t\tif (extras != null) {\n+\t\t\tString title = extras.getString(Net1314080903127_DbAdapter.KEY_TITLE);\n+\t\t\tString body = extras.getString(Net1314080903127_DbAdapter.KEY_BODY);\n+\t\t\tmRowId = extras.getLong(Net1314080903127_DbAdapter.KEY_ROWID);\n+\n+\t\t\tif (title != null) {\n+\t\t\t\tmTitleText.setText(title);\n+\t\t\t}\n+\t\t\tif (body != null) {\n+\t\t\t\tmBodyText.setText(body);\n+\t\t\t}\n+\t\t}\n+\n+\t\tconfirmButton.setOnClickListener(new View.OnClickListener() {\n+\t\t\tpublic void onClick(View view) {\n+\t\t\t\tmDbHelper.open();\n+\t\t\t\tString title = mTitleText.getText().toString();\n+\t\t\t\tString body = mBodyText.getText().toString();\n+\t\t\t\tif (mRowId != null) {\n+\t\t\t\t\tmDbHelper.updateDiary(mRowId, title, body);\n+\t\t\t\t} else\n+\t\t\t\t\tmDbHelper.createDiary(title, body);\n+\t\t\t\tIntent mIntent = new Intent();\n+\t\t\t\tsetResult(RESULT_OK, mIntent);\n+\t\t\t\tmDbHelper.closeclose();\n+\t\t\t\tfinish();\n+\t\t\t}\n+\n+\t\t});\n+\t}\n+}"
+  }, {
+    "sha" : "2097779de18f7d10c36d18e4542b0190057b19f7",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java",
+    "status" : "added",
+    "additions" : 106,
+    "deletions" : 0,
+    "changes" : 106,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903127/Net1314080903127_diary_activity.java?ref=dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b",
+    "patch" : "@@ -0,0 +1,106 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903127;\n+\n+import com.donglihan.CollegeLifeManager.R;\n+\n+import android.app.ListActivity;\n+import android.content.Intent;\n+import android.database.Cursor;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.widget.ListView;\n+import android.widget.SimpleCursorAdapter;\n+\n+public class Net1314080903127_diary_activity extends ListActivity {\n+\t\n+\t//�ظ��Ĺؼ���\n+\tprivate static final int ACTIVITY_CREATE = 0;\n+\tprivate static final int ACTIVITY_EDIT = 1;\n+\n+\t//�˵���ѡ��\n+\tprivate static final int INSERT_ID = Menu.FIRST;\n+\tprivate static final int DELETE_ID = Menu.FIRST + 1;\n+\n+\tprivate Net1314080903127_DbAdapter mDbHelper;\n+\tprivate Cursor mDiaryCursor;\n+\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.net1314080903127_diary_list);\n+\t\tmDbHelper = new Net1314080903127_DbAdapter(this);\n+\t\tupdateListView();\n+\n+\t}\n+\n+\t//���µ�ǰ��listacvitity\n+\tprivate void updateListView() {\n+\t\tmDbHelper.open();\n+\t\tmDiaryCursor = mDbHelper.getAllNotes();\n+\t\t//����Activity�����α�\n+\t\tstartManagingCursor(mDiaryCursor);\n+\t\tString[] from = new String[] { Net1314080903127_DbAdapter.KEY_TITLE,\n+\t\t\t\tNet1314080903127_DbAdapter.KEY_CREATED };\n+\t\tint[] to = new int[] { R.id.text1, R.id.created };\n+\t\tSimpleCursorAdapter notes = new SimpleCursorAdapter(this,\n+\t\t\t\tR.layout.net1314080903127_diary_row, mDiaryCursor, from, to);\n+\t\tsetListAdapter(notes);\n+\t\tmDbHelper.closeclose();\n+\t}\n+\n+\t//����һ��˵�\n+\t@Override\n+\tpublic boolean onCreateOptionsMenu(Menu menu) {\n+\t\tsuper.onCreateOptionsMenu(menu);\n+\t\tmenu.add(0, INSERT_ID, 0,\"�½�\").setIcon(R.drawable.net1314080903127_new_course);\n+\t\tmenu.add(0, DELETE_ID, 0, \"ɾ��\").setIcon(R.drawable.net1314080903127_delete);\n+\t\treturn true;\n+\t}\n+\n+\t//�˵�ѡ��\n+\t@Override\n+\tpublic boolean onMenuItemSelected(int featureId, MenuItem item) {\n+\t\tswitch (item.getItemId()) {\n+\t\tcase INSERT_ID:\n+\t\t\tcreateDiary();\n+\t\t\treturn true;\n+\t\tcase DELETE_ID:\n+\t\t\tmDbHelper.open();\n+\t\t\tmDbHelper.deleteDiary(getListView().getSelectedItemId());\n+\t\t\tmDbHelper.closeclose();\n+\t\t\tupdateListView();\n+\t\t\treturn true;\n+\t\t}\n+\t\treturn super.onMenuItemSelected(featureId, item);\n+\t}\n+\n+\tprivate void createDiary() {\n+\t\tIntent i = new Intent(this, Net1314080903127_DiaryEditActivity.class);\n+\t\tstartActivityForResult(i, ACTIVITY_CREATE);\n+\t}\n+\n+\t@Override\n+\t// ��Ҫ��position��id����һ��ܺõ����\n+\t// positionָ���ǵ������ViewItem�ڵ�ǰListView�е�λ��\n+\t// ÿһ���ViewItem�󶨵���ݣ��϶�����һ��id��ͨ�����id�����ҵ�������ݡ�\n+\tprotected void onListItemClick(ListView l, View v, int position, long id) {\n+\t\tsuper.onListItemClick(l, v, position, id);\n+\t\tCursor c = mDiaryCursor;\n+\t\tc.moveToPosition(position);\n+\t\tIntent i = new Intent(this, Net1314080903127_DiaryEditActivity.class);\n+\t\ti.putExtra(Net1314080903127_DbAdapter.KEY_ROWID, id);\n+\t\ti.putExtra(Net1314080903127_DbAdapter.KEY_TITLE, c.getString(c\n+\t\t\t\t.getColumnIndexOrThrow(Net1314080903127_DbAdapter.KEY_TITLE)));\n+\t\ti.putExtra(Net1314080903127_DbAdapter.KEY_BODY, c.getString(c\n+\t\t\t\t.getColumnIndexOrThrow(Net1314080903127_DbAdapter.KEY_BODY)));\n+\t\tstartActivityForResult(i, ACTIVITY_EDIT);\n+\t}\n+\n+\t@Override\n+\tprotected void onActivityResult(int requestCode, int resultCode,\n+\t\t\tIntent intent) {\n+\t\tsuper.onActivityResult(requestCode, resultCode, intent);\n+\t\tupdateListView();\n+\t}\n+}"
+  }, {
+    "sha" : "dc7a8e0bba08bad530b78661a009e987283fd140",
+    "filename" : "app/src/main/res/layout/net1314080903127_diary_edit.xml",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/res/layout/net1314080903127_diary_edit.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/res/layout/net1314080903127_diary_edit.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_diary_edit.xml?ref=dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b",
+    "patch" : "@@ -0,0 +1,30 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:orientation=\"vertical\" android:layout_width=\"fill_parent\"\n+\tandroid:layout_height=\"fill_parent\">\n+\n+\t<LinearLayout android:orientation=\"vertical\"\n+\t\tandroid:layout_width=\"fill_parent\"\n+\t\tandroid:layout_height=\"wrap_content\">\n+\n+\t\t<TextView android:layout_width=\"wrap_content\"\n+\t\t\tandroid:layout_height=\"wrap_content\" android:text=\"标题\"\n+\t\t\tandroid:padding=\"2px\" />\n+\t\t<EditText android:id=\"@+id/title\"\n+\t\t\tandroid:layout_width=\"fill_parent\"\n+\t\t\tandroid:layout_height=\"wrap_content\" android:layout_weight=\"1\" />\n+\t</LinearLayout>\n+\n+\t<TextView android:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" android:text=\"内容\" />\n+\t\t\n+\t<EditText android:id=\"@+id/body\" android:layout_width=\"fill_parent\"\n+\t\tandroid:layout_height=\"fill_parent\" android:layout_weight=\"1\"\n+\t\tandroid:scrollbars=\"vertical\" android:gravity=\"top\" />\n+\n+\t<Button android:id=\"@+id/confirm\" android:text=\"保存\"\n+\t\tandroid:layout_width=\"fill_parent\"\n+\t\tandroid:layout_height=\"wrap_content\" />\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "71a4c162e2ed2c440e18f89ff33f7fd0731e5e69",
+    "filename" : "app/src/main/res/layout/net1314080903127_diary_list.xml",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/res/layout/net1314080903127_diary_list.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/res/layout/net1314080903127_diary_list.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_diary_list.xml?ref=dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b",
+    "patch" : "@@ -0,0 +1,13 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:layout_width=\"wrap_content\"\n+\tandroid:layout_height=\"wrap_content\">\n+\n+\t<ListView android:id=\"@+id/android:list\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" />\n+\t<TextView android:id=\"@+id/android:empty\"\n+\t\tandroid:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"wrap_content\" \n+\t\tandroid:text=\"您还没有开始写日记呢!点击Menu按钮开始写日记吧\" />\n+</LinearLayout>"
+  }, {
+    "sha" : "204a669fa12c7323ab9a680dbee1e0b6bdebaebb",
+    "filename" : "app/src/main/res/layout/net1314080903127_diary_row.xml",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/res/layout/net1314080903127_diary_row.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b/app/src/main/res/layout/net1314080903127_diary_row.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903127_diary_row.xml?ref=dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b",
+    "patch" : "@@ -0,0 +1,20 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout android:id=\"@+id/row\"\n+\txmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:layout_width=\"fill_parent\"\n+\tandroid:layout_height=\"fill_parent\">\n+\n+\t<TextView android:id=\"@+id/text1\"\n+\t\tandroid:layout_width=\"wrap_content\" android:layout_height=\"30px\"\n+\t\tandroid:maxWidth=\"200dip\" \n+\t\tandroid:textSize=\"22sp\"\n+\t\tandroid:layout_marginTop=\"10dip\"\n+\t\tandroid:text=\"第一组第一项\" />\n+\t<TextView android:id=\"@+id/created\" android:layout_width=\"wrap_content\"\n+\t\tandroid:layout_height=\"35px\" android:layout_alignParentRight=\"true\"\n+\t\tandroid:layout_marginLeft=\"10dip\" \n+\t\tandroid:layout_marginTop=\"10dip\"\n+\t\tandroid:text=\"1999年12月3号\" />\n+\n+</RelativeLayout>\n+"
+  } ],
+  "sha" : "dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dc311cf4bfc052a31f3f6ec4481ebc19c70ff55b",
+  "parents" : [ {
+    "sha" : "75e54ac138ef3c69e6475f0d9a36f71702ceadc2",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/75e54ac138ef3c69e6475f0d9a36f71702ceadc2",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/75e54ac138ef3c69e6475f0d9a36f71702ceadc2"
+  } ]
+}

@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "201609w",
+    "id" : 22068335,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068335?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/201609w",
+    "html_url" : "https://github.com/201609w",
+    "followers_url" : "https://api.github.com/users/201609w/followers",
+    "following_url" : "https://api.github.com/users/201609w/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/201609w/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/201609w/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/201609w/subscriptions",
+    "organizations_url" : "https://api.github.com/users/201609w/orgs",
+    "repos_url" : "https://api.github.com/users/201609w/repos",
+    "events_url" : "https://api.github.com/users/201609w/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/201609w/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 199,
+    "additions" : 199,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "201609w",
+    "id" : 22068335,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068335?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/201609w",
+    "html_url" : "https://github.com/201609w",
+    "followers_url" : "https://api.github.com/users/201609w/followers",
+    "following_url" : "https://api.github.com/users/201609w/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/201609w/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/201609w/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/201609w/subscriptions",
+    "organizations_url" : "https://api.github.com/users/201609w/orgs",
+    "repos_url" : "https://api.github.com/users/201609w/repos",
+    "events_url" : "https://api.github.com/users/201609w/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/201609w/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4",
+  "commit" : {
+    "author" : {
+      "name" : "201609w",
+      "email" : "979887185@qq.com",
+      "date" : "2016-11-14T01:17:29Z"
+    },
+    "committer" : {
+      "name" : "201609w",
+      "email" : "979887185@qq.com",
+      "date" : "2016-11-14T01:17:29Z"
+    },
+    "message" : "#6 提交实验代码 表单创建检查",
+    "tree" : {
+      "sha" : "f4125a8bc78722a3a55a2b54cd315d7bd1b2aca0",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/f4125a8bc78722a3a55a2b54cd315d7bd1b2aca0"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4/comments",
+  "files" : [ {
+    "sha" : "f209ce50b83c87f511eaa1b5643e31e00831c3ac",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902236/SeInfoCheck.java",
+    "status" : "added",
+    "additions" : 95,
+    "deletions" : 0,
+    "changes" : 95,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4/jweb/src/edu/hzu/javaweb/labs/se1414080902236/SeInfoCheck.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4/jweb/src/edu/hzu/javaweb/labs/se1414080902236/SeInfoCheck.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902236/SeInfoCheck.java?ref=5f84282e2c3ae63f6ec6515df8d16a0a365a80a4",
+    "patch" : "@@ -0,0 +1,95 @@\n+package edu.hzu.javaweb.labs.se1414080902236;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.ArrayList;\n+import java.util.Enumeration;\n+\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+public class SeInfoCheck extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic SeInfoCheck() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\t\n+\t\tString name =\"\";\n+\t\tString value=\"\";\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tEnumeration params = request.getParameterNames();\n+\t\tArrayList<String> carInfo = new ArrayList<String>();\n+\t\twhile(params.hasMoreElements()){\n+\t\t\tname=(String)params.nextElement();\n+\t\t\tvalue=(String)request.getParameter(name);\n+\t\t\tcarInfo.add(value);\t\t\n+\t\t}\n+\t\trequest.setAttribute(\"carMsg\", carInfo);\n+\t\tArrayList<String> carInfoName = new ArrayList<String>();\n+\t\tcarInfoName.add(\"����\");\n+\t\tcarInfoName.add(\"����\");\n+\t\tcarInfoName.add(\"������\");\n+\t\tcarInfoName.add(\"������\");\n+\t\tcarInfoName.add(\"��*��*��(mm)\");\n+\t\tcarInfoName.add(\"����ṹ\");\n+\t\tcarInfoName.add(\"��߳���(km/h)\");\n+\t\tcarInfoName.add(\"�ٷ�0-100km/h����(s)\");\n+\t\tcarInfoName.add(\"���Ų��ۺ��ͺ�(L/100km)\");\n+\t\trequest.setAttribute(\"carname\", carInfoName);\n+\t\trequest.getRequestDispatcher(\"/InfoCheck.jsp\").forward(request, response);\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tdoGet(request,response);\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "5323bc8c1f47d1a909cec6cb5ea624ebbcdec7bc",
+    "filename" : "jweb/web/1414080902236/CreateCarInfo.jsp",
+    "status" : "added",
+    "additions" : 40,
+    "deletions" : 0,
+    "changes" : 40,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4/jweb/web/1414080902236/CreateCarInfo.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4/jweb/web/1414080902236/CreateCarInfo.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902236/CreateCarInfo.jsp?ref=5f84282e2c3ae63f6ec6515df8d16a0a365a80a4",
+    "patch" : "@@ -0,0 +1,40 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'CreateInfo.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <form action=\"Check\" method=\"post\">\n+                             厂商          ：<input type=\"text\" name=\"manufacturers\"><br>\n+                             级别          ：<input type=\"text\" name=\"level\"><br>\n+                         发动机          ：<input type=\"text\" name=\"engine\"><br>\n+                         变速箱          ：<input type=\"text\" name=\"gearbox\"><br>\n+         长*宽*高(mm)    ：<input type=\"text\" name=\"size\"><br>\n+                    车身结构           ： <input type=\"text\" name=\"body\"><br>\n+     最高车速(km/h)    ：<input type=\"text\" name=\"maxspeed\"><br>\n+     官方0-100km/h加速(s)：<input type=\"text\" name=\"hundred\"><br>\n+     工信部综合油耗(L/100km)：<input type=\"text\" name=\"gas\"><br>\n+         <input type=\"submit\"  value=\"提交\">\n+         <input type=\"reset\"   value=\"重置\">  \n+    </form>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "345936dcf3bf92a3ed094df0c165baf660af664a",
+    "filename" : "jweb/web/1414080902236/InfoCheck.jsp",
+    "status" : "added",
+    "additions" : 64,
+    "deletions" : 0,
+    "changes" : 64,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4/jweb/web/1414080902236/InfoCheck.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4/jweb/web/1414080902236/InfoCheck.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902236/InfoCheck.jsp?ref=5f84282e2c3ae63f6ec6515df8d16a0a365a80a4",
+    "patch" : "@@ -0,0 +1,64 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'InfoCheck.jsp' starting page</title>\n+    \n+    <!-- 新 Bootstrap 核心 CSS 文件 -->\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\n+<!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\n+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\n+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+\n+  </head>\n+  \n+  <body>\n+   <% Calendar rightNow = Calendar.getInstance();\n+      Integer Hour = new Integer(rightNow.get(Calendar.HOUR_OF_DAY));\n+      request.setAttribute(\"hour\",Hour);\n+   %>\n+        尊敬的用户，\n+   <c:if test=\"${hour>=0&&hour<=11 }\">早上好！</c:if>\n+   <c:if test=\"${hour>=12&&hour<=17 }\">下午好！</c:if>\n+   <c:if test=\"${hour>=18&&hour<=23 }\">晚上好！</c:if>\n+   <hr border=\"2\">\n+   <table border=\"1\" align=\"center\" width=\"20%\">\n+    <tr><td colspan=\"2\">基本参数</td></tr>\n+    <c:forEach var=\"car\" items=\"${carMsg}\" varStatus=\"status\"  >\n+    <tr>\n+    <td align=\"right\">\n+    <c:out value=\"${carname[status.count-1] }\"/></td>\n+    <td align=\"center\">\n+    <c:out value=\"${car}\" /></td>\n+    </tr>\n+    </c:forEach>\n+    <tr ><td align=\"center\"><input type=\"submit\" value=\"提交\"></td>\n+    <td align=\"center\"><input type=\"submit\" value=\"修改\"></td></tr>\n+   </table>\n+  \n+  </body>\n+</html>"
+  } ],
+  "sha" : "5f84282e2c3ae63f6ec6515df8d16a0a365a80a4",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5f84282e2c3ae63f6ec6515df8d16a0a365a80a4",
+  "parents" : [ {
+    "sha" : "7d1cc8fe98bfbaf440d5680c4754bc070b057822",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7d1cc8fe98bfbaf440d5680c4754bc070b057822",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/7d1cc8fe98bfbaf440d5680c4754bc070b057822"
+  } ]
+}

@@ -1,0 +1,97 @@
+{
+  "committer" : {
+    "login" : "DarlieToothpaste",
+    "id" : 22366893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22366893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/DarlieToothpaste",
+    "html_url" : "https://github.com/DarlieToothpaste",
+    "followers_url" : "https://api.github.com/users/DarlieToothpaste/followers",
+    "following_url" : "https://api.github.com/users/DarlieToothpaste/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/DarlieToothpaste/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/DarlieToothpaste/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/DarlieToothpaste/subscriptions",
+    "organizations_url" : "https://api.github.com/users/DarlieToothpaste/orgs",
+    "repos_url" : "https://api.github.com/users/DarlieToothpaste/repos",
+    "events_url" : "https://api.github.com/users/DarlieToothpaste/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/DarlieToothpaste/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 46,
+    "additions" : 20,
+    "deletions" : 26
+  },
+  "author" : {
+    "login" : "DarlieToothpaste",
+    "id" : 22366893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22366893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/DarlieToothpaste",
+    "html_url" : "https://github.com/DarlieToothpaste",
+    "followers_url" : "https://api.github.com/users/DarlieToothpaste/followers",
+    "following_url" : "https://api.github.com/users/DarlieToothpaste/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/DarlieToothpaste/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/DarlieToothpaste/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/DarlieToothpaste/subscriptions",
+    "organizations_url" : "https://api.github.com/users/DarlieToothpaste/orgs",
+    "repos_url" : "https://api.github.com/users/DarlieToothpaste/repos",
+    "events_url" : "https://api.github.com/users/DarlieToothpaste/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/DarlieToothpaste/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/6215c666005ed0b5b59b3f26e5c48a969aa70693",
+  "commit" : {
+    "author" : {
+      "name" : "Cai",
+      "email" : "754181906@qq.com",
+      "date" : "2016-11-07T07:20:00Z"
+    },
+    "committer" : {
+      "name" : "Cai",
+      "email" : "754181906@qq.com",
+      "date" : "2016-11-07T07:20:00Z"
+    },
+    "message" : "...",
+    "tree" : {
+      "sha" : "170f48366277f96a68f5da4d8a937b29a1b63d51",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/170f48366277f96a68f5da4d8a937b29a1b63d51"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/6215c666005ed0b5b59b3f26e5c48a969aa70693",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/6215c666005ed0b5b59b3f26e5c48a969aa70693/comments",
+  "files" : [ {
+    "sha" : "2d85457762fef6ad891ef7169a555cbb1690f06d",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902232/Servlet.java",
+    "status" : "modified",
+    "additions" : 8,
+    "deletions" : 18,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6215c666005ed0b5b59b3f26e5c48a969aa70693/jweb/src/edu/hzu/javaweb/labs/se1414080902232/Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6215c666005ed0b5b59b3f26e5c48a969aa70693/jweb/src/edu/hzu/javaweb/labs/se1414080902232/Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902232/Servlet.java?ref=6215c666005ed0b5b59b3f26e5c48a969aa70693",
+    "patch" : "@@ -47,19 +47,7 @@ public void destroy() {\n \tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n \n-\t\tresponse.setContentType(\"text/html\");\n-\t\tPrintWriter out = response.getWriter();\n-\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n-\t\tout.println(\"<HTML>\");\n-\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n-\t\tout.println(\"  <BODY>\");\n-\t\tout.print(\"    This is \");\n-\t\tout.print(this.getClass());\n-\t\tout.println(\", using the GET method\");\n-\t\tout.println(\"  </BODY>\");\n-\t\tout.println(\"</HTML>\");\n-\t\tout.flush();\n-\t\tout.close();\n+\t\tdoPost(request,response);\n \t}\n \n \t/**\n@@ -98,13 +86,15 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\theight1 = y.getHeight();\n \t\tHttpSession session=request.getSession(true);\n \t\t// +\t\t\tsession.setAttribute(\"list\", list);\n-\t\tsession.setAttribute(Weight, weight);\n-\t\tsession.setAttribute(Height, height);\n-\t\tsession.setAttribute(Weight1, weight1);\n-\t\tsession.setAttribute(Height1, height1);\n+\t\trequest.setAttribute(\"Weight\", weight);\n+\t\trequest.setAttribute(\"Height\", height);\n+\t\trequest.setAttribute(\"Weight1\", weight1);\n+\t\trequest.setAttribute(\"Height1\", height1);\n \t\tlistz.add(x);\n \t\tlistz.add(y);\n-\t\tsession.setAttribute(\"list\", listz);\n+\t\trequest.setAttribute(\"list\", listz);\n+\t\tSystem.out.println(listz);\n+\t\trequest.getRequestDispatcher(\"abc.jsp\").forward(request, response);\n \t}\n \n \t/**"
+  }, {
+    "sha" : "8859d763f35b95424bb1df9c2db32817ad62cad1",
+    "filename" : "labs/1414080902232/abc.jsp",
+    "status" : "renamed",
+    "additions" : 12,
+    "deletions" : 8,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6215c666005ed0b5b59b3f26e5c48a969aa70693/labs/1414080902232/abc.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6215c666005ed0b5b59b3f26e5c48a969aa70693/labs/1414080902232/abc.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902232/abc.jsp?ref=6215c666005ed0b5b59b3f26e5c48a969aa70693",
+    "patch" : "@@ -5,6 +5,7 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n %>\n \n <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\"%>   \n <html>\n   <head>\n     <base href=\"<%=basePath%>\">\n@@ -21,13 +22,16 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n   </head>\n   \n   <body>\n-     请输入第一个动物类型： <input type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n-     请输入第一个动物年龄： <input type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n-     请输入第二个动物类型： <input type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n-     请输入第二个动物年龄： <input type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n-    <button id = \"sb\">提交</button><br>\n+  <form method=\"post\" action=\"Servlet\">\n+     请输入第一个动物类型： <input name=\"cls\" type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n+     请输入第一个动物年龄： <input name=\"age\" type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n+     请输入第二个动物类型： <input name=\"cls1\" type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n+     请输入第二个动物年龄： <input name=\"age1\" type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n+    <input type=\"submit\" value=\"提交\"><br>\n+    </form>\n   结果:\n-  <c:forEach var=\"l\" items=\"${sessionScope.list}\">\n+  <c:out value=\"${1+2}\" default=\"\"/>\n+  <c:forEach var=\"l\" items=\"${list}\">\n  \t\t\t<c:out value=\"${l.cls}\"/>\n  \t\t\t<c:out value=\"${l.age}\"/>\n  \t\t\t<c:out value=\"${l.weight}\"/>\n@@ -38,7 +42,7 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n   </body>\n </html>\n <script>\n-var btn = document.getElementById(\"sb\");\n+/*var btn = document.getElementById(\"sb\");\n sb.onclick = function(){\n   var xml = new XMLHttpRequest();\n   var ipt =document.getElementsByTagName(\"input\")\n@@ -47,5 +51,5 @@ sb.onclick = function(){\n   xml.open(\"post\", \"Servlet\", true);\n   xml.setRequestHeader(\"Content-type\",\"application/x-www-form-urlencoded\");\n   xml.send(js);\n-  }\n+  }*/\n </script>",
+    "previous_filename" : "labs/1414080902232/#6.jsp"
+  } ],
+  "sha" : "6215c666005ed0b5b59b3f26e5c48a969aa70693",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6215c666005ed0b5b59b3f26e5c48a969aa70693",
+  "parents" : [ {
+    "sha" : "1cdc7b29b8063e69c0bb323bb4093356ed399274",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cdc7b29b8063e69c0bb323bb4093356ed399274",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/1cdc7b29b8063e69c0bb323bb4093356ed399274"
+  } ]
+}

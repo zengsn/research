@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 93,
+    "additions" : 93,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/3ff3491776829daffb8db469256d3e0b4cae1c06",
+  "commit" : {
+    "author" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-12-01T06:48:13Z"
+    },
+    "committer" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-12-01T06:48:13Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "329c353a19e77b9f017b899a76427663b6361639",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/329c353a19e77b9f017b899a76427663b6361639"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/3ff3491776829daffb8db469256d3e0b4cae1c06",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/3ff3491776829daffb8db469256d3e0b4cae1c06/comments",
+  "files" : [ {
+    "sha" : "36da03c46f03f79a3ca4cba0d67db844e0712dbd",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902121/Se1414080902121Servlet.java",
+    "status" : "added",
+    "additions" : 29,
+    "deletions" : 0,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3ff3491776829daffb8db469256d3e0b4cae1c06/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Se1414080902121Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3ff3491776829daffb8db469256d3e0b4cae1c06/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Se1414080902121Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Se1414080902121Servlet.java?ref=3ff3491776829daffb8db469256d3e0b4cae1c06",
+    "patch" : "@@ -0,0 +1,29 @@\n+package edu.hzu.javaweb.labs.se1414080902121;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+@WebServlet(\"/1414080902121\")\n+public class Se1414080902121Servlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+      \n+\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\n+\t\tdoPost(request,response);\n+\t}\n+\n+\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"Sign in Successfully!\");\n+\t}\n+\n+}"
+  }, {
+    "sha" : "762013da2bb31d6461243976b25d59f932060ee0",
+    "filename" : "jweb/web/1414080902121/index.jsp",
+    "status" : "added",
+    "additions" : 64,
+    "deletions" : 0,
+    "changes" : 64,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3ff3491776829daffb8db469256d3e0b4cae1c06/jweb/web/1414080902121/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3ff3491776829daffb8db469256d3e0b4cae1c06/jweb/web/1414080902121/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902121/index.jsp?ref=3ff3491776829daffb8db469256d3e0b4cae1c06",
+    "patch" : "@@ -0,0 +1,64 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\"\n+pageEncoding=\"utf-8\"%>\n+ <%\n+ String path = request.getContextPath();\n+ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+ %>\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<head>\n+ <base href=\"<%=basePath%>\">\n+ <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n+ <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <title>菜鸡课表系统</title>\n+    <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n+</head>\n+<body>\n+\n+<div class=\"desu\">\n+\n+           <h3 class=\"text-center\" style=\"margin-top: 100px\">欢迎使用！</h3>\n+           <div class=\"row\"  style=\"width:300px; margin:auto;height:150px;\">\n+           <form role=\"form\" id=\"login\">\n+           <div class=\"form-group\">\n+            <div class=\"has-feedback\" >\n+              <label for=\"exampleInputEmail1\">邮箱</label>\n+              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Enter your Account\">\n+      \n+            </div>\n+           </div>\n+\n+           <div class=\"form-group\">\n+            <div class=\"has-feedback\" >\n+              <label for=\"exampleInputPassword1\">密码</label>\n+              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Enter your Password\">\n+            </div>\n+           </div>\n+           <center>\n+  \t      <button type=\"submit\" class=\"btn btn-success\">登陆</button>\n+  \t      \t\n+  \t\t</center>\n+          </form>\n+          </div>\n+       </div>\n+       \n+       <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+       <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script> \n+       <script>\n+      $( \"#login\" ).submit(function() {\n+         $.ajax({ \n+          dataType: \"html\", \n+          url: \"1414080902121\", \n+          type: \"post\",\n+           success: function(data){\n+             alert(data);\n+         },\n+          error: function (XMLHttpRequest, textStatus, errorThrown) { \n+           alert(\"error\"); \n+                                        } \n+     });\n+       });\n+      </script>\n+      \n+\n+</body>\n+</html>"
+  } ],
+  "sha" : "3ff3491776829daffb8db469256d3e0b4cae1c06",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/3ff3491776829daffb8db469256d3e0b4cae1c06",
+  "parents" : [ {
+    "sha" : "4ee7ffb7e9a0108996007bc20950539411181505",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/4ee7ffb7e9a0108996007bc20950539411181505",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/4ee7ffb7e9a0108996007bc20950539411181505"
+  } ]
+}

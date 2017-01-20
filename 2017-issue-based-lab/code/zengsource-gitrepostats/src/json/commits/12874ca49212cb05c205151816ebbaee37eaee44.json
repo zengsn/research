@@ -1,0 +1,113 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 13,
+    "additions" : 6,
+    "deletions" : 7
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/12874ca49212cb05c205151816ebbaee37eaee44",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-07T07:31:07Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-07T07:31:07Z"
+    },
+    "message" : "Merge pull request #901 from Zhang41/master\n\n重新交的，把多余的包删掉了 #42",
+    "tree" : {
+      "sha" : "db5743f2505b1b9741b53dd2ae28a870416cbc77",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/db5743f2505b1b9741b53dd2ae28a870416cbc77"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/12874ca49212cb05c205151816ebbaee37eaee44",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/12874ca49212cb05c205151816ebbaee37eaee44/comments",
+  "files" : [ {
+    "sha" : "62b637ff9861c1a30a601e05afa120fe9a2e85aa",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141Activity.java",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 2,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/12874ca49212cb05c205151816ebbaee37eaee44/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/12874ca49212cb05c205151816ebbaee37eaee44/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141Activity.java?ref=12874ca49212cb05c205151816ebbaee37eaee44",
+    "patch" : "@@ -2,7 +2,6 @@\n \n \n import edu.hzuapps.androidworks.homeworks.net131240809031413.R;\n-import edu.hzuapps.androidworks.homeworks.net13140809031412.Net1314080903141runActivity;\n \n import android.os.Bundle;\n import android.app.Activity;\n@@ -15,7 +14,7 @@\n \n \t// ��˷翪��ͼƬButton\n \tprivate ImageButton state;\n-\tNet1314080903141runActivity run_Metned = new Net1314080903141runActivity();\n+\tNet1314080903141RunActivity run_Metned = new Net1314080903141RunActivity();\n \tThread thread = null;\n \n \t@Override"
+  }, {
+    "sha" : "5d0620d0deb4c69267a0ee6099d497a1ca8c5ab4",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141RunActivity.java",
+    "status" : "renamed",
+    "additions" : 3,
+    "deletions" : 3,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/12874ca49212cb05c205151816ebbaee37eaee44/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141RunActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/12874ca49212cb05c205151816ebbaee37eaee44/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141RunActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141RunActivity.java?ref=12874ca49212cb05c205151816ebbaee37eaee44",
+    "patch" : "@@ -1,12 +1,12 @@\n-package edu.hzuapps.androidworks.homeworks.net13140809031412;\n+package edu.hzuapps.androidworks.homeworks.net1314080903141;\n \n import android.media.AudioFormat;\n import android.media.AudioManager;\n import android.media.AudioRecord;\n import android.media.AudioTrack;\n import android.media.MediaRecorder;\n \n-public class Net1314080903141runActivity implements Runnable {\n+public class Net1314080903141RunActivity implements Runnable {\n \t// �Ƿ�¼�ŵı��\n \tboolean isRecording = false;\n \tstatic final int frequency = 44100;\n@@ -20,7 +20,7 @@\n \t// ʵ��Ŷ���\n \tAudioTrack audioTrack;\n \n-\tpublic Net1314080903141runActivity() {\n+\tpublic Net1314080903141RunActivity() {\n \t\t// ����getMinBufferSize�������¼�����С����ռ�\n \t\trecBufSize = AudioRecord.getMinBufferSize(frequency,\n \t\t\t\tchannelConfiguration, audioEncoding);",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141runActivity.java"
+  }, {
+    "sha" : "0201a72dd7c34f4bf47db8a8fcee76bbfe17a5b6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141TrackActivity.java",
+    "status" : "renamed",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/12874ca49212cb05c205151816ebbaee37eaee44/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141TrackActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/12874ca49212cb05c205151816ebbaee37eaee44/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141TrackActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903141/Net1314080903141TrackActivity.java?ref=12874ca49212cb05c205151816ebbaee37eaee44",
+    "patch" : "@@ -1,10 +1,10 @@\n-package edu.hzuapps.androidworks.homeworks.net13140809031412;\n+package edu.hzuapps.androidworks.homeworks.net1314080903141;\n \n import android.media.AudioFormat;\n import android.media.AudioManager;\n import android.media.AudioTrack;\n \n-public class Net1314080903141trackActivity implements Runnable {\n+public class Net1314080903141TrackActivity implements Runnable {\n \n \t// �����ݴ�\n \tint out_size;",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net13140809031412/Net1314080903141trackActivity.java"
+  } ],
+  "sha" : "12874ca49212cb05c205151816ebbaee37eaee44",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/12874ca49212cb05c205151816ebbaee37eaee44",
+  "parents" : [ {
+    "sha" : "7e536975f034bd3a8212da1c7f7cb46b0d1bffb5",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/7e536975f034bd3a8212da1c7f7cb46b0d1bffb5",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/7e536975f034bd3a8212da1c7f7cb46b0d1bffb5"
+  }, {
+    "sha" : "41098a36c47220a644f3cc290f38e4612366b7ce",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/41098a36c47220a644f3cc290f38e4612366b7ce",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/41098a36c47220a644f3cc290f38e4612366b7ce"
+  } ]
+}

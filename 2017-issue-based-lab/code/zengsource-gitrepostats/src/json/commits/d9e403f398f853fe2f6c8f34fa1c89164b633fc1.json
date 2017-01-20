@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "mengyi520",
+    "id" : 18068937,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18068937?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mengyi520",
+    "html_url" : "https://github.com/mengyi520",
+    "followers_url" : "https://api.github.com/users/mengyi520/followers",
+    "following_url" : "https://api.github.com/users/mengyi520/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mengyi520/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mengyi520/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mengyi520/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mengyi520/orgs",
+    "repos_url" : "https://api.github.com/users/mengyi520/repos",
+    "events_url" : "https://api.github.com/users/mengyi520/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mengyi520/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 24,
+    "additions" : 24,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "mengyi520",
+    "id" : 18068937,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18068937?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mengyi520",
+    "html_url" : "https://github.com/mengyi520",
+    "followers_url" : "https://api.github.com/users/mengyi520/followers",
+    "following_url" : "https://api.github.com/users/mengyi520/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mengyi520/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mengyi520/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mengyi520/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mengyi520/orgs",
+    "repos_url" : "https://api.github.com/users/mengyi520/repos",
+    "events_url" : "https://api.github.com/users/mengyi520/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mengyi520/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/d9e403f398f853fe2f6c8f34fa1c89164b633fc1",
+  "commit" : {
+    "author" : {
+      "name" : "mengyi520",
+      "email" : "834874378@qq.com",
+      "date" : "2016-06-06T17:00:39Z"
+    },
+    "committer" : {
+      "name" : "mengyi520",
+      "email" : "834874378@qq.com",
+      "date" : "2016-06-06T17:00:39Z"
+    },
+    "message" : "#90 #95 #13 labs4 labs9",
+    "tree" : {
+      "sha" : "9a907b1d36797dc936663525af27df57270b76fa",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/9a907b1d36797dc936663525af27df57270b76fa"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/d9e403f398f853fe2f6c8f34fa1c89164b633fc1",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d9e403f398f853fe2f6c8f34fa1c89164b633fc1/comments",
+  "files" : [ {
+    "sha" : "9b8333a9f785e6f1d316d74544c6423c465c7a4e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214AlarmReceiver.java",
+    "status" : "added",
+    "additions" : 24,
+    "deletions" : 0,
+    "changes" : 24,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d9e403f398f853fe2f6c8f34fa1c89164b633fc1/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214AlarmReceiver.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d9e403f398f853fe2f6c8f34fa1c89164b633fc1/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214AlarmReceiver.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214AlarmReceiver.java?ref=d9e403f398f853fe2f6c8f34fa1c89164b633fc1",
+    "patch" : "@@ -0,0 +1,24 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903214;\n+\n+import android.app.AlarmManager;\n+import android.app.PendingIntent;\n+import android.content.BroadcastReceiver;\n+import android.content.Context;\n+import android.content.Intent;\n+\n+\n+public class Net1314080903214AlarmReceiver extends BroadcastReceiver{\n+    @Override\n+    public void onReceive(Context context, Intent intent) {\n+        System.out.println(\"闹钟执行了\");\n+\n+        AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);\n+        // 取消当前执行的闹钟\n+        am.cancel(PendingIntent.getBroadcast(context, getResultCode(), new Intent(context, Net1314080903214AlarmReceiver.class), 0));\n+\n+        Intent i = new Intent(context, Net1314080903214PlayAlarmAty.class);\n+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n+        // 启动activity\n+        context.startActivity(i);\n+    }\n+}"
+  } ],
+  "sha" : "d9e403f398f853fe2f6c8f34fa1c89164b633fc1",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d9e403f398f853fe2f6c8f34fa1c89164b633fc1",
+  "parents" : [ {
+    "sha" : "f0407ebb4bd524cd734700d2a46c0eeb38c083d8",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f0407ebb4bd524cd734700d2a46c0eeb38c083d8",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/f0407ebb4bd524cd734700d2a46c0eeb38c083d8"
+  } ]
+}

@@ -1,0 +1,121 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 54,
+    "additions" : 51,
+    "deletions" : 3
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/4be4b4cd369b291b800cfbdefbd8a99363f65350",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-27T15:46:45Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-27T15:46:45Z"
+    },
+    "message" : "Merge pull request #850 from fangrenye/master\n\n#95 #62 简易打地鼠游戏 （修改）",
+    "tree" : {
+      "sha" : "8a64f26cd2a0f9f3e0c98abfee560c091d8f8441",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/8a64f26cd2a0f9f3e0c98abfee560c091d8f8441"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/4be4b4cd369b291b800cfbdefbd8a99363f65350",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4be4b4cd369b291b800cfbdefbd8a99363f65350/comments",
+  "files" : [ {
+    "sha" : "89af911e67c53f68a6b7f7f4abbe9bf7288bdb1d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/AndroidManifest.xml",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 1,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4be4b4cd369b291b800cfbdefbd8a99363f65350/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4be4b4cd369b291b800cfbdefbd8a99363f65350/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/AndroidManifest.xml?ref=4be4b4cd369b291b800cfbdefbd8a99363f65350",
+    "patch" : "@@ -1,13 +1,19 @@\n <?xml version=\"1.0\" encoding=\"utf-8\"?>\n <manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    package=\"hzu.dadishu\" >\n+    package=\"edu.hzuapps.androidworks.homeworks.com1314080901129\" >\n \n     <application\n         android:allowBackup=\"true\"\n         android:icon=\"@mipmap/ic_launcher\"\n         android:label=\"@string/app_name\"\n         android:supportsRtl=\"true\"\n         android:theme=\"@style/AppTheme\" >\n+        <service android:name='.MusicServer'>\n+            <intent-filter>\n+                <action android:name='com.angel.Android.MUSIC'/>\n+                <category android:name='android.intent.category.default' />\n+            </intent-filter>\n+        </service>\n         <activity\n             android:name=\".Com1314080901129Activity\"\n             android:label=\"@string/app_name\""
+  }, {
+    "sha" : "85cfc0f1af627b2ccd9c56c777ec1733d3c7adbc",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/Com1314080901129Activity.java",
+    "status" : "modified",
+    "additions" : 13,
+    "deletions" : 2,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4be4b4cd369b291b800cfbdefbd8a99363f65350/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/Com1314080901129Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4be4b4cd369b291b800cfbdefbd8a99363f65350/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/Com1314080901129Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/Com1314080901129Activity.java?ref=4be4b4cd369b291b800cfbdefbd8a99363f65350",
+    "patch" : "@@ -1,8 +1,9 @@\n-package hzu.dadishu;\n+package edu.hzuapps.androidworks.homeworks.com1314080901129;\n \n import java.util.Random;\n \n import android.app.Activity;\n+import android.content.Intent;\n import android.os.Bundle;\n import android.os.Handler;\n import android.os.Message;\n@@ -14,6 +15,13 @@\n \n \n public class Com1314080901129Activity extends Activity {\n+    private Intent intent = new Intent(\"com.angel.Android.MUSIC\");\n+    protected void onDestroy() {\n+// TODO Auto-generated method stub\n+        super.onDestroy();\n+        stopService(intent);\n+        System.exit(0);\n+    }\n     private int i = 0; // 记录其打到了几只地鼠\n     private ImageView mouse; // 声明一个ImageView对象\n     private Handler handler; // 声明一个Handler对象\n@@ -24,7 +32,8 @@\n     @Override\n     public void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_com1314080901129);\n+        startService(intent);\n+        setContentView(R.layout.content_com1314080901129);\n         mouse = (ImageView) findViewById(R.id.imageView1); // 获取ImageView对象\n         mouse.setOnTouchListener(new OnTouchListener() {\n \n@@ -78,4 +87,6 @@ public void run() {\n         t.start(); // 开启线程\n \n     }\n+\n+\n }"
+  }, {
+    "sha" : "b5c01a6b63682b358932885649f9aef92ec9c544",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/MusicServer.java",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4be4b4cd369b291b800cfbdefbd8a99363f65350/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/MusicServer.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4be4b4cd369b291b800cfbdefbd8a99363f65350/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/MusicServer.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901129/MusicServer.java?ref=4be4b4cd369b291b800cfbdefbd8a99363f65350",
+    "patch" : "@@ -0,0 +1,31 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901129;\n+\n+        import android.app.Service;\n+        import android.content.Intent;\n+        import android.media.MediaPlayer;\n+        import android.os.IBinder;\n+\n+public class MusicServer extends Service {\n+\n+    private MediaPlayer mediaPlayer;\n+\n+    @Override\n+    public IBinder onBind(Intent intent) {\n+// TODO Auto-generated method stub\n+        return null;\n+    }\n+\n+    @Override\n+    public void onStart(Intent intent, int startId) {\n+        super.onStart(intent, startId);\n+\n+        if (mediaPlayer == null) {\n+\n+// R.raw.mmp是资源文件，MP3格式的\n+            mediaPlayer = MediaPlayer.create(this, R.raw.back);\n+            mediaPlayer.setLooping(true);\n+            mediaPlayer.start();\n+\n+        }\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "3a7921e1315beb06b810e19709149af17a8876d3",
+    "filename" : "app/src/main/res/raw/back.mp3",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4be4b4cd369b291b800cfbdefbd8a99363f65350/app/src/main/res/raw/back.mp3",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4be4b4cd369b291b800cfbdefbd8a99363f65350/app/src/main/res/raw/back.mp3",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/raw/back.mp3?ref=4be4b4cd369b291b800cfbdefbd8a99363f65350"
+  } ],
+  "sha" : "4be4b4cd369b291b800cfbdefbd8a99363f65350",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4be4b4cd369b291b800cfbdefbd8a99363f65350",
+  "parents" : [ {
+    "sha" : "1b9aa32d3dd4c12008d21eb1fe7bd9d15ff264d2",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1b9aa32d3dd4c12008d21eb1fe7bd9d15ff264d2",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1b9aa32d3dd4c12008d21eb1fe7bd9d15ff264d2"
+  }, {
+    "sha" : "1ec1c59a82c0699701884bc4fb62602c681e23a3",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1ec1c59a82c0699701884bc4fb62602c681e23a3",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1ec1c59a82c0699701884bc4fb62602c681e23a3"
+  } ]
+}

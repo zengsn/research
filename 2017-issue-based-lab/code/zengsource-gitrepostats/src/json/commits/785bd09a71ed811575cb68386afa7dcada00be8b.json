@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "YLiuLiu",
+    "id" : 14875394,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14875394?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/YLiuLiu",
+    "html_url" : "https://github.com/YLiuLiu",
+    "followers_url" : "https://api.github.com/users/YLiuLiu/followers",
+    "following_url" : "https://api.github.com/users/YLiuLiu/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/YLiuLiu/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/YLiuLiu/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/YLiuLiu/subscriptions",
+    "organizations_url" : "https://api.github.com/users/YLiuLiu/orgs",
+    "repos_url" : "https://api.github.com/users/YLiuLiu/repos",
+    "events_url" : "https://api.github.com/users/YLiuLiu/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/YLiuLiu/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 49,
+    "additions" : 38,
+    "deletions" : 11
+  },
+  "author" : {
+    "login" : "YLiuLiu",
+    "id" : 14875394,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14875394?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/YLiuLiu",
+    "html_url" : "https://github.com/YLiuLiu",
+    "followers_url" : "https://api.github.com/users/YLiuLiu/followers",
+    "following_url" : "https://api.github.com/users/YLiuLiu/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/YLiuLiu/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/YLiuLiu/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/YLiuLiu/subscriptions",
+    "organizations_url" : "https://api.github.com/users/YLiuLiu/orgs",
+    "repos_url" : "https://api.github.com/users/YLiuLiu/repos",
+    "events_url" : "https://api.github.com/users/YLiuLiu/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/YLiuLiu/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/785bd09a71ed811575cb68386afa7dcada00be8b",
+  "commit" : {
+    "author" : {
+      "name" : "YLiuLiu",
+      "email" : "851942035@qq.com",
+      "date" : "2016-04-26T16:01:58Z"
+    },
+    "committer" : {
+      "name" : "YLiuLiu",
+      "email" : "851942035@qq.com",
+      "date" : "2016-04-26T16:01:58Z"
+    },
+    "message" : "#90 #76 lab4",
+    "tree" : {
+      "sha" : "d90cfee4f7a82b8b735ec469619165816159ccb2",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/d90cfee4f7a82b8b735ec469619165816159ccb2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/785bd09a71ed811575cb68386afa7dcada00be8b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/785bd09a71ed811575cb68386afa7dcada00be8b/comments",
+  "files" : [ {
+    "sha" : "f13b354fd0aed1217996135874f4b3e6fd0c988f",
+    "filename" : "app/src/main/res/layout/activity_com1314080901239.xml",
+    "status" : "modified",
+    "additions" : 38,
+    "deletions" : 11,
+    "changes" : 49,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/785bd09a71ed811575cb68386afa7dcada00be8b/app/src/main/res/layout/activity_com1314080901239.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/785bd09a71ed811575cb68386afa7dcada00be8b/app/src/main/res/layout/activity_com1314080901239.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901239.xml?ref=785bd09a71ed811575cb68386afa7dcada00be8b",
+    "patch" : "@@ -1,17 +1,44 @@\n-<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n     android:layout_height=\"match_parent\"\n-    \n-    tools:context=\".Com1314080901239Activity\" >\n+    tools:context=\".Com1314080901239Activity\" \n+    android:orientation=\"vertical\"\n+    >\n \n-    <ImageView\n-        android:id=\"@+id/iv\"\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\"\n-        android:layout_centerInParent=\"true\"\n-        android:src=\"@drawable/a\" />\n+  <ImageView\n+      android:layout_width=\"wrap_content\"\n+      android:layout_height=\"200dp\"\n+      android:src=\"@drawable/a\"\n+      android:layout_gravity=\"center\"/>\n \n-   \n+  <LinearLayout\n+      android:layout_width=\"wrap_content\"\n+      android:layout_height=\"wrap_content\"\n+      android:orientation=\"horizontal\"\n+      android:layout_gravity=\"center\"\n+      tools:context=\".Com1314080901239Activity\" >\n \n-</RelativeLayout>\n\\ No newline at end of file\n+      <Button\n+          android:layout_width=\"wrap_content\"\n+          android:layout_height=\"wrap_content\"\n+          android:text=\"选图\" \n+          />\n+\n+      <Button\n+          android:layout_width=\"wrap_content\"\n+          android:layout_height=\"wrap_content\"\n+          android:text=\"拍照\" />\n+\n+      <Button\n+          android:layout_width=\"wrap_content\"\n+          android:layout_height=\"wrap_content\"\n+          android:text=\"截图\" />\n+\n+      <Button\n+          android:layout_width=\"wrap_content\"\n+          android:layout_height=\"wrap_content\"\n+          android:text=\"保存\" />\n+  </LinearLayout>\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "785bd09a71ed811575cb68386afa7dcada00be8b",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/785bd09a71ed811575cb68386afa7dcada00be8b",
+  "parents" : [ {
+    "sha" : "b85feefa65e8326947b6a18f7470baadbe5518c2",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/b85feefa65e8326947b6a18f7470baadbe5518c2",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/b85feefa65e8326947b6a18f7470baadbe5518c2"
+  } ]
+}

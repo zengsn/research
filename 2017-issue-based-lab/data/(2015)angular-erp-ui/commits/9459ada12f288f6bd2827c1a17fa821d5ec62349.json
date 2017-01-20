@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "yummer",
+    "id" : 15070755,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15070755?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yummer",
+    "html_url" : "https://github.com/yummer",
+    "followers_url" : "https://api.github.com/users/yummer/followers",
+    "following_url" : "https://api.github.com/users/yummer/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yummer/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yummer/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yummer/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yummer/orgs",
+    "repos_url" : "https://api.github.com/users/yummer/repos",
+    "events_url" : "https://api.github.com/users/yummer/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yummer/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 14,
+    "additions" : 7,
+    "deletions" : 7
+  },
+  "author" : {
+    "login" : "yummer",
+    "id" : 15070755,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15070755?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yummer",
+    "html_url" : "https://github.com/yummer",
+    "followers_url" : "https://api.github.com/users/yummer/followers",
+    "following_url" : "https://api.github.com/users/yummer/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yummer/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yummer/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yummer/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yummer/orgs",
+    "repos_url" : "https://api.github.com/users/yummer/repos",
+    "events_url" : "https://api.github.com/users/yummer/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yummer/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9459ada12f288f6bd2827c1a17fa821d5ec62349",
+  "commit" : {
+    "author" : {
+      "name" : "yummer",
+      "email" : "314621716@qq.com",
+      "date" : "2015-11-24T03:01:23Z"
+    },
+    "committer" : {
+      "name" : "yummer",
+      "email" : "314621716@qq.com",
+      "date" : "2015-11-24T03:01:23Z"
+    },
+    "message" : "Update myAppModule.js",
+    "tree" : {
+      "sha" : "2342b1789118784ae26999f11e91fe30889d1724",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/2342b1789118784ae26999f11e91fe30889d1724"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/9459ada12f288f6bd2827c1a17fa821d5ec62349",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9459ada12f288f6bd2827c1a17fa821d5ec62349/comments",
+  "files" : [ {
+    "sha" : "35dd1cc2f8eb3263314ba61161be50bcc2b40a76",
+    "filename" : "works/1314080901223/js/myAppModule.js",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 7,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9459ada12f288f6bd2827c1a17fa821d5ec62349/works/1314080901223/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9459ada12f288f6bd2827c1a17fa821d5ec62349/works/1314080901223/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901223/js/myAppModule.js?ref=9459ada12f288f6bd2827c1a17fa821d5ec62349",
+    "patch" : "@@ -5,15 +5,15 @@ var myAppModule = angular.module('myAppModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-myAppModule.controller('someData', function ($scope) {\n+myAppModule.controller('documentsDetail', function ($scope) {\n        // controller code would go here\n-       var someData={\n-              fydID:001,\n-              Abstract:'ssadad',\n-              rmoney:10000,\n-              remark:'111111'\n+           var documentsDetail = {\n+            feiyongdanbianhao: '001',\n+            zhaiyao: '费用单明细',\n+            fukuanjine: 10000,\n+            beizhu: '交易完成'\n        };\n-       $scope.data=someData;\n+       $scope.data = documentsDetail;\n     }\n );\n "
+  } ],
+  "sha" : "9459ada12f288f6bd2827c1a17fa821d5ec62349",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9459ada12f288f6bd2827c1a17fa821d5ec62349",
+  "parents" : [ {
+    "sha" : "cd50d8035de061bb3e1d3709e84b86de1d47ec22",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/cd50d8035de061bb3e1d3709e84b86de1d47ec22",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/cd50d8035de061bb3e1d3709e84b86de1d47ec22"
+  } ]
+}

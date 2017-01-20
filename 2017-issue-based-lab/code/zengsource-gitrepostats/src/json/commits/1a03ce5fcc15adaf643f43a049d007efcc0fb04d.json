@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "liuyuquan123",
+    "id" : 18431711,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18431711?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liuyuquan123",
+    "html_url" : "https://github.com/liuyuquan123",
+    "followers_url" : "https://api.github.com/users/liuyuquan123/followers",
+    "following_url" : "https://api.github.com/users/liuyuquan123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liuyuquan123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liuyuquan123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liuyuquan123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liuyuquan123/orgs",
+    "repos_url" : "https://api.github.com/users/liuyuquan123/repos",
+    "events_url" : "https://api.github.com/users/liuyuquan123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liuyuquan123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 189,
+    "additions" : 189,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "liuyuquan123",
+    "id" : 18431711,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18431711?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liuyuquan123",
+    "html_url" : "https://github.com/liuyuquan123",
+    "followers_url" : "https://api.github.com/users/liuyuquan123/followers",
+    "following_url" : "https://api.github.com/users/liuyuquan123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liuyuquan123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liuyuquan123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liuyuquan123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liuyuquan123/orgs",
+    "repos_url" : "https://api.github.com/users/liuyuquan123/repos",
+    "events_url" : "https://api.github.com/users/liuyuquan123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liuyuquan123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/1a03ce5fcc15adaf643f43a049d007efcc0fb04d",
+  "commit" : {
+    "author" : {
+      "name" : "liuyuquan123",
+      "email" : "540761047@qq.com",
+      "date" : "2016-04-27T16:39:43Z"
+    },
+    "committer" : {
+      "name" : "liuyuquan123",
+      "email" : "540761047@qq.com",
+      "date" : "2016-04-27T16:39:43Z"
+    },
+    "message" : "#88 #131 实验2",
+    "tree" : {
+      "sha" : "081c0c4f15a36370288893b7af357fb96b4c571f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/081c0c4f15a36370288893b7af357fb96b4c571f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/1a03ce5fcc15adaf643f43a049d007efcc0fb04d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1a03ce5fcc15adaf643f43a049d007efcc0fb04d/comments",
+  "files" : [ {
+    "sha" : "5310044854799351a6320f438be802112c2623df",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/Net1314080903233PinBall.java",
+    "status" : "added",
+    "additions" : 189,
+    "deletions" : 0,
+    "changes" : 189,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1a03ce5fcc15adaf643f43a049d007efcc0fb04d/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/Net1314080903233PinBall.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1a03ce5fcc15adaf643f43a049d007efcc0fb04d/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/Net1314080903233PinBall.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/Net1314080903233PinBall.java?ref=1a03ce5fcc15adaf643f43a049d007efcc0fb04d",
+    "patch" : "@@ -0,0 +1,189 @@\n+package org.crazyit.image;\n+\n+import java.util.Random;\n+import java.util.Timer;\n+import java.util.TimerTask;\n+\n+import android.app.Activity;\n+import android.content.Context;\n+import android.graphics.Canvas;\n+import android.graphics.Color;\n+import android.graphics.Paint;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.util.DisplayMetrics;\n+import android.view.Display;\n+import android.view.KeyEvent;\n+import android.view.View;\n+import android.view.View.OnKeyListener;\n+import android.view.Window;\n+import android.view.WindowManager;\n+\n+/**\n+ * Description:\n+ * <br/>site: <a href=\"http://www.crazyit.org\">crazyit.org</a>\n+ * <br/>Copyright (C), 2001-2014, Yeeku.H.Lee\n+ * <br/>This program is protected by copyright laws.\n+ * <br/>Program Name:\n+ * <br/>Date:\n+ * @author  Yeeku.H.Lee kongyeeku@163.com\n+ * @version  1.0\n+ */\n+public class Net1314080903233PinBall extends Activity\n+{\n+\t// ����Ŀ��\n+\tprivate int tableWidth;\n+\t// ����ĸ߶�\n+\tprivate int tableHeight;\n+\t// ���ĵĴ�ֱλ��\n+\tprivate int racketY;\n+\t// ���涨�����ĵĸ߶ȺͿ��\n+\tprivate final int RACKET_HEIGHT = 20;\n+\tprivate final int RACKET_WIDTH = 70;\n+\t// С��Ĵ�С\n+\tprivate final int BALL_SIZE = 12;\n+\t// С������������ٶ�\n+\tprivate int ySpeed = 10;\n+\tRandom rand = new Random();\n+\t// ����һ��-0.5~0.5�ı��ʣ����ڿ���С������з���\n+\tprivate double xyRate = rand.nextDouble() - 0.5;\n+\t// С�����������ٶ�\n+\tprivate int xSpeed = (int) (ySpeed * xyRate * 2);\n+\t// ballX��ballY���С������\n+\tprivate int ballX = rand.nextInt(200) + 20;\n+\tprivate int ballY = rand.nextInt(10) + 20;\n+\t// racketX������ĵ�ˮƽλ��\n+\tprivate int racketX = rand.nextInt(200);\n+\t// ��Ϸ�Ƿ��������\n+\tprivate boolean isLose = false;\n+\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState)\n+\t{\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\t// ȥ��ڱ���\n+\t\trequestWindowFeature(Window.FEATURE_NO_TITLE);\n+\t\t// ȫ����ʾ\n+\t\tgetWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,\n+\t\t\tWindowManager.LayoutParams.FLAG_FULLSCREEN);\n+\t\t// ����GameView���\n+\t\tfinal GameView gameView = new GameView(this);\n+\t\tsetContentView(gameView);\n+\t\t// ��ȡ���ڹ�����\n+\t\tWindowManager windowManager = getWindowManager();\n+\t\tDisplay display = windowManager.getDefaultDisplay();\n+\t\tDisplayMetrics metrics = new DisplayMetrics();\n+\t\tdisplay.getMetrics(metrics);\n+\t\t// �����Ļ��͸�\n+\t\ttableWidth = metrics.widthPixels;\n+\t\ttableHeight = metrics.heightPixels;\n+\t\tracketY = tableHeight - 80;\n+\t\tfinal Handler handler = new Handler()\n+\t\t{\n+\t\t\tpublic void handleMessage(Message msg)\n+\t\t\t{\n+\t\t\t\tif (msg.what == 0x123)\n+\t\t\t\t{\n+\t\t\t\t\tgameView.invalidate();\n+\t\t\t\t}\n+\t\t\t}\n+\t\t};\n+\n+\t\tgameView.setOnKeyListener(new OnKeyListener() // ��\n+\t\t{\n+\t\t\t@Override\n+\t\t\tpublic boolean onKey(View source, int keyCode, KeyEvent event)\n+\t\t\t{\n+\t\t\t\t// ��ȡ���ĸ����¼�\n+\t\t\t\tswitch (event.getKeyCode())\n+\t\t\t\t{\n+\t\t\t\t\t// ���Ƶ�������\n+\t\t\t\t\tcase KeyEvent.KEYCODE_A:\n+\t\t\t\t\t\tif (racketX > 0) racketX -= 10;\n+\t\t\t\t\t\tbreak;\n+\t\t\t\t\t// ���Ƶ�������\n+\t\t\t\t\tcase KeyEvent.KEYCODE_D:\n+\t\t\t\t\t\tif (racketX < tableWidth - RACKET_WIDTH) racketX += 10;\n+\t\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t\t// ֪ͨgameView����ػ�\n+\t\t\t\tgameView.invalidate();\n+\t\t\t\treturn true;\n+\t\t\t}\n+\t\t});\n+\t\tfinal Timer timer = new Timer();\n+\t\ttimer.schedule(new TimerTask() // ��\n+\t\t\t{\n+\n+\t\t\t\t@Override\n+\t\t\t\tpublic void run()\n+\t\t\t\t{\n+\t\t\t\t\t// ���С������߱߿�\n+\t\t\t\t\tif (ballX <= 0 || ballX >= tableWidth - BALL_SIZE)\n+\t\t\t\t\t{\n+\t\t\t\t\t\txSpeed = -xSpeed;\n+\t\t\t\t\t}\n+\t\t\t\t\t// ���С��߶ȳ���������λ�ã��Һ��������ķ�Χ֮�ڣ���Ϸ����\n+\t\t\t\t\tif (ballY >= racketY - BALL_SIZE\n+\t\t\t\t\t\t\t&& (ballX < racketX || ballX > racketX\n+\t\t\t\t\t\t\t\t\t+ RACKET_WIDTH))\n+\t\t\t\t\t{\n+\t\t\t\t\t\ttimer.cancel();\n+\t\t\t\t\t\t// ������Ϸ�Ƿ��������Ϊtrue��\n+\t\t\t\t\t\tisLose = true;\n+\t\t\t\t\t}\n+\t\t\t\t\t// ���С��λ������֮�ڣ��ҵ�������λ�ã�С�򷴵�\n+\t\t\t\t\telse if (ballY <= 0\n+\t\t\t\t\t\t|| (ballY >= racketY - BALL_SIZE\n+\t\t\t\t\t\t\t&& ballX > racketX && ballX <= racketX\n+\t\t\t\t\t\t\t+ RACKET_WIDTH))\n+\t\t\t\t\t{\n+\t\t\t\t\t\tySpeed = -ySpeed;\n+\t\t\t\t\t}\n+\t\t\t\t\t// С��������\n+\t\t\t\t\tballY += ySpeed;\n+\t\t\t\t\tballX += xSpeed;\n+\t\t\t\t\t// ������Ϣ��֪ͨϵͳ�ػ����\n+\t\t\t\t\thandler.sendEmptyMessage(0x123);\n+\t\t\t\t}\n+\t\t\t}, 0, 100);\n+\t}\n+\n+\tclass GameView extends View\n+\t{\n+\t\tPaint paint = new Paint();\n+\n+\t\tpublic GameView(Context context)\n+\t\t{\n+\t\t\tsuper(context);\n+\t\t\tsetFocusable(true);\n+\t\t}\n+\n+\t\t// ��дView��onDraw������ʵ�ֻ滭\n+\t\tpublic void onDraw(Canvas canvas)\n+\t\t{\n+\t\t\tpaint.setStyle(Paint.Style.FILL);\n+\t\t\t// ����ȥ���\n+\t\t\tpaint.setAntiAlias(true);\n+\t\t\t// �����Ϸ�Ѿ�����\n+\t\t\tif (isLose)\n+\t\t\t{\n+\t\t\t\tpaint.setColor(Color.RED);\n+\t\t\t\tpaint.setTextSize(40);\n+\t\t\t\tcanvas.drawText(\"��Ϸ�ѽ���\", 50, 200, paint);\n+\t\t\t}\n+\t\t\t// �����Ϸ��δ����\n+\t\t\telse\n+\t\t\t{\n+\t\t\t\t// ������ɫ��������С��\n+\t\t\t\tpaint.setColor(Color.rgb(240, 240, 80));\n+\t\t\t\tcanvas.drawCircle(ballX, ballY, BALL_SIZE, paint);\n+\t\t\t\t// ������ɫ������������\n+\t\t\t\tpaint.setColor(Color.rgb(80, 80, 200));\n+\t\t\t\tcanvas.drawRect(racketX, racketY, racketX + RACKET_WIDTH,\n+\t\t\t\t\t\tracketY + RACKET_HEIGHT, paint);\n+\t\t\t}\n+\t\t}\n+\t}\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "1a03ce5fcc15adaf643f43a049d007efcc0fb04d",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1a03ce5fcc15adaf643f43a049d007efcc0fb04d",
+  "parents" : [ {
+    "sha" : "fdd74694c5b9cbaa88d493d66954211837abc54c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fdd74694c5b9cbaa88d493d66954211837abc54c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/fdd74694c5b9cbaa88d493d66954211837abc54c"
+  } ]
+}

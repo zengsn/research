@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 140,
+    "additions" : 0,
+    "deletions" : 140
+  },
+  "author" : {
+    "login" : "iDream666",
+    "id" : 18032727,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18032727?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/iDream666",
+    "html_url" : "https://github.com/iDream666",
+    "followers_url" : "https://api.github.com/users/iDream666/followers",
+    "following_url" : "https://api.github.com/users/iDream666/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/iDream666/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/iDream666/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/iDream666/subscriptions",
+    "organizations_url" : "https://api.github.com/users/iDream666/orgs",
+    "repos_url" : "https://api.github.com/users/iDream666/repos",
+    "events_url" : "https://api.github.com/users/iDream666/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/iDream666/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/d24d143b37d8ed918abdf429e39818511eac21e5",
+  "commit" : {
+    "author" : {
+      "name" : "iDream666",
+      "email" : "1125458694@qq.com",
+      "date" : "2016-12-06T07:10:58Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-12-06T07:10:58Z"
+    },
+    "message" : "#7 提交实验\n\n使用mybatis框架完成的JDBC操作",
+    "tree" : {
+      "sha" : "4f553ffd0081e3e727f72016a3f587908d24e053",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/4f553ffd0081e3e727f72016a3f587908d24e053"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/d24d143b37d8ed918abdf429e39818511eac21e5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/d24d143b37d8ed918abdf429e39818511eac21e5/comments",
+  "files" : [ {
+    "sha" : "28144e3b63082916ec9fed10b0b300ce4f18a350",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902207/B_organization-mapper.xml",
+    "status" : "modified",
+    "additions" : 0,
+    "deletions" : 5,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d24d143b37d8ed918abdf429e39818511eac21e5/jweb/src/edu/hzu/javaweb/labs/se1414080902207/B_organization-mapper.xml",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d24d143b37d8ed918abdf429e39818511eac21e5/jweb/src/edu/hzu/javaweb/labs/se1414080902207/B_organization-mapper.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902207/B_organization-mapper.xml?ref=d24d143b37d8ed918abdf429e39818511eac21e5",
+    "patch" : "@@ -70,11 +70,6 @@\n         </trim>\r\n     </select>\r\n \r\n-    <select id=\"selectChild\" parameterType=\"java.util.HashMap\" resultType=\"OrganizationPojo\">\r\n-        select id,code,name,description,pcode,sort from organization\r\n-        where pcode=#{code} AND prjCode=#{prjCode} AND disable=\"0\"\r\n-    </select>\r\n-\r\n     <select id=\"selectAllCode\" parameterType=\"java.util.HashMap\" resultType=\"java.lang.String\">\r\n         select code from organization where disable=\"0\"\r\n     </select>\r"
+  }, {
+    "sha" : "ba02d3a4967a64f83375a16172ca38b0017ba784",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902207/OrganizationService.java",
+    "status" : "modified",
+    "additions" : 0,
+    "deletions" : 135,
+    "changes" : 135,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d24d143b37d8ed918abdf429e39818511eac21e5/jweb/src/edu/hzu/javaweb/labs/se1414080902207/OrganizationService.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d24d143b37d8ed918abdf429e39818511eac21e5/jweb/src/edu/hzu/javaweb/labs/se1414080902207/OrganizationService.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902207/OrganizationService.java?ref=d24d143b37d8ed918abdf429e39818511eac21e5",
+    "patch" : "@@ -49,36 +49,6 @@\n         return reSelectList;\r\n     }\r\n \r\n-\r\n-    /**\r\n-     * 依据组织码从数据库取得组织数据\r\n-     *\r\n-     * @param code\r\n-     * @param prjCode\r\n-     * @return String permissionStr\r\n-     * @throws Exception\r\n-     */\r\n-    public OrganizationPojo selectByCode(String code, String prjCode) throws Exception {\r\n-        SqlSession ss = null;\r\n-        OrganizationPojo reSelectList = null;\r\n-        try {\r\n-            ss = getSqlSession();\r\n-            Map p = new HashMap();\r\n-            p.put(\"code\", code);\r\n-            p.put(\"prjCode\", prjCode);\r\n-            p.put(\"disable\", \"0\");\r\n-            reSelectList = ss.selectOne(\"Organization.selectByCode\", p);\r\n-        } catch (Exception x) {\r\n-            logger.error(\"Class OrganizationService,Method selectByCode,sqlSession Execution exception\", x);\r\n-            throw x;\r\n-        } finally {\r\n-            if (ss != null) {\r\n-                ss.close();\r\n-            }\r\n-        }\r\n-        return reSelectList;\r\n-    }\r\n-\r\n     /**\r\n      * 根据主键 id 查询数据\r\n      *\r\n@@ -105,111 +75,6 @@ public OrganizationPojo selectById(String id) throws Exception {\n         return rePojo;\r\n     }\r\n \r\n-    /**\r\n-     * id的集合查询\r\n-     *\r\n-     * @param ids\r\n-     * @return\r\n-     * @throws Exception\r\n-     */\r\n-    public List<OrganizationPojo> selectByIds(List ids) throws Exception {\r\n-        SqlSession ss = null;\r\n-        List<OrganizationPojo> rePojo = null;\r\n-        try {\r\n-            ss = getSqlSession();\r\n-            rePojo = ss.selectList(\"Organization.selectByIds\", ids);\r\n-        } catch (Exception x) {\r\n-            logger.error(\"Class OrganizationService,Method selectByIds,sqlSession Execution exception\", x);\r\n-            throw x;\r\n-        } finally {\r\n-            if (ss != null) {\r\n-                ss.close();\r\n-            }\r\n-        }\r\n-        return rePojo;\r\n-    }\r\n-\r\n-    /**\r\n-     * 根据组织码集合\r\n-     * 获取组织数据\r\n-     *\r\n-     * @param codeList\r\n-     * @param prjCode\r\n-     * @return\r\n-     * @throws Exception\r\n-     */\r\n-    public List<OrganizationPojo> selectByCodes(List<String> codeList, String prjCode) throws Exception {\r\n-        SqlSession ss = null;\r\n-        List<OrganizationPojo> rePojo = null;\r\n-        try {\r\n-            ss = getSqlSession();\r\n-            Map<String, Object> map = new HashMap<String, Object>();\r\n-            map.put(\"perCodes\", codeList);\r\n-            map.put(\"prjCode\", prjCode);\r\n-            rePojo = ss.selectList(\"Organization.selectByCodes\", map);\r\n-        } catch (Exception x) {\r\n-            logger.error(\"Class OrganizationService,Method selectByCodes,sqlSession Execution exception\", x);\r\n-            throw x;\r\n-        } finally {\r\n-            if (ss != null) {\r\n-                ss.close();\r\n-            }\r\n-        }\r\n-        return rePojo;\r\n-    }\r\n-\r\n-    /**\r\n-     * 组织信息是否存在\r\n-     *\r\n-     * @param code\r\n-     * @return true:组织已经存在\r\n-     * @throws Exception\r\n-     */\r\n-    public Boolean exist(String code) throws Exception {\r\n-        SqlSession ss = null;\r\n-        String reString = null;\r\n-        try {\r\n-            ss = getSqlSession();\r\n-            Map p = new HashMap();\r\n-            p.put(\"code\", code);\r\n-            reString = ss.selectOne(\"Organization.exist\", p);\r\n-        } catch (Exception x) {\r\n-            logger.error(\"Class OrganizationService,Method exist,sqlSession Execution exception\", x);\r\n-            throw x;\r\n-        } finally {\r\n-            if (ss != null) {\r\n-                ss.close();\r\n-            }\r\n-        }\r\n-        return \"1\".equals(reString) ? true : false;\r\n-    }\r\n-\r\n-    /**\r\n-     * 根据prjCode查询所属全部组织码\r\n-     *\r\n-     * @param prjCode\r\n-     * @return\r\n-     * @throws Exception\r\n-     */\r\n-    public List<String> selectAllCode(String prjCode) throws Exception {\r\n-        SqlSession ss = null;\r\n-        List<String> codeList = null;\r\n-        try {\r\n-            ss = getSqlSession();\r\n-            Map p = new HashMap();\r\n-            p.put(\"prjCode\", prjCode);\r\n-            p.put(\"disable\", \"0\");\r\n-            codeList = ss.selectList(\"Organization.selectAllCode\", p);\r\n-        } catch (Exception x) {\r\n-            logger.error(\"Class OrganizationService,Method selectAllCode,sqlSession Execution exception\", x);\r\n-            throw x;\r\n-        } finally {\r\n-            if (ss != null) {\r\n-                ss.close();\r\n-            }\r\n-        }\r\n-        return codeList;\r\n-    }\r\n \r\n     /**\r\n      * 添加数据到数据库\r"
+  } ],
+  "sha" : "d24d143b37d8ed918abdf429e39818511eac21e5",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d24d143b37d8ed918abdf429e39818511eac21e5",
+  "parents" : [ {
+    "sha" : "cd5b2321d7f7859f498fa155a6f65229693054af",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/cd5b2321d7f7859f498fa155a6f65229693054af",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/cd5b2321d7f7859f498fa155a6f65229693054af"
+  } ]
+}

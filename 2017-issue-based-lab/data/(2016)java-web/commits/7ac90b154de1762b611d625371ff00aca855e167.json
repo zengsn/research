@@ -1,0 +1,125 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 275,
+    "additions" : 194,
+    "deletions" : 81
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/7ac90b154de1762b611d625371ff00aca855e167",
+  "commit" : {
+    "author" : {
+      "name" : "LincoXiaoQ",
+      "email" : "LincoXiaoQ",
+      "date" : "2016-11-24T03:26:13Z"
+    },
+    "committer" : {
+      "name" : "LincoXiaoQ",
+      "email" : "LincoXiaoQ",
+      "date" : "2016-11-24T03:26:13Z"
+    },
+    "message" : "#6 提交实验代码 #62",
+    "tree" : {
+      "sha" : "61ea16a1959c80c5c3ca7e6b9186d90dc095fa71",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/61ea16a1959c80c5c3ca7e6b9186d90dc095fa71"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/7ac90b154de1762b611d625371ff00aca855e167",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/7ac90b154de1762b611d625371ff00aca855e167/comments",
+  "files" : [ {
+    "sha" : "bdc3cf8a08c2c80a030427ac0ad98d84105e9295",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/EncodingFilter.java",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7ac90b154de1762b611d625371ff00aca855e167/jweb/src/edu/hzu/javaweb/labs/se1414080902212/EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7ac90b154de1762b611d625371ff00aca855e167/jweb/src/edu/hzu/javaweb/labs/se1414080902212/EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/EncodingFilter.java?ref=7ac90b154de1762b611d625371ff00aca855e167",
+    "previous_filename" : "jweb/src/hzu/javaweb/labs/se1414080902212/EncodingFilter.java"
+  }, {
+    "sha" : "594e32c636c67de63a5b7975d43d9075687a3fe8",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/LoginFilter.java",
+    "status" : "renamed",
+    "additions" : 4,
+    "deletions" : 2,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7ac90b154de1762b611d625371ff00aca855e167/jweb/src/edu/hzu/javaweb/labs/se1414080902212/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7ac90b154de1762b611d625371ff00aca855e167/jweb/src/edu/hzu/javaweb/labs/se1414080902212/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/LoginFilter.java?ref=7ac90b154de1762b611d625371ff00aca855e167",
+    "patch" : "@@ -10,7 +10,6 @@\n import javax.servlet.annotation.WebFilter;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n-import javax.servlet.http.HttpSession;\n \n /**\n  * Servlet Filter implementation class LoginFilter\n@@ -28,17 +27,19 @@ public LoginFilter() {\n \t/**\n \t * @see Filter#destroy()\n \t */\n+\t@Override\n \tpublic void destroy() {\n \t\t// TODO Auto-generated method stub\n \t}\n \n \t/**\n \t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n \t */\n+\t@Override\n \tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n \t\tHttpServletRequest requ = (HttpServletRequest)request;\n \t\tHttpServletResponse resp = (HttpServletResponse)response;\n-\t\tif(requ.getParameter(\"userName\").equals(\"Linco\")||requ.getParameter(\"password\").equals(\"Lincokey\")){\n+\t\tif(requ!=null&&requ.getParameter(\"userName\")!=null&&requ.getParameter(\"password\")!=null&&requ.getParameter(\"userName\").equals(\"Linco\")&&requ.getParameter(\"password\").equals(\"Lincokey\")){\n \t\t\tchain.doFilter(request, response);\n \t\t} else {\n \t\t\tresp.sendRedirect(\"LincoLogin.html\");\n@@ -49,6 +50,7 @@ public void doFilter(ServletRequest request, ServletResponse response, FilterCha\n \t/**\n \t * @see Filter#init(FilterConfig)\n \t */\n+\t@Override\n \tpublic void init(FilterConfig fConfig) throws ServletException {\n \t\t// TODO Auto-generated method stub\n \t}",
+    "previous_filename" : "jweb/src/hzu/javaweb/labs/se1414080902212/LoginFilter.java"
+  }, {
+    "sha" : "392988f750278cfb1e6ad0d5900391002c958c12",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "status" : "added",
+    "additions" : 120,
+    "deletions" : 0,
+    "changes" : 120,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7ac90b154de1762b611d625371ff00aca855e167/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7ac90b154de1762b611d625371ff00aca855e167/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java?ref=7ac90b154de1762b611d625371ff00aca855e167",
+    "patch" : "@@ -0,0 +1,120 @@\n+package Linco;\n+\n+import java.io.File;\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.List;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import org.apache.commons.fileupload.FileItem;\n+import org.apache.commons.fileupload.disk.DiskFileItemFactory;\n+import org.apache.commons.fileupload.servlet.ServletFileUpload;\n+\n+/**\n+ * Servlet implementation class LincoServlet\n+ */\n+@WebServlet(description = \"Linco's first Servlet\", urlPatterns = { \"Se1414080902212Sevlet\" })\n+public class Se1414080902212Sevlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public Se1414080902212Sevlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\t@Override\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\tresponse.getWriter().append(\"Served at: \").append(request.getContextPath());\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\t@Override\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\t// 上传文件存储目录\n+\t    final String UPLOAD_DIRECTORY = \"upload/\";\n+\t    // 上传配置\n+\t    final int MEMORY_THRESHOLD   = 1024 * 1024 * 3;  // 3MB\n+\t    final int MAX_FILE_SIZE      = 1024 * 1024 * 40; // 40MB\n+\t    final int MAX_REQUEST_SIZE   = 1024 * 1024 * 50; // 50MB\n+\t\t\t// 检测是否为Multipart上传\n+\t\t\tif (!ServletFileUpload.isMultipartContent(request)) {\n+\t\t\t    // 如果不是则停止\n+\t\t\t    PrintWriter writer = response.getWriter();\n+\t\t\t    writer.println(\"Error: 表单必须包含 enctype=multipart/form-data\");\n+\t\t\t    writer.flush();\n+\t\t\t    return;\n+\t\t\t}\n+\t \n+\t        // 配置上传参数\n+\t        DiskFileItemFactory factory = new DiskFileItemFactory();\n+\t        // 设置内存临界值 - 超过后将产生临时文件并存储于临时目录中\n+\t        factory.setSizeThreshold(MEMORY_THRESHOLD);\n+\t        // 设置临时存储目录\n+\t        factory.setRepository(new File(System.getProperty(\"java.io.tmpdir\")));\n+\t \n+\t        ServletFileUpload upload = new ServletFileUpload(factory);\n+\t         \n+\t        // 设置最大文件上传值\n+\t        upload.setFileSizeMax(MAX_FILE_SIZE);\n+\t         \n+\t        // 设置最大请求值 (包含文件和表单数据)\n+\t        upload.setSizeMax(MAX_REQUEST_SIZE);\n+\t \n+\t        // 构造临时路径来存储上传的文件\n+\t        // 这个路径相对当前应用的目录\n+\t        String uploadPath = getServletContext().getRealPath(\"./\") + File.separator + UPLOAD_DIRECTORY;\n+\t       \n+\t         \n+\t        // 如果目录不存在则创建\n+\t        File uploadDir = new File(uploadPath);\n+\t        if (!uploadDir.exists()) {\n+\t            uploadDir.mkdir();\n+\t        }\n+\t \n+\t        try {\n+\t            // 解析请求的内容提取文件数据\n+\t            List<FileItem> formItems = upload.parseRequest(request);\n+\t \n+\t            if (formItems != null && formItems.size() > 0) {\n+\t                // 迭代表单数据\n+\t                for (FileItem item : formItems) {\n+\t                    // 处理不在表单中的字段\n+\t                    if (!item.isFormField()) {\n+\t                        String fileName = new File(new String(item.getName().getBytes(), \"iso8859-1\")).getName();\n+\t                        String filePath = uploadPath + File.separator + fileName;\n+\t                        File storeFile = new File(filePath);\n+\t                        // 在控制台输出文件的上传路径\n+\t                        System.out.println(filePath);\n+\t                        // 保存文件到硬盘\n+\t                        item.write(storeFile);\n+\t                        request.setAttribute(\"message\",\n+\t                            \"文件上传成功!\");\n+\t                    }\n+\t                }\n+\t            }\n+\t        } catch (Exception ex) {\n+\t            request.setAttribute(\"message\",\n+\t                    \"错误信息: \" + ex.getMessage());\n+\t        }\n+\t        // 跳转到 message.jsp\n+\t        getServletContext().getRequestDispatcher(\"/message.jsp\").forward(\n+\t                request, response);\n+\t}\n+\n+}\n+//����λ��Ϊhttp://localhost:8080/Web_Design/LincoServlet  ����Ŀ����/��ע��·����\n\\ No newline at end of file"
+  }, {
+    "sha" : "d03d7b82fb4f97f5a62db805dcb2bd5a0ebcdaea",
+    "filename" : "jweb/src/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 77,
+    "changes" : 77,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/src/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/src/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java?ref=77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+    "patch" : "@@ -1,77 +0,0 @@\n-package _Sevlet_Test;\n-\n-import java.io.FileNotFoundException;\n-import java.io.FileOutputStream;\n-import java.io.IOException;\n-import java.io.OutputStream;\n-import java.io.PrintWriter;\n-\n-import javax.servlet.ServletException;\n-import javax.servlet.annotation.MultipartConfig;\n-import javax.servlet.http.HttpServlet;\n-import javax.servlet.http.HttpServletRequest;\n-import javax.servlet.http.HttpServletResponse;\n-import javax.servlet.http.Part;\n-\n-import org.omg.CORBA.portable.InputStream;\n-\n-@MultipartConfig(location = \"C:/upload/\", maxFileSize = 8388608, fileSizeThreshold = 819200)\n-\n-public class Se1414080902212Sevlet extends HttpServlet {\n-\n-\t\n-\tpublic Se1414080902212Sevlet() {\n-\t\tsuper();\n-\t}\n-\n-\tpublic void destroy() {\n-\t\tsuper.destroy(); \n-\t}\n-\n-\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\n-\t\t\n-\t\tdoPost(request, response);\n-\t}\n-\n-\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\t\tresponse.setCharacterEncoding(\"UTF-8\");\n-\t\trequest.setCharacterEncoding(\"UTF-8\");\n-\t\tresponse.setContentType(\"text/html\");\n-\t\tPrintWriter out = response.getWriter();\n-\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n-\t\tout.println(\"<HTML>\");\n-\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n-\t\tout.println(\"<meta charset=\\\"UTF-8\\\">\");\n-\t\tout.println(\"  <BODY>\");\n-\t\tout.println(\"文件名:\"+request.getParameter(\"file_name\")+\"<br/>\");\n-\t\tout.println(\"文件描述 : \"+request.getParameter(\"file_discribe\")+\"<br/>\");\n-\t\tout.println(\"上传成功\");\n-\t\tout.println(\"  </BODY>\");\n-\t\tout.println(\"</HTML>\");\n-\t\tout.flush();\n-\t\tout.close();\n-\t\tString fileName=request.getParameter(\"file_name\");\n-//\t\tPart part=request.getPart(\"file_Toup\");\n-//\t\twriteTo(fileName,part);\n-\t}\n-\n-\t//存储文件\n-    private void writeTo(String fileName, Part part) throws IOException, FileNotFoundException {\n-        InputStream in = (InputStream) part.getInputStream();\n-        OutputStream out = new FileOutputStream(fileName);\n-        byte[] buffer = new byte[1024];\n-        int length = -1;\n-        while ((length = in.read(buffer)) != -1) {\n-            out.write(buffer, 0, length);\n-        }\n-        in.close();\n-        out.close();\n-    }\n-\tpublic void init() throws ServletException {\n-\t\t\n-\t}\n-\n-}"
+  }, {
+    "sha" : "61de259e954f318a417c0f1e8d362d8e3e7887ed",
+    "filename" : "jweb/web/1414080902212/My_Main.jsp",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 2,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7ac90b154de1762b611d625371ff00aca855e167/jweb/web/1414080902212/My_Main.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7ac90b154de1762b611d625371ff00aca855e167/jweb/web/1414080902212/My_Main.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/My_Main.jsp?ref=7ac90b154de1762b611d625371ff00aca855e167",
+    "patch" : "@@ -1,9 +1,10 @@\n <%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+\n <%\n String path = request.getContextPath();\n String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n %>\n-\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n@@ -20,9 +21,18 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t\t\t<a class=\"title_text\" href=\"\">上传</a>\n \t\t\t<a class=\"title_text\" href=\"\">(敬请期待)</a>\n \t\t</div>\n+\t\t<%String userName=request.getParameter(\"userName\"); %>\n+\t\t<%-- <%=userName %> --%>\n+\t\t<%request.setAttribute(\"userName\", userName); %>\n \t\t<div id=\"head_right\">\n-\t\t\t<img id=\"head_right_img\" src=\"src/head.png\" alt=\"usrename\">\n+\t\t\t<c:if test=\"${userName==null}\">\n+\t\t\t\t<c:out value=\"${'请登录'}\"></c:out>\n+\t\t\t</c:if>\n+\t\t\t<c:if test=\"${userName!=null}\">\n+\t\t\t\t<img id=\"head_right_img\" src=\"src/head.png\" alt=\"usrename\">\n+\t\t\t</c:if>\n \t\t</div>\n+\t\t\n \t</div>\n \t<div id=\"content\">\n \t\t<!-- 如果上传文件,必须使用此句 enctype=\"multipart/form-data\",表示不对文件进行编码"
+  }, {
+    "sha" : "446918166de826a98c6a8673b1767282e7db5880",
+    "filename" : "jweb/web/1414080902212/css/File_upload.css",
+    "status" : "added",
+    "additions" : 58,
+    "deletions" : 0,
+    "changes" : 58,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7ac90b154de1762b611d625371ff00aca855e167/jweb/web/1414080902212/css/File_upload.css",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7ac90b154de1762b611d625371ff00aca855e167/jweb/web/1414080902212/css/File_upload.css",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/css/File_upload.css?ref=7ac90b154de1762b611d625371ff00aca855e167",
+    "patch" : "@@ -0,0 +1,58 @@\n+\n+#head{\n+\theight: 96px;\n+\tbackground: rgb(20,200,120);\n+}\n+#content{\n+\theight: 360px;\n+\tbackground: rgb(226,125,134);\n+\tpadding: 80px 0;\n+}\n+#tail{\n+\theight: 64px;\n+}\n+#head_left{\n+\t/*floatʹ�鼶Ԫ��ͬ��*/\n+\tfloat: left;\n+\t/*�ñ������ȵ�λ*/\n+\twidth: 90%;\n+\tpadding: 60px 0 0 20px;\n+}\n+#head_right_img{\n+\twidth: 64px;\n+\theight: 64px;\n+\tbackground: pink;\n+\tmargin: 16px 0;\n+}\n+.title_text{\n+\tdisplay: block;\n+\tfloat: left;\n+\twidth: 80px;\n+\theight: 36px;\n+\tline-height: 36px;\n+\tfont-family: ΢���ź�;\n+\ttext-decoration:none;\n+\ttext-align: center;\n+\tcolor: white;\n+}\n+a.title_text:hover{\n+\tbackground:rgb(20,160,120);\n+}\n+\n+/*���ݲ���*/\n+#content_center{\n+\theight: 280px;\n+\twidth: 400px;\n+\tbackground: green;\n+\tmargin: 0 auto;\n+\tpadding-top: 80px;\n+\tborder-radius: 10px;\n+\tfont-size: 12px;\n+}\n+#content_center input{\n+\tdisplay: block;\n+\twidth: 75%;\n+\theight: 2em;\n+\tmargin: 8px auto;\n+\tpadding: 16px,5px;\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "0e27b96d810be7b251cf77c7a2be0314cbe6e9aa",
+    "filename" : "jweb/web/1414080902212/src/head.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7ac90b154de1762b611d625371ff00aca855e167/jweb/web/1414080902212/src/head.png",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7ac90b154de1762b611d625371ff00aca855e167/jweb/web/1414080902212/src/head.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/src/head.png?ref=7ac90b154de1762b611d625371ff00aca855e167"
+  }, {
+    "sha" : "8a1c127c03c03b6841af451cf8b7c1c6d2331d01",
+    "filename" : "jweb/web/1414080902212/src/loginBackground.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7ac90b154de1762b611d625371ff00aca855e167/jweb/web/1414080902212/src/loginBackground.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7ac90b154de1762b611d625371ff00aca855e167/jweb/web/1414080902212/src/loginBackground.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/src/loginBackground.jpg?ref=7ac90b154de1762b611d625371ff00aca855e167"
+  } ],
+  "sha" : "7ac90b154de1762b611d625371ff00aca855e167",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7ac90b154de1762b611d625371ff00aca855e167",
+  "parents" : [ {
+    "sha" : "77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/77c4df31a3d56f5292a3a877bf08e1fff4d495e0"
+  } ]
+}

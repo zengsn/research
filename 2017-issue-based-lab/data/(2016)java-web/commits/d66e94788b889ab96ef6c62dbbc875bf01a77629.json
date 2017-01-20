@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 108,
+    "additions" : 0,
+    "deletions" : 108
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/d66e94788b889ab96ef6c62dbbc875bf01a77629",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T00:42:12Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T00:42:12Z"
+    },
+    "message" : "Delete Se1414080902204Servlet.java",
+    "tree" : {
+      "sha" : "7c3085e34aed0fedaa4a6fd856e88772dc38bec1",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/7c3085e34aed0fedaa4a6fd856e88772dc38bec1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/d66e94788b889ab96ef6c62dbbc875bf01a77629",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/d66e94788b889ab96ef6c62dbbc875bf01a77629/comments",
+  "files" : [ {
+    "sha" : "c60924046af7cb76ccb5589c8c9bd9d648fbf69e",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902204/Se1414080902204Servlet.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 108,
+    "changes" : 108,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b8e350aecd00468465a6a589cb340e09c8bd463d/jweb/src/edu/hzu/javaweb/labs/se1414080902204/Se1414080902204Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b8e350aecd00468465a6a589cb340e09c8bd463d/jweb/src/edu/hzu/javaweb/labs/se1414080902204/Se1414080902204Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902204/Se1414080902204Servlet.java?ref=b8e350aecd00468465a6a589cb340e09c8bd463d",
+    "patch" : "@@ -1,108 +0,0 @@\n-package se1414080902204;\n-\n-import java.awt.Window;\n-import java.io.IOException;\n-import java.io.PrintWriter;\n-import java.sql.Connection;\n-import java.sql.DriverManager;\n-import java.sql.PreparedStatement;\n-import java.sql.ResultSet;\n-\n-import javax.naming.spi.DirStateFactory.Result;\n-import javax.security.auth.message.callback.PrivateKeyCallback.Request;\n-import javax.servlet.RequestDispatcher;\n-import javax.servlet.ServletException;\n-import javax.servlet.annotation.WebServlet;\n-import javax.servlet.http.HttpServlet;\n-import javax.servlet.http.HttpServletRequest;\n-import javax.servlet.http.HttpServletResponse;\n-\n-/**\n- * Servlet implementation class Se1414080902204Servlet\n- */\n-@WebServlet(\"/Se1414080902204Servlet\")\n-public class Se1414080902204Servlet extends HttpServlet {\n-\tprivate static final long serialVersionUID = 1L;\n-       \n-    /**\n-     * @see HttpServlet#HttpServlet()\n-     */\n-    public Se1414080902204Servlet() {\n-        super();\n-        // TODO Auto-generated constructor stub\n-    }\n-\n-\t/**\n-\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n-\t */\n-\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\t\t// TODO Auto-generated method stub\n-\t\tresponse.setContentType(\"text/html;charset=utf-8\");\n-\t\tString Name=\"com.mysql.jdbc.Driver\";\n-        String userName=\"root\";\n-        String userPwd=\"1234\";\n-        String dbName=\"shenzhentong_system\";\n-        String url=\"jdbc:mysql://localhost:3306/shenzhentong_system?user=root&password=1234&useUnicode=true&characterEncoding=UTF-8\";\n-\n-      \n-       String xingming= request.getParameter(\"Username\");\n-       String idCard =request.getParameter(\"IdCard\");\n-       String cardNumber =request.getParameter(\"CardNumber\");\n-       String phoneNumber=request.getParameter(\"Pnumber\");\n-       \n-       RequestDispatcher dis=null;\n-       try{\n-    \t   Class.forName(Name);\n-           Connection conn=DriverManager.getConnection(url);\n-    \t   String sql=\"select * from szt_information where(name=? or idcard=? or card=? or phonenumber=?)\";\n-    \t   PreparedStatement pstmt=conn.prepareStatement(sql);\n-    \t   pstmt.setString(1,xingming);\n-    \t   pstmt.setString(2, idCard);\n-    \t   pstmt.setString(3, cardNumber);\n-    \t   pstmt.setString(4, phoneNumber);\n-    \t   ResultSet rs =pstmt.executeQuery();\n-    \t   if (rs.next()){\n-    \t\t   if(rs!=null) rs.close();\n-    \t\t   if(conn!=null) conn.close();\n-    \t\t   dis=request.getRequestDispatcher(\"erro.jsp\");\n-    \t\t   dis.forward(request, response);\n-    \t   }\n-    \t   \n-    \t   else{\n-    \t\t   String sql1=\"Insert into szt_information (name,idcard,card,phonenumber) values(?,?,?,?)\";\n-    \t\t   PreparedStatement pstmt1=conn.prepareStatement(sql1);\n-    \t\t   request.setCharacterEncoding(\"UTF-8\");\n-    \t\t   pstmt1.setString(1, xingming);\n-    \t\t   pstmt1.setString(2, idCard);\n-    \t\t   pstmt1.setString(3, cardNumber);\n-    \t\t   pstmt1.setString(4, phoneNumber);\n-    \t\t   int n=pstmt1.executeUpdate();\n-    \t\t   {  if(n==1){ System.out.println(\"数据插入数据库成功！\");}\n-    \t\t   else {System.out.println(\"数据插入数据库失败！\");}\n-    \t\t   }\n-/*    \t\t   if(rs!=null) rs.close();\n-*/    \t\t   if(pstmt!=null) pstmt.close();\n-    \t\t   if(conn!=null) conn.close();\n-    \t\t   dis=request.getRequestDispatcher(\"success.jsp\");\n-    \t\t   dis.forward(request, response);\n-    \t\t   \n-    \t   }\n-       }\n-       \n-       catch(Exception e){\n-    \t   \n-    \t   e.printStackTrace();\n-       }\n-       \n-       \n-\t}\n-\n-\t/**\n-\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n-\t */\n-\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\t\t// TODO Auto-generated method stub\n-\t\tdoGet(request, response);\n-\t}\n-\n-}"
+  } ],
+  "sha" : "d66e94788b889ab96ef6c62dbbc875bf01a77629",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d66e94788b889ab96ef6c62dbbc875bf01a77629",
+  "parents" : [ {
+    "sha" : "b8e350aecd00468465a6a589cb340e09c8bd463d",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b8e350aecd00468465a6a589cb340e09c8bd463d",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/b8e350aecd00468465a6a589cb340e09c8bd463d"
+  } ]
+}

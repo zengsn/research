@@ -1,0 +1,140 @@
+{
+  "committer" : {
+    "login" : "UncleCoke",
+    "id" : 22068342,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068342?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/UncleCoke",
+    "html_url" : "https://github.com/UncleCoke",
+    "followers_url" : "https://api.github.com/users/UncleCoke/followers",
+    "following_url" : "https://api.github.com/users/UncleCoke/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/UncleCoke/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/UncleCoke/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/UncleCoke/subscriptions",
+    "organizations_url" : "https://api.github.com/users/UncleCoke/orgs",
+    "repos_url" : "https://api.github.com/users/UncleCoke/repos",
+    "events_url" : "https://api.github.com/users/UncleCoke/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/UncleCoke/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 466,
+    "additions" : 466,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "UncleCoke",
+    "id" : 22068342,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068342?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/UncleCoke",
+    "html_url" : "https://github.com/UncleCoke",
+    "followers_url" : "https://api.github.com/users/UncleCoke/followers",
+    "following_url" : "https://api.github.com/users/UncleCoke/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/UncleCoke/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/UncleCoke/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/UncleCoke/subscriptions",
+    "organizations_url" : "https://api.github.com/users/UncleCoke/orgs",
+    "repos_url" : "https://api.github.com/users/UncleCoke/repos",
+    "events_url" : "https://api.github.com/users/UncleCoke/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/UncleCoke/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/97d0ad005ddc82f305867b62bed9b028c0746db9",
+  "commit" : {
+    "author" : {
+      "name" : "UncleCoke",
+      "email" : "424368114@qq.com",
+      "date" : "2016-11-26T05:56:56Z"
+    },
+    "committer" : {
+      "name" : "UncleCoke",
+      "email" : "424368114@qq.com",
+      "date" : "2016-11-26T05:56:56Z"
+    },
+    "message" : "#7 提交实验代码",
+    "tree" : {
+      "sha" : "48a9f89484b913f0a5459dc61ea46c83a9843147",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/48a9f89484b913f0a5459dc61ea46c83a9843147"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/97d0ad005ddc82f305867b62bed9b028c0746db9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/97d0ad005ddc82f305867b62bed9b028c0746db9/comments",
+  "files" : [ {
+    "sha" : "d975512fe571eef31df841ebc914d08b9c3d5c75",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902130/DbConnect.java",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/DbConnect.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/DbConnect.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902130/DbConnect.java?ref=97d0ad005ddc82f305867b62bed9b028c0746db9",
+    "patch" : "@@ -0,0 +1,33 @@\n+package train;\n+\n+import java.sql.*;\n+public class DbConnect {\n+\tprivate static String driverName = \"com.mysql.jdbc.Driver\";   //�������\n+\tprivate static String userName = \"root\";                    //��ݿ��û���\n+\tprivate static String userPwd = \"159357\";                  //����\n+\tprivate static String dbName = \"train\";                 //��ݿ���\n+\tpublic static Connection getDBconnection(){\n+\t\tString  url1=\"jdbc:mysql://localhost/\"+dbName;\n+\t\tString  url2 =\"?user=\"+userName+\"&password=\"+userPwd;\n+\t\tString  url3=\"&useUnicode=true&characterEncoding=utf-8\";\n+\t\tString  url =url1+url2+url3;\n+\t\ttry{\n+\t\t    Class.forName(driverName);\n+\t\t    Connection con=DriverManager.getConnection(url); \n+\t\t    return con; \n+\t    }catch (Exception e) {\n+\t\t\t   e.printStackTrace();\n+\t\t}\n+\t\treturn null;\n+    } \n+    public static void closeDB(Connection con,PreparedStatement pstm, ResultSet rs){\n+ \t   try{\n+ \t\t   if(rs!=null) rs.close(); \n+ \t\t   if(pstm!=null) pstm.close();\n+\t\t   if(con!=null) con.close();\n+\t   }catch (SQLException e) {\n+\t\t\te.printStackTrace();\n+\t   }\n+\t}\n+}\n+"
+  }, {
+    "sha" : "5571856e1dbbb25058e86b3b1774f623a926a5b3",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902130/Train.java",
+    "status" : "added",
+    "additions" : 76,
+    "deletions" : 0,
+    "changes" : 76,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/Train.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/Train.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902130/Train.java?ref=97d0ad005ddc82f305867b62bed9b028c0746db9",
+    "patch" : "@@ -0,0 +1,76 @@\n+package train;\n+\n+import java.sql.Time;\n+\n+public class Train {\n+    private String trainID,despartPlace,destination;\n+    private String despartTime,arrivalTime;\n+    private int businessSeat,firstSeat,secondSeat,nullSeat;\n+\tpublic String getTrainID() {\n+\t\treturn trainID;\n+\t}\n+\tpublic void setTrainID(String trainID) {\n+\t\tthis.trainID = trainID;\n+\t}\n+\tpublic String getDespartPlace() {\n+\t\treturn despartPlace;\n+\t}\n+\tpublic void setDespartPlace(String despartPlace) {\n+\t\tthis.despartPlace = despartPlace;\n+\t}\n+\tpublic String getDestination() {\n+\t\treturn destination;\n+\t}\n+\tpublic void setDestination(String destination) {\n+\t\tthis.destination = destination;\n+\t}\n+\tpublic String getDespartTime() {\n+\t\treturn despartTime;\n+\t}\n+\tpublic void setDespartTime(String despartTime) {\n+\t\tthis.despartTime = despartTime;\n+\t}\n+\tpublic String getArrivalTime() {\n+\t\treturn arrivalTime;\n+\t}\n+\tpublic void setArrivalTime(String arrivalTime) {\n+\t\tthis.arrivalTime = arrivalTime;\n+\t}\n+\tpublic int getBusinessSeat() {\n+\t\treturn businessSeat;\n+\t}\n+\tpublic void setBusinessSeat(int businessSeat) {\n+\t\tthis.businessSeat = businessSeat;\n+\t}\n+\tpublic int getFirstSeat() {\n+\t\treturn firstSeat;\n+\t}\n+\tpublic void setFirstSeat(int firstSeat) {\n+\t\tthis.firstSeat = firstSeat;\n+\t}\n+\tpublic int getSecondSeat() {\n+\t\treturn secondSeat;\n+\t}\n+\tpublic void setSecondSeat(int secondSeat) {\n+\t\tthis.secondSeat = secondSeat;\n+\t}\n+\tpublic int getNullSeat() {\n+\t\treturn nullSeat;\n+\t}\n+\tpublic void setNullSeat(int nullSeat) {\n+\t\tthis.nullSeat = nullSeat;\n+\t}\n+\tpublic Train(String trainID,String despartPlace,String destination,\n+    String despartTime,String arrivalTime,int businessSeat,int firstSeat,int secondSeat,int nullSeat)\n+    {\n+\t\tthis.trainID = trainID;\n+\t\tthis.nullSeat = nullSeat;\n+\t\tthis.secondSeat = secondSeat;\n+\t\tthis.firstSeat = firstSeat;\n+\t\tthis.businessSeat = businessSeat;\n+\t\tthis.arrivalTime = arrivalTime;\n+\t\tthis.despartTime = despartTime;\n+\t\tthis.destination = destination;\n+\t\tthis.despartPlace = despartPlace;\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "dc63112323e27ea026d46700da9a6b30af48206c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902130/TrainServlet.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/TrainServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/TrainServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902130/TrainServlet.java?ref=97d0ad005ddc82f305867b62bed9b028c0746db9",
+    "patch" : "@@ -0,0 +1,52 @@\n+package train;\n+\n+import java.io.IOException;\n+import java.sql.Date;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+@WebServlet(\"/TrainServlet\")\n+public class TrainServlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    public TrainServlet() {\n+        super();\n+    }\n+\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tdoPost(request,response);\n+\t}\n+\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException \n+\t{       \n+\t\t    request.setCharacterEncoding(\"utf-8\");\n+\t\t    String dp = request.getParameter(\"despartPlace\");\n+\t\t    String de = request.getParameter(\"destination\");\n+\t\t    String dd = request.getParameter(\"despartDate\");\n+\t\t    String rd = request.getParameter(\"returnDate\");\n+\t\t    TrianDAO tradao = new TrianDAO();\n+\t        try {\n+\t\t\t\tList<Train> train = tradao.find(dp, de, dd, rd);\n+\t\t\t\tList<Train> tra = new ArrayList<Train>();\n+\t\t\t\tString trainid = null;\n+\t\t\t\ttrainid = train.get(1).getTrainID();\n+\t\t\t\tint a = 0, b = 0 , c = 0 , d = 0;\n+\t\t\t\tfor(Train tr:train)\n+\t\t\t\t{\n+\t\t\t\t\t\n+\t\t\t\t}\n+\t\t\t\trequest.setAttribute(\"tra\", tra);\n+\t\t\t} catch (Exception e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+    \t\trequest.getRequestDispatcher(\"train_ticket.jsp\").forward(request, response);\n+\t}\n+}"
+  }, {
+    "sha" : "e1a02006c5134e9dff6b1763c7837cfad5dbe55a",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902130/Train_ticket.java",
+    "status" : "added",
+    "additions" : 79,
+    "deletions" : 0,
+    "changes" : 79,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/Train_ticket.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/Train_ticket.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902130/Train_ticket.java?ref=97d0ad005ddc82f305867b62bed9b028c0746db9",
+    "patch" : "@@ -0,0 +1,79 @@\n+package train;\n+\n+import java.sql.Date;\n+import java.sql.Time;\n+\n+public class Train_ticket \n+{\n+    private String despartPlace,destination,seatID,seatType,seatStatus;\n+    private int carriageID;\n+    private float seatPrize;\n+    private String despartDate,returnDate;\n+    private String despartTime,arrivalTime;\n+\tpublic String getDespartPlace() {\n+\t\treturn despartPlace;\n+\t}\n+\tpublic void setDespartPlace(String despartPlace) {\n+\t\tthis.despartPlace = despartPlace;\n+\t}\n+\tpublic String getDestination() {\n+\t\treturn destination;\n+\t}\n+\tpublic void setDestination(String destination) {\n+\t\tthis.destination = destination;\n+\t}\n+\tpublic String getSeatID() {\n+\t\treturn seatID;\n+\t}\n+\tpublic void setSeatID(String seatID) {\n+\t\tthis.seatID = seatID;\n+\t}\n+\tpublic String getSeatType() {\n+\t\treturn seatType;\n+\t}\n+\tpublic void setSeatType(String seatType) {\n+\t\tthis.seatType = seatType;\n+\t}\n+\tpublic String getSeatStatus() {\n+\t\treturn seatStatus;\n+\t}\n+\tpublic void setSeatStatus(String seatStatus) {\n+\t\tthis.seatStatus = seatStatus;\n+\t}\n+\tpublic int getCarriageID() {\n+\t\treturn carriageID;\n+\t}\n+\tpublic void setCarriageID(int carriageID) {\n+\t\tthis.carriageID = carriageID;\n+\t}\n+\tpublic float getSeatPrize() {\n+\t\treturn seatPrize;\n+\t}\n+\tpublic void setSeatPrize(float seatPrize) {\n+\t\tthis.seatPrize = seatPrize;\n+\t}\n+\tpublic String getDespartDate() {\n+\t\treturn despartDate;\n+\t}\n+\tpublic void setDespartDate(String despartDate) {\n+\t\tthis.despartDate = despartDate;\n+\t}\n+\tpublic String getReturnDate() {\n+\t\treturn returnDate;\n+\t}\n+\tpublic void setReturnDate(String returnDate) {\n+\t\tthis.returnDate = returnDate;\n+\t}\n+\tpublic String getDespartTime() {\n+\t\treturn despartTime;\n+\t}\n+\tpublic void setDespartTime(String despartTime) {\n+\t\tthis.despartTime = despartTime;\n+\t}\n+\tpublic String getArrivalTime() {\n+\t\treturn arrivalTime;\n+\t}\n+\tpublic void setArrivalTime(String arrivalTime) {\n+\t\tthis.arrivalTime = arrivalTime;\n+\t}\n+}"
+  }, {
+    "sha" : "1524200ee669eb4dba5451eeb42be59059cad4a3",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902130/TrianDAO.java",
+    "status" : "added",
+    "additions" : 73,
+    "deletions" : 0,
+    "changes" : 73,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/TrianDAO.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/src/edu/hzu/javaweb/labs/se1414080902130/TrianDAO.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902130/TrianDAO.java?ref=97d0ad005ddc82f305867b62bed9b028c0746db9",
+    "patch" : "@@ -0,0 +1,73 @@\n+package train;\n+\n+import java.sql.*;\n+import java.text.SimpleDateFormat;\n+import java.util.ArrayList;\n+import java.util.List;\n+import java.util.Date;\n+\n+import train.DbConnect;\n+import train.Train_ticket;\n+import train.Train;\n+\n+public class TrianDAO {\n+      public List<Train> find(String despartPlase, String destination,\n+      String despartDate,String returnDate) throws Exception\n+      {   \n+    \t  Connection con = null;\n+    \t  PreparedStatement prepStmt = null;\n+    \t  ResultSet rs = null;\n+    \t  List<Train> train = new ArrayList<Train>();\n+    \t  try\n+    \t  {\n+        \tSimpleDateFormat sdf1 = new SimpleDateFormat(\"yyyy-MM-dd\");  \n+        \tjava.util.Date date1 = sdf1.parse(despartDate.toString());\n+        \tjava.sql.Date sqldate1 =new java.sql.Date(date1.getTime());\n+        \tSimpleDateFormat sdf2 = new SimpleDateFormat(\"yyyy-MM-dd\");  \n+        \tjava.util.Date date2 = sdf2.parse(returnDate.toString());\n+        \tjava.sql.Date sqldate2 =new java.sql.Date(date2.getTime());  \n+    \t    con = DbConnect.getDBconnection();\n+    \t    prepStmt = con.prepareStatement(\"select * from train_ticket where despartPlace = ? and destination = ? and despartDate = ? and returnDate = ?\");\n+    \t    prepStmt.setString(1,despartPlase);\n+    \t    prepStmt.setString(2,destination);\n+    \t    prepStmt.setDate(3,sqldate1);\n+    \t    prepStmt.setDate(4,sqldate2);\n+    \t    rs = prepStmt.executeQuery();\n+    \t    while(rs.next())\n+    \t    {\n+    \t\t     int a = 0 , b = 0 , c = 0, d = 0;\n+    \t    \t Train tra = new Train();\n+    \t    \t tra.setTrainID(rs.getString(1));\n+    \t      \t tra.setDespartPlace(rs.getString(2));\n+    \t      \t tra.setDestination(rs.getString(3));\n+    \t      \t tra.setDespartTime(rs.getString(6));\n+    \t      \t tra.setArrivalTime(rs.getString(7));\n+    \t      \t if(\"��\".equals(rs.getString(12)))\n+    \t        {\n+    \t      \t\tif(\"������\".equals(rs.getString(10)))\n+    \t      \t\t   a++;\n+    \t      \t\telse if(\"һ����\".equals(rs.getString(10)))\n+    \t      \t\t   b++;\n+    \t      \t\telse if(\"������\".equals(rs.getString(10)))\n+    \t      \t\t   c++;\n+    \t      \t\telse \n+    \t      \t\t   d++;\n+    \t      \t }\n+      \t      \ttra.setBusinessSeat(a);\n+        \t\ttra.setFirstSeat(b);\n+        \t\ttra.setSecondSeat(c);\n+        \t\ttra.setNullSeat(d);\n+        \t\ttrain.add(tra);\n+    \t    }\n+    \t  }\n+    \t  catch(Exception e)\n+    \t  {\n+    \t\t  e.printStackTrace();\n+    \t  }\n+    \t  finally\n+    \t  {\n+             DbConnect.closeDB(con, prepStmt, rs);\n+    \t  }\n+    \t  return train;\n+      }\n+}"
+  }, {
+    "sha" : "41cc58db0e8282ffc7034959dcbdfba13aaaf941",
+    "filename" : "jweb/web/1414080902130/train_ticket.jsp",
+    "status" : "added",
+    "additions" : 153,
+    "deletions" : 0,
+    "changes" : 153,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/web/1414080902130/train_ticket.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/97d0ad005ddc82f305867b62bed9b028c0746db9/jweb/web/1414080902130/train_ticket.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902130/train_ticket.jsp?ref=97d0ad005ddc82f305867b62bed9b028c0746db9",
+    "patch" : "@@ -0,0 +1,153 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n+<!DOCTYPE html>\n+<html >\n+<head lang=\"zh-cn\">\n+    <meta charset=\"utf-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+    <link rel=\"stylesheet\" href=\"http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css\">\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    <title></title>\n+</head>\n+\n+<style type=\"text/css\">\n+    body{\n+        background: #F0F0F0;\n+    }\n+    nav{\n+        font-size: 15px;\n+        font-family: ；\n+    }\n+    label {\n+        font-weight: 100;\n+    }\n+    form{\n+        margin-top: 60px;\n+    }\n+</style>\n+<body>\n+\n+<nav class=\"navbar navbar-default\" role=\"navigation\" >\n+    <div class=\"container-fluid\">\n+        <div class=\"navbar-header\">\n+            <a class=\"navbar-brand\"><span class=\"glyphicon glyphicon-road\"></span></a>\n+        </div>\n+        <ul class=\"nav navbar-nav\">\n+            <li>\n+                <a href=\"#\">车票预订</a>\n+            </li>\n+            <li>\n+                <a href=\"#\">我的订单</a>\n+            </li>\n+            <li>\n+                <a href=\"#\">个人信息</a>\n+            </li>\n+        </ul>\n+        <ul class=\"nav navbar-nav navbar-right\">\n+            <c:if test=\"${Passenger.username != null}\">\n+           <li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> 注册</a></li>\n+           <li class=\"dropdown\">\n+                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                                                          \n+                    ${Passenger.username}\n+                    <b class=\"caret\"></b>\n+                </a>\n+                <ul class=\"dropdown-menu\">\n+                    <li><a href=\"#\">未完成订单</a></li>\n+                    <li><a href=\"#\">已完成订单</a></li>\n+                    <li><a href=\"#\">个人信息</a></li>\n+                    <li class=\"divider\"></li>\n+                    <li><a href=\"#\">退出</a></li>\n+                </ul>\n+            </li>\n+        </c:if>\n+        \n+        <c:if test=\"${Passenger.username == null}\">\n+            <li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> 注册</a></li>\n+            <li><a href=\"#\"><span class=\"glyphicon glyphicon-log-in\"></span> 登录</a></li>\n+        </c:if>\n+        </ul>\n+    </div>\n+</nav>\n+\n+<form role=\"form\" class=\"form-horizontal\" action=\"TrainServlet\" method=\"post\"> \n+     <div class=\"container-fluid\">\n+        <div class=\"form-group\">\n+           <div class=\"col-md-3\" >\n+             <div class=\"panel panel-success\">\n+                <div class=\"panel-heading\">\n+                    <h2 class=\"panel-title\" align=\"center\">\n+                                                                                    车票查询\n+                    </h2>\n+                </div>\n+                <div class=\"panel-body\">\n+                          <div class=\"form-group\">\n+                              <div class=\"col-md-12\" >\n+                                   <table class=\"table\">\n+                                        <tr><td>出发地</td><td><input type=\"text\" class=\"form-control\" name=\"despartPlace\"></td></tr>\n+                                        <tr><td>目的地</td><td><input type=\"text\" class=\"form-control\" name=\"destination\"></td></tr>\n+                                        <tr><td>出发日</td><td><input type=\"text\" class=\"form-control\" name=\"despartDate\"></td></tr>\n+                                        <tr><td>返程日</td><td><input type=\"text\" class=\"form-control\" name=\"returnDate\"></td></tr>\n+                                   </table>\n+                                   <button type=\"submit\" class=\"btn btn-success btn-block\">查询</button>\n+                              </div>    \n+                          </div>\n+                </div>\n+            </div>\n+        </div>\n+        <div class=\"col-md-9\">\n+            <div class=\"panel panel-success\">\n+                <div class=\"panel-heading\">\n+                    <h2 class=\"panel-title\" align=\"center\">\n+                                                                                  车票预订\n+                    </h2>\n+                </div>\n+                <div class=\"panel-body\">\n+                          <div class=\"form-group\">\n+                              <div class=\"col-md-12\" >\n+                                   <table class=\"table\">\n+                                               <thead>\n+                                                  <tr>\n+                                                      <th>车次</th>\n+                                                      <th>出发地</th>\n+                                                      <th>目的地</th>\n+                                                      <th>出发时间</th>\n+                                                      <th>到达时间</th>\n+                                                      <th>商务座</th>\n+                                                      <th>一等座</th>\n+                                                      <th>二等座</th>\n+                                                      <th>无座</th>\n+                                                      <th>预订</th>\n+                                                  </tr>\n+                                               </thead>\n+                                               <tbody>\n+                                                   <c:forEach var=\"tra\" items=\"${tra}\">\n+                                                      <tr>\n+                                                          <td>${tra.trainID}</td>\n+                                                          <td>${tra.despartPlace}</td>\n+                                                          <td>${tra.destination}</td>\n+                                                          <td>${tra.despartTime}</td>\n+                                                          <td>${tra.arrivalTime}</td>\n+                                                          <td>${tra.businessSeat}</td>\n+                                                          <td>${tra.firstSeat}</td>\n+                                                          <td>${tra.secondSeat}</td>\n+                                                          <td>${tra.nullSeat}</td>\n+                                                          <c:if test=\"${tra.businessSeat != 0 || tra.firstSeat != 0 || tra.secondSeat != 0 || tra.nullSeat != 0}\">\n+                                                              <td><button type=\"button\" class=\"btn btn-success btn-block btn-sm\">预订</button></td>\n+                                                          </c:if>\n+                                                      </tr> \n+                                                   </c:forEach>\n+                                               </tbody>\n+                                    </table>\n+                              </div> \n+                          </div>\n+                </div>\n+            </div>\n+        </div>\n+     </div>\n+</form>\n+</body>\n+<html>"
+  } ],
+  "sha" : "97d0ad005ddc82f305867b62bed9b028c0746db9",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/97d0ad005ddc82f305867b62bed9b028c0746db9",
+  "parents" : [ {
+    "sha" : "6367a799d9f5b848dd3f24223f098066ecf55860",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6367a799d9f5b848dd3f24223f098066ecf55860",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/6367a799d9f5b848dd3f24223f098066ecf55860"
+  } ]
+}

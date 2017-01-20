@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 59,
+    "additions" : 0,
+    "deletions" : 59
+  },
+  "author" : {
+    "login" : "CaiRencai",
+    "id" : 20382321,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/20382321?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/CaiRencai",
+    "html_url" : "https://github.com/CaiRencai",
+    "followers_url" : "https://api.github.com/users/CaiRencai/followers",
+    "following_url" : "https://api.github.com/users/CaiRencai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/CaiRencai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/CaiRencai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/CaiRencai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/CaiRencai/orgs",
+    "repos_url" : "https://api.github.com/users/CaiRencai/repos",
+    "events_url" : "https://api.github.com/users/CaiRencai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/CaiRencai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ff3d91696bf699eb533f78b0ca278791c2cac748",
+  "commit" : {
+    "author" : {
+      "name" : "CaiRencai",
+      "email" : "caijet@qq.com",
+      "date" : "2016-11-11T10:44:33Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-11T10:44:33Z"
+    },
+    "message" : "Delete Product.java",
+    "tree" : {
+      "sha" : "d74d568be7b224f666b090683a61e98e83890dd4",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d74d568be7b224f666b090683a61e98e83890dd4"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ff3d91696bf699eb533f78b0ca278791c2cac748",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ff3d91696bf699eb533f78b0ca278791c2cac748/comments",
+  "files" : [ {
+    "sha" : "f0d49cbd4ede2ce802deb4204140b907286c89a3",
+    "filename" : "jweb/src/edu/hzu/javaweb/bean/Product.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 59,
+    "changes" : 59,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d85baca84ee2221807d2ed980163ec49a0367a3b/jweb/src/edu/hzu/javaweb/bean/Product.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d85baca84ee2221807d2ed980163ec49a0367a3b/jweb/src/edu/hzu/javaweb/bean/Product.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/bean/Product.java?ref=d85baca84ee2221807d2ed980163ec49a0367a3b",
+    "patch" : "@@ -1,59 +0,0 @@\n-\n-public class Product {\n-\tprivate String id;\n-\tprivate String name;\n-\tprivate String date;\n-\tprivate String describe;\n-\tprivate String remarks;\n-\tprivate int num;\n-\tprivate int type;\n-\t\n-\tpublic Product(){}\n-\t\n-\tpublic String getId() {\n-\t\treturn id;\n-\t}\n-\tpublic void setId(String id) {\n-\t\tthis.id = id;\n-\t}\n-\tpublic String getName() {\n-\t\treturn name;\n-\t}\n-\tpublic void setName(String name) {\n-\t\tthis.name = name;\n-\t}\n-\tpublic String getDate() {\n-\t\treturn date;\n-\t}\n-\tpublic void setDate(String date) {\n-\t\tthis.date = date;\n-\t}\n-\tpublic String getDescribe() {\n-\t\treturn describe;\n-\t}\n-\tpublic void setDescribe(String describe) {\n-\t\tthis.describe = describe;\n-\t}\n-\tpublic String getRemarks() {\n-\t\treturn remarks;\n-\t}\n-\tpublic void setRemarks(String remarks) {\n-\t\tthis.remarks = remarks;\n-\t}\n-\tpublic int getNum() {\n-\t\treturn num;\n-\t}\n-\tpublic void setNum(int num) {\n-\t\tthis.num = num;\n-\t}\n-\tpublic int getType() {\n-\t\treturn type;\n-\t}\n-\tpublic void setType(int type) {\n-\t\tthis.type = type;\n-\t}\n-\t\n-\t\n-\t\n-\t\n-}"
+  } ],
+  "sha" : "ff3d91696bf699eb533f78b0ca278791c2cac748",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ff3d91696bf699eb533f78b0ca278791c2cac748",
+  "parents" : [ {
+    "sha" : "d85baca84ee2221807d2ed980163ec49a0367a3b",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d85baca84ee2221807d2ed980163ec49a0367a3b",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/d85baca84ee2221807d2ed980163ec49a0367a3b"
+  } ]
+}

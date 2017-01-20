@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "liwenjie0",
+    "id" : 14371574,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14371574?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liwenjie0",
+    "html_url" : "https://github.com/liwenjie0",
+    "followers_url" : "https://api.github.com/users/liwenjie0/followers",
+    "following_url" : "https://api.github.com/users/liwenjie0/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liwenjie0/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liwenjie0/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liwenjie0/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liwenjie0/orgs",
+    "repos_url" : "https://api.github.com/users/liwenjie0/repos",
+    "events_url" : "https://api.github.com/users/liwenjie0/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liwenjie0/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 158,
+    "additions" : 158,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "liwenjie0",
+    "id" : 14371574,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14371574?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liwenjie0",
+    "html_url" : "https://github.com/liwenjie0",
+    "followers_url" : "https://api.github.com/users/liwenjie0/followers",
+    "following_url" : "https://api.github.com/users/liwenjie0/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liwenjie0/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liwenjie0/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liwenjie0/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liwenjie0/orgs",
+    "repos_url" : "https://api.github.com/users/liwenjie0/repos",
+    "events_url" : "https://api.github.com/users/liwenjie0/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liwenjie0/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/61f9161f69f2b550413cdbe3da272afc924ce3c9",
+  "commit" : {
+    "author" : {
+      "name" : "lwj000",
+      "email" : "602078721@qq.com",
+      "date" : "2016-06-15T01:43:45Z"
+    },
+    "committer" : {
+      "name" : "lwj000",
+      "email" : "602078721@qq.com",
+      "date" : "2016-06-15T01:43:45Z"
+    },
+    "message" : "实验7\n\n添加网络编程的java和layout文件",
+    "tree" : {
+      "sha" : "6bed7f714827f871f61e5ab05f6743807f7fb9e2",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/6bed7f714827f871f61e5ab05f6743807f7fb9e2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/61f9161f69f2b550413cdbe3da272afc924ce3c9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/61f9161f69f2b550413cdbe3da272afc924ce3c9/comments",
+  "files" : [ {
+    "sha" : "12c97ba3b060cfb4ca8ed866751fac02c4f45fc6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_Connect.java",
+    "status" : "added",
+    "additions" : 131,
+    "deletions" : 0,
+    "changes" : 131,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/61f9161f69f2b550413cdbe3da272afc924ce3c9/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_Connect.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/61f9161f69f2b550413cdbe3da272afc924ce3c9/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_Connect.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_Connect.java?ref=61f9161f69f2b550413cdbe3da272afc924ce3c9",
+    "patch" : "@@ -0,0 +1,131 @@\n+package com.example.lwj_pc.my_classwork;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.util.Log;\n+import android.widget.TextView;\n+\n+import org.json.JSONObject;\n+import org.w3c.dom.Text;\n+\n+import java.io.BufferedReader;\n+import java.io.IOException;\n+import java.io.InputStream;\n+import java.io.InputStreamReader;\n+import java.net.HttpURLConnection;\n+import java.net.MalformedURLException;\n+import java.net.URL;\n+\n+\n+/**\n+ * Created by LWJ-PC on 2016/6/14.\n+ */\n+public class Com1314080901221Activity_Connect extends Activity {\n+    private final int SUCCESS=1;\n+    private final int FAILURE=0;\n+    private TextView citytext,datetext,weathertext;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_com1314080901221_connection);\n+        citytext=(TextView)findViewById(R.id.connect_city);\n+        datetext=(TextView)findViewById(R.id.connect_date);\n+        weathertext=(TextView)findViewById(R.id.connect_weather);\n+        connect();\n+    }\n+\n+    private Handler handler=new Handler(){\n+        @Override\n+        public void handleMessage(Message msg) {\n+            switch (msg.what){\n+                case SUCCESS:\n+                    String[] strings=getJson(msg.obj.toString());\n+                    citytext.setText(strings[0]);\n+                    datetext.setText(strings[1]);\n+                    weathertext.setText(strings[2]);\n+                    break;\n+                case FAILURE:\n+                    break;\n+                default:\n+                    break;\n+            }\n+        }\n+    };\n+\n+    public String[] getJson(String string){\n+        JSONObject jObject= null;\n+        try {\n+            jObject =new JSONObject(string);\n+        } catch (Exception e) {\n+            e.printStackTrace();\n+            System.out.println(\"创建JsonObject失败\");\n+        }\n+        //解析JSON数据\n+        JSONObject jsonObject = jObject.optJSONObject(\"weatherinfo\");\n+        String[] temp=new String[3];\n+        temp[0]=jObject.optString(\"city\");\n+        temp[1]=jObject.optString(\"date\");\n+        temp[2]=jObject.optString(\"weather\");\n+        Log.d(\"json读出信息为：\",temp[0]+\"-\"+temp[1]+\"-\"+temp[2]);\n+        String weatherResult=\"城市：\"+temp[0]+\"\\n日期：\"+temp[1]+\"\\n天气：\"+temp[2];\n+        return temp;\n+    }\n+\n+    private void connect(){\n+        new Thread(new Runnable() {\n+            @Override\n+            public void run() {\n+                try {\n+                    URL url = new URL(\"https://raw.githubusercontent.com/liwenjie0/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Jasontext.txt\");\n+                    HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();\n+                    httpURLConnection.setRequestMethod(\"GET\");\n+                    httpURLConnection.setConnectTimeout(8000);\n+                    httpURLConnection.setReadTimeout(8000);\n+                    //获取返回码\n+                    int responecode=httpURLConnection.getResponseCode();\n+                    Log.d(\"返回码为：\",\"=\"+responecode);\n+                    //判断是否请求成功，200则请求成功\n+                    if(responecode==200) {\n+                        InputStream inputStream = httpURLConnection.getInputStream();\n+                        BufferedReader reader=new BufferedReader(new InputStreamReader(inputStream));\n+                        String responecontent=readInput(reader);\n+                        Log.d(\"信息读取完毕\",\"!!!!!!!!\");\n+                        //Handler message\n+                        Message message=new Message();\n+                        message.what=SUCCESS;\n+                        message.obj=responecontent;\n+                        handler.sendMessage(message);\n+                    }else {\n+                        Message message=new Message();\n+                        message.what=FAILURE;\n+                        handler.sendMessage(message);\n+                        \n+                    }\n+                    httpURLConnection.disconnect();\n+                }catch (MalformedURLException e){\n+\n+                }catch (IOException e){\n+\n+                }catch (Exception e){\n+\n+                }\n+            }\n+        }).start();\n+    }\n+    //读取字符缓冲区的内容\n+    private String readInput(BufferedReader in ){\n+        String temp=null;\n+        try {\n+         temp = in.readLine();\n+\n+        }catch (Exception e){\n+\n+        }\n+        Log.d(\"接受为：\",\"=\"+temp);\n+        return temp;\n+    }\n+\n+}"
+  }, {
+    "sha" : "207e8203d11d95470e90f9b1a0886b475029af7a",
+    "filename" : "app/src/main/res/layout/activity_com1314080901221_connection.xml",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/61f9161f69f2b550413cdbe3da272afc924ce3c9/app/src/main/res/layout/activity_com1314080901221_connection.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/61f9161f69f2b550413cdbe3da272afc924ce3c9/app/src/main/res/layout/activity_com1314080901221_connection.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901221_connection.xml?ref=61f9161f69f2b550413cdbe3da272afc924ce3c9",
+    "patch" : "@@ -0,0 +1,27 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:orientation=\"vertical\" android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\" android:padding=\"5dp\">\n+\n+    <TextView\n+        android:text=\"获取信息如下\"\n+        android:textSize=\"25sp\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\" />\n+\n+    <TextView\n+        android:id=\"@+id/connect_city\"\n+        android:textSize=\"23sp\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\" />\n+    <TextView\n+        android:id=\"@+id/connect_date\"\n+        android:textSize=\"23sp\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\" />\n+    <TextView\n+        android:id=\"@+id/connect_weather\"\n+        android:textSize=\"23sp\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\" />\n+</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "61f9161f69f2b550413cdbe3da272afc924ce3c9",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/61f9161f69f2b550413cdbe3da272afc924ce3c9",
+  "parents" : [ {
+    "sha" : "8b9f84356549bc32b3a8c1ad30ecdc3e892fb197",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/8b9f84356549bc32b3a8c1ad30ecdc3e892fb197",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/8b9f84356549bc32b3a8c1ad30ecdc3e892fb197"
+  } ]
+}

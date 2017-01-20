@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "wxuanguang",
+    "id" : 15140893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15140893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wxuanguang",
+    "html_url" : "https://github.com/wxuanguang",
+    "followers_url" : "https://api.github.com/users/wxuanguang/followers",
+    "following_url" : "https://api.github.com/users/wxuanguang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wxuanguang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wxuanguang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wxuanguang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wxuanguang/orgs",
+    "repos_url" : "https://api.github.com/users/wxuanguang/repos",
+    "events_url" : "https://api.github.com/users/wxuanguang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wxuanguang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 43,
+    "additions" : 32,
+    "deletions" : 11
+  },
+  "author" : {
+    "login" : "wxuanguang",
+    "id" : 15140893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15140893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wxuanguang",
+    "html_url" : "https://github.com/wxuanguang",
+    "followers_url" : "https://api.github.com/users/wxuanguang/followers",
+    "following_url" : "https://api.github.com/users/wxuanguang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wxuanguang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wxuanguang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wxuanguang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wxuanguang/orgs",
+    "repos_url" : "https://api.github.com/users/wxuanguang/repos",
+    "events_url" : "https://api.github.com/users/wxuanguang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wxuanguang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/20e14ad7abf99066c037681e20e1db9283fd9db7",
+  "commit" : {
+    "author" : {
+      "name" : "wxuanguang",
+      "email" : "247017271@qq.com",
+      "date" : "2015-12-27T13:21:34Z"
+    },
+    "committer" : {
+      "name" : "wxuanguang",
+      "email" : "247017271@qq.com",
+      "date" : "2015-12-27T13:21:34Z"
+    },
+    "message" : "实验6",
+    "tree" : {
+      "sha" : "f48d20cf0999952516c13dbb41fbd10c71071d15",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/f48d20cf0999952516c13dbb41fbd10c71071d15"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/20e14ad7abf99066c037681e20e1db9283fd9db7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/20e14ad7abf99066c037681e20e1db9283fd9db7/comments",
+  "files" : [ {
+    "sha" : "6f1ce89b3951f701b290d0f5dcafdb2c0e6a5c88",
+    "filename" : "works/1314080901135/index.html",
+    "status" : "modified",
+    "additions" : 11,
+    "deletions" : 2,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/20e14ad7abf99066c037681e20e1db9283fd9db7/works/1314080901135/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/20e14ad7abf99066c037681e20e1db9283fd9db7/works/1314080901135/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901135/index.html?ref=20e14ad7abf99066c037681e20e1db9283fd9db7",
+    "patch" : "@@ -22,7 +22,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body ng-controller=\"MyFilterDemoCtrl\">\n+  <body ng-controller=\"myAppModuleCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -53,13 +53,22 @@\n \n     </div><!-- /.container -->\n     <br>\n-    <p>typeCode:{{data.typeCode}}</p>\n+    \n+      <table border=\"1px\" width=\"80%\" align=\"center\"><th>类别名称</th>\n+           <th>类别代码</th>\n+           <tbody ng-repeat=\"data in datas\">\n+           <tr><td>{{data.typeName}}</td>\n+               <td>{{data.typeCode}}</td>\n+    </tr>\n+    </tbody>\n+    </table>    \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n   \n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+    <script src=\"../../lib/angular-1.4.5/angular-route.min.js\"></script>\n     <script src=\"js/myAppModule.js\"></script>\n   </body>\n </html>"
+  }, {
+    "sha" : "64acf16a446203da1d80f44a5c895118c77faae9",
+    "filename" : "works/1314080901135/js/myAppModule.js",
+    "status" : "modified",
+    "additions" : 13,
+    "deletions" : 9,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/20e14ad7abf99066c037681e20e1db9283fd9db7/works/1314080901135/js/myAppModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/20e14ad7abf99066c037681e20e1db9283fd9db7/works/1314080901135/js/myAppModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901135/js/myAppModule.js?ref=20e14ad7abf99066c037681e20e1db9283fd9db7",
+    "patch" : "@@ -4,15 +4,19 @@ var myAppModule = angular.module('myAppModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n-       // controller code would go here\n-            var typeSet = {\n-            typeName: 'wujin',\n-            typeCode: 'WXG',\n-        };\n-        $scope.data = typeSet;\n-    }\n-);\n+myAppModule.factory(\"myAppModuleService\",function($http){\n+   var getmyData={};\n+   getmyData.getData=function(){\n+      var promise = $http({method: 'GET',url: 'json/myData.json'});\n+      return promise;\n+   }\n+  return getmyData;\n+ }).controller('myAppModuleCtrl', function ($scope,myAppModuleService){\n+    var promise = myAppModuleService.getData();\n+    promise.success(function(data,status){\n+       $scope.datas = data.typeSet; \n+    });\n+});\n \n // use the myAppModule variable to\n // configure the module with a filter"
+  }, {
+    "sha" : "d3f5ebc4e6ede562edfd2f27c6b4b21239cabb8e",
+    "filename" : "works/1314080901135/json/myData.json",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/20e14ad7abf99066c037681e20e1db9283fd9db7/works/1314080901135/json/myData.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/20e14ad7abf99066c037681e20e1db9283fd9db7/works/1314080901135/json/myData.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901135/json/myData.json?ref=20e14ad7abf99066c037681e20e1db9283fd9db7",
+    "patch" : "@@ -0,0 +1,8 @@\n+{\n+    \"typeSet\": [\n+        {\n+            \"typeName\": \"五金类\",\n+            \"typeCode\": \"wjl\"\n+        }\n+    ]\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "20e14ad7abf99066c037681e20e1db9283fd9db7",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/20e14ad7abf99066c037681e20e1db9283fd9db7",
+  "parents" : [ {
+    "sha" : "4ef16e99e6539f5a14e6dc668eb86020b88a09f3",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/4ef16e99e6539f5a14e6dc668eb86020b88a09f3",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/4ef16e99e6539f5a14e6dc668eb86020b88a09f3"
+  } ]
+}

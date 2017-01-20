@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "SlowSoulWen",
+    "id" : 18480097,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18480097?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SlowSoulWen",
+    "html_url" : "https://github.com/SlowSoulWen",
+    "followers_url" : "https://api.github.com/users/SlowSoulWen/followers",
+    "following_url" : "https://api.github.com/users/SlowSoulWen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SlowSoulWen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SlowSoulWen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SlowSoulWen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SlowSoulWen/orgs",
+    "repos_url" : "https://api.github.com/users/SlowSoulWen/repos",
+    "events_url" : "https://api.github.com/users/SlowSoulWen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SlowSoulWen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 114,
+    "additions" : 114,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "SlowSoulWen",
+    "id" : 18480097,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18480097?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SlowSoulWen",
+    "html_url" : "https://github.com/SlowSoulWen",
+    "followers_url" : "https://api.github.com/users/SlowSoulWen/followers",
+    "following_url" : "https://api.github.com/users/SlowSoulWen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SlowSoulWen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SlowSoulWen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SlowSoulWen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SlowSoulWen/orgs",
+    "repos_url" : "https://api.github.com/users/SlowSoulWen/repos",
+    "events_url" : "https://api.github.com/users/SlowSoulWen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SlowSoulWen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/71298077bfa26538933dd747e761f7681cd44b34",
+  "commit" : {
+    "author" : {
+      "name" : "SlowSoulWen",
+      "email" : "664381601@qq.com",
+      "date" : "2016-12-03T03:14:28Z"
+    },
+    "committer" : {
+      "name" : "SlowSoulWen",
+      "email" : "664381601@qq.com",
+      "date" : "2016-12-03T03:14:28Z"
+    },
+    "message" : "#5 提交实验",
+    "tree" : {
+      "sha" : "bd54abd8e0d98a74798cea4ac6ae488edba7705c",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/bd54abd8e0d98a74798cea4ac6ae488edba7705c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/71298077bfa26538933dd747e761f7681cd44b34",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/71298077bfa26538933dd747e761f7681cd44b34/comments",
+  "files" : [ {
+    "sha" : "4de26ce96cef0accb066bdc1a94ead39af610d21",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902237/EncodeFilter.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/71298077bfa26538933dd747e761f7681cd44b34/jweb/src/edu/hzu/javaweb/labs/se1414080902237/EncodeFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/71298077bfa26538933dd747e761f7681cd44b34/jweb/src/edu/hzu/javaweb/labs/se1414080902237/EncodeFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902237/EncodeFilter.java?ref=71298077bfa26538933dd747e761f7681cd44b34",
+    "patch" : "@@ -0,0 +1,52 @@\n+package edu.hzu.javaweb.labs.se1414080902237;\n+\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+/**\n+ * Servlet Filter implementation class EncodeFilter\n+ */\n+@WebFilter(filterName=\"EncodeFilter\",urlPatterns=\"/*\")\n+public class EncodeFilter implements Filter {\n+\n+    /**\n+     * Default constructor. \n+     */\n+    public EncodeFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see Filter#destroy()\n+\t */\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n+\t */\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\t// 接收数据\n+\t\tSystem.out.println(\"编码过滤...\");\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+        //返回数据\n+        response.setContentType(\"text/html;charset=UTF-8\");\n+\n+\t\tchain.doFilter(request, response);\n+\t}\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "8533283ae0415bf5311c331a9a1c80bdf9630cd6",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902237/LoginFilter.java",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/71298077bfa26538933dd747e761f7681cd44b34/jweb/src/edu/hzu/javaweb/labs/se1414080902237/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/71298077bfa26538933dd747e761f7681cd44b34/jweb/src/edu/hzu/javaweb/labs/se1414080902237/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902237/LoginFilter.java?ref=71298077bfa26538933dd747e761f7681cd44b34",
+    "patch" : "@@ -0,0 +1,62 @@\n+package edu.hzu.javaweb.labs.se1414080902237;\n+\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+/**\n+ * Servlet Filter implementation class LoginFilter\n+ */\n+@WebFilter(filterName=\"LoginFilter\",urlPatterns=\"/login.jsp\")\n+public class LoginFilter implements Filter {\n+\n+    /**\n+     * Default constructor. \n+     */\n+    public LoginFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see Filter#destroy()\n+\t */\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n+\t */\n+\n+\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\t//获取http请求相关数据\n+\t\tHttpServletRequest req = (HttpServletRequest) request;\n+        HttpServletResponse res = (HttpServletResponse) response;\n+        \n+\t\tif(requ.getParameter(\"userName\").equals(\"admin\")||requ.getParameter(\"password\").equals(\"admin\")){\n+\t\t\tchain.doFilter(request, response);\n+\t\t} else {\n+\t\t\tSystem.out.println(\"账号密码有误!\");\n+\t\t\tresp.sendRedirect(\"Login.html\");\n+\t\t} \n+        System.out.println(\"登录验证!\");\n+\t}\n+\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "71298077bfa26538933dd747e761f7681cd44b34",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/71298077bfa26538933dd747e761f7681cd44b34",
+  "parents" : [ {
+    "sha" : "95c88f2215a0404236bb203c63874cfbaffb410d",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/95c88f2215a0404236bb203c63874cfbaffb410d",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/95c88f2215a0404236bb203c63874cfbaffb410d"
+  } ]
+}

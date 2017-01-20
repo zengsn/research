@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 82,
+    "additions" : 0,
+    "deletions" : 82
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/022e9f353c77afacc3f1faad84b51df52ad8c985",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T01:33:25Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T01:33:25Z"
+    },
+    "message" : "Delete index.jsp",
+    "tree" : {
+      "sha" : "7311a6e9139e0a2b66819b4b75eaba0cb6e42719",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/7311a6e9139e0a2b66819b4b75eaba0cb6e42719"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/022e9f353c77afacc3f1faad84b51df52ad8c985",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/022e9f353c77afacc3f1faad84b51df52ad8c985/comments",
+  "files" : [ {
+    "sha" : "fb73abfae1acd95c466e8cf9fe3a24d25edd700e",
+    "filename" : "jweb/web/1414080902222/index.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 82,
+    "changes" : 82,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ae0fd6558d96e68053355c0c2aee24ec9c7c42db/jweb/web/1414080902222/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ae0fd6558d96e68053355c0c2aee24ec9c7c42db/jweb/web/1414080902222/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902222/index.jsp?ref=ae0fd6558d96e68053355c0c2aee24ec9c7c42db",
+    "patch" : "@@ -1,82 +0,0 @@\n-<%@ page language=\"java\" import=\"java.util.*\" import=\"java.text.*\" pageEncoding=\"utf-8\"%>\n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n-\n-<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n-<html>\n-  <head> \n-   <meta charset=\"UTF-8\">\n-   <% SimpleDateFormat format = new SimpleDateFormat(\"yyyy年MM月dd日\");\n- out.println(format.format(new Date()));%>\n-    <title>比赛节目喜好调查</title>\n-    \n-    <link rel=\"stylesheet\" href=\"http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css\">  \n-  \n-\n-  </head>  \n-  <body> \n-     <% \n-     Date date = new Date();\n-     date.getTime() ;\n-    %>\n-\n-   <h3 align=\"center\">比赛节目喜好调查</h3>\n-     <form  name=\"stu\" action=\"\"> \n-      <table> \n-       \n-       <tr> <td>性别：</td>\n-           <td><input type=\"radio\" name=\"stuSex\" checked=\"checked\" >男 \n-               <input type=\"radio\" name=\"stuSex\" >女\n-           </td>\n-       </tr> \n-       <tr> <td>出生日期</td> \n-          <td><input type=\"text\" name=\"stuBirthday\" class=\"form-control\"></td> \n-       </tr> \n-       <tr> <td>职业：</td><td><input type=\"text\" name=\"jobs\" class=\"form-control\"></td></tr> \n-       <tr><td>偏好：</td>\n-          <td><select name =\"stuSelect2\">\n-                <option selected>篮球</option>\n-                <option >足球</option>   \n-                <option >拳击</option>\n-                <option >游戏竞技</option>\n-             <lect>\n-          </td>\n-       </tr> \n-       <tr> <td>平时有看：</td>\n-           <td colspan=\"2\">\n-              <input type=\"checkbox\" name=\"stuCheck\" >NBA\n-              <input type=\"checkbox\" name=\"stuCheck\" >欧冠\n-              <input type=\"checkbox\" name=\"stuCheck\" >WWE\n-              <input type=\"checkbox\" name=\"stuCheck\" >LOL比赛\n-          </td>\n-       </tr> \n-       \n-       <tr><td>您的建议：</td>\n-          <td colspan=\"2\"><textarea name=\"Letter\" rows=\"4\" cols=\"40\" class=\"form-control\"></textarea> </td>\n-       </tr> \n-       <tr>\n-         <td><button type=\"button\" class=\"btn btn-default\">提交</td>\n-         <td><input type=\"reset\" value=\"取消\"></td>\n-       </tr> \n-     </table> \n-   </form> \n-  </body>\n- \t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n-    <script type=\"text/javascript\">\n-      $( \".btn\" ).click(function() {\n-        $.ajax({ \n-          url: \"servlet/Se1414080902222Servlet\",\n-          type : \"get\",\n-          datatype:\"html\",\n-          success: function(data){\n-            alert(data);\n-        }});\n-      });\n-    </script>\n-\n-\n-</script>\n-</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "022e9f353c77afacc3f1faad84b51df52ad8c985",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/022e9f353c77afacc3f1faad84b51df52ad8c985",
+  "parents" : [ {
+    "sha" : "ae0fd6558d96e68053355c0c2aee24ec9c7c42db",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ae0fd6558d96e68053355c0c2aee24ec9c7c42db",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ae0fd6558d96e68053355c0c2aee24ec9c7c42db"
+  } ]
+}

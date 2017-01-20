@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "Vialyn",
+    "id" : 22266193,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22266193?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Vialyn",
+    "html_url" : "https://github.com/Vialyn",
+    "followers_url" : "https://api.github.com/users/Vialyn/followers",
+    "following_url" : "https://api.github.com/users/Vialyn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Vialyn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Vialyn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Vialyn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Vialyn/orgs",
+    "repos_url" : "https://api.github.com/users/Vialyn/repos",
+    "events_url" : "https://api.github.com/users/Vialyn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Vialyn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 270,
+    "additions" : 270,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Vialyn",
+    "id" : 22266193,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22266193?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Vialyn",
+    "html_url" : "https://github.com/Vialyn",
+    "followers_url" : "https://api.github.com/users/Vialyn/followers",
+    "following_url" : "https://api.github.com/users/Vialyn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Vialyn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Vialyn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Vialyn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Vialyn/orgs",
+    "repos_url" : "https://api.github.com/users/Vialyn/repos",
+    "events_url" : "https://api.github.com/users/Vialyn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Vialyn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+  "commit" : {
+    "author" : {
+      "name" : "Vialyn",
+      "email" : "2916153488@qq.com",
+      "date" : "2016-11-21T01:30:46Z"
+    },
+    "committer" : {
+      "name" : "Vialyn",
+      "email" : "2916153488@qq.com",
+      "date" : "2016-11-21T01:30:46Z"
+    },
+    "message" : "#6 #105 提交实验代码",
+    "tree" : {
+      "sha" : "e3e9a3e6b4856c27ba5d43ff190b97d6ec8ffd00",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/e3e9a3e6b4856c27ba5d43ff190b97d6ec8ffd00"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/b3c70bcb58af49b9416fd3cbd115909cda04eb48/comments",
+  "files" : [ {
+    "sha" : "612efb02c449dd42699339e287c035f822f1953f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902131/CaculateRateServlet.java",
+    "status" : "added",
+    "additions" : 80,
+    "deletions" : 0,
+    "changes" : 80,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b3c70bcb58af49b9416fd3cbd115909cda04eb48/jweb/src/edu/hzu/javaweb/labs/se1414080902131/CaculateRateServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b3c70bcb58af49b9416fd3cbd115909cda04eb48/jweb/src/edu/hzu/javaweb/labs/se1414080902131/CaculateRateServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902131/CaculateRateServlet.java?ref=b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+    "patch" : "@@ -0,0 +1,80 @@\n+package servlets;\n+\n+import java.io.IOException;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import java.util.ArrayList;\n+//import java.util.*;\n+import beans.CountRate;\n+/**\n+ * Servlet implementation class CaculateRateServlet\n+ */\n+@WebServlet(\"/CaculateRateServlet\")\n+public class CaculateRateServlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public CaculateRateServlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+    ArrayList<CountRate>billlist=new ArrayList<CountRate>();\n+    int i=0;\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tdouble money1=Double.parseDouble(request.getParameter(\"money1\"));\n+\t\tString qixian=request.getParameter(\"qixian\");\n+\t\tString repayment=request.getParameter(\"repayment\");\n+\t\tString date=request.getParameter(\"date\");\n+\t\tdouble rate = 0,sum;\n+\t\tif(qixian!=null){\n+\t\tif(\"1����\".equals(qixian)) rate=0;\n+\t\telse if(\"3����\".equals(qixian)) rate=0.05;\n+\t\telse if(\"6����\".equals(qixian)) rate=0.10;\n+\t\telse if(\"1��\".equals(qixian)) rate=0.15;\n+\t\telse if(\"3��\".equals(qixian)) rate=0.20;\n+\t\telse  rate=0.25;}\n+\t\tsum=money1+money1*rate;\n+\t\trequest.setAttribute(\"outmessage1\", rate);\n+\t\trequest.setAttribute(\"outmessage2\", sum);\n+\t\trequest.setAttribute(\"message1\", money1);\n+\t\trequest.setAttribute(\"message2\", qixian);\n+\t\trequest.setAttribute(\"message3\", repayment);\n+\t\trequest.setAttribute(\"message4\", date);\n+\t\t\n+\t\ti++;\n+\t\tbilllist.add(new CountRate( money1,  qixian,  repayment,i,date,sum,rate));\n+\t\trequest.setAttribute(\"bill\",billlist);\n+\t\trequest.setAttribute(\"money1\",money1);\n+\t\trequest.setAttribute(\"qixian\",qixian);\n+\t\trequest.setAttribute(\"repayment\",repayment);\n+\t\trequest.setAttribute(\"rate\", rate);\n+\t\trequest.setAttribute(\"sum\", sum);\n+\t\trequest.setAttribute(\"date\", date);\n+\t\trequest.getRequestDispatcher(\"/output.jsp\").forward(request,response);\n+\t\tresponse.getWriter().append(\"Served at: \").append(request.getContextPath());\n+\t}\n+\n+\t\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\t\n+\t\t\n+\t\tdoGet(request, response);\n+\t}\n+\n+}"
+  }, {
+    "sha" : "9bc7cf0a178b6f4b00c1bb43df10f4ce5e7e34de",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902131/CountRate.java",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b3c70bcb58af49b9416fd3cbd115909cda04eb48/jweb/src/edu/hzu/javaweb/labs/se1414080902131/CountRate.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b3c70bcb58af49b9416fd3cbd115909cda04eb48/jweb/src/edu/hzu/javaweb/labs/se1414080902131/CountRate.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902131/CountRate.java?ref=b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+    "patch" : "@@ -0,0 +1,27 @@\n+package beans;\n+\n+public class CountRate {\n+\tprivate double money1;\n+private String qixian, repayment,date;\n+private int num;\n+\n+public CountRate(double money1, String qixian, String repayment,int num,String date,double sum,double rate) {\n+\tthis.money1=money1;\n+\tthis.qixian=qixian;\n+\tthis.repayment=repayment;\n+\tthis.num=num;\n+\tthis.date=date;\n+// TODO Auto-generated constructor stub\n+}\n+\n+public double getMoney1(){return money1;}\n+public void setMoney1(double money1){this.money1=money1;}\n+public String getQixian(){return qixian;}\n+public void setQixian(String qixian){this.qixian=qixian;}\n+public String getRepayment(){return repayment;}\n+public void setRepayment(String repayment){this.repayment=repayment;}\n+public int getNum(){return num;}\n+public void setNum(int num){this.num=num;}\n+public String getDate(){return date;}\n+public void setDate(String date){this.date=date;}\n+}"
+  }, {
+    "sha" : "1a160612b89456fde9850e6cd93135061196eec4",
+    "filename" : "jweb/web/1414080902131/index.jsp",
+    "status" : "added",
+    "additions" : 103,
+    "deletions" : 0,
+    "changes" : 103,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b3c70bcb58af49b9416fd3cbd115909cda04eb48/jweb/web/1414080902131/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b3c70bcb58af49b9416fd3cbd115909cda04eb48/jweb/web/1414080902131/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/index.jsp?ref=b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+    "patch" : "@@ -0,0 +1,103 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'index.jsp' starting page</title>\n+    <style type=\"text/css\">\n+h1{\n+\tbackground:#9F9;\n+\tcolor:#FFF;\n+\tfont-family:Verdana, Geneva, sans-serif;\n+\ttext-align:center;\n+}\n+h2{\n+\tbackground:#FF0;\n+\tcolor:#F00;\n+\tfont-family:Arial, Helvetica, sans-serif;\n+\ttext-align:center;\n+}\n+p{\n+\ttext-align:left\n+}\n+#p1{font-family:Arial, Helvetica, sans-serif;\n+font-size:large;\n+color:#000;\n+}\n+#p2{font-family:\"Palatino Linotype\", \"Book Antiqua\", Palatino, serif;\n+font-size:small;\n+}\n+</style>\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+  </head>\n+  \n+   <body bgcolor=\"#66FFFF\"><h1 align=\"center\">审核通过：您符合借款人的条件！</h1>\n+<h2 align=\"center\">您的借款额度为10000元</h2>\n+<form action=\"caculateRate\" method=\"post\">\n+<div>\n+<p id=\"p1\">*********************借款须知********************************</p>\n+<p id=\"p2\">（1）违约缴纳罚款<br>\n+（2）提前还款返回手续费<br>\n+（3）还款状况影响个人信用记录<br>\n+（4）违约3次取消借款资格<br>\n+(5)还款利息说明<br>\n+</p>\n+</div>\n+<div class=\"checkbox\">\n+<label>\n+<input type=\"checkbox\"name=\"right\"id=\"denfity\">已阅读以上信息\n+</label>\n+</div>\n+<div class=\"form-group\">\n+<label for=\"num1\">请输入您借款的数目：</label>\n+<input type=\"text\"class=\"form-control\"name=\"money1\"id=\"num1\">\n+</div>\n+<hr>\n+<div class=\"form-group\">\n+<p id=\"p1\">请填写您的还款计划</p>\n+<label>借款期限：</label>\n+<select class=\"form-control\"name=\"qixian\"id=\"time\">\n+<option value=\"1个月\">1个月</option>\n+<option value=\"3个月\">3个月</option>\n+<option value=\"6个月\">6个月</option>\n+<option value=\"1年\">1年</option>\n+<option value=\"3年\">3年</option>\n+<option value=\"5年\">5年</option>\n+</select>\n+</div>\n+\n+<p id=\"p1\">还款方式：</p>\n+<div class=\"radio\">\n+<label>\n+<input type=\"radio\"name=\"repayment\"id=\"repayment1\"value=\"一次性还款\">一次性还款\n+</label>\n+</div>\n+<div class=\"radio\">\n+<label>\n+<input type=\"radio\"name=\"repayment\"id=\"repayment2\"value=\"分期还款\">分期还款\n+</label>\n+</div>\n+<div class=\"form-group\">\n+<label for=\"paymentPassword\">支付密码</label>\n+<input type=\"password\"class=\"form-control\"name=\"mima\"id=\"paymentPassword\">\n+</div>\n+<button type=\"submit\"class=\"btn btn-default\">提交</button>\n+</form>\n+<hr>\n+<%Date date=new Date(); %>\n+借款的日期和时间：<%=date.toString() %>    \n+  </body>\n+</html>"
+  }, {
+    "sha" : "03519ff7af66b31756c6230807447a7750751c1b",
+    "filename" : "jweb/web/1414080902131/output.jsp",
+    "status" : "added",
+    "additions" : 60,
+    "deletions" : 0,
+    "changes" : 60,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b3c70bcb58af49b9416fd3cbd115909cda04eb48/jweb/web/1414080902131/output.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b3c70bcb58af49b9416fd3cbd115909cda04eb48/jweb/web/1414080902131/output.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/output.jsp?ref=b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+    "patch" : "@@ -0,0 +1,60 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\"prefix=\"c\" %>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>信息显示页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+<body>\n+<%request.setCharacterEncoding(\"utf-8\");\n+Calendar rightNow=Calendar.getInstance();\n+Integer Hour=new Integer(rightNow.get(Calendar.HOUR_OF_DAY));\n+request.setAttribute(\"hour\",Hour);\n+%>\n+<c:if test=\"${hour>=0&&hour<=11}\"><c:out value=\"${param.username}\"/>上午好！</c:if>\n+<c:if test=\"${hour>=12&&hour<=17}\"><c:out value=\"${param.username}\"/>下午好！</c:if>\n+<c:if test=\"${hour>=18&&hour<=23}\"><c:out value=\"${param.username}\"/>晚上好！</c:if>\n+您的当前的借款信息如下：<br>\n+借款数目：<%=request.getAttribute(\"message1\") %>\n+借款期限：<%=request.getAttribute(\"message2\") %>\n+还款方式：<%=request.getAttribute(\"message3\") %>\n+借款日期：<%=request.getAttribute(\"message4\")%>\n+您的利率为：<%=request.getAttribute(\"outmessage1\") %>\n+您所应还款的总额为：<%=request.getAttribute(\"outmessage2\") %>\n+<h4>请浏览您的历史账单</h4>\n+<div>\n+<c:forEach> var=\"show\"item=\"${bill}\">\n+<label>账单<c:out value=\"${show.num}\"/></label>\n+<label>借款数目</label>\n+<c:out value=\"${show.money1}\"/>\n+<label>还款期限</label>\n+<c:out value=\"${show.qixian}\"/>\n+<label>还款方式</label>\n+<c:out value=\"${show.repayment}\"/>\n+<label>您的利率</label>\n+<c:out value=\"${show.rate}\"/>\n+<label>应还款的总额</label>\n+<c:out value=\"${show.sum}\"/>\n+<label>借款日期</label>\n+<c:out value=\"${show.date}\"/>\n+</c:forEach>\n+</div>\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+  "parents" : [ {
+    "sha" : "7af3aace6a5e47de3c90414ca9cf075172518334",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7af3aace6a5e47de3c90414ca9cf075172518334",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/7af3aace6a5e47de3c90414ca9cf075172518334"
+  } ]
+}

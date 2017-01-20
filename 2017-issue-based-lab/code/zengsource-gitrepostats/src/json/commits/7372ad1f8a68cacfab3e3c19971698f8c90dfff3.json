@@ -1,0 +1,248 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 355,
+    "additions" : 302,
+    "deletions" : 53
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-15T12:24:16Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-06-15T12:24:16Z"
+    },
+    "message" : "Merge pull request #964 from lst1297907919/master\n\n#89 #90 #91 #95 #164 已完成全部实验",
+    "tree" : {
+      "sha" : "b1a7285530ebf40d3f8e3905aa98917abaf62aaf",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/b1a7285530ebf40d3f8e3905aa98917abaf62aaf"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/comments",
+  "files" : [ {
+    "sha" : "26da1d95461d7c46fb74cc6e81a1f9eb97698663",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/AndroidManifest.xml?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+    "patch" : "@@ -0,0 +1,21 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tpackage=\"com.silenceburn\" android:versionCode=\"1\" android:versionName=\"1.0\">\n+\t<application android:icon=\"@drawable/sketchy_paper_008\"\n+\t\tandroid:label=\"@string/app_name\">\n+\t\t<receiver android:name=\".MyNote\">\n+\t\t\t<intent-filter>\n+\t\t\t\t<action android:name=\"android.appwidget.action.APPWIDGET_UPDATE\" />\n+\t\t\t</intent-filter>\n+\t\t\t<meta-data android:name=\"android.appwidget.provider\"\n+\t\t\t\tandroid:resource=\"@xml/my_note_widget\" />\n+\t\t</receiver>\n+\n+\t\t<activity android:name=\".MyNoteConf\">\n+\t\t\t<intent-filter>\n+\t\t\t\t<action android:name=\"android.appwidget.action.APPWIDGET_CONFIGURE\" />\n+\t\t\t</intent-filter>\n+\t\t</activity>\n+\t\t<activity android:name=\".MyNoteEdit\"/>\n+\t</application>\n+</manifest> \n\\ No newline at end of file"
+  }, {
+    "sha" : "04380265f29526cbfa5fe26ab22a5b8565b0b93a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/Com1314080901122Activity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 52,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/b662631d28e02869171820ac1561b3a8c8b63e2b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/Com1314080901122Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/b662631d28e02869171820ac1561b3a8c8b63e2b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/Com1314080901122Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/Com1314080901122Activity.java?ref=b662631d28e02869171820ac1561b3a8c8b63e2b",
+    "patch" : "@@ -1,52 +0,0 @@\n-package com.example.hzu.boom;\n-\n-import android.os.Bundle;\n-import android.support.design.widget.FloatingActionButton;\n-import android.support.design.widget.Snackbar;\n-import android.support.v7.app.AppCompatActivity;\n-import android.support.v7.widget.Toolbar;\n-import android.view.View;\n-import android.view.Menu;\n-import android.view.MenuItem;\n-\n-public class Com1314080901122Activity extends AppCompatActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_com1314080901122);\n-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n-        setSupportActionBar(toolbar);\n-\n-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n-        fab.setOnClickListener(new View.OnClickListener() {\n-            @Override\n-            public void onClick(View view) {\n-                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n-                        .setAction(\"Action\", null).show();\n-            }\n-        });\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_com1314080901122, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            return true;\n-        }\n-\n-        return super.onOptionsItemSelected(item);\n-    }\n-}"
+  }, {
+    "sha" : "a5685e18280c434ad37bc3db933a28a9785781ad",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNote.java",
+    "status" : "added",
+    "additions" : 35,
+    "deletions" : 0,
+    "changes" : 35,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNote.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNote.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNote.java?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+    "patch" : "@@ -0,0 +1,35 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901122;\n+\n+import android.appwidget.AppWidgetManager;\n+import android.appwidget.AppWidgetProvider;\n+import android.content.Context;\n+import android.util.Log;\n+\n+public class MyNote extends AppWidgetProvider {\n+\t/** Called when the activity is first created. */\n+\t\n+\tfinal String mPerfName = \"com.silenceburn.MyColorNoteConf\";\n+\n+\t@Override\n+\tpublic void onUpdate(Context context, AppWidgetManager appWidgetManager,\n+\t\t\tint[] appWidgetIds) {\n+\t\t// TODO Auto-generated method stub\n+\t\tfinal int N = appWidgetIds.length;\n+\t\tfor (int i = 0; i < N; i++) {\n+\t\t\tint appWidgetId = appWidgetIds[i];\n+\t\t\tLog.i(\"myLog\", \"this is [\" + appWidgetId + \"] onUpdate!\");\n+\n+\t\t}\n+\t}\n+\n+\t@Override\n+\tpublic void onDeleted(Context context, int[] appWidgetIds) {\n+\t\t// TODO Auto-generated method stub\n+\t\tfinal int N = appWidgetIds.length;\n+\t\tfor (int i = 0; i < N; i++) {\n+\t\t\tint appWidgetId = appWidgetIds[i];\n+\t\t\tLog.i(\"myLog\", \"this is [\" + appWidgetId + \"] onDelete!\");\n+\t\t}\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "f8f92afd9f31285430d80bb260ab8bcad30e1283",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNoteConf.java",
+    "status" : "added",
+    "additions" : 108,
+    "deletions" : 0,
+    "changes" : 108,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNoteConf.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNoteConf.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNoteConf.java?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+    "patch" : "@@ -0,0 +1,108 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901122;\n+\n+import android.app.Activity;\n+import android.app.PendingIntent;\n+import android.appwidget.AppWidgetManager;\n+import android.content.Intent;\n+import android.content.SharedPreferences;\n+import android.os.Bundle;\n+import android.util.Log;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.ImageButton;\n+import android.widget.RemoteViews;\n+import android.widget.TextView;\n+\n+public class MyNoteConf extends Activity {\n+\n+\tint mAppWidgetId;\n+\tImageButton mImBtn1, mImBtn2, mImBtn3, mImBtn4;\n+\n+\tfinal String mPerfName = \"com.silenceburn.MyNoteConf\";\n+\t\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_com1314080901122_my_note_conf);\n+\t\tLog.i(\"myLog\", \" on WidgetConf ... \");\n+\n+\t\tsetResult(RESULT_CANCELED);\n+\t\t// Find the widget id from the intent.\n+\t\tIntent intent = getIntent();\n+\t\tBundle extras = intent.getExtras();\n+\t\tif (extras != null) {\n+\t\t\tmAppWidgetId = extras.getInt(AppWidgetManager.EXTRA_APPWIDGET_ID,\n+\t\t\t\t\tAppWidgetManager.INVALID_APPWIDGET_ID);\n+\t\t}\n+\n+\t\t// If they gave us an intent without the widget id, just bail.\n+\t\tif (mAppWidgetId == AppWidgetManager.INVALID_APPWIDGET_ID) {\n+\t\t\tfinish();\n+\t\t}\n+\n+\t\tmImBtn1 = (ImageButton) findViewById(R.id.ImageButton01);\n+\t\tmImBtn2 = (ImageButton) findViewById(R.id.ImageButton02);\n+\t\tmImBtn3 = (ImageButton) findViewById(R.id.ImageButton03);\n+\t\tmImBtn4 = (ImageButton) findViewById(R.id.ImageButton04);\n+\n+\t\tmImBtn1.setOnClickListener(mBtnClick);\n+\t\tmImBtn2.setOnClickListener(mBtnClick);\n+\t\tmImBtn3.setOnClickListener(mBtnClick);\n+\t\tmImBtn4.setOnClickListener(mBtnClick);\n+\t}\n+\n+\tOnClickListener mBtnClick = new OnClickListener() {\n+\t\t@Override\n+\t\tpublic void onClick(View v) {\n+\n+\t\t\tTextView mTextView = (TextView) MyNoteConf.this\n+\t\t\t\t\t.findViewById(R.id.EditText02);\n+\t\t\tSharedPreferences.Editor prefs = MyNoteConf.this\n+\t\t\t\t\t.getSharedPreferences(mPerfName, 0).edit();\n+\t\t\tprefs.putString(\"DAT\" + mAppWidgetId, mTextView.getText()\n+\t\t\t\t\t.toString());\n+\t\t\tprefs.commit();\n+\n+\t\t\tint srcId = R.drawable.com1314080901122_sketchy_paper_008;\n+\t\t\tswitch (v.getId()) {\n+\t\t\tcase R.id.ImageButton01:\n+\t\t\t\tsrcId = R.drawable.com1314080901122_sketchy_paper_003;\n+\t\t\t\tbreak;\n+\t\t\tcase R.id.ImageButton02:\n+\t\t\t\tsrcId = R.drawable.com1314080901122_sketchy_paper_004;\n+\t\t\t\tbreak;\n+\t\t\tcase R.id.ImageButton03:\n+\t\t\t\tsrcId = R.drawable.com1314080901122_sketchy_paper_007;\n+\t\t\t\tbreak;\n+\t\t\tcase R.id.ImageButton04:\n+\t\t\t\tsrcId = R.drawable.com1314080901122_sketchy_paper_011;\n+\t\t\t\tbreak;\n+\t\t\t}\n+\t\t\tLog.i(\"myLog\", \"mAppWidgetId is: \" + mAppWidgetId);\n+\n+\t\t\tRemoteViews views = new RemoteViews(MyNoteConf.this\n+\t\t\t\t\t.getPackageName(), R.layout.activity_com1314080901122_my_note_widget);\n+\t\t\tviews.setImageViewResource(R.id.my_widget_img, srcId);\n+\t\t\t\n+\t\t\tIntent intent = new Intent(MyNoteConf.this, MyNoteEdit.class);\n+\t\t\tintent.setAction(mPerfName + mAppWidgetId);\n+\t\t\tintent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,mAppWidgetId);\n+\t\t\tPendingIntent pendingIntent = PendingIntent.getActivity(MyNoteConf.this, 0,\n+\t\t\t\t\tintent, 0);\n+\t\t\tviews.setOnClickPendingIntent(R.id.my_widget_img, pendingIntent);\n+\n+\t\t\tAppWidgetManager appWidgetManager = AppWidgetManager\n+\t\t\t\t\t.getInstance(MyNoteConf.this);\n+\t\t\tappWidgetManager.updateAppWidget(mAppWidgetId, views);\n+\n+\t\t\t// return OK\n+\t\t\tIntent resultValue = new Intent();\n+\t\t\tresultValue.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,\n+\t\t\t\t\tmAppWidgetId);\n+\n+\t\t\tsetResult(RESULT_OK, resultValue);\n+\t\t\tfinish();\n+\t\t}\n+\t};\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "a78ffd4eb116a71ace4b3f8996d460f60925cd75",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNoteEdit.java",
+    "status" : "added",
+    "additions" : 89,
+    "deletions" : 0,
+    "changes" : 89,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNoteEdit.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNoteEdit.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/MyNoteEdit.java?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+    "patch" : "@@ -0,0 +1,89 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901122;\n+\n+import android.app.Activity;\n+import android.appwidget.AppWidgetManager;\n+import android.content.Intent;\n+import android.content.SharedPreferences;\n+import android.os.Bundle;\n+import android.util.Log;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.ImageButton;\n+import android.widget.RemoteViews;\n+import android.widget.TextView;\n+\n+public class MyNoteEdit extends Activity {\n+\tint mAppWidgetId;\n+\tTextView mTextView;\n+\tImageButton mImBtn1, mImBtn2, mImBtn3, mImBtn4;\n+\n+\tfinal String mPerfName = \"com.silenceburn.MyNoteConf\";\n+\tSharedPreferences mPref;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_com1314080901122_my_note_conf);\n+\n+\t\tIntent t = getIntent();\n+\t\tLog.i(\"myLog\", t.getAction());\n+\t\tmAppWidgetId = t.getExtras().getInt(\n+\t\t\t\tAppWidgetManager.EXTRA_APPWIDGET_ID, -1);\n+\t\tLog.i(\"myLog\", \"it's [\" + mAppWidgetId + \"] editing!\");\n+\n+\t\tmPref = getSharedPreferences(mPerfName, 0);\n+\t\tString noteContent = mPref.getString(\"DAT\" + mAppWidgetId, \"\");\n+\n+\t\tmTextView = (TextView) findViewById(R.id.EditText02);\n+\t\tmTextView.setText(noteContent);\n+\t\tmImBtn1 = (ImageButton) findViewById(R.id.ImageButton01);\n+\t\tmImBtn2 = (ImageButton) findViewById(R.id.ImageButton02);\n+\t\tmImBtn3 = (ImageButton) findViewById(R.id.ImageButton03);\n+\t\tmImBtn4 = (ImageButton) findViewById(R.id.ImageButton04);\n+\n+\t\tmImBtn1.setOnClickListener(mBtnClick);\n+\t\tmImBtn2.setOnClickListener(mBtnClick);\n+\t\tmImBtn3.setOnClickListener(mBtnClick);\n+\t\tmImBtn4.setOnClickListener(mBtnClick);\n+\n+\t}\n+\n+\tOnClickListener mBtnClick = new OnClickListener() {\n+\n+\t\t@Override\n+\t\tpublic void onClick(View v) {\n+\n+\t\t\tSharedPreferences.Editor prefsEdit = mPref.edit();\n+\t\t\tprefsEdit.putString(\"DAT\" + mAppWidgetId, mTextView.getText()\n+\t\t\t\t\t.toString());\n+\t\t\tprefsEdit.commit();\n+\n+\t\t\tint srcId = R.drawable.com1314080901122_sketchy_paper_008;\n+\t\t\tswitch (v.getId()) {\n+\t\t\tcase R.id.ImageButton01:\n+\t\t\t\tsrcId = R.drawable.com1314080901122_sketchy_paper_003;\n+\t\t\t\tbreak;\n+\t\t\tcase R.id.ImageButton02:\n+\t\t\t\tsrcId = R.drawable.com1314080901122_sketchy_paper_004;\n+\t\t\t\tbreak;\n+\t\t\tcase R.id.ImageButton03:\n+\t\t\t\tsrcId = R.drawable.com1314080901122_sketchy_paper_007;\n+\t\t\t\tbreak;\n+\t\t\tcase R.id.ImageButton04:\n+\t\t\t\tsrcId = R.drawable.com1314080901122_sketchy_paper_011;\n+\t\t\t\tbreak;\n+\t\t\t}\n+\n+\t\t\tRemoteViews views = new RemoteViews(MyNoteEdit.this\n+\t\t\t\t\t.getPackageName(), R.layout.activity_com1314080901122_my_note_widget);\n+\t\t\tviews.setImageViewResource(R.id.my_widget_img, srcId);\n+\n+\t\t\tAppWidgetManager appWidgetManager = AppWidgetManager\n+\t\t\t\t\t.getInstance(MyNoteEdit.this);\n+\t\t\tappWidgetManager.updateAppWidget(mAppWidgetId, views);\n+\n+\t\t\tMyNoteEdit.this.finish();\n+\t\t}\n+\t};\n+}"
+  }, {
+    "sha" : "0519ecba6ea913e21689ec692e81e9e4973fbf73",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/炸弹人.txt",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 1,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/b662631d28e02869171820ac1561b3a8c8b63e2b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/%E7%82%B8%E5%BC%B9%E4%BA%BA.txt",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/b662631d28e02869171820ac1561b3a8c8b63e2b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/%E7%82%B8%E5%BC%B9%E4%BA%BA.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901122/%E7%82%B8%E5%BC%B9%E4%BA%BA.txt?ref=b662631d28e02869171820ac1561b3a8c8b63e2b",
+    "patch" : "@@ -1 +0,0 @@\n- \n\\ No newline at end of file"
+  }, {
+    "sha" : "45cb89a5c4a070f27788b2994705c0d5c910583c",
+    "filename" : "app/src/main/res/drawable/com1314080901122_sketchy_paper_003.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_003.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_003.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901122_sketchy_paper_003.png?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3"
+  }, {
+    "sha" : "9aca37645705e7a1be69515880f468f11bebdc3c",
+    "filename" : "app/src/main/res/drawable/com1314080901122_sketchy_paper_004.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_004.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_004.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901122_sketchy_paper_004.png?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3"
+  }, {
+    "sha" : "3259d7a5c8b465adcf07c1f6991aca81b9bd7a3d",
+    "filename" : "app/src/main/res/drawable/com1314080901122_sketchy_paper_007.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_007.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_007.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901122_sketchy_paper_007.png?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3"
+  }, {
+    "sha" : "1fa0170db1b01af40a433fe291be3e9e77fce8be",
+    "filename" : "app/src/main/res/drawable/com1314080901122_sketchy_paper_008.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_008.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_008.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901122_sketchy_paper_008.png?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3"
+  }, {
+    "sha" : "650db509ee4c76ed55a241ab9598aa84a1b036e6",
+    "filename" : "app/src/main/res/drawable/com1314080901122_sketchy_paper_011.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_011.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_011.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901122_sketchy_paper_011.png?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3"
+  }, {
+    "sha" : "467e3893141cf6d5503c2c6e973ef5db479151d3",
+    "filename" : "app/src/main/res/drawable/com1314080901122_sketchy_paper_017.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_017.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/drawable/com1314080901122_sketchy_paper_017.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/com1314080901122_sketchy_paper_017.png?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3"
+  }, {
+    "sha" : "a789fae4b019b47c3f937efd8b4f76684f5c00a7",
+    "filename" : "app/src/main/res/layout/activity_com1314080901122_my_note_conf.xml",
+    "status" : "added",
+    "additions" : 29,
+    "deletions" : 0,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/layout/activity_com1314080901122_my_note_conf.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/layout/activity_com1314080901122_my_note_conf.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901122_my_note_conf.xml?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+    "patch" : "@@ -0,0 +1,29 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout android:orientation=\"vertical\"\n+\tandroid:layout_width=\"fill_parent\" android:layout_height=\"fill_parent\"\n+\txmlns:android=\"http://schemas.android.com/apk/res/android\">\n+\t<TextView android:layout_height=\"wrap_content\" android:text=\"@string/note_title\"\n+\t\tandroid:layout_width=\"wrap_content\" android:padding=\"10dp\"></TextView>\n+\t<LinearLayout android:layout_height=\"fill_parent\"\n+\t\tandroid:layout_width=\"fill_parent\" android:layout_weight=\"1\">\n+\t\t<EditText android:id=\"@+id/EditText02\" android:layout_width=\"fill_parent\"\n+\t\t\tandroid:layout_height=\"fill_parent\" android:gravity=\"left\"\n+\t\t\tandroid:hint=\"@string/edithint\"></EditText>\n+\t</LinearLayout>\n+\t<LinearLayout android:layout_height=\"fill_parent\"\n+\t\tandroid:layout_width=\"fill_parent\" android:layout_weight=\"2\"\n+\t\tandroid:gravity=\"center\">\n+\t\t<ImageButton android:id=\"@+id/ImageButton01\"\n+\t\t\tandroid:layout_width=\"72dp\" android:layout_height=\"72dp\"\n+\t\t\tandroid:src=\"@drawable/com1314080901122_sketchy_paper_003\" android:layout_margin=\"3dp\"></ImageButton>\n+\t\t<ImageButton android:id=\"@+id/ImageButton02\"\n+\t\t\tandroid:layout_width=\"72dp\" android:layout_height=\"72dp\"\n+\t\t\tandroid:src=\"@drawable/com1314080901122_sketchy_paper_004\" android:layout_margin=\"3dp\"></ImageButton>\n+\t\t<ImageButton android:id=\"@+id/ImageButton03\"\n+\t\t\tandroid:layout_width=\"72dp\" android:layout_height=\"72dp\"\n+\t\t\tandroid:src=\"@drawable/com1314080901122_sketchy_paper_007\" android:layout_margin=\"3dp\"></ImageButton>\n+\t\t<ImageButton android:id=\"@+id/ImageButton04\"\n+\t\t\tandroid:layout_width=\"72dp\" android:layout_height=\"72dp\"\n+\t\t\tandroid:src=\"@drawable/com1314080901122_sketchy_paper_011\" android:layout_margin=\"3dp\"></ImageButton>\n+\t</LinearLayout>\n+</LinearLayout>"
+  }, {
+    "sha" : "36b7a0f8c01e02fa51ddf0af95398142378a804a",
+    "filename" : "app/src/main/res/layout/activity_com1314080901122_my_note_widget.xml",
+    "status" : "added",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/layout/activity_com1314080901122_my_note_widget.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/layout/activity_com1314080901122_my_note_widget.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901122_my_note_widget.xml?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+    "patch" : "@@ -0,0 +1,7 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<ImageView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:id=\"@+id/my_widget_img\"\n+    android:layout_width=\"wrap_content\"\n+    android:layout_height=\"wrap_content\"\n+    android:src=\"@drawable/com1314080901122_sketchy_paper_008\"\n+    android:clickable=\"true\"/>\n\\ No newline at end of file"
+  }, {
+    "sha" : "1adde58f6db931d1cbfc1a9a76f56f6c017bc770",
+    "filename" : "app/src/main/res/values/com1314080901122_strings.xml",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/values/com1314080901122_strings.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/values/com1314080901122_strings.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/com1314080901122_strings.xml?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+    "patch" : "@@ -0,0 +1,8 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+    <string name=\"hello\">Hello World, MyColorNote!</string>\n+    <string name=\"app_name\">我的便签</string>\n+    <string name=\"widget_string\"></string>\n+    <string name=\"note_title\">请输入便签内容:</string>\n+            <string name=\"edithint\">在这里输入内容...</string>\n+</resources>"
+  }, {
+    "sha" : "c7dc6adbcfc7b4057f920ef90359cfaa59b29c3c",
+    "filename" : "app/src/main/res/xml/com1314080901122_my_note_widget.xml",
+    "status" : "added",
+    "additions" : 5,
+    "deletions" : 0,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/xml/com1314080901122_my_note_widget.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/7372ad1f8a68cacfab3e3c19971698f8c90dfff3/app/src/main/res/xml/com1314080901122_my_note_widget.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/xml/com1314080901122_my_note_widget.xml?ref=7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+    "patch" : "@@ -0,0 +1,5 @@\n+<appwidget-provider xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+\tandroid:minWidth=\"72dp\" android:minHeight=\"72dp\"\n+\tandroid:updatePeriodMillis=\"86400000\" android:initialLayout=\"@layout/my_note_widget\"\n+\tandroid:configure=\"com.silenceburn.MyNoteConf\">\n+</appwidget-provider>\n\\ No newline at end of file"
+  } ],
+  "sha" : "7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/7372ad1f8a68cacfab3e3c19971698f8c90dfff3",
+  "parents" : [ {
+    "sha" : "b662631d28e02869171820ac1561b3a8c8b63e2b",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/b662631d28e02869171820ac1561b3a8c8b63e2b",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/b662631d28e02869171820ac1561b3a8c8b63e2b"
+  }, {
+    "sha" : "76dfc11e7b49f1f2e5e55d11918075fb52ef877c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/76dfc11e7b49f1f2e5e55d11918075fb52ef877c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/76dfc11e7b49f1f2e5e55d11918075fb52ef877c"
+  } ]
+}

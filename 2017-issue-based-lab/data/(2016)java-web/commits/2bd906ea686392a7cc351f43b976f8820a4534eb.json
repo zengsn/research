@@ -1,0 +1,60 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 115,
+    "additions" : 115,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/2bd906ea686392a7cc351f43b976f8820a4534eb",
+  "commit" : {
+    "author" : {
+      "name" : "pigosy",
+      "email" : "“892365482@qq.com",
+      "date" : "2016-10-26T05:13:16Z"
+    },
+    "committer" : {
+      "name" : "pigosy",
+      "email" : "“892365482@qq.com",
+      "date" : "2016-10-26T05:13:16Z"
+    },
+    "message" : "#4提交实验3",
+    "tree" : {
+      "sha" : "ee9bf92d5fb29100f83c820bde5ad04e998ff87c",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/ee9bf92d5fb29100f83c820bde5ad04e998ff87c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/2bd906ea686392a7cc351f43b976f8820a4534eb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/2bd906ea686392a7cc351f43b976f8820a4534eb/comments",
+  "files" : [ {
+    "sha" : "88bdaaea9b771566c60a81147c2bab6056561f19",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902231/Se1414080902231Servlet.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2bd906ea686392a7cc351f43b976f8820a4534eb/jweb/src/edu/hzu/javaweb/labs/se1414080902231/Se1414080902231Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2bd906ea686392a7cc351f43b976f8820a4534eb/jweb/src/edu/hzu/javaweb/labs/se1414080902231/Se1414080902231Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902231/Se1414080902231Servlet.java?ref=2bd906ea686392a7cc351f43b976f8820a4534eb",
+    "patch" : "@@ -0,0 +1,45 @@\n+package edu.hzu.javaweb.labs.se1414080902231;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+@SuppressWarnings(\"serial\")\n+@WebServlet(\"/1414080902231\")\n+public class Se1414080902231Servlet extends HttpServlet {\n+\n+\tpublic Se1414080902231Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();;\n+\t\tout.println(\"success!\");\n+\t}\n+\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"success!\");\n+\t}\n+\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "284e25b89ffb990c6232d376481ddcc773b8e7c2",
+    "filename" : "jweb/web/1414080902231/index.jsp",
+    "status" : "added",
+    "additions" : 70,
+    "deletions" : 0,
+    "changes" : 70,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2bd906ea686392a7cc351f43b976f8820a4534eb/jweb/web/1414080902231/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2bd906ea686392a7cc351f43b976f8820a4534eb/jweb/web/1414080902231/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902231/index.jsp?ref=2bd906ea686392a7cc351f43b976f8820a4534eb",
+    "patch" : "@@ -0,0 +1,70 @@\n+﻿<%@page contentType=\"text/html\" pageEncoding=\"UTF-8\" %>\n+<!DOCTYPE html>\n+<html>\n+\t<head>\t\t\n+\t\t<meta charset=\"utf-8\">\n+\t\t<title>javaweb 实验二</title>\n+\n+\t\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\t\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t\t<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\t\t<script type=\"text/javascript\" src=\"index.js\"></script>\n+\t\t\n+\t</head>\n+\t<body>\n+\t\t<%=new java.util.Date().toLocaleString() %>\n+\t\t<p style=\"\"><b>发布二手货物</b></p>\n+\t\t<form  id=\"fm\"  method=\"post\">\n+\t\t  <div class=\"form-group\">\n+\t\t    <p><label for=\"GoodsName\">Goods Name</label><span style=\"color:red\" id=\"p1\"></span></p>\n+\t\t    <input type=\"text\"  id=\"GoodsName\" name=\"GoodsName\" placeholder=\"Goods Name\" style=\"width:320px\"/>\n+\t\t  </div>\n+\t\t  <div class=\"form-group\">\n+\t\t    <p><label for=\"Detail\">Detail</label><span style=\"color:red\" id=\"p2\"></span></p>\n+\t\t     <textarea name=\"Detail\" id=\"Detail\" cols=\"50\" rows=\"10\" placeholder=\"Detail\"></textarea>\n+\t\t  </div>\t\t \n+\t\t  <div class=\"form-group\">\n+\t\t    <p><label for=\"imgfile\">Pictures input</label><span style=\"color:red\" id=\"p3\"></span></p>\n+\t\t    <input name=\"imgfile\" type=\"file\" id=\"imgfile\" accept=\"image/*\">\n+\t\t  </div>\n+\t\t</form>\n+\t\t\n+\t\t<button id=\"btn\" type=\"submit\" onclick=\"fun()\">submit</button>\n+\t</body>\t\n+\t<% %>\n+\t\n+\t<script type=\"text/javascript\" >\n+  \t\t\n+  \t\tfunction fun(){\n+  \t\t\t\n+\t\t\tif(document.getElementById(\"GoodsName\").value=='')\n+\t\t\t\tdocument.getElementById(\"p1\").innerHTML=\"* not null\";\n+\t\t\t\t\n+\t\t\tif(\tdocument.getElementById(\"Detail\").value=='')\n+\t\t\t\tdocument.getElementById(\"p2\").innerHTML=\"* not null\";\n+\t\t\t\t\n+\t\t\tif(\tdocument.getElementById(\"imgfile\").value=='')\n+\t\t\t   document.getElementById(\"p3\").innerHTML=\"* not null\";\n+\t\t\telse\n+\t\t\t\t//document.getElementById(\"fm\").submit();\n+\t\t\t\t$.a();\n+\t\t}\n+  </script>\n+  <script type=\"text/javascript\" >\n+  \t$.a=function(){\n+  \t\t$.ajax({\n+  \t\t\ttype:\"post\",\n+  \t\t\tdatatype:\"html\",\n+  \t\t\turl:\"1414080902231\",\n+  \t\t\tsuccess:function(data){\n+  \t\t\talert(data);\n+  \t\t\t}\n+  \t\t});\t\t\n+  \t};\n+  </script>\n+\t\n+\n+\n+\t\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "2bd906ea686392a7cc351f43b976f8820a4534eb",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/2bd906ea686392a7cc351f43b976f8820a4534eb",
+  "parents" : [ {
+    "sha" : "c6c5db5fcb361ad991b5e459ac266a33ac3a5eec",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c6c5db5fcb361ad991b5e459ac266a33ac3a5eec",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/c6c5db5fcb361ad991b5e459ac266a33ac3a5eec"
+  } ]
+}

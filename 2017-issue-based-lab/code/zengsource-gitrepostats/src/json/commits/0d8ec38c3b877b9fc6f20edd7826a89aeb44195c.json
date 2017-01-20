@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 49,
+    "additions" : 38,
+    "deletions" : 11
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/0d8ec38c3b877b9fc6f20edd7826a89aeb44195c",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T00:26:49Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T00:26:49Z"
+    },
+    "message" : "Merge pull request #404 from YLiuLiu/master\n\n#90 #76 lab4",
+    "tree" : {
+      "sha" : "78dc3ed3f193b93c397580fbe5eeffbae838dc0d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/78dc3ed3f193b93c397580fbe5eeffbae838dc0d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/0d8ec38c3b877b9fc6f20edd7826a89aeb44195c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0d8ec38c3b877b9fc6f20edd7826a89aeb44195c/comments",
+  "files" : [ {
+    "sha" : "f13b354fd0aed1217996135874f4b3e6fd0c988f",
+    "filename" : "app/src/main/res/layout/activity_com1314080901239.xml",
+    "status" : "modified",
+    "additions" : 38,
+    "deletions" : 11,
+    "changes" : 49,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0d8ec38c3b877b9fc6f20edd7826a89aeb44195c/app/src/main/res/layout/activity_com1314080901239.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0d8ec38c3b877b9fc6f20edd7826a89aeb44195c/app/src/main/res/layout/activity_com1314080901239.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901239.xml?ref=0d8ec38c3b877b9fc6f20edd7826a89aeb44195c",
+    "patch" : "@@ -1,17 +1,44 @@\n-<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n     android:layout_height=\"match_parent\"\n-    \n-    tools:context=\".Com1314080901239Activity\" >\n+    tools:context=\".Com1314080901239Activity\" \n+    android:orientation=\"vertical\"\n+    >\n \n-    <ImageView\n-        android:id=\"@+id/iv\"\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\"\n-        android:layout_centerInParent=\"true\"\n-        android:src=\"@drawable/a\" />\n+  <ImageView\n+      android:layout_width=\"wrap_content\"\n+      android:layout_height=\"200dp\"\n+      android:src=\"@drawable/a\"\n+      android:layout_gravity=\"center\"/>\n \n-   \n+  <LinearLayout\n+      android:layout_width=\"wrap_content\"\n+      android:layout_height=\"wrap_content\"\n+      android:orientation=\"horizontal\"\n+      android:layout_gravity=\"center\"\n+      tools:context=\".Com1314080901239Activity\" >\n \n-</RelativeLayout>\n\\ No newline at end of file\n+      <Button\n+          android:layout_width=\"wrap_content\"\n+          android:layout_height=\"wrap_content\"\n+          android:text=\"选图\" \n+          />\n+\n+      <Button\n+          android:layout_width=\"wrap_content\"\n+          android:layout_height=\"wrap_content\"\n+          android:text=\"拍照\" />\n+\n+      <Button\n+          android:layout_width=\"wrap_content\"\n+          android:layout_height=\"wrap_content\"\n+          android:text=\"截图\" />\n+\n+      <Button\n+          android:layout_width=\"wrap_content\"\n+          android:layout_height=\"wrap_content\"\n+          android:text=\"保存\" />\n+  </LinearLayout>\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "0d8ec38c3b877b9fc6f20edd7826a89aeb44195c",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0d8ec38c3b877b9fc6f20edd7826a89aeb44195c",
+  "parents" : [ {
+    "sha" : "e1ca5db4e495eeba148f376287e599b249932946",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e1ca5db4e495eeba148f376287e599b249932946",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/e1ca5db4e495eeba148f376287e599b249932946"
+  }, {
+    "sha" : "785bd09a71ed811575cb68386afa7dcada00be8b",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/785bd09a71ed811575cb68386afa7dcada00be8b",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/785bd09a71ed811575cb68386afa7dcada00be8b"
+  } ]
+}

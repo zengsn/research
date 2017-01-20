@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 241,
+    "additions" : 187,
+    "deletions" : 54
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T15:04:25Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T15:04:25Z"
+    },
+    "message" : "Merge pull request #466 from hzukondy/master\n\n#90 #67 Lab4",
+    "tree" : {
+      "sha" : "76316981e7bcf0f560d54463a17bfd50a628dffc",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/76316981e7bcf0f560d54463a17bfd50a628dffc"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae/comments",
+  "files" : [ {
+    "sha" : "3727601032709527608b025e18a9ceb397ba19b4",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901128/Com1314080901128Activity.java",
+    "status" : "modified",
+    "additions" : 133,
+    "deletions" : 23,
+    "changes" : 156,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901128/Com1314080901128Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901128/Com1314080901128Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901128/Com1314080901128Activity.java?ref=9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae",
+    "patch" : "@@ -1,41 +1,151 @@\n-package edu.hzuapps.androidworks.homeworks.com1314080901128;\n+package com.edu.hzu.liaotian;\n+\n+\n+import java.io.IOException;\n+import java.io.ObjectInputStream;\n+import java.io.ObjectOutputStream;\n+import java.net.Socket;\n+import java.net.UnknownHostException;\n+import java.text.SimpleDateFormat;\n+import java.util.ArrayList;\n+import java.util.Date;\n+import java.util.List;\n+\n \n import android.os.Bundle;\n-import android.support.v7.app.ActionBarActivity;\n+import android.os.Handler;\n+import android.app.Activity;\n import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.view.ViewGroup;\n+import android.widget.BaseAdapter;\n import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.ImageView;\n+import android.widget.ListView;\n+import android.widget.TextView;\n+import android.widget.Toast;\n \n-import edu.hzuapps.androidworks.R;\n-import edu.hzuapps.androidworks.homeworks.BackActivity;\n+import com.edu.hzu.liaotian.R;\n \n-public class Com1314080901128ctivity extends BackActivity {\n+public class MainActivity extends Activity implements OnClickListener{\n+    EditText et_tony_message;\n+    Button but_tony_send;\n \n+    EditText et_hill_message;\n+    Button but_hill_send;\n+\n+    ListView lv_message;\n+    List<Message> list;\n+    MessageAdapter adapter;\n+    Handler handler=new Handler();\n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_com1314080901128);\n-\n-        Button closeBtn = (Button) findViewById(R.id.button_close);\n-        closeBtn.setOnClickListener(new View.OnClickListener() {\n-            @Override\n-            public void onClick(View view) {\n-                finish();\n-            }\n-        });\n+        setContentView(R.layout.activity_main);\n+        init();\n     }\n \n-    @Override\n-    protected void onStart() {\n-        super.onStart();\n+    private void init() {\n+        et_tony_message=(EditText) findViewById(R.id.et_tony_message);\n+        but_tony_send=(Button) findViewById(R.id.but_tony_send);\n+        but_tony_send.setOnClickListener(this);\n+\n+        et_hill_message=(EditText) findViewById(R.id.et_hill_message);\n+        but_hill_send=(Button) findViewById(R.id.but_hill_send);\n+        but_hill_send.setOnClickListener(this);\n+\n+        list=new ArrayList<Message>();\n+        lv_message=(ListView) findViewById(R.id.lv_message);\n+        adapter=new MessageAdapter();\n+        lv_message.setAdapter(adapter);\n     }\n \n+\n     @Override\n-    protected void onPause() {\n-        super.onPause();\n+    public void onClick(View v) {\n+\n+        if(v==but_tony_send){\n+\n+            if(et_tony_message.getText()==null||et_tony_message.getText().toString().equals(\"\")){\n+                Toast.makeText(this, \"\",Toast.LENGTH_LONG).show();\n+                return ;\n+            }\n+            Message m=new Message();\n+            m.setFrom_username(\"Tony\");\n+            m.setCreate_time(System.currentTimeMillis());\n+            m.setText(et_tony_message.getText().toString());\n+            sendMessage(m);\n+            et_tony_message.setText(\"\");\n+        }\n+\n+        if(v==but_hill_send){\n+\n+            if(et_hill_message.getText()==null||et_hill_message.getText().toString().equals(\"\")){\n+                Toast.makeText(this, \"\", Toast.LENGTH_LONG).show();\n+                return ;\n+            }\n+            Message m=new Message();\n+            m.setFrom_username(\"Hill\");\n+            m.setCreate_time(System.currentTimeMillis());\n+            m.setText(et_hill_message.getText().toString());\n+            sendMessage(m);\n+            et_hill_message.setText(\"\");\n+        }\n+    }\n+    private void sendMessage(Message m) {\n+        list.add(m);\n+        adapter.notifyDataSetChanged();\n+//      lv_message.f\n+        lv_message.setSelection(list.size()+1);\n     }\n+    class MessageAdapter extends BaseAdapter{\n \n-    @Override\n-    protected void onStop() {\n-        super.onStop();\n+        @Override\n+        public int getCount() {\n+            return list.size();\n+        }\n+\n+        @Override\n+        public Object getItem(int position) {\n+            return list.get(position);\n+        }\n+\n+        @Override\n+        public long getItemId(int position) {\n+            return 0;\n+        }\n+\n+        @Override\n+        public View getView(int position, View convertView, ViewGroup parent) {\n+            Message message=list.get(position);\n+            ViewHolder viewHolder=null;\n+//      if(convertView==null){\n+            if(\"Tony\".equalsIgnoreCase(message.getFrom_username())){\n+                convertView=parent.inflate(MainActivity.this, R.layout.list_message_item_left, null);\n+            }else{\n+                convertView=parent.inflate(MainActivity.this, R.layout.list_message_item_right, null);\n+            }\n+            viewHolder=new ViewHolder();\n+            viewHolder.iv_userhead=(ImageView) convertView.findViewById(R.id.iv_userhead);\n+            viewHolder.tv_chatcontent=(TextView) convertView.findViewById(R.id.tv_chatcontent);\n+            viewHolder.tv_sendtime=(TextView) convertView.findViewById(R.id.tv_sendtime);\n+            viewHolder.tv_username=(TextView) convertView.findViewById(R.id.tv_username);\n+//          convertView.setTag(viewHolder);\n+//      }else{\n+//          viewHolder=(ViewHolder) convertView.getTag();\n+//      }\n+\n+            viewHolder.tv_chatcontent.setText(message.getText());\n+            viewHolder.tv_sendtime.setText(new SimpleDateFormat(\"HH:mm:ss\").format(new Date(message.getCreate_time())));\n+            viewHolder.tv_username.setText(message.getFrom_username());\n+            return convertView;\n+        }\n+        class ViewHolder{\n+            public ImageView iv_userhead;\n+            public TextView tv_username;\n+            public TextView tv_chatcontent;\n+            public TextView tv_sendtime;\n+        }\n     }\n-}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "d781f4d494fe331ed878f0dcc4aee011111d51e1",
+    "filename" : "app/src/main/res/layout/activity_com1314080901128.xml",
+    "status" : "modified",
+    "additions" : 54,
+    "deletions" : 31,
+    "changes" : 85,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae/app/src/main/res/layout/activity_com1314080901128.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae/app/src/main/res/layout/activity_com1314080901128.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901128.xml?ref=9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae",
+    "patch" : "@@ -1,32 +1,55 @@\n <?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-\tandroid:layout_width=\"fill_parent\"\n-\tandroid:layout_height=\"wrap_content\"\n-\tandroid:orientation=\"vertical\"\n-\tandroid:padding=\"6dp\">\n-\n-\t<RelativeLayout\n-\t\tandroid:layout_width=\"fill_parent\"\n-\t\tandroid:layout_height=\"wrap_content\">\n-\t\n-\t\t<ImageView \n-\t\t\tandroid:id=\"@+id/iv_userhead\" \n-\t\t\tandroid:layout_width=\"40dp\"\n-\t\t\tandroid:layout_height=\"40dp\"\n-\t\t\tandroid:background=\"@drawable/com1314080901128image_t\"\n-\t\t\tandroid:focusable=\"false\" \n-\t\t\tandroid:layout_alignParentLeft=\"true\" \n-\t\t\tandroid:layout_alignParentTop=\"true\" />\n-\n-\t\t\n-\t\t<TextView \n-\t\t\tandroid:id=\"@+id/tv_chatcontent\" \n-\t\t\tandroid:layout_toRightOf=\"@id/iv_userhead\"\n-\t\t\tandroid:layout_marginLeft=\"10dp\"\n-\t\t\tandroid:layout_marginRight=\"40dp\"\n-\t\t\tandroid:layout_width=\"wrap_content\"\n-\t\t\tandroid:layout_height=\"wrap_content\"\n-\t\t\tandroid:background=\"@drawable/com1314080901128images_b\"/>\n-\t</RelativeLayout>\n-\n-</LinearLayout>\n\\ No newline at end of file\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:background=\"#ffffff\"\n+    tools:context=\".MainActivity\" >\n+    <ListView\n+        android:id=\"@+id/lv_message\"\n+        android:layout_height=\"fill_parent\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_above=\"@+id/ll_send_1\"\n+        android:scrollbars=\"none\"\n+        android:divider=\"@null\"\n+        android:footerDividersEnabled=\"false\">\n+    </ListView>\n+    <LinearLayout\n+        android:id=\"@+id/ll_send_1\"\n+        android:layout_height=\"50dp\"\n+        android:layout_width=\"fill_parent\"\n+        android:orientation=\"horizontal\"\n+        android:layout_above=\"@+id/ll_send_2\">\n+        <EditText\n+            android:id=\"@+id/et_tony_message\"\n+            android:layout_width=\"0dp\"\n+            android:layout_height=\"fill_parent\"\n+            android:layout_weight=\"3\"\n+            android:hint=\"Tony请输入\"/>\n+        <Button\n+            android:id=\"@+id/but_tony_send\"\n+            android:layout_height=\"fill_parent\"\n+            android:layout_width=\"0dp\"\n+            android:layout_weight=\"1\"\n+            android:text=\"send\"/>\n+    </LinearLayout>\n+    <LinearLayout\n+        android:id=\"@+id/ll_send_2\"\n+        android:layout_height=\"50dp\"\n+        android:layout_width=\"fill_parent\"\n+        android:orientation=\"horizontal\"\n+        android:layout_alignParentBottom=\"true\">\n+        <EditText\n+            android:id=\"@+id/et_hill_message\"\n+            android:layout_width=\"0dp\"\n+            android:layout_height=\"fill_parent\"\n+            android:layout_weight=\"3\"\n+            android:hint=\"Hill请输入\"/>\n+        <Button\n+            android:id=\"@+id/but_hill_send\"\n+            android:layout_height=\"fill_parent\"\n+            android:layout_width=\"0dp\"\n+            android:layout_weight=\"1\"\n+            android:text=\"send\"/>\n+    </LinearLayout>\n+</RelativeLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9f2bd4a7eeb0eaf4d85b32ca4fa5bcb4a875d9ae",
+  "parents" : [ {
+    "sha" : "f561d61309143963feb4b0dd82dae2315fa210d4",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f561d61309143963feb4b0dd82dae2315fa210d4",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/f561d61309143963feb4b0dd82dae2315fa210d4"
+  }, {
+    "sha" : "69ad300d0fdc121e49406055394869cf89e87ab2",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/69ad300d0fdc121e49406055394869cf89e87ab2",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/69ad300d0fdc121e49406055394869cf89e87ab2"
+  } ]
+}

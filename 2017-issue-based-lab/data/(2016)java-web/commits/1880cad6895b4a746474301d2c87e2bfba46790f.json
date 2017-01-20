@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "29liweiliang",
+    "id" : 22501977,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22501977?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/29liweiliang",
+    "html_url" : "https://github.com/29liweiliang",
+    "followers_url" : "https://api.github.com/users/29liweiliang/followers",
+    "following_url" : "https://api.github.com/users/29liweiliang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/29liweiliang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/29liweiliang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/29liweiliang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/29liweiliang/orgs",
+    "repos_url" : "https://api.github.com/users/29liweiliang/repos",
+    "events_url" : "https://api.github.com/users/29liweiliang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/29liweiliang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 44,
+    "additions" : 44,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "29liweiliang",
+    "id" : 22501977,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22501977?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/29liweiliang",
+    "html_url" : "https://github.com/29liweiliang",
+    "followers_url" : "https://api.github.com/users/29liweiliang/followers",
+    "following_url" : "https://api.github.com/users/29liweiliang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/29liweiliang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/29liweiliang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/29liweiliang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/29liweiliang/orgs",
+    "repos_url" : "https://api.github.com/users/29liweiliang/repos",
+    "events_url" : "https://api.github.com/users/29liweiliang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/29liweiliang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1880cad6895b4a746474301d2c87e2bfba46790f",
+  "commit" : {
+    "author" : {
+      "name" : "29liweiliang",
+      "email" : "445096708@qq.com",
+      "date" : "2016-11-08T15:30:02Z"
+    },
+    "committer" : {
+      "name" : "29liweiliang",
+      "email" : "445096708@qq.com",
+      "date" : "2016-11-08T15:30:02Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "36ad63dbf8b7b9a23fbd995fb4464733d91412d6",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/36ad63dbf8b7b9a23fbd995fb4464733d91412d6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1880cad6895b4a746474301d2c87e2bfba46790f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1880cad6895b4a746474301d2c87e2bfba46790f/comments",
+  "files" : [ {
+    "sha" : "d973b4dff94dfe260f7900360c2603100a289f9f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902129/MyFilter.java",
+    "status" : "added",
+    "additions" : 44,
+    "deletions" : 0,
+    "changes" : 44,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1880cad6895b4a746474301d2c87e2bfba46790f/jweb/src/edu/hzu/javaweb/labs/se1414080902129/MyFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1880cad6895b4a746474301d2c87e2bfba46790f/jweb/src/edu/hzu/javaweb/labs/se1414080902129/MyFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902129/MyFilter.java?ref=1880cad6895b4a746474301d2c87e2bfba46790f",
+    "patch" : "@@ -0,0 +1,44 @@\n+package filter;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+@WebFilter(filterName=\"hehe\",urlPatterns=\"/*\")\n+public class MyFilter implements Filter {\n+\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t\t\n+\t}\n+\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tresponse.setCharacterEncoding(\"UTF-8\"); \n+\t\tString stuName=request.getParameter(\"stuname\");\n+\t\tif(stuName!=null&&!\"\".equals(stuName))\n+\t\t{\n+\t\t\tchain.doFilter(request, response);\n+\t\t}\n+\t\telse\n+\t\t{\n+\t\t\tRequestDispatcher dispatcher = request.getRequestDispatcher(\"/\");\n+\t\t\tdispatcher.forward(request,response);\n+\t\t}\n+\t}\n+\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t\t\n+\t}\n+\n+}"
+  } ],
+  "sha" : "1880cad6895b4a746474301d2c87e2bfba46790f",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1880cad6895b4a746474301d2c87e2bfba46790f",
+  "parents" : [ {
+    "sha" : "f670ee2f4b5446e5902b356a1e4b7b11c1bb9577",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f670ee2f4b5446e5902b356a1e4b7b11c1bb9577",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f670ee2f4b5446e5902b356a1e4b7b11c1bb9577"
+  } ]
+}

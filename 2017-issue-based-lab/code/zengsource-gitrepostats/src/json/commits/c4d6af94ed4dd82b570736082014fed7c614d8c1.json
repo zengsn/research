@@ -1,0 +1,195 @@
+{
+  "committer" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 378,
+    "additions" : 174,
+    "deletions" : 204
+  },
+  "author" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/c4d6af94ed4dd82b570736082014fed7c614d8c1",
+  "commit" : {
+    "author" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2016-05-18T01:27:35Z"
+    },
+    "committer" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2016-05-18T01:27:35Z"
+    },
+    "message" : "增加一条扫雷游戏的用时记录\n\n实验已全部完成",
+    "tree" : {
+      "sha" : "978f24781af48f89684b03f1403209fdc51499ab",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/978f24781af48f89684b03f1403209fdc51499ab"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c4d6af94ed4dd82b570736082014fed7c614d8c1/comments",
+  "files" : [ {
+    "sha" : "337c5e0ce25417a046cbe42cdc8f0e6630764142",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Com1314080901110/GameActivity.java",
+    "status" : "modified",
+    "additions" : 8,
+    "deletions" : 2,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/java/edu/hzuapps/androidworks/homeworks/Com1314080901110/GameActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/java/edu/hzuapps/androidworks/homeworks/Com1314080901110/GameActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Com1314080901110/GameActivity.java?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -1,6 +1,7 @@\n package edu.hzuapps.androidworks.homeworks.com1314080901110;\n \n import android.content.Intent;\n+import android.content.SharedPreferences;\n import android.os.Message;\n import android.support.v7.app.AppCompatActivity;\n import android.os.Bundle;\n@@ -67,14 +68,15 @@ public boolean onOptionsItemSelected(MenuItem item) {\n         return super.onOptionsItemSelected(item);\n     }\n \n+\n     public void inint(){\n         startGame=(Button)findViewById(R.id.startGame);\n         showTime = (TextView) findViewById(R.id.timeView);\n         handler = new Handler() {\n             @Override\n             public void handleMessage(Message msg) {\n                 if (msg.what == MESSAGE_UPDATE_TIME) {\n-                    showTime.setText(\"已用时间：\" +gameTime/60+\"分\"+ gameTime%60 + \"秒\");\n+                    showTime.setText(\"本次所用时间：\" +gameTime/60+\"分\"+ gameTime%60 + \"秒\");\n                 }\n             }\n         };\n@@ -103,6 +105,10 @@ public void run() {\n     public void stopGame(){\n         isGaming=false;\n         timer.cancel();\n+        SharedPreferences preference = getSharedPreferences(\"time\",MODE_PRIVATE);\n+        SharedPreferences.Editor editor = preference.edit();\n+        editor.putString(\"record\",showTime.getText().toString());\n+        editor.commit();\n     }\n \n     public void addListener(){\n@@ -158,7 +164,7 @@ public void onItemClick(AdapterView<?> parent, View view, int position, long id)\n                     grid.setIsShow(true);\n                     if(adapter.isWin()){\n                         stopGame();\n-                        Toast.makeText(getApplicationContext(),\"恭喜您！闯关成功,您的用时为\"+showTime.getText(),Toast.LENGTH_LONG).show();\n+                        Toast.makeText(getApplicationContext(),\"恭喜您！闯关成功,您\"+showTime.getText(),Toast.LENGTH_LONG).show();\n                     }\n                     adapter.notifyDataSetChanged();\n                 }"
+  }, {
+    "sha" : "d4c1f3eb0b4ec3fc0aa94b254e63f3a8ccff084f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/Com1314080901110Activity.java",
+    "status" : "modified",
+    "additions" : 13,
+    "deletions" : 4,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/Com1314080901110Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/Com1314080901110Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/Com1314080901110Activity.java?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -12,14 +12,15 @@\n import android.widget.EditText;\n import android.widget.Toast;\n \n-public class com1314080901110Activity extends AppCompatActivity {\n+public class Com1314080901110Activity extends AppCompatActivity {\n     private Button toPlay;\n     private Button setDifficulty;\n+    private Button check;\n     public String level=\"10\";\n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState)\n-        setContentView(R.layout.activity_Com131408090110);\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_com1314080901110);\n //        布置ToPlayGame按钮监听事件\n         toPlay=(Button)findViewById(R.id.toPlay);\n         toPlay.setOnClickListener(new View.OnClickListener() {\n@@ -42,11 +43,19 @@ public void onClick(View v) {\n                             @Override\n                             public void onClick(DialogInterface dialog, int which) {\n                                 // TODO Auto-generated method stub\n-                                level= editText.getText().toString().trim();\n+                                level = editText.getText().toString().trim();\n                             }\n                         }).setNegativeButton(\"取消\", null).show();\n             }\n         });\n+        check = (Button) findViewById(R.id.check);\n+        check.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                Intent intent = new Intent(Com1314080901110Activity.this,ScoreActivity.class);\n+                startActivity(intent);\n+            }\n+        });\n }\n \n     @Override"
+  }, {
+    "sha" : "161bf921b5f4afcb3969a6b02231f62674cd82fd",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/GameActivity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 168,
+    "changes" : 168,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/ba6157b09918f215ba615b7df90602c5a65a20e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/GameActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/ba6157b09918f215ba615b7df90602c5a65a20e8/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/GameActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/GameActivity.java?ref=ba6157b09918f215ba615b7df90602c5a65a20e8",
+    "patch" : "@@ -1,168 +0,0 @@\n-package edu.hzuapps.androidworks.homeworks.com1314080901110;\n-\n-import android.content.Intent;\n-import android.os.Message;\n-import android.support.v7.app.AppCompatActivity;\n-import android.os.Bundle;\n-import android.os.Handler;\n-import android.view.Menu;\n-import android.view.MenuItem;\n-import android.view.View;\n-import android.widget.AdapterView;\n-import android.widget.Button;\n-import android.widget.GridView;\n-import android.widget.TextView;\n-import android.widget.Toast;\n-\n-import edu.hzuapps.androidworks.homeworks.com1314080901110.adapter.BoomAdapter;\n-import edu.hzuapps.androidworks.homeworks.com1314080901110.entity.GridEntity;\n-\n-import java.util.Timer;\n-import java.util.TimerTask;\n-\n-public class GameActivity extends AppCompatActivity {\n-    private Timer timer=new Timer();\n-    private Button startGame;\n-    private Handler handler;\n-    private int gameTime=0;\n-    private TextView showTime;\n-    private final static int MESSAGE_UPDATE_TIME=1;\n-    private BoomAdapter adapter;\n-    private GridView gv;\n-    private int level=10;\n-    private boolean isGaming=false;\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_game);\n-        Intent intent=getIntent();\n-        level=Integer.parseInt(intent.getStringExtra(\"level\"));\n-        gv=(GridView)findViewById(R.id.gv);\n-        adapter=new BoomAdapter(level,gv,this);\n-        gv.setNumColumns(level);\n-        gv.setAdapter(adapter);\n-        inint();\n-        addListener();\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_game, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            return true;\n-        }\n-\n-        return super.onOptionsItemSelected(item);\n-    }\n-\n-    public void inint(){\n-        startGame=(Button)findViewById(R.id.startGame);\n-        showTime = (TextView) findViewById(R.id.timeView);\n-        handler = new Handler() {\n-            @Override\n-            public void handleMessage(Message msg) {\n-                if (msg.what == MESSAGE_UPDATE_TIME) {\n-                    showTime.setText(\"已用时间：\" +gameTime/60+\"分\"+ gameTime%60 + \"秒\");\n-                }\n-            }\n-        };\n-    }\n-\n-    public void startGame(){\n-        adapter=new BoomAdapter(level,gv,this);\n-        gv.setNumColumns(level);\n-        gv.setAdapter(adapter);\n-        isGaming=true;\n-        gameTime=0;\n-        timer.cancel();\n-        timer = new Timer();\n-        timer.schedule(new TimerTask() {\n-            @Override\n-            public void run() {\n-                gameTime++;\n-                handler.sendEmptyMessage(MESSAGE_UPDATE_TIME);\n-            }\n-        }, 0, 1000);\n-    }\n-\n-    /**\n-     * 方法：结束游戏\n-     * */\n-    public void stopGame(){\n-        isGaming=false;\n-        timer.cancel();\n-    }\n-\n-    public void addListener(){\n-        startGame.setOnClickListener(new View.OnClickListener() {\n-            @Override\n-            public void onClick(View v) {\n-                startGame();\n-                startGame.setText(\"重新开始\");\n-            }\n-        });\n-        gv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {\n-            @Override\n-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {\n-                if (!isGaming) {\n-                    return true;\n-                }\n-                GridEntity grid = adapter.getEntity(position);\n-                if (grid.isShow()) {\n-                    return true;\n-                }\n-                grid.setIsFlag(!grid.isFlag());\n-                adapter.notifyDataSetChanged();\n-                return true;\n-            }\n-        });\n-\n-        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {\n-            @Override\n-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {\n-                if(!isGaming){\n-                    return;\n-                }\n-//                如果游戏开始，通过position获取格子对象\n-                GridEntity grid=adapter.getItem(position);\n-//                如果格子对象被标记，则单击无效\n-                if(grid.isFlag()){\n-                    return;\n-                }\n-                if(!grid.isShow()){\n-                    if(grid.isBoom()){\n-                        grid.setIsShow(true);\n-                        stopGame();\n-                        adapter.showAllBooms();\n-//                        检查旗子标记是否正确\n-                        adapter.checkFlag();\n-                        Toast.makeText(getApplicationContext(),\"游戏失败，请重新开始！\",Toast.LENGTH_SHORT).show();\n-                        return;\n-                    }\n-                    if(grid.getBoomsCount()==0&&!grid.isBoom()){\n-//                        如果格子不是雷格且周围地雷数为0，则展现无雷区域\n-                        adapter.showNotBoomsArea(position);\n-                    }\n-                    grid.setIsShow(true);\n-                    if(adapter.isWin()){\n-                        stopGame();\n-                        Toast.makeText(getApplicationContext(),\"恭喜您！闯关成功,您的用时为\"+showTime.getText(),Toast.LENGTH_LONG).show();\n-                    }\n-                    adapter.notifyDataSetChanged();\n-                }\n-            }\n-        });\n-    }\n-}"
+  }, {
+    "sha" : "8b92a96948fe0ec4a6ecb2fa138c376107b6d216",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/ScoreActivity.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/ScoreActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/ScoreActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/ScoreActivity.java?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -0,0 +1,45 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901110;\n+\n+import android.content.SharedPreferences;\n+import android.support.v7.app.ActionBarActivity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.TextView;\n+\n+\n+public class ScoreActivity extends ActionBarActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_score);\n+        TextView record = (TextView)findViewById(R.id.time);\n+\n+        SharedPreferences pre = getSharedPreferences(\"time\",MODE_PRIVATE);\n+        String str = pre.getString(\"record\",\"non\");\n+        record.setText(str);\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_score, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  }, {
+    "sha" : "4798465695231939d24de41a3f2d148c208e4a9a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/entity/GameGroundEntity.java",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/entity/GameGroundEntity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/entity/GameGroundEntity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/entity/GameGroundEntity.java?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -39,7 +39,7 @@ public void init(){\n                 }\n             }\n         }\n-//        随机分配雷的横纵坐标，范围(1,level+1)\n+//        随机分配雷的横纵坐标，范围(1,level+1), (1,level)\n         Random random=new Random(System.currentTimeMillis());\n         for(int i=0;i<allBoomsCount;i++){\n             int x=random.nextInt(level)+1;"
+  }, {
+    "sha" : "85e56e310bdc82a42951e282758e17a530c3a6e8",
+    "filename" : "app/src/main/res/layout/activity_game.xml",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 0,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/layout/activity_game.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/layout/activity_game.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_game.xml?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -12,6 +12,7 @@\n         android:layout_gravity=\"center_horizontal\"\n         android:layout_width=\"wrap_content\"\n         android:layout_height=\"wrap_content\" />\n+\n     <GridView\n         android:id=\"@+id/gv\"\n         android:layout_marginTop=\"10dp\"\n@@ -33,4 +34,6 @@\n         android:background=\"@drawable/buttonstyle\"\n         android:layout_width=\"280dp\"\n         android:layout_height=\"wrap_content\" />\n+    \n+\n </LinearLayout>"
+  }, {
+    "sha" : "b974cb2cff62ff6c3fe1efc8a72fc9fd11ef9db4",
+    "filename" : "app/src/main/res/layout/activity_main.xml",
+    "status" : "modified",
+    "additions" : 43,
+    "deletions" : 29,
+    "changes" : 72,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/layout/activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/layout/activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_main.xml?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -1,38 +1,52 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n     android:layout_height=\"match_parent\"\n-    android:orientation=\"vertical\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\"edu.hzuapps.androidworks.MainActivity\">\n-\n+    android:background=\"#f0f0f0\"\n+    tools:context=\".Com1314080901110Activity\">\n+    <ImageButton\n+        android:id=\"@+id/image\"\n+        android:layout_marginTop=\"30dp\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:scaleType=\"fitXY\"\n+        android:layout_width=\"300dp\"\n+        android:layout_height=\"300dp\"\n+        android:src=\"@drawable/image1\"/>\n     <Button\n-        android:id=\"@+id/button_activitybasic\"\n-        android:layout_width=\"match_parent\"\n+        android:id=\"@+id/toPlay\"\n+        android:layout_below=\"@+id/image\"\n+        android:layout_marginTop=\"15dp\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:layout_width=\"280dp\"\n         android:layout_height=\"wrap_content\"\n-        android:text=\"Activity 基本用法\"/>\n-\n+        android:background=\"@drawable/buttonstyle\"\n+        android:textColor=\"#ffffff\"\n+        android:textSize=\"18sp\"\n+        android:textAllCaps=\"false\"\n+        android:text=\"@string/to_play_game\"/>\n     <Button\n-        android:id=\"@+id/button_viewbasic\"\n-        android:layout_width=\"match_parent\"\n+        android:id=\"@+id/setDifficulty\"\n+        android:layout_below=\"@+id/toPlay\"\n+        android:layout_marginTop=\"15dp\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:layout_width=\"280dp\"\n         android:layout_height=\"wrap_content\"\n-        android:text=\"View 基本用法\"/>\n-\n+        android:background=\"@drawable/buttonstyle\"\n+        android:textColor=\"#ffffff\"\n+        android:textSize=\"18sp\"\n+        android:textAllCaps=\"false\"\n+        android:text=\"@string/setDifficulty\"/>\n     <Button\n-        android:id=\"@+id/button_fragmentdemo\"\n-        android:layout_width=\"match_parent\"\n+        android:id=\"@+id/check\"\n+        android:layout_below=\"@+id/setDifficulty\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:text=\"查看时间\"\n+        android:background=\"@drawable/buttonstyle\"\n+        android:layout_marginTop=\"10px\"\n+        android:textColor=\"#ffffff\"\n+        android:layout_width=\"280dp\"\n+        android:textSize=\"18sp\"\n+        android:textAllCaps=\"false\"\n         android:layout_height=\"wrap_content\"\n-        android:text=\"Fragment 功能演示\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_random\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"随机看一位同学的作业\"/>\n-\n-</LinearLayout>\n+        android:layout_gravity=\"center_horizontal|center_vertical\"/>\n+</RelativeLayout>"
+  }, {
+    "sha" : "30dabbd7f90c86d39a1af63da8454325924d8b83",
+    "filename" : "app/src/main/res/layout/activity_score.xml",
+    "status" : "added",
+    "additions" : 14,
+    "deletions" : 0,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/layout/activity_score.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/layout/activity_score.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_score.xml?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -0,0 +1,14 @@\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\" android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\" android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.com1314080901110.ScoreActivity\">\n+\n+    <TextView\n+        android:id=\"@+id/time\"\n+        android:text=\"@string/hello_world\" android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\" />\n+\n+</LinearLayout>"
+  }, {
+    "sha" : "f3901b2c432abe0ca924475f6c54c6a6851d1238",
+    "filename" : "app/src/main/res/layout/game.xml",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/layout/game.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/layout/game.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/game.xml?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -0,0 +1,33 @@\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\" android:layout_width=\"match_parent\"\n+    android:orientation=\"vertical\"\n+    android:layout_height=\"match_parent\" android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\" tools:context=\".Com1314080901110Activity\">\n+\n+    <LinearLayout\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:orientation=\"horizontal\">\n+        <TextView\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:text=\"Score:\"/>\n+\n+        <TextView\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:id=\"@+id/tvtime\"/>\n+    </LinearLayout>\n+\n+    <edu.hzuapps.androidworks.homeworks.com1314080901110.GameView\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"0dp\"\n+        android:layout_weight=\"0.8\"\n+        android:weightSum=\"1\"\n+        android:id=\"@+id/gameView\">\n+\n+    </edu.hzuapps.androidworks.homeworks.com1314080901110.GameView>\n+\n+</LinearLayout>"
+  }, {
+    "sha" : "d35a54085de9eda665c80c1cb33d3729ac0475f1",
+    "filename" : "app/src/main/res/menu/menu_game.xml",
+    "status" : "added",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/menu/menu_game.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/menu/menu_game.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/menu/menu_game.xml?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -0,0 +1,7 @@\n+<menu xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.com1314080901110.GameActivity\">\n+    <item android:id=\"@+id/action_settings\" android:title=\"@string/action_settings\"\n+        android:orderInCategory=\"100\" app:showAsAction=\"never\" />\n+</menu>"
+  }, {
+    "sha" : "3b7b8063113aee071a3d85b4bf24883469ca9a04",
+    "filename" : "app/src/main/res/menu/menu_score.xml",
+    "status" : "added",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/menu/menu_score.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c4d6af94ed4dd82b570736082014fed7c614d8c1/app/src/main/res/menu/menu_score.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/menu/menu_score.xml?ref=c4d6af94ed4dd82b570736082014fed7c614d8c1",
+    "patch" : "@@ -0,0 +1,7 @@\n+<menu xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.com1314080901110.ScoreActivity\">\n+    <item android:id=\"@+id/action_settings\" android:title=\"@string/action_settings\"\n+        android:orderInCategory=\"100\" app:showAsAction=\"never\" />\n+</menu>"
+  } ],
+  "sha" : "c4d6af94ed4dd82b570736082014fed7c614d8c1",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c4d6af94ed4dd82b570736082014fed7c614d8c1",
+  "parents" : [ {
+    "sha" : "ba6157b09918f215ba615b7df90602c5a65a20e8",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ba6157b09918f215ba615b7df90602c5a65a20e8",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/ba6157b09918f215ba615b7df90602c5a65a20e8"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "hahamg",
+    "id" : 22512215,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512215?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hahamg",
+    "html_url" : "https://github.com/hahamg",
+    "followers_url" : "https://api.github.com/users/hahamg/followers",
+    "following_url" : "https://api.github.com/users/hahamg/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hahamg/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hahamg/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hahamg/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hahamg/orgs",
+    "repos_url" : "https://api.github.com/users/hahamg/repos",
+    "events_url" : "https://api.github.com/users/hahamg/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hahamg/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 31,
+    "additions" : 14,
+    "deletions" : 17
+  },
+  "author" : {
+    "login" : "hahamg",
+    "id" : 22512215,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512215?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hahamg",
+    "html_url" : "https://github.com/hahamg",
+    "followers_url" : "https://api.github.com/users/hahamg/followers",
+    "following_url" : "https://api.github.com/users/hahamg/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hahamg/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hahamg/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hahamg/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hahamg/orgs",
+    "repos_url" : "https://api.github.com/users/hahamg/repos",
+    "events_url" : "https://api.github.com/users/hahamg/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hahamg/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/33c90dccd97281d8854b00aa5961e15127b7d514",
+  "commit" : {
+    "author" : {
+      "name" : "hahamg",
+      "email" : "741778746@qq.com",
+      "date" : "2016-11-22T12:57:16Z"
+    },
+    "committer" : {
+      "name" : "hahamg",
+      "email" : "741778746@qq.com",
+      "date" : "2016-11-22T12:57:16Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "4030064b9b698fb450c6dc9e26331b9cb085de48",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/4030064b9b698fb450c6dc9e26331b9cb085de48"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/33c90dccd97281d8854b00aa5961e15127b7d514",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/33c90dccd97281d8854b00aa5961e15127b7d514/comments",
+  "files" : [ {
+    "sha" : "6ca5f52c96b826fda962f3b0b88aa94d6af14d0e",
+    "filename" : "jweb/web/1414080902222/index.jsp",
+    "status" : "modified",
+    "additions" : 14,
+    "deletions" : 17,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/33c90dccd97281d8854b00aa5961e15127b7d514/jweb/web/1414080902222/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/33c90dccd97281d8854b00aa5961e15127b7d514/jweb/web/1414080902222/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902222/index.jsp?ref=33c90dccd97281d8854b00aa5961e15127b7d514",
+    "patch" : "@@ -1,4 +1,5 @@\n-<%@ page language=\"java\" import=\"java.util.*\" import=\"java.text.*\" pageEncoding=\"utf-8\"%>\n+﻿<%@ page language=\"java\" import=\"java.util.*\" import=\"java.text.*\" pageEncoding=\"utf-8\"%>\n+<%@taglib uri=\"http://java.sun.com/jsp/jstl/code\"prefix=\"c\"%>\n <%\n String path = request.getContextPath();\n String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n@@ -17,38 +18,35 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \n   </head>  \n   <body> \n-     <% \n-     Date date = new Date();\n-     date.getTime() ;\n-    %>\n-\n+   <%Calendar rightnow=calendar.getInstance();\n+\tInteger hour=new Integer(rightnow.get(Calendar.HOUR_OF_DAY));\n+\trequest.setAttribute(\"hour\"\"HOUR\");\n+   %>\n+   <c:if test=\"${hour>=0&&hour<=11}\">上午好!></c:if>\n+   <c:if test=\"${hour>=12&&hour<=17}\">下午好!></c:if>\n+   <c:if test=\"${hour>=18&&hour<=23}\">晚上好!></c:if>\n+   <c:forEach var=\"word\"item=\"欢，迎，你\"begin=\"0\" step=\"1\">\n+\t<c:out value=\"${word}\"/>\n+   </c:forEach>\t\n    <h3 align=\"center\">比赛节目喜好调查</h3>\n      <form  name=\"stu\" action=\"\"> \n       <table> \n-       \n-       <tr> <td>性别：</td>\n-           <td><input type=\"radio\" name=\"stuSex\" checked=\"checked\" >男 \n-               <input type=\"radio\" name=\"stuSex\" >女\n-           </td>\n-       </tr> \n        <tr> <td>出生日期</td> \n           <td><input type=\"text\" name=\"stuBirthday\" class=\"form-control\"></td> \n        </tr> \n        <tr> <td>职业：</td><td><input type=\"text\" name=\"jobs\" class=\"form-control\"></td></tr> \n        <tr><td>偏好：</td>\n           <td><select name =\"stuSelect2\">\n                 <option selected>篮球</option>\n-                <option >足球</option>   \n-                <option >拳击</option>\n+                <option >足球</option>  \n                 <option >游戏竞技</option>\n              <lect>\n           </td>\n        </tr> \n        <tr> <td>平时有看：</td>\n            <td colspan=\"2\">\n               <input type=\"checkbox\" name=\"stuCheck\" >NBA\n-              <input type=\"checkbox\" name=\"stuCheck\" >欧冠\n-              <input type=\"checkbox\" name=\"stuCheck\" >WWE\n+              <input type=\"checkbox\" name=\"stuCheck\" >欧冠       \n               <input type=\"checkbox\" name=\"stuCheck\" >LOL比赛\n           </td>\n        </tr> \n@@ -58,7 +56,6 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n        </tr> \n        <tr>\n          <td><button type=\"button\" class=\"btn btn-default\">提交</td>\n-         <td><input type=\"reset\" value=\"取消\"></td>\n        </tr> \n      </table> \n    </form> "
+  } ],
+  "sha" : "33c90dccd97281d8854b00aa5961e15127b7d514",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/33c90dccd97281d8854b00aa5961e15127b7d514",
+  "parents" : [ {
+    "sha" : "4e7446b4bebdb664b0f30de17c0285be720278e0",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/4e7446b4bebdb664b0f30de17c0285be720278e0",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/4e7446b4bebdb664b0f30de17c0285be720278e0"
+  } ]
+}

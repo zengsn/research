@@ -1,0 +1,50 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 96,
+    "additions" : 48,
+    "deletions" : 48
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/376d1dfc053f5efd3e22b7c6df7803cf8ec370c9",
+  "commit" : {
+    "author" : {
+      "name" : "i. sshe",
+      "email" : "i. sshe",
+      "date" : "2016-04-20T00:24:59Z"
+    },
+    "committer" : {
+      "name" : "i. sshe",
+      "email" : "i. sshe",
+      "date" : "2016-04-20T00:24:59Z"
+    },
+    "message" : "#1 #12 实验1，添移动到个人文件夹",
+    "tree" : {
+      "sha" : "79ae9a5c6d381109581279ce7a1f592d0311132d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/79ae9a5c6d381109581279ce7a1f592d0311132d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/376d1dfc053f5efd3e22b7c6df7803cf8ec370c9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/376d1dfc053f5efd3e22b7c6df7803cf8ec370c9/comments",
+  "files" : [ {
+    "sha" : "f9a71e25d32f9162ea9d61a509b3825ffb7e4a32",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212Activity.java",
+    "status" : "renamed",
+    "additions" : 48,
+    "deletions" : 48,
+    "changes" : 96,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/376d1dfc053f5efd3e22b7c6df7803cf8ec370c9/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/376d1dfc053f5efd3e22b7c6df7803cf8ec370c9/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212/Net1314080903212Activity.java?ref=376d1dfc053f5efd3e22b7c6df7803cf8ec370c9",
+    "patch" : "@@ -1,48 +1,48 @@\n-package edu.hzuapps.androidworks.homeworks;\r\n-\r\n-import android.os.Bundle;\r\n-import android.util.Log;\r\n-import android.view.Menu;\r\n-import android.view.MenuItem;\r\n-import android.view.ViewGroup;\r\n-import android.widget.LinearLayout;\r\n-import android.widget.TextView;\r\n-\r\n-import edu.hzuapps.androidworks.R;\r\n-//import edu.hzuapps.androidworks.homeworks.Net1314080903212;\r\n-\r\n-/**\r\n- * Created by dell on 2016/3/21.\r\n- */\r\n-public class Net1314080903212 extends BackActivity {\r\n-\r\n-    private LinearLayout mTextContainer;\r\n-\r\n-    protected void onCreate(Bundle savedInstanceState) {\r\n-        super.onCreate(savedInstanceState);\r\n-\r\n-//      TextView textView = new TextView(this);\r\n-//      textView.setText(\"isshe\");\r\n-\r\n-        createViewInJava();\r\n-        setContentView(mTextContainer);\r\n-\r\n-//      默认使用XML创建的View\r\n-//      setContentView(R.layout.net1314080903212);\r\n-\r\n-}\r\n-\r\n-    private void createViewInJava() {\r\n-        mTextContainer = new LinearLayout(this);\r\n-        ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams( //\r\n-                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);\r\n-        mTextContainer.setLayoutParams(layoutParams);\r\n-        mTextContainer.setOrientation(LinearLayout.HORIZONTAL);\r\n-\r\n-        TextView textView = new TextView(this);\r\n-        textView.setText(\"isshe: Net13140809032122\");\r\n-\r\n-        mTextContainer.addView(textView);\r\n-    }\r\n-\r\n-}\r\n+package edu.hzuapps.androidworks.homeworks;\n+\n+import android.os.Bundle;\n+import android.util.Log;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.ViewGroup;\n+import android.widget.LinearLayout;\n+import android.widget.TextView;\n+\n+import edu.hzuapps.androidworks.R;\n+//import edu.hzuapps.androidworks.homeworks.Net1314080903212;\n+\n+/**\n+ * Created by dell on 2016/3/21.\n+ */\n+public class Net1314080903212 extends BackActivity {\n+\n+    private LinearLayout mTextContainer;\n+\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+\n+//      TextView textView = new TextView(this);\n+//      textView.setText(\"isshe\");\n+\n+        createViewInJava();\n+        setContentView(mTextContainer);\n+\n+//      默认使用XML创建的View\n+//      setContentView(R.layout.net1314080903212);\n+\n+}\n+\n+    private void createViewInJava() {\n+        mTextContainer = new LinearLayout(this);\n+        ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams( //\n+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);\n+        mTextContainer.setLayoutParams(layoutParams);\n+        mTextContainer.setOrientation(LinearLayout.HORIZONTAL);\n+\n+        TextView textView = new TextView(this);\n+        textView.setText(\"isshe: Net13140809032122\");\n+\n+        mTextContainer.addView(textView);\n+    }\n+\n+}",
+    "previous_filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/Net1314080903212Activity.java"
+  } ],
+  "sha" : "376d1dfc053f5efd3e22b7c6df7803cf8ec370c9",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/376d1dfc053f5efd3e22b7c6df7803cf8ec370c9",
+  "parents" : [ {
+    "sha" : "5c8f59dcea9920e0fecd6ff26df95cbb9163abb9",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5c8f59dcea9920e0fecd6ff26df95cbb9163abb9",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5c8f59dcea9920e0fecd6ff26df95cbb9163abb9"
+  } ]
+}

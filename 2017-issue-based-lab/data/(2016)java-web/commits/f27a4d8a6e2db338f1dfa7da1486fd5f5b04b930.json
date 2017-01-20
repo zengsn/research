@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 45,
+    "additions" : 0,
+    "deletions" : 45
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/f27a4d8a6e2db338f1dfa7da1486fd5f5b04b930",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T00:42:49Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T00:42:49Z"
+    },
+    "message" : "Delete LoginFilter.java",
+    "tree" : {
+      "sha" : "1f72ed7dfe94ff4946b227d80b9b45baaa0f4bca",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/1f72ed7dfe94ff4946b227d80b9b45baaa0f4bca"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/f27a4d8a6e2db338f1dfa7da1486fd5f5b04b930",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/f27a4d8a6e2db338f1dfa7da1486fd5f5b04b930/comments",
+  "files" : [ {
+    "sha" : "7f9028f31f7cc0bbfe429a394ebff5f4d8f72be8",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902205/LoginFilter.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 45,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/780748c37be78ec4baf577ecbbd17d4ef8efdf03/jweb/src/edu/hzu/javaweb/labs/se1414080902205/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/780748c37be78ec4baf577ecbbd17d4ef8efdf03/jweb/src/edu/hzu/javaweb/labs/se1414080902205/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902205/LoginFilter.java?ref=780748c37be78ec4baf577ecbbd17d4ef8efdf03",
+    "patch" : "@@ -1,45 +0,0 @@\n-package edu.hzu.javaweb.labs.se1414080902205;\n-\n-import java.io.IOException;\n-\n-import javax.servlet.Filter;\n-import javax.servlet.FilterChain;\n-import javax.servlet.FilterConfig;\n-import javax.servlet.ServletException;\n-import javax.servlet.ServletRequest;\n-import javax.servlet.ServletResponse;\n-import javax.servlet.annotation.WebFilter;\n-import javax.servlet.http.HttpServletRequest;\n-import javax.servlet.http.HttpServletResponse;\n-import javax.servlet.http.HttpSession;\n-@WebFilter(filterName = \"LoginFilter\", urlPatterns = \"/*\")\n-public class LoginFilter implements Filter {\n-\n-\t@Override\n-\tpublic void destroy() {\n-\t\t// TODO Auto-generated method stub\n-\n-\t}\n-\n-\t@Override\n-\tpublic void doFilter(ServletRequest arg0, ServletResponse arg1,\n-\t\t\tFilterChain arg2) throws IOException, ServletException {\n-\t\t// TODO Auto-generated method stub\n-\t\t HttpServletRequest req = (HttpServletRequest) arg0;   \n-\t     HttpServletResponse res = (HttpServletResponse) arg1;   \n-\t  \n-\t     HttpSession session = req.getSession();   \n-\t    if (session.getAttribute(\"username\") != null) {//��¼����ܷ���   \n-\t         arg2.doFilter(arg0, arg1);   \n-\t     } else {   \n-\t         res.sendRedirect(\"../failure.jsp\");   \n-\t     }   \n-\t}\n-\n-\t@Override\n-\tpublic void init(FilterConfig arg0) throws ServletException {\n-\t\t// TODO Auto-generated method stub\n-\n-\t}\n-\n-}"
+  } ],
+  "sha" : "f27a4d8a6e2db338f1dfa7da1486fd5f5b04b930",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f27a4d8a6e2db338f1dfa7da1486fd5f5b04b930",
+  "parents" : [ {
+    "sha" : "780748c37be78ec4baf577ecbbd17d4ef8efdf03",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/780748c37be78ec4baf577ecbbd17d4ef8efdf03",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/780748c37be78ec4baf577ecbbd17d4ef8efdf03"
+  } ]
+}

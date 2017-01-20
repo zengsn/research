@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "liuyuquan123",
+    "id" : 18431711,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18431711?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liuyuquan123",
+    "html_url" : "https://github.com/liuyuquan123",
+    "followers_url" : "https://api.github.com/users/liuyuquan123/followers",
+    "following_url" : "https://api.github.com/users/liuyuquan123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liuyuquan123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liuyuquan123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liuyuquan123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liuyuquan123/orgs",
+    "repos_url" : "https://api.github.com/users/liuyuquan123/repos",
+    "events_url" : "https://api.github.com/users/liuyuquan123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liuyuquan123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 41,
+    "additions" : 41,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "liuyuquan123",
+    "id" : 18431711,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18431711?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liuyuquan123",
+    "html_url" : "https://github.com/liuyuquan123",
+    "followers_url" : "https://api.github.com/users/liuyuquan123/followers",
+    "following_url" : "https://api.github.com/users/liuyuquan123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liuyuquan123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liuyuquan123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liuyuquan123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liuyuquan123/orgs",
+    "repos_url" : "https://api.github.com/users/liuyuquan123/repos",
+    "events_url" : "https://api.github.com/users/liuyuquan123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liuyuquan123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/54980f5f67a9b4ce9ddec0b14be96f1c1dc44a31",
+  "commit" : {
+    "author" : {
+      "name" : "liuyuquan123",
+      "email" : "540761047@qq.com",
+      "date" : "2016-04-27T00:49:13Z"
+    },
+    "committer" : {
+      "name" : "liuyuquan123",
+      "email" : "540761047@qq.com",
+      "date" : "2016-04-27T00:49:13Z"
+    },
+    "message" : "#1 #131",
+    "tree" : {
+      "sha" : "bc1560e791e375a97dbc6cebd44428db0820859c",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/bc1560e791e375a97dbc6cebd44428db0820859c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/54980f5f67a9b4ce9ddec0b14be96f1c1dc44a31",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/54980f5f67a9b4ce9ddec0b14be96f1c1dc44a31/comments",
+  "files" : [ {
+    "sha" : "b66e86124bfdfa4fc26117ac69a6bdf0e9651103",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/liu.java",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/54980f5f67a9b4ce9ddec0b14be96f1c1dc44a31/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/liu.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/54980f5f67a9b4ce9ddec0b14be96f1c1dc44a31/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/liu.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903233/liu.java?ref=54980f5f67a9b4ce9ddec0b14be96f1c1dc44a31",
+    "patch" : "@@ -0,0 +1,41 @@\n+package edu.hzuapps.androidworks.homeworks.com131408091138;\n+\n+import android.os.Bundle;\n+import android.support.v7.app.ActionBarActivity;\n+import android.view.View;\n+import android.widget.Button;\n+\n+import edu.hzuapps.androidworks.R;\n+import edu.hzuapps.androidworks.homeworks.BackActivity;\n+\n+public class Com1314080901138Activity extends BackActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_com1314080901138);\n+\n+        Button closeBtn = (Button) findViewById(R.id.button_close);\n+        closeBtn.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                finish();\n+            }\n+        }); \n+    }\n+\n+    @Override\n+    protected void onStart() {\n+        super.onStart();\n+    }\n+\n+    @Override\n+    protected void onPause() {\n+        super.onPause();\n+    }\n+\n+    @Override\n+    protected void onStop() {\n+        super.onStop();\n+    }\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "54980f5f67a9b4ce9ddec0b14be96f1c1dc44a31",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/54980f5f67a9b4ce9ddec0b14be96f1c1dc44a31",
+  "parents" : [ {
+    "sha" : "5b95090e4a353394b92670db5989b2561e59254c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5b95090e4a353394b92670db5989b2561e59254c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5b95090e4a353394b92670db5989b2561e59254c"
+  } ]
+}

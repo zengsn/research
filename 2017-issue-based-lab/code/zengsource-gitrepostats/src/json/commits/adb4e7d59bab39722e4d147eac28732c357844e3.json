@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "xiaoqiannba",
+    "id" : 15009260,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15009260?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoqiannba",
+    "html_url" : "https://github.com/xiaoqiannba",
+    "followers_url" : "https://api.github.com/users/xiaoqiannba/followers",
+    "following_url" : "https://api.github.com/users/xiaoqiannba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoqiannba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoqiannba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoqiannba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoqiannba/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoqiannba/repos",
+    "events_url" : "https://api.github.com/users/xiaoqiannba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoqiannba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 76,
+    "additions" : 49,
+    "deletions" : 27
+  },
+  "author" : {
+    "login" : "xiaoqiannba",
+    "id" : 15009260,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15009260?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xiaoqiannba",
+    "html_url" : "https://github.com/xiaoqiannba",
+    "followers_url" : "https://api.github.com/users/xiaoqiannba/followers",
+    "following_url" : "https://api.github.com/users/xiaoqiannba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xiaoqiannba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xiaoqiannba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xiaoqiannba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xiaoqiannba/orgs",
+    "repos_url" : "https://api.github.com/users/xiaoqiannba/repos",
+    "events_url" : "https://api.github.com/users/xiaoqiannba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xiaoqiannba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/adb4e7d59bab39722e4d147eac28732c357844e3",
+  "commit" : {
+    "author" : {
+      "name" : "xiaoqiannba",
+      "email" : "229597145@qq.com",
+      "date" : "2016-06-14T08:39:40Z"
+    },
+    "committer" : {
+      "name" : "xiaoqiannba",
+      "email" : "229597145@qq.com",
+      "date" : "2016-06-14T08:39:40Z"
+    },
+    "message" : "Revert \"#95 #34 lab9\"\n\nThis reverts commit 821ec2908dfef7f4552cd7ad922916849e64aa44.",
+    "tree" : {
+      "sha" : "cfb3f3023c518e0d5352869a3fa4ccd1ec6894c6",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/cfb3f3023c518e0d5352869a3fa4ccd1ec6894c6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/adb4e7d59bab39722e4d147eac28732c357844e3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/adb4e7d59bab39722e4d147eac28732c357844e3/comments",
+  "files" : [ {
+    "sha" : "c674630078c446c711e53780eb170056c695abff",
+    "filename" : "app/src/main/res/layout/activity_com1314080901235.xml",
+    "status" : "modified",
+    "additions" : 49,
+    "deletions" : 27,
+    "changes" : 76,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/adb4e7d59bab39722e4d147eac28732c357844e3/app/src/main/res/layout/activity_com1314080901235.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/adb4e7d59bab39722e4d147eac28732c357844e3/app/src/main/res/layout/activity_com1314080901235.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901235.xml?ref=adb4e7d59bab39722e4d147eac28732c357844e3",
+    "patch" : "@@ -1,35 +1,57 @@\n-﻿<ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\" >\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\".Com1314080901235Activity\" \n+    android:orientation=\"vertical\"\n+    >\n \n+    <ImageView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:src=\"@drawable/awo\" />\n+    \n+    <TextView \n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"输入文字\"\n+        android:textSize=\"18sp\"\n+        \n+        />\n+    \n     <LinearLayout\n+        android:layout_marginTop=\"30sp\"\n         android:layout_width=\"match_parent\"\n-        android:layout_height=\"match_parent\"\n-        android:orientation=\"vertical\" >\n-\n-        <Button\n-            android:id=\"@+id/bt\"\n-            android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:orientation=\"horizontal\"\n+        >\n+        \n+        <TextView \n+            android:layout_width=\"0dp\"\n+            android:layout_weight=\"2\"\n             android:layout_height=\"wrap_content\"\n-            android:text=\"GET_TOKEN\" />\n-\n-        <TextView\n-            android:id=\"@+id/tv_show_token\"\n-            android:layout_width=\"wrap_content\"\n-            android:layout_height=\"wrap_content\"\n-            android:text=\"@string/SHOW_TOKEN\" />\n-\n-        <Button\n-            android:id=\"@+id/bt_getdata_next\"\n-            android:layout_width=\"wrap_content\"\n+            android:text=\"这里是联系人\"\n+            android:textSize=\"20sp\"\n+            />\n+        \n+        <Button \n+            android:layout_width=\"0dp\"\n+            android:layout_weight=\"1\"\n             android:layout_height=\"wrap_content\"\n-            android:text=\"GET_REQUEST\" />\n-\n-        <TextView\n-            android:id=\"@+id/tv_return_code\"\n-            android:layout_width=\"wrap_content\"\n-            android:layout_height=\"wrap_content\"\n-            android:text=\"@string/SHOW_RETURN_CODE\" />\n+            android:text=\"添加\"\n+            />\n+        \n     </LinearLayout>\n \n-</ScrollView>\n\\ No newline at end of file\n+    <Button\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_gravity=\"right\"\n+        android:text=\"发送\" />\n+\n+</LinearLayout>"
+  } ],
+  "sha" : "adb4e7d59bab39722e4d147eac28732c357844e3",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/adb4e7d59bab39722e4d147eac28732c357844e3",
+  "parents" : [ {
+    "sha" : "821ec2908dfef7f4552cd7ad922916849e64aa44",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/821ec2908dfef7f4552cd7ad922916849e64aa44",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/821ec2908dfef7f4552cd7ad922916849e64aa44"
+  } ]
+}

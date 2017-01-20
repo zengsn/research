@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "BlackMamba1024B",
+    "id" : 18372693,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18372693?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/BlackMamba1024B",
+    "html_url" : "https://github.com/BlackMamba1024B",
+    "followers_url" : "https://api.github.com/users/BlackMamba1024B/followers",
+    "following_url" : "https://api.github.com/users/BlackMamba1024B/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/BlackMamba1024B/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/BlackMamba1024B/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/BlackMamba1024B/subscriptions",
+    "organizations_url" : "https://api.github.com/users/BlackMamba1024B/orgs",
+    "repos_url" : "https://api.github.com/users/BlackMamba1024B/repos",
+    "events_url" : "https://api.github.com/users/BlackMamba1024B/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/BlackMamba1024B/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 396,
+    "additions" : 396,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "BlackMamba1024B",
+    "id" : 18372693,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18372693?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/BlackMamba1024B",
+    "html_url" : "https://github.com/BlackMamba1024B",
+    "followers_url" : "https://api.github.com/users/BlackMamba1024B/followers",
+    "following_url" : "https://api.github.com/users/BlackMamba1024B/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/BlackMamba1024B/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/BlackMamba1024B/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/BlackMamba1024B/subscriptions",
+    "organizations_url" : "https://api.github.com/users/BlackMamba1024B/orgs",
+    "repos_url" : "https://api.github.com/users/BlackMamba1024B/repos",
+    "events_url" : "https://api.github.com/users/BlackMamba1024B/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/BlackMamba1024B/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/70033fd214d693e24e5f6eb0d7742eee0e7c45b7",
+  "commit" : {
+    "author" : {
+      "name" : "BlackMamba1024B",
+      "email" : "15767977443@163.com",
+      "date" : "2016-06-15T16:21:45Z"
+    },
+    "committer" : {
+      "name" : "BlackMamba1024B",
+      "email" : "15767977443@163.com",
+      "date" : "2016-06-15T16:21:45Z"
+    },
+    "message" : "#95 #81 lab9",
+    "tree" : {
+      "sha" : "af8e4783e450871773cccff4590a49ff5c950fcf",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/af8e4783e450871773cccff4590a49ff5c950fcf"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/70033fd214d693e24e5f6eb0d7742eee0e7c45b7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/70033fd214d693e24e5f6eb0d7742eee0e7c45b7/comments",
+  "files" : [ {
+    "sha" : "51fee9c917c0d306fec3fdc8ed2df31f6dfa93ab",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241MyActivity.java",
+    "status" : "added",
+    "additions" : 319,
+    "deletions" : 0,
+    "changes" : 319,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/70033fd214d693e24e5f6eb0d7742eee0e7c45b7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241MyActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/70033fd214d693e24e5f6eb0d7742eee0e7c45b7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241MyActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241MyActivity.java?ref=70033fd214d693e24e5f6eb0d7742eee0e7c45b7",
+    "patch" : "@@ -0,0 +1,319 @@\n+package yewb.android;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.view.View;   \n+import android.view.ViewGroup;   \n+import android.widget.Button;\n+\n+\n+public class MyActivity extends Activity {\n+\t\n+\tprivate int mCenterX = 160;   \n+    private int mCenterY = 0;   \n+    private ViewGroup layoutA; \n+    private ViewGroup layoutC;\n+    private ViewGroup layoutB; \n+    private ViewGroup layoutD;\n+    \n+    private Rotate3d leftAnimation;   \n+    private Rotate3d rightAnimation;\n+ \t\n+    /** Called when the activity is first created. */\n+    @Override\n+    public void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.layout_front);//front\n+        \n+\n+        layoutA = (ViewGroup)findViewById(R.id.layout_front);\n+        Button leftBtn = (Button)findViewById(R.id.front_leftBtn);\n+        Button rightBtn = (Button)findViewById(R.id.front_rightBtn);\n+        leftBtn.setEnabled(true); rightBtn.setEnabled(true); \n+        \n+        leftBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallA_leftMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+        rightBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallA_rightMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+    }\n+        \n+\n+    public void initFirst(){   \n+        leftAnimation = new Rotate3d(0, -90, 0.0f, 0.0f, mCenterX, mCenterY);   \n+        rightAnimation = new Rotate3d(90, 0, 0.0f, 0.0f, mCenterX, mCenterY);   \n+        leftAnimation.setFillAfter(true);   \n+        leftAnimation.setDuration(1000);   \n+        rightAnimation.setFillAfter(true);   \n+        rightAnimation.setDuration(1000);   \n+    }\n+\n+    public void initSecond(){   \n+        leftAnimation = new Rotate3d(-90, 0, 0.0f, 0.0f, mCenterX, mCenterY);   \n+        rightAnimation = new Rotate3d(0, 90, 0.0f, 0.0f, mCenterX, mCenterY);   \n+        leftAnimation.setFillAfter(true);   \n+        leftAnimation.setDuration(1000);   \n+        rightAnimation.setFillAfter(true);   \n+        rightAnimation.setDuration(1000);   \n+    } \n+    \n+\n+    public void B2A(Rotate3d rightAnimation)\n+    {\n+    \tsetContentView(R.layout.layout_right);\n+    \tlayoutB = (ViewGroup)findViewById(R.id.layout_right);\n+    \tlayoutB.startAnimation(rightAnimation);\n+    \t\n+    \tButton leftBtn = (Button)findViewById(R.id.right_leftBtn);\n+    \tButton rightBtn = (Button)findViewById(R.id.right_rightBtn);\n+    \tleftBtn.setEnabled(true); rightBtn.setEnabled(true); \n+    \t\n+    \tleftBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallB_leftMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+        rightBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallB_rightMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        });\t\n+    }\n+\n+    public void D2A(Rotate3d leftAnimation)\n+    {\n+    \tsetContentView(R.layout.layout_left);\n+    \tlayoutD = (ViewGroup)findViewById(R.id.layout_left);\n+    \tlayoutD.startAnimation(leftAnimation);\n+    \t\n+    \tButton leftBtn = (Button)findViewById(R.id.left_leftBtn);\n+    \tButton rightBtn = (Button)findViewById(R.id.left_rightBtn);\n+    \tleftBtn.setEnabled(true); rightBtn.setEnabled(true);\n+    \t\n+    \tleftBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallD_leftMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+        rightBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallD_rightMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        });\t\n+    }\n+    \n+\n+    public void A2D(Rotate3d rightAnimation) \n+    {\n+\t\tsetContentView(R.layout.layout_front);\n+\t\tlayoutA = (ViewGroup)findViewById(R.id.layout_front);\n+\t\tlayoutA.startAnimation(rightAnimation);\n+\t\t\n+\t\tButton leftBtn = (Button)findViewById(R.id.front_leftBtn);\n+\t\tButton rightBtn = (Button)findViewById(R.id.front_rightBtn);\n+\t\t\n+\t\tleftBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallA_leftMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+        rightBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallA_rightMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+\t}\n+\n+    public void C2D(Rotate3d leftAnimation) \n+    {\n+    \tsetContentView(R.layout.layout_back);\n+    \tlayoutC = (ViewGroup)findViewById(R.id.layout_back);\n+    \tlayoutC.startAnimation(leftAnimation);\n+    \t\n+    \tButton leftBtn = (Button)findViewById(R.id.back_leftBtn);\n+\t\tButton rightBtn = (Button)findViewById(R.id.back_rightBtn);\n+\t\t\n+\t\tleftBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallC_leftMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+        rightBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallC_rightMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+    }\n+    \n+\n+    public void C2B(Rotate3d rightAnimation)\n+    {\n+    \tsetContentView(R.layout.layout_back);\n+    \tlayoutC = (ViewGroup)findViewById(R.id.layout_back);\n+    \tlayoutC.startAnimation(rightAnimation);\n+    \t\n+    \tButton leftBtn = (Button)findViewById(R.id.back_leftBtn);\n+\t\tButton rightBtn = (Button)findViewById(R.id.back_rightBtn);\n+\t\t\n+\t\tleftBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallC_leftMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+        rightBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallC_rightMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        });\n+    }\n+\n+    public void A2B(Rotate3d leftAnimation)\n+    {\n+    \tsetContentView(R.layout.layout_front);\n+    \tlayoutA = (ViewGroup)findViewById(R.id.layout_front);\n+    \tlayoutA.startAnimation(leftAnimation);\n+    \t\n+    \tButton leftBtn = (Button)findViewById(R.id.front_leftBtn);\n+\t\tButton rightBtn = (Button)findViewById(R.id.front_rightBtn);\n+    \t\n+    \tleftBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallA_leftMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+        rightBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallA_rightMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+    }\n+    \n+\n+    public void D2C(Rotate3d rightAnimation)\n+    {\n+    \tsetContentView(R.layout.layout_left);\n+    \tlayoutD = (ViewGroup)findViewById(R.id.layout_left);\n+    \tlayoutD.startAnimation(rightAnimation);\n+    \t\n+    \tButton leftBtn = (Button)findViewById(R.id.left_leftBtn);\n+\t\tButton rightBtn = (Button)findViewById(R.id.left_rightBtn);\n+\t\t\n+\t\tleftBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallD_leftMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+        rightBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallD_rightMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        });\n+    }\n+\n+    public void B2C(Rotate3d leftAnimation)\n+    {\n+    \tsetContentView(R.layout.layout_right);\n+    \tlayoutB = (ViewGroup)findViewById(R.id.layout_right);\n+    \tlayoutB.startAnimation(leftAnimation);\n+    \t\n+    \tButton leftBtn = (Button)findViewById(R.id.right_leftBtn);\n+\t\tButton rightBtn = (Button)findViewById(R.id.right_rightBtn);\n+\t\t\n+\t\tleftBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallB_leftMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        }); \n+        rightBtn.setOnClickListener(new Button.OnClickListener() {   \n+            public void onClick(View v) {   \n+            \twallB_rightMoveHandle();   \n+                v.setEnabled(false);   \n+            }   \n+        });\n+    }\n+    \n+\n+    public void wallA_leftMoveHandle()\n+    {\n+    \tinitFirst();\n+    \tlayoutA.startAnimation(leftAnimation);\n+    \tB2A(rightAnimation);\n+    }\n+\n+    public void wallA_rightMoveHandle()\n+    {\n+    \tinitSecond();\n+    \tlayoutA.startAnimation(rightAnimation);\n+    \tD2A(leftAnimation);\n+    }\n+    \n+\n+    public void wallD_leftMoveHandle()\n+    {\n+    \tinitFirst();\n+    \tlayoutD.startAnimation(leftAnimation);\n+    \tA2D(rightAnimation);\n+    }\n+\n+    public void wallD_rightMoveHandle()\n+    {\n+    \tinitSecond();\n+    \tlayoutD.startAnimation(rightAnimation);\n+    \tC2D(leftAnimation);\n+    }\n+    \n+\n+    public void wallB_leftMoveHandle()\n+    {\n+    \tinitFirst();\n+    \tlayoutB.startAnimation(leftAnimation);\n+    \tC2B(rightAnimation);\n+    }\n+\n+    public void wallB_rightMoveHandle()\n+    {\n+    \tinitSecond();\n+    \tlayoutB.startAnimation(rightAnimation);\n+    \tA2B(leftAnimation);\n+    }\n+    \n+\n+    public void wallC_leftMoveHandle()\n+    {\n+    \tinitFirst();\n+    \tlayoutC.startAnimation(leftAnimation);\n+    \tD2C(rightAnimation);\n+    }\n+\n+    public void wallC_rightMoveHandle()\n+    {\n+    \tinitSecond();\n+    \tlayoutC.startAnimation(rightAnimation);\n+    \tB2C(leftAnimation);\n+    }\n+    \n+    \n+    \n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "692f231fd46d9ed880641e50f03297958461a42b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241Rotate3d.java",
+    "status" : "added",
+    "additions" : 77,
+    "deletions" : 0,
+    "changes" : 77,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/70033fd214d693e24e5f6eb0d7742eee0e7c45b7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241Rotate3d.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/70033fd214d693e24e5f6eb0d7742eee0e7c45b7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241Rotate3d.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241Rotate3d.java?ref=70033fd214d693e24e5f6eb0d7742eee0e7c45b7",
+    "patch" : "@@ -0,0 +1,77 @@\n+package yewb.android;\n+\n+import android.graphics.Camera;   \n+import android.graphics.Matrix;   \n+import android.view.animation.Animation;   \n+import android.view.animation.Transformation; \n+\n+public class Rotate3d extends Animation {\n+\tprivate float mFromDegree;   \n+    private float mToDegree;   \n+    private float mCenterX;   \n+    private float mCenterY;   \n+    private float mLeft;   \n+    private float mTop;   \n+    private Camera mCamera;   \n+    private static final String TAG = \"Rotate3d\";\n+    \n+    public Rotate3d(float fromDegree, float toDegree, float left, float top,   \n+            float centerX, float centerY) {   \n+        this.mFromDegree = fromDegree;   \n+        this.mToDegree = toDegree;   \n+        this.mLeft = left;   \n+        this.mTop = top;   \n+        this.mCenterX = centerX;   \n+        this.mCenterY = centerY;   \n+  \n+    }\n+\n+\t@Override\n+\tpublic void initialize(int width, int height, int parentWidth,\n+\t\t\tint parentHeight) {\n+\t\tsuper.initialize(width, height, parentWidth, parentHeight);\n+\t\tmCamera = new Camera();  \n+\t}\n+\n+\t@Override\n+\tprotected void applyTransformation(float interpolatedTime, Transformation t) {\n+\t\tfinal float FromDegree = mFromDegree;   \n+        float degrees = FromDegree + (mToDegree - mFromDegree)   \n+                * interpolatedTime;   \n+        final float centerX = mCenterX;   \n+        final float centerY = mCenterY;   \n+        final Matrix matrix = t.getMatrix();   \n+  \n+        if (degrees <= -76.0f) {   \n+            degrees = -90.0f;   \n+            mCamera.save();   \n+            mCamera.rotateY(degrees);   \n+            mCamera.getMatrix(matrix);   \n+            mCamera.restore();   \n+        } else if (degrees >= 76.0f) {   \n+            degrees = 90.0f;   \n+            mCamera.save();   \n+            mCamera.rotateY(degrees);   \n+            mCamera.getMatrix(matrix);   \n+            mCamera.restore();   \n+        } else {   \n+            mCamera.save();   \n+            //   \n+            mCamera.translate(0, 0, centerX);   \n+            mCamera.rotateY(degrees);   \n+            mCamera.translate(0, 0, -centerX);   \n+            mCamera.getMatrix(matrix);   \n+            mCamera.restore();   \n+        }   \n+  \n+        matrix.preTranslate(-centerX, -centerY);   \n+        matrix.postTranslate(centerX, centerY);\n+\t}\n+    \n+    \n+    \n+    \n+    \n+    \n+    \n+}"
+  } ],
+  "sha" : "70033fd214d693e24e5f6eb0d7742eee0e7c45b7",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/70033fd214d693e24e5f6eb0d7742eee0e7c45b7",
+  "parents" : [ {
+    "sha" : "00e8c8c518df8253d21ea469618dd7636d8b4330",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/00e8c8c518df8253d21ea469618dd7636d8b4330",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/00e8c8c518df8253d21ea469618dd7636d8b4330"
+  } ]
+}

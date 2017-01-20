@@ -1,0 +1,162 @@
+{
+  "committer" : {
+    "login" : "liwenjie0",
+    "id" : 14371574,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14371574?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liwenjie0",
+    "html_url" : "https://github.com/liwenjie0",
+    "followers_url" : "https://api.github.com/users/liwenjie0/followers",
+    "following_url" : "https://api.github.com/users/liwenjie0/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liwenjie0/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liwenjie0/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liwenjie0/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liwenjie0/orgs",
+    "repos_url" : "https://api.github.com/users/liwenjie0/repos",
+    "events_url" : "https://api.github.com/users/liwenjie0/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liwenjie0/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 341,
+    "additions" : 303,
+    "deletions" : 38
+  },
+  "author" : {
+    "login" : "liwenjie0",
+    "id" : 14371574,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14371574?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liwenjie0",
+    "html_url" : "https://github.com/liwenjie0",
+    "followers_url" : "https://api.github.com/users/liwenjie0/followers",
+    "following_url" : "https://api.github.com/users/liwenjie0/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liwenjie0/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liwenjie0/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liwenjie0/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liwenjie0/orgs",
+    "repos_url" : "https://api.github.com/users/liwenjie0/repos",
+    "events_url" : "https://api.github.com/users/liwenjie0/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liwenjie0/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/1343345881d84c463b04d71dbf1f1a6f62412f6d",
+  "commit" : {
+    "author" : {
+      "name" : "lwj000",
+      "email" : "602078721@qq.com",
+      "date" : "2016-06-15T01:50:17Z"
+    },
+    "committer" : {
+      "name" : "lwj000",
+      "email" : "602078721@qq.com",
+      "date" : "2016-06-15T01:50:17Z"
+    },
+    "message" : "综合编程。\n\n修改Java文件，修改layout文件",
+    "tree" : {
+      "sha" : "264a96c9bda04aec17283c4e9c6e094bad77eed8",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/264a96c9bda04aec17283c4e9c6e094bad77eed8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/1343345881d84c463b04d71dbf1f1a6f62412f6d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1343345881d84c463b04d71dbf1f1a6f62412f6d/comments",
+  "files" : [ {
+    "sha" : "5dc6dc09aac4d08406811c2c7a4f38b2613e9c68",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity.java",
+    "status" : "modified",
+    "additions" : 128,
+    "deletions" : 4,
+    "changes" : 132,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity.java?ref=1343345881d84c463b04d71dbf1f1a6f62412f6d",
+    "patch" : "@@ -1,25 +1,149 @@\n package com.example.lwj_pc.my_classwork;\n \n-import android.app.Activity;\n+import android.content.Intent;\n+import android.content.res.Configuration;\n+import android.database.Cursor;\n+import android.database.sqlite.SQLiteDatabase;\n import android.os.Bundle;\n+import android.support.v4.widget.DrawerLayout;\n+import android.support.v7.app.ActionBarActivity;\n+import android.support.v7.app.ActionBarDrawerToggle;\n+import android.support.v7.widget.Toolbar;\n+import android.util.Log;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.widget.AdapterView;\n import android.widget.ArrayAdapter;\n import android.widget.ListView;\n+import android.widget.Toast;\n \n /**\n  * Created by LWJ-PC on 2016/4/19.\n  */\n-public class Com1314080901221Activity extends Activity {\n+public class Com1314080901221Activity extends ActionBarActivity {\n     private String[] strings={\"list 1!!!\",\"list 2!!!\"};\n     private ListView listView;\n+    private DrawerLayout drawerLayout;\n+    private Toolbar toolbar;\n+    private ActionBarDrawerToggle actionBarDrawerToggle;\n+    private Com1314080901221_MyDBHelper dbHelper;\n+    private ArrayAdapter<String>  adapter;\n+\n+\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_com1314080901221_main);\n-        //requestWindowFeature(Window.FEATURE_NO_TITLE);\n-        ArrayAdapter<String>  adapter=new ArrayAdapter<String>(Com1314080901221Activity.this,android.R.layout.simple_list_item_1,strings);\n+        //设置界面\n+        toolbar=(Toolbar)findViewById(R.id.mytoolbar);\n+        toolbar.setTitle(\"行程提醒\");\n+        setSupportActionBar(toolbar);\n+        toolbar.setOnMenuItemClickListener(onMenuItemClick);\n+        drawerLayout=(DrawerLayout)findViewById(R.id.main_drawer);\n+        actionBarDrawerToggle=new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);\n+        drawerLayout.setDrawerListener(actionBarDrawerToggle);\n+\n+        dbHelper=new Com1314080901221_MyDBHelper(this,\"Myapp.db\",null,1);\n+        adapter=new ArrayAdapter<String>(Com1314080901221Activity.this,android.R.layout.simple_list_item_1);\n         listView=(ListView)findViewById(R.id.list_view);\n+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {\n+            @Override\n+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {\n+                String temp=adapter.getItem(position);\n+                Log.d(\"点击位置是：\",position+\"---\"+temp);\n+                Intent intent=new Intent(Com1314080901221Activity.this,Com1314080901221Activity_showitem.class);\n+                intent.putExtra(\"title\",temp);\n+                startActivity(intent);\n+            }\n+        });\n+\n+    }\n+\n+    @Override\n+    protected void onStart() {\n+        super.onStart();\n+        adapter.addAll(loadlist());\n         listView.setAdapter(adapter);\n+\n+    }\n+\n+    @Override\n+    protected void onStop() {\n+        super.onStop();\n+        adapter.clear();\n+    }\n+\n+    private String[] loadlist(){\n+        SQLiteDatabase db=dbHelper.getWritableDatabase();\n+        Cursor cursor=db.rawQuery(\"select title from journey\",null);\n+        String[] titles=new String[cursor.getCount()];\n+        int i=0;\n+        if(cursor.moveToFirst()){\n+            String title;\n+            do{\n+                title=cursor.getString(cursor.getColumnIndex(\"title\"));\n+                titles[i++]=title;\n+                Log.d(\"标题\",title);\n+            }while(cursor.moveToNext());\n+        }else{\n+            Log.d(\"状态：\",\"数据库为空\");\n+        }\n+        Log.d(\"状态\",\"完成！\");\n+        cursor.close();\n+        return titles;\n+    }\n+    //OnMenuItemClickListener 的监听者\n+    private Toolbar.OnMenuItemClickListener onMenuItemClick=new Toolbar.OnMenuItemClickListener() {\n+        @Override\n+        public boolean onMenuItemClick(MenuItem item) {\n+            String msg=\"\";\n+            switch (item.getItemId()){\n+                case R.id.action_insert:\n+                    Intent insertintent=new Intent(Com1314080901221Activity.this,Com1314080901221Activity_Insert.class);\n+                    startActivity(insertintent);\n+                    break;\n+                case R.id.action_more:\n+                    msg+=\"Click More!\";\n+                    break;\n+                case R.id.action_settings:\n+                    msg+=\"Click Setting!\";\n+                    break;\n+                default:\n+                    break;\n+            }\n+            if(!msg.equals(\"\")){\n+                Toast.makeText(Com1314080901221Activity.this,msg,Toast.LENGTH_SHORT).show();\n+            }\n+            return true;\n+        }\n+    };\n+    //创建Toolbar抽屉按钮的点击效果\n+    @Override\n+    protected void onPostCreate(Bundle savedInstanceState) {\n+        super.onPostCreate(savedInstanceState);\n+        actionBarDrawerToggle.syncState();\n+    }\n+    //创建菜单\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        getMenuInflater().inflate(R.menu.com1314080901221_main,menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        if(actionBarDrawerToggle.onOptionsItemSelected(item)){\n+            return true;\n+        }\n+        return super.onOptionsItemSelected(item);\n+    }\n+\n+    @Override\n+    public void onConfigurationChanged(Configuration newConfig) {\n+        super.onConfigurationChanged(newConfig);\n+        actionBarDrawerToggle.onConfigurationChanged(newConfig);\n     }\n \n     @Override"
+  }, {
+    "sha" : "7b81160330c90cf4e418ae39bc976ab889e7e7a2",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_Insert.java",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 2,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_Insert.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_Insert.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_Insert.java?ref=1343345881d84c463b04d71dbf1f1a6f62412f6d",
+    "patch" : "@@ -4,6 +4,7 @@\n import android.content.ContentValues;\n import android.database.sqlite.SQLiteDatabase;\n import android.os.Bundle;\n+import android.util.Log;\n import android.view.View;\n import android.widget.Button;\n import android.widget.EditText;\n@@ -36,14 +37,23 @@ public void onClick(View v) {\n                 SimpleDateFormat dateFormat = new SimpleDateFormat(\"yyyy-MM-dd;HH:mm:ss\");\n                 Date date=new Date();\n                 String datetime = dateFormat.format(date);\n-                Toast.makeText(Com1314080901221Activity_Insert.this, datetime, Toast.LENGTH_SHORT).show();\n \n                 SQLiteDatabase db=dbHelper.getWritableDatabase();\n                 ContentValues values=new ContentValues();\n                 values.put(\"title\",message_title);\n                 values.put(\"content\",message_content);\n                 values.put(\"time\",datetime);\n-                db.insert(\"journey\",null,values);\n+                long temp=db.insert(\"journey\",null,values);\n+                Log.d(\"插叙序号：\",\"=\"+temp);\n+                if (temp>0) {\n+                    Toast.makeText(Com1314080901221Activity_Insert.this, \"添加完成！\", Toast.LENGTH_SHORT).show();\n+                    Com1314080901221Activity_Insert.this.finish();\n+                }else if(temp==-1){\n+                    Toast.makeText(Com1314080901221Activity_Insert.this,\"标题重复，请修改标题！\",Toast.LENGTH_LONG).show();\n+                }else{\n+                    finish();\n+                }\n+\n             }\n         });\n "
+  }, {
+    "sha" : "fe1dd46a791c72c18b57e5faacb3a58c1c96507e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_showitem.java",
+    "status" : "added",
+    "additions" : 84,
+    "deletions" : 0,
+    "changes" : 84,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_showitem.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_showitem.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221Activity_showitem.java?ref=1343345881d84c463b04d71dbf1f1a6f62412f6d",
+    "patch" : "@@ -0,0 +1,84 @@\n+package com.example.lwj_pc.my_classwork;\n+\n+import android.app.Activity;\n+import android.app.AlertDialog;\n+import android.content.DialogInterface;\n+import android.content.Intent;\n+import android.database.Cursor;\n+import android.database.sqlite.SQLiteDatabase;\n+import android.os.Bundle;\n+import android.util.Log;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+/**\n+ * Created by LWJ-PC on 2016/6/8.\n+ */\n+public class Com1314080901221Activity_showitem extends Activity {\n+    private Com1314080901221_MyDBHelper dbHelper;\n+    private TextView titleText,timeText,contentText;\n+    private Button deleteButton;\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_com1314080901221_list_item);\n+        titleText=(TextView)findViewById(R.id.list_item_title);\n+        timeText=(TextView)findViewById(R.id.list_item_time);\n+        contentText=(TextView)findViewById(R.id.list_item_content);\n+        deleteButton=(Button)findViewById(R.id.list_item_delete);\n+\n+        Intent receiveintent=getIntent();\n+        final String title=receiveintent.getStringExtra(\"title\");\n+        dbHelper=new Com1314080901221_MyDBHelper(this,\"Myapp.db\",null,1);\n+        Toast.makeText(Com1314080901221Activity_showitem.this,title,Toast.LENGTH_SHORT).show();\n+        String [] item=loaditem(title);\n+        titleText.setText(item[0]);\n+        contentText.setText(item[1]);\n+        timeText.setText(item[2]);\n+\n+        deleteButton.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                AlertDialog.Builder dialog=new AlertDialog.Builder(Com1314080901221Activity_showitem.this);\n+                dialog.setTitle(\"提示\");\n+                dialog.setMessage(\"是否确认删除\");\n+                dialog.setCancelable(true);\n+                dialog.setPositiveButton(\"OK\", new DialogInterface.OnClickListener() {\n+                    @Override\n+                    public void onClick(DialogInterface dialog, int which) {\n+                        SQLiteDatabase db=dbHelper.getWritableDatabase();\n+                        int i=db.delete(\"journey\",\"title = ?\",new String[] { titleText.getText().toString() });\n+                        Log.d(\"删除序号等于======\",\":\"+i);\n+                        Toast.makeText(Com1314080901221Activity_showitem.this,\"delete successly\",Toast.LENGTH_SHORT);\n+                        finish();\n+                    }\n+                });\n+                dialog.setNegativeButton(\"CANCEL\", new DialogInterface.OnClickListener() {\n+                    @Override\n+                    public void onClick(DialogInterface dialog, int which) {\n+\n+                    }\n+                });\n+                dialog.show();\n+\n+            }\n+        });\n+    }\n+\n+    private String[] loaditem(String title){\n+        SQLiteDatabase db=dbHelper.getReadableDatabase();\n+        Cursor cursor=db.rawQuery(\"select * from journey where title='\"+title+\"'\",null);\n+        String[] strings=new String[3];\n+        if (cursor.moveToNext()) {\n+            strings[0]=cursor.getString(0);\n+            strings[1]=cursor.getString(1);\n+            strings[2]=cursor.getString(2);\n+        }\n+        Log.d(\"标题：\",\"=\"+strings[0]);\n+        Log.d(\"内容：\",\"=\"+strings[1]);\n+        Log.d(\"时间：\",\"=\"+strings[2]);\n+        return strings;\n+    }\n+}"
+  }, {
+    "sha" : "4ad08e9d2ba3f525c54b9f0cc6afb9c676059861",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221_MyDBHelper.java",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 3,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221_MyDBHelper.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221_MyDBHelper.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901221/Com1314080901221_MyDBHelper.java?ref=1343345881d84c463b04d71dbf1f1a6f62412f6d",
+    "patch" : "@@ -12,10 +12,10 @@\n     //定义一个Context变量，用于保存活动调用本参数时传入的Context，并方便本类的其他方法使用。\n     private Context mycontext;\n     //此处书写数据库建表语句\n-    public static final String CREATE_TABLE=\"create table journey (\"\n-            +\"title text,\"\n+    public static final String CREATE_TABLE=\"create table Journey ( \"\n+            +\"title text primary key,\"\n             +\"content text,\"\n-            +\"time text）\";\n+            +\"time text )\";\n     //构造函数\n     public Com1314080901221_MyDBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {\n         super(context, name, factory, version);"
+  }, {
+    "sha" : "1dcb68080d1c4545205e958dfaa8445157c0b436",
+    "filename" : "app/src/main/res/layout/activity_com1314080901221_list_item.xml",
+    "status" : "added",
+    "additions" : 51,
+    "deletions" : 0,
+    "changes" : 51,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/res/layout/activity_com1314080901221_list_item.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/res/layout/activity_com1314080901221_list_item.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901221_list_item.xml?ref=1343345881d84c463b04d71dbf1f1a6f62412f6d",
+    "patch" : "@@ -0,0 +1,51 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:orientation=\"vertical\" android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\" android:background=\"#E0EEE0\">\n+    <LinearLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"0dp\"\n+        android:layout_weight=\"11\"\n+        android:orientation=\"vertical\">\n+    <TextView\n+        android:id=\"@+id/list_item_title\"\n+        android:text=\"这里是标题预览！\"\n+        android:textSize=\"22sp\"\n+        android:gravity=\"center\"\n+        android:paddingLeft=\"5dp\"\n+        android:paddingRight=\"5dp\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"30dp\" />\n+\n+    <TextView\n+        android:id=\"@+id/list_item_time\"\n+        android:text=\"2016-6-8\"\n+        android:gravity=\"right\"\n+        android:paddingRight=\"6dp\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\" />\n+\n+    <TextView\n+        android:id=\"@+id/list_item_content\"\n+        android:text=\"内容中心\"\n+        android:textSize=\"20sp\"\n+        android:padding=\"5dp\"\n+        android:background=\"#efaa11\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"130dp\" />\n+\n+    </LinearLayout>\n+\n+    <LinearLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"0dp\"\n+        android:layout_weight=\"1\"\n+        android:orientation=\"vertical\">\n+        <Button\n+            android:id=\"@+id/list_item_delete\"\n+            android:text=\"-- delete --\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"match_parent\" />\n+    </LinearLayout>\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "9e437f18081e83872100b49533cdc6c4d476714e",
+    "filename" : "app/src/main/res/layout/activity_com1314080901221_main.xml",
+    "status" : "modified",
+    "additions" : 25,
+    "deletions" : 2,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/res/layout/activity_com1314080901221_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1343345881d84c463b04d71dbf1f1a6f62412f6d/app/src/main/res/layout/activity_com1314080901221_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901221_main.xml?ref=1343345881d84c463b04d71dbf1f1a6f62412f6d",
+    "patch" : "@@ -10,8 +10,31 @@\n         android:layout_width=\"match_parent\"\n         android:layout_height=\"match_parent\">\n         <!-- 主页面视图 -->\n-        <include layout=\"@layout/activity_com1314080901221_main_0\"/>\n+        <LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+            android:orientation=\"vertical\" android:layout_width=\"match_parent\"\n+            android:layout_height=\"match_parent\"\n+            android:background=\"@drawable/com13140809012221pic1\">\n+            <ListView\n+                android:id=\"@+id/list_view\"\n+                android:layout_width=\"match_parent\"\n+                android:layout_height=\"wrap_content\">\n+            </ListView>\n+\n+        </LinearLayout>\n         <!-- 抽屉视图 -->\n-        <include layout=\"@layout/activity_com1314080901221_mian_drawer\"/>\n+        <LinearLayout\n+            xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+            android:orientation=\"vertical\"\n+            android:layout_width=\"230dp\"\n+            android:layout_height=\"match_parent\"\n+            android:layout_gravity=\"start\"\n+            android:background=\"#fff\">\n+\n+            <TextView\n+                android:text=\"这是抽屉\"\n+                android:textSize=\"30sp\"\n+                android:layout_width=\"wrap_content\"\n+                android:layout_height=\"wrap_content\" />\n+        </LinearLayout>\n     </android.support.v4.widget.DrawerLayout>\n </LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "63f1be390d25e696b50d3a6f363b8b8ff778cf08",
+    "filename" : "app/src/main/res/layout/activity_com1314080901221_main_0.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 12,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/61f9161f69f2b550413cdbe3da272afc924ce3c9/app/src/main/res/layout/activity_com1314080901221_main_0.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/61f9161f69f2b550413cdbe3da272afc924ce3c9/app/src/main/res/layout/activity_com1314080901221_main_0.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901221_main_0.xml?ref=61f9161f69f2b550413cdbe3da272afc924ce3c9",
+    "patch" : "@@ -1,12 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    android:orientation=\"vertical\" android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:background=\"@drawable/com13140809012221pic1\">\n-    <ListView\n-        android:id=\"@+id/list_view\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\">\n-    </ListView>\n-\n-</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "71ac66652aefbf84a591343d76160494c9193058",
+    "filename" : "app/src/main/res/layout/activity_com1314080901221_mian_drawer.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 15,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/61f9161f69f2b550413cdbe3da272afc924ce3c9/app/src/main/res/layout/activity_com1314080901221_mian_drawer.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/61f9161f69f2b550413cdbe3da272afc924ce3c9/app/src/main/res/layout/activity_com1314080901221_mian_drawer.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901221_mian_drawer.xml?ref=61f9161f69f2b550413cdbe3da272afc924ce3c9",
+    "patch" : "@@ -1,15 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    android:orientation=\"vertical\"\n-    android:layout_width=\"230dp\"\n-    android:layout_height=\"match_parent\"\n-    android:layout_gravity=\"start\"\n-    android:background=\"#fff\">\n-\n-    <TextView\n-        android:text=\"这是抽屉\"\n-        android:textSize=\"30sp\"\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\" />\n-</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "1343345881d84c463b04d71dbf1f1a6f62412f6d",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1343345881d84c463b04d71dbf1f1a6f62412f6d",
+  "parents" : [ {
+    "sha" : "61f9161f69f2b550413cdbe3da272afc924ce3c9",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/61f9161f69f2b550413cdbe3da272afc924ce3c9",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/61f9161f69f2b550413cdbe3da272afc924ce3c9"
+  } ]
+}

@@ -1,0 +1,82 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 160,
+    "additions" : 160,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13",
+  "commit" : {
+    "author" : {
+      "name" : "hao zh",
+      "email" : "hao zh",
+      "date" : "2016-11-21T13:02:50Z"
+    },
+    "committer" : {
+      "name" : "hao zh",
+      "email" : "hao zh",
+      "date" : "2016-11-21T13:02:50Z"
+    },
+    "message" : "#7 实验提交代码",
+    "tree" : {
+      "sha" : "c228ef549f8b2964c9b9af16900aa40d66acf7b9",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/c228ef549f8b2964c9b9af16900aa40d66acf7b9"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13/comments",
+  "files" : [ {
+    "sha" : "907397b9275b85011b457ee4ccfbca9c85dec392",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902217/JdbcUtil.java",
+    "status" : "added",
+    "additions" : 42,
+    "deletions" : 0,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13/jweb/src/edu/hzu/javaweb/labs/se1414080902217/JdbcUtil.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13/jweb/src/edu/hzu/javaweb/labs/se1414080902217/JdbcUtil.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902217/JdbcUtil.java?ref=25ad4e6e4ee59d38a5c7c5869de22e166c78bb13",
+    "patch" : "@@ -0,0 +1,42 @@\n+package dbc;\n+\n+import java.sql.*;\n+import java.util.Properties;\n+\n+public final class JdbcUtil{\n+\tprivate static String driver;\n+\tprivate static String url;\n+\tprivate static String user;\n+\tprivate static String password;\n+\tprivate static Properties pr=new Properties();\n+\tprivate JdbcUtil(){}\n+\t\n+\tstatic{\n+\t\ttry{\n+\t\t\tpr.load(JdbcUtil.class.getClassLoader().getResourceAsStream(\"db.properties\"));\n+\t\t\tdriver = pr.getProperty(\"driver\");\n+\t\t\turl = pr.getProperty(\"url\");\n+\t\t\tuser = pr.getProperty(\"username\");\n+\t\t\tpassword = pr.getProperty(\"password\");\n+\t\t\tClass.forName(driver);\n+\t\t}catch(Exception e){\n+\t\t\tthrow new ExceptionInInitializerError(e);\n+\t\t}\n+\t}\n+\t\n+\tpublic static Connection getConnection() throws SQLException {\n+\t\treturn DriverManager.getConnection(url, user, password);\t\n+\t}\n+\t\n+\tpublic static void free(ResultSet rs, Statement st, Connection conn){\n+\t\ttry{if(rs != null) st.close();\n+\t\t}catch(SQLException e){e.printStackTrace();\n+\t\t}finally{\n+\t\t\tif(conn != null)\n+\t\t\t\ttry{\n+\t\t\t\t\tconn.close();\n+\t\t\t\t}catch(SQLException e){e.printStackTrace();\n+\t\t\t\t}\n+\t\t}\n+\t}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "8a860acc563d71e8b0c3cd5a4858f3dacd0bf44c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902217/User.java",
+    "status" : "added",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13/jweb/src/edu/hzu/javaweb/labs/se1414080902217/User.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13/jweb/src/edu/hzu/javaweb/labs/se1414080902217/User.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902217/User.java?ref=25ad4e6e4ee59d38a5c7c5869de22e166c78bb13",
+    "patch" : "@@ -0,0 +1,17 @@\n+package vo;\n+\n+public class User{\n+\tprivate String username,password,useraddr,customerName;\n+\t\n+\tpublic String getUsername(){return username;}\n+\tpublic void setUsername(String username) {this.username = username;}\n+\t\n+\tpublic String getPassword(){return password;}\n+\tpublic void setPassword(String password) {this.password = password;}\n+\t\n+\tpublic String getUseraddr(){return useraddr;}\n+\tpublic void setUseraddr(String useraddr) {this.useraddr = useraddr;}\n+\t\n+\tpublic String getcustomerName(){return customerName;}\n+\tpublic void setcustomerName(String customerName) {this.customerName = customerName;}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "307f45d002739436b455f85a59fb2b0487ae23d8",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902217/UserDao.java",
+    "status" : "added",
+    "additions" : 97,
+    "deletions" : 0,
+    "changes" : 97,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13/jweb/src/edu/hzu/javaweb/labs/se1414080902217/UserDao.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13/jweb/src/edu/hzu/javaweb/labs/se1414080902217/UserDao.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902217/UserDao.java?ref=25ad4e6e4ee59d38a5c7c5869de22e166c78bb13",
+    "patch" : "@@ -0,0 +1,97 @@\n+package dao;\n+\n+import java.sql.*;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import vo.User;\n+import dbc.JdbcUtil;\n+\n+public class UserDao{\n+\tpublic void add(User user) throws Exception{\n+\t\tConnection conn = null;\n+\t\tPreparedStatement ps = null;\n+\t\ttry{\n+\t\t\tconn = JdbcUtil.getConnection();\n+\t\t\tString sql = \"insert into user\tvalues(?,?,?,?)\";\n+\t\t\tps = conn.prepareStatement(sql);\n+\t\t\tps.setString(1, user.getUsername());\n+\t\t\tps.setString(2, user.getPassword());\n+\t\t\tps.setString(3, user.getcustomerName());\n+\t\t\tps.setString(4, user.getUseraddr());\n+\t\t\tps.executeUpdate();\n+\t\t}finally{JdbcUtil.free(null, ps, conn);}\n+\t}\n+\t\n+\tpublic void update(User user) throws Exception{\n+\t\tConnection conn = null;\n+\t\tPreparedStatement ps = null;\n+\t\ttry{\n+\t\t\tconn = JdbcUtil.getConnection();\n+\t\t\tString sql = \"update user set password=?,customername=?,useraddr=? where username=?\";\n+\t\t\tps = conn.prepareStatement(sql);\n+\t\t\tps.setString(1, user.getPassword());\n+\t\t\tps.setString(2, user.getcustomerName());\n+\t\t\tps.setString(3, user.getUseraddr());\n+\t\t\tps.setString(4, user.getUsername());\n+\t\t\tps.executeUpdate();\n+\t\t}finally{JdbcUtil.free(null, ps, conn);}\n+\t}\n+\t\n+\tpublic void delete(String userName) throws Exception{\n+\t\tConnection conn = null;\n+\t\tPreparedStatement ps = null;\n+\t\ttry{\n+\t\t\tconn = JdbcUtil.getConnection();\n+\t\t\tString sql = \"delete from user where username=?\";\n+\t\t\tps = conn.prepareStatement(sql);\n+\t\t\tps.setString(1, userName);\n+\t\t\tps.executeUpdate();\n+\t\t}finally{JdbcUtil.free(null, ps, conn);}\n+\t}\n+\t\n+\tpublic User findUserByName(String userName) throws Exception{\n+\t\tConnection conn = null;\n+\t\tPreparedStatement ps = null;\n+\t\tResultSet rs = null;\n+\t\tUser user = null;\n+\t\ttry{\n+\t\t\tconn = JdbcUtil.getConnection();\n+\t\t\tString sql = \"select * from user where username=?\";\n+\t\t\tps = conn.prepareStatement(sql);\n+\t\t\tps.setString(1, userName);\n+\t\t\trs = ps.executeQuery();\n+\t\t\tif(rs.next()){\n+\t\t\t\tuser = new User();\n+\t\t\t\tuser.setUsername(rs.getString(1));\n+\t\t\t\tuser.setPassword(rs.getString(2));\n+\t\t\t\tuser.setcustomerName(rs.getString(3));\n+\t\t\t\tuser.setUseraddr(rs.getString(4));\n+\t\t\t}\n+\t\t}finally{JdbcUtil.free(null, ps, conn);}\n+\t\treturn user;\n+\t}\n+\t\n+\tpublic List<User> QueryAll() throws Exception{\n+\t\tConnection conn = null;\n+\t\tPreparedStatement ps = null;\n+\t\tResultSet rs = null;\n+\t\tList<User> userList=new ArrayList<User>();\n+\t\ttry{\n+\t\t\tconn = JdbcUtil.getConnection();\n+\t\t\tString sql = \"select * from user\";\n+\t\t\tps = conn.prepareStatement(sql);\n+\t\t\trs = ps.executeQuery();\n+\t\t\tif(rs.next()){\n+\t\t\t\tUser user = new User();\n+\t\t\t\tuser.setUsername(rs.getString(1));\n+\t\t\t\tuser.setPassword(rs.getString(2));\n+\t\t\t\tuser.setcustomerName(rs.getString(3));\n+\t\t\t\tuser.setUseraddr(rs.getString(4));\n+\t\t\t\tuserList.add(user);\n+\t\t\t}\n+\t\t}finally{JdbcUtil.free(null, ps, conn);}\n+\t\treturn userList;\n+\t}\n+\t\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "aeb6a449ef0cb618d375d8e3762878c3bd2cf61c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902217/db.properties",
+    "status" : "added",
+    "additions" : 4,
+    "deletions" : 0,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13/jweb/src/edu/hzu/javaweb/labs/se1414080902217/db.properties",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13/jweb/src/edu/hzu/javaweb/labs/se1414080902217/db.properties",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902217/db.properties?ref=25ad4e6e4ee59d38a5c7c5869de22e166c78bb13",
+    "patch" : "@@ -0,0 +1,4 @@\n+driver=com.mysql.jdbc.Driver\n+url=jdbc\\:mysql\\://localhost\\:3306/zhhao?useUnicode\\=true&characterEncoding\\=utf-8\n+username=root\n+password=123456"
+  } ],
+  "sha" : "25ad4e6e4ee59d38a5c7c5869de22e166c78bb13",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/25ad4e6e4ee59d38a5c7c5869de22e166c78bb13",
+  "parents" : [ {
+    "sha" : "5ad2dc020be05fae3ce1e5bef6fa3570a82aa546",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5ad2dc020be05fae3ce1e5bef6fa3570a82aa546",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/5ad2dc020be05fae3ce1e5bef6fa3570a82aa546"
+  } ]
+}

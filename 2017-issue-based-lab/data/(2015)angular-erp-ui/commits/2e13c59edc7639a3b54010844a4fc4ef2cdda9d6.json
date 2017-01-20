@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 134,
+    "additions" : 20,
+    "deletions" : 114
+  },
+  "author" : {
+    "login" : "wings15",
+    "id" : 15085087,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085087?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wings15",
+    "html_url" : "https://github.com/wings15",
+    "followers_url" : "https://api.github.com/users/wings15/followers",
+    "following_url" : "https://api.github.com/users/wings15/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wings15/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wings15/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wings15/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wings15/orgs",
+    "repos_url" : "https://api.github.com/users/wings15/repos",
+    "events_url" : "https://api.github.com/users/wings15/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wings15/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/2e13c59edc7639a3b54010844a4fc4ef2cdda9d6",
+  "commit" : {
+    "author" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-12-22T01:05:42Z"
+    },
+    "committer" : {
+      "name" : "wings15",
+      "email" : "719827620@qq.com",
+      "date" : "2015-12-22T01:05:42Z"
+    },
+    "message" : "Update index.html",
+    "tree" : {
+      "sha" : "3d9be98efb0968d02b09f1823e686b823f6633e6",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/3d9be98efb0968d02b09f1823e686b823f6633e6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/2e13c59edc7639a3b54010844a4fc4ef2cdda9d6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2e13c59edc7639a3b54010844a4fc4ef2cdda9d6/comments",
+  "files" : [ {
+    "sha" : "e7a85373d3f01bafe8fe8f07fb58395fd9bde507",
+    "filename" : "works/1314080901212/index.html",
+    "status" : "modified",
+    "additions" : 20,
+    "deletions" : 114,
+    "changes" : 134,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/2e13c59edc7639a3b54010844a4fc4ef2cdda9d6/works/1314080901212/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/2e13c59edc7639a3b54010844a4fc4ef2cdda9d6/works/1314080901212/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901212/index.html?ref=2e13c59edc7639a3b54010844a4fc4ef2cdda9d6",
+    "patch" : "@@ -23,29 +23,6 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]--> \n-    \n-   <style>\n-      body {\n-        padding-top: 50px;\n-      }\n-      .starter-template {\n-        padding: 40px 15px;\n-        text-align: center;\n-      }\n-\n-    </style>\n-    \n-    <div class=\"container\">\n-      <div class=\"starter-template\">\n-        <h1>仓库的入库表单创建</h1>\n-        <p style=\"background-color:#99bce8;color:blue;font-weight:bold\">单据信息</p>\n-      </div>\n-    </div>\n-         \n-    \n-         \n-    </div><!-- /.container -->\n-    \n     <script>\n     function Crate Product Storage ($scope) {\n         var someData = {\n@@ -82,19 +59,17 @@\n       </div>\n     </nav>\n     \n-   <div class=\"form-group\">\n-            <label for=\"ID\"  class=\"col-md-1 control-label\">订单编码：</label>\n-            <div class=\"col-md-2\">\n-                <select id=\"ID\" class=\"form-control\">\n-                    <option>001</option>\n-                    <option>002</option>\n-                    <option>003</option>\n-                    <option>004</option>\n-                </select>\n-            </div>\n-            \n-            \n-      <label  for=\" Storage\"  class=\"col-md-1 control-label\">仓库：</label>\n+     <div class=\"container\">\n+      <div class=\"starter-template\">\n+        <h1>仓库的入库表单创建</h1>\n+        <p style=\"background-color:#99bce8;color:blue;font-weight:bold\">单据信息</p>\n+      </div>\n+    </div>\n+    \n+    <label for=\"number\">订单编码：</label>\n+    <input type=\"text\" name=\"number\" id=\"number\" value=\"\"/>\n+    \n+    <label for=\"sort\">仓库：</label>\n    <select> \n     <option value=\"001\" >001</option>\n     <option value=\"002\">002</option>\n@@ -104,7 +79,7 @@\n     <option value=\"006\">006</option>\n    </select>\n    \n-    <label  for=\"Hand\"  class=\"col-md-1 control-label\">经手人：</label>\n+    <label for=\"Hand\">经手人：</label>\n    <select> \n     <option value=\"礼品盒\" >礼品盒</option>\n     <option value=\"按时\">按时</option>\n@@ -114,101 +89,32 @@\n     <option value=\"泽拉图\">泽拉图</option>\n    </select>\n    \n-    <label for=\" Handing date\"  class=\"col-md-1 control-label\">经办日期：</label>\n-    <div class=\"col-md-2\">\n--    <input type=\"date\" name=\" Handing date\" id=\" Handing date\" value=\"\"/>\n+    <label for=\"Handing date\">经办日期：</label>\n+-    <input type=\"date\" name=\"Handing date\" id=\"Handing date\" value=\"\"/>\n \n    </div>\n    \n-   <div class=\"form-group\">\n+   <div>\n+    <div class=\"form-group\">\t\n     <label for=\"State\" class=\"col-md-1 control-label \">状态：</label>\n     <input type=\"text\" name=\"State\" id=\"State\" value=\"\"/>\n     \n     <div class=\"col-md-2\">\n     <label for=\"Remark\">备注：</label>\n         <input class=\"form-control disabled\" id=\"Remark\" type=\"text\" />\n+    \n     </div>\n     \n \t\n-  <div class=\"btn-group col-lg-push-1\" style=\"width: 1270px;height: 155px\">\n-    <input type=\"button\" value=\"新建\" name=\"submit\"/>\n-    <input type=\"button\" value=\"保存\" name=\"submit\"/>\n+  <div style=\"width: 1270px;height: 155px\">\n+    <input type=\"submit\" value=\"+新建\" name=\"submit\"/>\n+    <input type=\"submit\" value=\"+保存\" name=\"submit\"/>\n     <input type=\"button\" value=\"删除\" name=\"submit\"/>\n     <input type=\"button\" value=\"确定\" name=\"submit\"/>\n     <input type=\"button\" value=\"导出excel\" name=\"submit\"/>\n     <input type=\"button\" value=\"入库\" name=\"submit\"/>\n   </div>\n   \n-  \n-<div class=\"container\">\t\n-<DIV style=\"position:relative; top:0px; left:0px; width:80px; height:120px;  overflow: hidden\">\n-<SCRIPT language=javascript>\n-function Year_Month(){  \n-    var now = new Date();  \n-    var yy = now.getFullYear();  \n-    var mm = now.getMonth()+1;  \n-    var cl = '<font color=\"#000000\">';  \n-    if (now.getDay() == 0) cl = '<font color=\"#000000\">';  \n-    if (now.getDay() == 6) cl = '<font color=\"#000000\">';  \n-    return(cl +  yy + '年' + mm + '月</font>');  \n-}  \n- \n-function Date_of_Today(){  \n-    var now = new Date();  \n-    var cl = '<font color=\"#000000\">';  \n-    if (now.getDay() == 0) cl = '<font color=\"#000000\">';  \n-    if (now.getDay() == 6) cl = '<font color=\"#000000\">';  \n-    return(cl +  now.getDate() + '<b>日</b></font>');  \n-}  \n- \n-function Day_of_Today(){  \n-    var day = new Array();  \n-    day[0] = \"星期日\";  \n-    day[1] = \"星期一\";  \n-    day[2] = \"星期二\";  \n-    day[3] = \"星期三\";  \n-    day[4] = \"星期四\";  \n-    day[5] = \"星期五\";  \n-    day[6] = \"星期六\";  \n-    var now = new Date();  \n-    var cl = '<font color=\"#000000\">';  \n-    if (now.getDay() == 0) cl = '<font color=\"#000000\">';  \n-    if (now.getDay() == 6) cl = '<font color=\"#000000\">';  \n-    return(cl +  day[now.getDay()] + '</font>');  \n-}  \n- \n-function CurentTime(){  \n-    var now = new Date();  \n-    var hh = now.getHours();  \n-    var mm = now.getMinutes();  \n-    var ss = now.getTime() % 60000;  \n-    ss = (ss - (ss % 1000)) / 1000;  \n-    var clock = hh+':';  \n-    if (mm < 10) clock += '0';  \n-    clock += mm+':';  \n-    if (ss < 10) clock += '0';  \n-    clock += ss;  \n-    return(clock);  \n-}  \n- \n-function refreshCalendarClock(){  \n-document.all.calendarClock1.innerHTML = Year_Month();  \n-document.all.calendarClock2.innerHTML = Date_of_Today();  \n-document.all.calendarClock3.innerHTML = Day_of_Today();  \n-document.all.calendarClock4.innerHTML = CurentTime();  \n-}  \n-document.write('<table border=\"0\" cellpadding=\"0\" cellspacing=\"1\" width=\"68\" bgcolor=\"#000000\" height=\"60\">'); \n-document.write('<tr><td width=\"100%\" height=\"100%\" align=\"center\">'); \n-document.write('<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" hight=\"100%\" bgcolor=\"#f2f2f2\" height=\"60\">'); \n-document.write('<tr><td align=\"center\" width=\"100%\" height=\"100%\">'); \n-document.write('<font id=\"calendarClock1\" style=\"font-family:宋体;font-size:9pt\"> </font><br>'); \n-document.write('<font id=\"calendarClock2\" style=\"font-family:Arial;font-size:14pt;Line-Height=100%\"> </font><br>'); \n-document.write('<font id=\"calendarClock3\" style=\"font-family:宋体;font-size:9pt;Line-Height=100%\"> </font><br>'); \n-document.write('<font id=\"calendarClock4\" style=\"color:#000000;font-family:Arial;font-size:8pt;Line-Height=100%\"><b> </b></font>'); \n-document.write('</td></tr></table>'); \n-document.write('</td></tr></table>'); \n-setInterval('refreshCalendarClock()',1000);\n-      \t</div>\n </SCRIPT></DIV>\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->"
+  } ],
+  "sha" : "2e13c59edc7639a3b54010844a4fc4ef2cdda9d6",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2e13c59edc7639a3b54010844a4fc4ef2cdda9d6",
+  "parents" : [ {
+    "sha" : "60e195d4600c5678eeac72a734c61175a400b825",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/60e195d4600c5678eeac72a734c61175a400b825",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/60e195d4600c5678eeac72a734c61175a400b825"
+  } ]
+}

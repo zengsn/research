@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 34,
+    "additions" : 0,
+    "deletions" : 34
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/93ca9898df331c791d97adf603353170d5efa4b5",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-13T17:19:51Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-13T17:19:51Z"
+    },
+    "message" : "Delete Encoding.java",
+    "tree" : {
+      "sha" : "8da5e31ac7d5d7827cb3bce5d74ffb1ecc92a15e",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/8da5e31ac7d5d7827cb3bce5d74ffb1ecc92a15e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/93ca9898df331c791d97adf603353170d5efa4b5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/93ca9898df331c791d97adf603353170d5efa4b5/comments",
+  "files" : [ {
+    "sha" : "1b7de13983d4a743fd5e10a0fa46ae72bb6d9fbe",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 34,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/dc1919e616b9488e159810078f3bf9f40a64f4e9/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/dc1919e616b9488e159810078f3bf9f40a64f4e9/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java?ref=dc1919e616b9488e159810078f3bf9f40a64f4e9",
+    "patch" : "@@ -1,34 +0,0 @@\n-package edu.hzu.javaweb.labs.se1414080902202;\n-\n-\n-import java.io.IOException;\n-\n-import javax.servlet.Filter;\n-import javax.servlet.FilterChain;\n-import javax.servlet.FilterConfig;\n-import javax.servlet.ServletException;\n-import javax.servlet.ServletRequest;\n-import javax.servlet.ServletResponse;\n-import javax.servlet.annotation.WebFilter;\n-\n-@WebFilter(filterName = \"EncodingFilter\", urlPatterns = \"/*\")\n-public class Encoding implements Filter {\n-\n-\t@Override\n-\tpublic void destroy() {\n-\t\t// TODO Auto-generated method stub\n-\t}\n-\n-\t@Override\n-\tpublic void doFilter(ServletRequest request, ServletResponse response,\n-\t\t\tFilterChain chain) throws IOException, ServletException {\n-\t\trequest.setCharacterEncoding(\"UTF-8\");\n-\t\tresponse.setCharacterEncoding(\"UTF-8\");\n-\t\tchain.doFilter(request, response);\n-\t}\n-\n-\t@Override\n-\tpublic void init(FilterConfig filterConfig) throws ServletException {\n-\t\t// TODO Auto-generated method stub\n-\t}\n-}\n\\ No newline at end of file"
+  } ],
+  "sha" : "93ca9898df331c791d97adf603353170d5efa4b5",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/93ca9898df331c791d97adf603353170d5efa4b5",
+  "parents" : [ {
+    "sha" : "dc1919e616b9488e159810078f3bf9f40a64f4e9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/dc1919e616b9488e159810078f3bf9f40a64f4e9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/dc1919e616b9488e159810078f3bf9f40a64f4e9"
+  } ]
+}

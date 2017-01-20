@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 57,
+    "additions" : 0,
+    "deletions" : 57
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/aeabeb021e628f8b615b6cc9d194f389253c10a3",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T00:55:19Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T00:55:19Z"
+    },
+    "message" : "Delete Se1414080902238Servlet.java",
+    "tree" : {
+      "sha" : "961aae623ced327c7dbc469560a48a64ee31afe4",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/961aae623ced327c7dbc469560a48a64ee31afe4"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/aeabeb021e628f8b615b6cc9d194f389253c10a3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/aeabeb021e628f8b615b6cc9d194f389253c10a3/comments",
+  "files" : [ {
+    "sha" : "c2c4d89be05cbb7b3018e6cc29f4902d4856379a",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902238/Se1414080902238Servlet.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 57,
+    "changes" : 57,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f66ea6ea5c68188db433912bc987e88043d881f0/jweb/src/edu/hzu/javaweb/labs/se1414080902238/Se1414080902238Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f66ea6ea5c68188db433912bc987e88043d881f0/jweb/src/edu/hzu/javaweb/labs/se1414080902238/Se1414080902238Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902238/Se1414080902238Servlet.java?ref=f66ea6ea5c68188db433912bc987e88043d881f0",
+    "patch" : "@@ -1,57 +0,0 @@\n-package edu.hzu.javaweb.labs.se1414080902238;\n-\n-import java.io.IOException;\n-//import java.io.PrintWriter;\n-\n-import javax.servlet.ServletException;\n-import javax.servlet.annotation.WebServlet;\n-import javax.servlet.http.HttpServlet;\n-import javax.servlet.http.HttpServletRequest;\n-import javax.servlet.http.HttpServletResponse;\n-@WebServlet(\"/1414080902238\")\n-public class Se1414080902238Servlet extends HttpServlet {\n-\n-\t\n-\n-\tprivate static final long serialVersionUID = 1L;\n-\n-\t\n-\tpublic Se1414080902238Servlet() {\n-\t\tsuper();\n-\t}\n-\n-\t\n-\tpublic void destroy() {\n-\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n-\t\t// Put your code here\n-\t}\n-\n-\t\n-\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\n-\t\tString khName=request.getParameter(\"stuName\");\n-\t\tString phoneNamber=request.getParameter(\"phoneName\");\n-\t\tString info=\"\";\n-\t\tif(khName.isEmpty()||phoneNamber.isEmpty()){\n-\t\t\tinfo=\"输入不能为空！\";\n-\t\t}else{\n-\t\t\tinfo=\"客户： \"+khName+\"  \"+\"联系电话： \"+phoneNamber;\n-\t\t}\n-\t\trequest.setAttribute(\"outputMessage\",info);\n-\t\trequest.getRequestDispatcher(\"/info.jsp\").forward(request, response);\n-\t}\n-\n-\t\n-\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\n-\t\tdoGet(request, response);\n-\t}\n-\n-\t\n-\tpublic void init() throws ServletException {\n-\t\t// Put your code here\n-\t}\n-\n-}"
+  } ],
+  "sha" : "aeabeb021e628f8b615b6cc9d194f389253c10a3",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/aeabeb021e628f8b615b6cc9d194f389253c10a3",
+  "parents" : [ {
+    "sha" : "f66ea6ea5c68188db433912bc987e88043d881f0",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f66ea6ea5c68188db433912bc987e88043d881f0",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f66ea6ea5c68188db433912bc987e88043d881f0"
+  } ]
+}

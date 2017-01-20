@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "ChowWd",
+    "id" : 22512000,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512000?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ChowWd",
+    "html_url" : "https://github.com/ChowWd",
+    "followers_url" : "https://api.github.com/users/ChowWd/followers",
+    "following_url" : "https://api.github.com/users/ChowWd/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ChowWd/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ChowWd/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ChowWd/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ChowWd/orgs",
+    "repos_url" : "https://api.github.com/users/ChowWd/repos",
+    "events_url" : "https://api.github.com/users/ChowWd/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ChowWd/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 113,
+    "additions" : 113,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "ChowWd",
+    "id" : 22512000,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512000?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ChowWd",
+    "html_url" : "https://github.com/ChowWd",
+    "followers_url" : "https://api.github.com/users/ChowWd/followers",
+    "following_url" : "https://api.github.com/users/ChowWd/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ChowWd/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ChowWd/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ChowWd/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ChowWd/orgs",
+    "repos_url" : "https://api.github.com/users/ChowWd/repos",
+    "events_url" : "https://api.github.com/users/ChowWd/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ChowWd/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/d735a28c1cda543ec148194794c8adc8392a9d53",
+  "commit" : {
+    "author" : {
+      "name" : "ChowWd",
+      "email" : "1297422578@qq.com",
+      "date" : "2016-11-24T09:44:02Z"
+    },
+    "committer" : {
+      "name" : "ChowWd",
+      "email" : "1297422578@qq.com",
+      "date" : "2016-11-24T09:44:02Z"
+    },
+    "message" : "#7 提交实验代码",
+    "tree" : {
+      "sha" : "17ff092613ae613deac7c3e1f0c67fc86a63732d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/17ff092613ae613deac7c3e1f0c67fc86a63732d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/d735a28c1cda543ec148194794c8adc8392a9d53",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/d735a28c1cda543ec148194794c8adc8392a9d53/comments",
+  "files" : [ {
+    "sha" : "eb4fec237028ba3e941936e2a8d7ec8bfb2ae4e4",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902221/DatabaceCon.java",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d735a28c1cda543ec148194794c8adc8392a9d53/jweb/src/edu/hzu/javaweb/labs/se1414080902221/DatabaceCon.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d735a28c1cda543ec148194794c8adc8392a9d53/jweb/src/edu/hzu/javaweb/labs/se1414080902221/DatabaceCon.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902221/DatabaceCon.java?ref=d735a28c1cda543ec148194794c8adc8392a9d53",
+    "patch" : "@@ -0,0 +1,39 @@\n+package edu.hzu.javaweb.labs.se1414080902221;\n+\n+import java.sql.Connection;\n+import java.sql.DriverManager;\n+import java.sql.SQLException;\n+import java.sql.Statement;\n+\n+\n+public class DatabaceCon  {\n+\n+\tpublic static Connection getconnect(){\n+\t\tString DBDRIVER=\"com.mysql.jdbc.Driver\";\n+\t\tString URL=\"jdbc:mysql://localhost:3306/goodsinfo\";\n+\t\tString USER = \"root\";\n+\t\tString PASSWORD = \"admin\";\n+\t    Connection con = null;\n+\t    try{\n+\t    \tClass.forName(DBDRIVER);\n+\t    \tcon = DriverManager.getConnection(URL,USER,PASSWORD);\t\n+\t    }catch(Exception e){\n+\t\t\tSystem.out.println(e);\n+\t\t}\n+\t\treturn con;\n+\t}\n+\t\n+\tpublic static void Finally(Connection con,Statement stmt){\n+        if(stmt!=null){\n+        \ttry{\n+    \t\t\tstmt.close();\n+    \t\t\t}catch(SQLException e){}\n+    \t\t}\n+    \tif(con!=null){\n+    \t\ttry{\n+    \t\t\tcon.close();\n+    \t\t    }catch(SQLException e){}\n+    \t\t}\n+    \t}  \n+}\n+"
+  }, {
+    "sha" : "c9b78a9d65b7a5cf6f060ac58ff31f17f56300cf",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902221/Management.java",
+    "status" : "added",
+    "additions" : 74,
+    "deletions" : 0,
+    "changes" : 74,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d735a28c1cda543ec148194794c8adc8392a9d53/jweb/src/edu/hzu/javaweb/labs/se1414080902221/Management.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d735a28c1cda543ec148194794c8adc8392a9d53/jweb/src/edu/hzu/javaweb/labs/se1414080902221/Management.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902221/Management.java?ref=d735a28c1cda543ec148194794c8adc8392a9d53",
+    "patch" : "@@ -0,0 +1,74 @@\n+package edu.hzu.javaweb.labs.se1414080902221;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.sql.Connection;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+import java.sql.PreparedStatement;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+\n+public class Management extends HttpServlet {\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\t \trequest.setCharacterEncoding(\"UTF-8\");\n+\t\t\t\tresponse.setCharacterEncoding(\"UTF-8\");\n+\t\t\t\tString goodsname=\"\";\n+\t\t\t\tString number=\"\";\n+\t\t\t\tif(request.getParameter(\"goodsname\")!=null){\n+\t\t\t\t\t goodsname =(String)request.getParameter(\"goodsname\");\n+\t\t\t\t}\n+\t\t\t\t\t\n+\t\t\t\tif(request.getParameter(\"number\")!=null)\n+\t\t\t\t\tnumber = (String)request.getParameter(\"number\");\n+\t\t\t\tHttpSession session=request.getSession(true);\n+\t\t\t\t\n+\t\t\t\tString msg = \"\";\n+\t\t\t\tboolean check=true;\n+\t\t\t\tif (goodsname.equals(\"\")) {\n+\t\t \t\tmsg = \"�����Ʒ��Ʋ���Ϊ��\";\n+\t\t \t\tcheck = false;\n+\t\t \t\t} else if (number.equals(\"\")) {\n+\t\t \t\t\tmsg = \"����������Ϊ��\";\n+\t\t \t\t\tcheck = false;\n+\t\t \t\t} \n+\t\t \t\tif(check)\n+\t\t \t\t\tmsg=\"��ӳɹ���\";\t\t \t\n+\t\t \t\tSystem.out.println(msg);\n+\t\t \t\t\tif(check){\n+\t\t \t\t\t\tConnection con=null; \n+\t\t \t\t\t\tPreparedStatement stmt=null;\n+\t\t \t\t\t    ResultSet rs=null;\n+\t\t \t\t\t    try{\n+\t\t \t\t\t    \tcon=DatabaceCon.getconnect();\n+\t\t \t\t\t\t\tstmt=con.prepareStatement(\"insert into goodsinfo \"+\"values(?,?)\");\n+\t\t \t\t\t\t\tstmt.setString(1,goodsname);\n+\t\t \t\t\t\t\tstmt.setString(2,number);\n+\t\t \t\t            stmt.executeUpdate();\n+\t\t \t\t\t\t}catch(SQLException e){\n+\t\t \t\t\t\t\tSystem.out.println(e.getMessage());\n+\t\t \t\t\t\t}\n+\t\t \t\t\t}\n+\t\t \t\trequest.setAttribute(\"message\", msg);\n+\t\t \trequest.getRequestDispatcher(\"/index_2.jsp\").forward(request, response);\n+\t\t \t\tsession.setAttribute(\"message\", msg);\n+\t}\n+\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tdoGet(request, response);\n+\t}\n+\n+}"
+  } ],
+  "sha" : "d735a28c1cda543ec148194794c8adc8392a9d53",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d735a28c1cda543ec148194794c8adc8392a9d53",
+  "parents" : [ {
+    "sha" : "9e4e5c8ed8e00270666120afe966b9ca95d5a7b9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9e4e5c8ed8e00270666120afe966b9ca95d5a7b9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/9e4e5c8ed8e00270666120afe966b9ca95d5a7b9"
+  } ]
+}

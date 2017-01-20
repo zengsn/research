@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 48,
+    "additions" : 48,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ab254c337179e6ad2202f7d10d466833f7243932",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "我到底失去了什么",
+      "date" : "2016-10-20T14:42:30Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "我到底失去了什么",
+      "date" : "2016-10-20T14:42:30Z"
+    },
+    "message" : "#3 提交实验代码",
+    "tree" : {
+      "sha" : "f60ba2d8ec424dc226012d973c8031276067c235",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/f60ba2d8ec424dc226012d973c8031276067c235"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ab254c337179e6ad2202f7d10d466833f7243932",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ab254c337179e6ad2202f7d10d466833f7243932/comments",
+  "files" : [ {
+    "sha" : "987262fc660ed4d8378b4c84eed9ba22b6a846e5",
+    "filename" : "labs/1414080902113/index.jsp",
+    "status" : "added",
+    "additions" : 48,
+    "deletions" : 0,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ab254c337179e6ad2202f7d10d466833f7243932/labs/1414080902113/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ab254c337179e6ad2202f7d10d466833f7243932/labs/1414080902113/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902113/index.jsp?ref=ab254c337179e6ad2202f7d10d466833f7243932",
+    "patch" : "@@ -0,0 +1,48 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\"> \n+    <title>My JSP 'index.jsp' starting page</title>\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+  </head>\n+  \n+<body>\n+  <%Date time=new Date(); %>\n+  程序运行的时间是：<%=time %>\n+     <form role=\"form\" id=\"target\">\n+  <div class=\"form-group\">\n+    <label for=\"exampleInputEmail1\">Email address</label>\n+    <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Enter email\">\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"exampleInputPassword1\">Password</label>\n+    <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"exampleInputFile\">File input</label>\n+    <input type=\"file\" id=\"exampleInputFile\">\n+    <p class=\"help-block\">Example block-level help text here.</p>\n+  </div>\n+  <div class=\"checkbox\">\n+    <label>\n+      <input type=\"checkbox\"> Check me out\n+    </label>\n+  </div>\n+  <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n+</form>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "ab254c337179e6ad2202f7d10d466833f7243932",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ab254c337179e6ad2202f7d10d466833f7243932",
+  "parents" : [ {
+    "sha" : "e067c3c41e0f30ca5adbee3f484eb58c7a00c531",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/e067c3c41e0f30ca5adbee3f484eb58c7a00c531",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/e067c3c41e0f30ca5adbee3f484eb58c7a00c531"
+  } ]
+}

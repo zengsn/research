@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "hvvvvccc",
+    "id" : 22511631,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511631?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hvvvvccc",
+    "html_url" : "https://github.com/hvvvvccc",
+    "followers_url" : "https://api.github.com/users/hvvvvccc/followers",
+    "following_url" : "https://api.github.com/users/hvvvvccc/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hvvvvccc/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hvvvvccc/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hvvvvccc/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hvvvvccc/orgs",
+    "repos_url" : "https://api.github.com/users/hvvvvccc/repos",
+    "events_url" : "https://api.github.com/users/hvvvvccc/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hvvvvccc/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 56,
+    "additions" : 56,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "hvvvvccc",
+    "id" : 22511631,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511631?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hvvvvccc",
+    "html_url" : "https://github.com/hvvvvccc",
+    "followers_url" : "https://api.github.com/users/hvvvvccc/followers",
+    "following_url" : "https://api.github.com/users/hvvvvccc/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hvvvvccc/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hvvvvccc/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hvvvvccc/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hvvvvccc/orgs",
+    "repos_url" : "https://api.github.com/users/hvvvvccc/repos",
+    "events_url" : "https://api.github.com/users/hvvvvccc/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hvvvvccc/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/b116e442b2965a1c949e97b645b2e5ee772602ae",
+  "commit" : {
+    "author" : {
+      "name" : "hvvvvccc",
+      "email" : "hvvvvccc@126.com",
+      "date" : "2016-10-13T05:04:45Z"
+    },
+    "committer" : {
+      "name" : "hvvvvccc",
+      "email" : "hvvvvccc@126.com",
+      "date" : "2016-10-13T05:04:45Z"
+    },
+    "message" : "#2 提交实验代码",
+    "tree" : {
+      "sha" : "d4d0ab5d04419b096b9dc39d95b95b341585c26b",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d4d0ab5d04419b096b9dc39d95b95b341585c26b"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/b116e442b2965a1c949e97b645b2e5ee772602ae",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/b116e442b2965a1c949e97b645b2e5ee772602ae/comments",
+  "files" : [ {
+    "sha" : "fecfbd30001ca1d25fce2ff4b4af5c83999a0483",
+    "filename" : "labs/1414080902103/666.html",
+    "status" : "added",
+    "additions" : 42,
+    "deletions" : 0,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b116e442b2965a1c949e97b645b2e5ee772602ae/labs/1414080902103/666.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b116e442b2965a1c949e97b645b2e5ee772602ae/labs/1414080902103/666.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902103/666.html?ref=b116e442b2965a1c949e97b645b2e5ee772602ae",
+    "patch" : "@@ -0,0 +1,42 @@\n+<!DOCTYPE html>\n+<html>\n+  <head>\n+  \n+\n+    <title>学生签到登记表</title>\n+\t\n+   <meta http-equiv=\"Content-Type\" content=\"textml; charset=utf-8\" />\n+\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\n+\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\n+\n+\n+\n+  </head>\n+  \n+  <body>\n+  <form id=\"stu\" action=\"\">\n+     <table>\n+<tr><td>学生签到表</td></tr>\n+<tr><td>姓名：<input type=\"text\"></td></tr>\n+<tr><td>学号：<input type=\"text\"></td></tr>\n+<tr><td>日期：<input type=\"text\"></td></tr>\n+<tr><td>缺勤情况：</td></tr>\n+<tr><td>\n+<textarea name=\"Letter\" rows=\"5\" cols=\"50\"></textarea>\n+</td></tr>\n+\n+<tr><td><button type=\"submit\"  class=\"btn\" \">登记</button><input type=\"reset\" value=\"取消\" class=\"btn\" ></td></tr>\n+</table>\n+</form>\n+<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\n+\n+<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+  <script src=\"index.js\"></script>\n+  </body>\n+\n+</html>"
+  }, {
+    "sha" : "9a14e2a07744bd32a034834b22f9e80f9384ec63",
+    "filename" : "labs/1414080902103/index.js",
+    "status" : "added",
+    "additions" : 11,
+    "deletions" : 0,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b116e442b2965a1c949e97b645b2e5ee772602ae/labs/1414080902103/index.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b116e442b2965a1c949e97b645b2e5ee772602ae/labs/1414080902103/index.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902103/index.js?ref=b116e442b2965a1c949e97b645b2e5ee772602ae",
+    "patch" : "@@ -0,0 +1,11 @@\n+$( \"#stu\" ).submit(function( event ) {\n+\t$.ajax({\n+\t\t  url: \"success.json\"\n+\t\t}).done(function(data) {\n+\t\t  if ( console && console.log ) {\n+\t\t      console.dir(data);\n+\t\t      alert(data.msg);\n+\t\t    }\n+\t\t});\n+});\n+"
+  }, {
+    "sha" : "7f7b670c041209493424b646810b587a09a85f32",
+    "filename" : "labs/1414080902103/success.json",
+    "status" : "added",
+    "additions" : 3,
+    "deletions" : 0,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b116e442b2965a1c949e97b645b2e5ee772602ae/labs/1414080902103/success.json",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b116e442b2965a1c949e97b645b2e5ee772602ae/labs/1414080902103/success.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902103/success.json?ref=b116e442b2965a1c949e97b645b2e5ee772602ae",
+    "patch" : "@@ -0,0 +1,3 @@\n+{\n+  \"msg\":\"registered\"\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "b116e442b2965a1c949e97b645b2e5ee772602ae",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b116e442b2965a1c949e97b645b2e5ee772602ae",
+  "parents" : [ {
+    "sha" : "f4182961e5ff431b214112153df2c929ac9a162c",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f4182961e5ff431b214112153df2c929ac9a162c",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f4182961e5ff431b214112153df2c929ac9a162c"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 65,
+    "additions" : 0,
+    "deletions" : 65
+  },
+  "author" : {
+    "login" : "Zhengzh00",
+    "id" : 22511983,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511983?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zhengzh00",
+    "html_url" : "https://github.com/Zhengzh00",
+    "followers_url" : "https://api.github.com/users/Zhengzh00/followers",
+    "following_url" : "https://api.github.com/users/Zhengzh00/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zhengzh00/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zhengzh00/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zhengzh00/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zhengzh00/orgs",
+    "repos_url" : "https://api.github.com/users/Zhengzh00/repos",
+    "events_url" : "https://api.github.com/users/Zhengzh00/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zhengzh00/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ba76139f5aaa31e5bb8f56ac7de2a27d40f3708c",
+  "commit" : {
+    "author" : {
+      "name" : "Zhengzh00",
+      "email" : "583836723@qq.com",
+      "date" : "2016-10-19T10:42:31Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-19T10:42:31Z"
+    },
+    "message" : "Delete index.jsp",
+    "tree" : {
+      "sha" : "98627b8cf7557230164b27511b8333e86b81526a",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/98627b8cf7557230164b27511b8333e86b81526a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ba76139f5aaa31e5bb8f56ac7de2a27d40f3708c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ba76139f5aaa31e5bb8f56ac7de2a27d40f3708c/comments",
+  "files" : [ {
+    "sha" : "63ab1c658f1e5593ebd16141d2e840ffbb1c4c8d",
+    "filename" : "index.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 65,
+    "changes" : 65,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a8116ce26529fe72f2c628bec1031a738d81b7fe/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a8116ce26529fe72f2c628bec1031a738d81b7fe/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/index.jsp?ref=a8116ce26529fe72f2c628bec1031a738d81b7fe",
+    "patch" : "@@ -1,65 +0,0 @@\n-<%@ page language=\"java\" contentType=\"text/html;charset=utf-8\"%>\r\n-<%@ page import=\"java.util.*,java.io.*\" %>\r\n-<html>\r\n-<!-- �� Bootstrap ���� CSS �ļ� -->\r\n- <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\r\n- \r\n- <!-- ��ѡ��Bootstrap�����ļ���һ�㲻�����룩 -->\r\n- <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\r\n- \r\n- <!-- jQuery�ļ��������bootstrap.min.js ֮ǰ���� -->\r\n- <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\r\n- \r\n- <!-- ���µ� Bootstrap ���� JavaScript �ļ� -->\r\n- <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\r\n- <head><title>ѧ����Ϣ�ǼǱ�</title></head>\r\n- <body>\r\n- <%request.setCharacterEncoding(\"utf-8\");%>\r\n- <center>\r\n- <div class=\"container\">\r\n- <table class=\"table\">\r\n- <tbody>\r\n- <tr>\r\n- <td><b>ע�����</b></td>\r\n- <td><%=request.getParameter(\"registername\")%></td>\r\n- </tr>\r\n- <tr>\r\n- <td><b>��½����</b></td>\r\n- <td><%=request.getParameter(\"pwd\")%></td>\r\n- </tr>\r\n- <tr>\r\n- <td><b>��ʵ����</b></td>\r\n- <td><%=request.getParameter(\"TrueName\")%></td>\r\n- </tr>\r\n- <tr>\r\n- <td><b>���֤��</b></td>\r\n- <td><%=request.getParameter(\"PersonalCode\")%></td>\r\n- </tr>\r\n- <tr>\r\n- <td><b>�Ա�</b></td>\r\n-<td>\r\n- <%=request.getParameter(\"Sex\")%>\r\n- </td>\r\n- </tr>\r\n- <tr>\r\n- <td><b>��������</b></td>\r\n-<td><%=request.getParameter(\"BirthDate\")%></td>\r\n- </tr>\r\n- <tr>\r\n- <td><b>�ϵ�绰</b></td>\r\n-<td><%=request.getParameter(\"HomeNum\")%></td>\r\n- </tr>\r\n- <tr>\r\n- <td><b></b>E-mail</td>\r\n- <td><%=request.getParameter(\"Email\")%></td>\r\n- </tr>\r\n- <tr>\r\n- <td><b>ϵ��</b></td>\r\n- <td><%=request.getParameter(\"Department\")%></td>\r\n- </tr>\r\n- </tbody>\r\n- </table>\r\n- </div>\r\n- </center>\r\n- </body>\r\n- </html> \n\\ No newline at end of file"
+  } ],
+  "sha" : "ba76139f5aaa31e5bb8f56ac7de2a27d40f3708c",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ba76139f5aaa31e5bb8f56ac7de2a27d40f3708c",
+  "parents" : [ {
+    "sha" : "a8116ce26529fe72f2c628bec1031a738d81b7fe",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a8116ce26529fe72f2c628bec1031a738d81b7fe",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/a8116ce26529fe72f2c628bec1031a738d81b7fe"
+  } ]
+}

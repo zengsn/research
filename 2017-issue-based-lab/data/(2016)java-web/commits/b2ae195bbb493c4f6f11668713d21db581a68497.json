@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "iDream666",
+    "id" : 18032727,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18032727?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/iDream666",
+    "html_url" : "https://github.com/iDream666",
+    "followers_url" : "https://api.github.com/users/iDream666/followers",
+    "following_url" : "https://api.github.com/users/iDream666/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/iDream666/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/iDream666/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/iDream666/subscriptions",
+    "organizations_url" : "https://api.github.com/users/iDream666/orgs",
+    "repos_url" : "https://api.github.com/users/iDream666/repos",
+    "events_url" : "https://api.github.com/users/iDream666/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/iDream666/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 68,
+    "additions" : 68,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "iDream666",
+    "id" : 18032727,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18032727?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/iDream666",
+    "html_url" : "https://github.com/iDream666",
+    "followers_url" : "https://api.github.com/users/iDream666/followers",
+    "following_url" : "https://api.github.com/users/iDream666/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/iDream666/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/iDream666/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/iDream666/subscriptions",
+    "organizations_url" : "https://api.github.com/users/iDream666/orgs",
+    "repos_url" : "https://api.github.com/users/iDream666/repos",
+    "events_url" : "https://api.github.com/users/iDream666/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/iDream666/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/b2ae195bbb493c4f6f11668713d21db581a68497",
+  "commit" : {
+    "author" : {
+      "name" : "iDream666",
+      "email" : "1125458694@qq.com",
+      "date" : "2016-10-07T14:31:27Z"
+    },
+    "committer" : {
+      "name" : "iDream666",
+      "email" : "1125458694@qq.com",
+      "date" : "2016-10-07T14:31:27Z"
+    },
+    "message" : "#2 提交实验代码",
+    "tree" : {
+      "sha" : "f1b3247ac0c8559bb14c8f9f19fa955cfc9e4171",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/f1b3247ac0c8559bb14c8f9f19fa955cfc9e4171"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/b2ae195bbb493c4f6f11668713d21db581a68497",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/b2ae195bbb493c4f6f11668713d21db581a68497/comments",
+  "files" : [ {
+    "sha" : "e96760aad10a99e6fcfb8af8421b169c43dadb8c",
+    "filename" : "labs/1414080902207/index.html",
+    "status" : "added",
+    "additions" : 67,
+    "deletions" : 0,
+    "changes" : 67,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b2ae195bbb493c4f6f11668713d21db581a68497/labs/1414080902207/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b2ae195bbb493c4f6f11668713d21db581a68497/labs/1414080902207/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902207/index.html?ref=b2ae195bbb493c4f6f11668713d21db581a68497",
+    "patch" : "@@ -0,0 +1,67 @@\n+﻿<!DOCTYPE html>\n+<html lang=\"zh-cn\">\n+  <head>\n+    <meta charset=\"utf-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <title>登录</title>\n+\n+    <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n+\n+    <!--[if lt IE 9]>\n+      <script src=\"http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+      <script src=\"http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+    <![endif]-->\n+  </head>\n+  <body>\n+    <div class=\"container\">\n+      <form id=\"login\" class=\"form-horizontal\" role=\"form\">\n+ \t\t <div class=\"form-group\">\n+   \t\t\t <label for=\"firstname\" class=\"col-sm-2 control-label\">名字</label>\n+    \t\t\t<div class=\"col-sm-10\">\n+      \t\t\t\t<input type=\"text\" class=\"form-control\" id=\"firstname\" placeholder=\"名字\">\n+  \t\t\t    </div>\n+  \t\t</div>\n+  \t\t<div class=\"form-group\">\n+    \t\t<label for=\"lastname\" class=\"col-sm-2 control-label\">姓</label>\n+    \t\t\t<div class=\"col-sm-10\">\n+     \t\t <input type=\"text\" class=\"form-control\" id=\"lastname\" placeholder=\"姓\">\n+    \t</div>\n+  \t</div>\n+  \t<div class=\"form-group\">\n+    \t<div class=\"col-sm-offset-2 col-sm-10\">\n+      \t\t<div class=\"checkbox\">\n+        \t\t<label>\n+          \t\t\t<input type=\"checkbox\">请记住我\n+        \t</label>\n+      \t</div>\n+    </div>\n+  </div>\n+  <div class=\"form-group\">\n+    <div class=\"col-sm-offset-2 col-sm-10\">\n+      <button type=\"submit\" class=\"btn btn-default\">登录</button>\n+    </div>\n+  </div>\n+</form>\n+    </div>\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    <script type=\"text/javascript\">\n+      $( \"#login\" ).submit(function(event) {\n+        $.ajax({\n+  \t\t\turl: \"success.json\",\n+  \t\t\ttype:\"post\",\n+  \t\t\tdataType: \"json\",\n+  \t\t\tsuccess: function(data){\n+  \t\t\t\talert(data.msg);\n+  \t\t\t},\n+  \t\t\terror: function(){\n+  \t\t\t\talert(\"error!\");\n+  \t\t\t}\n+  \t\t\t\n+\t\t});\n+\t\t event.preventDefault();\n+      });\n+    </script>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "469a9ab397c7dbace813af33e60d58e5a2a2eac4",
+    "filename" : "labs/1414080902207/success.json",
+    "status" : "added",
+    "additions" : 1,
+    "deletions" : 0,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b2ae195bbb493c4f6f11668713d21db581a68497/labs/1414080902207/success.json",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b2ae195bbb493c4f6f11668713d21db581a68497/labs/1414080902207/success.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902207/success.json?ref=b2ae195bbb493c4f6f11668713d21db581a68497",
+    "patch" : "@@ -0,0 +1 @@\n+{\"msg\": \"����ɹ���\"}\n\\ No newline at end of file"
+  } ],
+  "sha" : "b2ae195bbb493c4f6f11668713d21db581a68497",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b2ae195bbb493c4f6f11668713d21db581a68497",
+  "parents" : [ {
+    "sha" : "8927d5915c4935d52992ce06f43a323586a84d50",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/8927d5915c4935d52992ce06f43a323586a84d50",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/8927d5915c4935d52992ce06f43a323586a84d50"
+  } ]
+}

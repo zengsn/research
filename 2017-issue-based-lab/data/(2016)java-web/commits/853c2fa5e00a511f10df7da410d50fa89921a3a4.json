@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "liudao-yupeng",
+    "id" : 22512233,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512233?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liudao-yupeng",
+    "html_url" : "https://github.com/liudao-yupeng",
+    "followers_url" : "https://api.github.com/users/liudao-yupeng/followers",
+    "following_url" : "https://api.github.com/users/liudao-yupeng/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liudao-yupeng/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liudao-yupeng/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liudao-yupeng/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liudao-yupeng/orgs",
+    "repos_url" : "https://api.github.com/users/liudao-yupeng/repos",
+    "events_url" : "https://api.github.com/users/liudao-yupeng/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liudao-yupeng/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 78,
+    "additions" : 78,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "liudao-yupeng",
+    "id" : 22512233,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512233?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/liudao-yupeng",
+    "html_url" : "https://github.com/liudao-yupeng",
+    "followers_url" : "https://api.github.com/users/liudao-yupeng/followers",
+    "following_url" : "https://api.github.com/users/liudao-yupeng/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/liudao-yupeng/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/liudao-yupeng/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/liudao-yupeng/subscriptions",
+    "organizations_url" : "https://api.github.com/users/liudao-yupeng/orgs",
+    "repos_url" : "https://api.github.com/users/liudao-yupeng/repos",
+    "events_url" : "https://api.github.com/users/liudao-yupeng/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/liudao-yupeng/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/853c2fa5e00a511f10df7da410d50fa89921a3a4",
+  "commit" : {
+    "author" : {
+      "name" : "liudao-yupeng",
+      "email" : "569878028@qq.com",
+      "date" : "2016-11-28T13:09:38Z"
+    },
+    "committer" : {
+      "name" : "liudao-yupeng",
+      "email" : "569878028@qq.com",
+      "date" : "2016-11-28T13:09:38Z"
+    },
+    "message" : ".....",
+    "tree" : {
+      "sha" : "60e5f27a88a2d9a8fa6260adabda816bc2f6446c",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/60e5f27a88a2d9a8fa6260adabda816bc2f6446c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/853c2fa5e00a511f10df7da410d50fa89921a3a4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/853c2fa5e00a511f10df7da410d50fa89921a3a4/comments",
+  "files" : [ {
+    "sha" : "9d21a7ec8c448d4e15b1b057b0204d913f2c5193",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1413071001206/Se1414080902215.java",
+    "status" : "added",
+    "additions" : 35,
+    "deletions" : 0,
+    "changes" : 35,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/853c2fa5e00a511f10df7da410d50fa89921a3a4/jweb/src/edu/hzu/javaweb/labs/se1413071001206/Se1414080902215.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/853c2fa5e00a511f10df7da410d50fa89921a3a4/jweb/src/edu/hzu/javaweb/labs/se1413071001206/Se1414080902215.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1413071001206/Se1414080902215.java?ref=853c2fa5e00a511f10df7da410d50fa89921a3a4",
+    "patch" : "@@ -0,0 +1,35 @@\n+package edu.hzu.javaweb.labs.se1413071001206;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+@WebServlet(\"/Se1413071001206Servlet\")\n+public class Se1413071001206Servlet extends HttpServlet {\n+\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tdoPost(request, response);\n+\t\t\n+\t}\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tresponse.setCharacterEncoding(\"UTF-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tString address = request.getParameter(\"address\");  \n+\t    String money = request.getParameter(\"money\");  \n+\t    HttpSession session=request.getSession(true);\n+\t    \trequest.setAttribute(\"address\", address);\n+\t    \trequest.setAttribute(\"money\", money);\n+\t    \t\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "09226a23f93b99bd800cef6d0fa6e76014aa448b",
+    "filename" : "jweb/web/1413071001206/index3.jsp",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/853c2fa5e00a511f10df7da410d50fa89921a3a4/jweb/web/1413071001206/index3.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/853c2fa5e00a511f10df7da410d50fa89921a3a4/jweb/web/1413071001206/index3.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1413071001206/index3.jsp?ref=853c2fa5e00a511f10df7da410d50fa89921a3a4",
+    "patch" : "@@ -0,0 +1,43 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>   \n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/fmt\" prefix=\"fmt\"%>  \n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/functions\" prefix=\"fn\" %>  \n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+<head>\n+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n+<title>�û���¼</title>\n+<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+<style>\n+form{padding:20px 15px 0px 40px;}  \n+form{width:400px;height:300px;}  \n+form fieldset{border:0;align:center;}  \n+form label{display:inline-block;width:60px;text-align:right}  \n+input{width:240px;height:30px;}  \n+#submit{width:200px;height:35px;position:relative;left:70px;}  \n+#submit:hover{  \n+        cursor: pointer;  \n+        background:#D8D8D8;  \n+    }  \n+body{  \n+    width:100%;   \n+    height:100%;  \n+    background: #E9E9E9;   \n+    }  \n+#box{position:fixed;left:0px;right:0px;width:606px;margin-left:auto;margin-right:auto;top:100px;}   \n+a{position:relative;bottom:-10px;} \n+</style>\n+</head>\n+<body>\n+<div id=\"box\">\n+<form action=\"Se1413071001206Servlet\" style=\"background:#cccccc\">\n+  �������ɡ�ļ�Ǯ��<input type=\"text\" name=\"money\">\n+    ���������λ�ã�<input type=\"text\" name=\"address\">\n+</form>\n+</div>\n+\n+</body>\n+<c:out value=\"${sessionScope.money}\"></c:out>\n+<c:out value=\"${sessionScope.address}\"></c:out>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "853c2fa5e00a511f10df7da410d50fa89921a3a4",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/853c2fa5e00a511f10df7da410d50fa89921a3a4",
+  "parents" : [ {
+    "sha" : "cbcc186e4587da34d5ba9a6d9f93c4c1bb365ee6",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/cbcc186e4587da34d5ba9a6d9f93c4c1bb365ee6",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/cbcc186e4587da34d5ba9a6d9f93c4c1bb365ee6"
+  } ]
+}

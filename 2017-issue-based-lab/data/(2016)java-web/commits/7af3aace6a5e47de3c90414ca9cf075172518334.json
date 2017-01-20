@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Vialyn",
+    "id" : 22266193,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22266193?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Vialyn",
+    "html_url" : "https://github.com/Vialyn",
+    "followers_url" : "https://api.github.com/users/Vialyn/followers",
+    "following_url" : "https://api.github.com/users/Vialyn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Vialyn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Vialyn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Vialyn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Vialyn/orgs",
+    "repos_url" : "https://api.github.com/users/Vialyn/repos",
+    "events_url" : "https://api.github.com/users/Vialyn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Vialyn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 48,
+    "additions" : 48,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Vialyn",
+    "id" : 22266193,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22266193?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Vialyn",
+    "html_url" : "https://github.com/Vialyn",
+    "followers_url" : "https://api.github.com/users/Vialyn/followers",
+    "following_url" : "https://api.github.com/users/Vialyn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Vialyn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Vialyn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Vialyn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Vialyn/orgs",
+    "repos_url" : "https://api.github.com/users/Vialyn/repos",
+    "events_url" : "https://api.github.com/users/Vialyn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Vialyn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/7af3aace6a5e47de3c90414ca9cf075172518334",
+  "commit" : {
+    "author" : {
+      "name" : "Vialyn",
+      "email" : "2916153488@qq.com",
+      "date" : "2016-11-13T19:00:10Z"
+    },
+    "committer" : {
+      "name" : "Vialyn",
+      "email" : "2916153488@qq.com",
+      "date" : "2016-11-13T19:00:10Z"
+    },
+    "message" : "#105 #5 提交实验代码",
+    "tree" : {
+      "sha" : "a5ba21c915413970801c32d7d29d370f58263e6d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/a5ba21c915413970801c32d7d29d370f58263e6d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/7af3aace6a5e47de3c90414ca9cf075172518334",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/7af3aace6a5e47de3c90414ca9cf075172518334/comments",
+  "files" : [ {
+    "sha" : "56f9cc407407ba0ea619d6203338cd32078a3751",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902131/EncodingFilter.java",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7af3aace6a5e47de3c90414ca9cf075172518334/jweb/src/edu/hzu/javaweb/labs/se1414080902131/EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7af3aace6a5e47de3c90414ca9cf075172518334/jweb/src/edu/hzu/javaweb/labs/se1414080902131/EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902131/EncodingFilter.java?ref=7af3aace6a5e47de3c90414ca9cf075172518334",
+    "patch" : "@@ -0,0 +1,20 @@\n+package se1414080902131;\n+import javax.servlet.*;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+import java.io.IOException;\n+import java.util.logging.LogRecord;\n+@WebFilter(filterName=\"EncodingFilter\",urlPattern=\"/*\")\n+public class EncodingFilter implements Filter{\n+@Override\n+public void init(FilterConfig filterConfig) throws ServletException{}\n+@Override\n+public void doFilter(ServletRequest servletRequest,ServletResponse servletResponse,FilterChain filterChain)throws IOException,ServletException{\n+\tservletRequest.setCharacterEncoding(\"utf=8\");\n+\tfilterChain.doFilter(servletRequest, servletResponse);\n+\t}\n+@Override\n+public void destory(){}\n+}"
+  }, {
+    "sha" : "5df3550b2b0ddad91922cce5f820183ef2d00848",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902131/SecurityFilter.java",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7af3aace6a5e47de3c90414ca9cf075172518334/jweb/src/edu/hzu/javaweb/labs/se1414080902131/SecurityFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7af3aace6a5e47de3c90414ca9cf075172518334/jweb/src/edu/hzu/javaweb/labs/se1414080902131/SecurityFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902131/SecurityFilter.java?ref=7af3aace6a5e47de3c90414ca9cf075172518334",
+    "patch" : "@@ -0,0 +1,28 @@\n+package se1414080902131;\n+import javax.servlet.*;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+import java.io.IOException;\n+import java.util.logging.LogRecord;\n+@WebFilter(filterName=\"SecurityFilter\",urlPattern=\"/*\",initParams={@WebInitParam(name=\"FilteredIP\"value=\"192.168.131.1\")})\n+/*paravalue��ȡ���ֵ*/\n+public class SecurityFilter implements Filter{\n+\tprivate String FilteredIP;\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException{\n+\t\tFilteredIP=conf.getInitParameter(\"FilteredIP\");\n+\t\tif(FilteredIP==null)FilteredIP=\"\";\n+\t}\n+\t@Override\n+\tpublic void doFilter(ServletRequest servletRequest,ServletResponse servletResponse,FilterChain filterChain)throws IOException,ServletException{\n+\t\tString remoteIP==request.getRemoteAddr();\n+\t\tif(remoteIP.equals(FilteredIP)){\n+\t\t\tchain.doFilter(request,response);}\n+\t\telse{RequestDispatcher dispatcher=request.getRequestDispatcher(\"ErrorInfo.jsp\");\n+\t\tdispatcher.forward(request, response);}\n+\t\t}\n+\t@Override\n+\tpublic void destory(){}\n+}"
+  } ],
+  "sha" : "7af3aace6a5e47de3c90414ca9cf075172518334",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7af3aace6a5e47de3c90414ca9cf075172518334",
+  "parents" : [ {
+    "sha" : "52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 148,
+    "additions" : 88,
+    "deletions" : 60
+  },
+  "author" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/de2cb2d57014b4b04c93802fe54c0c755440daab",
+  "commit" : {
+    "author" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-12-07T08:25:16Z"
+    },
+    "committer" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-12-07T08:25:16Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "dd452ace9cc915cd8cf6000338ebcf984cdae9c6",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/dd452ace9cc915cd8cf6000338ebcf984cdae9c6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/de2cb2d57014b4b04c93802fe54c0c755440daab",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/de2cb2d57014b4b04c93802fe54c0c755440daab/comments",
+  "files" : [ {
+    "sha" : "c48b28e1b2623e454bb75cfce6d0746ca6b0d410",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902121/Se1414080902121.java",
+    "status" : "added",
+    "additions" : 44,
+    "deletions" : 0,
+    "changes" : 44,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/de2cb2d57014b4b04c93802fe54c0c755440daab/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Se1414080902121.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/de2cb2d57014b4b04c93802fe54c0c755440daab/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Se1414080902121.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Se1414080902121.java?ref=de2cb2d57014b4b04c93802fe54c0c755440daab",
+    "patch" : "@@ -0,0 +1,44 @@\n+package edu.hzu.javaweb.labs.se1414080902121;\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+@WebServlet(\"/Se1414080902121Servlet\")\n+public class Se1414080902121Servlet extends HttpServlet {\n+\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tdoPost(request, response);\n+\t\t\n+\t}\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tresponse.setCharacterEncoding(\"UTF-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tString username = request.getParameter(\"username\");  \n+\t    String password = request.getParameter(\"password\");  \n+\t    String User1=\"qweqwe\";\n+\t    String Pwd1=\"123456\";\n+\t    String msg=\" \";\n+\t    HttpSession session=request.getSession(true);\n+\t    if(username.equals(User1)&&password.equals(Pwd1))\n+\t    {\n+\t    \trequest.setAttribute(\"message\", msg);\n+\t    \tsession.setAttribute(\"message\", msg);\n+\t    \trequest.getRequestDispatcher(\"/index.jsp\").forward(request, response);\n+\t    \t\n+\t    }\n+\t    else\n+\t    { \n+\t    \trequest.getRequestDispatcher(\"/failure.jsp\").forward(request, response); \n+\t    }\n+\t}\n+\n+}"
+  }, {
+    "sha" : "5c81cffcd893981bff065b8f5d3c3053d26f938d",
+    "filename" : "jweb/web/1414080902121/index.jsp",
+    "status" : "modified",
+    "additions" : 44,
+    "deletions" : 60,
+    "changes" : 104,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/de2cb2d57014b4b04c93802fe54c0c755440daab/jweb/web/1414080902121/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/de2cb2d57014b4b04c93802fe54c0c755440daab/jweb/web/1414080902121/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902121/index.jsp?ref=de2cb2d57014b4b04c93802fe54c0c755440daab",
+    "patch" : "@@ -1,64 +1,48 @@\n-<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\"\n-pageEncoding=\"utf-8\"%>\n- <%\n- String path = request.getContextPath();\n- String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n- %>\n-<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>   \n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/fmt\" prefix=\"fmt\"%>  \n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/functions\" prefix=\"fn\" %>  \n+<!DOCTYPE html>\n+<html>\n <head>\n- <base href=\"<%=basePath%>\">\n- <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n- <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n-    <title>菜鸡课表系统</title>\n-    <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n+<title>登陆</title>\n+<style>\n+form{width:350px;height:200px;}  \n+form fieldset{border:0;align:center;}  \n+form label{display:inline-block;width:60px;text-align:right}  \n+input{width:300px;height:35px;}  \n+#submit{width:200px;height:35px;position:relative;left:60px;}  \n+#submit:hover{  \n+        cursor: pointer;  \n+        background: #FDF5E6;  \n+    }  \n+body{  \n+    width:100%;   \n+    height:100%;  \n+    background: #CCDDFF;   \n+    }  \n+#box{position:fixed;left:0px;right:0px;width:606px;margin-left:auto;margin-right:auto;top:100px;}   \n+a{position:relative;bottom:-10px;} \n+</style>\n </head>\n <body>\n-\n-<div class=\"desu\">\n-\n-           <h3 class=\"text-center\" style=\"margin-top: 100px\">欢迎使用！</h3>\n-           <div class=\"row\"  style=\"width:300px; margin:auto;height:150px;\">\n-           <form role=\"form\" id=\"login\">\n-           <div class=\"form-group\">\n-            <div class=\"has-feedback\" >\n-              <label for=\"exampleInputEmail1\">邮箱</label>\n-              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Enter your Account\">\n-      \n-            </div>\n-           </div>\n-\n-           <div class=\"form-group\">\n-            <div class=\"has-feedback\" >\n-              <label for=\"exampleInputPassword1\">密码</label>\n-              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Enter your Password\">\n-            </div>\n-           </div>\n-           <center>\n-  \t      <button type=\"submit\" class=\"btn btn-success\">登陆</button>\n-  \t      \t\n-  \t\t</center>\n-          </form>\n-          </div>\n-       </div>\n-       \n-       <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-       <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script> \n-       <script>\n-      $( \"#login\" ).submit(function() {\n-         $.ajax({ \n-          dataType: \"html\", \n-          url: \"1414080902121\", \n-          type: \"post\",\n-           success: function(data){\n-             alert(data);\n-         },\n-          error: function (XMLHttpRequest, textStatus, errorThrown) { \n-           alert(\"error\"); \n-                                        } \n-     });\n-       });\n-      </script>\n-      \n-\n+<div id=\"box\">\n+<form action=\"Se1414080902215Servlet\" style=\"background:#F5F5F5  \">\n+<fieldset> \n+  <p>\n+    <label for=\"user\">用户：</label>\n+    <input type=\"text\" class=\"\" id=\"user\" name=\"username\" placeholder=\"user\">\n+<br>\n+    <label for=\"password\">密码：</label>\n+    <input type=\"password\" class=\"\" id=\"password\" name=\"password\" placeholder=\"password\">\n+  <button type=\"submit\" id=\"submit\">登录</button>\n+  </fieldset>\n+</form>\n+</div>\n </body>\n-</html>\n+<c:if test=\"${!empty sessionScope.message}\">\n+<c:out value=\"${sessionScope.message}\"></c:out>\n+</c:if>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "de2cb2d57014b4b04c93802fe54c0c755440daab",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/de2cb2d57014b4b04c93802fe54c0c755440daab",
+  "parents" : [ {
+    "sha" : "ff6144508561d72f24e0713fdcaecc3a516190a3",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ff6144508561d72f24e0713fdcaecc3a516190a3",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ff6144508561d72f24e0713fdcaecc3a516190a3"
+  } ]
+}

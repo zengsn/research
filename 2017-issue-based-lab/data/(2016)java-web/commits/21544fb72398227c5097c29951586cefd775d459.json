@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "29liweiliang",
+    "id" : 22501977,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22501977?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/29liweiliang",
+    "html_url" : "https://github.com/29liweiliang",
+    "followers_url" : "https://api.github.com/users/29liweiliang/followers",
+    "following_url" : "https://api.github.com/users/29liweiliang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/29liweiliang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/29liweiliang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/29liweiliang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/29liweiliang/orgs",
+    "repos_url" : "https://api.github.com/users/29liweiliang/repos",
+    "events_url" : "https://api.github.com/users/29liweiliang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/29liweiliang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 108,
+    "additions" : 102,
+    "deletions" : 6
+  },
+  "author" : {
+    "login" : "29liweiliang",
+    "id" : 22501977,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22501977?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/29liweiliang",
+    "html_url" : "https://github.com/29liweiliang",
+    "followers_url" : "https://api.github.com/users/29liweiliang/followers",
+    "following_url" : "https://api.github.com/users/29liweiliang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/29liweiliang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/29liweiliang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/29liweiliang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/29liweiliang/orgs",
+    "repos_url" : "https://api.github.com/users/29liweiliang/repos",
+    "events_url" : "https://api.github.com/users/29liweiliang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/29liweiliang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/21544fb72398227c5097c29951586cefd775d459",
+  "commit" : {
+    "author" : {
+      "name" : "29liweiliang",
+      "email" : "445096708@qq.com",
+      "date" : "2016-11-30T15:02:49Z"
+    },
+    "committer" : {
+      "name" : "29liweiliang",
+      "email" : "445096708@qq.com",
+      "date" : "2016-11-30T15:02:49Z"
+    },
+    "message" : "#7",
+    "tree" : {
+      "sha" : "5215f84b13a99983f37f80bc7624c55ad0945cda",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/5215f84b13a99983f37f80bc7624c55ad0945cda"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/21544fb72398227c5097c29951586cefd775d459",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/21544fb72398227c5097c29951586cefd775d459/comments",
+  "files" : [ {
+    "sha" : "b755d4dd424ff3edbdf07e70f7880986b9f555b2",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902129/MyFilter.java",
+    "status" : "modified",
+    "additions" : 4,
+    "deletions" : 1,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/21544fb72398227c5097c29951586cefd775d459/jweb/src/edu/hzu/javaweb/labs/se1414080902129/MyFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/21544fb72398227c5097c29951586cefd775d459/jweb/src/edu/hzu/javaweb/labs/se1414080902129/MyFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902129/MyFilter.java?ref=21544fb72398227c5097c29951586cefd775d459",
+    "patch" : "@@ -2,6 +2,7 @@\n \n import java.io.IOException;\n \n+\n import javax.servlet.Filter;\n import javax.servlet.FilterChain;\n import javax.servlet.FilterConfig;\n@@ -10,9 +11,10 @@\n import javax.servlet.ServletRequest;\n import javax.servlet.ServletResponse;\n import javax.servlet.annotation.WebFilter;\n+@WebFilter(filterName=\"hehe\",urlPatterns=\"/web/index.jsp\")\n \n-@WebFilter(filterName=\"hehe\",urlPatterns=\"/*\")\n public class MyFilter implements Filter {\n+\t\n \n \tpublic void destroy() {\n \t\t// TODO Auto-generated method stub\n@@ -24,6 +26,7 @@ public void doFilter(ServletRequest request, ServletResponse response,\n \t\t// TODO Auto-generated method stub\n \t\trequest.setCharacterEncoding(\"UTF-8\");\n \t\tresponse.setCharacterEncoding(\"UTF-8\"); \n+\t\t\n \t\tString stuName=request.getParameter(\"stuname\");\n \t\tif(stuName!=null&&!\"\".equals(stuName))\n \t\t{"
+  }, {
+    "sha" : "4f9f5f426c6f88ab4aefc1b4cf3851ba3569b047",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902129/Se1414080902129servlet.java",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/21544fb72398227c5097c29951586cefd775d459/jweb/src/edu/hzu/javaweb/labs/se1414080902129/Se1414080902129servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/21544fb72398227c5097c29951586cefd775d459/jweb/src/edu/hzu/javaweb/labs/se1414080902129/Se1414080902129servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902129/Se1414080902129servlet.java?ref=21544fb72398227c5097c29951586cefd775d459",
+    "patch" : "@@ -56,9 +56,9 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\tString expressname=request.getParameter(\"expressname\");\n \t\tString stuadd=request.getParameter(\"stuadd\");\n \t\tString d=request.getParameter(\"d\");\n-\t\tString info=\"��ӭ��\"+stuname+\"!\";\n+     \n \t\t\n-\t    request.setAttribute(\"outputMessage\",info);\n+\t  \n \t    request.setAttribute(\"stuname\", stuname);\n \t    request.setAttribute(\"stuadd\", stuadd);\n \t\trequest.setAttribute(\"d\",d);"
+  }, {
+    "sha" : "d64591887767525b10675713d3cc32bda1bf64b6",
+    "filename" : "jweb/web/1414080902129/index.jsp",
+    "status" : "modified",
+    "additions" : 8,
+    "deletions" : 3,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/21544fb72398227c5097c29951586cefd775d459/jweb/web/1414080902129/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/21544fb72398227c5097c29951586cefd775d459/jweb/web/1414080902129/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902129/index.jsp?ref=21544fb72398227c5097c29951586cefd775d459",
+    "patch" : "@@ -1,6 +1,7 @@\n <%@page import=\"java.text.SimpleDateFormat\"%>\n <%@ page language=\"java\" contentType=\"text/html\" pageEncoding=\"UTF-8\"%> \n-<%@ page import=\"java.util.*\" %>\n+<%@ page import=\"java.util.Date\" %>\n+<%@page import=\"java.sql.*\" %>\n <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n <html xmlns=\"http://www.w3.org/1999/xhtml\">\n <head>\n@@ -16,7 +17,7 @@\n </style>\n       <body>\n \t\t<h3 align=\"center\">代收寄快递</h3>\n-\t\t  <form name=\"express\"action=\"1414080902129\" method=\"get\" >\n+\t\t  <form name=\"express\"action=\"1414080902129\" method=\"post\" >\n \t\t  \t<table>\n \t\t  \t\t<tr><td>学生姓名:</td><td><input type=\"text\"name=\"stuname\"></td></tr>\n \t\t  \t\t<tr><td>手机号码:</td><td><input type=\"text\"name=\"stuphone\"maxlength=11></td></tr>\n@@ -30,7 +31,8 @@\n \t\t  \t\t<tr><td></td><td><input type=\"submit\" value=\"确认\" ;\"><input type=\"reset\"value=\"取消\"></td>\n \t\t  \t</table>\n \t\t  \t</form>\n-\t\t\t <img src=\"D:\\github\\高级网页设计\\1.jpeg\" align=\"right\" width=\"400\">\n+\t        <br>\n+\t        <img src=\"D:\\github\\高级网页设计\\1.jpg\" width=\"200\" height=\"100\" align=\"right\">\n \t\t \n \t\t  <div style=\"text-align: right\">\n \t\t    <%\n@@ -41,6 +43,9 @@\n \t\t   %>\n \t\t  </div>\n \t\n+\t\n+\t  \n+\t  \n \t  </body>\n <script>\n \t$(function() {"
+  }, {
+    "sha" : "fb67270b4c737cb1cdd638fa0df73a36195d4b84",
+    "filename" : "jweb/web/1414080902129/insert.jsp",
+    "status" : "added",
+    "additions" : 75,
+    "deletions" : 0,
+    "changes" : 75,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/21544fb72398227c5097c29951586cefd775d459/jweb/web/1414080902129/insert.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/21544fb72398227c5097c29951586cefd775d459/jweb/web/1414080902129/insert.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902129/insert.jsp?ref=21544fb72398227c5097c29951586cefd775d459",
+    "patch" : "@@ -0,0 +1,75 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ page import=\"java.util.Date\"%>\n+<%@page import=\"java.sql.*\"%>\n+<%\n+\tString path = request.getContextPath();\n+\tString basePath = request.getScheme() + \"://\"\n+\t\t\t+ request.getServerName() + \":\" + request.getServerPort()\n+\t\t\t+ path + \"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+<head>\n+<base href=\"<%=basePath%>\">\n+\n+<title>My JSP 'stu_insert.jsp' starting page</title>\n+\n+<meta http-equiv=\"pragma\" content=\"no-cache\">\n+<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+<meta http-equiv=\"expires\" content=\"0\">\n+<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+<meta http-equiv=\"description\" content=\"This is my page\">\n+<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+</head>\n+\n+<body>\n+\t<%\n+\t\tString driver = \"com.mysql.jdbc.Driver\";\n+\t\tString userName = \"root\";\n+\t\tString userPwd = \"123456\";\n+\t\tString dbName = \"kuaidi\";\n+\t\tString url1 = \"jdbc:mysql://localhost:3306/\" + dbName;\n+\t\tString url2 = \"?user=\" + userName + \"&password=\" + userPwd;\n+\t\tString url3 = \"&useUnicode=true&characterEncoding=UTF-8\";\n+\t\tString url = url1 + url2 + url3;\n+\t\tClass.forName(driver);\n+\t\tConnection conn = DriverManager.getConnection(url);\n+\t\tString sql = \"Insert into dingdan(stuname,stuphone,expressname,stuadd)values(?,?,?,?)\";\n+\t\tPreparedStatement pstmt = conn.prepareStatement(sql);\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\n+\t\tString stuname = request.getParameter(\"stuname\");\n+\t\tString expressname = request.getParameter(\"expressname\");\n+\t\tString stuadd = request.getParameter(\"stuadd\");\n+\t\tint stuphone = Integer.parseInt(request.getParameter(\"stuphone\"));\n+\t\tpstmt.setString(1, stuname);\n+\t\tpstmt.setInt(2, stuphone);\n+\t\tpstmt.setString(3, expressname);\n+\t\tpstmt.setString(4, stuadd);\n+\n+\t\tint n = pstmt.executeUpdate();\n+\t\tif (n == 1) {\n+\t%>数据插入成功!\n+\t<br>\n+\t<%\n+\t\t} else {\n+\t%>数据插入失败!\n+\t<br>\n+\t<%\n+\t\t}\n+\t\tif (pstmt != null) {\n+\t\t\tpstmt.close();\n+\t\t}\n+\t\tif (conn != null) {\n+\t\t\tconn.close();\n+\t\t}\n+\n+\t\t//stmt.close();\n+\t\t// conn.close();\n+\t%>\n+</body>\n+</html>"
+  }, {
+    "sha" : "381fe007436ed57a868d12b69320e05303c96119",
+    "filename" : "jweb/web/1414080902129/output.jsp",
+    "status" : "modified",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/21544fb72398227c5097c29951586cefd775d459/jweb/web/1414080902129/output.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/21544fb72398227c5097c29951586cefd775d459/jweb/web/1414080902129/output.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902129/output.jsp?ref=21544fb72398227c5097c29951586cefd775d459",
+    "patch" : "@@ -43,6 +43,19 @@\n 手机号码是<c:out value=\"${stuphone}\"></c:out>\n </c:if>\n \n+<p>现在的时间是:<%=new Date() %></p>\n+\n+<form action=\"web/insert.jsp\" method=\"post\">\n+<table>\n+<tr><td> <input type=\"hidden\"name=\"stuname\" value=\"${stuname}\"></td></tr>\n+<tr><td><input type=\"hidden\"name=\"stuphone\"maxlength=11 value=\"${stuphone}\"></td></tr>\n+<tr><td><input type=\"hidden\"name=\"expressname\" value=\"${expressname}\"></td></tr>\n+<tr><td><input type=\"hidden\"name=\"stuadd\" value=\"${stuadd}\"></td></tr>\n+<input type=\"submit\" value=\"提交\">&nbsp;&nbsp;&nbsp;\n+<input type=\"reset\" value=\"取消\">\n+</table>\n+\n+</form>\n \n \n "
+  } ],
+  "sha" : "21544fb72398227c5097c29951586cefd775d459",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/21544fb72398227c5097c29951586cefd775d459",
+  "parents" : [ {
+    "sha" : "3f96fd98c9b0b9c60ac911ca21ac90a9eca29327",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/3f96fd98c9b0b9c60ac911ca21ac90a9eca29327",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/3f96fd98c9b0b9c60ac911ca21ac90a9eca29327"
+  } ]
+}

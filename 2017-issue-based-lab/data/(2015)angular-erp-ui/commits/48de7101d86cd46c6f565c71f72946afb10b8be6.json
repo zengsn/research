@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "hh-froal",
+    "id" : 15097998,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097998?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hh-froal",
+    "html_url" : "https://github.com/hh-froal",
+    "followers_url" : "https://api.github.com/users/hh-froal/followers",
+    "following_url" : "https://api.github.com/users/hh-froal/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hh-froal/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hh-froal/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hh-froal/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hh-froal/orgs",
+    "repos_url" : "https://api.github.com/users/hh-froal/repos",
+    "events_url" : "https://api.github.com/users/hh-froal/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hh-froal/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 16,
+    "additions" : 14,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "hh-froal",
+    "id" : 15097998,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15097998?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hh-froal",
+    "html_url" : "https://github.com/hh-froal",
+    "followers_url" : "https://api.github.com/users/hh-froal/followers",
+    "following_url" : "https://api.github.com/users/hh-froal/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hh-froal/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hh-froal/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hh-froal/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hh-froal/orgs",
+    "repos_url" : "https://api.github.com/users/hh-froal/repos",
+    "events_url" : "https://api.github.com/users/hh-froal/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hh-froal/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/48de7101d86cd46c6f565c71f72946afb10b8be6",
+  "commit" : {
+    "author" : {
+      "name" : "hh-froal",
+      "email" : "172188790@qq.com",
+      "date" : "2015-10-20T03:18:53Z"
+    },
+    "committer" : {
+      "name" : "hh-froal",
+      "email" : "172188790@qq.com",
+      "date" : "2015-10-20T03:18:53Z"
+    },
+    "message" : "Update index.html",
+    "tree" : {
+      "sha" : "6102b6ed768851bf1f2c9e61ecdd44ff866b58c6",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/6102b6ed768851bf1f2c9e61ecdd44ff866b58c6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/48de7101d86cd46c6f565c71f72946afb10b8be6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/48de7101d86cd46c6f565c71f72946afb10b8be6/comments",
+  "files" : [ {
+    "sha" : "14f4531b1c083a5c8af4f31218b584986b88ca26",
+    "filename" : "works/1314080901112/index.html",
+    "status" : "modified",
+    "additions" : 14,
+    "deletions" : 2,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/48de7101d86cd46c6f565c71f72946afb10b8be6/works/1314080901112/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/48de7101d86cd46c6f565c71f72946afb10b8be6/works/1314080901112/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901112/index.html?ref=48de7101d86cd46c6f565c71f72946afb10b8be6",
+    "patch" : "@@ -5,7 +5,7 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>{{流程审核}} by 1314080901112</title>\n+    <title>{{工程 BOM 物料录入清单}} by 1314080901112</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,6 +20,18 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var BOM = {\n+            serial number: '编号',\n+            category: '类别',\n+            name: '名称',\n+             type: '型号',\n+              colour: '颜色',\n+            plan: 'super-basic-plan'\n+        };\n+        $scope.data =BOM ;\n+} </script>\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n@@ -57,4 +69,4 @@\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n   </body>\n-</html>\n\\ No newline at end of file\n+</html>"
+  } ],
+  "sha" : "48de7101d86cd46c6f565c71f72946afb10b8be6",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/48de7101d86cd46c6f565c71f72946afb10b8be6",
+  "parents" : [ {
+    "sha" : "f038ae86a7aaaee30c59715e6308c2531c9f262f",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/f038ae86a7aaaee30c59715e6308c2531c9f262f",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/f038ae86a7aaaee30c59715e6308c2531c9f262f"
+  } ]
+}

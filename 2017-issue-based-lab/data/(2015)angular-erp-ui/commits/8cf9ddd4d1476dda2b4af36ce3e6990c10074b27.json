@@ -1,0 +1,101 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 23,
+    "additions" : 11,
+    "deletions" : 12
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/8cf9ddd4d1476dda2b4af36ce3e6990c10074b27",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:09:37Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-05T12:09:37Z"
+    },
+    "message" : "Merge pull request #266 from zengyt/master\n\n变量名首字母改成小写",
+    "tree" : {
+      "sha" : "ec7addd5977c2c3c938de0a4d5591d40895c2e0b",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/ec7addd5977c2c3c938de0a4d5591d40895c2e0b"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/8cf9ddd4d1476dda2b4af36ce3e6990c10074b27",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8cf9ddd4d1476dda2b4af36ce3e6990c10074b27/comments",
+  "files" : [ {
+    "sha" : "2ac694c01e9cd347c4145d1b412b4eddf1e5b106",
+    "filename" : "works/1314080901201/index.html",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 6,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/8cf9ddd4d1476dda2b4af36ce3e6990c10074b27/works/1314080901201/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/8cf9ddd4d1476dda2b4af36ce3e6990c10074b27/works/1314080901201/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901201/index.html?ref=8cf9ddd4d1476dda2b4af36ce3e6990c10074b27",
+    "patch" : "@@ -1,7 +1,7 @@\n <!DOCTYPE html>\n <html lang=\"zh-CN\">\n <!DOCTYPE html>\n-<html lang=\"zh-CN\" ng-app=\"MymaterialsModule\">\n+<html lang=\"zh-CN\" ng-app=\"myMaterialsModule\">\n   <head>\n     <meta http-equiv=\"Content-Type\" charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n@@ -9,7 +9,8 @@\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n     <title>{{uiName}} by 1314080901201物料中的供应商信息</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n-    \n+    <script src\"../..lib/angular-1.4.5/angular.min.js></script>\n+      <script src=\"js/myMaterialsModule.js\"></script>\n     <!-- Bootstrap -->\n     <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n \n@@ -21,12 +22,10 @@\n     <!--[if lt IE 9]>\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n-      <script src\"../..lib/angular-1.4.5/angular.min.js></script>\n-      <script src=\"js/MymaterialsModule.js\"></script>\n     <![endif]--> \n   </head>\n   <body>\n-  <body ng-controller=\"MymaterialsCtrl\">\n+  <body ng-controller=\"myMaterialsCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -90,4 +89,4 @@\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n   </body>\n-</html>\n\\ No newline at end of file\n+</html>"
+  }, {
+    "sha" : "f845e4bd3d7ba33ffbfb1c34f91291056cc69c7b",
+    "filename" : "works/1314080901201/js/myMaterialsModule.js",
+    "status" : "renamed",
+    "additions" : 6,
+    "deletions" : 6,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/8cf9ddd4d1476dda2b4af36ce3e6990c10074b27/works/1314080901201/js/myMaterialsModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/8cf9ddd4d1476dda2b4af36ce3e6990c10074b27/works/1314080901201/js/myMaterialsModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901201/js/myMaterialsModule.js?ref=8cf9ddd4d1476dda2b4af36ce3e6990c10074b27",
+    "patch" : "@@ -1,9 +1,9 @@\n // javascript.js\n-// create a new module called 'MymaterialsModule' and save \n-// a reference to it in a variable called MymaterialsModule \n-var MymaterialsModule = angular.module('MymaterialsModule', []);\n+// create a new module called 'myMaterialsModule' and save \n+// a reference to it in a variable called myMaterialsModule \n+var myMaterialsModule = angular.module('myMaterialsModule', []);\n \n- MymaterialsModule.controller('createMymaterialsCtrl', function ($scope) {\n+myMaterialsModule.controller('createmyMaterialsCtrl', function ($scope) {\n         var someData = {\n             number:100,\n             date:'建档日期',\n@@ -18,8 +18,8 @@ var MymaterialsModule = angular.module('MymaterialsModule', []);\n         };\n         $scope.data = someData;\n });\n- MymaterialsModule.filter('stripDashes', function() {\n+ myMaterialsModule.filter('stripDashes', function() {\n     return function(txt) {\n         // filter code would go here\n }; });\n-\\ No newline at end of file\n\\ No newline at end of file\n+\\ No newline at end of file",
+    "previous_filename" : "works/1314080901201/js/MymaterialsModule.js"
+  } ],
+  "sha" : "8cf9ddd4d1476dda2b4af36ce3e6990c10074b27",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8cf9ddd4d1476dda2b4af36ce3e6990c10074b27",
+  "parents" : [ {
+    "sha" : "ed186bbf07c4d1fba86bc8d43b822434f6b2a568",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ed186bbf07c4d1fba86bc8d43b822434f6b2a568",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/ed186bbf07c4d1fba86bc8d43b822434f6b2a568"
+  }, {
+    "sha" : "dadacc9dcafb48634d787f4fa0255ce1d21ce016",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/dadacc9dcafb48634d787f4fa0255ce1d21ce016",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/dadacc9dcafb48634d787f4fa0255ce1d21ce016"
+  } ]
+}

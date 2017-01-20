@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "canshengLIN",
+    "id" : 18374813,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18374813?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/canshengLIN",
+    "html_url" : "https://github.com/canshengLIN",
+    "followers_url" : "https://api.github.com/users/canshengLIN/followers",
+    "following_url" : "https://api.github.com/users/canshengLIN/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/canshengLIN/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/canshengLIN/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/canshengLIN/subscriptions",
+    "organizations_url" : "https://api.github.com/users/canshengLIN/orgs",
+    "repos_url" : "https://api.github.com/users/canshengLIN/repos",
+    "events_url" : "https://api.github.com/users/canshengLIN/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/canshengLIN/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 224,
+    "additions" : 224,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "canshengLIN",
+    "id" : 18374813,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18374813?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/canshengLIN",
+    "html_url" : "https://github.com/canshengLIN",
+    "followers_url" : "https://api.github.com/users/canshengLIN/followers",
+    "following_url" : "https://api.github.com/users/canshengLIN/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/canshengLIN/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/canshengLIN/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/canshengLIN/subscriptions",
+    "organizations_url" : "https://api.github.com/users/canshengLIN/orgs",
+    "repos_url" : "https://api.github.com/users/canshengLIN/repos",
+    "events_url" : "https://api.github.com/users/canshengLIN/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/canshengLIN/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/eb8e82b62f1f9aba16f4b919be718586745c1371",
+  "commit" : {
+    "author" : {
+      "name" : "canshengLIN",
+      "email" : "sweet007008@qq.com",
+      "date" : "2016-04-27T15:23:20Z"
+    },
+    "committer" : {
+      "name" : "canshengLIN",
+      "email" : "sweet007008@qq.com",
+      "date" : "2016-04-27T15:23:20Z"
+    },
+    "message" : "#88 #84 lab2",
+    "tree" : {
+      "sha" : "c56e4c515de3f6812286ea2245fcf9fc0dec021f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/c56e4c515de3f6812286ea2245fcf9fc0dec021f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/eb8e82b62f1f9aba16f4b919be718586745c1371",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/eb8e82b62f1f9aba16f4b919be718586745c1371/comments",
+  "files" : [ {
+    "sha" : "27c5b9e4088204dabd5e002106d5243bcb1f1b8d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903224/Net1314080903224SnakeActivity.java",
+    "status" : "added",
+    "additions" : 224,
+    "deletions" : 0,
+    "changes" : 224,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/eb8e82b62f1f9aba16f4b919be718586745c1371/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903224/Net1314080903224SnakeActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/eb8e82b62f1f9aba16f4b919be718586745c1371/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903224/Net1314080903224SnakeActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903224/Net1314080903224SnakeActivity.java?ref=eb8e82b62f1f9aba16f4b919be718586745c1371",
+    "patch" : "@@ -0,0 +1,224 @@\n+package com.xmobileapp.Snake;\n+\n+import android.app.Activity;\n+import android.graphics.Color;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.view.View;\n+import android.view.Window;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.ImageButton;\n+import android.widget.TextView;\n+\n+public class Net1314080903224SnakeActivity extends Activity implements OnClickListener {\n+\n+\tprivate final static int PLAY = 1;\n+\n+\tprivate final static int LEFT = 2;\n+\n+\tprivate final static int RIGHT = 3;\n+\n+\tprivate final static int UP = 4;\n+\n+\tprivate final static int DOWN = 5;\n+\n+\tprivate Net1314080903224SnakeView mSnakeView;\n+\n+\tprivate static String ICICLE_KEY = \"snake-view\";\n+\n+\tprivate Button play;\n+\n+\tprivate ImageButton left;\n+\n+\tprivate ImageButton right;\n+\n+\tprivate ImageButton up;\n+\n+\tprivate ImageButton down;\n+\n+\tprivate UpdateStatus updateStatus;\n+\n+\tprivate Handler handler;\n+\n+\tprotected static final int GUINOTIFIER = 0x1234;\n+\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\n+\t\trequestWindowFeature(Window.FEATURE_NO_TITLE);\n+\n+\t\tsetContentView(R.layout.net1314080903224snake_layout);\n+\n+\t\tmSnakeView = (Net1314080903224SnakeView) findViewById(R.id.snake);\n+\t\tmSnakeView.setTextView((TextView) findViewById(R.id.text));\n+\t\tplay = (Button) findViewById(R.id.play);\n+\t\tplay.setId(PLAY);\n+\t\tplay.setOnClickListener(this);\n+\t\tplay.setBackgroundColor(Color.argb(0, 0, 255, 0));\n+\t\tleft = (ImageButton) findViewById(R.id.left);\n+\t\tleft.setId(LEFT);\n+\t\tleft.setOnClickListener(this);\n+\t\tleft.setBackgroundColor(Color.argb(1, 1, 255, 1));\n+\t\tleft.setVisibility(View.GONE);\n+\n+\t\tright = (ImageButton) findViewById(R.id.right);\n+\t\tright.setId(RIGHT);\n+\t\tright.setOnClickListener(this);\n+\t\tright.setBackgroundColor(Color.argb(1, 1, 255, 1));\n+\t\tright.setVisibility(View.GONE);\n+\n+\t\tup = (ImageButton) findViewById(R.id.up);\n+\t\tup.setId(UP);\n+\t\tup.setOnClickListener(this);\n+\t\tup.setBackgroundColor(Color.argb(1, 1, 255, 1));\n+\t\tup.setVisibility(View.GONE);\n+\n+\t\tdown = (ImageButton) findViewById(R.id.down);\n+\t\tdown.setId(DOWN);\n+\t\tdown.setOnClickListener(this);\n+\t\tdown.setBackgroundColor(Color.argb(1, 1, 255, 1));\n+\t\tdown.setVisibility(View.GONE);\n+\n+\t\tif (savedInstanceState == null) {\n+\t\t\tmSnakeView.setMode(mSnakeView.READY);\n+\t\t} else {\n+\t\t\tBundle map = savedInstanceState.getBundle(ICICLE_KEY);\n+\t\t\tif (map != null) {\n+\t\t\t\tmSnakeView.restoreState(map);\n+\t\t\t} else {\n+\t\t\t\tmSnakeView.setMode(Net1314080903224SnakeView.PAUSE);\n+\t\t\t}\n+\t\t}\n+\n+\t\thandler = new Handler() {\n+\t\t\tpublic void handleMessage(Message msg) {\n+\n+\t\t\t\tswitch (msg.what) {\n+\t\t\t\tcase Net1314080903224SnakeActivity.GUINOTIFIER:\n+\n+\t\t\t\t\tplay.setVisibility(View.VISIBLE);\n+\t\t\t\t\tleft.setVisibility(View.GONE);\n+\t\t\t\t\tright.setVisibility(View.GONE);\n+\t\t\t\t\tup.setVisibility(View.GONE);\n+\t\t\t\t\tdown.setVisibility(View.GONE);\n+\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t\tsuper.handleMessage(msg);\n+\t\t\t}\n+\t\t};\n+\n+\t}\n+\n+\t@Override\n+\tprotected void onPause() {\n+\t\tsuper.onPause();\n+\t\tmSnakeView.setMode(Net1314080903224SnakeView.PAUSE);\n+\t}\n+\n+\t@Override\n+\tpublic void onSaveInstanceState(Bundle outState) {\n+\t\toutState.putBundle(ICICLE_KEY, mSnakeView.saveState());\n+\t}\n+\n+\tpublic void onClick(View v) {\n+\t\tswitch (v.getId()) {\n+\n+\t\tcase PLAY:\n+\t\t\tplay.setVisibility(View.GONE);\n+\t\t\tleft.setVisibility(View.VISIBLE);\n+\t\t\tright.setVisibility(View.VISIBLE);\n+\t\t\tup.setVisibility(View.VISIBLE);\n+\t\t\tdown.setVisibility(View.VISIBLE);\n+\t\t\tif (mSnakeView.mMode == mSnakeView.READY\n+\t\t\t\t\t| mSnakeView.mMode == mSnakeView.LOSE) {\n+\t\t\t\tmSnakeView.initNewGame();\n+\t\t\t\tmSnakeView.setMode(mSnakeView.RUNNING);\n+\t\t\t\tmSnakeView.update();\n+\t\t\t\tupdateStatus = new UpdateStatus();\n+\t\t\t\tupdateStatus.start();\n+\t\t\t\tbreak;\n+\t\t\t}\n+\n+\t\t\tif (mSnakeView.mMode == mSnakeView.PAUSE) {\n+\t\t\t\tmSnakeView.setMode(mSnakeView.RUNNING);\n+\t\t\t\tmSnakeView.update();\n+\n+\t\t\t\tbreak;\n+\t\t\t}\n+\n+\t\t\tif (mSnakeView.mDirection != mSnakeView.SOUTH) {\n+\t\t\t\tmSnakeView.mNextDirection = mSnakeView.NORTH;\n+\n+\t\t\t\tbreak;\n+\t\t\t}\n+\n+\t\t\tbreak;\n+\n+\t\tcase LEFT:\n+\n+\t\t\tif (mSnakeView.mDirection != mSnakeView.EAST) {\n+\t\t\t\tmSnakeView.mNextDirection = mSnakeView.WEST;\n+\t\t\t}\n+\t\t\tbreak;\n+\n+\t\tcase RIGHT:\n+\n+\t\t\tif (mSnakeView.mDirection != mSnakeView.WEST) {\n+\t\t\t\tmSnakeView.mNextDirection = mSnakeView.EAST;\n+\t\t\t}\n+\t\t\tbreak;\n+\t\tcase UP:\n+\n+\t\t\tif (mSnakeView.mDirection != mSnakeView.SOUTH) {\n+\t\t\t\tmSnakeView.mNextDirection = mSnakeView.NORTH;\n+\t\t\t}\n+\t\t\tbreak;\n+\n+\t\tcase DOWN:\n+\n+\t\t\tif (mSnakeView.mDirection != mSnakeView.NORTH) {\n+\t\t\t\tmSnakeView.mNextDirection = mSnakeView.SOUTH;\n+\t\t\t}\n+\t\t\tbreak;\n+\n+\t\tdefault:\n+\n+\t\t\tbreak;\n+\n+\t\t}\n+\t}\n+\n+\tclass UpdateStatus extends Thread {\n+\t\t@Override\n+\t\tpublic void run() {\n+\n+\t\t\tsuper.run();\n+\n+\t\t\twhile (true) {\n+\n+\t\t\t\tif (mSnakeView.mMode == mSnakeView.LOSE) {\n+\n+\t\t\t\t\tMessage m = new Message();\n+\t\t\t\t\tm.what = Net1314080903224SnakeActivity.GUINOTIFIER;\n+\t\t\t\t\tNet1314080903224SnakeActivity.this.handler.sendMessage(m);\n+\n+\t\t\t\t\tbreak;\n+\n+\t\t\t\t}\n+\n+\t\t\t\ttry {\n+\t\t\t\t\tThread.sleep(1000);\n+\t\t\t\t} catch (InterruptedException e) {\n+\t\t\t\t\te.printStackTrace();\n+\t\t\t\t}\n+\n+\t\t\t}\n+\n+\t\t}\n+\n+\t}\n+\n+}"
+  } ],
+  "sha" : "eb8e82b62f1f9aba16f4b919be718586745c1371",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/eb8e82b62f1f9aba16f4b919be718586745c1371",
+  "parents" : [ {
+    "sha" : "ca790638c2d33fd625360fc1536b1a4eb63dab19",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ca790638c2d33fd625360fc1536b1a4eb63dab19",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/ca790638c2d33fd625360fc1536b1a4eb63dab19"
+  } ]
+}

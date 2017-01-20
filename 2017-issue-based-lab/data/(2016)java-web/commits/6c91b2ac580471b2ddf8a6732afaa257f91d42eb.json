@@ -1,0 +1,93 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 281,
+    "additions" : 234,
+    "deletions" : 47
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/6c91b2ac580471b2ddf8a6732afaa257f91d42eb",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "郑镇洪",
+      "date" : "2016-11-16T15:23:16Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "郑镇洪",
+      "date" : "2016-11-16T15:23:16Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "891b7294e8084bd08d9cecccf09469800dce7522",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/891b7294e8084bd08d9cecccf09469800dce7522"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/6c91b2ac580471b2ddf8a6732afaa257f91d42eb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/comments",
+  "files" : [ {
+    "sha" : "ffe1f39d32eeace67eeaebaf2d9addb11150861e",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902210/Create.java",
+    "status" : "added",
+    "additions" : 63,
+    "deletions" : 0,
+    "changes" : 63,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/src/edu/hzu/javaweb/labs/se1414080902210/Create.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/src/edu/hzu/javaweb/labs/se1414080902210/Create.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902210/Create.java?ref=6c91b2ac580471b2ddf8a6732afaa257f91d42eb",
+    "patch" : "@@ -0,0 +1,63 @@\n+package edu.hzu.javaweb.labs.se1414080902210;\n+\n+import java.io.IOException;\n+\n+import edu.hzu.javaweb.labs.se1414080902210.Score;\n+\n+import java.io.PrintWriter;\n+\n+import javax.inject.Scope;\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+public class Create extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic Create() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\n+\n+\t}\n+\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tScore.add(new Score(\"Java web\", 3));\n+\t\tScore.add(new Score(\"操作系统\", 3));\n+\t\tScore.add(new Score(\"计算机网络\", 2));\n+\t\tScore.add(new Score(\"软件工程导论\", 1));\n+\t\tScore.add(new Score(\"高等数学\", 5));\n+\t\tHttpSession subjectsSession=request.getSession(true);\n+\t\t\n+\t\tsubjectsSession.setAttribute(\"gradesList\", score);\n+\t\tresponse.sendRedirect(\"1414080902210/showscoreinfo.jsp\");\n+\t}\n+\n+\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "5ce24b5e7f49b547e633ddf390b0926e00a436cf",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902210/Score.java",
+    "status" : "added",
+    "additions" : 35,
+    "deletions" : 0,
+    "changes" : 35,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/src/edu/hzu/javaweb/labs/se1414080902210/Score.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/src/edu/hzu/javaweb/labs/se1414080902210/Score.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902210/Score.java?ref=6c91b2ac580471b2ddf8a6732afaa257f91d42eb",
+    "patch" : "@@ -0,0 +1,35 @@\n+package edu.hzu.javaweb.labs.se1414080902210;\n+\n+public class Score {\n+\tprivate String id;\n+\tprivate String courseName;\n+\tprivate float score;\n+\tprivate int credit;\n+\t\n+\tpublic String getId() {\n+\t\treturn id;\n+\t}\n+\tpublic void setId(String id) {\n+\t\tthis.id = id;\n+\t}\n+\tpublic String getCourseName() {\n+\t\treturn courseName;\n+\t}\n+\tpublic void setCourseName(String courseName) {\n+\t\tthis.courseName = courseName;\n+\t}\n+\tpublic float getScore() {\n+\t\treturn score;\n+\t}\n+\tpublic void setScore(float score) {\n+\t\tthis.score = score;\n+\t}\n+\tpublic int getCredit() {\n+\t\treturn credit;\n+\t}\n+\tpublic void setCredit(int credit) {\n+\t\tthis.credit = credit;\n+\t}\n+\t\n+\t\n+}"
+  }, {
+    "sha" : "757f95ab1b283a80c8a56335446df89746dcd2bf",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902210/Se1414080902210Servlet.java",
+    "status" : "modified",
+    "additions" : 36,
+    "deletions" : 47,
+    "changes" : 83,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/src/edu/hzu/javaweb/labs/se1414080902210/Se1414080902210Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/src/edu/hzu/javaweb/labs/se1414080902210/Se1414080902210Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902210/Se1414080902210Servlet.java?ref=6c91b2ac580471b2ddf8a6732afaa257f91d42eb",
+    "patch" : "@@ -2,14 +2,17 @@\n \n import java.io.IOException;\n import java.io.PrintWriter;\n+import java.util.*;\n \n import javax.servlet.ServletConfig;\n import javax.servlet.ServletException;\n import javax.servlet.annotation.WebServlet;\n import javax.servlet.http.HttpServlet;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n+import edu.hzu.javaweb.labs.se1414080902210.Score;\n \n+@SuppressWarnings(\"unused\")\n @WebServlet(\"/1st\")\n public class Se1414080902210Servlet extends HttpServlet {\n \n@@ -29,71 +32,57 @@ public Se1414080902210Servlet() {\n \t * Destruction of the servlet. <br>\n \t */\n \tpublic void destroy() {\n-\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n-\t\t// Put your code here\n+\t\tsuper.destroy(); \n+\n \t}\n \n-\t/**\n-\t * The doGet method of the servlet. <br>\n-\t *\n-\t * This method is called when a form has its tag value method equals to get.\n-\t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n-\t */\n \tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n \n \t\tresponse.setContentType(\"text/html\");\n \t\tPrintWriter out = response.getWriter();\n-\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n-\t\tout.println(\"<HTML>\");\n-\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n-\t\tout.println(\"  <BODY>\");\n-\t\tout.print(\"    This is \");\n-\t\tout.print(this.getClass());\n-\t\tout.println(\", using the GET method\");\n-\t\tout.println(\"  </BODY>\");\n-\t\tout.println(\"</HTML>\");\n+\t\tresponse.sendRedirect(\"1414080902210/showscoreinfo.jsp\");\n \t\tout.flush();\n \t\tout.close();\n \t}\n \n-\t/**\n-\t * The doPost method of the servlet. <br>\n-\t *\n-\t * This method is called when a form has its tag value method equals to post.\n-\t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n-\t */\n+\n \tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n \n \t\tresponse.setContentType(\"text/html\");\n \t\tPrintWriter out = response.getWriter();\n-\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n-\t\tout.println(\"<HTML>\");\n-\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n-\t\tout.println(\"  <BODY>\");\n-\t\tout.print(\"    This is \");\n-\t\tout.print(this.getClass());\n-\t\tout.println(\", using the POST method\");\n-\t\tout.println(\"  </BODY>\");\n-\t\tout.println(\"</HTML>\");\n-\t\tout.flush();\n-\t\tout.close();\n+\t\tList<Score> gl=(List<Score>)hs.getAttribute(\"scoreList\");\n+\t\tint len=gl.size();\n+\t\t\n+\t\t\n+\t\tString[] subjectGrades=new String[len];\n+\t\tint i=0;\n+\t\ttry {\n+\t\t\t\n+\t\t\twhile(i<len)\n+\t\t\t{\n+\t\t\t\tString key=new StringBuffer().append(\"subject\").append(((Integer)i).toString()).toString();\n+\t\t\t\tsubjectGrades[i]=request.getParameter(key);\n+\t\t\t\ti++;\n+\t\t\t}\n+\t\t\t\n+\t\t\tint k=0;\n+\t\t\tfor (Score grade : gl) {\n+\t\t\t\tgrade.getScore(Double.parseDouble(subjectGrades[k++]));\n+\t\t\t\t\n+\t\t\t}\n+\t\t\ths.setAttribute(\"gradesList\", gl);\n+\t\t} catch (Exception e) {\n+\t\t\tSystem.out.print(e.getMessage());\n+\t\t}\n+\t\t\n+\t\tresponse.sendRedirect(\"1414080902210/showscoreinfo.jsp\");\n+\t\t\n \t}\n \n-\t/**\n-\t * Initialization of the servlet. <br>\n-\t *\n-\t * @throws ServletException if an error occurs\n-\t */\n+\n+\n \tpublic void init(ServletConfig config) throws ServletException {\n \t\t\n \t\t// Put your code here"
+  }, {
+    "sha" : "6b991dde3160b1f54fc6ab3f969f2df91aec32c6",
+    "filename" : "jweb/web/1414080902210/checkscore.jsp",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/web/1414080902210/checkscore.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/web/1414080902210/checkscore.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902210/checkscore.jsp?ref=6c91b2ac580471b2ddf8a6732afaa257f91d42eb",
+    "patch" : "@@ -0,0 +1,33 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+  \n+    <title>成绩查询</title>\n+   \n+  </head>\n+  \n+  <body>\n+  \n+    <div >\n+        <form action=\"<%=request.getContextPath() %>/UpdateGrades\" method=\"post\">\n+        \t<div >\n+        \t\t<table id=\"tb\">\n+        \t\t<div > 基本成绩</div>\n+        \t\t\t<c:forEach var=\"score\" items=\"${gradesList }\">\n+        \t\t\t\t<tr>\n+        \t\t\t\t\t<td>${grade.courseName }</td>\n+        \t\t\t\t\t<td><input type=\"text\" value=\"\"></td>\n+        \t\t\t\t</tr>        \t\t\t\n+        \t\t\t</c:forEach>\n+        \t\t</table>\n+        \t\t<button type=\"submit\" id=\"sub\">保存</button>\n+        \t</div>\n+        </form>\n+    </div>\n+    \n+\n+  </body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "844aa0d7b520f090ba94825227592e1700e262cb",
+    "filename" : "jweb/web/1414080902210/showscoreinfo.jsp",
+    "status" : "added",
+    "additions" : 67,
+    "deletions" : 0,
+    "changes" : 67,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/web/1414080902210/showscoreinfo.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6c91b2ac580471b2ddf8a6732afaa257f91d42eb/jweb/web/1414080902210/showscoreinfo.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902210/showscoreinfo.jsp?ref=6c91b2ac580471b2ddf8a6732afaa257f91d42eb",
+    "patch" : "@@ -0,0 +1,67 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+\n+    \n+    <title>成绩查询</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\n+\t<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n+\n+  </head>\n+  \n+  <body>\n+  \t<p>你好！<c:out value=\"${sessionScope.user }\"/></p>\n+  <hr>\n+    <div >\n+    \t\t<h4 style=\"text-align=center\"><c:out value=\"${sessionScope.user }\"/>的基础成绩为：</h4>\n+    \t\t<table>\n+    \t\t\t<tr>\n+    \t\t\t\t<td>课程名</td>\n+    \t\t\t\t<td>学分</td>\n+    \t\t\t\t<td>成绩</td>\n+    \t\t\t</tr>\n+    \t\t\t<c:forEach var=\"index\" items=\"${gradesList}\">\n+    \t\t\t\t<tr>\n+\t    \t\t\t\t<td>\n+\t    \t\t\t\t\t<c:if test=\"${ not empty index.courseName }\"> \n+\t    \t\t\t\t\t\t${index.courseName }\n+\t    \t\t\t\t\t</c:if>\n+\t    \t\t\t\t</td>\n+\t    \t\t\t\t\n+\t    \t\t\t\t<td>\n+\t    \t\t\t\t\t<c:if test=\"${not empty index.credit  }\"> \n+\t    \t\t\t\t\t\t<c:out value=\"${index.credit}\"/>\n+\t    \t\t\t\t\t</c:if>\n+\t    \t\t\t\t\t\n+\t    \t\t\t\t</td>\n+\t    \t\t\t\t\n+\t    \t\t\t\t<td>\n+\t    \t\t\t\t\t\n+\t    \t\t\t\t\t\n+\t    \t\t\t\t\t<c:choose>\n+   \t\t\t\t\t\t\t\t<c:when test=\"${index.grade>=0&&index.grade<=100 }\">\n+   \t\t\t\t\t\t\t\t\t${ index.grade }\t    \n+   \t\t\t\t\t\t\t\t</c:when>\n+   \t\t\t\t\t\t\t\t<c:otherwise> \n+   \t\t\t\t\t\t\t\t\t<c:out value=\"成绩为空\"></c:out> \n+   \t\t\t\t\t\t\t\t</c:otherwise>\n+\t\t\t\t\t\t\t</c:choose>\n+\t    \t\t\t\t\t\n+\t\t\t\t\t\t\t\n+\t    \t\t\t\t</td>\t\n+    \t\t\t\t</tr>\n+    \t\t\t</c:forEach>\n+    \t\t</table>\n+    \t\t\n+    \t\n+    </div>\n+  </body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "6c91b2ac580471b2ddf8a6732afaa257f91d42eb",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6c91b2ac580471b2ddf8a6732afaa257f91d42eb",
+  "parents" : [ {
+    "sha" : "974b100a8230918afe72d41b97afd67c414c1c80",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/974b100a8230918afe72d41b97afd67c414c1c80",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/974b100a8230918afe72d41b97afd67c414c1c80"
+  } ]
+}

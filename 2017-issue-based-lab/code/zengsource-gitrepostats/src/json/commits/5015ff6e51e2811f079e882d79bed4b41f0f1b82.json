@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 68,
+    "additions" : 16,
+    "deletions" : 52
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/5015ff6e51e2811f079e882d79bed4b41f0f1b82",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T08:06:31Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T08:06:31Z"
+    },
+    "message" : "Merge pull request #453 from czgshy/master\n\n#88 #163 实验二",
+    "tree" : {
+      "sha" : "e11290eb2855a29e5b389a7ddb767c9e95156e52",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/e11290eb2855a29e5b389a7ddb767c9e95156e52"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/5015ff6e51e2811f079e882d79bed4b41f0f1b82",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5015ff6e51e2811f079e882d79bed4b41f0f1b82/comments",
+  "files" : [ {
+    "sha" : "975d6bd737d1ce56c7bbc4273b36bcc3cb35f1bc",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901108/Com1314080901108Activity.java",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5015ff6e51e2811f079e882d79bed4b41f0f1b82/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901108/Com1314080901108Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5015ff6e51e2811f079e882d79bed4b41f0f1b82/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901108/Com1314080901108Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901108/Com1314080901108Activity.java?ref=5015ff6e51e2811f079e882d79bed4b41f0f1b82",
+    "patch" : "@@ -0,0 +1,16 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901108;\n+\n+import android.os.Bundle;\n+import android.app.Activity;\n+import android.view.Window;\n+\n+public class Com1314080901108Activity extends BackActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+\trequestWindowFeature(Window.FEATURE_NO_TITLE);\n+        setContentView(R.layout.activity_com1314080901108);\n+    }\n+}\n+"
+  }, {
+    "sha" : "2741757394ec1db3ae8e7f65bfbdff493868fc98",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901108/MainActivity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 52,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/83621c78a76e06041de3649b253e3690cbe88f68/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901108/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/83621c78a76e06041de3649b253e3690cbe88f68/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901108/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901108/MainActivity.java?ref=83621c78a76e06041de3649b253e3690cbe88f68",
+    "patch" : "@@ -1,52 +0,0 @@\n-package edu.hzuapps.androidworks.homeworks.com1314080901103;\n-\n-import android.os.Bundle;\n-import android.support.design.widget.FloatingActionButton;\n-import android.support.design.widget.Snackbar;\n-import android.support.v7.app.AppCompatActivity;\n-import android.support.v7.widget.Toolbar;\n-import android.view.View;\n-import android.view.Menu;\n-import android.view.MenuItem;\n-\n-public class MainActivity extends AppCompatActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_main);\n-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n-        setSupportActionBar(toolbar);\n-\n-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n-        fab.setOnClickListener(new View.OnClickListener() {\n-            @Override\n-            public void onClick(View view) {\n-                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n-                        .setAction(\"Action\", null).show();\n-            }\n-        });\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_main, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            return true;\n-        }\n-\n-        return super.onOptionsItemSelected(item);\n-    }\n-}"
+  } ],
+  "sha" : "5015ff6e51e2811f079e882d79bed4b41f0f1b82",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5015ff6e51e2811f079e882d79bed4b41f0f1b82",
+  "parents" : [ {
+    "sha" : "83621c78a76e06041de3649b253e3690cbe88f68",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/83621c78a76e06041de3649b253e3690cbe88f68",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/83621c78a76e06041de3649b253e3690cbe88f68"
+  }, {
+    "sha" : "3917f88f2a8aa1d58459d1c76e7bd2f0b94d6533",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3917f88f2a8aa1d58459d1c76e7bd2f0b94d6533",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/3917f88f2a8aa1d58459d1c76e7bd2f0b94d6533"
+  } ]
+}

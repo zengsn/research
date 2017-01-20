@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "Sm1les",
+    "id" : 16202887,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/16202887?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Sm1les",
+    "html_url" : "https://github.com/Sm1les",
+    "followers_url" : "https://api.github.com/users/Sm1les/followers",
+    "following_url" : "https://api.github.com/users/Sm1les/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Sm1les/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Sm1les/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Sm1les/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Sm1les/orgs",
+    "repos_url" : "https://api.github.com/users/Sm1les/repos",
+    "events_url" : "https://api.github.com/users/Sm1les/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Sm1les/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 166,
+    "additions" : 166,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Sm1les",
+    "id" : 16202887,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/16202887?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Sm1les",
+    "html_url" : "https://github.com/Sm1les",
+    "followers_url" : "https://api.github.com/users/Sm1les/followers",
+    "following_url" : "https://api.github.com/users/Sm1les/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Sm1les/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Sm1les/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Sm1les/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Sm1les/orgs",
+    "repos_url" : "https://api.github.com/users/Sm1les/repos",
+    "events_url" : "https://api.github.com/users/Sm1les/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Sm1les/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+  "commit" : {
+    "author" : {
+      "name" : "Sm1les",
+      "email" : "1024835308@qq.com",
+      "date" : "2016-11-06T16:28:45Z"
+    },
+    "committer" : {
+      "name" : "Sm1les",
+      "email" : "1024835308@qq.com",
+      "date" : "2016-11-06T16:28:45Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "e20317219a043fe3ae91ae391601c80b4a6a3639",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/e20317219a043fe3ae91ae391601c80b4a6a3639"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/comments",
+  "files" : [ {
+    "sha" : "c95658f4589deeafd0cefd682a8e5f3793a4b9dd",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902201/EncodeFilter.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/src/edu/hzu/javaweb/labs/se1414080902201/EncodeFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/src/edu/hzu/javaweb/labs/se1414080902201/EncodeFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902201/EncodeFilter.java?ref=6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+    "patch" : "@@ -0,0 +1,52 @@\n+package edu.hzu.javaweb.labs.se1414080902201;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+/**\n+ * Servlet Filter implementation class EncodeFilter\n+ */\n+@WebFilter(filterName=\"EncodeFilter\",urlPatterns=\"/*\")\n+public class EncodeFilter implements Filter {\n+\n+    /**\n+     * Default constructor. \n+     */\n+    public EncodeFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see Filter#destroy()\n+\t */\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n+\t */\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\t// �������\n+\t\tSystem.out.println(\"�������...\");\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+        //�������\n+        response.setContentType(\"text/html;charset=UTF-8\");\n+\n+\t\tchain.doFilter(request, response);\n+\t}\n+\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\tSystem.out.println(\"ͳһ����...\");\n+\t}\n+\n+}"
+  }, {
+    "sha" : "21ae3d25dac73d32f947e0b4b9a0a3a36e9ab95f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginFilter.java",
+    "status" : "added",
+    "additions" : 58,
+    "deletions" : 0,
+    "changes" : 58,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginFilter.java?ref=6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+    "patch" : "@@ -0,0 +1,58 @@\n+package edu.hzu.javaweb.labs.se1414080902201;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+/**\n+ * Servlet Filter implementation class LoginFilter\n+ */\n+@WebFilter(filterName=\"LoginFilter\",urlPatterns=\"/1414080902201\")\n+public class LoginFilter implements Filter {\n+\n+    /**\n+     * Default constructor. \n+     */\n+    public LoginFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see Filter#destroy()\n+\t */\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n+\t */\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\t//��ȡhttp����������\n+\t\tHttpServletRequest req = (HttpServletRequest) request;\n+        HttpServletResponse resp = (HttpServletResponse) response;\n+        \n+        HttpSession session = req.getSession();\n+        if (session.getAttribute(\"username\") == null) {\n+        \tresp.sendRedirect(\"login.jsp\");\n+        } else {   \n+        \tchain.doFilter(request, response);\n+        }  \n+\t}\n+\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\tSystem.out.println(\"��¼����...\");\n+\t}\n+\n+}"
+  }, {
+    "sha" : "6145e09997b2200640d61c89a111bfaf9e03cdb3",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902201/Se1414080902201Servlet.java",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 0,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/src/edu/hzu/javaweb/labs/se1414080902201/Se1414080902201Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/src/edu/hzu/javaweb/labs/se1414080902201/Se1414080902201Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902201/Se1414080902201Servlet.java?ref=6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+    "patch" : "@@ -4,13 +4,15 @@\n import java.io.PrintWriter;\n \n import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n import javax.servlet.http.HttpServlet;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n \n /**\n  * Servlet implementation class Se1414080902201Servlet\n  */\n+@WebServlet(name=\"Se1414080902201Servlet\",urlPatterns=\"/1414080902201\")\n public class Se1414080902201Servlet extends HttpServlet {\n \tprivate static final long serialVersionUID = 1L;\n        "
+  }, {
+    "sha" : "170e46ed0b5dafc20c6e790631fba46a6ec8c6a5",
+    "filename" : "jweb/web/1414080902201/css/login.css",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/web/1414080902201/css/login.css",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/web/1414080902201/css/login.css",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902201/css/login.css?ref=6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+    "patch" : "@@ -0,0 +1,13 @@\n+body {\n+\tbackground: #f5f5f5;\n+}\n+.login {\n+\twidth: 300px;\n+\theight: 200px;\n+\tmargin-left: -150px;\n+\tmargin-top: -150px;\n+\tposition: absolute;\n+\ttop: 50%;\n+\tleft: 50%;\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "be072ad4f52f52aa363850484c40b54cb9959a99",
+    "filename" : "jweb/web/1414080902201/login.jsp",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/web/1414080902201/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4/jweb/web/1414080902201/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902201/login.jsp?ref=6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+    "patch" : "@@ -0,0 +1,41 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<!DOCTYPE html>\n+<html lang=\"zh-cn\">\n+  <head>\n+    <meta charset=\"utf-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <title>登录 - TodoX</title>\n+\n+    <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n+    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/login.css\">\n+\n+    <!--[if lt IE 9]>\n+      <script src=\"http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+      <script src=\"http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+    <![endif]-->\n+  </head>\n+  <body>\n+    <div class=\"container\">\n+\t    <form class=\"login\" role=\"form\">\n+        <div class=\"form-group\">\n+          <label for=\"exampleInputEmail1\">邮箱</label>\n+          <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"请输入邮箱\">\n+        </div>\n+        <div class=\"form-group\">\n+          <label for=\"inputPassword3\">密码</label>\n+          <input type=\"password\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"请输入密码\">\n+        </div>\n+        <div class=\"checkbox\">\n+          <label>\n+            <input type=\"checkbox\"> 30天内免登录\n+          </label>\n+        </div>\n+        <button type=\"submit\" class=\"btn btn-primary btn-block\">登录</button>\n+      </form>\n+    </div>\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+  </body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+  "parents" : [ {
+    "sha" : "b666c6f0ef21021c1eb43feadabbd6d2ce6f3ea1",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b666c6f0ef21021c1eb43feadabbd6d2ce6f3ea1",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/b666c6f0ef21021c1eb43feadabbd6d2ce6f3ea1"
+  } ]
+}

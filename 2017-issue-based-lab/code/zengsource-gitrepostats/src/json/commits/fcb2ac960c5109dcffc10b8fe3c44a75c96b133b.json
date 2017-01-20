@@ -1,0 +1,229 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 770,
+    "additions" : 537,
+    "deletions" : 233
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-01T06:39:30Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-01T06:39:30Z"
+    },
+    "message" : "Merge pull request #881 from Pyanz/master\n\n#91 #93 #95 #68 lab 9实现获取网上xml文件并解析其文本内容",
+    "tree" : {
+      "sha" : "ee44c6785a5d42e4aa158fc53d54592233a99291",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/ee44c6785a5d42e4aa158fc53d54592233a99291"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/comments",
+  "files" : [ {
+    "sha" : "0e6ad968b6d0940290312963012281c0587d465b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/MainActivity.java",
+    "status" : "added",
+    "additions" : 205,
+    "deletions" : 0,
+    "changes" : 205,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/MainActivity.java?ref=fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+    "patch" : "@@ -0,0 +1,205 @@\n+package com.example.messagebrower;\n+\n+import java.io.InputStream;\n+import java.net.HttpURLConnection;\n+import java.net.MalformedURLException;\n+import java.net.URL;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import org.xmlpull.v1.XmlPullParser;\n+import org.xmlpull.v1.XmlPullParserException;\n+\n+import com.example.messagebrower.domain.Messages;\n+import com.loopj.android.image.SmartImageView;\n+\n+import android.renderscript.ScriptGroup.Input;\n+import android.support.v7.app.ActionBarActivity;\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.provider.Telephony.Sms.Conversations;\n+import android.util.Xml;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.widget.BaseAdapter;\n+import android.widget.ListView;\n+import android.widget.TextView;\n+\n+public class MainActivity extends Activity {\n+\n+\tList<Messages> messagesList;\n+\t\n+\tHandler handler = new Handler(){\n+\t\tpublic void handleMessage(android.os.Message msg) {\n+\t\t\tListView lv = (ListView) findViewById(R.id.lv);\n+\t\t\tlv.setAdapter(new MyAdapter());\n+\t\t}\n+\t};\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_main);\n+\t\t\n+\t\tgetMessageInfo();\n+\t\t\n+\t\t//ListView lv = (ListView) findViewById(R.id.lv);\n+\t\t//��ʱ��Ϣ��Ϣ��û�н�����ϣ�messagesList��û��new���\n+\t\t//lv.setAdapter(new MyAdapter());\n+\t}\n+\n+\tclass MyAdapter extends BaseAdapter{\n+\n+\t\t//���ص�Ҫ��ʾ�����\n+\t\t@Override\n+\t\tpublic int getCount() {\n+\t\t\treturn messagesList.size();\n+\t\t}\n+\t\t\n+\t\t//����һ��View���󣬻���ΪListView��һ����Ŀ��ʾ�ڽ�����\n+\t\t@Override\n+\t\tpublic View getView(int position, View convertView, ViewGroup parent) {\n+\t\t\tMessages messages = messagesList.get(position);\n+\t\t\tView v = null;\n+\t\t\tif (convertView == null) {\n+\t\t\t\tv = View.inflate(MainActivity.this, R.layout.item_listview, null);\n+\t\t\t}\n+\t\t\telse{\n+\t\t\t\tv = convertView;\n+\t\t\t}\n+\t\t\t\n+\t\t\t//View v = View.inflate(MainActivity.this, R.layout.item_listview, null);\n+\t\t\t\n+\t\t\t//����Ŀ�е�ÿ���������Ҫ��ʾ������\n+\t\t\tTextView username = (TextView) v.findViewById(R.id.username);\n+\t\t\tusername.setText(messages.getToUserName());\n+\t\t\tTextView createtime = (TextView) v.findViewById(R.id.createtime);\n+\t\t\tcreatetime.setText(messages.getCreateTime());\n+\t\t\tTextView content = (TextView) v.findViewById(R.id.content);\n+\t\t\tcontent.setText(messages.getContent());\n+\t\t\t\n+\t\t\tSmartImageView siv = (SmartImageView) v.findViewById(R.id.siv);\n+\t\t\tsiv.setImageUrl(messages.getImageUrl());\n+\t\t\t\n+\t\t\treturn v;\n+\t\t}\n+\n+\t\t@Override\n+\t\tpublic Object getItem(int position) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\treturn messagesList.get(position);\n+\t\t}\n+\n+\t\t@Override\n+\t\tpublic long getItemId(int position) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\treturn position;\n+\t\t}\n+\t\t\n+\t}\n+\t\n+\tprivate void getMessageInfo() {\n+\n+\t\tThread t = new Thread(){\n+\t\t\t@Override\n+\t\t\tpublic void run() {\n+\t\t\t\tString path = \"https://raw.githubusercontent.com/Pyanz/Test/master/drawable/messages.xml\";\n+\t\t\t\t//String path = \"http://192.168.0.101:8080/messages.xml\";\n+\t\t\t\ttry {\n+\t\t\t\t\tURL url = new URL(path);\n+\t\t\t\t\tHttpURLConnection conn = (HttpURLConnection) url.openConnection();\n+\t\t\t\t\tconn.setRequestMethod(\"GET\");\n+\t\t\t\t\tconn.setConnectTimeout(8000);\n+\t\t\t\t\tconn.setReadTimeout(8000);\n+\n+\t\t\t\t\tif (conn.getResponseCode() == 200) {\n+\t\t\t\t\t\t//���������Ϣ��һ��xml�ļ����ı���Ϣ����xml����������Ҫ��Ϊ�ı�ȥ����\n+\t\t\t\t\t\tInputStream is = conn.getInputStream();\n+\t\t\t\t\t\tgetMessagesFromStream(is);\n+\t\t\t\t\t}\n+\t\t\t\t} catch (Exception e) {\n+\t\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\t\te.printStackTrace();\n+\t\t\t\t}\n+\t\t\t\t\n+\t\t\t}\n+\t\t};\n+\t\tt.start();\n+\t}\n+\t\n+\tprivate void getMessagesFromStream(InputStream is) {\n+\n+\t\tXmlPullParser xp = Xml.newPullParser();\n+\t\ttry {\n+\t\t\txp.setInput(is,\"utf-8\");\n+\t\t\t\n+\t\t\t//��ȡ�¼����ͣ�ͨ���¼������жϳ�ǰ�������ʲô�ڵ�\n+\t\t\tint type = xp.getEventType();\n+\t\t\t\n+\t\t\tMessages messages = null;\n+\t\t\twhile (type != XmlPullParser.END_DOCUMENT) {\n+\t\t\t\tswitch (type) {\n+\t\t\t\tcase XmlPullParser.START_TAG:\n+\t\t\t\t\tif (\"messageslist\".equals(xp.getName())) {\n+\t\t\t\t\t\tmessagesList = new ArrayList<Messages>();\n+\t\t\t\t\t}\n+\t\t\t\t\telse if (\"message\".equals(xp.getName())) {\n+\t\t\t\t\t\tmessages = new Messages();\n+\t\t\t\t\t}\n+\t\t\t\t\telse if (\"ToUserName\".equals(xp.getName())) {\n+\t\t\t\t\t\tString ToUserName = xp.nextText();\n+\t\t\t\t\t\tmessages.setToUserName(ToUserName);\n+\t\t\t\t\t}\n+\t\t\t\t\telse if (\"CreateTime\".equals(xp.getName())) {\n+\t\t\t\t\t\tString CreateTime = xp.nextText();\n+\t\t\t\t\t\tmessages.setCreateTime(CreateTime);\n+\t\t\t\t\t}\n+\t\t\t\t\telse if (\"Content\".equals(xp.getName())) {\n+\t\t\t\t\t\tString Content = xp.nextText();\n+\t\t\t\t\t\tmessages.setContent(Content);\n+\t\t\t\t\t}\n+\t\t\t\t\telse if (\"imageUrl\".equals(xp.getName())) {\n+\t\t\t\t\t\tString imageUrl = xp.nextText();\n+\t\t\t\t\t\tmessages.setImageUrl(imageUrl);\n+\t\t\t\t\t}\n+\t\t\t\t\tbreak;\n+\t\t\t\t\t\n+\t\t\t\tcase XmlPullParser.END_TAG:\n+\t\t\t\t\tif (\"message\".equals(xp.getName())) {\n+\t\t\t\t\t\tmessagesList.add(messages);\n+\t\t\t\t\t}\n+\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t\t//ָ���ƶ�����һ��ڵ㲢�����¼�����\n+\t\t\t\ttype = xp.next();\n+\t\t\t}\n+\t\t\t//������Ϣ�������߳�ˢ��ListView\n+\t\t\thandler.sendEmptyMessage(1);\n+\t\t\t\n+//\t\t\tfor (Messages n : messagesList) {\n+//\t\t\t\tSystem.out.println(n.toString());\n+//\t\t\t}\n+\t\t\t\n+\t\t} catch (Exception e) {\n+\t\t\t// TODO Auto-generated catch block\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t\t\n+\t}\n+}\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+"
+  }, {
+    "sha" : "58b64658c774b5ff816329bea60875477f0cc117",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Message_datail.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 13,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Message_datail.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Message_datail.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Message_datail.java?ref=5a45da4f48d03b3d662082df3f5bd7fb431c6bb3",
+    "patch" : "@@ -1,13 +0,0 @@\n-package com.example.pyanz.messagebrowser;\n-\n-import android.app.Activity;\n-import android.os.Bundle;\n-\n-public class Message_datail extends Activity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.message_detail);\n-    }\n-}\n\\ No newline at end of file"
+  }, {
+    "sha" : "26dfed6865f32db946b5a3b5f983a5b775807bae",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Message_list.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 61,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Message_list.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Message_list.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Message_list.java?ref=5a45da4f48d03b3d662082df3f5bd7fb431c6bb3",
+    "patch" : "@@ -1,61 +0,0 @@\n-package com.example.pyanz.messagebrowser;\n-\n-import android.os.Bundle;\n-import android.app.Activity;\n-import android.widget.ArrayAdapter;\n-import android.widget.ListView;\n-import android.widget.SimpleAdapter;\n-\n-import java.util.ArrayList;\n-import java.util.HashMap;\n-import java.util.List;\n-import java.util.Map;\n-import java.util.Objects;\n-\n-public class Message_list extends Activity {\n-\n-    private ListView message_list;\n-    private ArrayAdapter<String> arr_adapter;\n-    private SimpleAdapter simp_adapter;\n-    private List<Map<String,Object>>dataList;\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.message_list);\n-        message_list=(ListView) findViewById(R.id.message_list);\n-        //1、新建一个适配器\n-        //ArrayAdapter（上下文，当前ListView加载的每一个列表所对应的布局文件，数据源）\n-        /* SimpleAdapter(context,data,resource,from,to)\n-        *content：上下文\n-        *data：数据源（List<? extends Map<String, ?>> data）一个Map所组成的list集合\n-        *       每一个Map都会去对应ListView列表中的一行\n-        *       每一个Map（键 - 值对）中的键必须包含在from中所指定的键\n-        * resource：列表项的布局文件ID\n-        * from：Map中的键名\n-        * to：绑定数据视图中的ID\n-        **/\n-        //2、适配器加载数据源\n-        String[]arr_data={\"item1\",\"item2\",\"item3\",\"item4\"};\n-        dataList=new ArrayList<Map<String, Object>>();\n-        //arr_adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,arr_data);\n-        simp_adapter=new SimpleAdapter(this,getData(),R.layout.message_item,\n-                new String[]{\"Avatar\",\"Name\",\"Message\",\"Time\"},\n-                new int[]{R.id.itemAvatar,R.id.itemName,R.id.itemMessage,R.id.itemTime});\n-        //3、视图（ListView）加载适配器\n-        //listView.setAdapter(arr_adapter);\n-        message_list.setAdapter(simp_adapter);\n-    }\n-\n-    private List<Map<String, Object>> getData(){\n-        for (int i=0;i<10;i++){\n-            Map<String, Object> map=new HashMap<String,Object>( );\n-            map.put(\"Avatar\", R.drawable.avatar);\n-            map.put(\"Name\",\"用户昵称\"+i);\n-            map.put(\"Message\", \"用户留言\" + i);\n-            map.put(\"Time\",\"发表时间\"+i);\n-            dataList.add(map);\n-        }\n-        return dataList;\n-    }\n-}\n\\ No newline at end of file"
+  }, {
+    "sha" : "4190b402e1f0f6364438a8e006da649e0fbe9690",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Messages.java",
+    "status" : "added",
+    "additions" : 42,
+    "deletions" : 0,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Messages.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Messages.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/Messages.java?ref=fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+    "patch" : "@@ -0,0 +1,42 @@\n+package com.example.messagebrower.domain;\n+\n+public class Messages {\n+\t\n+\tprivate String ToUserName;\n+\tprivate String CreateTime;\n+\tprivate String Content;\n+\tprivate String imageUrl;\n+\tpublic String getToUserName() {\n+\t\treturn ToUserName;\n+\t}\n+\tpublic void setToUserName(String toUserName) {\n+\t\tthis.ToUserName = toUserName;\n+\t}\n+\tpublic String getCreateTime() {\n+\t\treturn CreateTime;\n+\t}\n+\tpublic void setCreateTime(String createTime) {\n+\t\tthis.CreateTime = createTime;\n+\t}\n+\tpublic String getContent() {\n+\t\treturn Content;\n+\t}\n+\tpublic void setContent(String content) {\n+\t\tthis.Content = content;\n+\t}\n+\tpublic String getImageUrl() {\n+\t\treturn imageUrl;\n+\t}\n+\tpublic void setImageUrl(String imageUrl) {\n+\t\tthis.imageUrl = imageUrl;\n+\t}\n+\t@Override\n+\tpublic String toString() {\n+\t\treturn \"Messages [ToUserName=\" + ToUserName + \", CreateTime=\"\n+\t\t\t\t+ CreateTime + \", Content=\" + Content + \", imageUrl=\"\n+\t\t\t\t+ imageUrl + \"]\";\n+\t}\n+\t\n+\n+\t\n+}"
+  }, {
+    "sha" : "fb7117f602a8996eca8cae1de3ec67165ee04298",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/SmartImageView.java",
+    "status" : "added",
+    "additions" : 132,
+    "deletions" : 0,
+    "changes" : 132,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/SmartImageView.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/SmartImageView.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/SmartImageView.java?ref=fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+    "patch" : "@@ -0,0 +1,132 @@\n+package com.loopj.android.image;\n+\n+import android.content.Context;\n+import android.graphics.Bitmap;\n+import android.util.AttributeSet;\n+import android.widget.ImageView;\n+\n+import java.util.concurrent.ExecutorService;\n+import java.util.concurrent.Executors;\n+\n+public class SmartImageView extends ImageView {\n+    private static final int LOADING_THREADS = 4;\n+    private static ExecutorService threadPool = Executors.newFixedThreadPool(LOADING_THREADS);\n+\n+    private SmartImageTask currentTask;\n+\n+\n+    public SmartImageView(Context context) {\n+        super(context);\n+    }\n+\n+    public SmartImageView(Context context, AttributeSet attrs) {\n+        super(context, attrs);\n+    }\n+\n+    public SmartImageView(Context context, AttributeSet attrs, int defStyle) {\n+        super(context, attrs, defStyle);\n+    }\n+\n+\n+    // Helpers to set image by URL\n+    public void setImageUrl(String url) {\n+        setImage(new WebImage(url));\n+    }\n+\n+    public void setImageUrl(String url, SmartImageTask.OnCompleteListener completeListener) {\n+        setImage(new WebImage(url), completeListener);\n+    }\n+\n+    public void setImageUrl(String url, final Integer fallbackResource) {\n+        setImage(new WebImage(url), fallbackResource);\n+    }\n+\n+    public void setImageUrl(String url, final Integer fallbackResource, SmartImageTask.OnCompleteListener completeListener) {\n+        setImage(new WebImage(url), fallbackResource, completeListener);\n+    }\n+\n+    public void setImageUrl(String url, final Integer fallbackResource, final Integer loadingResource) {\n+        setImage(new WebImage(url), fallbackResource, loadingResource);\n+    }\n+\n+    public void setImageUrl(String url, final Integer fallbackResource, final Integer loadingResource, SmartImageTask.OnCompleteListener completeListener) {\n+        setImage(new WebImage(url), fallbackResource, loadingResource, completeListener);\n+    }\n+\n+\n+    // Helpers to set image by contact address book id\n+    public void setImageContact(long contactId) {\n+        setImage(new ContactImage(contactId));\n+    }\n+\n+    public void setImageContact(long contactId, final Integer fallbackResource) {\n+        setImage(new ContactImage(contactId), fallbackResource);\n+    }\n+\n+    public void setImageContact(long contactId, final Integer fallbackResource, final Integer loadingResource) {\n+        setImage(new ContactImage(contactId), fallbackResource, fallbackResource);\n+    }\n+\n+\n+    // Set image using SmartImage object\n+    public void setImage(final SmartImage image) {\n+        setImage(image, null, null, null);\n+    }\n+\n+    public void setImage(final SmartImage image, final SmartImageTask.OnCompleteListener completeListener) {\n+        setImage(image, null, null, completeListener);\n+    }\n+\n+    public void setImage(final SmartImage image, final Integer fallbackResource) {\n+        setImage(image, fallbackResource, fallbackResource, null);\n+    }\n+\n+    public void setImage(final SmartImage image, final Integer fallbackResource, SmartImageTask.OnCompleteListener completeListener) {\n+        setImage(image, fallbackResource, fallbackResource, completeListener);\n+    }\n+\n+    public void setImage(final SmartImage image, final Integer fallbackResource, final Integer loadingResource) {\n+        setImage(image, fallbackResource, loadingResource, null);\n+    }\n+\n+    public void setImage(final SmartImage image, final Integer fallbackResource, final Integer loadingResource, final SmartImageTask.OnCompleteListener completeListener) {\n+        // Set a loading resource\n+        if(loadingResource != null){\n+            setImageResource(loadingResource);\n+        }\n+\n+        // Cancel any existing tasks for this image view\n+        if(currentTask != null) {\n+            currentTask.cancel();\n+            currentTask = null;\n+        }\n+\n+        // Set up the new task\n+        currentTask = new SmartImageTask(getContext(), image);\n+        currentTask.setOnCompleteHandler(new SmartImageTask.OnCompleteHandler() {\n+            @Override\n+            public void onComplete(Bitmap bitmap) {\n+                if(bitmap != null) {\n+                    setImageBitmap(bitmap);\n+                } else {\n+                    // Set fallback resource\n+                    if(fallbackResource != null) {\n+                        setImageResource(fallbackResource);\n+                    }\n+                }\n+\n+                if(completeListener != null){\n+                    completeListener.onComplete(bitmap);\n+                }\n+            }\n+        });\n+\n+        // Run the task in a threadpool\n+        threadPool.execute(currentTask);\n+    }\n+\n+    public static void cancelAllTasks() {\n+        threadPool.shutdownNow();\n+        threadPool = Executors.newFixedThreadPool(LOADING_THREADS);\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "8712bd9ce248ed8fb3e823fcd0325840939529f6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png?ref=fcb2ac960c5109dcffc10b8fe3c44a75c96b133b"
+  }, {
+    "sha" : "a6734e47692cc4582f21c1e8c18e3e3f19ca6398",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png?ref=fcb2ac960c5109dcffc10b8fe3c44a75c96b133b"
+  }, {
+    "sha" : "854090c7201ebae03619f55e1ccc8ff270558c4b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/messages.xml",
+    "status" : "added",
+    "additions" : 88,
+    "deletions" : 0,
+    "changes" : 88,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/messages.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/messages.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/messages.xml?ref=fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+    "patch" : "@@ -0,0 +1,88 @@\n+<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n+<messageslist>\n+    <message>\n+        <ToUserName>TomUncle</ToUserName>\n+        <CreateTime>16/05/04</CreateTime>\n+        <Content>Great minds have purpose, others have wishes.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</imageUrl>\n+    </message>\n+\n+    <message>\n+        <ToUserName>JohnBrother</ToUserName>\n+        <CreateTime>16/05/05</CreateTime>\n+        <Content>Being single is better than being in an unfaithful relationship.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</imageUrl>\n+    </message>\n+    \n+    <message>\n+        <ToUserName>TimSister</ToUserName>\n+        <CreateTime>16/05/06</CreateTime>\n+        <Content>If you find a path with no obstacles, it probably doesn’t lead anywhere.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</imageUrl>\n+    </message>\n+\n+    <message>\n+        <ToUserName>LaurenAnut</ToUserName>\n+        <CreateTime>16/05/07</CreateTime>\n+        <Content>Getting out of bed in winter is one of life’s hardest mission.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</imageUrl>\n+    </message>\n+\n+    <message>\n+        <ToUserName>TomUncle</ToUserName>\n+        <CreateTime>16/05/04</CreateTime>\n+        <Content>Great minds have purpose, others have wishes.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</imageUrl>\n+    </message>\n+\n+    <message>\n+        <ToUserName>JohnBrother</ToUserName>\n+        <CreateTime>16/05/05</CreateTime>\n+        <Content>Being single is better than being in an unfaithful relationship.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</imageUrl>\n+    </message>\n+    \n+    <message>\n+        <ToUserName>TimSister</ToUserName>\n+        <CreateTime>16/05/06</CreateTime>\n+        <Content>If you find a path with no obstacles, it probably doesn’t lead anywhere.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</imageUrl>\n+    </message>\n+\n+    <message>\n+        <ToUserName>LaurenAnut</ToUserName>\n+        <CreateTime>16/05/07</CreateTime>\n+        <Content>Getting out of bed in winter is one of life’s hardest mission.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</imageUrl>\n+    </message>\n+\n+    <message>\n+        <ToUserName>TomUncle</ToUserName>\n+        <CreateTime>16/05/04</CreateTime>\n+        <Content>Great minds have purpose, others have wishes.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</imageUrl>\n+    </message>\n+\n+    <message>\n+        <ToUserName>JohnBrother</ToUserName>\n+        <CreateTime>16/05/05</CreateTime>\n+        <Content>Being single is better than being in an unfaithful relationship.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</imageUrl>\n+    </message>\n+    \n+    <message>\n+        <ToUserName>TimSister</ToUserName>\n+        <CreateTime>16/05/06</CreateTime>\n+        <Content>If you find a path with no obstacles, it probably doesn’t lead anywhere.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</imageUrl>\n+    </message>\n+\n+    <message>\n+        <ToUserName>LaurenAnut</ToUserName>\n+        <CreateTime>16/05/07</CreateTime>\n+        <Content>Getting out of bed in winter is one of life’s hardest mission.</Content>\n+        <imageUrl>https://raw.githubusercontent.com/Pyanz/android-labs/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</imageUrl>\n+    </message>\n+    \n+</messageslist> \n+"
+  }, {
+    "sha" : "c8e3b77abed85de5fdd6bbf6cfa814c246bed483",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/activity_main.xml",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/activity_main.xml?ref=fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+    "patch" : "@@ -0,0 +1,16 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    tools:context=\"com.example.messagebrower.MainActivity\" >\n+\n+    \n+    <ListView\n+        android:id=\"@+id/lv\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\" \n+        />\n+    \n+    \n+\n+</RelativeLayout>"
+  }, {
+    "sha" : "9870867c5f1080294caa10ed42d1e9608d52ad95",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/item_listview.xml",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/item_listview.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/item_listview.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/item_listview.xml?ref=fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+    "patch" : "@@ -0,0 +1,54 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"wrap_content\"\n+    android:background=\"#ffffff\" >\n+    \n+\n+    <com.loopj.android.image.SmartImageView\n+        android:id=\"@+id/siv\"\n+        android:layout_width=\"64dp\"\n+        android:layout_height=\"64dp\"\n+        android:layout_centerVertical=\"true\"\n+        android:layout_margin=\"4dp\"\n+        android:src=\"@drawable/ic_launcher\"\n+        />\n+    \n+    <TextView \n+        android:id=\"@+id/username\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:textColor=\"#000000\"\n+        android:textSize=\"18dp\"\n+        android:text=\"TomUncle\"\n+        android:layout_margin=\"2dp\"\n+        android:layout_toRightOf=\"@+id/siv\"\n+        android:layout_toStartOf=\"@+id/siv\"\n+        />\n+    \n+    <TextView\n+        android:id=\"@+id/createtime\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_alignParentEnd=\"true\"\n+        android:layout_alignParentRight=\"true\"\n+        android:text=\"16/5/31\"\n+        android:layout_margin=\"2dp\"\n+        android:textColor=\"#888888\"\n+        android:textSize=\"14dp\" \n+        android:layout_toStartOf=\"@+id/username\"\n+        />\n+\n+    <TextView\n+        android:id=\"@+id/content\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_toRightOf=\"@+id/siv\"\n+        android:layout_below=\"@+id/username\"\n+        android:layout_margin=\"2dp\"\n+        android:lines=\"2\"\n+        android:text=\"contentcontentcontentcontentcontentcontentcontent\"\n+        android:textColor=\"#9f9fa0\"\n+        android:textSize=\"16dp\" />\n+    \n+</RelativeLayout>"
+  }, {
+    "sha" : "9b8b9c05ff00da88b0e4b74f659d7b203ce7dbf4",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_detail.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 92,
+    "changes" : 92,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_detail.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_detail.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_detail.xml?ref=5a45da4f48d03b3d662082df3f5bd7fb431c6bb3",
+    "patch" : "@@ -1,92 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:gravity=\"center_horizontal\"\n-    android:orientation=\"horizontal\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\">\n-\n-    <RelativeLayout\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:background=\"#fff\"\n-        android:orientation=\"horizontal\"\n-        android:padding=\"4dp\">\n-        <!--用户头像-->\n-        <ImageView\n-            android:id=\"@+id/itemAvatar\"\n-            android:layout_width=\"64dp\"\n-            android:layout_height=\"64dp\"\n-            android:layout_margin=\"4dp\"\n-            android:src=\"@drawable/avatar\" />\n-\n-        <!--用户昵称-->\n-        <TextView\n-            android:id=\"@+id/itemName\"\n-            android:layout_width=\"wrap_content\"\n-            android:layout_height=\"wrap_content\"\n-            android:layout_toRightOf=\"@id/itemAvatar\"\n-            android:padding=\"4dp\"\n-            android:text=\"@string/itemName\"\n-            android:textColor=\"@color/colorTitle\"\n-            android:textSize=\"22dp\"></TextView>\n-\n-        <!--发表时间-->\n-        <TextView\n-            android:id=\"@+id/itemTime\"\n-            android:layout_width=\"wrap_content\"\n-            android:layout_height=\"wrap_content\"\n-            android:layout_alignParentEnd=\"true\"\n-            android:padding=\"8dp\"\n-            android:text=\"@string/itemTime\"\n-            android:textColor=\"@color/colorTime\"\n-            android:textSize=\"19dp\" />\n-\n-        <!--用户留言-->\n-        <TextView\n-            android:id=\"@+id/itemMessage\"\n-            android:layout_width=\"fill_parent\"\n-            android:layout_height=\"wrap_content\"\n-            android:layout_below=\"@+id/itemName\"\n-            android:layout_toRightOf=\"@id/itemAvatar\"\n-            android:padding=\"4dp\"\n-            android:text=\"@string/itemMessage\"\n-            android:textColor=\"@color/colorText\"\n-            android:textSize=\"20dp\"></TextView>\n-\n-        <EditText\n-            android:id=\"@+id/replyMessage\"\n-            android:layout_width=\"match_parent\"\n-            android:layout_height=\"wrap_content\"\n-            android:layout_below=\"@+id/itemAvatar\"\n-            android:layout_margin=\"4dp\"\n-            android:layout_marginTop=\"12dp\"\n-            android:background=\"@drawable/reply_edittext\"\n-            android:gravity=\"top|left\"\n-            android:hint=\"@string/replyMessage\"\n-            android:lines=\"3\"\n-            android:padding=\"4dp\"\n-            android:textColor=\"@color/colorText\"\n-            android:textSize=\"20dp\" />\n-\n-        <Button\n-            android:id=\"@+id/replybtn\"\n-            android:layout_width=\"wrap_content\"\n-            android:layout_height=\"wrap_content\"\n-            android:layout_alignParentEnd=\"true\"\n-            android:layout_below=\"@+id/replyMessage\"\n-            android:layout_centerHorizontal=\"true\"\n-            android:layout_marginBottom=\"18dp\"\n-            android:layout_marginTop=\"8dp\"\n-            android:background=\"@drawable/login_btn\"\n-            android:text=\"@string/replybtn\"\n-            android:textColor=\"@color/button_Login\"\n-            android:textSize=\"22dp\" />\n-\n-    </RelativeLayout>\n-\n-\n-</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "a6cb9c429e5448908809b2dadca15c2ff59b920f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_item.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 55,
+    "changes" : 55,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_item.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_item.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_item.xml?ref=5a45da4f48d03b3d662082df3f5bd7fb431c6bb3",
+    "patch" : "@@ -1,55 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\"\n-    android:gravity=\"center_horizontal\"\n-    android:orientation=\"horizontal\"\n-    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n-    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n-    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\">\n-\n-    <!--用户头像-->\n-    <ImageView\n-        android:id=\"@+id/itemAvatar\"\n-        android:layout_width=\"64dp\"\n-        android:layout_height=\"64dp\"\n-        android:layout_margin=\"4dp\"\n-        android:src=\"@drawable/avatar\" />\n-\n-    <!--用户昵称-->\n-    <TextView\n-        android:id=\"@+id/itemName\"\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\"\n-        android:layout_toRightOf=\"@id/itemAvatar\"\n-        android:padding=\"4dp\"\n-        android:text=\"@string/itemName\"\n-        android:textColor=\"@color/colorTitle\"\n-        android:textSize=\"22dp\"></TextView>\n-\n-    <!--发表时间-->\n-    <TextView\n-        android:id=\"@+id/itemTime\"\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\"\n-        android:layout_alignParentEnd=\"true\"\n-        android:padding=\"8dp\"\n-        android:text=\"@string/itemTime\"\n-        android:textColor=\"@color/colorTime\"\n-        android:textSize=\"19dp\" />\n-\n-    <!--用户留言-->\n-    <TextView\n-        android:id=\"@+id/itemMessage\"\n-        android:layout_width=\"fill_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:layout_below=\"@+id/itemName\"\n-        android:layout_toRightOf=\"@id/itemAvatar\"\n-        android:lines=\"1\"\n-        android:padding=\"4dp\"\n-        android:text=\"@string/itemMessage\"\n-        android:textColor=\"@color/colorText\"\n-        android:textSize=\"20dp\"></TextView>\n-\n-</RelativeLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "a26a41b2d8f69b7f5cf0eade38c9363e36e6b017",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_list.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 12,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_list.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_list.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/layout/message_list.xml?ref=5a45da4f48d03b3d662082df3f5bd7fb431c6bb3",
+    "patch" : "@@ -1,12 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\">\n-\n-\n-    <ListView\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\"\n-        android:id=\"@+id/message_list\"\n-        />\n-</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "df408e9ed17b0ba1540e71cf7b0b9c8351d4a63d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/view/实现获取xml文本消息界面.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/view/%E5%AE%9E%E7%8E%B0%E8%8E%B7%E5%8F%96xml%E6%96%87%E6%9C%AC%E6%B6%88%E6%81%AF%E7%95%8C%E9%9D%A2.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/view/%E5%AE%9E%E7%8E%B0%E8%8E%B7%E5%8F%96xml%E6%96%87%E6%9C%AC%E6%B6%88%E6%81%AF%E7%95%8C%E9%9D%A2.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/view/%E5%AE%9E%E7%8E%B0%E8%8E%B7%E5%8F%96xml%E6%96%87%E6%9C%AC%E6%B6%88%E6%81%AF%E7%95%8C%E9%9D%A2.png?ref=fcb2ac960c5109dcffc10b8fe3c44a75c96b133b"
+  } ],
+  "sha" : "fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fcb2ac960c5109dcffc10b8fe3c44a75c96b133b",
+  "parents" : [ {
+    "sha" : "5a45da4f48d03b3d662082df3f5bd7fb431c6bb3",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5a45da4f48d03b3d662082df3f5bd7fb431c6bb3"
+  }, {
+    "sha" : "30bdd3716bd7bdefb25f24a24b8488b8054d2362",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/30bdd3716bd7bdefb25f24a24b8488b8054d2362",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/30bdd3716bd7bdefb25f24a24b8488b8054d2362"
+  } ]
+}

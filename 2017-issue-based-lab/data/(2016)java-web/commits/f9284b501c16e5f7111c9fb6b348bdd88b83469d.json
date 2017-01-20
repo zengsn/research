@@ -1,0 +1,195 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 382,
+    "additions" : 382,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+  "commit" : {
+    "author" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-11-07T04:59:15Z"
+    },
+    "committer" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-11-07T04:59:15Z"
+    },
+    "message" : "#4 #86 提交实验代码",
+    "tree" : {
+      "sha" : "737aad4ba94dd0f67c2070b551ac79afc1b88f81",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/737aad4ba94dd0f67c2070b551ac79afc1b88f81"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/f9284b501c16e5f7111c9fb6b348bdd88b83469d/comments",
+  "files" : [ {
+    "sha" : "efbae91e56f53ebfe817f4a5fb0ebcec040d5d23",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902114/Users.java",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Users.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Users.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Users.java?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "patch" : "@@ -0,0 +1,26 @@\n+package se1414080902114;\n+\n+public class Users {\n+\tprivate String Type;\n+\tprivate String Username;\n+\tprivate String Password;\n+\tpublic String getType() {\n+\t\treturn Type;\n+\t}\n+\tpublic void setType(String type) {\n+\t\tType = type;\n+\t}\n+\tpublic String getUsername() {\n+\t\treturn Username;\n+\t}\n+\tpublic void setUsername(String username) {\n+\t\tUsername = username;\n+\t}\n+\tpublic String getPassword() {\n+\t\treturn Password;\n+\t}\n+\tpublic void setPassword(String password) {\n+\t\tPassword = password;\n+\t}\n+\t\n+}"
+  }, {
+    "sha" : "8e0719489ea53f6effbd9902e7b89f6e5cb6dc7f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902114/login.java",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/src/edu/hzu/javaweb/labs/se1414080902114/login.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/src/edu/hzu/javaweb/labs/se1414080902114/login.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902114/login.java?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "patch" : "@@ -0,0 +1,61 @@\n+package se1414080902114;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;//使用注释时候必需导入的注释包\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import se1414080902114.Users;\n+\n+@WebServlet(\"/1414080902114\")\n+public class login extends HttpServlet {\n+\n+\n+\tpublic login() {\n+\t\tsuper();\n+\t}\n+\n+\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t}\n+\n+\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tUsers user=new Users();\n+\t\tString type=request.getParameter(\"Type\");\n+\t\tString username=request.getParameter(\"Username\");\n+\t\tString password=request.getParameter(\"Password\");\n+\t\tuser.setType(type);\n+\t\tuser.setUsername(username);\n+\t\tuser.setPassword(password);\n+\t\tif(user.getType() != null&&user.getUsername()!=null&&user.getPassword()!=null){\n+\t\t\tRequestDispatcher dispatcher=request.getRequestDispatcher(\"/login/main.jsp\");\n+\t\t\tdispatcher.forward(request,response);\n+\t\t}\n+\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "25fef9efe70f8951ce82a2997936bd9d3789c6da",
+    "filename" : "jweb/web/1414080902114/Images/LoginBg.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/LoginBg.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/LoginBg.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/Images/LoginBg.jpg?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d"
+  }, {
+    "sha" : "5be8a5382d02ee4bbffc85bea211a89666d7f87e",
+    "filename" : "jweb/web/1414080902114/Images/MenuBg.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/MenuBg.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/MenuBg.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/Images/MenuBg.jpg?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d"
+  }, {
+    "sha" : "f8cd63892c0487ee3013f99cc030ae15ca5d142d",
+    "filename" : "jweb/web/1414080902114/Images/bootBg.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/bootBg.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/bootBg.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/Images/bootBg.jpg?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d"
+  }, {
+    "sha" : "2ff16e93ea36de79f71c2ead48281a99c9978b29",
+    "filename" : "jweb/web/1414080902114/Images/ic.gif",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/ic.gif",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/ic.gif",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/Images/ic.gif?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d"
+  }, {
+    "sha" : "3833523961be65fabc4db49f06aca2ce1c134d14",
+    "filename" : "jweb/web/1414080902114/Images/left1.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/left1.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/left1.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/Images/left1.jpg?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d"
+  }, {
+    "sha" : "d11fe803a2b4f5c1cd988fac68fdb75a61faf3d0",
+    "filename" : "jweb/web/1414080902114/Images/left2.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/left2.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/left2.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/Images/left2.jpg?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d"
+  }, {
+    "sha" : "6e0e02839f555c97d2d092e6df1482732cb5bab3",
+    "filename" : "jweb/web/1414080902114/Images/leftbg.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/leftbg.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/leftbg.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/Images/leftbg.jpg?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d"
+  }, {
+    "sha" : "652f888a01cebac8433acf460e92d5f980b321bc",
+    "filename" : "jweb/web/1414080902114/Images/mainMenuBg.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/mainMenuBg.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Images/mainMenuBg.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/Images/mainMenuBg.jpg?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d"
+  }, {
+    "sha" : "13ab60ebd3ef03be3f6efc30517bdcf7d4b6a0cb",
+    "filename" : "jweb/web/1414080902114/Style/Style.css",
+    "status" : "added",
+    "additions" : 36,
+    "deletions" : 0,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Style/Style.css",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/Style/Style.css",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/Style/Style.css?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "patch" : "@@ -0,0 +1,36 @@\n+body {\n+\tmargin-top: 0px;\n+}\n+body,td,th {\n+\tfont-family: 宋体;\n+\tfont-size: 12px;\n+}\n+form {\n+\tmargin:0px 0px 0px 0px;\n+\tpadding:0px 0px 0px 0px;\n+}\n+.STYLE2 {\n+\tcolor:#333;\n+}\n+.box1 {\n+\twidth:250px;\n+\theight:20px;\n+}\n+/*.box2 {\n+\twidth:250px;\n+\theight:90px;\n+}*/\n+.box2 {\n+\twidth:500px;\n+\theight:300px;\n+}\n+.noshow{ display:none;}\n+A:link{   COLOR:#333;   TEXT-DECORATION:   none;   }   \n+A:visited{   COLOR: #333;   TEXT-DECORATION:   none;    }   \n+A:active{   COLOR: #333;   TEXT-DECORATION:   none;  }   \n+A:hover{   COLOR:#FF3300;   TEXT-DECORATION:   none; }   \n+\n+A.left1:link{   COLOR:#2160c1; font-weight:bolder;  TEXT-DECORATION:   none;   }   \n+A.left1:visited{   COLOR:   #2160c1; font-weight:bolder; TEXT-DECORATION:   none;    }   \n+A.left1:active{   COLOR:   #2160c1;  font-weight:bolder; TEXT-DECORATION:   none;  }   \n+A.left1:hover{   COLOR:#FF3300;  font-weight:bolder; TEXT-DECORATION:   none; }   \n\\ No newline at end of file"
+  }, {
+    "sha" : "1ce7ef0f3126a85ce9c882249ea51d74a16617f6",
+    "filename" : "jweb/web/1414080902114/index.jsp",
+    "status" : "added",
+    "additions" : 6,
+    "deletions" : 0,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/index.jsp?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "patch" : "@@ -0,0 +1,6 @@\n+<%@ page language=\"java\" import=\"java.util.*\" contentType=\"text/html; charset=utf-8\"%>\n+<%\n+  String path = request.getContextPath();\n+  String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+  response.sendRedirect(path+\"/login/login.jsp\");\n+%>"
+  }, {
+    "sha" : "5d2e32325905d0541f5f2488b8f8a50dc8cc878e",
+    "filename" : "jweb/web/1414080902114/login/login.jsp",
+    "status" : "added",
+    "additions" : 97,
+    "deletions" : 0,
+    "changes" : 97,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/login/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/login/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/login/login.jsp?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "patch" : "@@ -0,0 +1,97 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+<%@ taglib prefix=\"s\" uri=\"/struts-tags\"%>\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+<head>\n+  <base href=\"<%=basePath%>\"> \n+  <title>校园宿舍管理系统</title>\n+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n+  <link href=\"Style/Style.css\" rel=\"stylesheet\" type=\"text/css\" />\n+</head>\n+<script language=\"JavaScript\">\n+\n+function mycheck(){\n+   if(isNull(form1.Type.value)){  \n+   alert(\"请选择身份！\"); \n+   return false;\n+   }\n+   if(isNull(form1.Username.value)){  \n+   alert(\"请输入用户名！\"); \n+   return false;\n+   }\n+   if(isNull(form1.Password.value)){\n+   alert(\"请输入密码！\");\n+   return false;\n+   }\n+      \n+}\n+\n+function isNull(str){\n+if ( str == \"\" ) return true;\n+var regu = \"^[ ]+$\";\n+var re = new RegExp(regu);\n+return re.test(str);\n+}\n+   \n+   \n+</script>\n+<body>\n+<center>\n+  <br><br><br><br><br>\n+  <table width=\"684\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n+    <tr>\n+      <td height=\"292\" align=\"center\" valign=\"top\" background=\"Images/LoginBg.jpg\">\n+      <table width=\"350\" height=\"201\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n+        <tr>\n+          <td height=\"72\" align=\"center\"><h3>校园宿舍管理系统</h3></td>\n+        </tr>\n+        <tr>\n+          <td align=\"center\" valign=\"top\">\n+             <form name=\"form1\" action=\"/jweb/1414080902114\" method=\"post\" onSubmit=\"return mycheck()\">\n+              <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n+                <tr>\n+                  <td height=\"30\" colspan=\"2\" align=\"center\" class=\"STYLE2\"><span style=\"color:red;\">\n+                    <%if(request.getAttribute(\"Msg\")!=null){%>\n+                    <%=request.getAttribute(\"Msg\")%>\n+                    <%}%>\n+                  </span></td>\n+                  </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"right\" class=\"STYLE2\">身份：</td>\n+                  <td align=\"left\"><select name=\"Type\" id=\"Type\">\n+                    <option value=\"\">请选择</option>\n+                    <option value=\"系统管理员\">系统管理员</option>\n+                    <option value=\"楼宇管理员\">楼宇管理员</option>\n+                    <option value=\"学生\">学生</option>\n+                  </select></td>\n+                  </tr>\n+                <tr>\n+                  <td width=\"37%\" height=\"30\" align=\"right\" class=\"STYLE2\">用户名：</td>\n+                  <td width=\"300\" align=\"left\"><input type=\"text\" name=\"Username\" id=\"Username\" class=\"text1\" /></td>\n+                  </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"right\" class=\"STYLE2\">密码：</td>\n+                  <td align=\"left\"><input type=\"password\" name=\"Password\" id=\"Password\" class=\"text1\" /></td>\n+                  </tr>\n+                <tr>\n+                  <td height=\"30\" colspan=\"2\" align=\"center\"><label>\n+                    <input type=\"submit\" name=\"button\" id=\"button\" value=\"登录\">\n+                  </label></td>\n+                  </tr>\n+              </table>\n+              </form>\n+          \n+          </td>\n+        </tr>\n+      </table></td>\n+    </tr>\n+  </table>\n+\n+\n+</center>\n+</body>\n+</html>"
+  }, {
+    "sha" : "b949ab35a99ad00e9ebba7e8361f086cb3ecfb84",
+    "filename" : "jweb/web/1414080902114/login/login_error.jsp",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/login/login_error.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/login/login_error.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/login/login_error.jsp?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "patch" : "@@ -0,0 +1,28 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'login_error.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+   重新登录！<br>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "7cc6b37e8ddd88059f8e551f6b8f3122bf94f8b3",
+    "filename" : "jweb/web/1414080902114/login/main.jsp",
+    "status" : "added",
+    "additions" : 128,
+    "deletions" : 0,
+    "changes" : 128,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/login/main.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9284b501c16e5f7111c9fb6b348bdd88b83469d/jweb/web/1414080902114/login/main.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902114/login/main.jsp?ref=f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "patch" : "@@ -0,0 +1,128 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>欢迎使用校园社团管理系统</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+  </head> \n+  <body>\n+   <center>\n+  <table width=\"900\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n+    <tr>\n+      <td height=\"60\" bgcolor=\"#E6F5FF\" style=\"color:#06F; font-size:19px; font-weight:bolder; padding-left:50px;\">校园社团管理系统</td>\n+    </tr>\n+    <tr>\n+      <td height=\"30\" background=\"Images/MenuBg.jpg\">&nbsp;</td>\n+    </tr>\n+    <tr>\n+      <td height=\"500\" align=\"center\" valign=\"top\"><table width=\"900\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n+        <tr>\n+          <td width=\"191\" height=\"500\" align=\"center\" valign=\"top\" background=\"Images/leftbg.jpg\">\n+          <link href=\"Style/Style.css\" rel=\"stylesheet\" type=\"text/css\" />\n+<table width=\"155\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n+            <tr>\n+              <td height=\"31\" align=\"center\" background=\"Images/left1.jpg\"><strong>系统选项</strong></td>\n+            </tr>\n+            <tr>\n+              <td height=\"50\" align=\"center\" valign=\"top\"><table width=\"150\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"##\">后台首页</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+               \n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"\">管理员管理</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"\">部门管理</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"\">部员管理</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"\">宿舍管理</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"\">活动管理</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"#\">值班管理</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"\">部门历史资料记载</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"\">部门公众号管理</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                \n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"\">修改密码</a></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"5\" align=\"center\"><img src=\"Images/ic.gif\" width=\"1\" height=\"1\"></td>\n+                </tr>\n+                <tr>\n+                  <td height=\"30\" align=\"center\" background=\"Images/left2.jpg\" style=\"text-align:left; padding-left:40px;\"><a href=\"#\" onclick=\"return confirm('确定要退出系统吗？')\">退出系统</a></td>\n+                </tr>\n+              </table>\n+              </td>\n+            </tr>\n+          </table>\n+          </td>\n+          <td width=\"709\" align=\"center\" valign=\"middle\" bgcolor=\"#F6F9FE\"><h1>欢迎使用校园社团管理系统</h1></td>\n+        </tr>\n+      </table></td>\n+    </tr>\n+    <tr>\n+      <td height=\"35\" background=\"Images/bootBg.jpg\">&nbsp;</td>\n+    </tr>\n+  </table>\n+\n+</center>\n+\n+  </body>\n+</html>"
+  } ],
+  "sha" : "f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+  "parents" : [ {
+    "sha" : "9decaf0f045df63f21cee033cf9c553c7c0db2b7",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9decaf0f045df63f21cee033cf9c553c7c0db2b7",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/9decaf0f045df63f21cee033cf9c553c7c0db2b7"
+  } ]
+}

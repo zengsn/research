@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "lohowei",
+    "id" : 18433597,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18433597?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/lohowei",
+    "html_url" : "https://github.com/lohowei",
+    "followers_url" : "https://api.github.com/users/lohowei/followers",
+    "following_url" : "https://api.github.com/users/lohowei/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/lohowei/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/lohowei/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/lohowei/subscriptions",
+    "organizations_url" : "https://api.github.com/users/lohowei/orgs",
+    "repos_url" : "https://api.github.com/users/lohowei/repos",
+    "events_url" : "https://api.github.com/users/lohowei/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/lohowei/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 352,
+    "additions" : 352,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "lohowei",
+    "id" : 18433597,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18433597?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/lohowei",
+    "html_url" : "https://github.com/lohowei",
+    "followers_url" : "https://api.github.com/users/lohowei/followers",
+    "following_url" : "https://api.github.com/users/lohowei/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/lohowei/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/lohowei/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/lohowei/subscriptions",
+    "organizations_url" : "https://api.github.com/users/lohowei/orgs",
+    "repos_url" : "https://api.github.com/users/lohowei/repos",
+    "events_url" : "https://api.github.com/users/lohowei/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/lohowei/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/4b81e638644e91be4de3460f62a8b9cc5de66902",
+  "commit" : {
+    "author" : {
+      "name" : "lohowei",
+      "email" : "792963005@qq.com",
+      "date" : "2016-06-13T18:28:47Z"
+    },
+    "committer" : {
+      "name" : "lohowei",
+      "email" : "792963005@qq.com",
+      "date" : "2016-06-13T18:28:47Z"
+    },
+    "message" : "#90 #94 #95 #148",
+    "tree" : {
+      "sha" : "31430a479c731803feecf06c5339683c2abcdf3e",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/31430a479c731803feecf06c5339683c2abcdf3e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/4b81e638644e91be4de3460f62a8b9cc5de66902",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4b81e638644e91be4de3460f62a8b9cc5de66902/comments",
+  "files" : [ {
+    "sha" : "4c2f8c4502206859bd8d6b14eacfaded3abaeed5",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/Net1314080903235NewGuess.java",
+    "status" : "added",
+    "additions" : 183,
+    "deletions" : 0,
+    "changes" : 183,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4b81e638644e91be4de3460f62a8b9cc5de66902/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/Net1314080903235NewGuess.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4b81e638644e91be4de3460f62a8b9cc5de66902/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/Net1314080903235NewGuess.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/Net1314080903235NewGuess.java?ref=4b81e638644e91be4de3460f62a8b9cc5de66902",
+    "patch" : "@@ -0,0 +1,183 @@\n+package edu.hzuapps.androidworks.homeworks;\n+\n+import java.util.ArrayList;\n+import java.util.HashSet;\n+import java.util.List;\n+import java.util.Random;\n+import java.util.Set;\n+\n+public class Net1314080903235NewGuess implements Net1314080903235NumberGuess  {\n+\tprivate int[] newNumber=new int[4];\n+\tprivate int guessTime;\n+\tprivate int guessedTime;\n+\tprivate int guessTimeLeft;\n+\tprivate List results;\n+\n+\t\n+\t\n+\t/* ���� Javadoc��\n+\t * @see com.xsmile.guessNumber.NumberGuess#getGuessTimeLeft()\n+\t */\n+\tpublic int getGuessTimeLeft(){\n+\t\tguessTimeLeft=guessTime-guessedTime;\n+\t\treturn guessTimeLeft;\n+\t}\n+\t\n+\tpublic Net1314080903235NewGuess(){\n+\t\tguessTime=12;\n+\t\tguessedTime=0;\n+\t\tthis.NewNumber();\n+\t\tresults=new ArrayList();\n+\t\t\n+\t}\n+\t\n+\tpublic Net1314080903235NewGuess(int i){\n+\t\tguessTime=i;\n+\t\tguessedTime=0;\n+\t\tthis.NewNumber();\n+\t\tresults=new ArrayList();\n+\t}\n+\t\n+\t\n+\t/* ���� Javadoc��\n+\t * @see com.xsmile.guessNumber.NumberGuess#getNewNumber()\n+\t */\n+\tpublic String getNewNumber() {\n+\t\tString newNum=Integer.toString(newNumber[0])+\n+\t\t\t\t\t\tInteger.toString(newNumber[1])+\n+\t\t\t\t\t\tInteger.toString(newNumber[2])+\n+\t\t\t\t\t\tInteger.toString(newNumber[3]);\n+\t\treturn newNum;\n+\t}\n+\t\n+\t\n+\t/* ���� Javadoc��\n+\t * @see com.xsmile.guessNumber.NumberGuess#getGuessTime()\n+\t */\n+\tpublic int getGuessTime() {\n+\t\treturn guessTime;\n+\t}\n+\t\n+\t\n+\t/* ���� Javadoc��\n+\t * @see com.xsmile.guessNumber.NumberGuess#getGuessedTime()\n+\t */\n+\tpublic int getGuessedTime() {\n+\t\treturn guessedTime;\n+\t}\n+\t\n+\t/*\n+\tpublic String getResults() {\n+\t\tIterator it=results.iterator();\n+\t\tString Sresults=\"\";\n+\t\twhile(it.hasNext()){\n+\t\t\tSresults += it.next()+\"\\n\";\n+\t\t}\n+\t\t\n+\t\treturn Sresults;\n+\t}\n+    */\n+\t\n+\t\n+\t/* ���� Javadoc��\n+\t * @see com.xsmile.guessNumber.NumberGuess#getResults()\n+\t */\n+\tpublic List getResults(){\n+\t\treturn results;\n+\t}\n+\t\n+\tprivate void NewNumber(){\n+\t\tSet tempNum=new HashSet();\n+\t\tint i;\n+\t\tfor(i=1;i<5;i++){\t\t\t\n+\t\t\tRandom rd=new Random();\n+\t\t\tint temp=rd.nextInt(10);\n+\t\t\ttempNum.add(Integer.toString(temp));\n+\t\t\tif(tempNum.size()==i){\t\t\t\n+\t\t\tnewNumber[i-1]=temp;\n+\t\t\tcontinue;\n+\t\t\t}\n+\t\t\ti--;\n+\t\t}\n+\t}\n+\t\n+\tprivate int[] SNumToNumber(String number){\n+\t\tint[] numbers=new int[4];\n+\t\tfor(int i=0;i<4;i++){\n+\t\t\tString temp=number.substring(i, i+1);\n+\t\t\tnumbers[i]=Integer.parseInt(temp);\n+\t\t}\n+\t\treturn numbers;\n+\t}\n+\t\n+\t/* ���� Javadoc��\n+\t * @see com.xsmile.guessNumber.NumberGuess#NumberCompare(java.lang.String)\n+\t */\n+\tpublic int NumberCompare(String number){\t\n+\t\tif(checkNumber(number)){\n+\t\t\treturn 1;\n+\t\t}else{\n+\t\t\tguessedTime++;\n+\t\t}\n+\t\tif(checkTime()){\n+\t\t\treturn 2;\n+\t\t}else{\n+\t\t\treturn 0;\n+\t\t}\n+\t\t\t\t\n+\t\t\n+\t\t\n+\t}\n+\t\n+\t\n+\t/* ���� Javadoc��\n+\t * @see com.xsmile.guessNumber.NumberGuess#isNumberValid(java.lang.String)\n+\t */\n+\tpublic boolean isNumberValid(String number){\n+\t\tSet temp=new HashSet();\n+\t\tint[] gNumber=SNumToNumber(number);\n+\t\tfor(int i=0;i<4;i++){\n+\t\ttemp.add(Integer.toString(gNumber[i]));\n+\t\t}\n+\t\twhile(temp.size()==4){\n+\t\treturn true;\n+\t\t}\n+\t\treturn false;\n+\t\t\t\n+\t}\n+\t\n+\tprivate boolean checkTime(){\n+\t\tif(guessedTime>guessTime-1){\n+\t\t\treturn false;\n+\t\t}\n+\t\treturn true;\n+\t}\n+\t\n+\tprivate boolean checkNumber(String number){\n+\t\tint A=0,B=0;\n+\t\t\n+\t\tint[] guessNumber=SNumToNumber(number);\n+\t\tfor(int i=0;i<4;i++){\n+\t\t\tif(guessNumber[i]==newNumber[i]){\n+\t\t\t\tA++;\n+\t\t\t\tcontinue;\n+\t\t\t}\n+\t\t\t\tfor(int j=0;j<4;j++){\n+\t\t\t\t\tif(guessNumber[i]==newNumber[j]){\n+\t\t\t\t\t\tB++;\n+\t\t\t\t\t\tbreak;\n+\t\t\t\t\t}\n+\t\t\t\t}\n+\t\t\t\n+\t\t}\n+\t\tString res=\"\";\n+\t\tres=number + \"------\"+Integer.toString(A)+\"A\"+Integer.toString(B)+\"B\";\n+\t\tresults.add(res);\n+\t\tif(A==4){\n+\t\t\treturn true;\n+\t\t}\n+\t\telse{\n+\t\t\treturn false;\n+\t\t}\n+\t}\n+}"
+  }, {
+    "sha" : "30d3f52a472a04da42eaca5a8eb1b4ee0a626e84",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/Net1314080903235NumberGuess.java",
+    "status" : "added",
+    "additions" : 32,
+    "deletions" : 0,
+    "changes" : 32,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4b81e638644e91be4de3460f62a8b9cc5de66902/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/Net1314080903235NumberGuess.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4b81e638644e91be4de3460f62a8b9cc5de66902/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/Net1314080903235NumberGuess.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/Net1314080903235NumberGuess.java?ref=4b81e638644e91be4de3460f62a8b9cc5de66902",
+    "patch" : "@@ -0,0 +1,32 @@\n+package edu.hzuapps.androidworks.homeworks;\n+\n+import java.util.List;\n+\n+\n+\n+public interface Net1314080903235NumberGuess {\n+\n+\tpublic abstract int getGuessTimeLeft();//����ʣ��²����\n+\t\n+\tpublic abstract String getNewNumber();//���ش������\n+\t\n+\tpublic abstract int getGuessTime();//���ؿɲ²��ܴ���\n+\t\n+\tpublic abstract int getGuessedTime();//�����Ѳ²����\n+\n+\tpublic abstract List getResults();//���ز²���\n+\t\n+\t\n+\t/**\n+\t * \n+\t * @param number\n+\t * @return 0��1��2�����ֵ��\n+\t *          0��ʾ��Ϸ����\n+\t *          1��ʾ�²�ɹ���\n+\t *          2��ʾ���β²�ʧ�ܣ��ɼ���²�\n+\t */\n+\tpublic abstract int NumberCompare(String number);\n+\n+\tpublic abstract boolean isNumberValid(String number);//�ж����������Ƿ�Ϸ��������ظ���\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "8a9403dc1562c0e37edff0b878598ba9a836935d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/net1314080903235login.xml",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4b81e638644e91be4de3460f62a8b9cc5de66902/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/net1314080903235login.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4b81e638644e91be4de3460f62a8b9cc5de66902/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/net1314080903235login.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/net1314080903235login.xml?ref=4b81e638644e91be4de3460f62a8b9cc5de66902",
+    "patch" : "@@ -0,0 +1,54 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"fill_parent\"\n+    android:orientation=\"vertical\">\n+    <LinearLayout\tandroid:orientation=\"horizontal\"\n+    \t\t\t\tandroid:layout_width=\"fill_parent\"\n+    \t\t\t\tandroid:layout_height=\"wrap_content\">\n+    <TextView\n+    \t\tandroid:layout_width=\"wrap_content\"\n+    \t\tandroid:layout_height=\"wrap_content\"\n+            android:text=\"@string/level\"\n+             />\n+    <RadioGroup\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:orientation=\"horizontal\"\n+        android:checkedButton=\"@+id/normal\"\n+        android:id=\"@+id/level\">\n+        <RadioButton\n+            android:text=\"@string/level1\"\n+            android:id=\"@+id/hard\"\n+            />\n+        <RadioButton\n+            android:text=\"@string/level2\"\n+            android:id=\"@+id/normal\" />\n+        <RadioButton\n+            android:text=\"@string/level3\"\n+            android:id=\"@+id/easy\" />\n+    </RadioGroup>\n+    </LinearLayout>\n+    <LinearLayout\tandroid:orientation=\"horizontal\"\n+    \t\t\t\tandroid:layout_width=\"fill_parent\"\n+    \t\t\t\tandroid:layout_height=\"wrap_content\">\n+    <TextView\n+  \t\t\tandroid:layout_width=\"wrap_content\"\n+    \t\tandroid:layout_height=\"wrap_content\"\n+            android:text=\"@string/name\"\n+             />\n+    <EditText  android:id=\"@+id/name\" \n+\t\t\t\tandroid:layout_width=\"fill_parent\" \n+    \t\t\tandroid:layout_height=\"fill_parent\"\n+    \t\t\tandroid:text=\"John Doe\"\n+    \t\t\tandroid:maxLength=\"8\"\n+    />\n+    </LinearLayout>\n+    \n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"@string/play\"\n+        android:id=\"@+id/login\" />\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "cfb24719fa8fef75d472fa9cfd48db44c8b2ea04",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/net1314080903235main.xml",
+    "status" : "added",
+    "additions" : 83,
+    "deletions" : 0,
+    "changes" : 83,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4b81e638644e91be4de3460f62a8b9cc5de66902/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/net1314080903235main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4b81e638644e91be4de3460f62a8b9cc5de66902/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/net1314080903235main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903235/net1314080903235main.xml?ref=4b81e638644e91be4de3460f62a8b9cc5de66902",
+    "patch" : "@@ -0,0 +1,83 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+ <ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"wrap_content\"\n+    >\n+<LinearLayout \n+    android:orientation=\"vertical\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"fill_parent\"\n+    >\n+    <LinearLayout android:id=\"@+id/label1\"\n+    android:orientation=\"horizontal\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"wrap_content\"\n+    >\n+\t<TextView  \n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\" \n+    android:text=\"@string/welcome\"\n+    />\n+    <TextView android:id=\"@+id/name\"  \n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\" \n+    />\n+    <TextView  \n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\" \n+    android:text=\"@string/have\"\n+    />\n+    <TextView android:id=\"@+id/left\"\n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\" \n+    />\n+    <TextView  \n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\" \n+    android:text=\"@string/chance\"\n+    />\n+    </LinearLayout>\n+    \n+\t<LinearLayout android:id=\"@+id/label2\"\n+    android:orientation=\"horizontal\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"wrap_content\"\n+    >\n+\t<TextView android:id=\"@+id/give\"\n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\"\n+    android:text=\"@string/number\"\n+    />\n+    <EditText android:id=\"@+id/number\"\n+    android:layout_width=\"100px\" \n+    android:layout_height=\"fill_parent\"\n+    android:maxLength=\"4\"\n+    android:digits=\"0123456789\">\n+    <requestFocus />\n+    </EditText>\n+    <Button android:id=\"@+id/guess\"\n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\"\n+    android:text=\"@string/guess\"\n+    />\n+\t</LinearLayout>\n+\t\n+\t<TextView  \n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\"\n+    android:text=\"@string/results\"\n+    />\n+    \n+    <TextView android:id=\"@+id/results\"\n+    android:layout_width=\"120px\" \n+    android:layout_height=\"wrap_content\"\n+    />\n+\n+     \n+    <TextView android:id=\"@+id/end\"\n+    android:layout_width=\"wrap_content\" \n+    android:layout_height=\"wrap_content\"\n+    />\n+   \n+</LinearLayout>\n+ </ScrollView>"
+  } ],
+  "sha" : "4b81e638644e91be4de3460f62a8b9cc5de66902",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4b81e638644e91be4de3460f62a8b9cc5de66902",
+  "parents" : [ {
+    "sha" : "3f1d68191c92b372dc62c1bc1a2a5a694b2e2534",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3f1d68191c92b372dc62c1bc1a2a5a694b2e2534",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/3f1d68191c92b372dc62c1bc1a2a5a694b2e2534"
+  } ]
+}

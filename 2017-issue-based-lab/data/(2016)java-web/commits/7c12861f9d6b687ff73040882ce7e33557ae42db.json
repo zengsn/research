@@ -1,0 +1,60 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 133,
+    "additions" : 93,
+    "deletions" : 40
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/7c12861f9d6b687ff73040882ce7e33557ae42db",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "张洋豪",
+      "date" : "2016-11-20T11:50:12Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "张洋豪",
+      "date" : "2016-11-20T11:50:12Z"
+    },
+    "message" : "#6 提交实验报告",
+    "tree" : {
+      "sha" : "b83f7c012478b9ea089f841f672f2646cba67966",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/b83f7c012478b9ea089f841f672f2646cba67966"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/7c12861f9d6b687ff73040882ce7e33557ae42db",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/7c12861f9d6b687ff73040882ce7e33557ae42db/comments",
+  "files" : [ {
+    "sha" : "45ab79c2202117013e5a84ea5a8821ec581597e5",
+    "filename" : "jweb/web/1414080902209/index.html",
+    "status" : "added",
+    "additions" : 42,
+    "deletions" : 0,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7c12861f9d6b687ff73040882ce7e33557ae42db/jweb/web/1414080902209/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7c12861f9d6b687ff73040882ce7e33557ae42db/jweb/web/1414080902209/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902209/index.html?ref=7c12861f9d6b687ff73040882ce7e33557ae42db",
+    "patch" : "@@ -0,0 +1,42 @@\n+<!DOCTYPE html>\n+ <html lang=\"zh-cn\">\n+   <head>\n+     <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n+     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+   <title>Hello World</title>\n+     <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n+   </head>\n+   <body>\n+     <div class=\"container\">\n+         <h2 class=\"text-center\" style=\"margin-top: 100px\">Sign in to New world</h2>\n+          \n+         <div class=\"row\"  style=\"width:350px; margin:auto;height:150px;\">\n+         <form action=\"index.jsp\" method=\"post\" role=\"form\" id=\"login\">\n+         \n+         <div class=\"form-group\">\n+          <div class=\"has-feedback\" >\n+            <label for=\"exampleInputEmail1\">Email address</label>\n+            <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\"  name=\"username\" placeholder=\"Please enter your Account\">\n+            <span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span> \n+          </div>\n+         </div>\n+\n+         <div class=\"form-group\">\n+          <div class=\"has-feedback\" >\n+            <label for=\"exampleInputPassword1\">Password</label>\n+            <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Please enter your Password\">\n+            <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span> \n+          </div>\n+         </div>\n+         <center>\n+\t      <button type=\"submit\" class=\"btn btn-success\">Sign in</button>\n+\t\t</center>\n+        </form>\n+        </div>\n+     </div>\n+     <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+     <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script> \n+     <script src=\"index.js\"></script>\n+\n+   </body>\n+ </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "0b3771c33c61ef9c1cbec003c8dc4b42c6cc23aa",
+    "filename" : "jweb/web/1414080902209/index.jsp",
+    "status" : "modified",
+    "additions" : 51,
+    "deletions" : 40,
+    "changes" : 91,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7c12861f9d6b687ff73040882ce7e33557ae42db/jweb/web/1414080902209/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7c12861f9d6b687ff73040882ce7e33557ae42db/jweb/web/1414080902209/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902209/index.jsp?ref=7c12861f9d6b687ff73040882ce7e33557ae42db",
+    "patch" : "@@ -1,69 +1,80 @@\n-<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\"\n-    pageEncoding=\"utf-8\"%>\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+ <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>   \n+ <%@ taglib uri=\"http://java.sun.com/jsp/jstl/fmt\" prefix=\"fmt\"%>  \n+ <%@ taglib uri=\"http://java.sun.com/jsp/jstl/functions\" prefix=\"fn\" %>  \n+  \n  <%\n  String path = request.getContextPath();\n  String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n  %>\n+\n <!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n <html lang=\"zh-cn\">\n <head>\n- <base href=\"<%=basePath%>\">\n  <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+ <meta http-equiv=\"pragma\" content=\"no-cache\">\n+ <meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+ \t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+ \t<meta http-equiv=\"description\" content=\"This is my page\">\n+ \n+ \n     <title>社团面试管理系统</title>\n     <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n+<style>\n+h2{\n+margin-left:100px;\n+}\n+button{\n+margin:15px;\n+}\n+span{\n+ \t  float:right;\n+ \t  margin-right: 20px;\n+  \t font-size: 30px;\t  \n+ \t}\n+</style>\n </head>\n+\n <body>\n \n-<div class=\"container\">\n+<div class=\"container\" >\n \n-           <h2 class=\"text-center\" style=\"margin-top: 100px\">Welcome to Interview Management System</h2>\n+           <h1 class=\"text-center\" style=\"margin-top: 100px\">Welcome to Interview Management System</h2>\n             <p class=\"text-center\" >Now Time：<%= new java.util.Date() %></p>\n-           <div class=\"row\"  style=\"width:350px; margin:auto;height:150px;\">\n-           <form role=\"form\" id=\"login\">\n-           \n-           <div class=\"form-group\">\n-            <div class=\"has-feedback\" >\n-              <label for=\"exampleInputEmail1\">Email address</label>\n-              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Please enter your Account\">\n-              <span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span> \n-            </div>\n-           </div>\n+\t\t\t <%\n+ \t \tCalendar rightNow = Calendar.getInstance();\n+ \t \tInteger Hour=new Integer(rightNow.get(Calendar.HOUR_OF_DAY));\n+ \t \trequest.setAttribute(\"hour\", Hour);\n+  \t %>\n+  \t <c:choose>\n+  \t\t <c:when test=\"${ hour >= 0 && hour <= 11}\"><span>Good morning, <c:out value=\"${param.username}\" default=\"user\"/>!</span></c:when>\n+  \t\t <c:when test=\"${ hour >= 12 && hour <= 17}\"><span>Good afernoon, <c:out value=\"${param.username}\" default=\"user\"/>!</span></c:when>\n+  \t\t <c:otherwise><span>Good night, <c:out value=\"${param.username}\" default=\"user\"/>!</span></c:otherwise>\n+  \t </c:choose>\n+ \t<hr width=\"100%\" size=\"2\">\n+ \t \n \n-           <div class=\"form-group\">\n-            <div class=\"has-feedback\" >\n-              <label for=\"exampleInputPassword1\">Password</label>\n-              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Please enter your Password\">\n-              <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span> \n-            </div>\n-           </div>\n+\t\t\t\n+\t\t\t\n+\t\t\t<% out.println(\"<h2>Now you can:</h2></br>\");  %>\n            <center>\n-  \t      <button type=\"submit\" class=\"btn btn-success\">Sign in</button>\n+           <c:forEach var=\"item\" items=\"View the information of departments,Fill in the personal information\" begin=\"0\" step=\"1\">\n+ \t \t<button type=\"submit\" class=\"btn btn-success\"><c:out value=\"${item}\"/></button>\n+ \t </c:forEach>\n+  \t     \n   \t      \t\n   \t\t</center>\n           </form>\n           </div>\n        </div>\n        \n+       \n        <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n        <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script> \n-       <script>\n-      $( \"#login\" ).submit(function() {\n-         $.ajax({ \n-          dataType: \"html\", \n-          url: \"1414080902209\", \n-          type: \"post\",\n-           success: function(data){\n-             alert(data);\n-         },\n-          error: function (XMLHttpRequest, textStatus, errorThrown) { \n-           alert(\"error\"); \n-                                        } \n-\n-     });\n-       });\n-      </script>\n-      \n+       \n+      <script src=\"index.js\"></script>\n \n </body>\n </html>"
+  } ],
+  "sha" : "7c12861f9d6b687ff73040882ce7e33557ae42db",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7c12861f9d6b687ff73040882ce7e33557ae42db",
+  "parents" : [ {
+    "sha" : "107ea76b423ffa46bdeff5766a74cd14ec708873",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/107ea76b423ffa46bdeff5766a74cd14ec708873",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/107ea76b423ffa46bdeff5766a74cd14ec708873"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "nihaomahenhaoba",
+    "id" : 22512347,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512347?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/nihaomahenhaoba",
+    "html_url" : "https://github.com/nihaomahenhaoba",
+    "followers_url" : "https://api.github.com/users/nihaomahenhaoba/followers",
+    "following_url" : "https://api.github.com/users/nihaomahenhaoba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/nihaomahenhaoba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/nihaomahenhaoba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/nihaomahenhaoba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/nihaomahenhaoba/orgs",
+    "repos_url" : "https://api.github.com/users/nihaomahenhaoba/repos",
+    "events_url" : "https://api.github.com/users/nihaomahenhaoba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/nihaomahenhaoba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 11,
+    "additions" : 10,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "nihaomahenhaoba",
+    "id" : 22512347,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512347?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/nihaomahenhaoba",
+    "html_url" : "https://github.com/nihaomahenhaoba",
+    "followers_url" : "https://api.github.com/users/nihaomahenhaoba/followers",
+    "following_url" : "https://api.github.com/users/nihaomahenhaoba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/nihaomahenhaoba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/nihaomahenhaoba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/nihaomahenhaoba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/nihaomahenhaoba/orgs",
+    "repos_url" : "https://api.github.com/users/nihaomahenhaoba/repos",
+    "events_url" : "https://api.github.com/users/nihaomahenhaoba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/nihaomahenhaoba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/a49566de50a2b6431db0f832d293127781e273b7",
+  "commit" : {
+    "author" : {
+      "name" : "nihaomahenhaoba",
+      "email" : "1819434204@qq.com",
+      "date" : "2016-12-01T02:47:07Z"
+    },
+    "committer" : {
+      "name" : "nihaomahenhaoba",
+      "email" : "1819434204@qq.com",
+      "date" : "2016-12-01T02:47:07Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "aef1a04fd11f7b843fd4000a39c367b3c682f92d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/aef1a04fd11f7b843fd4000a39c367b3c682f92d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/a49566de50a2b6431db0f832d293127781e273b7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/a49566de50a2b6431db0f832d293127781e273b7/comments",
+  "files" : [ {
+    "sha" : "e5b1e2437639dd343c6f8b244ff0e81402bc478f",
+    "filename" : "jweb/web/1414080902216/index.jsp",
+    "status" : "modified",
+    "additions" : 10,
+    "deletions" : 1,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a49566de50a2b6431db0f832d293127781e273b7/jweb/web/1414080902216/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a49566de50a2b6431db0f832d293127781e273b7/jweb/web/1414080902216/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902216/index.jsp?ref=a49566de50a2b6431db0f832d293127781e273b7",
+    "patch" : "@@ -3,7 +3,8 @@\n String path = request.getContextPath();\n String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n %>\n-\n+<%@ taglib prefix=\"c\" \n+           uri=\"http://java.sun.com/jsp/jstl/core\" %>\n <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n <html>\n \t<head>\n@@ -33,12 +34,20 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t\t</style>\n \t</head>\n \t<body>\n+<%\n+request.setAttribute(\"plan\",\"12.01罗浮山班游\");\n+%>\n \t\t<div class=\"all\">\n \t\t\t<h2 align=\"center\">聚会添加系统</h2>\n \t\t\t<img src=\"juhui.jpg\" alt=\"\" width=\"100%\"><br/><br/>\n \t\t\t<div class=\"row\">\n \t\t\t<div class=\"col-xs-6 text\"><button class=\"btn-info\"><a href=\"1414080902216\">添加聚会记录</a></button></div>\n \t\t\t<div class=\"col-xs-6 text\"><button class=\"btn-info\"><a href=\"\">查看聚会记录</a></button></div>\n+\t\t\t<ul>\n+\t\t\t<c:if test=\"${!empty plan}\">\n+\t\t\t\t<li><c:out value=\"${plan}\"/></li>\n+\t\t\t</c:if>\n+\t\t\t</ul>\n \t\t\t</div>\n \t\t</div>\n \t</body>"
+  } ],
+  "sha" : "a49566de50a2b6431db0f832d293127781e273b7",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a49566de50a2b6431db0f832d293127781e273b7",
+  "parents" : [ {
+    "sha" : "974a5b53c51986c47e2995e1544893c12a5ab088",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/974a5b53c51986c47e2995e1544893c12a5ab088",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/974a5b53c51986c47e2995e1544893c12a5ab088"
+  } ]
+}

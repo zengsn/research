@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Ysunshine",
+    "id" : 22511991,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511991?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Ysunshine",
+    "html_url" : "https://github.com/Ysunshine",
+    "followers_url" : "https://api.github.com/users/Ysunshine/followers",
+    "following_url" : "https://api.github.com/users/Ysunshine/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Ysunshine/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Ysunshine/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Ysunshine/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Ysunshine/orgs",
+    "repos_url" : "https://api.github.com/users/Ysunshine/repos",
+    "events_url" : "https://api.github.com/users/Ysunshine/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Ysunshine/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 51,
+    "additions" : 49,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "Ysunshine",
+    "id" : 22511991,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511991?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Ysunshine",
+    "html_url" : "https://github.com/Ysunshine",
+    "followers_url" : "https://api.github.com/users/Ysunshine/followers",
+    "following_url" : "https://api.github.com/users/Ysunshine/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Ysunshine/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Ysunshine/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Ysunshine/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Ysunshine/orgs",
+    "repos_url" : "https://api.github.com/users/Ysunshine/repos",
+    "events_url" : "https://api.github.com/users/Ysunshine/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Ysunshine/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/63a8b1254cacb847a56ec5eaf54fb433b442f28a",
+  "commit" : {
+    "author" : {
+      "name" : "Ysunshine",
+      "email" : "1083688285@qq.com",
+      "date" : "2016-11-20T07:33:16Z"
+    },
+    "committer" : {
+      "name" : "Ysunshine",
+      "email" : "1083688285@qq.com",
+      "date" : "2016-11-20T07:33:16Z"
+    },
+    "message" : "#7 提交实验代码",
+    "tree" : {
+      "sha" : "32d1e16d4033c4eac26d6d6375788b14bdd1719d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/32d1e16d4033c4eac26d6d6375788b14bdd1719d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/63a8b1254cacb847a56ec5eaf54fb433b442f28a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/63a8b1254cacb847a56ec5eaf54fb433b442f28a/comments",
+  "files" : [ {
+    "sha" : "60dda4f43bf342123603f43ea223513c163444d0",
+    "filename" : "jweb/web/1414080902233/found.jsp",
+    "status" : "added",
+    "additions" : 47,
+    "deletions" : 0,
+    "changes" : 47,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/63a8b1254cacb847a56ec5eaf54fb433b442f28a/jweb/web/1414080902233/found.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/63a8b1254cacb847a56ec5eaf54fb433b442f28a/jweb/web/1414080902233/found.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902233/found.jsp?ref=63a8b1254cacb847a56ec5eaf54fb433b442f28a",
+    "patch" : "@@ -0,0 +1,47 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ page import=\"java.io.*,java.util.*,java.sql.*\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+<html>\n+\t<head>\n+\t\t<title>附近路线</title>\n+\t</head>\n+\t<body>\n+\t\t<%\n+\t\t\tString driveName = \"com.mysql.jdbc.Drive\";\n+\t\t\tString userName = \"root\";\n+\t\t\tString userPwd = \"qq1083688285\";\n+\t\t\tString dbName = \"routequery\";\n+\t\t\tString url1 = \"jdbc:mysql://localhost:3306/routequery\";\n+\t\t\tString url2 = \"?user=root&password=qq1083688285\";\n+\t\t\tString url3 = \"&useUnicode=true&characterEncoding=UTF-8\";\n+\t\t\tString url = url1+url2+url3;\n+\t\t\tClass.forName(\"com.mysql.jdbc.Driver\");\n+\t\t\tConnection conn = DriverManager.getConnection(url);\n+\t\t\tString sql = \"select *from route\";\n+\t\t\tPreparedStatement pstmt = conn.prepareStatement(sql);\n+\t\t\tResultSet rs = pstmt.executeQuery();\n+\t\t\trs.last();\n+\t\t %>\n+\t\t <p size=\"5\" color=\"red\" align=\"center\">您附近的线路有<%=rs.getRow() %>条</p>\n+\t\t <table border=\"2\" bgcolor=\"ccceee\" width=\"650\" align=\"center\">\n+\t\t \t<tr bgcolor=\"CCCCCC\" align=\"center\">\n+\t\t \t\t<td>线路</td><td>距离站数</td><td>到达时间</td>\n+\t\t \t</tr>\n+\t\t \t<%rs.beforeFirst();\n+\t\t \t\twhile(rs.next()){\n+\t\t \t %><tr align=\"center\">\n+\t\t \t <td><%=rs.getString(\"rid\") %></td>\n+\t\t \t <td><%=rs.getString(\"rdistance\") %></td>\n+\t\t \t <td><%=rs.getString(\"rtime\") %></td>\n+\t\t \t </tr>\n+\t\t \t <%} %>\n+\t\t </table>\n+\t\t <%if(rs!=null){rs.close();} \n+\t\t \tif(pstmt!=null){pstmt.close();}\n+\t\t \tif(conn!=null){conn.close();}\n+\t\t %>\n+\t</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "650086ed8298ac202dc0e9f2086d337ed1f0ebec",
+    "filename" : "jweb/web/1414080902233/index.jsp",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/63a8b1254cacb847a56ec5eaf54fb433b442f28a/jweb/web/1414080902233/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/63a8b1254cacb847a56ec5eaf54fb433b442f28a/jweb/web/1414080902233/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902233/index.jsp?ref=63a8b1254cacb847a56ec5eaf54fb433b442f28a",
+    "patch" : "@@ -182,6 +182,6 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n         </div>\n       </div>\n     \t<!-- 设置中间两个功能 -->\n-    \t<div class=\"func1\"><a href=\"1414080902233\">路线查询</a></div>\n-      <div class=\"func2\"><a href=\"\">路线规划</a></div>\n+    \t<div class=\"func1\"><a href=\"found.jsp\">路线查询</a></div>\n+      <div class=\"func2\"><a href=\"1414080902233\">路线规划</a></div>\n     </div>\n\\ No newline at end of file"
+  } ],
+  "sha" : "63a8b1254cacb847a56ec5eaf54fb433b442f28a",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/63a8b1254cacb847a56ec5eaf54fb433b442f28a",
+  "parents" : [ {
+    "sha" : "030b22c722aa362e128e9168187614dc121b5dc0",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/030b22c722aa362e128e9168187614dc121b5dc0",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/030b22c722aa362e128e9168187614dc121b5dc0"
+  } ]
+}

@@ -1,0 +1,106 @@
+{
+  "committer" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 8,
+    "additions" : 4,
+    "deletions" : 4
+  },
+  "author" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/b526ba05a64043582e3f4c49dd546af2da561d95",
+  "commit" : {
+    "author" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2016-04-27T08:21:55Z"
+    },
+    "committer" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2016-04-27T08:21:55Z"
+    },
+    "message" : "#90 #50 实验4\n\n实验4代码与实验3相同，提交游戏界面的截图",
+    "tree" : {
+      "sha" : "6bceb3323cfa5a94eb86b0c0038defe806def1c1",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/6bceb3323cfa5a94eb86b0c0038defe806def1c1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/b526ba05a64043582e3f4c49dd546af2da561d95",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/b526ba05a64043582e3f4c49dd546af2da561d95/comments",
+  "files" : [ {
+    "sha" : "fb197aee310f68480b3f0f7443ad77c1b890fb02",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/com1314080901110Activity.java",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 3,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/b526ba05a64043582e3f4c49dd546af2da561d95/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/com1314080901110Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/b526ba05a64043582e3f4c49dd546af2da561d95/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/com1314080901110Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/com1314080901110Activity.java?ref=b526ba05a64043582e3f4c49dd546af2da561d95",
+    "patch" : "@@ -12,14 +12,14 @@\n import android.widget.EditText;\n import android.widget.Toast;\n \n-public class com1314080901110Activity extends AppCompatActivity {\n+public class Com1314080901110Activity extends AppCompatActivity {\n     private Button toPlay;\n     private Button setDifficulty;\n     public String level=\"10\";\n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_com131408090110);\n+        super.onCreate(savedInstanceState)\n+        setContentView(R.layout.activity_Com131408090110);\n //        布置ToPlayGame按钮监听事件\n         toPlay=(Button)findViewById(R.id.toPlay);\n         toPlay.setOnClickListener(new View.OnClickListener() {"
+  }, {
+    "sha" : "a175a760a37b4f38cbc6ab75991ca5c9d86656cb",
+    "filename" : "app/src/main/res/drawable/扫雷游戏界面截图.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/b526ba05a64043582e3f4c49dd546af2da561d95/app/src/main/res/drawable/%E6%89%AB%E9%9B%B7%E6%B8%B8%E6%88%8F%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/b526ba05a64043582e3f4c49dd546af2da561d95/app/src/main/res/drawable/%E6%89%AB%E9%9B%B7%E6%B8%B8%E6%88%8F%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/%E6%89%AB%E9%9B%B7%E6%B8%B8%E6%88%8F%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE.png?ref=b526ba05a64043582e3f4c49dd546af2da561d95"
+  }, {
+    "sha" : "9f151a00ef64b6358001275528f5cc66df64f530",
+    "filename" : "app/src/main/res/layout/activity_com13140809011110.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/b526ba05a64043582e3f4c49dd546af2da561d95/app/src/main/res/layout/activity_com13140809011110.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/b526ba05a64043582e3f4c49dd546af2da561d95/app/src/main/res/layout/activity_com13140809011110.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com13140809011110.xml?ref=b526ba05a64043582e3f4c49dd546af2da561d95",
+    "patch" : "@@ -3,7 +3,7 @@\n     android:layout_width=\"match_parent\"\n     android:layout_height=\"match_parent\"\n     android:background=\"#f0f0f0\"\n-    tools:context=\".con131408090110Activity\">\n+    tools:context=\".Com131408090110Activity\">\n     <ImageButton\n         android:id=\"@+id/image\"\n         android:layout_marginTop=\"30dp\""
+  } ],
+  "sha" : "b526ba05a64043582e3f4c49dd546af2da561d95",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/b526ba05a64043582e3f4c49dd546af2da561d95",
+  "parents" : [ {
+    "sha" : "bb565957ee07f389c2e32378c5c67f875295c234",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/bb565957ee07f389c2e32378c5c67f875295c234",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/bb565957ee07f389c2e32378c5c67f875295c234"
+  } ]
+}

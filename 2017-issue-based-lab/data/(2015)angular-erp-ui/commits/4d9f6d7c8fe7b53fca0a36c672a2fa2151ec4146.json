@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "jayhoo95",
+    "id" : 14249130,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14249130?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jayhoo95",
+    "html_url" : "https://github.com/jayhoo95",
+    "followers_url" : "https://api.github.com/users/jayhoo95/followers",
+    "following_url" : "https://api.github.com/users/jayhoo95/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jayhoo95/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jayhoo95/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jayhoo95/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jayhoo95/orgs",
+    "repos_url" : "https://api.github.com/users/jayhoo95/repos",
+    "events_url" : "https://api.github.com/users/jayhoo95/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jayhoo95/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 47,
+    "additions" : 0,
+    "deletions" : 47
+  },
+  "author" : {
+    "login" : "jayhoo95",
+    "id" : 14249130,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14249130?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jayhoo95",
+    "html_url" : "https://github.com/jayhoo95",
+    "followers_url" : "https://api.github.com/users/jayhoo95/followers",
+    "following_url" : "https://api.github.com/users/jayhoo95/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jayhoo95/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jayhoo95/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jayhoo95/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jayhoo95/orgs",
+    "repos_url" : "https://api.github.com/users/jayhoo95/repos",
+    "events_url" : "https://api.github.com/users/jayhoo95/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jayhoo95/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/4d9f6d7c8fe7b53fca0a36c672a2fa2151ec4146",
+  "commit" : {
+    "author" : {
+      "name" : "jayhoo95",
+      "email" : "1063200319@qq.com",
+      "date" : "2015-10-06T11:49:07Z"
+    },
+    "committer" : {
+      "name" : "jayhoo95",
+      "email" : "1063200319@qq.com",
+      "date" : "2015-10-06T11:49:07Z"
+    },
+    "message" : "Revert \"Revert \"Revert \"上传第3章例子\"\"\"\n\nThis reverts commit 6a2d40019776c491acb8ffbd36ad73eec69486a6.",
+    "tree" : {
+      "sha" : "ca7c349ac7f8ce5cd757df71c155d84652dce554",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/ca7c349ac7f8ce5cd757df71c155d84652dce554"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/4d9f6d7c8fe7b53fca0a36c672a2fa2151ec4146",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/4d9f6d7c8fe7b53fca0a36c672a2fa2151ec4146/comments",
+  "files" : [ {
+    "sha" : "71474791646d4924d629babd41b8c2d8a3e962a1",
+    "filename" : "angularjs/3.3-ng-mvc.html",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 22,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/6a2d40019776c491acb8ffbd36ad73eec69486a6/angularjs/3.3-ng-mvc.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/6a2d40019776c491acb8ffbd36ad73eec69486a6/angularjs/3.3-ng-mvc.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/3.3-ng-mvc.html?ref=6a2d40019776c491acb8ffbd36ad73eec69486a6",
+    "patch" : "@@ -1,22 +0,0 @@\n-<!DOCTYPE html>\n-<html ng-app=\"app\">\n-<head>\n-  <title>Listing 3-3</title>\n-  <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n-  <script>\n-    function MyFirstCtrl($scope) {\n-      var employees = [\n-      \t'Catherine Grant', 'Monica Grant', \n-      \t'Christopher Grant', 'Jennifer Grant'\n-      ];\n-      $scope.ourEmployees = employees;\n-    }\n-    var app=angular.module(\"app\",[]);\n-    app.controller('MyFirstCtrl', MyFirstCtrl);\n-  </script>\n-</head>\n-<body ng-controller='MyFirstCtrl'>\n-  <h2>Number of Employees: {{ ourEmployees.length}}</h2>\n-</body>\n-</html>\n-"
+  }, {
+    "sha" : "2f0c191c6c1874489d519585bee81e7d3bffd8e5",
+    "filename" : "angularjs/3.4-display-data.html",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 22,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/6a2d40019776c491acb8ffbd36ad73eec69486a6/angularjs/3.4-display-data.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/6a2d40019776c491acb8ffbd36ad73eec69486a6/angularjs/3.4-display-data.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/3.4-display-data.html?ref=6a2d40019776c491acb8ffbd36ad73eec69486a6",
+    "patch" : "@@ -1,22 +0,0 @@\n-<!DOCTYPE html>\n-<html ng-app=\"app\">\n-<head>\n-  <title>Listing 3-4</title>\n-  <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n-  <script>\n-    var app=angular.module(\"app\",[]);\n-    app.controller('MyFirstCtrl', function($scope) {\n-      var employees = [\n-        'Catherine Grant', 'Monica Grant',\n-        'Christopher Grant', 'Jennifer Grant'\n-      ];\n-      $scope.ourEmployees = employees;\n-    });\n-  </script>\n-</head>\n-<body ng-controller='MyFirstCtrl'>\n-  <h2>Number of Employees: {{ ourEmployees.length}}</h2>\n-  <p ng-repeat=\"employee in ourEmployees\">{{employee}}</p>\n-</body>\n-</html>\n-"
+  }, {
+    "sha" : "d6da7fddd98dc873e14b78f420de65d0aef00bfa",
+    "filename" : "angularjs/index.html",
+    "status" : "modified",
+    "additions" : 0,
+    "deletions" : 3,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/4d9f6d7c8fe7b53fca0a36c672a2fa2151ec4146/angularjs/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/4d9f6d7c8fe7b53fca0a36c672a2fa2151ec4146/angularjs/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/index.html?ref=4d9f6d7c8fe7b53fca0a36c672a2fa2151ec4146",
+    "patch" : "@@ -17,9 +17,6 @@\n \t\t<p>2.4 <a href=\"2.4-ng-show.html\">ng-show</a></p>\n \t\t<p>2.5 <a href=\"2.5-ng-click.html\">ng-click</a></p>\n \t\t<p>2.6 <a href=\"2.6-expressions.html\">表达式</a></p>\n-\t\t<hr />\n-\t\t<p>3.3 <a href=\"3.3-ng-mvc.html\">AngularJS MVC</a></p>\n-\t\t<p>3.4 <a href=\"3.4-display-data.html\">显示数据</a></p>\n \n \t\t<hr />\n \t</body>"
+  } ],
+  "sha" : "4d9f6d7c8fe7b53fca0a36c672a2fa2151ec4146",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/4d9f6d7c8fe7b53fca0a36c672a2fa2151ec4146",
+  "parents" : [ {
+    "sha" : "6a2d40019776c491acb8ffbd36ad73eec69486a6",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/6a2d40019776c491acb8ffbd36ad73eec69486a6",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/6a2d40019776c491acb8ffbd36ad73eec69486a6"
+  } ]
+}

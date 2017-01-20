@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "oldslave",
+    "id" : 22068456,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068456?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/oldslave",
+    "html_url" : "https://github.com/oldslave",
+    "followers_url" : "https://api.github.com/users/oldslave/followers",
+    "following_url" : "https://api.github.com/users/oldslave/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/oldslave/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/oldslave/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/oldslave/subscriptions",
+    "organizations_url" : "https://api.github.com/users/oldslave/orgs",
+    "repos_url" : "https://api.github.com/users/oldslave/repos",
+    "events_url" : "https://api.github.com/users/oldslave/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/oldslave/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 87,
+    "additions" : 73,
+    "deletions" : 14
+  },
+  "author" : {
+    "login" : "oldslave",
+    "id" : 22068456,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068456?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/oldslave",
+    "html_url" : "https://github.com/oldslave",
+    "followers_url" : "https://api.github.com/users/oldslave/followers",
+    "following_url" : "https://api.github.com/users/oldslave/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/oldslave/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/oldslave/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/oldslave/subscriptions",
+    "organizations_url" : "https://api.github.com/users/oldslave/orgs",
+    "repos_url" : "https://api.github.com/users/oldslave/repos",
+    "events_url" : "https://api.github.com/users/oldslave/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/oldslave/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/b6bec3c4b8340750f90e157c4746e3513ede4993",
+  "commit" : {
+    "author" : {
+      "name" : "oldslave",
+      "email" : "465981474@qq.com",
+      "date" : "2016-11-15T12:47:18Z"
+    },
+    "committer" : {
+      "name" : "oldslave",
+      "email" : "465981474@qq.com",
+      "date" : "2016-11-15T12:47:18Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "d5f7b54bfbba1c0180a64fc02e539f326dba48b5",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d5f7b54bfbba1c0180a64fc02e539f326dba48b5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/b6bec3c4b8340750f90e157c4746e3513ede4993",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/b6bec3c4b8340750f90e157c4746e3513ede4993/comments",
+  "files" : [ {
+    "sha" : "c254cce08fb40ac9698f5a55d90de3301adbb899",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902238/Client.java",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b6bec3c4b8340750f90e157c4746e3513ede4993/jweb/src/edu/hzu/javaweb/labs/se1414080902238/Client.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b6bec3c4b8340750f90e157c4746e3513ede4993/jweb/src/edu/hzu/javaweb/labs/se1414080902238/Client.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902238/Client.java?ref=b6bec3c4b8340750f90e157c4746e3513ede4993",
+    "patch" : "@@ -0,0 +1,25 @@\n+package edu.hzu.javaweb.labs.se1414080902238;\n+\n+public class Client {\n+\tprivate String name;\n+\tprivate String phone;\n+\tprivate String car;\n+\tprivate boolean hadPaid;\n+\t\n+\tpublic Client(){}\n+\tpublic Client(String na,String ph,String ca,boolean hp){\n+\t\tname=na;\n+\t\tphone=ph;\n+\t\tcar=ca;\n+\t\thadPaid=hp;\n+\t}\n+\t\n+\tpublic String getName(){return name; }\n+\tpublic void setName(String na){name=na;}\n+\tpublic String getPhone(){return phone;}\n+\tpublic void setPhone(String ph){phone=ph;}\n+\tpublic String getCar(){return car;}\n+\tpublic void setCar(String ca){car=ca;}\n+\tpublic boolean getHadPaid(){return hadPaid;}\n+\tpublic void setHadPaid(boolean hp){hadPaid=hp;}\n+}"
+  }, {
+    "sha" : "a6624bdb24bb96fdd2f114df8927e3cc443225b7",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902238/Se1414080902238Servlet.java",
+    "status" : "modified",
+    "additions" : 20,
+    "deletions" : 4,
+    "changes" : 24,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b6bec3c4b8340750f90e157c4746e3513ede4993/jweb/src/edu/hzu/javaweb/labs/se1414080902238/Se1414080902238Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b6bec3c4b8340750f90e157c4746e3513ede4993/jweb/src/edu/hzu/javaweb/labs/se1414080902238/Se1414080902238Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902238/Se1414080902238Servlet.java?ref=b6bec3c4b8340750f90e157c4746e3513ede4993",
+    "patch" : "@@ -3,6 +3,9 @@\n import java.io.IOException;\n //import java.io.PrintWriter;\n \n+import java.util.ArrayList;\n+import java.util.List;\n+\n import javax.servlet.ServletException;\n import javax.servlet.annotation.WebServlet;\n import javax.servlet.http.HttpServlet;\n@@ -29,24 +32,37 @@ public void destroy() {\n \t\n \tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n-\n-\t\tString khName=request.getParameter(\"stuName\");\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tresponse.setCharacterEncoding(\"utf-8\");\n+\t\tString clientName=request.getParameter(\"clientName\");\n \t\tString phoneNamber=request.getParameter(\"phoneName\");\n+\t\tString car=request.getParameter(\"cars\");\n+\t\tString check=request.getParameter(\"check\");\n \t\tString info=\"\";\n-\t\tif(khName.isEmpty()||phoneNamber.isEmpty()){\n+\t\tboolean hadPaid;\n+\t\tif(check==\"已付款\")hadPaid=true;else hadPaid=false;\n+\t\tif(clientName.isEmpty()||phoneNamber.isEmpty()){\n \t\t\tinfo=\"输入不能为空！\";\n \t\t}else{\n-\t\t\tinfo=\"客户： \"+khName+\"  \"+\"联系电话： \"+phoneNamber;\n+\t\t\tinfo=\"客户： \"+clientName+\"  \"+\"联系电话： \"+phoneNamber;\n \t\t}\n+\t\tList<Client> orders=new ArrayList<Client>();\n+\t\torders.add(new Client(clientName,phoneNamber,car,hadPaid));\n+\t\torders.add(new Client(\"小敏\",\"999999\",\"福特\",true));\n+\t\torders.add(new Client(\"小明\",\"888888\",\"奔驰\",true));\n+\t\torders.add(new Client(\"小红\",\"777777\",\"奥迪\",false));\n \t\trequest.setAttribute(\"outputMessage\",info);\n+\t\trequest.setAttribute(\"orderList\", orders);\n \t\trequest.getRequestDispatcher(\"/info.jsp\").forward(request, response);\n+\t\t\n \t}\n \n \t\n \tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n \n \t\tdoGet(request, response);\n+\t\t\n \t}\n \n \t"
+  }, {
+    "sha" : "80e9113d9bc71a64547009fd0a7ed7430b653b7c",
+    "filename" : "jweb/web/1414080902238/index.jsp",
+    "status" : "modified",
+    "additions" : 15,
+    "deletions" : 7,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b6bec3c4b8340750f90e157c4746e3513ede4993/jweb/web/1414080902238/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b6bec3c4b8340750f90e157c4746e3513ede4993/jweb/web/1414080902238/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902238/index.jsp?ref=b6bec3c4b8340750f90e157c4746e3513ede4993",
+    "patch" : "@@ -1,10 +1,9 @@\n-﻿<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n <%\n String path = request.getContextPath();\n String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n %>\n \n-\n <html>\n \t<head>\n \t\t<title>汽车4S店管理系统</title>\n@@ -29,15 +28,24 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t</head>\n \t<body>\n \t\t<h3 align=\"center\">创建客户订单</h3>\n-\t\t\t<form name=\"cj\" action=\"\">\n+\t\t\t<form name=\"cj\" action=\"1414080902238\">\n \t\t\t\t<table>\n-\t\t\t\t\t<tr><td>客户姓名：</td><td><input type=\"text\" name=\"stuName\"></td></tr>\n+\t\t\t\t\t<tr><td>客户姓名：</td><td><input type=\"text\" name=\"clientName\"></td></tr>\n \t\t\t\t\t<tr><td>客户电话：</td><td><input type=\"text\" name=\"phoneName\"></td></tr>\n-\t\t\t\t\t<tr><td>所购车辆：</td><td colspan=\"2\"><input type=\"file\"></td></tr>\n+\t\t\t\t\t<tr>\n+\t\t\t\t\t\t<td>所购车辆：</td>\n+\t\t\t\t\t\t<td><select name=\"cars\" style=\"width: 153px; \">\n+\t\t\t\t\t\t\t<option selected>宝马</option>\n+\t\t\t\t\t\t\t<option>奔驰</option>\n+\t\t\t\t\t\t\t<option>福特</option>\n+\t\t\t\t\t\t\t<option>奥迪</option>\n+\t\t\t\t\t\t</select>\t\n+\t\t\t\t\t\t</td>\n+\t\t\t\t\t</tr>\n \t\t\t\t\t<tr><td>付款情况：</td>\n \t\t\t\t\t\t<td colspan=\"2\">\n-\t\t\t\t\t\t\t<input type=\"checkbox\" name=\"yes\">已付款\n-\t\t\t\t\t\t\t<input type=\"checkbox\" name=\"no\">未付款\n+\t\t\t\t\t\t\t<input type=\"checkbox\" name=\"check\">已付款\n+\t\t\t\t\t\t\t<input type=\"checkbox\" name=\"check\">未付款\n \t\t\t\t\t\t\t</td>\n \t\t\t\t\t\t</tr>\n \t\t\t\t\t\t<tr><td>"
+  }, {
+    "sha" : "99fb7fe63250aa7a52b77e559d19c2528c061381",
+    "filename" : "jweb/web/1414080902238/info.jsp",
+    "status" : "modified",
+    "additions" : 13,
+    "deletions" : 3,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b6bec3c4b8340750f90e157c4746e3513ede4993/jweb/web/1414080902238/info.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b6bec3c4b8340750f90e157c4746e3513ede4993/jweb/web/1414080902238/info.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902238/info.jsp?ref=b6bec3c4b8340750f90e157c4746e3513ede4993",
+    "patch" : "@@ -1,11 +1,21 @@\n-﻿<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n-\n-\n+<%@ page language=\"java\" import=\"java.util.*,edu.hzu.javaweb.labs.se1414080902238.Client\" pageEncoding=\"utf-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n+<%@ page contentType=\"text/html; charset=utf-8\" %>\n <html>\n   <head>\n     <title>显示结果页面</title>\n   </head>\n   <body>\n+  \t<%request.setCharacterEncoding(\"utf-8\"); %>\n     <%=request.getAttribute(\"outputMessage\")%>\n+    <hr>\n+    \t定单记录如下：\n+    <hr>\n+    <table border=\"1\">\n+    \t<tr><th>客户名</th><th>电话号码</th><th>所购车辆</th><th>付款情况</th></tr>\n+    \t<c:forEach var=\"order\" items=\"${orderList}\">\n+    \t\t<tr><td>${order.name }</td><td>${order.phone }</td><td>${order.car }</td><td>${order.hadPaid }</td></tr>\n+    \t\t</c:forEach>\n+    </table>\n   </body>\n </html>"
+  } ],
+  "sha" : "b6bec3c4b8340750f90e157c4746e3513ede4993",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b6bec3c4b8340750f90e157c4746e3513ede4993",
+  "parents" : [ {
+    "sha" : "614df98b70eb9f5278052eeb4a2b2bb2d5b547ef",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/614df98b70eb9f5278052eeb4a2b2bb2d5b547ef",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/614df98b70eb9f5278052eeb4a2b2bb2d5b547ef"
+  } ]
+}

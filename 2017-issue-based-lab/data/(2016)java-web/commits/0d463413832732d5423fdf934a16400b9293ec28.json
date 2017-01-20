@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "wuchubin",
+    "id" : 17999412,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17999412?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wuchubin",
+    "html_url" : "https://github.com/wuchubin",
+    "followers_url" : "https://api.github.com/users/wuchubin/followers",
+    "following_url" : "https://api.github.com/users/wuchubin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wuchubin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wuchubin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wuchubin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wuchubin/orgs",
+    "repos_url" : "https://api.github.com/users/wuchubin/repos",
+    "events_url" : "https://api.github.com/users/wuchubin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wuchubin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 93,
+    "additions" : 92,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "wuchubin",
+    "id" : 17999412,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17999412?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wuchubin",
+    "html_url" : "https://github.com/wuchubin",
+    "followers_url" : "https://api.github.com/users/wuchubin/followers",
+    "following_url" : "https://api.github.com/users/wuchubin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wuchubin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wuchubin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wuchubin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wuchubin/orgs",
+    "repos_url" : "https://api.github.com/users/wuchubin/repos",
+    "events_url" : "https://api.github.com/users/wuchubin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wuchubin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/0d463413832732d5423fdf934a16400b9293ec28",
+  "commit" : {
+    "author" : {
+      "name" : "wuchubin",
+      "email" : "812479564@qq.com",
+      "date" : "2016-10-31T03:05:47Z"
+    },
+    "committer" : {
+      "name" : "wuchubin",
+      "email" : "812479564@qq.com",
+      "date" : "2016-10-31T03:05:47Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "eb5c938eb6ad85f4bfb2aa784c5a757a8fa39d63",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/eb5c938eb6ad85f4bfb2aa784c5a757a8fa39d63"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/0d463413832732d5423fdf934a16400b9293ec28",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/0d463413832732d5423fdf934a16400b9293ec28/comments",
+  "files" : [ {
+    "sha" : "f8fc500aa15d78a4fa76e5c145d4f48e6ec3476b",
+    "filename" : "labs/1414080902211/Set_cussess.java",
+    "status" : "added",
+    "additions" : 91,
+    "deletions" : 0,
+    "changes" : 91,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/0d463413832732d5423fdf934a16400b9293ec28/labs/1414080902211/Set_cussess.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/0d463413832732d5423fdf934a16400b9293ec28/labs/1414080902211/Set_cussess.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902211/Set_cussess.java?ref=0d463413832732d5423fdf934a16400b9293ec28",
+    "patch" : "@@ -0,0 +1,91 @@\n+package Servlet;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+public class Set_cussess extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic Set_cussess() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html;charset=utf-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\t\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>seting success</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"���óɹ���\");//���ı�������룬ע�����ñ����ʽ\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html;charset=utf-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\t\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>seting success</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"���óɹ���\");//���ı�������룬ע�����ñ����ʽ\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "23c124130b382a8f99bd15d0031a204eeb131ef1",
+    "filename" : "labs/1414080902211/index.jsp",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/0d463413832732d5423fdf934a16400b9293ec28/labs/1414080902211/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/0d463413832732d5423fdf934a16400b9293ec28/labs/1414080902211/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902211/index.jsp?ref=0d463413832732d5423fdf934a16400b9293ec28",
+    "patch" : "@@ -80,7 +80,7 @@ button {\n   <h1 align=\"center\">welcome to the control page of air conditioner!</h1>\n   <p align=\"center\"><%=new Date()%></p>\n   <hr width=\"100%\" size=\"2\">\n-  <form role=\"form\">\n+  <form role=\"form\" method=\"post\" action=\"Set_cussess\">\n     <div class=\"form-group\">\n       <label for=\"temperature \">temperature&nbsp&nbsp&nbsp</label>\n       <input type=\"range\" class=\"form-control\" id=\"temperature\">"
+  } ],
+  "sha" : "0d463413832732d5423fdf934a16400b9293ec28",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/0d463413832732d5423fdf934a16400b9293ec28",
+  "parents" : [ {
+    "sha" : "cb6b463351144d1cdbc3cef4e72292d508fedda7",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/cb6b463351144d1cdbc3cef4e72292d508fedda7",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/cb6b463351144d1cdbc3cef4e72292d508fedda7"
+  } ]
+}

@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 70,
+    "additions" : 65,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9ea71dc493793d0099a3ebb62274ec992bf38669",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-14T13:17:15Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-14T13:17:15Z"
+    },
+    "message" : "Merge pull request #434 from Pyanz/master\n\n实验五",
+    "tree" : {
+      "sha" : "aae0bcd865c1d5346f043b9bbeed9341dfa621c7",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/aae0bcd865c1d5346f043b9bbeed9341dfa621c7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/9ea71dc493793d0099a3ebb62274ec992bf38669",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9ea71dc493793d0099a3ebb62274ec992bf38669/comments",
+  "files" : [ {
+    "sha" : "62239aaa440cb02b0aa842a99500c2c076232f6b",
+    "filename" : "works/1314080901227/index.html",
+    "status" : "modified",
+    "additions" : 58,
+    "deletions" : 3,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9ea71dc493793d0099a3ebb62274ec992bf38669/works/1314080901227/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9ea71dc493793d0099a3ebb62274ec992bf38669/works/1314080901227/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901227/index.html?ref=9ea71dc493793d0099a3ebb62274ec992bf38669",
+    "patch" : "@@ -28,7 +28,6 @@\n     \n   </head>\n   <body ng-controller=\"ProcessingflowCtrl\">\n-    <p>名字：{{data.name}}</p>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -53,11 +52,67 @@\n     <div class=\"container\">\n \n       <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n+        <h1>Bootstrap starter template</h1>       \n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n \n-    </div><!-- /.container -->\n+    </div>\n+    <div class=\"container\">\n+      <div class=\"row col-lg-offset-2\">\n+        <form class=\"form-inline\" role=\"form\">\n+          <div class=\"form-group row\">\n+            <div class=\"row\">\n+              <label for=\"example1\">待处理流程编号：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"providerNum\" id=\"example1\"/>\n+              <label for=\"example2\">流程名称：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"providerFullName\" id=\"example2\"/>\n+\n+              <label for=\"example3\">操作：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"providerSimpName\" id=\"example3\"/>\n+\n+              <label for=\"example4\">状态：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"providerSimpName\" id=\"example4\"/>\n+            </div>\n+          </div>\n+          <br>\n+          <br>\n+\n+          <div class=\"form-group row\">\n+            <div class=\"row\">\n+              <label for=\"example5\">流程名称：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"providerType\" id=\"example5\"/>\n+\n+              <label for=\"example6\">操作明细：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"providerIntroduce\" id=\"example6\"/>\n+\n+              <label for=\"example7\">批示：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"address\" id=\"example7\"/>\n+            </div>\n+          </div>\n+\n+          <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n+            <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\">\n+                    {{isHidden ? '提交' : '隐藏'}}\n+            </button>\n+          </div>\n+        \n+        </form>\n+    </div>\n+  </div>\n+\n+<div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n+    <p class=\"lead\">\n+    <div ng-hide=\"isHidden\">您输入的数据为：</div>\n+    <div id=\"id\" ng-hide=\"isHidden\">待处理流程编号->{{id}}</div>\n+    <div id=\"name\" ng-hide=\"isHidden\">流程名称->{{name}}</div>\n+    <div id=\"operation\" ng-hide=\"isHidden\">操作->{{operation}}</div>\n+    <div id=\"fitness\" ng-hide=\"isHidden\">状态->{{fitness}}</div>\n+    <div id=\"operation_details\" ng-hide=\"isHidden\">操作明细->{{operation_details}}</div>\n+    <div id=\"instructions\" ng-hide=\"isHidden\">批示->{{instructions}}</div>\n+    </p>\n+</div>\n+\n+    <!-- /.container -->\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  }, {
+    "sha" : "1ebf068e75bd010cab12b21036b16218902938e0",
+    "filename" : "works/1314080901227/js/Processingflow.js",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 2,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9ea71dc493793d0099a3ebb62274ec992bf38669/works/1314080901227/js/Processingflow.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9ea71dc493793d0099a3ebb62274ec992bf38669/works/1314080901227/js/Processingflow.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901227/js/Processingflow.js?ref=9ea71dc493793d0099a3ebb62274ec992bf38669",
+    "patch" : "@@ -11,9 +11,14 @@ Processingflow.controller('ProcessingflowCtrl', function ($scope) {\n           name: '流程',\n           operation: '操作',\n           fitness: '状态',\n-          dateJoined: new Date(2010, 2, 23),\n+          operation_details:'操作明细',\n+          instructions:'批示',\n         };\n         $scope.data = someData;\n+        $scope.isHidden = true;\n+        $scope.showInput = function(){\n+          $scope.isHidden = !$scope.isHidden;\n+        }\n     }\n        // controller code would go here\n );\n@@ -21,7 +26,7 @@ Processingflow.controller('ProcessingflowCtrl', function ($scope) {\n \n // use the myAppModule variable to\n // configure the module with a filter\n-myAppModule.filter('stripDashes', function() {\n+Processingflow.filter('stripDashes', function() {\n     return function(txt) {\n         // filter code would go here\n }; });\n\\ No newline at end of file"
+  } ],
+  "sha" : "9ea71dc493793d0099a3ebb62274ec992bf38669",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9ea71dc493793d0099a3ebb62274ec992bf38669",
+  "parents" : [ {
+    "sha" : "8a11a1096535a7ac1c7c23922d43a087251e4452",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/8a11a1096535a7ac1c7c23922d43a087251e4452",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/8a11a1096535a7ac1c7c23922d43a087251e4452"
+  }, {
+    "sha" : "3222abe9542f0de97de31cd237c848b50e139768",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/3222abe9542f0de97de31cd237c848b50e139768",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/3222abe9542f0de97de31cd237c848b50e139768"
+  } ]
+}

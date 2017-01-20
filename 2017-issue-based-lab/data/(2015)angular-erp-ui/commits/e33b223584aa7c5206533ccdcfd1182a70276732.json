@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zhouzebiao",
+    "id" : 14361910,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14361910?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhouzebiao",
+    "html_url" : "https://github.com/zhouzebiao",
+    "followers_url" : "https://api.github.com/users/zhouzebiao/followers",
+    "following_url" : "https://api.github.com/users/zhouzebiao/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhouzebiao/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhouzebiao/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhouzebiao/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhouzebiao/orgs",
+    "repos_url" : "https://api.github.com/users/zhouzebiao/repos",
+    "events_url" : "https://api.github.com/users/zhouzebiao/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhouzebiao/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 36,
+    "additions" : 27,
+    "deletions" : 9
+  },
+  "author" : {
+    "login" : "zhouzebiao",
+    "id" : 14361910,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14361910?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhouzebiao",
+    "html_url" : "https://github.com/zhouzebiao",
+    "followers_url" : "https://api.github.com/users/zhouzebiao/followers",
+    "following_url" : "https://api.github.com/users/zhouzebiao/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhouzebiao/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhouzebiao/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhouzebiao/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhouzebiao/orgs",
+    "repos_url" : "https://api.github.com/users/zhouzebiao/repos",
+    "events_url" : "https://api.github.com/users/zhouzebiao/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhouzebiao/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e33b223584aa7c5206533ccdcfd1182a70276732",
+  "commit" : {
+    "author" : {
+      "name" : "zhouzebiao",
+      "email" : "447523426@qq.com",
+      "date" : "2015-11-24T13:25:30Z"
+    },
+    "committer" : {
+      "name" : "zhouzebiao",
+      "email" : "447523426@qq.com",
+      "date" : "2015-11-24T13:25:30Z"
+    },
+    "message" : "experiment 5",
+    "tree" : {
+      "sha" : "5ff9f93f568683cd524b3f9121e388dd2b26c085",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/5ff9f93f568683cd524b3f9121e388dd2b26c085"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/e33b223584aa7c5206533ccdcfd1182a70276732",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e33b223584aa7c5206533ccdcfd1182a70276732/comments",
+  "files" : [ {
+    "sha" : "5b9159e8a1249bc8cdf49e49b187ef7aefb295f4",
+    "filename" : "works/1314080901247/js/EmployeeAttendance.js",
+    "status" : "modified",
+    "additions" : 27,
+    "deletions" : 9,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e33b223584aa7c5206533ccdcfd1182a70276732/works/1314080901247/js/EmployeeAttendance.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e33b223584aa7c5206533ccdcfd1182a70276732/works/1314080901247/js/EmployeeAttendance.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901247/js/EmployeeAttendance.js?ref=e33b223584aa7c5206533ccdcfd1182a70276732",
+    "patch" : "@@ -6,8 +6,8 @@ var EmployeeAttendanceModule = angular.module('EmployeeAttendanceModule', []);\n // configure the module with a controller\n EmployeeAttendanceModule.controller('MyFilterDemoCtrl', function ($scope) {\n        // controller code would go here\n-       var EmployeeAttendanceData = {\n-         personNum:'001'，\n+       var EmployeeAttendanceData = [{\n+         personNum:'001',\n          personName:'zhouzebiao',\n          attenceDate:'2015-01-01',\n          moring:'true',\n@@ -19,17 +19,35 @@ EmployeeAttendanceModule.controller('MyFilterDemoCtrl', function ($scope) {\n          extra:'true',\n          start:'2015-01-01 19:30',\n          stop:'2015-01-01 22:00'\n-        };\n-        $scope.data = EmployeeAttendanceData;\n+        },\n+        {\n+         personNum:'002',\n+         personName:'zhouzebiao',\n+         attenceDate:'2015-01-01',\n+         moring:'true',\n+         moringOn:'2015-01-01 08:00',\n+         moringOff:'2015-01-01 11:30',\n+         afternoon:'true',\n+         afternoonOn:'2015-01-01 13:30',\n+         afternoonOff:'2015-01-01 17:30',\n+         extra:'true',\n+         start:'2015-01-01 19:30',\n+         stop:'2015-01-01 22:00'\n+        }];\n+        $scope.attendance_data = EmployeeAttendanceData;\n         }\n-    }\n );\n \n-EmployeeAttendanceModule.directive('EmployeeAttendanceList',function(){\n+EmployeeAttendanceModule.directive('list',function(){\n \treturn {\n-\trestrict:'AE',\n-\ttemplate:\"<div ng-repeat=\\\"data in data\\\">\"+\n-\t\t\t\"{{data.personNum}}   &nbsp; &nbsp; &nbsp;  {{data.personName}} </div>\"\n+\trestrict:'AEC',\n+\ttemplate:\"<div  style='text-align: center;' ng-repeat='thedata in attendance_data'>{{thedata.personNum}} &nbsp; &nbsp; &nbsp;\"+\n+    \"{{thedata.personName}} &nbsp; &nbsp; &nbsp; {{thedata.attenceDate}} &nbsp; &nbsp; &nbsp; {{thedata.moring}} &nbsp; &nbsp; &nbsp;\"+\n+    \"{{thedata.moringOn}} &nbsp; &nbsp; &nbsp;{{thedata.moringOff}} &nbsp; &nbsp; &nbsp;{{thedata.afternoon}} &nbsp; &nbsp; &nbsp;\"+\n+    \"{{thedata.afternoonOn}} &nbsp; &nbsp; &nbsp;{{thedata.afternoonOff}} &nbsp; &nbsp; &nbsp;{{thedata.extra}} &nbsp; &nbsp; &nbsp;\"+\n+    \"{{thedata.start}} &nbsp; &nbsp; &nbsp;{{thedata.stop}} &nbsp; &nbsp; &nbsp;</div>\",\n+\n+    transclude:true \n };\n });\n "
+  } ],
+  "sha" : "e33b223584aa7c5206533ccdcfd1182a70276732",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e33b223584aa7c5206533ccdcfd1182a70276732",
+  "parents" : [ {
+    "sha" : "60db6f3b70555c8bd3a70fab7b2e637b89deaaae",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/60db6f3b70555c8bd3a70fab7b2e637b89deaaae",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/60db6f3b70555c8bd3a70fab7b2e637b89deaaae"
+  } ]
+}

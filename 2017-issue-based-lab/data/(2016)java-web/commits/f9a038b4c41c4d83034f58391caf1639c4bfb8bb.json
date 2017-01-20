@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 53,
+    "additions" : 53,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/f9a038b4c41c4d83034f58391caf1639c4bfb8bb",
+  "commit" : {
+    "author" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-12-06T15:40:42Z"
+    },
+    "committer" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-12-06T15:40:42Z"
+    },
+    "message" : "#7 #86 提交实验代码",
+    "tree" : {
+      "sha" : "28cbbc64de4b008747bcb81ad00f8bc8ff440c80",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/28cbbc64de4b008747bcb81ad00f8bc8ff440c80"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/f9a038b4c41c4d83034f58391caf1639c4bfb8bb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/f9a038b4c41c4d83034f58391caf1639c4bfb8bb/comments",
+  "files" : [ {
+    "sha" : "310bf8b015130c032848963569b48618b0395a71",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902114/Dbconnection.java",
+    "status" : "added",
+    "additions" : 53,
+    "deletions" : 0,
+    "changes" : 53,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f9a038b4c41c4d83034f58391caf1639c4bfb8bb/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Dbconnection.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f9a038b4c41c4d83034f58391caf1639c4bfb8bb/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Dbconnection.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Dbconnection.java?ref=f9a038b4c41c4d83034f58391caf1639c4bfb8bb",
+    "patch" : "@@ -0,0 +1,53 @@\n+package se1414080902114;\n+import java.sql.Connection;\n+import java.sql.DriverManager;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+\n+public class Dbconnection {\n+\tprivate String dbUrl=\"jdbc:mysql://localhost:3306/shetuan\";\n+\tprivate String dbUser=\"root\";\n+\tprivate String dbPassword=\"qwc525431\";\n+\tprivate String jdbcName=\"com.mysql.jdbc.Driver\";\n+\t\n+\t//数据库连接\n+\tpublic Connection getConn(){\n+\t\tConnection conn = null;\n+\t\ttry{\n+\t\t\tClass.forName(jdbcName);\n+\t\t}\n+\t\tcatch(Exception e){}\n+\t\ttry{\n+\t\t\tconn=DriverManager.getConnection(dbUrl,dbUser,dbPassword);\n+\t\t}\n+\t\tcatch(SQLException ex){}\n+\t\treturn conn;\t\t\n+\t}\n+\t\n+\t//数据库释放\n+\tpublic void close(Connection conn, PreparedStatement pstmt, ResultSet rs) {\n+\t\tif (rs != null)\n+\t\t\ttry {\n+\t\t\t\trs.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\tif (pstmt != null)\n+\t\t\ttry {\n+\t\t\t\tpstmt.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\tif (conn != null)\n+\t\t\ttry {\n+\t\t\t\tconn.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\t\n+\t}\n+}"
+  } ],
+  "sha" : "f9a038b4c41c4d83034f58391caf1639c4bfb8bb",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f9a038b4c41c4d83034f58391caf1639c4bfb8bb",
+  "parents" : [ {
+    "sha" : "5464c2216683a0271f5bfb622333cbef362ca4f4",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5464c2216683a0271f5bfb622333cbef362ca4f4",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/5464c2216683a0271f5bfb622333cbef362ca4f4"
+  } ]
+}

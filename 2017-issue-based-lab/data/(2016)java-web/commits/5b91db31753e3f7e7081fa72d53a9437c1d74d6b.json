@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "chunliwang",
+    "id" : 22511906,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511906?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chunliwang",
+    "html_url" : "https://github.com/chunliwang",
+    "followers_url" : "https://api.github.com/users/chunliwang/followers",
+    "following_url" : "https://api.github.com/users/chunliwang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chunliwang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chunliwang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chunliwang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chunliwang/orgs",
+    "repos_url" : "https://api.github.com/users/chunliwang/repos",
+    "events_url" : "https://api.github.com/users/chunliwang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chunliwang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 159,
+    "additions" : 159,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "chunliwang",
+    "id" : 22511906,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511906?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chunliwang",
+    "html_url" : "https://github.com/chunliwang",
+    "followers_url" : "https://api.github.com/users/chunliwang/followers",
+    "following_url" : "https://api.github.com/users/chunliwang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chunliwang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chunliwang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chunliwang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chunliwang/orgs",
+    "repos_url" : "https://api.github.com/users/chunliwang/repos",
+    "events_url" : "https://api.github.com/users/chunliwang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chunliwang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/5b91db31753e3f7e7081fa72d53a9437c1d74d6b",
+  "commit" : {
+    "author" : {
+      "name" : "chunliwang",
+      "email" : "1787336566@qq.com",
+      "date" : "2016-11-24T01:25:17Z"
+    },
+    "committer" : {
+      "name" : "chunliwang",
+      "email" : "1787336566@qq.com",
+      "date" : "2016-11-24T01:25:17Z"
+    },
+    "message" : "#4 #5 #106 提交实验代码",
+    "tree" : {
+      "sha" : "f92e20cbe7bc1e352dc8a905520d40c269c714a1",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/f92e20cbe7bc1e352dc8a905520d40c269c714a1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/5b91db31753e3f7e7081fa72d53a9437c1d74d6b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/5b91db31753e3f7e7081fa72d53a9437c1d74d6b/comments",
+  "files" : [ {
+    "sha" : "6a5629618af29651b06b6c17b94d476f7c97089d",
+    "filename" : "labs/se1414080902141/FilterTest.java",
+    "status" : "added",
+    "additions" : 46,
+    "deletions" : 0,
+    "changes" : 46,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b91db31753e3f7e7081fa72d53a9437c1d74d6b/labs/se1414080902141/FilterTest.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b91db31753e3f7e7081fa72d53a9437c1d74d6b/labs/se1414080902141/FilterTest.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/se1414080902141/FilterTest.java?ref=5b91db31753e3f7e7081fa72d53a9437c1d74d6b",
+    "patch" : "@@ -0,0 +1,46 @@\n+package se1414080902141;\n+\n+import java.io.IOException;\n+\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+public class FilterTest implements Filter {\n+\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\tHttpServletRequest requ=(HttpServletRequest)request;\n+\t\tHttpServletResponse resp=(HttpServletResponse)response;\n+\t\tHttpSession session=requ.getSession(true);\n+\t\tif(session.getAttribute(\"u_name\")==null){\n+\t\t\tresp.sendRedirect(\"login.jsp\");\n+\t\t\n+\t\t}else{\n+\t\t\tchain.doFilter(request,response);\n+\t\t}\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+}"
+  }, {
+    "sha" : "2af38d3f1cf021c4181b9b3aaa194112533e280f",
+    "filename" : "labs/se1414080902141/README.md",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b91db31753e3f7e7081fa72d53a9437c1d74d6b/labs/se1414080902141/README.md",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b91db31753e3f7e7081fa72d53a9437c1d74d6b/labs/se1414080902141/README.md",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/se1414080902141/README.md?ref=5b91db31753e3f7e7081fa72d53a9437c1d74d6b",
+    "patch" : "@@ -0,0 +1,20 @@\n+# 高级网页设计（Java Web）实验库\n+讲义：http://zeng.shaoning.net/javaweb\n+\n+# 实验一：Web基础\n+https://github.com/hzuapps/java-web/issues/2\n+# 实验二：Tomcat基础\n+https://github.com/hzuapps/java-web/issues/3\n+# 实验三：Servlet基础\n+https://github.com/hzuapps/java-web/issues/4\n+# 实验四：Filter基础\n+https://github.com/hzuapps/java-web/issues/5\n+\n+# 参考资料\n+\n+Java EE官方教程：http://docs.oracle.com/javaee/6/tutorial/doc/bnadr.html  \n+JDBC官方教程：https://docs.oracle.com/javase/tutorial/jdbc/  \n+Java Web入门教程：http://www.journaldev.com/1854/java-web-application-tutorial-for-beginners  \n+Spring框架：http://spring.io/   \n+Hibernate框架：http://www.hibernate.org   \n+Eclipse：http://www.eclipse.org  "
+  }, {
+    "sha" : "68cc4a8802f801b07892ae61c98ac94209eb2f0e",
+    "filename" : "labs/se1414080902141/Se1414080902141Servlet.java",
+    "status" : "added",
+    "additions" : 93,
+    "deletions" : 0,
+    "changes" : 93,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b91db31753e3f7e7081fa72d53a9437c1d74d6b/labs/se1414080902141/Se1414080902141Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b91db31753e3f7e7081fa72d53a9437c1d74d6b/labs/se1414080902141/Se1414080902141Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/se1414080902141/Se1414080902141Servlet.java?ref=5b91db31753e3f7e7081fa72d53a9437c1d74d6b",
+    "patch" : "@@ -0,0 +1,93 @@\n+package se1414080902141;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+public class Se1414080902141Servlet extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic se1414080902141servlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"    This is \");\n+\t\tout.print(this.getClass());\n+\t\tout.println(\"using the GET method\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"    This is \");\n+\t\tout.print(this.getClass());\n+\t\tout.println(\"using the POST method\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  } ],
+  "sha" : "5b91db31753e3f7e7081fa72d53a9437c1d74d6b",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5b91db31753e3f7e7081fa72d53a9437c1d74d6b",
+  "parents" : [ {
+    "sha" : "9ef485011b67564e37b3a19e5c81c3528be3bbcd",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9ef485011b67564e37b3a19e5c81c3528be3bbcd",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/9ef485011b67564e37b3a19e5c81c3528be3bbcd"
+  } ]
+}

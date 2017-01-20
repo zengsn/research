@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "jordankobejames",
+    "id" : 22511957,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511957?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jordankobejames",
+    "html_url" : "https://github.com/jordankobejames",
+    "followers_url" : "https://api.github.com/users/jordankobejames/followers",
+    "following_url" : "https://api.github.com/users/jordankobejames/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jordankobejames/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jordankobejames/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jordankobejames/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jordankobejames/orgs",
+    "repos_url" : "https://api.github.com/users/jordankobejames/repos",
+    "events_url" : "https://api.github.com/users/jordankobejames/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jordankobejames/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 180,
+    "additions" : 180,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "jordankobejames",
+    "id" : 22511957,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511957?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jordankobejames",
+    "html_url" : "https://github.com/jordankobejames",
+    "followers_url" : "https://api.github.com/users/jordankobejames/followers",
+    "following_url" : "https://api.github.com/users/jordankobejames/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jordankobejames/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jordankobejames/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jordankobejames/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jordankobejames/orgs",
+    "repos_url" : "https://api.github.com/users/jordankobejames/repos",
+    "events_url" : "https://api.github.com/users/jordankobejames/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jordankobejames/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/0c985a8c18f0fd11c50d5598d46910daf7b7d75b",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "451505087@qq.com",
+      "date" : "2016-11-21T12:58:48Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "451505087@qq.com",
+      "date" : "2016-11-21T12:58:48Z"
+    },
+    "message" : "#7 提交实验6代码",
+    "tree" : {
+      "sha" : "a3c89ec99a69f275f1c23e2ada5a6b1bf21fcdc2",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/a3c89ec99a69f275f1c23e2ada5a6b1bf21fcdc2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/0c985a8c18f0fd11c50d5598d46910daf7b7d75b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/0c985a8c18f0fd11c50d5598d46910daf7b7d75b/comments",
+  "files" : [ {
+    "sha" : "73e755a26d624d5d45ef33ea90b564440ff7b7b1",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902116/JDBC.java",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/0c985a8c18f0fd11c50d5598d46910daf7b7d75b/jweb/src/edu/hzu/javaweb/labs/se1414080902116/JDBC.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/0c985a8c18f0fd11c50d5598d46910daf7b7d75b/jweb/src/edu/hzu/javaweb/labs/se1414080902116/JDBC.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902116/JDBC.java?ref=0c985a8c18f0fd11c50d5598d46910daf7b7d75b",
+    "patch" : "@@ -0,0 +1,33 @@\n+package com.hzu.util;\n+\n+import java.sql.*;\n+\n+public class JDBC {\n+\tprivate String url = \"jdbc:mysql://localhost:3306/test?user=root&password=&useUnicode=true&characterEncoding=UTF8\";\n+\tprivate Connection conn;\n+\tprivate String sql;\n+\tprivate Statement stmt;\n+\tprivate ResultSet Rs;\n+\tprivate int rs;\n+\tpublic void getConnection() throws SQLException\n+\t{\n+\t\tnew com.mysql.jdbc.Driver();\n+\t\tconn = DriverManager.getConnection(url);\n+\t}\n+\t\n+\t\n+\tpublic ResultSet setQuery(String sql) throws SQLException\n+\t{\t\t//��ѯ\n+\t\tstmt = conn.createStatement();\n+\t\tthis.sql = sql;\n+\t\tRs = stmt.executeQuery(sql);\n+\t\treturn Rs;\n+\t}\n+\t\n+\tpublic void setUpdate(String sql) throws SQLException\n+\t{\n+\t\tstmt=conn.createStatement();\n+\t\tthis.sql = sql;\n+\t\trs = stmt.executeUpdate(sql);\n+\t}\n+}"
+  }, {
+    "sha" : "f7596e7cf11e69ff46e74011dc17b1bc15948edd",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902116/add1.jsp",
+    "status" : "added",
+    "additions" : 72,
+    "deletions" : 0,
+    "changes" : 72,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/0c985a8c18f0fd11c50d5598d46910daf7b7d75b/jweb/src/edu/hzu/javaweb/labs/se1414080902116/add1.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/0c985a8c18f0fd11c50d5598d46910daf7b7d75b/jweb/src/edu/hzu/javaweb/labs/se1414080902116/add1.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902116/add1.jsp?ref=0c985a8c18f0fd11c50d5598d46910daf7b7d75b",
+    "patch" : "@@ -0,0 +1,72 @@\n+<%@ page language=\"java\" import=\"java.util.*,com.hzu.util.JDBC,java.sql.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+\n+//String id = request.getParameter(\"id\");\n+\n+JDBC jdbc = new JDBC();\t\t//实例化对象\n+try{\n+\tjdbc.getConnection();  \n+\t\n+\tResultSet Rs =jdbc.setQuery(\"select * from yonghu\");\n+\tout.println(\"连接成功<br>\");\n+\tout.println(\"<table border='1'><tr>\");\n+    out.println(\"<td>name</td>\");\n+    out.println(\"<td>id</td>\");\n+    out.println(\"<td>roomnumber</td>\");\n+    out.println(\"<td>telephone</td>\");\n+    out.println(\"<td>assumption</td>\");\n+    out.println(\"</tr>\");\n+\twhile(Rs.next())\n+\t{  \n+\t    String name = Rs.getString(\"name\");\n+\t\tString id = Rs.getString(\"id\");\n+\t\tString roomnumber = Rs.getString(\"roomnuber\");\n+\t\tString telephone = Rs.getString(\"telephone\");\n+\t\tString assumption = Rs.getString(\"assumption\");\n+\t\tout.println(\"<tr>\");\n+       \tout.println(\"<td>\"+name+\"</td>\");\n+       \tout.println(\"<td>\"+id+\"</td>\");\n+       \tout.println(\"<td>\"+roomnumber+\"</td>\");\n+       \tout.println(\"<td>\"+telephone+\"</td>\");\n+       \tout.println(\"<td>\"+assumption+\"</td>\");\n+\t\tout.println(\"</tr>\");\n+\t}\n+\t\tout.println(\"</table>\");\n+\t//jdbc.setUpdate(\"insert into yonghu(name,id,roomnuber,telephone,assumption) values('li','43353','301','123456','200')\");\n+\n+\t\n+\n+}\n+catch(Exception e)\n+{\n+\tout.println(\"连接失败\");\n+}\n+\n+%>\n+\n+\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'index.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+  \n+  </body>\n+</html>"
+  }, {
+    "sha" : "2a2f4dfc8c43083d0430c26dcb997b6c90fa07b9",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902116/xxx1.jsp",
+    "status" : "added",
+    "additions" : 75,
+    "deletions" : 0,
+    "changes" : 75,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/0c985a8c18f0fd11c50d5598d46910daf7b7d75b/jweb/src/edu/hzu/javaweb/labs/se1414080902116/xxx1.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/0c985a8c18f0fd11c50d5598d46910daf7b7d75b/jweb/src/edu/hzu/javaweb/labs/se1414080902116/xxx1.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902116/xxx1.jsp?ref=0c985a8c18f0fd11c50d5598d46910daf7b7d75b",
+    "patch" : "@@ -0,0 +1,75 @@\n+<%@ page language=\"java\" import=\"java.util.*,com.hzu.util.JDBC,java.sql.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+\n+//String id = request.getParameter(\"id\");\n+\n+JDBC jdbc = new JDBC();\t\t//实例化对象\n+try{\n+\tjdbc.getConnection();  \n+\t\n+\tResultSet Rs =jdbc.setQuery(\"select * from zhuke\");\n+\tout.println(\"连接成功<br>\");\n+\tout.println(\"<table border='1'><tr>\");\n+    out.println(\"<td>name</td>\");\n+    out.println(\"<td>id</td>\");\n+    out.println(\"<td>room</td>\");\n+    out.println(\"<td>water_assumption</td>\");\n+    out.println(\"<td>electionic_assumption</td>\");\n+    out.println(\"<td>rent_assumption</td>\");\n+    out.println(\"</tr>\");\n+\twhile(Rs.next())\n+\t{  \n+\t    String name = Rs.getString(\"name\");\n+\t\tString id = Rs.getString(\"id\");\n+\t\tString room = Rs.getString(\"room\");\n+\t\tString water_assumption = Rs.getString(\"water_assumption\");\n+\t\tString electionic_assumption = Rs.getString(\"electionic_assumption\");\n+\t\tString rent_assumption = Rs.getString(\"rent_assumption\");\n+\t\tout.println(\"<tr>\");\n+       \tout.println(\"<td>\"+name+\"</td>\");\n+       \tout.println(\"<td>\"+id+\"</td>\");\n+       \tout.println(\"<td>\"+room+\"</td>\");\n+       \tout.println(\"<td>\"+water_assumption+\"</td>\");\n+       \tout.println(\"<td>\"+electionic_assumption+\"</td>\");\n+       \tout.println(\"<td>\"+rent_assumption+\"</td>\");\n+\t\tout.println(\"</tr>\");\n+\t}\n+\t\tout.println(\"</table>\");\n+\t//jdbc.setUpdate(\"insert into yonghu(name,id,roomnuber,telephone,assumption) values('li','43353','301','123456','200')\");\n+\n+\t\n+\n+}\n+catch(Exception e)\n+{\n+\tout.println(\"连接失败\");\n+}\n+\n+%>\n+\n+\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'index.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+  \n+  </body>\n+</html>"
+  } ],
+  "sha" : "0c985a8c18f0fd11c50d5598d46910daf7b7d75b",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/0c985a8c18f0fd11c50d5598d46910daf7b7d75b",
+  "parents" : [ {
+    "sha" : "c191053ccf6f7f5d0c572ddf8a3a2baa43336425",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c191053ccf6f7f5d0c572ddf8a3a2baa43336425",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/c191053ccf6f7f5d0c572ddf8a3a2baa43336425"
+  } ]
+}

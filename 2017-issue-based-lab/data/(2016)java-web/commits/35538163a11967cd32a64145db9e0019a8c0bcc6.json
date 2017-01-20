@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "201609w",
+    "id" : 22068335,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068335?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/201609w",
+    "html_url" : "https://github.com/201609w",
+    "followers_url" : "https://api.github.com/users/201609w/followers",
+    "following_url" : "https://api.github.com/users/201609w/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/201609w/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/201609w/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/201609w/subscriptions",
+    "organizations_url" : "https://api.github.com/users/201609w/orgs",
+    "repos_url" : "https://api.github.com/users/201609w/repos",
+    "events_url" : "https://api.github.com/users/201609w/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/201609w/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 169,
+    "additions" : 169,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "201609w",
+    "id" : 22068335,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068335?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/201609w",
+    "html_url" : "https://github.com/201609w",
+    "followers_url" : "https://api.github.com/users/201609w/followers",
+    "following_url" : "https://api.github.com/users/201609w/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/201609w/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/201609w/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/201609w/subscriptions",
+    "organizations_url" : "https://api.github.com/users/201609w/orgs",
+    "repos_url" : "https://api.github.com/users/201609w/repos",
+    "events_url" : "https://api.github.com/users/201609w/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/201609w/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/35538163a11967cd32a64145db9e0019a8c0bcc6",
+  "commit" : {
+    "author" : {
+      "name" : "201609w",
+      "email" : "979887185@qq.com",
+      "date" : "2016-11-24T09:04:55Z"
+    },
+    "committer" : {
+      "name" : "201609w",
+      "email" : "979887185@qq.com",
+      "date" : "2016-11-24T09:04:55Z"
+    },
+    "message" : "#7 添加产品数据",
+    "tree" : {
+      "sha" : "bb61066b1ffd88cf9afa79b673bbe767e83a1600",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/bb61066b1ffd88cf9afa79b673bbe767e83a1600"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/35538163a11967cd32a64145db9e0019a8c0bcc6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/35538163a11967cd32a64145db9e0019a8c0bcc6/comments",
+  "files" : [ {
+    "sha" : "f89087083a1a03aa66c6432effb21b9ac78f0d67",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902236/InsertInfo.java",
+    "status" : "added",
+    "additions" : 113,
+    "deletions" : 0,
+    "changes" : 113,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/35538163a11967cd32a64145db9e0019a8c0bcc6/jweb/src/edu/hzu/javaweb/labs/se1414080902236/InsertInfo.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/35538163a11967cd32a64145db9e0019a8c0bcc6/jweb/src/edu/hzu/javaweb/labs/se1414080902236/InsertInfo.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902236/InsertInfo.java?ref=35538163a11967cd32a64145db9e0019a8c0bcc6",
+    "patch" : "@@ -0,0 +1,113 @@\n+package edu.hzu.javaweb.labs.se1414080902236;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import java.sql.*;\n+\n+public class InsertInfo extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic InsertInfo() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tString Manufacturers=request.getParameter(\"manufacturers\");\n+\t\tString Level=request.getParameter(\"level\");\n+\t\tString Engine=request.getParameter(\"engine\");\n+\t\tString Gearbox=request.getParameter(\"gearbox\");\n+\t\tString Size=request.getParameter(\"size\");\n+\t\tString Body=request.getParameter(\"body\");\n+\t\tString Maxspeed=request.getParameter(\"maxspeed\");\n+\t\tString Hundred=request.getParameter(\"hundred\");\n+\t\tString Gas=request.getParameter(\"gas\");\n+\n+\t\t String driverName = \"com.mysql.jdbc.Driver\";   \n+\t\t String userName = \"root\";                    \n+\t\t String userPwd = \"root\";                  \n+\t     String dbName = \"carInfo\";                 \n+\t     String  url1=\"jdbc:mysql://localhost/\"+dbName;\n+\t\t String  url2 =\"?user=\"+userName+\"&password=\"+userPwd;\n+\t\t String  url3=\"&useUnicode=true&characterEncoding=GB2312\";\n+\t\t String  url =url1+url2+url3;\n+\t     try {\n+\t\t\tConnection con=DriverManager.getConnection(url);\n+\t\t\tString FIELDS_INSERT =\"manufacturers,level,engine,gearbox,size,body,maxspeed,hundred,gas\";\n+\t\t    String INSERT_SQL=\"insert into stu_info (\"\n+\t\t            +FIELDS_INSERT+\")\"+\"values (?,?,?,?,?,?,?,?,?)\";\n+\t\t    PreparedStatement prepStmt=con.prepareStatement(INSERT_SQL);\n+\t\t    prepStmt.setString(1,Manufacturers);\n+\t    \tprepStmt.setString(2,Level);\n+\t    \tprepStmt.setString(3,Engine);\n+\t        prepStmt.setString(4,Gearbox);\n+\t    \tprepStmt.setString(5,Size);\n+\t    \tprepStmt.setString(6,Body);\n+\t    \tprepStmt.setString(7,Maxspeed);\n+\t    \tprepStmt.setString(8,Hundred);\n+\t    \tprepStmt.setString(9,Gas);\t    \t    \t  \n+\t        int n=prepStmt.executeUpdate(); \n+\t        if(n==1){\n+\t        \trequest.getRequestDispatcher(\"/success.jsp\").forward(request, response);\n+\t        }\n+\t        else{\n+\t        \trequest.getRequestDispatcher(\"/error.jsp\").forward(request, response);\n+\t        }\n+\t\t} catch (Exception e) {\n+\t\t\t// TODO Auto-generated catch block\n+\t\t\te.printStackTrace();\n+\t\t} \n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tdoGet(request,response);\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "d9772b0134086f1fa55939236b29e39377ec6694",
+    "filename" : "jweb/web/1414080902236/error.jsp",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/35538163a11967cd32a64145db9e0019a8c0bcc6/jweb/web/1414080902236/error.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/35538163a11967cd32a64145db9e0019a8c0bcc6/jweb/web/1414080902236/error.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902236/error.jsp?ref=35538163a11967cd32a64145db9e0019a8c0bcc6",
+    "patch" : "@@ -0,0 +1,28 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'error.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    插入失败！！ <br>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "ad3b0953909b2a209483cc0ea08e99b1fee87f66",
+    "filename" : "jweb/web/1414080902236/success.jsp",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/35538163a11967cd32a64145db9e0019a8c0bcc6/jweb/web/1414080902236/success.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/35538163a11967cd32a64145db9e0019a8c0bcc6/jweb/web/1414080902236/success.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902236/success.jsp?ref=35538163a11967cd32a64145db9e0019a8c0bcc6",
+    "patch" : "@@ -0,0 +1,28 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'success.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    插入成功！！ <br>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "35538163a11967cd32a64145db9e0019a8c0bcc6",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/35538163a11967cd32a64145db9e0019a8c0bcc6",
+  "parents" : [ {
+    "sha" : "9e4e5c8ed8e00270666120afe966b9ca95d5a7b9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9e4e5c8ed8e00270666120afe966b9ca95d5a7b9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/9e4e5c8ed8e00270666120afe966b9ca95d5a7b9"
+  } ]
+}

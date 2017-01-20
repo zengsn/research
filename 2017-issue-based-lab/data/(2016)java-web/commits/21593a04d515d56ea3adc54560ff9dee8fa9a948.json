@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "hvvvvccc",
+    "id" : 22511631,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511631?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hvvvvccc",
+    "html_url" : "https://github.com/hvvvvccc",
+    "followers_url" : "https://api.github.com/users/hvvvvccc/followers",
+    "following_url" : "https://api.github.com/users/hvvvvccc/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hvvvvccc/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hvvvvccc/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hvvvvccc/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hvvvvccc/orgs",
+    "repos_url" : "https://api.github.com/users/hvvvvccc/repos",
+    "events_url" : "https://api.github.com/users/hvvvvccc/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hvvvvccc/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 271,
+    "additions" : 202,
+    "deletions" : 69
+  },
+  "author" : {
+    "login" : "hvvvvccc",
+    "id" : 22511631,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511631?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hvvvvccc",
+    "html_url" : "https://github.com/hvvvvccc",
+    "followers_url" : "https://api.github.com/users/hvvvvccc/followers",
+    "following_url" : "https://api.github.com/users/hvvvvccc/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hvvvvccc/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hvvvvccc/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hvvvvccc/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hvvvvccc/orgs",
+    "repos_url" : "https://api.github.com/users/hvvvvccc/repos",
+    "events_url" : "https://api.github.com/users/hvvvvccc/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hvvvvccc/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/21593a04d515d56ea3adc54560ff9dee8fa9a948",
+  "commit" : {
+    "author" : {
+      "name" : "hvvvvccc",
+      "email" : "hvvvvccc@126.com",
+      "date" : "2016-11-25T18:12:52Z"
+    },
+    "committer" : {
+      "name" : "hvvvvccc",
+      "email" : "hvvvvccc@126.com",
+      "date" : "2016-11-25T18:12:52Z"
+    },
+    "message" : "#6 提交实验报告",
+    "tree" : {
+      "sha" : "74c0877afae6cd3a76750d7ade412eac2f6b0259",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/74c0877afae6cd3a76750d7ade412eac2f6b0259"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/21593a04d515d56ea3adc54560ff9dee8fa9a948",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/21593a04d515d56ea3adc54560ff9dee8fa9a948/comments",
+  "files" : [ {
+    "sha" : "87150feb49d59859d6bdc269c7475a3c968cc6ce",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902103/StuDetails.java",
+    "status" : "added",
+    "additions" : 40,
+    "deletions" : 0,
+    "changes" : 40,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/21593a04d515d56ea3adc54560ff9dee8fa9a948/jweb/src/edu/hzu/javaweb/labs/se1414080902103/StuDetails.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/21593a04d515d56ea3adc54560ff9dee8fa9a948/jweb/src/edu/hzu/javaweb/labs/se1414080902103/StuDetails.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902103/StuDetails.java?ref=21593a04d515d56ea3adc54560ff9dee8fa9a948",
+    "patch" : "@@ -0,0 +1,40 @@\n+package edu.hzu.javaweb.labs.se1414080902103;\n+\n+public class StuDetails {\n+\tprivate String name;\n+\tprivate String id;\n+\tprivate String date;\n+\tprivate String note;\n+\tpublic StuDetails(){}\n+\tpublic StuDetails(String name,String id,String date,String note)\n+\t{\n+\t\tthis.name=name;\n+\t\tthis.id=id;\n+\t\tthis.date=date;\n+\t\tthis.note=note;\n+\t}\n+\tpublic String getName() {\n+\t\treturn name;\n+\t}\n+\tpublic void setName(String name) {\n+\t\tthis.name = name;\n+\t}\n+\tpublic String getId() {\n+\t\treturn id;\n+\t}\n+\tpublic void setId(String id) {\n+\t\tthis.id = id;\n+\t}\n+\tpublic String getDate() {\n+\t\treturn date;\n+\t}\n+\tpublic void setBrithdate(String date) {\n+\t\tthis.date = date;\n+\t}\n+\tpublic String getNote() {\n+\t\treturn note;\n+\t}\n+\tpublic void setNote(String note) {\n+\t\tthis.note =note;\n+\t}\n+}"
+  }, {
+    "sha" : "8b6a443f3c2f3805800357cbd931f343c8130727",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902103/se1414080902103Servlet.java",
+    "status" : "modified",
+    "additions" : 52,
+    "deletions" : 24,
+    "changes" : 76,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/21593a04d515d56ea3adc54560ff9dee8fa9a948/jweb/src/edu/hzu/javaweb/labs/se1414080902103/se1414080902103Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/21593a04d515d56ea3adc54560ff9dee8fa9a948/jweb/src/edu/hzu/javaweb/labs/se1414080902103/se1414080902103Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902103/se1414080902103Servlet.java?ref=21593a04d515d56ea3adc54560ff9dee8fa9a948",
+    "patch" : "@@ -2,14 +2,18 @@\n \n import java.io.IOException;\n import java.io.PrintWriter;\n-\n+import java.util.ArrayList;\n+import java.util.List;\n \n import javax.servlet.ServletException;\n import javax.servlet.annotation.WebServlet;\n import javax.servlet.http.HttpServlet;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n+\n+import net.sf.json.JSONArray;\n import net.sf.json.JSONObject;\n+\n @WebServlet(\"/1414080902103\")\n public class Se1414080902103Servlet extends HttpServlet {\n \n@@ -30,55 +34,79 @@ public void destroy() {\n \n \t/**\n \t * The doGet method of the servlet. <br>\n-\t *\n+\t * \n \t * This method is called when a form has its tag value method equals to get.\n \t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n+\t * @param request\n+\t *            the request send by the client to the server\n+\t * @param response\n+\t *            the response send by the server to the client\n+\t * @throws ServletException\n+\t *             if an error occurred\n+\t * @throws IOException\n+\t *             if an error occurred\n \t */\n \tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n \n \t\tresponse.setContentType(\"text/html\");\n-\t    PrintWriter out=response.getWriter();\n+\t\tPrintWriter out = response.getWriter();\n \t\tout.print(\"1414080902103\");\n \t}\n \n \t/**\n \t * The doPost method of the servlet. <br>\n-\t *\n-\t * This method is called when a form has its tag value method equals to post.\n \t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n+\t * This method is called when a form has its tag value method equals to\n+\t * post.\n+\t * \n+\t * @param request\n+\t *            the request send by the client to the server\n+\t * @param response\n+\t *            the response send by the server to the client\n+\t * @throws ServletException\n+\t *             if an error occurred\n+\t * @throws IOException\n+\t *             if an error occurred\n \t */\n \tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n+\t\tresponse.setCharacterEncoding(\"utf-8\");\n \t\trequest.setCharacterEncoding(\"UTF-8\");\n \t\tresponse.setContentType(\"text/html\");\n \t\tPrintWriter out = response.getWriter();\n-\t\tString name=request.getParameter(\"name\");\n-\t \tString id=request.getParameter(\"id\");\n-\t \tString date=request.getParameter(\"date\");\n-\t \tString note=request.getParameter(\"note\");\n+\t\tString name = request.getParameter(\"name\");\n+\t\tString id = request.getParameter(\"id\");\n+\t\tString date = request.getParameter(\"date\");\n+\t\tString note = request.getParameter(\"note\");\n+\t   \n+\t\t\n+\t/*\tString Msg = \"{'����':'\" + name + \"','ѧ��':'\" + id + \"','����':'\" + date\n+\t\t+ \"','�������':'\" + note + \"'}\";\n+        JSONObject data = JSONObject.fromObject(Msg);\n+        out.print(data);\n+*/\n+\t\t\n+\t\tList<StuDetails> add=new ArrayList<StuDetails>();\n+\t\tadd.add(new StuDetails(name,id,date,note));\n+\t\trequest.setAttribute(\"StuDetails\", add);\n+\t\trequest.getRequestDispatcher(\"client.jsp\").forward(request, response);\n+\t\t\n+\t\t\n+\t\t\n+\t\t\n \n-\t \tString Msg=\"{'name':'\"+name+\"','id':'\"+id+\"','date':'\"+date+\"','note':'\"+note+\"'}\";\n-\n-\t \tJSONObject data=JSONObject.fromObject(Msg);\n-\t \tout.println(data);\n+         \n \t}\n \n \t/**\n \t * Initialization of the servlet. <br>\n-\t *\n-\t * @throws ServletException if an error occurs\n+\t * \n+\t * @throws ServletException\n+\t *             if an error occurs\n \t */\n \tpublic void init() throws ServletException {\n \t\t// Put your code here\n \t}\n \n-}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "5c3ee48dd8dfa9c2920341dd8ebc8d6dcae847e8",
+    "filename" : "labs/1414080902103/MyJsp.jsp",
+    "status" : "modified",
+    "additions" : 60,
+    "deletions" : 45,
+    "changes" : 105,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/21593a04d515d56ea3adc54560ff9dee8fa9a948/labs/1414080902103/MyJsp.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/21593a04d515d56ea3adc54560ff9dee8fa9a948/labs/1414080902103/MyJsp.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902103/MyJsp.jsp?ref=21593a04d515d56ea3adc54560ff9dee8fa9a948",
+    "patch" : "@@ -1,52 +1,67 @@\n <%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> \n <%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+\tString path = request.getContextPath();\n+\tString basePath = request.getScheme() + \"://\"\n+\t\t\t+ request.getServerName() + \":\" + request.getServerPort()\n+\t\t\t+ path + \"/\";\n %>\n \n <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n <html>\n-  <head>\n-    <base href=\"<%=basePath%>\">\n-    \n-    <title>学生签到登记表</title>\n-\n-\n-    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n-    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n-\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n-\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n-\t<meta http-equiv=\"expires\" content=\"0\">    \n-\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n-\t<meta http-equiv=\"description\" content=\"This is my page\">\n-    <script src=\"index.js\"></script>\n-\n-  </head>\n- \n-    <body>\n-    <center>Now time is: \n-         <%=new java.util.Date()%>\n-     </center>\n-  <form id=\"stu\" action=\"\"  method=\"post\">\n-     \n-<div>学生签到表</div>\n-<div>姓名：<input type=\"text\"  id=\"name\" ></div>\n-<div>学号：<input type=\"text\"  id=\"id\" ></div>\n-<div>日期：<input type=\"text\"  id=\"date\" ></div>\n-<div>缺勤情况：</div>\n-<div>\n-<textarea name=\"Letter\" rows=\"5\" cols=\"50\"  id=\"note\" ></textarea>\n-</div>\n-\n-<div><button type=\"submit\"  class=\"btn\" onclick=\"formSubmit.Deal()\">登记</button><input type=\"reset\" value=\"取消\" class=\"btn\" ></div>\n-\n-</form>\n-<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n-  <script src=\"index.js\"></script>\n-  \t\t<%  for(int i=0;i<4;i++){\n-\tout.print(i+\"   \");\n-} %>\n-  \n-  </body>\n+<head>\n+<base href=\"<%=basePath%>\">\n+<title>学生签到登记表1</title>\n+\n+\n+<script Language=\"JavaScript\" src=\"index.js\"> </script> \n+\n+\n+<link rel=\"stylesheet\"\n+\thref=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+<link rel=\"stylesheet\"\n+\thref=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+<meta http-equiv=\"pragma\" content=\"no-cache\">\n+<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+<meta http-equiv=\"expires\" content=\"0\">\n+<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+<meta http-equiv=\"description\" content=\"This is my page\">\n+\n+</head>\n+\n+\n+<body>\n+\t<center>\n+\t\tNow time is:\n+\t\t<%=new java.util.Date()%>\n+\t</center>\n+\t<form id=\"stu\" action=\"1414080902103\" method=\"post\">\n+\n+\t\t<div>学生签到表</div>\n+\t\t<div>\n+\t\t\t姓名：<input type=\"text\" name=\"name\" id=\"name\">\n+\t\t</div>\n+\t\t<div>\n+\t\t\t学号：<input type=\"text\" name=\"id\" id=\"id\">\n+\t\t</div>\n+\t\t<div>\n+\t\t\t日期：<input type=\"text\" name=\"date\" id=\"date\">\n+\t\t</div>\n+\t\t<div>缺勤情况：</div>\n+\t\t<div>\n+\t\t\t<textarea  rows=\"5\" cols=\"50\" name=\"note\" id=\"note\"></textarea>\n+\t\t</div>\n+\n+\t\t<div>\n+\t\t<input type=submit value=\"登记\" >\n+\t\t\t\n+\t\t\t<input type=\"reset\" value=\"取消\" >\n+\t\t</div>\t  \n+\t</form>\n+\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t<script\n+\t\tsrc=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\n+\n+</body>\n </html>"
+  }, {
+    "sha" : "1c07780513f5fbff41d4e25ef89a8165058d041f",
+    "filename" : "labs/1414080902103/client.jsp",
+    "status" : "added",
+    "additions" : 50,
+    "deletions" : 0,
+    "changes" : 50,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/21593a04d515d56ea3adc54560ff9dee8fa9a948/labs/1414080902103/client.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/21593a04d515d56ea3adc54560ff9dee8fa9a948/labs/1414080902103/client.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902103/client.jsp?ref=21593a04d515d56ea3adc54560ff9dee8fa9a948",
+    "patch" : "@@ -0,0 +1,50 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> \n+<%@ page import=\"edu.hzu.javaweb.labs.se1414080902103.StuDetails\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>学生签到表2</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+  \n+     \n+  \n+     \n+         <c:forEach var=\"StuDetails\" items=\"${StuDetails}\">\n+     <c:if test=\"${not empty StuDetails.name && not empty StuDetails.id && not empty StuDetails.date && not empty StuDetails.note}\">\n+        <center><c:out value=\"签到已录入\"/></center><br>\n+    <center>   姓名：${StuDetails.name}<br> \n+         学号：${StuDetails.id} <br>\n+         日期： ${StuDetails.date} <br>\n+        缺勤情况： ${StuDetails.note} <br></center>\n+        </c:if>\n+   <c:if test=\"${empty StuDetails.name || empty StuDetails.id || empty StuDetails.date || empty StuDetails.note}\">\n+     <center><c:out value=\"签到失败\"/></center><br>\n+        <center> 信息不能为空!</center>\n+        </c:if>\n+     </c:forEach><br>\n+    \n+\n+\n+ \n+  </body>\n+</html>"
+  } ],
+  "sha" : "21593a04d515d56ea3adc54560ff9dee8fa9a948",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/21593a04d515d56ea3adc54560ff9dee8fa9a948",
+  "parents" : [ {
+    "sha" : "9e4e5c8ed8e00270666120afe966b9ca95d5a7b9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9e4e5c8ed8e00270666120afe966b9ca95d5a7b9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/9e4e5c8ed8e00270666120afe966b9ca95d5a7b9"
+  } ]
+}

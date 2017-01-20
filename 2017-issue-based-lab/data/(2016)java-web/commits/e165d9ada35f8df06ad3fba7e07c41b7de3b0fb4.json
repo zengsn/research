@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 207,
+    "additions" : 0,
+    "deletions" : 207
+  },
+  "author" : {
+    "login" : "Hongsf",
+    "id" : 22068396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hongsf",
+    "html_url" : "https://github.com/Hongsf",
+    "followers_url" : "https://api.github.com/users/Hongsf/followers",
+    "following_url" : "https://api.github.com/users/Hongsf/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hongsf/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hongsf/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hongsf/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hongsf/orgs",
+    "repos_url" : "https://api.github.com/users/Hongsf/repos",
+    "events_url" : "https://api.github.com/users/Hongsf/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hongsf/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/e165d9ada35f8df06ad3fba7e07c41b7de3b0fb4",
+  "commit" : {
+    "author" : {
+      "name" : "洪生锋",
+      "email" : "1083178465@qq.com",
+      "date" : "2016-10-02T10:48:14Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-02T10:48:14Z"
+    },
+    "message" : "Delete bootstrap-carousel.js",
+    "tree" : {
+      "sha" : "d8a3f173a318002b116c30b7110722acc44d7d57",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d8a3f173a318002b116c30b7110722acc44d7d57"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/e165d9ada35f8df06ad3fba7e07c41b7de3b0fb4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/e165d9ada35f8df06ad3fba7e07c41b7de3b0fb4/comments",
+  "files" : [ {
+    "sha" : "851c020437f272f3ca7e08e919f19eb9716e2783",
+    "filename" : "labs/1414080902110/bootstrap/js/bootstrap-carousel.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 207,
+    "changes" : 207,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6834e7f374e2e396f9987767032e6f55c02a8bff/labs/1414080902110/bootstrap/js/bootstrap-carousel.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6834e7f374e2e396f9987767032e6f55c02a8bff/labs/1414080902110/bootstrap/js/bootstrap-carousel.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902110/bootstrap/js/bootstrap-carousel.js?ref=6834e7f374e2e396f9987767032e6f55c02a8bff",
+    "patch" : "@@ -1,207 +0,0 @@\n-/* ==========================================================\n- * bootstrap-carousel.js v2.3.2\n- * http://twbs.github.com/bootstrap/javascript.html#carousel\n- * ==========================================================\n- * Copyright 2013 Twitter, Inc.\n- *\n- * Licensed under the Apache License, Version 2.0 (the \"License\");\n- * you may not use this file except in compliance with the License.\n- * You may obtain a copy of the License at\n- *\n- * http://www.apache.org/licenses/LICENSE-2.0\n- *\n- * Unless required by applicable law or agreed to in writing, software\n- * distributed under the License is distributed on an \"AS IS\" BASIS,\n- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n- * See the License for the specific language governing permissions and\n- * limitations under the License.\n- * ========================================================== */\n-\n-\n-!function ($) {\n-\n-  \"use strict\"; // jshint ;_;\n-\n-\n- /* CAROUSEL CLASS DEFINITION\n-  * ========================= */\n-\n-  var Carousel = function (element, options) {\n-    this.$element = $(element)\n-    this.$indicators = this.$element.find('.carousel-indicators')\n-    this.options = options\n-    this.options.pause == 'hover' && this.$element\n-      .on('mouseenter', $.proxy(this.pause, this))\n-      .on('mouseleave', $.proxy(this.cycle, this))\n-  }\n-\n-  Carousel.prototype = {\n-\n-    cycle: function (e) {\n-      if (!e) this.paused = false\n-      if (this.interval) clearInterval(this.interval);\n-      this.options.interval\n-        && !this.paused\n-        && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))\n-      return this\n-    }\n-\n-  , getActiveIndex: function () {\n-      this.$active = this.$element.find('.item.active')\n-      this.$items = this.$active.parent().children()\n-      return this.$items.index(this.$active)\n-    }\n-\n-  , to: function (pos) {\n-      var activeIndex = this.getActiveIndex()\n-        , that = this\n-\n-      if (pos > (this.$items.length - 1) || pos < 0) return\n-\n-      if (this.sliding) {\n-        return this.$element.one('slid', function () {\n-          that.to(pos)\n-        })\n-      }\n-\n-      if (activeIndex == pos) {\n-        return this.pause().cycle()\n-      }\n-\n-      return this.slide(pos > activeIndex ? 'next' : 'prev', $(this.$items[pos]))\n-    }\n-\n-  , pause: function (e) {\n-      if (!e) this.paused = true\n-      if (this.$element.find('.next, .prev').length && $.support.transition.end) {\n-        this.$element.trigger($.support.transition.end)\n-        this.cycle(true)\n-      }\n-      clearInterval(this.interval)\n-      this.interval = null\n-      return this\n-    }\n-\n-  , next: function () {\n-      if (this.sliding) return\n-      return this.slide('next')\n-    }\n-\n-  , prev: function () {\n-      if (this.sliding) return\n-      return this.slide('prev')\n-    }\n-\n-  , slide: function (type, next) {\n-      var $active = this.$element.find('.item.active')\n-        , $next = next || $active[type]()\n-        , isCycling = this.interval\n-        , direction = type == 'next' ? 'left' : 'right'\n-        , fallback  = type == 'next' ? 'first' : 'last'\n-        , that = this\n-        , e\n-\n-      this.sliding = true\n-\n-      isCycling && this.pause()\n-\n-      $next = $next.length ? $next : this.$element.find('.item')[fallback]()\n-\n-      e = $.Event('slide', {\n-        relatedTarget: $next[0]\n-      , direction: direction\n-      })\n-\n-      if ($next.hasClass('active')) return\n-\n-      if (this.$indicators.length) {\n-        this.$indicators.find('.active').removeClass('active')\n-        this.$element.one('slid', function () {\n-          var $nextIndicator = $(that.$indicators.children()[that.getActiveIndex()])\n-          $nextIndicator && $nextIndicator.addClass('active')\n-        })\n-      }\n-\n-      if ($.support.transition && this.$element.hasClass('slide')) {\n-        this.$element.trigger(e)\n-        if (e.isDefaultPrevented()) return\n-        $next.addClass(type)\n-        $next[0].offsetWidth // force reflow\n-        $active.addClass(direction)\n-        $next.addClass(direction)\n-        this.$element.one($.support.transition.end, function () {\n-          $next.removeClass([type, direction].join(' ')).addClass('active')\n-          $active.removeClass(['active', direction].join(' '))\n-          that.sliding = false\n-          setTimeout(function () { that.$element.trigger('slid') }, 0)\n-        })\n-      } else {\n-        this.$element.trigger(e)\n-        if (e.isDefaultPrevented()) return\n-        $active.removeClass('active')\n-        $next.addClass('active')\n-        this.sliding = false\n-        this.$element.trigger('slid')\n-      }\n-\n-      isCycling && this.cycle()\n-\n-      return this\n-    }\n-\n-  }\n-\n-\n- /* CAROUSEL PLUGIN DEFINITION\n-  * ========================== */\n-\n-  var old = $.fn.carousel\n-\n-  $.fn.carousel = function (option) {\n-    return this.each(function () {\n-      var $this = $(this)\n-        , data = $this.data('carousel')\n-        , options = $.extend({}, $.fn.carousel.defaults, typeof option == 'object' && option)\n-        , action = typeof option == 'string' ? option : options.slide\n-      if (!data) $this.data('carousel', (data = new Carousel(this, options)))\n-      if (typeof option == 'number') data.to(option)\n-      else if (action) data[action]()\n-      else if (options.interval) data.pause().cycle()\n-    })\n-  }\n-\n-  $.fn.carousel.defaults = {\n-    interval: 5000\n-  , pause: 'hover'\n-  }\n-\n-  $.fn.carousel.Constructor = Carousel\n-\n-\n- /* CAROUSEL NO CONFLICT\n-  * ==================== */\n-\n-  $.fn.carousel.noConflict = function () {\n-    $.fn.carousel = old\n-    return this\n-  }\n-\n- /* CAROUSEL DATA-API\n-  * ================= */\n-\n-  $(document).on('click.carousel.data-api', '[data-slide], [data-slide-to]', function (e) {\n-    var $this = $(this), href\n-      , $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\\s]+$)/, '')) //strip for ie7\n-      , options = $.extend({}, $target.data(), $this.data())\n-      , slideIndex\n-\n-    $target.carousel(options)\n-\n-    if (slideIndex = $this.attr('data-slide-to')) {\n-      $target.data('carousel').pause().to(slideIndex).cycle()\n-    }\n-\n-    e.preventDefault()\n-  })\n-\n-}(window.jQuery);\n\\ No newline at end of file"
+  } ],
+  "sha" : "e165d9ada35f8df06ad3fba7e07c41b7de3b0fb4",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/e165d9ada35f8df06ad3fba7e07c41b7de3b0fb4",
+  "parents" : [ {
+    "sha" : "6834e7f374e2e396f9987767032e6f55c02a8bff",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6834e7f374e2e396f9987767032e6f55c02a8bff",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/6834e7f374e2e396f9987767032e6f55c02a8bff"
+  } ]
+}

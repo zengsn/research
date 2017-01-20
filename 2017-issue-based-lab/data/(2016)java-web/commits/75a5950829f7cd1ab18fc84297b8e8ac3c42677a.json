@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 50,
+    "additions" : 0,
+    "deletions" : 50
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/75a5950829f7cd1ab18fc84297b8e8ac3c42677a",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T01:31:51Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T01:31:51Z"
+    },
+    "message" : "Delete index.jsp",
+    "tree" : {
+      "sha" : "f8d734ba2e93a404546237535ecd7e17f3bdd1e2",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/f8d734ba2e93a404546237535ecd7e17f3bdd1e2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/75a5950829f7cd1ab18fc84297b8e8ac3c42677a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/75a5950829f7cd1ab18fc84297b8e8ac3c42677a/comments",
+  "files" : [ {
+    "sha" : "74e4b41fc5e7b83a0414398955bc153416f1afed",
+    "filename" : "jweb/web/1414080902205/index.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 50,
+    "changes" : 50,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f7824c3333ce84024df5491510c807fbac8e1690/jweb/web/1414080902205/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f7824c3333ce84024df5491510c807fbac8e1690/jweb/web/1414080902205/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902205/index.jsp?ref=f7824c3333ce84024df5491510c807fbac8e1690",
+    "patch" : "@@ -1,50 +0,0 @@\n-<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n-<html xmlns=\"http://www.w3.org/1999/xhtml\">\n-<head>\n-<meta http-equiv=\"Content-Type\" content=\"text/html; charset=gb2312\" />\n-<link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n-</head>\n-<title>\n-ATM Transfer\n-</title>\n-<body>\n-\t<div class=\"Register\">\n-       <h2 class=\"text-center\"> ATM Transfer </h2>\n-        <center>Now time is: \n-        <%=new java.util.Date()%>\n-        </center>\n-\t   \t  <form id=\"register\" action=\"servlet/Se1414080902205Servlet\" method=\"post\">\n-\t\t  \t<div class=\"form-group\">\n-                <label for=\"username1\">Account *</label>\n-                <input type=\"text\" id=\"Account\" class=\"form-control\" />\n-\t\t\t</div>\n-\t\t\t<div class=\"form-group\">\n-                <label for=\"password1\">Amount *</label>\n-                <input type=\"password\" id=\"Amount\" class=\"form-control\"/>\n-\t\t\t</div>\n-\t\t\t<div style = \"text-align:right;\">\n-\t\t\t<button type=\"button\" class=\"btn btn-default\">Confirm</button>\n-\t\t\t</div>\n-\t\t\t</form>\n-\t</div>\n-\n-</body>\n-\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n-    <script type=\"text/javascript\">\n-      $( \".btn\" ).click(function() {\n-\t  //alert(\".btn\");\n-\t  var Account = $(\"#Account\").val();\n-\t  var Amount = $(\"#Amount\").val();\n-        $.ajax({ \n-          url: \"servlet/Se1414080902205Servlet\",\n-          data:{account: Account,amount:Amount},\n-          type : \"post\",\n-          datatype:\"html\",\n-          success: function(data){\n-            alert(data);\n-        }});\n-      });\n-    </script>\n-\n-</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "75a5950829f7cd1ab18fc84297b8e8ac3c42677a",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/75a5950829f7cd1ab18fc84297b8e8ac3c42677a",
+  "parents" : [ {
+    "sha" : "f7824c3333ce84024df5491510c807fbac8e1690",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f7824c3333ce84024df5491510c807fbac8e1690",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f7824c3333ce84024df5491510c807fbac8e1690"
+  } ]
+}

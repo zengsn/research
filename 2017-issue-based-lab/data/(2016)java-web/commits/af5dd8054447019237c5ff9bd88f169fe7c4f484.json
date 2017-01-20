@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "tangjianliang",
+    "id" : 22502144,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22502144?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/tangjianliang",
+    "html_url" : "https://github.com/tangjianliang",
+    "followers_url" : "https://api.github.com/users/tangjianliang/followers",
+    "following_url" : "https://api.github.com/users/tangjianliang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/tangjianliang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/tangjianliang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/tangjianliang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/tangjianliang/orgs",
+    "repos_url" : "https://api.github.com/users/tangjianliang/repos",
+    "events_url" : "https://api.github.com/users/tangjianliang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/tangjianliang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 200,
+    "additions" : 200,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "tangjianliang",
+    "id" : 22502144,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22502144?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/tangjianliang",
+    "html_url" : "https://github.com/tangjianliang",
+    "followers_url" : "https://api.github.com/users/tangjianliang/followers",
+    "following_url" : "https://api.github.com/users/tangjianliang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/tangjianliang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/tangjianliang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/tangjianliang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/tangjianliang/orgs",
+    "repos_url" : "https://api.github.com/users/tangjianliang/repos",
+    "events_url" : "https://api.github.com/users/tangjianliang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/tangjianliang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/af5dd8054447019237c5ff9bd88f169fe7c4f484",
+  "commit" : {
+    "author" : {
+      "name" : "tangjianliang",
+      "email" : "1285848867@qq.com",
+      "date" : "2016-11-24T02:18:35Z"
+    },
+    "committer" : {
+      "name" : "tangjianliang",
+      "email" : "1285848867@qq.com",
+      "date" : "2016-11-24T02:18:35Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "40be3a4aaf7cbe126f6ab5e241595ffce648f4f5",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/40be3a4aaf7cbe126f6ab5e241595ffce648f4f5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/af5dd8054447019237c5ff9bd88f169fe7c4f484",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/af5dd8054447019237c5ff9bd88f169fe7c4f484/comments",
+  "files" : [ {
+    "sha" : "191842365ccbd5f0e554696464cde284ecb72704",
+    "filename" : "jweb/web/1414080902111/chakan.jsp",
+    "status" : "added",
+    "additions" : 57,
+    "deletions" : 0,
+    "changes" : 57,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/af5dd8054447019237c5ff9bd88f169fe7c4f484/jweb/web/1414080902111/chakan.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/af5dd8054447019237c5ff9bd88f169fe7c4f484/jweb/web/1414080902111/chakan.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902111/chakan.jsp?ref=af5dd8054447019237c5ff9bd88f169fe7c4f484",
+    "patch" : "@@ -0,0 +1,57 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+<head>\n+\t<title>查看发布的交易</title>\n+</head>\n+<body>\n+\n+<form>\n+\t<table align=\"center\">\n+\t\t<tr>\n+\t\t\t<td align=\"left\" >查看交易：</td>\n+\t\t</tr>\n+\t\n+\t\t\n+\t\t<tr>\n+\t\t   <td align=\"left\">\n+\t\t      <%\n+\t\t      request.setCharacterEncoding(\"UTF-8\");\n+\t\t      %>\n+\t\t      <%\n+\t\t\t\tString str1=request.getParameter(\"Email\");\n+\t\t\t\tString str2=request.getParameter(\"Name\");\n+\t\t\t\tString str3=request.getParameter(\"ID\");\n+\t\t\t\tString str4=request.getParameter(\"PW\");\n+\t\t\t\tString str5=request.getParameter(\"Select\");\n+\t\t\t\tString str6=request.getParameter(\"Money\");\n+\t\t\t\trequest.setAttribute(\"Email1\", str1);\n+\t\t        \trequest.setAttribute(\"Name\",str2);\n+\t\t        \trequest.setAttribute(\"ID\",str3);\n+\t\t        \trequest.setAttribute(\"PW\",str4);\n+\t\t        \trequest.setAttribute(\"Select\",str5);\n+\t\t        \trequest.setAttribute(\"Money\",str6);\n+\t\t       %>\n+\t\t     \n+\t\t     <sapn>邮箱:<c:out value=\"${requestScope.Email1}\"></c:out></sapn></br>\n+\t\t     <span>姓名：<c:out value=\"${requestScope.Name}\"></c:out></span></br>\n+\t\t     <span>身份证：<c:out value=\"${requestScope.ID}\"></c:out></span></br>\n+\t\t      <span>密码：<c:out value=\"${requestScope.PW}\"></c:out></span></br>\n+\t\t      <span>游戏类型：<c:out value=\"${requestScope.Select}\"></c:out></span></br>\n+\t\t      <span>价格：<c:out value=\"${requestScope.Money}\"></c:out></span> </br>\n+\t\t   </td>\n+\t\t</tr>\n+\n+\n+\t\t\n+\t</table>\n+</form>\n+\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "9a1de1454662305500249d9b647ba0dd0669af03",
+    "filename" : "jweb/web/1414080902111/login.jsp",
+    "status" : "added",
+    "additions" : 50,
+    "deletions" : 0,
+    "changes" : 50,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/af5dd8054447019237c5ff9bd88f169fe7c4f484/jweb/web/1414080902111/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/af5dd8054447019237c5ff9bd88f169fe7c4f484/jweb/web/1414080902111/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902111/login.jsp?ref=af5dd8054447019237c5ff9bd88f169fe7c4f484",
+    "patch" : "@@ -0,0 +1,50 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+\t<title>游戏账号交易系统</title>\n+</head>\n+<body>\n+    <h2 align=\"center\">游戏账号交易系统</h2>\n+    <form action=\"select1.jsp\" method=\"post\" name=\"login\">\n+    <table align=\"center\">\n+    <tr><td align=\"right\">登录名:*</td><td><input type=\"text\" name=\"NAME\"></td>\n+    </tr>\n+    <tr><td align=\"right\">密码:*</td><td><input type=\"password\" name=\"PW\"></td>\n+    </tr>\n+    <tr><td align=\"right\">身份:*</td>\n+           <td>\n+                  <input type=\"radio\"  name=\"USER\"  value=\"学生\"  />卖家</td>\n+    </tr>   \n+\n+\n+\n+     <tr>\n+           <td>当前时间：</td>\n+\t\t   <td align=\"center\">\n+\t\t   <%\n+\t\t   Date date=new Date();\n+\t\t  session.setAttribute(\"d\",date);  \n+\t\t   %>\n+\t\t   <c:out value=\"${sessionScope.d}\"></c:out>\n+\t\t   </td>\n+\t</tr>\n+\t\n+    <tr>\n+    <td  colspan=\"3\" align=\"center\"  height=\"40\">\n+        <input  type=\"submit\" value=\"登录\" >&nbsp;\n+        <input   type=\"reset\" value=\"取消\">\n+    </td>\n+    </tr>\n+    \n+    </table>\n+    </form>\n+\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "0833ccf38c8d176c73a986470da57f52a0c6b453",
+    "filename" : "jweb/web/1414080902111/select1.jsp",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/af5dd8054447019237c5ff9bd88f169fe7c4f484/jweb/web/1414080902111/select1.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/af5dd8054447019237c5ff9bd88f169fe7c4f484/jweb/web/1414080902111/select1.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902111/select1.jsp?ref=af5dd8054447019237c5ff9bd88f169fe7c4f484",
+    "patch" : "@@ -0,0 +1,52 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+<head>\n+\t<title>功能选择</title>\n+</head>\n+<body>\n+\n+<%\n+    String name;\n+    String str1=request.getParameter(\"NAME\");\n+    request.setAttribute(\"name\",str1) ;\n+    request.getAttribute(\"name\");\n+ %>\n+\n+ <c:if test=\"${empty requestScope.name}\">\n+     <%\n+     response.sendRedirect(\"Fail.jsp\");\n+      %>\n+ </c:if>\n+\n+<form>\n+\t<table align=\"center\">\n+\t    <tr>\n+\t       <td align=\"left\">     \n+\t       <c:out value=\"${ param.NAME}\"></c:out>您好！\n+\t       </td>\n+\t    </tr>\n+\t    \n+\t\t<tr>\n+\t\t\t<td align=\"left\">请选择：</td>\n+\t\t</tr>\n+\t\t<tr>\n+\t\t\t<td align=\"right\">\n+\t\t\t\t<input type=\"button\" name=\"\" value=\"发布交易\" onclick=\"window.location.href='tijiao.jsp'\">\n+\t\t\t</td>\n+\t\t</tr>\n+\t\t<tr>\n+\t\t\t<td align=\"right\">\n+\t\t\t\t<input type=\"button\" name=\"\" value=\"查看交易\" onclick=\"window.location.href='chakan.jsp'\">\n+\t\t\t</td>\n+\t\t</tr>\n+\t</table>\n+</form>\n+\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "1a8c115edfc03efabdb4bd0c84d5fe30f54610dd",
+    "filename" : "jweb/web/1414080902111/tijiao.jsp",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/af5dd8054447019237c5ff9bd88f169fe7c4f484/jweb/web/1414080902111/tijiao.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/af5dd8054447019237c5ff9bd88f169fe7c4f484/jweb/web/1414080902111/tijiao.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902111/tijiao.jsp?ref=af5dd8054447019237c5ff9bd88f169fe7c4f484",
+    "patch" : "@@ -0,0 +1,41 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+<head>\n+\t<title>发布交易</title>\n+</head>\n+<body>\n+<form action=\"chakan.jsp\" method=\"post\">\n+<h2 align=\"center\">游戏账号交易</h2>\n+    \n+    <table align=\"center\">\n+    <tr><td>游戏ID或邮箱:</td><td><input type=\"text\" name=\"Email\"></td></tr>\n+    <tr><td>姓名:</td><td><input type=\"text\" name=\"Name\"></td></tr>\n+    <tr><td>身份证:</td><td><input type=\"text\" name=\"ID\"></td></tr>\n+    <tr><td>游戏密码:</td><td><input type=\"password\" name=\"PW\"></td></tr>\n+    <tr><td>分类:</td>\n+  \t\t<td><select name=\"Select\">\n+  \t\t<option selected>英雄联盟</option>\n+  \t\t<option>地下城与勇士</option>\n+  \t\t<option>穿越火线</option>\n+                <option>守望先锋</option>\n+                <option>其他</option>\n+  \t\t\t\t</select>\n+  \t\t</td>\n+  \t\t</tr>\n+    <tr><td>价格:</td><td><input type=\"text\" name=\"Money\"></td></tr>\n+    <tr>\n+    <td>\n+        <input type=\"submit\" value=\"提交\"onclick=\"test()\"> <input type=\"reset\" value=\"取消\">\n+    </td>\n+    </tr>\n+    </table>\n+    </form>\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "af5dd8054447019237c5ff9bd88f169fe7c4f484",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/af5dd8054447019237c5ff9bd88f169fe7c4f484",
+  "parents" : [ {
+    "sha" : "27639cfa5685e8cb049c4f5bcfca3926ba3f2ed0",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/27639cfa5685e8cb049c4f5bcfca3926ba3f2ed0",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/27639cfa5685e8cb049c4f5bcfca3926ba3f2ed0"
+  } ]
+}

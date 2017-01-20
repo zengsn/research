@@ -1,0 +1,122 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 347,
+    "additions" : 347,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/dcbd33b873c71c6cc62e48a348e0560398d657c7",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-08T01:34:32Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-08T01:34:32Z"
+    },
+    "message" : "Merge pull request #909 from xuhuanran/master\n\n#234 实验4-9",
+    "tree" : {
+      "sha" : "8682c43a72f5fd95b9bbd4cace3944dcb4ee4ee3",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/8682c43a72f5fd95b9bbd4cace3944dcb4ee4ee3"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/dcbd33b873c71c6cc62e48a348e0560398d657c7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dcbd33b873c71c6cc62e48a348e0560398d657c7/comments",
+  "files" : [ {
+    "sha" : "802b7f11df6eb4195efc3b27204a80f9eae686bf",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dcbd33b873c71c6cc62e48a348e0560398d657c7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dcbd33b873c71c6cc62e48a348e0560398d657c7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/AndroidManifest.xml?ref=dcbd33b873c71c6cc62e48a348e0560398d657c7",
+    "patch" : "@@ -0,0 +1,41 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"com.zhaoyi.des\"\n+    android:versionCode=\"1\"\n+    android:versionName=\"1.0\" >\n+\n+    <uses-sdk android:minSdkVersion=\"8\" />\n+    \n+    <uses-permission android:name=\"android.permission.CALL_PHONE\" />\n+    <uses-permission android:name=\"android.permission.INTERNET\" />\n+    <uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n+    <uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n+    <uses-permission android:name=\"android.permission.CAMERA\" />\n+    <!-- 调用摄像头权限 -->\n+    <uses-permission android:name=\"android.permission.RECORD_AUDIO\" />\n+    <!-- 录制视频/音频权限 -->\n+    <uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n+    <!-- sd卡读写权限 -->\n+    <uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\" />\n+    <!-- 挂载sd卡 -->\n+    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n+    <uses-permission android:name=\"android.permission.INTERNET\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n+    <uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />\n+    <application\n+        android:icon=\"@drawable/ic_launcher\"\n+        android:label=\"@string/app_name\" >\n+        <activity\n+            android:label=\"@string/app_name\"\n+            android:name=\".MainActivity\" >\n+            <intent-filter >\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+    </application>\n+\n+</manifest>\n\\ No newline at end of file"
+  }, {
+    "sha" : "4a481e7145d45d0e527855b13f507dd0b03d0268",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/Net1314080903136_Activity.java",
+    "status" : "added",
+    "additions" : 145,
+    "deletions" : 0,
+    "changes" : 145,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dcbd33b873c71c6cc62e48a348e0560398d657c7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/Net1314080903136_Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dcbd33b873c71c6cc62e48a348e0560398d657c7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/Net1314080903136_Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/Net1314080903136_Activity.java?ref=dcbd33b873c71c6cc62e48a348e0560398d657c7",
+    "patch" : "@@ -0,0 +1,145 @@\n+package edu.hzuapps.androidworks.homeworks;\n+\n+import android.app.Activity;\n+import android.graphics.Color;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.RelativeLayout;\n+\n+public class Net1314080903136_Activity extends Activity {\n+\tprivate RelativeLayout root;\n+\tprivate String key;\n+\tprivate String encryptFrom, encryptTo; // �����ļ���ƣ�����֮���ļ�����·��\n+\tprivate String decryptFrom, decryptTo; // �����ļ���ƣ�����֮���ļ�����·��\n+\tprivate EditText keyEditText, editText1, editText2, editText3, editText4;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\t// TODO Auto-generated method stub\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tinit();\n+\t\tsetContentView(root);\n+\t}\n+\n+\tprivate void init() {\n+\t\t// TODO Auto-generated method stub\n+\t\troot = new RelativeLayout(this);\n+\t\troot.setBackgroundColor(Color.WHITE);\n+\t\troot.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));\n+\n+\t\tkeyEditText = new EditText(this);\n+\t\tkeyEditText.setId(10);\n+\t\tkeyEditText.setHint(\"������Կ\");\n+\t\tRelativeLayout.LayoutParams keyParams = new RelativeLayout.LayoutParams(\n+\t\t\t\t-2, -2);\n+\t\tkeyParams.addRule(RelativeLayout.CENTER_HORIZONTAL);\n+\n+\t\teditText1 = new EditText(this);\n+\t\teditText1.setId(11);\n+\t\teditText1.setHint(\"�����ļ���ƣ�Ĭ��sdcard��Ŀ¼\");\n+\t\tRelativeLayout.LayoutParams edit1Params = new RelativeLayout.LayoutParams(\n+\t\t\t\t-2, -2);\n+\t\tedit1Params.addRule(RelativeLayout.CENTER_HORIZONTAL);\n+\t\tedit1Params.addRule(RelativeLayout.BELOW, 10);\n+\n+\t\teditText2 = new EditText(this);\n+\t\teditText2.setId(12);\n+\t\teditText2.setHint(\"���ܱ���·����Ĭ��sdcard��Ŀ¼\");\n+\t\tRelativeLayout.LayoutParams edit2Params = new RelativeLayout.LayoutParams(\n+\t\t\t\t-2, -2);\n+\t\tedit2Params.addRule(RelativeLayout.CENTER_HORIZONTAL);\n+\t\tedit2Params.addRule(RelativeLayout.BELOW, 11);\n+\n+\t\tButton button1 = new Button(this);\n+\t\tbutton1.setId(13);\n+\t\tbutton1.setText(\"����\");\n+\t\tbutton1.setOnClickListener(new Button1OnClickListener());\n+\t\tRelativeLayout.LayoutParams b1Params = new RelativeLayout.LayoutParams(\n+\t\t\t\t-2, -2);\n+\t\tb1Params.addRule(RelativeLayout.BELOW, 12);\n+\t\tb1Params.addRule(RelativeLayout.CENTER_HORIZONTAL);\n+\n+\t\teditText3 = new EditText(this);\n+\t\teditText3.setId(14);\n+\t\teditText3.setHint(\"�����ļ���ƣ�Ĭ��sdcard��Ŀ¼\");\n+\t\tRelativeLayout.LayoutParams edit3Params = new RelativeLayout.LayoutParams(\n+\t\t\t\t-2, -2);\n+\t\tedit3Params.addRule(RelativeLayout.CENTER_HORIZONTAL);\n+\t\tedit3Params.addRule(RelativeLayout.BELOW, 13);\n+\n+\t\teditText4 = new EditText(this);\n+\t\teditText4.setId(15);\n+\t\teditText4.setHint(\"���ܱ���·����Ĭ��sdcard��Ŀ¼\");\n+\t\tRelativeLayout.LayoutParams edit4Params = new RelativeLayout.LayoutParams(\n+\t\t\t\t-2, -2);\n+\t\tedit4Params.addRule(RelativeLayout.CENTER_HORIZONTAL);\n+\t\tedit4Params.addRule(RelativeLayout.BELOW, 14);\n+\n+\t\tButton button2 = new Button(this);\n+\t\tbutton2.setId(16);\n+\t\tbutton2.setText(\"����\");\n+\t\tbutton2.setOnClickListener(new Button2OnClickListener());\n+\t\tRelativeLayout.LayoutParams b2Params = new RelativeLayout.LayoutParams(\n+\t\t\t\t-2, -2);\n+\t\tb2Params.addRule(RelativeLayout.BELOW, 15);\n+\t\tb2Params.addRule(RelativeLayout.CENTER_HORIZONTAL);\n+\n+//\t\troot.addView(keyEditText, keyParams);\n+\t\troot.addView(editText1, edit1Params);\n+\t\troot.addView(editText2, edit2Params);\n+\t\troot.addView(button1, b1Params);\n+\t\troot.addView(editText3, edit3Params);\n+\t\troot.addView(editText4, edit4Params);\n+\t\troot.addView(button2, b2Params);\n+\t}\n+\n+\t/**\n+\t * ����\n+\t * \n+\t * @author ���Ȼ\n+\t * \n+\t */\n+\tprivate final class Button1OnClickListener implements View.OnClickListener {\n+\n+\t\tpublic void onClick(View v) {\n+\t\t\tkey = keyEditText.getText().toString();\n+\t\t\tencryptFrom = editText1.getText().toString();\n+\t\t\tencryptTo = editText2.getText().toString();\n+\t\t\tNet1314080903136_FileDES net1314080903136_FileDES;\n+\t\t\ttry {\n+\t\t\t\tnet1314080903136_FileDES = new Net1314080903136_FileDES(\"spring.sky\");\n+\t\t\t\tnet1314080903136_FileDES.doEncryptFile(\"sdcard/\" + encryptFrom, \"sdcard/\"\n+\t\t\t\t\t\t+ encryptTo); // ����\n+\t\t\t} catch (Exception e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\t/**\n+\t * ����\n+\t * \n+\t * @author ���Ȼ\n+\t * \n+\t */\n+\tprivate final class Button2OnClickListener implements View.OnClickListener {\n+\n+\t\tpublic void onClick(View v) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tkey = keyEditText.getText().toString();\n+\t\t\tdecryptFrom = editText3.getText().toString();\n+\t\t\tdecryptTo = editText4.getText().toString();\n+\t\t\tNet1314080903136_FileDES net1314080903136_FileDES;\n+\t\t\ttry {\n+\t\t\t\tnet1314080903136_FileDES = new Net1314080903136_FileDES(\"spring.sky\");\n+\t\t\t\tnet1314080903136_FileDES.doDecryptFile(\"sdcard/\" + decryptFrom, \"sdcard/\"\n+\t\t\t\t\t\t+ decryptTo); // ����\n+\t\t\t} catch (Exception e) {\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\t}\n+\t}\n+}"
+  }, {
+    "sha" : "ce63f9b0be8ab3fde1f6a6d4b543a9d9e65108dc",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/Net1314080903136_FileDES.java",
+    "status" : "added",
+    "additions" : 149,
+    "deletions" : 0,
+    "changes" : 149,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dcbd33b873c71c6cc62e48a348e0560398d657c7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/Net1314080903136_FileDES.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dcbd33b873c71c6cc62e48a348e0560398d657c7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/Net1314080903136_FileDES.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903136/Net1314080903136_FileDES.java?ref=dcbd33b873c71c6cc62e48a348e0560398d657c7",
+    "patch" : "@@ -0,0 +1,149 @@\n+package edu.hzuapps.androidworks.homeworks;\n+\n+import java.io.BufferedReader;\n+import java.io.FileInputStream;\n+import java.io.FileNotFoundException;\n+import java.io.FileOutputStream;\n+import java.io.InputStream;\n+import java.io.InputStreamReader;\n+import java.io.OutputStream;\n+import java.security.Key;\n+import javax.crypto.Cipher;\n+import javax.crypto.CipherInputStream;\n+import javax.crypto.spec.SecretKeySpec;\n+\n+public class Net1314080903136_FileDES {\n+\t/** ���ܽ��ܵ�key */\n+\tprivate Key mKey;\n+\t/** ���ܵ����� */\n+\tprivate Cipher mDecryptCipher;\n+\t/** ���ܵ����� */\n+\tprivate Cipher mEncryptCipher;\n+\n+\tpublic Net1314080903136_FileDES(String key) throws Exception {\n+\t\tinitKey(key);\n+\t\tinitCipher();\n+\t}\n+\n+\t/**\n+\t * ����һ����ܽ��ܵ�key\n+\t * \n+\t * @param keyRule\n+\t */\n+\tpublic void initKey(String keyRule) {\n+\t\tbyte[] keyByte = keyRule.getBytes();\n+\t\t// ����һ��յİ�λ����,Ĭ�������Ϊ0\n+\t\tbyte[] byteTemp = new byte[8];\n+\t\t// ���û�ָ���Ĺ���ת���ɰ�λ����\n+\t\tfor (int i = 0; i < byteTemp.length && i < keyByte.length; i++) {\n+\t\t\tbyteTemp[i] = keyByte[i];\n+\t\t}\n+\t\tmKey = new SecretKeySpec(byteTemp, \"DES\");\n+\t}\n+\n+\t/***\n+\t * ��ʼ����������\n+\t * \n+\t * @throws Exception\n+\t */\n+\tprivate void initCipher() throws Exception {\n+\t\tmEncryptCipher = Cipher.getInstance(\"DES\");\n+\t\tmEncryptCipher.init(Cipher.ENCRYPT_MODE, mKey);\n+\n+\t\tmDecryptCipher = Cipher.getInstance(\"DES\");\n+\t\tmDecryptCipher.init(Cipher.DECRYPT_MODE, mKey);\n+\t}\n+\n+\t/**\n+\t * �����ļ�\n+\t * \n+\t * @param in\n+\t * @param savePath\n+\t *            ���ܺ󱣴��λ��\n+\t */\n+\tpublic void doEncryptFile(InputStream in, String savePath) {\n+\t\tif (in == null) {\n+\t\t\tSystem.out.println(\"inputstream is null\");\n+\t\t\treturn;\n+\t\t}\n+\t\ttry {\n+\t\t\tCipherInputStream cin = new CipherInputStream(in, mEncryptCipher);\n+\t\t\tOutputStream os = new FileOutputStream(savePath);\n+\t\t\tbyte[] bytes = new byte[1024];\n+\t\t\tint len = -1;\n+\t\t\twhile ((len = cin.read(bytes)) > 0) {\n+\t\t\t\tos.write(bytes, 0, len);\n+\t\t\t\tos.flush();\n+\t\t\t}\n+\t\t\tos.close();\n+\t\t\tcin.close();\n+\t\t\tin.close();\n+\t\t\tSystem.out.println(\"���ܳɹ�\");\n+\t\t} catch (Exception e) {\n+\t\t\tSystem.out.println(\"����ʧ��\");\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t}\n+\n+\t/**\n+\t * �����ļ�\n+\t * \n+\t * @param filePath\n+\t *            ��Ҫ���ܵ��ļ�·��\n+\t * @param savePath\n+\t *            ���ܺ󱣴��λ��\n+\t * @throws FileNotFoundException\n+\t */\n+\tpublic void doEncryptFile(String filePath, String savePath)\n+\t\t\tthrows FileNotFoundException {\n+\t\tdoEncryptFile(new FileInputStream(filePath), savePath);\n+\t}\n+\n+\t/**\n+\t * �����ļ�\n+\t * \n+\t * @param in\n+\t */\n+\tpublic void doDecryptFile(InputStream in, String savePath) {\n+\t\tif (in == null) {\n+\t\t\tSystem.out.println(\"inputstream is null\");\n+\t\t\treturn;\n+\t\t}\n+\t\ttry {\n+\t\t\tCipherInputStream cin = new CipherInputStream(in, mDecryptCipher);\n+\t\t\tBufferedReader reader = new BufferedReader(new InputStreamReader(\n+\t\t\t\t\tcin));\n+\t\t\tOutputStream os = new FileOutputStream(savePath);\n+\t\t\tbyte[] bytes = new byte[1024];\n+\t\t\tint len = -1;\n+\t\t\twhile ((len = cin.read(bytes)) > 0) {\n+\t\t\t\tos.write(bytes, 0, len);\n+\t\t\t\tos.flush();\n+\t\t\t}\n+\t\t\tString line = null;\n+\t\t\twhile ((line = reader.readLine()) != null) {\n+\t\t\t\tSystem.out.println(line);\n+\t\t\t}\n+\t\t\tos.close();\n+\t\t\treader.close();\n+\t\t\tcin.close();\n+\t\t\tin.close();\n+\t\t\tSystem.out.println(\"���ܳɹ�\");\n+\t\t} catch (Exception e) {\n+\t\t\tSystem.out.println(\"����ʧ��\");\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t}\n+\n+\t/**\n+\t * �����ļ�\n+\t * \n+\t * @param filePath\n+\t *            �ļ�·��\n+\t * @throws Exception\n+\t */\n+\tpublic void doDecryptFile(String filePath, String savePath)\n+\t\t\tthrows Exception {\n+\t\tdoDecryptFile(new FileInputStream(filePath), savePath);\n+\t}\n+}"
+  }, {
+    "sha" : "bc12cd82317f12a943415a8f3999a6b505a458d8",
+    "filename" : "app/src/main/res/layout/net1314080903136_main.xml",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dcbd33b873c71c6cc62e48a348e0560398d657c7/app/src/main/res/layout/net1314080903136_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dcbd33b873c71c6cc62e48a348e0560398d657c7/app/src/main/res/layout/net1314080903136_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903136_main.xml?ref=dcbd33b873c71c6cc62e48a348e0560398d657c7",
+    "patch" : "@@ -0,0 +1,12 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"fill_parent\"\n+    android:layout_height=\"fill_parent\"\n+    android:orientation=\"vertical\" >\n+\n+    <TextView\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"@string/hello\" />\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "dcbd33b873c71c6cc62e48a348e0560398d657c7",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dcbd33b873c71c6cc62e48a348e0560398d657c7",
+  "parents" : [ {
+    "sha" : "9b6e002301cfab1ab3b3343c69d9dd8d2b399a2c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9b6e002301cfab1ab3b3343c69d9dd8d2b399a2c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/9b6e002301cfab1ab3b3343c69d9dd8d2b399a2c"
+  }, {
+    "sha" : "233b6cedfacb59ce9715e7504d819724605fce68",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/233b6cedfacb59ce9715e7504d819724605fce68",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/233b6cedfacb59ce9715e7504d819724605fce68"
+  } ]
+}

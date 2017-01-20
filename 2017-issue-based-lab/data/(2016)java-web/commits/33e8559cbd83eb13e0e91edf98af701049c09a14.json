@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "WayhomeChen",
+    "id" : 22078881,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078881?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WayhomeChen",
+    "html_url" : "https://github.com/WayhomeChen",
+    "followers_url" : "https://api.github.com/users/WayhomeChen/followers",
+    "following_url" : "https://api.github.com/users/WayhomeChen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WayhomeChen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WayhomeChen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WayhomeChen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WayhomeChen/orgs",
+    "repos_url" : "https://api.github.com/users/WayhomeChen/repos",
+    "events_url" : "https://api.github.com/users/WayhomeChen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WayhomeChen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 138,
+    "additions" : 138,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "WayhomeChen",
+    "id" : 22078881,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078881?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WayhomeChen",
+    "html_url" : "https://github.com/WayhomeChen",
+    "followers_url" : "https://api.github.com/users/WayhomeChen/followers",
+    "following_url" : "https://api.github.com/users/WayhomeChen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WayhomeChen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WayhomeChen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WayhomeChen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WayhomeChen/orgs",
+    "repos_url" : "https://api.github.com/users/WayhomeChen/repos",
+    "events_url" : "https://api.github.com/users/WayhomeChen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WayhomeChen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/33e8559cbd83eb13e0e91edf98af701049c09a14",
+  "commit" : {
+    "author" : {
+      "name" : "ABC",
+      "email" : "neigh3bor3hood3@sina.com",
+      "date" : "2016-11-03T02:15:05Z"
+    },
+    "committer" : {
+      "name" : "ABC",
+      "email" : "neigh3bor3hood3@sina.com",
+      "date" : "2016-11-03T02:15:05Z"
+    },
+    "message" : "#4 提交实验三代码\n\n这样没问题吧",
+    "tree" : {
+      "sha" : "43aac789a50ef313b2a47817dd59be421e1abe93",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/43aac789a50ef313b2a47817dd59be421e1abe93"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/33e8559cbd83eb13e0e91edf98af701049c09a14",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/33e8559cbd83eb13e0e91edf98af701049c09a14/comments",
+  "files" : [ {
+    "sha" : "da9614d675be8716f0e3a6454495ac199a537f5b",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902106/Se1414080902106Servlet.java",
+    "status" : "added",
+    "additions" : 53,
+    "deletions" : 0,
+    "changes" : 53,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/src/edu/hzu/javaweb/labs/se1414080902106/Se1414080902106Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/src/edu/hzu/javaweb/labs/se1414080902106/Se1414080902106Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902106/Se1414080902106Servlet.java?ref=33e8559cbd83eb13e0e91edf98af701049c09a14",
+    "patch" : "@@ -0,0 +1,53 @@\n+package edu.hzu.javaweb.labs.se1414080902106;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.Collection;\n+\n+import javax.servlet.ServletContext;\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+public class Se1414080902106Servlet extends HttpServlet {\n+\t\n+\tpublic Se1414080902106Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t}\n+\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\t//设置译码方式\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\t\n+\t\t//获取参数——标题、内容\n+\t\tString title = request.getParameter(\"title\");\n+\t\tString content = request.getParameter(\"content\");\n+\t\t\n+\t\t//将标题和内容放到session里\n+\t\tHttpSession session = request.getSession();\n+\t\tsession.setAttribute(\"title\", title);\n+\t\tsession.setAttribute(\"content\", content);\n+\t\t\n+\t\t//将页面跳转到index.jsp\n+\t\tresponse.sendRedirect(\"index.jsp\");\n+\t}\n+\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "a6337a1cf3c1d7f4d901d04fce510a5bf286cf3a",
+    "filename" : "jweb/web/1414080902106/content.css",
+    "status" : "added",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/web/1414080902106/content.css",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/web/1414080902106/content.css",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902106/content.css?ref=33e8559cbd83eb13e0e91edf98af701049c09a14",
+    "patch" : "@@ -0,0 +1,7 @@\n+.title-tip{\n+\tposition : relative;\n+\tleft : 4px;\n+\ttop : -20px;\n+\tcolor : gray;\n+\tfloat : left;\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "e23c4697448b0a5e9b21fb0f0f704cf0bbc647d4",
+    "filename" : "jweb/web/1414080902106/content.js",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/web/1414080902106/content.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/web/1414080902106/content.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902106/content.js?ref=33e8559cbd83eb13e0e91edf98af701049c09a14",
+    "patch" : "@@ -0,0 +1,23 @@\n+window.onload = function(){\n+\tvar title = $(\"#title\").val();\n+\tif(title == \"\")\n+\t\tshowTip();\n+\telse\n+\t\thideTip();\n+};\n+\n+function hideTip(){\n+\t$(\"#title-tip\").hide();\n+}\n+function showTip(){\n+\t$(\"#title-tip\").show();\t\t\t\t\n+}\n+function onTip(){\n+\thideTip();\n+\t$(\"#title\").focus();\n+}\n+function outTitle(){\n+\tvar title = $(\"#title\").val();\n+\tif(title == \"\")\n+\t\tshowTip();\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "000fd2d301a11befb4149490f95cbb681576b85a",
+    "filename" : "jweb/web/1414080902106/content.jsp",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/web/1414080902106/content.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/web/1414080902106/content.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902106/content.jsp?ref=33e8559cbd83eb13e0e91edf98af701049c09a14",
+    "patch" : "@@ -0,0 +1,27 @@\n+<%@ page pageEncoding = 'utf-8'  %>\n+<!-- 发帖页面 -->\n+<html>\n+\t<head>\n+\t\t<title>发帖</title>\n+\t\t<link rel='stylesheet' type='text/css' href='content.css'>\n+\t\t<script type=\"text/javascript\" src=\"http://cdn.bootcss.com/jquery/3.1.1/jquery.js\"></script>\n+\t\t<script type=\"text/javascript\" src=\"content.js\"></script>\n+\t</head>\n+\t<body>\n+\t\t<div>\n+\t\t\t<h2>发表新帖</h2>\n+\t\t\t<hr>\n+\t\t\t<form action='1414080902106' method=\"post\">\n+\t\t\t\t<div style='height:40px;'>\n+\t\t\t\t\t<input id=\"title\" class='title-edit' name=\"title\" type=\"text\" style=\"width:500;\"\n+\t\t\t\t\t\tonClick=\"hideTip()\"\n+\t\t\t\t\t\tonblur=\"outTitle()\"\n+\t\t\t\t\t><br>\n+\t\t\t\t\t<div id=\"title-tip\" class='title-tip' onClick=\"onTip()\">请填写标题</div>\n+\t\t\t\t</div>\n+\t\t\t\t<textarea id='content' name='content' rows=\"10\" cols=\"100\" style='width:500'></textarea><br><br>\n+\t\t\t\t<input id='send' type='submit' value='发帖'>\n+\t\t\t</form>\n+\t\t</div>\n+\t</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "a029e08ec63fbda068023bfb1ce66da7d4a964ae",
+    "filename" : "jweb/web/1414080902106/index.jsp",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/web/1414080902106/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/33e8559cbd83eb13e0e91edf98af701049c09a14/jweb/web/1414080902106/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902106/index.jsp?ref=33e8559cbd83eb13e0e91edf98af701049c09a14",
+    "patch" : "@@ -0,0 +1,28 @@\n+<%@ page contentType=\"text/html;charset=utf-8\" pageEncoding=\"utf-8\" %>\n+<%!\n+\tString title;\n+\tString content;\n+%>\n+<%\n+\ttitle = (String)session.getAttribute(\"title\");\n+\tcontent = (String)session.getAttribute(\"content\");\n+\tif(title == null)\n+\t\ttitle = \"没有帖子！\";\n+\tif(content == null)\n+\t\tcontent = \"\";\n+%>\n+<!-- 因为是实验，所以只能发一个帖子 -->\n+<html>\n+\t<head>\n+\t\t<title>浏览帖子</title>\n+\t\t<script type=\"text/javascript\" src=\"index.js\"></script>\n+\t</head>\n+\t<body>\n+\t\t<form method=\"post\" action=\"content.jsp\"><input type=\"submit\" value=\"发帖\"></form>\n+\t\t<h2 id=\"title\"><%= title %></h2>\n+\t\t<hr>\n+\t\t<div>\n+\t\t\t<p id=\"context\"><%= content %></p>\n+\t\t</div>\n+\t</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "33e8559cbd83eb13e0e91edf98af701049c09a14",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/33e8559cbd83eb13e0e91edf98af701049c09a14",
+  "parents" : [ {
+    "sha" : "b4fec090b3b6f96c3f05c2b3029b4d1683f0802c",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b4fec090b3b6f96c3f05c2b3029b4d1683f0802c",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/b4fec090b3b6f96c3f05c2b3029b4d1683f0802c"
+  } ]
+}

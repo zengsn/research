@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "Liuzhuanglin",
+    "id" : 17776669,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17776669?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Liuzhuanglin",
+    "html_url" : "https://github.com/Liuzhuanglin",
+    "followers_url" : "https://api.github.com/users/Liuzhuanglin/followers",
+    "following_url" : "https://api.github.com/users/Liuzhuanglin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Liuzhuanglin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Liuzhuanglin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Liuzhuanglin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Liuzhuanglin/orgs",
+    "repos_url" : "https://api.github.com/users/Liuzhuanglin/repos",
+    "events_url" : "https://api.github.com/users/Liuzhuanglin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Liuzhuanglin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 30,
+    "additions" : 30,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Liuzhuanglin",
+    "id" : 17776669,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17776669?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Liuzhuanglin",
+    "html_url" : "https://github.com/Liuzhuanglin",
+    "followers_url" : "https://api.github.com/users/Liuzhuanglin/followers",
+    "following_url" : "https://api.github.com/users/Liuzhuanglin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Liuzhuanglin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Liuzhuanglin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Liuzhuanglin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Liuzhuanglin/orgs",
+    "repos_url" : "https://api.github.com/users/Liuzhuanglin/repos",
+    "events_url" : "https://api.github.com/users/Liuzhuanglin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Liuzhuanglin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/027e40678f779429e8129c5fdc0326a5f1475ab7",
+  "commit" : {
+    "author" : {
+      "name" : "Liuzhuanglin",
+      "email" : "1213212374@qq.com",
+      "date" : "2016-06-14T00:19:41Z"
+    },
+    "committer" : {
+      "name" : "Liuzhuanglin",
+      "email" : "1213212374@qq.com",
+      "date" : "2016-06-14T00:19:41Z"
+    },
+    "message" : "#95 #378 lab9",
+    "tree" : {
+      "sha" : "9c3952688464166c57c3fa931386d726684679a6",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/9c3952688464166c57c3fa931386d726684679a6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/027e40678f779429e8129c5fdc0326a5f1475ab7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/027e40678f779429e8129c5fdc0326a5f1475ab7/comments",
+  "files" : [ {
+    "sha" : "c59b47a660a2bf67a01a24f2f06db58724f2fbd0",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/027e40678f779429e8129c5fdc0326a5f1475ab7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/027e40678f779429e8129c5fdc0326a5f1475ab7/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/AndroidManifest.xml?ref=027e40678f779429e8129c5fdc0326a5f1475ab7",
+    "patch" : "@@ -0,0 +1,30 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"net1314080903128.homeworks.androidworks.hzuapps.edu.net1314080903128\">\n+\n+    <uses-sdk android:minSdkVersion=\"8\" />\n+\n+    <application\n+        android:icon=\"@drawable/net1314080903128timer\"\n+        android:label=\"@string/app_name\" >\n+        <activity\n+            android:name=\".Net1314080903128Activity\"\n+            android:label=\"@string/app_name\" >\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+        <activity\n+            android:name=\".StartActivity\"\n+            android:label=\"@string/app_name\" >\n+            <intent-filter>\n+                <action android:name=\"com.huazi.MyTimer.StartActivity\" />\n+\n+                <category android:name=\"android.intent.category.DEFAULT\" />\n+            </intent-filter>\n+        </activity>\n+    </application>\n+\n+</manifest>\n\\ No newline at end of file"
+  } ],
+  "sha" : "027e40678f779429e8129c5fdc0326a5f1475ab7",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/027e40678f779429e8129c5fdc0326a5f1475ab7",
+  "parents" : [ {
+    "sha" : "38ec99615c9a6a4eb2ad5f580f44e9247a15fcc2",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/38ec99615c9a6a4eb2ad5f580f44e9247a15fcc2",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/38ec99615c9a6a4eb2ad5f580f44e9247a15fcc2"
+  } ]
+}

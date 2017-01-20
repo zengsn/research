@@ -1,0 +1,110 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 148,
+    "additions" : 129,
+    "deletions" : 19
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/216436cd72cff16a40031cc8338969bd2bd8ddac",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-27T15:42:05Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-27T15:42:05Z"
+    },
+    "message" : "Merge pull request #842 from lotochan/master\n\n#95 #77 labs9  完成全部实验",
+    "tree" : {
+      "sha" : "3c388e54b6b5efde927b74dd6c89db60c8ff985f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/3c388e54b6b5efde927b74dd6c89db60c8ff985f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/216436cd72cff16a40031cc8338969bd2bd8ddac",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/216436cd72cff16a40031cc8338969bd2bd8ddac/comments",
+  "files" : [ {
+    "sha" : "84ef0e4f19fa7814742d3f30522975db37c70448",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903205/Net1314080903205Activity.java",
+    "status" : "modified",
+    "additions" : 122,
+    "deletions" : 3,
+    "changes" : 125,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/216436cd72cff16a40031cc8338969bd2bd8ddac/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903205/Net1314080903205Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/216436cd72cff16a40031cc8338969bd2bd8ddac/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903205/Net1314080903205Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903205/Net1314080903205Activity.java?ref=216436cd72cff16a40031cc8338969bd2bd8ddac",
+    "patch" : "@@ -1,13 +1,132 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903205;\n \n-import android.support.v7.app.AppCompatActivity;\n+import android.os.AsyncTask;\n import android.os.Bundle;\n+import android.support.v7.app.AppCompatActivity;\n+import android.view.View;\n+import android.view.Window;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.TextView;\n+\n+import org.json.JSONException;\n+import org.json.JSONObject;\n+\n+import java.io.BufferedReader;\n+import java.io.InputStreamReader;\n+import java.net.HttpURLConnection;\n+import java.net.URL;\n \n-public class Net1314080903205Activity extends AppCompatActivity {\n+\n+public class Net1314080903205Activity extends AppCompatActivity  implements View.OnClickListener {\n+    private EditText et;\n+    private Button send_btn;\n+    private Button error_check;\n+    private TextView tx;\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n+        requestWindowFeature(Window.FEATURE_NO_TITLE);\n         super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_net1314080903205);\n+        setContentView(R.layout.activity_net1314080903205_main);\n+        et= (EditText) findViewById(R.id.editText);\n+        send_btn = (Button) findViewById(R.id.button);\n+        tx =(TextView)findViewById(R.id.textview4);\n+        error_check=(Button)findViewById(R.id.button2);\n+        send_btn.setOnClickListener(this);\n+        error_check.setOnClickListener(this);\n+    }\n+\n+    public  void jiexi(String shuju){\n+\n+\n+        try {\n+            JSONObject jh = new JSONObject(shuju);\n+            if(jh.getInt(\"error_code\")==0){\n+\n+                ;\n+                String RZ=jh.getString(\"result\");\n+                JSONObject jx = new JSONObject(RZ);\n+                String  model = jx.getString(\"phone_model\");\n+                String  id = jx.getString(\"serial_number\");\n+                String  IMEI = jx.getString(\"imei_number\");\n+                String  act = jx.getString(\"active\");\n+                String  tel_support = jx.getString(\"tele_support\");\n+                String  tel_s_s = jx.getString(\"tele_support_status\");\n+                String  war = jx.getString(\"warranty\");\n+                String  was = jx.getString(\"warranty_status\");\n+                String  made_a = jx.getString(\"made_area\");\n+                String  start_d = jx.getString(\"start_date\");\n+                String  color = jx.getString(\"color\");\n+                String  size = jx.getString(\"size\");\n+                String RD =\"型号：\"+model+\"\\n\"+\"序列号：\"+id+\"\\n\"+\"IMEI：\"+IMEI+\"\\n\"+war+\"保修状态：\"+war+\"\\n\"+\"生产工厂：\"+made_a+\"\\n\"+\"生产日期：\"+start_d+\"\\n\"+ \"颜色：\"+color+\"\\n\"+\"容量：\"+size;\n+                tx.setText(RD);\n+\n+            }else{\n+\n+                String R =jh.getString(\"error_code\")+\":\"+jh.getString(\"reason\");\n+                tx.setText(R);\n+            }\n+\n+        } catch (JSONException e) {\n+            e.printStackTrace();\n+        }\n+\n+\n+    }\n+    public void go(){\n+        String b=et.getText().toString();\n+        final String a =\"http://apis.juhe.cn/appleinfo/index?sn=\"+b+\"&key=adfb120cdf079cf95264627f730b167c\";\n+        new AsyncTask<Void,Void,String>(){\n+            @Override\n+            protected String doInBackground(Void... params) {\n+\n+                StringBuffer sb = new StringBuffer();\n+                String line = null;\n+                BufferedReader buffer = null;\n+                try{\n+                    URL url = new URL(a);\n+                    HttpURLConnection urlConn = (HttpURLConnection) url.openConnection();\n+                    urlConn.setRequestMethod(\"GET\");\n+                    buffer = new BufferedReader(new InputStreamReader(urlConn.getInputStream()));\n+                    while ((line = buffer.readLine()) != null) {\n+                        sb.append(line);}\n+                    buffer.close();\n+                    return sb.toString();\n+\n+                }catch (Exception e){}\n+\n+\n+\n+                return null;\n+            }\n+\n+            @Override\n+            protected void onPostExecute(String s) {\n+\n+\n+                jiexi(s);\n+\n+                super.onPostExecute(s);\n+            }\n+        }.execute();\n+    }\n+    public void check(){\n+        String error_tips;\n+        error_tips=\"203701:序列号不能为空\\n203702:网络错误\\n203704:您输入的IMEI/MEID/序列号已经被苹果更换\\n203705:苹果官方系统维护，暂时无法查询\\n\";\n+        tx.setText(error_tips);\n+    }\n+\n+    @Override\n+    public void onClick(View v) {\n+        switch(v.getId()){\n+            case R.id.button:\n+\n+                go();\n+            case R.id.button2:\n+                check();\n+        }\n+\n     }\n }\n+"
+  }, {
+    "sha" : "e6c449424784b80f61c7c3a93cd2f6d0f18dbf03",
+    "filename" : "app/src/main/res/drawable/a1314080903205.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/216436cd72cff16a40031cc8338969bd2bd8ddac/app/src/main/res/drawable/a1314080903205.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/216436cd72cff16a40031cc8338969bd2bd8ddac/app/src/main/res/drawable/a1314080903205.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/a1314080903205.jpg?ref=216436cd72cff16a40031cc8338969bd2bd8ddac"
+  }, {
+    "sha" : "3b8c3e1f4dda8dc1fb233b58ee36415d8355683d",
+    "filename" : "app/src/main/res/layout/activity_net1314080903205_main.xml",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 16,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/216436cd72cff16a40031cc8338969bd2bd8ddac/app/src/main/res/layout/activity_net1314080903205_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/216436cd72cff16a40031cc8338969bd2bd8ddac/app/src/main/res/layout/activity_net1314080903205_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903205_main.xml?ref=216436cd72cff16a40031cc8338969bd2bd8ddac",
+    "patch" : "@@ -7,8 +7,9 @@\n     android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n     android:paddingRight=\"@dimen/activity_horizontal_margin\"\n     android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    android:background=\"@drawable/Net1314080903205background\"\n-    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903205.Net1314080903205MainActivity\">\n+    android:background=\"@drawable/a1314080903205\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903205.Net1314080903205Activity\">\n+\n \n     <TextView\n         android:layout_width=\"wrap_content\"\n@@ -24,19 +25,17 @@\n         android:layout_height=\"wrap_content\"\n         android:id=\"@+id/editText\"\n         android:width=\"250dp\"\n-        android:layout_alignTop=\"@+id/textView\"\n-        android:layout_alignParentRight=\"true\"\n-        android:layout_alignParentEnd=\"true\" />\n+        android:layout_below=\"@+id/textView\"\n+        android:layout_centerHorizontal=\"true\" />\n \n     <TextView\n         android:layout_width=\"wrap_content\"\n         android:layout_height=\"wrap_content\"\n         android:text=\"请输入序列号！\"\n         android:id=\"@+id/textView\"\n         android:layout_below=\"@+id/textView2\"\n-        android:layout_toLeftOf=\"@+id/editText\"\n-        android:layout_toStartOf=\"@+id/editText\"\n-        android:layout_marginTop=\"49dp\" />\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentStart=\"true\" />\n \n     <Button\n         style=\"?android:attr/buttonStyleSmall\"\n@@ -70,14 +69,6 @@\n         android:text=\"...................\"\n         android:layout_below=\"@+id/textView3\"\n         android:layout_centerHorizontal=\"true\" />\n-    <Button\n-        android:id=\"@+id/close\"\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"退出\"\n-        android:layout_alignParentBottom=\"true\"\n-        android:layout_alignRight=\"@+id/button2\"\n-        android:layout_alignEnd=\"@+id/button2\" />\n \n \n </RelativeLayout>"
+  } ],
+  "sha" : "216436cd72cff16a40031cc8338969bd2bd8ddac",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/216436cd72cff16a40031cc8338969bd2bd8ddac",
+  "parents" : [ {
+    "sha" : "a4fac153ad3236372d6e7035853afb4bf7db4bec",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a4fac153ad3236372d6e7035853afb4bf7db4bec",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/a4fac153ad3236372d6e7035853afb4bf7db4bec"
+  }, {
+    "sha" : "a01e1966412a3820fca5bb5fb70878482e5fd20e",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a01e1966412a3820fca5bb5fb70878482e5fd20e",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/a01e1966412a3820fca5bb5fb70878482e5fd20e"
+  } ]
+}

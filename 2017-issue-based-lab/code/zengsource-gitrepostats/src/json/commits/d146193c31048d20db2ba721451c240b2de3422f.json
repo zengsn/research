@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "ZaakLim",
+    "id" : 17907273,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17907273?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ZaakLim",
+    "html_url" : "https://github.com/ZaakLim",
+    "followers_url" : "https://api.github.com/users/ZaakLim/followers",
+    "following_url" : "https://api.github.com/users/ZaakLim/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ZaakLim/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ZaakLim/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ZaakLim/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ZaakLim/orgs",
+    "repos_url" : "https://api.github.com/users/ZaakLim/repos",
+    "events_url" : "https://api.github.com/users/ZaakLim/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ZaakLim/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 40,
+    "additions" : 40,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "ZaakLim",
+    "id" : 17907273,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17907273?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ZaakLim",
+    "html_url" : "https://github.com/ZaakLim",
+    "followers_url" : "https://api.github.com/users/ZaakLim/followers",
+    "following_url" : "https://api.github.com/users/ZaakLim/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ZaakLim/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ZaakLim/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ZaakLim/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ZaakLim/orgs",
+    "repos_url" : "https://api.github.com/users/ZaakLim/repos",
+    "events_url" : "https://api.github.com/users/ZaakLim/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ZaakLim/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/d146193c31048d20db2ba721451c240b2de3422f",
+  "commit" : {
+    "author" : {
+      "name" : "ZaakLim",
+      "email" : "245500710@qq.com",
+      "date" : "2016-04-24T12:48:56Z"
+    },
+    "committer" : {
+      "name" : "ZaakLim",
+      "email" : "245500710@qq.com",
+      "date" : "2016-04-24T12:48:56Z"
+    },
+    "message" : "#88 #82 lab2",
+    "tree" : {
+      "sha" : "16749fe48af32977d859ccbbf9298a2a7de0489c",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/16749fe48af32977d859ccbbf9298a2a7de0489c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/d146193c31048d20db2ba721451c240b2de3422f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d146193c31048d20db2ba721451c240b2de3422f/comments",
+  "files" : [ {
+    "sha" : "63dac97d2031e63b56ca5132c5dd33fa06a82d26",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/net1314080903125.java",
+    "status" : "modified",
+    "additions" : 40,
+    "deletions" : 0,
+    "changes" : 40,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d146193c31048d20db2ba721451c240b2de3422f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/net1314080903125.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d146193c31048d20db2ba721451c240b2de3422f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/net1314080903125.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/net1314080903125.java?ref=d146193c31048d20db2ba721451c240b2de3422f",
+    "patch" : "@@ -1,13 +1,53 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903125;\n \n+import android.content.Intent;\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.net.Uri;\n+import android.os.Environment;\n+import android.provider.MediaStore;\n import android.support.v7.app.AppCompatActivity;\n import android.os.Bundle;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.ImageView;\n+import android.widget.Toast;\n+\n+import java.io.File;\n+import java.io.FileNotFoundException;\n+import java.io.FileOutputStream;\n+import java.io.IOException;\n+import java.io.InputStream;\n \n public class net1314080903125 extends AppCompatActivity {\n \n+    private static int CAMERA_REQUEST_CODE = 1;\n+    private static int GALLERY_REQUEST_CODE = 2;\n+\n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_upload);\n+        setTitle(\"net1314080903125\");\n+\n+        Button btn_camera = (Button) findViewById(R.id.btn_camera);\n+        btn_camera.setOnClickListener(new View.OnClickListener() {\n+            public void onClick(View v) {\n+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);\n+                startActivityForResult(intent, CAMERA_REQUEST_CODE);\n+            }\n+        });\n+\n+        Button btn_gallery = (Button)findViewById(R.id.btn_gallery);\n+        btn_gallery.setOnClickListener(new View.OnClickListener(){\n+            public void onClick(View v){\n+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);\n+                intent.setType(\"image/*\");\n+                startActivityForResult(intent, GALLERY_REQUEST_CODE);\n+            }\n+        });\n     }\n+\n+\n+\n }"
+  } ],
+  "sha" : "d146193c31048d20db2ba721451c240b2de3422f",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d146193c31048d20db2ba721451c240b2de3422f",
+  "parents" : [ {
+    "sha" : "6920acf88e7b700a5b28372d25f2c56cdd89d045",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/6920acf88e7b700a5b28372d25f2c56cdd89d045",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/6920acf88e7b700a5b28372d25f2c56cdd89d045"
+  } ]
+}

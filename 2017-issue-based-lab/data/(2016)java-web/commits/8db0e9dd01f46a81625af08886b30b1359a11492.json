@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "wzw773828204",
+    "id" : 22298609,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22298609?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wzw773828204",
+    "html_url" : "https://github.com/wzw773828204",
+    "followers_url" : "https://api.github.com/users/wzw773828204/followers",
+    "following_url" : "https://api.github.com/users/wzw773828204/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wzw773828204/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wzw773828204/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wzw773828204/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wzw773828204/orgs",
+    "repos_url" : "https://api.github.com/users/wzw773828204/repos",
+    "events_url" : "https://api.github.com/users/wzw773828204/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wzw773828204/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 82,
+    "additions" : 82,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "wzw773828204",
+    "id" : 22298609,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22298609?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wzw773828204",
+    "html_url" : "https://github.com/wzw773828204",
+    "followers_url" : "https://api.github.com/users/wzw773828204/followers",
+    "following_url" : "https://api.github.com/users/wzw773828204/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wzw773828204/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wzw773828204/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wzw773828204/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wzw773828204/orgs",
+    "repos_url" : "https://api.github.com/users/wzw773828204/repos",
+    "events_url" : "https://api.github.com/users/wzw773828204/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wzw773828204/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/8db0e9dd01f46a81625af08886b30b1359a11492",
+  "commit" : {
+    "author" : {
+      "name" : "wzw773828204",
+      "email" : "773828204@qq.com",
+      "date" : "2016-11-17T06:16:14Z"
+    },
+    "committer" : {
+      "name" : "wzw773828204",
+      "email" : "773828204@qq.com",
+      "date" : "2016-11-17T06:16:14Z"
+    },
+    "message" : "#5 提交filter实实验代码",
+    "tree" : {
+      "sha" : "9e13ea47828c2685ab61be8277a9769cc981956b",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/9e13ea47828c2685ab61be8277a9769cc981956b"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/8db0e9dd01f46a81625af08886b30b1359a11492",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/8db0e9dd01f46a81625af08886b30b1359a11492/comments",
+  "files" : [ {
+    "sha" : "83721da5ff2f3915a8a27f4bb768a2eb7e5e0c3d",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/Filter/com/imooc/filter/LoginFilter.java",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8db0e9dd01f46a81625af08886b30b1359a11492/jweb/src/edu/hzu/javaweb/labs/Filter/com/imooc/filter/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8db0e9dd01f46a81625af08886b30b1359a11492/jweb/src/edu/hzu/javaweb/labs/Filter/com/imooc/filter/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/Filter/com/imooc/filter/LoginFilter.java?ref=8db0e9dd01f46a81625af08886b30b1359a11492",
+    "patch" : "@@ -0,0 +1,43 @@\n+package com.imooc.filter;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+public class LoginFilter implements Filter {\n+\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest arg0, ServletResponse arg1,\n+\t\t\tFilterChain arg2) throws IOException, ServletException {\n+\t\tHttpServletRequest request=(HttpServletRequest) arg0;\n+\t\tHttpServletResponse response=(HttpServletResponse) arg1;\n+\t\tHttpSession session=request.getSession();\n+\t\t\n+\t\tif(session.getAttribute(\"username\")!=null){\n+\t\t\targ2.doFilter(arg0, arg1);\n+\t\t}else{\n+\t\t\tresponse.sendRedirect(\"login.jsp\");\n+\t\t}\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig arg0) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+}"
+  }, {
+    "sha" : "4264cec9aa3486881634374e71fc042de278f13d",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/Filter/com/imooc/servlet/LoginServlet.java",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8db0e9dd01f46a81625af08886b30b1359a11492/jweb/src/edu/hzu/javaweb/labs/Filter/com/imooc/servlet/LoginServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8db0e9dd01f46a81625af08886b30b1359a11492/jweb/src/edu/hzu/javaweb/labs/Filter/com/imooc/servlet/LoginServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/Filter/com/imooc/servlet/LoginServlet.java?ref=8db0e9dd01f46a81625af08886b30b1359a11492",
+    "patch" : "@@ -0,0 +1,39 @@\n+package com.imooc.servlet;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+public class LoginServlet extends HttpServlet {\n+\tpublic LoginServlet() {\n+\t\tsuper();\n+\t}\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tString username=request.getParameter(\"username\");\n+\t\tString password=request.getParameter(\"password\");\n+\t\tif(\"admin\".equals(username) && \"admin\".equals(password)){\n+\t\t\tHttpSession session=request.getSession();\n+\t\t\tsession.setAttribute(\"username\", username);\n+\t\t\tresponse.sendRedirect(request.getContextPath()+\"/success.jsp\");\n+\t\t}else{\n+\t\t\tresponse.sendRedirect(request.getContextPath()+\"/fail.jsp\");\n+\t\t}\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  } ],
+  "sha" : "8db0e9dd01f46a81625af08886b30b1359a11492",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/8db0e9dd01f46a81625af08886b30b1359a11492",
+  "parents" : [ {
+    "sha" : "e4c82e904aa2c96ae0aa6c65716d4eb08884e36e",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/e4c82e904aa2c96ae0aa6c65716d4eb08884e36e",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/e4c82e904aa2c96ae0aa6c65716d4eb08884e36e"
+  } ]
+}

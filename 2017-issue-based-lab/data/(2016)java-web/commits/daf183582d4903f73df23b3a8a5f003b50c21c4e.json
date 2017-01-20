@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 98,
+    "additions" : 98,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/daf183582d4903f73df23b3a8a5f003b50c21c4e",
+  "commit" : {
+    "author" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-10-13T06:54:12Z"
+    },
+    "committer" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-10-13T06:54:12Z"
+    },
+    "message" : "#2提交实验代码",
+    "tree" : {
+      "sha" : "7847ab6f0ef7e2606441cc7f55e6cc27f3c94c6f",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/7847ab6f0ef7e2606441cc7f55e6cc27f3c94c6f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/daf183582d4903f73df23b3a8a5f003b50c21c4e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/daf183582d4903f73df23b3a8a5f003b50c21c4e/comments",
+  "files" : [ {
+    "sha" : "6fdd99f8b9e5663a45aa95126bdab77336585505",
+    "filename" : "labs/1414080902121/index.html",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/daf183582d4903f73df23b3a8a5f003b50c21c4e/labs/1414080902121/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/daf183582d4903f73df23b3a8a5f003b50c21c4e/labs/1414080902121/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902121/index.html?ref=daf183582d4903f73df23b3a8a5f003b50c21c4e",
+    "patch" : "@@ -0,0 +1,45 @@\n+<!DOCTYPE html>\n+<html lang=\"zh-CN\">\n+<head>\n+<meta charset=\"utf-8\">\n+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n+<title>表单desu -</title>\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+</head>\n+\n+<link rel=\"stylesheet\" href=\"style.css\">\n+\n+<body>\n+\n+<div class=\"login-container\">\n+\t<h2>GiliGili Timetable</h2>\n+\t\n+\t<form action=\"\" method=\"post\" id=\"loginForm\">\n+\t\t<div>\n+\t\t\t<input type=\"text\" name=\"username\" class=\"username\" placeholder=\"admin\" autocomplete=\"off\"/>\n+\t\t</div>\n+\t\t<div>\n+\t\t\t<input type=\"password\" name=\"password\" class=\"password\" placeholder=\"password\" oncontextmenu=\"return false\" onpaste=\"return false\" />\n+\t\t</div>\n+\t\t<button id=\"submit\" type=\"submit\">logn in</button>\n+\t</form>\n+</div>\n+<script src=\"index.js\"></script>\n+<script type=\"text/javascript\">\n+$(\"#form-all\").submit(function(event){\n+    alert( \"Handler for .submit() called.\" );\n+    event.preventDefault();\n+});\n+$.ajax({\n+    url: \"success.json\"\n+}).done(function(data) {\n+    if ( console && console.log ) {\n+        console.dir(data);\n+        alert(data.msg);\n+    }\n+});\n+</script>\n+\n+</div>\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "c9a987cfb2e2dae4891348c5cb6cb7f48b574509",
+    "filename" : "labs/1414080902121/style.css",
+    "status" : "added",
+    "additions" : 50,
+    "deletions" : 0,
+    "changes" : 50,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/daf183582d4903f73df23b3a8a5f003b50c21c4e/labs/1414080902121/style.css",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/daf183582d4903f73df23b3a8a5f003b50c21c4e/labs/1414080902121/style.css",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902121/style.css?ref=daf183582d4903f73df23b3a8a5f003b50c21c4e",
+    "patch" : "@@ -0,0 +1,50 @@\n+a,abbr,acronym,address,applet,article,aside,audio,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}\n+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}\n+body{line-height:1}\n+ol,ul{list-style:none}\n+blockquote,q{quotes:none}\n+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}\n+table{border-collapse:collapse;border-spacing:0}\n+body{background:#f8f8f8;font-family:\"Microsoft YaHei\",\"Microsoft JhengHei\",STHeiti,MingLiu;text-align:center;color:#fff}\n+.login-container{margin:10% auto 0 auto}\n+.register-container{margin:6% auto 0 auto}\n+@media (min-width:670px){\n+\t.login-container {margin: 8% auto 0 auto;}\n+}\n+h1{font-size:30px;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,.2)}\n+form{position:relative;width:305px;margin:15px auto 0 auto;text-align:center}\n+input{width:270px;height:42px;line-height:42px;margin-top:25px;padding:0 15px;background:#2d2d2d;background:rgba(45,45,45,.15);-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;border:1px solid #3d3d3d;border:1px solid rgba(255,255,255,.15);-moz-box-shadow:0 2px 3px 0 rgba(0,0,0,.1) inset;-webkit-box-shadow:0 2px 3px 0 rgba(0,0,0,.1) inset;box-shadow:0 2px 3px 0 rgba(0,0,0,.1) inset;font-family:\"Microsoft YaHei\",Helvetica,Arial,sans-serif;font-size:14px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.1);-o-transition:all .2s;-moz-transition:all .2s;-webkit-transition:all .2s;-ms-transition:all .2s}\n+input:-moz-placeholder{color:#fff}\n+input:-ms-input-placeholder{color:#fff}\n+input::-webkit-input-placeholder{color:#fff}\n+input:focus{outline:0;-moz-box-shadow:0 2px 3px 0 rgba(0,0,0,.1) inset,0 2px 7px 0 rgba(0,0,0,.2);-webkit-box-shadow:0 2px 3px 0 rgba(0,0,0,.1) inset,0 2px 7px 0 rgba(0,0,0,.2);box-shadow:0 2px 3px 0 rgba(0,0,0,.1) inset,0 2px 7px 0 rgba(0,0,0,.2)}\n+button{cursor:pointer;width:300px;height:44px;margin-top:25px;padding:0;  background: rgba(6, 127, 228, 0.71);-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;border:0;-moz-box-shadow:0 15px 30px 0 rgba(255,255,255,.25) inset,0 2px 7px 0 rgba(0,0,0,.2);font-family:\"Microsoft YaHei\",Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.1);-o-transition:all .2s;-moz-transition:all .2s;-webkit-transition:all .2s;-ms-transition:all .2s}\n+button:hover{-moz-box-shadow:0 15px 30px 0 rgba(255,255,255,.15) inset,0 2px 7px 0 rgba(0,0,0,.2);-webkit-box-shadow:0 15px 30px 0 rgba(255,255,255,.15) inset,0 2px 7px 0 rgba(0,0,0,.2);box-shadow:0 15px 30px 0 rgba(255,255,255,.15) inset,0 2px 7px 0 rgba(0,0,0,.2)}\n+button:active{-moz-box-shadow:0 15px 30px 0 rgba(255,255,255,.15) inset,0 2px 7px 0 rgba(0,0,0,.2);-webkit-box-shadow:0 15px 30px 0 rgba(255,255,255,.15) inset,0 2px 7px 0 rgba(0,0,0,.2);box-shadow:0 5px 8px 0 rgba(0,0,0,.1) inset,0 1px 4px 0 rgba(0,0,0,.1);border:0 solid #016FCB}\n+.connect{margin-top: 18px; width: 100%; font-size: 14px; text-shadow: 0 1px 3px rgba(0,0,0,.2);}\n+.connect p{position:relative;left:-140%;top:0;margin-top:20px}\n+.connect a{display:inline-block;width:32px;height:35px;margin-top:15px;-o-transition:all .2s;-moz-transition:all .2s;-webkit-transition:all .2s;-ms-transition:all .2s}\n+.alert{width:310px;height:200px;background:#000;position:absolute;top:-40%;left:50%;margin:-101px 0 0 -151px}\n+.alert h2{height:40px;padding-left:8px;font-size:14px;background:#FF0543;text-align:left;line-height:40px}\n+.alert .alert_con{background:#fff;height:160px}\n+.alert .alert_con p{color:#000;line-height:90px}\n+.alert .alert_con .btn{padding:3px 10px;color:#fff;cursor:pointer;background:#72D1FF;border:1px solid #72D1FF;border-radius:4px}\n+.alert .alert_con .btn:hover{background:#4FB2EF;border:1px solid #4FB2EF;border-radius:4px}\n+/* Supersized - Fullscreen Slideshow jQuery Plugin  Version : 3.2.7 */\n+*{margin:0;padding:0}\n+body{background:#111;height:100%}\n+img{border:none}\n+#supersized-loader{position:absolute;top:50%;left:50%;z-index:0;width:60px;height:60px;margin:-30px 0 0 -30px;text-indent:-999em;}\n+#supersized{display:block;position:fixed;left:0;top:0;overflow:hidden;z-index:-999;height:100%;width:100%}\n+#supersized img{width:auto;height:auto;position:relative;display:none;outline:0;border:none}\n+#supersized.speed img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-moz-crisp-edges}\n+#supersized.quality img{-ms-interpolation-mode:bicubic;image-rendering:optimizeQuality}\n+#supersized li{display:block;list-style:none;z-index:-30;position:fixed;overflow:hidden;top:0;left:0;width:100%;height:100%;background:#111}\n+#supersized a{width:100%;height:100%;display:block}\n+#supersized li.prevslide{z-index:-20}\n+#supersized li.activeslide{z-index:-10}\n+#supersized li.activeslide img,#supersized li.prevslide img{display:inline}\n+#supersized img{max-width:none!important}\n+.box-line{height: 0; overflow: hidden; border-top: 1px #c2c2c2 solid; margin-top: 20px;}\n+.register-tis {line-height: 42px; margin: 15px auto 0px; padding: 0 15px; border: 1px solid rgba(255, 255, 255, 0.38); background: rgba(45, 45, 45, 0.33); border-radius: 6px;}\n+label.error{display: block; -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; border-radius: 0px 0px 5px 5px; width: 300px; height: 34px; border: 1px solid rgba(255,255,255,.15); line-height: 31px; box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset; text-shadow: 0 1px 2px rgba(0,0,0,.1); background: rgba(245, 26, 26, 0.81); -moz-border-radius: 6px; margin: 0 auto;}\n\\ No newline at end of file"
+  }, {
+    "sha" : "e29042d7b5f62b36e99f53d5a0223a33f54b2742",
+    "filename" : "labs/1414080902121/success.json",
+    "status" : "added",
+    "additions" : 3,
+    "deletions" : 0,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/daf183582d4903f73df23b3a8a5f003b50c21c4e/labs/1414080902121/success.json",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/daf183582d4903f73df23b3a8a5f003b50c21c4e/labs/1414080902121/success.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902121/success.json?ref=daf183582d4903f73df23b3a8a5f003b50c21c4e",
+    "patch" : "@@ -0,0 +1,3 @@\n+﻿{\n+\t\"msg\":\"登录成功\"\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "daf183582d4903f73df23b3a8a5f003b50c21c4e",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/daf183582d4903f73df23b3a8a5f003b50c21c4e",
+  "parents" : [ {
+    "sha" : "b06b27d05c9ac2e7c80dd6495fbf1df8684e6bd2",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b06b27d05c9ac2e7c80dd6495fbf1df8684e6bd2",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/b06b27d05c9ac2e7c80dd6495fbf1df8684e6bd2"
+  } ]
+}

@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "qiuwenqiol",
+    "id" : 14258741,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14258741?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qiuwenqiol",
+    "html_url" : "https://github.com/qiuwenqiol",
+    "followers_url" : "https://api.github.com/users/qiuwenqiol/followers",
+    "following_url" : "https://api.github.com/users/qiuwenqiol/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qiuwenqiol/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qiuwenqiol/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qiuwenqiol/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qiuwenqiol/orgs",
+    "repos_url" : "https://api.github.com/users/qiuwenqiol/repos",
+    "events_url" : "https://api.github.com/users/qiuwenqiol/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qiuwenqiol/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 166,
+    "additions" : 115,
+    "deletions" : 51
+  },
+  "author" : {
+    "login" : "qiuwenqiol",
+    "id" : 14258741,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14258741?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qiuwenqiol",
+    "html_url" : "https://github.com/qiuwenqiol",
+    "followers_url" : "https://api.github.com/users/qiuwenqiol/followers",
+    "following_url" : "https://api.github.com/users/qiuwenqiol/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qiuwenqiol/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qiuwenqiol/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qiuwenqiol/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qiuwenqiol/orgs",
+    "repos_url" : "https://api.github.com/users/qiuwenqiol/repos",
+    "events_url" : "https://api.github.com/users/qiuwenqiol/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qiuwenqiol/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/bb399b6ad330dbd134c03b39ff41d50a422ede97",
+  "commit" : {
+    "author" : {
+      "name" : "qiuwenqi",
+      "email" : "qiuwenqiol@163.com",
+      "date" : "2016-12-05T17:00:09Z"
+    },
+    "committer" : {
+      "name" : "qiuwenqi",
+      "email" : "qiuwenqiol@163.com",
+      "date" : "2016-12-05T17:00:09Z"
+    },
+    "message" : "#7 提交实验",
+    "tree" : {
+      "sha" : "1f992eb64e3c24b3d7ebdf8b5350f4cc75db6a02",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/1f992eb64e3c24b3d7ebdf8b5350f4cc75db6a02"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/bb399b6ad330dbd134c03b39ff41d50a422ede97",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/bb399b6ad330dbd134c03b39ff41d50a422ede97/comments",
+  "files" : [ {
+    "sha" : "bd0802027e11d63783624ca9e14d4279f59048eb",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902119/DBConnection.java",
+    "status" : "added",
+    "additions" : 57,
+    "deletions" : 0,
+    "changes" : 57,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/src/edu/hzu/javaweb/labs/se1414080902119/DBConnection.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/src/edu/hzu/javaweb/labs/se1414080902119/DBConnection.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902119/DBConnection.java?ref=bb399b6ad330dbd134c03b39ff41d50a422ede97",
+    "patch" : "@@ -0,0 +1,57 @@\n+package edu.hzu.javaweb.labs.se1414080902119;\n+\n+import java.sql.Connection;\n+import java.sql.DriverManager;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+\n+public class DBConnection {\n+\tprivate static final String DBDRIVER = \"com.mysql.jdbc.Driver\";\n+\tprivate static final String DBURL = \"jdbc:mysql://localhost:3306/test2\";\n+\tprivate static final String DBUSER = \"root\";\n+\tprivate static final String DBPASSWORD = \"root\";\n+\n+\tpublic static Connection getConnection() {\n+\t\tConnection conn = null;\n+\t\ttry {\n+\t\t\tClass.forName(DBDRIVER);\n+\t\t\tconn = DriverManager.getConnection(DBURL, DBUSER, DBPASSWORD);\n+\t\t} catch (ClassNotFoundException e) {\n+\t\t\te.printStackTrace();\n+\t\t} catch (SQLException e) {\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t\treturn conn;\n+\t}\n+\n+\tpublic static void close(Connection conn) {\n+\t\tif (conn != null) {\n+\t\t\ttry {\n+\t\t\t\tconn.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tpublic static void close(PreparedStatement pstmt) {\n+\t\tif (pstmt != null) {\n+\t\t\ttry {\n+\t\t\t\tpstmt.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tpublic static void close(ResultSet rs) {\n+\t\tif (rs != null) {\n+\t\t\ttry {\n+\t\t\t\trs.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\t}\n+\t}\n+}"
+  }, {
+    "sha" : "d2fbecfb37a8bf444837a5d44d537b4261884ff2",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902119/Member.java",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Member.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Member.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Member.java?ref=bb399b6ad330dbd134c03b39ff41d50a422ede97",
+    "patch" : "@@ -1,7 +1,7 @@\n package edu.hzu.javaweb.labs.se1414080902119;\n \n public class Member {\n-\tpublic String name; // 图书类别名字\n+\tpublic String name; // \n \n \tpublic String getName() {\n \t\treturn name;"
+  }, {
+    "sha" : "28f336cdaaa30ea30833c43a3e6b26663b6f15f8",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902119/se1414080902119servlet.java",
+    "status" : "modified",
+    "additions" : 41,
+    "deletions" : 32,
+    "changes" : 73,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/src/edu/hzu/javaweb/labs/se1414080902119/se1414080902119servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/src/edu/hzu/javaweb/labs/se1414080902119/se1414080902119servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902119/se1414080902119servlet.java?ref=bb399b6ad330dbd134c03b39ff41d50a422ede97",
+    "patch" : "@@ -2,11 +2,14 @@\n \n import java.io.IOException;\n import java.io.PrintWriter;\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n import java.util.ArrayList;\n import java.util.Iterator;\n import java.util.List;\n \n-import javax.servlet.RequestDispatcher;\n import javax.servlet.ServletException;\n import javax.servlet.annotation.WebServlet;\n import javax.servlet.http.HttpServlet;\n@@ -17,14 +20,6 @@\n public class Se1414080902119servlet extends HttpServlet {\n \tprivate static final long serialVersionUID = 1L;\n \n-\tprivate static List<Member> types;\n-\tstatic {\n-\t\ttypes = new ArrayList<Member>();\n-\t\ttypes.add(new Member(\"张三\"));\n-\t\ttypes.add(new Member(\"李四\"));\n-\t\ttypes.add(new Member(\"王五\"));\n-\t}\n-\n \tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n \t\tdoPost(request, response);\n \t}\n@@ -36,45 +31,59 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\tSystem.out.println(request.getRequestURI());\n \t\tif (operate == null)\n \t\t\toperate = \"\";\n-\t\tif (\"show\".equals(operate))\n-\t\t\tdoshow(response, request);\n-\t\telse if (\"add\".equals(operate))\n-\t\t\taddTypes(response, request);\n-\t\telse\n-\t\t\tshowList(response);\n-\t}\n-\n-\tprivate void doshow(HttpServletResponse response, HttpServletRequest request) throws IOException, ServletException {\n-\t\trequest.setAttribute(\"list\", types);\n-\t\tRequestDispatcher dispatcher = request.getRequestDispatcher(\"/1414080902119/client.jsp\");\n-\t\tdispatcher.forward(request, response);\n+\t\ttry {\n+\t\t\tif (\"add\".equals(operate))\n+\t\t\t\taddTypes(response, request);\n+\t\t\telse {\n+\t\t\t\tshowList(response, request);\n+\t\t\t}\n+\t\t} catch (SQLException e) {\n+\t\t\te.printStackTrace();\n+\t\t}\n \t}\n-\t\n \n-\tpublic void showList(HttpServletResponse response) throws IOException {\n+\tpublic void showList(HttpServletResponse response, HttpServletRequest request) throws IOException, SQLException, ServletException {\n+\t\tConnection connection = DBConnection.getConnection();\n+\t\tList<Member> types = new ArrayList<Member>();\n+\t\tString sql = \"select name from member\";\n+\t\tPreparedStatement statement = connection.prepareStatement(sql);\n+\t\tResultSet resultSet = statement.executeQuery();\n+\t\twhile (resultSet.next()) {\n+\t\t\tMember member = new Member(resultSet.getString(1));\n+\t\t\ttypes.add(member);\n+\t\t}\n+\t\tDBConnection.close(connection);\n+\t\tDBConnection.close(statement);\n \t\tPrintWriter writer = response.getWriter();\n \t\twriter.write(reJSON(types));\n \t\twriter.close();\n \t}\n \n-\tpublic void addTypes(HttpServletResponse response, HttpServletRequest request) throws IOException {\n+\tpublic void addTypes(HttpServletResponse response, HttpServletRequest request) throws IOException, SQLException {\n \t\tString name = request.getParameter(\"name\");\n \t\tPrintWriter writer = response.getWriter();\n \t\tif (name == null || name.equals(\"\")) {\n \t\t\twriter.write(\"{\\\"msg\\\":\\\"不能为空\\\"}\");\n \t\t\twriter.close();\n \t\t\treturn;\n \t\t}\n-\t\tfor (int i = 0; i < types.size(); i++) {\n-\t\t\tif (types.get(i).getName().equals(name)) {\n-\t\t\t\twriter.write(\"{\\\"msg\\\":\\\"添加失败\\\"}\");\n-\t\t\t\twriter.close();\n-\t\t\t\treturn;\n-\t\t\t}\n+\t\tConnection connection = DBConnection.getConnection();\n+\t\tString sql1 = \"select name from member where name=?\";\n+\t\tPreparedStatement statement1 = connection.prepareStatement(sql1);\n+\t\tstatement1.setString(1, name);\n+\t\tResultSet resultSet = statement1.executeQuery();\n+\t\tif (resultSet.next()) {\n+\t\t\twriter.write(\"{\\\"msg\\\":\\\"添加失败\\\"}\");\n+\t\t\twriter.close();\n \t\t}\n \t\tMember type = new Member();\n \t\ttype.setName(name);\n-\t\ttypes.add(type);\n+\t\tString sql = \"insert into member(name) values(?)\";\n+\t\tPreparedStatement statement = connection.prepareStatement(sql);\n+\t\tstatement.setString(1, type.getName());\n+\t\tstatement.executeUpdate();\n+\t\tDBConnection.close(connection);\n+\t\tDBConnection.close(statement);\n \t\twriter.write(\"{\\\"msg\\\":\\\"success\\\"}\");\n \t\twriter.close();\n \t}\n@@ -90,5 +99,5 @@ public String reJSON(List<Member> list) {\n \t\t}\n \t\tstr.append(\"}\");\n \t\treturn str.toString();\n-}\n+\t}\n }"
+  }, {
+    "sha" : "fc1a0da56bdac5f819484757f39d13ab9bd47b4d",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902119/sql.txt",
+    "status" : "added",
+    "additions" : 5,
+    "deletions" : 0,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/src/edu/hzu/javaweb/labs/se1414080902119/sql.txt",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/src/edu/hzu/javaweb/labs/se1414080902119/sql.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902119/sql.txt?ref=bb399b6ad330dbd134c03b39ff41d50a422ede97",
+    "patch" : "@@ -0,0 +1,5 @@\n+create database test2;\n+CREATE TABLE member(\n+NAME VARCHAR(100) PRIMARY KEY,\n+cost INT\n+);\n\\ No newline at end of file"
+  }, {
+    "sha" : "44f2637ec720514106668499e7f95185e8d17e31",
+    "filename" : "jweb/web/1414080902119/server.jsp",
+    "status" : "modified",
+    "additions" : 11,
+    "deletions" : 18,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/web/1414080902119/server.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/bb399b6ad330dbd134c03b39ff41d50a422ede97/jweb/web/1414080902119/server.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902119/server.jsp?ref=bb399b6ad330dbd134c03b39ff41d50a422ede97",
+    "patch" : "@@ -1,5 +1,4 @@\n-<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\"\n-\tpageEncoding=\"utf-8\"%>\n+<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\" pageEncoding=\"utf-8\"%>\n <!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n <%\n \tresponse.setHeader(\"Pragma\",\"No-cache\");\n@@ -9,10 +8,8 @@\n <html>\n <head>\n <title>网吧会员管理</title>\n-<link rel=\"stylesheet\"\n-\thref=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n-<link rel=\"stylesheet\"\n-\thref=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n </head>\n@@ -147,16 +144,16 @@\n \t\t\t\t\tdoSome(json);\n \t\t\t\t} else {\n \t\t\t\t\talert(\"出错了\");\n-\t\t\t\t}\n-\t\t\t\t;\n+\t\t\t\t};\n \t\t\t}\n \t\t\t;\n \t\t};\n \t}\n </script>\n+\n+\n <body>\n-\t<div style=\"width: 380px; margin: 0 auto; margin-top: 50px;\" id=\"main\"\n-\t\talign=\"center\">\n+\t<div style=\"width: 380px; margin: 0 auto; margin-top: 50px;\" id=\"main\" align=\"center\">\n \t\t<div class=\"btn-group btn-group-justified\">\n \t\t\t<div class=\"btn-group\">\n \t\t\t\t<button id=\"btn1\" type=\"button\" class=\"btn1 btn btn-default button\">查看网吧会员</button>\n@@ -165,19 +162,15 @@\n \t\t\t\t<button id=\"btn2\" type=\"button\" class=\"btn1 btn btn-default button\">添加网吧会员</button>\n \t\t\t</div>\n \t\t</div>\n-\t\t<div class=\"hehe\"\n-\t\t\tstyle=\"width: 380px; height: 200px; border: 1px solid #000; border-radius: 5px;overflow:auto;\">\n+\t\t<div class=\"hehe\" style=\"width: 380px; height: 200px; border: 1px solid #000; border-radius: 5px;overflow:auto;\">\n \t\t\t<div class=\"list-group\" id=\"top\"></div>\n \t\t</div>\n-\t\t<div class=\"hehe\"\n-\t\t\tstyle=\"display: none; width: 380px; height: 200px; border: 1px solid #000; border-radius: 5px\">\n-\t\t\t<form  action=\"1414080902119?operate=add\">\n+\t\t<div class=\"hehe\" style=\"display: none; width: 380px; height: 200px; border: 1px solid #000; border-radius: 5px\">\n+\t\t\t<form action=\"1414080902119?operate=add\">\n \t\t\t\t<div class=\"form-group .col-md-5\">\n \t\t\t\t\t<div class=\"row\">\n \t\t\t\t\t\t<div class=\"col-md-6 col-md-offset-3\">\n-\t\t\t\t\t\t\t<label for=\"exampleInputEmail1\">网吧会员</label> <input\n-\t\t\t\t\t\t\t\tid=\"types_name\" type=\"text\" class=\"form-control\"\n-\t\t\t\t\t\t\t\tplaceholder=\"Enter\" name=\"name\">\n+\t\t\t\t\t\t\t<label for=\"exampleInputEmail1\">网吧会员</label> <input id=\"types_name\" type=\"text\" class=\"form-control\" placeholder=\"Enter\" name=\"name\">\n \t\t\t\t\t\t</div>\n \t\t\t\t\t</div>\n \t\t\t\t</div>"
+  } ],
+  "sha" : "bb399b6ad330dbd134c03b39ff41d50a422ede97",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/bb399b6ad330dbd134c03b39ff41d50a422ede97",
+  "parents" : [ {
+    "sha" : "bb53e9ba6d008c37149164397cfc759b63e56bb9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/bb53e9ba6d008c37149164397cfc759b63e56bb9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/bb53e9ba6d008c37149164397cfc759b63e56bb9"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "tangjianliang",
+    "id" : 22502144,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22502144?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/tangjianliang",
+    "html_url" : "https://github.com/tangjianliang",
+    "followers_url" : "https://api.github.com/users/tangjianliang/followers",
+    "following_url" : "https://api.github.com/users/tangjianliang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/tangjianliang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/tangjianliang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/tangjianliang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/tangjianliang/orgs",
+    "repos_url" : "https://api.github.com/users/tangjianliang/repos",
+    "events_url" : "https://api.github.com/users/tangjianliang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/tangjianliang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 47,
+    "additions" : 33,
+    "deletions" : 14
+  },
+  "author" : {
+    "login" : "tangjianliang",
+    "id" : 22502144,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22502144?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/tangjianliang",
+    "html_url" : "https://github.com/tangjianliang",
+    "followers_url" : "https://api.github.com/users/tangjianliang/followers",
+    "following_url" : "https://api.github.com/users/tangjianliang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/tangjianliang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/tangjianliang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/tangjianliang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/tangjianliang/orgs",
+    "repos_url" : "https://api.github.com/users/tangjianliang/repos",
+    "events_url" : "https://api.github.com/users/tangjianliang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/tangjianliang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/48efb5708a4030e4d3370ab8c406b814076f8a79",
+  "commit" : {
+    "author" : {
+      "name" : "tangjianliang",
+      "email" : "1285848867@qq.com",
+      "date" : "2016-10-07T11:49:28Z"
+    },
+    "committer" : {
+      "name" : "tangjianliang",
+      "email" : "1285848867@qq.com",
+      "date" : "2016-10-07T11:49:28Z"
+    },
+    "message" : "#3 实验提交",
+    "tree" : {
+      "sha" : "0df8009486d2fcf3b3bed536601d860b8aee5a2e",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/0df8009486d2fcf3b3bed536601d860b8aee5a2e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/48efb5708a4030e4d3370ab8c406b814076f8a79",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/48efb5708a4030e4d3370ab8c406b814076f8a79/comments",
+  "files" : [ {
+    "sha" : "fcf505a6c0c74d6d6dce07fa6938c46e68e470e5",
+    "filename" : "labs/1414080902111/index.jsp",
+    "status" : "modified",
+    "additions" : 33,
+    "deletions" : 14,
+    "changes" : 47,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/48efb5708a4030e4d3370ab8c406b814076f8a79/labs/1414080902111/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/48efb5708a4030e4d3370ab8c406b814076f8a79/labs/1414080902111/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902111/index.jsp?ref=48efb5708a4030e4d3370ab8c406b814076f8a79",
+    "patch" : "@@ -6,21 +6,40 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \n <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n <html>\n+<meta charset=\"UTF-8\">\n   <head>\n-    <base href=\"<%=basePath%>\">\n-    \n-    <title>My JSP 'index.jsp' starting page</title>\n-\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n-\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n-\t<meta http-equiv=\"expires\" content=\"0\">    \n-\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n-\t<meta http-equiv=\"description\" content=\"This is my page\">\n-\t<!--\n-\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n-\t-->\n+    <title>Game Account Transaction</title>\n+\t\n+      <script src=\"http://code.jquery.com/jquery.js\"></script>\n+    <script language=\"javascript\" src=\"test.js\"></script>\n+\n   </head>\n   \n-  <body>\n-    This is my JSP page. <br>\n+  <body >\n+  \t\n+    <h2 align=\"center\">游戏账号交易</h2>\n+    <form>\n+    <table align=\"center\">\n+    <tr><td>游戏ID或邮箱:</td><td><input type=\"text\" name=\"Email\"></td></tr>\n+    <tr><td>姓名:</td><td><input type=\"text\" name=\"Name\"></td></tr>\n+    <tr><td>身份证:</td><td><input type=\"text\" name=\"ID\"></td></tr>\n+    <tr><td>游戏密码:</td><td><input type=\"password\" name=\"PW\"></td></tr>\n+    <tr><td>分类:</td>\n+  \t\t<td><select name=\"stuSelect2\">\n+  \t\t<option selected>英雄联盟</option>\n+  \t\t<option>地下城与勇士</option>\n+  \t\t<option>穿越火线</option>\n+                <option>守望先锋</option>\n+                <option>其他</option>\n+  \t\t\t\t</select>\n+  \t\t</td>\n+  \t\t</tr>\n+    <tr><td>姓名:</td><td><input type=\"text\" name=\"Money\"></td></tr>    <tr>\n+    <td>\n+        <input type=\"submit\" value=\"提交\"onclick=\"test()\"> <input type=\"reset\" value=\"取消\">\n+    </td>\n+    </tr>\n+    </table>\n+    </form>\n   </body>\n-</html>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "48efb5708a4030e4d3370ab8c406b814076f8a79",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/48efb5708a4030e4d3370ab8c406b814076f8a79",
+  "parents" : [ {
+    "sha" : "4b661de9cae67e73a45b78835f5ed13fe1bfec1b",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/4b661de9cae67e73a45b78835f5ed13fe1bfec1b",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/4b661de9cae67e73a45b78835f5ed13fe1bfec1b"
+  } ]
+}

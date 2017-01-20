@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "mpq1228",
+    "id" : 22512136,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512136?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mpq1228",
+    "html_url" : "https://github.com/mpq1228",
+    "followers_url" : "https://api.github.com/users/mpq1228/followers",
+    "following_url" : "https://api.github.com/users/mpq1228/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mpq1228/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mpq1228/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mpq1228/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mpq1228/orgs",
+    "repos_url" : "https://api.github.com/users/mpq1228/repos",
+    "events_url" : "https://api.github.com/users/mpq1228/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mpq1228/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 188,
+    "additions" : 102,
+    "deletions" : 86
+  },
+  "author" : {
+    "login" : "mpq1228",
+    "id" : 22512136,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512136?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mpq1228",
+    "html_url" : "https://github.com/mpq1228",
+    "followers_url" : "https://api.github.com/users/mpq1228/followers",
+    "following_url" : "https://api.github.com/users/mpq1228/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mpq1228/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mpq1228/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mpq1228/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mpq1228/orgs",
+    "repos_url" : "https://api.github.com/users/mpq1228/repos",
+    "events_url" : "https://api.github.com/users/mpq1228/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mpq1228/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/5459feb321a096e60e77881c111e34d2ccafd28f",
+  "commit" : {
+    "author" : {
+      "name" : "mpq1228",
+      "email" : "639186556@qq.com",
+      "date" : "2016-12-01T05:50:42Z"
+    },
+    "committer" : {
+      "name" : "mpq1228",
+      "email" : "639186556@qq.com",
+      "date" : "2016-12-01T05:50:42Z"
+    },
+    "message" : "OK",
+    "tree" : {
+      "sha" : "b9c98360669ba7a4dd8858a22ddcdcac88f19225",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/b9c98360669ba7a4dd8858a22ddcdcac88f19225"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/5459feb321a096e60e77881c111e34d2ccafd28f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/5459feb321a096e60e77881c111e34d2ccafd28f/comments",
+  "files" : [ {
+    "sha" : "92eb7e1be39ad36ff0404bc5cdf2507c5cbe3a0c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1406070302213/Se1406070302213Servlet.java",
+    "status" : "modified",
+    "additions" : 31,
+    "deletions" : 79,
+    "changes" : 110,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5459feb321a096e60e77881c111e34d2ccafd28f/jweb/src/edu/hzu/javaweb/labs/se1406070302213/Se1406070302213Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5459feb321a096e60e77881c111e34d2ccafd28f/jweb/src/edu/hzu/javaweb/labs/se1406070302213/Se1406070302213Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1406070302213/Se1406070302213Servlet.java?ref=5459feb321a096e60e77881c111e34d2ccafd28f",
+    "patch" : "@@ -2,90 +2,42 @@\n \n import java.io.IOException;\n import java.io.PrintWriter;\n-\n+import java.util.ArrayList;\n+import java.util.Date;\n+import java.util.List;\n+//import javax.mail.Session;\n import javax.servlet.ServletException;\n import javax.servlet.http.HttpServlet;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n \n public class Se1406070302213Servlet extends HttpServlet {\n \n-\t/**\n-\t\t * Constructor of the object.\n-\t\t */\n-\tpublic Se1406070302213Servlet() {\n-\t\tsuper();\n-\t}\n-\n-\t/**\n-\t\t * Destruction of the servlet. <br>\n-\t\t */\n-\tpublic void destroy() {\n-\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n-\t\t// Put your code here\n-\t}\n-\n-\t/**\n-\t\t * The doGet method of the servlet. <br>\n-\t\t *\n-\t\t * This method is called when a form has its tag value method equals to get.\n-\t\t * \n-\t\t * @param request the request send by the client to the server\n-\t\t * @param response the response send by the server to the client\n-\t\t * @throws ServletException if an error occurred\n-\t\t * @throws IOException if an error occurred\n-\t\t */\n-\tpublic void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\n-\t\tresponse.setContentType(\"text/html\");\n-\t\tPrintWriter out = response.getWriter();\n-\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n-\t\tout.println(\"<HTML>\");\n-\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n-\t\tout.println(\"  <BODY>\");\n-\t\tout.println(\"  Hello!Mr Zeng!\");\n-\t\tout.println(\"  <br>\");\n-\t\tout.println(\"  My student number is 1406070302213.Thanks!\");\n-\t\tout.println(\"  </BODY>\");\n-\t\tout.println(\"</HTML>\");\n-\t\tout.flush();\n-\t\tout.close();\n-\t}\n-\n-\t/**\n-\t\t * The doPost method of the servlet. <br>\n-\t\t *\n-\t\t * This method is called when a form has its tag value method equals to post.\n-\t\t * \n-\t\t * @param request the request send by the client to the server\n-\t\t * @param response the response send by the server to the client\n-\t\t * @throws ServletException if an error occurred\n-\t\t * @throws IOException if an error occurred\n-\t\t */\n-\tpublic void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\n-\t\tresponse.setContentType(\"text/html\");\n-\t\tPrintWriter out = response.getWriter();\n-\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n-\t\tout.println(\"<HTML>\");\n-\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n-\t\tout.println(\"  <BODY>\");\n-\t\tout.println(\"  Hello!Mr Zeng!\");\n-\t\tout.println(\"  <br>\");\n-\t\tout.println(\"  My student number is 1406070302213.Thanks!\");\n-\t\tout.println(\"  </BODY>\");\n-\t\tout.println(\"</HTML>\");\n-\t\tout.flush();\n-\t\tout.close();\n-\t}\n-\n-\t/**\n-\t\t * Initialization of the servlet. <br>\n-\t\t *\n-\t\t * @throws ServletException if an error occurs\n-\t\t */\n-\tpublic void init() throws ServletException {\n-\t\t// Put your code here\n-\t}\n-\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+ \t\t\tthrows ServletException, IOException {\n+\n+\t\t\n+\t\tString pw = request.getParameter(\"pw\");\n+\t\tHttpSession session = request.getSession();\n+\t\tsession.setAttribute(\"pw\", pw);\n+\t\t\n+\t\tList<Userinfo> userinfos = new ArrayList<Userinfo>();\n+\t\tString[] name = new String[]{\"����\",\"����\",\"����\"};\n+\t\tint[] age=new int[]{22,21,18};\n+\t\tboolean[] sex=new boolean[]{true,true,false};\n+\t\tDate date = new Date();\n+\t\tUserinfo userinfo;\n+\t\tfor(int i = 0; i < 3; i++){\n+\t\t\tuserinfo = new Userinfo();\n+\t\t\tuserinfo.setDate(date.getYear() + \"-\" + date.getMonth() + \"-\" + date.getDay());\n+\t\t\tuserinfo.setId(i+\"\");\t\t\t\n+\t\t\tuserinfo.setName(name[i]);\n+\t\t\tuserinfo.setAge(age[i]);\n+\t\t\tuserinfo.setSex(sex[i]);\n+\t\t}\n+\t\t\n+\t\trequest.setAttribute(\"userinfos\", userinfos);\n+\t\trequest.getRequestDispatcher(\"/index\").forward(request, response);\n+\t}\t\t\n }"
+  }, {
+    "sha" : "1510fff4c8e6da96d8d17e25b2cd9fca4b51ba18",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1406070302213/Userinfo.java",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5459feb321a096e60e77881c111e34d2ccafd28f/jweb/src/edu/hzu/javaweb/labs/se1406070302213/Userinfo.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5459feb321a096e60e77881c111e34d2ccafd28f/jweb/src/edu/hzu/javaweb/labs/se1406070302213/Userinfo.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1406070302213/Userinfo.java?ref=5459feb321a096e60e77881c111e34d2ccafd28f",
+    "patch" : "@@ -0,0 +1,43 @@\n+package edu.hzu.javaweb.labs.se1406070302213;\n+\n+public class Userinfo {\n+\tprivate String id;\n+\tprivate String name;\n+\tprivate String date;\n+\tprivate boolean sex;\n+\tprivate int age;\n+\t\n+\tpublic Userinfo(){}\n+\t\n+\tpublic String getId() {\n+\t\treturn id;\n+\t}\n+\tpublic void setId(String id) {\n+\t\tthis.id = id;\n+\t}\n+\tpublic String getName() {\n+\t\treturn name;\n+\t}\n+\tpublic void setName(String name) {\n+\t\tthis.name = name;\n+\t}\n+\tpublic String getDate() {\n+\t\treturn date;\n+\t}\n+\tpublic void setDate(String date) {\n+\t\tthis.date = date;\n+\t}\n+\tpublic Boolean getSex() {\n+\t\treturn sex;\n+\t}\n+\tpublic void setSex(boolean sex) {\n+\t\tthis.sex =sex;\n+\t}\n+\tpublic int getAge() {\n+\t\treturn age;\n+\t}\n+\tpublic void setAge(int age) {\n+\t\tthis.age = age;\n+\t}\n+\t\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "251964c623b34e076e9c924db2a88bed5abece62",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1406070302213/index.jsp",
+    "status" : "modified",
+    "additions" : 28,
+    "deletions" : 7,
+    "changes" : 35,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5459feb321a096e60e77881c111e34d2ccafd28f/jweb/src/edu/hzu/javaweb/labs/se1406070302213/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5459feb321a096e60e77881c111e34d2ccafd28f/jweb/src/edu/hzu/javaweb/labs/se1406070302213/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1406070302213/index.jsp?ref=5459feb321a096e60e77881c111e34d2ccafd28f",
+    "patch" : "@@ -1,19 +1,40 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n-\n \n <!DOCTYPE html>\n <html lang=\"zh-CN\">\n <head>\n+<meta charset=\"utf-8\">\n <link rel=\"stylesheet\" type=\"text/css\" href=\"mpq.css\"/>\n+<%@ page import=\"java.io.*,java.util.*, javax.servlet.*\" %>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\"%>\n <title>登录</title>\n <script type=\"text/javascript\" src=\"http://code.jquery.com/jquery.js\"></script>\n <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n </head>\n <body>\n-\t<p>您没有访问权限!</p>\n+<center>\n+<h1><%=new java.util.Date()%></h1>\n+</center>\n+\t<div id=\"main_special\">\n+\t\t<fieldset><legend>登录</legend>\n+\t\t\t<form action=\"/edu/hzu/javaweb/labs/se1406070302213/Se1406070302213Servlet.java\" method=\"get\">\n+\t\t\t\t<label for=\"label1\">用&nbsp; 户&nbsp; 名：</label>\n+\t\t\t\t<input type=\"text\" name=\"name\" id=\"username label1\"/><font style=\"font-size:12px;color:#898983\"> *用户名不得超过16位字符</font><br>\n+\t\t\t\t<label for=\"label2\">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>\n+\t\t\t\t<input type=\"password\" name=\"pw\" id=\"password label2\"/><font style=\"font-size:12px;color:#898983\"> *密码不能超过16位字符</font><br>\n+\t\t\t\t<input type=\"submit\" name=\"submit\" class=\"submit\" value=\"登录\"/>\n+\t\t\t\t<input type=\"reset\" name=\"reset\" class=\"submit\" value=\"重置\"/>\n+\t\t\t</form>\n+\t\t</fieldset>\n+\t\t<c:if test=\"${sessionScope.pw != null}\">\n+\t\t\t<c:forEach items=\"${requestScope.userinfos}\" var=\"userinfo\">\n+\t\t\t\t用户评价信息：\n+\t\t\t\t${userinfo. id}\n+\t\t\t\t${userinfo. name}\n+\t\t\t\t${userinfo. age}\n+\t\t\t\t${userinfo. sex}\n+\t\t\t\t${userinfo. info}\n+\t\t\t</c:forEach>\n+\t\t</c:if>\n+\t</div>\n </body>\n </html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "5459feb321a096e60e77881c111e34d2ccafd28f",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5459feb321a096e60e77881c111e34d2ccafd28f",
+  "parents" : [ {
+    "sha" : "ff6b6cefecd0688765915617855d46424c07c15e",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ff6b6cefecd0688765915617855d46424c07c15e",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ff6b6cefecd0688765915617855d46424c07c15e"
+  } ]
+}

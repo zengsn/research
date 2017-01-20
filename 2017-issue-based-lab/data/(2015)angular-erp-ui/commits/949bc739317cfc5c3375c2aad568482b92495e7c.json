@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 45,
+    "additions" : 38,
+    "deletions" : 7
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/949bc739317cfc5c3375c2aad568482b92495e7c",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:54:14Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:54:14Z"
+    },
+    "message" : "Merge pull request #327 from hebinhai/master\n\n实验5第3次修改-1314080901110",
+    "tree" : {
+      "sha" : "241dc8c19522f3795384425fcd0e9081cd96d97e",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/241dc8c19522f3795384425fcd0e9081cd96d97e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/949bc739317cfc5c3375c2aad568482b92495e7c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/949bc739317cfc5c3375c2aad568482b92495e7c/comments",
+  "files" : [ {
+    "sha" : "e328e4acef613387fb52e05d414fc0e869053815",
+    "filename" : "works/1314080901110/index.html",
+    "status" : "modified",
+    "additions" : 32,
+    "deletions" : 1,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/949bc739317cfc5c3375c2aad568482b92495e7c/works/1314080901110/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/949bc739317cfc5c3375c2aad568482b92495e7c/works/1314080901110/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901110/index.html?ref=949bc739317cfc5c3375c2aad568482b92495e7c",
+    "patch" : "@@ -20,10 +20,12 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n       <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n-+     <script src=\"js/caiwushouruchaxunModule.js\"></script>\n+      <script src=\"js/caiwushouruchaxunModule.js\"></script>\n     <![endif]-->\n   </head>\n   <body ng-controller=\"MyFilterDemoCtrl\">\n+  \n+ <body ng-controller=\"MyFilterDemoCtrl\" ng-cloak>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -54,6 +56,35 @@\n       </div>\n \n     </div><!-- /.container -->\n+       <h2>AngularJS Socks</h2>\n+    <p>CaiwuQitaShouruChaxun</p>\n+     <button ng-click=\"showHide()\" type=\"button\">\n+        {{isHidden ? 'Show' : 'Hide'}}\n+    </button>\n+     <p ng-cloak style=\"text-align:center;\">{{data.operator}}</p>\n+    <form class=\"form-horizontal\" role=\"form\" ng-hide=\"isHidden\">\n+    <fieldset>\n+\n+        <div class=\"form-group\">\n+        </div>\n+            <label for=\"Startdate\"  class=\"col-md-1 control-label\">Startdate</label>\n+            <div class=\"col-md-2\">\n+                <input id=\"Startdate\"  type=\"date\"/>\n+                </select>\n+            </div>\n+            <label for=\"Terminationdate\"  class=\"col-md-1 control-label\">Terminationdate</label>\n+            <div class=\"col-md-2\">\n+                <input id=\"Terminationdate\"  type=\"date\"/>\n+                </select>\n+           \n+        </div>\n+        <div class=\"form-group\">\n+            <label for=\"State\"  class=\"col-md-1 control-label \">State</label>\n+            <div class=\"col-md-2\">\n+                <select id=\"State\" class=\"form-control\">\n+                    <option>Completed</option>\n+                    <option>Not finished</option>\n+                    <option>All</option>\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  }, {
+    "sha" : "ae2310cafccf5549f3d58c8792760e0848853c95",
+    "filename" : "works/1314080901110/js/caiwushouruchaxun.js",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 6,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/949bc739317cfc5c3375c2aad568482b92495e7c/works/1314080901110/js/caiwushouruchaxun.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/949bc739317cfc5c3375c2aad568482b92495e7c/works/1314080901110/js/caiwushouruchaxun.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901110/js/caiwushouruchaxun.js?ref=949bc739317cfc5c3375c2aad568482b92495e7c",
+    "patch" : "@@ -6,12 +6,12 @@ var caiwushouruchaxun = angular.module('caiwushouruchaxun', []);\n // configure the module with a controller\n caiwushouruchaxun.controller('MyFilterDemoCtrl', function ($scope) {\n       // controller code would go here\n-      var Queryoptions = {\n-            Incomestate:'未完成',\n-            Startdate:'2015-1-1',\n-            Terminationdate:'2015-2-13'\n-        };\n-        $scope.data =  Queryoptions;\n+   $scope.isHidden = true;\n+   $scope.showHide = function () {\n+   $scope.isHidden = !$scope.isHidden;\n+   }\n+      var chaxunxuanxiang \n+        $scope.data =  chaxunxuanxiang;\n     }\n );\n "
+  } ],
+  "sha" : "949bc739317cfc5c3375c2aad568482b92495e7c",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/949bc739317cfc5c3375c2aad568482b92495e7c",
+  "parents" : [ {
+    "sha" : "578cb3d168ce59af29d6b200c10fc6f136607301",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/578cb3d168ce59af29d6b200c10fc6f136607301",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/578cb3d168ce59af29d6b200c10fc6f136607301"
+  }, {
+    "sha" : "525c9dbf5afca933d537d7cb42b4f413a7468a37",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/525c9dbf5afca933d537d7cb42b4f413a7468a37",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/525c9dbf5afca933d537d7cb42b4f413a7468a37"
+  } ]
+}

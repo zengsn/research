@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "hahamg",
+    "id" : 22512215,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512215?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hahamg",
+    "html_url" : "https://github.com/hahamg",
+    "followers_url" : "https://api.github.com/users/hahamg/followers",
+    "following_url" : "https://api.github.com/users/hahamg/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hahamg/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hahamg/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hahamg/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hahamg/orgs",
+    "repos_url" : "https://api.github.com/users/hahamg/repos",
+    "events_url" : "https://api.github.com/users/hahamg/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hahamg/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 175,
+    "additions" : 112,
+    "deletions" : 63
+  },
+  "author" : {
+    "login" : "hahamg",
+    "id" : 22512215,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512215?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hahamg",
+    "html_url" : "https://github.com/hahamg",
+    "followers_url" : "https://api.github.com/users/hahamg/followers",
+    "following_url" : "https://api.github.com/users/hahamg/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hahamg/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hahamg/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hahamg/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hahamg/orgs",
+    "repos_url" : "https://api.github.com/users/hahamg/repos",
+    "events_url" : "https://api.github.com/users/hahamg/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hahamg/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/60ddcee50741605ee08405a66d15917b7382b162",
+  "commit" : {
+    "author" : {
+      "name" : "hahamg",
+      "email" : "741778746@qq.com",
+      "date" : "2016-12-01T15:41:41Z"
+    },
+    "committer" : {
+      "name" : "hahamg",
+      "email" : "741778746@qq.com",
+      "date" : "2016-12-01T15:41:41Z"
+    },
+    "message" : "#7 提交实验代码",
+    "tree" : {
+      "sha" : "39d2e47a49984504c934abdf0680754c3c2b7168",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/39d2e47a49984504c934abdf0680754c3c2b7168"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/60ddcee50741605ee08405a66d15917b7382b162",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/60ddcee50741605ee08405a66d15917b7382b162/comments",
+  "files" : [ {
+    "sha" : "29fb1dd021738cfd436d1ecf2538f203c1ac1bdf",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902222/DBBean.java",
+    "status" : "added",
+    "additions" : 73,
+    "deletions" : 0,
+    "changes" : 73,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/60ddcee50741605ee08405a66d15917b7382b162/jweb/src/edu/hzu/javaweb/labs/se1414080902222/DBBean.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/60ddcee50741605ee08405a66d15917b7382b162/jweb/src/edu/hzu/javaweb/labs/se1414080902222/DBBean.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902222/DBBean.java?ref=60ddcee50741605ee08405a66d15917b7382b162",
+    "patch" : "@@ -0,0 +1,73 @@\n+  package edu.hzu.javaweb.labs.se1414080902222;\n+ \n+  /*\n+  * To change this license header, choose License Headers in Project Properties.\n+  * To change this template file, choose Tools | Templates\n+  * and open the template in the editor.\n+  */\n+  /**\n+  *\n+  * @author Administrator\n+  */\n+  import java.sql.*;\n+ \n+  public class DBBean {\n+     private Connection conn = null;\n+    private PreparedStatement PPstmt = null;\n+     private Statement stmt = null;\n+     //���mysql��ݿ��е�test��ݿ�\n+    public Connection getConnection(){\n+        try{\n+             if(conn == null){\n+                 Class.forName(\"com.mysql.jdbc.Driver\");\n+                 conn = DriverManager.getConnection(\n+                     \"jdbc:mysql://localhost:3306/youju?useUnicode=true&charset=gbk\",\"root\",\"root\");   \n+             }\n+         }catch(ClassNotFoundException e){\n+            e.printStackTrace();\n+             System.out.println(\"δ�ܼ�����ݿ������\");\n+         }catch(SQLException e0){\n+             e0.printStackTrace();\n+             System.out.println(\"��ݿ����ʧ��\");\n+         }\n+         return conn;\n+    }\n+     \n+     //����������\n+     public PreparedStatement getPreparedStatement(String sql){\n+        try{\n+             conn = getConnection();\n+             PPstmt = conn.prepareStatement(sql);\n+         }catch(SQLException e){\n+             e.printStackTrace();\n+             System.out.println(\"��ݿ�Ԥ�������ʧ��\");\n+         }\n+ \n+         return PPstmt;\n+     }\n+     public Statement getStatement(){\n+        try{\n+             stmt = conn.createStatement();\n+         }catch(SQLException e){\n+             System.out.println(e);\n+             e.printStackTrace();\n+             System.out.println(\"��ݿ������ʧ��\");\n+         }\n+         return stmt;\n+     }\n+     public void closeResource(Connection conn,Statement stmt,PreparedStatement PPstmt){\n+         try{\n+ \n+             if(conn != null)\n+                 conn.close();\n+             if(stmt != null)\n+                 stmt.close();\n+             if(PPstmt != null){\n+                 PPstmt.close();\n+             }\n+        }catch(SQLException e0){\n+            System.out.println(\"��ݿ���Դ�ر�ʧ��\");\n+         }\n+ \n+     }\n+    }\n\\ No newline at end of file"
+  }, {
+    "sha" : "9749e9bcd662edadd20f300c2ccf4e8648210f0b",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902222/Se1414080902222Servlet.java",
+    "status" : "modified",
+    "additions" : 39,
+    "deletions" : 63,
+    "changes" : 102,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/60ddcee50741605ee08405a66d15917b7382b162/jweb/src/edu/hzu/javaweb/labs/se1414080902222/Se1414080902222Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/60ddcee50741605ee08405a66d15917b7382b162/jweb/src/edu/hzu/javaweb/labs/se1414080902222/Se1414080902222Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902222/Se1414080902222Servlet.java?ref=60ddcee50741605ee08405a66d15917b7382b162",
+    "patch" : "@@ -2,71 +2,47 @@\n \n import java.io.IOException;\n import java.io.PrintWriter;\n-\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.SQLException;\n import javax.servlet.ServletException;\n import javax.servlet.http.HttpServlet;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n \n-public class Se1414080902222Servlet extends HttpServlet {\n-\n-\t/**\n-\t * Constructor of the object.\n-\t */\n-\tpublic Se1414080902222Servlet() {\n-\t\tsuper();\n-\t}\n-\n-\t/**\n-\t * Destruction of the servlet. <br>\n-\t */\n-\tpublic void destroy() {\n-\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n-\t\t// Put your code here\n-\t}\n-\n-\t/**\n-\t * The doGet method of the servlet. <br>\n-\t *\n-\t * This method is called when a form has its tag value method equals to get.\n-\t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n-\t */\n-\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\n-\t\tresponse.setContentType(\"text/html\");\n-\t\tPrintWriter out = response.getWriter();\n-\t\tout.println(\"Success\");\n-//\t\tSystem.out.println(\"fsdfsdfsd\");\n-\t}\n-\n-\t/**\n-\t * The doPost method of the servlet. <br>\n-\t *\n-\t * This method is called when a form has its tag value method equals to post.\n-\t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n-\t */\n-\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\n-\t\tdoGet(request,response);\n-\t}\n-\n-\t/**\n-\t * Initialization of the servlet. <br>\n-\t *\n-\t * @throws ServletException if an error occurs\n-\t */\n-\tpublic void init() throws ServletException {\n-\t\t// Put your code here\n-\t}\n-\n-}\n+@WebServlet(\"/1414080902222\")\n+  public class Se1414080902222Servlet extends HttpServlet {\n+  \n+\n+  \t\trequest.setCharacterEncoding(\"gb2312\");\n+  \t\tresponse.setCharacterEncoding(\"gb2312\");\n+  \t\tPrintWriter out = response.getWriter();\n+ \n+ \t\tString Advice = new String(request.getParameter(\"account\"));\n+ \t\t\n+ \n+ \n+  \t\tif (Advice.equals(\"\")) {\n+\n+ \t\t\tout.println(\"��д��ʲô��\");\n+  \t\t} \n+  \t\t else boolean flat = true;\n+ \n+ \t\t\tif (flat) {\n+ \t\t\t\tConnection conn = null;\n+ \t\t\t\tPreparedStatement stmt = null;\n+ \t\t        DBBean db = new DBBean();\n+ \t\t\t\ttry {\n+ \t\t\t        conn = db.getConnection();\n+ \t\t\t        String sql = \"insert into transfer values(?,?)\";\n+ \t\t\t        stmt = db.getPreparedStatement(sql);\n+ \t\t\t        stmt.setString(1,Advice);\n+ \t\t\t       \n+ \t\t\t        stmt.executeUpdate();\n+ \t\t\t        db.closeResource(conn,null,stmt);\n+ \t\t\t\t} catch (SQLException e) {\n+ \t\t\t\t\te.printStackTrace();\n+ \t\t\t\t}\n+ \t\t\t\tout.println(\"лл����\");\n+ \t\t\t}\n+  \t\t}"
+  } ],
+  "sha" : "60ddcee50741605ee08405a66d15917b7382b162",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/60ddcee50741605ee08405a66d15917b7382b162",
+  "parents" : [ {
+    "sha" : "285e7b05587c5f9e5633cddca6b6060daba1e55b",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/285e7b05587c5f9e5633cddca6b6060daba1e55b",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/285e7b05587c5f9e5633cddca6b6060daba1e55b"
+  } ]
+}

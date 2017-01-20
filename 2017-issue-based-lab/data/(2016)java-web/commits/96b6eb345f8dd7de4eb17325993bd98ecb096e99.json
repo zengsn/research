@@ -1,0 +1,71 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 16,
+    "additions" : 7,
+    "deletions" : 9
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/96b6eb345f8dd7de4eb17325993bd98ecb096e99",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "小疯疯",
+      "date" : "2016-11-01T11:27:36Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "小疯疯",
+      "date" : "2016-11-01T11:27:36Z"
+    },
+    "message" : "#2 提交实验代码",
+    "tree" : {
+      "sha" : "a246122885886852372d2eac1661fdd482b652cd",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/a246122885886852372d2eac1661fdd482b652cd"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/96b6eb345f8dd7de4eb17325993bd98ecb096e99",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/96b6eb345f8dd7de4eb17325993bd98ecb096e99/comments",
+  "files" : [ {
+    "sha" : "9e388821afde48a272c278b83e1d198ea6067305",
+    "filename" : "labs/1414080902127/index.html",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 6,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/96b6eb345f8dd7de4eb17325993bd98ecb096e99/labs/1414080902127/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/96b6eb345f8dd7de4eb17325993bd98ecb096e99/labs/1414080902127/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902127/index.html?ref=96b6eb345f8dd7de4eb17325993bd98ecb096e99",
+    "patch" : "@@ -1,18 +1,13 @@\n <html>\n-<head> \n+<head>  \n <title> New Document </title> \n-\n <!-- �� Bootstrap ���� CSS �ļ� -->\n <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n-\n <!-- ��ѡ��Bootstrap�����ļ���һ�㲻�����룩 -->\n <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n-\n <!-- jQuery�ļ��������bootstrap.min.js ֮ǰ���� -->\n <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-\n <!-- ���µ� Bootstrap ���� JavaScript �ļ� -->\n-\n <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n <script src=\"index.js\" type=\"text/javascript\"></script>\n <meta name=\"Generator\" content=\"EditPlus\"> \n@@ -28,6 +23,7 @@\n <div> \n <form class=\"f1\" action=\"http://www.baidu.com\" method=\"get\" > \n <fieldset > \n+<!--������ѧ����Ϣ-->\n <legend>�½�ѧ����Ϣ</legend> \n <table width=75% > \n <tbody> "
+  }, {
+    "sha" : "c740cf19fa6aadcdeed0b5a173f73a12f4468295",
+    "filename" : "labs/1414080902127/index.js",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 1,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/96b6eb345f8dd7de4eb17325993bd98ecb096e99/labs/1414080902127/index.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/96b6eb345f8dd7de4eb17325993bd98ecb096e99/labs/1414080902127/index.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902127/index.js?ref=96b6eb345f8dd7de4eb17325993bd98ecb096e99",
+    "patch" : "@@ -1,7 +1,8 @@\n $( \"#target\" ).submit(function( event ) {\n   alert( \"Handler for .submit() called.\" );\n   event.preventDefault();\n-});\n+}); \n+//������¼��ɹ�\n $.ajax({\n   url: \"success.json\n }).done(function(data) {"
+  }, {
+    "sha" : "65aab311ec19bf5b7ffb160f8cb4496ddf47f320",
+    "filename" : "labs/1414080902127/success.json",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 2,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/96b6eb345f8dd7de4eb17325993bd98ecb096e99/labs/1414080902127/success.json",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/96b6eb345f8dd7de4eb17325993bd98ecb096e99/labs/1414080902127/success.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902127/success.json?ref=96b6eb345f8dd7de4eb17325993bd98ecb096e99",
+    "patch" : "@@ -1,3 +1,4 @@\n-﻿{\n+﻿//保存成功的提示\n+{ \n   \"msg\": \"保存成功！\"\n-} \n\\ No newline at end of file\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "96b6eb345f8dd7de4eb17325993bd98ecb096e99",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/96b6eb345f8dd7de4eb17325993bd98ecb096e99",
+  "parents" : [ {
+    "sha" : "292eecf34c635c73898a8609566e1339879fafc3",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/292eecf34c635c73898a8609566e1339879fafc3",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/292eecf34c635c73898a8609566e1339879fafc3"
+  } ]
+}

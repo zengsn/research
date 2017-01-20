@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "Yveemi",
+    "id" : 22067630,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22067630?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Yveemi",
+    "html_url" : "https://github.com/Yveemi",
+    "followers_url" : "https://api.github.com/users/Yveemi/followers",
+    "following_url" : "https://api.github.com/users/Yveemi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Yveemi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Yveemi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Yveemi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Yveemi/orgs",
+    "repos_url" : "https://api.github.com/users/Yveemi/repos",
+    "events_url" : "https://api.github.com/users/Yveemi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Yveemi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 85,
+    "additions" : 85,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Yveemi",
+    "id" : 22067630,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22067630?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Yveemi",
+    "html_url" : "https://github.com/Yveemi",
+    "followers_url" : "https://api.github.com/users/Yveemi/followers",
+    "following_url" : "https://api.github.com/users/Yveemi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Yveemi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Yveemi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Yveemi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Yveemi/orgs",
+    "repos_url" : "https://api.github.com/users/Yveemi/repos",
+    "events_url" : "https://api.github.com/users/Yveemi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Yveemi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/80e31cd175a406589bd7dc2c21a0fdb3a449a6fc",
+  "commit" : {
+    "author" : {
+      "name" : "Yveemi",
+      "email" : "258378002@qq.com",
+      "date" : "2016-11-21T10:51:18Z"
+    },
+    "committer" : {
+      "name" : "Yveemi",
+      "email" : "258378002@qq.com",
+      "date" : "2016-11-21T10:51:18Z"
+    },
+    "message" : "#7 提交实验代码",
+    "tree" : {
+      "sha" : "b1f93a459f73caa83526f0f6d2828d36e1e118cb",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/b1f93a459f73caa83526f0f6d2828d36e1e118cb"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/80e31cd175a406589bd7dc2c21a0fdb3a449a6fc",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/80e31cd175a406589bd7dc2c21a0fdb3a449a6fc/comments",
+  "files" : [ {
+    "sha" : "652ffcfff8d8fc784a42c7f8c63a65bc5f9c9d8c",
+    "filename" : "jweb/web/1414080902240/show.jsp",
+    "status" : "added",
+    "additions" : 85,
+    "deletions" : 0,
+    "changes" : 85,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/80e31cd175a406589bd7dc2c21a0fdb3a449a6fc/jweb/web/1414080902240/show.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/80e31cd175a406589bd7dc2c21a0fdb3a449a6fc/jweb/web/1414080902240/show.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902240/show.jsp?ref=80e31cd175a406589bd7dc2c21a0fdb3a449a6fc",
+    "patch" : "@@ -0,0 +1,85 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+\n+<%@ page import=\"java.io.*,java.util.*,java.sql.*\"%>\n+\n+<%\n+\n+String path = request.getContextPath();\n+\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+\n+%>\n+\n+<html>\n+\n+\t<head>\n+\n+\t\t<title>音乐列表</title>\n+\n+\t</head>\n+\n+\t<body>\n+\n+\t\t<%\n+\n+\t\t\tString driveName = \"com.mysql.jdbc.Driver\";\n+\n+\t\t\tString userName = \"root\";\n+\n+\t\t\tString userPwd = \"\";\n+\n+\t\t\tString dbName = \"music\";\n+\n+\t\t\tString url1 = \"jdbc:mysql://localhost:3306/music\";\n+\n+\t\t\tString url2 = \"?user=root&password=\";\n+\n+\t\t\tString url3 = \"&useUnicode=true&characterEncoding=UTF-8\";\n+\n+\t\t\tString url = url1+url2+url3;\n+\n+\t\t\tClass.forName(\"com.mysql.jdbc.Driver\");\n+\n+\t\t\tConnection conn = DriverManager.getConnection(url);\n+\n+\t\t\tString sql = \"select *from web\";\n+\n+\t\t\tPreparedStatement pstmt = conn.prepareStatement(sql);\n+\n+\t\t\tResultSet rs = pstmt.executeQuery();\n+\n+\t\t\trs.last();\n+\n+\t\t %>\n+\n+\t\t<table>\n+\t\t\t<tr align=\"center\">\n+\t\t\t<td style=\"color:red\">音乐名</td><td style=\"color:red\">音乐类型</td>\n+\t\t\t</tr>\n+\t\t\t<%rs.beforeFirst();\n+\n+\t\t \t\twhile(rs.next()){\n+\n+\t\t \t %><tr align=\"center\">\n+\n+\t\t \t <td><%=rs.getString(\"music\") %></td>\n+\n+\t\t \t <td><%=rs.getString(\"MType\") %></td>\n+\n+\t\t \t </tr>\n+\n+\t\t \t <%} %>\n+\t\t</table>\n+\n+\n+\t\t <%if(rs!=null){rs.close();} \n+\n+\t\t \tif(pstmt!=null){pstmt.close();}\n+\n+\t\t \tif(conn!=null){conn.close();}\n+\n+\t\t %>\n+\n+\t</body>\n+\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "80e31cd175a406589bd7dc2c21a0fdb3a449a6fc",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/80e31cd175a406589bd7dc2c21a0fdb3a449a6fc",
+  "parents" : [ {
+    "sha" : "f43c3b53dabeb88bff4cd25258eed7fb8796506e",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f43c3b53dabeb88bff4cd25258eed7fb8796506e",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f43c3b53dabeb88bff4cd25258eed7fb8796506e"
+  } ]
+}

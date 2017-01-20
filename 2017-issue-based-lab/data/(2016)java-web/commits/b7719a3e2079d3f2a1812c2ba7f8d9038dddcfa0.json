@@ -1,0 +1,162 @@
+{
+  "committer" : {
+    "login" : "Sm1les",
+    "id" : 16202887,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/16202887?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Sm1les",
+    "html_url" : "https://github.com/Sm1les",
+    "followers_url" : "https://api.github.com/users/Sm1les/followers",
+    "following_url" : "https://api.github.com/users/Sm1les/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Sm1les/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Sm1les/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Sm1les/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Sm1les/orgs",
+    "repos_url" : "https://api.github.com/users/Sm1les/repos",
+    "events_url" : "https://api.github.com/users/Sm1les/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Sm1les/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 212,
+    "additions" : 178,
+    "deletions" : 34
+  },
+  "author" : {
+    "login" : "Sm1les",
+    "id" : 16202887,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/16202887?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Sm1les",
+    "html_url" : "https://github.com/Sm1les",
+    "followers_url" : "https://api.github.com/users/Sm1les/followers",
+    "following_url" : "https://api.github.com/users/Sm1les/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Sm1les/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Sm1les/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Sm1les/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Sm1les/orgs",
+    "repos_url" : "https://api.github.com/users/Sm1les/repos",
+    "events_url" : "https://api.github.com/users/Sm1les/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Sm1les/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+  "commit" : {
+    "author" : {
+      "name" : "Sm1les",
+      "email" : "1024835308@qq.com",
+      "date" : "2016-11-09T10:55:57Z"
+    },
+    "committer" : {
+      "name" : "Sm1les",
+      "email" : "1024835308@qq.com",
+      "date" : "2016-11-09T10:55:57Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "bb3b1c680b0dfef08cf8bdfb6aaaf08438824ac9",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/bb3b1c680b0dfef08cf8bdfb6aaaf08438824ac9"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/comments",
+  "files" : [ {
+    "sha" : "6ec6ee3734d4bf33b3667219f78bcfabc7dff237",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902201/IndexServlet.java",
+    "status" : "added",
+    "additions" : 59,
+    "deletions" : 0,
+    "changes" : 59,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/src/edu/hzu/javaweb/labs/se1414080902201/IndexServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/src/edu/hzu/javaweb/labs/se1414080902201/IndexServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902201/IndexServlet.java?ref=b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+    "patch" : "@@ -0,0 +1,59 @@\n+package edu.hzu.javaweb.labs.se1414080902201;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.Cookie;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+/**\n+ * Servlet implementation class IndexServlet\n+ */\n+@WebServlet(name=\"IndexServlet\",urlPatterns=\"/index\")\n+public class IndexServlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public IndexServlet() {\n+        super();\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tCookie cookie = null;\n+    \tCookie[] cookies = null;\n+    \t// ��ȡ�������ص� Cookie ������\n+    \tcookies = request.getCookies();\n+\n+        if(cookies != null ){\n+          for (int i = 0; i < cookies.length; i++){\n+             cookie = cookies[i];\n+             if((cookie.getName()).equals(\"email\")){\n+            \t request.setAttribute(\"email\",cookie.getValue());                                        \n+                 RequestDispatcher dispatcher = request.getRequestDispatcher(\"index.jsp\");   \n+                 dispatcher.forward(request, response);\n+                 return;\n+             }\n+          }\n+          response.sendRedirect(\"index.jsp\");\n+        }else{\n+        \tresponse.sendRedirect(\"index.jsp\");\n+        }\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tdoGet(request, response);\n+\t}\n+\n+}"
+  }, {
+    "sha" : "17366e7ba13bab132f1c6634599c0480f628c580",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginFilter.java",
+    "status" : "modified",
+    "additions" : 16,
+    "deletions" : 7,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginFilter.java?ref=b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+    "patch" : "@@ -8,9 +8,9 @@\n import javax.servlet.ServletRequest;\n import javax.servlet.ServletResponse;\n import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.Cookie;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n-import javax.servlet.http.HttpSession;\n \n /**\n  * Servlet Filter implementation class LoginFilter\n@@ -40,12 +40,21 @@ public void doFilter(ServletRequest request, ServletResponse response, FilterCha\n \t\tHttpServletRequest req = (HttpServletRequest) request;\n         HttpServletResponse resp = (HttpServletResponse) response;\n         \n-        HttpSession session = req.getSession();\n-        if (session.getAttribute(\"username\") == null) {\n-        \tresp.sendRedirect(\"login.jsp\");\n-        } else {   \n-        \tchain.doFilter(request, response);\n-        }  \n+\t\tCookie cookie = null;\n+    \tCookie[] cookies = null;\n+    \t// ��ȡ�������ص� Cookie ������\n+    \tcookies = req.getCookies();\n+\n+        if(cookies != null ){\n+\t      for (int i = 0; i < cookies.length; i++){\n+\t         cookie = cookies[i];\n+\t         if((cookie.getName()).equals(\"email\")){\n+\t        \t chain.doFilter(request, response);\n+\t             return;\n+\t         }\n+\t      }\n+\t      resp.sendRedirect(\"login.jsp\");\n+        }\n \t}\n \n \t/**"
+  }, {
+    "sha" : "b37107845c20a990634b5729eb8f5f20fdd75d13",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginServlet.java",
+    "status" : "added",
+    "additions" : 71,
+    "deletions" : 0,
+    "changes" : 71,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902201/LoginServlet.java?ref=b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+    "patch" : "@@ -0,0 +1,71 @@\n+package edu.hzu.javaweb.labs.se1414080902201;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.Cookie;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+/**\n+ * Servlet implementation class LoginServlet\n+ */\n+@WebServlet(name=\"LoginServlet\",urlPatterns=\"/login\")\n+public class LoginServlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public LoginServlet() {\n+        super();\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tresponse.sendRedirect(\"login.jsp\");\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tSystem.out.println(\"����post����...\");\n+\t\t// �������\n+        String email = request.getParameter(\"email\");\n+        String password = request.getParameter(\"password\");\n+        String remember = request.getParameter(\"remember\");\n+        if(email.equals(\"\")){\n+        \trequest.setAttribute(\"tip\", \"���䲻��Ϊ�գ�\");                                        \n+            RequestDispatcher dispatcher = request.getRequestDispatcher(\"login.jsp\");   \n+            dispatcher.forward(request, response);\n+            return;\n+        }\n+        if(password.equals(\"\")){\n+        \trequest.setAttribute(\"tip\", \"���벻��Ϊ�գ�\");                                        \n+            RequestDispatcher dispatcher = request.getRequestDispatcher(\"login.jsp\");   \n+            dispatcher.forward(request, response);\n+            return;\n+        }\n+        //���� Cookie\n+ \t\tCookie cookie_email = new Cookie(\"email\",email);\n+ \t\tif(remember != null){\n+ \t\t\t// ���ù�������Ϊ30���\n+ \t \t\tcookie_email.setMaxAge(60*60*24*30);\n+ \t\t}else{\n+ \t\t\t//���ù���ʱ��Ϊ1Сʱ\n+ \t\t\tcookie_email.setMaxAge(60*60);\n+ \t\t}\n+ \t\t// ����Ӧͷ�� Cookie\n+ \t\tresponse.addCookie(cookie_email);\n+ \t\tresponse.sendRedirect(\"index\");\n+\n+\n+\t}\n+\n+}"
+  }, {
+    "sha" : "574a6fe34e3015d9dd18925d53624d81ea338d63",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902201/Se1414080902201Servlet.java",
+    "status" : "modified",
+    "additions" : 0,
+    "deletions" : 10,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/src/edu/hzu/javaweb/labs/se1414080902201/Se1414080902201Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/src/edu/hzu/javaweb/labs/se1414080902201/Se1414080902201Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902201/Se1414080902201Servlet.java?ref=b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+    "patch" : "@@ -21,34 +21,24 @@\n      */\n     public Se1414080902201Servlet() {\n         super();\n-        // TODO Auto-generated constructor stub\n     }\n \n \t/**\n \t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n \t */\n \tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\t\t// TODO Auto-generated method stub\n \t\tSystem.out.println(\"����get����...\");\n \t}\n \n \t/**\n \t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n \t */\n \tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\t\t// TODO Auto-generated method stub\n \t\tSystem.out.println(\"����post����...\");\n-\t\t//���post�������������������\n-        request.setCharacterEncoding(\"UTF-8\");\n         // �������\n         String item = request.getParameter(\"item\");\n-        \n-        //������ҳ������Ӧ���������ͼ�����\n-        response.setContentType(\"text/html;charset=UTF-8\");\n         PrintWriter out = response.getWriter();\n         out.println(\"���ύ�������ǣ�<strong>\"+item+\"</strong>\");\n-         \n-\n \t}\n \n }"
+  }, {
+    "sha" : "376427ba532f93e650481098e5841c64b111fce8",
+    "filename" : "jweb/web/1414080902201/css/index.css",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/web/1414080902201/css/index.css",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/web/1414080902201/css/index.css",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902201/css/index.css?ref=b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+    "patch" : "@@ -32,4 +32,11 @@ header {\n }\n footer {\n \tcolor: #ccc;\n+}\n+a.login {\n+\tcolor: #ccc;\n+\ttext-decoration: none;\n+}\n+a.login:hover {\n+\tcolor: #000;\n }\n\\ No newline at end of file"
+  }, {
+    "sha" : "1361e09645643e6c41a696e6799163de2ab95638",
+    "filename" : "jweb/web/1414080902201/css/login.css",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 3,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/web/1414080902201/css/login.css",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/web/1414080902201/css/login.css",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902201/css/login.css?ref=b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+    "patch" : "@@ -5,9 +5,11 @@ body {\n \twidth: 300px;\n \theight: 200px;\n \tmargin-left: -150px;\n-\tmargin-top: -150px;\n+\tmargin-top: 100px;\n \tposition: absolute;\n-\ttop: 50%;\n \tleft: 50%;\n-\n+}\n+.tip {\n+\tborder-radius: 2px;\n+\tpadding: 5px;\n }\n\\ No newline at end of file"
+  }, {
+    "sha" : "6346ed833096f8e56b594f23fb327e3027482144",
+    "filename" : "jweb/web/1414080902201/index.jsp",
+    "status" : "modified",
+    "additions" : 11,
+    "deletions" : 10,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/web/1414080902201/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/web/1414080902201/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902201/index.jsp?ref=b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+    "patch" : "@@ -1,7 +1,9 @@\n <%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n     pageEncoding=\"UTF-8\"%>\n-    <%@ page import=\"java.io.*,java.util.*\" %>\n-\t<%@ page import=\"javax.servlet.*,java.text.*\" %>\n+<%@ page import=\"java.io.*,java.util.*\" %>\n+<%@ page import=\"javax.servlet.*,java.text.*\" %>\n+<%@ taglib prefix=\"c\" \n+           uri=\"http://java.sun.com/jsp/jstl/core\" %>\n <!DOCTYPE html>\n <html lang=\"zh-cn\">\n   <head>\n@@ -12,7 +14,6 @@\n \n     <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"css/index.css\">\n-\n     <!--[if lt IE 9]>\n       <script src=\"http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n@@ -27,13 +28,13 @@\n \t\t    </div>\n \t    </form>\n \t    <footer class=\"text-center\">\n-\t    \t<small>\n-\t    \t<%\n-\t\t\t   Date Now = new Date();\n-\t\t\t   SimpleDateFormat ft = new SimpleDateFormat (\"yyyy-MM-dd\");\n-\t\t\t   out.print( \"Now \" + ft.format(Now));\n-\t\t\t%>\n-\t\t\t</small>\n+\t    \t<c:if test=\"${!empty email}\">\n+\t\t\t   <small>:) Welcome <c:out value=\"${email}\"></c:out></small>\n+\t\t\t</c:if>\n+\t\t\t<c:if test=\"${empty email}\">\n+\t\t\t   <small>:) 您尚未登录，请先<a class=\"login\" href=\"login.jsp\">登录</a></small>\n+\t\t\t</c:if>\n+\t    \t\n \t    </footer>\n     </div>\n     <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>"
+  }, {
+    "sha" : "0f9409e1b24bf3410b2302f7109a69134ce6ca38",
+    "filename" : "jweb/web/1414080902201/login.jsp",
+    "status" : "modified",
+    "additions" : 9,
+    "deletions" : 4,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/web/1414080902201/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0/jweb/web/1414080902201/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902201/login.jsp?ref=b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+    "patch" : "@@ -1,5 +1,7 @@\n <%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n     pageEncoding=\"UTF-8\"%>\n+<%@ taglib prefix=\"c\" \n+           uri=\"http://java.sun.com/jsp/jstl/core\" %>\n <!DOCTYPE html>\n <html lang=\"zh-cn\">\n   <head>\n@@ -18,18 +20,21 @@\n   </head>\n   <body>\n     <div class=\"container\">\n-\t    <form class=\"login\" role=\"form\">\n+\t    <form class=\"login\" role=\"form\" method=\"post\" action=\"login\">\n+\t    <c:if test=\"${!empty tip}\">\n+\t\t\t   <p class=\"tip bg-danger\">:( 登录失败：<c:out value=\"${tip}\"></c:out></p>\n+\t\t</c:if>\n         <div class=\"form-group\">\n           <label for=\"exampleInputEmail1\">邮箱</label>\n-          <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"请输入邮箱\">\n+          <input type=\"email\" name=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"请输入邮箱\">\n         </div>\n         <div class=\"form-group\">\n           <label for=\"inputPassword3\">密码</label>\n-          <input type=\"password\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"请输入密码\">\n+          <input type=\"password\" name=\"password\"class=\"form-control\" id=\"inputPassword3\" placeholder=\"请输入密码\">\n         </div>\n         <div class=\"checkbox\">\n           <label>\n-            <input type=\"checkbox\"> 30天内免登录\n+            <input type=\"checkbox\" name=\"remember\" value=\"1\"> 30天内免登录\n           </label>\n         </div>\n         <button type=\"submit\" class=\"btn btn-primary btn-block\">登录</button>"
+  } ],
+  "sha" : "b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b7719a3e2079d3f2a1812c2ba7f8d9038dddcfa0",
+  "parents" : [ {
+    "sha" : "6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/6cea6462c9a8e9af0e7fe96a9d6b456bb40ca4d4"
+  } ]
+}

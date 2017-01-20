@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "wuchubin",
+    "id" : 17999412,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17999412?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wuchubin",
+    "html_url" : "https://github.com/wuchubin",
+    "followers_url" : "https://api.github.com/users/wuchubin/followers",
+    "following_url" : "https://api.github.com/users/wuchubin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wuchubin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wuchubin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wuchubin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wuchubin/orgs",
+    "repos_url" : "https://api.github.com/users/wuchubin/repos",
+    "events_url" : "https://api.github.com/users/wuchubin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wuchubin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 91,
+    "additions" : 91,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "wuchubin",
+    "id" : 17999412,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17999412?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/wuchubin",
+    "html_url" : "https://github.com/wuchubin",
+    "followers_url" : "https://api.github.com/users/wuchubin/followers",
+    "following_url" : "https://api.github.com/users/wuchubin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/wuchubin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/wuchubin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/wuchubin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/wuchubin/orgs",
+    "repos_url" : "https://api.github.com/users/wuchubin/repos",
+    "events_url" : "https://api.github.com/users/wuchubin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/wuchubin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/de45851c6609e4e5bb3a3ceef349243c28802d40",
+  "commit" : {
+    "author" : {
+      "name" : "wuchubin",
+      "email" : "812479564@qq.com",
+      "date" : "2016-11-03T02:15:40Z"
+    },
+    "committer" : {
+      "name" : "wuchubin",
+      "email" : "812479564@qq.com",
+      "date" : "2016-11-03T02:15:40Z"
+    },
+    "message" : "#4 提实验代码",
+    "tree" : {
+      "sha" : "623b16f365a97279bc221727f5e4705b896dd8cc",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/623b16f365a97279bc221727f5e4705b896dd8cc"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/de45851c6609e4e5bb3a3ceef349243c28802d40",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/de45851c6609e4e5bb3a3ceef349243c28802d40/comments",
+  "files" : [ {
+    "sha" : "f8fc500aa15d78a4fa76e5c145d4f48e6ec3476b",
+    "filename" : "edu/hzu/javaweb/labs/se1414080902211/Se1414080902211Servlet.java",
+    "status" : "added",
+    "additions" : 91,
+    "deletions" : 0,
+    "changes" : 91,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/de45851c6609e4e5bb3a3ceef349243c28802d40/edu/hzu/javaweb/labs/se1414080902211/Se1414080902211Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/de45851c6609e4e5bb3a3ceef349243c28802d40/edu/hzu/javaweb/labs/se1414080902211/Se1414080902211Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/edu/hzu/javaweb/labs/se1414080902211/Se1414080902211Servlet.java?ref=de45851c6609e4e5bb3a3ceef349243c28802d40",
+    "patch" : "@@ -0,0 +1,91 @@\n+package Servlet;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+public class Set_cussess extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic Set_cussess() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html;charset=utf-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\t\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>seting success</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"���óɹ���\");//���ı�������룬ע�����ñ����ʽ\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html;charset=utf-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\t\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>seting success</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"���óɹ���\");//���ı�������룬ע�����ñ����ʽ\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  } ],
+  "sha" : "de45851c6609e4e5bb3a3ceef349243c28802d40",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/de45851c6609e4e5bb3a3ceef349243c28802d40",
+  "parents" : [ {
+    "sha" : "0d463413832732d5423fdf934a16400b9293ec28",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/0d463413832732d5423fdf934a16400b9293ec28",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/0d463413832732d5423fdf934a16400b9293ec28"
+  } ]
+}

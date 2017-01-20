@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "TPGorTJK",
+    "id" : 15098134,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098134?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/TPGorTJK",
+    "html_url" : "https://github.com/TPGorTJK",
+    "followers_url" : "https://api.github.com/users/TPGorTJK/followers",
+    "following_url" : "https://api.github.com/users/TPGorTJK/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/TPGorTJK/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/TPGorTJK/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/TPGorTJK/subscriptions",
+    "organizations_url" : "https://api.github.com/users/TPGorTJK/orgs",
+    "repos_url" : "https://api.github.com/users/TPGorTJK/repos",
+    "events_url" : "https://api.github.com/users/TPGorTJK/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/TPGorTJK/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 28,
+    "additions" : 25,
+    "deletions" : 3
+  },
+  "author" : {
+    "login" : "TPGorTJK",
+    "id" : 15098134,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098134?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/TPGorTJK",
+    "html_url" : "https://github.com/TPGorTJK",
+    "followers_url" : "https://api.github.com/users/TPGorTJK/followers",
+    "following_url" : "https://api.github.com/users/TPGorTJK/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/TPGorTJK/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/TPGorTJK/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/TPGorTJK/subscriptions",
+    "organizations_url" : "https://api.github.com/users/TPGorTJK/orgs",
+    "repos_url" : "https://api.github.com/users/TPGorTJK/repos",
+    "events_url" : "https://api.github.com/users/TPGorTJK/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/TPGorTJK/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/d79ded42cc35926ddc164ccd5a110f5cf19626eb",
+  "commit" : {
+    "author" : {
+      "name" : "TPGorTJK",
+      "email" : "779446297@qq.com",
+      "date" : "2015-11-24T02:33:08Z"
+    },
+    "committer" : {
+      "name" : "TPGorTJK",
+      "email" : "779446297@qq.com",
+      "date" : "2015-11-24T02:33:08Z"
+    },
+    "message" : "实验四",
+    "tree" : {
+      "sha" : "ebee598c07c3c8b4cd02895b12f430929f007357",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/ebee598c07c3c8b4cd02895b12f430929f007357"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/d79ded42cc35926ddc164ccd5a110f5cf19626eb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/d79ded42cc35926ddc164ccd5a110f5cf19626eb/comments",
+  "files" : [ {
+    "sha" : "3b4aa06b9b598a90d536f003de9cb0d09962584b",
+    "filename" : "works/1314080901132/index.html",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 3,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/d79ded42cc35926ddc164ccd5a110f5cf19626eb/works/1314080901132/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/d79ded42cc35926ddc164ccd5a110f5cf19626eb/works/1314080901132/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901132/index.html?ref=d79ded42cc35926ddc164ccd5a110f5cf19626eb",
+    "patch" : "@@ -1,5 +1,5 @@\n ﻿<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+<html lang=\"zh-CN\"  ng-app=\"myMaterialModule\">\n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n@@ -13,7 +13,8 @@\n \n     <!-- Custom styles for this template -->\n     <link href=\"css/style.css\" rel=\"stylesheet\">\n-\n+    <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+    <script src=\"js/MaterialForm.js\"></script>\n     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n     <!--[if lt IE 9]>\n@@ -21,7 +22,7 @@\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n   </head>\n-  <body>\n+  <body ng-controller = \"MyFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -50,6 +51,7 @@\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n \n+      <div>{{data.name}}</div>\n     </div><!-- /.container -->\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->"
+  }, {
+    "sha" : "e4f4992c2b1c8bc0bf445a760c3ba464c0e04295",
+    "filename" : "works/1314080901132/js/MaterialForm.js",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/d79ded42cc35926ddc164ccd5a110f5cf19626eb/works/1314080901132/js/MaterialForm.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/d79ded42cc35926ddc164ccd5a110f5cf19626eb/works/1314080901132/js/MaterialForm.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901132/js/MaterialForm.js?ref=d79ded42cc35926ddc164ccd5a110f5cf19626eb",
+    "patch" : "@@ -0,0 +1,20 @@\n+// create a new module called 'myMaterial' and save \n+// a reference to it in a variable called myMaterial \n+var myMaterial = angular.module('myMaterialModule', []);\n+// use the myMaterial variable to\n+// configure the module with a controller\n+myMaterial.controller('MyFilterDemoCtrl', function ($scope) {\n+       // controller code would go here\n+       var Material = {\n+       \t\"name\" : \"abc\"\n+       }\n+       $scope.data = Material;\n+    }\n+);\n+\n+// use the myMaterial variable to\n+// configure the module with a filter\n+myMaterial.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });\n\\ No newline at end of file"
+  } ],
+  "sha" : "d79ded42cc35926ddc164ccd5a110f5cf19626eb",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/d79ded42cc35926ddc164ccd5a110f5cf19626eb",
+  "parents" : [ {
+    "sha" : "b1988b41d77e4ea0fd67b6140080313f8dbfe4d0",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b1988b41d77e4ea0fd67b6140080313f8dbfe4d0",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/b1988b41d77e4ea0fd67b6140080313f8dbfe4d0"
+  } ]
+}

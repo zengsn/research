@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 30,
+    "additions" : 23,
+    "deletions" : 7
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/0b022630caadb568e138c223b5462f0406d946df",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "刘晓丹",
+      "date" : "2016-04-26T06:29:36Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "刘晓丹",
+      "date" : "2016-04-26T06:29:36Z"
+    },
+    "message" : "#1 #7 实验1",
+    "tree" : {
+      "sha" : "fcd6142c6ee8a2ed5bb7c75ab8b831cbb8aec400",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/fcd6142c6ee8a2ed5bb7c75ab8b831cbb8aec400"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/0b022630caadb568e138c223b5462f0406d946df",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0b022630caadb568e138c223b5462f0406d946df/comments",
+  "files" : [ {
+    "sha" : "7ef224b837359f89a3d1cb4baab9c6d4f7a0902e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903232/Net1314080903232.java",
+    "status" : "modified",
+    "additions" : 23,
+    "deletions" : 7,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0b022630caadb568e138c223b5462f0406d946df/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903232/Net1314080903232.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0b022630caadb568e138c223b5462f0406d946df/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903232/Net1314080903232.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903232/Net1314080903232.java?ref=0b022630caadb568e138c223b5462f0406d946df",
+    "patch" : "@@ -1,24 +1,37 @@\n-package com.example.calculator;\n+package com.example.administrator.calculator;\n \n-import android.support.v7.app.ActionBarActivity;\n import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n import android.view.Menu;\n import android.view.MenuItem;\n \n-\n-public class Net1314080903232 extends ActionBarActivity {\n+public class Net1314080903232 extends AppCompatActivity {\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_main);\n-    }\n+        setContentView(R.layout.activity_net1314080903232);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n \n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+    }\n \n     @Override\n     public boolean onCreateOptionsMenu(Menu menu) {\n         // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.main, menu);\n+        getMenuInflater().inflate(R.menu.menu_net1314080903232, menu);\n         return true;\n     }\n \n@@ -28,9 +41,12 @@ public boolean onOptionsItemSelected(MenuItem item) {\n         // automatically handle clicks on the Home/Up button, so long\n         // as you specify a parent activity in AndroidManifest.xml.\n         int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n         if (id == R.id.action_settings) {\n             return true;\n         }\n+\n         return super.onOptionsItemSelected(item);\n     }\n }"
+  } ],
+  "sha" : "0b022630caadb568e138c223b5462f0406d946df",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0b022630caadb568e138c223b5462f0406d946df",
+  "parents" : [ {
+    "sha" : "045e0769162659655544f260c1e328db1bb2f786",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/045e0769162659655544f260c1e328db1bb2f786",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/045e0769162659655544f260c1e328db1bb2f786"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 91,
+    "additions" : 0,
+    "deletions" : 91
+  },
+  "author" : {
+    "login" : "WayhomeChen",
+    "id" : 22078881,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078881?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WayhomeChen",
+    "html_url" : "https://github.com/WayhomeChen",
+    "followers_url" : "https://api.github.com/users/WayhomeChen/followers",
+    "following_url" : "https://api.github.com/users/WayhomeChen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WayhomeChen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WayhomeChen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WayhomeChen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WayhomeChen/orgs",
+    "repos_url" : "https://api.github.com/users/WayhomeChen/repos",
+    "events_url" : "https://api.github.com/users/WayhomeChen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WayhomeChen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ccba1164b967b6d9611fb4accf198d05f11d3de1",
+  "commit" : {
+    "author" : {
+      "name" : "ABC",
+      "email" : "neigh3bor3hood3@sina.com",
+      "date" : "2016-10-08T05:25:29Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-08T05:25:29Z"
+    },
+    "message" : "33\n\n33",
+    "tree" : {
+      "sha" : "666d9944e649290436ad5d626c40cd365afd84bd",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/666d9944e649290436ad5d626c40cd365afd84bd"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ccba1164b967b6d9611fb4accf198d05f11d3de1",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ccba1164b967b6d9611fb4accf198d05f11d3de1/comments",
+  "files" : [ {
+    "sha" : "624d90bac888f74fbd24d74e9bf796359fb54ad8",
+    "filename" : "index.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 91,
+    "changes" : 91,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ff91dffab6d93ce70df065229b0dc00a2a49207a/index.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ff91dffab6d93ce70df065229b0dc00a2a49207a/index.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/index.js?ref=ff91dffab6d93ce70df065229b0dc00a2a49207a",
+    "patch" : "@@ -1,91 +0,0 @@\n-window.onload = function(){\r\n-\t//初始化年份列表\r\n-\tvar years = document.getElementById(\"year\");\r\n-\tvar year = new Date().getFullYear();\r\n-\tvar node = null;\r\n-\twhile(year >= 1900){\r\n-\t\tnode = new Option(year,year);\r\n-\t\tyears.options.add(node);\r\n-\t\tyear--;\r\n-\t}\r\n-\t//初始化月份列表\r\n-\tvar months = document.getElementById(\"month\");\r\n-\tfor(var i = 1;i <= 12;i++){\r\n-\t\tnode = new Option(i,i);\r\n-\t\tmonths.options.add(node);\r\n-\t}\r\n-};\r\n-//判断当前选择的年份是否是闰年\r\n-function isLeap(){\r\n-\tvar options = document.getElementById(\"year\").options;\r\n-\tvar index = options.selectedIndex;\r\n-\tvar year = options[index].text;\r\n-\tif(year % 100 != 0){\r\n-\t\tif(year % 4 == 0)\r\n-\t\t\treturn true;\r\n-\t}else{\r\n-\t\tif(year % 400 == 0)\r\n-\t\t\treturn true;\r\n-\t}\r\n-\treturn false;\r\n-}\r\n-//清空options集合但保留第一项\r\n-function clear(options){\r\n-\tvar len = options.length - 1;\r\n-\tfor(var i = 0;i < len;i++)\r\n-\t\toptions.remove(1);\r\n-}\r\n-//年份变化时执行\r\n-function onYearChange(){\r\n-\tonMonthChange();\r\n-}\r\n-//月份变化时执行\r\n-function onMonthChange(){\r\n-\t//获取当前选择的年份项索引\r\n-\tvar yearIndex = document.getElementById(\"year\").options.selectedIndex;\r\n-\t//获取当前选择的月份\r\n-\tvar month = document.getElementById(\"month\").options.selectedIndex;\r\n-\t//获取日列表对象\r\n-\tvar days = document.getElementById(\"day\");\r\n-\t//获取当前选择的日项索引\r\n-\tvar oldDayIndex = days.selectedIndex;\r\n-\t//如果年份或月份没有选择，就隐藏日列表并结束\r\n-\tif(month == 0 || yearIndex == 0){\r\n-\t\tdays.style.display = \"none\";\r\n-\t\treturn;\r\n-\t}\r\n-\t//显示日列表\r\n-\tdays.style.display = \"\";\r\n-\t//计算最大的日数\r\n-\tvar maxDay = null;\r\n-\tswitch(month){\r\n-\tcase 1:\r\n-\tcase 3:\r\n-\tcase 5:\r\n-\tcase 7:\r\n-\tcase 8:\r\n-\tcase 10:\r\n-\tcase 12:\r\n-\t\tmaxDay = 31;\r\n-\t\tbreak;\r\n-\tcase 2:\r\n-\t\tif(isLeap() == true)\r\n-\t\t\tmaxDay = 29;\r\n-\t\telse\r\n-\t\t\tmaxDay = 28;\r\n-\t\tbreak;\r\n-\tdefault:\r\n-\t\tmaxDay = 30;\r\n-\t}\r\n-\t//情况原日列表，保留第一项\r\n-\tclear(days.options);\r\n-\t//重新插入日项\r\n-\tvar node = null;\r\n-\tfor(var i = 1;i <= maxDay;i++){\r\n-\t\tnode = new Option(i,i);\r\n-\t\tdays.options.add(node);\r\n-\t}\r\n-\t//如果原来选择的日不超过新的最大日数，则保留原选择\r\n-\tif(oldDayIndex <= maxDay)\r\n-\t\tdays.options.selectedIndex = oldDayIndex;\r\n-}\r"
+  } ],
+  "sha" : "ccba1164b967b6d9611fb4accf198d05f11d3de1",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ccba1164b967b6d9611fb4accf198d05f11d3de1",
+  "parents" : [ {
+    "sha" : "ff91dffab6d93ce70df065229b0dc00a2a49207a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ff91dffab6d93ce70df065229b0dc00a2a49207a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ff91dffab6d93ce70df065229b0dc00a2a49207a"
+  } ]
+}

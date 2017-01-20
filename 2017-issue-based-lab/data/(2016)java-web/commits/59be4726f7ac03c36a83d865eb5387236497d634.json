@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "cyk0505",
+    "id" : 22512010,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512010?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/cyk0505",
+    "html_url" : "https://github.com/cyk0505",
+    "followers_url" : "https://api.github.com/users/cyk0505/followers",
+    "following_url" : "https://api.github.com/users/cyk0505/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/cyk0505/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/cyk0505/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/cyk0505/subscriptions",
+    "organizations_url" : "https://api.github.com/users/cyk0505/orgs",
+    "repos_url" : "https://api.github.com/users/cyk0505/repos",
+    "events_url" : "https://api.github.com/users/cyk0505/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/cyk0505/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 55,
+    "additions" : 55,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "cyk0505",
+    "id" : 22512010,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512010?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/cyk0505",
+    "html_url" : "https://github.com/cyk0505",
+    "followers_url" : "https://api.github.com/users/cyk0505/followers",
+    "following_url" : "https://api.github.com/users/cyk0505/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/cyk0505/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/cyk0505/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/cyk0505/subscriptions",
+    "organizations_url" : "https://api.github.com/users/cyk0505/orgs",
+    "repos_url" : "https://api.github.com/users/cyk0505/repos",
+    "events_url" : "https://api.github.com/users/cyk0505/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/cyk0505/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/59be4726f7ac03c36a83d865eb5387236497d634",
+  "commit" : {
+    "author" : {
+      "name" : "cyk0505",
+      "email" : "350401605@qq.com",
+      "date" : "2016-11-04T01:27:07Z"
+    },
+    "committer" : {
+      "name" : "cyk0505",
+      "email" : "350401605@qq.com",
+      "date" : "2016-11-04T01:27:07Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "7cc98b478c2a8f5127d8d4f901cb8157f155294f",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/7cc98b478c2a8f5127d8d4f901cb8157f155294f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/59be4726f7ac03c36a83d865eb5387236497d634",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/59be4726f7ac03c36a83d865eb5387236497d634/comments",
+  "files" : [ {
+    "sha" : "52f2a8e6409755245fad712d76b53de28fb83fa0",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902112/Se1414080902112Servlet.java",
+    "status" : "added",
+    "additions" : 55,
+    "deletions" : 0,
+    "changes" : 55,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/59be4726f7ac03c36a83d865eb5387236497d634/jweb/src/edu/hzu/javaweb/labs/se1414080902112/Se1414080902112Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/59be4726f7ac03c36a83d865eb5387236497d634/jweb/src/edu/hzu/javaweb/labs/se1414080902112/Se1414080902112Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902112/Se1414080902112Servlet.java?ref=59be4726f7ac03c36a83d865eb5387236497d634",
+    "patch" : "@@ -0,0 +1,55 @@\n+package edu.hzu.javaweb.labs.se1414080902112;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+@WebServlet(\"/1414080902112\")\n+\n+public class Se1414080902112Servlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+\n+\t\n+\tpublic Se1414080902112Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\t\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t\t\n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\n+\t\tresponse.setContentType(\"text/html;charset=utf-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>ע��ҳ��</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.println(\"��Ϣע��\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tdoGet(request, response);\n+\t}\n+\n+\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  } ],
+  "sha" : "59be4726f7ac03c36a83d865eb5387236497d634",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/59be4726f7ac03c36a83d865eb5387236497d634",
+  "parents" : [ {
+    "sha" : "b4fec090b3b6f96c3f05c2b3029b4d1683f0802c",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b4fec090b3b6f96c3f05c2b3029b4d1683f0802c",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/b4fec090b3b6f96c3f05c2b3029b4d1683f0802c"
+  } ]
+}

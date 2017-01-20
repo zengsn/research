@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "chen22",
+    "id" : 15098432,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098432?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chen22",
+    "html_url" : "https://github.com/chen22",
+    "followers_url" : "https://api.github.com/users/chen22/followers",
+    "following_url" : "https://api.github.com/users/chen22/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chen22/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chen22/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chen22/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chen22/orgs",
+    "repos_url" : "https://api.github.com/users/chen22/repos",
+    "events_url" : "https://api.github.com/users/chen22/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chen22/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 26,
+    "additions" : 26,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "chen22",
+    "id" : 15098432,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098432?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chen22",
+    "html_url" : "https://github.com/chen22",
+    "followers_url" : "https://api.github.com/users/chen22/followers",
+    "following_url" : "https://api.github.com/users/chen22/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chen22/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chen22/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chen22/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chen22/orgs",
+    "repos_url" : "https://api.github.com/users/chen22/repos",
+    "events_url" : "https://api.github.com/users/chen22/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chen22/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/518bd3a6fcfafe075f92d4b18154292beba8b4fb",
+  "commit" : {
+    "author" : {
+      "name" : "chen22",
+      "email" : "1029054035@qq.com",
+      "date" : "2016-01-15T14:07:41Z"
+    },
+    "committer" : {
+      "name" : "chen22",
+      "email" : "1029054035@qq.com",
+      "date" : "2016-01-15T14:07:41Z"
+    },
+    "message" : "第四次实验",
+    "tree" : {
+      "sha" : "1261800e40421be62ed8fd8c3369ec81a38d7741",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/1261800e40421be62ed8fd8c3369ec81a38d7741"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/518bd3a6fcfafe075f92d4b18154292beba8b4fb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/518bd3a6fcfafe075f92d4b18154292beba8b4fb/comments",
+  "files" : [ {
+    "sha" : "a31bd10067e7241014206af8f16affb3ed3daa14",
+    "filename" : "works/1314080901207/js/itemsListModule.js",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/518bd3a6fcfafe075f92d4b18154292beba8b4fb/works/1314080901207/js/itemsListModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/518bd3a6fcfafe075f92d4b18154292beba8b4fb/works/1314080901207/js/itemsListModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901207/js/itemsListModule.js?ref=518bd3a6fcfafe075f92d4b18154292beba8b4fb",
+    "patch" : "@@ -0,0 +1,26 @@\n+// create a new module called 'itemsListModule' and save \n+// a reference to it in a variable called myAppModule \n+var itemsListModule = angular.module('itemsListModule', []);\n+\n+// use the itemsListModule variable to\n+// configure the module with a controller\n+itemsListModule.controller('itemsListCtrl', function ($scope) {\n+       // controller code would go here\n+\t     var itemsList = {\n+            coding:'001',\n+            name:'迪斯尼龙',\n+\t\t\t      type:'家具',\n+            color:'红色',\n+\t\t      \tinventoryCount:'260',\n+\t\t\t      checkCount:'26'\n+        };\n+        $scope.data =itemsList;\n+    }\n+);\n+\n+// use the itemsListModule variable to\n+// configure the module with a filter\n+itemsListModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });"
+  } ],
+  "sha" : "518bd3a6fcfafe075f92d4b18154292beba8b4fb",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/518bd3a6fcfafe075f92d4b18154292beba8b4fb",
+  "parents" : [ {
+    "sha" : "6aaa8b3f76e9ad199b4d3decf44aaa415be3d220",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/6aaa8b3f76e9ad199b4d3decf44aaa415be3d220",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/6aaa8b3f76e9ad199b4d3decf44aaa415be3d220"
+  } ]
+}

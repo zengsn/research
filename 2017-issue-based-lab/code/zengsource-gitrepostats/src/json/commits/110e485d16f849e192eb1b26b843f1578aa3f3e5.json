@@ -1,0 +1,144 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 142,
+    "additions" : 119,
+    "deletions" : 23
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/110e485d16f849e192eb1b26b843f1578aa3f3e5",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-11T06:38:46Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-11T06:38:46Z"
+    },
+    "message" : "Merge pull request #698 from soleMemory/master\n\n#95 #20 lab9 综合编程",
+    "tree" : {
+      "sha" : "633c83a97c44ba73014252a9df9c4cc36726e923",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/633c83a97c44ba73014252a9df9c4cc36726e923"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/110e485d16f849e192eb1b26b843f1578aa3f3e5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/110e485d16f849e192eb1b26b843f1578aa3f3e5/comments",
+  "files" : [ {
+    "sha" : "3047342ee9766df6ad790a118d2416fd7754bd22",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 29,
+    "deletions" : 0,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/AndroidManifest.xml?ref=110e485d16f849e192eb1b26b843f1578aa3f3e5",
+    "patch" : "@@ -0,0 +1,29 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"com.example.ljl.mygps\">\n+    <uses-permission android:name=\"android.permission.INTERNET\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>\n+    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n+    <uses-permission android:name=\"android.permission.ACCESS_FIND_LOCATION\" />\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@mipmap/ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:supportsRtl=\"true\"\n+        android:theme=\"@style/AppTheme\">\n+        <activity\n+            android:name=\".Net1314080903234GPS\"\n+            android:label=\"@string/app_name\"\n+            android:theme=\"@style/AppTheme.NoActionBar\">\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+    </application>\n+\n+</manifest>"
+  }, {
+    "sha" : "9fc4e39a713a0b19d698edcd3245217023de515f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234Db.java",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 3,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234Db.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234Db.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234Db.java?ref=110e485d16f849e192eb1b26b843f1578aa3f3e5",
+    "patch" : "@@ -1,18 +1,21 @@\n package edu.hzuapps.androidworks.homeworks.Net134080903234;\n+\n import android.content.Context;\n import android.database.sqlite.SQLiteDatabase;\n import android.database.sqlite.SQLiteOpenHelper;\n \n-\n+/**\n+ * Created by ljl on 2016/4/18 0018.\n+ */\n public class Net1314080903234Db extends SQLiteOpenHelper {\n \n-    public Db(Context context) {\n+    public Net1314080903234Db(Context context) {\n         super(context, \"db\", null, 1);\n     }\n \n     @Override\n     public void onCreate(SQLiteDatabase db) {\n-        db.execSQL(\"create table whereYou(\" +   \n+        db.execSQL(\"create table whereYou(\" +\n                 \"_id integer PRIMARY KEY AUTOINCREMENT,\" +\n                 \"longitude text DEFAULT \\\"\\\",\" +\n                 \"latitude text DEFAULT \\\"\\\")\");"
+  }, {
+    "sha" : "ff3f6344968591060029fad270c6915a7e3dda1a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234GPS.java",
+    "status" : "modified",
+    "additions" : 30,
+    "deletions" : 9,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234GPS.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234GPS.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/Net1314080903234GPS.java?ref=110e485d16f849e192eb1b26b843f1578aa3f3e5",
+    "patch" : "@@ -1,6 +1,5 @@\n package edu.hzuapps.androidworks.homeworks.Net134080903234;\n \n-import android.app.Activity;\n import android.app.ListActivity;\n import android.content.ContentValues;\n import android.content.Context;\n@@ -18,27 +17,37 @@\n import android.provider.Settings;\n import android.util.Log;\n import android.view.View;\n-import android.view.Menu;\n-import android.view.MenuItem;\n import android.widget.Button;\n import android.widget.EditText;\n import android.widget.ListView;\n import android.widget.SimpleCursorAdapter;\n+import android.widget.TextView;\n import android.widget.Toast;\n \n import java.text.SimpleDateFormat;\n+import java.util.ArrayList;\n import java.util.Date;\n import java.util.Iterator;\n+import java.util.List;\n+\n+import edu.hzuapps.androidworks.R;\n \n public class Net1314080903234GPS extends ListActivity {\n \n     private EditText editText;\n     private LocationManager lm;\n     private SQLiteDatabase dbRead,dbWrite;\n-    private Db db;\n+    private Net1314080903234Db db;\n     private SimpleCursorAdapter adapter;\n     private Button button;\n+    private TextView textView;\n     private static final String TAG=\"GpsActivity\";\n+    private boolean flag=true;\n+\n+\n+\n+\n+\n \n     //获取当前时间\n     SimpleDateFormat formatter= new SimpleDateFormat (\"yyyy.MM.dd HH:mm:ss\");\n@@ -49,19 +58,27 @@\n     private View.OnClickListener btnListener= new View.OnClickListener() {\n         @Override\n         public void onClick(View v) {\n-            if(getListView().getVisibility()==View.VISIBLE) {\n-                Toast.makeText(getApplicationContext(),\"显示历史记录\",Toast.LENGTH_SHORT).show();\n+            if(flag) {\n+                getListView().setVisibility(View.VISIBLE);\n+                Toast.makeText(getApplicationContext(), \"显示历史记录\", Toast.LENGTH_SHORT).show();\n                 setListAdapter(adapter);\n                 refresh();\n+                flag=false;\n+            }\n+            else {\n+                getListView().setVisibility(View.INVISIBLE);\n+                Toast.makeText(getApplicationContext(), \"关闭历史记录\", Toast.LENGTH_SHORT).show();\n+                flag=true;\n             }\n-\n \n         }\n     };\n \n \n \n \n+\n+\n     @Override\n     public void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n@@ -70,12 +87,15 @@ public void onCreate(Bundle savedInstanceState) {\n         button.setOnClickListener(btnListener);\n \n \n+\n+\n+\n         //读数据库\n-        db =new Db(this);\n+        db =new Net1314080903234Db(this);\n         dbRead = db.getReadableDatabase();\n         dbWrite=db.getWritableDatabase();\n \n-        adapter = new SimpleCursorAdapter(this,R.layout.where_you,null,\n+        adapter = new SimpleCursorAdapter(this, R.layout.net1314080903234where_you,null,\n                 new String[]{\"longitude\",\"latitude\"},\n                 new int[]{R.id.tvLong,R.id.tvLat});\n //        setListAdapter(adapter);\n@@ -161,6 +181,7 @@ public void onStatusChanged(String provider, int status, Bundle extras) {\n             }\n         }\n \n+\n         /**\n          * GPS开启时触发\n          */"
+  }, {
+    "sha" : "72bd15efee5cf59b74f20043bef39a550d8e9b75",
+    "filename" : "app/src/main/res/layout/net1314080903234activity_main.xml",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/res/layout/net1314080903234activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/res/layout/net1314080903234activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903234activity_main.xml?ref=110e485d16f849e192eb1b26b843f1578aa3f3e5",
+    "patch" : "@@ -0,0 +1,34 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<android.support.design.widget.CoordinatorLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:fitsSystemWindows=\"true\"\n+    tools:context=\"com.example.ljl.mygps.MainActivity\">\n+\n+    <android.support.design.widget.AppBarLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:theme=\"@style/AppTheme.AppBarOverlay\">\n+\n+        <android.support.v7.widget.Toolbar\n+            android:id=\"@+id/toolbar\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"?attr/actionBarSize\"\n+            android:background=\"?attr/colorPrimary\"\n+            app:popupTheme=\"@style/AppTheme.PopupOverlay\" />\n+\n+    </android.support.design.widget.AppBarLayout>\n+\n+    <include layout=\"@layout/content_main\" />\n+\n+    <android.support.design.widget.FloatingActionButton\n+        android:id=\"@+id/fab\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_gravity=\"bottom|end\"\n+        android:layout_margin=\"@dimen/fab_margin\"\n+        android:src=\"@android:drawable/ic_dialog_email\" />\n+\n+</android.support.design.widget.CoordinatorLayout>"
+  }, {
+    "sha" : "c5141f49a4ea00b48916098bd7a7ada50f50d700",
+    "filename" : "app/src/main/res/layout/net1314080903234content_main.xml",
+    "status" : "modified",
+    "additions" : 19,
+    "deletions" : 10,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/res/layout/net1314080903234content_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/res/layout/net1314080903234content_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903234content_main.xml?ref=110e485d16f849e192eb1b26b843f1578aa3f3e5",
+    "patch" : "@@ -9,23 +9,32 @@\n     tools:context=\"com.example.ljl.mygps.MainActivity\"\n     tools:showIn=\"@layout/activity_main\">\n \n-    <EditText android:layout_width=\"fill_parent\"\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"显示历史记录\"\n+        android:id=\"@+id/button\" />\n+\n+\n+\n+    <EditText\n+        android:layout_width=\"wrap_content\"\n         android:layout_height=\"wrap_content\"\n         android:cursorVisible=\"false\"\n         android:editable=\"false\"\n         android:id=\"@+id/editText\"/>\n-    <ListView\n-        android:id=\"@android:id/list\"\n-        android:layout_weight=\"1\"\n-        android:layout_width=\"wrap_content\"\n-        android:layout_height=\"wrap_content\">\n \n-    </ListView>\n \n-    <Button\n+       <ListView\n+        android:id=\"@android:id/list\"\n         android:layout_width=\"wrap_content\"\n         android:layout_height=\"wrap_content\"\n-        android:text=\"显示历史记录\"\n-        android:id=\"@+id/button\" />\n+           >\n+\n+        </ListView>\n+\n+\n+\n+\n \n </LinearLayout>"
+  }, {
+    "sha" : "5594ac21c4274d47a9c2ec58a01e0c7fe1b51f9c",
+    "filename" : "app/src/main/res/layout/net1314080903234where_you.xml",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/res/layout/net1314080903234where_you.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/110e485d16f849e192eb1b26b843f1578aa3f3e5/app/src/main/res/layout/net1314080903234where_you.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903234where_you.xml?ref=110e485d16f849e192eb1b26b843f1578aa3f3e5",
+    "patch" : "@@ -4,7 +4,6 @@\n     android:orientation=\"vertical\"\n     android:layout_height=\"match_parent\">\n \n-\n     <TextView\n         android:layout_width=\"wrap_content\"\n         android:layout_height=\"wrap_content\"\n@@ -18,4 +17,5 @@\n         android:textAppearance=\"?android:attr/textAppearanceMedium\"\n         android:text=\"Medium Text\"\n         android:id=\"@+id/tvLat\" />\n+        \n </LinearLayout>"
+  } ],
+  "sha" : "110e485d16f849e192eb1b26b843f1578aa3f3e5",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/110e485d16f849e192eb1b26b843f1578aa3f3e5",
+  "parents" : [ {
+    "sha" : "687a7b058edcb1c2b62387f0c770b93118f29988",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/687a7b058edcb1c2b62387f0c770b93118f29988",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/687a7b058edcb1c2b62387f0c770b93118f29988"
+  }, {
+    "sha" : "0ccefa3bd821fd0fa67d9e973096346284c78b3b",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0ccefa3bd821fd0fa67d9e973096346284c78b3b",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/0ccefa3bd821fd0fa67d9e973096346284c78b3b"
+  } ]
+}

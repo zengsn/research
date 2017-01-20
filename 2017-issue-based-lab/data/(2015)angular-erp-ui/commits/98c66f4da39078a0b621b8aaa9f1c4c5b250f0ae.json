@@ -1,0 +1,60 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 42,
+    "additions" : 37,
+    "deletions" : 5
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae",
+  "commit" : {
+    "author" : {
+      "name" : "xuwenlang",
+      "email" : "xuwenlang",
+      "date" : "2015-10-27T03:48:54Z"
+    },
+    "committer" : {
+      "name" : "xuwenlang",
+      "email" : "xuwenlang",
+      "date" : "2015-10-27T03:48:54Z"
+    },
+    "message" : "实验4 增加一个js文件 & 修改index",
+    "tree" : {
+      "sha" : "9e447b893d790eb19c8e38c3bb1736356e87defa",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/9e447b893d790eb19c8e38c3bb1736356e87defa"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae/comments",
+  "files" : [ {
+    "sha" : "52b969683c3449d955be2df94751d4fc69f6280a",
+    "filename" : "works/1314080901139/index.html",
+    "status" : "modified",
+    "additions" : 11,
+    "deletions" : 5,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae/works/1314080901139/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae/works/1314080901139/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901139/index.html?ref=98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae",
+    "patch" : "@@ -1,11 +1,11 @@\n-<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+﻿<!DOCTYPE html>\n+<html lang=\"zh-CN\" ng-app=\"materialModule\">\n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>物料供应商 1314080901139</title>\n+    <title>物料 物料信息 物料信息 1314080901139</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -19,9 +19,15 @@\n     <!--[if lt IE 9]>\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+\n+      <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+      <script src=\"js/materialModule.js\"></script>\n+\n     <![endif]-->\n+  \n+  \n   </head>\n-  <body>\n+  <body ng-controller=\"creatematerialCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -57,4 +63,4 @@\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n   </body>\n-</html>\n\\ No newline at end of file\n+</html>"
+  }, {
+    "sha" : "6ae8a22c2958fd8ee61cdb7a97d144111187e8a2",
+    "filename" : "works/1314080901139/js/materialModule.js",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae/works/1314080901139/js/materialModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae/works/1314080901139/js/materialModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901139/js/materialModule.js?ref=98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae",
+    "patch" : "@@ -0,0 +1,26 @@\n+// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+var materialModule = angular.module('materialModule', []);\n+\n+// use the myAppModule variable to\n+// configure the module with a controller\n+materialModule.controller('creatematerialCtrl', function ($scope) {\n+       // controller code would go here\n+\n+        var material = {\n+            wuliaoLeibie:\"���\",\n+            wuliaoName:\" \",\n+            updatedDate:\" \",\n+            pingyinMa:\" \",\n+            wuliaoMiaoshu:\" \",\n+        };\n+        $scope.data = material;\n+\n+});\n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+materialModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });\n\\ No newline at end of file"
+  } ],
+  "sha" : "98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/98c66f4da39078a0b621b8aaa9f1c4c5b250f0ae",
+  "parents" : [ {
+    "sha" : "2088e767b6a318334c468d96eb8e2711dfb96642",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2088e767b6a318334c468d96eb8e2711dfb96642",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/2088e767b6a318334c468d96eb8e2711dfb96642"
+  } ]
+}

@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "Zjwjerry",
+    "id" : 22068622,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068622?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zjwjerry",
+    "html_url" : "https://github.com/Zjwjerry",
+    "followers_url" : "https://api.github.com/users/Zjwjerry/followers",
+    "following_url" : "https://api.github.com/users/Zjwjerry/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zjwjerry/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zjwjerry/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zjwjerry/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zjwjerry/orgs",
+    "repos_url" : "https://api.github.com/users/Zjwjerry/repos",
+    "events_url" : "https://api.github.com/users/Zjwjerry/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zjwjerry/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 112,
+    "additions" : 112,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Zjwjerry",
+    "id" : 22068622,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068622?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zjwjerry",
+    "html_url" : "https://github.com/Zjwjerry",
+    "followers_url" : "https://api.github.com/users/Zjwjerry/followers",
+    "following_url" : "https://api.github.com/users/Zjwjerry/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zjwjerry/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zjwjerry/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zjwjerry/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zjwjerry/orgs",
+    "repos_url" : "https://api.github.com/users/Zjwjerry/repos",
+    "events_url" : "https://api.github.com/users/Zjwjerry/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zjwjerry/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/a84ec219f75b13a744b13143f9345361e5451dc1",
+  "commit" : {
+    "author" : {
+      "name" : "ZjwJerry",
+      "email" : "565691343@qq.com",
+      "date" : "2016-11-07T04:33:42Z"
+    },
+    "committer" : {
+      "name" : "ZjwJerry",
+      "email" : "565691343@qq.com",
+      "date" : "2016-11-07T04:33:42Z"
+    },
+    "message" : "#2 上传界面",
+    "tree" : {
+      "sha" : "b270f780fa17b57d77bdc452ad784a601effbfd2",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/b270f780fa17b57d77bdc452ad784a601effbfd2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/a84ec219f75b13a744b13143f9345361e5451dc1",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/a84ec219f75b13a744b13143f9345361e5451dc1/comments",
+  "files" : [ {
+    "sha" : "35e2c0ee3fc19b961358824a5e7371340008afef",
+    "filename" : "labs/1414080902203/Loading.jsp",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a84ec219f75b13a744b13143f9345361e5451dc1/labs/1414080902203/Loading.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a84ec219f75b13a744b13143f9345361e5451dc1/labs/1414080902203/Loading.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902203/Loading.jsp?ref=a84ec219f75b13a744b13143f9345361e5451dc1",
+    "patch" : "@@ -0,0 +1,30 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    <title>My JSP 'Upload.jsp' starting page</title>\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t\n+  </head>\n+  \n+  <body>\n+\t<%String Name=request.getParameter(\"Pass\");\n+\tif(Name.equals(\"Upload\"))%>\n+\t<jsp:forward page=\"Wating.jsp\"/>\n+\t\n+  </body>\n+  </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "1d50a915775df55a6d7ae45c2c76b0ffb40f1a4d",
+    "filename" : "labs/1414080902203/Upload.jsp",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a84ec219f75b13a744b13143f9345361e5451dc1/labs/1414080902203/Upload.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a84ec219f75b13a744b13143f9345361e5451dc1/labs/1414080902203/Upload.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902203/Upload.jsp?ref=a84ec219f75b13a744b13143f9345361e5451dc1",
+    "patch" : "@@ -0,0 +1,52 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'Upload.jsp' starting page</title>\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t<style type=\"text/css\">\n+\th1{color:red;text-decoration:underline;font-weight:bold;font-size:25px;}\n+\th2{font-size:20px;color:blue;}\n+ \t</style>\n+  </head>\n+  \n+  <body>\n+\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+  <form action=\"Pass\" method=\"post\">\n+\t<div id=\"01\" style=\" position:absolute; width:100%; height:100%; background-color:yellow\"\n+\t<center> 现在的时间是： <%=new Date()%> ：60S后刷新<hr>\n+\t<%response.setHeader(\"refresh\",\"60\");%>\n+\t</center>\n+\t</div>\n+\t<div id=\"02\" style=\" position:absolute; width:100%; height:100%; background-color:#33CC99\">\n+  \t<table border=\"0\" align=\"center\" width=400>\n+  \t<tr><td align=\"center\"><h1>Hello Teacher</h1></td></tr>\n+\t\n+    <tr><td colspan=\"2\" ><h2>选择文件：*</h2><input type=\"file\" accept=\"video/mp4\" multiple=\"multiple\" >\n+\t请输入验证码（Upload）:<input type=\"text\" name=\"Pass\"><br>\n+\t<input type=\"submit\" value=\"提交\"><br>\n+\t<input type=\"reset\"></td>\n+\t\n+\t</tr>\n+  \t</table>\n+\t</div>\n+  </form>\n+  \n+  </body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "a9976cd2e6e1184debe017878185eb8c1e4d6439",
+    "filename" : "labs/1414080902203/Waiting.jsp",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a84ec219f75b13a744b13143f9345361e5451dc1/labs/1414080902203/Waiting.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a84ec219f75b13a744b13143f9345361e5451dc1/labs/1414080902203/Waiting.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902203/Waiting.jsp?ref=a84ec219f75b13a744b13143f9345361e5451dc1",
+    "patch" : "@@ -0,0 +1,30 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    <title>My JSP 'Upload.jsp' starting page</title>\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t<style type=\"text/css\">\n+\th1{color:red;text-decoration:underline;font-weight:bold;font-size:25px;}\n+\t\n+ \t</style>\n+  </head>\n+  \n+  <body>\n+\t<h1><%Waiting Please!%></h1>\n+  </body>\n+  </html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "a84ec219f75b13a744b13143f9345361e5451dc1",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a84ec219f75b13a744b13143f9345361e5451dc1",
+  "parents" : [ {
+    "sha" : "c8b926cc45b7e1a125d3224283aed5cba73f23e9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c8b926cc45b7e1a125d3224283aed5cba73f23e9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/c8b926cc45b7e1a125d3224283aed5cba73f23e9"
+  } ]
+}

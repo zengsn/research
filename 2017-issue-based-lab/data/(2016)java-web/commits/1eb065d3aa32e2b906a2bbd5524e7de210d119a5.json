@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "OctRstar",
+    "id" : 22090090,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22090090?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/OctRstar",
+    "html_url" : "https://github.com/OctRstar",
+    "followers_url" : "https://api.github.com/users/OctRstar/followers",
+    "following_url" : "https://api.github.com/users/OctRstar/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/OctRstar/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/OctRstar/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/OctRstar/subscriptions",
+    "organizations_url" : "https://api.github.com/users/OctRstar/orgs",
+    "repos_url" : "https://api.github.com/users/OctRstar/repos",
+    "events_url" : "https://api.github.com/users/OctRstar/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/OctRstar/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 36,
+    "additions" : 36,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "OctRstar",
+    "id" : 22090090,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22090090?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/OctRstar",
+    "html_url" : "https://github.com/OctRstar",
+    "followers_url" : "https://api.github.com/users/OctRstar/followers",
+    "following_url" : "https://api.github.com/users/OctRstar/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/OctRstar/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/OctRstar/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/OctRstar/subscriptions",
+    "organizations_url" : "https://api.github.com/users/OctRstar/orgs",
+    "repos_url" : "https://api.github.com/users/OctRstar/repos",
+    "events_url" : "https://api.github.com/users/OctRstar/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/OctRstar/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1eb065d3aa32e2b906a2bbd5524e7de210d119a5",
+  "commit" : {
+    "author" : {
+      "name" : "OctRStar",
+      "email" : "792700864@qq.com",
+      "date" : "2016-10-09T15:01:40Z"
+    },
+    "committer" : {
+      "name" : "OctRStar",
+      "email" : "792700864@qq.com",
+      "date" : "2016-10-09T15:01:40Z"
+    },
+    "message" : "#2 提交实验代码",
+    "tree" : {
+      "sha" : "260bdb4e3c9c6d1a053f77b629a52ac48dea2d22",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/260bdb4e3c9c6d1a053f77b629a52ac48dea2d22"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1eb065d3aa32e2b906a2bbd5524e7de210d119a5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1eb065d3aa32e2b906a2bbd5524e7de210d119a5/comments",
+  "files" : [ {
+    "sha" : "b3a7c1ebd06d4e7e7957a684372cfc0d9a7eebcd",
+    "filename" : "labs/1414080902215/index .html",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1eb065d3aa32e2b906a2bbd5524e7de210d119a5/labs/1414080902215/index%20.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1eb065d3aa32e2b906a2bbd5524e7de210d119a5/labs/1414080902215/index%20.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902215/index%20.html?ref=1eb065d3aa32e2b906a2bbd5524e7de210d119a5",
+    "patch" : "@@ -0,0 +1,33 @@\n+<!DOCTYPE html>\n+<html>\n+<head>\n+\n+</head>\n+<body align=\"center\">\n+<form id=\"tijiao\">\n+  <div class=\"form-group\">\n+    <label for=\"user\">�û���</label>\n+    <input type=\"text\" class=\"form-control\" id=\"user\" placeholder=\"user\">\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"Password\">���룺</label>\n+    <input type=\"password\" class=\"form-control\" id=\"Password\" placeholder=\"Password\">\n+  </div>\n+  \n+  <button type=\"submit\" class=\"btn btn-default\">��¼</button>\n+</form>\n+<script>\n+$( \"#tijiao\" ).submit(function( event ) {\n+  \n+});\n+$.ajax({\n+  url: \"success.json\n+}).done(function(data) {\n+  if ( console && console.log ) {\n+      console.dir(data);\n+      alert(data.msg);\n+    }\n+});\n+</script>\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "e86fbae121bfaa14eb07a21af7bea2c8aa156a1c",
+    "filename" : "labs/1414080902215/success.json",
+    "status" : "added",
+    "additions" : 3,
+    "deletions" : 0,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1eb065d3aa32e2b906a2bbd5524e7de210d119a5/labs/1414080902215/success.json",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1eb065d3aa32e2b906a2bbd5524e7de210d119a5/labs/1414080902215/success.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902215/success.json?ref=1eb065d3aa32e2b906a2bbd5524e7de210d119a5",
+    "patch" : "@@ -0,0 +1,3 @@\n+{\n+  \"msg\": \"����ɹ���\"\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "1eb065d3aa32e2b906a2bbd5524e7de210d119a5",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1eb065d3aa32e2b906a2bbd5524e7de210d119a5",
+  "parents" : [ {
+    "sha" : "61b68cc5f28f258f14d5deeecb7038ae1e9f0a9d",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/61b68cc5f28f258f14d5deeecb7038ae1e9f0a9d",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/61b68cc5f28f258f14d5deeecb7038ae1e9f0a9d"
+  } ]
+}

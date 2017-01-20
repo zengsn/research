@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "berrychong",
+    "id" : 13120460,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13120460?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/berrychong",
+    "html_url" : "https://github.com/berrychong",
+    "followers_url" : "https://api.github.com/users/berrychong/followers",
+    "following_url" : "https://api.github.com/users/berrychong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/berrychong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/berrychong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/berrychong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/berrychong/orgs",
+    "repos_url" : "https://api.github.com/users/berrychong/repos",
+    "events_url" : "https://api.github.com/users/berrychong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/berrychong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 50,
+    "additions" : 13,
+    "deletions" : 37
+  },
+  "author" : {
+    "login" : "berrychong",
+    "id" : 13120460,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13120460?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/berrychong",
+    "html_url" : "https://github.com/berrychong",
+    "followers_url" : "https://api.github.com/users/berrychong/followers",
+    "following_url" : "https://api.github.com/users/berrychong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/berrychong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/berrychong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/berrychong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/berrychong/orgs",
+    "repos_url" : "https://api.github.com/users/berrychong/repos",
+    "events_url" : "https://api.github.com/users/berrychong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/berrychong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/e0153d5784bcf00e7a42c9aaf93695571db63608",
+  "commit" : {
+    "author" : {
+      "name" : "berrychong",
+      "email" : "1090014784@qq.com",
+      "date" : "2016-04-14T07:25:02Z"
+    },
+    "committer" : {
+      "name" : "berrychong",
+      "email" : "1090014784@qq.com",
+      "date" : "2016-04-14T07:25:02Z"
+    },
+    "message" : "提交java文件",
+    "tree" : {
+      "sha" : "4515296ae6b9c3d7b6f5c8c7d9cf28596d098968",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/4515296ae6b9c3d7b6f5c8c7d9cf28596d098968"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/e0153d5784bcf00e7a42c9aaf93695571db63608",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e0153d5784bcf00e7a42c9aaf93695571db63608/comments",
+  "files" : [ {
+    "sha" : "f201412d21bad0b52eb3ad58ede382434e200e01",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901211/MainActivity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 37,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/29dc077b7c8f3815f56c1252b76a334427d01cf3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901211/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/29dc077b7c8f3815f56c1252b76a334427d01cf3/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901211/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901211/MainActivity.java?ref=29dc077b7c8f3815f56c1252b76a334427d01cf3",
+    "patch" : "@@ -1,37 +0,0 @@\n-package com.homeworks.androidworks.hzuapps.edu.desktopmemo;\n-\n-import android.os.Bundle;\n-import android.support.v7.app.ActionBarActivity;\n-import android.view.Menu;\n-import android.view.MenuItem;\n-\n-public class MainActivity extends ActionBarActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_main);\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_main, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            return true;\n-        }\n-\n-        return super.onOptionsItemSelected(item);\n-    }\n-}"
+  }, {
+    "sha" : "46cc6ea39d828945497834de62fef705cf60a202",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901211/com1314080901211Activity.java",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e0153d5784bcf00e7a42c9aaf93695571db63608/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901211/com1314080901211Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e0153d5784bcf00e7a42c9aaf93695571db63608/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901211/com1314080901211Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901211/com1314080901211Activity.java?ref=e0153d5784bcf00e7a42c9aaf93695571db63608",
+    "patch" : "@@ -0,0 +1,13 @@\n+package com.homeworks.androidworks.hzuapps.edu.desktopmemo;\n+\n+import android.support.v7.app.ActionBarActivity;\n+import android.os.Bundle;\n+\n+public class com1314080901211Activity extends ActionBarActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_com1314080901211);\n+    }\n+}"
+  } ],
+  "sha" : "e0153d5784bcf00e7a42c9aaf93695571db63608",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e0153d5784bcf00e7a42c9aaf93695571db63608",
+  "parents" : [ {
+    "sha" : "29dc077b7c8f3815f56c1252b76a334427d01cf3",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/29dc077b7c8f3815f56c1252b76a334427d01cf3",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/29dc077b7c8f3815f56c1252b76a334427d01cf3"
+  } ]
+}

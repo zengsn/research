@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "WayhomeChen",
+    "id" : 22078881,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078881?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WayhomeChen",
+    "html_url" : "https://github.com/WayhomeChen",
+    "followers_url" : "https://api.github.com/users/WayhomeChen/followers",
+    "following_url" : "https://api.github.com/users/WayhomeChen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WayhomeChen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WayhomeChen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WayhomeChen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WayhomeChen/orgs",
+    "repos_url" : "https://api.github.com/users/WayhomeChen/repos",
+    "events_url" : "https://api.github.com/users/WayhomeChen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WayhomeChen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 180,
+    "additions" : 180,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "WayhomeChen",
+    "id" : 22078881,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078881?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WayhomeChen",
+    "html_url" : "https://github.com/WayhomeChen",
+    "followers_url" : "https://api.github.com/users/WayhomeChen/followers",
+    "following_url" : "https://api.github.com/users/WayhomeChen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WayhomeChen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WayhomeChen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WayhomeChen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WayhomeChen/orgs",
+    "repos_url" : "https://api.github.com/users/WayhomeChen/repos",
+    "events_url" : "https://api.github.com/users/WayhomeChen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WayhomeChen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/7cd8d85cfcbd036ae12a825f2a959de06438ac52",
+  "commit" : {
+    "author" : {
+      "name" : "ABC",
+      "email" : "neigh3bor3hood3@sina.com",
+      "date" : "2016-10-08T05:27:29Z"
+    },
+    "committer" : {
+      "name" : "ABC",
+      "email" : "neigh3bor3hood3@sina.com",
+      "date" : "2016-10-08T05:27:29Z"
+    },
+    "message" : "#2\n\ntest",
+    "tree" : {
+      "sha" : "4898bf08c30bfc0460b9e24516a62867c3932654",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/4898bf08c30bfc0460b9e24516a62867c3932654"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/7cd8d85cfcbd036ae12a825f2a959de06438ac52",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/7cd8d85cfcbd036ae12a825f2a959de06438ac52/comments",
+  "files" : [ {
+    "sha" : "c177a35d7321e5aebeb162f024d654cb9a336489",
+    "filename" : "labs/1414080902106/index.html",
+    "status" : "added",
+    "additions" : 86,
+    "deletions" : 0,
+    "changes" : 86,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7cd8d85cfcbd036ae12a825f2a959de06438ac52/labs/1414080902106/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7cd8d85cfcbd036ae12a825f2a959de06438ac52/labs/1414080902106/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902106/index.html?ref=7cd8d85cfcbd036ae12a825f2a959de06438ac52",
+    "patch" : "@@ -0,0 +1,86 @@\n+﻿<!-- 此页面目标是高仿百度的个人资料修改页面，但是仿不成。。。 -->\n+<html lang=\"zh-cn\">\n+  <head>\n+  \t<meta content=\"text/html;charset=utf-8\" />\n+    <title>实验一——个人基本资料修改页面</title>\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <script type=\"text/javascript\" src=\"index.js\"></script>\n+\t<script type=\"text/javascript\" src=\"http://cdn.bootcss.com/jquery/3.1.1/jquery.js\"></script>\n+\t<script type=\"text/javascript\" >\n+\t\t$(document).ready(function(){\n+\t\t\t$(\"#form1\").submit(function(){\n+\t\t\t\t$.getJSON(\"success.json\",function(data){\n+\t\t\t\t\tconsole.log(data);\n+\t\t\t\t\talert(data.msg);\n+\t\t\t\t});\n+\t\t\t});\n+\t\t});\n+    </script>\n+  </head>\n+  <body>\n+\t    <form id=\"form1\" method=\"post\" action=\"\">\n+\t    \t<table align=\"center\">\n+\t\t\t  \t<tr><td colspan=\"2\"><h4 class=\"page-header\">基本资料</h4></td></tr>\n+\t\t    \t<tr>\n+\t\t\t    \t<td align=\"right\">性别：</td>\n+\t\t\t    \t<td>\n+\t\t\t    \t\t<input name=\"sex\" type=\"radio\" value=\"0\" checked>男\n+\t\t\t    \t\t<input name=\"sex\" type=\"radio\" value=\"1\">女\n+\t\t\t    \t</td>\n+\t\t    \t</tr>\n+\t\t    \t<tr><td><br/></td></tr>\n+\t\t    \t<tr>\n+\t\t\t    \t<td align=\"right\">生日：</td>\n+\t\t\t    \t<td>\n+\t\t\t\t    \t<select id=\"year\" name=\"year\" onChange=\"onYearChange();\">\n+\t\t\t\t    \t\t<option selected>年</option>\n+\t\t\t\t    \t</select>\n+\t\t\t\t    \t<select id=\"month\" name=\"month\" onChange=\"onMonthChange();\">\n+\t\t\t\t    \t\t<option selected>月</option>\n+\t\t\t\t    \t</select>\n+\t\t\t\t    \t<select id=\"day\" name=\"day\" style=\"display:none\">\n+\t\t\t\t    \t\t<option selected>日</option>\n+\t\t\t\t    \t</select>\n+\t\t\t    \t</td>\n+\t\t    \t</tr>\n+\t\t    \t<tr><td><br/></td></tr>\n+\t\t    \t<tr>\n+\t\t\t    \t<td align=\"right\">血型：</td>\n+\t\t\t    \t<td>\n+\t\t\t\t    \t<select name=\"blood\" class=\"form-control\">\n+\t\t\t\t    \t\t<option value=\"0\" selected>未知</option>\n+\t\t\t\t    \t\t<option value=\"1\">A</option>\n+\t\t\t\t    \t\t<option value=\"2\">B</option>\n+\t\t\t\t    \t\t<option value=\"3\">O</option>\n+\t\t\t\t    \t\t<option value=\"4\">AB</option>\n+\t\t\t\t    \t\t<option value=\"5\">其他</option>\n+\t\t\t\t    \t</select>\n+\t\t\t\t    </td>\n+\t\t\t    </tr>\n+\t\t    \t<tr><td><br/></td></tr>\n+\t\t\t    <tr>\n+\t\t    \t\t<td align=\"right\">出生地：</td>\n+\t\t    \t\t<td><input name=\"hometown\" type=\"text\" class=\"form-control\"></td>\n+\t\t\t    </tr>\n+\t\t    \t<tr><td><br/></td></tr>\n+\t\t\t    <tr>\n+\t\t    \t\t<td align=\"right\">居住地：</td>\n+\t\t    \t\t<td><input name=\"house\" type=\"text\" class=\"form-control\"></td>\n+\t\t\t    </tr>\n+\t\t    \t<tr><td><br/></td></tr>\n+\t\t\t    <tr>\n+\t\t    \t\t<td valign=\"top\" align=\"right\" style=\"line-height:36px\">个人简介：</td>\n+\t\t    \t\t<td><textarea name=\"pesonal\" cols=\"50\" rows=\"8\" class=\"form-control\"></textarea></td>\n+\t\t\t    </tr>\n+\t\t\t    <tr><td><br/></td></tr>\n+\t\t\t    <tr>\n+\t\t\t    \t<td></td>\n+\t    \t\t\t<td>\n+\t    \t\t\t\t<input id=\"save\" type=\"submit\" class=\"btn btn-sm btn-primary\" value=\"保存\">\n+\t    \t\t\t</td>\n+\t    \t\t</tr>\n+\t    \t</table>\n+\t    </form>\n+    \n+   </body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "0d22faaec24a82d728284a4ecc3ce50e2e41f9c1",
+    "filename" : "labs/1414080902106/index.js",
+    "status" : "added",
+    "additions" : 91,
+    "deletions" : 0,
+    "changes" : 91,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7cd8d85cfcbd036ae12a825f2a959de06438ac52/labs/1414080902106/index.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7cd8d85cfcbd036ae12a825f2a959de06438ac52/labs/1414080902106/index.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902106/index.js?ref=7cd8d85cfcbd036ae12a825f2a959de06438ac52",
+    "patch" : "@@ -0,0 +1,91 @@\n+window.onload = function(){\n+\t//初始化年份列表\n+\tvar years = document.getElementById(\"year\");\n+\tvar year = new Date().getFullYear();\n+\tvar node = null;\n+\twhile(year >= 1900){\n+\t\tnode = new Option(year,year);\n+\t\tyears.options.add(node);\n+\t\tyear--;\n+\t}\n+\t//初始化月份列表\n+\tvar months = document.getElementById(\"month\");\n+\tfor(var i = 1;i <= 12;i++){\n+\t\tnode = new Option(i,i);\n+\t\tmonths.options.add(node);\n+\t}\n+};\n+//判断当前选择的年份是否是闰年\n+function isLeap(){\n+\tvar options = document.getElementById(\"year\").options;\n+\tvar index = options.selectedIndex;\n+\tvar year = options[index].text;\n+\tif(year % 100 != 0){\n+\t\tif(year % 4 == 0)\n+\t\t\treturn true;\n+\t}else{\n+\t\tif(year % 400 == 0)\n+\t\t\treturn true;\n+\t}\n+\treturn false;\n+}\n+//清空options集合但保留第一项\n+function clear(options){\n+\tvar len = options.length - 1;\n+\tfor(var i = 0;i < len;i++)\n+\t\toptions.remove(1);\n+}\n+//年份变化时执行\n+function onYearChange(){\n+\tonMonthChange();\n+}\n+//月份变化时执行\n+function onMonthChange(){\n+\t//获取当前选择的年份项索引\n+\tvar yearIndex = document.getElementById(\"year\").options.selectedIndex;\n+\t//获取当前选择的月份\n+\tvar month = document.getElementById(\"month\").options.selectedIndex;\n+\t//获取日列表对象\n+\tvar days = document.getElementById(\"day\");\n+\t//获取当前选择的日项索引\n+\tvar oldDayIndex = days.selectedIndex;\n+\t//如果年份或月份没有选择，就隐藏日列表并结束\n+\tif(month == 0 || yearIndex == 0){\n+\t\tdays.style.display = \"none\";\n+\t\treturn;\n+\t}\n+\t//显示日列表\n+\tdays.style.display = \"\";\n+\t//计算最大的日数\n+\tvar maxDay = null;\n+\tswitch(month){\n+\tcase 1:\n+\tcase 3:\n+\tcase 5:\n+\tcase 7:\n+\tcase 8:\n+\tcase 10:\n+\tcase 12:\n+\t\tmaxDay = 31;\n+\t\tbreak;\n+\tcase 2:\n+\t\tif(isLeap() == true)\n+\t\t\tmaxDay = 29;\n+\t\telse\n+\t\t\tmaxDay = 28;\n+\t\tbreak;\n+\tdefault:\n+\t\tmaxDay = 30;\n+\t}\n+\t//情况原日列表，保留第一项\n+\tclear(days.options);\n+\t//重新插入日项\n+\tvar node = null;\n+\tfor(var i = 1;i <= maxDay;i++){\n+\t\tnode = new Option(i,i);\n+\t\tdays.options.add(node);\n+\t}\n+\t//如果原来选择的日不超过新的最大日数，则保留原选择\n+\tif(oldDayIndex <= maxDay)\n+\t\tdays.options.selectedIndex = oldDayIndex;\n+}"
+  }, {
+    "sha" : "48d5d3aad6493a06452724cebd459a72534f6dfa",
+    "filename" : "labs/1414080902106/success.json",
+    "status" : "added",
+    "additions" : 3,
+    "deletions" : 0,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7cd8d85cfcbd036ae12a825f2a959de06438ac52/labs/1414080902106/success.json",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7cd8d85cfcbd036ae12a825f2a959de06438ac52/labs/1414080902106/success.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902106/success.json?ref=7cd8d85cfcbd036ae12a825f2a959de06438ac52",
+    "patch" : "@@ -0,0 +1,3 @@\n+﻿{\n+\t\"msg\" : \"保存成功！\"\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "7cd8d85cfcbd036ae12a825f2a959de06438ac52",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7cd8d85cfcbd036ae12a825f2a959de06438ac52",
+  "parents" : [ {
+    "sha" : "6094ab2e4a2935bfbfde3c7b543110799ac77451",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6094ab2e4a2935bfbfde3c7b543110799ac77451",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/6094ab2e4a2935bfbfde3c7b543110799ac77451"
+  } ]
+}

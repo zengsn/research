@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "fengxiangqian00",
+    "id" : 18460235,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18460235?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fengxiangqian00",
+    "html_url" : "https://github.com/fengxiangqian00",
+    "followers_url" : "https://api.github.com/users/fengxiangqian00/followers",
+    "following_url" : "https://api.github.com/users/fengxiangqian00/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fengxiangqian00/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fengxiangqian00/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fengxiangqian00/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fengxiangqian00/orgs",
+    "repos_url" : "https://api.github.com/users/fengxiangqian00/repos",
+    "events_url" : "https://api.github.com/users/fengxiangqian00/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fengxiangqian00/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 103,
+    "additions" : 103,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "fengxiangqian00",
+    "id" : 18460235,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18460235?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fengxiangqian00",
+    "html_url" : "https://github.com/fengxiangqian00",
+    "followers_url" : "https://api.github.com/users/fengxiangqian00/followers",
+    "following_url" : "https://api.github.com/users/fengxiangqian00/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fengxiangqian00/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fengxiangqian00/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fengxiangqian00/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fengxiangqian00/orgs",
+    "repos_url" : "https://api.github.com/users/fengxiangqian00/repos",
+    "events_url" : "https://api.github.com/users/fengxiangqian00/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fengxiangqian00/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/1af672c6fad203df5ed81755c4f69dafacc2fa8e",
+  "commit" : {
+    "author" : {
+      "name" : "fengxiangqian00",
+      "email" : "fengxiangqian00@sina.com",
+      "date" : "2016-05-04T01:16:37Z"
+    },
+    "committer" : {
+      "name" : "fengxiangqian00",
+      "email" : "fengxiangqian00@sina.com",
+      "date" : "2016-05-04T01:16:37Z"
+    },
+    "message" : "#88 #233 实验二",
+    "tree" : {
+      "sha" : "9feb0a46e4b5104eef34311d35bd0d69c4a6f5a8",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/9feb0a46e4b5104eef34311d35bd0d69c4a6f5a8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/1af672c6fad203df5ed81755c4f69dafacc2fa8e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1af672c6fad203df5ed81755c4f69dafacc2fa8e/comments",
+  "files" : [ {
+    "sha" : "e27753a790e72c0c94b9cae2a8d0aa2a0eccd92d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903210/Net1314080903210MainActivity.java",
+    "status" : "added",
+    "additions" : 103,
+    "deletions" : 0,
+    "changes" : 103,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1af672c6fad203df5ed81755c4f69dafacc2fa8e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903210/Net1314080903210MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1af672c6fad203df5ed81755c4f69dafacc2fa8e/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903210/Net1314080903210MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903210/Net1314080903210MainActivity.java?ref=1af672c6fad203df5ed81755c4f69dafacc2fa8e",
+    "patch" : "@@ -0,0 +1,103 @@\n+package com.example.settime;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.TextView;\n+\n+public class Net1314080903210MainActivity extends Activity {\n+\t\n+\tprivate Button strattime;\n+\tprivate Button endtime;\n+\tprivate TextView showtime;\n+\tprivate static int time=0;\n+\tprivate static final int sendtime=1;\n+\tprivate volatile Boolean isContinue = false;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.net_1314080903210_activity_main);\n+\t\t\n+\t\tstrattime=(Button) findViewById(R.id.starttime);\n+\t\tendtime=(Button) findViewById(R.id.endtime);\n+\t\tshowtime=(TextView) findViewById(R.id.showtime);\n+\t\t\n+\t\t\t\t\n+\t\tstrattime.setOnClickListener(new View.OnClickListener() {\n+\t\t\t\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View v) {\n+\t\t\t\t// TODO �Զ���ɵķ������\n+\t\t\t\t\n+\t\t\t\tisContinue = true;\n+\t\t\t\tTimeThread T = new TimeThread();\n+\t\t\t\tT.start();\n+\t\t\t\n+\t\t\t}\n+\t\t});\n+\t\t\n+\t\tendtime.setOnClickListener(new View.OnClickListener() {\n+\t\t\t\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View v) {\n+\t\t\t\t// TODO �Զ���ɵķ������\n+\t\t\t\t\n+\t\t\t\tisContinue = false;\n+\t\t\t\tshowtime.setText(\"�����ʱ\");\n+\t\t\t\t\n+\t\t\t\t\n+\t\t\t}\n+\t\t});\n+\t\t\n+\t\t\n+\t\t\t\t\n+\t}\n+\t\n+\tprivate Handler h=new Handler()\n+\t{\n+\t\tpublic void handleMessage(Message msg)\n+\t\t{\n+\n+\t\t\tswitch(msg.what)\n+\t\t\t{\n+\t\t\tcase sendtime:\n+\t\t\t\tshowtime.setText(time+\"s\");\t\n+\t\t\t\tbreak;\n+\t\t\tdefault:\n+\t\t\t\tbreak;\n+\t\t\t}\n+\t\t}\n+\t};\n+\tprivate class TimeThread extends Thread{\n+\t\t\n+\t\t\t@Override\n+\t\t\tpublic void run() {\n+\t\t\t\n+\t\t\t\ttime=30;\n+\t\t\t\twhile(isContinue)\n+\t\t\t\t{\n+\t\t\t\t\tMessage m=new Message();\n+\t\t\t\t\tm.what=sendtime;\n+\t\t\t\t\th.sendMessage(m);\n+\t\t\t\t\ttry \n+\t\t\t\t\t{\n+\t\t\t\t\t\tThread.sleep(1000);\n+\t\t\t\t\t} catch (InterruptedException e) {\n+\t\t\t\t\t\te.printStackTrace();\n+\t\t\t\t\t} \n+\t\t\t\t\ttime--;\n+\t\t\t\t\tif(time <0)\n+\t\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\t\n+\t}\n+\t\n+\n+}"
+  } ],
+  "sha" : "1af672c6fad203df5ed81755c4f69dafacc2fa8e",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1af672c6fad203df5ed81755c4f69dafacc2fa8e",
+  "parents" : [ {
+    "sha" : "b2eafa7d90beabcfe3f82bad9450a1461a02e45f",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/b2eafa7d90beabcfe3f82bad9450a1461a02e45f",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/b2eafa7d90beabcfe3f82bad9450a1461a02e45f"
+  } ]
+}

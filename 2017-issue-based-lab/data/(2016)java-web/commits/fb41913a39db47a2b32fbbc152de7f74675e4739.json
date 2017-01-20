@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "cyk0505",
+    "id" : 22512010,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512010?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/cyk0505",
+    "html_url" : "https://github.com/cyk0505",
+    "followers_url" : "https://api.github.com/users/cyk0505/followers",
+    "following_url" : "https://api.github.com/users/cyk0505/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/cyk0505/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/cyk0505/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/cyk0505/subscriptions",
+    "organizations_url" : "https://api.github.com/users/cyk0505/orgs",
+    "repos_url" : "https://api.github.com/users/cyk0505/repos",
+    "events_url" : "https://api.github.com/users/cyk0505/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/cyk0505/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 181,
+    "additions" : 181,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "cyk0505",
+    "id" : 22512010,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512010?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/cyk0505",
+    "html_url" : "https://github.com/cyk0505",
+    "followers_url" : "https://api.github.com/users/cyk0505/followers",
+    "following_url" : "https://api.github.com/users/cyk0505/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/cyk0505/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/cyk0505/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/cyk0505/subscriptions",
+    "organizations_url" : "https://api.github.com/users/cyk0505/orgs",
+    "repos_url" : "https://api.github.com/users/cyk0505/repos",
+    "events_url" : "https://api.github.com/users/cyk0505/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/cyk0505/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/fb41913a39db47a2b32fbbc152de7f74675e4739",
+  "commit" : {
+    "author" : {
+      "name" : "cyk0505",
+      "email" : "350401605@qq.com",
+      "date" : "2016-11-24T05:09:01Z"
+    },
+    "committer" : {
+      "name" : "cyk0505",
+      "email" : "350401605@qq.com",
+      "date" : "2016-11-24T05:09:01Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "712fa068d237113e508fa351f652568a38dff2d1",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/712fa068d237113e508fa351f652568a38dff2d1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/fb41913a39db47a2b32fbbc152de7f74675e4739",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/fb41913a39db47a2b32fbbc152de7f74675e4739/comments",
+  "files" : [ {
+    "sha" : "104c542924150a3dd454cd6f1097c55548a6db4e",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902112/SetUser.java",
+    "status" : "added",
+    "additions" : 55,
+    "deletions" : 0,
+    "changes" : 55,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/fb41913a39db47a2b32fbbc152de7f74675e4739/jweb/src/edu/hzu/javaweb/labs/se1414080902112/SetUser.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/fb41913a39db47a2b32fbbc152de7f74675e4739/jweb/src/edu/hzu/javaweb/labs/se1414080902112/SetUser.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902112/SetUser.java?ref=fb41913a39db47a2b32fbbc152de7f74675e4739",
+    "patch" : "@@ -0,0 +1,55 @@\n+package edu.hzu.javaweb.labs.se1414080902112;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import edu.hzu.javaweb.labs.se1414080902112.User;\n+\n+public class SetUser extends HttpServlet {\n+\n+\t \n+\tpublic SetUser() {\n+\t\tsuper();\n+\t}\n+\n+\t\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"UTF-8\");\t\t\n+\t\tString name=request.getParameter(\"name\");\n+        String sex=request.getParameter(\"sex\");\n+\t\tString id=request.getParameter(\"id\");\n+\t\tString brithdate=request.getParameter(\"brithdate\");\n+\t\tString information=request.getParameter(\"information\");\n+\t  List<User> Users=new ArrayList<User>();\n+\t  Users.add(new User(name,sex,id,brithdate,information));\n+\t   request.setAttribute(\"User\", Users);\n+\t   request.getRequestDispatcher(\"show.jsp\").forward(request, response);\n+\t}\n+\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tdoGet(request,response);\n+\t}\n+\n+\t\n+\tpublic void init() throws ServletException {\n+\t\t\n+\t}\n+\n+}"
+  }, {
+    "sha" : "110fbdda7e6a8bacb3dfeb3c99f51ad05e5cec14",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902112/User.java",
+    "status" : "added",
+    "additions" : 48,
+    "deletions" : 0,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/fb41913a39db47a2b32fbbc152de7f74675e4739/jweb/src/edu/hzu/javaweb/labs/se1414080902112/User.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/fb41913a39db47a2b32fbbc152de7f74675e4739/jweb/src/edu/hzu/javaweb/labs/se1414080902112/User.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902112/User.java?ref=fb41913a39db47a2b32fbbc152de7f74675e4739",
+    "patch" : "@@ -0,0 +1,48 @@\n+package edu.hzu.javaweb.labs.se1414080902112;\n+\n+public class User {\n+\tprivate String name;\n+    private String sex;\n+\tprivate String id;\n+\tprivate String brithdate;\n+\tprivate String information;\n+\tpublic User(){}\n+\tpublic User(String name,String sex,String id,String brithdate,String information)\n+\t{\n+\t\tthis.name=name;\n+        this.sex=sex;\n+\t\tthis.id=id;\n+\t\tthis.brithdate=brithdate;\n+\t\tthis.information=information;\n+\t}\n+\tpublic String getName() {\n+\t\treturn name;\n+\t}\n+\tpublic void setName(String name) {\n+\t\tthis.name = name;\n+\t}\n+        public String getSex() {\n+\t\treturn sex;\n+\t}\n+\tpublic void setSex(String sex) {\n+\t\tthis.sex = sex;\n+\t}\n+\tpublic String getId() {\n+\t\treturn id;\n+\t}\n+\tpublic void setId(String id) {\n+\t\tthis.id = id;\n+\t}\n+\tpublic String getBrithdate() {\n+\t\treturn brithdate;\n+\t}\n+\tpublic void setBrithdate(String brithdate) {\n+\t\tthis.brithdate = brithdate;\n+\t}\n+\tpublic String getInformation() {\n+\t\treturn information;\n+\t}\n+\tpublic void setInformation(String information) {\n+\t\tthis.information =information;\n+\t}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "c5c7d424291ab6c5b7d957530a66aa4f1bd1d7bc",
+    "filename" : "labs/1414080902112/show.jsp",
+    "status" : "added",
+    "additions" : 40,
+    "deletions" : 0,
+    "changes" : 40,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/fb41913a39db47a2b32fbbc152de7f74675e4739/labs/1414080902112/show.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/fb41913a39db47a2b32fbbc152de7f74675e4739/labs/1414080902112/show.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902112/show.jsp?ref=fb41913a39db47a2b32fbbc152de7f74675e4739",
+    "patch" : "@@ -0,0 +1,40 @@\n+﻿<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@taglib uri=\"http://java.sun.com/jsp/jstl/core\"  prefix=\"c\"%>\n+<%@ page import=\"edu.hzu.javaweb.labs.se1414080902112.User\"%>\n+\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'show.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+   <c:out value=\"户籍添加成功！信息如下：\"/>\n+     <br>\n+   <c:forEach var=\"User\" items=\"${User}\">\n+          姓名：${User.name}<br> \n+         性别：${User.sex} <br>\n+         身份证： ${User.id} <br>\n+        出生日期： ${User.brithdate} <br>\n+        家庭信息：  ${User.information}<br>\n+   </c:forEach><br>\n+  </body>\n+  \n+</html>"
+  }, {
+    "sha" : "0121186eff08d8e60f152fa674ee205d8030bfe6",
+    "filename" : "labs/1414080902112/submit.jsp",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/fb41913a39db47a2b32fbbc152de7f74675e4739/labs/1414080902112/submit.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/fb41913a39db47a2b32fbbc152de7f74675e4739/labs/1414080902112/submit.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902112/submit.jsp?ref=fb41913a39db47a2b32fbbc152de7f74675e4739",
+    "patch" : "@@ -0,0 +1,38 @@\n+﻿<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@taglib uri=\"http://java.sun.com/jstl/core\"  prefix=\"c\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>用户户籍提交页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+  \n+  <body>\n+    <form action=\"SetUser\" method=\"post\">\n+   <table>\n+<tr><td>姓名：</td><td><input type=\"text\" name=\"name\"></td></tr>\n+<tr><td>性别：</td><td><input type=\"text\" name=\"sex\"></td></tr>\n+<tr><td>身份证：</td><td><input name=\"id\" maxlength=\"30\"></td></tr>\n+<tr><td>出生日期：</td><td><input name=\"brithdate\"></td></tr>\n+ <tr><td>用户家庭信息：\n+ <td colspan=\"2\">\n+ <textarea name=\"information\" rows=\"5\"cols=\"50\"></textarea></td>\n+ </tr>\n+ <tr><td><input type=submit value=\"提交\"> </td></tr>\n+ </table>\n+   </form>\n+  </body>\n\\ No newline at end of file"
+  } ],
+  "sha" : "fb41913a39db47a2b32fbbc152de7f74675e4739",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/fb41913a39db47a2b32fbbc152de7f74675e4739",
+  "parents" : [ {
+    "sha" : "41fa6f9f73a19d372a9923f8c092b93b8f962056",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/41fa6f9f73a19d372a9923f8c092b93b8f962056",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/41fa6f9f73a19d372a9923f8c092b93b8f962056"
+  } ]
+}

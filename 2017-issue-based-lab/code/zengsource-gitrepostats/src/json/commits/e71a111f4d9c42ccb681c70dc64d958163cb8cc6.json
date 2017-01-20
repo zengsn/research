@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "loveincloud",
+    "id" : 15902896,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15902896?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/loveincloud",
+    "html_url" : "https://github.com/loveincloud",
+    "followers_url" : "https://api.github.com/users/loveincloud/followers",
+    "following_url" : "https://api.github.com/users/loveincloud/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/loveincloud/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/loveincloud/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/loveincloud/subscriptions",
+    "organizations_url" : "https://api.github.com/users/loveincloud/orgs",
+    "repos_url" : "https://api.github.com/users/loveincloud/repos",
+    "events_url" : "https://api.github.com/users/loveincloud/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/loveincloud/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 10,
+    "additions" : 10,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "loveincloud",
+    "id" : 15902896,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15902896?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/loveincloud",
+    "html_url" : "https://github.com/loveincloud",
+    "followers_url" : "https://api.github.com/users/loveincloud/followers",
+    "following_url" : "https://api.github.com/users/loveincloud/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/loveincloud/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/loveincloud/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/loveincloud/subscriptions",
+    "organizations_url" : "https://api.github.com/users/loveincloud/orgs",
+    "repos_url" : "https://api.github.com/users/loveincloud/repos",
+    "events_url" : "https://api.github.com/users/loveincloud/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/loveincloud/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/e71a111f4d9c42ccb681c70dc64d958163cb8cc6",
+  "commit" : {
+    "author" : {
+      "name" : "loveincloud",
+      "email" : "2587687121@qq.com",
+      "date" : "2016-05-19T01:11:34Z"
+    },
+    "committer" : {
+      "name" : "loveincloud",
+      "email" : "2587687121@qq.com",
+      "date" : "2016-05-19T01:11:34Z"
+    },
+    "message" : "#95 #58 实验9 增加点提示信息",
+    "tree" : {
+      "sha" : "1eefc6672199503bcbb854e0fb2cb060da6406fc",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/1eefc6672199503bcbb854e0fb2cb060da6406fc"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/e71a111f4d9c42ccb681c70dc64d958163cb8cc6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e71a111f4d9c42ccb681c70dc64d958163cb8cc6/comments",
+  "files" : [ {
+    "sha" : "d410beb65b317226719bd21763d35b9718587956",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903215/Net1314080903215_MainActivity.java",
+    "status" : "modified",
+    "additions" : 10,
+    "deletions" : 0,
+    "changes" : 10,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e71a111f4d9c42ccb681c70dc64d958163cb8cc6/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903215/Net1314080903215_MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e71a111f4d9c42ccb681c70dc64d958163cb8cc6/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903215/Net1314080903215_MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903215/Net1314080903215_MainActivity.java?ref=e71a111f4d9c42ccb681c70dc64d958163cb8cc6",
+    "patch" : "@@ -48,6 +48,9 @@ public void handleMessage(Message msg) {\n                         tvIP.setText(ip);   //在界面中显示\n                         Toast.makeText(Net1314080903215_MainActivity.this, \"找到服务端，可连接服务端了\", Toast.LENGTH_SHORT).show();\n                         break;\n+                    case 3000:\n+                        Toast.makeText(Net1314080903215_MainActivity.this, msg.obj.toString(), Toast.LENGTH_SHORT).show();\n+                        break;\n                     case 2000:\n                         Toast.makeText(Net1314080903215_MainActivity.this, msg.obj.toString(), Toast.LENGTH_SHORT).show();\n                         break;\n@@ -191,6 +194,7 @@ public void run() {\n             String serverIP = net1314080903215MyWifi.getServerIp();\n             int t = serverIP.lastIndexOf(\".\") + 1;\n             String resultIP = serverIP.substring(0, t);\n+            boolean flag = true;\n             for(int i=1; i<255; i++){\n                 Socket socket = new Socket();\n                 InetSocketAddress s = new InetSocketAddress(resultIP + i, 30000);\n@@ -210,6 +214,12 @@ public void run() {\n                 findIP = resultIP + i;\n                 break;\n             }\n+            if(flag){\n+                Message msg = Message.obtain();\n+                msg.what = 3000;\n+                msg.obj = \"未扫描到服务端\";\n+                handler.sendMessage(msg);\n+            }\n             super.run();\n         }\n     }"
+  } ],
+  "sha" : "e71a111f4d9c42ccb681c70dc64d958163cb8cc6",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e71a111f4d9c42ccb681c70dc64d958163cb8cc6",
+  "parents" : [ {
+    "sha" : "08c74fb6a402e1d16745df692bdbf216aa83e6b6",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/08c74fb6a402e1d16745df692bdbf216aa83e6b6",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/08c74fb6a402e1d16745df692bdbf216aa83e6b6"
+  } ]
+}

@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 44,
+    "additions" : 44,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/fa207cd852f033f135adad09efa73abc0fe4c3db",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-22T05:44:52Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-22T05:44:52Z"
+    },
+    "message" : "Merge pull request #460 from Jeting72/master\n\n实验5 1314080901125",
+    "tree" : {
+      "sha" : "c58cd3fa36b4c3a0405826c04fb36c2a4f9ce30f",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/c58cd3fa36b4c3a0405826c04fb36c2a4f9ce30f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/fa207cd852f033f135adad09efa73abc0fe4c3db",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/fa207cd852f033f135adad09efa73abc0fe4c3db/comments",
+  "files" : [ {
+    "sha" : "5c2f53eca566cc5bc0118083b18932c41c2e73c8",
+    "filename" : "works/1314080901125/index.html",
+    "status" : "modified",
+    "additions" : 44,
+    "deletions" : 0,
+    "changes" : 44,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/fa207cd852f033f135adad09efa73abc0fe4c3db/works/1314080901125/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/fa207cd852f033f135adad09efa73abc0fe4c3db/works/1314080901125/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901125/index.html?ref=fa207cd852f033f135adad09efa73abc0fe4c3db",
+    "patch" : "@@ -54,6 +54,50 @@\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n \n+    </div>\n+\n+    <div class=\"container\">\n+      <div class=\"row col-lg-offset-2\">\n+        <form class=\"form-inline\" role=\"form\">\n+\n+          <div class=\"form-group col\">\n+            <div class=\"col\">\n+              <label for=\"example1\">参数名：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"Name\" id=\"example1\"/>\n+            </div>\n+          </div>\n+\n+          <div class=\"form-group col\">\n+            <div class=\"col\">\n+              <label for=\"example2\">代码：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"Code\" id=\"example2\"/>\n+            </div>\n+          </div>\n+\n+          <div class=\"form-group col\">\n+            <div class=\"col\">\n+              <label for=\"example3\">参数值：</label>\n+              <input type=\"text\" class=\"form-control input-sm\" ng-model=\"ParameterData\" id=\"example3\"/>\n+            </div>\n+          </div>\n+\n+          <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n+            <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\">\n+              {{isHidden ? '新增' : '删除'}}\n+            </button>\n+          </div>\n+\n+        </form>\n+      </div>\n+    </div>\n+\n+    <div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n+    <p class=\"lead\">\n+    <div ng-hide=\"isHidden\">您输入了数据：</div>\n+    <div id=\"Name\" ng-hide=\"isHidden\">参数名->{{Name}}</div>\n+    <div id=\"Code\" ng-hide=\"isHidden\">代码->{{Code}}</div>\n+    <div id=\"ParameterData\" ng-hide=\"isHidden\">参数值->{{ParameterData}}</div>\n+    </p>\n     </div><!-- /.container -->\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->"
+  } ],
+  "sha" : "fa207cd852f033f135adad09efa73abc0fe4c3db",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/fa207cd852f033f135adad09efa73abc0fe4c3db",
+  "parents" : [ {
+    "sha" : "e62bc5a44aa1bd469c6f66828f501a624045f62d",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e62bc5a44aa1bd469c6f66828f501a624045f62d",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e62bc5a44aa1bd469c6f66828f501a624045f62d"
+  }, {
+    "sha" : "124ceab99431caae3e9dca23a0f2b4dbe9c6c3d9",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/124ceab99431caae3e9dca23a0f2b4dbe9c6c3d9",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/124ceab99431caae3e9dca23a0f2b4dbe9c6c3d9"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 66,
+    "additions" : 62,
+    "deletions" : 4
+  },
+  "author" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/2cbcc629988f387ba43becea285bed0c80814e0f",
+  "commit" : {
+    "author" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2016-04-20T08:07:58Z"
+    },
+    "committer" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2016-04-20T08:07:58Z"
+    },
+    "message" : "#88 #50 实验2",
+    "tree" : {
+      "sha" : "a5063baef02a8999655b2150d9d4f743d046ac52",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/a5063baef02a8999655b2150d9d4f743d046ac52"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/2cbcc629988f387ba43becea285bed0c80814e0f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2cbcc629988f387ba43becea285bed0c80814e0f/comments",
+  "files" : [ {
+    "sha" : "35cdba7de4e834e7760cd547a251e9491c3bf619",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/com1314080901110Activity.java",
+    "status" : "modified",
+    "additions" : 62,
+    "deletions" : 4,
+    "changes" : 66,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2cbcc629988f387ba43becea285bed0c80814e0f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/com1314080901110Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2cbcc629988f387ba43becea285bed0c80814e0f/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/com1314080901110Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901110/com1314080901110Activity.java?ref=2cbcc629988f387ba43becea285bed0c80814e0f",
+    "patch" : "@@ -1,13 +1,71 @@\n-package com.example.lenovo.hehe233333;\n+package com.saolei.minesweeper;\n \n+import android.content.DialogInterface;\n+import android.content.Intent;\n import android.support.v7.app.AppCompatActivity;\n import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.view.View;\n+import android.widget.Button;\n+import android.app.AlertDialog;\n+import android.widget.EditText;\n+import android.widget.Toast;\n \n-public class com1314080901110Activity extends AppCompatActivity {\n-\n+public class MainActivity extends AppCompatActivity {\n+    private Button toPlay;\n+    private Button setDifficulty;\n+    public String level=\"10\";\n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_com1314080901110);\n+        setContentView(R.layout.activity_main);\n+//        布置ToPlayGame按钮监听事件\n+        toPlay=(Button)findViewById(R.id.toPlay);\n+        toPlay.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+//                Activity跳转\n+                Intent intent=new Intent();\n+                intent.putExtra(\"level\",level);\n+                intent.setClass(MainActivity.this,GameActivity.class);\n+                startActivity(intent);\n+            }\n+        });\n+        setDifficulty=(Button)findViewById(R.id.setDifficulty);\n+        setDifficulty.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                final EditText editText = new EditText(v.getContext());\n+                new AlertDialog.Builder(v.getContext()).setTitle(\"请输入游戏难度（2-20）：\").setView(editText).setPositiveButton(\"确定\",\n+                        new DialogInterface.OnClickListener() {\n+                            @Override\n+                            public void onClick(DialogInterface dialog, int which) {\n+                                // TODO Auto-generated method stub\n+                                level= editText.getText().toString().trim();\n+                            }\n+                        }).setNegativeButton(\"取消\", null).show();\n+            }\n+        });\n+}\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_main, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+        return super.onOptionsItemSelected(item);\n     }\n }"
+  } ],
+  "sha" : "2cbcc629988f387ba43becea285bed0c80814e0f",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2cbcc629988f387ba43becea285bed0c80814e0f",
+  "parents" : [ {
+    "sha" : "542d8b5092290bd55da95eee5a25ff88efdf9eda",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/542d8b5092290bd55da95eee5a25ff88efdf9eda",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/542d8b5092290bd55da95eee5a25ff88efdf9eda"
+  } ]
+}

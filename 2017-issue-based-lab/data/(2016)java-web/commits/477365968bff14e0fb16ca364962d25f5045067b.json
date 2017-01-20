@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "qiuwenqiol",
+    "id" : 14258741,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14258741?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qiuwenqiol",
+    "html_url" : "https://github.com/qiuwenqiol",
+    "followers_url" : "https://api.github.com/users/qiuwenqiol/followers",
+    "following_url" : "https://api.github.com/users/qiuwenqiol/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qiuwenqiol/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qiuwenqiol/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qiuwenqiol/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qiuwenqiol/orgs",
+    "repos_url" : "https://api.github.com/users/qiuwenqiol/repos",
+    "events_url" : "https://api.github.com/users/qiuwenqiol/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qiuwenqiol/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 45,
+    "additions" : 45,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "qiuwenqiol",
+    "id" : 14258741,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14258741?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qiuwenqiol",
+    "html_url" : "https://github.com/qiuwenqiol",
+    "followers_url" : "https://api.github.com/users/qiuwenqiol/followers",
+    "following_url" : "https://api.github.com/users/qiuwenqiol/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qiuwenqiol/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qiuwenqiol/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qiuwenqiol/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qiuwenqiol/orgs",
+    "repos_url" : "https://api.github.com/users/qiuwenqiol/repos",
+    "events_url" : "https://api.github.com/users/qiuwenqiol/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qiuwenqiol/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/477365968bff14e0fb16ca364962d25f5045067b",
+  "commit" : {
+    "author" : {
+      "name" : "qiuwenqiol",
+      "email" : "qiuwenqiol@163.com",
+      "date" : "2016-11-03T06:42:30Z"
+    },
+    "committer" : {
+      "name" : "qiuwenqiol",
+      "email" : "qiuwenqiol@163.com",
+      "date" : "2016-11-03T06:42:30Z"
+    },
+    "message" : "#5 提交代码",
+    "tree" : {
+      "sha" : "446c1a68c10bca4720d52e54a583c26d883894a3",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/446c1a68c10bca4720d52e54a583c26d883894a3"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/477365968bff14e0fb16ca364962d25f5045067b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/477365968bff14e0fb16ca364962d25f5045067b/comments",
+  "files" : [ {
+    "sha" : "f042ab8db014fd4fb8a35149b427ea6617a4caea",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902119/Se1414080902119filter.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/477365968bff14e0fb16ca364962d25f5045067b/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Se1414080902119filter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/477365968bff14e0fb16ca364962d25f5045067b/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Se1414080902119filter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Se1414080902119filter.java?ref=477365968bff14e0fb16ca364962d25f5045067b",
+    "patch" : "@@ -0,0 +1,45 @@\n+package edu.hzu.javaweb.labs.se1414080902119;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+@WebFilter(filterName=\"encodingFilter\",urlPatterns=\"/*\")\n+public class Se1414080902119filter implements Filter {\n+\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t\t\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t\tString localAddr = request.getLocalAddr();\n+\t\tif(\"127.0.0.1\".equals(localAddr))\n+\t\t{\n+\t\t\tSystem.out.println(\"本机请求\");\n+\t\t}\n+\t\telse\n+\t\t{\n+\t\t\tSystem.out.println(localAddr+\"请求\");\n+\t\t}\n+\t\tchain.doFilter(request, response);\n+\t\t\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t\t\n+\t}\n+\n+}"
+  } ],
+  "sha" : "477365968bff14e0fb16ca364962d25f5045067b",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/477365968bff14e0fb16ca364962d25f5045067b",
+  "parents" : [ {
+    "sha" : "fb742bdd92d4c3379a86bc9fc23e64ee29951db1",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/fb742bdd92d4c3379a86bc9fc23e64ee29951db1",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/fb742bdd92d4c3379a86bc9fc23e64ee29951db1"
+  } ]
+}

@@ -1,0 +1,71 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 69,
+    "additions" : 69,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1cd002e7e9e352f96de389c04b8eabe14567c9b6",
+  "commit" : {
+    "author" : {
+      "name" : "gremm",
+      "email" : "287433087.com",
+      "date" : "2016-10-15T09:34:53Z"
+    },
+    "committer" : {
+      "name" : "gremm",
+      "email" : "287433087.com",
+      "date" : "2016-10-15T09:34:53Z"
+    },
+    "message" : "Signed-off-by: gremm <287433087.com>",
+    "tree" : {
+      "sha" : "730edd60a963e5e411a486631114162f30f6a49f",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/730edd60a963e5e411a486631114162f30f6a49f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1cd002e7e9e352f96de389c04b8eabe14567c9b6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cd002e7e9e352f96de389c04b8eabe14567c9b6/comments",
+  "files" : [ {
+    "sha" : "7807855d48054f438e474fd5e751751fb529f47a",
+    "filename" : "labs/1414080902109/index.html",
+    "status" : "added",
+    "additions" : 51,
+    "deletions" : 0,
+    "changes" : 51,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cd002e7e9e352f96de389c04b8eabe14567c9b6/labs/1414080902109/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cd002e7e9e352f96de389c04b8eabe14567c9b6/labs/1414080902109/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902109/index.html?ref=1cd002e7e9e352f96de389c04b8eabe14567c9b6",
+    "patch" : "@@ -0,0 +1,51 @@\n+<!DOCTYPE html>\n+<html>\n+<head>\n+    <meta charset=\"utf-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE-edge\">\n+    <title>登录系统</title>\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t<script type=\"text/javascript\" src=\"index.js\"></script>\n+    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n+<style type=\"text/css\">\n+body,td,th {\n+\tcolor: #FF0000;\n+}\n+</style>\n+</head>\n+    <body background=\"../../../img/4.jpg\" >\n+<form class=\"form-horizontal\"  method=\"get\" >\n+\n+<div class=\"form-group\">\n+<label for=\"inputaccount\" class=\"col-sm-2 control-label\" style=\"font-size:20px\">帐号:</label>\n+<div class=\"col-sm-10\">\n+<input type=\"text\" class=\"form-control\" id=\"inputaccount\" style=\"width:200px\" placeholder=\"账号\">\n+</div>\n+</div>\n+\n+<div class=\"form-group\">\n+<label for=\"inputPassword\" class=\"col-sm-2 control-label\" style=\"font-size:20px\"> 密码:</label>\n+<div class=\"col-sm-10\">\n+<input type=\"password\" class=\"form-control\" id=\"inputPassword\" style=\"width:200px\" placeholder=\"123456\">\n+</div>\n+</div>\n+\n+<div class=\"form-group\">\n+<div class=\"col-sm-offset-2 col-sm-10\">\n+<div class=\"checkbox\">\n+<label>\n+<input type=\"checkbox\" size=\"8\">记住帐号\n+</label>\n+</div>\n+</div>\n+</div>\n+\n+<div class=\"form-group\">\n+<div class=\"col-sm-offset-2 col-sm-10\">\n+<input type=\"button\" class=\"btn btn-default\" value=\"登录\"/>\n+</div>\n+</div>\n+</form>\n+ </body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "d158e5b13c494717b9a14adb07483b5cc17c4a63",
+    "filename" : "labs/1414080902109/index.js",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cd002e7e9e352f96de389c04b8eabe14567c9b6/labs/1414080902109/index.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cd002e7e9e352f96de389c04b8eabe14567c9b6/labs/1414080902109/index.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902109/index.js?ref=1cd002e7e9e352f96de389c04b8eabe14567c9b6",
+    "patch" : "@@ -0,0 +1,15 @@\n+$(function(){\n+    var id;\n+\tvar password;\n+\t$(\"input[type=button]\").click(function(){\n+\t\tid=$(\"#inputaccount\").val();\n+\t\tpassword=$(\"#inputPassword\").val();\n+\t\tif(id==\"\"||password==\"\"){\n+\t\t\talert(\"你还没输入你的账号或密码\");\n+\t\t}else{\n+\t\t\t$.getJSON(\"success.json\",function(date){\n+\t\t\t\talert(date.msg);\n+\t\t\t})\n+\t\t}\n+\t});\n+})\n\\ No newline at end of file"
+  }, {
+    "sha" : "54a7af4abe9aa2197b6ce8d6d6043a6447855ac7",
+    "filename" : "labs/1414080902109/success.json",
+    "status" : "added",
+    "additions" : 3,
+    "deletions" : 0,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cd002e7e9e352f96de389c04b8eabe14567c9b6/labs/1414080902109/success.json",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cd002e7e9e352f96de389c04b8eabe14567c9b6/labs/1414080902109/success.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902109/success.json?ref=1cd002e7e9e352f96de389c04b8eabe14567c9b6",
+    "patch" : "@@ -0,0 +1,3 @@\n+{\n+\"msg\":\"保存成功\"\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "1cd002e7e9e352f96de389c04b8eabe14567c9b6",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cd002e7e9e352f96de389c04b8eabe14567c9b6",
+  "parents" : [ {
+    "sha" : "7604f7419f5a864bf8769d5820889e664907fba3",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7604f7419f5a864bf8769d5820889e664907fba3",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/7604f7419f5a864bf8769d5820889e664907fba3"
+  } ]
+}

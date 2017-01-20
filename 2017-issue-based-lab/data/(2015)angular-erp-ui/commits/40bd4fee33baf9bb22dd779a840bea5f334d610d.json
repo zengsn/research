@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 56,
+    "additions" : 56,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/40bd4fee33baf9bb22dd779a840bea5f334d610d",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-30T14:38:07Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-30T14:38:07Z"
+    },
+    "message" : "Merge pull request #381 from singlepep/master\n\n实验五",
+    "tree" : {
+      "sha" : "4c08193234019a55dd4ea91cee14bd96d6c61fc5",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/4c08193234019a55dd4ea91cee14bd96d6c61fc5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/40bd4fee33baf9bb22dd779a840bea5f334d610d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/40bd4fee33baf9bb22dd779a840bea5f334d610d/comments",
+  "files" : [ {
+    "sha" : "064378f18fa1677006ffa3274bc7f9948b9f5716",
+    "filename" : "works/1314080901237/index.html",
+    "status" : "modified",
+    "additions" : 56,
+    "deletions" : 0,
+    "changes" : 56,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/40bd4fee33baf9bb22dd779a840bea5f334d610d/works/1314080901237/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/40bd4fee33baf9bb22dd779a840bea5f334d610d/works/1314080901237/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901237/index.html?ref=40bd4fee33baf9bb22dd779a840bea5f334d610d",
+    "patch" : "@@ -38,6 +38,62 @@\n          <h1>Bootstrap starter template</h1>\n          <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>       \n        </div>\n+\n+<div class=\"container\">\n+    <div class=\"row col-lg-offset-2\">\n+        <form class=\"form-inline\" role=\"form\">\n+\n+            <div class=\"form-group row\">\n+                <div class=\"row\">\n+                    <label for=\"example1\">单位名称：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"UnitName\" id=\"example1\"/>\n+                     \n+                     <label for=\"example1\">收款方式：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"CollectMode\" id=\"example1\"/>\n+\n+                    <label for=\"example2\">收款日期：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\" CollectDay\" id=\"example2\"/>\n+\n+                     <label for=\"example2\">经手人：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"jingshouren\" id=\"example2\"/>\n+\n+                        <label for=\"example2\">收款金额：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanyue\" id=\"example2\"/>\n+\n+\n+                    <label for=\"example3\">收款账户：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"shoukuanzhanghu\" id=\"example3\"/>\n+                </div>\n+            </div>\n+            <br>\n+            <br>\n+\n+            <div class=\"form-group row\">\n+                <div class=\"row\">\n+                    <label for=\"example4\">银行账号：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\" yinhangzhnanghu\" id=\"example4\"/>\n+\n+                    <label for=\"example5\">状态：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"zhuangtai\" id=\"example5\"/>\n+\n+                    <label for=\"example2\">核销金额：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\" hexiaoyue\" id=\"example2\"/>\n+\n+                    <label for=\"example6\">备注：</label>\n+                    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"beizhu\" id=\"example6\"/>\n+                </div>\n+            </div>\n+\n+            <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n+                <button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\">\n+                    {{isHidden ? '提交' : '隐藏'}}\n+                </button>\n+            </div>\n+        \n+        </form>\n+    </div>\n+</div>\n+\n       \n      </div><!-- /.container -->\n       "
+  } ],
+  "sha" : "40bd4fee33baf9bb22dd779a840bea5f334d610d",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/40bd4fee33baf9bb22dd779a840bea5f334d610d",
+  "parents" : [ {
+    "sha" : "2c44cb22063fb918613b534c76e04a3f6ab594ef",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2c44cb22063fb918613b534c76e04a3f6ab594ef",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/2c44cb22063fb918613b534c76e04a3f6ab594ef"
+  }, {
+    "sha" : "2700498f27eeed5ae2530d7acde1976ab4281b2b",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2700498f27eeed5ae2530d7acde1976ab4281b2b",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/2700498f27eeed5ae2530d7acde1976ab4281b2b"
+  } ]
+}

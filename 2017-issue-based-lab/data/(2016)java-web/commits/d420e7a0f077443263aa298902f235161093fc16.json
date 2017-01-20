@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 70,
+    "additions" : 0,
+    "deletions" : 70
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/d420e7a0f077443263aa298902f235161093fc16",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T01:32:08Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T01:32:08Z"
+    },
+    "message" : "Delete index.jsp",
+    "tree" : {
+      "sha" : "ceb8829b8ad2aa4e22140d90b7189d00176453c5",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/ceb8829b8ad2aa4e22140d90b7189d00176453c5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/d420e7a0f077443263aa298902f235161093fc16",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/d420e7a0f077443263aa298902f235161093fc16/comments",
+  "files" : [ {
+    "sha" : "e55fb72a6b07c9517a2938d6e19166fcb1ae1eb2",
+    "filename" : "jweb/web/1414080902209/index.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 70,
+    "changes" : 70,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/75a5950829f7cd1ab18fc84297b8e8ac3c42677a/jweb/web/1414080902209/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/75a5950829f7cd1ab18fc84297b8e8ac3c42677a/jweb/web/1414080902209/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902209/index.jsp?ref=75a5950829f7cd1ab18fc84297b8e8ac3c42677a",
+    "patch" : "@@ -1,70 +0,0 @@\n-<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\"\n-    pageEncoding=\"utf-8\"%>\n- <%\n- String path = request.getContextPath();\n- String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n- %>\n-<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n-<html lang=\"zh-cn\">\n-<head>\n- <base href=\"<%=basePath%>\">\n- <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n- <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n-    <title>社团面试管理系统</title>\n-    <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n-</head>\n-<body>\n-\n-<div class=\"container\">\n-\n-           <h2 class=\"text-center\" style=\"margin-top: 100px\">Welcome to Interview Management System</h2>\n-            <p class=\"text-center\" >Now Time：<%= new java.util.Date() %></p>\n-           <div class=\"row\"  style=\"width:350px; margin:auto;height:150px;\">\n-           <form role=\"form\" id=\"login\">\n-           \n-           <div class=\"form-group\">\n-            <div class=\"has-feedback\" >\n-              <label for=\"exampleInputEmail1\">Email address</label>\n-              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Please enter your Account\">\n-              <span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span> \n-            </div>\n-           </div>\n-\n-           <div class=\"form-group\">\n-            <div class=\"has-feedback\" >\n-              <label for=\"exampleInputPassword1\">Password</label>\n-              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Please enter your Password\">\n-              <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span> \n-            </div>\n-           </div>\n-           <center>\n-  \t      <button type=\"submit\" class=\"btn btn-success\">Sign in</button>\n-  \t      \t\n-  \t\t</center>\n-          </form>\n-          </div>\n-       </div>\n-       \n-       <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-       <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script> \n-       <script>\n-      $( \"#login\" ).submit(function() {\n-         $.ajax({ \n-          dataType: \"html\", \n-          url: \"1414080902209\", \n-          type: \"post\",\n-           success: function(data){\n-             alert(data);\n-         },\n-          error: function (XMLHttpRequest, textStatus, errorThrown) { \n-           alert(\"error\"); \n-                                        } \n-\n-     });\n-       });\n-      </script>\n-      \n-\n-</body>\n-</html>\n-\t\n\\ No newline at end of file"
+  } ],
+  "sha" : "d420e7a0f077443263aa298902f235161093fc16",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d420e7a0f077443263aa298902f235161093fc16",
+  "parents" : [ {
+    "sha" : "75a5950829f7cd1ab18fc84297b8e8ac3c42677a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/75a5950829f7cd1ab18fc84297b8e8ac3c42677a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/75a5950829f7cd1ab18fc84297b8e8ac3c42677a"
+  } ]
+}

@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 123,
+    "additions" : 104,
+    "deletions" : 19
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/f5fc6296c4f2701b756f20918c994c364b5507d2",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-25T12:39:25Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-25T12:39:25Z"
+    },
+    "message" : "Merge pull request #831 from jinhaoxu/master\n\n#91 #154 -Lab5",
+    "tree" : {
+      "sha" : "22f7be1037c28468ed43fb072196e8afafdfb46a",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/22f7be1037c28468ed43fb072196e8afafdfb46a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/f5fc6296c4f2701b756f20918c994c364b5507d2",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f5fc6296c4f2701b756f20918c994c364b5507d2/comments",
+  "files" : [ {
+    "sha" : "6680cee8fcf5a9dc239380106a23cf848030280b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901138/Com1314080901138Activity.java",
+    "status" : "modified",
+    "additions" : 104,
+    "deletions" : 19,
+    "changes" : 123,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f5fc6296c4f2701b756f20918c994c364b5507d2/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901138/Com1314080901138Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f5fc6296c4f2701b756f20918c994c364b5507d2/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901138/Com1314080901138Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901138/Com1314080901138Activity.java?ref=f5fc6296c4f2701b756f20918c994c364b5507d2",
+    "patch" : "@@ -1,41 +1,126 @@\n package edu.hzuapps.androidworks.homeworks.com1314080901138;\n \n+import android.app.Activity;\n+import android.media.MediaPlayer;\n import android.os.Bundle;\n-import android.support.v7.app.ActionBarActivity;\n+import android.os.Environment;\n+import android.util.Log;\n import android.view.View;\n import android.widget.Button;\n+import android.widget.TextView;\n+import android.widget.Toast;\n \n-import edu.hzuapps.androidworks.R;\n-import edu.hzuapps.androidworks.homeworks.BackActivity;\n+import java.io.File;\n+import java.lang.*;\n \n-public class Com1314080901138Activity extends BackActivity {\n+public class Com1314080901138Activity extends Activity {\n+    private MediaPlayer mediaPlayer;//MediaPlayer����\n+    private boolean isPause = false;//�Ƿ���ͣ\n+    private File file;//Ҫ���ŵ��ļ�\n+    private TextView hint;//������ʾ��Ϣ���ı���\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_com1314080901138);\n-\n-        Button closeBtn = (Button) findViewById(R.id.button_close);\n-        closeBtn.setOnClickListener(new View.OnClickListener() {\n+        //��ȡ���ܰ�ť\n+        final Button button = (Button) findViewById(R.id.button);//����\n+        final Button button1 = (Button) findViewById(R.id.button2);//��ͣ\n+        final Button button2 = (Button) findViewById(R.id.button3);//ֹͣ\n+        hint = (TextView) findViewById(R.id.textView);\n+        if (!isFileExist()) {\n+            button.setEnabled(false);\n+        }\n+        mediaPlayer = MediaPlayer.create(this, R.raw.my);\n+        //��MediaPlayer��������¼�����������ʱ���¿�ʼ���ֲ���\n+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {\n+            @Override\n+            public void onCompletion(MediaPlayer mp) {\n+                play();\n+            }\n+        });\n+        //�Բ��Ű�ť�����¼�����\n+        button.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                play();\n+                if (isPause) {\n+                    button1.setText(\"��ͣ\");\n+                    isPause = false;\n+                }\n+                button1.setEnabled(true);\n+                button2.setEnabled(true);\n+                button.setEnabled(false);\n+            }\n+        });\n+        //����ͣ������ť����¼�������\n+        button1.setOnClickListener(new View.OnClickListener() {\n             @Override\n-            public void onClick(View view) {\n-                finish();\n+            public void onClick(View v) {\n+                if (mediaPlayer.isPlaying() && !isPause) {\n+                    mediaPlayer.pause();\n+                    isPause = true;\n+                    ((Button) v).setText(\"����\");\n+                    hint.setText(\"��ͣ������Ƶ....\");\n+                    button.setEnabled(true);\n+                } else {\n+                    mediaPlayer.start();\n+                    ((Button) v).setText(\"��ͣ\");\n+                    hint.setText(\"�������Ƶ....\");\n+                    button.setEnabled(false);\n+                }\n             }\n-        }); \n+        });\n+        //��ֹͣ��ť����¼�������\n+        button2.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                mediaPlayer.stop();\n+                hint.setText(\"ֹͣ������Ƶ...\");\n+                button1.setEnabled(false);\n+                button2.setEnabled(false);\n+                button.setEnabled(true);\n+            }\n+        });\n     }\n \n     @Override\n-    protected void onStart() {\n-        super.onStart();\n+    protected void onDestroy() {\n+        if (mediaPlayer.isPlaying()) {\n+            mediaPlayer.stop();\n+        }\n+        mediaPlayer.release();\n+        super.onDestroy();\n     }\n \n-    @Override\n-    protected void onPause() {\n-        super.onPause();\n+    //�ж��ļ��Ƿ����\n+    private boolean isFileExist() {\n+        file = new File(Environment.getExternalStorageDirectory() + File.separator + \"my.mp3\");//��ȡ�ⲿ�洢�е������ļ�\n+        if (file.exists()) {\n+            try {\n+                mediaPlayer = MediaPlayer.create(this, R.raw.my);\n+            } catch (Exception e) {\n+                e.printStackTrace();\n+            }\n+            Toast.makeText(this, \"file exist\", Toast.LENGTH_LONG).show();\n+            return true;\n+        } else {\n+            Toast.makeText(this, \"file don't exist\", Toast.LENGTH_LONG).show();\n+        }\n+        return false;\n     }\n \n-    @Override\n-    protected void onStop() {\n-        super.onStop();\n+    //�������ֵķ���\n+    private void play() {\n+        try {\n+            mediaPlayer.reset();//��������Ҫ���ŵ�����\n+            mediaPlayer = MediaPlayer.create(this, R.raw.my);\n+            mediaPlayer.start();//��������\n+            hint.setText(\"Music is starting\");\n+        } catch (Exception e) {\n+            e.printStackTrace();\n+            Log.e(\"err\", e.getMessage());\n+        }\n+        //return ;\n     }\n-}\n\\ No newline at end of file\n+}"
+  } ],
+  "sha" : "f5fc6296c4f2701b756f20918c994c364b5507d2",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f5fc6296c4f2701b756f20918c994c364b5507d2",
+  "parents" : [ {
+    "sha" : "c6160574c62286a484ca26693e3a15dc6a460b83",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c6160574c62286a484ca26693e3a15dc6a460b83",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/c6160574c62286a484ca26693e3a15dc6a460b83"
+  }, {
+    "sha" : "adc83c40ccc51d51f42000676ff931b1830d5c3d",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/adc83c40ccc51d51f42000676ff931b1830d5c3d",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/adc83c40ccc51d51f42000676ff931b1830d5c3d"
+  } ]
+}

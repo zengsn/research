@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 32,
+    "additions" : 0,
+    "deletions" : 32
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/924eff1db254b9c8827aca9cf59bab83697887da",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T01:31:25Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T01:31:25Z"
+    },
+    "message" : "Delete success.jsp",
+    "tree" : {
+      "sha" : "f972668321fa6d99716cf3c3082e346cc4c08af3",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/f972668321fa6d99716cf3c3082e346cc4c08af3"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/924eff1db254b9c8827aca9cf59bab83697887da",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/924eff1db254b9c8827aca9cf59bab83697887da/comments",
+  "files" : [ {
+    "sha" : "e44f8a676ee54c211da5270f615f97e140576528",
+    "filename" : "jweb/web/1414080902204/success.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 32,
+    "changes" : 32,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/544a1556dc7e666cef23f74e7ebd3ef196af4c0f/jweb/web/1414080902204/success.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/544a1556dc7e666cef23f74e7ebd3ef196af4c0f/jweb/web/1414080902204/success.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902204/success.jsp?ref=544a1556dc7e666cef23f74e7ebd3ef196af4c0f",
+    "patch" : "@@ -1,32 +0,0 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n-\n-<%@ page import=\"java.util.Date\" %>\n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n-\n-<!DOCTYPE HTML >\n-<html>\n-  <head> \n-    <title>My JSP 'success.jsp' starting page</title>\n-    <meta http-equiv=\"content-type\" content=\"text/html\"/>\n-    <style type=\"text/css\">\n-    p{color:blue;text-decoration: underline;font-size: 15px; }\n-    </style> \n-  </head>  \n-  <body>\n-  <%     Calendar cal = Calendar.getInstance();\n-\t    int year = cal.get(Calendar.YEAR);//获取年份\n-        int month=cal.get(Calendar.MONTH);//获取月份\n-        int day=cal.get(Calendar.DATE);//获取日\n-        int hour=cal.get(Calendar.HOUR);//小时\n-        int minute=cal.get(Calendar.MINUTE);//分           \n-        int second=cal.get(Calendar.SECOND);//秒\n-  \tresponse.setCharacterEncoding(\"UTF-8\");\n-  %>\n-  尊敬的：<p><%=request.getParameter(\"Username\") %></p>您于<%=year %>年<%=month+1 %>月<%=day %>日<%=hour%>时<%=minute %>分\n-  <%=second %>秒，成功开通手机深圳通业务，\n-  请持有效身份证前往营业厅领取您的专属SIM卡，并进行实名认证，感谢你对深圳通的支持！\n-  </body>\n-</html>"
+  } ],
+  "sha" : "924eff1db254b9c8827aca9cf59bab83697887da",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/924eff1db254b9c8827aca9cf59bab83697887da",
+  "parents" : [ {
+    "sha" : "544a1556dc7e666cef23f74e7ebd3ef196af4c0f",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/544a1556dc7e666cef23f74e7ebd3ef196af4c0f",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/544a1556dc7e666cef23f74e7ebd3ef196af4c0f"
+  } ]
+}

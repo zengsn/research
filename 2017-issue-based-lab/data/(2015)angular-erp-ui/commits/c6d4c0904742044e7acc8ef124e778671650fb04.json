@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zhonghanying",
+    "id" : 15098323,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098323?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhonghanying",
+    "html_url" : "https://github.com/zhonghanying",
+    "followers_url" : "https://api.github.com/users/zhonghanying/followers",
+    "following_url" : "https://api.github.com/users/zhonghanying/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhonghanying/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhonghanying/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhonghanying/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhonghanying/orgs",
+    "repos_url" : "https://api.github.com/users/zhonghanying/repos",
+    "events_url" : "https://api.github.com/users/zhonghanying/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhonghanying/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 13,
+    "additions" : 10,
+    "deletions" : 3
+  },
+  "author" : {
+    "login" : "zhonghanying",
+    "id" : 15098323,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098323?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhonghanying",
+    "html_url" : "https://github.com/zhonghanying",
+    "followers_url" : "https://api.github.com/users/zhonghanying/followers",
+    "following_url" : "https://api.github.com/users/zhonghanying/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhonghanying/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhonghanying/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhonghanying/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhonghanying/orgs",
+    "repos_url" : "https://api.github.com/users/zhonghanying/repos",
+    "events_url" : "https://api.github.com/users/zhonghanying/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhonghanying/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/c6d4c0904742044e7acc8ef124e778671650fb04",
+  "commit" : {
+    "author" : {
+      "name" : "zhonghanying",
+      "email" : "1344434474@qq.com",
+      "date" : "2015-12-01T00:58:28Z"
+    },
+    "committer" : {
+      "name" : "zhonghanying",
+      "email" : "1344434474@qq.com",
+      "date" : "2015-12-01T00:58:28Z"
+    },
+    "message" : "实验5",
+    "tree" : {
+      "sha" : "e5b9e34929a5a5483b7287f7e3378193368fad6f",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/e5b9e34929a5a5483b7287f7e3378193368fad6f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/c6d4c0904742044e7acc8ef124e778671650fb04",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c6d4c0904742044e7acc8ef124e778671650fb04/comments",
+  "files" : [ {
+    "sha" : "b9c8b9da3d494ad7368eb8446b22a06e3337bb3c",
+    "filename" : "works/1314080901246/js/Attendance.js",
+    "status" : "modified",
+    "additions" : 10,
+    "deletions" : 3,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/c6d4c0904742044e7acc8ef124e778671650fb04/works/1314080901246/js/Attendance.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/c6d4c0904742044e7acc8ef124e778671650fb04/works/1314080901246/js/Attendance.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901246/js/Attendance.js?ref=c6d4c0904742044e7acc8ef124e778671650fb04",
+    "patch" : "@@ -8,9 +8,9 @@\n +       // controller code would go here\n +        var Yuekaoqin = {\n             yuangongbianhao: '123',\n-            yuangongxingming: ' ',\n+            yuangongxingming: '1234',\n             yuefen: '123',\n-            shijiatianshu: '123',\n+            shijiatianshu: '1235',\n             bingjiatianshu: '123',\n             kuanggongtianshu:'123',\n             jiabantianshu:'123',\n@@ -20,7 +20,14 @@\n         $scope.data = Yuekaoqin;\n +    }\n +);\n-+\n++AttendanceModule.directive('liebiao',function(){\n+\treturn {\n+\trestrict:'AEC',\n+\ttemplate:\"<p ng-repeat='dd in data>'{{thedata.yuangongbianhao}} | {{thedata.yuangongxingming}} | {{thedata.shijiatianshu}} </p>\",\n+\n+    transclude:true \n+};\n+});\n +// use the myAppModule variable to\n +// configure the module with a filter\n +AttendanceModule.filter('stripDashes', function() {"
+  } ],
+  "sha" : "c6d4c0904742044e7acc8ef124e778671650fb04",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/c6d4c0904742044e7acc8ef124e778671650fb04",
+  "parents" : [ {
+    "sha" : "e799e3e68ce081d053eaeec0de52625e978d289b",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e799e3e68ce081d053eaeec0de52625e978d289b",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e799e3e68ce081d053eaeec0de52625e978d289b"
+  } ]
+}

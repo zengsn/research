@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 61,
+    "additions" : 61,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/aea9a2fec08e59d909912aa530339ed6098f58d7",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "陈子文",
+      "date" : "2016-10-29T10:28:20Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "陈子文",
+      "date" : "2016-10-29T10:28:20Z"
+    },
+    "message" : "#3 提交实验2",
+    "tree" : {
+      "sha" : "5abce2b29e9d7f4e31f45644afca5fbc2ab66225",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/5abce2b29e9d7f4e31f45644afca5fbc2ab66225"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/aea9a2fec08e59d909912aa530339ed6098f58d7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/aea9a2fec08e59d909912aa530339ed6098f58d7/comments",
+  "files" : [ {
+    "sha" : "b67e228933b74c49c19aab79cd812563818292ed",
+    "filename" : "labs/1414080902223/upload.jsp",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aea9a2fec08e59d909912aa530339ed6098f58d7/labs/1414080902223/upload.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aea9a2fec08e59d909912aa530339ed6098f58d7/labs/1414080902223/upload.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902223/upload.jsp?ref=aea9a2fec08e59d909912aa530339ed6098f58d7",
+    "patch" : "@@ -0,0 +1,61 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+  \t<meta charset=\"UTF-8\">\n+  \t<title>学生成绩查询登陆</title>\n+\t <!-- 新 Bootstrap 核心 CSS 文件 -->\n+     <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+ \n+     <!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+     <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+ \n+     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+     <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+ \n+     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+     <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+     \n+  </head>\n+  \n+  <body>\n+  \t<center>\n+\t<font color=red size=5><b>\n+\t<i>请输入你的学号和密码</b></i>\n+\t</font>\n+\t<hr>\n+\t<form action=\"result.jsp\" method=\"post\">\n+\t<table border=\"1\">\n+\t<tr><th bgcolor=\"MintCream\">学号</th><td>\n+\t<input type=\"text\" size=10 name=\"number\"></td></tr>\n+\t<tr><th bgcolor=\"MintCream\">密码</th><td>\n+\t<input type=\"password\" size=10 name=\"password\"></td></tr>\n+\t<tr><td colspan=\"2\" align=\"center\">\n+\t<input type=\"submit\" vaule=\"查询\"></td></tr>\n+\t</table>\n+\t</form>\n+\t<font color=\"red\">\n+\t<%\n+\tString error=request.getParameter(\"errortype\");\n+\tif(error!=null)\n+\t{\n+\tint errortype;\n+\terrortype=Integer.parseInt(error);\n+\tswitch(errortype)\n+\t{\n+\tcase 1:out.println(\"请输入学号!\");break;\n+\tcase 2:out.println(\"请输入密码!\");break;\n+\tcase 3:out.println(\"搞错,没有此人!\");break;\n+\tcase 4:out.println(\"密码错误!\");break;\n+\tdefault:\n+\t}\n+\t}\n+\t%>\n+\t</font>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "aea9a2fec08e59d909912aa530339ed6098f58d7",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/aea9a2fec08e59d909912aa530339ed6098f58d7",
+  "parents" : [ {
+    "sha" : "202da4a0fd4ec2e8a7953bc1dc30b9b5447599ea",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/202da4a0fd4ec2e8a7953bc1dc30b9b5447599ea",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/202da4a0fd4ec2e8a7953bc1dc30b9b5447599ea"
+  } ]
+}

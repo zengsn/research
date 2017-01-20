@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "swindy1",
+    "id" : 18484619,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18484619?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/swindy1",
+    "html_url" : "https://github.com/swindy1",
+    "followers_url" : "https://api.github.com/users/swindy1/followers",
+    "following_url" : "https://api.github.com/users/swindy1/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/swindy1/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/swindy1/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/swindy1/subscriptions",
+    "organizations_url" : "https://api.github.com/users/swindy1/orgs",
+    "repos_url" : "https://api.github.com/users/swindy1/repos",
+    "events_url" : "https://api.github.com/users/swindy1/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/swindy1/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 181,
+    "additions" : 181,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "swindy1",
+    "id" : 18484619,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18484619?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/swindy1",
+    "html_url" : "https://github.com/swindy1",
+    "followers_url" : "https://api.github.com/users/swindy1/followers",
+    "following_url" : "https://api.github.com/users/swindy1/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/swindy1/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/swindy1/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/swindy1/subscriptions",
+    "organizations_url" : "https://api.github.com/users/swindy1/orgs",
+    "repos_url" : "https://api.github.com/users/swindy1/repos",
+    "events_url" : "https://api.github.com/users/swindy1/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/swindy1/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1cb52070c5155617fd7a5457ff26d225fab7340e",
+  "commit" : {
+    "author" : {
+      "name" : "swindy",
+      "email" : "1330663837@qq.com",
+      "date" : "2016-11-21T01:34:15Z"
+    },
+    "committer" : {
+      "name" : "swindy",
+      "email" : "1330663837@qq.com",
+      "date" : "2016-11-21T01:34:15Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "de690bc3f6197581a7383d38c163810d3cf5220d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/de690bc3f6197581a7383d38c163810d3cf5220d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1cb52070c5155617fd7a5457ff26d225fab7340e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cb52070c5155617fd7a5457ff26d225fab7340e/comments",
+  "files" : [ {
+    "sha" : "f8f49c40782cbf6d888a0f32fd8429a5203217d4",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902219/Message.java",
+    "status" : "added",
+    "additions" : 74,
+    "deletions" : 0,
+    "changes" : 74,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cb52070c5155617fd7a5457ff26d225fab7340e/jweb/src/edu/hzu/javaweb/labs/se1414080902219/Message.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cb52070c5155617fd7a5457ff26d225fab7340e/jweb/src/edu/hzu/javaweb/labs/se1414080902219/Message.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902219/Message.java?ref=1cb52070c5155617fd7a5457ff26d225fab7340e",
+    "patch" : "@@ -0,0 +1,74 @@\n+\n+public class Message {\n+\t    //题目名称\n+\t\tprivate String titleName;\n+\t\t//题目年份\n+\t\tprivate String age;\n+\t\t//题目来源\n+\t\tprivate String source;\n+\t\t//所属教研室\n+\t\tprivate String teachAndResearch;\n+\t\t//指导教师\n+\t    private String teacher;\n+\t    //限选人数\n+\t    private String num;\n+\n+\t    public Message(String titleName,String age,String source,String teachAndResearch,String teacher,String num)\n+\t    {\n+\t    \tthis.titleName = titleName;\n+\t    \tthis.age = age;\n+\t    \tthis.source = source;\n+\t    \tthis.teachAndResearch = teachAndResearch;\n+\t    \tthis.teacher = teacher;\n+\t    \tthis.num = num;\n+\t    }\n+\n+\t\tpublic void setTitleName(String titleName) {\n+\t\t\tthis.titleName = titleName;\n+\t\t}\n+\n+\t\tpublic String getAge() {\n+\t\t\treturn age;\n+\t\t}\n+\n+\t\tpublic void setAge(String age) {\n+\t\t\tthis.age = age;\n+\t\t}\n+\n+\t\tpublic String getSource() {\n+\t\t\treturn source;\n+\t\t}\n+\n+\t\tpublic void setSource(String source) {\n+\t\t\tthis.source = source;\n+\t\t}\n+\n+\t\tpublic String getTeachAndResearch() {\n+\t\t\treturn teachAndResearch;\n+\t\t}\n+\n+\t\tpublic void setTeachAndResearch(String teachAndResearch) {\n+\t\t\tthis.teachAndResearch = teachAndResearch;\n+\t\t}\n+\n+\t\tpublic String getTeacher() {\n+\t\t\treturn teacher;\n+\t\t}\n+\n+\t\tpublic void setTeacher(String teacher) {\n+\t\t\tthis.teacher = teacher;\n+\t\t}\n+\n+\t\tpublic String getNum() {\n+\t\t\treturn num;\n+\t\t}\n+\n+\t\tpublic void setNum(String num) {\n+\t\t\tthis.num = num;\n+\t\t}\n+\n+\t\tpublic String getTitleName() {\n+\t\t\treturn titleName;\n+\t\t}\n+\n+}"
+  }, {
+    "sha" : "53046c57870590cac6f5112c518e80586d258442",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902219/MessageShow.java",
+    "status" : "added",
+    "additions" : 53,
+    "deletions" : 0,
+    "changes" : 53,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cb52070c5155617fd7a5457ff26d225fab7340e/jweb/src/edu/hzu/javaweb/labs/se1414080902219/MessageShow.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cb52070c5155617fd7a5457ff26d225fab7340e/jweb/src/edu/hzu/javaweb/labs/se1414080902219/MessageShow.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902219/MessageShow.java?ref=1cb52070c5155617fd7a5457ff26d225fab7340e",
+    "patch" : "@@ -0,0 +1,53 @@\n+\n+\n+import java.io.IOException;\n+import java.util.ArrayList;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+/**\n+ * Servlet implementation class MessageShow\n+ */\n+@WebServlet(\"/MessageShow\")\n+public class MessageShow extends HttpServlet {\n+\tArrayList<Message> MessageList=new ArrayList<Message>();\n+\tprivate static final long serialVersionUID = 1L;\n+\n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public MessageShow() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tresponse.setCharacterEncoding(\"utf-8\");\n+\n+\t\tMessageList.add(new Message(\"基于Python的网络爬虫\",\"2016\",\"教师命题\",\"软件教研室\",\"AAA\",\"3\"));\n+\t\tMessageList.add(new Message(\"红外感应实现教室照明智能控制\",\"2016\",\"教师命题\",\"硬件教研室\",\"BBB\",\"2\"));\n+\t\tMessageList.add(new Message(\"基于.NETMVC的自动推荐商城\",\"2016\",\"教师命题\",\"软件教研室\",\"CCC\",\"2\"));\n+\t\tMessageList.add(new Message(\"大数据分析算法\",\"2016\",\"教师命题\",\"网络教研室\",\"DDD\",\"3\"));\n+\n+        request.setAttribute(\"List\", MessageList);\n+\t\trequest.getRequestDispatcher(\"/SelectMessage.jsp\").forward(request, response);\n+\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+}"
+  }, {
+    "sha" : "fb0c0ceeef9c48c323ae094da691fe8ea6ee7dbd",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902219/SelectMessage.jsp",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cb52070c5155617fd7a5457ff26d225fab7340e/jweb/src/edu/hzu/javaweb/labs/se1414080902219/SelectMessage.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cb52070c5155617fd7a5457ff26d225fab7340e/jweb/src/edu/hzu/javaweb/labs/se1414080902219/SelectMessage.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902219/SelectMessage.jsp?ref=1cb52070c5155617fd7a5457ff26d225fab7340e",
+    "patch" : "@@ -0,0 +1,54 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+\n+    <title>SelectMessage</title>\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\"/>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+  </head>\n+  <c:if test=\"${swindy=='1234'}\">\n+  <p>Hello,swindy!</p>\n+  </c:if>\n+  <c:if test=\"${swindy==null}\">\n+  <% response.sendRedirect(\"login.jsp\");%>\n+  </c:if>\n+  <body>\n+    <div>\n+    <table class=\"table table-striped\">\n+  <caption>论文题目</caption>\n+  <thead>\n+    <tr>\n+      <th>题目名称</th>\n+      <th>题目年份</th>\n+      <th>题目来源</th>\n+      <th>所属教研室</th>\n+      <th>指导教师</th>\n+      <th>限选人数</th>\n+    </tr>\n+  </thead>\n+  <tbody>\n+   <c:forEach var=\"message\" items=\"${List}\">\n+    <tr>\n+      <td><c:out value=\"${message.titleName}\" default=\"未知\"></c:out></td>\n+      <td><c:out value=\"${message.age}\" default=\"未知\"></c:out></td>\n+      <td><c:out value=\"${message.source}\" default=\"未知\"></c:out></td>\n+      <td><c:out value=\"${message.teachAndResearch}\" default=\"未知\"></c:out></td>\n+      <td><c:out value=\"${message.teacher}\" default=\"未知\"></c:out></td>\n+      <td><c:out value=\"${message.num}\" default=\"未知\"></c:out></td>\n+\n+\n+    </tr>\n+    </c:forEach>\n+  </tbody>\n+</table>\n+    </div>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "1cb52070c5155617fd7a5457ff26d225fab7340e",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cb52070c5155617fd7a5457ff26d225fab7340e",
+  "parents" : [ {
+    "sha" : "5c018f19b84cb139040dca45f5ca6c1fa908514c",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5c018f19b84cb139040dca45f5ca6c1fa908514c",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/5c018f19b84cb139040dca45f5ca6c1fa908514c"
+  } ]
+}

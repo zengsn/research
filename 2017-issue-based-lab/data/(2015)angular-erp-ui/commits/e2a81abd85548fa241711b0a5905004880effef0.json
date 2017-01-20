@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 82,
+    "additions" : 66,
+    "deletions" : 16
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e2a81abd85548fa241711b0a5905004880effef0",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-30T14:47:25Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-30T14:47:25Z"
+    },
+    "message" : "Merge pull request #369 from hzukondy/master\n\n实验五",
+    "tree" : {
+      "sha" : "9301692901f91b7ebf11a342a02f7e60c15e9560",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/9301692901f91b7ebf11a342a02f7e60c15e9560"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/e2a81abd85548fa241711b0a5905004880effef0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e2a81abd85548fa241711b0a5905004880effef0/comments",
+  "files" : [ {
+    "sha" : "60552a968747da8ddc7220b634433ce61bd06bca",
+    "filename" : "works/1314080901128/index.html",
+    "status" : "modified",
+    "additions" : 36,
+    "deletions" : 7,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e2a81abd85548fa241711b0a5905004880effef0/works/1314080901128/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e2a81abd85548fa241711b0a5905004880effef0/works/1314080901128/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901128/index.html?ref=e2a81abd85548fa241711b0a5905004880effef0",
+    "patch" : "@@ -1,4 +1,4 @@\n-  <!DOCTYPE html>\n+<!DOCTYPE html>\n <html ng-app=\"workersModule\"> <head lang=\"en\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n@@ -19,8 +19,13 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n-     <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n-     <script src=\"js/workersModule.js\"></script>\n+     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+     <script src=\"js/workers.js\"></script>\n+ \n+\t<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n+    <!--<script src=\"../../lib/angular-1.4.5/docs/components/jquery-2.1.1\"></script> -->\n+    <!-- Include all compiled plugins (below), or include individual files as needed -->\n+    <!--<script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script> -->\n   </head>\n   <body ng-controller=\"MyFilterDemoCtrl\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n@@ -52,10 +57,34 @@\n       </div>\n \n     </div><!-- /.container -->\n+\t<table class=\"table\">\n+\t\t<caption class=\"text-center\">在岗员工信息</caption>\n+\t\t\t<thead>\n+\t\t\t\t<tr>\n+\t\t\t\t\t<th>编号</th>\n+\t\t\t\t\t<th>员工编号</th>\n+\t\t\t\t\t<th>姓名</th>\n+\t\t\t\t\t<th>性别</th>\n+\t\t\t\t\t<th>身份证号</th>\n+\t\t\t\t\t<th>地址</th>\n+\t\t\t\t\t<th>手机</th>\n+\t\t\t\t\t<th>职位</th>\n+\t\t\t\t</tr>\n+\t\t\t</thead>\n+\t\t<tbody  ng-repeat=\"worker in data.workers\">\n+\t\t\t\t<tr>\n+\t\t\t\t\t\t<td>{{worker.number}}</td>\n+\t\t\t\t\t\t<td>{{worker.worker_no}}</td>\n+\t\t\t\t\t\t<td>{{worker.name}}</td>\n+\t\t\t\t\t\t<td>{{worker.sex}}</td>\n+\t\t\t\t\t\t<td>{{worker.id_card}}</td>\n+\t\t\t\t\t\t<td>{{worker.address}}</td>\n+\t\t\t\t\t\t<td>{{worker.phone_number}}</td>\n+\t\t\t\t\t\t<td>{{worker.post}}</td>\n+\t\t\t\t</tr>\n \n-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n-    <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n-    <!-- Include all compiled plugins (below), or include individual files as needed -->\n-    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+\t\t</tbody>\n+\t</table>\n+\t\n   </body>\n </html>"
+  }, {
+    "sha" : "33588ec321744a84665c8e956bf3c078db263645",
+    "filename" : "works/1314080901128/js/workers.js",
+    "status" : "modified",
+    "additions" : 30,
+    "deletions" : 9,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e2a81abd85548fa241711b0a5905004880effef0/works/1314080901128/js/workers.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e2a81abd85548fa241711b0a5905004880effef0/works/1314080901128/js/workers.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901128/js/workers.js?ref=e2a81abd85548fa241711b0a5905004880effef0",
+    "patch" : "@@ -5,15 +5,36 @@ var myAppModule = angular.module('workersModule', []);\n // use the myAppModule variable to\n // configure the module with a controller\n myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n-\t var workers = {\n-            no: '1',\n-            worker_no:'1',\n-            name:'chenzhengang',\n-            sex:'f',\n-            id_card:'4415210000000000001234',\n-            address:'gd',\n-            phone_number:'13888888888',\n-            post:'manager'\n+\t var someData = {\n+            \"workers\":[\n+            {\n+            \"number\": '1',\n+            \"worker_no\":'201501',\n+            \"name\":'chenzhengang',\n+            \"sex\":'f',\n+            \"id_card\":'4415210000000000001234',\n+            \"address\":'gd',\n+            \"phone_number\":'13888888881',\n+            \"post\":'manager1'},\n+            {\n+            \"number\": '2',\n+            \"worker_no\":'201502',\n+            \"name\":'bcd',\n+            \"sex\":'f',\n+            \"id_card\":'4415210000000000001235',\n+            \"address\":'gd',\n+            \"phone_number\":'13888888882',\n+            \"post\":'manager'},\n+            {\n+            \"number\": '3',\n+            \"worker_no\":'201503',\n+            \"name\":'abc',\n+            \"sex\":'m',\n+            \"id_card\":'4415210000000000001236',\n+            \"address\":'gd',\n+            \"phone_number\":'13888888883',\n+            \"post\":'woker'}\n+            ]\n         };\n         $scope.data = someData;\n        // controller code would go here"
+  } ],
+  "sha" : "e2a81abd85548fa241711b0a5905004880effef0",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e2a81abd85548fa241711b0a5905004880effef0",
+  "parents" : [ {
+    "sha" : "6727b720c7eb21622b8593b8a882abbe843d7501",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/6727b720c7eb21622b8593b8a882abbe843d7501",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/6727b720c7eb21622b8593b8a882abbe843d7501"
+  }, {
+    "sha" : "0b81a37bf337e3378262fa2938a6e738f61cdf9f",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0b81a37bf337e3378262fa2938a6e738f61cdf9f",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0b81a37bf337e3378262fa2938a6e738f61cdf9f"
+  } ]
+}

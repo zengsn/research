@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "DarlieToothpaste",
+    "id" : 22366893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22366893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/DarlieToothpaste",
+    "html_url" : "https://github.com/DarlieToothpaste",
+    "followers_url" : "https://api.github.com/users/DarlieToothpaste/followers",
+    "following_url" : "https://api.github.com/users/DarlieToothpaste/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/DarlieToothpaste/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/DarlieToothpaste/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/DarlieToothpaste/subscriptions",
+    "organizations_url" : "https://api.github.com/users/DarlieToothpaste/orgs",
+    "repos_url" : "https://api.github.com/users/DarlieToothpaste/repos",
+    "events_url" : "https://api.github.com/users/DarlieToothpaste/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/DarlieToothpaste/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 107,
+    "additions" : 107,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "DarlieToothpaste",
+    "id" : 22366893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22366893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/DarlieToothpaste",
+    "html_url" : "https://github.com/DarlieToothpaste",
+    "followers_url" : "https://api.github.com/users/DarlieToothpaste/followers",
+    "following_url" : "https://api.github.com/users/DarlieToothpaste/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/DarlieToothpaste/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/DarlieToothpaste/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/DarlieToothpaste/subscriptions",
+    "organizations_url" : "https://api.github.com/users/DarlieToothpaste/orgs",
+    "repos_url" : "https://api.github.com/users/DarlieToothpaste/repos",
+    "events_url" : "https://api.github.com/users/DarlieToothpaste/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/DarlieToothpaste/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb",
+  "commit" : {
+    "author" : {
+      "name" : "Cai",
+      "email" : "754181906@qq.com",
+      "date" : "2016-11-03T09:55:29Z"
+    },
+    "committer" : {
+      "name" : "Cai",
+      "email" : "754181906@qq.com",
+      "date" : "2016-11-03T09:55:29Z"
+    },
+    "message" : "。。",
+    "tree" : {
+      "sha" : "989202793490af5bbadca1a91d685858eb984c9d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/989202793490af5bbadca1a91d685858eb984c9d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb/comments",
+  "files" : [ {
+    "sha" : "04b10bb78161fe6582b0b3de07974d30527e623f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902232/EncodingFilter.java",
+    "status" : "added",
+    "additions" : 36,
+    "deletions" : 0,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb/jweb/src/edu/hzu/javaweb/labs/se1414080902232/EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb/jweb/src/edu/hzu/javaweb/labs/se1414080902232/EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902232/EncodingFilter.java?ref=8f78cc5f822e2c238ab0b649f99171b5d6dd46fb",
+    "patch" : "@@ -0,0 +1,36 @@\n+package edu.hzu.javaweb.labs.se1414080902232;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+@WebFilter(filterName = \"EncodingFilter\", urlPatterns = \"/*\")\n+public class EncodingFilter implements Filter {\n+\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest arg0, ServletResponse arg1,\n+\t\t\tFilterChain arg2) throws IOException, ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t\targ0.setCharacterEncoding(\"UTF-8\");\n+\t\targ1.setCharacterEncoding(\"UTF-8\");\n+\t\targ2.doFilter(arg0, arg1);\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig arg0) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "73821d29594b6cdcaf7c448bd45ef210315a4d9f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902232/LoginFilter.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb/jweb/src/edu/hzu/javaweb/labs/se1414080902232/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb/jweb/src/edu/hzu/javaweb/labs/se1414080902232/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902232/LoginFilter.java?ref=8f78cc5f822e2c238ab0b649f99171b5d6dd46fb",
+    "patch" : "@@ -0,0 +1,45 @@\n+﻿package edu.hzu.javaweb.labs.se1414080902232;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+@WebFilter(filterName = \"LoginFilter\", urlPatterns = \"/*\")\n+public class LoginFilter implements Filter {\n+\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest arg0, ServletResponse arg1,\n+\t\t\tFilterChain arg2) throws IOException, ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t\t HttpServletRequest req = (HttpServletRequest) arg0;   \n+\t     HttpServletResponse res = (HttpServletResponse) arg1;   \n+\t  \n+\t     HttpSession session = req.getSession();   \n+\t    if (session.getAttribute(\"username\") != null) {//µÇÂ¼ºó²ÅÄÜ·ÃÎÊ   \n+\t         arg2.doFilter(arg0, arg1);   \n+\t     } else {   \n+\t         res.sendRedirect(\"../failure.jsp\");   \n+\t     }   \n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig arg0) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "9585d696f4aee5051b71a9f8bcb6069d91ae58d5",
+    "filename" : "jweb/web/1414080902232/No_login.jsp",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb/jweb/web/1414080902232/No_login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb/jweb/web/1414080902232/No_login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902232/No_login.jsp?ref=8f78cc5f822e2c238ab0b649f99171b5d6dd46fb",
+    "patch" : "@@ -0,0 +1,26 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"ISO-8859-1\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'failure.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\n+\n+  </head>\n+  \n+  <body>\n+     请先登录您的账号。\n+  </body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "8f78cc5f822e2c238ab0b649f99171b5d6dd46fb",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb",
+  "parents" : [ {
+    "sha" : "837c38d3888e4e27d61484197bc2e8add34b1773",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/837c38d3888e4e27d61484197bc2e8add34b1773",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/837c38d3888e4e27d61484197bc2e8add34b1773"
+  } ]
+}

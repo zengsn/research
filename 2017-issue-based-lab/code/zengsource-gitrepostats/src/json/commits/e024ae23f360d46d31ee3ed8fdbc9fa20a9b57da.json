@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "ZaakLim",
+    "id" : 17907273,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17907273?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ZaakLim",
+    "html_url" : "https://github.com/ZaakLim",
+    "followers_url" : "https://api.github.com/users/ZaakLim/followers",
+    "following_url" : "https://api.github.com/users/ZaakLim/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ZaakLim/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ZaakLim/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ZaakLim/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ZaakLim/orgs",
+    "repos_url" : "https://api.github.com/users/ZaakLim/repos",
+    "events_url" : "https://api.github.com/users/ZaakLim/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ZaakLim/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 114,
+    "additions" : 72,
+    "deletions" : 42
+  },
+  "author" : {
+    "login" : "ZaakLim",
+    "id" : 17907273,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17907273?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ZaakLim",
+    "html_url" : "https://github.com/ZaakLim",
+    "followers_url" : "https://api.github.com/users/ZaakLim/followers",
+    "following_url" : "https://api.github.com/users/ZaakLim/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ZaakLim/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ZaakLim/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ZaakLim/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ZaakLim/orgs",
+    "repos_url" : "https://api.github.com/users/ZaakLim/repos",
+    "events_url" : "https://api.github.com/users/ZaakLim/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ZaakLim/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/e024ae23f360d46d31ee3ed8fdbc9fa20a9b57da",
+  "commit" : {
+    "author" : {
+      "name" : "ZaakLim",
+      "email" : "245500710@qq.com",
+      "date" : "2016-05-08T08:03:47Z"
+    },
+    "committer" : {
+      "name" : "ZaakLim",
+      "email" : "245500710@qq.com",
+      "date" : "2016-05-08T08:03:47Z"
+    },
+    "message" : "#90 #91 #82 实验4+实验5",
+    "tree" : {
+      "sha" : "336e1e215144d93f1e71e6c357a884db74a04e40",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/336e1e215144d93f1e71e6c357a884db74a04e40"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/e024ae23f360d46d31ee3ed8fdbc9fa20a9b57da",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e024ae23f360d46d31ee3ed8fdbc9fa20a9b57da/comments",
+  "files" : [ {
+    "sha" : "c5e6bb4de192cfeb90e36a3d48af887ea18a924d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/Net1314080903125Activity.java",
+    "status" : "modified",
+    "additions" : 72,
+    "deletions" : 42,
+    "changes" : 114,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/e024ae23f360d46d31ee3ed8fdbc9fa20a9b57da/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/Net1314080903125Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/e024ae23f360d46d31ee3ed8fdbc9fa20a9b57da/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/Net1314080903125Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903125/Net1314080903125Activity.java?ref=e024ae23f360d46d31ee3ed8fdbc9fa20a9b57da",
+    "patch" : "@@ -21,94 +21,124 @@\n \n public class Net1314080903125Activity extends AppCompatActivity {\n \n-    private static int CAMERA_REQUEST_CODE = 1;\n-    private static int GALLERY_REQUEST_CODE = 2;\n+    private static int CAMERA_REQUEST_CODE = 1;    //摄像头请求码\n+    private static int GALLERY_REQUEST_CODE = 2;   //图库请求码\n+    private static int CROP_REQUEST_CODE=3;        //裁剪器请求码\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.net1314080903125);\n \n \n-        Button btn_camera = (Button) findViewById(R.id.btn_camera);\n+        Button btn_camera = (Button) findViewById(R.id.btn_camera); //摄像头按钮\n         btn_camera.setOnClickListener(new View.OnClickListener() {\n             public void onClick(View v) {\n-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);\n+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);//打开拍照界面\n                 startActivityForResult(intent, CAMERA_REQUEST_CODE);\n             }\n         });\n \n-        Button btn_gallery = (Button)findViewById(R.id.btn_gallery);\n+        Button btn_gallery = (Button)findViewById(R.id.btn_gallery);  //图库按钮\n         btn_gallery.setOnClickListener(new View.OnClickListener(){\n             public void onClick(View v){\n-                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);\n-                intent.setType(\"image/*\");\n+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);   //打开图库界面\n+                intent.setType(\"image/*\");    //文件类型\n                 startActivityForResult(intent, GALLERY_REQUEST_CODE);\n             }\n         });\n     }\n-    private Uri saveBitmap(Bitmap bm)\n+    private Uri saveBitmap(Bitmap bm)  //将Bitmap数据保存到sd卡\n     {\n-        File tmpDir = new File(Environment.getExternalStorageDirectory() +\"/com.zaak.zaaklim\");\n-        if(!tmpDir.exists())\n+        File tmpDir = new File(Environment.getExternalStorageDirectory() + \"/zaak\");    //获取sd卡中的路径\n+        if (!tmpDir.exists())  //判断路径是否存在\n         {\n-            tmpDir.mkdir();\n+            tmpDir.mkdir();  //创建文件夹\n         }\n-        File img = new File(tmpDir.getAbsolutePath() +\"zaaklim.png\");\n-        try{\n-            FileOutputStream fos = new FileOutputStream(img);\n-            bm.compress(Bitmap.CompressFormat.PNG,85,fos);\n-            fos.flush();\n-            fos.close();\n-            return Uri.fromFile(img);\n-        }catch (FileNotFoundException e){\n-            e.printStackTrace();\n-            return null;\n-        }catch(IOException e){\n-            e.printStackTrace();\n-            return null;\n+\n+            File img = new File(tmpDir.getAbsolutePath() + \"zaak.png\");   //创建图像文件对象\n+            try {\n+                FileOutputStream fos = new FileOutputStream(img); //获取输出流\n+                bm.compress(Bitmap.CompressFormat.PNG, 85, fos);    //将数据写入输出流\n+                fos.flush();  //刷新\n+                fos.close();\n+                return Uri.fromFile(img);   //返回File类型Uri\n+            } catch (FileNotFoundException e) {\n+                e.printStackTrace();\n+                return null;\n+            } catch (IOException e) {\n+                e.printStackTrace();\n+                return null;\n+            }\n         }\n-    }\n \n-    private Uri convertUri(Uri uri)\n+\n+    private Uri convertUri(Uri uri)   //转换Uri\n     {\n         InputStream is = null;\n-        try{\n-            is = getContentResolver().openInputStream(uri);\n-            Bitmap bitmap = BitmapFactory.decodeStream(is);\n+        try {\n+            is = getContentResolver().openInputStream(uri);  //获取InputStream\n+            Bitmap bitmap = BitmapFactory.decodeStream(is);  //将InputStream转换成bitmap\n             is.close();\n             return saveBitmap(bitmap);\n-        }catch (FileNotFoundException e){\n+        } catch (FileNotFoundException e) {\n             e.printStackTrace();\n             return null;\n-        }catch (IOException e){\n+        } catch (IOException e) {\n             e.printStackTrace();\n             return null;\n         }\n     }\n \n+\n+\n+    private void startImageZoom(Uri uri){   //图像裁剪功能\n+        Intent intent = new Intent(\"com.android.camera.action.CROP\");\n+        intent.setDataAndType(uri,\"image/*\");  //数据通过uri传递；类型为image\n+        intent.putExtra(\"crop\",\"true\");\n+        intent.putExtra(\"aspectX\",1);\n+        intent.putExtra(\"aspectY\",1);   //宽高的比例\n+        intent.putExtra(\"outputX\",150);\n+        intent.putExtra(\"outputY\",150);\n+        intent.putExtra(\"return-data\",true);\n+        startActivityForResult(intent,CROP_REQUEST_CODE);   //启动图像裁剪界面\n+    }\n+\n     @Override\n-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {\n-        if (requestCode == CAMERA_REQUEST_CODE) {\n-            if (data == null) {\n+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {   //对拍照数据的处理\n+        if (requestCode == CAMERA_REQUEST_CODE) {  //判断请求码\n+            if (data == null) {    //取消\n                 return;\n             } else {\n-                Bundle extras = data.getExtras();\n+                Bundle extras = data.getExtras();   //取出数据\n                 if (extras != null) {\n-                    Bitmap bm = extras.getParcelable(\"data\");\n-                    ImageView imageView = (ImageView) findViewById(R.id.imageView);\n-                    imageView.setImageBitmap(bm);\n+                    Bitmap bm = extras.getParcelable(\"data\");   //保存拍摄数据\n+//                    ImageView imageView = (ImageView) findViewById(R.id.imageView);\n+//                    imageView.setImageBitmap(bm);   //显示数据（imageView）\n+                    Uri uri = saveBitmap(bm);      //获取bm的uri\n+                    startImageZoom(uri);\n                 }\n             }\n-        } else if (requestCode == GALLERY_REQUEST_CODE) {\n+        }\n+        else if (requestCode == GALLERY_REQUEST_CODE) {\n             if (data == null) {\n                 return;\n             }\n             Uri uri;\n-            uri = data.getData();\n-            Toast.makeText(Net1314080903125Activity.this, uri.toString(), Toast.LENGTH_LONG).show();\n+            uri = data.getData();   //所选图片对应的Uri\n+            Uri fileUri = convertUri(uri);  //转换uri\n+            startImageZoom(fileUri);\n \n         }\n-    }\n+        else if (requestCode == CROP_REQUEST_CODE){  //获取图像数据并显示在imageView\n+            if(data == null){\n+                return;\n+            }\n+            Bundle extras = data.getExtras();\n+            Bitmap bm = extras.getParcelable(\"data\");\n+            ImageView imageView = (ImageView)findViewById(R.id.imageView);\n+            imageView.setImageBitmap(bm);\n+        }\n+   }\n \n }"
+  } ],
+  "sha" : "e024ae23f360d46d31ee3ed8fdbc9fa20a9b57da",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e024ae23f360d46d31ee3ed8fdbc9fa20a9b57da",
+  "parents" : [ {
+    "sha" : "16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/16e9ca7808d00c8ac1c58b2fd29e4f65bce053e7"
+  } ]
+}

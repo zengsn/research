@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "DarlieToothpaste",
+    "id" : 22366893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22366893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/DarlieToothpaste",
+    "html_url" : "https://github.com/DarlieToothpaste",
+    "followers_url" : "https://api.github.com/users/DarlieToothpaste/followers",
+    "following_url" : "https://api.github.com/users/DarlieToothpaste/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/DarlieToothpaste/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/DarlieToothpaste/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/DarlieToothpaste/subscriptions",
+    "organizations_url" : "https://api.github.com/users/DarlieToothpaste/orgs",
+    "repos_url" : "https://api.github.com/users/DarlieToothpaste/repos",
+    "events_url" : "https://api.github.com/users/DarlieToothpaste/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/DarlieToothpaste/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 151,
+    "additions" : 151,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "DarlieToothpaste",
+    "id" : 22366893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22366893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/DarlieToothpaste",
+    "html_url" : "https://github.com/DarlieToothpaste",
+    "followers_url" : "https://api.github.com/users/DarlieToothpaste/followers",
+    "following_url" : "https://api.github.com/users/DarlieToothpaste/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/DarlieToothpaste/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/DarlieToothpaste/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/DarlieToothpaste/subscriptions",
+    "organizations_url" : "https://api.github.com/users/DarlieToothpaste/orgs",
+    "repos_url" : "https://api.github.com/users/DarlieToothpaste/repos",
+    "events_url" : "https://api.github.com/users/DarlieToothpaste/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/DarlieToothpaste/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/87b1e185326c47de677f5083ea08c90c9a5348c8",
+  "commit" : {
+    "author" : {
+      "name" : "Cai",
+      "email" : "754181906@qq.com",
+      "date" : "2016-10-23T14:48:35Z"
+    },
+    "committer" : {
+      "name" : "Cai",
+      "email" : "754181906@qq.com",
+      "date" : "2016-10-23T14:48:35Z"
+    },
+    "message" : "..",
+    "tree" : {
+      "sha" : "fb3b525acfdb1c957dc59b9ca06f2f553df887e8",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/fb3b525acfdb1c957dc59b9ca06f2f553df887e8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/87b1e185326c47de677f5083ea08c90c9a5348c8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/87b1e185326c47de677f5083ea08c90c9a5348c8/comments",
+  "files" : [ {
+    "sha" : "5c178679f2944fee92975373cd946a9efb0efe3e",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902232/Se1414080902232Servlet.java",
+    "status" : "added",
+    "additions" : 96,
+    "deletions" : 0,
+    "changes" : 96,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/87b1e185326c47de677f5083ea08c90c9a5348c8/jweb/src/edu/hzu/javaweb/labs/se1414080902232/Se1414080902232Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/87b1e185326c47de677f5083ea08c90c9a5348c8/jweb/src/edu/hzu/javaweb/labs/se1414080902232/Se1414080902232Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902232/Se1414080902232Servlet.java?ref=87b1e185326c47de677f5083ea08c90c9a5348c8",
+    "patch" : "@@ -0,0 +1,96 @@\n+package edu.hzu.javaweb.labs.se1414080902232;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+public class Se1414080902232Servlet extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic Se1414080902232Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"    This is \");\n+\t\tout.print(this.getClass());\n+\t\tout.println(\", using the GET method\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tresponse.setCharacterEncoding(\"utf-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"�ύ�ɹ���\");\n+//\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+//\t\tout.println(\"<HTML>\");\n+//\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+//\t\tout.println(\"  <BODY>\");\n+//\t\tout.print(\"    This is \");\n+//\t\tout.print(this.getClass());\n+//\t\tout.println(\", using the POST method\");\n+//\t\tout.println(\"  </BODY>\");\n+//\t\tout.println(\"</HTML>\");\n+//\t\tout.flush();\n+//\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "5b6f47716bf009c0cd6d34bc3d7ae8a7663b96bd",
+    "filename" : "jweb/web/1414080902232/index.jsp",
+    "status" : "added",
+    "additions" : 55,
+    "deletions" : 0,
+    "changes" : 55,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/87b1e185326c47de677f5083ea08c90c9a5348c8/jweb/web/1414080902232/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/87b1e185326c47de677f5083ea08c90c9a5348c8/jweb/web/1414080902232/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902232/index.jsp?ref=87b1e185326c47de677f5083ea08c90c9a5348c8",
+    "patch" : "@@ -0,0 +1,55 @@\n+<!DOCTYPE html>\n+<html>\n+<head>\n+\t<meta charset=\"gb2312\"> \n+\t<title></title>\n+\t<link rel=\"stylesheet\" href=\"http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css\">  \n+\t<script src=\"http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js\"></script>\n+\t<script src=\"http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n+</head>\n+<body>\n+<center>Now time is: \n+        <%=new java.util.Date()%>\n+        </center>\n+<form role=\"form\">\n+\t<div class=\"form-group\">\n+\t\t<label for=\"name\">名称</label>\n+\t\t<input type=\"text\" class=\"form-control\" id=\"name\" \n+\t\t\t   placeholder=\"请输入生物名称\">\n+\t</div>\n+\t<div class=\"form-group\">\n+\t\t<label for=\"inputfile\">请上传生物图片</label>\n+\t\t<input type=\"file\" id=\"inputfile\">\n+\t\t<p class=\"help-block\">这里是块级帮助文本的实例。</p>\n+\t</div>\n+\t<div class=\"checkbox\">\n+\t\t<label>\n+\t\t\t<input type=\"checkbox\"> 请打勾\n+\t\t</label>\n+\t</div>\n+\t<button id=\"sub\"  type=\"button\" class=\"btn btn-default\">提交</button>\n+</form>\n+\t\n+</body>\n+</html>\n+<script>\n+  window.onload = function(){\n+$(\"#sub\").click(function(event){\n+\t$.ajax({\n+\t\ttype: \"post\", \n+                                        url: \"servlet/Se1414080902232Servlet\", \n+                                    //    data:{},\n+                                        dataType: \"html\", \n+                                        success: function (data) { \n+                                        \t//   alert(\"yes\");\n+                                                alert(data);\n+                                                //$(\"input#showTime\").val(data[0].demoData); \n+                                        }, \n+                                        error: function (XMLHttpRequest, textStatus, errorThrown) { \n+                                              alert(XMLHttpRequest.readyState);\n+                                              //  alert(arguments[2]); \n+                                        } \n+\t})\n+});\n+}\n+</script>\n\\ No newline at end of file"
+  } ],
+  "sha" : "87b1e185326c47de677f5083ea08c90c9a5348c8",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/87b1e185326c47de677f5083ea08c90c9a5348c8",
+  "parents" : [ {
+    "sha" : "dc418f14cf64503d74a0d18c77b8c153496b6324",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/dc418f14cf64503d74a0d18c77b8c153496b6324",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/dc418f14cf64503d74a0d18c77b8c153496b6324"
+  } ]
+}

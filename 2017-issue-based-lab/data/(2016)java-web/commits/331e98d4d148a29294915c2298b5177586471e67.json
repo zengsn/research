@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 88,
+    "additions" : 88,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/331e98d4d148a29294915c2298b5177586471e67",
+  "commit" : {
+    "author" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-12-01T08:12:44Z"
+    },
+    "committer" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-12-01T08:12:44Z"
+    },
+    "message" : "# 5 提交实验代码",
+    "tree" : {
+      "sha" : "2db3b58ddd17a1e2cd8abb193d04cf811fadfefe",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/2db3b58ddd17a1e2cd8abb193d04cf811fadfefe"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/331e98d4d148a29294915c2298b5177586471e67",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/331e98d4d148a29294915c2298b5177586471e67/comments",
+  "files" : [ {
+    "sha" : "bf6fbccb749c5d2f8d8aae276b9abcead9f4ed04",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902121/Fliter1.java",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/331e98d4d148a29294915c2298b5177586471e67/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Fliter1.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/331e98d4d148a29294915c2298b5177586471e67/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Fliter1.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Fliter1.java?ref=331e98d4d148a29294915c2298b5177586471e67",
+    "patch" : "@@ -0,0 +1,30 @@\n+package edu.hzu.javaweb.labs.se1414080902121;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+@WebFilter(filterName = \"Fliter1\", urlPatterns = \"/*\")\n+\n+public class Fliter1 implements Filter {\n+\t \tpublic void destroy() {\n+\t \n+\t \t}\n+\t \tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t \t\t\tFilterChain chain) throws IOException, ServletException {\n+\t \t\t\n+\t \t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t \t\tresponse.setCharacterEncoding(\"UTF-8\"); \n+\t \t\tchain.doFilter(request, response);\n+\t \t}\n+\t \tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t \n+\t \t}\n+\t \n+\t } \n+"
+  }, {
+    "sha" : "fd41db23af12fdb8f81037e292d0b02fb7655464",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902121/Fliter2.java",
+    "status" : "added",
+    "additions" : 37,
+    "deletions" : 0,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/331e98d4d148a29294915c2298b5177586471e67/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Fliter2.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/331e98d4d148a29294915c2298b5177586471e67/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Fliter2.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902121/Fliter2.java?ref=331e98d4d148a29294915c2298b5177586471e67",
+    "patch" : "@@ -0,0 +1,37 @@\n+package edu.hzu.javaweb.labs.se1414080902121;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+@WebFilter(filterName = \"Fliter2\", urlPatterns = \"/*\")\n+public class Fliter2 implements Filter  {\n+\t\n+\tpublic void doFilter(ServletRequest request,   \n+        ServletResponse response,   \n+        FilterChain chain)   \n+       throws IOException, ServletException {   \n+    HttpServletRequest req = (HttpServletRequest) request;   \n+    HttpServletResponse res = (HttpServletResponse) response;   \n+    HttpSession session = req.getSession();   \n+    \tif (session.getAttribute(\"username\") != null) {\n+        chain.doFilter(request, response);   \n+    \t} \n+    \telse {   \n+    \t\t\tres.sendRedirect(\"../MyJsp.jsp\");   \n+    \t\t}   \n+\t}\n+\tpublic void init(FilterConfig arg0) throws ServletException {\n+\t}\n+\tpublic void destroy() {\n+\t\t\n+\t} \n+}"
+  }, {
+    "sha" : "5d54aefbb7a5d105798b76f6eb9259ee383b43df",
+    "filename" : "jweb/web/1414080902121/MyJsp.jsp",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/331e98d4d148a29294915c2298b5177586471e67/jweb/web/1414080902121/MyJsp.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/331e98d4d148a29294915c2298b5177586471e67/jweb/web/1414080902121/MyJsp.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902121/MyJsp.jsp?ref=331e98d4d148a29294915c2298b5177586471e67",
+    "patch" : "@@ -0,0 +1,21 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    <title>My JSP 'MyJsp.jsp'  page</title>\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<meta charset=\"UTF-8\" />\n+  </head>\n+  <body>\n+        failed! please submit again.\n+  </body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "331e98d4d148a29294915c2298b5177586471e67",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/331e98d4d148a29294915c2298b5177586471e67",
+  "parents" : [ {
+    "sha" : "3ff3491776829daffb8db469256d3e0b4cae1c06",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/3ff3491776829daffb8db469256d3e0b4cae1c06",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/3ff3491776829daffb8db469256d3e0b4cae1c06"
+  } ]
+}

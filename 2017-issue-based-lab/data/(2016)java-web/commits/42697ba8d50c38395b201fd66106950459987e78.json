@@ -1,0 +1,140 @@
+{
+  "committer" : {
+    "login" : "qiuwenqiol",
+    "id" : 14258741,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14258741?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qiuwenqiol",
+    "html_url" : "https://github.com/qiuwenqiol",
+    "followers_url" : "https://api.github.com/users/qiuwenqiol/followers",
+    "following_url" : "https://api.github.com/users/qiuwenqiol/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qiuwenqiol/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qiuwenqiol/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qiuwenqiol/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qiuwenqiol/orgs",
+    "repos_url" : "https://api.github.com/users/qiuwenqiol/repos",
+    "events_url" : "https://api.github.com/users/qiuwenqiol/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qiuwenqiol/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 358,
+    "additions" : 116,
+    "deletions" : 242
+  },
+  "author" : {
+    "login" : "qiuwenqiol",
+    "id" : 14258741,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14258741?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/qiuwenqiol",
+    "html_url" : "https://github.com/qiuwenqiol",
+    "followers_url" : "https://api.github.com/users/qiuwenqiol/followers",
+    "following_url" : "https://api.github.com/users/qiuwenqiol/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/qiuwenqiol/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/qiuwenqiol/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/qiuwenqiol/subscriptions",
+    "organizations_url" : "https://api.github.com/users/qiuwenqiol/orgs",
+    "repos_url" : "https://api.github.com/users/qiuwenqiol/repos",
+    "events_url" : "https://api.github.com/users/qiuwenqiol/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/qiuwenqiol/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/42697ba8d50c38395b201fd66106950459987e78",
+  "commit" : {
+    "author" : {
+      "name" : "qiuwenqiol",
+      "email" : "qiuwenqiol@163.com",
+      "date" : "2016-11-22T10:34:03Z"
+    },
+    "committer" : {
+      "name" : "qiuwenqiol",
+      "email" : "qiuwenqiol@163.com",
+      "date" : "2016-11-22T10:34:03Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "e8578439891901622d15bdb1e984cca6da777ab0",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/e8578439891901622d15bdb1e984cca6da777ab0"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/42697ba8d50c38395b201fd66106950459987e78",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/42697ba8d50c38395b201fd66106950459987e78/comments",
+  "files" : [ {
+    "sha" : "11c3e787c060ffb764015c01a7b30c88ee60a3c8",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902119/BookType.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 32,
+    "changes" : 32,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/451481158427252e36b9564fd015a24f77807e05/jweb/src/edu/hzu/javaweb/labs/se1414080902119/BookType.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/451481158427252e36b9564fd015a24f77807e05/jweb/src/edu/hzu/javaweb/labs/se1414080902119/BookType.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902119/BookType.java?ref=451481158427252e36b9564fd015a24f77807e05",
+    "patch" : "@@ -1,32 +0,0 @@\n-package edu.hzu.javaweb.labs.se1414080902119;\n-\n-public class BookType {\n-\tpublic String name; // 图书类别名字\n-\tprivate Boolean isHasBook; // 该类别下是否有图书标志\n-\n-\tpublic String getName() {\n-\t\treturn name;\n-\t}\n-\n-\tpublic void setName(String name) {\n-\t\tthis.name = name;\n-\t}\n-\n-\tpublic Boolean getIsHasBook() {\n-\t\treturn isHasBook;\n-\t}\n-\n-\tpublic void setIsHasBook(Boolean isHasBook) {\n-\t\tthis.isHasBook = isHasBook;\n-\t}\n-\n-\tpublic BookType(String name, Boolean isHasBook) {\n-\t\tsuper();\n-\t\tthis.name = name;\n-\t\tthis.isHasBook = isHasBook;\n-\t}\n-\n-\tpublic BookType() {\n-\t\tsuper();\n-\t}\n-}"
+  }, {
+    "sha" : "160cc0be9c087089c3907182a99e1d5949e7618a",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902119/Member.java",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/42697ba8d50c38395b201fd66106950459987e78/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Member.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/42697ba8d50c38395b201fd66106950459987e78/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Member.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Member.java?ref=42697ba8d50c38395b201fd66106950459987e78",
+    "patch" : "@@ -0,0 +1,23 @@\n+package edu.hzu.javaweb.labs.se1414080902119;\n+\n+public class Member {\n+\tpublic String name; // 图书类别名字\n+\n+\tpublic String getName() {\n+\t\treturn name;\n+\t}\n+\n+\tpublic void setName(String name) {\n+\t\tthis.name = name;\n+\t}\n+\n+\tpublic Member() {\n+\t\tsuper();\n+\t}\n+\n+\tpublic Member(String name) {\n+\t\tsuper();\n+\t\tthis.name = name;\n+\t}\n+\t\n+}"
+  }, {
+    "sha" : "d09104151e224c7f162b14fb50ee7d5d832d7f5b",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902119/Se1414080902119filter.java",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/42697ba8d50c38395b201fd66106950459987e78/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Se1414080902119filter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/42697ba8d50c38395b201fd66106950459987e78/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Se1414080902119filter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902119/Se1414080902119filter.java?ref=42697ba8d50c38395b201fd66106950459987e78",
+    "patch" : "@@ -23,6 +23,8 @@ public void destroy() {\n \tpublic void doFilter(ServletRequest request, ServletResponse response,\n \t\t\tFilterChain chain) throws IOException, ServletException {\n \t\t// TODO Auto-generated method stub\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tresponse.setCharacterEncoding(\"utf-8\");\n \t\tString localAddr = request.getLocalAddr();\n \t\tif(\"127.0.0.1\".equals(localAddr))\n \t\t{\n@@ -38,8 +40,6 @@ public void doFilter(ServletRequest request, ServletResponse response,\n \n \t@Override\n \tpublic void init(FilterConfig filterConfig) throws ServletException {\n-\t\t// TODO Auto-generated method stub\n-\t\t\n \t}\n \n }"
+  }, {
+    "sha" : "86152f8de3d236e82ccb4e0717211fc9c1eb2b9c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902119/se1414080902119servlet.java",
+    "status" : "modified",
+    "additions" : 39,
+    "deletions" : 79,
+    "changes" : 118,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/42697ba8d50c38395b201fd66106950459987e78/jweb/src/edu/hzu/javaweb/labs/se1414080902119/se1414080902119servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/42697ba8d50c38395b201fd66106950459987e78/jweb/src/edu/hzu/javaweb/labs/se1414080902119/se1414080902119servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902119/se1414080902119servlet.java?ref=42697ba8d50c38395b201fd66106950459987e78",
+    "patch" : "@@ -16,14 +16,13 @@\n @WebServlet(\"/1414080902119\")\n public class Se1414080902119servlet extends HttpServlet {\n \tprivate static final long serialVersionUID = 1L;\n-\t\n-\t//初始化基本数据\n-\tprivate static List<BookType> types;\n-\tstatic{\n-\t\ttypes=new ArrayList<BookType>();\n-\t\ttypes.add(new BookType(\"数学\", false));\n-\t\ttypes.add(new BookType(\"文学\",false));\n-\t\ttypes.add(new BookType(\"天文学\",true));\n+\n+\tprivate static List<Member> types;\n+\tstatic {\n+\t\ttypes = new ArrayList<Member>();\n+\t\ttypes.add(new Member(\"张三\"));\n+\t\ttypes.add(new Member(\"李四\"));\n+\t\ttypes.add(new Member(\"王五\"));\n \t}\n \n \tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n@@ -33,99 +32,60 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t\n \tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n \t\tresponse.setContentType(\"application/json;charset=utf-8\");\n \t\trequest.setCharacterEncoding(\"utf-8\");\n-\t\tString operate=request.getParameter(\"operate\");\n+\t\tString operate = request.getParameter(\"operate\");\n \t\tSystem.out.println(request.getRequestURI());\n-\t\tif(operate==null)operate=\"\";\n-\t\tif(\"show\".equals(operate))doshow(response,request);\n-\t\telse if(\"add\".equals(operate))addTypes(response,request);\n-\t\telse if(\"delete\".equals(operate))deleteTypes(response,request);\n-\t\telse showList(response);\n+\t\tif (operate == null)\n+\t\t\toperate = \"\";\n+\t\tif (\"show\".equals(operate))\n+\t\t\tdoshow(response, request);\n+\t\telse if (\"add\".equals(operate))\n+\t\t\taddTypes(response, request);\n+\t\telse\n+\t\t\tshowList(response);\n \t}\n-\t\n+\n \tprivate void doshow(HttpServletResponse response, HttpServletRequest request) throws IOException, ServletException {\n \t\trequest.setAttribute(\"list\", types);\n \t\tRequestDispatcher dispatcher = request.getRequestDispatcher(\"/1414080902119/client.jsp\");\n \t\tdispatcher.forward(request, response);\n \t}\n-\tprivate void deleteTypes(HttpServletResponse response, HttpServletRequest request) throws IOException {\n-\t\t// TODO Auto-generated method stub\n-\t\tString name=request.getParameter(\"name\");\n-\t\tString str=\"\";\n-\t\tSystem.out.println(name);\n-\t\tString[]arr=name.split(\",\");\n-\t\tfor(int j=0;j<arr.length;j++)\n-\t\t{\n-\t\t\tfor(int i=0;i<types.size();i++){\n-\t\t\t\tBookType type=types.get(i);\n-\t\t\t\tString typeName=type.getName();\n-\t\t\t\tif(typeName.equals(arr[j]))\n-\t\t\t\t{\n-\t\t\t\t\tif(type.getIsHasBook()==false)\n-\t\t\t\t\ttypes.remove(type);\n-\t\t\t\t\telse str+=type.getName()+\",\";\n-\t\t\t\t\tbreak;\n-\t\t\t\t}\n-\t\t\t} \n-\t\t}\n-\t\tif(str.length()>1){\n-\t\t\tstr=str.substring(0, str.length()-1);\n-\t\t}\n-\t\tPrintWriter writer = response.getWriter();\n-\t\tif(str.length()==0){\n-\t\t\twriter.write(\"{\\\"msg\\\":\\\"success\\\"}\");\n-\t\t}\n-\t\telse writer.write(\"{\\\"msg\\\":\\\"\"+str+\" 类别下有图书，不可删除\"+\"\\\"}\");\n-\t\t\n-\t\twriter.close();\n-\t}\n \n-\tpublic void showList(HttpServletResponse response) throws IOException\n-\t{\n+\tpublic void showList(HttpServletResponse response) throws IOException {\n \t\tPrintWriter writer = response.getWriter();\n \t\twriter.write(reJSON(types));\n \t\twriter.close();\n \t}\n-\t\n-\tpublic void addTypes(HttpServletResponse response,HttpServletRequest request)throws IOException\n-\t{\n-\t\tString name=request.getParameter(\"name\");\n+\n+\tpublic void addTypes(HttpServletResponse response, HttpServletRequest request) throws IOException {\n+\t\tString name = request.getParameter(\"name\");\n \t\tPrintWriter writer = response.getWriter();\n-\t\tif(name==null||name.equals(\"\"))\n-\t\t{\n-\t\twriter.write(\"{\\\"msg\\\":\\\"请输入图书类别\\\"}\");\n-\t\twriter.close();\n-\t\treturn ;\n+\t\tif (name == null || name.equals(\"\")) {\n+\t\t\twriter.write(\"{\\\"msg\\\":\\\"不能为空\\\"}\");\n+\t\t\twriter.close();\n+\t\t\treturn;\n \t\t}\n-\t\tfor(int i=0;i<types.size();i++){\n-\t\t\tif(types.get(i).getName().equals(name))\n-\t\t\t{\n-\t\t\t\twriter.write(\"{\\\"msg\\\":\\\"该图书类别存在\\\"}\");\n+\t\tfor (int i = 0; i < types.size(); i++) {\n+\t\t\tif (types.get(i).getName().equals(name)) {\n+\t\t\t\twriter.write(\"{\\\"msg\\\":\\\"添加失败\\\"}\");\n \t\t\t\twriter.close();\n-\t\t\t\treturn ;\n+\t\t\t\treturn;\n \t\t\t}\n \t\t}\n-\t\tBookType type=new BookType();\n+\t\tMember type = new Member();\n \t\ttype.setName(name);\n-\t\ttype.setIsHasBook(false);\n \t\ttypes.add(type);\n \t\twriter.write(\"{\\\"msg\\\":\\\"success\\\"}\");\n \t\twriter.close();\n \t}\n-\t\n-\t/**\n-\t * 返回JSON数据\n-\t * @param list   图书类别集合\n-\t * @return 图书类别的JSON数据\n-\t */\n-\tpublic String reJSON(List<BookType> list)\n-\t{\n-\t\tStringBuffer str=new StringBuffer(\"{\");\n-\t\tIterator<BookType> iterator = list.iterator();\n-\t\twhile(iterator.hasNext())\n-\t\t{\n-\t\t\tBookType bookType = iterator.next();\n-\t\t\tstr.append(\"\\\"\"+bookType.getName()+\"\\\":\\\"\"+bookType.getIsHasBook()+\"\\\"\");\n-\t\t\tif(iterator.hasNext())str.append(\",\");\n+\n+\tpublic String reJSON(List<Member> list) {\n+\t\tStringBuffer str = new StringBuffer(\"{\");\n+\t\tIterator<Member> iterator = list.iterator();\n+\t\twhile (iterator.hasNext()) {\n+\t\t\tMember Member = iterator.next();\n+\t\t\tstr.append(\"\\\"\" + Member.getName() + \"\\\":\\\"\" + true + \"\\\"\");\n+\t\t\tif (iterator.hasNext())\n+\t\t\t\tstr.append(\",\");\n \t\t}\n \t\tstr.append(\"}\");\n \t\treturn str.toString();"
+  }, {
+    "sha" : "d43c4b39ed2f7854bf325eccc9926d1a2e7cb4ef",
+    "filename" : "jweb/web/1414080902119/client.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 43,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/451481158427252e36b9564fd015a24f77807e05/jweb/web/1414080902119/client.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/451481158427252e36b9564fd015a24f77807e05/jweb/web/1414080902119/client.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902119/client.jsp?ref=451481158427252e36b9564fd015a24f77807e05",
+    "patch" : "@@ -1,43 +0,0 @@\n-<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\"\n-\tpageEncoding=\"utf-8\"%>\n-<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\"%>\n-<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n-<html>\n-<head>\n-<title>Insert title here</title>\n-<link rel=\"stylesheet\"\n-\thref=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n-<link rel=\"stylesheet\"\n-\thref=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n-<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n-</head>\n-<script type=\"text/javascript\">\n-\twindow.onload = function() {\n-\t\tvar btn = document.getElementById(\"btn1\");\n-\t\tbtn.onclick = function() {\n-\t\t\twindow.location.href=\"<%=request.getContextPath()%>/1414080902119?operate=show\";\n-\t\t};\n-\t};\n-</script>\n-<body>\n-\t<div style=\"width: 380px; margin: 0 auto; margin-top: 50px;\" id=\"main\"\n-\t\talign=\"center\">\n-\t\t<div class=\"btn-group btn-group-justified\">\n-\t\t\t<div class=\"btn-group\">\n-\t\t\t\t<button id=\"btn1\" name=\"hehe\" type=\"button\" class=\"btn1 btn btn-default button\">\n-\t\t\t\t\t<c:out value=\"查看图书类别\"></c:out>\n-\t\t\t\t</button>\n-\t\t\t</div>\n-\t\t</div>\n-\t\t<div class=\"hehe\"\n-\t\t\tstyle=\"width: 380px; height: 200px; border: 1px solid #000; border-radius: 5px\">\n-\t\t\t<div class=\"list-group\" id=\"top\">\n-\t\t\t\t<c:forEach  varStatus=\"status\" var=\"item\" items=\"${requestScope.list }\">\n-\t\t\t\t\t<a href=\"#\" class=\"list-group-item\"><c:out value=\"${item.name }\"></c:out></a>\n-\t\t\t\t</c:forEach>\n-\t\t\t</div>\n-\t\t</div>\n-\t</div>\n-</body>\n-</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "85cb3ab7dcdf9a94c19e14b3ee84fb1ef857b2e9",
+    "filename" : "jweb/web/1414080902119/server.jsp",
+    "status" : "modified",
+    "additions" : 52,
+    "deletions" : 86,
+    "changes" : 138,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/42697ba8d50c38395b201fd66106950459987e78/jweb/web/1414080902119/server.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/42697ba8d50c38395b201fd66106950459987e78/jweb/web/1414080902119/server.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902119/server.jsp?ref=42697ba8d50c38395b201fd66106950459987e78",
+    "patch" : "@@ -8,7 +8,7 @@\n %>\n <html>\n <head>\n-<title>图书类别管理</title>\n+<title>网吧会员管理</title>\n <link rel=\"stylesheet\"\n \thref=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n <link rel=\"stylesheet\"\n@@ -35,14 +35,9 @@\n \t\t\t\tvar url=\"<%=request.getContextPath()%>/1414080902119\";\n \t\t\t\tdata=\"operate=add&name=\"+document.getElementById('types_name').value;\n \t\t\t\tajax(url,afterAdd,data);\n-\t\t\t}\n-\t\t}\n-\t\taBtn[2].onclick=function()\n-\t\t{\n-\t\t\tajax(url,showDeleteList);\n-\t\t\tshowDiv(aBtn[2]);\n-\t\t}\n-\t}\n+\t\t\t};\n+\t\t};\n+\t};\n \t\n \t/*\n \t* 将通过ajax获取的数据进行处理\n@@ -81,81 +76,74 @@\n \t\t\t}\n \t\t\tarr=arr.substring(0,arr.length-1);\n \t\t\tvar url=\"<%=request.getContextPath()%>/1414080902119\";\n-\t\t\tdata=\"operate=delete&name=\"+arr;\n-\t\t\tajax(url,showDeleteList);\n-\t\t\tajax(url,afterDelete,data);\n+\t\t\tdata = \"operate=delete&name=\" + arr;\n+\t\t\tajax(url, showDeleteList);\n+\t\t\tajax(url, afterDelete, data);\n \t\t}\n \t}\n-\t\n+\n \t/*\n-\t*点击添加图书类别后处理ajax数据\n-\t*/\n-\tfunction afterAdd(json)\n-\t{\n+\t *点击添加网吧会员后处理ajax数据\n+\t */\n+\tfunction afterAdd(json) {\n \t\talert(json.msg);\n-\t\tajax(url,addElement);\n+\t\tajax(url, addElement);\n \t\tshowDiv(aBtn[0]);\n \t}\n-\t\n-\tfunction afterDelete(json)\n-\t{\n+\n+\tfunction afterDelete(json) {\n \t\talert(json.msg);\n-\t\tajax(url,addElement);\n+\t\tajax(url, addElement);\n \t\tshowDiv(aBtn[0]);\n \t}\n-\t\n-\t\n+\n \t/**\n-\t*显示某个板块，并且将其他板块隐藏\n-\t*/\n-\tfunction showDiv(btn)\n-\t{\n-\t\tvar j=0;\n-\t\tfor(var i=0;i<aBtn.length;i++)\n-\t\t{\n-\t\t\taDiv[i].style.display=\"none\";\n-\t\t\tif(btn==aBtn[i])j=i;\n+\t *显示某个板块，并且将其他板块隐藏\n+\t */\n+\tfunction showDiv(btn) {\n+\t\tvar j = 0;\n+\t\tfor (var i = 0; i < aBtn.length; i++) {\n+\t\t\taDiv[i].style.display = \"none\";\n+\t\t\tif (btn == aBtn[i])\n+\t\t\t\tj = i;\n \t\t}\n-\t\taDiv[j].style.display=\"block\";\n+\t\taDiv[j].style.display = \"block\";\n \t}\n-\t\n-\t\n+\n \t/* \n-\t* 将json数据转化为标签\n-\t*/\n-\tfunction addElement(json)\n-\t{\n-\t\tvar oDiv=document.getElementById(\"top\");\n-\t\toDiv.innerText=\"\";\n-\t\tfor(var a in json)\n-\t\t{\n-\t\t\tvar oA=document.createElement(\"a\");\n-\t\t\toA.className=\"list-group-item\";\n-\t\t\toA.innerText=a;\n+\t * 将json数据转化为标签\n+\t */\n+\tfunction addElement(json) {\n+\t\tvar oDiv = document.getElementById(\"top\");\n+\t\toDiv.innerText = \"\";\n+\t\tfor ( var a in json) {\n+\t\t\tvar oA = document.createElement(\"a\");\n+\t\t\toA.className = \"list-group-item\";\n+\t\t\toA.innerText = a;\n \t\t\toDiv.appendChild(oA);\n \t\t}\n \t}\n \t/*\n-\t* url请求地址\n-\t* doSome方法对json数据进行处理\n-\t* ajax获取数据\n-\t*/\n-\tfunction ajax(url,doSome,data) {\n+\t * url请求地址\n+\t * doSome方法对json数据进行处理\n+\t * ajax获取数据\n+\t */\n+\tfunction ajax(url, doSome, data) {\n \t\tvar xmlHttpRequest = null;\n \t\ttry {\n \t\t\txmlHttpRequest = new XMLHttpRequest();\n \t\t} catch (e) {\n \t\t\txmlHttpRequest = new ActiveXObject('Microsoft.XMLHTTP');\n \t\t}\n-\t\txmlHttpRequest.open('post', url+'?' + new Date().getTime(),\n-\t\t\t\ttrue)\n-\t\txmlHttpRequest.setRequestHeader(\"Content-Type\",\"application/x-www-form-urlencoded\");  \n+\t\txmlHttpRequest.open('post', url + '?' + new Date().getTime(), true)\n+\t\txmlHttpRequest.setRequestHeader(\"Content-Type\",\n+\t\t\t\t\"application/x-www-form-urlencoded\");\n \t\txmlHttpRequest.send(data);\n \t\txmlHttpRequest.onreadystatechange = function() {\n \t\t\tif (xmlHttpRequest.readyState == 4) {\n \t\t\t\tif (xmlHttpRequest.status == 200) {\n \t\t\t\t\tstr = xmlHttpRequest.responseText;\n-\t\t\t\t\tvar json=eval('('+str+')')\n+\t\t\t\t\tvar json = eval('(' + str + ')')\n \t\t\t\t\tdoSome(json);\n \t\t\t\t} else {\n \t\t\t\t\talert(\"出错了\");\n@@ -169,55 +157,33 @@\n \t\talign=\"center\">\n \t\t<div class=\"btn-group btn-group-justified\">\n \t\t\t<div class=\"btn-group\">\n-\t\t\t\t<button id=\"btn1\" type=\"button\" class=\"btn1 btn btn-default button\">查看图书类别</button>\n+\t\t\t\t<button id=\"btn1\" type=\"button\" class=\"btn1 btn btn-default button\">查看网吧会员</button>\n \t\t\t</div>\n \t\t\t<div class=\"btn-group\">\n-\t\t\t\t<button id=\"btn2\" type=\"button\" class=\"btn1 btn btn-default button\">添加图书类别</button>\n-\t\t\t</div>\n-\t\t\t<div class=\"btn-group\">\n-\t\t\t\t<button id=\"btn3\" type=\"button\" class=\"btn1 btn btn-default button\">删除图书类别</button>\n+\t\t\t\t<button id=\"btn2\" type=\"button\" class=\"btn1 btn btn-default button\">添加网吧会员</button>\n \t\t\t</div>\n \t\t</div>\n \t\t<div class=\"hehe\"\n \t\t\tstyle=\"width: 380px; height: 200px; border: 1px solid #000; border-radius: 5px\">\n-\t\t\t<div class=\"list-group\" id=\"top\">\n-\t\t\t</div>\n+\t\t\t<div class=\"list-group\" id=\"top\"></div>\n \t\t</div>\n \t\t<div class=\"hehe\"\n \t\t\tstyle=\"display: none; width: 380px; height: 200px; border: 1px solid #000; border-radius: 5px\">\n \t\t\t<form role=\"form\" action=\"1414080902119?operate=add\">\n \t\t\t\t<div class=\"form-group .col-md-5\">\n \t\t\t\t\t<div class=\"row\">\n \t\t\t\t\t\t<div class=\"col-md-6 col-md-offset-3\">\n-\t\t\t\t\t\t\t<label for=\"exampleInputEmail1\">图书类别</label> \n-\t\t\t\t\t\t\t<input  id=\"types_name\" type=\"text\" class=\"form-control\" placeholder=\"Enter\"  name=\"name\" >\n+\t\t\t\t\t\t\t<label for=\"exampleInputEmail1\">网吧会员</label> <input\n+\t\t\t\t\t\t\t\tid=\"types_name\" type=\"text\" class=\"form-control\"\n+\t\t\t\t\t\t\t\tplaceholder=\"Enter\" name=\"name\">\n \t\t\t\t\t\t</div>\n \t\t\t\t\t</div>\n \t\t\t\t</div>\n \t\t\t\t<button id=\"addBtn\" type=\"button\" class=\"btn btn-default\">添加</button>\n \t\t\t</form>\n \t\t</div>\n-\t\t<div class=\"hehe\"\n-\t\t\tstyle=\"display: none; width: 380px; height: 200px; border: 1px solid #000; border-radius: 5px\">\n-\t\t\t<form class=\"form-horizontal\" role=\"form\">\n-\t\t\t\t<div class=\"form-group\" id=\"delete_selected\">\n-\t\t\t\t\t<div class=\"col-sm-offset-2 col-sm-10 delete_item\"   name=\"delete_item\">\n-\t\t\t\t\t\t<div class=\"checkbox\">\n-\t\t\t\t\t\t\t<label> <input name=\"hehe\" type=\"checkbox\" class=\"delete_item_value\">\n-\t\t\t\t\t\t\t\t<span></span>\n-\t\t\t\t\t\t\t</label>\n-\t\t\t\t\t\t</div>\n-\t\t\t\t\t</div>\n-\t\t\t\t</div>\n-\t\t\t\t<div class=\"form-group\">\n-\t\t\t\t\t<div class=\"col-sm-offset-2 col-sm-10\">\n-\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default\" id=\"btn_delete\">删除</button>\n-\t\t\t\t\t</div>\n-\t\t\t\t</div>\n-\t\t\t</form>\n-\t\t</div>\n-\t</div>\n-\t<div class=\"col-sm-offset-2 col-sm-10 delete_item\" name=\"delete_item\" style=\"visibility: hidden;\">\n+\t<div class=\"col-sm-offset-2 col-sm-10 delete_item\" name=\"delete_item\"\n+\t\tstyle=\"visibility: hidden;\">\n \t\t<div class=\"checkbox\">\n \t\t\t<label> <input type=\"checkbox\" class=\"delete_item_value\">\n \t\t\t\t<span></span>"
+  } ],
+  "sha" : "42697ba8d50c38395b201fd66106950459987e78",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/42697ba8d50c38395b201fd66106950459987e78",
+  "parents" : [ {
+    "sha" : "451481158427252e36b9564fd015a24f77807e05",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/451481158427252e36b9564fd015a24f77807e05",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/451481158427252e36b9564fd015a24f77807e05"
+  } ]
+}

@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 25,
+    "additions" : 18,
+    "deletions" : 7
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/a24064771f40d8ee79967aec4fca0f595f208f4d",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "xiaofengfeng@xiaofengfeng-PC.hzucs.cn",
+      "date" : "2016-05-28T09:57:43Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "xiaofengfeng@xiaofengfeng-PC.hzucs.cn",
+      "date" : "2016-05-28T09:57:43Z"
+    },
+    "message" : "#94 #117",
+    "tree" : {
+      "sha" : "06869828fc34f23de00c0cb620f30c50be56aa26",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/06869828fc34f23de00c0cb620f30c50be56aa26"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/a24064771f40d8ee79967aec4fca0f595f208f4d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a24064771f40d8ee79967aec4fca0f595f208f4d/comments",
+  "files" : [ {
+    "sha" : "49a911afe095d06718d764a03eae823884c41da5",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903242/AndroidManifest.xml",
+    "status" : "modified",
+    "additions" : 18,
+    "deletions" : 7,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a24064771f40d8ee79967aec4fca0f595f208f4d/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903242/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a24064771f40d8ee79967aec4fca0f595f208f4d/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903242/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903242/AndroidManifest.xml?ref=a24064771f40d8ee79967aec4fca0f595f208f4d",
+    "patch" : "@@ -1,20 +1,31 @@\n <?xml version=\"1.0\" encoding=\"utf-8\"?>\n <manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    package=\"edu.hzuapps.androidworks.homeworks.net1314080903242\">\n+    package=\"com.lws.camerpreview\"\n+    android:versionCode=\"1\"\n+    android:versionName=\"1.0\" >\n+\n+    <uses-sdk\n+        android:minSdkVersion=\"8\"\n+        android:targetSdkVersion=\"18\" />\n \n     <application\n         android:allowBackup=\"true\"\n-        android:icon=\"@mipmap/ic_launcher\"\n+        android:icon=\"@drawable/jiqi\"\n         android:label=\"@string/app_name\"\n-        android:supportsRtl=\"true\"\n-        android:theme=\"@style/AppTheme\">\n-        <activity android:name=\".Net1314080903242MainActivity\">\n+        android:theme=\"@style/AppTheme\" >\n+        <activity\n+            android:name=\"com.lws.camerpreview.MainActivity\"\n+            android:label=\"@string/app_name\" >\n             <intent-filter>\n                 <action android:name=\"android.intent.action.MAIN\" />\n \n                 <category android:name=\"android.intent.category.LAUNCHER\" />\n             </intent-filter>\n         </activity>\n     </application>\n-\n-</manifest>\n\\ No newline at end of file\n+\t<uses-permission android:name=\"android.permission.CAMERA\"/>\n+\t\n+        <uses-feature android:name=\"android.hardware.camera\"/>\n+\t\n+        <uses-feature android:name=\"android.hardware.camera.autofocus\"/>\n+</manifest>"
+  } ],
+  "sha" : "a24064771f40d8ee79967aec4fca0f595f208f4d",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a24064771f40d8ee79967aec4fca0f595f208f4d",
+  "parents" : [ {
+    "sha" : "5bd47a96df9bbc6cffc6c2e2de656b4581bbca46",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5bd47a96df9bbc6cffc6c2e2de656b4581bbca46",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5bd47a96df9bbc6cffc6c2e2de656b4581bbca46"
+  } ]
+}

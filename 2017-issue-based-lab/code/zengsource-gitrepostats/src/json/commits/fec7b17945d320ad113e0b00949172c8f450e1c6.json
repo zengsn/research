@@ -1,0 +1,232 @@
+{
+  "committer" : {
+    "login" : "zenghuang",
+    "id" : 14580311,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14580311?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zenghuang",
+    "html_url" : "https://github.com/zenghuang",
+    "followers_url" : "https://api.github.com/users/zenghuang/followers",
+    "following_url" : "https://api.github.com/users/zenghuang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zenghuang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zenghuang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zenghuang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zenghuang/orgs",
+    "repos_url" : "https://api.github.com/users/zenghuang/repos",
+    "events_url" : "https://api.github.com/users/zenghuang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zenghuang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 892,
+    "additions" : 892,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zenghuang",
+    "id" : 14580311,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14580311?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zenghuang",
+    "html_url" : "https://github.com/zenghuang",
+    "followers_url" : "https://api.github.com/users/zenghuang/followers",
+    "following_url" : "https://api.github.com/users/zenghuang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zenghuang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zenghuang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zenghuang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zenghuang/orgs",
+    "repos_url" : "https://api.github.com/users/zenghuang/repos",
+    "events_url" : "https://api.github.com/users/zenghuang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zenghuang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/fec7b17945d320ad113e0b00949172c8f450e1c6",
+  "commit" : {
+    "author" : {
+      "name" : "zenghuang",
+      "email" : "441267256@qq.com",
+      "date" : "2016-06-16T07:34:54Z"
+    },
+    "committer" : {
+      "name" : "zenghuang",
+      "email" : "441267256@qq.com",
+      "date" : "2016-06-16T07:34:54Z"
+    },
+    "message" : "#170 #95\n\nLab9",
+    "tree" : {
+      "sha" : "e4257b001a3dbf94525b8f5581bdb48ed5c471e6",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/e4257b001a3dbf94525b8f5581bdb48ed5c471e6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/fec7b17945d320ad113e0b00949172c8f450e1c6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fec7b17945d320ad113e0b00949172c8f450e1c6/comments",
+  "files" : [ {
+    "sha" : "066b3fbc4732d7e270e1c0f6b108c40719697e32",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/BulletHero.java",
+    "status" : "added",
+    "additions" : 116,
+    "deletions" : 0,
+    "changes" : 116,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/BulletHero.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/BulletHero.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/BulletHero.java?ref=fec7b17945d320ad113e0b00949172c8f450e1c6",
+    "patch" : "@@ -0,0 +1,116 @@\n+package com.hzu.xu.planewar;\n+\n+import java.io.InputStream;\n+\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.graphics.Canvas;\n+\n+public class BulletHero {\n+\t// ------------ 子弹\n+\tBitmap img_bullet;\n+\tString img_bullet_name = \"bullet-3.png\";;\n+\tint bullet_speed;\n+\tint bullet_x, bullet_y, bullet_w, bullet_h;\n+\n+\tpublic int bullet_statu;\n+\tpublic static final int BULLET_MOVE = 0X0001;\n+\tpublic static final int BULLET_DIE = 0X0002;\n+\n+\t// ----------- 爆炸\n+\tBitmap img_boom;\n+\tint boom_x, boom_y, boom_w, boom_h, boom_col, boom_row;\n+\tpublic int boom_statu;\n+\tpublic static final int BOOM_POWER = 0X0001;\n+\tpublic static final int BOOM_DIE = 0X0002;\n+\n+\n+\tpublic BulletHero() {\n+\n+\t}\n+\n+\tpublic void setImgBulletName(String name){\n+\t\tthis.img_bullet_name = name;\n+\t}\n+\n+\tpublic void Bullet_Init() {\n+\t\tInputStream is = this.getImgStream(img_bullet_name);\n+\t\tBitmap temp = BitmapFactory.decodeStream(is);\n+\t\timg_bullet = GameUtils.ZomeBitamp(temp, GameUtils.IMG_ENLARGE,\n+\t\t\t\tGameUtils.IMG_ENLARGE);\n+\t\tbullet_w = img_bullet.getWidth();\n+\t\tbullet_h = img_bullet.getHeight();\n+\t\tbullet_x = -MainGame.Screen_w;\n+\t\tbullet_y = -MainGame.Screen_h;\n+\t\tbullet_statu = BULLET_DIE;\n+\t\tbullet_speed = 12;\n+\t\tthis.Boom_Init();\n+\t}\n+\n+\tpublic void Deal_Bullet() {\n+\t\tthis.Bullet_Move();\n+\t\tthis.Deal_Boom();\n+\t}\n+\n+\tpublic void Draw_Bullet(Canvas canvas) {\n+\t\tif (this.bullet_statu == BULLET_MOVE) {\n+\t\t\tGameUtils.Brush(canvas, img_bullet, bullet_x, bullet_y, bullet_w,\n+\t\t\t\t\tbullet_h, 0, 0);\n+\t\t} else if (this.bullet_statu == BULLET_DIE) {\n+\t\t\tbullet_x = -MainGame.Screen_w;\n+\t\t\tbullet_y = -MainGame.Screen_h;\n+\t\t}\n+\t\tthis.Draw_Boom(canvas);\n+\t}\n+\n+\tpublic void Bullet_Move() {\n+\t\tif (this.bullet_y + this.bullet_h > 0) {\n+\t\t\tbullet_y -= this.bullet_speed;\n+\t\t} else {\n+\t\t\tthis.bullet_statu = BULLET_DIE;\n+\t\t}\n+\t}\n+\n+\tpublic void Update_Bullet_Local(int x, int y) {\n+\t\tthis.bullet_x = x;\n+\t\tthis.bullet_y = y;\n+\t\tthis.bullet_statu = BULLET_MOVE;\n+\t}\n+\n+\t// ----------- 爆炸\n+\tpublic void Boom_Init(){\n+\t\tInputStream is = this.getImgStream(\"smallplanebom_.png\");\n+\t\tBitmap temp = BitmapFactory.decodeStream(is);\n+\t\timg_boom = GameUtils.ZomeBitamp(temp, GameUtils.IMG_ENLARGE,\n+\t\t\t\tGameUtils.IMG_ENLARGE);\n+\t\tboom_w = img_boom.getWidth();\n+\t\tboom_h = img_boom.getHeight()/9;\n+\t\tboom_x = -MainGame.Screen_w;\n+\t\tboom_y = -MainGame.Screen_h;\n+\t\tboom_col = 0;\n+\t\tboom_row = 0;\n+\t\tboom_statu = BOOM_DIE;\n+\t}\n+\n+\tpublic void Deal_Boom(){\n+\t\tif(boom_statu == BOOM_POWER){\n+\t\t\tif(boom_row <9){\n+\t\t\t\tboom_row ++;\n+\t\t\t}else{\n+\t\t\t\tboom_row = 0;\n+\t\t\t\tboom_x = -MainGame.Screen_w;\n+\t\t\t\tboom_y = -MainGame.Screen_h;\n+\t\t\t\tboom_statu = BOOM_DIE;\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tpublic void Draw_Boom(Canvas canvas){\n+\t\tGameUtils.Brush(canvas, img_boom, boom_x, boom_y, boom_w, boom_h, boom_col, boom_row);\n+\t}\n+\n+\tpublic InputStream getImgStream(String name){\n+\t\treturn this.getClass().getResourceAsStream(\n+\t\t\t\tGameUtils.IMG_PATH+name);\n+\t}\n+}"
+  }, {
+    "sha" : "aa71164481bd3e45889a68bdcb6911ca95e216ac",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/BulletNpc.java",
+    "status" : "added",
+    "additions" : 116,
+    "deletions" : 0,
+    "changes" : 116,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/BulletNpc.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/BulletNpc.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/BulletNpc.java?ref=fec7b17945d320ad113e0b00949172c8f450e1c6",
+    "patch" : "@@ -0,0 +1,116 @@\n+package com.hzu.xu.planewar;\n+\n+import java.io.InputStream;\n+\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.graphics.Canvas;\n+\n+public class BulletNpc {\n+\t// ------------ 子弹\n+\tBitmap img_bullet;\n+\tString img_bullet_name = \"bullet-7.png\";;\n+\tint bullet_speed;\n+\tint bullet_x, bullet_y, bullet_w, bullet_h;\n+\n+\tpublic int bullet_statu;\n+\tpublic static final int BULLET_MOVE = 0X0001;\n+\tpublic static final int BULLET_DIE = 0X0002;\n+\n+\t// ----------- 爆炸\n+\tBitmap img_boom;\n+\tint boom_x, boom_y, boom_w, boom_h, boom_col, boom_row;\n+\tpublic int boom_statu;\n+\tpublic static final int BOOM_POWER = 0X0001;\n+\tpublic static final int BOOM_DIE = 0X0002;\n+\n+\n+\tpublic BulletNpc() {\n+\n+\t}\n+\n+\tpublic void setImgBulletName(String name){\n+\t\tthis.img_bullet_name = name;\n+\t}\n+\n+\tpublic void Bullet_Init() {\n+\t\tInputStream is = this.getImgStream(img_bullet_name);\n+\t\tBitmap temp = BitmapFactory.decodeStream(is);\n+\t\timg_bullet = GameUtils.ZomeBitamp(temp, GameUtils.IMG_ENLARGE,\n+\t\t\t\tGameUtils.IMG_ENLARGE);\n+\t\tbullet_w = img_bullet.getWidth();\n+\t\tbullet_h = img_bullet.getHeight();\n+\t\tbullet_x = -MainGame.Screen_w;\n+\t\tbullet_y = -MainGame.Screen_h;\n+\t\tbullet_statu = BULLET_DIE;\n+\t\tbullet_speed = 5;\n+\t\tthis.Boom_Init();\n+\t}\n+\n+\tpublic void Deal_Bullet() {\n+\t\tthis.Bullet_Move();\n+\t\tthis.Deal_Boom();\n+\t}\n+\n+\tpublic void Draw_Bullet(Canvas canvas) {\n+\t\tif (this.bullet_statu == BULLET_MOVE) {\n+\t\t\tGameUtils.Brush(canvas, img_bullet, bullet_x, bullet_y, bullet_w,\n+\t\t\t\t\tbullet_h, 0, 0);\n+\t\t} else if (this.bullet_statu == BULLET_DIE) {\n+\t\t\tbullet_x = -MainGame.Screen_w;\n+\t\t\tbullet_y = -MainGame.Screen_h;\n+\t\t}\n+\t\tthis.Draw_Boom(canvas);\n+\t}\n+\n+\tpublic void Bullet_Move() {\n+\t\tif (this.bullet_y < MainGame.Screen_h) {\n+\t\t\tbullet_y += this.bullet_speed;\n+\t\t} else {\n+\t\t\tthis.bullet_statu = BULLET_DIE;\n+\t\t}\n+\t}\n+\n+\tpublic void Update_Bullet_Local(int x, int y) {\n+\t\tthis.bullet_x = x;\n+\t\tthis.bullet_y = y;\n+\t\tthis.bullet_statu = BULLET_MOVE;\n+\t}\n+\n+\t// ----------- 爆炸\n+\tpublic void Boom_Init(){\n+\t\tInputStream is = this.getImgStream(\"smallplanebom_.png\");\n+\t\tBitmap temp = BitmapFactory.decodeStream(is);\n+\t\timg_boom = GameUtils.ZomeBitamp(temp, GameUtils.IMG_ENLARGE,\n+\t\t\t\tGameUtils.IMG_ENLARGE);\n+\t\tboom_w = img_boom.getWidth();\n+\t\tboom_h = img_boom.getHeight()/9;\n+\t\tboom_x = -MainGame.Screen_w;\n+\t\tboom_y = -MainGame.Screen_h;\n+\t\tboom_col = 0;\n+\t\tboom_row = 0;\n+\t\tboom_statu = BOOM_DIE;\n+\t}\n+\n+\tpublic void Deal_Boom(){\n+\t\tif(boom_statu == BOOM_POWER){\n+\t\t\tif(boom_row <9){\n+\t\t\t\tboom_row ++;\n+\t\t\t}else{\n+\t\t\t\tboom_row = 0;\n+\t\t\t\tboom_x = -MainGame.Screen_w;\n+\t\t\t\tboom_y = -MainGame.Screen_h;\n+\t\t\t\tboom_statu = BOOM_DIE;\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tpublic void Draw_Boom(Canvas canvas){\n+\t\tGameUtils.Brush(canvas, img_boom, boom_x, boom_y, boom_w, boom_h, boom_col, boom_row);\n+\t}\n+\n+\tpublic InputStream getImgStream(String name){\n+\t\treturn this.getClass().getResourceAsStream(\n+\t\t\t\tGameUtils.IMG_PATH+name);\n+\t}\n+}"
+  }, {
+    "sha" : "42b60e1a731d36410238af434177edc5bd641235",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Data.java",
+    "status" : "added",
+    "additions" : 22,
+    "deletions" : 0,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Data.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Data.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Data.java?ref=fec7b17945d320ad113e0b00949172c8f450e1c6",
+    "patch" : "@@ -0,0 +1,22 @@\n+package com.hzu.xu.planewar;\n+\n+import android.app.Application;\n+\n+public class Data extends Application{\n+    public int b;\n+\n+\n+\n+    public int getNumber() {\n+        return b;\n+    }\n+\n+    public void setNumber(int number) {\n+        this.b = number;\n+    }\n+    @Override\n+    public void onCreate() {\n+        // TODO Auto-generated method stub\n+        super.onCreate();\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "907d3b2a6112d534f6abd423f5ca6c94f000bb69",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/GameActivity.java",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/GameActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/GameActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/GameActivity.java?ref=fec7b17945d320ad113e0b00949172c8f450e1c6",
+    "patch" : "@@ -0,0 +1,28 @@\n+package com.hzu.xu.planewar;\n+\n+import android.app.Activity;\n+import android.graphics.Color;\n+import android.os.Bundle;\n+import android.view.Display;\n+import android.view.Window;\n+import android.view.WindowManager;\n+\n+public class GameActivity extends Activity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+//        setContentView(R.layout.activity_main);\n+        requestWindowFeature(Window.FEATURE_NO_TITLE);//设置窗口没有标题\n+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏显示\n+        Init();\n+    }\n+\n+    public void Init(){\n+        WindowManager wm = this.getWindowManager();\n+        Display display = wm.getDefaultDisplay();\n+        MainGame gameView = new MainGame(this, display);\n+        gameView.setBackgroundColor(Color.BLACK);\n+        this.setContentView(gameView);\n+    }\n+}"
+  }, {
+    "sha" : "40de9ff715793b8d605f04afb4f0a4dedc209895",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/GameUtils.java",
+    "status" : "added",
+    "additions" : 84,
+    "deletions" : 0,
+    "changes" : 84,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/GameUtils.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/GameUtils.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/GameUtils.java?ref=fec7b17945d320ad113e0b00949172c8f450e1c6",
+    "patch" : "@@ -0,0 +1,84 @@\n+package com.hzu.xu.planewar;\n+\n+import java.io.InputStream;\n+import java.util.Random;\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.graphics.Canvas;\n+import android.graphics.Matrix;\n+import android.graphics.Region.Op;\n+\n+public class GameUtils {\n+\n+\t//------------- 常量\n+\t/**\n+\t * 图片放大率\n+\t */\n+\tfinal static float IMG_ENLARGE = 2;\n+\n+\t/**\n+\t * 图片路径\n+\t */\n+\tfinal static String IMG_PATH = \"/assets/img/\";\n+\n+\t// ----------------- 工具方法\n+\tpublic  Bitmap LoadImage(String path) {\n+\t\tInputStream is = this.getClass().getResourceAsStream(\n+\t\t\t\t\"/assets/img/\" + path);\n+\t\treturn BitmapFactory.decodeStream(is);\n+\t}\n+\n+\t/**\n+\t * 绘画剪裁\n+\t */\n+\tpublic static void Brush(Canvas canvas, Bitmap bmp, int x, int y, int w,\n+\t\t\t\t\t\t\t int h, int col, int row) {\n+\t\tcanvas.clipRect(x, y, x + w, y + h, Op.REPLACE);\n+\t\tcanvas.drawBitmap(bmp, x - col * w, y - row * h, MainGame.paint);\n+\t\tcanvas.clipRect(0, 0, MainGame.Screen_w, MainGame.Screen_h, Op.REPLACE);\n+\t}\n+\n+\tpublic static Bitmap ZomeBitamp(Bitmap img, float size_w, float size_h) {\n+\t\t/* 产生resize后的Bitmap对象 */\n+\t\tMatrix matrix = new Matrix();\n+\t\tmatrix.setScale(size_w, size_h);\n+\t\tBitmap resizeBmp = Bitmap.createBitmap(img, 0, 0, img.getWidth(),\n+\t\t\t\timg.getHeight(), matrix, true);\n+\t\treturn resizeBmp;\n+\t}\n+\t/*public static Bitmap ZomeBitamp(Bitmap img, int new_w, int new_h) {\n+\t\tfloat w = (float) new_w / img.getWidth();\n+\t\tfloat h = (float) new_h / img.getHeight();\n+\t\t 产生resize后的Bitmap对象\n+\t\tMatrix matrix = new Matrix();\n+\t\tmatrix.setScale(w, h);\n+\t\tBitmap resizeBmp = Bitmap.createBitmap(img, 0, 0, img.getWidth(),\n+\t\t\t\timg.getHeight(), matrix, true);\n+\t\treturn resizeBmp;\n+\t}*/\n+\n+\t/**\n+\t * 获取随机数\n+\t *\n+\t * @param min\n+\t *            最小值\n+\t * @param max\n+\t *            最大值\n+\t * @return\n+\t */\n+\tpublic static int GetRadomNumber(int min, int max) {\n+\t\treturn new Random().nextInt(max - min) + min;\n+\t}\n+\n+\t//是否发生碰撞\n+\tpublic static boolean isRam(int r_x, int r_y, int r_w, int r_h, int b_x,\n+\t\t\t\t\t\t\t\tint b_y, int b_w, int b_h) {\n+\t\tif (r_x + r_w < b_x || b_x + b_w < r_x || r_y + r_h < b_y\n+\t\t\t\t|| b_y + b_h < r_y) {\n+\t\t\treturn false;\n+\t\t} else {\n+\t\t\treturn true;\n+\t\t}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "7be33723e975aed7f582f9692e26f92fbd9a21dd",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Hero.java",
+    "status" : "added",
+    "additions" : 112,
+    "deletions" : 0,
+    "changes" : 112,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Hero.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Hero.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Hero.java?ref=fec7b17945d320ad113e0b00949172c8f450e1c6",
+    "patch" : "@@ -0,0 +1,112 @@\n+package com.hzu.xu.planewar;\n+\n+import java.io.InputStream;\n+\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.graphics.Canvas;\n+\n+public class Hero {\n+\t// ----------------------------- 人物hero\n+\tBitmap img_hero;\n+\n+\tfinal int hero_spreed = 15;\n+\n+\tint hero_x, hero_y, hero_w, hero_h, hero_col, hero_row;\n+\n+\tpublic int hero_statu;\n+\tpublic static final int HERO_MOVE = 0X000001;\n+\tpublic static final int HERO_DIE = 0X000002;\n+\n+\t// ----------------------子弹\n+\tBulletHero bullets[];\n+\t// 子弹计数器\n+\tint bullet_count;\n+\n+\tpublic Hero() {\n+\t\tHero_Init();\n+\t\tBullet_Init();\n+\t}\n+\n+\tpublic void Hero_Init() {\n+\t\tInputStream is = this.getClass().getResourceAsStream(\n+\t\t\t\t\"/assets/img/Plane_1.png\");\n+\t\tBitmap temp = BitmapFactory.decodeStream(is);\n+\t\timg_hero = GameUtils.ZomeBitamp(temp, GameUtils.IMG_ENLARGE,\n+\t\t\t\tGameUtils.IMG_ENLARGE);\n+\t\thero_w = img_hero.getWidth();\n+\t\thero_h = img_hero.getHeight() / 3;\n+\t\thero_x = MainGame.Screen_w / 2;\n+\t\thero_y = MainGame.Screen_h - hero_h;\n+\t\thero_col = 0;\n+\t\thero_row = 1;\n+\t\thero_statu = HERO_MOVE;\n+\t}\n+\n+\tpublic void Deal_Hero() {\n+\t\tthis.Hero_Move();\n+\t\tthis.Deal_Bullet();\n+\t}\n+\n+\tpublic void Draw_Hero(Canvas canvas) {\n+\t\tif (this.hero_statu == HERO_MOVE) {\n+\t\t\tGameUtils.Brush(canvas, this.img_hero, hero_x, hero_y, hero_w,\n+\t\t\t\t\thero_h, hero_col, hero_row);\n+\t\t\tthis.Draw_Bullet(canvas);\n+\t\t}\n+\t}\n+\n+\tpublic void Hero_Move() {\n+\t\tif (MainGame.isPoint) {\n+\t\t\t// 左\n+\t\t\tif (MainGame.Point_x < this.hero_x) {\n+\t\t\t\tthis.hero_x -= this.hero_spreed;\n+\t\t\t\tthis.hero_row = 2;\n+\t\t\t}\n+\t\t\t// 上\n+\t\t\tif (MainGame.Point_y < this.hero_y) {\n+\t\t\t\tthis.hero_y -= this.hero_spreed;\n+\t\t\t}\n+\t\t\t// 右\n+\t\t\tif (MainGame.Point_x > this.hero_x + this.hero_w) {\n+\t\t\t\tthis.hero_x += this.hero_spreed;\n+\t\t\t\tthis.hero_row = 0;\n+\t\t\t}\n+\t\t\t// 下\n+\t\t\tif (MainGame.Point_y > this.hero_y + this.hero_h) {\n+\t\t\t\tthis.hero_y += this.hero_spreed;\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\t// ----------------------- 子弹\n+\tpublic void Bullet_Init() {\n+\t\tbullets = new BulletHero[25];\n+\t\tfor (int i = 0; i < bullets.length; i++) {\n+\t\t\tbullets[i] = new BulletHero();\n+\t\t\tbullets[i].Bullet_Init();\n+\t\t}\n+\t}\n+\n+\tpublic void Deal_Bullet() {\n+\t\tfor (int i = 0; i < bullets.length; i++) {\n+\t\t\tbullets[i].Deal_Bullet();\n+\t\t}\n+\t\tif (this.bullet_count++ % 4 == 0) {\n+\t\t\tfor (int i = 0; i < bullets.length; i++) {\n+\t\t\t\tif (bullets[i].bullet_statu == BulletHero.BULLET_DIE) {\n+\t\t\t\t\tbullets[i].Update_Bullet_Local(this.hero_x + this.hero_w\n+\t\t\t\t\t\t\t/ 2 - bullets[i].bullet_w / 2, this.hero_y);\n+\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tpublic void Draw_Bullet(Canvas canvas) {\n+\t\tfor (int i = 0; i < bullets.length; i++) {\n+\t\t\tbullets[i].Draw_Bullet(canvas);\n+\t\t}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "b11b8bc41558ab0c8a9e3299fb62811ee3ab0a6a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/MainGame.java",
+    "status" : "added",
+    "additions" : 309,
+    "deletions" : 0,
+    "changes" : 309,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/MainGame.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/MainGame.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/MainGame.java?ref=fec7b17945d320ad113e0b00949172c8f450e1c6",
+    "patch" : "@@ -0,0 +1,309 @@\n+package com.hzu.xu.planewar;\n+\n+import android.content.Context;\n+import android.graphics.Canvas;\n+import android.graphics.Color;\n+import android.graphics.Paint;\n+import android.graphics.Paint.Style;\n+import android.view.Display;\n+import android.view.MotionEvent;\n+import android.view.View;\n+import android.app.Activity;\n+\n+import java.io.FileNotFoundException;\n+import java.io.FileOutputStream;\n+import java.io.IOException;\n+import java.util.Properties;\n+\n+public class MainGame extends View implements Runnable {\n+\tData d;\n+\tprivate int Count=0;\n+\n+\tint Game_State;\n+\t// 游戏的Logo 状态\n+\tpublic static final int GAME_LOGO = 0X0001;\n+\t// 游戏的加载 状态\n+\tpublic static final int GAME_INIT = 0X0002;\n+\t// 游戏的菜单 状态\n+\tpublic static final int GAME_MENU = 0X0003;\n+\t// 游戏的进行 状态\n+\tpublic static final int GAME_PLAY = 0X0004;\n+\t// 游戏的暂停 状态\n+\tpublic static final int GAME_PAUSE = 0X0005;\n+\t// 游戏的退出 状态\n+\tpublic static final int GAME_EXIT = 0X0006;\n+\n+\t// 屏幕宽和高\n+\tstatic int Screen_w, Screen_h;\n+\n+\t// 是否触摸了屏幕\n+\tstatic boolean isPoint;\n+\t// 触点x,y的位置\n+\tstatic int Point_x, Point_y;\n+\n+\t// 画笔\n+\tstatic Paint paint;\n+\n+\t// 游戏运行线程\n+\tThread thread;\n+\t// 游戏线程是否在运行\n+\tboolean isRun;\n+\n+\t// ---------------- 主人公\n+\tHero hero;\n+\n+\t// ---------------- Npc\n+\tNpc npcs[];\n+\n+\tpublic MainGame(Context context, Display display) {\n+\t\tsuper(context);\n+\t\tScreen_w = display.getWidth();\n+\t\tScreen_h = display.getHeight();\n+\t\tthis.Game_State = GAME_LOGO;\n+\t\tpaint = new Paint();\n+\t\tthis.isRun = true;\n+\t\tthis.thread = new Thread(this);\n+\t\tthis.thread.start();\n+\t}\n+\n+\t@Override\n+\tpublic void run() {\n+\t\twhile (this.isRun) {\n+\t\t\tthis.Deal();\n+\t\t\tthis.postInvalidate();\n+\t\t\ttry {\n+\t\t\t\tThread.sleep(50);\n+\t\t\t} catch (InterruptedException e) {\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tpublic void Deal() {\n+\t\tswitch (this.Game_State) {\n+\t\t\tcase GAME_LOGO:\n+\t\t\t\tthis.Deal_Logo();\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_INIT:\n+\t\t\t\tthis.Deal_Init();\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_MENU:\n+\t\t\t\tthis.Deal_Menu();\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_PLAY:\n+\t\t\t\tthis.Deal_Play();\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_PAUSE:\n+\t\t\t\tthis.Deal_Pause();\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_EXIT:\n+\t\t\t\tthis.Deal_Exit();\n+\t\t\t\tbreak;\n+\t\t\tdefault:\n+\t\t\t\tbreak;\n+\t\t}\n+\t}\n+\n+\tpublic void Deal_Logo() {\n+\t\tthis.Game_State = GAME_INIT;\n+\t}\n+\n+\tpublic void Deal_Init() {\n+\t\tthis.Hero_Init();\n+\t\tthis.Npc_Init();\n+\t\tthis.Game_State = GAME_MENU;\n+\t}\n+\n+\tpublic void Deal_Menu() {\n+\t\tthis.Game_State = GAME_PLAY;\n+\n+\t}\n+\n+\tpublic void Deal_Play() {\n+\t\tthis.Deal_Hero();\n+\t\tthis.Deal_Npc();\n+\t\tthis.HeroBulletCollNpc();\n+\t\tthis.NpcBulletCollHero();\n+\t}\n+\n+\tpublic void Deal_Pause() {\n+\n+\t}\n+\n+\tpublic void Deal_Exit() {\n+\n+\t}\n+\n+\t@Override\n+\tprotected void onDraw(Canvas canvas) {\n+\t\tsuper.onDraw(canvas);\n+\t\tswitch (this.Game_State) {\n+\t\t\tcase GAME_LOGO:\n+\t\t\t\tthis.Draw_Logo(canvas);\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_INIT:\n+\t\t\t\tthis.Draw_Init(canvas);\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_MENU:\n+\t\t\t\tthis.Draw_Menu(canvas);\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_PLAY:\n+\t\t\t\tthis.Draw_Play(canvas);\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_PAUSE:\n+\t\t\t\tthis.Draw_Pause(canvas);\n+\t\t\t\tbreak;\n+\t\t\tcase GAME_EXIT:\n+\t\t\t\tthis.Draw_Exit(canvas);\n+\t\t\t\tbreak;\n+\t\t}\n+\t}\n+\n+\tpublic void Draw_Logo(Canvas canvas) {\n+\n+\t}\n+\n+\tpublic void Draw_Init(Canvas canvas) {\n+\n+\t}\n+\n+\tpublic void Draw_Menu(Canvas canvas) {\n+\n+\t}\n+\n+\tpublic void Draw_Play(Canvas canvas) {\n+\t\tthis.Draw_Hero(canvas);\n+\t\tthis.Draw_Npc(canvas);\n+\t\tif(this.hero.hero_statu == Hero.HERO_DIE){\n+\t\t\tthis.Draw_Game_Over(canvas);\n+\t\t}\n+\t}\n+\n+\tpublic void Draw_Pause(Canvas canvas) {\n+\n+\t}\n+\n+\tpublic void Draw_Exit(Canvas canvas) {\n+\n+\t}\n+\n+\tpublic void Draw_Game_Over(Canvas canvas) {\n+\t\tpaint.setTextSize(70);\n+\t\tpaint.setColor(Color.RED);\n+\t\tcanvas.drawText(\"得分为\"+Count+\"！！！\", 20, Screen_h/2, paint);\n+\t\tpaint.reset();\n+\t}\n+\n+\t// ------------------- 触屏\n+\t@Override\n+\tpublic boolean onTouchEvent(MotionEvent event) {\n+\t\tPoint_x = (int) event.getRawX();\n+\t\tPoint_y = (int) event.getRawY();\n+\t\tswitch (event.getAction()) {\n+\t\t\tcase MotionEvent.ACTION_DOWN:\n+\t\t\t\tisPoint = true;\n+\t\t\t\tbreak;\n+\t\t\tcase MotionEvent.ACTION_UP:\n+\t\t\t\tisPoint = false;\n+\t\t\t\tthis.hero.hero_row = 1;\n+\t\t\t\tbreak;\n+\t\t\tdefault:\n+\t\t\t\tbreak;\n+\t\t}\n+\t\treturn true;\n+\t}\n+\n+\t// ---------------- 主人公\n+\n+\tpublic void Hero_Init() {\n+\t\thero = new Hero();\n+\t}\n+\n+\tpublic void Deal_Hero() {\n+\t\thero.Deal_Hero();\n+\t}\n+\n+\tpublic void Draw_Hero(Canvas canvas) {\n+\t\thero.Draw_Hero(canvas);\n+\t}\n+\n+\t// ---------------- Npc\n+\n+\tpublic void Npc_Init() {\n+\t\tnpcs = new Npc[10];\n+\t\tfor (int i = 0; i < npcs.length; i++) {\n+\t\t\tnpcs[i] = new Npc();\n+\t\t}\n+\t}\n+\n+\tpublic void Deal_Npc() {\n+\t\tfor (int i = 0; i < npcs.length; i++) {\n+\t\t\tnpcs[i].Deal_Npc();\n+\t\t}\n+\t}\n+\n+\tpublic void Draw_Npc(Canvas canvas) {\n+\t\tfor (int i = 0; i < npcs.length; i++) {\n+\t\t\tif (npcs[i].npc_statu == Npc.NPC_MOVE) {\n+\t\t\t\tnpcs[i].Draw_Npc(canvas);\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\t// --------------- Hero的子弹碰撞npc\n+\tpublic void HeroBulletCollNpc() {\n+\t\tfor (int i = 0; i < this.hero.bullets.length; i++) {\n+\t\t\tfor (int j = 0; j < this.npcs.length; j++) {\n+\t\t\t\tif (GameUtils.isRam(this.hero.bullets[i].bullet_x,\n+\t\t\t\t\t\tthis.hero.bullets[i].bullet_y,\n+\t\t\t\t\t\tthis.hero.bullets[i].bullet_w,\n+\t\t\t\t\t\tthis.hero.bullets[i].bullet_h, this.npcs[j].npc_x,\n+\t\t\t\t\t\tthis.npcs[j].npc_y, this.npcs[j].npc_w,\n+\t\t\t\t\t\tthis.npcs[j].npc_h)) {\n+\t\t\t\t\tthis.hero.bullets[i].boom_statu = BulletHero.BOOM_POWER;\n+\t\t\t\t\tthis.hero.bullets[i].boom_x = this.hero.bullets[i].bullet_x;\n+\t\t\t\t\tthis.hero.bullets[i].boom_y = this.hero.bullets[i].bullet_y;\n+\t\t\t\t\tCount++;\n+\t\t\t\t\tthis.hero.bullets[i].bullet_statu = BulletHero.BULLET_DIE;\n+\t\t\t\t\tthis.hero.bullets[i].bullet_x = 0;\n+\t\t\t\t\tthis.hero.bullets[i].bullet_y = -Screen_h;\n+\n+\t\t\t\t\t//将npc移出屏幕，不然子弹打在该处还会爆炸\n+\t\t\t\t\tthis.npcs[j].npc_statu = Npc.NPC_DIE;\n+\n+\t\t\t\t\tthis.npcs[j].npc_x = 0;\n+\t\t\t\t\tthis.npcs[j].npc_y = Screen_h * 3;\n+\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\t// --------------- npc的子弹碰撞hero\n+\tpublic void NpcBulletCollHero() {\n+\t\tfor (int a = 0; a < this.npcs.length; a++) {\n+\t\t\tfor (int i = 0; i < this.npcs[a].bullets.length; i++) {\n+\t\t\t\tif (GameUtils.isRam(this.npcs[a].bullets[i].bullet_x,\n+\t\t\t\t\t\tthis.npcs[a].bullets[i].bullet_y,\n+\t\t\t\t\t\tthis.npcs[a].bullets[i].bullet_w,\n+\t\t\t\t\t\tthis.npcs[a].bullets[i].bullet_h, this.hero.hero_x,\n+\t\t\t\t\t\tthis.hero.hero_y, this.hero.hero_w, this.hero.hero_h)) {\n+\t\t\t\t\tthis.npcs[a].bullets[i].boom_statu = BulletNpc.BOOM_POWER;\n+\t\t\t\t\tthis.npcs[a].bullets[i].boom_x = this.hero.hero_x;\n+\t\t\t\t\tthis.npcs[a].bullets[i].boom_y = this.hero.hero_y;\n+\n+\t\t\t\t\tthis.npcs[a].bullets[i].bullet_statu = BulletHero.BULLET_DIE;\n+\t\t\t\t\tthis.npcs[a].bullets[i].bullet_x = 0;\n+\t\t\t\t\tthis.npcs[a].bullets[i].bullet_y = -Screen_h;\n+\n+\t\t\t\t\t//将英雄移出屏幕，不然子弹打在英雄处还是会爆炸\n+\t\t\t\t\tthis.hero.hero_statu = Hero.HERO_DIE;\n+\t\t\t\t\tthis.hero.hero_x = 0;\n+\t\t\t\t\tthis.hero.hero_y = Screen_h * 3;\n+\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "ec6b3b6dd501aa3d51a6af050304cdb8c2800969",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Npc.java",
+    "status" : "added",
+    "additions" : 105,
+    "deletions" : 0,
+    "changes" : 105,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Npc.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Npc.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901140/Npc.java?ref=fec7b17945d320ad113e0b00949172c8f450e1c6",
+    "patch" : "@@ -0,0 +1,105 @@\n+package com.hzu.xu.planewar;\n+\n+import java.io.InputStream;\n+\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.graphics.Canvas;\n+\n+public class Npc {\n+\tBitmap img_npc;\n+\tint npc_speed;\n+\tint npc_x, npc_y, npc_w, npc_h, npc_col, npc_row;\n+\n+\tpublic int npc_statu;\n+\tpublic static final int NPC_MOVE = 0X000001;\n+\tpublic static final int NPC_DIE = 0X000002;\n+\n+\t// ----------------------子弹\n+\tBulletNpc bullets[];\n+\t// 子弹计数器\n+\tint bullet_count;\n+\n+\tpublic Npc() {\n+\t\tNpc_Init();\n+\t\tthis.Bullet_Init();\n+\t}\n+\n+\tpublic void Npc_Init() {\n+\t\tInputStream is = this.getClass().getResourceAsStream(\n+\t\t\t\t\"/assets/img/smallplane_.png\");\n+\t\tBitmap temp = BitmapFactory.decodeStream(is);\n+\t\timg_npc = GameUtils.ZomeBitamp(temp, GameUtils.IMG_ENLARGE,\n+\t\t\t\tGameUtils.IMG_ENLARGE);\n+\t\tnpc_w = img_npc.getWidth();\n+\t\tnpc_h = img_npc.getHeight() / 6;\n+\t\tnpc_y = GameUtils.GetRadomNumber(-npc_h * 2, -npc_h);\n+\t\tnpc_x = GameUtils.GetRadomNumber(0, MainGame.Screen_w - npc_w);\n+\t\tnpc_col = 0;\n+\t\tnpc_row = GameUtils.GetRadomNumber(0, 4);\n+\t\tnpc_speed = GameUtils.GetRadomNumber(2, 6);\n+\t\tnpc_statu = NPC_MOVE;\n+\t}\n+\n+\tpublic void Deal_Npc() {\n+\t\tthis.Npc_Move();\n+\t\tthis.Deal_Bullet();\n+\t}\n+\n+\tpublic void Npc_Move() {\n+\t\tif (npc_statu == NPC_MOVE) {\n+\t\t\tnpc_y += this.npc_speed;\n+\n+\t\t} else if (npc_statu == NPC_DIE) {\n+\t\t\tnpc_y = GameUtils.GetRadomNumber(-npc_h * 2, -npc_h);\n+\t\t\tnpc_x = GameUtils.GetRadomNumber(0, MainGame.Screen_w - npc_w);\n+\t\t\tnpc_row = GameUtils.GetRadomNumber(0, 4);\n+\t\t\tnpc_speed = GameUtils.GetRadomNumber(2, 6);\n+\t\t\tnpc_statu = NPC_MOVE;\n+\n+\t\t}\n+\t\tif (npc_y > MainGame.Screen_h) {\n+\t\t\tnpc_statu = NPC_DIE;\n+\t\t}\n+\t}\n+\n+\tpublic void Draw_Npc(Canvas canvas) {\n+\t\tif (this.npc_statu == NPC_MOVE) {\n+\t\t\tGameUtils.Brush(canvas, img_npc, npc_x, npc_y, npc_w, npc_h,\n+\t\t\t\t\tnpc_col, npc_row);\n+\t\t}\n+\t\tthis.Draw_Bullet(canvas);\n+\t}\n+\n+\t// ----------------------- 子弹\n+\tpublic void Bullet_Init() {\n+\t\tbullets = new BulletNpc[25];\n+\t\tfor (int i = 0; i < bullets.length; i++) {\n+\t\t\tbullets[i] = new BulletNpc();\n+//\t\t\tbullets[i].setImgBulletName(\"bullet-4.png\");\n+\t\t\tbullets[i].Bullet_Init();\n+\t\t}\n+\t}\n+\n+\tpublic void Deal_Bullet() {\n+\t\tfor (int i = 0; i < bullets.length; i++) {\n+\t\t\tbullets[i].Deal_Bullet();\n+\t\t}\n+\t\tif (this.bullet_count++ % 30 == 0) {\n+\t\t\tfor (int i = 0; i < bullets.length; i++) {\n+\t\t\t\tif (bullets[i].bullet_statu == BulletNpc.BULLET_DIE) {\n+\t\t\t\t\tbullets[i].Update_Bullet_Local(this.npc_x + this.npc_w\n+\t\t\t\t\t\t\t/ 2 - bullets[i].bullet_w / 2, this.npc_y+this.npc_h);\n+\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tpublic void Draw_Bullet(Canvas canvas) {\n+\t\tfor (int i = 0; i < bullets.length; i++) {\n+\t\t\tbullets[i].Draw_Bullet(canvas);\n+\t\t}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "de523062e4f8ed51b8bf53f1eed20012fc4e4fd0",
+    "filename" : "app/src/main/res/drawable/bullet-1.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-1.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-1.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/bullet-1.png?ref=fec7b17945d320ad113e0b00949172c8f450e1c6"
+  }, {
+    "sha" : "fe78e9931b18de6d5fa506a541030768b8d66511",
+    "filename" : "app/src/main/res/drawable/bullet-2.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-2.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-2.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/bullet-2.png?ref=fec7b17945d320ad113e0b00949172c8f450e1c6"
+  }, {
+    "sha" : "f044c49b62e1a1f0c9edfd353351f542fd70b304",
+    "filename" : "app/src/main/res/drawable/bullet-3.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-3.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-3.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/bullet-3.png?ref=fec7b17945d320ad113e0b00949172c8f450e1c6"
+  }, {
+    "sha" : "1bf116c85f51c7cf7c53849b0cafd6b5fd25b6d6",
+    "filename" : "app/src/main/res/drawable/bullet-7.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-7.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-7.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/bullet-7.png?ref=fec7b17945d320ad113e0b00949172c8f450e1c6"
+  }, {
+    "sha" : "a6067d5a2593c96a588bd49770e93eb6541c562f",
+    "filename" : "app/src/main/res/drawable/bullet-8.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-8.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-8.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/bullet-8.png?ref=fec7b17945d320ad113e0b00949172c8f450e1c6"
+  }, {
+    "sha" : "f36c880c4b8c5175c847c286a83cf2681aa71841",
+    "filename" : "app/src/main/res/drawable/bullet-9.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-9.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet-9.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/bullet-9.png?ref=fec7b17945d320ad113e0b00949172c8f450e1c6"
+  }, {
+    "sha" : "e9f6ed3c4b16e7c2f10f743baf765199e2a2a60a",
+    "filename" : "app/src/main/res/drawable/bullet.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/fec7b17945d320ad113e0b00949172c8f450e1c6/app/src/main/res/drawable/bullet.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/bullet.png?ref=fec7b17945d320ad113e0b00949172c8f450e1c6"
+  } ],
+  "sha" : "fec7b17945d320ad113e0b00949172c8f450e1c6",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fec7b17945d320ad113e0b00949172c8f450e1c6",
+  "parents" : [ {
+    "sha" : "25c874785565b36bf3604cf7ff24bda67beaf02c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/25c874785565b36bf3604cf7ff24bda67beaf02c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/25c874785565b36bf3604cf7ff24bda67beaf02c"
+  } ]
+}

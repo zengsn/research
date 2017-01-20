@@ -1,0 +1,131 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 111,
+    "additions" : 111,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/5803e3494a0751983933a6691675377365bfd87f",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-28T07:33:31Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-28T07:33:31Z"
+    },
+    "message" : "Merge pull request #508 from BlackMamba1024B/master\n\n#88 #81 lab2",
+    "tree" : {
+      "sha" : "35366df4c00b52272094bef45cec7d0c4bc0de95",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/35366df4c00b52272094bef45cec7d0c4bc0de95"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/5803e3494a0751983933a6691675377365bfd87f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5803e3494a0751983933a6691675377365bfd87f/comments",
+  "files" : [ {
+    "sha" : "9ccbdb3ab95209fe9a015e6fe62c2c5ba5b8be54",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241kobeActivity.java",
+    "status" : "added",
+    "additions" : 83,
+    "deletions" : 0,
+    "changes" : 83,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5803e3494a0751983933a6691675377365bfd87f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241kobeActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5803e3494a0751983933a6691675377365bfd87f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241kobeActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903241/Net1314080903241kobeActivity.java?ref=5803e3494a0751983933a6691675377365bfd87f",
+    "patch" : "@@ -0,0 +1,83 @@\n+package kobe.com.kobe;\n+\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.app.ActionBar;\n+import android.support.v4.app.NavUtils;\n+import android.view.MenuItem;\n+\n+/**\n+ * An activity representing a single Item detail screen. This\n+ * activity is only used narrow width devices. On tablet-size devices,\n+ * item details are presented side-by-side with a list of items\n+ * in a {@link ItemListActivity}.\n+ */\n+public class Net1314080903241kobeActivity extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_item_detail);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);\n+        setSupportActionBar(toolbar);\n+\n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own detail action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+\n+        // Show the Up button in the action bar.\n+        ActionBar actionBar = getSupportActionBar();\n+        if (actionBar != null) {\n+            actionBar.setDisplayHomeAsUpEnabled(true);\n+        }\n+\n+        // savedInstanceState is non-null when there is fragment state\n+        // saved from previous configurations of this activity\n+        // (e.g. when rotating the screen from portrait to landscape).\n+        // In this case, the fragment will automatically be re-added\n+        // to its container so we don't need to manually add it.\n+        // For more information, see the Fragments API guide at:\n+        //\n+        // http://developer.android.com/guide/components/fragments.html\n+        //\n+        if (savedInstanceState == null) {\n+            // Create the detail fragment and add it to the activity\n+            // using a fragment transaction.\n+            Bundle arguments = new Bundle();\n+            arguments.putString(ItemDetailFragment.ARG_ITEM_ID,\n+                    getIntent().getStringExtra(ItemDetailFragment.ARG_ITEM_ID));\n+            ItemDetailFragment fragment = new ItemDetailFragment();\n+            fragment.setArguments(arguments);\n+            getSupportFragmentManager().beginTransaction()\n+                    .add(R.id.item_detail_container, fragment)\n+                    .commit();\n+        }\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        int id = item.getItemId();\n+        if (id == android.R.id.home) {\n+            // This ID represents the Home or Up button. In the case of this\n+            // activity, the Up button is shown. Use NavUtils to allow users\n+            // to navigate up one level in the application structure. For\n+            // more details, see the Navigation pattern on Android Design:\n+            //\n+            // http://developer.android.com/design/patterns/navigation.html#up-vs-back\n+            //\n+            NavUtils.navigateUpTo(this, new Intent(this, ItemListActivity.class));\n+            return true;\n+        }\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  }, {
+    "sha" : "d1c00dd09d1813a2e100dfae552292fb37abe655",
+    "filename" : "app/src/main/res/drawable/241.PNG",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5803e3494a0751983933a6691675377365bfd87f/app/src/main/res/drawable/241.PNG",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5803e3494a0751983933a6691675377365bfd87f/app/src/main/res/drawable/241.PNG",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/241.PNG?ref=5803e3494a0751983933a6691675377365bfd87f"
+  }, {
+    "sha" : "d1c00dd09d1813a2e100dfae552292fb37abe655",
+    "filename" : "app/src/main/res/drawable/net1314080903241.PNG",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5803e3494a0751983933a6691675377365bfd87f/app/src/main/res/drawable/net1314080903241.PNG",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5803e3494a0751983933a6691675377365bfd87f/app/src/main/res/drawable/net1314080903241.PNG",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net1314080903241.PNG?ref=5803e3494a0751983933a6691675377365bfd87f"
+  }, {
+    "sha" : "dfb77ab7c0084a3451038270767421600fe3c4a4",
+    "filename" : "app/src/main/res/layout/net1314080903241.xml",
+    "status" : "added",
+    "additions" : 14,
+    "deletions" : 0,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5803e3494a0751983933a6691675377365bfd87f/app/src/main/res/layout/net1314080903241.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5803e3494a0751983933a6691675377365bfd87f/app/src/main/res/layout/net1314080903241.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903241.xml?ref=5803e3494a0751983933a6691675377365bfd87f",
+    "patch" : "@@ -0,0 +1,14 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<android.support.v7.widget.RecyclerView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:id=\"@+id/item_list\"\n+    android:name=\"kobe.com.kobe.ItemListFragment\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:layout_marginLeft=\"16dp\"\n+    android:layout_marginRight=\"16dp\"\n+    app:layoutManager=\"LinearLayoutManager\"\n+    tools:context=\"kobe.com.kobe.ItemListActivity\"\n+    tools:listitem=\"@layout/item_list_content\"\n+    android:background=\"@drawable/net1314080903241\"/>"
+  }, {
+    "sha" : "dfb77ab7c0084a3451038270767421600fe3c4a4",
+    "filename" : "app/src/main/res/layout/net1314080903241_list.xml",
+    "status" : "added",
+    "additions" : 14,
+    "deletions" : 0,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5803e3494a0751983933a6691675377365bfd87f/app/src/main/res/layout/net1314080903241_list.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5803e3494a0751983933a6691675377365bfd87f/app/src/main/res/layout/net1314080903241_list.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903241_list.xml?ref=5803e3494a0751983933a6691675377365bfd87f",
+    "patch" : "@@ -0,0 +1,14 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<android.support.v7.widget.RecyclerView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:id=\"@+id/item_list\"\n+    android:name=\"kobe.com.kobe.ItemListFragment\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:layout_marginLeft=\"16dp\"\n+    android:layout_marginRight=\"16dp\"\n+    app:layoutManager=\"LinearLayoutManager\"\n+    tools:context=\"kobe.com.kobe.ItemListActivity\"\n+    tools:listitem=\"@layout/item_list_content\"\n+    android:background=\"@drawable/net1314080903241\"/>"
+  } ],
+  "sha" : "5803e3494a0751983933a6691675377365bfd87f",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5803e3494a0751983933a6691675377365bfd87f",
+  "parents" : [ {
+    "sha" : "c5942251c4694c118a11dffaf1db90a7c98ce01f",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c5942251c4694c118a11dffaf1db90a7c98ce01f",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/c5942251c4694c118a11dffaf1db90a7c98ce01f"
+  }, {
+    "sha" : "346bf90cc338aa7fe2bc364cdbc55b83daa1dab3",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/346bf90cc338aa7fe2bc364cdbc55b83daa1dab3",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/346bf90cc338aa7fe2bc364cdbc55b83daa1dab3"
+  } ]
+}

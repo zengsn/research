@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "LincoXiaoQ",
+    "id" : 17979554,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17979554?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LincoXiaoQ",
+    "html_url" : "https://github.com/LincoXiaoQ",
+    "followers_url" : "https://api.github.com/users/LincoXiaoQ/followers",
+    "following_url" : "https://api.github.com/users/LincoXiaoQ/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LincoXiaoQ/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LincoXiaoQ/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LincoXiaoQ/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LincoXiaoQ/orgs",
+    "repos_url" : "https://api.github.com/users/LincoXiaoQ/repos",
+    "events_url" : "https://api.github.com/users/LincoXiaoQ/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LincoXiaoQ/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 103,
+    "additions" : 103,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "LincoXiaoQ",
+    "id" : 17979554,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17979554?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LincoXiaoQ",
+    "html_url" : "https://github.com/LincoXiaoQ",
+    "followers_url" : "https://api.github.com/users/LincoXiaoQ/followers",
+    "following_url" : "https://api.github.com/users/LincoXiaoQ/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LincoXiaoQ/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LincoXiaoQ/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LincoXiaoQ/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LincoXiaoQ/orgs",
+    "repos_url" : "https://api.github.com/users/LincoXiaoQ/repos",
+    "events_url" : "https://api.github.com/users/LincoXiaoQ/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LincoXiaoQ/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/2580a08913f97793577d3ed578434bf7e6259819",
+  "commit" : {
+    "author" : {
+      "name" : "LincoXiaoQ",
+      "email" : "891434262@qq.com",
+      "date" : "2016-11-05T01:55:57Z"
+    },
+    "committer" : {
+      "name" : "LincoXiaoQ",
+      "email" : "891434262@qq.com",
+      "date" : "2016-11-05T01:55:57Z"
+    },
+    "message" : "#4 提及实验代码",
+    "tree" : {
+      "sha" : "077b0919f97f1249c094e2ffeec8515544e628b6",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/077b0919f97f1249c094e2ffeec8515544e628b6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/2580a08913f97793577d3ed578434bf7e6259819",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/2580a08913f97793577d3ed578434bf7e6259819/comments",
+  "files" : [ {
+    "sha" : "0a817a1bc1b06ade631b8db2c3268985f0a2d175",
+    "filename" : "jweb/src/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "status" : "added",
+    "additions" : 77,
+    "deletions" : 0,
+    "changes" : 77,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2580a08913f97793577d3ed578434bf7e6259819/jweb/src/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2580a08913f97793577d3ed578434bf7e6259819/jweb/src/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java?ref=2580a08913f97793577d3ed578434bf7e6259819",
+    "patch" : "@@ -0,0 +1,77 @@\n+package _Sevlet_Test;\n+\n+import java.io.FileNotFoundException;\n+import java.io.FileOutputStream;\n+import java.io.IOException;\n+import java.io.OutputStream;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.MultipartConfig;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.Part;\n+\n+import org.omg.CORBA.portable.InputStream;\n+\n+@MultipartConfig(location = \"C:/upload/\", maxFileSize = 8388608, fileSizeThreshold = 819200)\n+\n+public class Se1414080902212Sevlet extends HttpServlet {\n+\n+\t\n+\tpublic Se1414080902212Sevlet() {\n+\t\tsuper();\n+\t}\n+\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\t\n+\t\tdoPost(request, response);\n+\t}\n+\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tresponse.setCharacterEncoding(\"UTF-8\");\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"<meta charset=\\\"UTF-8\\\">\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.println(\"文件名:\"+request.getParameter(\"file_name\")+\"<br/>\");\n+\t\tout.println(\"文件描述 : \"+request.getParameter(\"file_discribe\")+\"<br/>\");\n+\t\tout.println(\"上传成功\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t\tString fileName=request.getParameter(\"file_name\");\n+//\t\tPart part=request.getPart(\"file_Toup\");\n+//\t\twriteTo(fileName,part);\n+\t}\n+\n+\t//存储文件\n+    private void writeTo(String fileName, Part part) throws IOException, FileNotFoundException {\n+        InputStream in = (InputStream) part.getInputStream();\n+        OutputStream out = new FileOutputStream(fileName);\n+        byte[] buffer = new byte[1024];\n+        int length = -1;\n+        while ((length = in.read(buffer)) != -1) {\n+            out.write(buffer, 0, length);\n+        }\n+        in.close();\n+        out.close();\n+    }\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "e1f6e5aec37f23011b93c7b6d793868adabfe6ca",
+    "filename" : "jweb/web/1414080902212/upLoad_Response.jsp",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2580a08913f97793577d3ed578434bf7e6259819/jweb/web/1414080902212/upLoad_Response.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2580a08913f97793577d3ed578434bf7e6259819/jweb/web/1414080902212/upLoad_Response.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/upLoad_Response.jsp?ref=2580a08913f97793577d3ed578434bf7e6259819",
+    "patch" : "@@ -0,0 +1,26 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"ISO-8859-1\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>文件上传</title>\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+  </head>\n+  \n+  <body>\n+    文件已上传 <br>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "2580a08913f97793577d3ed578434bf7e6259819",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/2580a08913f97793577d3ed578434bf7e6259819",
+  "parents" : [ {
+    "sha" : "0d796422de43577d82b39b7293b96113f021405b",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/0d796422de43577d82b39b7293b96113f021405b",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/0d796422de43577d82b39b7293b96113f021405b"
+  } ]
+}

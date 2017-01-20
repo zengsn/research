@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "630440348",
+    "id" : 22109523,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22109523?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/630440348",
+    "html_url" : "https://github.com/630440348",
+    "followers_url" : "https://api.github.com/users/630440348/followers",
+    "following_url" : "https://api.github.com/users/630440348/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/630440348/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/630440348/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/630440348/subscriptions",
+    "organizations_url" : "https://api.github.com/users/630440348/orgs",
+    "repos_url" : "https://api.github.com/users/630440348/repos",
+    "events_url" : "https://api.github.com/users/630440348/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/630440348/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 61,
+    "additions" : 61,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "630440348",
+    "id" : 22109523,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22109523?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/630440348",
+    "html_url" : "https://github.com/630440348",
+    "followers_url" : "https://api.github.com/users/630440348/followers",
+    "following_url" : "https://api.github.com/users/630440348/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/630440348/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/630440348/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/630440348/subscriptions",
+    "organizations_url" : "https://api.github.com/users/630440348/orgs",
+    "repos_url" : "https://api.github.com/users/630440348/repos",
+    "events_url" : "https://api.github.com/users/630440348/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/630440348/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615",
+  "commit" : {
+    "author" : {
+      "name" : "630440348",
+      "email" : "630440348@qq.com",
+      "date" : "2016-10-08T03:21:32Z"
+    },
+    "committer" : {
+      "name" : "630440348",
+      "email" : "630440348@qq.com",
+      "date" : "2016-10-08T03:21:32Z"
+    },
+    "message" : "#2 提交实验代码",
+    "tree" : {
+      "sha" : "0c84d0e8aed096536981e7bc0c89974a1ff69816",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/0c84d0e8aed096536981e7bc0c89974a1ff69816"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615/comments",
+  "files" : [ {
+    "sha" : "ccd2e6fcdf85c86617f2a922f476f8cc1def6a2f",
+    "filename" : "labs/1414080902126/index.html",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615/labs/1414080902126/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615/labs/1414080902126/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902126/index.html?ref=1e98f41cb0aa9fe37ce430a844ccdd50c7d57615",
+    "patch" : "@@ -0,0 +1,43 @@\n+<!DOCTYPE html>\n+<html>\n+<meta charset=\"UTF-8\">\n+  <head>\n+    <title>注册界面</title>\n+\t\n+      <script src=\"http://code.jquery.com/jquery.js\"></script>\n+    <script language=\"javascript\" src=\"test.js\"></script>\n+\n+  </head>\n+  \n+  <body >\n+  \t<h3 align=\"center\">个人账号注册</h3>\n+  \t<form name=\"stu\" action=\"\">\n+  \t<table  align=\"center\">\n+  \t<tr><td>昵称：</td><td><input type=\"text\" name=\"stuName\"></td></tr>\n+  \t<tr><td>性别：</td>\n+  \t\t<td><input type=\"radio\" name=\"stuSex\" checked=\"checked\">男\n+  \t\t<input type=\"radio\" name=\"stuSex\">女\n+  \t\t</td>\n+    </tr>\n+  \t<tr><td>关注领域：</td>\n+  \t\t<td><select name=\"stuSelect2\">\n+  \t\t<option selected>计算机</option>\n+  \t\t<option>文学</option>\n+  \t\t<option>社会</option>\n+  \t\t<option>生物科学</option>\n+      <option>体育</option>\n+      <option>其他</option>\n+  \t\t\t\t</select>\n+  \t\t</td>\n+  \t\t</tr>\n+\t\t<tr><td>密码：</td><td><input type=\"password\" name=\"4\" cols=\"40\"></td></tr>\n+\t\t<tr><td>自我介绍：</td>\n+\t\t\t<td colspan=\"2\"><textarea name=\"Letter\" rows=\"4\" cols=\"40\"></textarea></td>\n+\t\t\t</tr>\n+\t\t<tr>\n+\t\t\t<td><input type=\"submit\" value=\"注册\" onclick=\"test()\"><input type=\"reset\" value=\"取消\"></td>\n+\t\t\t</tr>\n+\t\t\t</table>\n+\t\t\t</form>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "854f6b700424ca173efb2445de082103153164ec",
+    "filename" : "labs/1414080902126/success.json",
+    "status" : "added",
+    "additions" : 4,
+    "deletions" : 0,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615/labs/1414080902126/success.json",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615/labs/1414080902126/success.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902126/success.json?ref=1e98f41cb0aa9fe37ce430a844ccdd50c7d57615",
+    "patch" : "@@ -0,0 +1,4 @@\n+\n+{\n+\t\"msg\":\"保存成功！\"\n+}"
+  }, {
+    "sha" : "a6eebe0ec2c1bc0b3a6c8060aab39b6ba740e22b",
+    "filename" : "labs/1414080902126/test.js",
+    "status" : "added",
+    "additions" : 14,
+    "deletions" : 0,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615/labs/1414080902126/test.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615/labs/1414080902126/test.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902126/test.js?ref=1e98f41cb0aa9fe37ce430a844ccdd50c7d57615",
+    "patch" : "@@ -0,0 +1,14 @@\n+function test(){\n+    window.alert(\"注册成功！\");\n+    }\n+jQuery(document).ready(function(){\n+    $(\".btn\").click(function(event){\n+        $.ajax({\n+             url: \"success.json\"\n+        }).done(function(data) {\n+            if ( console && console.log ) {\n+                alert(data.msg);\n+            }\n+        })\n+    });\n+});\n\\ No newline at end of file"
+  } ],
+  "sha" : "1e98f41cb0aa9fe37ce430a844ccdd50c7d57615",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615",
+  "parents" : [ {
+    "sha" : "f0ca577fce020f19fe0fa3ed19d62f21254fbfed",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f0ca577fce020f19fe0fa3ed19d62f21254fbfed",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f0ca577fce020f19fe0fa3ed19d62f21254fbfed"
+  } ]
+}

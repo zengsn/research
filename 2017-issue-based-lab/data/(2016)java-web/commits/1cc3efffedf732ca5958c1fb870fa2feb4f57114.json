@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Danivy",
+    "id" : 22512003,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512003?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Danivy",
+    "html_url" : "https://github.com/Danivy",
+    "followers_url" : "https://api.github.com/users/Danivy/followers",
+    "following_url" : "https://api.github.com/users/Danivy/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Danivy/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Danivy/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Danivy/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Danivy/orgs",
+    "repos_url" : "https://api.github.com/users/Danivy/repos",
+    "events_url" : "https://api.github.com/users/Danivy/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Danivy/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 125,
+    "additions" : 100,
+    "deletions" : 25
+  },
+  "author" : {
+    "login" : "Danivy",
+    "id" : 22512003,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512003?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Danivy",
+    "html_url" : "https://github.com/Danivy",
+    "followers_url" : "https://api.github.com/users/Danivy/followers",
+    "following_url" : "https://api.github.com/users/Danivy/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Danivy/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Danivy/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Danivy/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Danivy/orgs",
+    "repos_url" : "https://api.github.com/users/Danivy/repos",
+    "events_url" : "https://api.github.com/users/Danivy/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Danivy/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1cc3efffedf732ca5958c1fb870fa2feb4f57114",
+  "commit" : {
+    "author" : {
+      "name" : "Danivy",
+      "email" : "755793225@qq.com",
+      "date" : "2016-11-20T12:14:44Z"
+    },
+    "committer" : {
+      "name" : "Danivy",
+      "email" : "755793225@qq.com",
+      "date" : "2016-11-20T12:14:44Z"
+    },
+    "message" : "#7 提交实验代码",
+    "tree" : {
+      "sha" : "96b52c4940b3075f6145f356c0f94bd846ea982e",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/96b52c4940b3075f6145f356c0f94bd846ea982e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1cc3efffedf732ca5958c1fb870fa2feb4f57114",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cc3efffedf732ca5958c1fb870fa2feb4f57114/comments",
+  "files" : [ {
+    "sha" : "12f992a7d27fb872e48e51c76c41037d17899cec",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902205/DBBean.java",
+    "status" : "added",
+    "additions" : 74,
+    "deletions" : 0,
+    "changes" : 74,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cc3efffedf732ca5958c1fb870fa2feb4f57114/jweb/src/edu/hzu/javaweb/labs/se1414080902205/DBBean.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cc3efffedf732ca5958c1fb870fa2feb4f57114/jweb/src/edu/hzu/javaweb/labs/se1414080902205/DBBean.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902205/DBBean.java?ref=1cc3efffedf732ca5958c1fb870fa2feb4f57114",
+    "patch" : "@@ -0,0 +1,74 @@\n+package edu.hzu.javaweb.labs.se1414080902205;\n+\n+/*\n+ * To change this license header, choose License Headers in Project Properties.\n+ * To change this template file, choose Tools | Templates\n+ * and open the template in the editor.\n+ */\n+/**\n+ *\n+ * @author Administrator\n+ */\n+import java.sql.*;\n+\n+public class DBBean {\n+    private Connection conn = null;\n+    private PreparedStatement PPstmt = null;\n+    private Statement stmt = null;\n+    //���mysql��ݿ��е�test��ݿ�\n+    public Connection getConnection(){\n+        try{\n+            if(conn == null){\n+                Class.forName(\"com.mysql.jdbc.Driver\");\n+                conn = DriverManager.getConnection(\n+                    \"jdbc:mysql://localhost:3306/youju?useUnicode=true&charset=gbk\",\"root\",\"root\");   \n+            }\n+        }catch(ClassNotFoundException e){\n+            e.printStackTrace();\n+            System.out.println(\"δ�ܼ�����ݿ������\");\n+        }catch(SQLException e0){\n+            e0.printStackTrace();\n+            System.out.println(\"��ݿ����ʧ��\");\n+        }\n+        return conn;\n+    }\n+    \n+    //����������\n+    public PreparedStatement getPreparedStatement(String sql){\n+        try{\n+            conn = getConnection();\n+            PPstmt = conn.prepareStatement(sql);\n+        }catch(SQLException e){\n+            e.printStackTrace();\n+            System.out.println(\"��ݿ�Ԥ�������ʧ��\");\n+        }\n+\n+        return PPstmt;\n+    }\n+    public Statement getStatement(){\n+        try{\n+            stmt = conn.createStatement();\n+        }catch(SQLException e){\n+            System.out.println(e);\n+            e.printStackTrace();\n+            System.out.println(\"��ݿ������ʧ��\");\n+        }\n+        return stmt;\n+    }\n+    public void closeResource(Connection conn,Statement stmt,PreparedStatement PPstmt){\n+        try{\n+\n+            if(conn != null)\n+                conn.close();\n+            if(stmt != null)\n+                stmt.close();\n+            if(PPstmt != null){\n+                PPstmt.close();\n+            }\n+        }catch(SQLException e0){\n+            System.out.println(\"��ݿ���Դ�ر�ʧ��\");\n+        }\n+\n+    }\n+}\n+"
+  }, {
+    "sha" : "edc4a36039f81492a7b1a7c45e16ed6e77525d8e",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902205/Se1414080902205Servlet.java",
+    "status" : "modified",
+    "additions" : 26,
+    "deletions" : 25,
+    "changes" : 51,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cc3efffedf732ca5958c1fb870fa2feb4f57114/jweb/src/edu/hzu/javaweb/labs/se1414080902205/Se1414080902205Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cc3efffedf732ca5958c1fb870fa2feb4f57114/jweb/src/edu/hzu/javaweb/labs/se1414080902205/Se1414080902205Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902205/Se1414080902205Servlet.java?ref=1cc3efffedf732ca5958c1fb870fa2feb4f57114",
+    "patch" : "@@ -2,13 +2,15 @@\n \n import java.io.IOException;\n import java.io.PrintWriter;\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.SQLException;\n \n import javax.servlet.ServletException;\n import javax.servlet.annotation.WebServlet;\n import javax.servlet.http.HttpServlet;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n-import javax.servlet.http.HttpSession;\n @WebServlet(\"/1414080902205\")\n public class Se1414080902205Servlet extends HttpServlet {\n \n@@ -54,30 +56,21 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\trequest.setCharacterEncoding(\"gb2312\");\n \t\tresponse.setCharacterEncoding(\"gb2312\");\n \t\tPrintWriter out = response.getWriter();\n-\t\tString Account = \"\";\n-\t\tString Amount =\"\";\n-\t\tif(request.getParameter(\"username\")!=null){\n-//\t\t\tSystem.out.println(\"fkldasjflkasjdkflas\");\n-\t\t\tAccount+=new String(request.getParameter(\"username\"));\n-\t\t}\n-\t\t\t\n-\t\tif(request.getParameter(\"passwd\")!=null)\n-\t\t\tAmount= new String(request.getParameter(\"passwd\"));\n+\t\tString Account = new String(request.getParameter(\"account\"));\n+\t\tString Amount = new String(request.getParameter(\"amount\"));\n //\t\tout.print(Account);\n //\t\tout.print(Amount);\n-\t\tHttpSession session=request.getSession(true);\n-\t\tString msg = \"\";\n \t\tif (Account.equals(\"\")) {\n-\t\t\tmsg = \"�˺Ų���Ϊ��\";\n+\t\t\tout.println(\"�˺Ų���Ϊ��\");\n \t\t} else if (Amount.equals(\"\")) {\n-\t\t\tmsg = \"ת�˽���Ϊ��\";\n+\t\t\tout.println(\"ת�˽���Ϊ��\");\n \t\t} else {\n \t\t\tboolean flat = true;\n \t\t\tchar[] str=Account.toCharArray();\n \t\t\tfor (int i = 0;i < Account.length();i++) {\n \t\t\t\tint x = str[i] - '0';\n \t\t\t\tif (!(x >= 0 && x <= 9)) {\n-\t\t\t\t\tmsg = \"��������ȷ���˺�\";\n+\t\t\t\t\tout.println(\"��������ȷ���˺�\");\n \t\t\t\t\tflat = false;\n \t\t\t\t\tbreak;\n \t\t\t\t}\n@@ -87,22 +80,30 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\t\t\tfor (int i = 0;i < Amount.length();i++) {\n \t\t\t\t\tint x = sstr[i] - '0';\n \t\t\t\t\tif (!(x >= 0 && x <= 9)) {\n-\t\t\t\t\t\tmsg = \"��������ȷ��ת�˽��\";\n+\t\t\t\t\t\tout.println(\"��������ȷ��ת�˽��\");\n \t\t\t\t\t\tflat = false;\n \t\t\t\t\t\tbreak;\n \t\t\t\t\t}\n \t\t\t\t}\n \t\t\t}\n-\t\t\tif (flat) msg = \"ת�˳ɹ�\";\n+\t\t\tif (flat) {\n+\t\t\t\tConnection conn = null;\n+\t\t\t\tPreparedStatement stmt = null;\n+\t\t        DBBean db = new DBBean();\n+\t\t\t\ttry {\n+\t\t\t        conn = db.getConnection();\n+\t\t\t        String sql = \"insert into transfer values(?,?)\";\n+\t\t\t        stmt = db.getPreparedStatement(sql);\n+\t\t\t        stmt.setString(1,Account);\n+\t\t\t        stmt.setString(2,Amount);\n+\t\t\t        stmt.executeUpdate();\n+\t\t\t        db.closeResource(conn,null,stmt);\n+\t\t\t\t} catch (SQLException e) {\n+\t\t\t\t\te.printStackTrace();\n+\t\t\t\t}\n+\t\t\t\tout.println(\"ת�˳ɹ�\");\n+\t\t\t}\n \t\t}\n-\t\tSystem.out.println(msg);\n-\t\trequest.setAttribute(\"message\", msg);\n-\t\trequest.getRequestDispatcher(\"/index.jsp\").forward(request, response);\n-//\t\tSystem.out.println(\"dflajskldfjads\");\n-\t\tsession.setAttribute(\"message\", msg);\n-\t//\tSystem.out.println(session.getAttribute(\"message\").toString());\n-\t\t//System.out.println(\"fsfsdfsd\");\n-//\t\trequest.getSession().setAttribute(\"message\",msg);\n //\t\tString Account = \"1414080902205\";\n //\t\tString Amount = \"1414080902205\";\n //\t\tout.println(Account);"
+  } ],
+  "sha" : "1cc3efffedf732ca5958c1fb870fa2feb4f57114",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cc3efffedf732ca5958c1fb870fa2feb4f57114",
+  "parents" : [ {
+    "sha" : "7f2e5658f04af7c1d1513a3b350de97605ea3b9c",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7f2e5658f04af7c1d1513a3b350de97605ea3b9c",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/7f2e5658f04af7c1d1513a3b350de97605ea3b9c"
+  } ]
+}

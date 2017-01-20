@@ -1,0 +1,115 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 138,
+    "additions" : 138,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/d54265138cf9d5013286409850ff9d332ea91f04",
+  "commit" : {
+    "author" : {
+      "name" : "hom yu",
+      "email" : "hom yu",
+      "date" : "2016-11-08T16:29:21Z"
+    },
+    "committer" : {
+      "name" : "hom yu",
+      "email" : "hom yu",
+      "date" : "2016-11-08T16:29:21Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "d456b8a2551f98801e872f4d41d6146dfd029ad3",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d456b8a2551f98801e872f4d41d6146dfd029ad3"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/d54265138cf9d5013286409850ff9d332ea91f04",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/d54265138cf9d5013286409850ff9d332ea91f04/comments",
+  "files" : [ {
+    "sha" : "984f9909944f2335bf365695ad5e71811f80ccc3",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/EncodingFilter.java",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/edu/hzu/javaweb/labs/se1414080902140/EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/edu/hzu/javaweb/labs/se1414080902140/EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/EncodingFilter.java?ref=d54265138cf9d5013286409850ff9d332ea91f04",
+    "patch" : "@@ -0,0 +1,27 @@\n+package edu.hzu.javaweb.labs.se1414080902140;\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+@WebFilter(filterName = \"/1414080902140\")\n+public class EncodingFilter implements Filter {\n+\n+\t\n+\tpublic void destroy() {\n+\t}\n+\n+\t\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain)\n+\t\t\tthrows IOException, ServletException {\n+\t     request.setCharacterEncoding(\"UTF-8\");\n+\t     response.setCharacterEncoding(\"UTF-8\");\n+\t     filterChain.doFilter(request, response);\n+\t}\n+    public void init(FilterConfig afilterConfig) throws ServletException {\n+\t}\n+\n+}"
+  }, {
+    "sha" : "ae7ddb0739eaacb5ab4fde222e8b0d18e5a7e049",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/LoginFilter1.java",
+    "status" : "added",
+    "additions" : 42,
+    "deletions" : 0,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/edu/hzu/javaweb/labs/se1414080902140/LoginFilter1.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/edu/hzu/javaweb/labs/se1414080902140/LoginFilter1.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/LoginFilter1.java?ref=d54265138cf9d5013286409850ff9d332ea91f04",
+    "patch" : "@@ -0,0 +1,42 @@\n+package edu.hzu.javaweb.labs.se1414080902140;\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+\n+@WebFilter(filterName = \"/1414080902140\")\n+\tpublic class LoginFilter1 implements Filter {\n+    public void destroy() {\n+\t\t}\n+    public void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\t\tFilterChain chain) throws IOException, ServletException {\n+    \t    HttpServletRequest req = (HttpServletRequest) request;\n+\t\t\tHttpServletResponse resp = (HttpServletResponse) response;\n+\t\t\tHttpSession session=req.getSession();\n+\t\t\tString username=(String) session.getAttribute(\"username\");\n+\t\t\tString url = (((HttpServletRequest) request).getRequestURI());\n+            if (url.equals(\"/jweb/login1.jsp\")) {\n+\t\t\t\tchain.doFilter(req, resp);\n+\t\t\t}\n+\t\t\t if (username == null) {\n+\t\t          resp.sendRedirect(req.getContextPath()+\"/login1.jsp\");\n+\t\t     }   \n+\t\t\t else{\n+\t\t    \t chain.doFilter(req,resp);\n+\t\t      }\n+\t\t     \n+\t\t\t\n+\t\t}\n+      public void init(FilterConfig filterConfig) throws ServletException {\n+\t\t\t}\n+\n+\t}\n+"
+  }, {
+    "sha" : "ea538d8cdc143e0a0ed09d5498529661f3e21ae0",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/LoginServlet.java",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/edu/hzu/javaweb/labs/se1414080902140/LoginServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/edu/hzu/javaweb/labs/se1414080902140/LoginServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/LoginServlet.java?ref=d54265138cf9d5013286409850ff9d332ea91f04",
+    "patch" : "@@ -0,0 +1,30 @@\n+package edu.hzu.javaweb.labs.se1414080902140;\n+\n+import java.io.IOException;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+@WebServlet(\"/1414080902140\")\n+public class LoginServlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+    public LoginServlet() {\n+        super();\n+    }\n+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tdoPost(request, response);\n+\t}\n+     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tString username = request.getParameter(\"username\");\n+\t\tString password = request.getParameter(\"password\");\n+\t\trequest.getSession().setAttribute(\"username\", username);\n+\t\t\n+\t\tif(username!=\"\"){\n+\t\t\trequest.getRequestDispatcher(\"index.jsp\").forward(request, response);\n+\t\t}else{\n+\t\t\trequest.getRequestDispatcher(\"login1.jsp\").forward(request, response);\n+\t\t}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "aed55bc87ba831c364c1a716dc40a37c8c24fd38",
+    "filename" : "jweb/src/show.jsp",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/show.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/show.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/show.jsp?ref=d54265138cf9d5013286409850ff9d332ea91f04",
+    "previous_filename" : "jweb/src/web/show.jsp"
+  }, {
+    "sha" : "467a8a9a1b2d8fac03b82766ad60082d9d3fb267",
+    "filename" : "jweb/src/submit.jsp",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/submit.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d54265138cf9d5013286409850ff9d332ea91f04/jweb/src/submit.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/submit.jsp?ref=d54265138cf9d5013286409850ff9d332ea91f04",
+    "previous_filename" : "jweb/src/web/submit.jsp"
+  }, {
+    "sha" : "6c1965328b068267c22d70cc0dddac332309a877",
+    "filename" : "jweb/web/1414080902140/index.jsp",
+    "status" : "added",
+    "additions" : 19,
+    "deletions" : 0,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d54265138cf9d5013286409850ff9d332ea91f04/jweb/web/1414080902140/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d54265138cf9d5013286409850ff9d332ea91f04/jweb/web/1414080902140/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902140/index.jsp?ref=d54265138cf9d5013286409850ff9d332ea91f04",
+    "patch" : "@@ -0,0 +1,19 @@\n+<%@page import=\"java.util.Date\"%>\n+\n+<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+<head>\n+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n+<title>学生体测信息管理系统</title>\n+</head>\n+<body>\n+          <center><h1>欢迎来到学生体侧信息管理系统</h1></center>\n+          <p><a href=\"\">列出所有学生体侧信息</a></p>\n+          <p><a href=\"\">提交学生体侧信息</a></p>\n+          <p><a href=\"\">查询学生体侧信息</a></p>\n+          <p><a href=\"\">删除学生体侧信息</a></p>\n+          <p><a href=\"\">修改学生体侧信息</a></p>\n+  </body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "d60247093cc601408be7d98525a38583030a0275",
+    "filename" : "jweb/web/1414080902140/login1.jsp",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d54265138cf9d5013286409850ff9d332ea91f04/jweb/web/1414080902140/login1.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d54265138cf9d5013286409850ff9d332ea91f04/jweb/web/1414080902140/login1.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902140/login1.jsp?ref=d54265138cf9d5013286409850ff9d332ea91f04",
+    "patch" : "@@ -0,0 +1,20 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+<head>\n+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=\"UTF-8\">\n+<title>体测管理系统登陆界面</title>\n+</head>\n+<body>\n+    \n+     <div>\n+    <form action=\"LoginServlet\" method=\"post\">\n+             用户名：<input type=\"text\" name=\"username\"></br>\n+                密码：  <input type=\"password\" name=\"password\"></br>\n+            <input type=\"submit\" value=\"登陆\"><br>\n+            <input type=\"reset\" value=\"重置\"><br>\n+    </form>\n+    </div>\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "d54265138cf9d5013286409850ff9d332ea91f04",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d54265138cf9d5013286409850ff9d332ea91f04",
+  "parents" : [ {
+    "sha" : "56161e511215baf8316d545b500f40a07a41c979",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/56161e511215baf8316d545b500f40a07a41c979",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/56161e511215baf8316d545b500f40a07a41c979"
+  } ]
+}

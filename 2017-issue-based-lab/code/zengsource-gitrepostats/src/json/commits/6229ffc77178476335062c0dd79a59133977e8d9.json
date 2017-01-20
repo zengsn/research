@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 216,
+    "additions" : 216,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/6229ffc77178476335062c0dd79a59133977e8d9",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T15:14:04Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T15:14:04Z"
+    },
+    "message" : "Merge pull request #484 from LXQuan/master\n\n#88 #251 实验2avtivity",
+    "tree" : {
+      "sha" : "0cb326916479fa0e1d709f628c92488fd1388cbf",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/0cb326916479fa0e1d709f628c92488fd1388cbf"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/6229ffc77178476335062c0dd79a59133977e8d9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/6229ffc77178476335062c0dd79a59133977e8d9/comments",
+  "files" : [ {
+    "sha" : "17d8f8a86ba13b17d3dace3131271f5679893a15",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903222/Net1314080903222Activity.java",
+    "status" : "added",
+    "additions" : 143,
+    "deletions" : 0,
+    "changes" : 143,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/6229ffc77178476335062c0dd79a59133977e8d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903222/Net1314080903222Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/6229ffc77178476335062c0dd79a59133977e8d9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903222/Net1314080903222Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903222/Net1314080903222Activity.java?ref=6229ffc77178476335062c0dd79a59133977e8d9",
+    "patch" : "@@ -0,0 +1,143 @@\n+\n+package edu.hzuapps.androidworks.homeworks.net1314080903222;\n+import android.R.layout;\n+import android.os.Bundle; \n+import android.app.Activity; \n+import android.view.KeyEvent; \n+import android.view.View; \n+import android.view.View.OnClickListener; \n+import android.view.Window; \n+import android.webkit.WebChromeClient; \n+import android.webkit.WebSettings; \n+import android.webkit.WebView; \n+import android.webkit.WebViewClient; \n+import android.widget.Button; \n+import android.widget.EditText; \n+public class Net1314080903222Activity extends Activity implements OnClickListener { \n+private String url = null; \n+private WebView webView; \n+private EditText et_url; \n+private Button btn_login; \n+private Button btn_back; \n+private Button btn_exit; \n+private Button btn_forward; \n+private Button btn_menu; \n+@Override\n+protected void onCreate(Bundle savedInstanceState) { \n+super.onCreate(savedInstanceState); \n+// ���ڽ���� \n+requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS); \n+setContentView(R.layout.net1314080903222); \n+setProgressBarIndeterminate(true); \n+webView = (WebView) findViewById(R.id.webView); \n+et_url = (EditText) findViewById(R.id.et_url); \n+btn_login = (Button) findViewById(R.id.btn_login); \n+btn_back = (Button) findViewById(R.id.btn_back); \n+btn_exit = (Button) findViewById(R.id.btn_exit); \n+btn_forward = (Button) findViewById(R.id.btn_forward); \n+btn_menu = (Button) findViewById(R.id.btn_menu); \n+// �����ť��ӵ������¼� \n+btn_login.setOnClickListener(this); \n+btn_back.setOnClickListener(this); \n+btn_exit.setOnClickListener(this); \n+btn_forward.setOnClickListener(this); \n+btn_menu.setOnClickListener(this); \n+} \n+private void setContentView(Class<layout> class1) {\n+\t// TODO Auto-generated method stub\n+\t\n+}\n+// btn_login�Ĵ����¼� ���� webView��ʼ��ȡurl \n+protected void startReadUrl(String url) { \n+// TODO Auto-generated method stub \n+// webView����web��Դ \n+webView.loadUrl(url); \n+// ����webViewĬ��ͨ��ϵͳ���ߵ�����������ҳ����Ϊ \n+// ���Ϊfalse����ϵͳ���ߵ�����������ҳ����Ϊ \n+webView.setWebViewClient(new WebViewClient() { \n+@Override\n+public boolean shouldOverrideUrlLoading(WebView view, String url) { \n+// TODO Auto-generated method stub \n+// webView����web��Դ \n+view.loadUrl(url); \n+return true; \n+} \n+}); \n+// ����֧��javascript \n+WebSettings settings = webView.getSettings(); \n+settings.setJavaScriptEnabled(true); \n+// web����ҳ������ʹ�û������ \n+settings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK); \n+// ����ҳ��ʱ ��ʾ����� ҳ�����ȫʱ ���ؽ���� \n+webView.setWebChromeClient(new WebChromeClient() { \n+@Override\n+public void onProgressChanged(WebView view, int newProgress) { \n+// TODO Auto-generated method stub \n+setTitle(\"��ҳ���Ѽ���\" + newProgress + \"%\"); \n+if (newProgress == 100) { \n+closeProgressBar(); \n+} else { \n+openProgressBar(newProgress); \n+} \n+super.onProgressChanged(view, newProgress); \n+} \n+}); \n+} \n+// �򿪽���� \n+protected void openProgressBar(int x) { \n+// TODO Auto-generated method stub \n+setProgressBarIndeterminateVisibility(true); \n+setProgress(x); \n+} \n+// �رս���� \n+protected void closeProgressBar() { \n+// TODO Auto-generated method stub \n+setProgressBarIndeterminateVisibility(false); \n+} \n+// ��д������ ���ؼ���߼� \n+@Override\n+public boolean onKeyDown(int keyCode, KeyEvent event) { \n+// TODO Auto-generated method stub \n+if (keyCode == KeyEvent.KEYCODE_BACK) { \n+if (webView.canGoBack()) { \n+// ������һҳ�� \n+webView.goBack(); \n+return true; \n+} else { \n+// �˳���� \n+finish(); \n+} \n+} \n+return super.onKeyDown(keyCode, event); \n+} \n+// �԰�ť�¼��Ĵ��� \n+@Override\n+public void onClick(View v) { \n+// TODO Auto-generated method stub \n+switch (v.getId()) { \n+case R.id.btn_login: \n+url = \"http://\" + et_url.getText().toString(); \n+url = url.replace(\" \", \"\"); \n+startReadUrl(url); \n+break; \n+case R.id.btn_back: \n+if (webView.canGoBack()) { \n+webView.goBack(); \n+} else { \n+finish(); \n+} \n+break; \n+case R.id.btn_forward: \n+if (webView.canGoForward()) { \n+webView.goForward(); \n+} \n+break; \n+case R.id.btn_exit: \n+finish(); \n+break; \n+case R.id.btn_menu: \n+startReadUrl(\"http://www.baidu.com\"); \n+break; \n+} \n+} \n+}"
+  }, {
+    "sha" : "50079b9f0ed7c8f4072e0a83fae8885185a5fa21",
+    "filename" : "app/src/main/res/layout/net1314080903222.xml",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/6229ffc77178476335062c0dd79a59133977e8d9/app/src/main/res/layout/net1314080903222.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/6229ffc77178476335062c0dd79a59133977e8d9/app/src/main/res/layout/net1314080903222.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903222.xml?ref=6229ffc77178476335062c0dd79a59133977e8d9",
+    "patch" : "@@ -0,0 +1,62 @@\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+android:layout_width=\"fill_parent\"\n+android:layout_height=\"fill_parent\"\n+android:orientation=\"vertical\" > \n+<LinearLayout \n+android:orientation=\"horizontal\"\n+android:layout_width=\"fill_parent\"\n+android:layout_height=\"wrap_content\" > \n+<EditText \n+android:id=\"@+id/et_url\"\n+android:layout_width=\"320dp\"\n+android:layout_height=\"wrap_content\"\n+android:hint=\"@null\" /> \n+<Button \n+android:id=\"@+id/btn_login\"\n+android:layout_height=\"wrap_content\"\n+android:layout_width=\"wrap_content\"\n+android:text=\"@string/text\"\n+/> \n+</LinearLayout> \n+<WebView \n+android:layout_weight=\"2\"\n+android:id=\"@+id/webView\"\n+android:layout_width=\"fill_parent\"\n+android:layout_height=\"fill_parent\" /> \n+<LinearLayout \n+android:layout_weight=\"11\"\n+android:layout_width=\"fill_parent\"\n+android:layout_height=\"fill_parent\"\n+android:orientation=\"horizontal\"\n+android:background=\"#006400\"\n+> \n+<Button \n+android:id=\"@+id/btn_back\"\n+android:layout_weight=\"1\"\n+android:layout_height=\"wrap_content\"\n+android:layout_width=\"wrap_content\"\n+android:text=\"@string/text1\"\n+/> \n+<Button \n+android:id=\"@+id/btn_menu\"\n+android:layout_weight=\"1.5\"\n+android:layout_height=\"wrap_content\"\n+android:layout_width=\"wrap_content\"\n+android:text=\"@string/text2\"\n+/> \n+<Button \n+android:id=\"@+id/btn_forward\"\n+android:layout_weight=\"1\"\n+android:layout_height=\"wrap_content\"\n+android:layout_width=\"wrap_content\"\n+android:text=\"@string/text3\"\n+/> \n+<Button \n+android:id=\"@+id/btn_exit\"\n+android:layout_weight=\"1.5\"\n+android:layout_height=\"wrap_content\"\n+android:layout_width=\"wrap_content\"\n+android:text=\"@string/text4\"\n+/> \n+</LinearLayout> \n+</LinearLayout>"
+  }, {
+    "sha" : "5204aad7d67bef3e8a60de9f1905d0d6001b1820",
+    "filename" : "app/src/main/res/layout/net1314080903222strings.xml",
+    "status" : "added",
+    "additions" : 11,
+    "deletions" : 0,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/6229ffc77178476335062c0dd79a59133977e8d9/app/src/main/res/layout/net1314080903222strings.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/6229ffc77178476335062c0dd79a59133977e8d9/app/src/main/res/layout/net1314080903222strings.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903222strings.xml?ref=6229ffc77178476335062c0dd79a59133977e8d9",
+    "patch" : "@@ -0,0 +1,11 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+\n+    <string name=\"app_name\">微型浏览器</string>\n+    <string name=\"hello_world\">Hello world!</string>\n+\t<string name=\"text\">访问</string>\n+\t<string name=\"text1\">上一页</string>\n+\t<string name=\"text2\">首页</string>\n+\t<string name=\"text3\">下一页</string>\n+    <string name=\"text4\">退出</string>\n+</resources>"
+  } ],
+  "sha" : "6229ffc77178476335062c0dd79a59133977e8d9",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/6229ffc77178476335062c0dd79a59133977e8d9",
+  "parents" : [ {
+    "sha" : "3ec7d7aaa647345f28889e454b4351dbf1b858d7",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3ec7d7aaa647345f28889e454b4351dbf1b858d7",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/3ec7d7aaa647345f28889e454b4351dbf1b858d7"
+  }, {
+    "sha" : "e528ce56f85a852b78d5dfb04ee8edb82527dafc",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e528ce56f85a852b78d5dfb04ee8edb82527dafc",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/e528ce56f85a852b78d5dfb04ee8edb82527dafc"
+  } ]
+}

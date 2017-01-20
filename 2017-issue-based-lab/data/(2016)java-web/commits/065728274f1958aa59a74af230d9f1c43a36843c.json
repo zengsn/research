@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "ChowWd",
+    "id" : 22512000,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512000?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ChowWd",
+    "html_url" : "https://github.com/ChowWd",
+    "followers_url" : "https://api.github.com/users/ChowWd/followers",
+    "following_url" : "https://api.github.com/users/ChowWd/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ChowWd/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ChowWd/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ChowWd/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ChowWd/orgs",
+    "repos_url" : "https://api.github.com/users/ChowWd/repos",
+    "events_url" : "https://api.github.com/users/ChowWd/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ChowWd/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 49,
+    "additions" : 49,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "ChowWd",
+    "id" : 22512000,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512000?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ChowWd",
+    "html_url" : "https://github.com/ChowWd",
+    "followers_url" : "https://api.github.com/users/ChowWd/followers",
+    "following_url" : "https://api.github.com/users/ChowWd/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ChowWd/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ChowWd/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ChowWd/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ChowWd/orgs",
+    "repos_url" : "https://api.github.com/users/ChowWd/repos",
+    "events_url" : "https://api.github.com/users/ChowWd/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ChowWd/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/065728274f1958aa59a74af230d9f1c43a36843c",
+  "commit" : {
+    "author" : {
+      "name" : "ChowWd",
+      "email" : "1297422578@qq.com",
+      "date" : "2016-10-13T11:16:56Z"
+    },
+    "committer" : {
+      "name" : "ChowWd",
+      "email" : "1297422578@qq.com",
+      "date" : "2016-10-13T11:16:56Z"
+    },
+    "message" : "#3 提交实验代码",
+    "tree" : {
+      "sha" : "d8c9587003c023ffe505410e3d50a144e8ac83c5",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d8c9587003c023ffe505410e3d50a144e8ac83c5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/065728274f1958aa59a74af230d9f1c43a36843c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/065728274f1958aa59a74af230d9f1c43a36843c/comments",
+  "files" : [ {
+    "sha" : "8393190f63165b99022caca7a287aff8282d85a6",
+    "filename" : "labs/1414080902221/index.jsp",
+    "status" : "added",
+    "additions" : 49,
+    "deletions" : 0,
+    "changes" : 49,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/065728274f1958aa59a74af230d9f1c43a36843c/labs/1414080902221/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/065728274f1958aa59a74af230d9f1c43a36843c/labs/1414080902221/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902221/index.jsp?ref=065728274f1958aa59a74af230d9f1c43a36843c",
+    "patch" : "@@ -0,0 +1,49 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>提交</title>\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+  </head>\n+  \n+  <body>\n+  <%= new java.util.Date() %>\n+    <form id=\"regist\">\n+  <div class=\"form-group\">\n+    <label for=\"UserName\">UserName</label>\n+    <input type=\"text\" class=\"form-control\" id=\"UserName\" placeholder=\"UserName\">\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"Password1\">Password</label>\n+    <input type=\"password\" class=\"form-control\" id=\"Password\" placeholder=\"Password\">\n+  </div>\n+  <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n+</form>\n+<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    <script  src=\"javascript.js\" charset=\"UTF-8\" type=\"text/javascript\"> </script>\n+\t<script>\n+        $( \"#regist\" ).submit(function() {\n+        $.ajax({ \n+          url: \"success.json\", \n+          success: function(data){\n+            alert(data.msg);\n+        }});\n+      });\n+    </script>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "065728274f1958aa59a74af230d9f1c43a36843c",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/065728274f1958aa59a74af230d9f1c43a36843c",
+  "parents" : [ {
+    "sha" : "9c846d1c2cf23bfba6fca1ee51bc76a0a89d304f",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9c846d1c2cf23bfba6fca1ee51bc76a0a89d304f",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/9c846d1c2cf23bfba6fca1ee51bc76a0a89d304f"
+  } ]
+}

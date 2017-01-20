@@ -1,0 +1,169 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 603,
+    "additions" : 585,
+    "deletions" : 18
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/46d578a966560f03859ddada0ffa5baf6a48d634",
+  "commit" : {
+    "author" : {
+      "name" : "LincoXiaoQ",
+      "email" : "LincoXiaoQ",
+      "date" : "2016-12-01T07:32:41Z"
+    },
+    "committer" : {
+      "name" : "LincoXiaoQ",
+      "email" : "LincoXiaoQ",
+      "date" : "2016-12-01T07:32:41Z"
+    },
+    "message" : "#7 #62 jdbc编程",
+    "tree" : {
+      "sha" : "4e009eaa42feab96a38cff9c1f9a7e732e72f294",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/4e009eaa42feab96a38cff9c1f9a7e732e72f294"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/46d578a966560f03859ddada0ffa5baf6a48d634",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/46d578a966560f03859ddada0ffa5baf6a48d634/comments",
+  "files" : [ {
+    "sha" : "bdc3cf8a08c2c80a030427ac0ad98d84105e9295",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/EncodingFilter.java",
+    "status" : "added",
+    "additions" : 44,
+    "deletions" : 0,
+    "changes" : 44,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/EncodingFilter.java?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -0,0 +1,44 @@\n+package Linco;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+/**\n+ * Servlet Filter implementation class LincoFilter\n+ */\n+@WebFilter(filterName = \"EncodingFilter\", urlPatterns = \"/*\")\n+public class EncodingFilter implements Filter {\n+\n+    public EncodingFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+    @Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\tString coding = \"UTF-8\";\n+\t\trequest.setCharacterEncoding(coding);\n+\t\tresponse.setCharacterEncoding(coding);\n+\t\tchain.doFilter(request, response);\n+\t\tSystem.out.println(\"change CharacterEncoding To utf-8\");\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig arg0) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+}"
+  }, {
+    "sha" : "a2cc6c75564047d741632b724247611ab1422856",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/File_Manage_Servlet.java",
+    "status" : "added",
+    "additions" : 66,
+    "deletions" : 0,
+    "changes" : 66,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/File_Manage_Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/File_Manage_Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/File_Manage_Servlet.java?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -0,0 +1,66 @@\n+package Linco;\n+\n+import java.io.IOException;\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import db.DBConnect;\n+import javaBeen.*;\n+/**\n+ * Servlet implementation class File_Manage_Servlet\n+ */\n+@WebServlet(\"/File_Manage_Servlet\")\n+public class File_Manage_Servlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+\t\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\ttry {\n+\t\t\tList<File> result=findAll();\n+\t\t\trequest.setAttribute(\"result\", result);\n+\t\t\trequest.getRequestDispatcher(\"File_Menage.jsp\").forward(request, response);\n+\t\t} catch (Exception e) {\n+\t\t\t// TODO Auto-generated catch block\n+\t\t\tresponse.getWriter().append(\"Served at: \").append(request.getContextPath());\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\tdoGet(request, response);\n+\t}\n+\t\n+\tpublic List<File> findAll() throws Exception {\n+\t\tConnection con=null;\n+\t    PreparedStatement prepStmt=null;\n+\t    ResultSet rs=null;\t\n+\t    List<File> fileList = new ArrayList<File>();\n+\t    con=DBConnect.getDBconnection();\n+\t    prepStmt = con.prepareStatement(\"select * from FileTable\");\n+        rs = prepStmt.executeQuery();\n+        while(rs.next()) {\n+        \tFile f2 = new File();\n+            f2.setId(rs.getInt(1));\n+            f2.setFileName(rs.getString(2));\n+            f2.setSize(rs.getInt(3));\n+            f2.setTime(rs.getString(4));\n+            fileList.add(f2);\n+        }\n+        DBConnect.closeDB(con, prepStmt, rs); \n+        return fileList;\n+\t}\n+}"
+  }, {
+    "sha" : "b36f550d5886162e2a42a4f54a380a0c5bacc4df",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/LincoServlet.java",
+    "status" : "added",
+    "additions" : 137,
+    "deletions" : 0,
+    "changes" : 137,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/LincoServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/LincoServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/LincoServlet.java?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -0,0 +1,137 @@\n+package Linco;\n+\n+import java.io.File;\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.sql.Connection;\n+import java.sql.DriverManager;\n+import java.sql.SQLException;\n+import java.util.List;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import org.apache.commons.fileupload.FileItem;\n+import org.apache.commons.fileupload.disk.DiskFileItemFactory;\n+import org.apache.commons.fileupload.servlet.ServletFileUpload;\n+\n+/**\n+ * Servlet implementation class LincoServlet\n+ */\n+@WebServlet(description = \"Linco's first Servlet\", urlPatterns = { \"/LincoServlet\" })\n+public class LincoServlet extends HttpServlet {\n+\tConnection conn=null;\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public LincoServlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+\n+    \t\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\t@Override\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\tresponse.getWriter().append(\"Served at: \").append(request.getContextPath());\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\t@Override\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\t// 上传文件存储目录\n+\t    final String UPLOAD_DIRECTORY = \"upload/\";\n+\t    // 上传配置\n+\t    final int MEMORY_THRESHOLD   = 1024 * 1024 * 3;  // 3MB\n+\t    final int MAX_FILE_SIZE      = 1024 * 1024 * 40; // 40MB\n+\t    final int MAX_REQUEST_SIZE   = 1024 * 1024 * 50; // 50MB\n+\t\t\t// 检测是否为Multipart上传\n+\t\t\tif (!ServletFileUpload.isMultipartContent(request)) {\n+\t\t\t    // 如果不是则停止\n+\t\t\t    PrintWriter writer = response.getWriter();\n+\t\t\t    writer.println(\"Error: 表单必须包含 enctype=multipart/form-data\");\n+\t\t\t    writer.flush();\n+\t\t\t    return;\n+\t\t\t}\n+\t \n+\t        // 配置上传参数\n+\t        DiskFileItemFactory factory = new DiskFileItemFactory();\n+\t        // 设置内存临界值 - 超过后将产生临时文件并存储于临时目录中\n+\t        factory.setSizeThreshold(MEMORY_THRESHOLD);\n+\t        // 设置临时存储目录\n+\t        factory.setRepository(new File(System.getProperty(\"java.io.tmpdir\")));\n+\t \n+\t        ServletFileUpload upload = new ServletFileUpload(factory);\n+\t         \n+\t        // 设置最大文件上传值\n+\t        upload.setFileSizeMax(MAX_FILE_SIZE);\n+\t         \n+\t        // 设置最大请求值 (包含文件和表单数据)\n+\t        upload.setSizeMax(MAX_REQUEST_SIZE);\n+\t \n+\t        // 构造临时路径来存储上传的文件\n+\t        // 这个路径相对当前应用的目录\n+\t        String uploadPath = getServletContext().getRealPath(\"./\") + File.separator + UPLOAD_DIRECTORY;\n+\t       \n+\t         \n+\t        // 如果目录不存在则创建\n+\t        File uploadDir = new File(uploadPath);\n+\t        if (!uploadDir.exists()) {\n+\t            uploadDir.mkdir();\n+\t        }\n+\t \n+\t        try {\n+\t            // 解析请求的内容提取文件数据\n+\t            List<FileItem> formItems = upload.parseRequest(request);\n+\t \n+\t            if (formItems != null && formItems.size() > 0) {\n+\t                // 迭代表单数据\n+\t                for (FileItem item : formItems) {\n+\t                    // 处理不在表单中的字段\n+\t                    if (!item.isFormField()) {\n+\t                        String fileName = new File(new String(item.getName().getBytes(), \"iso8859-1\")).getName();\n+\t                        String filePath = uploadPath + File.separator + fileName;\n+\t                        File storeFile = new File(filePath);\n+\t                        // 在控制台输出文件的上传路径\n+\t                        System.out.println(filePath);\n+\t                        // 保存文件到硬盘\n+\t                        item.write(storeFile);\n+\t                        request.setAttribute(\"message\",\n+\t                            \"文件上传成功!\");\n+\t                    }\n+\t                }\n+\t            }\n+\t        } catch (Exception ex) {\n+\t            request.setAttribute(\"message\",\n+\t                    \"错误信息: \" + ex.getMessage());\n+\t        }\n+\t        // 跳转到 message.jsp\n+\t        /*getServletContext().getRequestDispatcher(\"/message.jsp\").forward(\n+\t                request, response);\n+\t        */\n+\t        try {\n+\t\t\t\tClass.forName(\"org.sqlite.JDBC\");\n+\t\t\t\n+\t\t    \tconn = DriverManager.getConnection(\"jdbc:sqlite:d:\\\\tast.db\");\n+\t\t        System.out.println(\"Opened database successfully\");\n+\t\t    \t//PreparedStatement pstmt=conn.prepareStatement(\"sql 语句\");\n+\t    \t} catch (ClassNotFoundException | SQLException e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t}\n+\n+}\n+//����λ��Ϊhttp://localhost:8080/Web_Design/LincoServlet  ����Ŀ����/��ע��·����\n\\ No newline at end of file"
+  }, {
+    "sha" : "594e32c636c67de63a5b7975d43d9075687a3fe8",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/LoginFilter.java",
+    "status" : "added",
+    "additions" : 58,
+    "deletions" : 0,
+    "changes" : 58,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Linco/LoginFilter.java?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -0,0 +1,58 @@\n+package Linco;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+/**\n+ * Servlet Filter implementation class LoginFilter\n+ */\n+@WebFilter(filterName = \"LoginFilter\", urlPatterns = \"/My_Main.jsp\")\n+public class LoginFilter implements Filter {\n+\n+    /**\n+     * Default constructor. \n+     */\n+    public LoginFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see Filter#destroy()\n+\t */\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n+\t */\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\tHttpServletRequest requ = (HttpServletRequest)request;\n+\t\tHttpServletResponse resp = (HttpServletResponse)response;\n+\t\tif(requ!=null&&requ.getParameter(\"userName\")!=null&&requ.getParameter(\"password\")!=null&&requ.getParameter(\"userName\").equals(\"Linco\")&&requ.getParameter(\"password\").equals(\"Lincokey\")){\n+\t\t\tchain.doFilter(request, response);\n+\t\t} else {\n+\t\t\tresp.sendRedirect(\"LincoLogin.html\");\n+\t\t}\n+\t\tSystem.out.println(\"登录验证!\");\n+\t}\n+\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\t@Override\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+}"
+  }, {
+    "sha" : "f921efaf15ac8a888d605e056b615a633f750140",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 3,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/Se1414080902212Sevlet.java?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -18,14 +18,14 @@\n /**\n  * Servlet implementation class LincoServlet\n  */\n-@WebServlet(description = \"Linco's first Servlet\", urlPatterns = { \"Se1414080902212Sevlet\" })\n-public class Se1414080902212Sevlet extends HttpServlet {\n+@WebServlet(description = \"Linco's first Servlet\", urlPatterns = { \"/LincoServlet\" })\n+public class LincoServlet extends HttpServlet {\n \tprivate static final long serialVersionUID = 1L;\n        \n     /**\n      * @see HttpServlet#HttpServlet()\n      */\n-    public Se1414080902212Sevlet() {\n+    public LincoServlet() {\n         super();\n         // TODO Auto-generated constructor stub\n     }"
+  }, {
+    "sha" : "be58b3106dcaac688bce703f7a4ff1b059fd6012",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/db/DBConnect.java",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/db/DBConnect.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/db/DBConnect.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/db/DBConnect.java?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -0,0 +1,31 @@\n+package db;\n+\n+import java.sql.Connection;\n+import java.sql.DriverManager;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+\n+public class DBConnect {\n+\tpublic static Connection getDBconnection(){\n+\t\tString url=\"jdbc:sqlite:d:\\\\tast.db\";//数据库地址\n+\t\tString  driverName =\"org.sqlite.JDBC\";//驱动程序名\n+\t\ttry{\n+\t\t    Class.forName(driverName);\n+\t\t    Connection con=DriverManager.getConnection(url); \n+\t\t    return con; \n+\t    }catch (Exception e) {\n+\t\t\t   e.printStackTrace();\n+\t\t}\n+\t\treturn null;\n+    } \n+    public static void closeDB(Connection con,PreparedStatement pstm, ResultSet rs){\n+ \t   try{\n+ \t\t   if(rs!=null) rs.close(); \n+ \t\t   if(pstm!=null) pstm.close();\n+\t\t   if(con!=null) con.close();\n+\t   }catch (SQLException e) {\n+\t\t\te.printStackTrace();\n+\t   }\n+\t}\n+}"
+  }, {
+    "sha" : "f246b50f33a2bec999445a9a1c8d2cb15dd5be53",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902212/javaBeen/File.java",
+    "status" : "added",
+    "additions" : 32,
+    "deletions" : 0,
+    "changes" : 32,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/javaBeen/File.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/src/edu/hzu/javaweb/labs/se1414080902212/javaBeen/File.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902212/javaBeen/File.java?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -0,0 +1,32 @@\n+package javaBeen;\n+\n+public class File {\n+\tprivate String fileName;\n+\tprivate int size;\n+\tprivate String time;\n+\tprivate int id;\n+\tpublic String getFileName() {\n+\t\treturn fileName;\n+\t}\n+\tpublic void setFileName(String fileName) {\n+\t\tthis.fileName = fileName;\n+\t}\n+\tpublic int getSize() {\n+\t\treturn size;\n+\t}\n+\tpublic void setSize(int size) {\n+\t\tthis.size = size;\n+\t}\n+\tpublic int getId() {\n+\t\treturn id;\n+\t}\n+\tpublic void setId(int id) {\n+\t\tthis.id = id;\n+\t}\n+\tpublic String getTime() {\n+\t\treturn time;\n+\t}\n+\tpublic void setTime(String time) {\n+\t\tthis.time = time;\n+\t}\n+}"
+  }, {
+    "sha" : "6fe6aaefbd7817e934bf9c44299155299aae1de7",
+    "filename" : "jweb/web/1414080902212/File_Menage.html",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/File_Menage.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/File_Menage.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/File_Menage.html?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -0,0 +1,61 @@\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+<head>\n+\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n+\t<title>文件管理</title>\n+</head>\n+<link rel=\"stylesheet\" type=\"text/css\" href=\"css/File_Manage.css\">\n+<body>\n+\t<div id=\"head\">\n+\t\t<div id=\"head_left\">\n+\t\t\t<a class=\"title_text\" href=\"\">主页</a>\n+\t\t\t<a class=\"title_text\" href=\"\">文件</a>\n+\t\t\t<a class=\"title_text\" href=\"\">上传</a>\n+\t\t\t<a class=\"title_text\" href=\"\">(敬请期待)</a>\n+\t\t</div>\n+\t\t\n+\t\t<div id=\"head_right\">\n+\t\t\t<img id=\"head_right_img\" src=\"src/head.png\" alt=\"usrename\">\n+\t\t</div>\n+\t\t\n+\t</div>\n+\t<div id=\"content\">\n+\t\t<div id =\"list_view\">\n+\t\t\t<ul>\n+\t\t\t\t<li>\n+\t\t\t\t\t<a class=\"fileName\" id=\"a_herf_0\">这是一个很长的文件名</a>\n+\t\t\t\t\t <t class=\"time\" id=\"time_0\">1</t> <t class=\"size\" id=\"size0\">1</t>\n+\t\t\t\t\t <img src=\"download_btn.png\"> </li>\n+\t\t\t\t<li>\n+\t\t\t\t\t<a class=\"fileName\" id=\"a_herf_1\">这是一个很长的文件名</a>\n+\t\t\t\t\t <t class=\"time\" id=\"time_1\"></t> <t class=\"size\" id=\"size1\"></t>\n+\t\t\t\t\t <img src=\"download_btn.png\"> </li>\n+\t\t\t\t<li>\n+\t\t\t\t\t<a class=\"fileName\" id=\"a_herf_2\">这是一个很长的文件名</a>\n+\t\t\t\t\t <t class=\"time\" id=\"time_2\"></t> <t class=\"size\" id=\"size2\"></t>\n+\t\t\t\t\t <img src=\"download_btn.png\"></li>\n+\t\t\t\t<li>\n+\t\t\t\t\t<a class=\"fileName\" id=\"a_herf_3\">这是一个很长的文件名</a>\n+\t\t\t\t\t <t class=\"time\" id=\"time_3\"></t> <t class=\"size\" id=\"size3\"></t>\n+\t\t\t\t\t <img src=\"download_btn.png\"> </li>\n+\t\t\t\t<li>\n+\t\t\t\t\t<a class=\"fileName\" id=\"a_herf_4\">这是一个很长的文件名</a>\n+\t\t\t\t\t <t class=\"time\" id=\"time_4\"></t> <t class=\"size\" id=\"size4\"></t>\n+\t\t\t\t\t <img src=\"download_btn.png\"> </li>\n+\t\t\t\t<li>\n+\t\t\t\t\t<a class=\"fileName\" id=\"a_herf_5\">这是一个很长的文件名</a>\n+\t\t\t\t\t <t class=\"time\" id=\"time_5\"></t> <t class=\"size\" id=\"size5\"></t>\n+\t\t\t\t\t <img src=\"download_btn.png\"> </li>\n+\t\t\t\t<li>\n+\t\t\t\t\t<a class=\"fileName\" id=\"a_herf_6\">这是一个很长的文件名</a>\n+\t\t\t\t\t <t class=\"time\" id=\"time_6\"></t> <t class=\"size\" id=\"size6\"></t>\n+\t\t\t\t\t <img src=\"download_btn.png\"> </li>\n+\t\t\t\t<li>\n+\t\t\t\t\t<a class=\"fileName\" id=\"a_herf_7\">这是一个很长的文件名</a>\n+\t\t\t\t\t <t class=\"time\" id=\"time_7\"></t> <t class=\"size\" id=\"size7\"></t>\n+\t\t\t\t\t <img src=\"download_btn.png\"> </li>\n+\t\t\t</ul>\n+\t\t</div>\n+\t</div>\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "e0008d3752701a243536af75dd7e4d2fc91f0b11",
+    "filename" : "jweb/web/1414080902212/File_Menage.jsp",
+    "status" : "added",
+    "additions" : 50,
+    "deletions" : 0,
+    "changes" : 50,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/File_Menage.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/File_Menage.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/File_Menage.jsp?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -0,0 +1,50 @@\n+<%@page import=\"java.util.*, javaBeen.File\"%>\n+<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+<head>\n+\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n+\t<title>文件管理</title>\n+</head>\n+<link rel=\"stylesheet\" type=\"text/css\" href=\"css/File_Manage.css\">\n+<body>\n+\t<div id=\"head\">\n+\t\t<div id=\"head_left\">\n+\t\t\t<a class=\"title_text\" href=\"\">主页</a>\n+\t\t\t<a class=\"title_text\" href=\"\">文件</a>\n+\t\t\t<a class=\"title_text\" href=\"My_Main.jsp\">上传</a>\n+\t\t\t<a class=\"title_text\" href=\"\">(敬请期待)</a>\n+\t\t</div>\n+\t\t\n+\t\t<div id=\"head_right\">\n+\t\t\t<img id=\"head_right_img\" src=\"src/head.png\" alt=\"usrename\">\n+\t\t</div>\n+\t\t\n+\t</div>\n+\t<div id=\"content\">\n+\t\t<div id =\"list_view\">\n+\t\t\t<%\n+\t\t\tObject oj=request.getAttribute(\"result\");\n+\t\t\tList<File>fl=null;\n+\t\t\tif(oj instanceof List<?>){\n+\t\t\t\tfl=(List<File>)oj;\n+\t\t\t}\n+\t\t\tIterator it = fl.iterator();\n+\t\t\t%>\n+\t\t\t\n+\t\t\t<ul>\n+\t\t\t\t<%\n+\t\t\t\twhile(it.hasNext()){\n+\t\t\t\t\tFile f=(File)it.next();\n+\t\t\t\t%>\n+\t\t\t\t<li>\n+\t\t\t\t\t<a class=\"fileName\" id=\"a_herf\"><%=f.getFileName() %></a>\n+\t\t\t\t\t <t class=\"time\" id=\"time\"><%=f.getTime() %></t> <t class=\"size\" id=\"size7\"><%=f.getSize() %></t>\n+\t\t\t\t\t <img src=\"src/download_btn.jpg\"> </li>\n+\t\t\t\t<%}%>\n+\t\t\t</ul>\n+\t\t</div>\n+\t</div>\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "231d672940f22b651a0df12a3d3bcb4fa66346eb",
+    "filename" : "jweb/web/1414080902212/My_Main.jsp",
+    "status" : "modified",
+    "additions" : 5,
+    "deletions" : 15,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/My_Main.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/My_Main.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/My_Main.jsp?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -1,9 +1,6 @@\n <%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n \n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n+\n <%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n \n <!DOCTYPE html>\n@@ -12,25 +9,18 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t<meta charset=\"UTF-8\">\n \t<title>上传文件</title>\n </head>\n-<link rel=\"stylesheet\" type=\"text/css\" href=\"css/File_upload.css\">\n+<link rel=\"stylesheet\" type=\"text/css\" href=\"css/File_Manage.css\">\n <body>\n \t<div id=\"head\">\n \t\t<div id=\"head_left\">\n-\t\t\t<a class=\"title_text\" href=\"\">主页</a>\n+\t\t\t<a class=\"title_text\" href=\"File_Manage_Servlet\">主页</a>\n \t\t\t<a class=\"title_text\" href=\"\">文件</a>\n \t\t\t<a class=\"title_text\" href=\"\">上传</a>\n \t\t\t<a class=\"title_text\" href=\"\">(敬请期待)</a>\n \t\t</div>\n-\t\t<%String userName=request.getParameter(\"userName\"); %>\n-\t\t<%-- <%=userName %> --%>\n-\t\t<%request.setAttribute(\"userName\", userName); %>\n+\t\t\n \t\t<div id=\"head_right\">\n-\t\t\t<c:if test=\"${userName==null}\">\n-\t\t\t\t<c:out value=\"${'请登录'}\"></c:out>\n-\t\t\t</c:if>\n-\t\t\t<c:if test=\"${userName!=null}\">\n-\t\t\t\t<img id=\"head_right_img\" src=\"src/head.png\" alt=\"usrename\">\n-\t\t\t</c:if>\n+\t\t\t<img id=\"head_right_img\" src=\"src/head.png\" alt=\"usrename\">\n \t\t</div>\n \t\t\n \t</div>"
+  }, {
+    "sha" : "c96381e0a950b39fd0b1b7814eed69674d827430",
+    "filename" : "jweb/web/1414080902212/css/File_Manage.css",
+    "status" : "added",
+    "additions" : 98,
+    "deletions" : 0,
+    "changes" : 98,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/css/File_Manage.css",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/css/File_Manage.css",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/css/File_Manage.css?ref=46d578a966560f03859ddada0ffa5baf6a48d634",
+    "patch" : "@@ -0,0 +1,98 @@\n+\n+#head{\n+\theight: 96px;\n+\tmin-width: 960px;\n+\tbackground: rgb(20,200,120);\n+}\n+#content{\n+\tmin-width: 960px;\n+\tbackground: rgb(226,125,134);\n+\tpadding: 80px 0;\n+}\n+#tail{\n+\theight: 64px;\n+}\n+#head_left{\n+\t/*floatʹ�鼶Ԫ��ͬ��*/\n+\tfloat: left;\n+\t/*�ñ������ȵ�λ*/\n+\twidth: 90%;\n+\tpadding: 60px 0 0 20px;\n+}\n+#head_right_img{\n+\twidth: 64px;\n+\theight: 64px;\n+\tbackground: pink;\n+\tmargin: 16px 0;\n+}\n+.title_text{\n+\tdisplay: block;\n+\tfloat: left;\n+\twidth: 80px;\n+\theight: 36px;\n+\tline-height: 36px;\n+\tfont-family: ΢���ź�;\n+\ttext-decoration:none;\n+\ttext-align: center;\n+\tcolor: white;\n+}\n+a.title_text:hover{\n+\tbackground:rgb(20,160,120);\n+}\n+\n+/*���ݲ���*/\n+#content_center{\n+\theight: 280px;\n+\twidth: 400px;\n+\tbackground: green;\n+\tmargin: 0 auto;\n+\tpadding-top: 80px;\n+\tborder-radius: 10px;\n+\tfont-size: 12px;\n+}\n+#content_center input{\n+\tdisplay: block;\n+\twidth: 75%;\n+\theight: 2em;\n+\tmargin: 8px auto;\n+\tpadding: 16px,5px;\n+}\n+\n+/* �ļ����ҳ */\n+#list_view{\n+\tpadding-left: 40px;\n+\twidth: 960px;\n+}\n+ul{\n+\tlist-style: none;\n+}\n+li{\n+\tmargin: 5px;\n+\tpadding-left: 20px;\n+\tbackground: rgb(246,250,255);\n+\theight: 100%;\n+}\n+.fileName{\n+\tdisplay: inline-block;\n+\ttext-overflow: ellipsis;/* ����������ʾΪʡ�Ժ�*/\n+ \twhite-space: nowrap;/*�ı������л���*/\n+\twidth: 360px;\n+\theight: 48px;\n+\tfont-size:24px;\n+}\n+.time{\n+\tdisplay: inline-block;\n+\tpadding-left: 60px;\n+\theight: 48px;\n+\twidth: 100px;\n+\ttext-decoration-color: #4f4f4f\n+}\n+.size{\n+\tdisplay: inline-block;\n+\tpadding-left: 60px;\n+\twidth: 100px;\n+\theight: 48px;\n+}\n+t{\n+\tline-height: 64px;\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "4909db18fe96f2f903dd0a5bd8db1e5a5907e2b6",
+    "filename" : "jweb/web/1414080902212/download_btn.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/download_btn.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/46d578a966560f03859ddada0ffa5baf6a48d634/jweb/web/1414080902212/download_btn.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/download_btn.jpg?ref=46d578a966560f03859ddada0ffa5baf6a48d634"
+  } ],
+  "sha" : "46d578a966560f03859ddada0ffa5baf6a48d634",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/46d578a966560f03859ddada0ffa5baf6a48d634",
+  "parents" : [ {
+    "sha" : "7ac90b154de1762b611d625371ff00aca855e167",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7ac90b154de1762b611d625371ff00aca855e167",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/7ac90b154de1762b611d625371ff00aca855e167"
+  } ]
+}

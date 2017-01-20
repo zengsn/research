@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 179,
+    "additions" : 123,
+    "deletions" : 56
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:47:28Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:47:28Z"
+    },
+    "message" : "Merge pull request #337 from hewq/master\n\n实验5",
+    "tree" : {
+      "sha" : "ae8cf0140203d23455b310cfcd2a9dadd75e4928",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/ae8cf0140203d23455b310cfcd2a9dadd75e4928"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b/comments",
+  "files" : [ {
+    "sha" : "47f7507ed16df64b3f276a716f2519d4a051f82b",
+    "filename" : "works/1314080901111/index.html",
+    "status" : "modified",
+    "additions" : 92,
+    "deletions" : 29,
+    "changes" : 121,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b/works/1314080901111/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b/works/1314080901111/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901111/index.html?ref=0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b",
+    "patch" : "@@ -14,41 +14,104 @@\n     <link href=\"css/style.css\" rel=\"stylesheet\">\n     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n     <script src=\"js/queryModule.js\"></script>\n+\n+    <style type=\"text/css\">\n+      #id1{\n+          margin: 20px;\n+          padding: 20px;\n+\n+      }\n+      #id2{\n+\n+        margin: 10px;\n+        padding: 10px;\n+      }\n+      #id2 tr td{\n+\n+        text-align: center;\n+      }\n+    </style>\n   </head>\n <body ng-controller=\"MyFilterDemoCtrl\">\n-  <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n-      <div class=\"container\">\n-        <div class=\"navbar-header\">\n-          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n-            <span class=\"sr-only\">Toggle navigation</span>\n-            <span class=\"icon-bar\"></span>\n-            <span class=\"icon-bar\"></span>\n-            <span class=\"icon-bar\"></span>\n-          </button>\n-          <a class=\"navbar-brand\" href=\"#\">Project name</a>\n-        </div>\n-        <div id=\"navbar\" class=\"collapse navbar-collapse\">\n-          <ul class=\"nav navbar-nav\">\n-            <li class=\"active\"><a href=\"#\">Home</a></li>\n-            <li><a href=\"#about\">About</a></li>\n-            <li><a href=\"#contact\">Contact</a></li>\n-          </ul>\n-        </div><!--/.nav-collapse -->\n-      </div>\n-    </nav>\n-\n-    <div class=\"container\">\n-\n-      <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n-        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-      </div>\n-\n-    </div><!-- /.container -->\n+  \n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+\n+      <div>\n+\n+        <div ng-hide=\"isHidden\">销售订单: {{saleList}}</div>\n+        <div ng-hide=\"isHidden\">订单类型：{{listType}}</div>\n+        <div ng-hide=\"isHidden\">订单日期：{{listDate}}</div>\n+        <div ng-hide=\"isHidden\">交货日期：{{commitDate}}</div>\n+        <div ng-hide=\"isHidden\">订单编号：{{listID}}</div>\n+        <div ng-hide=\"isHidden\">订单状态：{{listState}}</div>\n+        <div ng-hide=\"isHidden\">备注：{{remark}}</div>\n+\n+      </div>  \n+      <table id=\"id2\" border=\"1\" bordercolor=\"#33CCFF\" cellspacing=\"0\" width=\"70%\" cellpadding=\"10\">\n+      \n+      <tr>\n+        <td>销售订单:</td>\n+        <td><select ng-model=\"saleList\"></select></td>\n+      </tr>\n+      \n+      <tr>\n+        <td>订单类型:</td>\n+        <td>\n+\n+          <select ng-model=\"listType\">\n+            <option>正常订单</option>\n+            <option>打样订单</option>\n+            <option>返工订单</option>\n+            <option>委外订单</option>\n+            <option>通函订单</option>\n+            <option>特许订单</option>\n+          </select>\n+\n+        </td>\n+      </tr>\n+      \n+      <tr>\n+        <td>订单日期:</td>\n+        <td><input type=\"text\" ng-model=\"listDate\"/></td>\n+      </tr>\n+      \n+      <tr>\n+        <td>交货日期:</td>\n+        <td>\n+          <input type=\"text\" ng-model=\"commitDate\"/>\n+        </td>\n+      </tr>\n+      \n+      <tr>\n+        <td>订单编号:</td>\n+        <td>\n+          <input type=\"text\" ng-model=\"listID\"/>\n+        </td>\n+      </tr>\n+      \n+      <tr>\n+        <td>订单状态:</td>\n+        <td>\n+          <input type=\"text\" ng-model=\"listState\"/>\n+        </td>\n+      </tr>\n+\n+      <tr>\n+        <td>备注:</td>\n+        <td><input type=\"text\" ng-model=\"remark\"/></td>\n+      </tr>\n+      \n+      <tr>\n+        <th colspan=\"2\">\n+          <button type=\"button\" ng-click=\"show()\">\n+              {{isHidden ? '提交' : '隐藏'}}\n+          </button>\n+        </th>\n+      </tr>\n+    </table>\n </body>\n </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "518cbe7d6bcca3d5140352f4d30552fdb7b29737",
+    "filename" : "works/1314080901111/js/queryModule.js",
+    "status" : "modified",
+    "additions" : 31,
+    "deletions" : 27,
+    "changes" : 58,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b/works/1314080901111/js/queryModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b/works/1314080901111/js/queryModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901111/js/queryModule.js?ref=0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b",
+    "patch" : "@@ -1,27 +1,31 @@\n-// create a new module called 'myAppModule' and save \n-// a reference to it in a variable called myAppModule \n-var queryModule = angular.module('queryModule', []);\n-\n-// use the myAppModule variable to\n-// configure the module with a controller\n-queryModule.controller('MyFilterDemoCtrl', function ($scope) {\n-       // controller code would go here\n-\t   var listData = {\n-            salelist: '���۶���',\n-            listtype: '��������',\n-            listdate: new Date(2015, 10, 20),\n-            commitdate:new Date(2015,10,20),\n-            listID:'�������',\n-            liststate:'����״̬',\n-            remarks:'��ע'\n-        };\n-        $scope.data = listData;\n-    }\n-);\n-\n-// use the myAppModule variable to\n-// configure the module with a filter\n-queryModule.filter('stripDashes', function() {\n-    return function(txt) {\n-        // filter code would go here\n-}; });\n+// create a new module called 'myAppModule' and save \r\n+// a reference to it in a variable called myAppModule \r\n+var queryModule = angular.module('queryModule', []);\r\n+\r\n+// use the myAppModule variable to\r\n+// configure the module with a controller\r\n+queryModule.controller('MyFilterDemoCtrl', function ($scope) {\r\n+       // controller code would go here\r\n+\t   var listData = {\r\n+            saleList: '���۶���',\r\n+            listType: '��������',\r\n+            listDate: new Date(2015, 10, 20),\r\n+            commitDate:new Date(2015,10,20),\r\n+            listID:'�������',\r\n+            listState:'����״̬',\r\n+            remarks:'��ע'\r\n+        };\r\n+        $scope.data = listData;\r\n+\t\t$scope.isHidden = true;\r\n+\t\t$scope.show = function(){\r\n+\t\t\t$scope.isHidden = !$scope.isHidden;\r\n+\t\t\t}\r\n+    }\r\n+);\r\n+\r\n+// use the myAppModule variable to\r\n+// configure the module with a filter\r\n+queryModule.filter('stripDashes', function() {\r\n+    return function(txt) {\r\n+        // filter code would go here\r\n+}; });\r"
+  } ],
+  "sha" : "0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/0e098a8cb6dc9a2e0ee46de616649d28d9b84b8b",
+  "parents" : [ {
+    "sha" : "14c52478b6f01cfd1a60e9ec82e930ffe5938cdd",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/14c52478b6f01cfd1a60e9ec82e930ffe5938cdd",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/14c52478b6f01cfd1a60e9ec82e930ffe5938cdd"
+  }, {
+    "sha" : "3a3f229470dbaffe631bbe5bff698d9c6c0dc553",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/3a3f229470dbaffe631bbe5bff698d9c6c0dc553",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/3a3f229470dbaffe631bbe5bff698d9c6c0dc553"
+  } ]
+}

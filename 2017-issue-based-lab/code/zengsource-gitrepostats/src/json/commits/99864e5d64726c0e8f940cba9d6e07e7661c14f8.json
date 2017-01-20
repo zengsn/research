@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "1040003585",
+    "id" : 13864758,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13864758?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1040003585",
+    "html_url" : "https://github.com/1040003585",
+    "followers_url" : "https://api.github.com/users/1040003585/followers",
+    "following_url" : "https://api.github.com/users/1040003585/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1040003585/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1040003585/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1040003585/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1040003585/orgs",
+    "repos_url" : "https://api.github.com/users/1040003585/repos",
+    "events_url" : "https://api.github.com/users/1040003585/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1040003585/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 85,
+    "additions" : 85,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "1040003585",
+    "id" : 13864758,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/13864758?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1040003585",
+    "html_url" : "https://github.com/1040003585",
+    "followers_url" : "https://api.github.com/users/1040003585/followers",
+    "following_url" : "https://api.github.com/users/1040003585/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1040003585/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1040003585/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1040003585/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1040003585/orgs",
+    "repos_url" : "https://api.github.com/users/1040003585/repos",
+    "events_url" : "https://api.github.com/users/1040003585/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1040003585/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/99864e5d64726c0e8f940cba9d6e07e7661c14f8",
+  "commit" : {
+    "author" : {
+      "name" : "1040003585",
+      "email" : "1040003585@qq.com",
+      "date" : "2016-04-30T11:35:20Z"
+    },
+    "committer" : {
+      "name" : "1040003585",
+      "email" : "1040003585@qq.com",
+      "date" : "2016-04-30T11:35:20Z"
+    },
+    "message" : "#2 #5 My EMPTY CLASS FUNCTION",
+    "tree" : {
+      "sha" : "74c8991d26b1577d9f5715c0d39fe0eb1b6dac3c",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/74c8991d26b1577d9f5715c0d39fe0eb1b6dac3c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/99864e5d64726c0e8f940cba9d6e07e7661c14f8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/99864e5d64726c0e8f940cba9d6e07e7661c14f8/comments",
+  "files" : [ {
+    "sha" : "5f54de036abd1db1d018c4d6ef6c90d5da42d36f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903133/Net1314080903133Activity2.java",
+    "status" : "added",
+    "additions" : 46,
+    "deletions" : 0,
+    "changes" : 46,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/99864e5d64726c0e8f940cba9d6e07e7661c14f8/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903133/Net1314080903133Activity2.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/99864e5d64726c0e8f940cba9d6e07e7661c14f8/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903133/Net1314080903133Activity2.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903133/Net1314080903133Activity2.java?ref=99864e5d64726c0e8f940cba9d6e07e7661c14f8",
+    "patch" : "@@ -0,0 +1,46 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903133;\n+\n+import android.app.Activity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.EditText;\n+\n+public class Net1314080903133Activity2 extends Activity {\n+\n+\tprivate Button findButton;\n+\tprivate EditText contentsEditText;\n+\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_net1314080903133_activity2);\n+\t\tSystem.out.println(\"onCreate\");\n+\n+\t\tfindButton = (Button) findViewById(R.id.button1Find);\n+\t\tcontentsEditText = (EditText) findViewById(R.id.editText1Contents);\n+\n+\t\tfindButton.setOnClickListener(new View.OnClickListener() {\n+\n+\t\t\t@Override\n+\t\t\tpublic void onClick(View arg0) {\n+\t\t\t\t// TODO Auto-generated method stub\n+\t\t\t\tString content = \"\";\n+\t\t\t\tfor (int i = 0; i < 20; i++) {\n+\t\t\t\t\tcontent += \"��ʵ�ֻ�ȡ�ս��ң�\" + i + \"\\n\";\n+\t\t\t\t}\n+\t\t\t\tcontentsEditText.setText(content);\n+\n+\t\t\t}\n+\t\t});\n+\t}\n+\n+\t@Override\n+\tpublic boolean onCreateOptionsMenu(Menu menu) {\n+\t\t// Inflate the menu; this adds items to the action bar if it is present.\n+\t\tgetMenuInflater().inflate(R.menu.net1314080903133_activity2, menu);\n+\t\treturn true;\n+\t}\n+\n+}"
+  }, {
+    "sha" : "b47a828690cbece8d1dcd5deab8336ec3960694a",
+    "filename" : "app/src/main/res/layout/activity_net1314080903133_activity2.xml",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/99864e5d64726c0e8f940cba9d6e07e7661c14f8/app/src/main/res/layout/activity_net1314080903133_activity2.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/99864e5d64726c0e8f940cba9d6e07e7661c14f8/app/src/main/res/layout/activity_net1314080903133_activity2.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net1314080903133_activity2.xml?ref=99864e5d64726c0e8f940cba9d6e07e7661c14f8",
+    "patch" : "@@ -0,0 +1,39 @@\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:id=\"@+id/LinearLayout1\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:orientation=\"vertical\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\".Net1314080903133Activity2\" >\n+\n+    <TextView\n+        android:id=\"@+id/textView2Title\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"获取惠州学院空教室APP\"\n+        android:textStyle=\"bold\"\n+        android:gravity=\"center\"\n+        android:textAppearance=\"?android:attr/textAppearanceLarge\" />\n+\n+    <EditText\n+        android:id=\"@+id/editText1Contents\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:layout_weight=\"0.64\"\n+        android:ems=\"10\"\n+        android:inputType=\"textMultiLine\" >\n+\n+        <requestFocus />\n+    </EditText>\n+\n+    <Button\n+        android:id=\"@+id/button1Find\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"查询\" />\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "99864e5d64726c0e8f940cba9d6e07e7661c14f8",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/99864e5d64726c0e8f940cba9d6e07e7661c14f8",
+  "parents" : [ {
+    "sha" : "5192cce7ad6682971c5451f7d34f8f5774b901e4",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5192cce7ad6682971c5451f7d34f8f5774b901e4",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5192cce7ad6682971c5451f7d34f8f5774b901e4"
+  } ]
+}

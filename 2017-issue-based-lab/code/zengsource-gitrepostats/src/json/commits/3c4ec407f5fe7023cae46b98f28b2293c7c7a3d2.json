@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "LINHZU",
+    "id" : 18563625,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18563625?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LINHZU",
+    "html_url" : "https://github.com/LINHZU",
+    "followers_url" : "https://api.github.com/users/LINHZU/followers",
+    "following_url" : "https://api.github.com/users/LINHZU/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LINHZU/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LINHZU/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LINHZU/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LINHZU/orgs",
+    "repos_url" : "https://api.github.com/users/LINHZU/repos",
+    "events_url" : "https://api.github.com/users/LINHZU/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LINHZU/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 86,
+    "additions" : 0,
+    "deletions" : 86
+  },
+  "author" : {
+    "login" : "LINHZU",
+    "id" : 18563625,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18563625?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LINHZU",
+    "html_url" : "https://github.com/LINHZU",
+    "followers_url" : "https://api.github.com/users/LINHZU/followers",
+    "following_url" : "https://api.github.com/users/LINHZU/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LINHZU/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LINHZU/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LINHZU/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LINHZU/orgs",
+    "repos_url" : "https://api.github.com/users/LINHZU/repos",
+    "events_url" : "https://api.github.com/users/LINHZU/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LINHZU/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/3c4ec407f5fe7023cae46b98f28b2293c7c7a3d2",
+  "commit" : {
+    "author" : {
+      "name" : "LINHZU",
+      "email" : "771698232@qq.com",
+      "date" : "2016-06-06T16:25:31Z"
+    },
+    "committer" : {
+      "name" : "LINHZU",
+      "email" : "771698232@qq.com",
+      "date" : "2016-06-06T16:25:31Z"
+    },
+    "message" : "#692",
+    "tree" : {
+      "sha" : "fb52d19a7e78efcbf5369b5656b72d82119c0d42",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/fb52d19a7e78efcbf5369b5656b72d82119c0d42"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/3c4ec407f5fe7023cae46b98f28b2293c7c7a3d2",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3c4ec407f5fe7023cae46b98f28b2293c7c7a3d2/comments",
+  "files" : [ {
+    "sha" : "913493e46e5472c58a4e8d5104d41c9aa51807e4",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903145/LiveWallpaperSettings.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 44,
+    "changes" : 44,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/967bd7490ac9d2976f2955dbb2f19cba6784e075/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903145/LiveWallpaperSettings.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/967bd7490ac9d2976f2955dbb2f19cba6784e075/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903145/LiveWallpaperSettings.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903145/LiveWallpaperSettings.java?ref=967bd7490ac9d2976f2955dbb2f19cba6784e075",
+    "patch" : "@@ -1,44 +0,0 @@\n-package edu.hzuapps.androidworks.homeworks.net1314080903145;\n-\n-\n-import android.content.SharedPreferences;\n-\n-import android.os.Bundle;\n-\n-import android.preference.PreferenceActivity;\n-\n-\n-public class LiveWallpaperSettings extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {\n-    \n-@Override\n-   \n- protected void onCreate(Bundle savedInstanceState) \n-{\n-       \n- super.onCreate(savedInstanceState);\n-       \n- getPreferenceManager().setSharedPreferencesName(LiveWallpaper.SHARED_PREFS_NAME);\n-       \n- addPreferencesFromResource(R.xml.settings);\n-       \n- getPreferenceManager().getSharedPreferences().registerOnSharedPreferenceChangeListener(this);\n-   \n- }\n-    \n-@Override\n-   \n- protected void onDestroy() \n-{\n-       \n- getPreferenceManager().getSharedPreferences().unregisterOnSharedPreferenceChangeListener(this);\n-       \n- super.onDestroy();\n-    \n-}\n-    \n-public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) \n-{\n-    \n-}\n-\n-}"
+  }, {
+    "sha" : "6fad7c4edbc8d40af8eb01888c009208c76bca98",
+    "filename" : "app/src/main/res/layout/net1314080903145_Manifest.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 28,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/967bd7490ac9d2976f2955dbb2f19cba6784e075/app/src/main/res/layout/net1314080903145_Manifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/967bd7490ac9d2976f2955dbb2f19cba6784e075/app/src/main/res/layout/net1314080903145_Manifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903145_Manifest.xml?ref=967bd7490ac9d2976f2955dbb2f19cba6784e075",
+    "patch" : "@@ -1,28 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    package=\"edu.hzuapps.androidworks.homeworks.net1314080903145\"\n-    android:versionCode=\"1\"\n-    android:versionName=\"1.0\" >\n-\n-    <uses-sdk android:minSdkVersion=\"7\" />\n-\n-    <application\n-        android:icon=\"@drawable/icon\"\n-        android:label=\"@string/app_name\" >\n-            <service\n-         android:label=\"@string/app_name\"\n-         android:permission=\"android.permission.BIND_WALLPAPER\" \n-         android:name=\".LiveWallpaper\">\n-         <intent-filter>\n-             <action android:name=\"android.service.wallpaper.WallpaperService\" />\n-         </intent-filter>\n-         <meta-data android:name=\"android.service.wallpaper\" \n-         \t\t\tandroid:resource=\"@xml/livewallpaper\" />            \n-       </service>\n-       \t<activity android:name=\".LiveWallpaperSettings\" \n-\t\tandroid:label=\"@string/wallpaper_settings\" \n-\t\tandroid:theme=\"@android:style/Theme.Light.WallpaperSettings\"\n-\t\tandroid:exported=\"true\">\n-\t</activity>\n-    </application>\n-</manifest>\n\\ No newline at end of file"
+  }, {
+    "sha" : "9c348659b1d58ee8f0658f2dc1116e395b66d382",
+    "filename" : "app/src/main/res/layout/net1314080903145_main.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 14,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/967bd7490ac9d2976f2955dbb2f19cba6784e075/app/src/main/res/layout/net1314080903145_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/967bd7490ac9d2976f2955dbb2f19cba6784e075/app/src/main/res/layout/net1314080903145_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903145_main.xml?ref=967bd7490ac9d2976f2955dbb2f19cba6784e075",
+    "patch" : "@@ -1,14 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    android:layout_width=\"fill_parent\"\n-    android:layout_height=\"fill_parent\"\n-    android:orientation=\"vertical\" >\n-\n-    <TextView\n-        android:layout_width=\"fill_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"@string/hello\" />\n-<EditText\n-    android:digits=\"0123456789\"\n-    />\n-</LinearLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "3c4ec407f5fe7023cae46b98f28b2293c7c7a3d2",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/3c4ec407f5fe7023cae46b98f28b2293c7c7a3d2",
+  "parents" : [ {
+    "sha" : "967bd7490ac9d2976f2955dbb2f19cba6784e075",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/967bd7490ac9d2976f2955dbb2f19cba6784e075",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/967bd7490ac9d2976f2955dbb2f19cba6784e075"
+  } ]
+}

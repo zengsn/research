@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 36,
+    "additions" : 0,
+    "deletions" : 36
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/06af340c7916d1157096ac629cfd664ec321429a",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T01:32:32Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T01:32:32Z"
+    },
+    "message" : "Delete index.jsp",
+    "tree" : {
+      "sha" : "8c65a5385ef69f66b86bee82df726c1ffcdf88c0",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/8c65a5385ef69f66b86bee82df726c1ffcdf88c0"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/06af340c7916d1157096ac629cfd664ec321429a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/06af340c7916d1157096ac629cfd664ec321429a/comments",
+  "files" : [ {
+    "sha" : "614b1cb16b815dbd50cc7b45b642408458980880",
+    "filename" : "jweb/web/1414080902215/index.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 36,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/11a12b29fe6a88fd4597f746ce98a5b446c66a37/jweb/web/1414080902215/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/11a12b29fe6a88fd4597f746ce98a5b446c66a37/jweb/web/1414080902215/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902215/index.jsp?ref=11a12b29fe6a88fd4597f746ce98a5b446c66a37",
+    "patch" : "@@ -1,36 +0,0 @@\n-<%@ page language=\"java\" contentType=\"text/html; charset=ISO-8859-1\"\n-    pageEncoding=\"ISO-8859-1\"%>\n-<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n-<html>\n-<head>\n-<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n-<title>Insert title here</title>\n-<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-</head>\n-<body align=\"center\">\n-<%= new java.util.Date() %>\n-<form id=\"tijiao\">\n-  <div class=\"form-group\">\n-    <label for=\"user\">User:</label>\n-    <input type=\"text\" class=\"form-control\" id=\"user\" name=\"username\" placeholder=\"user\">\n-  </div>\n-  <div class=\"form-group\">\n-    <label for=\"Password\">Password:</label>\n-    <input type=\"password\" class=\"form-control\" id=\"Password\" name=\"password\" placeholder=\"Password\">\n-  </div>\n-  \n-  <button type=\"submit\" class=\"btn btn-default\">submit</button>\n-</form>\n-<script>\n- \t        $( \"#tijiao\" ).submit(function() {\n-        $.ajax({ \n-          url: \"Se1414080902215Servlet\",\n-          datatype:\"text/html\", \n-          type: \"post\",\n-          success: function(data){\n-            alert(data);\n-        }});\n-      });\n-</script>\n-</body>\n-</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "06af340c7916d1157096ac629cfd664ec321429a",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/06af340c7916d1157096ac629cfd664ec321429a",
+  "parents" : [ {
+    "sha" : "11a12b29fe6a88fd4597f746ce98a5b446c66a37",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/11a12b29fe6a88fd4597f746ce98a5b446c66a37",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/11a12b29fe6a88fd4597f746ce98a5b446c66a37"
+  } ]
+}

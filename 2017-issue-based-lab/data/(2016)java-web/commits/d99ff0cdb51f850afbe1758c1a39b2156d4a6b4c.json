@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "630440348",
+    "id" : 22109523,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22109523?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/630440348",
+    "html_url" : "https://github.com/630440348",
+    "followers_url" : "https://api.github.com/users/630440348/followers",
+    "following_url" : "https://api.github.com/users/630440348/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/630440348/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/630440348/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/630440348/subscriptions",
+    "organizations_url" : "https://api.github.com/users/630440348/orgs",
+    "repos_url" : "https://api.github.com/users/630440348/repos",
+    "events_url" : "https://api.github.com/users/630440348/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/630440348/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 41,
+    "additions" : 41,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "630440348",
+    "id" : 22109523,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22109523?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/630440348",
+    "html_url" : "https://github.com/630440348",
+    "followers_url" : "https://api.github.com/users/630440348/followers",
+    "following_url" : "https://api.github.com/users/630440348/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/630440348/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/630440348/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/630440348/subscriptions",
+    "organizations_url" : "https://api.github.com/users/630440348/orgs",
+    "repos_url" : "https://api.github.com/users/630440348/repos",
+    "events_url" : "https://api.github.com/users/630440348/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/630440348/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/d99ff0cdb51f850afbe1758c1a39b2156d4a6b4c",
+  "commit" : {
+    "author" : {
+      "name" : "630440348",
+      "email" : "630440348@qq.com",
+      "date" : "2016-10-20T03:23:42Z"
+    },
+    "committer" : {
+      "name" : "630440348",
+      "email" : "630440348@qq.com",
+      "date" : "2016-10-20T03:23:42Z"
+    },
+    "message" : "#3 #70 提交实验代码",
+    "tree" : {
+      "sha" : "ba379a39c56dcf6e3c3634bd51b4376e0bef3e6f",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/ba379a39c56dcf6e3c3634bd51b4376e0bef3e6f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/d99ff0cdb51f850afbe1758c1a39b2156d4a6b4c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/d99ff0cdb51f850afbe1758c1a39b2156d4a6b4c/comments",
+  "files" : [ {
+    "sha" : "7f4ef2bde35d22d2fa92bb7375bdc67fdc6944e0",
+    "filename" : "labs/1414080902126/index.jsp",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d99ff0cdb51f850afbe1758c1a39b2156d4a6b4c/labs/1414080902126/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d99ff0cdb51f850afbe1758c1a39b2156d4a6b4c/labs/1414080902126/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902126/index.jsp?ref=d99ff0cdb51f850afbe1758c1a39b2156d4a6b4c",
+    "patch" : "@@ -0,0 +1,41 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>注册界面</title>\n+\t\n+      <script src=\"http://code.jquery.com/jquery.js\"></script>\n+    <script language=\"javascript\" src=\"test.js\"></script>\n+\n+  </head>\n+  \n+  <body >\n+  \t<h3 align=\"center\">管理员账号登录</h3>\n+  \t<form name=\"stu\" action=\"\">\n+  \t<table  align=\"center\">\n+  \t<tr><td>昵称：</td><td><input type=\"text\" name=\"stuName\"></td></tr>\n+  \t<tr><td>性别：</td>\n+  \t\t<td><input type=\"radio\" name=\"stuSex\" checked=\"checked\">男\n+  \t\t<input type=\"radio\" name=\"stuSex\">女\n+  \t\t</td>\n+    </tr>\n+  \t\n+\t\t<tr><td>密码：</td><td><input type=\"password\" name=\"4\" cols=\"40\"></td></tr>\n+\t\t\n+\t\t\t<td><input type=\"submit\" value=\"登录\" onclick=\"test()\"><input type=\"reset\" value=\"取消\"></td>\n+\t\t\t</tr>\n+\t\t\t</table>\n+\t\t\t</form>\n+\t\t\t当前时间是：<%=new Date().toLocaleString() %><br>\n+\t\t\t<hr>\n+\t\t\t\n+\t\t\t\n+  </body>\n+</html>"
+  } ],
+  "sha" : "d99ff0cdb51f850afbe1758c1a39b2156d4a6b4c",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d99ff0cdb51f850afbe1758c1a39b2156d4a6b4c",
+  "parents" : [ {
+    "sha" : "1e98f41cb0aa9fe37ce430a844ccdd50c7d57615",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/1e98f41cb0aa9fe37ce430a844ccdd50c7d57615"
+  } ]
+}

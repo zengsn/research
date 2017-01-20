@@ -1,0 +1,60 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 49,
+    "additions" : 6,
+    "deletions" : 43
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/318e4dcb1ecfd877c99ce52248e50238c06ab546",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "张洋豪",
+      "date" : "2016-11-20T13:50:23Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "张洋豪",
+      "date" : "2016-11-20T13:50:23Z"
+    },
+    "message" : "Revert \"#6 提交实验代码\"\n\nThis reverts commit 107ea76b423ffa46bdeff5766a74cd14ec708873.",
+    "tree" : {
+      "sha" : "6b9b6abb22c4e3e6fd753e9490f81e114bfc04b0",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/6b9b6abb22c4e3e6fd753e9490f81e114bfc04b0"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/318e4dcb1ecfd877c99ce52248e50238c06ab546",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/318e4dcb1ecfd877c99ce52248e50238c06ab546/comments",
+  "files" : [ {
+    "sha" : "f7ac653667dbfba53b42dbd4e4ce20ef44ef46b1",
+    "filename" : "labs/1414080902209/index.html",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/318e4dcb1ecfd877c99ce52248e50238c06ab546/labs/1414080902209/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/318e4dcb1ecfd877c99ce52248e50238c06ab546/labs/1414080902209/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902209/index.html?ref=318e4dcb1ecfd877c99ce52248e50238c06ab546",
+    "patch" : "@@ -11,12 +11,12 @@\n          <h2 class=\"text-center\" style=\"margin-top: 100px\">Sign in to New world</h2>\n           \n          <div class=\"row\"  style=\"width:350px; margin:auto;height:150px;\">\n-         <form action=\"index.jsp\" method=\"post\" role=\"form\" id=\"login\">\n+         <form role=\"form\" id=\"login\">\n          \n          <div class=\"form-group\">\n           <div class=\"has-feedback\" >\n             <label for=\"exampleInputEmail1\">Email address</label>\n-            <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\"  name=\"username\" placeholder=\"Please enter your Account\">\n+            <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Please enter your Account\">\n             <span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span> \n           </div>\n          </div>"
+  }, {
+    "sha" : "e2fd1de1a4fd241d2e7617bf4e8b03b4048a735d",
+    "filename" : "labs/1414080902209/index.jsp",
+    "status" : "modified",
+    "additions" : 4,
+    "deletions" : 41,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/318e4dcb1ecfd877c99ce52248e50238c06ab546/labs/1414080902209/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/318e4dcb1ecfd877c99ce52248e50238c06ab546/labs/1414080902209/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902209/index.jsp?ref=318e4dcb1ecfd877c99ce52248e50238c06ab546",
+    "patch" : "@@ -1,25 +1,10 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n- <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>   \n- <%@ taglib uri=\"http://java.sun.com/jsp/jstl/fmt\" prefix=\"fmt\"%>  \n- <%@ taglib uri=\"http://java.sun.com/jsp/jstl/functions\" prefix=\"fn\" %>  \n-  \n- <%\n- String path = request.getContextPath();\n- String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n- %>\n-\n+<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\"\n+    pageEncoding=\"utf-8\"%>\n <!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n <html lang=\"zh-cn\">\n <head>\n  <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n- <meta http-equiv=\"pragma\" content=\"no-cache\">\n- <meta http-equiv=\"cache-control\" content=\"no-cache\">\n-\t<meta http-equiv=\"expires\" content=\"0\">    \n- \t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n- \t<meta http-equiv=\"description\" content=\"This is my page\">\n- \n- \n     <title>社团面试管理系统</title>\n     <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n <style>\n@@ -29,11 +14,6 @@ margin-left:100px;\n button{\n margin:15px;\n }\n-span{\n- \t  float:right;\n- \t  margin-right: 20px;\n-  \t font-size: 30px;\t  \n- \t}\n </style>\n </head>\n \n@@ -43,27 +23,10 @@ span{\n \n            <h1 class=\"text-center\" style=\"margin-top: 100px\">Welcome to Interview Management System</h2>\n             <p class=\"text-center\" >Now Time：<%= new java.util.Date() %></p>\n-\t\t\t <%\n- \t \tCalendar rightNow = Calendar.getInstance();\n- \t \tInteger Hour=new Integer(rightNow.get(Calendar.HOUR_OF_DAY));\n- \t \trequest.setAttribute(\"hour\", Hour);\n-  \t %>\n-  \t <c:choose>\n-  \t\t <c:when test=\"${ hour >= 0 && hour <= 11}\"><span>Good morning, <c:out value=\"${param.username}\" default=\"user\"/>!</span></c:when>\n-  \t\t <c:when test=\"${ hour >= 12 && hour <= 17}\"><span>Good afernoon, <c:out value=\"${param.username}\" default=\"user\"/>!</span></c:when>\n-  \t\t <c:otherwise><span>Good night, <c:out value=\"${param.username}\" default=\"user\"/>!</span></c:otherwise>\n-  \t </c:choose>\n- \t<hr width=\"100%\" size=\"2\">\n- \t \n-\n-\t\t\t\n-\t\t\t\n \t\t\t<% out.println(\"<h2>Now you can:</h2></br>\");  %>\n            <center>\n-           <c:forEach var=\"item\" items=\"View the information of departments,Fill in the personal information\" begin=\"0\" step=\"1\">\n- \t \t<button type=\"submit\" class=\"btn btn-success\"><c:out value=\"${item}\"/></button>\n- \t </c:forEach>\n-  \t     \n+  \t      <button type=\"submit\" class=\"btn btn-success\">View the information of departments</button>\n+  \t      <button type=\"submit\" class=\"btn btn-success\">Fill in the personal information</button>\n   \t      \t\n   \t\t</center>\n           </form>"
+  } ],
+  "sha" : "318e4dcb1ecfd877c99ce52248e50238c06ab546",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/318e4dcb1ecfd877c99ce52248e50238c06ab546",
+  "parents" : [ {
+    "sha" : "7c12861f9d6b687ff73040882ce7e33557ae42db",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7c12861f9d6b687ff73040882ce7e33557ae42db",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/7c12861f9d6b687ff73040882ce7e33557ae42db"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "soleMemory",
+    "id" : 17998370,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17998370?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/soleMemory",
+    "html_url" : "https://github.com/soleMemory",
+    "followers_url" : "https://api.github.com/users/soleMemory/followers",
+    "following_url" : "https://api.github.com/users/soleMemory/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/soleMemory/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/soleMemory/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/soleMemory/subscriptions",
+    "organizations_url" : "https://api.github.com/users/soleMemory/orgs",
+    "repos_url" : "https://api.github.com/users/soleMemory/repos",
+    "events_url" : "https://api.github.com/users/soleMemory/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/soleMemory/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 32,
+    "additions" : 31,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "soleMemory",
+    "id" : 17998370,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17998370?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/soleMemory",
+    "html_url" : "https://github.com/soleMemory",
+    "followers_url" : "https://api.github.com/users/soleMemory/followers",
+    "following_url" : "https://api.github.com/users/soleMemory/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/soleMemory/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/soleMemory/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/soleMemory/subscriptions",
+    "organizations_url" : "https://api.github.com/users/soleMemory/orgs",
+    "repos_url" : "https://api.github.com/users/soleMemory/repos",
+    "events_url" : "https://api.github.com/users/soleMemory/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/soleMemory/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/77f7dcc0bb93de9f3568bfa0fa896f4daac04bf5",
+  "commit" : {
+    "author" : {
+      "name" : "soleMemory",
+      "email" : "2995855759@qq.com",
+      "date" : "2016-04-15T14:10:12Z"
+    },
+    "committer" : {
+      "name" : "soleMemory",
+      "email" : "2995855759@qq.com",
+      "date" : "2016-04-15T14:10:12Z"
+    },
+    "message" : "#1 #20 labs",
+    "tree" : {
+      "sha" : "f43b8f67e89ff52c2f8336e01d6c8ba2d954ac31",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/f43b8f67e89ff52c2f8336e01d6c8ba2d954ac31"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/77f7dcc0bb93de9f3568bfa0fa896f4daac04bf5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/77f7dcc0bb93de9f3568bfa0fa896f4daac04bf5/comments",
+  "files" : [ {
+    "sha" : "ae48bb9074b89352a64b70ee60a2aed883e38d7c",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/net1314080903234.java",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/77f7dcc0bb93de9f3568bfa0fa896f4daac04bf5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/net1314080903234.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/77f7dcc0bb93de9f3568bfa0fa896f4daac04bf5/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/net1314080903234.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903234/net1314080903234.java?ref=77f7dcc0bb93de9f3568bfa0fa896f4daac04bf5",
+    "patch" : "@@ -0,0 +1,31 @@\n+package edu.hzuapps.androidworks;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+\n+import edu.hzuapps.androidworks.R;\n+\n+public class net1314080903234 extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net13140809032342);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n+\n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+    }\n+\n+}"
+  }, {
+    "sha" : "9daeafb9864cf43055ae93beb0afd6c7d144bfa4",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/test/test.c",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 1,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a163d79655012338d4beed9005fdbde73baf459d/app/src/main/java/edu/hzuapps/androidworks/homeworks/test/test.c",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a163d79655012338d4beed9005fdbde73baf459d/app/src/main/java/edu/hzuapps/androidworks/homeworks/test/test.c",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/test/test.c?ref=a163d79655012338d4beed9005fdbde73baf459d",
+    "patch" : "@@ -1 +0,0 @@\n-test"
+  } ],
+  "sha" : "77f7dcc0bb93de9f3568bfa0fa896f4daac04bf5",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/77f7dcc0bb93de9f3568bfa0fa896f4daac04bf5",
+  "parents" : [ {
+    "sha" : "a163d79655012338d4beed9005fdbde73baf459d",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a163d79655012338d4beed9005fdbde73baf459d",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/a163d79655012338d4beed9005fdbde73baf459d"
+  } ]
+}

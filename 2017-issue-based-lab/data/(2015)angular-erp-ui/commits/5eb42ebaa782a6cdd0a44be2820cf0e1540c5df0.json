@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 139,
+    "additions" : 71,
+    "deletions" : 68
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-09T14:02:27Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-09T14:02:27Z"
+    },
+    "message" : "Merge pull request #299 from 30-wangweixin/master\n\n实验（4）1314080901230",
+    "tree" : {
+      "sha" : "f3a64d23221f52e3e4f5fb12309d7fd237e7aa53",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/f3a64d23221f52e3e4f5fb12309d7fd237e7aa53"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0/comments",
+  "files" : [ {
+    "sha" : "959734372f46f0d5c9cbb6286c40f71533f3c167",
+    "filename" : "works/1314080901230/index.html",
+    "status" : "modified",
+    "additions" : 49,
+    "deletions" : 68,
+    "changes" : 117,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0/works/1314080901230/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0/works/1314080901230/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901230/index.html?ref=5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0",
+    "patch" : "@@ -1,70 +1,51 @@\n-﻿<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n-  <head>\n-    <meta charset=\"utf-8\">\n-    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>采购付款__查询采购付款单1314080901230</title>\n-    <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n-    \n-    <script>\n-    function MyFilterDemoCtrl($scope) {\n-        var someData = {\n-         付款状态:\"全部\"，\n-         起始日期:\"2015-10-20\",\n-         终止日期:\"2015-10-20\"\n-        };\n-        $scope.data = someData;\n-} </script>\n-    \n-    <!-- Bootstrap -->\n-    <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n+<!DOCTYPE html>\n+ <html ng-app=\"chaxundanModule\"> <head lang=\"en\">\n+     <meta charset=\"utf-8\">\n+     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n+     <title>采购付款__查询采购付款单by 1314080901230</title>\n+     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+          \n+     <!-- Bootstrap -->\n+     <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n+ \t\t \n+     <!-- Custom styles for this template -->\n+     <link href=\"css/style.css\" rel=\"stylesheet\">\n+ \t\t \n+     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n+     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n+     <!--[if lt IE 9]>\n+       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+     <![endif]-->\n \n-    <!-- Custom styles for this template -->\n-    <link href=\"css/style.css\" rel=\"stylesheet\">\n-\n-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n-    <!--[if lt IE 9]>\n-      <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n-      <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n-    <![endif]-->\n-  </head>\n-  <body>\n-    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n-      <div class=\"container\">\n-        <div class=\"navbar-header\">\n-          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n-            <span class=\"sr-only\">Toggle navigation</span>\n-            <span class=\"icon-bar\"></span>\n-            <span class=\"icon-bar\"></span>\n-            <span class=\"icon-bar\"></span>\n-          </button>\n-          <a class=\"navbar-brand\" href=\"#\">Project name</a>\n-        </div>\n-        <div id=\"navbar\" class=\"collapse navbar-collapse\">\n-          <ul class=\"nav navbar-nav\">\n-            <li class=\"active\"><a href=\"#\">Home</a></li>\n-            <li><a href=\"#about\">About</a></li>\n-            <li><a href=\"#contact\">Contact</a></li>\n-          </ul>\n-        </div><!--/.nav-collapse -->\n-      </div>\n-    </nav>\n-\n-    <div class=\"container\">\n-\n-      <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n-        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-      </div>\n-\n-    </div><!-- /.container -->\n-\n-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n-    <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n-    <!-- Include all compiled plugins (below), or include individual files as needed -->\n-    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n-  </body>\n+   </head>\n+   <body ng-controller=\"createchaxundanCtrl\">\n+     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+                   <ul class=\"nav navbar-nav\">\n+             <li class=\"active\"><a href=\"#\">Home</a></li>\n+             <li><a href=\"#about\">About</a></li>\n+             <li><a href=\"#contact\">Contact</a></li>\n+           </ul>\n+         </div><!--/.nav-collapse -->\n+       </div>\n+     </nav>\n+ \t\t \n+     <div class=\"container\">\n+ \t\t \n+       <div class=\"starter-template\">\n+         <h1>Bootstrap starter template</h1>\n+         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\t\t    \n+       </div>\n+ \t\t \n+     </div><!-- /.container -->\n+ \t\t \n+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\t\t    \n+     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\t\n+     <!-- Include all compiled plugins (below), or include individual files as needed -->\n+     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+        <script src=\"js/createchaxundanModule.js\"></script>\n+   </body>\n </html>"
+  }, {
+    "sha" : "84019f9ed9c73241269450248989faf6ea6c6504",
+    "filename" : "works/1314080901230/js/chaxundanModule.js",
+    "status" : "added",
+    "additions" : 22,
+    "deletions" : 0,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0/works/1314080901230/js/chaxundanModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0/works/1314080901230/js/chaxundanModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901230/js/chaxundanModule.js?ref=5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0",
+    "patch" : "@@ -0,0 +1,22 @@\n+// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+var chaxundanModule = angular.module('chaxundanModule', []);\n+\n+// use the myAppModule variable tos\n+// configure the module with a controller\n+chaxundanModule.controller('createchaxundanDemoCtrl', function ($scope) {\n+       // controller code would go here\n+        var chaxundanSet = {\n+         付款状态:\"全部\"，\n+         起始日期:\"2015-10-20\",\n+         终止日期:\"2015-10-20\"        };\n+        $scope.data = chaxundanSet;\n+    }\n+);\n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+chaxundanModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; }); // javascript.js"
+  } ],
+  "sha" : "5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5eb42ebaa782a6cdd0a44be2820cf0e1540c5df0",
+  "parents" : [ {
+    "sha" : "bb992decffaf66fb34e5b6ecd9a5e811913f3c37",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/bb992decffaf66fb34e5b6ecd9a5e811913f3c37",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/bb992decffaf66fb34e5b6ecd9a5e811913f3c37"
+  }, {
+    "sha" : "2da1831c13439dd7f3317d8085dde5743713070f",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2da1831c13439dd7f3317d8085dde5743713070f",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/2da1831c13439dd7f3317d8085dde5743713070f"
+  } ]
+}

@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 115,
+    "additions" : 115,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/92bc77bdd27098435dd152dfa0004bf6a8995e5b",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T00:26:12Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T00:26:12Z"
+    },
+    "message" : "Merge pull request #402 from yjf2213939/master\n\n#89 #395 实验3",
+    "tree" : {
+      "sha" : "0a613b40f5663702821789dbffaae751947c2013",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/0a613b40f5663702821789dbffaae751947c2013"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/92bc77bdd27098435dd152dfa0004bf6a8995e5b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/92bc77bdd27098435dd152dfa0004bf6a8995e5b/comments",
+  "files" : [ {
+    "sha" : "f41b07248bdb21e08dea207278a9bd0fe2814bcc",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Card.java",
+    "status" : "added",
+    "additions" : 115,
+    "deletions" : 0,
+    "changes" : 115,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Card.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Card.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903138/Net1314080903138Card.java?ref=92bc77bdd27098435dd152dfa0004bf6a8995e5b",
+    "patch" : "@@ -0,0 +1,115 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903138;\n+\n+import android.content.Context;\n+import android.view.View;\n+import android.view.animation.Animation;\n+import android.view.animation.ScaleAnimation;\n+import android.widget.FrameLayout;\n+import android.widget.ImageView;\n+\n+/**\n+ * Created by Administrator on 2016/4/26.\n+ */\n+public class Net1314080903138Card extends FrameLayout{\n+\n+    public Net1314080903138Card(Context context) {\n+        super(context);\n+        chess = new ImageView(context);\n+        chessBackground = new ImageView(context);\n+        chessBackground.setBackgroundColor(0x66999933);\n+        animation1.setDuration(500);\n+        animation2.setDuration(500);\n+\n+        chess.setScaleType(ImageView.ScaleType.FIT_CENTER);\n+\n+        LayoutParams lp = new LayoutParams(-1, -1);\n+        lp.setMargins(4, 4, 0, 0);\n+\n+        addView(chessBackground, lp);\n+        addView(chess, lp);\n+\n+        animation1.setAnimationListener(new Animation.AnimationListener() {\n+            @Override\n+            public void onAnimationStart(Animation animation) {\n+\n+            }\n+\n+            @Override\n+            public void onAnimationEnd(Animation animation) {\n+                chess.setAnimation(null);\n+                chess.setVisibility(View.INVISIBLE);\n+            }\n+\n+            @Override\n+            public void onAnimationRepeat(Animation animation) {\n+\n+            }\n+        });\n+\n+        animation2.setAnimationListener(new Animation.AnimationListener() {\n+            @Override\n+            public void onAnimationStart(Animation animation) {\n+\n+            }\n+\n+            @Override\n+            public void onAnimationEnd(Animation animation) {\n+                chess.setAnimation(null);\n+            }\n+\n+            @Override\n+            public void onAnimationRepeat(Animation animation) {\n+\n+            }\n+        });\n+\n+    }\n+\n+    private int num = 0;\n+\n+\n+    public int getNum() {\n+        return num;\n+    }\n+\n+    public void setNum(int Chessnumber) {\n+        if(num != Chessnumber){\n+\n+            chess.startAnimation(animation1);\n+            chess.setImageResource(ChessStyle[Chessnumber]);\n+            chess.setVisibility(View.VISIBLE);\n+            chess.startAnimation(animation2);\n+        }\n+        else{\n+            chess.setImageResource(ChessStyle[Chessnumber]);\n+        }\n+\n+        num = Chessnumber;\n+    }\n+\n+    public void setHint(){\n+        chess.setImageResource(ChessStyle[4]);\n+    }\n+    public void moveHInt() {chess.setImageResource(ChessStyle[0]);}\n+\n+    public boolean equals(Net1314080903138Card o) {\n+        return getNum() == o.getNum();\n+    }\n+\n+\n+    private ImageView chess;\n+    private ImageView chessBackground;\n+\n+    private ScaleAnimation animation1 = new ScaleAnimation(1, 0, 1, 1,\n+            Animation.RELATIVE_TO_PARENT, 0.5f,Animation.RELATIVE_TO_PARENT, 0.5f );\n+\n+    private ScaleAnimation animation2 = new ScaleAnimation(0, 1, 1, 1,\n+            Animation.RELATIVE_TO_PARENT, 0.5f,Animation.RELATIVE_TO_PARENT, 0.5f );\n+\n+    private int[] ChessStyle = {\n+            R.drawable.net13140803138transparent,\n+            R.drawable.net13140803138black_chess,\n+            R.drawable.net13140803138white_chess,\n+            R.drawable.net13140803138transparent,\n+            R.drawable.net13140803138black_chess_t};\n+}"
+  }, {
+    "sha" : "c4f044f963c303560909a4d36dbf21e71d15e65c",
+    "filename" : "app/src/main/res/drawable/net13140803138black_chess.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/res/drawable/net13140803138black_chess.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/res/drawable/net13140803138black_chess.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138black_chess.png?ref=92bc77bdd27098435dd152dfa0004bf6a8995e5b"
+  }, {
+    "sha" : "099487ec400869fa085f7c71fadc2ea0f2a386cb",
+    "filename" : "app/src/main/res/drawable/net13140803138black_chess_t.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/res/drawable/net13140803138black_chess_t.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/res/drawable/net13140803138black_chess_t.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138black_chess_t.png?ref=92bc77bdd27098435dd152dfa0004bf6a8995e5b"
+  }, {
+    "sha" : "16a1326d9d51c1e25ac8055d56b49211601b1175",
+    "filename" : "app/src/main/res/drawable/net13140803138transparent.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/res/drawable/net13140803138transparent.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/res/drawable/net13140803138transparent.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138transparent.png?ref=92bc77bdd27098435dd152dfa0004bf6a8995e5b"
+  }, {
+    "sha" : "dd134308974148b19920b35cb5bea349fc42d086",
+    "filename" : "app/src/main/res/drawable/net13140803138white_chess.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/res/drawable/net13140803138white_chess.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/92bc77bdd27098435dd152dfa0004bf6a8995e5b/app/src/main/res/drawable/net13140803138white_chess.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net13140803138white_chess.png?ref=92bc77bdd27098435dd152dfa0004bf6a8995e5b"
+  } ],
+  "sha" : "92bc77bdd27098435dd152dfa0004bf6a8995e5b",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/92bc77bdd27098435dd152dfa0004bf6a8995e5b",
+  "parents" : [ {
+    "sha" : "cfe6326760b4bfc761170a5f5abc5efd77cc76de",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/cfe6326760b4bfc761170a5f5abc5efd77cc76de",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/cfe6326760b4bfc761170a5f5abc5efd77cc76de"
+  }, {
+    "sha" : "0dc4e247b39e705a6767165befaa8a8da9c98fb0",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0dc4e247b39e705a6767165befaa8a8da9c98fb0",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/0dc4e247b39e705a6767165befaa8a8da9c98fb0"
+  } ]
+}

@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "LIMITAYANG",
+    "id" : 22512059,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512059?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LIMITAYANG",
+    "html_url" : "https://github.com/LIMITAYANG",
+    "followers_url" : "https://api.github.com/users/LIMITAYANG/followers",
+    "following_url" : "https://api.github.com/users/LIMITAYANG/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LIMITAYANG/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LIMITAYANG/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LIMITAYANG/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LIMITAYANG/orgs",
+    "repos_url" : "https://api.github.com/users/LIMITAYANG/repos",
+    "events_url" : "https://api.github.com/users/LIMITAYANG/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LIMITAYANG/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 138,
+    "additions" : 138,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "LIMITAYANG",
+    "id" : 22512059,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512059?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LIMITAYANG",
+    "html_url" : "https://github.com/LIMITAYANG",
+    "followers_url" : "https://api.github.com/users/LIMITAYANG/followers",
+    "following_url" : "https://api.github.com/users/LIMITAYANG/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LIMITAYANG/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LIMITAYANG/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LIMITAYANG/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LIMITAYANG/orgs",
+    "repos_url" : "https://api.github.com/users/LIMITAYANG/repos",
+    "events_url" : "https://api.github.com/users/LIMITAYANG/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LIMITAYANG/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316",
+  "commit" : {
+    "author" : {
+      "name" : "LIMITAYANG",
+      "email" : "962401409@qq.com",
+      "date" : "2016-11-27T01:42:10Z"
+    },
+    "committer" : {
+      "name" : "LIMITAYANG",
+      "email" : "962401409@qq.com",
+      "date" : "2016-11-27T01:42:10Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "1488d55a75ca26e5be204fccd5089b3931fa700d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/1488d55a75ca26e5be204fccd5089b3931fa700d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316/comments",
+  "files" : [ {
+    "sha" : "ced5d901a715140271efa0845a4e99be3b0f6e2d",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902220/FirstSevlet.java",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316/jweb/src/edu/hzu/javaweb/labs/se1414080902220/FirstSevlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316/jweb/src/edu/hzu/javaweb/labs/se1414080902220/FirstSevlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902220/FirstSevlet.java?ref=ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316",
+    "patch" : "@@ -0,0 +1,61 @@\n+package se1414080902220Servlet;\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+@WebServlet(urlPatterns=\"/1414080902220\")\n+public class FirstSevlet extends HttpServlet {\n+\t\n+\tpublic FirstSevlet() {\n+\t\tsuper();\n+\t}\n+\n+\t\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tString income=request.getParameter(\"income\");\n+\t\tString timeString=request.getParameter(\"time\");\n+\t\tString description=request.getParameter(\"description\");\n+\t\tString message=new String();\n+\t\ttry {\n+\t\t\tDouble incomeMoney=Double.parseDouble(income);\n+\t\t\tif (incomeMoney<0) \n+\t\t\t{\n+\t\t\t\tmessage=\"收入不允许为空\";\t\n+\t\t\t}\n+\t\t\telse \n+\t\t\t{\n+\t\t\t\tmessage=\"添加收入成功\";\n+\t\t\t}\n+\t\t} catch (Exception e) {\n+\t\t\tmessage=\"填写的收入不合法，请返回重新填写\";\n+\t\t\tSystem.out.print(e.getMessage());\n+\t\t}\n+\t\trequest.setAttribute(\"res\", message);\n+\t\tRequestDispatcher rd=request.getRequestDispatcher(\"1414080902220/result.jsp\");\n+\t\trd.forward(request, response);\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void init() throws ServletException {\n+\t\t\n+\t}\n+}"
+  }, {
+    "sha" : "3ae8ba4e473a0e70036b5847575f827df27434e6",
+    "filename" : "jweb/web/1414080902220/addinfo.jsp",
+    "status" : "added",
+    "additions" : 56,
+    "deletions" : 0,
+    "changes" : 56,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316/jweb/web/1414080902220/addinfo.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316/jweb/web/1414080902220/addinfo.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902220/addinfo.jsp?ref=ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316",
+    "patch" : "@@ -0,0 +1,56 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    <title>统计收入</title>\n+    <style type=\"text/css\">\n+    \tbody{\n+    \t\tbackground:#666;\n+    \t}\n+    \tinput{\n+    \t\tbackground-color: #777;\n+\t\t\tborder:none;\n+\t\t\tborder-radius:10px;\n+\t\t\ttext-align:center;\n+    \t}\n+    \t#div1{\n+    \t\tpadding: 10% 10% 10% 10%;\n+    \t}\n+    \ttextarea{\n+    \t\tbackground-color: #777;\n+\t\t\tborder:none;\n+\t\t\tborder-radius:10px;\n+    \t}\n+    </style>\n+\t\n+\n+  </head>\n+  \n+  <body>\n+  \t<br/><br/><br/><br/>\n+  \t<div class=\"col-md-2\"></div>\n+  \t<div class=\"col-md-8\" id=\"div1\">\n+  \t\t<form  action=\"1414080902220\" method=\"post\">\n+  \t\t\t\t<label for=\"income\"> 收入：</label>\n+\t         \t<input type=\"text\" name=\"income\" id=\"income\"><br/><br/>\n+\t         \t<label for=\"time\"> 时间：</label>\t \n+\t        \t<input type=\"text\" name=\"time\"><br/><br/>\n+\t        \t<label for=\"texts\">来源：</label>\n+\t        \t<input type=\"text\" name=\"description\" id=\"texts\"><br/><br/>\n+\t        \t<input type=\"submit\" value=\"添加\">\n+\t    </form>\n+  \t</div>\n+  \t<div class=\"col-md-2\"></div>\n+    \n+  </body>\n+</html>"
+  }, {
+    "sha" : "31076cf3fd48b0261b1edde638d24d54acc8a64e",
+    "filename" : "jweb/web/1414080902220/result.jsp",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316/jweb/web/1414080902220/result.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316/jweb/web/1414080902220/result.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902220/result.jsp?ref=ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316",
+    "patch" : "@@ -0,0 +1,21 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>展现界面</title>\n+    \n+\t\n+\n+  </head>\n+  \n+  <body>\n+    \t<c:out value=\"${res}\" />\n+  </body>\n+</html>"
+  } ],
+  "sha" : "ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ca0fbb6c892bdc0dae5ad10ff01a2ad5f967c316",
+  "parents" : [ {
+    "sha" : "9e4e5c8ed8e00270666120afe966b9ca95d5a7b9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9e4e5c8ed8e00270666120afe966b9ca95d5a7b9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/9e4e5c8ed8e00270666120afe966b9ca95d5a7b9"
+  } ]
+}

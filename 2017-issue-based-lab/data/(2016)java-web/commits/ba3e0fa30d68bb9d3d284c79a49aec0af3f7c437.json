@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "invalid-email-address",
+    "id" : 148100,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/148100?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/invalid-email-address",
+    "html_url" : "https://github.com/invalid-email-address",
+    "followers_url" : "https://api.github.com/users/invalid-email-address/followers",
+    "following_url" : "https://api.github.com/users/invalid-email-address/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/invalid-email-address/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/invalid-email-address/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/invalid-email-address/subscriptions",
+    "organizations_url" : "https://api.github.com/users/invalid-email-address/orgs",
+    "repos_url" : "https://api.github.com/users/invalid-email-address/repos",
+    "events_url" : "https://api.github.com/users/invalid-email-address/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/invalid-email-address/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 80,
+    "additions" : 80,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "invalid-email-address",
+    "id" : 148100,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/148100?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/invalid-email-address",
+    "html_url" : "https://github.com/invalid-email-address",
+    "followers_url" : "https://api.github.com/users/invalid-email-address/followers",
+    "following_url" : "https://api.github.com/users/invalid-email-address/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/invalid-email-address/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/invalid-email-address/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/invalid-email-address/subscriptions",
+    "organizations_url" : "https://api.github.com/users/invalid-email-address/orgs",
+    "repos_url" : "https://api.github.com/users/invalid-email-address/repos",
+    "events_url" : "https://api.github.com/users/invalid-email-address/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/invalid-email-address/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "you@example.com",
+      "date" : "2016-11-11T02:22:27Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "you@example.com",
+      "date" : "2016-11-11T02:22:27Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "6b5a20af44c508a52a9bec65e1a85c90729d233b",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/6b5a20af44c508a52a9bec65e1a85c90729d233b"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437/comments",
+  "files" : [ {
+    "sha" : "0e34b121396ec1bea16293d4ca2d361a8bd8c91f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902104/EncodingFilter.java",
+    "status" : "added",
+    "additions" : 35,
+    "deletions" : 0,
+    "changes" : 35,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437/jweb/src/edu/hzu/javaweb/labs/se1414080902104/EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437/jweb/src/edu/hzu/javaweb/labs/se1414080902104/EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902104/EncodingFilter.java?ref=ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437",
+    "patch" : "@@ -0,0 +1,35 @@\n+package edu.hzu.javaweb.labs.se1414080902104;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+@WebFilter(filterName = \"EncodingFilter\", urlPatterns = \"/*\")\n+\n+public class EncodingFilter implements Filter {\n+\t@Override\n+\tpublic void destroy() {\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\t\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tresponse.setCharacterEncoding(\"UTF-8\"); \n+\t\tchain.doFilter(request, response);\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "75db23f5268764131a5bdc5ef4e9bd33da2542ee",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902104/LoginFilter.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437/jweb/src/edu/hzu/javaweb/labs/se1414080902104/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437/jweb/src/edu/hzu/javaweb/labs/se1414080902104/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902104/LoginFilter.java?ref=ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437",
+    "patch" : "@@ -0,0 +1,45 @@\n+package edu.hzu.javaweb.labs.se1414080902104;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+@WebFilter(filterName = \"LoginFilter\", urlPatterns = \"/*\")\n+public class LoginFilter implements Filter {\n+\n+\t@Override\n+\tpublic void destroy()  {\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\tHttpServletRequest req = (HttpServletRequest) request;   \n+\t     HttpServletResponse res = (HttpServletResponse) response;   \n+\t  \n+\t     HttpSession session = req.getSession();   \n+\t    if (session.getAttribute(\"username\") != null) { \n+\t         chain.doFilter(request, response);   \n+\t     } else {   \n+\t         res.sendRedirect(\"failure.jsp\");   \n+\t     }   \n+\t}  \n+\n+\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t\n+\n+\t}\n+\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ba3e0fa30d68bb9d3d284c79a49aec0af3f7c437",
+  "parents" : [ {
+    "sha" : "7798a5201f17cace494fc6ba9afe5e05e3816c3a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7798a5201f17cace494fc6ba9afe5e05e3816c3a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/7798a5201f17cace494fc6ba9afe5e05e3816c3a"
+  } ]
+}

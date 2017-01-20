@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 156,
+    "additions" : 0,
+    "deletions" : 156
+  },
+  "author" : {
+    "login" : "Hongsf",
+    "id" : 22068396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hongsf",
+    "html_url" : "https://github.com/Hongsf",
+    "followers_url" : "https://api.github.com/users/Hongsf/followers",
+    "following_url" : "https://api.github.com/users/Hongsf/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hongsf/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hongsf/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hongsf/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hongsf/orgs",
+    "repos_url" : "https://api.github.com/users/Hongsf/repos",
+    "events_url" : "https://api.github.com/users/Hongsf/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hongsf/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/80897d3a392604e9e594d880bca7e1647b9c880f",
+  "commit" : {
+    "author" : {
+      "name" : "洪生锋",
+      "email" : "1083178465@qq.com",
+      "date" : "2016-10-02T10:46:49Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-02T10:46:49Z"
+    },
+    "message" : "Delete application.js",
+    "tree" : {
+      "sha" : "79e5a45cc324de0c6a85414f57cebe246d07a110",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/79e5a45cc324de0c6a85414f57cebe246d07a110"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/80897d3a392604e9e594d880bca7e1647b9c880f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/80897d3a392604e9e594d880bca7e1647b9c880f/comments",
+  "files" : [ {
+    "sha" : "f880bc05d53f261e2838c0b4f1ef995f85753bd1",
+    "filename" : "labs/1414080902110/bootstrap/js/application.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 156,
+    "changes" : 156,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a64d7ed9169dc0b96395f5679fe6721e168849a4/labs/1414080902110/bootstrap/js/application.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a64d7ed9169dc0b96395f5679fe6721e168849a4/labs/1414080902110/bootstrap/js/application.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902110/bootstrap/js/application.js?ref=a64d7ed9169dc0b96395f5679fe6721e168849a4",
+    "patch" : "@@ -1,156 +0,0 @@\n-// NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT\n-// IT'S ALL JUST JUNK FOR OUR DOCS!\n-// ++++++++++++++++++++++++++++++++++++++++++\n-\n-!function ($) {\n-\n-  $(function(){\n-\n-    var $window = $(window)\n-\n-    // Disable certain links in docs\n-    $('section [href^=#]').click(function (e) {\n-      e.preventDefault()\n-    })\n-\n-    // side bar\n-    setTimeout(function () {\n-      $('.bs-docs-sidenav').affix({\n-        offset: {\n-          top: function () { return $window.width() <= 980 ? 290 : 210 }\n-        , bottom: 270\n-        }\n-      })\n-    }, 100)\n-\n-    // make code pretty\n-    window.prettyPrint && prettyPrint()\n-\n-    // add-ons\n-    $('.add-on :checkbox').on('click', function () {\n-      var $this = $(this)\n-        , method = $this.attr('checked') ? 'addClass' : 'removeClass'\n-      $(this).parents('.add-on')[method]('active')\n-    })\n-\n-    // add tipsies to grid for scaffolding\n-    if ($('#gridSystem').length) {\n-      $('#gridSystem').tooltip({\n-          selector: '.show-grid > [class*=\"span\"]'\n-        , title: function () { return $(this).width() + 'px' }\n-      })\n-    }\n-\n-    // tooltip demo\n-    $('.tooltip-demo').tooltip({\n-      selector: \"a[data-toggle=tooltip]\"\n-    })\n-\n-    $('.tooltip-test').tooltip()\n-    $('.popover-test').popover()\n-\n-    // popover demo\n-    $(\"a[data-toggle=popover]\")\n-      .popover()\n-      .click(function(e) {\n-        e.preventDefault()\n-      })\n-\n-    // button state demo\n-    $('#fat-btn')\n-      .click(function () {\n-        var btn = $(this)\n-        btn.button('loading')\n-        setTimeout(function () {\n-          btn.button('reset')\n-        }, 3000)\n-      })\n-\n-    // carousel demo\n-    $('#myCarousel').carousel()\n-\n-    // javascript build logic\n-    var inputsComponent = $(\"#components.download input\")\n-      , inputsPlugin = $(\"#plugins.download input\")\n-      , inputsVariables = $(\"#variables.download input\")\n-\n-    // toggle all plugin checkboxes\n-    $('#components.download .toggle-all').on('click', function (e) {\n-      e.preventDefault()\n-      inputsComponent.attr('checked', !inputsComponent.is(':checked'))\n-    })\n-\n-    $('#plugins.download .toggle-all').on('click', function (e) {\n-      e.preventDefault()\n-      inputsPlugin.attr('checked', !inputsPlugin.is(':checked'))\n-    })\n-\n-    $('#variables.download .toggle-all').on('click', function (e) {\n-      e.preventDefault()\n-      inputsVariables.val('')\n-    })\n-\n-    // request built javascript\n-    $('.download-btn .btn').on('click', function () {\n-\n-      var css = $(\"#components.download input:checked\")\n-            .map(function () { return this.value })\n-            .toArray()\n-        , js = $(\"#plugins.download input:checked\")\n-            .map(function () { return this.value })\n-            .toArray()\n-        , vars = {}\n-        , img = ['glyphicons-halflings.png', 'glyphicons-halflings-white.png']\n-\n-    $(\"#variables.download input\")\n-      .each(function () {\n-        $(this).val() && (vars[ $(this).prev().text() ] = $(this).val())\n-      })\n-\n-      $.ajax({\n-        type: 'POST'\n-      , url: /\\?dev/.test(window.location) ? 'http://localhost:3000' : 'http://bootstrap.herokuapp.com'\n-      , dataType: 'jsonpi'\n-      , params: {\n-          js: js\n-        , css: css\n-        , vars: vars\n-        , img: img\n-      }\n-      })\n-    })\n-  })\n-\n-// Modified from the original jsonpi https://github.com/benvinegar/jquery-jsonpi\n-$.ajaxTransport('jsonpi', function(opts, originalOptions, jqXHR) {\n-  var url = opts.url;\n-\n-  return {\n-    send: function(_, completeCallback) {\n-      var name = 'jQuery_iframe_' + jQuery.now()\n-        , iframe, form\n-\n-      iframe = $('<iframe>')\n-        .attr('name', name)\n-        .appendTo('head')\n-\n-      form = $('<form>')\n-        .attr('method', opts.type) // GET or POST\n-        .attr('action', url)\n-        .attr('target', name)\n-\n-      $.each(opts.params, function(k, v) {\n-\n-        $('<input>')\n-          .attr('type', 'hidden')\n-          .attr('name', k)\n-          .attr('value', typeof v == 'string' ? v : JSON.stringify(v))\n-          .appendTo(form)\n-      })\n-\n-      form.appendTo('body').submit()\n-    }\n-  }\n-})\n-\n-}(window.jQuery)"
+  } ],
+  "sha" : "80897d3a392604e9e594d880bca7e1647b9c880f",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/80897d3a392604e9e594d880bca7e1647b9c880f",
+  "parents" : [ {
+    "sha" : "a64d7ed9169dc0b96395f5679fe6721e168849a4",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a64d7ed9169dc0b96395f5679fe6721e168849a4",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/a64d7ed9169dc0b96395f5679fe6721e168849a4"
+  } ]
+}

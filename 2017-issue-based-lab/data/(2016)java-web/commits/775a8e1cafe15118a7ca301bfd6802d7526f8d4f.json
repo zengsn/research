@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 4,
+    "additions" : 2,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "TheBestP",
+    "id" : 22089343,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22089343?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/TheBestP",
+    "html_url" : "https://github.com/TheBestP",
+    "followers_url" : "https://api.github.com/users/TheBestP/followers",
+    "following_url" : "https://api.github.com/users/TheBestP/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/TheBestP/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/TheBestP/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/TheBestP/subscriptions",
+    "organizations_url" : "https://api.github.com/users/TheBestP/orgs",
+    "repos_url" : "https://api.github.com/users/TheBestP/repos",
+    "events_url" : "https://api.github.com/users/TheBestP/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/TheBestP/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/775a8e1cafe15118a7ca301bfd6802d7526f8d4f",
+  "commit" : {
+    "author" : {
+      "name" : "1414080902137",
+      "email" : "845495571@qq.com",
+      "date" : "2016-11-19T11:11:21Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-19T11:11:21Z"
+    },
+    "message" : "Update Se1414080902137Servlet.java",
+    "tree" : {
+      "sha" : "24f707c9f2251563c10d5fa29cbb6d4f73add811",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/24f707c9f2251563c10d5fa29cbb6d4f73add811"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/775a8e1cafe15118a7ca301bfd6802d7526f8d4f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/775a8e1cafe15118a7ca301bfd6802d7526f8d4f/comments",
+  "files" : [ {
+    "sha" : "726f2eb265312e574bc0e1e673625ee88dc6182a",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902137/Se1414080902137Servlet.java",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/775a8e1cafe15118a7ca301bfd6802d7526f8d4f/jweb/src/edu/hzu/javaweb/labs/se1414080902137/Se1414080902137Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/775a8e1cafe15118a7ca301bfd6802d7526f8d4f/jweb/src/edu/hzu/javaweb/labs/se1414080902137/Se1414080902137Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902137/Se1414080902137Servlet.java?ref=775a8e1cafe15118a7ca301bfd6802d7526f8d4f",
+    "patch" : "@@ -15,7 +15,7 @@\n \t/**\n \t * Constructor of the object.\n \t */\n-\tpublic se1414080902137Servlet() {\n+\tpublic Se1414080902137Servlet() {\n \t\tsuper();\n \t}\n \n@@ -73,7 +73,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\tString userPwd=request.getParameter(\"password\");\n \t\tString info=\"\";\n \t\tif((\"abc\").equals(userName)&&(\"123\").equals(userPwd)){\n-\t\t\tinfo=\"��ӭ�㣬\"+userName+\"!\";\n+\t\t\tinfo=\"»¶Ó­Äã£¬\"+userName+\"!\";\n \t\t\trequest.setAttribute(\"outputMessage\", info);\n \t\t\trequest.getRequestDispatcher(\"Info.jsp\").forward(request,response);\n \t\t}else{"
+  } ],
+  "sha" : "775a8e1cafe15118a7ca301bfd6802d7526f8d4f",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/775a8e1cafe15118a7ca301bfd6802d7526f8d4f",
+  "parents" : [ {
+    "sha" : "c27fe0b55979c4732936af4df1c536f56676a0c7",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c27fe0b55979c4732936af4df1c536f56676a0c7",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/c27fe0b55979c4732936af4df1c536f56676a0c7"
+  } ]
+}

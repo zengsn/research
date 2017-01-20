@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 48,
+    "additions" : 0,
+    "deletions" : 48
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ba5420269868938d5ed923cf16ca31cdf77ce92e",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T01:28:06Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T01:28:06Z"
+    },
+    "message" : "Delete add.jsp",
+    "tree" : {
+      "sha" : "238c0e0d2371ccc0e90e99dd75125bf3465dbde2",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/238c0e0d2371ccc0e90e99dd75125bf3465dbde2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ba5420269868938d5ed923cf16ca31cdf77ce92e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ba5420269868938d5ed923cf16ca31cdf77ce92e/comments",
+  "files" : [ {
+    "sha" : "eee145e506192e713ad395555c342dd2ddacaff0",
+    "filename" : "jweb/web/1414080902138/add.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 48,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/fc9f225f3a36759943b2443def07fdfd8f99d6c1/jweb/web/1414080902138/add.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/fc9f225f3a36759943b2443def07fdfd8f99d6c1/jweb/web/1414080902138/add.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902138/add.jsp?ref=fc9f225f3a36759943b2443def07fdfd8f99d6c1",
+    "patch" : "@@ -1,48 +0,0 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n-<html>\n-<!-- 新 Bootstrap 核心 CSS 文件 -->\n-<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n-<!-- 可选的Bootstrap主题文件（一般不用引入） -->\n-<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n-<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n-<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n-<style type=\"text/css\">\n-body{color:#FF7B0B;font-size:18px;}\n-.title{text-align: center;font-size:50px;}\n-.login{text-align: center;}\n-#id,#name,#sex,#age,#weight,#hight{width:250px; margin:0 auto;}\n-.btn{width: 125px;}\n-</style>\n-  <head>    \n-    <title>Add Page</title>    \n-  </head>\n-  \n-  <body>\n-  <h1 class=\"title\"><br/>New Information</h1>\n-  <div class=\"container\" >\n-    <form action=\"123\" method=\"post\" class=\"login\"><br>\n-    <div class=\"form-group\">\n-    <input type=\"text\" class=\"form-control\" id=\"id\"  name=\"Username\" placeholder=\"please enter the new id\">\n-  </div>\n-  <div class=\"form-group\">\n-    <input type=\"text\" class=\"form-control\" id=\"name\" name=\"UserPwd\" placeholder=\"please enter the new name\">\n-  </div>\n-  <div class=\"form-group\">\n-    <input type=\"text\" class=\"form-control\" id=\"sex\" name=\"UserPwd\" placeholder=\"please enter the new sex\">\n-  </div>\n-  <div class=\"form-group\">\n-    <input type=\"text\" class=\"form-control\" id=\"age\" name=\"UserPwd\" placeholder=\"please enter the new age\">\n-  </div>\n-  <div class=\"form-group\">\n-    <input type=\"text\" class=\"form-control\" id=\"weight\" name=\"UserPwd\" placeholder=\"please enter the new weight\">\n-  </div>\n-  <div class=\"form-group\">\n-    <input type=\"text\" class=\"form-control\" id=\"hight\" name=\"UserPwd\" placeholder=\"please enter the new hight\">\n-  </div> \n-    <input type=\"submit\" value=\"submit\" class=\"btn btn-primary\">&nbsp;&nbsp;&nbsp;\n-    <input type=\"reset\" value=\"reset\" class=\"btn btn-primary\">\n-    </form>\n-  </body>\n-</html>"
+  } ],
+  "sha" : "ba5420269868938d5ed923cf16ca31cdf77ce92e",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ba5420269868938d5ed923cf16ca31cdf77ce92e",
+  "parents" : [ {
+    "sha" : "fc9f225f3a36759943b2443def07fdfd8f99d6c1",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/fc9f225f3a36759943b2443def07fdfd8f99d6c1",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/fc9f225f3a36759943b2443def07fdfd8f99d6c1"
+  } ]
+}

@@ -1,0 +1,122 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 244,
+    "additions" : 244,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/d9a2814567c880799084b8bbef15b9bd58ff8bf9",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-18T00:38:41Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-18T00:38:41Z"
+    },
+    "message" : "Merge pull request #765 from zyzpig/master\n\n#95  #36 lab9 综合编程实验",
+    "tree" : {
+      "sha" : "1de4fee71e55f49570886789c60e43af53e32d9f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/1de4fee71e55f49570886789c60e43af53e32d9f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/d9a2814567c880799084b8bbef15b9bd58ff8bf9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d9a2814567c880799084b8bbef15b9bd58ff8bf9/comments",
+  "files" : [ {
+    "sha" : "cba9d27078699d27134093e4c6645d41f76cd28b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903249/net1314080903249caculatorMainActivity.java",
+    "status" : "added",
+    "additions" : 88,
+    "deletions" : 0,
+    "changes" : 88,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d9a2814567c880799084b8bbef15b9bd58ff8bf9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903249/net1314080903249caculatorMainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d9a2814567c880799084b8bbef15b9bd58ff8bf9/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903249/net1314080903249caculatorMainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903249/net1314080903249caculatorMainActivity.java?ref=d9a2814567c880799084b8bbef15b9bd58ff8bf9",
+    "patch" : "@@ -0,0 +1,88 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903249;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.Button;\n+import android.widget.EditText;\n+\n+public class MainActivity extends AppCompatActivity {\n+\n+    private EditText ea,eb,ec,ed;\n+    private Button ba,bb,bc,bd,be;\n+    private int number1,number2,number3;\n+    int a,b,c,d;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+\n+        ea=(EditText)findViewById(R.id.ea);\n+        eb=(EditText)findViewById(R.id.eb);\n+        ec=(EditText)findViewById(R.id.ec);\n+        ed=(EditText)findViewById(R.id.ed);\n+        be=(Button)findViewById(R.id.be);\n+        ba=(Button)findViewById(R.id.ba);\n+        bb=(Button)findViewById(R.id.bb);\n+        bc=(Button)findViewById(R.id.bc);\n+        bd=(Button)findViewById(R.id.bd);\n+        be=(Button)findViewById(R.id.be);\n+\n+//监听按钮点击事件\n+        this.ba.setOnClickListener(new View.OnClickListener(){\n+            public void onClick(View arg0) {\n+//从EditText获取文本并转换成数字\n+                String str1 = ea.getText().toString();\n+                number1 = Integer.parseInt(str1);\n+                String str2 = ec.getText().toString();\n+                number2 = Integer.parseInt(str2);\n+                number3 = number2 + number1;\n+                eb.setText(\"+ \");\n+                ed.setText(number3+\"\");\n+            }\n+        });\n+        this.bb.setOnClickListener(new View.OnClickListener(){\n+            public void onClick(View arg0) {\n+//从EditText获取文本并转换成数字\n+                String str1 = ea.getText().toString();\n+                number1 = Integer.parseInt(str1);\n+                String str2 = ec.getText().toString();\n+                number2 = Integer.parseInt(str2);\n+                number3 = number1 - number2;\n+                ed.setText(number3+\"\");\n+            }\n+        });\n+        this.bc.setOnClickListener(new View.OnClickListener(){\n+            public void onClick(View arg0) {\n+//从EditText获取文本并转换成数字\n+                String str1 = ea.getText().toString();\n+                number1 = Integer.parseInt(str1);\n+                String str2 = ec.getText().toString();\n+                number2 = Integer.parseInt(str2);\n+                number3 = number2 * number1;\n+                ed.setText(number3+\"\");\n+            }\n+        });\n+        this.bd.setOnClickListener(new View.OnClickListener(){\n+            public void onClick(View arg0) {\n+//从EditText获取文本并转换成数字\n+                String str1 = ea.getText().toString();\n+                number1 = Integer.parseInt(str1);\n+                String str2 = ec.getText().toString();\n+                number2 = Integer.parseInt(str2);\n+                number3 = number1 / number2;\n+                ed.setText(number3+\"\");\n+            }\n+        });\n+\n+    }\n+\n+\n+\n+}"
+  }, {
+    "sha" : "056ce99719f1cdb8d5bbaf3c6c3c8d3b0cc142ac",
+    "filename" : "app/src/main/res/layout/net1314080903249caculatorAndroidManifest.xml",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d9a2814567c880799084b8bbef15b9bd58ff8bf9/app/src/main/res/layout/net1314080903249caculatorAndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d9a2814567c880799084b8bbef15b9bd58ff8bf9/app/src/main/res/layout/net1314080903249caculatorAndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903249caculatorAndroidManifest.xml?ref=d9a2814567c880799084b8bbef15b9bd58ff8bf9",
+    "patch" : "@@ -0,0 +1,23 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"edu.hzuapps.androidworks.homeworks.net1314080903249\">\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@mipmap/ic_launcher\"\n+        android:label=\"@string/app_name\"\n+        android:supportsRtl=\"true\"\n+        android:theme=\"@style/AppTheme\">\n+        <activity\n+            android:name=\".MainActivity\"\n+            android:label=\"@string/app_name\"\n+            android:theme=\"@style/AppTheme.NoActionBar\">\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+    </application>\n+\n+</manifest>"
+  }, {
+    "sha" : "136c1eed397a7303b74e9653060e87e16fe7759d",
+    "filename" : "app/src/main/res/layout/net1314080903249caculatoractivity_main.xml",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d9a2814567c880799084b8bbef15b9bd58ff8bf9/app/src/main/res/layout/net1314080903249caculatoractivity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d9a2814567c880799084b8bbef15b9bd58ff8bf9/app/src/main/res/layout/net1314080903249caculatoractivity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903249caculatoractivity_main.xml?ref=d9a2814567c880799084b8bbef15b9bd58ff8bf9",
+    "patch" : "@@ -0,0 +1,34 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<android.support.design.widget.CoordinatorLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:fitsSystemWindows=\"true\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903249.MainActivity\">\n+\n+    <android.support.design.widget.AppBarLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:theme=\"@style/AppTheme.AppBarOverlay\">\n+\n+        <android.support.v7.widget.Toolbar\n+            android:id=\"@+id/toolbar\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"?attr/actionBarSize\"\n+            android:background=\"?attr/colorPrimary\"\n+            app:popupTheme=\"@style/AppTheme.PopupOverlay\" />\n+\n+    </android.support.design.widget.AppBarLayout>\n+\n+    <include layout=\"@layout/content_main\" />\n+\n+    <android.support.design.widget.FloatingActionButton\n+        android:id=\"@+id/fab\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_gravity=\"bottom|end\"\n+        android:layout_margin=\"@dimen/fab_margin\"\n+        android:src=\"@android:drawable/ic_dialog_email\" />\n+\n+</android.support.design.widget.CoordinatorLayout>"
+  }, {
+    "sha" : "0147405d854d269f47ec00109ab3832f77767218",
+    "filename" : "app/src/main/res/layout/net1314080903249caculatorcontent_main.xml",
+    "status" : "added",
+    "additions" : 99,
+    "deletions" : 0,
+    "changes" : 99,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/d9a2814567c880799084b8bbef15b9bd58ff8bf9/app/src/main/res/layout/net1314080903249caculatorcontent_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/d9a2814567c880799084b8bbef15b9bd58ff8bf9/app/src/main/res/layout/net1314080903249caculatorcontent_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903249caculatorcontent_main.xml?ref=d9a2814567c880799084b8bbef15b9bd58ff8bf9",
+    "patch" : "@@ -0,0 +1,99 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"\n+    android:orientation=\"vertical\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903249.MainActivity\"\n+    tools:showIn=\"@layout/activity_main\">\n+\n+    <LinearLayout\n+        android:id=\"@+id/linearLayout1\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:orientation=\"horizontal\"\n+        android:weightSum=\"100\" >\n+\n+        <EditText\n+            android:id=\"@+id/ea\"\n+            android:layout_height=\"50dp\"\n+            android:layout_width=\"80dp\" />\n+\n+        <EditText\n+            android:id=\"@+id/eb\"\n+            android:layout_height=\"50dp\"\n+            android:layout_width=\"80dp\" />\n+\n+        <EditText\n+            android:id=\"@+id/ec\"\n+            android:layout_width=\"80dp\"\n+            android:layout_height=\"50dp\" />\n+    </LinearLayout>\n+\n+    <EditText\n+        android:id=\"@+id/ed\"\n+        android:layout_width=\"80dp\"\n+        android:layout_height=\"50dp\"\n+        android:layout_alignBottom=\"@+id/tvDisplay\"\n+        android:layout_alignRight=\"@+id/linearLayout1\"\n+        android:layout_marginRight=\"14dp\"\n+        android:ems=\"10\" />\n+\n+    <TextView\n+        android:id=\"@+id/tvDisplay\"\n+        android:layout_width=\"180dp\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_below=\"@+id/linearLayout1\"\n+        android:layout_toLeftOf=\"@+id/ec\"\n+        android:text=\"计算结果是\"\n+        android:textSize=\"30dp\" />\n+\n+    <LinearLayout\n+        android:id=\"@+id/linearLayout3\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_below=\"@+id/ed\"\n+        android:layout_centerHorizontal=\"true\"\n+        android:orientation=\"horizontal\"\n+        android:weightSum=\"100\" >\n+\n+        <Button\n+            android:id=\"@+id/ba\"\n+            android:layout_width=\"45dp\"\n+            android:layout_height=\"60dp\"\n+            android:layout_gravity=\"center\"\n+            android:gravity=\"center\"\n+            android:text=\"+\" />\n+\n+        <Button\n+            android:id=\"@+id/bb\"\n+            android:layout_width=\"45dp\"\n+            android:layout_height=\"60dp\"\n+            android:text=\"-\" />\n+\n+        <Button\n+            android:id=\"@+id/bc\"\n+            android:layout_width=\"45dp\"\n+            android:layout_height=\"60dp\"\n+            android:text=\"*\" />\n+\n+        <Button\n+            android:id=\"@+id/bd\"\n+            android:layout_width=\"45dp\"\n+            android:layout_height=\"60dp\"\n+            android:text=\"/\" />\n+\n+        <Button\n+            android:id=\"@+id/be\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"60dp\"\n+            android:text=\"=\" />\n+    </LinearLayout>\n+\n+</LinearLayout>"
+  } ],
+  "sha" : "d9a2814567c880799084b8bbef15b9bd58ff8bf9",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d9a2814567c880799084b8bbef15b9bd58ff8bf9",
+  "parents" : [ {
+    "sha" : "dd782db62b35836fe3b9884315b6388c4bdf0e16",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dd782db62b35836fe3b9884315b6388c4bdf0e16",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/dd782db62b35836fe3b9884315b6388c4bdf0e16"
+  }, {
+    "sha" : "e87fff542a2705adea31b67de77ccaa887dd6d32",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e87fff542a2705adea31b67de77ccaa887dd6d32",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/e87fff542a2705adea31b67de77ccaa887dd6d32"
+  } ]
+}

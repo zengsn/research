@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "HCJ0HCJ",
+    "id" : 22111873,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111873?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HCJ0HCJ",
+    "html_url" : "https://github.com/HCJ0HCJ",
+    "followers_url" : "https://api.github.com/users/HCJ0HCJ/followers",
+    "following_url" : "https://api.github.com/users/HCJ0HCJ/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HCJ0HCJ/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HCJ0HCJ/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HCJ0HCJ/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HCJ0HCJ/orgs",
+    "repos_url" : "https://api.github.com/users/HCJ0HCJ/repos",
+    "events_url" : "https://api.github.com/users/HCJ0HCJ/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HCJ0HCJ/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 56,
+    "additions" : 56,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "HCJ0HCJ",
+    "id" : 22111873,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111873?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HCJ0HCJ",
+    "html_url" : "https://github.com/HCJ0HCJ",
+    "followers_url" : "https://api.github.com/users/HCJ0HCJ/followers",
+    "following_url" : "https://api.github.com/users/HCJ0HCJ/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HCJ0HCJ/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HCJ0HCJ/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HCJ0HCJ/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HCJ0HCJ/orgs",
+    "repos_url" : "https://api.github.com/users/HCJ0HCJ/repos",
+    "events_url" : "https://api.github.com/users/HCJ0HCJ/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HCJ0HCJ/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/25fa6d0202479d165b560c309b46d76e3ad762a3",
+  "commit" : {
+    "author" : {
+      "name" : "HCJ0HCJ",
+      "email" : "HCJHCJ0@163.com",
+      "date" : "2016-11-13T06:02:27Z"
+    },
+    "committer" : {
+      "name" : "HCJ0HCJ",
+      "email" : "HCJHCJ0@163.com",
+      "date" : "2016-11-13T06:02:27Z"
+    },
+    "message" : "#6 #78 提交实验代码",
+    "tree" : {
+      "sha" : "285ad27b4e9bcb9ecc4d07976d09ed9fdd4dfd08",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/285ad27b4e9bcb9ecc4d07976d09ed9fdd4dfd08"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/25fa6d0202479d165b560c309b46d76e3ad762a3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/25fa6d0202479d165b560c309b46d76e3ad762a3/comments",
+  "files" : [ {
+    "sha" : "cee23bc01b4b755708eac1d590a3db3259a72e50",
+    "filename" : "jweb/web/1414080902138/show.jsp",
+    "status" : "added",
+    "additions" : 56,
+    "deletions" : 0,
+    "changes" : 56,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/25fa6d0202479d165b560c309b46d76e3ad762a3/jweb/web/1414080902138/show.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/25fa6d0202479d165b560c309b46d76e3ad762a3/jweb/web/1414080902138/show.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902138/show.jsp?ref=25fa6d0202479d165b560c309b46d76e3ad762a3",
+    "patch" : "@@ -0,0 +1,56 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>   \n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/fmt\" prefix=\"fmt\"%>  \n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/functions\" prefix=\"fn\" %>  \n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>Show Page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+  <h4 align=\"center\">\n+<%       \n+         List a=new ArrayList();\n+         a.add(\"ASD\");\n+         a.add(\"123\");\n+         a.add(\"man\");\n+         a.add(\"18\");\n+        a.add(\"1.75\");\n+        a.add(\"55\");\n+     request.setAttribute(\"a\",a); \n+ \t \tCalendar rightNow = Calendar.getInstance();\n+ \t \tInteger Hour=new Integer(rightNow.get(Calendar.HOUR_OF_DAY));\n+ \t \trequest.setAttribute(\"hour\", Hour);\n+  \t %>\n+  \t </br></br></br></br>\n+  \t <c:choose>\n+  \t\t <c:when test=\"${ hour >= 6 && hour <= 18}\"><p>Now is the day,welcome, <c:out value=\"${param.Username}\" default=\"HCJ\"/>!</p></c:when>\n+  \t\t <c:otherwise><p>Now is the night,welcome, <c:out value=\"${param.Username}\" default=\"HCJ\"/>!</p></c:otherwise>\n+  \t </c:choose>\n+  \t <c:if test='<%= request.getParameter(\"UserName\") != null %>'>\n+        The <%= request.getParameter(\"UserName\") %> 's message have added successful!</br></br>\n+    </c:if>     \t \n+    <c:forEach var=\"staff\" items=\"${a}\">\n+    &nbsp;<c:out value=\"${staff}\"/>&nbsp;&nbsp;&nbsp;&nbsp;\n+     </c:forEach> \n+     </h4> \t \n+  </body>\n+</html>"
+  } ],
+  "sha" : "25fa6d0202479d165b560c309b46d76e3ad762a3",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/25fa6d0202479d165b560c309b46d76e3ad762a3",
+  "parents" : [ {
+    "sha" : "f29089c30113233b4a82b9d18fe67eb30d05650d",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f29089c30113233b4a82b9d18fe67eb30d05650d",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f29089c30113233b4a82b9d18fe67eb30d05650d"
+  } ]
+}

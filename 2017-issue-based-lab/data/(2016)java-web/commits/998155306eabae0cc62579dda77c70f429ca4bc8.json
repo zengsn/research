@@ -1,0 +1,71 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 138,
+    "additions" : 137,
+    "deletions" : 1
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/998155306eabae0cc62579dda77c70f429ca4bc8",
+  "commit" : {
+    "author" : {
+      "name" : "pigever Pig",
+      "email" : "pigever Pig",
+      "date" : "2016-10-24T10:05:00Z"
+    },
+    "committer" : {
+      "name" : "pigever Pig",
+      "email" : "pigever Pig",
+      "date" : "2016-10-24T10:05:00Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "c4912ebb3a0dff485de80ba16e072de40cf7a634",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/c4912ebb3a0dff485de80ba16e072de40cf7a634"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/998155306eabae0cc62579dda77c70f429ca4bc8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/998155306eabae0cc62579dda77c70f429ca4bc8/comments",
+  "files" : [ {
+    "sha" : "59838ffd3bd95960ffb3971b96c61ec72ba3abe9",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902227/Se1414080902227Serverlet.java",
+    "status" : "added",
+    "additions" : 83,
+    "deletions" : 0,
+    "changes" : 83,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/998155306eabae0cc62579dda77c70f429ca4bc8/jweb/src/edu/hzu/javaweb/labs/se1414080902227/Se1414080902227Serverlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/998155306eabae0cc62579dda77c70f429ca4bc8/jweb/src/edu/hzu/javaweb/labs/se1414080902227/Se1414080902227Serverlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902227/Se1414080902227Serverlet.java?ref=998155306eabae0cc62579dda77c70f429ca4bc8",
+    "patch" : "@@ -0,0 +1,83 @@\n+package edu.hzu.javaweb.labs.se1414080902227;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+public class Se1414080902227Servlet extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic Se1414080902227Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html;charset=utf-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"�ύ�ɹ�\");\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"    This is \");\n+\t\tout.print(this.getClass());\n+\t\tout.println(\", using the POST method\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "428eee58968bf8c3dab8d03d8654b094bbd9e428",
+    "filename" : "jweb/web/index.jsp",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/998155306eabae0cc62579dda77c70f429ca4bc8/jweb/web/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/998155306eabae0cc62579dda77c70f429ca4bc8/jweb/web/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/index.jsp?ref=998155306eabae0cc62579dda77c70f429ca4bc8",
+    "patch" : "@@ -0,0 +1,54 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<%System.out.println(\"Hello Jsp\"); %>\n+<html>\n+<head>\n+  <title>�߼���ҳ���</title>\n+  <style type=\"text/css\">\n+  .button_design\n+  {\n+    width: 100px;\n+    height: 50px;\n+    margin:0 auto;\n+    margin: 10px;\n+    position: relative;\n+    left: 50px;\n+  }\n+  .button_div\n+  {\n+    width: 200px;\n+    height: 100px;\n+    margin: 0 auto;\n+    margin-top: 100px;\n+  }\n+  .border_design\n+  {\n+    border: 3px solid gray;\n+    width: 500px;\n+    height: 400px;\n+    margin: 0 auto;\n+  }\n+  </style>\n+</head>\n+<body>\n+  <div>\n+    <fieldset class=\"border_design\" >\n+      <legend align=\"center\">�ֻ�����ϵͳ</legend>\n+      <div class=\"button_div\">\n+        <div>\n+          <input type=\"button\" value=\"�����ֻ�\"  class=\"button_design\">\n+        </div>\n+        <div>\n+          <input type=\"button\" value=\"¼���ۺ���Ϣ\" class=\"button_design\">\n+        </div>\n+        <div>\n+          <a href=\"1414080902227\" style=\"margin: 80px;\">�ύ</a>   \n+        </div>\n+      </div>\n+         \n+    </fieldset>\n+    \n+  </div>\n+</body>\n+</html>"
+  }, {
+    "sha" : "fc0527ff0a5b15e57b6f3c375f2374109160dc10",
+    "filename" : "labs/README.md",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 1,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ef4e2ca9517d6073e1f9722f5e8279cd1c3a337f/labs/README.md",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ef4e2ca9517d6073e1f9722f5e8279cd1c3a337f/labs/README.md",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/README.md?ref=ef4e2ca9517d6073e1f9722f5e8279cd1c3a337f",
+    "patch" : "@@ -1 +0,0 @@\n-所有实验代码提交到这个目录，每一位同学自行创建一个“学号”目录，如 labs/123456。"
+  } ],
+  "sha" : "998155306eabae0cc62579dda77c70f429ca4bc8",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/998155306eabae0cc62579dda77c70f429ca4bc8",
+  "parents" : [ {
+    "sha" : "ef4e2ca9517d6073e1f9722f5e8279cd1c3a337f",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ef4e2ca9517d6073e1f9722f5e8279cd1c3a337f",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ef4e2ca9517d6073e1f9722f5e8279cd1c3a337f"
+  } ]
+}

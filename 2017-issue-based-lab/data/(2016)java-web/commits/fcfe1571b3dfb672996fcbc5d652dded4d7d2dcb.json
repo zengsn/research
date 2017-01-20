@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 59,
+    "additions" : 59,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Hongsf",
+    "id" : 22068396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hongsf",
+    "html_url" : "https://github.com/Hongsf",
+    "followers_url" : "https://api.github.com/users/Hongsf/followers",
+    "following_url" : "https://api.github.com/users/Hongsf/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hongsf/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hongsf/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hongsf/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hongsf/orgs",
+    "repos_url" : "https://api.github.com/users/Hongsf/repos",
+    "events_url" : "https://api.github.com/users/Hongsf/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hongsf/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb",
+  "commit" : {
+    "author" : {
+      "name" : "洪生锋",
+      "email" : "1083178465@qq.com",
+      "date" : "2016-10-01T16:00:21Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-01T16:00:21Z"
+    },
+    "message" : "Add files via upload",
+    "tree" : {
+      "sha" : "12bc117c818aed468975ebe5b5a398fc9f3fd0da",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/12bc117c818aed468975ebe5b5a398fc9f3fd0da"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb/comments",
+  "files" : [ {
+    "sha" : "37fb97b125a5ff0490a5dc3976071805c3fbbaf5",
+    "filename" : "labs/index.html",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb/labs/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb/labs/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/index.html?ref=fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb",
+    "patch" : "@@ -0,0 +1,41 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+\t<meta charset=\"UTF-8\">\r\n+\t<title>登录页面</title>\r\n+\t<script type=\"text/javascript\" src=\"http://code.jquery.com/jquery.js\"></script>\r\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"bootstrap/css/bootstrap.css\">\r\n+\t<style type=\"text/css\">\r\n+\t    body{background: #f5f2f2; width: 100%; height: 100%;}\r\n+\t    .container{border:2px solid #f5f2f2; border-radius:8px; margin-top: 5%; width:360px; height: 280px; background: #ffffff;}\r\n+\t\t.title{font-size: 20px; font-weight: bolder; font-style: 微软雅黑; text-align: center; height: 40px; line-height: 40px;}\r\n+\t\thr{margin-top: -2px;}\r\n+\t\t.account{margin-top: 10px; width: 70%; margin-left: 15%;}\r\n+\t\t.password{margin-top: 10px; width: 70%; margin-left: 15%;}\r\n+\t\t.submit{margin-bottom: 10px;width: 70%; margin-left: 15%;}\r\n+\t\t.checkbox{margin-left: 15%;}\r\n+\t</style>\r\n+\t<script type=\"text/javascript\" src=\"index.js\"></script>\r\n+</head>\r\n+<body>\r\n+<div class=\"container\">\r\n+<form id=\"from1\" method=\"post\">\r\n+    <div class=\"title\">账号登录</div>\r\n+    <hr>\r\n+    <div class=\"account\">\r\n+    <span class=\"add-on\"><i class=\"icon-user\"></i></span>\r\n+    <input id=\"account\"  type=\"text\" name=\"account\" placeholder=\"请输入你的账号\">\r\n+    </div>\r\n+    <div class=\"password\"> \r\n+    <span class=\"add-on\"><i class=\"icon-pencil\"></i></span>\r\n+    <input id=\"password\" type=\"password\" name=\"password\" placeholder=\"请输入你的密码\">\r\n+\t</div>\r\n+\t<label class=\"checkbox\"><input type=\"checkbox\" name=\"\"><small>记住密码</small></label>\r\n+\t<div class=\"submit\">\r\n+\t<button class=\"btn btn-primary btn-block\" style=\"width: 240px;\" type=\"submit\">登录</button>\r\n+\t</div>\r\n+</form>\r\n+</div>\r\n+<script type=\"text/javascript\" src=\"bootstrap/js/bootstrap.min.js\"></script>\r\n+</body>\r\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "3688fa81c36f7a1e65a8478c31c95bc55f4ca5c0",
+    "filename" : "labs/index.js",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb/labs/index.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb/labs/index.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/index.js?ref=fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb",
+    "patch" : "@@ -0,0 +1,15 @@\n+jQuery(document).ready(function() {\r\n+\t$(\".btn\").click(function(event) {\r\n+\t\talert(\"点击了登陆按钮！\");\t\r\n+\t\t$.ajax({\r\n+\t\t\turl: \"success.json\"\r\n+\t\t}).done(function(data) {\r\n+\t\t\tif (console&&console.log) {\r\n+\t\t\t\tvar account = $('#account').value;\r\n+\t\t\t\tvar password = $('#password').value;\r\n+\t\t\t\tconsole.dir(data);\r\n+\t\t\t\talert(data.msg);\r\n+\t\t\t}\r\n+\t\t})\t\r\n+\t});\r\n+});\r"
+  }, {
+    "sha" : "5de9e8af8d0d83cff5eb5810654e8d9d3dc5a312",
+    "filename" : "labs/success.json",
+    "status" : "added",
+    "additions" : 3,
+    "deletions" : 0,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb/labs/success.json",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb/labs/success.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/success.json?ref=fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb",
+    "patch" : "@@ -0,0 +1,3 @@\n+{\r\n+\t\"msg\":\"保存成功！\"\r\n+}\r"
+  } ],
+  "sha" : "fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/fcfe1571b3dfb672996fcbc5d652dded4d7d2dcb",
+  "parents" : [ {
+    "sha" : "8819f952e0a9537fea283bca900a1b98bcf85dc7",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/8819f952e0a9537fea283bca900a1b98bcf85dc7",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/8819f952e0a9537fea283bca900a1b98bcf85dc7"
+  } ]
+}

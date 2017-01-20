@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "heymanheymanheyman",
+    "id" : 22111501,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111501?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/heymanheymanheyman",
+    "html_url" : "https://github.com/heymanheymanheyman",
+    "followers_url" : "https://api.github.com/users/heymanheymanheyman/followers",
+    "following_url" : "https://api.github.com/users/heymanheymanheyman/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/heymanheymanheyman/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/heymanheymanheyman/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/heymanheymanheyman/subscriptions",
+    "organizations_url" : "https://api.github.com/users/heymanheymanheyman/orgs",
+    "repos_url" : "https://api.github.com/users/heymanheymanheyman/repos",
+    "events_url" : "https://api.github.com/users/heymanheymanheyman/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/heymanheymanheyman/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 36,
+    "additions" : 34,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "heymanheymanheyman",
+    "id" : 22111501,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111501?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/heymanheymanheyman",
+    "html_url" : "https://github.com/heymanheymanheyman",
+    "followers_url" : "https://api.github.com/users/heymanheymanheyman/followers",
+    "following_url" : "https://api.github.com/users/heymanheymanheyman/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/heymanheymanheyman/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/heymanheymanheyman/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/heymanheymanheyman/subscriptions",
+    "organizations_url" : "https://api.github.com/users/heymanheymanheyman/orgs",
+    "repos_url" : "https://api.github.com/users/heymanheymanheyman/repos",
+    "events_url" : "https://api.github.com/users/heymanheymanheyman/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/heymanheymanheyman/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1cb0fac7ae6fbb39059a4b197d9d86e496307570",
+  "commit" : {
+    "author" : {
+      "name" : "heymanheymanheyman",
+      "email" : "747073320@qq.com",
+      "date" : "2016-11-15T15:23:41Z"
+    },
+    "committer" : {
+      "name" : "heymanheymanheyman",
+      "email" : "747073320@qq.com",
+      "date" : "2016-11-15T15:23:41Z"
+    },
+    "message" : "#6 #95 提交实验代码",
+    "tree" : {
+      "sha" : "7f9f0b48287d655392652e5b4ecc2179121db9f5",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/7f9f0b48287d655392652e5b4ecc2179121db9f5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1cb0fac7ae6fbb39059a4b197d9d86e496307570",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cb0fac7ae6fbb39059a4b197d9d86e496307570/comments",
+  "files" : [ {
+    "sha" : "ea4fc05e49df48f1cc44efdea1a71918617b7adc",
+    "filename" : "jweb/web/1414080902204/gongneng.jsp",
+    "status" : "modified",
+    "additions" : 34,
+    "deletions" : 2,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cb0fac7ae6fbb39059a4b197d9d86e496307570/jweb/web/1414080902204/gongneng.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cb0fac7ae6fbb39059a4b197d9d86e496307570/jweb/web/1414080902204/gongneng.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902204/gongneng.jsp?ref=1cb0fac7ae6fbb39059a4b197d9d86e496307570",
+    "patch" : "@@ -3,7 +3,16 @@\n String path = request.getContextPath();\n String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n %>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\"%>\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css\">\n \n+\n+\n+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\n+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+<script src=\"http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js\"></script>\n <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n <html>\n   <head>\n@@ -27,8 +36,31 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n   \tsession.setAttribute(\"KAHAO\", str1);\n   \t\n    %>\n-       <p><a href=\"jiechubangding.jsp\" target=\"right\"> 解除绑定</a></p>\n-              <p><a href=\"chaxunyue.jsp\" target=\"right\"> 查询余额</a></p>\n+       <% Calendar now=Calendar.getInstance();\n+       \t\tInteger Hour=new Integer(now.get(Calendar.HOUR_OF_DAY));\n+       \t\trequest.setAttribute(\"hour\", Hour);\n        \n+        %>\n+        <div>\n+      <p align=\"right\">   <c:if test=\"${hour>=0&&hour<=11 }\">上午好！<c:out value=\"${param.kahao}用户\"></c:out> </c:if></p>\n+       <p align=\"right\">   <c:if test=\"${hour>=12&&hour<=17 }\">下午好！<c:out value=\"${param.kahao}用户\"></c:out></c:if></p>\n+       <p align=\"right\">   <c:if test=\"${hour>=18&&hour<=23 }\">晚上好！<c:out value=\"${param.kahao}用户\"></c:out></c:if></p>\n+        \n+        </div>\n+        \n+        </br>\n+        </br>\n+        </br>\n+        </br>\n+        </br>\n+        <div align=\"center\">\n+        请选择你要执行的操作\n+        \n+        </div>\n+        <br>\n+        <div>\n+       <p align=\"center\"><a href=\"jiechubangding.jsp\" target=\"right\"> 解除绑定</a></p>\n+        <p align=\"center\"><a href=\"chaxunyue.jsp\" target=\"right\"> 查询余额</a></p>\n+       </div>\n   </body>\n </html>"
+  } ],
+  "sha" : "1cb0fac7ae6fbb39059a4b197d9d86e496307570",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cb0fac7ae6fbb39059a4b197d9d86e496307570",
+  "parents" : [ {
+    "sha" : "064443cd9ae8c83bf1e33270b1202d49ca112e04",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/064443cd9ae8c83bf1e33270b1202d49ca112e04",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/064443cd9ae8c83bf1e33270b1202d49ca112e04"
+  } ]
+}

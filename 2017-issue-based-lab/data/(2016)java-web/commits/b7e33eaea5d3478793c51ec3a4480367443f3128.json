@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "1414080902208",
+    "id" : 22512606,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512606?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1414080902208",
+    "html_url" : "https://github.com/1414080902208",
+    "followers_url" : "https://api.github.com/users/1414080902208/followers",
+    "following_url" : "https://api.github.com/users/1414080902208/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1414080902208/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1414080902208/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1414080902208/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1414080902208/orgs",
+    "repos_url" : "https://api.github.com/users/1414080902208/repos",
+    "events_url" : "https://api.github.com/users/1414080902208/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1414080902208/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 105,
+    "additions" : 105,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "1414080902208",
+    "id" : 22512606,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512606?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1414080902208",
+    "html_url" : "https://github.com/1414080902208",
+    "followers_url" : "https://api.github.com/users/1414080902208/followers",
+    "following_url" : "https://api.github.com/users/1414080902208/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1414080902208/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1414080902208/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1414080902208/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1414080902208/orgs",
+    "repos_url" : "https://api.github.com/users/1414080902208/repos",
+    "events_url" : "https://api.github.com/users/1414080902208/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1414080902208/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/b7e33eaea5d3478793c51ec3a4480367443f3128",
+  "commit" : {
+    "author" : {
+      "name" : "1414080902208",
+      "email" : "1974499824@qq.com",
+      "date" : "2016-11-20T16:12:04Z"
+    },
+    "committer" : {
+      "name" : "1414080902208",
+      "email" : "1974499824@qq.com",
+      "date" : "2016-11-20T16:12:04Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "dc7371037541bf014975604b247e421b75bf3cf9",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/dc7371037541bf014975604b247e421b75bf3cf9"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/b7e33eaea5d3478793c51ec3a4480367443f3128",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/b7e33eaea5d3478793c51ec3a4480367443f3128/comments",
+  "files" : [ {
+    "sha" : "9f69ceaa1c1de84b3bf8833c93a27788726da157",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902208/Se1414080902208Servlet.java",
+    "status" : "added",
+    "additions" : 55,
+    "deletions" : 0,
+    "changes" : 55,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7e33eaea5d3478793c51ec3a4480367443f3128/jweb/src/edu/hzu/javaweb/labs/se1414080902208/Se1414080902208Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7e33eaea5d3478793c51ec3a4480367443f3128/jweb/src/edu/hzu/javaweb/labs/se1414080902208/Se1414080902208Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902208/Se1414080902208Servlet.java?ref=b7e33eaea5d3478793c51ec3a4480367443f3128",
+    "patch" : "@@ -0,0 +1,55 @@\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+  @WebServlet(\"/1414080902208\")\n+  public class Se1414080902208Servlet extends HttpServlet {\n+  \n+  \t\trequest.setCharacterEncoding(\"gb2312\");\n+  \t\tresponse.setCharacterEncoding(\"gb2312\");\n+  \t\tPrintWriter out = response.getWriter();\n+ \t\tString Score = new String(request.getParameter(\"score\"));\n+ \t\tString Comment = new String(request.getParameter(\"comment\"));\n+ \t\tHttpSession session=request.getSession(true);\n+ \t\tString msg = \"\";\n+  \t\tif (Score.equals(\"\")) {\n+ \t\t\tout.println(\"��ֲ���Ϊ��\");\n+ \t\t\tmsg = \"��ֲ���Ϊ��\";\n+  \t\t} else if (Comment.equals(\"\")) {\n+ \t\t\tout.println(\"���۲���Ϊ��\");\n+ \t\t\tmsg = \"���۲���Ϊ��\";\n+  \t\t} else {\n+  \t\t\tboolean flat = true;\n+  \t\t\tchar[] str=Score.toCharArray();\n+  \t\t\tfor (int i = 0;i < Score.length();i++) {\n+  \t\t\t\tint x = str[i] - '0';\n+  \t\t\t\tif (!(x >= 0 && x <= 10)) {\n+ // ������Ϊ10��\t\n+\t                     out.println(\"��������ȷ�����\");\n+ \t\t\t\t\tmsg = \"��������ȷ�����\";\n+  \t\t\t\t\tflat = false;\n+  \t\t\t\t\tbreak;\n+  \t\t\t\t}\n+ \n+  \t\t\t\tfor (int i = 0;i < Amount.length();i++) {\n+  \t\t\t\t\tint x = sstr[i] - '0';\n+  \t\t\t\t\tif (!(x >= 0 && x <= 100)) {\n+\n+ //�����������Ϊ100\t\t\t\tout.println(\"��������Χ����������\");\n+ \t\t\t\t\t\tmsg = \"��������Χ����������\";\n+  \t\t\t\t\t\tflat = false;\n+  \t\t\t\t\t\tbreak;\n+  \t\t\t\t\t}\n+  \t\t\t\t}\n+  \t\t\t}\n+ \t\t\tif (flat) out.println(\"��۳ɹ�\");\n+ \t\t\tif (flat) msg = \"��۳ɹ�\";\n+  \t\t}\n+ \t\tSystem.out.println(msg);\n+ \t\trequest.setAttribute(\"message\", msg);\n+ \t\trequest.getRequestDispatcher(\"/index.jsp\").forward(request, response);\n+\n+ \t\tsession.setAttribute(\"message\", msg);\n+\n+\n+ \n\\ No newline at end of file"
+  }, {
+    "sha" : "fad1d6aa732f6475e5fe8d35b92f18ee47d1938a",
+    "filename" : "jweb/web/1414080902208/index.jsp",
+    "status" : "added",
+    "additions" : 50,
+    "deletions" : 0,
+    "changes" : 50,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b7e33eaea5d3478793c51ec3a4480367443f3128/jweb/web/1414080902208/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b7e33eaea5d3478793c51ec3a4480367443f3128/jweb/web/1414080902208/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902208/index.jsp?ref=b7e33eaea5d3478793c51ec3a4480367443f3128",
+    "patch" : "@@ -0,0 +1,50 @@\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n+  <html xmlns=\"http://www.w3.org/1999/xhtml\">\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\"%>\n+ <head>\n+ <meta http-equiv=\"Content-Type\" content=\"text/html; charset=gb2312\" />\n+ <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n+\n+          <center>Now time is: \n+          <%=new java.util.Date()%>\n+         </center>\n+ \t   \t  <form id=\"register\" action=\"servlet/Se1414080902208Servlet\" method=\"post\">\n+ \t   \t  <form id=\"register\" action=\"/LabForTwo/servlet/Se1414080902208Servlet\" method=\"post\">\n+  \t\t  \t<div class=\"form-group\">\n+                  <label for=\"score\">Score *</label>\n+               <input type=\"text\" id=\"Score\" class=\"form-control\" />\n+           \n+  \t\t\t</div>\n+  \t\t\t<div class=\"form-group\">\n+                  <label for=\"comment\">Comment *</label>\n+               <input type=\"text\" id=\"Comment\" class=\"form-control\"/>\n+            \n+              <c:if test=\"${!empty sessionScope.message}\">\n+               \t<c:out value=\"${sessionScope.message}\"></c:out>&nbsp;&nbsp;\n+              </c:if>\n+  \t\t\t</div>\n+  \t\t\t<div style = \"text-align:right;\">\n+\t\t<button type=\"button\" class=\"btn btn-default\">Confirm</button>\n+ \t\t\t<button type=\"submit\" class=\"btn btn-default\">Confirm</button>\n+  \t\t\t</div>\n+  \t\t\t</form>\n+  \t</div>\n+  \n+  </body>\n+\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t<!-- <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+      <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+      <script type=\"text/javascript\">\n+        $( \".btn\" ).click(function() {\n+ @@ -42,9 +46,10 @@ ATM Transfer\n+            type : \"post\",\n+            datatype:\"html\",\n+            success: function(data){\n+           alert(data);\n+          //alert(data);\n+          }});\n+        });\n+      </script>\n+    -->\n+  \n+  </html> \n\\ No newline at end of file"
+  } ],
+  "sha" : "b7e33eaea5d3478793c51ec3a4480367443f3128",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b7e33eaea5d3478793c51ec3a4480367443f3128",
+  "parents" : [ {
+    "sha" : "ae89e7e19e8a47626b3a5a5c2e0fb955347fa821",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ae89e7e19e8a47626b3a5a5c2e0fb955347fa821",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ae89e7e19e8a47626b3a5a5c2e0fb955347fa821"
+  } ]
+}

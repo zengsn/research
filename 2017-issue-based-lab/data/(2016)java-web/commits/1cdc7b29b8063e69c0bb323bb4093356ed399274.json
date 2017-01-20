@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "DarlieToothpaste",
+    "id" : 22366893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22366893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/DarlieToothpaste",
+    "html_url" : "https://github.com/DarlieToothpaste",
+    "followers_url" : "https://api.github.com/users/DarlieToothpaste/followers",
+    "following_url" : "https://api.github.com/users/DarlieToothpaste/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/DarlieToothpaste/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/DarlieToothpaste/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/DarlieToothpaste/subscriptions",
+    "organizations_url" : "https://api.github.com/users/DarlieToothpaste/orgs",
+    "repos_url" : "https://api.github.com/users/DarlieToothpaste/repos",
+    "events_url" : "https://api.github.com/users/DarlieToothpaste/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/DarlieToothpaste/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 207,
+    "additions" : 207,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "DarlieToothpaste",
+    "id" : 22366893,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22366893?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/DarlieToothpaste",
+    "html_url" : "https://github.com/DarlieToothpaste",
+    "followers_url" : "https://api.github.com/users/DarlieToothpaste/followers",
+    "following_url" : "https://api.github.com/users/DarlieToothpaste/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/DarlieToothpaste/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/DarlieToothpaste/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/DarlieToothpaste/subscriptions",
+    "organizations_url" : "https://api.github.com/users/DarlieToothpaste/orgs",
+    "repos_url" : "https://api.github.com/users/DarlieToothpaste/repos",
+    "events_url" : "https://api.github.com/users/DarlieToothpaste/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/DarlieToothpaste/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1cdc7b29b8063e69c0bb323bb4093356ed399274",
+  "commit" : {
+    "author" : {
+      "name" : "Cai",
+      "email" : "754181906@qq.com",
+      "date" : "2016-11-07T03:59:37Z"
+    },
+    "committer" : {
+      "name" : "Cai",
+      "email" : "754181906@qq.com",
+      "date" : "2016-11-07T03:59:37Z"
+    },
+    "message" : "。。",
+    "tree" : {
+      "sha" : "cd6d03ba53a152d4c03eca404ce0c427deb55f8d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/cd6d03ba53a152d4c03eca404ce0c427deb55f8d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1cdc7b29b8063e69c0bb323bb4093356ed399274",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cdc7b29b8063e69c0bb323bb4093356ed399274/comments",
+  "files" : [ {
+    "sha" : "fe7ec428d61ad36c4cb792eac581b930205f50e6",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902232/Servlet.java",
+    "status" : "added",
+    "additions" : 119,
+    "deletions" : 0,
+    "changes" : 119,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cdc7b29b8063e69c0bb323bb4093356ed399274/jweb/src/edu/hzu/javaweb/labs/se1414080902232/Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cdc7b29b8063e69c0bb323bb4093356ed399274/jweb/src/edu/hzu/javaweb/labs/se1414080902232/Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902232/Servlet.java?ref=1cdc7b29b8063e69c0bb323bb4093356ed399274",
+    "patch" : "@@ -0,0 +1,119 @@\n+package servlet;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.ArrayList;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+import jweb.bean;\n+\n+public class Servlet extends HttpServlet {\n+\n+\tprivate static final String Weight = null;\n+\tprivate static final String Height = null;\n+\tprivate static final String Weight1 = null;\n+\tprivate static final String Height1 = null;\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"    This is \");\n+\t\tout.print(this.getClass());\n+\t\tout.println(\", using the GET method\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tString cls = request.getParameter(\"cls\");\n+\t\tdouble age =(double) Integer.valueOf(request.getParameter(\"age\"));\n+\t\tString cls1 = request.getParameter(\"cls1\");\n+\t\tdouble age1 =(double) Integer.valueOf(request.getParameter(\"age1\"));\n+\t\tArrayList<bean> listz=new ArrayList<bean>();\n+\t\tbean x = new bean(cls,age);\n+\t\tbean y = new bean(cls1,age1);\n+\t\tdouble weight1;\n+\t\tdouble height1;\n+\t\tdouble weight;\n+\t\tdouble height;\n+\t\tx.setHeight(cls, age);\n+\t\tx.setWeight(cls, age);\n+\t\ty.setHeight(cls1, age1);\n+\t\ty.setWeight(cls1, age1);\n+\t\tweight = x.getWeight();\n+\t\theight = x.getHeight();\n+\t\tweight1 = y.getWeight();\n+\t\theight1 = y.getHeight();\n+\t\tHttpSession session=request.getSession(true);\n+\t\t// +\t\t\tsession.setAttribute(\"list\", list);\n+\t\tsession.setAttribute(Weight, weight);\n+\t\tsession.setAttribute(Height, height);\n+\t\tsession.setAttribute(Weight1, weight1);\n+\t\tsession.setAttribute(Height1, height1);\n+\t\tlistz.add(x);\n+\t\tlistz.add(y);\n+\t\tsession.setAttribute(\"list\", listz);\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "78821a853a3b33f71336c7a34b869764c4bfe74c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902232/bean.java",
+    "status" : "added",
+    "additions" : 37,
+    "deletions" : 0,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cdc7b29b8063e69c0bb323bb4093356ed399274/jweb/src/edu/hzu/javaweb/labs/se1414080902232/bean.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cdc7b29b8063e69c0bb323bb4093356ed399274/jweb/src/edu/hzu/javaweb/labs/se1414080902232/bean.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902232/bean.java?ref=1cdc7b29b8063e69c0bb323bb4093356ed399274",
+    "patch" : "@@ -0,0 +1,37 @@\n+package jweb;\n+\n+public class bean {\n+\tpublic bean(String cls,double age){\n+\t\tthis.cls = cls;\n+\t\tthis.age = age;\n+\t}\n+    public String getCls() {\n+\t\treturn cls;\n+\t}\n+\tpublic double getAge() {\n+\t\treturn age;\n+\t}\n+\tpublic double getHeight() {\n+\t\treturn height;\n+\t}\n+\tpublic void setHeight(String cls,double age) {\n+\t\tif(cls == \"pig\")\n+\t\tthis.height = 10*age+5+age/2;\n+\t\tif(cls == \"chicken\")\n+\t\t\tthis.height = 5*age+5+age/2;\n+\t}\n+\tpublic double getWeight() {\n+\t\treturn weight;\n+\t}\n+\tpublic void setWeight(String cls,double age) {\n+\t\tif(cls == \"pig\")\n+\t\tthis.weight = 20*age+5+age/2;\n+\t\tif(cls == \"chicken\")\n+\t\tthis.weight = 15*age+5+age/2;\n+\t}\n+\tprivate String cls;\n+    private double age;\n+    private double height;\n+    private double weight;\n+    \n+}"
+  }, {
+    "sha" : "5d722d52ce9a3d8419597d5371b4673ae31f18e8",
+    "filename" : "labs/1414080902232/#6.jsp",
+    "status" : "added",
+    "additions" : 51,
+    "deletions" : 0,
+    "changes" : 51,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1cdc7b29b8063e69c0bb323bb4093356ed399274/labs/1414080902232/#6.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1cdc7b29b8063e69c0bb323bb4093356ed399274/labs/1414080902232/#6.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902232/#6.jsp?ref=1cdc7b29b8063e69c0bb323bb4093356ed399274",
+    "patch" : "@@ -0,0 +1,51 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"ISO-8859-1\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'index.jsp' starting page</title>\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+  </head>\n+  \n+  <body>\n+     请输入第一个动物类型： <input type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n+     请输入第一个动物年龄： <input type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n+     请输入第二个动物类型： <input type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n+     请输入第二个动物年龄： <input type=\"text\" style=\"margint-top:10px;width:120px\"><br>\n+    <button id = \"sb\">提交</button><br>\n+  结果:\n+  <c:forEach var=\"l\" items=\"${sessionScope.list}\">\n+ \t\t\t<c:out value=\"${l.cls}\"/>\n+ \t\t\t<c:out value=\"${l.age}\"/>\n+ \t\t\t<c:out value=\"${l.weight}\"/>\n+ \t\t\t<c:out value=\"${l.height}\"/>\n+\t\t</c:forEach>\n+</br>\n+\n+  </body>\n+</html>\n+<script>\n+var btn = document.getElementById(\"sb\");\n+sb.onclick = function(){\n+  var xml = new XMLHttpRequest();\n+  var ipt =document.getElementsByTagName(\"input\")\n+  var js = \"cls=\"+ipt[0].value+\"&age=\"+ipt[1].value+\"&cls1=\"+ipt[2].value+\"&age1=\"+ipt[3].value;\n+  console.log(js)\n+  xml.open(\"post\", \"Servlet\", true);\n+  xml.setRequestHeader(\"Content-type\",\"application/x-www-form-urlencoded\");\n+  xml.send(js);\n+  }\n+</script>"
+  } ],
+  "sha" : "1cdc7b29b8063e69c0bb323bb4093356ed399274",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1cdc7b29b8063e69c0bb323bb4093356ed399274",
+  "parents" : [ {
+    "sha" : "8f78cc5f822e2c238ab0b649f99171b5d6dd46fb",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/8f78cc5f822e2c238ab0b649f99171b5d6dd46fb"
+  } ]
+}

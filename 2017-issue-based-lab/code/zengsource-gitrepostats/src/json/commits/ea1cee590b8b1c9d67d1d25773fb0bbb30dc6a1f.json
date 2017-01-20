@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Hackergeek",
+    "id" : 9377994,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/9377994?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hackergeek",
+    "html_url" : "https://github.com/Hackergeek",
+    "followers_url" : "https://api.github.com/users/Hackergeek/followers",
+    "following_url" : "https://api.github.com/users/Hackergeek/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hackergeek/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hackergeek/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hackergeek/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hackergeek/orgs",
+    "repos_url" : "https://api.github.com/users/Hackergeek/repos",
+    "events_url" : "https://api.github.com/users/Hackergeek/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hackergeek/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 62,
+    "additions" : 62,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Hackergeek",
+    "id" : 9377994,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/9377994?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hackergeek",
+    "html_url" : "https://github.com/Hackergeek",
+    "followers_url" : "https://api.github.com/users/Hackergeek/followers",
+    "following_url" : "https://api.github.com/users/Hackergeek/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hackergeek/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hackergeek/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hackergeek/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hackergeek/orgs",
+    "repos_url" : "https://api.github.com/users/Hackergeek/repos",
+    "events_url" : "https://api.github.com/users/Hackergeek/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hackergeek/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f",
+  "commit" : {
+    "author" : {
+      "name" : "Hackergeek",
+      "email" : "1224085894@qq.com",
+      "date" : "2016-05-12T05:13:58Z"
+    },
+    "committer" : {
+      "name" : "Hackergeek",
+      "email" : "1224085894@qq.com",
+      "date" : "2016-05-12T05:13:58Z"
+    },
+    "message" : "lab07 #93",
+    "tree" : {
+      "sha" : "bf860f78cb9843784df224e9c2a0d05fab75fdc7",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/bf860f78cb9843784df224e9c2a0d05fab75fdc7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f/comments",
+  "files" : [ {
+    "sha" : "f69f19e25985d58374e7166f5c58b37ae0a74bd0",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NetActivity.java",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NetActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NetActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903208/NetActivity.java?ref=ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f",
+    "patch" : "@@ -0,0 +1,41 @@\n+package skyward.com.testvolley;\n+\n+import android.support.annotation.Nullable;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.TextView;\n+import com.android.volley.Request;\n+import com.android.volley.RequestQueue;\n+import com.android.volley.Response;\n+import com.android.volley.VolleyError;\n+import com.android.volley.toolbox.StringRequest;\n+import com.android.volley.toolbox.Volley;\n+public class NetActivity extends AppCompatActivity {\n+    public static final String url = \"https://github.com/Hackergeek/android-labs/tree/master/app/src/main/AndroidManifest.xml\";\n+    public TextView tv_data;\n+\n+    @Override\n+    protected void onCreate(@Nullable Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net);\n+        tv_data = (TextView) findViewById(R.id.tv_data);\n+    }\n+\n+    public void getData(View view) {\n+        RequestQueue queue = Volley.newRequestQueue(this);\n+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {\n+            @Override\n+            public void onResponse(String s) {\n+                tv_data.setText(s);\n+\n+            }\n+        }, new Response.ErrorListener() {\n+            @Override\n+            public void onErrorResponse(VolleyError volleyError) {\n+\n+            }\n+        });\n+        queue.add(stringRequest);\n+    }\n+}"
+  }, {
+    "sha" : "91e6e2ead4b7a20d217d81b889b11bea2ce29e12",
+    "filename" : "app/src/main/res/layout/activity_net.xml",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f/app/src/main/res/layout/activity_net.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f/app/src/main/res/layout/activity_net.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_net.xml?ref=ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f",
+    "patch" : "@@ -0,0 +1,21 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\">\n+    <LinearLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\"\n+        android:orientation=\"vertical\">\n+        <Button\n+            android:onClick=\"getData\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:text=\"Get Data\"/>\n+\n+        <TextView\n+            android:id=\"@+id/tv_data\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"match_parent\" />\n+    </LinearLayout>\n+</ScrollView>"
+  } ],
+  "sha" : "ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ea1cee590b8b1c9d67d1d25773fb0bbb30dc6a1f",
+  "parents" : [ {
+    "sha" : "4f61309efb20c420e788258290356826098f2a25",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4f61309efb20c420e788258290356826098f2a25",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/4f61309efb20c420e788258290356826098f2a25"
+  } ]
+}

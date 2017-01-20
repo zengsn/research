@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 99,
+    "additions" : 0,
+    "deletions" : 99
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/9aee0864073005c6e5fa18535163acd663ab21c2",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T01:32:44Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T01:32:44Z"
+    },
+    "message" : "Delete index.js",
+    "tree" : {
+      "sha" : "b71dea2ac4303afd460a86603f61c9cf585faaf9",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/b71dea2ac4303afd460a86603f61c9cf585faaf9"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/9aee0864073005c6e5fa18535163acd663ab21c2",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/9aee0864073005c6e5fa18535163acd663ab21c2/comments",
+  "files" : [ {
+    "sha" : "a12c068f133a07783b8fa9bf2dbb5d429b944298",
+    "filename" : "jweb/web/1414080902219/index.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 99,
+    "changes" : 99,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/06af340c7916d1157096ac629cfd664ec321429a/jweb/web/1414080902219/index.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/06af340c7916d1157096ac629cfd664ec321429a/jweb/web/1414080902219/index.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902219/index.js?ref=06af340c7916d1157096ac629cfd664ec321429a",
+    "patch" : "@@ -1,99 +0,0 @@\n-function checkName(x)\n-{\n-    var val = document.getElementById(x).value;\n-    //var val = $(\"#x\").val();\n-    var reg = /^[\\u4e00-\\u9fa5]{2,4}$/;//匹配2~4个汉字\n-\n-        if (!reg.test(val)) {\n-\n-            alert(\"请输入真实姓名！\");\n-           }\n-}\n-\n-function checkID(x)\n-{\n-    var val = document.getElementById(x).value;\n-    //var val = $(\"#x\").val();\n-    var reg = /^(\\d{15}$|^\\d{18}$|^\\d{17}(\\d|X|x))$/;\n-\n-    if (!reg.test(val))\n-    {\n-        alert(\"身份证号码不正确！\");\n-    }\n-}\n-\n-function checkPhoneNum(x)\n-{\n-    var val = document.getElementById(x).value;\n-    //var val = $(\"#x\").val();\n-    var reg = /^0?1[3|4|5|8][0-9]\\d{8}$/;//匹配手机号\n-\n-    if (!reg.test(val)) {\n-    alert(\"手机号码不正确！\");\n-    }\n-}\n-\n-\n-function checkEmail(x)\n-{\n-    var val = document.getElementById(x).value;\n-    //var val = $(\"#x\").val();\n-    var reg =  /^([a-zA-Z0-9]+[_|\\_|\\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\\_|\\.]?)*[a-zA-Z0-9]+\\.[a-zA-Z]{2,3}$/;//匹配邮箱\n-\n-    if (!reg.test(val)) {\n-        alert(\"邮箱格式不正确！\");\n-    }\n-}\n-\n-function checkAddress(x)\n-{\n-    var val=document.getElementById(x).value;\n-    //var val = $(\"#x\").val();\n-    var reg=/^(\\S{10,35})$/;//长度在10到35之间的不为空字符的字符串\n-\n-    if(!reg.test(val))\n-    {\n-        alert(\"请输入正确的地址！\");\n-    }\n-\n-}\n-\n-\n-function FormSubmit()//构造函数\n-{\n-\n-}\n-\n-\n-FormSubmit.prototype.Deal=function()\n-{\n-    var message=\n-    {\n-       \"name\":$(\"#userName\").val(),\n-       \"id\":$(\"#userID\").val(),\n-       \"phoneNum\":$(\"#userPhoneNum\").val(),\n-       \"email\":$(\"#userEmail\").val(),\n-       \"address\":$(\"#userAddress\").val()\n-   };\n-\n-    if(name!=\"\"&&id!=\"\"&&phoneNum!=\"\"&&email!=\"\"&&address!=\"\")\n-    {\n-        $.ajax({\n-        method: \"POST\",\n-        url: \"Se1414080902219Servlet\",\n-        dataType:\"json\",\n-        data: message,\n-        success:function(data)\n-        {\n-            alert(\"姓名：\"+data.name+\"身份证号：\"+data.id+\"手机号：\"+data.phoneNum+\"邮箱：\"+data.email+\"地址：\"+data.address);\n-        }\n-        });\n-    }\n-    else {\n-        alert(\"请将个人信息填写完整！\");\n-    }\n-\n-}\n-\n-\n-formSubmit=new FormSubmit();"
+  } ],
+  "sha" : "9aee0864073005c6e5fa18535163acd663ab21c2",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9aee0864073005c6e5fa18535163acd663ab21c2",
+  "parents" : [ {
+    "sha" : "06af340c7916d1157096ac629cfd664ec321429a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/06af340c7916d1157096ac629cfd664ec321429a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/06af340c7916d1157096ac629cfd664ec321429a"
+  } ]
+}

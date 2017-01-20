@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "huangzejay",
+    "id" : 22892396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22892396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/huangzejay",
+    "html_url" : "https://github.com/huangzejay",
+    "followers_url" : "https://api.github.com/users/huangzejay/followers",
+    "following_url" : "https://api.github.com/users/huangzejay/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/huangzejay/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/huangzejay/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/huangzejay/subscriptions",
+    "organizations_url" : "https://api.github.com/users/huangzejay/orgs",
+    "repos_url" : "https://api.github.com/users/huangzejay/repos",
+    "events_url" : "https://api.github.com/users/huangzejay/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/huangzejay/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 314,
+    "additions" : 285,
+    "deletions" : 29
+  },
+  "author" : {
+    "login" : "huangzejay",
+    "id" : 22892396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22892396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/huangzejay",
+    "html_url" : "https://github.com/huangzejay",
+    "followers_url" : "https://api.github.com/users/huangzejay/followers",
+    "following_url" : "https://api.github.com/users/huangzejay/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/huangzejay/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/huangzejay/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/huangzejay/subscriptions",
+    "organizations_url" : "https://api.github.com/users/huangzejay/orgs",
+    "repos_url" : "https://api.github.com/users/huangzejay/repos",
+    "events_url" : "https://api.github.com/users/huangzejay/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/huangzejay/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/8a67f9cc87c36f7524b14f41839a2839d398cba7",
+  "commit" : {
+    "author" : {
+      "name" : "huangzejay",
+      "email" : "poppingjay1@gmail.com",
+      "date" : "2016-11-22T16:36:39Z"
+    },
+    "committer" : {
+      "name" : "huangzejay",
+      "email" : "poppingjay1@gmail.com",
+      "date" : "2016-11-22T16:36:39Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "a15b6f94d4a01eedf0e67051112bbbbae842d1eb",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/a15b6f94d4a01eedf0e67051112bbbbae842d1eb"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/8a67f9cc87c36f7524b14f41839a2839d398cba7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/8a67f9cc87c36f7524b14f41839a2839d398cba7/comments",
+  "files" : [ {
+    "sha" : "a8cfa3985077f4f7c4714937172a43f96d3e677f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902206/LoginServlet.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8a67f9cc87c36f7524b14f41839a2839d398cba7/jweb/src/edu/hzu/javaweb/labs/se1414080902206/LoginServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8a67f9cc87c36f7524b14f41839a2839d398cba7/jweb/src/edu/hzu/javaweb/labs/se1414080902206/LoginServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902206/LoginServlet.java?ref=8a67f9cc87c36f7524b14f41839a2839d398cba7",
+    "patch" : "@@ -0,0 +1,52 @@\n+package edu.hzu.javaweb.labs.se1414080902206;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+/**\n+ * Servlet implementation class LoginServlet\n+ */\n+@WebServlet(\"/LoginServlet\")\n+public class LoginServlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public LoginServlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t  request.setCharacterEncoding(\"utf-8\");\n+\t\t  HttpSession session = request.getSession();\n+\t\t  Login_Passenger passenger = new Login_Passenger();\n+\t\t  if(request.getParameter(\"Username\")!= null)\n+\t\t  passenger.setUsername(request.getParameter(\"Username\"));\n+\t\t  if(request.getParameter(\"Email\")!= null)\n+\t\t  passenger.setEmail(request.getParameter(\"Email\"));\n+\t\t  if(request.getParameter(\"Password\")!= null)\n+\t\t  passenger.setPassword(request.getParameter(\"Password\"));\n+\t\t  session.setAttribute(\"Passenger\", passenger);\n+\t\t  if(session.getAttribute(\"Passenger\") != null)\n+\t\t  request.getRequestDispatcher(\"/index.jsp\").forward(request, response);\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "a84c19f152b97fecf884145babc3bbb540da63d1",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902206/Login_Passenger.java",
+    "status" : "added",
+    "additions" : 37,
+    "deletions" : 0,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8a67f9cc87c36f7524b14f41839a2839d398cba7/jweb/src/edu/hzu/javaweb/labs/se1414080902206/Login_Passenger.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8a67f9cc87c36f7524b14f41839a2839d398cba7/jweb/src/edu/hzu/javaweb/labs/se1414080902206/Login_Passenger.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902206/Login_Passenger.java?ref=8a67f9cc87c36f7524b14f41839a2839d398cba7",
+    "patch" : "@@ -0,0 +1,37 @@\n+package edu.hzu.javaweb.labs.se1414080902206;\n+\n+public class Login_Passenger {\n+\n+\tprivate String username,password,email;\n+    public Login_Passenger(){};\n+    public Login_Passenger(String username,String password,String email)\n+    {\n+    \tthis.username = username;\n+    \tthis.password = password;\n+    \tthis.email = email;\n+    }\n+    public String getUsername()\n+    {\n+    \treturn username;\n+    }\n+    public void setUsername(String username)\n+    {\n+    \tthis.username = username;\n+    }\n+    public String getPassword()\n+    {\n+    \treturn password;\n+    }\n+    public void setPassword(String password)\n+    {\n+    \tthis.password = password;\n+    }\n+    public String getEmail()\n+    {\n+    \treturn email;\n+    }\n+    public void setEmail(String email)\n+    {\n+    \tthis.email = email;\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "2eee6373c7273469f85d4eb370ac15d921027e47",
+    "filename" : "jweb/web/1414080902206/Login.jsp",
+    "status" : "modified",
+    "additions" : 21,
+    "deletions" : 29,
+    "changes" : 50,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8a67f9cc87c36f7524b14f41839a2839d398cba7/jweb/web/1414080902206/Login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8a67f9cc87c36f7524b14f41839a2839d398cba7/jweb/web/1414080902206/Login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902206/Login.jsp?ref=8a67f9cc87c36f7524b14f41839a2839d398cba7",
+    "patch" : "@@ -1,6 +1,6 @@\n-<%@page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\" %>\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n <!DOCTYPE html>\n-<html >\n+<html>\n <head lang=\"zh-cn\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n@@ -19,7 +19,6 @@\n     body{\n         background: #F0F0F0;\n     }\n-\n     nav{\n         font-family: STXingkai;\n         font-size: 17px;\n@@ -34,51 +33,41 @@\n \n <body>\n \n-<%  \n-  request.setCharacterEncoding(\"utf-8\");\n-  if(request.getParameter(\"Username\")!= null)\n-    session.setAttribute(\"username\",request.getParameter(\"Username\"));\n-  \n-  if(request.getParameter(\"Email\")!= null)\n-    session.setAttribute(\"email\",request.getParameter(\"Email\"));\n-  if(request.getParameter(\"Password\")!= null)\n-    session.setAttribute(\"password\",request.getParameter(\"Password\"));\n- %>\n- \n <nav class=\"navbar navbar-default\" role=\"navigation\" >\n     <div class=\"container-fluid\">\n         <div class=\"navbar-header\">\n-            <a class=\"navbar-brand\">火车票订票服务中心</a>\n+            <a class=\"navbar-brand\">��Ʊ��Ʊ��������</a>\n         </div>\n         <ul class=\"nav navbar-nav\">\n             <li>\n-                <a href=\"#\">车票预定</a>\n+                <a href=\"#\">��ƱԤ��</a>\n             </li>\n             <li>\n-                <a href=\"#\">我的订单</a>\n+                <a href=\"#\">�ҵĶ���</a>\n             </li>\n             <li>\n-                <a href=\"#\">个人信息</a>\n+                <a href=\"#\">������Ϣ</a>\n             </li>\n         </ul>\n         <ul class=\"nav navbar-nav navbar-right\">\n-            <li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> 注册</a></li>\n-            <li><a href=\"#\"><span class=\"glyphicon glyphicon-log-in\"></span> 登录</a></li>\n+            <li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> ע��</a></li>\n+            <li><a href=\"#\"><span class=\"glyphicon glyphicon-log-in\"></span> ��¼</a></li>\n         </ul>\n     </div>\n </nav>\n \n-<form role=\"form\" class=\"form-horizontal\" method=\"post\" action=\"Login.jsp\">\n+\n+<form role=\"form\" class=\"form-horizontal\" method=\"get\" action=\"check\">\n     <div class=\"form-group\">\n-        <label class=\"control-label col-md-5\">用户名 ：</label>\n+        <label class=\"control-label col-md-5\">�û��� ��</label>\n         <div class=\"col-md-2 has-feedback\" >\n             <input type=\"text\" name =\"Username\" class=\"form-control\">\n             <span class=\"glyphicon glyphicon-user form-control-feedback\"></span> \n         </div>     \n     </div>\n \n     <div class=\"form-group\">\n-        <label class=\"control-label col-md-5 \">邮箱 ：</label>\n+        <label class=\"control-label col-md-5 \">���� ��</label>\n         <div class=\"col-md-2  has-feedback\" >\n             <input type=\"Email\" name=\"Email\" class=\"form-control\">\n             <span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span> \n@@ -87,19 +76,22 @@\n \n \n     <div class=\"form-group\">\n-          <label class=\"control-label col-md-5\">密码 ：</label>\n+          <label class=\"control-label col-md-5\">���� ��</label>\n           <div class=\"col-md-2  has-feedback \" >\n              <input type=\"Password\" name=\"Password\" class=\"form-control\">\n              <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span> \n           </div>     \n     </div>\n     <br>\n \n-      <div class=\"col-sm-offset-5\">\n-        <button type=\"submit\" class=\"btn btn-success\" id=\"submit\" name=\"submit\">登录</button>\n-        <button type=\"reset\" class=\"btn btn-primary\" id=\"reset\" name=\"reset\">取消</button>\n+    <div class=\"form-group\">\n+      <div class=\"col-md-5\"></div>\n+      <div class=\"col-md-2\">\n+        <button type=\"submit\" class=\"btn btn-success btn-block\" id=\"submit\" name=\"submit\">��¼</button>\n       </div>\n-\n+      <div class=\"col-md-5\"></div>\n+    </div>\n+    \n </form> \n </body>\n-<html>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "c0485c108a681a7a64e2629eeb8b5c0e4dd332ea",
+    "filename" : "jweb/web/1414080902206/index.jsp",
+    "status" : "added",
+    "additions" : 175,
+    "deletions" : 0,
+    "changes" : 175,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8a67f9cc87c36f7524b14f41839a2839d398cba7/jweb/web/1414080902206/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8a67f9cc87c36f7524b14f41839a2839d398cba7/jweb/web/1414080902206/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902206/index.jsp?ref=8a67f9cc87c36f7524b14f41839a2839d398cba7",
+    "patch" : "@@ -0,0 +1,175 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n+<!DOCTYPE html>\n+<html >\n+<head lang=\"zh-cn\">\n+    <meta charset=\"utf-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+    <link rel=\"stylesheet\" href=\"http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css\">\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    <script src=\"http://code.jquery.com/jquery-1.9.1.js\"></script>\n+    <script src=\"http://code.jquery.com/ui/1.10.4/jquery-ui.js\"></script>\n+    <title></title>\n+</head>\n+\n+<style type=\"text/css\">\n+    body{\n+        background: #F0F0F0;\n+    }\n+    nav{\n+        font-family: STXingkai;\n+        font-size: 17px;\n+    }\n+    label {\n+        font-weight: 100;\n+    }\n+    form{\n+        margin-top: 60px;\n+    }\n+</style>\n+<script>\n+     $(function() {\n+            $.datepicker.regional[\"zh-CN\"] = { closeText: \"�ر�\", prevText: \"&#x3c;����\", nextText: \"����&#x3e;\", currentText: \"����\", monthNames: [\"һ��\", \"����\", \"����\", \"����\", \"����\", \"����\", \"����\", \"����\", \"����\", \"ʮ��\", \"ʮһ��\", \"ʮ����\"], monthNamesShort: [\"һ\", \"��\", \"��\", \"��\", \"��\", \"��\", \"��\", \"��\", \"��\", \"ʮ\", \"ʮһ\", \"ʮ��\"], dayNames: [\"������\", \"����һ\", \"���ڶ�\", \"������\", \"������\", \"������\", \"������\"], dayNamesShort: [\"����\", \"��һ\", \"�ܶ�\", \"����\", \"����\", \"����\", \"����\"], dayNamesMin: [\"��\", \"һ\", \"��\", \"��\", \"��\", \"��\", \"��\"], weekHeader: \"��\", dateFormat: \"yy-mm-dd\", firstDay: 1, isRTL: !1, showMonthAfterYear: !0, yearSuffix: \"��\" }\n+            $.datepicker.setDefaults($.datepicker.regional[\"zh-CN\"]);\n+            var datePicker = $(\"#ctl00_BodyMain_txtDate\").datepicker({\n+                showOtherMonths: true,\n+                selectOtherMonths: true            \n+            });\n+        });\n+    $( function() {\n+        $( \".datepicker\" ).datepicker();\n+    } );\n+</script>\n+\n+<body>\n+   <%request.setCharacterEncoding(\"utf-8\");%>\n+<nav class=\"navbar navbar-default\" role=\"navigation\" >\n+\n+    <div class=\"container-fluid\">\n+        <div class=\"navbar-header\">\n+            <a class=\"navbar-brand\">��Ʊ��Ʊ��������</a>\n+        </div>\n+        <ul class=\"nav navbar-nav\">\n+            <li>\n+                <a href=\"#\">��ƱԤ��</a>\n+            </li>\n+            <li>\n+                <a href=\"#\">�ҵĶ���</a>\n+            </li>\n+            <li>\n+                <a href=\"#\">������Ϣ</a>\n+            </li>\n+        </ul>\n+        <ul class=\"nav navbar-nav navbar-right\">\n+        \n+        <c:if test=\"${Passenger.username != null}\">\n+           <li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> ע��</a></li>\n+           <li class=\"dropdown\">\n+                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                                                          \n+                    <b class=\"caret\"></b>\n+                </a>\n+                <ul class=\"dropdown-menu\">\n+                    <li class=\"divider\"></li>\n+                    <li><a href=\"#\">δ��ɶ���</a></li>\n+                    <li><a href=\"#\">����ɶ���</a></li>\n+                    <li><a href=\"#\">������Ϣ</a></li>\n+                    <li><a href=\"#\">�˳�</a></li>\n+                </ul>\n+            </li>\n+        </c:if>\n+        \n+        <c:if test=\"${Passenger.username == null}\">\n+            <li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> ע��</a></li>\n+            <li><a href=\"#\"><span class=\"glyphicon glyphicon-log-in\"></span> ��¼</a></li>\n+        </c:if>\n+        \n+        </ul>\n+    </div>\n+</nav>\n+\n+<form role=\"form\" class=\"form-horizontal\" action=\"Check\" method=\"get\">\n+\n+    <div class=\"form-group\">\n+        <label class=\"control-label col-md-1\">���</label>\n+        <div class=\"col-md-2\" >\n+            <input type=\"text\" class=\"form-control\" name=\"orgin\">\n+        </div>\n+        <label class=\"control-label col-md-1\">Ŀ�ĵ�</label>\n+        <div class=\"col-md-2\" >\n+            <input type=\"text\" class=\"form-control\" name=\"destination\">\n+        </div>\n+    </div><br>\n+\n+    <div class=\"form-group\">\n+        <label class=\"control-label col-md-1\">����</label>\n+        <div class=\"col-md-2\">\n+            <input type=\"text\" class=\"form-control datepicker\" name=\"departdate\">\n+        </div>\n+        <label class=\"control-label col-md-1\">������</label>\n+        <div class=\"col-md-2\">\n+            <input type=\"text\" class=\"form-control datepicker\" name=\"returndate\">\n+        </div>\n+    </div><br>\n+\n+    <div class=\"form-group\">\n+        <label  class=\"control-label col-md-1\">����ʱ��</label>\n+        <div class=\"col-md-2\">\n+            <select class=\"form-control\" name=\"starttime\">\n+                <option>00:00-24:00</option>\n+                <option>00:00-06:00</option>\n+                <option>06:00-12:00</option>\n+                <option>12:00-18:00</option>\n+                <option>18:00-24:00</option>\n+            </select>\n+        </div>\n+    </div><br>\n+\n+    <div class=\"form-group\">\n+            <label class=\"control-label col-md-1\">��������</label>\n+            <label class=\"control-label col-md-1\">\n+                <input type=\"checkbox\" name=\"train\">GC-����\n+            </label>\n+            <label class=\"control-label col-md-1\">\n+                <input type=\"checkbox\" name=\"train\">D-����\n+            </label>\n+            <label class=\"control-label col-md-1\">\n+                <input type=\"checkbox\" name=\"train\">Z-ֱ��\n+            </label>\n+            <label class=\"control-label col-md-1\">\n+                <input type=\"checkbox\" name=\"train\">T-�ؿ�\n+            </label>\n+            <label class=\"control-label col-md-1\">\n+                <input type=\"checkbox\" name=\"train\">K-����\n+            </label>\n+            <label class=\"control-label col-md-1\">\n+                <input type=\"checkbox\" name=\"train\">����\n+            </label>\n+    </div><br>\n+\n+    <div class=\"form-group\">\n+        <label class=\"control-label col-md-1\">����ϯ��</label>\n+        <label class=\"control-label col-md-1\">\n+            <input type=\"checkbox\" name=\"seat\">������\n+        </label>\n+        <label class=\"control-label col-md-1\">\n+            <input type=\"checkbox\" name=\"seat\">һ����\n+        </label>\n+        <label class=\"control-label col-md-1\">\n+            <input type=\"checkbox\" name=\"seat\">������\n+        </label>\n+        <label class=\"control-label col-md-1\">\n+            <input type=\"checkbox\" name=\"seat\">����\n+        </label>\n+    </div><br><br>\n+\n+    <div class=\"col-md-1 col-md-offset-3\">\n+        <button type=\"submit\" class=\"btn btn-success\">��ѯ</button>\n+    </div>\n+</form>\n+\n+</body>\n+<html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "8a67f9cc87c36f7524b14f41839a2839d398cba7",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/8a67f9cc87c36f7524b14f41839a2839d398cba7",
+  "parents" : [ {
+    "sha" : "80e85d6a9c1f0f9609f0e3052103adb6fe335c26",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/80e85d6a9c1f0f9609f0e3052103adb6fe335c26",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/80e85d6a9c1f0f9609f0e3052103adb6fe335c26"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 12,
+    "additions" : 11,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "hebinhai",
+    "id" : 15100213,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15100213?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hebinhai",
+    "html_url" : "https://github.com/hebinhai",
+    "followers_url" : "https://api.github.com/users/hebinhai/followers",
+    "following_url" : "https://api.github.com/users/hebinhai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hebinhai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hebinhai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hebinhai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hebinhai/orgs",
+    "repos_url" : "https://api.github.com/users/hebinhai/repos",
+    "events_url" : "https://api.github.com/users/hebinhai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hebinhai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/eefb5eed406fac15a8ebc7586e9b0a46430266a8",
+  "commit" : {
+    "author" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2015-10-25T15:08:38Z"
+    },
+    "committer" : {
+      "name" : "hebinhai",
+      "email" : "15767956765@163.com",
+      "date" : "2015-10-25T15:08:38Z"
+    },
+    "message" : "删除旧题目",
+    "tree" : {
+      "sha" : "3c36377d325d37400b2a05ca670f2f6eb1a267d8",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/3c36377d325d37400b2a05ca670f2f6eb1a267d8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/eefb5eed406fac15a8ebc7586e9b0a46430266a8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/eefb5eed406fac15a8ebc7586e9b0a46430266a8/comments",
+  "files" : [ {
+    "sha" : "a1c2dad4866ceadc6552226aaa34c4ab494087ac",
+    "filename" : "works/1314080901110/index.html",
+    "status" : "modified",
+    "additions" : 11,
+    "deletions" : 1,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/eefb5eed406fac15a8ebc7586e9b0a46430266a8/works/1314080901110/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/eefb5eed406fac15a8ebc7586e9b0a46430266a8/works/1314080901110/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901110/index.html?ref=eefb5eed406fac15a8ebc7586e9b0a46430266a8",
+    "patch" : "@@ -5,7 +5,7 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- ����3��meta��ǩ*����*������ǰ�棬�κ��������ݶ�*����*������� -->\n-    <title>����-�������������Ŀ</title>\n+    <title>����-��������-��ѯѡ���б�</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,6 +20,16 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+    <script>\n++    function MyFilterDemoCtrl($scope) {\n++        var Query options = {\n++            Income state: 'δ���',\n++            Start date:  '2015-1-1',\n++     Termination date: '2015-2-13',\n++        };\n++        $scope.data =  Query options;\n++} \n++</script>\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">"
+  }, {
+    "sha" : "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "filename" : "works/1314080901110/财务-其他收入-查询选项列表.txt",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/eefb5eed406fac15a8ebc7586e9b0a46430266a8/works/1314080901110/%E8%B4%A2%E5%8A%A1-%E5%85%B6%E4%BB%96%E6%94%B6%E5%85%A5-%E6%9F%A5%E8%AF%A2%E9%80%89%E9%A1%B9%E5%88%97%E8%A1%A8.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/eefb5eed406fac15a8ebc7586e9b0a46430266a8/works/1314080901110/%E8%B4%A2%E5%8A%A1-%E5%85%B6%E4%BB%96%E6%94%B6%E5%85%A5-%E6%9F%A5%E8%AF%A2%E9%80%89%E9%A1%B9%E5%88%97%E8%A1%A8.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901110/%E8%B4%A2%E5%8A%A1-%E5%85%B6%E4%BB%96%E6%94%B6%E5%85%A5-%E6%9F%A5%E8%AF%A2%E9%80%89%E9%A1%B9%E5%88%97%E8%A1%A8.txt?ref=eefb5eed406fac15a8ebc7586e9b0a46430266a8",
+    "previous_filename" : "works/1314080901110/财务-添加其他收入项目.txt"
+  } ],
+  "sha" : "eefb5eed406fac15a8ebc7586e9b0a46430266a8",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/eefb5eed406fac15a8ebc7586e9b0a46430266a8",
+  "parents" : [ {
+    "sha" : "3504a767c9347bdfb0cdfc723b7d1002d6fb5fff",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/3504a767c9347bdfb0cdfc723b7d1002d6fb5fff",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/3504a767c9347bdfb0cdfc723b7d1002d6fb5fff"
+  } ]
+}

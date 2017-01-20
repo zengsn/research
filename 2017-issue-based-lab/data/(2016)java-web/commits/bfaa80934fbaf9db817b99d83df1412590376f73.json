@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 97,
+    "additions" : 97,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/bfaa80934fbaf9db817b99d83df1412590376f73",
+  "commit" : {
+    "author" : {
+      "name" : "Ibas Sun",
+      "email" : "Ibas Sun",
+      "date" : "2016-10-13T03:07:54Z"
+    },
+    "committer" : {
+      "name" : "Ibas Sun",
+      "email" : "Ibas Sun",
+      "date" : "2016-10-13T03:07:54Z"
+    },
+    "message" : "#104 online_note",
+    "tree" : {
+      "sha" : "0908b003a436bd92582e614a561edec742bbc888",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/0908b003a436bd92582e614a561edec742bbc888"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/bfaa80934fbaf9db817b99d83df1412590376f73",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/bfaa80934fbaf9db817b99d83df1412590376f73/comments",
+  "files" : [ {
+    "sha" : "e5ce4f049c2dad682df4d750c2c897f9ebd69ba5",
+    "filename" : "labs/1414080902134/index.jsp",
+    "status" : "added",
+    "additions" : 97,
+    "deletions" : 0,
+    "changes" : 97,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/bfaa80934fbaf9db817b99d83df1412590376f73/labs/1414080902134/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/bfaa80934fbaf9db817b99d83df1412590376f73/labs/1414080902134/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902134/index.jsp?ref=bfaa80934fbaf9db817b99d83df1412590376f73",
+    "patch" : "@@ -0,0 +1,97 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=ISO-8859-1\"\n+    pageEncoding=\"UTF-8\"%>\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+<head>\n+\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n+\t<title>Online Note</title>\n+\t<script src = \"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\">\n+\t</script>\n+\t<link href = \"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel = \"styleSheet\"/>\n+\t<link href = \"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\" rel = \"styleSheet\"/>\n+\t<script src = \"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+</head>\n+<body>\n+\t<div class=\"container\" style=\"padding : 10px;\">\n+\t    <div class=\"panel col-sm-6\">\n+\t        <form role=\"form\" id=\"login\">\n+\t            <div class=\"form-group\">\n+\t                <label for=\"exampleInputEmail1\">\n+\t                \tUser Name\n+\t                </label>\n+\t                <input type=\"text\" \n+\t                \t\tclass=\"form-control\" \n+\t                \t\tid=\"exampleInputEmail1\" \n+\t                \t\tplaceholder=\"Enter User Name\"/>\n+\t            </div>\n+\t            <div class=\"form-group\">\n+\t                <label for=\"exampleInputPassword1\">\n+\t                \tPassword\n+\t                </label>\n+\t                <input type=\"password\" \n+\t                \t\tclass=\"form-control\" \n+\t                \t\tid=\"exampleInputPassword1\" \n+\t                \t\tplaceholder=\"Password\"/>\n+\t            </div>\n+\t            <div class=\"checkbox\">\n+\t                <label>\n+\t                    <input type=\"checkbox\">\n+\t                    \tRemember Me\n+\t                </label>\n+\t            </div>\n+\t            <button type=\"button\" \n+\t            \t\tclass=\"btn btn-default\" \n+\t            \t\tonclick=\"JQJSONRequest()\">Another</button>\n+\t              </form>\n+\t          </div>\n+\t      </div>\n+\t</div>\n+\t<div class=\"container\" style=\"padding : 10px;\">\n+\t      <div class = \"panel col-sm-6\">\n+\t      \t<form role = \"form\" id = \"quickget\">\n+\t\t      \t<div class=\"form-group\">\n+\t\t      \t\t<label for = \"qc\">Quick Code</label>\n+\t\t      \t\t<br/>\n+\t\t\t      \t<input type = \"text\" id = \"qc\"\n+\t\t                \tplaceholder=\"Enter Quick Code\"/>\n+               \t</div>\n+\t\t      \t<div class = \"form-group\">\n+\t\t\t\t\t<button type = \"button\" class = \"btn btn-default\" \n+\t\t\t\t\t\t\tonclick = \"quickget()\">Get Note</button>\n+\t\t      \t</div>\n+\t      \t</form>\n+\t      </div>\n+\t\t<div id = \"result\" role=\"alert\" \n+\t\t\tclass=\"alert alert-info col-sm-8\" \n+\t\t\tstyle=\"width : 100%;\">\n+\t\t</div>\n+\t<script>\n+\t         //To be honest , I really did not know why need this function , because I think it is useless .\n+\tfunction  JQDearWithForm(){\n+\t\t$( \"#target\" ).submit(function( event ) {\n+\t\t\talert( \"Handler for .submit() called.\" );\n+\t\t\tevent.preventDefault();\n+\t\t});\n+\t}\n+\tfunction JQJSONRequest() {\n+\t\t$.ajax({\n+\t\t\turl : \"Target.jsp\",\t// wait for realize\n+\t\t\tcomplete : function(data) {\n+\t\t\t    console.log(data);\n+\t\t\t    if (data.readyState == 4 && data.status == 200) {\n+\t\t\t        var str = \"\",\n+\t\t\t            resp = JSON.parse(data.responseText);\n+\t\t\t        str = \"Result :\";\n+\t\t\t        for (var i in resp) {\n+\t\t\t            str += \"<br/>\" +  i + \"　　\" + resp[i]\n+\t\t\t        }\n+\t\t\t        $(\"#result\").html(str);\n+\t\t\t    } else {\n+\t\t\t        $(\"#result\").text(\"Result : some thing error\");\n+\t\t\t    }\n+\t\t\t}\n+\t\t});\n+\t}\n+\t</script>\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "bfaa80934fbaf9db817b99d83df1412590376f73",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/bfaa80934fbaf9db817b99d83df1412590376f73",
+  "parents" : [ {
+    "sha" : "1e2a9a14d1b7507af03d814d882b4c46a88400da",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1e2a9a14d1b7507af03d814d882b4c46a88400da",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/1e2a9a14d1b7507af03d814d882b4c46a88400da"
+  } ]
+}

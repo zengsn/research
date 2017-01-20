@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "1535703141",
+    "id" : 11920720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/11920720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1535703141",
+    "html_url" : "https://github.com/1535703141",
+    "followers_url" : "https://api.github.com/users/1535703141/followers",
+    "following_url" : "https://api.github.com/users/1535703141/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1535703141/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1535703141/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1535703141/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1535703141/orgs",
+    "repos_url" : "https://api.github.com/users/1535703141/repos",
+    "events_url" : "https://api.github.com/users/1535703141/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1535703141/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 162,
+    "additions" : 162,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "1535703141",
+    "id" : 11920720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/11920720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1535703141",
+    "html_url" : "https://github.com/1535703141",
+    "followers_url" : "https://api.github.com/users/1535703141/followers",
+    "following_url" : "https://api.github.com/users/1535703141/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1535703141/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1535703141/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1535703141/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1535703141/orgs",
+    "repos_url" : "https://api.github.com/users/1535703141/repos",
+    "events_url" : "https://api.github.com/users/1535703141/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1535703141/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/6d365c740b2650ea64cbc592b33c88cad229fd82",
+  "commit" : {
+    "author" : {
+      "name" : "zhangw",
+      "email" : "1535703141@qq.com",
+      "date" : "2016-11-01T11:16:51Z"
+    },
+    "committer" : {
+      "name" : "zhangw",
+      "email" : "1535703141@qq.com",
+      "date" : "2016-11-01T11:16:51Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "104bd85e57d6d65ed191345fc5b651298a5082bf",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/104bd85e57d6d65ed191345fc5b651298a5082bf"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/6d365c740b2650ea64cbc592b33c88cad229fd82",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/6d365c740b2650ea64cbc592b33c88cad229fd82/comments",
+  "files" : [ {
+    "sha" : "ba0f30ab28c66b7ff546573948c1ff06fa3b4e05",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902230/Se1414080902230Servlet.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6d365c740b2650ea64cbc592b33c88cad229fd82/jweb/src/edu/hzu/javaweb/labs/se1414080902230/Se1414080902230Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6d365c740b2650ea64cbc592b33c88cad229fd82/jweb/src/edu/hzu/javaweb/labs/se1414080902230/Se1414080902230Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902230/Se1414080902230Servlet.java?ref=6d365c740b2650ea64cbc592b33c88cad229fd82",
+    "patch" : "@@ -0,0 +1,52 @@\n+package edu.hzu.javaweb.labs.se1414080902230;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.Enumeration;\n+\n+import javax.servlet.ServletContext;\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+@WebServlet(\"/1414080902230\")\n+\n+public class Se1414080902230Servlet extends HttpServlet{\n+\n+\tprivate UserData ud;\n+\t@Override\n+\tprotected void doGet(HttpServletRequest req, HttpServletResponse resp)\n+\t\t\tthrows ServletException, IOException {\n+\t\tdoPost(req, resp);\n+\t}\n+\n+\t@Override\n+\tprotected void doPost(HttpServletRequest req, HttpServletResponse resp)\n+\t\t\tthrows ServletException, IOException {\n+\t\tresp.setContentType(\"text/html;charset=utf-8\"); \n+\t\tPrintWriter print = resp.getWriter(); \n+\t\tboolean islogin=false;\n+\t\tud=new UserData();\n+\t\tServletContext application=getServletContext();\n+\n+\t\tfor(Enumeration<String> iterator=req.getParameterNames();iterator.hasMoreElements();){\n+\t\t\tString key=iterator.nextElement();\n+\t\t\tud.setAttribute(key, req.getParameter(key));\n+\t\t}\n+\t\tif(!ud.EmptyInput()){\n+\t\t\tprint.write(\"welcome \"+ud.getUsername()+\" !\");\n+\t\t\tislogin=true;\n+\t\t}else{\n+\t\t\tprint.write(\"please complete the information\");\n+\n+\t\t}\n+\t\tif(islogin==true){\n+\t\t\tapplication.setAttribute(\"userdata\", ud);\n+\t\t\tresp.sendRedirect(\"1414080902230/home.jsp\");\n+\t\t}else{\n+\t\t\tresp.sendRedirect(\"1414080902230/index.jsp\");\n+\t\t}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "6fadfaa7f16ac19de7b559f6f9b19c01be958d25",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902230/UserData.java",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6d365c740b2650ea64cbc592b33c88cad229fd82/jweb/src/edu/hzu/javaweb/labs/se1414080902230/UserData.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6d365c740b2650ea64cbc592b33c88cad229fd82/jweb/src/edu/hzu/javaweb/labs/se1414080902230/UserData.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902230/UserData.java?ref=6d365c740b2650ea64cbc592b33c88cad229fd82",
+    "patch" : "@@ -0,0 +1,31 @@\n+package edu.hzu.javaweb.labs.se1414080902230;\n+\n+public class UserData {\n+\tprivate String username;\n+\tprivate String password;\n+\tpublic String getUsername() {\n+\t\treturn username;\n+\t}\n+\tpublic void setUsername(String username) {\n+\t\tthis.username = username;\n+\t}\n+\tpublic String getPassword() {\n+\t\treturn password;\n+\t}\n+\tpublic void setPassword(String password) {\n+\t\tthis.password = password;\n+\t}\n+\tpublic void setAttribute(String key,String value){\n+\t\tif(key.toLowerCase().equals(\"username\")){\n+\t\t\tsetUsername(value);\n+\t\t}else if(key.toLowerCase().equals(\"password\")){\n+\t\t\tsetPassword(value);\n+\t\t}\n+\t}\n+\tpublic boolean EmptyInput(){\n+\t\tif(username.isEmpty()||password.isEmpty()){\n+\t\t\treturn true;\n+\t\t}\n+\t\treturn false;\n+\t}\n+}"
+  }, {
+    "sha" : "5861a9a8ef2ec463c97ab0525f17c085c4200829",
+    "filename" : "jweb/web/1414080902230/home.jsp",
+    "status" : "added",
+    "additions" : 18,
+    "deletions" : 0,
+    "changes" : 18,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6d365c740b2650ea64cbc592b33c88cad229fd82/jweb/web/1414080902230/home.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6d365c740b2650ea64cbc592b33c88cad229fd82/jweb/web/1414080902230/home.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902230/home.jsp?ref=6d365c740b2650ea64cbc592b33c88cad229fd82",
+    "patch" : "@@ -0,0 +1,18 @@\n+<%@page import=\"edu.hzu.javaweb.labs.se1414080902230.UserData\"%>\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    \n+    <title>主页</title>\n+\n+  </head>\n+  \n+  <body>\n+    <%\n+    UserData ud=(UserData)application.getAttribute(\"userdata\");\n+    \n+    %>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "eefdb5793d7a87fd8a7e0e00da4d86f12bf97805",
+    "filename" : "jweb/web/1414080902230/index.jsp",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6d365c740b2650ea64cbc592b33c88cad229fd82/jweb/web/1414080902230/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6d365c740b2650ea64cbc592b33c88cad229fd82/jweb/web/1414080902230/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902230/index.jsp?ref=6d365c740b2650ea64cbc592b33c88cad229fd82",
+    "patch" : "@@ -0,0 +1,61 @@\n+﻿<%@page import=\"java.util.Date\"%>\n+<html lang=\"en\">\n+  <head>\n+    <meta charset=\"utf-8\">\n+\n+    <title>登录页面</title>\n+\n+\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\t<style type=\"text/css\">\n+\t\t.center{\n+\t\tposition: absolute;\n+\t\ttop: 50%;\n+\t\tleft: 50%;\n+\t\ttransform: translate(-50%, -50%);\n+\t\t}\n+\t</style>\n+  </head>\n+\t\n+\t<body>\n+\t\t<%=new Date()%>\n+\t\t<div class=\"center\">\n+\t\t\t<form  role=\"form\" id=\"target\" action=\"Se1414080902230Servlet\">\n+\t\t\t\t<div class=\"input-group\">\n+\t\t\t\t\t<input type=\"text\" name=\"username\" class=\"form-control\" placeholder=\"用户名\" required autofocus></input><br>\n+\t\t\t\t\t<input type=\"password\" name=\"password\" class=\"form-control\"placeholder=\"密码\" required></input>\n+\t\t\t\t\n+\t\t\t\t\t<div class=\"checkbox\">\n+\t\t\t\t\t\t<label>\n+\t\t\t\t\t\t\t<input type=\"checkbox\" name=\"remember\" value=\"记住密码\">记住密码</input>\n+\t\t\t\t\t\t</label>\n+\t\t\t\t\t</div>\n+\t\t\t\t\t\t<button class=\"btn btn-primary\"type=\"submit\">登录</button>\n+\t\t\t\t\t\t<button  class=\"btn btn-primary\"type=\"onclick\">注册</button><br>\n+\t\t\t\t\t<button class=\"btn btn-primary btn-block\"type=\"button\" onclick=\"requestJson()\">请求JSON文件</button>\n+\t\t\t\t\t\n+\t\t\t\t</div>\n+\t\t\t</form>\n+\t\t</div>\n+\t\t<script>\n+\t\t\t$( \"#target\" ).submit(function( event ) {\n+\t\t\t\talert( \"Handler for .submit() called.\" );\n+\t\t\t\tevent.preventDefault();\n+\t\t\t});\n+\t\t</script>\n+\t\t<script>\n+\t\t\tfunction requestJson(){\n+\t\t\t\t$.ajax({\n+\t\t\t\t\turl: \"success.json\"\n+\t\t\t\t}).done(function(data) {\n+\t\t\t\t\tif ( console && console.log ) {\n+\t\t\t\t\t\tconsole.dir(data);\n+\t\t\t\t\t\talert(data.msg);\n+\t\t\t\t\t}\n+\t\t\t\t});\n+\t\t\t}\n+\t\t</script>\n+\t</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "6d365c740b2650ea64cbc592b33c88cad229fd82",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6d365c740b2650ea64cbc592b33c88cad229fd82",
+  "parents" : [ {
+    "sha" : "74c34d594ec7817be1232aec423d134de31ecb79",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/74c34d594ec7817be1232aec423d134de31ecb79",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/74c34d594ec7817be1232aec423d134de31ecb79"
+  } ]
+}

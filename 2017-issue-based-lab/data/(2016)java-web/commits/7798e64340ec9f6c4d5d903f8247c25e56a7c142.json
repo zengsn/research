@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "Chaojudge",
+    "id" : 22068391,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068391?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Chaojudge",
+    "html_url" : "https://github.com/Chaojudge",
+    "followers_url" : "https://api.github.com/users/Chaojudge/followers",
+    "following_url" : "https://api.github.com/users/Chaojudge/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Chaojudge/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Chaojudge/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Chaojudge/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Chaojudge/orgs",
+    "repos_url" : "https://api.github.com/users/Chaojudge/repos",
+    "events_url" : "https://api.github.com/users/Chaojudge/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Chaojudge/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 52,
+    "additions" : 52,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Chaojudge",
+    "id" : 22068391,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068391?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Chaojudge",
+    "html_url" : "https://github.com/Chaojudge",
+    "followers_url" : "https://api.github.com/users/Chaojudge/followers",
+    "following_url" : "https://api.github.com/users/Chaojudge/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Chaojudge/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Chaojudge/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Chaojudge/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Chaojudge/orgs",
+    "repos_url" : "https://api.github.com/users/Chaojudge/repos",
+    "events_url" : "https://api.github.com/users/Chaojudge/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Chaojudge/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/7798e64340ec9f6c4d5d903f8247c25e56a7c142",
+  "commit" : {
+    "author" : {
+      "name" : "Chaojudge",
+      "email" : "850571700@qq.com",
+      "date" : "2016-10-20T05:43:47Z"
+    },
+    "committer" : {
+      "name" : "Chaojudge",
+      "email" : "850571700@qq.com",
+      "date" : "2016-10-20T05:43:47Z"
+    },
+    "message" : "#152 #3 提交实验代码",
+    "tree" : {
+      "sha" : "d608e84b8115ca4efa593ea4b3a5d6930753c790",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d608e84b8115ca4efa593ea4b3a5d6930753c790"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/7798e64340ec9f6c4d5d903f8247c25e56a7c142",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/7798e64340ec9f6c4d5d903f8247c25e56a7c142/comments",
+  "files" : [ {
+    "sha" : "7fe44a394fb2d0ccf319cdb8c00cea42cca91499",
+    "filename" : "labs/1414080902117/src/JDBC_package/JDBC_package.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7798e64340ec9f6c4d5d903f8247c25e56a7c142/labs/1414080902117/src/JDBC_package/JDBC_package.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7798e64340ec9f6c4d5d903f8247c25e56a7c142/labs/1414080902117/src/JDBC_package/JDBC_package.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902117/src/JDBC_package/JDBC_package.java?ref=7798e64340ec9f6c4d5d903f8247c25e56a7c142",
+    "patch" : "@@ -0,0 +1,52 @@\n+package JDBC_package;\n+import java.sql.*;\n+\n+\n+import com.mysql.jdbc.PreparedStatement;\n+public class JDBC_package {\n+\tprivate static Connection conn=null;\n+\tprivate static String url;\n+\tprivate static int sql_result;\n+\tpublic static ResultSet result =null;\n+\tpublic static Statement stmt = null;\n+\tpublic static void getstmt() throws SQLException\n+\t{\n+\t\tstmt = conn.createStatement();\n+\t}\n+\t\n+\tpublic static void getUrl(String Port,String Database,String Uid,String Pwd)\n+\t{\n+\t\turl = \"jdbc:mysql://localhost:\"+Port+\"/\"+Database+\"?user=\"+Uid+\"&password=\"+Pwd+\"&userUnicode=true&charterEncoding=UTF8\";\n+\t}\n+\tpublic static void SqlConnection() throws SQLException\n+\t{\n+\t\tnew com.mysql.jdbc.Driver();\n+\t\tSystem.out.println(\"������\");\n+\t\tconn = DriverManager.getConnection(url);\n+\t}\n+\tpublic static void create_table(String create_table_sql) throws SQLException\n+\t{\n+\t\t//stmt = conn.createStatement();\n+\t\tsql_result = stmt.executeUpdate(create_table_sql);\n+\t}\n+\tpublic static void update_table(String update_table_sql) throws SQLException\n+\t{\n+\t\t//stmt = conn.createStatement();\n+\t\tsql_result = stmt.executeUpdate(update_table_sql);\n+\t}\n+\tpublic static void insert_table(String insert_table_sql) throws SQLException\n+\t{\n+\t\t//stmt = conn.createStatement();\n+\t\tsql_result = stmt.executeUpdate(insert_table_sql);\n+\t}\n+\tpublic static void select_table(String select_table_sql) throws SQLException\n+\t{\n+\t\t//stmt = conn.createStatement();\n+\t\tresult = stmt.executeQuery(select_table_sql);\n+\t}\n+\tpublic static void sql_close() throws SQLException\n+\t{\n+\t\t\tresult.close();\n+\t\t\tconn.close();\n+\t}\n+}"
+  } ],
+  "sha" : "7798e64340ec9f6c4d5d903f8247c25e56a7c142",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7798e64340ec9f6c4d5d903f8247c25e56a7c142",
+  "parents" : [ {
+    "sha" : "f3302c5362ba8d1ef6bd64986b9fa97ad0c138ac",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f3302c5362ba8d1ef6bd64986b9fa97ad0c138ac",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f3302c5362ba8d1ef6bd64986b9fa97ad0c138ac"
+  } ]
+}

@@ -1,0 +1,71 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 69,
+    "additions" : 60,
+    "deletions" : 9
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/2916e8594e3538734e223ddecc06f1afbf5d0969",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "陈子文",
+      "date" : "2016-11-27T06:07:21Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "陈子文",
+      "date" : "2016-11-27T06:07:21Z"
+    },
+    "message" : "#6  提交实验代码",
+    "tree" : {
+      "sha" : "dde0edb20a11fd5c6ac079947fbebdb03e134129",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/dde0edb20a11fd5c6ac079947fbebdb03e134129"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/2916e8594e3538734e223ddecc06f1afbf5d0969",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/2916e8594e3538734e223ddecc06f1afbf5d0969/comments",
+  "files" : [ {
+    "sha" : "fc752306a6a820c73810ff1158f1443317b85ae0",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902223/Se1414080902223Servlet.java",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 1,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2916e8594e3538734e223ddecc06f1afbf5d0969/jweb/src/edu/hzu/javaweb/labs/se1414080902223/Se1414080902223Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2916e8594e3538734e223ddecc06f1afbf5d0969/jweb/src/edu/hzu/javaweb/labs/se1414080902223/Se1414080902223Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902223/Se1414080902223Servlet.java?ref=2916e8594e3538734e223ddecc06f1afbf5d0969",
+    "patch" : "@@ -30,8 +30,19 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n \t\tresponse.setCharacterEncoding(\"UTF-8\");\n \t\tresponse.setContentType(\"text/html\");\n+\t\tHttpSession session=request.getSession();\n \t\tPrintWriter out = response.getWriter();\n-\t\tout.println(\"提交成功\");\n+\t\tString username=request.getParameter(\"username\");\n+\t\tString password=request.getParameter(\"password\");\n+\t\t\n+\t\tif(username.equals(\"23\")&&password.equals(\"11\"))\n+\t\t{\n+\t\t\tsession.setAttribute(\"username\", username);\n+\t\t\t\n+\t\t\tout.println(1);\n+\t\t}\n+\t\telse \n+\t\t\tout.print(0);\n \t\t\n \t}\n "
+  }, {
+    "sha" : "9ca83e3671914adc1e189f008cfd842610197b19",
+    "filename" : "jweb/web/1414080902223/index.jsp",
+    "status" : "modified",
+    "additions" : 15,
+    "deletions" : 7,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2916e8594e3538734e223ddecc06f1afbf5d0969/jweb/web/1414080902223/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2916e8594e3538734e223ddecc06f1afbf5d0969/jweb/web/1414080902223/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902223/index.jsp?ref=2916e8594e3538734e223ddecc06f1afbf5d0969",
+    "patch" : "@@ -29,14 +29,16 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t<i>请输入你的学号和密码</b></i>\n \t</font>\n \t<hr>\n-\t<form id=\"fm\" action=\"\" method=\"post\">\n+\t<form id=\"fm\" action=\"stu.jsp\" method=\"post\">\n \t<table border=\"1\">\n \t<tr><th bgcolor=\"MintCream\">学号</th><td>\n-\t<input type=\"text\" size=10 name=\"number\"></td></tr>\n+\t<input type=\"text\" size=10 name=\"username\"></td></tr>\n \t<tr><th bgcolor=\"MintCream\">密码</th><td>\n \t<input type=\"password\" size=10 name=\"password\"></td></tr>\n+\t\n \t<tr><td colspan=\"2\" align=\"center\">\n-\t<input type=\"submit\" vaule=\"查询\"></td></tr>\n+\t<input type=\"submit\" value=\"登陆\"></td></tr>\n+\t\n \t</table>\n \t</form>\n \t<font color=\"red\">\n@@ -61,15 +63,21 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \n   <script>\n \t$(function(){\t\n-\t\t$( \"#fm\" ).submit(function( event ) {\t\t        \n-\t\t\talert( \"cc\" );\t\t\n+\t\t$( \"#fm\" ).submit(function( event ) {\t\n \t\t\t$.ajax({\n \t\t\t\ttype:\"post\",\n+\t\t\t\tdata:$(\"#fm\").serialize(),\n \t\t\t  \turl: \"1414080902223\",\n \t\t\t\tsuccess:function(data){\n-\t\t\t  \talert(data);\n+\t\t\t  \t\tif(data==0){\n+\t\t\t  \t\t\talert(\"fail\");\n+\t\t\t  \t\t}\n+\t\t\t  \t\telse{\n+\t\t\t  \t\t\talert(\"success\");\n+\t\t\t  \t\t\twindow.location.href=\"stu.jsp\";\n+\t\t\t  \t\t}\n \t\t\t \t},\n-\t\t\t \tdataType:\"html\"\n+\t\t\t \tdataType:\"text\"\n \t\t\t});\t   \n \t\t});\n \t"
+  }, {
+    "sha" : "b0849923753e4a3d492b2a8398dd112cae641fdd",
+    "filename" : "jweb/web/1414080902223/stu.jsp",
+    "status" : "modified",
+    "additions" : 33,
+    "deletions" : 1,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2916e8594e3538734e223ddecc06f1afbf5d0969/jweb/web/1414080902223/stu.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2916e8594e3538734e223ddecc06f1afbf5d0969/jweb/web/1414080902223/stu.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902223/stu.jsp?ref=2916e8594e3538734e223ddecc06f1afbf5d0969",
+    "patch" : "@@ -1,4 +1,6 @@\n <%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n+\n <%\n String path = request.getContextPath();\n String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n@@ -29,7 +31,37 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t</font></center>\n \t<hr>\n \t\n-\t选择学期：<br>&nbsp;&nbsp;\n+\t<% Calendar dateFormat = Calendar.getInstance();\n+\t   Integer Year = new Integer(dateFormat.get(Calendar.YEAR));\n+\t   Integer Month = new Integer(dateFormat.get(Calendar.MONTH));\n+\t   Integer Day = new Integer(dateFormat.get(Calendar.DAY_OF_MONTH));\n+\t   Integer Hour = new Integer(dateFormat.get(Calendar.HOUR_OF_DAY));\n+\t   Integer Minute = new Integer(dateFormat.get(Calendar.MINUTE));\n+\t   Integer Second = new Integer(dateFormat.get(Calendar.SECOND));\n+\t   request.setAttribute(\"year\",Year);\n+\t   request.setAttribute(\"month\",Month);\n+\t   request.setAttribute(\"day\",Day);\n+\t   request.setAttribute(\"hour\",Hour);\n+\t   request.setAttribute(\"minute\",Minute);\n+\t   request.setAttribute(\"second\",Second);\n+\t%>\n+\t\t\n+\t<c:out value=\"${year }\"></c:out>年\n+\t<c:out value=\"${month+1 }\"></c:out>月\n+    <c:out value=\"${day }\"></c:out>日&nbsp;&nbsp;\n+    <c:out value=\"${hour }\"></c:out>:\n+    <c:out value=\"${minute }\"></c:out>:\n+    <c:out value=\"${second }\"></c:out>&nbsp;&nbsp;\n+\t\n+\t<font color=green>\n+\t<c:if test=\"${hour>=0 && hour<=4 }\">晚上好！</c:if>\n+\t<c:if test=\"${hour>=5 && hour<=11 }\">上午好！</c:if>\n+\t<c:if test=\"${hour>=12 && hour<=13 }\">中午好！</c:if>\n+\t<c:if test=\"${hour>=14 && hour<=17 }\">下午好！</c:if>\n+\t<c:if test=\"${hour>=18 && hour<=23 }\">晚上好！</c:if>\n+\t</font>\n+\t\n+\t<hr>选择学期：<br>&nbsp;&nbsp;\n \t<select size=\"1\" name=\"list\">\n \t\t<option value=\"1\">2016~2017第一学期</option>\n \t\t<option value=\"2\">2016~2017第二学期</option>"
+  } ],
+  "sha" : "2916e8594e3538734e223ddecc06f1afbf5d0969",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/2916e8594e3538734e223ddecc06f1afbf5d0969",
+  "parents" : [ {
+    "sha" : "1e04bf4100f1afb9f813540a5b2f2abee33cfa33",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1e04bf4100f1afb9f813540a5b2f2abee33cfa33",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/1e04bf4100f1afb9f813540a5b2f2abee33cfa33"
+  } ]
+}

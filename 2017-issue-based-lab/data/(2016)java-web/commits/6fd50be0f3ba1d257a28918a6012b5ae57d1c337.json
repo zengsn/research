@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "sinner77",
+    "id" : 17792166,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17792166?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/sinner77",
+    "html_url" : "https://github.com/sinner77",
+    "followers_url" : "https://api.github.com/users/sinner77/followers",
+    "following_url" : "https://api.github.com/users/sinner77/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/sinner77/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/sinner77/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/sinner77/subscriptions",
+    "organizations_url" : "https://api.github.com/users/sinner77/orgs",
+    "repos_url" : "https://api.github.com/users/sinner77/repos",
+    "events_url" : "https://api.github.com/users/sinner77/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/sinner77/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 87,
+    "additions" : 87,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "sinner77",
+    "id" : 17792166,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17792166?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/sinner77",
+    "html_url" : "https://github.com/sinner77",
+    "followers_url" : "https://api.github.com/users/sinner77/followers",
+    "following_url" : "https://api.github.com/users/sinner77/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/sinner77/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/sinner77/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/sinner77/subscriptions",
+    "organizations_url" : "https://api.github.com/users/sinner77/orgs",
+    "repos_url" : "https://api.github.com/users/sinner77/repos",
+    "events_url" : "https://api.github.com/users/sinner77/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/sinner77/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/6fd50be0f3ba1d257a28918a6012b5ae57d1c337",
+  "commit" : {
+    "author" : {
+      "name" : "sinner77",
+      "email" : "525136628@qq.com",
+      "date" : "2016-11-10T02:32:18Z"
+    },
+    "committer" : {
+      "name" : "sinner77",
+      "email" : "525136628@qq.com",
+      "date" : "2016-11-10T02:32:18Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "05ff0803e36f9882e2f5c5a41a1409361687fc7d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/05ff0803e36f9882e2f5c5a41a1409361687fc7d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/6fd50be0f3ba1d257a28918a6012b5ae57d1c337",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/6fd50be0f3ba1d257a28918a6012b5ae57d1c337/comments",
+  "files" : [ {
+    "sha" : "f2b35b2e1de0a4714cfc2069d0a263a730941fc3",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902213/EncodingFilter.java",
+    "status" : "added",
+    "additions" : 42,
+    "deletions" : 0,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6fd50be0f3ba1d257a28918a6012b5ae57d1c337/jweb/src/edu/hzu/javaweb/labs/se1414080902213/EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6fd50be0f3ba1d257a28918a6012b5ae57d1c337/jweb/src/edu/hzu/javaweb/labs/se1414080902213/EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902213/EncodingFilter.java?ref=6fd50be0f3ba1d257a28918a6012b5ae57d1c337",
+    "patch" : "@@ -0,0 +1,42 @@\n+package edu.hzu.javaweb.labs.se1414080902213;\n+\n+import java.io.IOException;\n+import java.util.Enumeration;\n+import java.util.HashMap;\n+import java.util.Map;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+@WebFilter(filterName=\"EncodingFilter\", urlPatterns=\"/*\")\n+public class EncodingFilter implements Filter {\n+    private String encoding;  \n+    private Map<String, String> params = new HashMap<String, String>();  \n+    \n+    public void destroy() {  \n+        System.out.println(\"end do the encoding filter!\");  \n+        params=null;  \n+        encoding=null;  \n+    }  \n+    public void doFilter(ServletRequest req, ServletResponse resp,  \n+            FilterChain chain) throws IOException, ServletException {  \n+    \tSystem.out.println(chain==null);\n+        req.setCharacterEncoding(encoding);  \n+        chain.doFilter(req, resp);        \n+    }  \n+   \n+    public void init(FilterConfig config) throws ServletException {  \n+        System.out.println(\"begin do the encoding filter!\");  \n+        encoding = config.getInitParameter(\"encoding\");  \n+        for (Enumeration e = config.getInitParameterNames(); e  \n+                .hasMoreElements();) {  \n+            String name = (String) e.nextElement();  \n+            String value = config.getInitParameter(name);  \n+            params.put(name, value);  \n+        }  \n+    }  \n+ }  \n\\ No newline at end of file"
+  }, {
+    "sha" : "7d80ad36a168c8f03236721196601ef5828e3000",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902213/LogFilter.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6fd50be0f3ba1d257a28918a6012b5ae57d1c337/jweb/src/edu/hzu/javaweb/labs/se1414080902213/LogFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6fd50be0f3ba1d257a28918a6012b5ae57d1c337/jweb/src/edu/hzu/javaweb/labs/se1414080902213/LogFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902213/LogFilter.java?ref=6fd50be0f3ba1d257a28918a6012b5ae57d1c337",
+    "patch" : "@@ -0,0 +1,45 @@\n+package edu.hzu.javaweb.labs.se1414080902213;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletContext;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpSession;\n+@WebFilter(filterName=\"LoggerFilter\", urlPatterns=\"/servlet/index.do\")\n+public class LoggerFilter implements Filter{\n+\t FilterConfig config;  \n+\t   \n+\t    public void destroy() {  \n+\t        this.config = null;  \n+\t    }  \n+\t   \n+\t    @SuppressWarnings(\"deprecation\")\n+\t\tpublic void doFilter(ServletRequest req, ServletResponse res,  \n+\t            FilterChain chain) throws IOException, ServletException {  \n+\t        ServletContext context = this.config.getServletContext();  \n+\t        HttpServletRequest hreq = (HttpServletRequest) req;  \n+\t        HttpSession session = hreq.getSession();\n+\t        System.out.println(req.getParameter(\"count\").toString());\n+\t        if(session.getAttribute(req.getParameter(\"count\").toString())!=null){\n+\t        \tchain.doFilter(req, res);\n+\t        }else{\n+\t        \treq.getRequestDispatcher(\"/index.jsp\");\n+\t        }\n+\t        try {  \n+\t            chain.doFilter(req, res);  \n+\t        } catch (Exception e) {  \n+\t            e.printStackTrace();  \n+\t        }  \n+\t    }  \n+\t   \n+\t    public void init(FilterConfig config) throws ServletException {  \n+\t        this.config = config;  \n+\t    }\n+\t }  \n\\ No newline at end of file"
+  } ],
+  "sha" : "6fd50be0f3ba1d257a28918a6012b5ae57d1c337",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6fd50be0f3ba1d257a28918a6012b5ae57d1c337",
+  "parents" : [ {
+    "sha" : "829349705975864bd8290798431ccaba5ada4fae",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/829349705975864bd8290798431ccaba5ada4fae",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/829349705975864bd8290798431ccaba5ada4fae"
+  } ]
+}

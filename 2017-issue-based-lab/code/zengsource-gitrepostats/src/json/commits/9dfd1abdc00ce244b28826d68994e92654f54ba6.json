@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 53,
+    "additions" : 53,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/9dfd1abdc00ce244b28826d68994e92654f54ba6",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-05T00:48:32Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-05T00:48:32Z"
+    },
+    "message" : "Merge pull request #624 from renrendashai/master\n\n#88 #64 lab2",
+    "tree" : {
+      "sha" : "644c0ae00d243a7863599e98943316b04aaa6a7f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/644c0ae00d243a7863599e98943316b04aaa6a7f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/9dfd1abdc00ce244b28826d68994e92654f54ba6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9dfd1abdc00ce244b28826d68994e92654f54ba6/comments",
+  "files" : [ {
+    "sha" : "182edc9d61535efa109a6a843db40668efef4876",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109Activity.java",
+    "status" : "added",
+    "additions" : 40,
+    "deletions" : 0,
+    "changes" : 40,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/9dfd1abdc00ce244b28826d68994e92654f54ba6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/9dfd1abdc00ce244b28826d68994e92654f54ba6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/Com1314080901109Activity.java?ref=9dfd1abdc00ce244b28826d68994e92654f54ba6",
+    "patch" : "@@ -0,0 +1,40 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901109\n+\n+import android.app.Activity;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+\n+import com.baidu.mapapi.SDKInitializer;\n+import com.baidu.mapapi.map.MapView;\n+\n+public class Com1314080901109Activity extends Activity {\n+    MapView mMapView = null;\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        //在使用SDK各组件之前初始化context信息，传入ApplicationContext\n+        //注意该方法要再setContentView方法之前实现\n+        SDKInitializer.initialize(getApplicationContext());\n+        setContentView(R.layout.activity_main);\n+        //获取地图控件引用\n+        mMapView = (MapView) findViewById(R.id.bmapView);\n+    }\n+    @Override\n+    protected void onDestroy() {\n+        super.onDestroy();\n+        //在activity执行onDestroy时执行mMapView.onDestroy()，实现地图生命周期管理\n+        mMapView.onDestroy();\n+    }\n+    @Override\n+    protected void onResume() {\n+        super.onResume();\n+        //在activity执行onResume时执行mMapView. onResume ()，实现地图生命周期管理\n+        mMapView.onResume();\n+    }\n+    @Override\n+    protected void onPause() {\n+        super.onPause();\n+        //在activity执行onPause时执行mMapView. onPause ()，实现地图生命周期管理\n+        mMapView.onPause();\n+    }\n+}"
+  }, {
+    "sha" : "1873bd49db81735b8655560c246ab184d02855ee",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/com1314080901109MainActivity.java",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/9dfd1abdc00ce244b28826d68994e92654f54ba6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/com1314080901109MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/9dfd1abdc00ce244b28826d68994e92654f54ba6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/com1314080901109MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901109/com1314080901109MainActivity.java?ref=9dfd1abdc00ce244b28826d68994e92654f54ba6",
+    "patch" : "@@ -0,0 +1,13 @@\n+package com.example.administrator.myapplication;\n+\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+\n+public class MainActivity extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+    }\n+}"
+  } ],
+  "sha" : "9dfd1abdc00ce244b28826d68994e92654f54ba6",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9dfd1abdc00ce244b28826d68994e92654f54ba6",
+  "parents" : [ {
+    "sha" : "00daf292f54dd3623c509442a3cef642db5c0c7f",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/00daf292f54dd3623c509442a3cef642db5c0c7f",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/00daf292f54dd3623c509442a3cef642db5c0c7f"
+  }, {
+    "sha" : "e7efcc1cfb2db65cd44b74fcb4ae3f4c9ffa5834",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e7efcc1cfb2db65cd44b74fcb4ae3f4c9ffa5834",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/e7efcc1cfb2db65cd44b74fcb4ae3f4c9ffa5834"
+  } ]
+}

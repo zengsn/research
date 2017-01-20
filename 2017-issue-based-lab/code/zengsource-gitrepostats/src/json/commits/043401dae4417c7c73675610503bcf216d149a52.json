@@ -1,0 +1,116 @@
+{
+  "committer" : {
+    "login" : "chenqiuwen",
+    "id" : 18166942,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18166942?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chenqiuwen",
+    "html_url" : "https://github.com/chenqiuwen",
+    "followers_url" : "https://api.github.com/users/chenqiuwen/followers",
+    "following_url" : "https://api.github.com/users/chenqiuwen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chenqiuwen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chenqiuwen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chenqiuwen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chenqiuwen/orgs",
+    "repos_url" : "https://api.github.com/users/chenqiuwen/repos",
+    "events_url" : "https://api.github.com/users/chenqiuwen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chenqiuwen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 82,
+    "additions" : 82,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "chenqiuwen",
+    "id" : 18166942,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18166942?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chenqiuwen",
+    "html_url" : "https://github.com/chenqiuwen",
+    "followers_url" : "https://api.github.com/users/chenqiuwen/followers",
+    "following_url" : "https://api.github.com/users/chenqiuwen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chenqiuwen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chenqiuwen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chenqiuwen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chenqiuwen/orgs",
+    "repos_url" : "https://api.github.com/users/chenqiuwen/repos",
+    "events_url" : "https://api.github.com/users/chenqiuwen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chenqiuwen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/043401dae4417c7c73675610503bcf216d149a52",
+  "commit" : {
+    "author" : {
+      "name" : "qiuwen",
+      "email" : "1131558657@qq.com",
+      "date" : "2016-04-30T13:31:10Z"
+    },
+    "committer" : {
+      "name" : "qiuwen",
+      "email" : "1131558657@qq.com",
+      "date" : "2016-04-30T13:31:10Z"
+    },
+    "message" : "#1 #88 #89 #90 #287 实验1、2、3、4\n\n实验1 、 2 、 3 、 4一起交",
+    "tree" : {
+      "sha" : "b2701a8b96b232a91e8e849e8701e2ed45aeb36d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/b2701a8b96b232a91e8e849e8701e2ed45aeb36d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/043401dae4417c7c73675610503bcf216d149a52",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/043401dae4417c7c73675610503bcf216d149a52/comments",
+  "files" : [ {
+    "sha" : "8835f4a084a3210e250c41a3219deba8b725d287",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903105/Net1314080903105MainActivity.java",
+    "status" : "added",
+    "additions" : 64,
+    "deletions" : 0,
+    "changes" : 64,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/043401dae4417c7c73675610503bcf216d149a52/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903105/Net1314080903105MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/043401dae4417c7c73675610503bcf216d149a52/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903105/Net1314080903105MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903105/Net1314080903105MainActivity.java?ref=043401dae4417c7c73675610503bcf216d149a52",
+    "patch" : "@@ -0,0 +1,64 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903105;\n+\n+import java.io.IOException;\n+\n+import android.hardware.Camera;\n+import android.os.Bundle;\n+import android.app.Activity;\n+import android.view.Menu;\n+import android.view.SurfaceHolder;\n+import android.view.SurfaceHolder.Callback;\n+import android.view.SurfaceView;\n+/*整个预览的流程是建立一个surface，\n+获取surface得控制器surfaceholder，\n+设立surface的窗口previewdisplay，\n+最后开始预览startpreview。\n+当然最后还要添加相机相关的权限。*/\n+public class Net1314080903105MainActivity extends Activity {\n+    private SurfaceView mView=null;\t\t//是建立一个surface\n+    private SurfaceHolder mHolder=null;\n+    private Camera mCamera=null;\n+    @SuppressWarnings(\"deprecation\")\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main_net131408903105);\n+        mView=(SurfaceView)this.findViewById(R.id.surfaceView1);\n+        mHolder=mView.getHolder();\t\t//获取surface得控制器surfaceHolder\n+        mHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);\n+//\t\tmHolder.setFixedSize(1, 700); // 设置Surface分辨率\n+//\t\tmHolder.setSizeFromLayout();\n+//\t\tmHolder.setKeepScreenOn(true);// 屏幕常亮\n+        mHolder.addCallback(new Callback(){\n+\n+            @Override\n+            public void surfaceChanged(SurfaceHolder holder, int format,\n+                                       int width, int height) {\n+                // TODO Auto-generated method stub\n+\n+            }\n+\n+            @Override\n+            public void surfaceCreated(SurfaceHolder holder) {\n+                // TODO Auto-generated method stub\n+                mCamera=Camera.open(1);\t\t\t\t\t//若要升级增加摄像头选择则应该设置try,catch\n+                try {\n+                    mCamera.setPreviewDisplay(mHolder);\t//设立surface的窗口PreviewDisplay\n+                    mCamera.setDisplayOrientation(90);\t//设置摄像头角度，以后若有需要可以用来调试手机横竖显示\n+                } catch (IOException e) {\n+                    // TODO Auto-generated catch block\n+                    e.printStackTrace();\n+                }\n+                mCamera.startPreview();\n+            }\n+\n+            @Override\n+            public void surfaceDestroyed(SurfaceHolder holder) {\n+                // TODO Auto-generated method stub\n+                mCamera.startPreview();\n+                mCamera.release();\n+            }});\n+    }\n+\n+\n+}"
+  }, {
+    "sha" : "288b66551d1efd1f13dd06f20a67534d2df57946",
+    "filename" : "app/src/main/res/drawable/ic_launcher_net131408903105.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/043401dae4417c7c73675610503bcf216d149a52/app/src/main/res/drawable/ic_launcher_net131408903105.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/043401dae4417c7c73675610503bcf216d149a52/app/src/main/res/drawable/ic_launcher_net131408903105.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/ic_launcher_net131408903105.png?ref=043401dae4417c7c73675610503bcf216d149a52"
+  }, {
+    "sha" : "bb557c2ffe80c07a1f0fdf35ec380bc2f94eb56d",
+    "filename" : "app/src/main/res/drawable/jiqi_net131408903105.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/043401dae4417c7c73675610503bcf216d149a52/app/src/main/res/drawable/jiqi_net131408903105.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/043401dae4417c7c73675610503bcf216d149a52/app/src/main/res/drawable/jiqi_net131408903105.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/jiqi_net131408903105.jpg?ref=043401dae4417c7c73675610503bcf216d149a52"
+  }, {
+    "sha" : "2ca9978229d6b159ff4d110614dca918fe770095",
+    "filename" : "app/src/main/res/layout/activity_main_net131408903105.xml",
+    "status" : "added",
+    "additions" : 18,
+    "deletions" : 0,
+    "changes" : 18,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/043401dae4417c7c73675610503bcf216d149a52/app/src/main/res/layout/activity_main_net131408903105.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/043401dae4417c7c73675610503bcf216d149a52/app/src/main/res/layout/activity_main_net131408903105.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_main_net131408903105.xml?ref=043401dae4417c7c73675610503bcf216d149a52",
+    "patch" : "@@ -0,0 +1,18 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    tools:context=\".Net1314080903105MainActivity\" >\n+\n+    <SurfaceView\n+        android:id=\"@+id/surfaceView1\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"fill_parent\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_alignParentTop=\"true\" />\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "043401dae4417c7c73675610503bcf216d149a52",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/043401dae4417c7c73675610503bcf216d149a52",
+  "parents" : [ {
+    "sha" : "cb30b03fd50973afbf3956b6013392584031b23b",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/cb30b03fd50973afbf3956b6013392584031b23b",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/cb30b03fd50973afbf3956b6013392584031b23b"
+  } ]
+}

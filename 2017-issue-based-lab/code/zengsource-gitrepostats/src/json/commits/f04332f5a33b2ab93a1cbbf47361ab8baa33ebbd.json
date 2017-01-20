@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 52,
+    "additions" : 41,
+    "deletions" : 11
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-03T14:54:50Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-03T14:54:50Z"
+    },
+    "message" : "Merge pull request #589 from YLiuLiu/master\n\n#91 #76 lab5",
+    "tree" : {
+      "sha" : "2dc31da4699e72e26afcec179bfe7eadf8ce836d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/2dc31da4699e72e26afcec179bfe7eadf8ce836d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd/comments",
+  "files" : [ {
+    "sha" : "2780b839d27bf8359d5897c895bd372ce814c58f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901239/Com1314080901239Activity.java",
+    "status" : "modified",
+    "additions" : 35,
+    "deletions" : 10,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901239/Com1314080901239Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901239/Com1314080901239Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901239/Com1314080901239Activity.java?ref=f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd",
+    "patch" : "@@ -1,23 +1,48 @@\n package com.example.test;\n \n-import android.os.Bundle;\n+import java.io.File;\n+\n import android.app.Activity;\n-import android.view.Menu;\n+import android.content.Intent;\n+import android.net.Uri;\n+import android.os.Bundle;\n+import android.provider.MediaStore;\n+import android.view.View;\n+import android.widget.Toast;\n \n-public class Com1314080901239Activity extends Activity {\n \n+public class Com1314080901239Activity extends Activity {\n+\tprivate Uri fileUri;\n+\t\n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_com1314080901239);\n     }\n+    // ����¼�\n+ \tpublic void takePhoto(View v) {\n+ \t\t// create Intent to take a picture and return control to the calling\n+ \t\t// application\n+ \t\t// ��һ����ͼ��������ǵ���google�������ṩ�ģ��ֻ��Դ������Ӧ��\n+ \t\tIntent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);\n+ \t\t// ���ô洢·��\n+ \t\tintent.putExtra(MediaStore.EXTRA_OUTPUT,\n+ \t\t\t\tUri.fromFile(new File(\"sdcard/nuna.jpg\"))); // set the image\n+ \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t// file name\n+\n+ \t\t// start the image capture Intent\n+ \t\tstartActivityForResult(intent, 0);\n+\n+ \t}\n+\n+ \t@Override\n+ \tprotected void onActivityResult(int requestCode, int resultCode, Intent data) {\n+ \t\t// TODO Auto-generated method stub\n+ \t\tsuper.onActivityResult(requestCode, resultCode, data);\n+ \t\tif (requestCode == 0) {\n+ \t\t\tToast.makeText(getApplicationContext(), \"���ճɹ�\", 0).show();\n+ \t\t}\n+ \t}\n \n \n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.com1314080901239, menu);\n-        return true;\n-    }\n-    \n }"
+  }, {
+    "sha" : "7bf778e81408f9b668c9d9b1c67c574433518e4d",
+    "filename" : "app/src/main/res/layout/activity_com1314080901239.xml",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 1,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd/app/src/main/res/layout/activity_com1314080901239.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd/app/src/main/res/layout/activity_com1314080901239.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901239.xml?ref=f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd",
+    "patch" : "@@ -20,15 +20,20 @@\n       tools:context=\".Com1314080901239Activity\" >\n \n       <Button\n+          android:id=\"@+id/bt1\"\n           android:layout_width=\"wrap_content\"\n           android:layout_height=\"wrap_content\"\n           android:text=\"选图\" \n+          \n           />\n \n       <Button\n           android:layout_width=\"wrap_content\"\n           android:layout_height=\"wrap_content\"\n-          android:text=\"拍照\" />\n+          android:text=\"拍照\" \n+         \n+          android:onClick=\"takePhoto\"\n+          />\n \n       <Button\n           android:layout_width=\"wrap_content\""
+  } ],
+  "sha" : "f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f04332f5a33b2ab93a1cbbf47361ab8baa33ebbd",
+  "parents" : [ {
+    "sha" : "a3de7caaf3a0bbc4169877012ccf0ed4dbd2535e",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a3de7caaf3a0bbc4169877012ccf0ed4dbd2535e",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/a3de7caaf3a0bbc4169877012ccf0ed4dbd2535e"
+  }, {
+    "sha" : "31987fa40635f4aa6c7556e63b9999df52bdd021",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/31987fa40635f4aa6c7556e63b9999df52bdd021",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/31987fa40635f4aa6c7556e63b9999df52bdd021"
+  } ]
+}

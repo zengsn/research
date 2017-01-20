@@ -1,0 +1,118 @@
+{
+  "committer" : {
+    "login" : "heymanheymanheyman",
+    "id" : 22111501,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111501?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/heymanheymanheyman",
+    "html_url" : "https://github.com/heymanheymanheyman",
+    "followers_url" : "https://api.github.com/users/heymanheymanheyman/followers",
+    "following_url" : "https://api.github.com/users/heymanheymanheyman/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/heymanheymanheyman/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/heymanheymanheyman/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/heymanheymanheyman/subscriptions",
+    "organizations_url" : "https://api.github.com/users/heymanheymanheyman/orgs",
+    "repos_url" : "https://api.github.com/users/heymanheymanheyman/repos",
+    "events_url" : "https://api.github.com/users/heymanheymanheyman/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/heymanheymanheyman/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 262,
+    "additions" : 262,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "heymanheymanheyman",
+    "id" : 22111501,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111501?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/heymanheymanheyman",
+    "html_url" : "https://github.com/heymanheymanheyman",
+    "followers_url" : "https://api.github.com/users/heymanheymanheyman/followers",
+    "following_url" : "https://api.github.com/users/heymanheymanheyman/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/heymanheymanheyman/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/heymanheymanheyman/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/heymanheymanheyman/subscriptions",
+    "organizations_url" : "https://api.github.com/users/heymanheymanheyman/orgs",
+    "repos_url" : "https://api.github.com/users/heymanheymanheyman/repos",
+    "events_url" : "https://api.github.com/users/heymanheymanheyman/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/heymanheymanheyman/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/9ba525686ee36ed7833ce49fe313613ef900c94c",
+  "commit" : {
+    "author" : {
+      "name" : "heymanheymanheyman",
+      "email" : "747073320@qq.com",
+      "date" : "2016-10-30T03:19:58Z"
+    },
+    "committer" : {
+      "name" : "heymanheymanheyman",
+      "email" : "747073320@qq.com",
+      "date" : "2016-10-30T03:19:58Z"
+    },
+    "message" : "#4 #95 提交实验代码",
+    "tree" : {
+      "sha" : "6ae5a973c601cd2c95f06d010b733af5d2d5e8d8",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/6ae5a973c601cd2c95f06d010b733af5d2d5e8d8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/9ba525686ee36ed7833ce49fe313613ef900c94c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/9ba525686ee36ed7833ce49fe313613ef900c94c/comments",
+  "files" : [ {
+    "sha" : "c60924046af7cb76ccb5589c8c9bd9d648fbf69e",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902204/Se1414080902204Servlet.java",
+    "status" : "added",
+    "additions" : 108,
+    "deletions" : 0,
+    "changes" : 108,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/9ba525686ee36ed7833ce49fe313613ef900c94c/jweb/src/edu/hzu/javaweb/labs/se1414080902204/Se1414080902204Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/9ba525686ee36ed7833ce49fe313613ef900c94c/jweb/src/edu/hzu/javaweb/labs/se1414080902204/Se1414080902204Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902204/Se1414080902204Servlet.java?ref=9ba525686ee36ed7833ce49fe313613ef900c94c",
+    "patch" : "@@ -0,0 +1,108 @@\n+package se1414080902204;\n+\n+import java.awt.Window;\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.sql.Connection;\n+import java.sql.DriverManager;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+\n+import javax.naming.spi.DirStateFactory.Result;\n+import javax.security.auth.message.callback.PrivateKeyCallback.Request;\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+/**\n+ * Servlet implementation class Se1414080902204Servlet\n+ */\n+@WebServlet(\"/Se1414080902204Servlet\")\n+public class Se1414080902204Servlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public Se1414080902204Servlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\tresponse.setContentType(\"text/html;charset=utf-8\");\n+\t\tString Name=\"com.mysql.jdbc.Driver\";\n+        String userName=\"root\";\n+        String userPwd=\"1234\";\n+        String dbName=\"shenzhentong_system\";\n+        String url=\"jdbc:mysql://localhost:3306/shenzhentong_system?user=root&password=1234&useUnicode=true&characterEncoding=UTF-8\";\n+\n+      \n+       String xingming= request.getParameter(\"Username\");\n+       String idCard =request.getParameter(\"IdCard\");\n+       String cardNumber =request.getParameter(\"CardNumber\");\n+       String phoneNumber=request.getParameter(\"Pnumber\");\n+       \n+       RequestDispatcher dis=null;\n+       try{\n+    \t   Class.forName(Name);\n+           Connection conn=DriverManager.getConnection(url);\n+    \t   String sql=\"select * from szt_information where(name=? or idcard=? or card=? or phonenumber=?)\";\n+    \t   PreparedStatement pstmt=conn.prepareStatement(sql);\n+    \t   pstmt.setString(1,xingming);\n+    \t   pstmt.setString(2, idCard);\n+    \t   pstmt.setString(3, cardNumber);\n+    \t   pstmt.setString(4, phoneNumber);\n+    \t   ResultSet rs =pstmt.executeQuery();\n+    \t   if (rs.next()){\n+    \t\t   if(rs!=null) rs.close();\n+    \t\t   if(conn!=null) conn.close();\n+    \t\t   dis=request.getRequestDispatcher(\"erro.jsp\");\n+    \t\t   dis.forward(request, response);\n+    \t   }\n+    \t   \n+    \t   else{\n+    \t\t   String sql1=\"Insert into szt_information (name,idcard,card,phonenumber) values(?,?,?,?)\";\n+    \t\t   PreparedStatement pstmt1=conn.prepareStatement(sql1);\n+    \t\t   request.setCharacterEncoding(\"UTF-8\");\n+    \t\t   pstmt1.setString(1, xingming);\n+    \t\t   pstmt1.setString(2, idCard);\n+    \t\t   pstmt1.setString(3, cardNumber);\n+    \t\t   pstmt1.setString(4, phoneNumber);\n+    \t\t   int n=pstmt1.executeUpdate();\n+    \t\t   {  if(n==1){ System.out.println(\"数据插入数据库成功！\");}\n+    \t\t   else {System.out.println(\"数据插入数据库失败！\");}\n+    \t\t   }\n+/*    \t\t   if(rs!=null) rs.close();\n+*/    \t\t   if(pstmt!=null) pstmt.close();\n+    \t\t   if(conn!=null) conn.close();\n+    \t\t   dis=request.getRequestDispatcher(\"success.jsp\");\n+    \t\t   dis.forward(request, response);\n+    \t\t   \n+    \t   }\n+       }\n+       \n+       catch(Exception e){\n+    \t   \n+    \t   e.printStackTrace();\n+       }\n+       \n+       \n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\tdoGet(request, response);\n+\t}\n+\n+}"
+  }, {
+    "sha" : "cb2cb9d37a8e6895321e569ab05d19032f98065a",
+    "filename" : "jweb/web/1414080902204/erro.jsp",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/9ba525686ee36ed7833ce49fe313613ef900c94c/jweb/web/1414080902204/erro.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/9ba525686ee36ed7833ce49fe313613ef900c94c/jweb/web/1414080902204/erro.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902204/erro.jsp?ref=9ba525686ee36ed7833ce49fe313613ef900c94c",
+    "patch" : "@@ -0,0 +1,30 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ page contentType=\"text/html;charset=UTF-8\" %>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>出错页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    你的绑定信息已存在，请检查是否输入有误，点击返回<a href=\"index.jsp\">绑定页面</a>，重新输入。\n+    或者联系客服人员，咨询相关信息。 \n+  </body>\n+</html>"
+  }, {
+    "sha" : "428eafcc4f1625d761573baec1bb5b6417ad43a2",
+    "filename" : "jweb/web/1414080902204/index.jsp",
+    "status" : "added",
+    "additions" : 92,
+    "deletions" : 0,
+    "changes" : 92,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/9ba525686ee36ed7833ce49fe313613ef900c94c/jweb/web/1414080902204/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/9ba525686ee36ed7833ce49fe313613ef900c94c/jweb/web/1414080902204/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902204/index.jsp?ref=9ba525686ee36ed7833ce49fe313613ef900c94c",
+    "patch" : "@@ -0,0 +1,92 @@\n+<%@ page language=\"java\" import=\"java.util.*\" contentType=\"text/html;\" pageEncoding=\"UTF-8\"%>\n+<%@ page import=\"java.io.*\" %>\n+\n+<!-- 新 Bootstrap 核心 CSS 文件 -->\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css\">\n+\n+\n+\n+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\n+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+<script src=\"http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js\"></script>\n+<script language=\"javascript\">\n+function validate(){\n+\t\tvar name=document.forms[0].Username.value;\n+\t\tvar idcard=document.forms[0].IdCard.value;\n+\t\tvar cardnumber=document.forms[0].CardNumber.value;\n+\t\tvar pnumber=document.forms[0].Pnumber.value;\n+\t\tvar checknumber=document.forms[0].CheckNumber.value;\n+\t\tif(name.length<=0) window.alert(\"用户名不能为空\");\n+\t\telse if(idcard.length!=18) window.alert(\"身份证必须为18位\");\n+\t\telse if(cardnumber.length!=10) window.alert(\"深圳通必须为10位号码\");\n+\t\telse if(pnumber.length!=11) window.alert(\"手机号码必须为11位\");\n+\t\telse if(checknumber.length!=5) window.alert(\"请输入5位验证码\");\n+\t\telse \t\n+\t\t\n+\t\tdocument.forms[0].submit();}\n+\t\t\n+</script>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+ \n+    \n+    <title>绑定页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\n+  </head>\n+  \n+  <body>\n+    <form action=\"xx\" method=\"post\">\n+    <fieldset>\n+\n+\t<center>\n+\t\t<div style=\"padding: 5px;width: 400px\">\n+\t\t<h4 align=\"center\">&nbsp;&nbsp;&nbsp;申请绑定手机深圳通</h4>\n+\t\t<table width=\"100%\" padding=0>\n+\t\t\t<tr>\n+\t\t\t\t<td width=\"40%\" align=\"right\"> 姓名  &nbsp;</span></td>\n+\t\t\t\t<td width=\"5%\"><input type=\"text\"  class=\"form-control\" name=\"Username\" required=\"true\" placeholder=\"请输入真实姓名\"></td>\n+\t\t\t\t<td width=\"5%\" > <font color=\"red\"> </font></td>\n+\t\t\t</tr>\n+\t\t\t\n+\t\t\t<tr>\n+\t\t\t\t<td align=\"right\">身份证  &nbsp;</span></td>\n+\t\t\t\t<td><input type=\"text\" class=\"form-control\" name=\"IdCard\" required=\"true\"  placeholder=\"请输入18位身份证号码\"></td>\n+\t\t\t</tr>\n+\t\t\t\n+\t\t\t<tr>\n+\t\t\t\t<td align=\"right\">深圳通卡号   </td>\n+\t\t\t\t<td><input type=\"text\"  class=\"form-control\" name=\"CardNumber\" required=\"true\"  placeholder=\"请输入10位深圳通卡号\"></td>\n+\t\t\t\n+\t\t\t</tr>\n+\t\t\t<tr>\n+\t\t\t\t<td align=\"right\">手机号码  &nbsp;</span> </td>\n+\t\t\t\t<td><input  type=\"text\" name=\"Pnumber\"  required=\"true\" class=\"form-control\" placeholder=\"请输入11位手机号码\"></td>&nbsp;\n+\t\t\t\t<td><input type=\"button\" class=\"btn btn-default btn-sm\" name=\"getCheckNumber\" value=\" 获取验证码\"> </td>\n+\t\t\t\t<td></td>\n+\t\t\t</tr>\n+\t\t\t<tr>\n+\t\t\t\t<td align=\"right\">验证码   &nbsp;</span> </td>\n+\t\t\t\t<td><input type=\"text\" name=\"CheckNumber\" class=\"form-control\" required=\"true\" placeholder=\"请输入5位验证码\"></td>\n+\t\t\t</tr>\n+\t\t</table>\n+\t\t\t\n+\t\t</div>\n+\t\t<div align=\"center\">\n+\t\t<input type=\"button\" class=\"btn btn-primary\" id=\"ss\" value=\"绑定\" onclick=\"validate()\" /\t>\t\n+\t\t<input type=\"reset\" name=\"reset\" class=\"btn btn-primary\" value=\"重置\" >\n+\t\t</div>\n+\t</center>\n+</fieldset>\n+</form>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "e44f8a676ee54c211da5270f615f97e140576528",
+    "filename" : "jweb/web/1414080902204/success.jsp",
+    "status" : "added",
+    "additions" : 32,
+    "deletions" : 0,
+    "changes" : 32,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/9ba525686ee36ed7833ce49fe313613ef900c94c/jweb/web/1414080902204/success.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/9ba525686ee36ed7833ce49fe313613ef900c94c/jweb/web/1414080902204/success.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902204/success.jsp?ref=9ba525686ee36ed7833ce49fe313613ef900c94c",
+    "patch" : "@@ -0,0 +1,32 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+\n+<%@ page import=\"java.util.Date\" %>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML >\n+<html>\n+  <head> \n+    <title>My JSP 'success.jsp' starting page</title>\n+    <meta http-equiv=\"content-type\" content=\"text/html\"/>\n+    <style type=\"text/css\">\n+    p{color:blue;text-decoration: underline;font-size: 15px; }\n+    </style> \n+  </head>  \n+  <body>\n+  <%     Calendar cal = Calendar.getInstance();\n+\t    int year = cal.get(Calendar.YEAR);//获取年份\n+        int month=cal.get(Calendar.MONTH);//获取月份\n+        int day=cal.get(Calendar.DATE);//获取日\n+        int hour=cal.get(Calendar.HOUR);//小时\n+        int minute=cal.get(Calendar.MINUTE);//分           \n+        int second=cal.get(Calendar.SECOND);//秒\n+  \tresponse.setCharacterEncoding(\"UTF-8\");\n+  %>\n+  尊敬的：<p><%=request.getParameter(\"Username\") %></p>您于<%=year %>年<%=month+1 %>月<%=day %>日<%=hour%>时<%=minute %>分\n+  <%=second %>秒，成功开通手机深圳通业务，\n+  请持有效身份证前往营业厅领取您的专属SIM卡，并进行实名认证，感谢你对深圳通的支持！\n+  </body>\n+</html>"
+  } ],
+  "sha" : "9ba525686ee36ed7833ce49fe313613ef900c94c",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9ba525686ee36ed7833ce49fe313613ef900c94c",
+  "parents" : [ {
+    "sha" : "650cbbfb423fc655139e0b0bcf0f5086195bec22",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/650cbbfb423fc655139e0b0bcf0f5086195bec22",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/650cbbfb423fc655139e0b0bcf0f5086195bec22"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "CXCong",
+    "id" : 22153757,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22153757?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/CXCong",
+    "html_url" : "https://github.com/CXCong",
+    "followers_url" : "https://api.github.com/users/CXCong/followers",
+    "following_url" : "https://api.github.com/users/CXCong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/CXCong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/CXCong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/CXCong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/CXCong/orgs",
+    "repos_url" : "https://api.github.com/users/CXCong/repos",
+    "events_url" : "https://api.github.com/users/CXCong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/CXCong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 83,
+    "additions" : 83,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "CXCong",
+    "id" : 22153757,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22153757?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/CXCong",
+    "html_url" : "https://github.com/CXCong",
+    "followers_url" : "https://api.github.com/users/CXCong/followers",
+    "following_url" : "https://api.github.com/users/CXCong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/CXCong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/CXCong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/CXCong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/CXCong/orgs",
+    "repos_url" : "https://api.github.com/users/CXCong/repos",
+    "events_url" : "https://api.github.com/users/CXCong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/CXCong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ab9f9fc1628dd0a83248d8fca50abd66fd5f097e",
+  "commit" : {
+    "author" : {
+      "name" : "CXCong",
+      "email" : "513470959@qq.com",
+      "date" : "2016-11-10T03:06:36Z"
+    },
+    "committer" : {
+      "name" : "CXCong",
+      "email" : "513470959@qq.com",
+      "date" : "2016-11-10T03:06:36Z"
+    },
+    "message" : "here",
+    "tree" : {
+      "sha" : "389342406666cb36f3d08b5b72976e2ec3705fe8",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/389342406666cb36f3d08b5b72976e2ec3705fe8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ab9f9fc1628dd0a83248d8fca50abd66fd5f097e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ab9f9fc1628dd0a83248d8fca50abd66fd5f097e/comments",
+  "files" : [ {
+    "sha" : "65ed329ee940dca9da8ac1974c64d0294e33389a",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/Se1414080902105/Se1414080902105filter.java",
+    "status" : "added",
+    "additions" : 36,
+    "deletions" : 0,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ab9f9fc1628dd0a83248d8fca50abd66fd5f097e/jweb/src/edu/hzu/javaweb/labs/Se1414080902105/Se1414080902105filter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ab9f9fc1628dd0a83248d8fca50abd66fd5f097e/jweb/src/edu/hzu/javaweb/labs/Se1414080902105/Se1414080902105filter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/Se1414080902105/Se1414080902105filter.java?ref=ab9f9fc1628dd0a83248d8fca50abd66fd5f097e",
+    "patch" : "@@ -0,0 +1,36 @@\n+\n+ \n+ import java.io.IOException;\n+ \n+ import javax.servlet.Filter;\n+ import javax.servlet.FilterChain;\n+ import javax.servlet.FilterConfig;\n+ import javax.servlet.ServletException;\n+ import javax.servlet.ServletRequest;\n+ import javax.servlet.ServletResponse;\n+ import javax.servlet.annotation.WebFilter;\n+ \n+ @WebFilter(filterName = \"EncodingFilter\", urlPatterns = \"/*\")\n+ \n+ public class EncodingFilter implements Filter {\n+ \t@Override\n+ \tpublic void destroy() {\n+ \n+ \t}\n+ \n+ \t@Override\n+ \tpublic void doFilter(ServletRequest request, ServletResponse response,\n+ \t\t\tFilterChain chain) throws IOException, ServletException {\n+ \t\t\n+ \t\trequest.setCharacterEncoding(\"UTF-8\");\n+ \t\t\n+ \t\tresponse.setCharacterEncoding(\"UTF-8\"); \n+ \t\tchain.doFilter(request, response);\n+ \t}\n+ \n+ \t@Override\n+ \tpublic void init(FilterConfig filterConfig) throws ServletException {\n+ \n+ \t}\n+ \n+ }\n\\ No newline at end of file"
+  }, {
+    "sha" : "c32006fcebd7da7d95f963e1c76bebedb25d74b6",
+    "filename" : "jweb/src/web/index.jsp",
+    "status" : "added",
+    "additions" : 47,
+    "deletions" : 0,
+    "changes" : 47,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ab9f9fc1628dd0a83248d8fca50abd66fd5f097e/jweb/src/web/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ab9f9fc1628dd0a83248d8fca50abd66fd5f097e/jweb/src/web/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/web/index.jsp?ref=ab9f9fc1628dd0a83248d8fca50abd66fd5f097e",
+    "patch" : "@@ -0,0 +1,47 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+ <%\n+ String path = request.getContextPath();\n+ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+ %>\n+ \n+ <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+ <html>\n+   <head>\n+     <base href=\"<%=basePath%>\">\n+     \n+     <title>My JSP 'MyJsp.jsp' starting page</title>\n+     \n+ \t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+ \t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+ \t<meta http-equiv=\"expires\" content=\"0\">    \n+ \t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+ \t<meta http-equiv=\"description\" content=\"This is my page\">\n+ \t<!--\n+ \t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+ \t-->\n+ \n+ <head>\n+ \t<title>�ֻ�ѳ�ֵ������ϵͳ</title>\n+ </head>\n+ <body>\n+ \n+     <h2 align=\"center\">�ֻ�ѳ�ֵ������ϵͳ</h2>\n+     <form>\n+     <table align=\"center\">\n+     <tr><td>��ֵ���룺</td><td><input type=\"email\" name=\"Email\"></td></tr>\n+     <tr><td>��ֵ��</td><td><input type=\"text\" name=\"Name\"></td></tr>\n+     <tr><td>��ֵ���˺ţ�</td><td><input type=\"password\" name=\"PW\"></td></tr>\n+    <tr><td>��ֵ�����룺</td><td><input type=\"password\" name=\"PW\"></td></tr>\n+    \n+    </td>\n+    </tr>\n+     <tr>\n+     <td>\n+         <input type=\"submit\" value=\"ȷ��\"> <input type=\"reset\" value=\"ȡ��\">\n+     </td>\n+     </tr>\n+     </table>\n+     </form>\n+ \n+</body>\n+<html> \n\\ No newline at end of file"
+  } ],
+  "sha" : "ab9f9fc1628dd0a83248d8fca50abd66fd5f097e",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ab9f9fc1628dd0a83248d8fca50abd66fd5f097e",
+  "parents" : [ {
+    "sha" : "ec36c0309e9f21a4bc5db99e04c3a1cc9fabc7af",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ec36c0309e9f21a4bc5db99e04c3a1cc9fabc7af",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ec36c0309e9f21a4bc5db99e04c3a1cc9fabc7af"
+  } ]
+}

@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "ch135",
+    "id" : 19503022,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19503022?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ch135",
+    "html_url" : "https://github.com/ch135",
+    "followers_url" : "https://api.github.com/users/ch135/followers",
+    "following_url" : "https://api.github.com/users/ch135/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ch135/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ch135/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ch135/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ch135/orgs",
+    "repos_url" : "https://api.github.com/users/ch135/repos",
+    "events_url" : "https://api.github.com/users/ch135/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ch135/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 84,
+    "additions" : 0,
+    "deletions" : 84
+  },
+  "author" : {
+    "login" : "ch135",
+    "id" : 19503022,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19503022?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/ch135",
+    "html_url" : "https://github.com/ch135",
+    "followers_url" : "https://api.github.com/users/ch135/followers",
+    "following_url" : "https://api.github.com/users/ch135/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/ch135/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/ch135/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/ch135/subscriptions",
+    "organizations_url" : "https://api.github.com/users/ch135/orgs",
+    "repos_url" : "https://api.github.com/users/ch135/repos",
+    "events_url" : "https://api.github.com/users/ch135/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/ch135/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/b40a9567e9c2c08c2f7f38ca186438f90e333086",
+  "commit" : {
+    "author" : {
+      "name" : "ch135",
+      "email" : "707347865@qq.com",
+      "date" : "2016-11-06T07:55:21Z"
+    },
+    "committer" : {
+      "name" : "ch135",
+      "email" : "707347865@qq.com",
+      "date" : "2016-11-06T07:55:21Z"
+    },
+    "message" : "#4 更改实验代码",
+    "tree" : {
+      "sha" : "db72d6ad8b34ca6b2523b39e6ee97f71671b6a2a",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/db72d6ad8b34ca6b2523b39e6ee97f71671b6a2a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/b40a9567e9c2c08c2f7f38ca186438f90e333086",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/b40a9567e9c2c08c2f7f38ca186438f90e333086/comments",
+  "files" : [ {
+    "sha" : "3dd4beb085db438b90fe2ba6e08afeb921fa6fd5",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902135/Load_Filter.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 66,
+    "changes" : 66,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/befa6ba1c21ae77a2add38bf1c9d0f31a5408460/jweb/src/edu/hzu/javaweb/labs/se1414080902135/Load_Filter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/befa6ba1c21ae77a2add38bf1c9d0f31a5408460/jweb/src/edu/hzu/javaweb/labs/se1414080902135/Load_Filter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902135/Load_Filter.java?ref=befa6ba1c21ae77a2add38bf1c9d0f31a5408460",
+    "patch" : "@@ -1,66 +0,0 @@\n-package edu.hzu.javaweb.labs.se1414080902135;\n-\n-import java.io.IOException;\n-import javax.servlet.Filter;\n-import javax.servlet.FilterChain;\n-import javax.servlet.FilterConfig;\n-import javax.servlet.ServletException;\n-import javax.servlet.ServletRequest;\n-import javax.servlet.ServletResponse;\n-import javax.servlet.annotation.WebFilter;\n-import javax.servlet.annotation.WebInitParam;\n-import javax.servlet.http.HttpServletRequest;\n-import javax.servlet.http.HttpServletResponse;\n-import javax.servlet.http.HttpSession;\n-\n-@WebFilter(\n-\t\t//���������\n-\t\tfilterName=\"Load_filter\",\n-\t\t//�������Һҳ��\n-\t\turlPatterns={\"/*\"},\n-\t\t//��������ϸ��Ϣ\n-\t\tinitParams={\n-\t\t\t\t@WebInitParam(name=\"encoding\",value=\"UTF-8\"),\n-\t\t\t\t@WebInitParam(name=\"error\",value=\"error.jsp\"),\n-\t\t}\n-\t\t)\n-public class Load_Filter implements Filter {\n-\tprivate String encoding=null;\n-\tprivate String error=null;\n-\t\n-\tpublic void destroy() {\n-\t\terror=null;\n-\t\tencoding=null;\n-\t}\n-\n-\tpublic void init(FilterConfig fConfig) throws ServletException {\n-\t\tthis.encoding=fConfig.getInitParameter(\"encoding\");\n-\t\terror=fConfig.getInitParameter(\"error\");\n-\t}\n-\t\n-\tprivate String getEncoding(){\n-\t\treturn this.encoding;\n-\t}\n-\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws\n-\t\tIOException, ServletException {\n-\t\tencoding=getEncoding();\n-\t\trequest.setCharacterEncoding(encoding);\n-\t\t\n-\t\tHttpServletRequest req=(HttpServletRequest)request;\n-\t\tHttpServletResponse rep=(HttpServletResponse)response;\n-\t\tHttpSession session=req.getSession();\n-\t\t//��ȡ����·��\n-\t\tString rurl=req.getRequestURL().toString();\t\t\n-\t\t\n-\t\tif(rurl.endsWith(\"Jweb/\")){\n-\t\t\tchain.doFilter(request, response);\t\n-\t\t}else if(rurl.endsWith(\"html\")){\n-\t\t\tObject value=session.getAttribute(\"user\");\n-\t\t\tif(value==null){\n-\t\t\t\treq.getRequestDispatcher(error).forward(req, rep);\n-\t\t\t}else{\n-\t\t\t\tchain.doFilter(request, response);\n-\t\t\t}\n-\t\t}\n-\t}\n-}"
+  }, {
+    "sha" : "2a54e933b5ccdbcadf888818f8c8b6532a085e46",
+    "filename" : "jweb/web/1414080902135/WEB-INF/web.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 6,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/befa6ba1c21ae77a2add38bf1c9d0f31a5408460/jweb/web/1414080902135/WEB-INF/web.xml",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/befa6ba1c21ae77a2add38bf1c9d0f31a5408460/jweb/web/1414080902135/WEB-INF/web.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902135/WEB-INF/web.xml?ref=befa6ba1c21ae77a2add38bf1c9d0f31a5408460",
+    "patch" : "@@ -1,6 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n-<web-app xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://java.sun.com/xml/ns/javaee\" xsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd\" id=\"WebApp_ID\" version=\"3.0\">\n-  <welcome-file-list>\n-    <welcome-file>index.html</welcome-file>\n-  </welcome-file-list>\n-</web-app>\n\\ No newline at end of file"
+  }, {
+    "sha" : "a0f5a2e3b2be3dcb60ab191b90414bf77d707046",
+    "filename" : "jweb/web/1414080902135/error.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 12,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/befa6ba1c21ae77a2add38bf1c9d0f31a5408460/jweb/web/1414080902135/error.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/befa6ba1c21ae77a2add38bf1c9d0f31a5408460/jweb/web/1414080902135/error.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902135/error.jsp?ref=befa6ba1c21ae77a2add38bf1c9d0f31a5408460",
+    "patch" : "@@ -1,12 +0,0 @@\n-<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n-    pageEncoding=\"UTF-8\"%>\n-<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n-<html>\n-<head>\n-<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n-<title>Insert title here</title>\n-</head>\n-<body>\n-\t<p>请先登录！</p>\n-</body>\n-</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "b40a9567e9c2c08c2f7f38ca186438f90e333086",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b40a9567e9c2c08c2f7f38ca186438f90e333086",
+  "parents" : [ {
+    "sha" : "befa6ba1c21ae77a2add38bf1c9d0f31a5408460",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/befa6ba1c21ae77a2add38bf1c9d0f31a5408460",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/befa6ba1c21ae77a2add38bf1c9d0f31a5408460"
+  } ]
+}

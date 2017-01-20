@@ -1,0 +1,100 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 235,
+    "additions" : 235,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/5b11c9523995714fb7b799a89375b437a903d7f8",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T15:17:31Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-04-27T15:17:31Z"
+    },
+    "message" : "Merge pull request #489 from caixuhang/master\n\n#88 #86 Net1314080903201实验二",
+    "tree" : {
+      "sha" : "629c9e0f3e5e6d67354778175bf935c6f2a04ce5",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/629c9e0f3e5e6d67354778175bf935c6f2a04ce5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/5b11c9523995714fb7b799a89375b437a903d7f8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5b11c9523995714fb7b799a89375b437a903d7f8/comments",
+  "files" : [ {
+    "sha" : "e0d2af9d82058b5510757c8331af57fc3f675185",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201MyRenderer.java",
+    "status" : "added",
+    "additions" : 204,
+    "deletions" : 0,
+    "changes" : 204,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5b11c9523995714fb7b799a89375b437a903d7f8/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201MyRenderer.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5b11c9523995714fb7b799a89375b437a903d7f8/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201MyRenderer.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201MyRenderer.java?ref=5b11c9523995714fb7b799a89375b437a903d7f8",
+    "patch" : "@@ -0,0 +1,204 @@\n+/**\n+ *\n+ */\n+package org.crazyit.opengl;\n+\n+import java.nio.ByteBuffer;\n+import java.nio.ByteOrder;\n+import java.nio.FloatBuffer;\n+import java.nio.IntBuffer;\n+\n+import javax.microedition.khronos.egl.EGLConfig;\n+import javax.microedition.khronos.opengles.GL10;\n+\n+import android.opengl.GLSurfaceView.Renderer;\n+\n+/**\n+ * Description:\n+ * <br/>网站: <a href=\"http://www.crazyit.org\">疯狂Java联盟</a>\n+ * <br/>Copyright (C), 2001-2014, Yeeku.H.Lee\n+ * <br/>This program is protected by copyright laws.\n+ * <br/>Program Name:\n+ * <br/>Date:\n+ * @author  Yeeku.H.Lee kongyeeku@163.com\n+ * @version  1.0\n+ */\n+public class Net1314080903201MyRenderer implements Renderer\n+{\n+\t// 定义三棱椎的4个顶点\n+\tfloat[] taperVertices = new float[] {\n+\t\t0.0f, 0.5f, 0.0f,\n+\t\t-0.5f, -0.5f, -0.2f,\n+\t\t0.5f, -0.5f, -0.2f,\n+\t\t0.0f, -0.2f, 0.2f\n+\t};\n+\t// 定义三棱椎的4个顶点的颜色\n+\tint[] taperColors = new int[]{\n+\t\t65535, 0, 0, 0,  // 红色\n+\t\t0, 65535, 0, 0,\t // 绿色\n+\t\t0, 0, 65535, 0,  // 蓝色\n+\t\t65535, 65535, 0, 0 //黄色\n+\t};\n+\t// 定义三棱椎的4个三角面\n+\tprivate byte[] taperFacets = new byte[]{\n+\t\t0, 1, 2, //0、1、2三个顶点组成一个面\n+\t\t0, 1, 3, //0、1、3三个顶点组成一个面\n+\t\t1, 2, 3, //1、2、3三个顶点组成一个面\n+\t\t0, 2, 3  //0、2、3三个顶点组成一个面\n+\t};\n+\t// 定义立方体的8个顶点\n+\tfloat[] cubeVertices = new float[] {\n+\t\t// 上顶面正方形的四个顶点\n+\t\t0.5f, 0.5f, 0.5f,\n+\t\t0.5f, -0.5f, 0.5f,\n+\t\t-0.5f, -0.5f, 0.5f,\n+\t\t-0.5f, 0.5f, 0.5f,\n+\t\t// 下底面正方形的四个顶点\n+\t\t0.5f, 0.5f, -0.5f,\n+\t\t0.5f, -0.5f, -0.5f,\n+\t\t-0.5f, -0.5f, -0.5f,\n+\t\t-0.5f, 0.5f, -0.5f\n+\t};\n+\t// 定义立方体所需要的6个面（一共是12个三角形所需的顶点）\n+\tprivate byte[] cubeFacets = new byte[]{\n+\t\t0, 1, 2,\n+\t\t0, 2, 3,\n+\t\t2, 3, 7,\n+\t\t2, 6, 7,\n+\t\t0, 3, 7,\n+\t\t0, 4, 7,\n+\t\t4, 5, 6,\n+\t\t4, 6, 7,\n+\t\t0, 1, 4,\n+\t\t1, 4, 5,\n+\t\t1, 2, 6,\n+\t\t1, 5, 6\n+\t};\n+\t// 定义Open GL ES绘制所需要的Buffer对象\n+\tFloatBuffer taperVerticesBuffer;\n+\tIntBuffer taperColorsBuffer;\n+\tByteBuffer taperFacetsBuffer;\n+\tFloatBuffer cubeVerticesBuffer;\n+\tByteBuffer cubeFacetsBuffer;\n+\t// 控制旋转的角度\n+\tprivate float rotate;\n+\tpublic Net1314080903201MyRenderer()\n+\t{\n+\t\t// 将三棱椎的顶点位置数据数组包装成FloatBuffer;\n+\t\ttaperVerticesBuffer = floatBufferUtil(taperVertices);\n+\t\t// 将三棱椎的四个面的数组包装成ByteBuffer\n+\t\ttaperFacetsBuffer = ByteBuffer.wrap(taperFacets);\n+\t\t// 将三棱椎的四个定点的颜色数组包装成IntBuffer\n+\t\ttaperColorsBuffer = intBufferUtil(taperColors);\n+\t\t// 将立方体的顶点位置数据数组包装成FloatBuffer;\n+\t\tcubeVerticesBuffer = floatBufferUtil(cubeVertices);\n+\t\t// 将立方体的6个面（12个三角形）的数组包装成ByteBuffer\n+\t\tcubeFacetsBuffer = ByteBuffer.wrap(cubeFacets);\n+\t}\n+\n+\t@Override\n+\tpublic void onSurfaceCreated(GL10 gl, EGLConfig config)\n+\t{\n+\t\t// 关闭抗抖动\n+\t\tgl.glDisable(GL10.GL_DITHER);\n+\t\t// 设置系统对透视进行修正\n+\t\tgl.glHint(GL10.GL_PERSPECTIVE_CORRECTION_HINT, GL10.GL_FASTEST);\n+\t\tgl.glClearColor(0, 0, 0, 0);\n+\t\t// 设置阴影平滑模式\n+\t\tgl.glShadeModel(GL10.GL_SMOOTH);\n+\t\t// 启用深度测试\n+\t\tgl.glEnable(GL10.GL_DEPTH_TEST);\n+\t\t// 设置深度测试的类型\n+\t\tgl.glDepthFunc(GL10.GL_LEQUAL);\n+\t}\n+\n+\t@Override\n+\tpublic void onSurfaceChanged(GL10 gl, int width, int height)\n+\t{\n+\t\t// 设置3D视窗的大小及位置\n+\t\tgl.glViewport(0, 0, width, height);\n+\t\t// 将当前矩阵模式设为投影矩阵\n+\t\tgl.glMatrixMode(GL10.GL_PROJECTION);\n+\t\t// 初始化单位矩阵\n+\t\tgl.glLoadIdentity();\n+\t\t// 计算透视视窗的宽度、高度比\n+\t\tfloat ratio = (float) width / height;\n+\t\t// 调用此方法设置透视视窗的空间大小。\n+\t\tgl.glFrustumf(-ratio, ratio, -1, 1, 1, 10);\n+\t}\n+\n+\t// 绘制图形的方法\n+\t@Override\n+\tpublic void onDrawFrame(GL10 gl)\n+\t{\n+\t\t// 清除屏幕缓存和深度缓存\n+\t\tgl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);\n+\t\t// 启用顶点座标数据\n+\t\tgl.glEnableClientState(GL10.GL_VERTEX_ARRAY);\n+\t\t// 启用顶点颜色数据\n+\t\tgl.glEnableClientState(GL10.GL_COLOR_ARRAY);\n+\t\t// 设置当前矩阵模式为模型视图。\n+\t\tgl.glMatrixMode(GL10.GL_MODELVIEW);\n+\t\t// --------------------绘制第一个图形---------------------\n+\t\t// 重置当前的模型视图矩阵\n+\t\tgl.glLoadIdentity();\n+\t\tgl.glTranslatef(-0.6f, 0.0f, -1.5f);\n+\t\t// 沿着Y轴旋转\n+\t\tgl.glRotatef(rotate, 0f, 0.2f, 0f);\n+\t\t// 设置顶点的位置数据\n+\t\tgl.glVertexPointer(3, GL10.GL_FLOAT, 0, taperVerticesBuffer);\n+\t\t// 设置顶点的颜色数据\n+\t\tgl.glColorPointer(4, GL10.GL_FIXED, 0, taperColorsBuffer);\n+\t\t// 按taperFacetsBuffer指定的面绘制三角形\n+\t\tgl.glDrawElements(GL10.GL_TRIANGLE_STRIP\n+\t\t\t, taperFacetsBuffer.remaining(),\n+\t\t\tGL10.GL_UNSIGNED_BYTE, taperFacetsBuffer);\n+\t\t// --------------------绘制第二个图形---------------------\n+\t\t// 重置当前的模型视图矩阵\n+\t\tgl.glLoadIdentity();\n+\t\tgl.glTranslatef(0.7f, 0.0f, -2.2f);\n+\t\t// 沿着Y轴旋转\n+\t\tgl.glRotatef(rotate, 0f, 0.2f, 0f);\n+\t\t// 沿着X轴旋转\n+\t\tgl.glRotatef(rotate, 1f, 0f, 0f);\n+\t\t// 设置顶点的位置数据\n+\t\tgl.glVertexPointer(3, GL10.GL_FLOAT, 0, cubeVerticesBuffer);\n+\t\t// 不设置顶点的颜色数据，还用以前的颜色数据\n+\t\t// 按cubeFacetsBuffer指定的面绘制三角形\n+\t\tgl.glDrawElements(GL10.GL_TRIANGLE_STRIP\n+\t\t\t, cubeFacetsBuffer.remaining(),\n+\t\t\tGL10.GL_UNSIGNED_BYTE, cubeFacetsBuffer);\n+\n+\t\t// 绘制结束\n+\t\tgl.glFinish();\n+\t\tgl.glDisableClientState(GL10.GL_VERTEX_ARRAY);\n+\t\t// 旋转角度增加1\n+\t\trotate+=1;\n+\t}\n+\t// 定义一个工具方法，将int[]数组转换为OpenGL ES所需的IntBuffer\n+\tprivate IntBuffer intBufferUtil(int[] arr)\n+\t{\n+\t\tIntBuffer mBuffer;\n+\t\t// 初始化ByteBuffer，长度为arr数组的长度*4，因为一个int占4个字节\n+\t\tByteBuffer qbb = ByteBuffer.allocateDirect(arr.length * 4);\n+\t\t// 数组排列用nativeOrder\n+\t\tqbb.order(ByteOrder.nativeOrder());\n+\t\tmBuffer = qbb.asIntBuffer();\n+\t\tmBuffer.put(arr);\n+\t\tmBuffer.position(0);\n+\t\treturn mBuffer;\n+\t}\n+\t// 定义一个工具方法，将float[]数组转换为OpenGL ES所需的FloatBuffer\n+\tprivate FloatBuffer floatBufferUtil(float[] arr)\n+\t{\n+\t\tFloatBuffer mBuffer;\n+\t\t// 初始化ByteBuffer，长度为arr数组的长度*4，因为一个int占4个字节\n+\t\tByteBuffer qbb = ByteBuffer.allocateDirect(arr.length * 4);\n+\t\t// 数组排列用nativeOrder\n+\t\tqbb.order(ByteOrder.nativeOrder());\n+\t\tmBuffer = qbb.asFloatBuffer();\n+\t\tmBuffer.put(arr);\n+\t\tmBuffer.position(0);\n+\t\treturn mBuffer;\n+\t}\t\n+}"
+  }, {
+    "sha" : "ee6e165246890e3e52672d812100491e808c6f3d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201Simple3D.java",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5b11c9523995714fb7b799a89375b437a903d7f8/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201Simple3D.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5b11c9523995714fb7b799a89375b437a903d7f8/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201Simple3D.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903201/Net1314080903201Simple3D.java?ref=5b11c9523995714fb7b799a89375b437a903d7f8",
+    "patch" : "@@ -0,0 +1,31 @@\n+package org.crazyit.opengl;\n+\n+import android.app.Activity;\n+import android.opengl.GLSurfaceView;\n+import android.os.Bundle;\n+\n+/**\n+ * Description:\n+ * <br/>site: <a href=\"http://www.crazyit.org\">crazyit.org</a>\n+ * <br/>Copyright (C), 2001-2014, Yeeku.H.Lee\n+ * <br/>This program is protected by copyright laws.\n+ * <br/>Program Name:\n+ * <br/>Date:\n+ * @author  Yeeku.H.Lee kongyeeku@163.com\n+ * @version  1.0\n+ */\n+public class Net1314080903201Simple3D extends Activity\n+{\n+\t@Override\n+\tpublic void onCreate(Bundle savedInstanceState)\n+\t{\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\t// 创建一个GLSurfaceView，用于显示OpenGL绘制的图形\n+\t\tGLSurfaceView glView = new GLSurfaceView(this);\n+\t\t// 创建GLSurfaceView的内容绘制器\n+\t\tNet1314080903201MyRenderer myRender = new Net1314080903201MyRenderer();\n+\t\t// 为GLSurfaceView设置绘制器\n+\t\tglView.setRenderer(myRender);\n+\t\tsetContentView(glView);\n+\t}\n+}"
+  } ],
+  "sha" : "5b11c9523995714fb7b799a89375b437a903d7f8",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5b11c9523995714fb7b799a89375b437a903d7f8",
+  "parents" : [ {
+    "sha" : "bbfc1e243d01bb18cad34be6345115afce4bf043",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/bbfc1e243d01bb18cad34be6345115afce4bf043",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/bbfc1e243d01bb18cad34be6345115afce4bf043"
+  }, {
+    "sha" : "e30d4fef9ac427dd953f8b0b20371e988c590f3c",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e30d4fef9ac427dd953f8b0b20371e988c590f3c",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/e30d4fef9ac427dd953f8b0b20371e988c590f3c"
+  } ]
+}

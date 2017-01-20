@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "benguadesenlin",
+    "id" : 18374738,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18374738?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/benguadesenlin",
+    "html_url" : "https://github.com/benguadesenlin",
+    "followers_url" : "https://api.github.com/users/benguadesenlin/followers",
+    "following_url" : "https://api.github.com/users/benguadesenlin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/benguadesenlin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/benguadesenlin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/benguadesenlin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/benguadesenlin/orgs",
+    "repos_url" : "https://api.github.com/users/benguadesenlin/repos",
+    "events_url" : "https://api.github.com/users/benguadesenlin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/benguadesenlin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 33,
+    "additions" : 33,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "benguadesenlin",
+    "id" : 18374738,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18374738?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/benguadesenlin",
+    "html_url" : "https://github.com/benguadesenlin",
+    "followers_url" : "https://api.github.com/users/benguadesenlin/followers",
+    "following_url" : "https://api.github.com/users/benguadesenlin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/benguadesenlin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/benguadesenlin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/benguadesenlin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/benguadesenlin/orgs",
+    "repos_url" : "https://api.github.com/users/benguadesenlin/repos",
+    "events_url" : "https://api.github.com/users/benguadesenlin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/benguadesenlin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/c587f2e4301f2403cc575db37c7cbe74a43c60f5",
+  "commit" : {
+    "author" : {
+      "name" : "benguadesenlin",
+      "email" : "772687101@qq.com",
+      "date" : "2016-04-27T09:16:04Z"
+    },
+    "committer" : {
+      "name" : "benguadesenlin",
+      "email" : "772687101@qq.com",
+      "date" : "2016-04-27T09:16:04Z"
+    },
+    "message" : "#89 #83 lab3 项目用到图片的XML",
+    "tree" : {
+      "sha" : "842dcaac4bc7be201d33c527f8c81d20a25103c6",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/842dcaac4bc7be201d33c527f8c81d20a25103c6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/c587f2e4301f2403cc575db37c7cbe74a43c60f5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c587f2e4301f2403cc575db37c7cbe74a43c60f5/comments",
+  "files" : [ {
+    "sha" : "b6a262f3fd26b046dec2848eb895c83e0dcc7cdd",
+    "filename" : "app/src/main/res/layout/net1314080903206_activity_game_rule.xml",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/c587f2e4301f2403cc575db37c7cbe74a43c60f5/app/src/main/res/layout/net1314080903206_activity_game_rule.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/c587f2e4301f2403cc575db37c7cbe74a43c60f5/app/src/main/res/layout/net1314080903206_activity_game_rule.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903206_activity_game_rule.xml?ref=c587f2e4301f2403cc575db37c7cbe74a43c60f5",
+    "patch" : "@@ -0,0 +1,33 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:gravity=\"center\"\n+    android:orientation=\"vertical\" >\n+    \n+    <ImageView \n+        android:id=\"@+id/use_image\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:src=\"@drawable/ic_launcher\"\n+        />\n+    \n+    <TextView \n+        android:id=\"@+id/game_rule_1_text_view\"\n+        style=\"@style/GameRuleTextView\"\n+        />\n+    <TextView \n+        android:id=\"@+id/game_rule_2_text_view\"\n+        style=\"@style/GameRuleTextView\"\n+        />\n+    <TextView \n+        android:id=\"@+id/game_rule_3_text_view\"\n+        style=\"@style/GameRuleTextView\"\n+        />\n+    <TextView \n+        android:id=\"@+id/game_rule_4_text_view\"\n+        style=\"@style/GameRuleTextView\"\n+        />\n+    \n+\n+</LinearLayout>"
+  } ],
+  "sha" : "c587f2e4301f2403cc575db37c7cbe74a43c60f5",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/c587f2e4301f2403cc575db37c7cbe74a43c60f5",
+  "parents" : [ {
+    "sha" : "590a35af74a4207c1b413bd4b0889a4def2478a8",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/590a35af74a4207c1b413bd4b0889a4def2478a8",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/590a35af74a4207c1b413bd4b0889a4def2478a8"
+  } ]
+}

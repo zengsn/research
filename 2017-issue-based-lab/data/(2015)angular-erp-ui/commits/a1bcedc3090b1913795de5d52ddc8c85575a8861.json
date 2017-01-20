@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "chen22",
+    "id" : 15098432,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098432?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chen22",
+    "html_url" : "https://github.com/chen22",
+    "followers_url" : "https://api.github.com/users/chen22/followers",
+    "following_url" : "https://api.github.com/users/chen22/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chen22/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chen22/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chen22/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chen22/orgs",
+    "repos_url" : "https://api.github.com/users/chen22/repos",
+    "events_url" : "https://api.github.com/users/chen22/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chen22/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 17,
+    "additions" : 17,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "chen22",
+    "id" : 15098432,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098432?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/chen22",
+    "html_url" : "https://github.com/chen22",
+    "followers_url" : "https://api.github.com/users/chen22/followers",
+    "following_url" : "https://api.github.com/users/chen22/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/chen22/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/chen22/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/chen22/subscriptions",
+    "organizations_url" : "https://api.github.com/users/chen22/orgs",
+    "repos_url" : "https://api.github.com/users/chen22/repos",
+    "events_url" : "https://api.github.com/users/chen22/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/chen22/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/a1bcedc3090b1913795de5d52ddc8c85575a8861",
+  "commit" : {
+    "author" : {
+      "name" : "chen22",
+      "email" : "1029054035@qq.com",
+      "date" : "2015-11-24T03:11:36Z"
+    },
+    "committer" : {
+      "name" : "chen22",
+      "email" : "1029054035@qq.com",
+      "date" : "2015-11-24T03:11:36Z"
+    },
+    "message" : "第三次实验 1314080901207\n\n添加script代码",
+    "tree" : {
+      "sha" : "339b9344411c22a9be03fd609d3686db8e4fc776",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/339b9344411c22a9be03fd609d3686db8e4fc776"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/a1bcedc3090b1913795de5d52ddc8c85575a8861",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a1bcedc3090b1913795de5d52ddc8c85575a8861/comments",
+  "files" : [ {
+    "sha" : "26f5a82f1caa8bce721caec24dd1db5018806fe7",
+    "filename" : "works/1314080901207/index.html",
+    "status" : "modified",
+    "additions" : 17,
+    "deletions" : 0,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/a1bcedc3090b1913795de5d52ddc8c85575a8861/works/1314080901207/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/a1bcedc3090b1913795de5d52ddc8c85575a8861/works/1314080901207/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901207/index.html?ref=a1bcedc3090b1913795de5d52ddc8c85575a8861",
+    "patch" : "@@ -1,6 +1,8 @@\n ﻿<!DOCTYPE html>\n <html lang=\"zh-CN\">\n   <head>\n+<!DOCTYPE html>\n+<html ng-app=\"myAppModule\"> <head lang=\"en\">\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n@@ -20,6 +22,21 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+\n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var itemsList = {\n+            coding:'001',\n+            name:'迪斯尼龙',\n+\t\t\ttype:'家具',\n+            color:'红色',\n+\t\t\tinventoryCount:'260',\n+\t\t\tcheckCount:'26'\n+        };\n+        $scope.data = itemsList;\n+}\n+</script>\n+\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">"
+  } ],
+  "sha" : "a1bcedc3090b1913795de5d52ddc8c85575a8861",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/a1bcedc3090b1913795de5d52ddc8c85575a8861",
+  "parents" : [ {
+    "sha" : "bb118c8e1578495764ad3f6745141eeaff419928",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/bb118c8e1578495764ad3f6745141eeaff419928",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/bb118c8e1578495764ad3f6745141eeaff419928"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 168,
+    "additions" : 0,
+    "deletions" : 168
+  },
+  "author" : {
+    "login" : "Zhengzh00",
+    "id" : 22511983,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511983?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zhengzh00",
+    "html_url" : "https://github.com/Zhengzh00",
+    "followers_url" : "https://api.github.com/users/Zhengzh00/followers",
+    "following_url" : "https://api.github.com/users/Zhengzh00/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zhengzh00/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zhengzh00/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zhengzh00/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zhengzh00/orgs",
+    "repos_url" : "https://api.github.com/users/Zhengzh00/repos",
+    "events_url" : "https://api.github.com/users/Zhengzh00/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zhengzh00/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/08926c6d2fa3a784d8a962daa017f29625b47914",
+  "commit" : {
+    "author" : {
+      "name" : "Zhengzh00",
+      "email" : "583836723@qq.com",
+      "date" : "2016-10-19T10:17:06Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-19T10:17:06Z"
+    },
+    "message" : "Delete index.html",
+    "tree" : {
+      "sha" : "d5aa4e36c3701b302e9ae649532b93bd443203cc",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d5aa4e36c3701b302e9ae649532b93bd443203cc"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/08926c6d2fa3a784d8a962daa017f29625b47914",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/08926c6d2fa3a784d8a962daa017f29625b47914/comments",
+  "files" : [ {
+    "sha" : "a3edd3ef4b59c938bea863514aa33da5218c4993",
+    "filename" : "labs/1414080902210/index.html",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 168,
+    "changes" : 168,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6faa6d7032ca9ee0d023961a10f553e4b6740153/labs/1414080902210/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6faa6d7032ca9ee0d023961a10f553e4b6740153/labs/1414080902210/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902210/index.html?ref=6faa6d7032ca9ee0d023961a10f553e4b6740153",
+    "patch" : "@@ -1,168 +0,0 @@\n-<!DOCTYPE html>\n-<html>\n-<!-- 新 Bootstrap 核心 CSS 文件 -->\n-<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n-\n-<!-- 可选的Bootstrap主题文件（一般不用引入） -->\n-<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n-\n-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n-<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-\n-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n-<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n-<meta charset = \"utf-8\">\n-<head>\n-    <title>学生信息登记表</title>\n-</head>\n-<script language=\"JavaScript\">\n-function checkit(){\n-    var theForm;\n-    theForm=document.stuForm;\n-    if(theForm.registername.value==\"\"){\n-    alert(\"请输入学生注册名！\");\n-    document.stuForm.registername.focus();\n-    return false;\n-    }\n-    if(theForm.TrueName.value==\"\"){\n-    alert(\"请输入学生真实姓名！\");\n-    theForm.TrueName.focus();\n-    return false;\n-    }\n-    if(theForm.PersonalCode.value==\"\"){\n-    alert(\"身份证号码不能为空！\");\n-    theForm.PersonalCode.focus();\n-    return false;\n-    }\n-    if(theForm.pwd.value==\"\"){\n-    alert(\"密码不能为空！\");\n-    theForm.pwd.focus();\n-    return false;\n-    }\n-    if(theForm.cfmpwd.value==\"\"){\n-    alert(\"前后两次输入的密码不一致！\");\n-    theForm.cfmpwd.focus();\n-    return false;\n-    }\n-    if(theForm.BirthDate.value==\"\"){\n-    alert(\"请选择出生日期！\");\n-    theForm.BirthDate.focus();\n-    return false;\n-    }\n-    if(theForm.HomeNum.value==\"\"){\n-    alert(\"电话号码不能为空！\");\n-    theForm.HomeNum.focus();\n-    return false;\n-    }\n-    if(theForm.Email.value==\"\"){\n-    alert(\"Email不能为空！\");\n-    theForm.Email.focus();\n-    return false;\n-    }\n-    if(theForm.Department.value==\"\"){\n-    alert(\"请选择您的系别！\");\n-    theForm.Department.focus();\n-    return false;\n-    }\n-   theForm.submit();\n-}\n-</script>\n-<body>\n-\n-<h1 class=\"text-center\">学生信息登记表</h1>\n-<hr>\n-<form class=\"form-horizontal\" name=\"stuForm\" action=\"index.jsp\" method=\"post\" role= \"form\">\n-\t<div class=\"form-group\">\n-\t\t<label class=\"col-sm-2 control-label\" for\"RegisterName\">注册名称</label>\n-\t\t<div class=\"col-sm-10\">\n-\t\t<input type=\"text\" name=\"registername\" class=\"form-control\" id=\"RegisterName\" placeholder=\"请输入注册名称\">\n-\t\t</div>\n-\t</div>\n-\t<div class=\"form-group\">\n-\t\t<label class=\"col-sm-2 control-label\" for\"Password1\">密码</label>\n-\t\t<div class=\"col-sm-10\">\n-\t\t<input type=\"password\" name=\"pwd\"  class=\"form-control\" id=\"Password1\" placeholder=\"请输入六位以上密码\">\n-\t\t</div>\n-\t</div>\n-\t<div class=\"form-group\">\n-\t\t<label class=\"col-sm-2 control-label\" for\"Password2\">重复密码</label>\n-\t\t<div class=\"col-sm-10\">\n-\t\t<input type=\"password\" name=\"cfmpwd\" class=\"form-control\" size=\"20\"  id=\"Password2\" placeholder=\"请再输入一次\" >\n-\t\t</div>\n-\t</div>\n-\t<div class=\"form-group\">\n-\t\t<label class=\"col-sm-2 control-label\" for=\"truename\">真实姓名</label>\n-\t\t<div class=\"col-sm-10\">\t\n-\t\t<input type=\"text\" name=\"TrueName\" class=\"form-control\"  id=\"truename\"  placeholder=\"请再输入您的真实姓名\"/>\n-\t\t</div>\n-\t</div>\n-\t<div class=\"form-group\">\n-\t\t<label class=\"col-sm-2 control-label\" for=\"personalcode\">身份证号码</label>\n-\t\t<div class=\"col-sm-10\">\t\n-\t\t<input type=\"text\" name=\"PersonalCode\" class=\"form-control\" id=\"personalcode\" placeholder=\"请再输入您的身份证号码\">\n-\t\t</div>\n-\t</div>\n-\t<div class=\"form-group\">\n-\t\t<label class=\"col-sm-2 control-label\" for=\"Radio\">性别   </label>\n-\t\t<div class=\"radio\">\t\n-\t\t<div class=\"col-sm-5\"><input type=\"radio\" value=\"男\" name=\"Sex\" id=\"Sex1\" checked >男</div>\n-\t\t<div class=\"col-sm-5\"><input type=\"radio\" value=\"女\" name=\"Sex\" >女</div>\n-\t</div>\n-\t</div>\n-\n-<div class=\"form-group\">\n-\t<label class=\"col-sm-2 control-label\">出生日期</label>\n-\t<div class=\"col-sm-10\">\n-\t<select name=\"BirthDate\" class=\"form-control\">\n-\t<option checked value=\"\"></option>\n-\t<option value=\"1952\">2000</option>\n-\t<option value=\"1953\">1999</option>\n-\t<option value=\"1954\">1998</option>\n-\t<option value=\"1955\">1997</option>\n-\t<option value=\"1956\">1996</option>\n-\t<option value=\"1957\">1995</option>\n-\t<option value=\"1958\">1994</option>\n-\t<option value=\"1959\">1993</option>\n-\t<option value=\"1960\">1992</option>\n-\t<option value=\"1961\">1991</option>\n-\t<option value=\"1962\">1990</option>\n-\t<option value=\"1963\">1989</option>\n-\t<option value=\"1964\">1988</option>\n-\t</select>\n-\t</div>\n-</div>\n-<div class=\"form-group\">\n-\t<label class=\"col-sm-2 control-label\" for=\"homenum\">联系电话</label>\n-\t<div class=\"col-sm-10\">\n-\t<input type=\"text\" name=\"HomeNum\" class=\"form-control\" id=\"homenum\" placeholder=\"请再输入您的联系电话\">\n-\t</div>\n-</div>\n-<div class=\"form-group\">\n-\t<label class=\"col-sm-2 control-label\" for=\"email\">E-mail</label>\n-\t<div class=\"col-sm-10\">\n-\t<input type=\"text\" name=\"Email\" class=\"form-control\" id=\"email\" placeholder=\"请再输入您的邮箱地址\">\n-\t</div>\n-</div>\n-<div class=\"form-group\">\n-\t<label class=\"col-sm-2 control-label\" for=\"department\">系别</label>\n-\t<div class=\"col-sm-10\">\t\n-\t<select name=\"Department\" class=\"form-control\">\n-\t<option checked value=\"\"></option>\n-\t<option value=\"院士\">计算机科学系</option>\n-\t<option value=\"博士后\">数学系</option>\n-\t<option value=\"博士\">建土系</option>\n-\t<option value=\"博士\">服装系</option>\n-\t<option value=\"博士\">旅游系</option>\n-\t<option value=\"博士\">中文系</option>\n-\t<option value=\"博士\">体育系</option>\n-\t<option value=\"博士\">美术系</option>\n-\t</div>\n-\t</select>\n-</div>\n-<p align=\"center\" >\n-<button type=\"submit\" value=\"提交 \" name=\"Submit\" class=\"btn btn-default\" onclick=\"checkit()\">提交</button>\n-<button type=\"reset\" value=\"重填\" name=\"Submit2\" class=\"btn btn-default\">重填</button>\n-</p>\n-</form>\n-</body>\n-</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "08926c6d2fa3a784d8a962daa017f29625b47914",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/08926c6d2fa3a784d8a962daa017f29625b47914",
+  "parents" : [ {
+    "sha" : "6faa6d7032ca9ee0d023961a10f553e4b6740153",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6faa6d7032ca9ee0d023961a10f553e4b6740153",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/6faa6d7032ca9ee0d023961a10f553e4b6740153"
+  } ]
+}

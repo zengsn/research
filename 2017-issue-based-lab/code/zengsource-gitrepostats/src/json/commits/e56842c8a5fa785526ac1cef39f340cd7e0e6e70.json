@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zhangxiaofan100",
+    "id" : 18083031,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18083031?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhangxiaofan100",
+    "html_url" : "https://github.com/zhangxiaofan100",
+    "followers_url" : "https://api.github.com/users/zhangxiaofan100/followers",
+    "following_url" : "https://api.github.com/users/zhangxiaofan100/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhangxiaofan100/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhangxiaofan100/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhangxiaofan100/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhangxiaofan100/orgs",
+    "repos_url" : "https://api.github.com/users/zhangxiaofan100/repos",
+    "events_url" : "https://api.github.com/users/zhangxiaofan100/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhangxiaofan100/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 49,
+    "additions" : 0,
+    "deletions" : 49
+  },
+  "author" : {
+    "login" : "zhangxiaofan100",
+    "id" : 18083031,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18083031?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhangxiaofan100",
+    "html_url" : "https://github.com/zhangxiaofan100",
+    "followers_url" : "https://api.github.com/users/zhangxiaofan100/followers",
+    "following_url" : "https://api.github.com/users/zhangxiaofan100/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhangxiaofan100/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhangxiaofan100/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhangxiaofan100/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhangxiaofan100/orgs",
+    "repos_url" : "https://api.github.com/users/zhangxiaofan100/repos",
+    "events_url" : "https://api.github.com/users/zhangxiaofan100/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhangxiaofan100/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/e56842c8a5fa785526ac1cef39f340cd7e0e6e70",
+  "commit" : {
+    "author" : {
+      "name" : "zhangxiaofan100",
+      "email" : "352405730@qq.com",
+      "date" : "2016-05-04T09:00:28Z"
+    },
+    "committer" : {
+      "name" : "zhangxiaofan100",
+      "email" : "352405730@qq.com",
+      "date" : "2016-05-04T09:00:28Z"
+    },
+    "message" : "Delete BackActivity.java",
+    "tree" : {
+      "sha" : "22f0b8fae236d4e7d76e8b3b54e102180bd3b3af",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/22f0b8fae236d4e7d76e8b3b54e102180bd3b3af"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/e56842c8a5fa785526ac1cef39f340cd7e0e6e70",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e56842c8a5fa785526ac1cef39f340cd7e0e6e70/comments",
+  "files" : [ {
+    "sha" : "70c51b5306f93aece9f6fea5ed701c756c9c8d09",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/BackActivity.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 49,
+    "changes" : 49,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/ef7efef087e167a14bb352aeb59daf0253466784/app/src/main/java/edu/hzuapps/androidworks/homeworks/BackActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/ef7efef087e167a14bb352aeb59daf0253466784/app/src/main/java/edu/hzuapps/androidworks/homeworks/BackActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/BackActivity.java?ref=ef7efef087e167a14bb352aeb59daf0253466784",
+    "patch" : "@@ -1,49 +0,0 @@\n-package edu.hzuapps.androidworks.homeworks;\n-\n-import android.os.Bundle;\n-import android.support.v7.app.ActionBarActivity;\n-import android.util.Log;\n-import android.view.Menu;\n-import android.view.MenuItem;\n-\n-import edu.hzuapps.androidworks.R;\n-\n-/**\n- * 实现的默认返回按钮,所有作业可继续此类.\n- */\n-public class BackActivity extends ActionBarActivity {\n-\n-    @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n-        super.onCreate(savedInstanceState);\n-        setContentView(R.layout.activity_back);\n-    }\n-\n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        getMenuInflater().inflate(R.menu.menu_subactivity, menu);\n-        return true;\n-    }\n-\n-    @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        int id = item.getItemId();\n-        if (id == R.id.action_back) {\n-            finish();\n-            return true;\n-        }\n-        return super.onOptionsItemSelected(item);\n-    }\n-\n-    @Override\n-    protected void onStop() {\n-        super.onStop();\n-        Log.i(this.getClass().getSimpleName(), \"停止!\");\n-    }\n-\n-    @Override\n-    protected void onDestroy() {\n-        super.onDestroy();\n-        Log.i(this.getClass().getSimpleName(), \"回收!\");\n-    }\n-}"
+  } ],
+  "sha" : "e56842c8a5fa785526ac1cef39f340cd7e0e6e70",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e56842c8a5fa785526ac1cef39f340cd7e0e6e70",
+  "parents" : [ {
+    "sha" : "ef7efef087e167a14bb352aeb59daf0253466784",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ef7efef087e167a14bb352aeb59daf0253466784",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/ef7efef087e167a14bb352aeb59daf0253466784"
+  } ]
+}

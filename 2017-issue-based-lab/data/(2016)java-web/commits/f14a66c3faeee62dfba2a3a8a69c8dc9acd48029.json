@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "HCJ0HCJ",
+    "id" : 22111873,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111873?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HCJ0HCJ",
+    "html_url" : "https://github.com/HCJ0HCJ",
+    "followers_url" : "https://api.github.com/users/HCJ0HCJ/followers",
+    "following_url" : "https://api.github.com/users/HCJ0HCJ/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HCJ0HCJ/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HCJ0HCJ/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HCJ0HCJ/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HCJ0HCJ/orgs",
+    "repos_url" : "https://api.github.com/users/HCJ0HCJ/repos",
+    "events_url" : "https://api.github.com/users/HCJ0HCJ/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HCJ0HCJ/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 138,
+    "additions" : 138,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "HCJ0HCJ",
+    "id" : 22111873,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111873?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HCJ0HCJ",
+    "html_url" : "https://github.com/HCJ0HCJ",
+    "followers_url" : "https://api.github.com/users/HCJ0HCJ/followers",
+    "following_url" : "https://api.github.com/users/HCJ0HCJ/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HCJ0HCJ/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HCJ0HCJ/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HCJ0HCJ/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HCJ0HCJ/orgs",
+    "repos_url" : "https://api.github.com/users/HCJ0HCJ/repos",
+    "events_url" : "https://api.github.com/users/HCJ0HCJ/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HCJ0HCJ/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/f14a66c3faeee62dfba2a3a8a69c8dc9acd48029",
+  "commit" : {
+    "author" : {
+      "name" : "HCJ0HCJ",
+      "email" : "HCJHCJ0@163.com",
+      "date" : "2016-11-27T10:24:18Z"
+    },
+    "committer" : {
+      "name" : "HCJ0HCJ",
+      "email" : "HCJHCJ0@163.com",
+      "date" : "2016-11-27T10:24:18Z"
+    },
+    "message" : "#7 #78 提交实验代码",
+    "tree" : {
+      "sha" : "bbb834100695e8bb983e79b4127d9801273ce513",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/bbb834100695e8bb983e79b4127d9801273ce513"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/f14a66c3faeee62dfba2a3a8a69c8dc9acd48029",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/f14a66c3faeee62dfba2a3a8a69c8dc9acd48029/comments",
+  "files" : [ {
+    "sha" : "8e0c7717616f62a3967d25fed49a0f6651865465",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902138/DeleteServlet.java",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f14a66c3faeee62dfba2a3a8a69c8dc9acd48029/jweb/src/edu/hzu/javaweb/labs/se1414080902138/DeleteServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f14a66c3faeee62dfba2a3a8a69c8dc9acd48029/jweb/src/edu/hzu/javaweb/labs/se1414080902138/DeleteServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902138/DeleteServlet.java?ref=f14a66c3faeee62dfba2a3a8a69c8dc9acd48029",
+    "patch" : "@@ -0,0 +1,61 @@\n+package edu.hzu.javaweb.labs.se1414080902138;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import edu.hzu.javaweb.labs.se1414080902138.Staff_informationDAO;\n+import edu.hzu.javaweb.labs.se1414080902138.Staff_information;\n+\n+/**\n+ * Servlet implementation class DeleteServlet\n+ */\n+@WebServlet(\"/DeleteServlet\")\n+public class DeleteServlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public DeleteServlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tthis.doPost(request, response);\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */@SuppressWarnings(\"unchecked\")\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tStaff_informationDAO dao = new Staff_informationDAO();\t\t\n+\t\tString id=request.getParameter(\"id\");\t\t\n+\t\tboolean flag;\n+\t\ttry {\n+\t\t\tflag = dao.deleteStaff(id);\n+\t\t\tif(flag){\n+\t\t\t\trequest.getRequestDispatcher(\"ShowAllStaffServlet\").forward(request,response);\n+\t\t\t}else{\n+\t\t\t\t System.out.println(\"ɾ��ʧ��!!\");\n+\t\t\t}\n+\t\t} catch (Exception e) {\n+\t\t\t// TODO Auto-generated catch block\n+\t\t\te.printStackTrace();\n+\t\t}\t\n+\t}\n+\n+\tprivate void alert(String string) {\n+\t\t// TODO Auto-generated method stub\n+\t\t\n+\t}\n+}"
+  }, {
+    "sha" : "d24b8d9b3eaeac21deb01819c5b2a029fcbd4202",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902138/InsertServlet.java",
+    "status" : "added",
+    "additions" : 77,
+    "deletions" : 0,
+    "changes" : 77,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f14a66c3faeee62dfba2a3a8a69c8dc9acd48029/jweb/src/edu/hzu/javaweb/labs/se1414080902138/InsertServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f14a66c3faeee62dfba2a3a8a69c8dc9acd48029/jweb/src/edu/hzu/javaweb/labs/se1414080902138/InsertServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902138/InsertServlet.java?ref=f14a66c3faeee62dfba2a3a8a69c8dc9acd48029",
+    "patch" : "@@ -0,0 +1,77 @@\n+package edu.hzu.javaweb.labs.se1414080902138;\n+import java.sql.*;\n+\n+\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import edu.hzu.javaweb.labs.se1414080902138.*;\n+\n+@WebServlet(\"/InsertServlet\")\n+public class InsertServlet extends HttpServlet {\n+\tprivate static final Staff_information User_information = null;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public InsertServlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tString id=request.getParameter(\"id\");\n+\t\tString name=request.getParameter(\"name\");\n+\t\tint age=Integer.parseInt(request.getParameter(\"age\"));\n+\t\tString sex=request.getParameter(\"sex\");\n+\t\tString tel=request.getParameter(\"tel\");\n+\t\tString address=request.getParameter(\"address\");\n+\t\tString payment=request.getParameter(\"payment\");\n+\t\tStaff_information u1=new Staff_information();\n+\t\tu1.setId(id);\n+\t\tu1.setName(name);\n+\t\tu1.setAge(age);\n+\t\tu1.setSex(sex);\n+\t\tu1.setTel(tel);\n+\t\tu1.setAddress(address);\n+\t\tu1.setPayment(payment);\n+\t\tStaff_informationDAO dao=new Staff_informationDAO();\n+\t\tRequestDispatcher dis=null;\n+\t\ttry{\n+\t\t\tif(dao.find(u1)==null){\n+\t\t\t\tif( dao.create(u1)!=null)\n+\t\t\t\t{\n+\t\t\t\t\tdis=request.getRequestDispatcher(\"./ShowAllStaffServlet\");\n+\t\t\t\tdis.forward(request, response);\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\telse{request.setAttribute(\"state\", \"���ʧ��,��ְ���Ѵ���!\");\n+\t\t\t\tdis=request.getRequestDispatcher(\"./addstaff.jsp\");\n+\t\t\t\tdis.forward(request, response);\n+\t\t\t}\n+\t\t\t\n+\t\t}catch(Exception locaException){\n+\t\t\tlocaException.printStackTrace();\n+\t\t}\n+\t}\n+\n+}"
+  } ],
+  "sha" : "f14a66c3faeee62dfba2a3a8a69c8dc9acd48029",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f14a66c3faeee62dfba2a3a8a69c8dc9acd48029",
+  "parents" : [ {
+    "sha" : "25fa6d0202479d165b560c309b46d76e3ad762a3",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/25fa6d0202479d165b560c309b46d76e3ad762a3",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/25fa6d0202479d165b560c309b46d76e3ad762a3"
+  } ]
+}

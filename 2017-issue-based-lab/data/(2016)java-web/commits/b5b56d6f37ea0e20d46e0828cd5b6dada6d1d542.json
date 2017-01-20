@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "TheBestP",
+    "id" : 22089343,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22089343?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/TheBestP",
+    "html_url" : "https://github.com/TheBestP",
+    "followers_url" : "https://api.github.com/users/TheBestP/followers",
+    "following_url" : "https://api.github.com/users/TheBestP/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/TheBestP/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/TheBestP/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/TheBestP/subscriptions",
+    "organizations_url" : "https://api.github.com/users/TheBestP/orgs",
+    "repos_url" : "https://api.github.com/users/TheBestP/repos",
+    "events_url" : "https://api.github.com/users/TheBestP/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/TheBestP/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 192,
+    "additions" : 192,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "TheBestP",
+    "id" : 22089343,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22089343?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/TheBestP",
+    "html_url" : "https://github.com/TheBestP",
+    "followers_url" : "https://api.github.com/users/TheBestP/followers",
+    "following_url" : "https://api.github.com/users/TheBestP/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/TheBestP/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/TheBestP/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/TheBestP/subscriptions",
+    "organizations_url" : "https://api.github.com/users/TheBestP/orgs",
+    "repos_url" : "https://api.github.com/users/TheBestP/repos",
+    "events_url" : "https://api.github.com/users/TheBestP/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/TheBestP/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542",
+  "commit" : {
+    "author" : {
+      "name" : "TheBestP",
+      "email" : "845495571@qq.com",
+      "date" : "2016-11-17T04:12:16Z"
+    },
+    "committer" : {
+      "name" : "TheBestP",
+      "email" : "845495571@qq.com",
+      "date" : "2016-11-17T04:12:16Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "d6afce57bfe70daabd0f1bcddd0ecc5797f22910",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d6afce57bfe70daabd0f1bcddd0ecc5797f22910"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542/comments",
+  "files" : [ {
+    "sha" : "f3e782316c5b4fcdb5451e7ff0877e18d1f59353",
+    "filename" : "jweb/web/1414080902137/Info.jsp",
+    "status" : "added",
+    "additions" : 36,
+    "deletions" : 0,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542/jweb/web/1414080902137/Info.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542/jweb/web/1414080902137/Info.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902137/Info.jsp?ref=b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542",
+    "patch" : "@@ -0,0 +1,36 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'Info.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <div><%=request.getAttribute(\"outputMessage\") %></div>\n+    <script> \n+//取出传回来的参数error并与yes比较\n+  var errori ='<%=request.getParameter(\"error\")%>';\n+  if(errori=='yes'){\n+   alert(\"登录失败!\");\n+  history.back();\n+  }\n+</script>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "c924385f5394357e9a4ae56420b0dc84c70df0f6",
+    "filename" : "jweb/web/1414080902137/index.jsp",
+    "status" : "added",
+    "additions" : 60,
+    "deletions" : 0,
+    "changes" : 60,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542/jweb/web/1414080902137/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542/jweb/web/1414080902137/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902137/index.jsp?ref=b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542",
+    "patch" : "@@ -0,0 +1,60 @@\n+<!DOCTYPE html>\n+<%@page language=\"java\" contentType=\"text/html\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<html>\n+<head>\n+\t<meta charset=\"utf-8\">\n+\t<!-- 网页随屏幕的大小变化而变化 -->\n+\t<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n+\t<!-- 支持IE浏览器 -->\n+\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE-edge\">\n+\t<title>酒店管理系统</title>\n+\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t<script type=\"text/javascript\" src=\"index.js\"></script>\n+\t\n+<body >\n+\t<div style=\"background-color:silver;height:150px\">\n+\t<div class=\"container\">\n+\t\t<div class=\"row\" style=\"margin-top: 180px\">\n+\t\t\t<div class=\"col-md-5 col-md-offset-3\" style=\"background-color: LightSteelBlue\">\n+\t\t\t\t<h1>欢迎登录XX酒店管理系统！</h1>\n+\t\t\t\t<form action=\"se1414080902137\" class=\"form-horizontal\" style=\"margin-top: 20px\" method=\"post\">\n+\t\t\t\t  <div class=\"form-group\">\n+\t\t\t\t    <label for=\"inputEmail3\" class=\"col-sm-2 control-label\">账号:</label>\n+\t\t\t\t    <div class=\"col-sm-10\">\n+\t\t\t\t      <input type=\"text\" class=\"form-control\" id=\"inputEmail3\" name=\"username\" placeholder=\"账号\">\n+\t\t\t\t    </div>\n+\t\t\t\t  </div>\n+\t\t\t\t  <div class=\"form-group\">\n+\t\t\t\t    <label for=\"inputPassword3\" class=\"col-sm-2 control-label\">密码:</label>\n+\t\t\t\t    <div class=\"col-sm-10\">\n+\t\t\t\t      <input type=\"password\" class=\"form-control\" id=\"inputPassword3\" name=\"password\" placeholder=\"密码\">\n+\t\t\t\t    </div>\n+\t\t\t\t  </div>\n+\t\t\t\t  <div class=\"form-group\">\n+\t\t\t\t    <div class=\"col-sm-offset-2 col-sm-10\">\n+\t\t\t\t      <div class=\"checkbox\">\n+\t\t\t\t        <label>\n+\t\t\t\t          <input type=\"checkbox\"> 记住账号\n+\t\t\t\t        </label>\n+\t\t\t\t      </div>\n+\t\t\t\t    </div>\n+\t\t\t\t  </div>\n+\t\t\t\t  <div class=\"form-group\">\n+\t\t\t\t    <div class=\"col-sm-offset-2 col-sm-10\">\n+\t\t\t\t      <!-- submit 提交form表单中的数据到action指定的页面\n+\t\t\t\t      <button type=\"submit\" class=\"btn btn-default\">登录</button> -->\n+\t\t\t\t      \t<input type=\"submit\" class=\"btn btn-default\" value=\"登录\"/>\n+\t\t\t\t      \t<input type=\"reset\" class=\"btn btn-default\" value=\"取消\"/>\n+\t\t\t\t    </div>\n+\t\t\t\t    </div>\n+\t\t\t\t  \n+\t\t\t\t</form>\n+\t\t\t\t</div>\n+\t\t\t</div>\n+\t\t</div>\n+\t\t</div>\n+\n+\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "347538675066a4d814bd6f187a2aba2f92f47ed7",
+    "filename" : "jweb/web/1414080902137/src/edu/hzu/javaweb/labs/se1414080902137/se1414080902137Servlet.java",
+    "status" : "added",
+    "additions" : 96,
+    "deletions" : 0,
+    "changes" : 96,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542/jweb/web/1414080902137/src/edu/hzu/javaweb/labs/se1414080902137/se1414080902137Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542/jweb/web/1414080902137/src/edu/hzu/javaweb/labs/se1414080902137/se1414080902137Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902137/src/edu/hzu/javaweb/labs/se1414080902137/se1414080902137Servlet.java?ref=b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542",
+    "patch" : "@@ -0,0 +1,96 @@\n+package edu.hzu.javaweb.labs.se1414080902137;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+public class se1414080902137Servlet extends HttpServlet {\n+\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic se1414080902137Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"    This is \");\n+\t\tout.print(this.getClass());\n+\t\tout.println(\", using the GET method\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tString userName=request.getParameter(\"username\");\n+\t\tString userPwd=request.getParameter(\"password\");\n+\t\tString info=\"\";\n+\t\tif((\"abc\").equals(userName)&&(\"123\").equals(userPwd)){\n+\t\t\tinfo=\"��ӭ�㣬\"+userName+\"!\";\n+\t\t\trequest.setAttribute(\"outputMessage\", info);\n+\t\t\trequest.getRequestDispatcher(\"Info.jsp\").forward(request,response);\n+\t\t}else{\n+\t\t\tresponse.sendRedirect(\"Info.jsp?error=yes\");\n+\t\t\t\n+\t\t}\n+\n+\t\t\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  } ],
+  "sha" : "b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b5b56d6f37ea0e20d46e0828cd5b6dada6d1d542",
+  "parents" : [ {
+    "sha" : "0d28500512c5698dbef06dee7d2191ccb65cd57a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/0d28500512c5698dbef06dee7d2191ccb65cd57a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/0d28500512c5698dbef06dee7d2191ccb65cd57a"
+  } ]
+}

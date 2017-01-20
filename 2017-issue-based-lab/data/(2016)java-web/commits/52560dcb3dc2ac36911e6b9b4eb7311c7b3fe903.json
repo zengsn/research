@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Vialyn",
+    "id" : 22266193,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22266193?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Vialyn",
+    "html_url" : "https://github.com/Vialyn",
+    "followers_url" : "https://api.github.com/users/Vialyn/followers",
+    "following_url" : "https://api.github.com/users/Vialyn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Vialyn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Vialyn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Vialyn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Vialyn/orgs",
+    "repos_url" : "https://api.github.com/users/Vialyn/repos",
+    "events_url" : "https://api.github.com/users/Vialyn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Vialyn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 122,
+    "additions" : 122,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Vialyn",
+    "id" : 22266193,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22266193?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Vialyn",
+    "html_url" : "https://github.com/Vialyn",
+    "followers_url" : "https://api.github.com/users/Vialyn/followers",
+    "following_url" : "https://api.github.com/users/Vialyn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Vialyn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Vialyn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Vialyn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Vialyn/orgs",
+    "repos_url" : "https://api.github.com/users/Vialyn/repos",
+    "events_url" : "https://api.github.com/users/Vialyn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Vialyn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903",
+  "commit" : {
+    "author" : {
+      "name" : "Vialyn",
+      "email" : "2916153488@qq.com",
+      "date" : "2016-11-05T00:32:29Z"
+    },
+    "committer" : {
+      "name" : "Vialyn",
+      "email" : "2916153488@qq.com",
+      "date" : "2016-11-05T00:32:29Z"
+    },
+    "message" : "#105 #4提交实验代码",
+    "tree" : {
+      "sha" : "294393f12e51a039e9feb9c2f3cc9213bbdb15e2",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/294393f12e51a039e9feb9c2f3cc9213bbdb15e2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903/comments",
+  "files" : [ {
+    "sha" : "ee2cd2491d578356551367f12a061a80f7f5165c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902131/Se1414080902131Servlet.java",
+    "status" : "added",
+    "additions" : 53,
+    "deletions" : 0,
+    "changes" : 53,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903/jweb/src/edu/hzu/javaweb/labs/se1414080902131/Se1414080902131Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903/jweb/src/edu/hzu/javaweb/labs/se1414080902131/Se1414080902131Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902131/Se1414080902131Servlet.java?ref=52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903",
+    "patch" : "@@ -0,0 +1,53 @@\n+package edu.hzu.javaweb.labs.se1414080902131;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.List;\n+import javax.servlet.ServletContext;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import java.util.Enumeration;\n+import java.util.Iterator;\n+import javafx.application.Application;\n+public class Se1414080902131Servlet extends HttpServlet {\n+\tpublic Se1414080902131Servlet(){\n+\t\tsuper();\n+\t}\n+\tpublic void destory(){\n+\t\tsuper destory();\n+\t}\n+\tprotected void doGet(HttpServletRequest request,HttpServletResponse response)\n+\t        throws ServletException,IOException{\n+\t\tresponse.setCharacterEncoding(\"utf-8\");\n+\t\tServletContext application=this.getServletContext();\n+\t\tapplication.setAttribute(\"message\",\"���ɹ���\");\n+\t\tresponse.sendRedirect(\"/1414080902131/Right.jsp\");\n+\t}\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\tServletContext application=this.getServletContext();\n+\tUserData ud=new UserData();\n+\tresponse.setContentType(\"text/html\");\n+\tPrintWrite out=response.getWriter();\n+\trequest.setCharacterEncoding(\"utf-8\");\n+\tresponse.setCharacterEncoding(\"utf-8\");\n+\tEnumeration<String>iter_=(request.getParameterNames());\n+\twhile(iter_hasMoreElements()){\n+\t\tString key=iter_nextElement();\n+\t\tud.setAttribute(key,request.getAttribute(key));\n+\t}\n+\t\tif(!ud.isComplete()){\n+\t\t\tout.write(\"�˴���Ϣ����Ϊ�գ�\")\n+\t\t}else {application.setAttribute(\"UserData\",ud);\n+\t\tresponse.sendRedirect(\"/1414080902131/Right.jsp\");}\n+\t}\n+\t}\n+\tpublic void init()throws\n+\tServletException{\n+\t\tSystem.out.println(\"init(_)\");\n+\t\tout.fulsh();\n+\t}\n+}"
+  }, {
+    "sha" : "fabfa2cb5725f16a177dbfa11395f13212ceb3e5",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902131/UserData.java",
+    "status" : "added",
+    "additions" : 69,
+    "deletions" : 0,
+    "changes" : 69,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903/jweb/src/edu/hzu/javaweb/labs/se1414080902131/UserData.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903/jweb/src/edu/hzu/javaweb/labs/se1414080902131/UserData.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902131/UserData.java?ref=52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903",
+    "patch" : "@@ -0,0 +1,69 @@\n+package edu.hzu.javaweb.labs.se1414080902131;\n+public class UserDate{\n+\tprivate boolean readed;\n+\tprivate String jiekuan;\n+\tprivate String time;\n+\tprivate String way;\n+\tprivate String pass;\n+\tpublic void UserDate(){\n+\t\tjiekuan=\" \";\n+\t\ttime=\" \";\n+\t\tway=\" \";\n+\t\tpass=\" \";\n+\t\treaded=false;\n+\t}\n+\tpublic void setCheck(boolean yanzheng){\n+\t\treaded=yanzheng;\n+\t}\n+\tpubic void setMoney(String zijin){\n+\t\tjiekuan=zijin;\n+\t\t\n+\t}\n+\tpublic void setTime(String day){\n+\t\ttime=day;\n+\t}\n+\tpublic void setMent(String ment){\n+\t\tway=ment;\n+\t}\n+\tpublic void setPwd(String passwd){\n+\t\tpass=passwd;\n+\t}\n+\tpublic String getReaded(){\n+\t\treturn readed;\n+\t}\n+\tpublic String getMoney(){\n+\t\treturn jiekuan;\n+\t}\n+\tpublic String getTime(){\n+\t\treturn time;\n+\t}\n+\tpublic String getMent(){\n+\t\treturn way;\n+\t}\n+\tpublic String getPwd(){\n+\t\treturn pass;\n+\t}\n+\tpublic boolean isComplete(){\n+\t\t\tif(readed.equal(\"\")){\n+\t\t\t\tSystem.out.println(\"请仔细阅读相关借款信息！\");\n+\t\t\t\treturn false;\n+\t\t\t}\n+\t\t\telse{if(jiekuan.equals(\"\")){\n+\t\t\t\tSystem.out.println(\"请输入借款数目！\");\n+\t\t\t\treturn false;\n+\t\t\t}\n+\t\t}\n+\t\t\telse{if(time.equal(\"\")){\n+\t\t\t\tSystem.out.println(\"请输入借款期限\");\n+\t\t\t\treturn false;\n+\t\t\t}\n+\t\t\t}\n+\t\t\telse{if(way.equals(\"\")){\n+\t\t\t\tSystem.out.println(\"请选择还款方式！\");\n+\t\t\t\treturn false;}\n+\t\t\t}\n+\t\telse{if(pass.equals(\"\")){\n+\t\t\tSystem.out.println(\"请输入支付密码！\");\n+\t\t\treturn false;}\n+\t\t}else{return true;}\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/52560dcb3dc2ac36911e6b9b4eb7311c7b3fe903",
+  "parents" : [ {
+    "sha" : "aeeb70f190ec1206792d38b617e8840630f92ebc",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/aeeb70f190ec1206792d38b617e8840630f92ebc",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/aeeb70f190ec1206792d38b617e8840630f92ebc"
+  } ]
+}

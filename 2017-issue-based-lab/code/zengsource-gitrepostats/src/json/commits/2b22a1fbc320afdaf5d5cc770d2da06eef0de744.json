@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "SilentIce",
+    "id" : 17781720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17781720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SilentIce",
+    "html_url" : "https://github.com/SilentIce",
+    "followers_url" : "https://api.github.com/users/SilentIce/followers",
+    "following_url" : "https://api.github.com/users/SilentIce/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SilentIce/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SilentIce/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SilentIce/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SilentIce/orgs",
+    "repos_url" : "https://api.github.com/users/SilentIce/repos",
+    "events_url" : "https://api.github.com/users/SilentIce/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SilentIce/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 41,
+    "additions" : 21,
+    "deletions" : 20
+  },
+  "author" : {
+    "login" : "SilentIce",
+    "id" : 17781720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17781720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SilentIce",
+    "html_url" : "https://github.com/SilentIce",
+    "followers_url" : "https://api.github.com/users/SilentIce/followers",
+    "following_url" : "https://api.github.com/users/SilentIce/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SilentIce/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SilentIce/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SilentIce/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SilentIce/orgs",
+    "repos_url" : "https://api.github.com/users/SilentIce/repos",
+    "events_url" : "https://api.github.com/users/SilentIce/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SilentIce/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/2b22a1fbc320afdaf5d5cc770d2da06eef0de744",
+  "commit" : {
+    "author" : {
+      "name" : "SilentIce",
+      "email" : "better_ice@163.com",
+      "date" : "2016-05-17T02:34:32Z"
+    },
+    "committer" : {
+      "name" : "SilentIce",
+      "email" : "better_ice@163.com",
+      "date" : "2016-05-17T02:34:32Z"
+    },
+    "message" : "Update Net1314080903209_SmsObserver.java\n\n修改部分代码",
+    "tree" : {
+      "sha" : "663c3d968db47bf6df9363b69dc548e6a5ad601d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/663c3d968db47bf6df9363b69dc548e6a5ad601d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/2b22a1fbc320afdaf5d5cc770d2da06eef0de744",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2b22a1fbc320afdaf5d5cc770d2da06eef0de744/comments",
+  "files" : [ {
+    "sha" : "6492ef1890894f4696fc308d84afeb5ebcd2054b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_SmsObserver.java",
+    "status" : "modified",
+    "additions" : 21,
+    "deletions" : 20,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/2b22a1fbc320afdaf5d5cc770d2da06eef0de744/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_SmsObserver.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/2b22a1fbc320afdaf5d5cc770d2da06eef0de744/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_SmsObserver.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_SmsObserver.java?ref=2b22a1fbc320afdaf5d5cc770d2da06eef0de744",
+    "patch" : "@@ -1,8 +1,7 @@\n+package edu.hzuapps.androiworks.homeworks.net1314080903209.myapplication;\n \n-package edu.hzuapps.androidwors.homeworks.net1314080903209;\n import android.content.Context;\n import android.database.ContentObserver;\n-\n import android.database.Cursor;\n import android.net.Uri;\n import android.os.Handler;\n@@ -12,14 +11,14 @@\n import java.util.regex.Pattern;\n \n /**\n- *\n+ * Created by Silent_Ice on 2016/4/1.\n  */\n public class Net1314080903209_SmsObserver extends ContentObserver {\n \n     private Context mContext;\n     private Handler mHandler;\n \n-    public Net1314080903209_SmsObserver(Context context, Handler handler) {\n+    public Net1314080903209_SmsObserver(Context context, Handler handler){\n         super(handler);\n         mContext = context;\n         mHandler = handler;\n@@ -28,42 +27,44 @@ public Net1314080903209_SmsObserver(Context context, Handler handler) {\n     @Override\n     public void onChange(boolean selfChange, Uri uri) {\n         super.onChange(selfChange, uri);\n-\n         Log.e(\"DEBUG\", \"SMS has changed!\");\n-        Log.e(\"DEBUG\", uri.toString());\n+        Log.e(\"DEBUG\",uri.toString());\n \n-        String code = \"\";\n+        String code = \" \";\n \n-        if (uri.toString().equals(\"content://sms/raw\")) {\n+        //第一次调用短信时，不做任何操作\n+        if (uri.toString().equals(\"content://sms/raw\")){\n             return;\n         }\n \n-        Uri inboxUri = Uri.parse(\"content://sms/inbox\");\n+        //创建一个指向短信收件箱的URI\n+        Uri inboxUri = Uri.parse(\"content://sms//inbox\");\n+        //使用cursor对象进行一次query的操作，\n         Cursor c = mContext.getContentResolver().query(inboxUri, null, null, null, \"date desc\");\n-        if (c != null) {\n-            if (c.moveToFirst()) {\n+        if (c != null){\n+            if (c.moveToFirst()){\n                 String address = c.getString(c.getColumnIndex(\"address\"));\n                 String body = c.getString(c.getColumnIndex(\"body\"));\n \n-                //if (!address.equals(\"15555215556\")) {\n-                  //  return;\n-                //}\n+                //接收并提取来自号码为18316736360的手机发来的验证码。如果收到的是其他号码发来的，则不做任何操作\n+                if(!address.equals(\"18316736360\")){\n+                    return;\n+                }\n \n                 Log.e(\"DEBUG\", \"发件人为：\" + address + \" \" + \"短信内容为：\" + body);\n \n+                //提取短信验证码中六个连续的数字\n                 Pattern pattern = Pattern.compile(\"(\\\\d{6})\");\n                 Matcher matcher = pattern.matcher(body);\n \n-                if (matcher.find()) {\n+                if (matcher.find()){\n                     code = matcher.group(0);\n-                    Log.e(\"DEBUG\", \"code is \" + code);\n+                    Log.e(\"DEBUG\",\"code is \" + code);\n \n-                    mHandler.obtainMessage(Net1314080903209_MainActivity.MSG_RECEIVED_CODE, code).sendToTarget();\n+                    mHandler.obtainMessage(Net1314080903209_MainActivity.MSG_RECEIVES_CODE, code).sendToTarget();\n                 }\n-\n-                c.close();\n             }\n-\n+            c.close();\n         }\n     }\n }"
+  } ],
+  "sha" : "2b22a1fbc320afdaf5d5cc770d2da06eef0de744",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/2b22a1fbc320afdaf5d5cc770d2da06eef0de744",
+  "parents" : [ {
+    "sha" : "283e4e208b4486f211df780f374fb27dc1b8d31a",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/283e4e208b4486f211df780f374fb27dc1b8d31a",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/283e4e208b4486f211df780f374fb27dc1b8d31a"
+  } ]
+}

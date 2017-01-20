@@ -1,0 +1,133 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 334,
+    "additions" : 270,
+    "deletions" : 64
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-30T00:43:50Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-30T00:43:50Z"
+    },
+    "message" : "Merge pull request #859 from HanksenYe/master\n\n#91 #95 #14 加入数据存储功能，通过外部文件save.txt保存比分",
+    "tree" : {
+      "sha" : "f656a9681de9526d97facbada7d7c4a43d5a5fd7",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/f656a9681de9526d97facbada7d7c4a43d5a5fd7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/comments",
+  "files" : [ {
+    "sha" : "df9ba2ac39b7af160a79315e5d1b5a9c69a06e9a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/AndroidManifest.xml",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 1,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/AndroidManifest.xml?ref=89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793",
+    "patch" : "@@ -8,7 +8,8 @@\n         android:label=\"@string/app_name\"\n         android:supportsRtl=\"true\"\n         android:theme=\"@style/AppTheme\">\n-        <activity android:name=\".Net1314080903245MainActivity\">\n+        <activity android:name=\".Net1314080903245MainActivity\"></activity>\n+        <activity android:name=\".TeamName\">\n             <intent-filter>\n                 <action android:name=\"android.intent.action.MAIN\" />\n "
+  }, {
+    "sha" : "76d6e15545809ad8b37c1ba1539aab437233d7c1",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/Net1314080903245MainActivity.java",
+    "status" : "modified",
+    "additions" : 125,
+    "deletions" : 22,
+    "changes" : 147,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/Net1314080903245MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/Net1314080903245MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/Net1314080903245MainActivity.java?ref=89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793",
+    "patch" : "@@ -1,28 +1,57 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903245;\n \n+import android.content.Context;\n import android.support.v7.app.AppCompatActivity;\n import android.os.Bundle;\n import android.view.View;\n-import android.view.Window;\n-import android.view.WindowManager;\n+import android.widget.Button;\n import android.widget.TextView;\n+import android.widget.Toast;\n \n-public class Net1314080903245MainActivity extends AppCompatActivity {\n+import java.io.BufferedWriter;\n+import java.io.ByteArrayOutputStream;\n+import java.io.FileInputStream;\n+import java.io.FileNotFoundException;\n+import java.io.FileOutputStream;\n+import java.io.IOException;\n+import java.io.OutputStreamWriter;\n+\n+public class Net1314080903245MainActivity extends AppCompatActivity implements View.OnClickListener{\n+\n+    TextView AIdTV;\n+    TextView BIdTV;\n+    int scoreTeamA;\n+    int scoreTeamB;\n+    Button btnShowAllScore;\n+    Button btnSave;\n+    Button btnreset;\n+    TextView allMatchScore;\n+    String matchMessage;\n \n-    int scoreTeamA = 0;\n-    int scoreTeamB = 0;\n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_net1314080903245_main);\n-    }\n-    public void addThreeForTeamA(View v) {\n-        scoreTeamA = scoreTeamA + 3;\n-        displayForTeamA(scoreTeamA);\n+\n+        AIdTV = (TextView) findViewById(R.id.AId);\n+        BIdTV = (TextView) findViewById(R.id.BId);\n+        AIdTV.setText(TeamName.AId);\n+        AIdTV.setTextSize(24);\n+        BIdTV.setText(TeamName.BId);\n+        BIdTV.setTextSize(24);\n+        btnShowAllScore = (Button) findViewById(R.id.showAllMatchScore);\n+        btnSave = (Button) findViewById(R.id.save);\n+        btnreset = (Button) findViewById(R.id.reset);\n+        btnShowAllScore.setOnClickListener(this);\n+        btnSave.setOnClickListener(this);\n+        btnreset.setOnClickListener(this);\n+        allMatchScore = (TextView) findViewById(R.id.allMatchScore);\n+        allMatchScore.setTextSize(24);\n+//        matchMessage = TeamName.AId + \":\" + scoreTeamA + \"\\n\" + TeamName.BId + \":\" + scoreTeamB+\"\\n\";\n     }\n \n-    public void addTwoForTeamA(View v) {\n-        scoreTeamA = scoreTeamA + 2;\n+    public void delOneForTeamA(View v) {\n+        scoreTeamA = scoreTeamA - 1;\n         displayForTeamA(scoreTeamA);\n     }\n \n@@ -36,13 +65,9 @@ public void displayForTeamA(int score) {\n         socreView.setText(String.valueOf(score));\n     }\n \n-    public void addThreeForTeamB(View v) {\n-        scoreTeamB = scoreTeamB + 3;\n-        displayForTeamB(scoreTeamB);\n-    }\n \n-    public void addTwoForTeamB(View v) {\n-        scoreTeamB = scoreTeamB + 2;\n+    public void delOneForTeamB(View v) {\n+        scoreTeamB = scoreTeamB - 1;\n         displayForTeamB(scoreTeamB);\n     }\n \n@@ -56,10 +81,88 @@ public void displayForTeamB(int score) {\n         socreView.setText(String.valueOf(score));\n     }\n \n-    public void rsetScore(View v) {\n-        scoreTeamA = 0;\n-        scoreTeamB = 0;\n-        displayForTeamA(scoreTeamA);\n-        displayForTeamB(scoreTeamB);\n+    @Override\n+    public void onClick(View v) {\n+        switch (v.getId()){\n+            case R.id.showAllMatchScore:\n+                allMatchScore.setText(readFiles());\n+                break;\n+            case R.id.save:\n+                try {\n+                    WriteFiles(TeamName.AId,TeamName.BId,scoreTeamA,scoreTeamB);\n+                } catch (FileNotFoundException e) {\n+                    e.printStackTrace();\n+                }\n+                Toast.makeText(Net1314080903245MainActivity.this,\"保存成功!\",Toast.LENGTH_SHORT).show();\n+                break;\n+            case R.id.reset:\n+                scoreTeamA = 0;\n+                scoreTeamB = 0;\n+                displayForTeamA(scoreTeamA);\n+                displayForTeamB(scoreTeamB);\n+                break;\n+        }\n+    }\n+//\n+//    //保存文件内容\n+//    public void WriteFiles(String content){\n+//        try {\n+//            FileOutputStream fos = openFileOutput(\"save.txt\", MODE_APPEND);\n+//            fos.write(content.getBytes());\n+//            fos.close();\n+//        } catch (FileNotFoundException e) {\n+//            // TODO Auto-generated catch block\n+//            e.printStackTrace();\n+//        } catch (IOException e) {\n+//            // TODO Auto-generated catch block\n+//            e.printStackTrace();\n+//        }\n+//    }\n+\n+\n+    //保存文件内容\n+    public void WriteFiles(String TeamA,String TeamB,int scoreA,int scoreB) throws FileNotFoundException {\n+        FileOutputStream out = null;\n+        BufferedWriter writer = null;\n+        out = openFileOutput(\"save.txt\", Context.MODE_APPEND);\n+        writer = new BufferedWriter(new OutputStreamWriter(out));\n+        try {\n+            writer.write(TeamA+\":\"+scoreA+\"\\n\"+TeamB+\":\"+scoreB+\"\\n\");\n+        } catch (IOException e) {\n+            e.printStackTrace();\n+        }finally {\n+            if (writer != null) {\n+                try {\n+                    writer.close();\n+                } catch (IOException e) {\n+                    e.printStackTrace();\n+                }\n+            }\n+        }\n+    }\n+\n+    //读取文件内容\n+    public String readFiles(){\n+        String content = null;\n+        try {\n+            FileInputStream fis= openFileInput(\"save.txt\");\n+            ByteArrayOutputStream baos =  new ByteArrayOutputStream();\n+            byte [] buffer =  new byte[1024];\n+            int len = 0;\n+            while ((len=fis.read(buffer))!=-1) {\n+                baos.write(buffer, 0, len);\n+            }\n+            content = baos.toString();\n+            fis.close();\n+            baos.close();\n+        } catch (FileNotFoundException e) {\n+            // TODO Auto-generated catch block\n+            e.printStackTrace();\n+        } catch (IOException e) {\n+            // TODO Auto-generated catch block\n+            e.printStackTrace();\n+        }\n+\n+        return content;\n     }\n }"
+  }, {
+    "sha" : "7cd113115a897c2c85e7c3cf57da9a4b528d386b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/TeamName.java",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/TeamName.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/TeamName.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/TeamName.java?ref=89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793",
+    "patch" : "@@ -0,0 +1,38 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903245;\n+\n+import android.content.Intent;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.EditText;\n+\n+public class TeamName extends AppCompatActivity implements View.OnClickListener{\n+\n+    EditText teamAId;\n+    EditText teamBId;\n+    Button setTeamId;\n+    public static String AId;\n+    public static String BId;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_team_name);\n+\n+        teamAId = (EditText) findViewById(R.id.teamAIdet);\n+        teamBId = (EditText) findViewById(R.id.teamBIdet);\n+        setTeamId = (Button) findViewById(R.id.teamSetIdBtn);\n+        setTeamId.setOnClickListener(this);\n+\n+    }\n+\n+    @Override\n+    public void onClick(View v) {\n+//        Toast.makeText(TeamName.this,\"点击\",Toast.LENGTH_SHORT).show();\n+        AId = teamAId.getText().toString();\n+        BId = teamBId.getText().toString();\n+        Intent intent = new Intent(this, Net1314080903245MainActivity.class);\n+        startActivity(intent);\n+    }\n+}"
+  }, {
+    "sha" : "97b5ab8ef7d2e6585c388bb4126dbd3dc1037322",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/activity_net1314080903245_main.xml",
+    "status" : "modified",
+    "additions" : 46,
+    "deletions" : 41,
+    "changes" : 87,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/activity_net1314080903245_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/activity_net1314080903245_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/activity_net1314080903245_main.xml?ref=89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793",
+    "patch" : "@@ -5,6 +5,7 @@\n     android:layout_height=\"match_parent\">\n \n     <LinearLayout\n+        android:id=\"@+id/linearlayout\"\n         android:layout_width=\"match_parent\"\n         android:layout_height=\"wrap_content\"\n         android:orientation=\"horizontal\">\n@@ -17,14 +18,13 @@\n             tools:context=\".Net1314080903245MainActivity\">\n \n             <TextView\n+                android:id=\"@+id/AId\"\n                 android:layout_width=\"match_parent\"\n                 android:layout_height=\"wrap_content\"\n                 android:fontFamily=\"sans-serif-medium\"\n                 android:gravity=\"center_horizontal\"\n                 android:padding=\"16dp\"\n-                android:text=\"Team A\"\n-                android:textColor=\"#616161\"\n-                android:textSize=\"14sp\" />\n+                android:textColor=\"#616161\" />\n \n \n             <TextView\n@@ -33,7 +33,7 @@\n                 android:layout_height=\"wrap_content\"\n                 android:fontFamily=\"sans-serif-light\"\n                 android:gravity=\"center_horizontal\"\n-                android:paddingBottom=\"24dp\"\n+                android:paddingBottom=\"12dp\"\n                 android:text=\"0\"\n                 android:textColor=\"#000000\"\n                 android:textSize=\"56sp\" />\n@@ -45,9 +45,8 @@\n                 android:layout_marginLeft=\"24dp\"\n                 android:layout_marginRight=\"24dp\"\n                 android:gravity=\"center_horizontal\"\n-                android:onClick=\"addThreeForTeamA\"\n-                android:text=\"+3 Points\" />\n-\n+                android:onClick=\"addOneForTeamA\"\n+                android:text=\"得分\" />\n \n             <Button\n                 android:layout_width=\"match_parent\"\n@@ -56,18 +55,9 @@\n                 android:layout_marginLeft=\"24dp\"\n                 android:layout_marginRight=\"24dp\"\n                 android:gravity=\"center_horizontal\"\n-                android:onClick=\"addTwoForTeamA\"\n-                android:text=\"+2 Points\" />\n+                android:onClick=\"delOneForTeamA\"\n+                android:text=\"减分\" />\n \n-            <Button\n-                android:layout_width=\"match_parent\"\n-                android:layout_height=\"wrap_content\"\n-                android:layout_marginBottom=\"8dp\"\n-                android:layout_marginLeft=\"24dp\"\n-                android:layout_marginRight=\"24dp\"\n-                android:gravity=\"center_horizontal\"\n-                android:onClick=\"addOneForTeamA\"\n-                android:text=\"FREE THROW\" />\n         </LinearLayout>\n \n         <View\n@@ -84,22 +74,21 @@\n             tools:context=\".Net1314080903245MainActivity\">\n \n             <TextView\n+                android:id=\"@+id/BId\"\n                 android:layout_width=\"match_parent\"\n                 android:layout_height=\"wrap_content\"\n                 android:fontFamily=\"sans-serif-medium\"\n                 android:gravity=\"center_horizontal\"\n                 android:padding=\"16dp\"\n-                android:text=\"Team B\"\n-                android:textColor=\"#616161\"\n-                android:textSize=\"14sp\" />\n+                android:textColor=\"#616161\" />\n \n             <TextView\n                 android:id=\"@+id/team_b_score\"\n                 android:layout_width=\"match_parent\"\n                 android:layout_height=\"wrap_content\"\n                 android:fontFamily=\"sans-serif-light\"\n                 android:gravity=\"center_horizontal\"\n-                android:paddingBottom=\"24dp\"\n+                android:paddingBottom=\"12dp\"\n                 android:text=\"0\"\n                 android:textColor=\"#000000\"\n                 android:textSize=\"56sp\" />\n@@ -111,19 +100,8 @@\n                 android:layout_marginLeft=\"24dp\"\n                 android:layout_marginRight=\"24dp\"\n                 android:gravity=\"center_horizontal\"\n-                android:onClick=\"addThreeForTeamB\"\n-                android:text=\"+3 Points\" />\n-\n-\n-            <Button\n-                android:layout_width=\"match_parent\"\n-                android:layout_height=\"wrap_content\"\n-                android:layout_marginBottom=\"8dp\"\n-                android:layout_marginLeft=\"24dp\"\n-                android:layout_marginRight=\"24dp\"\n-                android:gravity=\"center_horizontal\"\n-                android:onClick=\"addTwoForTeamB\"\n-                android:text=\"+2 Points\" />\n+                android:onClick=\"addOneForTeamB\"\n+                android:text=\"得分\" />\n \n             <Button\n                 android:layout_width=\"match_parent\"\n@@ -132,20 +110,47 @@\n                 android:layout_marginLeft=\"24dp\"\n                 android:layout_marginRight=\"24dp\"\n                 android:gravity=\"center_horizontal\"\n-                android:onClick=\"addOneForTeamB\"\n-                android:text=\"FREE THROW\" />\n+                android:onClick=\"delOneForTeamB\"\n+                android:text=\"减分\" />\n         </LinearLayout>\n     </LinearLayout>\n \n+    <ScrollView\n+        android:id=\"@+id/scrollview\"\n+        android:layout_below=\"@id/linearlayout\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"match_parent\">\n+\n+        <TextView\n+            android:id=\"@+id/allMatchScore\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\" />\n+    </ScrollView>\n+\n+\n     <Button\n+        android:id=\"@+id/reset\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:layout_alignParentLeft=\"true\"\n+        android:layout_marginBottom=\"8dp\"\n+        android:text=\"重置比分\" />\n+    <Button\n+        android:id=\"@+id/showAllMatchScore\"\n         android:layout_width=\"wrap_content\"\n         android:layout_height=\"wrap_content\"\n         android:layout_alignParentBottom=\"true\"\n         android:layout_centerHorizontal=\"true\"\n         android:layout_marginBottom=\"8dp\"\n-        android:layout_marginLeft=\"22dp\"\n-        android:layout_marginRight=\"22dp\"\n-        android:onClick=\"rsetScore\"\n-        android:text=\"Reset\" />\n+        android:text=\"显示以往比赛比分信息\"/>\n+    <Button\n+        android:id=\"@+id/save\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_alignParentRight=\"true\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:layout_marginBottom=\"8dp\"\n+        android:text=\"保存比分\"/>\n \n </RelativeLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "c641069ea2fff4a827a3fa9a8a547894fbb22356",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/activity_team_name.xml",
+    "status" : "added",
+    "additions" : 59,
+    "deletions" : 0,
+    "changes" : 59,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/activity_team_name.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/activity_team_name.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903245/activity_team_name.xml?ref=89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793",
+    "patch" : "@@ -0,0 +1,59 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:orientation=\"vertical\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903245.TeamName\">\n+\n+    <TextView\n+        android:id=\"@+id/teamNametv\"\n+        android:gravity=\"center_horizontal\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"请输入比赛队名\"\n+        android:textSize=\"28dp\"/>\n+\n+    <LinearLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:orientation=\"horizontal\">\n+\n+        <TextView\n+            android:id=\"@+id/teamAIdtv\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:text=\"TeamA队名：\"\n+            android:textSize=\"28dp\"/>\n+\n+        <EditText\n+            android:id=\"@+id/teamAIdet\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\" />\n+    </LinearLayout>\n+\n+    <LinearLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:orientation=\"horizontal\">\n+\n+        <TextView\n+            android:id=\"@+id/teamBIdtv\"\n+            android:layout_width=\"wrap_content\"\n+            android:layout_height=\"wrap_content\"\n+            android:text=\"TeamB队名：\"\n+            android:textSize=\"28dp\"/>\n+\n+        <EditText\n+            android:id=\"@+id/teamBIdet\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"wrap_content\" />\n+    </LinearLayout>\n+\n+    <Button\n+        android:id=\"@+id/teamSetIdBtn\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"进入比赛\"\n+        android:textSize=\"24dp\"/>\n+</LinearLayout>"
+  } ],
+  "sha" : "89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/89147cf3aa59f8c4bcbc1f56a1eeb3fba5def793",
+  "parents" : [ {
+    "sha" : "cee5c548353a8025a8438e058f39378fcd37bbac",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/cee5c548353a8025a8438e058f39378fcd37bbac",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/cee5c548353a8025a8438e058f39378fcd37bbac"
+  }, {
+    "sha" : "d34a108daa44ed3c48ef1f3aa5bc99091a204fff",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d34a108daa44ed3c48ef1f3aa5bc99091a204fff",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/d34a108daa44ed3c48ef1f3aa5bc99091a204fff"
+  } ]
+}

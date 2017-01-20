@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "Leo-ZLC",
+    "id" : 18008393,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18008393?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Leo-ZLC",
+    "html_url" : "https://github.com/Leo-ZLC",
+    "followers_url" : "https://api.github.com/users/Leo-ZLC/followers",
+    "following_url" : "https://api.github.com/users/Leo-ZLC/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Leo-ZLC/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Leo-ZLC/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Leo-ZLC/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Leo-ZLC/orgs",
+    "repos_url" : "https://api.github.com/users/Leo-ZLC/repos",
+    "events_url" : "https://api.github.com/users/Leo-ZLC/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Leo-ZLC/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 305,
+    "additions" : 305,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Leo-ZLC",
+    "id" : 18008393,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18008393?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Leo-ZLC",
+    "html_url" : "https://github.com/Leo-ZLC",
+    "followers_url" : "https://api.github.com/users/Leo-ZLC/followers",
+    "following_url" : "https://api.github.com/users/Leo-ZLC/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Leo-ZLC/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Leo-ZLC/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Leo-ZLC/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Leo-ZLC/orgs",
+    "repos_url" : "https://api.github.com/users/Leo-ZLC/repos",
+    "events_url" : "https://api.github.com/users/Leo-ZLC/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Leo-ZLC/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4",
+  "commit" : {
+    "author" : {
+      "name" : "Leo-ZLC",
+      "email" : "619298988@qq.com",
+      "date" : "2016-04-26T16:13:25Z"
+    },
+    "committer" : {
+      "name" : "Leo-ZLC",
+      "email" : "619298988@qq.com",
+      "date" : "2016-04-26T16:13:25Z"
+    },
+    "message" : "#90 #139 lab4",
+    "tree" : {
+      "sha" : "5b318e9ed8077c61caa4eda10d79a884839c9839",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/5b318e9ed8077c61caa4eda10d79a884839c9839"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4/comments",
+  "files" : [ {
+    "sha" : "61e0ba640df9d6ecd00e46b0c6801dc3ddcf3807",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903142/Net1314080903142Playground.java",
+    "status" : "added",
+    "additions" : 274,
+    "deletions" : 0,
+    "changes" : 274,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903142/Net1314080903142Playground.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903142/Net1314080903142Playground.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903142/Net1314080903142Playground.java?ref=34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4",
+    "patch" : "@@ -0,0 +1,274 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903142;\n+\n+import java.util.HashMap;\n+import java.util.Vector;\n+\n+import android.content.Context;\n+import android.graphics.Canvas;\n+import android.graphics.Color;\n+import android.graphics.Paint;\n+import android.graphics.RectF;\n+import android.view.MotionEvent;\n+import android.view.SurfaceHolder;\n+import android.view.SurfaceHolder.Callback;\n+import android.view.SurfaceView;\n+import android.view.View;\n+import android.view.View.OnTouchListener;\n+import android.widget.Toast;\n+\n+public class Net1314080903142Playground extends SurfaceView implements OnTouchListener{\n+\t\t\n+\t\n+\tprivate static  int WIDTH = 40;\n+\tprivate static final int ROW = 10;\n+\tprivate static final int COL = 10;\n+\tprivate static final int BLOCKS = 15;//默认添加的路障数量\n+\t\n+\t\n+\tprivate Net1314080903142Dot matrix[][];\n+\tprivate Net1314080903142Dot cat;\n+\n+\tpublic Net1314080903142Playground(Context context) {\n+\t\tsuper(context);\n+\t\tgetHolder().addCallback(callback);\n+\t\tmatrix = new Net1314080903142Dot[ROW][COL];\n+\t\tfor (int i = 0; i < ROW; i++) {\n+\t\t\tfor (int j = 0; j < COL; j++) {\n+\t\t\t\tmatrix[i][j] = new Net1314080903142Dot(j, i);\n+\t\t\t}\n+\t\t}\n+\t\tsetOnTouchListener(this);\n+\t\tinitGame();\n+\t}\n+\t\n+\tprivate Net1314080903142Dot getDot(int x, int y) {\n+\t\treturn matrix[y][x];\n+\t}\n+\n+\tprivate boolean isAtEdge(Net1314080903142Dot d) {\n+\t\tif (d.getX()*d.getY() == 0 || d.getX()+1 == COL || d.getY()+1 == ROW) {\n+\t\t\treturn true;\n+\t\t}\n+\t\treturn false;\n+\t}\n+\t\n+\tprivate Net1314080903142Dot getNeighbour(Net1314080903142Dot one, int dir) {\n+\t\tswitch (dir) {\n+\t\tcase 1:\n+\t\t\treturn getDot(one.getX()-1, one.getY());\n+\t\tcase 2:\n+\t\t\tif (one.getY()%2 == 0) {\n+\t\t\t\treturn getDot(one.getX()-1, one.getY()-1);\n+\t\t\t}else {\n+\t\t\t\treturn getDot(one.getX(), one.getY()-1);\n+\t\t\t}\n+\t\tcase 3:\n+\t\t\tif (one.getY()%2 == 0) {\n+\t\t\t\treturn getDot(one.getX(), one.getY()-1);\n+\t\t\t}else {\n+\t\t\t\treturn getDot(one.getX()+1, one.getY()-1);\n+\t\t\t}\n+\t\tcase 4:\n+\t\t\treturn getDot(one.getX()+1, one.getY());\n+\t\tcase 5:\n+\t\t\tif (one.getY()%2 == 0) {\n+\t\t\t\treturn getDot(one.getX(), one.getY()+1);\n+\t\t\t}else {\n+\t\t\t\treturn getDot(one.getX()+1, one.getY()+1);\n+\t\t\t}\n+\t\tcase 6:\n+\t\t\tif (one.getY()%2 == 0) {\n+\t\t\t\treturn getDot(one.getX()-1, one.getY()+1);\n+\t\t\t}else {\n+\t\t\t\treturn getDot(one.getX(), one.getY()+1);\n+\t\t\t}\n+\n+\t\tdefault:\n+\t\t\tbreak;\n+\t\t}\n+\t\treturn null;\n+\t}\n+\t\n+\tprivate int getDistance(Net1314080903142Dot one, int dir) {\n+//\t\tSystem.out.println(\"X:\"+one.getX()+\" Y:\"+one.getY()+\" Dir:\"+dir);\n+\t\tint distance = 0;\n+\t\tif (isAtEdge(one)) {\n+\t\t\treturn 1;\n+\t\t}\n+\t\tNet1314080903142Dot ori = one,next;\n+\t\twhile(true){\n+\t\t\tnext = getNeighbour(ori, dir);\n+\t\t\tif (next.getStatus() == Net1314080903142Dot.STATUS_ON) {\n+\t\t\t\treturn distance*-1;\n+\t\t\t}\n+\t\t\tif (isAtEdge(next)) {\n+\t\t\t\tdistance++;\n+\t\t\t\treturn distance;\n+\t\t\t}\n+\t\t\tdistance++;\n+\t\t\tori = next;\n+\t\t}\n+\t}\n+\t\n+\tprivate void MoveTo(Net1314080903142Dot one) {\n+\t\tone.setStatus(Net1314080903142Dot.STATUS_IN);\n+\t\tgetDot(cat.getX(), cat.getY()).setStatus(Net1314080903142Dot.STATUS_OFF);;\n+\t\tcat.setXY(one.getX(), one.getY());\n+\t}\n+\t\n+\tprivate void move() {\n+\t\tif (isAtEdge(cat)) {\n+\t\t\tlose();return;\n+\t\t}\n+\t\tVector<Net1314080903142Dot> avaliable = new Vector<Net1314080903142Dot>();\n+\t\tVector<Net1314080903142Dot> positive = new Vector<Net1314080903142Dot>();\n+\t\tHashMap<Net1314080903142Dot, Integer> al = new HashMap<Net1314080903142Dot, Integer>();\n+\t\tfor (int i = 1; i < 7; i++) {\n+\t\t\tNet1314080903142Dot n = getNeighbour(cat, i);\n+\t\t\tif (n.getStatus() == Net1314080903142Dot.STATUS_OFF) {\n+\t\t\t\tavaliable.add(n);\n+\t\t\t\tal.put(n, i);\n+\t\t\t\tif (getDistance(n, i) > 0) {\n+\t\t\t\t\tpositive.add(n);\n+\t\t\t\t\t\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t\tif (avaliable.size() == 0) {\n+\t\t\twin();\n+\t\t}else if (avaliable.size() == 1) {\n+\t\t\tMoveTo(avaliable.get(0));\n+\t\t}else{\n+\t\t\tNet1314080903142Dot best = null;\n+\t\t\tif (positive.size() != 0 ) {//存在可以直接到达屏幕边缘的走向\n+\t\t\t\tSystem.out.println(\"向前进\");\n+\t\t\t\tint min = 999;\n+\t\t\t\tfor (int i = 0; i < positive.size(); i++) {\n+\t\t\t\t\tint a = getDistance(positive.get(i), al.get(positive.get(i)));\n+\t\t\t\t\tif (a < min) {\n+\t\t\t\t\t\tmin = a;\n+\t\t\t\t\t\tbest = positive.get(i);\n+\t\t\t\t\t}\n+\t\t\t\t}\n+\t\t\t\tMoveTo(best);\n+\t\t\t}else {//所有方向都存在路障\n+\t\t\t\tSystem.out.println(\"躲路障\");\n+\t\t\t\tint max = 0;\n+\t\t\t\tfor (int i = 0; i < avaliable.size(); i++) {\n+\t\t\t\t\tint k = getDistance(avaliable.get(i), al.get(avaliable.get(i)));\n+\t\t\t\t\tif (k <= max) {\n+\t\t\t\t\t\tmax = k;\n+\t\t\t\t\t\tbest = avaliable.get(i);\n+\t\t\t\t\t}\n+\t\t\t\t}\n+\t\t\t\tMoveTo(best);\n+\t\t\t}\n+\t\t}\n+\t}\n+\t\n+\tprivate void lose() {\n+\t\tToast.makeText(getContext(), \"Lose\", Toast.LENGTH_SHORT).show();\n+\t}\n+\t\n+\tprivate void win() {\n+\t\tToast.makeText(getContext(), \"You Win!\", Toast.LENGTH_SHORT).show();\n+\t\t\n+\t}\n+\t\n+\tprivate void redraw() {\n+\t\tCanvas c = getHolder().lockCanvas();\n+\t\tc.drawColor(Color.LTGRAY);\n+\t\tPaint paint = new Paint();\n+\t\tpaint.setFlags(Paint.ANTI_ALIAS_FLAG);\n+\t\tfor (int i = 0; i < ROW; i++) {\n+\t\t\tint offset = 0;\n+\t\t\tif (i%2 != 0) {\n+\t\t\t\toffset = WIDTH/2;\n+\t\t\t}\n+\t\t\tfor (int j = 0; j < COL; j++) {\n+\t\t\t\tNet1314080903142Dot one = getDot(j, i);\n+\t\t\t\tswitch (one.getStatus()) {\n+\t\t\t\tcase Net1314080903142Dot.STATUS_OFF:\n+\t\t\t\t\tpaint.setColor(0xFFEEEEEE);\n+\t\t\t\t\tbreak;\n+\t\t\t\tcase Net1314080903142Dot.STATUS_ON:\n+\t\t\t\t\tpaint.setColor(0xFFFFAA00);\n+\t\t\t\t\tbreak;\n+\t\t\t\tcase Net1314080903142Dot.STATUS_IN:\n+\t\t\t\t\tpaint.setColor(0xFFFF0000);\n+\t\t\t\t\tbreak;\n+\n+\t\t\t\tdefault:\n+\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t\tc.drawOval(new RectF(one.getX()*WIDTH+offset, one.getY()*WIDTH, \n+\t\t\t\t\t\t(one.getX()+1)*WIDTH+offset, (one.getY()+1)*WIDTH), paint);\n+\t\t\t}\n+\t\t\t\n+\t\t}\n+\t\tgetHolder().unlockCanvasAndPost(c);\n+\t}\n+\t\n+\tCallback callback = new Callback() {\n+\t\t\n+\t\t@Override\n+\t\tpublic void surfaceDestroyed(SurfaceHolder arg0) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\t\n+\t\t}\n+\t\t\n+\t\t@Override\n+\t\tpublic void surfaceCreated(SurfaceHolder arg0) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tredraw();\n+\t\t}\n+\t\t\n+\t\t@Override\n+\t\tpublic void surfaceChanged(SurfaceHolder arg0, int arg1, int arg2, int arg3) {\n+\t\t\t// TODO Auto-generated method stub\n+\t\t\tWIDTH = arg2/(COL+1);\n+\t\t\tredraw();\n+\t\t}\n+\t};\n+\t\n+\tprivate void initGame() {\n+\t\tfor (int i = 0; i < ROW; i++) {\n+\t\t\tfor (int j = 0; j < COL; j++) {\n+\t\t\t\tmatrix[i][j].setStatus(Net1314080903142Dot.STATUS_OFF);\n+\t\t\t}\n+\t\t}\n+\t\tcat = new Net1314080903142Dot(4, 5);\n+\t\tgetDot(4, 5).setStatus(Net1314080903142Dot.STATUS_IN);\n+\t\tfor (int i = 0; i < BLOCKS;) {\n+\t\t\tint x = (int) ((Math.random()*1000)%COL);\n+\t\t\tint y = (int) ((Math.random()*1000)%ROW);\n+\t\t\tif (getDot(x, y).getStatus() == Net1314080903142Dot.STATUS_OFF) {\n+\t\t\t\tgetDot(x, y).setStatus(Net1314080903142Dot.STATUS_ON);\n+\t\t\t\ti++;\n+\t\t\t\t//System.out.println(\"Block:\"+i);\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\t@Override\n+\tpublic boolean onTouch(View arg0, MotionEvent e) {\n+\t\tif (e.getAction() == MotionEvent.ACTION_UP) {\n+//\t\t\tToast.makeText(getContext(), e.getX()+\":\"+e.getY(), Toast.LENGTH_SHORT).show();\n+\t\t\tint x,y;\n+\t\t\ty = (int) (e.getY()/WIDTH);\n+\t\t\tif (y%2 == 0) {\n+\t\t\t\tx = (int) (e.getX()/WIDTH);\n+\t\t\t}else {\n+\t\t\t\tx = (int) ((e.getX()-WIDTH/2)/WIDTH);\n+\t\t\t}\n+\t\t\tif (x+1 > COL || y+1 > ROW) {\n+\t\t\t\tinitGame();\n+\t\t\t}else if(getDot(x, y).getStatus() == Net1314080903142Dot.STATUS_OFF){\n+\t\t\t\tgetDot(x, y).setStatus(Net1314080903142Dot.STATUS_ON);\n+\t\t\t\tmove();\n+\t\t\t}\n+\t\t\tredraw();\n+\t\t}\n+\t\treturn true;\n+\t}\n+}"
+  }, {
+    "sha" : "b49bdb653319247c682f0d6383814dfcd94de304",
+    "filename" : "app/src/main/res/layout/net1314080903142activity_main.xml",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4/app/src/main/res/layout/net1314080903142activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4/app/src/main/res/layout/net1314080903142activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903142activity_main.xml?ref=34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4",
+    "patch" : "@@ -0,0 +1,16 @@\n+<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:id=\"@+id/container\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903142.Net1314080903142Activity\"\n+    tools:ignore=\"MergeRootFrame\" >\n+\n+    <Button\n+        android:id=\"@+id/btnStart\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_marginTop=\"@android:dimen/thumbnail_height\"\n+        android:text=\"开始\" />\n+\n+</FrameLayout>"
+  }, {
+    "sha" : "a355231eb2a06dc9e4fb5fdcda93edd58c514fba",
+    "filename" : "app/src/main/res/layout/net1314080903142fragment_main.xml",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4/app/src/main/res/layout/net1314080903142fragment_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4/app/src/main/res/layout/net1314080903142fragment_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903142fragment_main.xml?ref=34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4",
+    "patch" : "@@ -0,0 +1,15 @@\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\" >\n+\n+    <TextView\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"@string/hello_world\" />\n+\n+</RelativeLayout>"
+  } ],
+  "sha" : "34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/34b10e5d9b6d4157448ef6c2dea31f018f6b1dd4",
+  "parents" : [ {
+    "sha" : "bff7e06d85e8662b7264a9e9f6baf6cc39803841",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/bff7e06d85e8662b7264a9e9f6baf6cc39803841",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/bff7e06d85e8662b7264a9e9f6baf6cc39803841"
+  } ]
+}

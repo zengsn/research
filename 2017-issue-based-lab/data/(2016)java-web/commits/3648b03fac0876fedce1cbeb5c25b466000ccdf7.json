@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "huangzejay",
+    "id" : 22892396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22892396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/huangzejay",
+    "html_url" : "https://github.com/huangzejay",
+    "followers_url" : "https://api.github.com/users/huangzejay/followers",
+    "following_url" : "https://api.github.com/users/huangzejay/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/huangzejay/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/huangzejay/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/huangzejay/subscriptions",
+    "organizations_url" : "https://api.github.com/users/huangzejay/orgs",
+    "repos_url" : "https://api.github.com/users/huangzejay/repos",
+    "events_url" : "https://api.github.com/users/huangzejay/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/huangzejay/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 63,
+    "additions" : 63,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "huangzejay",
+    "id" : 22892396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22892396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/huangzejay",
+    "html_url" : "https://github.com/huangzejay",
+    "followers_url" : "https://api.github.com/users/huangzejay/followers",
+    "following_url" : "https://api.github.com/users/huangzejay/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/huangzejay/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/huangzejay/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/huangzejay/subscriptions",
+    "organizations_url" : "https://api.github.com/users/huangzejay/orgs",
+    "repos_url" : "https://api.github.com/users/huangzejay/repos",
+    "events_url" : "https://api.github.com/users/huangzejay/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/huangzejay/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/3648b03fac0876fedce1cbeb5c25b466000ccdf7",
+  "commit" : {
+    "author" : {
+      "name" : "huangzejay",
+      "email" : "poppingjay1@gmail.com",
+      "date" : "2016-11-10T04:17:33Z"
+    },
+    "committer" : {
+      "name" : "huangzejay",
+      "email" : "poppingjay1@gmail.com",
+      "date" : "2016-11-10T04:17:33Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "c976b633ae50cb175b14cca9a6244afb0b851e32",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/c976b633ae50cb175b14cca9a6244afb0b851e32"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/3648b03fac0876fedce1cbeb5c25b466000ccdf7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/3648b03fac0876fedce1cbeb5c25b466000ccdf7/comments",
+  "files" : [ {
+    "sha" : "6e7ce21d8920e7c5f3d546abf51626c2df963fff",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902206/Se1414080902206Sevlet.java",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3648b03fac0876fedce1cbeb5c25b466000ccdf7/jweb/src/edu/hzu/javaweb/labs/se1414080902206/Se1414080902206Sevlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3648b03fac0876fedce1cbeb5c25b466000ccdf7/jweb/src/edu/hzu/javaweb/labs/se1414080902206/Se1414080902206Sevlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902206/Se1414080902206Sevlet.java?ref=3648b03fac0876fedce1cbeb5c25b466000ccdf7",
+    "patch" : "@@ -0,0 +1,27 @@\n+package edu.hzu.javaweb.labs.se1414080902206;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.RequestDispatcher;\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+public class Se1414080902206Servlet extends HttpServlet {\n+\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tdoPost(request, response);\n+\t\t\n+\t}\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"You're already to submit! \");\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "614b1cb16b815dbd50cc7b45b642408458980880",
+    "filename" : "jweb/web/1414080902206/index.html",
+    "status" : "added",
+    "additions" : 36,
+    "deletions" : 0,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3648b03fac0876fedce1cbeb5c25b466000ccdf7/jweb/web/1414080902206/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3648b03fac0876fedce1cbeb5c25b466000ccdf7/jweb/web/1414080902206/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902206/index.html?ref=3648b03fac0876fedce1cbeb5c25b466000ccdf7",
+    "patch" : "@@ -0,0 +1,36 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=ISO-8859-1\"\n+    pageEncoding=\"ISO-8859-1\"%>\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+<head>\n+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n+<title>Insert title here</title>\n+<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+</head>\n+<body align=\"center\">\n+<%= new java.util.Date() %>\n+<form id=\"tijiao\">\n+  <div class=\"form-group\">\n+    <label for=\"user\">User:</label>\n+    <input type=\"text\" class=\"form-control\" id=\"user\" name=\"username\" placeholder=\"user\">\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"Password\">Password:</label>\n+    <input type=\"password\" class=\"form-control\" id=\"Password\" name=\"password\" placeholder=\"Password\">\n+  </div>\n+  \n+  <button type=\"submit\" class=\"btn btn-default\">submit</button>\n+</form>\n+<script>\n+ \t        $( \"#tijiao\" ).submit(function() {\n+        $.ajax({ \n+          url: \"Se1414080902215Servlet\",\n+          datatype:\"text/html\", \n+          type: \"post\",\n+          success: function(data){\n+            alert(data);\n+        }});\n+      });\n+</script>\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "3648b03fac0876fedce1cbeb5c25b466000ccdf7",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/3648b03fac0876fedce1cbeb5c25b466000ccdf7",
+  "parents" : [ {
+    "sha" : "abe5ca5e10f236cb9f6b2b6cb8c70ed8fdc2bb13",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/abe5ca5e10f236cb9f6b2b6cb8c70ed8fdc2bb13",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/abe5ca5e10f236cb9f6b2b6cb8c70ed8fdc2bb13"
+  } ]
+}

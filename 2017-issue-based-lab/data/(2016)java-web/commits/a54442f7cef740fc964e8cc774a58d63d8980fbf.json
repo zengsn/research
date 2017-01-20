@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 38,
+    "additions" : 0,
+    "deletions" : 38
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/a54442f7cef740fc964e8cc774a58d63d8980fbf",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T01:39:40Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T01:39:40Z"
+    },
+    "message" : "Delete output.jsp",
+    "tree" : {
+      "sha" : "fdcff2dbc817015c47f1e055daed05d9bbc4d0aa",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/fdcff2dbc817015c47f1e055daed05d9bbc4d0aa"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/a54442f7cef740fc964e8cc774a58d63d8980fbf",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/a54442f7cef740fc964e8cc774a58d63d8980fbf/comments",
+  "files" : [ {
+    "sha" : "a08064c913a5b1efffabc01d82ba3444d52ee0c8",
+    "filename" : "jweb/web/1414080902236/output.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 38,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/e7fcffc97a4aca8458697d04439d1c4351eb18b5/jweb/web/1414080902236/output.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/e7fcffc97a4aca8458697d04439d1c4351eb18b5/jweb/web/1414080902236/output.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902236/output.jsp?ref=e7fcffc97a4aca8458697d04439d1c4351eb18b5",
+    "patch" : "@@ -1,38 +0,0 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n-\n-<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n-<html>\n-  <head>\n-    <base href=\"<%=basePath%>\">\n-    \n-    <title>显示结果</title>\n-    \n-\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n-\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n-\t<meta http-equiv=\"expires\" content=\"0\">    \n-\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n-\t<meta http-equiv=\"description\" content=\"This is my page\">\n-\t<!--\n-\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n-\t-->\n-\n-  </head>\n-  \n-  <body>\n-          <%request.setCharacterEncoding(\"UTF-8\"); %>\n-    厂商          ：<%=request.getAttribute(\"Manu\") %><br>\n-    级别          ：<%=request.getAttribute(\"Lev\") %><br>\n-    发动机          ：<%=request.getAttribute(\"Eng\") %><br>\n-   变速箱          ： <%=request.getAttribute(\"Gea\") %><br>\n-   长*宽*高(mm)    ： <%=request.getAttribute(\"Siz\") %><br>\n-     车身结构           ：<%=request.getAttribute(\"Bod\") %><br>\n-    最高车速(km/h)    ：<%=request.getAttribute(\"Max\") %><br>\n-   官方0-100km/h加速(s)： <%=request.getAttribute(\"Hun\") %><br>\n-    工信部综合油耗(L/100km)：<%=request.getAttribute(\"Ga\") %><br>\n-    \n-  </body>\n-</html>"
+  } ],
+  "sha" : "a54442f7cef740fc964e8cc774a58d63d8980fbf",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a54442f7cef740fc964e8cc774a58d63d8980fbf",
+  "parents" : [ {
+    "sha" : "e7fcffc97a4aca8458697d04439d1c4351eb18b5",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/e7fcffc97a4aca8458697d04439d1c4351eb18b5",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/e7fcffc97a4aca8458697d04439d1c4351eb18b5"
+  } ]
+}

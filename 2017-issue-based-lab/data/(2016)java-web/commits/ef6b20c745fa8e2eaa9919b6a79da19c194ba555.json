@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "7thSunday",
+    "id" : 22141429,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22141429?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/7thSunday",
+    "html_url" : "https://github.com/7thSunday",
+    "followers_url" : "https://api.github.com/users/7thSunday/followers",
+    "following_url" : "https://api.github.com/users/7thSunday/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/7thSunday/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/7thSunday/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/7thSunday/subscriptions",
+    "organizations_url" : "https://api.github.com/users/7thSunday/orgs",
+    "repos_url" : "https://api.github.com/users/7thSunday/repos",
+    "events_url" : "https://api.github.com/users/7thSunday/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/7thSunday/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 71,
+    "additions" : 71,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "7thSunday",
+    "id" : 22141429,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22141429?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/7thSunday",
+    "html_url" : "https://github.com/7thSunday",
+    "followers_url" : "https://api.github.com/users/7thSunday/followers",
+    "following_url" : "https://api.github.com/users/7thSunday/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/7thSunday/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/7thSunday/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/7thSunday/subscriptions",
+    "organizations_url" : "https://api.github.com/users/7thSunday/orgs",
+    "repos_url" : "https://api.github.com/users/7thSunday/repos",
+    "events_url" : "https://api.github.com/users/7thSunday/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/7thSunday/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ef6b20c745fa8e2eaa9919b6a79da19c194ba555",
+  "commit" : {
+    "author" : {
+      "name" : "7thSunday",
+      "email" : "1064578256@qq.com",
+      "date" : "2016-10-26T02:30:45Z"
+    },
+    "committer" : {
+      "name" : "7thSunday",
+      "email" : "1064578256@qq.com",
+      "date" : "2016-10-26T02:30:45Z"
+    },
+    "message" : "#4 提交实验代码",
+    "tree" : {
+      "sha" : "4d9ae798fae8d011b6e9306b132075c476a382d6",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/4d9ae798fae8d011b6e9306b132075c476a382d6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ef6b20c745fa8e2eaa9919b6a79da19c194ba555",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ef6b20c745fa8e2eaa9919b6a79da19c194ba555/comments",
+  "files" : [ {
+    "sha" : "8507fd691c12f65db9743e254629f6df8ff69bdb",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902234/se1414080902234Servlet.java",
+    "status" : "added",
+    "additions" : 46,
+    "deletions" : 0,
+    "changes" : 46,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ef6b20c745fa8e2eaa9919b6a79da19c194ba555/jweb/src/edu/hzu/javaweb/labs/se1414080902234/se1414080902234Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ef6b20c745fa8e2eaa9919b6a79da19c194ba555/jweb/src/edu/hzu/javaweb/labs/se1414080902234/se1414080902234Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902234/se1414080902234Servlet.java?ref=ef6b20c745fa8e2eaa9919b6a79da19c194ba555",
+    "patch" : "@@ -0,0 +1,46 @@\n+package edu.hzu.javaweb.labs.se1414080902234;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+/**\n+ * Servlet implementation class se1414080902234Servlet\n+ */\n+@WebServlet(\"/1414080902234\")\n+public class se1414080902234Servlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public se1414080902234Servlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tresponse.setContentType(\"text/html; charset=UTF-8\");\n+\t\tString text1=request.getParameter(\"search\");\n+\t\tPrintWriter out=response.getWriter();\n+\t\tout.println(\"����Ĺؼ���Ϊ��\"+text1);\n+\t\t\n+\t}\n+\n+}"
+  }, {
+    "sha" : "7f631e1d9cdf2954464c359bcd00ba7c09dbdef7",
+    "filename" : "jweb/web/1414080902234/index.jsp",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ef6b20c745fa8e2eaa9919b6a79da19c194ba555/jweb/web/1414080902234/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ef6b20c745fa8e2eaa9919b6a79da19c194ba555/jweb/web/1414080902234/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902234/index.jsp?ref=ef6b20c745fa8e2eaa9919b6a79da19c194ba555",
+    "patch" : "@@ -0,0 +1,25 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<html>\n+<head> \n+<!-- 新 Bootstrap 核心 CSS 文件 -->\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\n+<!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\n+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\n+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+</head>\n+\n+<body>\n+<form action=\"1414080902234\" method=\"post\">\n+查找问卷：<input type=\"text\" size=\"50\" name=\"search\">\n+<input type=\"submit\" value=\"查找\"><br>\n+<input type=\"button\" value=\"创建问卷\">\n+</form>\n+\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "ef6b20c745fa8e2eaa9919b6a79da19c194ba555",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ef6b20c745fa8e2eaa9919b6a79da19c194ba555",
+  "parents" : [ {
+    "sha" : "f52505910ddaa509d4440db32070c67e8d0d2b08",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f52505910ddaa509d4440db32070c67e8d0d2b08",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f52505910ddaa509d4440db32070c67e8d0d2b08"
+  } ]
+}

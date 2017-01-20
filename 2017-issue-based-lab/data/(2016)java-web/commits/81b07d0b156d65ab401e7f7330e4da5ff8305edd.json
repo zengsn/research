@@ -1,0 +1,71 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 198,
+    "additions" : 175,
+    "deletions" : 23
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/81b07d0b156d65ab401e7f7330e4da5ff8305edd",
+  "commit" : {
+    "author" : {
+      "name" : "pigosy",
+      "email" : "“892365482@qq.com",
+      "date" : "2016-11-06T07:40:05Z"
+    },
+    "committer" : {
+      "name" : "pigosy",
+      "email" : "“892365482@qq.com",
+      "date" : "2016-11-06T07:40:05Z"
+    },
+    "message" : "#6 提交实验5",
+    "tree" : {
+      "sha" : "de02409234bd337c65d0fc6c179a000c220491ac",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/de02409234bd337c65d0fc6c179a000c220491ac"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/81b07d0b156d65ab401e7f7330e4da5ff8305edd",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/81b07d0b156d65ab401e7f7330e4da5ff8305edd/comments",
+  "files" : [ {
+    "sha" : "4856ee44bc139e4edf8721ab7d40d6c89c7672ec",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902231/Goods.java",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/81b07d0b156d65ab401e7f7330e4da5ff8305edd/jweb/src/edu/hzu/javaweb/labs/se1414080902231/Goods.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/81b07d0b156d65ab401e7f7330e4da5ff8305edd/jweb/src/edu/hzu/javaweb/labs/se1414080902231/Goods.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902231/Goods.java?ref=81b07d0b156d65ab401e7f7330e4da5ff8305edd",
+    "patch" : "@@ -0,0 +1,28 @@\n+package edu.hzu.javaweb.labs.se1414080902231;\n+\n+public class Goods {\n+\t\n+\t\tprivate String gN,dT,img;\n+\t\tGoods(String gN,String dT,String img)\n+\t\t{\n+\t\t\tthis.gN=gN;\n+\t\t\tthis.dT=dT;\n+\t\t\tthis.img=img;\n+\t\t}\n+\t\t\n+\t\tpublic String getgN()\n+\t\t{\n+\t\t\treturn gN;\n+\t\t}\n+\t\t\n+\t\tpublic String getdT()\n+\t\t{\n+\t\t\treturn dT;\n+\t\t}\n+\t\t\n+\t\tpublic String getimg()\n+\t\t{\n+\t\t\treturn img;\n+\t\t}\n+\n+}"
+  }, {
+    "sha" : "316956bf2d2455742b96eac2a39d9601ffe3769d",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902231/Se1414080902231Servlet.java",
+    "status" : "modified",
+    "additions" : 48,
+    "deletions" : 11,
+    "changes" : 59,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/81b07d0b156d65ab401e7f7330e4da5ff8305edd/jweb/src/edu/hzu/javaweb/labs/se1414080902231/Se1414080902231Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/81b07d0b156d65ab401e7f7330e4da5ff8305edd/jweb/src/edu/hzu/javaweb/labs/se1414080902231/Se1414080902231Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902231/Se1414080902231Servlet.java?ref=81b07d0b156d65ab401e7f7330e4da5ff8305edd",
+    "patch" : "@@ -2,44 +2,81 @@\n \n import java.io.IOException;\n import java.io.PrintWriter;\n+import java.util.ArrayList;\n+import java.util.List;\n \n import javax.servlet.ServletException;\n import javax.servlet.annotation.WebServlet;\n import javax.servlet.http.HttpServlet;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n \n @SuppressWarnings(\"serial\")\n-@WebServlet(\"/1414080902231\")\n+\n public class Se1414080902231Servlet extends HttpServlet {\n \n \tpublic Se1414080902231Servlet() {\n \t\tsuper();\n \t}\n \n \tpublic void destroy() {\n-\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n-\t\t// Put your code here\n+\t\tsuper.destroy();\n \t}\n \n \tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n+\t\tSystem.out.println(\"1414080902231\");\n+\t\t\n+\t\tString search=request.getParameter(\"search\");\n+\n+\t\tArrayList<Goods> listz=new ArrayList<Goods>();\n+\t\tlistz.add(new Goods(\"С��\",\"3999\",\"a\"));\n+\t\tlistz.add(new Goods(\"����\",\"2499\",\"b\"));\n+\t\tlistz.add(new Goods(\"iphone\",\"4888\",\"c\"));\n+\t\t\n+\t\tList<Goods> list=new ArrayList<Goods>();\n+\t\tfor(int i=0;i<listz.size();i++)\n+\t\t{\n+\t\t\tGoods c=listz.get(i);\n+\t\t\tif(search.equals(c.getgN()))\n+\t\t\t\tlist.add(c);\n+\t\t}\n+\n+\n+\t\tif(list.size()!=0)\n+\t\t{\n+\t\t\tSystem.out.println(\"not null\");\n+\t\t\tHttpSession session=request.getSession(true);\n+\t\t\tsession.setAttribute(\"list\", list);\n+\t\t}\n+\t\telse if(list.size()==0)\n+\t\t{\n+\t\t\tSystem.out.println(\"no\");\n+\t\t\tHttpSession session=request.getSession(true);\n+\t\t\tsession.setAttribute(\"list\", null);\n+\t\t}\n+\t\t\t\n+//\t\telse\n+//\t\t{\n+//\t\t\tresponse.setContentType(\"text/html\");\n+//\t\t\tPrintWriter out = response.getWriter();\n+//\t\t\tout.println(0);\n+//\t\t}\n \n-\t\tresponse.setContentType(\"text/html\");\n-\t\tPrintWriter out = response.getWriter();;\n-\t\tout.println(\"success!\");\n+//\t\trequest.setAttribute(\"list\", list);\n+//\t\trequest.getRequestDispatcher(\"index.jsp\").forward(request, response);\n+\t\t\n \t}\n \n \tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n \n-\t\tresponse.setContentType(\"text/html\");\n-\t\tPrintWriter out = response.getWriter();\n-\t\tout.println(\"success!\");\n+\t\tdoGet(request,response);\n \t}\n \n \tpublic void init() throws ServletException {\n-\t\t// Put your code here\n \t}\n \n-}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "1ba78ceb5c9227e92f2c6b2784bf4eb75dd1bf12",
+    "filename" : "jweb/web/1414080902231/index.jsp",
+    "status" : "modified",
+    "additions" : 99,
+    "deletions" : 12,
+    "changes" : 111,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/81b07d0b156d65ab401e7f7330e4da5ff8305edd/jweb/web/1414080902231/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/81b07d0b156d65ab401e7f7330e4da5ff8305edd/jweb/web/1414080902231/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902231/index.jsp?ref=81b07d0b156d65ab401e7f7330e4da5ff8305edd",
+    "patch" : "@@ -1,21 +1,108 @@\n <%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n-    pageEncoding=\"UTF-8\"%>\n-<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+\tpageEncoding=\"UTF-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>   \n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/fmt\" prefix=\"fmt\"%>  \n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/functions\" prefix=\"fn\" %> \n+<%@ page import=\"edu.hzu.javaweb.labs.se1414080902231.Goods,java.util.ArrayList,java.util.List\" %>\n+<!DOCTYPE html>\n <html>\n <head>\n-<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n-<title>Insert title here</title>\n+\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n+\t<title>勿闲闲物 Unused</title>\n </head>\n <body>\n-\t\t<button onclick=\"gotofabu()\">发布二手货物</button><br/>\n-\t\t<br/>\n-\t\t<button onclick=\"\">搜索二手货物</button>\n+\t<p></p>\n+\t<div align=\"right\">\n+\t\t<input type=\"button\" onclick=\"gotoLogin()\" value=\"登陆\" />&nbsp;\n+\t\t<input type=\"button\" value=\"注册\" />\n+\t</div>\n+\t<div align=\"center\">\n+\t\t<p>\n+\t\t\t<font size=\"6\">Welcome to Unused!</font>\n+\t\t</p>\n+\t</div>\n+\t<div align=\"center\">\n+\t\t<form id=\"searchform\">\n+\t\t\t<input type=\"text\" name=\"search\"/>\t\n+\t\t\t<input type=\"submit\" value=\"搜索二手货物\" />\n+\t\t\t<input type=\"button\" onclick=\"gotofabu()\" value=\"发布二手货物\" />\t\n+\t\t</form>\n+\n+\t</div>\n+\t<br/>\n+\t<div id=\"infomation\" align=\"center\">\n+\n+\t<c:if test=\"${!empty sessionScope.list}\">\n+\t\t<c:forEach var=\"l\" items=\"${sessionScope.list}\">\n+\t\t\t<c:out value=\"${l.gN}\"/>&nbsp;&nbsp;\n+\t\t\t<c:out value=\"${l.dT}\"/>&nbsp;&nbsp;\n+\t\t\t<c:out value=\"${l.img}\"/>\n+\t\t\t<br/>\n+\t\t</c:forEach>\n+\n+\t</c:if>\n+\n+\t\t\n+\t</div>\n+\t\n+<%-- \t<%\n+ \t  \tList<Goods> list=(ArrayList<Goods>)session.getAttribute(\"list\");\n+ \t/* \tfor (int i = 0; i < list.size(); i++) \n+ \t\t{\n+  \t\t\tout.print(list.get(i).getgN());\n+\t\t} */\n+\n+  \t//\t\tout.print(list.get(1).getgN());\n+\t\t\n+\t\tout.print(session.getAttribute(\"list\"));  \n+\t %> --%>\n+\n </body>\n-<script>\n-\tfunction gotofabu()\n-\t{\n-\t\twindow.location.href=\"issue.jsp\";\n-\t}\n+<script type=\"text/javascript\">\n+\n+\t$(\"#searchform\").submit(function(){\n+\t\t$.ajax({\n+\t\t\ttype:\"post\",\n+\t\t\tdata:$(\"#searchform\").serialize(),\n+\t\t\tdatatype:\"text\",\n+\t\t\turl:\"1414080902231\",\n+\t\t\tsuccess:function(data){\n+\t\t\t}\n+\t\t});\n+\t});\n+\n+</script>\n+\n+<script type=\"text/javascript\" >\n \t\n+\n+ \tfunction gotofabu() {\n+\t\t//window.location.href = \"issue.jsp\";\n+\t\talert(2);\n+\t\t$.a();\n+\t}\n+\n+ \n+\t$.a=function(){\n+  \t\t$.ajax({\n+  \t\t\ttype:\"post\",\n+  \t\t\tdatatype:\"text\",\n+  \t\t\turl:\"issue.jsp\",\n+  \t\t\tsuccess:function(data){\n+  \t\t\talert(data);\n+  \t\t\t},\n+  \t\t\terror:function(){\n+  \t\t\talert(\"请先登录！\");\n+  \t\t\t}\n+  \t\t});\t\t\n+  \t};\n+  \t\n+  \t\n+\tfunction gotoLogin() {\n+\t\twindow.location.href = \"login.jsp\";\n+\t}\n </script>\n+\n </html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "81b07d0b156d65ab401e7f7330e4da5ff8305edd",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/81b07d0b156d65ab401e7f7330e4da5ff8305edd",
+  "parents" : [ {
+    "sha" : "93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/93e8ec2d8609c314d15a7a99fd5842c4e90ae686"
+  } ]
+}

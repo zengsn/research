@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "WCTNOC",
+    "id" : 17809824,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17809824?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WCTNOC",
+    "html_url" : "https://github.com/WCTNOC",
+    "followers_url" : "https://api.github.com/users/WCTNOC/followers",
+    "following_url" : "https://api.github.com/users/WCTNOC/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WCTNOC/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WCTNOC/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WCTNOC/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WCTNOC/orgs",
+    "repos_url" : "https://api.github.com/users/WCTNOC/repos",
+    "events_url" : "https://api.github.com/users/WCTNOC/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WCTNOC/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 163,
+    "additions" : 161,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "WCTNOC",
+    "id" : 17809824,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17809824?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/WCTNOC",
+    "html_url" : "https://github.com/WCTNOC",
+    "followers_url" : "https://api.github.com/users/WCTNOC/followers",
+    "following_url" : "https://api.github.com/users/WCTNOC/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/WCTNOC/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/WCTNOC/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/WCTNOC/subscriptions",
+    "organizations_url" : "https://api.github.com/users/WCTNOC/orgs",
+    "repos_url" : "https://api.github.com/users/WCTNOC/repos",
+    "events_url" : "https://api.github.com/users/WCTNOC/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/WCTNOC/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/dfa7169656a8adb571078ed8d2af9fdc56036e25",
+  "commit" : {
+    "author" : {
+      "name" : "WCTNOC",
+      "email" : "1578979727@qq.com",
+      "date" : "2016-04-22T15:52:50Z"
+    },
+    "committer" : {
+      "name" : "WCTNOC",
+      "email" : "1578979727@qq.com",
+      "date" : "2016-04-22T15:52:50Z"
+    },
+    "message" : "#88 #125 实验2 Activity",
+    "tree" : {
+      "sha" : "dd86bf1dce3fac0480fb3d31a52d63bbfaf9b724",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/dd86bf1dce3fac0480fb3d31a52d63bbfaf9b724"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/dfa7169656a8adb571078ed8d2af9fdc56036e25",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dfa7169656a8adb571078ed8d2af9fdc56036e25/comments",
+  "files" : [ {
+    "sha" : "b26483e4104c80b96a684acf1ca16f77d0b35e63",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/MainActivity_net1314080903112.java",
+    "status" : "modified",
+    "additions" : 96,
+    "deletions" : 2,
+    "changes" : 98,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dfa7169656a8adb571078ed8d2af9fdc56036e25/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/MainActivity_net1314080903112.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dfa7169656a8adb571078ed8d2af9fdc56036e25/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/MainActivity_net1314080903112.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/MainActivity_net1314080903112.java?ref=dfa7169656a8adb571078ed8d2af9fdc56036e25",
+    "patch" : "@@ -1,16 +1,110 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903112;\n \n-\n+import android.content.Intent;\n+import android.net.Uri;\n+import android.provider.Settings;\n import android.support.v7.app.AppCompatActivity;\n import android.os.Bundle;\n+import android.text.TextUtils;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.TextView;\n+import android.widget.Toast;\n+\n+import java.io.File;\n \n \n public class MainActivity_net1314080903112 extends AppCompatActivity {\n \n+    TextView apkPathText;\n+\n+    String apkPath;\n+\n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_main_net1314080903112);\n+        apkPathText = (TextView) findViewById(R.id.apkPathText);\n     }\n-}\n \n+    @Override\n+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {\n+        if (requestCode == 0 && resultCode == RESULT_OK) {\n+            apkPath = data.getStringExtra(\"apk_path\");\n+            apkPathText.setText(apkPath);\n+        }\n+    }\n+\n+    public void onChooseApkFile(View view) {\n+        Intent intent = new Intent(this, FileExplorerActivity_net1314080903112.class);\n+        startActivityForResult(intent, 0);\n+    }\n+\n+    public void onSilentInstall(View view) {\n+        if (!isRoot()) {\n+            Toast.makeText(this, \"没有ROOT权限，不能使用秒装\", Toast.LENGTH_SHORT).show();\n+            return;\n+        }\n+        if (TextUtils.isEmpty(apkPath)) {\n+            Toast.makeText(this, \"请选择安装包！\", Toast.LENGTH_SHORT).show();\n+            return;\n+        }\n+        final Button button = (Button) view;\n+        button.setText(\"安装中\");\n+        new Thread(new Runnable() {\n+            @Override\n+            public void run() {\n+                SilentInstall_net1314080903112 installHelper = new SilentInstall_net1314080903112();\n+                final boolean result = installHelper.install(apkPath);\n+                runOnUiThread(new Runnable() {\n+                    @Override\n+                    public void run() {\n+                        if (result) {\n+                            Toast.makeText(MainActivity_net1314080903112.this, \"安装成功！\", Toast.LENGTH_SHORT).show();\n+                        } else {\n+                            Toast.makeText(MainActivity_net1314080903112.this, \"安装失败！\", Toast.LENGTH_SHORT).show();\n+                        }\n+                        button.setText(\"秒装\");\n+                    }\n+                });\n+\n+            }\n+        }).start();\n+\n+    }\n+\n+    public void onForwardToAccessibility(View view) {\n+        Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);\n+        startActivity(intent);\n+    }\n+\n+    public void onSmartInstall(View view) {\n+        if (TextUtils.isEmpty(apkPath)) {\n+            Toast.makeText(this, \"请选择安装包！\", Toast.LENGTH_SHORT).show();\n+            return;\n+        }\n+        Uri uri = Uri.fromFile(new File(apkPath));\n+        Intent localIntent = new Intent(Intent.ACTION_VIEW);\n+        localIntent.setDataAndType(uri, \"application/vnd.android.package-archive\");\n+        startActivity(localIntent);\n+    }\n+\n+    /**\n+     * 判断手机是否拥有Root权限。\n+     * @return 有root权限返回true，否则返回false。\n+     */\n+    public boolean isRoot() {\n+        boolean bool = false;\n+        try {\n+            if (Runtime.getRuntime().exec(\"su\").getOutputStream() == null) {\n+                return false;\n+            } else {\n+                return true;\n+            }\n+        } catch (Exception e) {\n+            e.printStackTrace();\n+        }\n+        return bool;\n+    }\n+\n+}"
+  }, {
+    "sha" : "dc94b4ea54538d92d6e89752df35a6af8ee8f041",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/SilentInstall_net1314080903112.java",
+    "status" : "added",
+    "additions" : 65,
+    "deletions" : 0,
+    "changes" : 65,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/dfa7169656a8adb571078ed8d2af9fdc56036e25/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/SilentInstall_net1314080903112.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/dfa7169656a8adb571078ed8d2af9fdc56036e25/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/SilentInstall_net1314080903112.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903112/SilentInstall_net1314080903112.java?ref=dfa7169656a8adb571078ed8d2af9fdc56036e25",
+    "patch" : "@@ -0,0 +1,65 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903112;\n+\n+import android.util.Log;\n+\n+import java.io.BufferedReader;\n+import java.io.DataOutputStream;\n+import java.io.IOException;\n+import java.io.InputStreamReader;\n+import java.nio.charset.Charset;\n+\n+\n+\n+public class SilentInstall_net1314080903112 {\n+\n+    /**\n+     * 执行具体的静默安装逻辑，需要手机ROOT。\n+     * @param apkPath\n+     *          要安装的apk文件的路径\n+     * @return 安装成功返回true，安装失败返回false。\n+     */\n+    public boolean install(String apkPath) {\n+        boolean result = false;\n+        DataOutputStream dataOutputStream = null;\n+        BufferedReader errorStream = null;\n+        try {\n+            // 申请su权限\n+            Process process = Runtime.getRuntime().exec(\"su\");\n+            dataOutputStream = new DataOutputStream(process.getOutputStream());\n+            // 执行pm install命令\n+            String command = \"pm install -r \" + apkPath + \"\\n\";\n+            dataOutputStream.write(command.getBytes(Charset.forName(\"utf-8\")));\n+            dataOutputStream.flush();\n+            dataOutputStream.writeBytes(\"exit\\n\");\n+            dataOutputStream.flush();\n+            process.waitFor();\n+            errorStream = new BufferedReader(new InputStreamReader(process.getErrorStream()));\n+            String msg = \"\";\n+            String line;\n+            // 读取命令的执行结果\n+            while ((line = errorStream.readLine()) != null) {\n+                msg += line;\n+            }\n+            Log.d(\"TAG\", \"install msg is \" + msg);\n+            // 如果执行结果中包含Failure字样就认为是安装失败，否则就认为安装成功\n+            if (!msg.contains(\"Failure\")) {\n+                result = true;\n+            }\n+        } catch (Exception e) {\n+            Log.e(\"TAG\", e.getMessage(), e);\n+        } finally {\n+            try {\n+                if (dataOutputStream != null) {\n+                    dataOutputStream.close();\n+                }\n+                if (errorStream != null) {\n+                    errorStream.close();\n+                }\n+            } catch (IOException e) {\n+                Log.e(\"TAG\", e.getMessage(), e);\n+            }\n+        }\n+        return result;\n+    }\n+\n+}"
+  } ],
+  "sha" : "dfa7169656a8adb571078ed8d2af9fdc56036e25",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/dfa7169656a8adb571078ed8d2af9fdc56036e25",
+  "parents" : [ {
+    "sha" : "89378c246413697419143f59bccfcfdfa28bef7f",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/89378c246413697419143f59bccfcfdfa28bef7f",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/89378c246413697419143f59bccfcfdfa28bef7f"
+  } ]
+}

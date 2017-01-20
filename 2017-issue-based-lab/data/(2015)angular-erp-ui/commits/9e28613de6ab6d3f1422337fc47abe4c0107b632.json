@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "30-wangweixin",
+    "id" : 15066163,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15066163?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/30-wangweixin",
+    "html_url" : "https://github.com/30-wangweixin",
+    "followers_url" : "https://api.github.com/users/30-wangweixin/followers",
+    "following_url" : "https://api.github.com/users/30-wangweixin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/30-wangweixin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/30-wangweixin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/30-wangweixin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/30-wangweixin/orgs",
+    "repos_url" : "https://api.github.com/users/30-wangweixin/repos",
+    "events_url" : "https://api.github.com/users/30-wangweixin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/30-wangweixin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 15,
+    "additions" : 15,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "30-wangweixin",
+    "id" : 15066163,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15066163?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/30-wangweixin",
+    "html_url" : "https://github.com/30-wangweixin",
+    "followers_url" : "https://api.github.com/users/30-wangweixin/followers",
+    "following_url" : "https://api.github.com/users/30-wangweixin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/30-wangweixin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/30-wangweixin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/30-wangweixin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/30-wangweixin/orgs",
+    "repos_url" : "https://api.github.com/users/30-wangweixin/repos",
+    "events_url" : "https://api.github.com/users/30-wangweixin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/30-wangweixin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9e28613de6ab6d3f1422337fc47abe4c0107b632",
+  "commit" : {
+    "author" : {
+      "name" : "30-wangweixin",
+      "email" : "498837428@qq.com",
+      "date" : "2015-12-22T11:42:31Z"
+    },
+    "committer" : {
+      "name" : "30-wangweixin",
+      "email" : "498837428@qq.com",
+      "date" : "2015-12-22T11:42:31Z"
+    },
+    "message" : "第七次实验",
+    "tree" : {
+      "sha" : "783a6496cc7cb09de33b0042d915cf1fc0149784",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/783a6496cc7cb09de33b0042d915cf1fc0149784"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/9e28613de6ab6d3f1422337fc47abe4c0107b632",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9e28613de6ab6d3f1422337fc47abe4c0107b632/comments",
+  "files" : [ {
+    "sha" : "d7d2f7c27ec3a50a4b85d91c589690c661cf688b",
+    "filename" : "works/1314080901230/directives/hide.html",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9e28613de6ab6d3f1422337fc47abe4c0107b632/works/1314080901230/directives/hide.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9e28613de6ab6d3f1422337fc47abe4c0107b632/works/1314080901230/directives/hide.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901230/directives/hide.html?ref=9e28613de6ab6d3f1422337fc47abe4c0107b632",
+    "patch" : "@@ -0,0 +1,15 @@\n+<div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n+    <p class=\"lead\">\n+    <div ng-hide=\"isHidden\">您输入的数据为：</div>\n+    <div id=\"chaxundanUnitname\" ng-hide=\"isHidden\">单位名称->{{chaxundanUnitname}}</div>\n+    <div id=\"chaxundanPaymentmethod\" ng-hide=\"isHidden\">付款方式->{{chaxundanPaymentmethod}}</div>\n+    <div id=\"chaxundanPaymentdate\" ng-hide=\"isHidden\">付款日期->{{chaxundanPaymentdate}}</div>\n+    <div id=\"chaxundanMiddleman\" ng-hide=\"isHidden\">经手人->{{chaxundanMiddleman}}</div>\n+    <div id=\"chaxundanPaymentamount\" ng-hide=\"isHidden\">付款金额->{{chaxundanPaymentamount}}</div>\n+    <div id=\"chaxundanPaymentaccount\" ng-hide=\"isHidden\">付款账户->{{chaxundanPaymentaccount}}</div>\n+    <div id=\"chaxundanBankaccount\" ng-hide=\"isHidden\">银行账号->{{chaxundanBankaccount}}</div>\n+    <div id=\"chaxundanState\" ng-hide=\"isHidden\">状态->{{chaxundanState}}</div>\n+    <div id=\"chaxundanWriteoffamount\" ng-hide=\"isHidden\">核销金额->{{chaxundanWriteoffamount}}</div>\n+    <div id=\"chaxundanRemarks\" ng-hide=\"isHidden\">备注->{{chaxundanRemarks}}</div>\n+    </p>\n+</div>"
+  } ],
+  "sha" : "9e28613de6ab6d3f1422337fc47abe4c0107b632",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9e28613de6ab6d3f1422337fc47abe4c0107b632",
+  "parents" : [ {
+    "sha" : "2cb6d081f06393810d0a236ee3e35fe973dbf0a6",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/2cb6d081f06393810d0a236ee3e35fe973dbf0a6",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/2cb6d081f06393810d0a236ee3e35fe973dbf0a6"
+  } ]
+}

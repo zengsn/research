@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Zjwjerry",
+    "id" : 22068622,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068622?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zjwjerry",
+    "html_url" : "https://github.com/Zjwjerry",
+    "followers_url" : "https://api.github.com/users/Zjwjerry/followers",
+    "following_url" : "https://api.github.com/users/Zjwjerry/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zjwjerry/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zjwjerry/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zjwjerry/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zjwjerry/orgs",
+    "repos_url" : "https://api.github.com/users/Zjwjerry/repos",
+    "events_url" : "https://api.github.com/users/Zjwjerry/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zjwjerry/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 141,
+    "additions" : 141,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Zjwjerry",
+    "id" : 22068622,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068622?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zjwjerry",
+    "html_url" : "https://github.com/Zjwjerry",
+    "followers_url" : "https://api.github.com/users/Zjwjerry/followers",
+    "following_url" : "https://api.github.com/users/Zjwjerry/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zjwjerry/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zjwjerry/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zjwjerry/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zjwjerry/orgs",
+    "repos_url" : "https://api.github.com/users/Zjwjerry/repos",
+    "events_url" : "https://api.github.com/users/Zjwjerry/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zjwjerry/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/c01b0040a0a35a238b8fac564067f503bd0f1477",
+  "commit" : {
+    "author" : {
+      "name" : "ZjwJerry",
+      "email" : "565691343@qq.com",
+      "date" : "2016-11-21T13:20:09Z"
+    },
+    "committer" : {
+      "name" : "ZjwJerry",
+      "email" : "565691343@qq.com",
+      "date" : "2016-11-21T13:20:09Z"
+    },
+    "message" : "#6 JSTL标签库",
+    "tree" : {
+      "sha" : "c2b2efbb47184859c54f053aa8ac22e4308ef2a9",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/c2b2efbb47184859c54f053aa8ac22e4308ef2a9"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/c01b0040a0a35a238b8fac564067f503bd0f1477",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/c01b0040a0a35a238b8fac564067f503bd0f1477/comments",
+  "files" : [ {
+    "sha" : "ffbb6d316922892b53eb36e42c2bb79e8f9221bd",
+    "filename" : "jweb/web/1414080902203/ChooseClass.jsp",
+    "status" : "added",
+    "additions" : 65,
+    "deletions" : 0,
+    "changes" : 65,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/c01b0040a0a35a238b8fac564067f503bd0f1477/jweb/web/1414080902203/ChooseClass.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/c01b0040a0a35a238b8fac564067f503bd0f1477/jweb/web/1414080902203/ChooseClass.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902203/ChooseClass.jsp?ref=c01b0040a0a35a238b8fac564067f503bd0f1477",
+    "patch" : "@@ -0,0 +1,65 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>选择下载的课程</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <form method=\"post\" action=\"Download.jsp\">\n+    \t<table align=\"center\" border=\"0\">\n+    \t\t<tr><td colspan=\"2\" align=\"left\">\n+    \t\t\t<h2>数学课程</h2><br>&nbsp;&nbsp;\n+    \t\t\t<select size=\"4\" multiple=\"multiple\" name=\"list1\">\n+    \t\t\t<option value=\"高等数学\">高等数学</option>\n+    \t\t\t<option value=\"线性代数\">线性代数</option>\n+    \t\t\t<option value=\"离散数学\">离散数学</option>\n+    \t\t\t<option value=\"概率论\">概率论</option>\n+    \t\t\t</select><br>\n+    \t\t\t<h2>英语课程</h2><br>&nbsp;&nbsp;\n+    \t\t\t<select size=\"4\" multiple=\"multiple\" name=\"list2\">\n+    \t\t\t<option value=\"大学英语\">大学英语</option>\n+    \t\t\t<option value=\"新概念英语\">新概念英语</option>\n+    \t\t\t<option value=\"CET4\">四级英语</option>\n+    \t\t\t<option value=\"CET6\">六级英语</option>\n+    \t\t\t</select><br>\n+    \t\t\t<h2>物理课程</h2><br>&nbsp;&nbsp;\n+    \t\t\t<select size=\"4\" multiple=\"multiple\" name=\"list3\">\n+    \t\t\t<option value=\"力学\">力学</option>\n+    \t\t\t<option value=\"电磁学\">电磁学</option>\n+    \t\t\t<option value=\"热学\">热学</option>\n+    \t\t\t<option value=\"光学\">光学</option>\n+    \t\t\t</select><br>\n+    \t\t\t<h2>计算机课程</h2><br>&nbsp;&nbsp;\n+    \t\t\t<select size=\"6\" multiple=\"multiple\" name=\"list4\">\n+    \t\t\t<option value=\"C\">C语言</option>\n+    \t\t\t<option value=\"C++\">C++</option>\n+    \t\t\t<option value=\"JAVA\">JAVA</option>\n+    \t\t\t<option value=\"数据结构\">数据结构</option>\n+    \t\t\t<option value=\"数据库\">数据库</option>\n+    \t\t\t<option value=\"操作系统\">操作系统</option>\n+    \t\t\t</select><br><br>\n+    \t\t\t<input type=\"submit\" value=\"确    定\" name=\"button1\">\n+    \t\t\t<input type=\"reset\" value=\"重新选择\" name=\"button2\">\n+    \t\t</td></tr>\n+    \t</table>\n+    </form>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "6c6c0f467cc5892fab130d35e1940e39cb84b150",
+    "filename" : "jweb/web/1414080902203/Download.jsp",
+    "status" : "added",
+    "additions" : 76,
+    "deletions" : 0,
+    "changes" : 76,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/c01b0040a0a35a238b8fac564067f503bd0f1477/jweb/web/1414080902203/Download.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/c01b0040a0a35a238b8fac564067f503bd0f1477/jweb/web/1414080902203/Download.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902203/Download.jsp?ref=c01b0040a0a35a238b8fac564067f503bd0f1477",
+    "patch" : "@@ -0,0 +1,76 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>Download页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t\n+  </head>\n+  \n+  <body>\n+   \t <font color=\"Green\"><h4>当前时间是:<%=new Date().toLocaleString()%><br>Hello student</h4></font>\n+   \t <br><hr>\n+   \t <%\n+   \t \tCalendar rightNow=Calendar.getInstance(); \n+   \t \tInteger Hour=new Integer(rightNow.get(Calendar.HOUR_OF_DAY));\n+   \t \trequest.setAttribute(\"hour\",Hour);\n+   \t %>\n+   \t \n+   \t <c:if test=\"${hour>=0&&hour<12}\"><p align=\"center\"> 上午好，X学生，正在下载文件，请稍后 </p></c:if>\n+   \t <c:if test=\"${hour==12}\"> 中午好，X学生，正在下载文件，请稍后</c:if>\n+   \t <c:if test=\"${hour>12&&hour<=17}\"> 下午好，X学生，正在下载文件，请稍后</c:if>\n+   \t <c:if test=\"${hour>=17&&hour<=23}\"><p align=\"center\">晚上好，X学生，正在下载文件，请稍后</c:if></p><hr><br>\n+   \t \n+   \t <%\n+   \t \tString[] s1=request.getParameterValues(\"list1\");\n+   \t \tString s2=request.getParameter(\"list2\");\n+   \t \tString s3=request.getParameter(\"list3\");\n+   \t \tString[] s4=request.getParameterValues(\"list4\");\n+   \t \t%>\n+   \t \t<table align=\"center\" border=\"0\" width=\"400\" height=\"600\">\n+   \t \t<tr><td><h2>选择的课程结果如下:</h2><br><br></td></tr>\n+   \t \t<tr><td><h4>选择的数学课程是:</h4>\n+   \t \t<%\n+   \t \tif(s1!=null){\n+   \t \t\tfor(int i=0;i<s1.length;++i) \n+   \t \t\t{\n+   \t \t\t\tout.println(s1[i]+\" \");\n+   \t \t\t}\n+   \t \t}%></td></tr><br>\n+   \t \t<tr><td><h4>选择的英语课程是:</h4>\n+   \t \t<%\n+   \t \tif(s2!=null){\n+   \t \t\t\tout.println(s2+\" \");\n+   \t \t}%></td></tr><br>\n+   \t \t<tr><td><h4>选择的物理课程是:</h4>\n+   \t \t<%\n+   \t \tif(s3!=null){\n+   \t \t\t\tout.println(s3+\" \");\n+   \t \t}%></td></tr>\n+   \t \t<tr><td><h4>选择的计算机课程是:</h4>\n+   \t \t<%\n+   \t \tif(s4!=null)\n+   \t \t{\n+   \t \t\tfor(int i=0;i<s4.length;++i)\n+   \t \t\t{\tout.println(s4[i]+\" \");}\n+   \t \t}%></td></tr>\n+   \t \t</table>\n+   \t\n+  </body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "c01b0040a0a35a238b8fac564067f503bd0f1477",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c01b0040a0a35a238b8fac564067f503bd0f1477",
+  "parents" : [ {
+    "sha" : "f610e31d6cad146577ee6b42d0135fdd2e31960f",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f610e31d6cad146577ee6b42d0135fdd2e31960f",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f610e31d6cad146577ee6b42d0135fdd2e31960f"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "nihaomahenhaoba",
+    "id" : 22512347,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512347?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/nihaomahenhaoba",
+    "html_url" : "https://github.com/nihaomahenhaoba",
+    "followers_url" : "https://api.github.com/users/nihaomahenhaoba/followers",
+    "following_url" : "https://api.github.com/users/nihaomahenhaoba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/nihaomahenhaoba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/nihaomahenhaoba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/nihaomahenhaoba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/nihaomahenhaoba/orgs",
+    "repos_url" : "https://api.github.com/users/nihaomahenhaoba/repos",
+    "events_url" : "https://api.github.com/users/nihaomahenhaoba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/nihaomahenhaoba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 106,
+    "additions" : 106,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "nihaomahenhaoba",
+    "id" : 22512347,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512347?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/nihaomahenhaoba",
+    "html_url" : "https://github.com/nihaomahenhaoba",
+    "followers_url" : "https://api.github.com/users/nihaomahenhaoba/followers",
+    "following_url" : "https://api.github.com/users/nihaomahenhaoba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/nihaomahenhaoba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/nihaomahenhaoba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/nihaomahenhaoba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/nihaomahenhaoba/orgs",
+    "repos_url" : "https://api.github.com/users/nihaomahenhaoba/repos",
+    "events_url" : "https://api.github.com/users/nihaomahenhaoba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/nihaomahenhaoba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/974a5b53c51986c47e2995e1544893c12a5ab088",
+  "commit" : {
+    "author" : {
+      "name" : "nihaomahenhaoba",
+      "email" : "1819434204@qq.com",
+      "date" : "2016-11-19T09:00:29Z"
+    },
+    "committer" : {
+      "name" : "nihaomahenhaoba",
+      "email" : "1819434204@qq.com",
+      "date" : "2016-11-19T09:00:29Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "5c6025768dbfe26379b8a7b55dfa4f62fce485b6",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/5c6025768dbfe26379b8a7b55dfa4f62fce485b6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/974a5b53c51986c47e2995e1544893c12a5ab088",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/974a5b53c51986c47e2995e1544893c12a5ab088/comments",
+  "files" : [ {
+    "sha" : "1d6989ddcc5d419ff9fcaaa430711d4813a4d562",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902216/firstFilter.java",
+    "status" : "added",
+    "additions" : 48,
+    "deletions" : 0,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/974a5b53c51986c47e2995e1544893c12a5ab088/jweb/src/edu/hzu/javaweb/labs/se1414080902216/firstFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/974a5b53c51986c47e2995e1544893c12a5ab088/jweb/src/edu/hzu/javaweb/labs/se1414080902216/firstFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902216/firstFilter.java?ref=974a5b53c51986c47e2995e1544893c12a5ab088",
+    "patch" : "@@ -0,0 +1,48 @@\n+package edu.hzu.javaweb.labs.se1414080902216;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.Cookie;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+\n+@WebFilter(filterName=\"firstFilter\",urlPatterns=\"/1414080902216\")\n+public class firstFilter implements Filter {\n+\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t\tHttpServletRequest requ=(HttpServletRequest)request;\n+\t\tHttpServletResponse resp=(HttpServletResponse)response;\n+\t\tCookie cookie = null;\n+    \tCookie[] cookies = null;\n+    \tcookies = ((HttpServletRequest) request).getCookies();\n+    \t\n+\t\tif(cookies == null){\n+\t\t\tresp.sendRedirect(\"login.jsp\");\n+\t\t}\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t\tSystem.out.println(\"����\");\n+\n+\t}\n+\n+}\n+"
+  }, {
+    "sha" : "b96fc70cb415146863c6a9e0a3fb43420e2035ca",
+    "filename" : "jweb/web/1414080902216/login.jsp",
+    "status" : "added",
+    "additions" : 58,
+    "deletions" : 0,
+    "changes" : 58,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/974a5b53c51986c47e2995e1544893c12a5ab088/jweb/web/1414080902216/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/974a5b53c51986c47e2995e1544893c12a5ab088/jweb/web/1414080902216/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902216/login.jsp?ref=974a5b53c51986c47e2995e1544893c12a5ab088",
+    "patch" : "@@ -0,0 +1,58 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE html>\n+<html lang=\"zh-cn\">\n+  <head>\n+    <meta charset=\"utf-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <title>java-webå®éª</title>\n+\n+    <!-- Bootstrap -->\n+    <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n+\n+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n+    <!--[if lt IE 9]>\n+      <script src=\"http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+      <script src=\"http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+    <![endif]-->\n+  </head>\n+  <body>\n+    <form role=\"form\" id=\"target\">\n+  <div class=\"form-group\">\n+    <label for=\"exampleInputEmail1\">用户名</label>\n+    <input type=\"text\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Enter email\">\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"exampleInputPassword1\">密码 </label>\n+    <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\n+  </div>\n+  <div class=\"checkbox\">\n+  </div>\n+  <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n+</form>\n+\n+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <!-- Include all compiled plugins (below), or include individual files as needed -->\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\t<script>\n+\t\t$( \"#target\" ).submit(function( event ) {\n+\t\t\t$.ajax({\n+\t\t\t  url: \"success.json\"\n+\t\t\t}).done(function(data) {\n+\t\t\t  if ( console && console.log ) {\n+\t\t\t\t  console.dir(data);\n+\t\t\t\t  alert(data.msg);\n+\t\t\t\t}\n+\t\t\t});\n+\t\t});\n+\t\t\n+\t</script>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "974a5b53c51986c47e2995e1544893c12a5ab088",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/974a5b53c51986c47e2995e1544893c12a5ab088",
+  "parents" : [ {
+    "sha" : "d6a6ddeeeca1073d3c0073764f52e8d9ff276ca4",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d6a6ddeeeca1073d3c0073764f52e8d9ff276ca4",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/d6a6ddeeeca1073d3c0073764f52e8d9ff276ca4"
+  } ]
+}

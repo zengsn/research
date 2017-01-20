@@ -1,0 +1,195 @@
+{
+  "committer" : {
+    "login" : "HurricanGod",
+    "id" : 22078850,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078850?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HurricanGod",
+    "html_url" : "https://github.com/HurricanGod",
+    "followers_url" : "https://api.github.com/users/HurricanGod/followers",
+    "following_url" : "https://api.github.com/users/HurricanGod/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HurricanGod/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HurricanGod/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HurricanGod/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HurricanGod/orgs",
+    "repos_url" : "https://api.github.com/users/HurricanGod/repos",
+    "events_url" : "https://api.github.com/users/HurricanGod/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HurricanGod/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 633,
+    "additions" : 545,
+    "deletions" : 88
+  },
+  "author" : {
+    "login" : "HurricanGod",
+    "id" : 22078850,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078850?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HurricanGod",
+    "html_url" : "https://github.com/HurricanGod",
+    "followers_url" : "https://api.github.com/users/HurricanGod/followers",
+    "following_url" : "https://api.github.com/users/HurricanGod/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HurricanGod/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HurricanGod/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HurricanGod/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HurricanGod/orgs",
+    "repos_url" : "https://api.github.com/users/HurricanGod/repos",
+    "events_url" : "https://api.github.com/users/HurricanGod/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HurricanGod/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+  "commit" : {
+    "author" : {
+      "name" : "HurricanGod",
+      "email" : "1807363937@qq.com",
+      "date" : "2016-11-20T16:33:30Z"
+    },
+    "committer" : {
+      "name" : "HurricanGod",
+      "email" : "1807363937@qq.com",
+      "date" : "2016-11-20T16:33:30Z"
+    },
+    "message" : "#7 提交实验6JDBC代码",
+    "tree" : {
+      "sha" : "d6999d03f27d3f2884bcd55355c841a10ba0f51f",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d6999d03f27d3f2884bcd55355c841a10ba0f51f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/comments",
+  "files" : [ {
+    "sha" : "845e2b805d5f2b4fbf5a9558fe50ca1fced62e89",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/AddGrades.java",
+    "status" : "modified",
+    "additions" : 14,
+    "deletions" : 4,
+    "changes" : 18,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/AddGrades.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/AddGrades.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/AddGrades.java?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -11,6 +11,7 @@\n import javax.servlet.http.HttpServletResponse;\n import javax.servlet.http.HttpSession;\n \n+import MainController.SqlHelper;\n import edu.hzu.javaweb.bean.Grades;\n \n @WebServlet(urlPatterns=\"/UpdateGrades\")\n@@ -28,8 +29,7 @@ public void destroy() {\n \t\n \tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n-\t\tString sub1=request.getParameter(\"subject0\");\n-\t\tSystem.out.println(sub1);\n+\t\t\n \t\tSystem.out.println(\"I'm calling and i will be send to Show page\");\n \t\tresponse.sendRedirect(\"1414080902225/ShowAssessmentInfo.jsp\");\n \n@@ -59,9 +59,19 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\t\t}\n \t\t\t\n \t\t\tint k=0;\n-\t\t\tfor (Grades grade : gl) {\n+\t\t\tString sqltext=\"update coursescore set FinalScore=? where CourseName=?\";\n+\t\t\tint affectLine=0;\n+\t\t\tfor (Grades grade : gl) \n+\t\t\t{\n \t\t\t\tgrade.setGrade(Double.parseDouble(subjectGrades[k++]));\n-\t\t\t\t\n+\t\t\t\tObject args[]=new Object[2];\n+\t\t\t\targs[0]=grade.getGrade();\n+\t\t\t\targs[1]=grade.getCourseName();\n+\t\t\t\taffectLine += new SqlHelper().executeUpdate(sqltext, args);\n+\t\t\t}\n+\t\t\tif (affectLine>0) \n+\t\t\t{\n+\t\t\t\tSystem.out.println(\"成功更新\"+Integer.toString(affectLine)+\"条数据\");\n \t\t\t}\n \t\t\ths.setAttribute(\"gradesList\", gl);\n \t\t} catch (Exception e) {"
+  }, {
+    "sha" : "bcdc225f2fdae26fd8296055f5c9ff7cebdef1a9",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/Awards.java",
+    "status" : "added",
+    "additions" : 68,
+    "deletions" : 0,
+    "changes" : 68,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/Awards.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/Awards.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/Awards.java?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -0,0 +1,68 @@\n+package edu.hzu.javaweb.bean;\n+\n+import java.util.*;\n+\n+public class Awards \n+{\n+\tprivate int awardId;\n+\tprivate String awardName;\n+\tprivate String awardDescription;\n+\tprivate String winningTime;\n+\tprivate String awardRank;\n+\t\n+\t\n+\t\n+\tpublic int getAwardId() \n+\t{\n+\t\treturn awardId;\n+\t}\n+\tpublic void setAwardId(int awardId) \n+\t{\n+\t\tthis.awardId = awardId;\n+\t}\n+\t\n+\t\n+\tpublic String getAwardName() \n+\t{\n+\t\treturn awardName;\n+\t}\n+\tpublic void setAwardName(String awardName)\n+\t{\n+\t\tthis.awardName = awardName;\n+\t}\n+\t\n+\t\n+\tpublic String getAwardDescription() \n+\t{\n+\t\treturn awardDescription;\n+\t}\n+\tpublic void setAwardDescription(String awardDescription) \n+\t{\n+\t\tthis.awardDescription = awardDescription;\n+\t}\n+\t\n+\t\n+\tpublic String getWinningTime()\n+\t{\n+\t\treturn winningTime;\n+\t}\n+\tpublic void setWinningTime(String winningTime) \n+\t{\n+\t\tthis.winningTime = winningTime;\n+\t}\n+\t\n+\t\n+\tpublic String getAwardRank()\n+\t{\n+\t\treturn awardRank;\n+\t}\n+\tpublic void setAwardRank(String awardRank) \n+\t{\n+\t\tthis.awardRank = awardRank;\n+\t}\n+\t\n+\t\n+\t\n+\t\n+\t\n+}"
+  }, {
+    "sha" : "6eecb3601ab5929b8f7c55d174932f3a23ec25f5",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/CreateSubjects.java",
+    "status" : "modified",
+    "additions" : 19,
+    "deletions" : 1,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/CreateSubjects.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/CreateSubjects.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/CreateSubjects.java?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -3,6 +3,8 @@\n \n import java.io.IOException;\n import java.io.PrintWriter;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n import java.util.*;\n \n import javax.servlet.ServletException;\n@@ -12,6 +14,8 @@\n import javax.servlet.http.HttpServletResponse;\n import javax.servlet.http.HttpSession;\n \n+import MainController.SqlHelper;\n+\n @WebServlet(urlPatterns=\"/InitSubjectInfo\")\n public class CreateSubjects extends HttpServlet {\n \t\n@@ -28,6 +32,20 @@ public void destroy() {\n \tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n \t\tList<Grades> grades=new ArrayList<Grades>();\n+\t\tString sqltext=\"select CourseName,CourseCredit from coursescore\";\n+\t\tResultSet rset= new SqlHelper().executeQueryRS(sqltext, null);\n+\t\ttry {\n+\t\t\twhile(rset.next())\n+\t\t\t{\n+\t\t\t\tString coursrnameString=rset.getString(1);\n+\t\t\t\tdouble credit= Double.parseDouble(rset.getString(2));\n+\t\t\t\tgrades.add(new Grades(coursrnameString, credit));\n+\t\t\t}\n+\t\t} catch (SQLException e) {\n+\t\t\t\n+\t\t\tSystem.out.print(e.getMessage());\n+\t\t}\n+\t\t/*\n \t\tgrades.add(new Grades(\"数据库概念\", 3));\n \t\tgrades.add(new Grades(\"操作系统\", 3));\n \t\tgrades.add(new Grades(\"计算机网络\", 2));\n@@ -36,13 +54,13 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)\n \t\tgrades.add(new Grades(\"概率论基础\", 2));\n \t\tgrades.add(new Grades(\"汇编语言\", 2));\n \t\tgrades.add(new Grades(\"大学体育\", 2));\n+\t\t*/\n \t\tHttpSession subjectsSession=request.getSession(true);\n \t\t\n \t\tsubjectsSession.setAttribute(\"gradesList\", grades);\n \t\tSystem.out.println(\"I'm calling and i will be send to AssessmentInfo page\");\n \t\tresponse.sendRedirect(\"1414080902225/AssessmentInfo.jsp\");\n \t\t\n-\t\t//request.getRequestDispatcher(\"1414080902225/AssessmentInfo.jsp\").forward(request, response);\n \t\t\n \t\t\n \t\t"
+  }, {
+    "sha" : "6af8af059bc511bf1346b7c56783c6049e082a2b",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetAwards.java",
+    "status" : "added",
+    "additions" : 95,
+    "deletions" : 0,
+    "changes" : 95,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetAwards.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetAwards.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetAwards.java?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -0,0 +1,95 @@\n+\n+package edu.hzu.javaweb.labs.se1414080902225;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.jws.WebService;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import MainController.SqlHelper;\n+\n+@WebServlet(urlPatterns=\"/GetAwards\")\n+public class GetAwards extends HttpServlet {\n+\tpublic class className {\n+\n+\t}\n+\n+\tpublic GetAwards() {\n+\t\tsuper();\n+\t}\n+\n+\t\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\t\n+\t}\n+\n+\t\n+\t@SuppressWarnings(\"null\")\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\t\n+\t\t\n+\t\tString awardName=\"Acol\";\n+\t\tInteger index=1;\n+\t\tString sqltext2=\"insert into awards(AwardName,AwardTime,Rank,AwardDescription) values(?,?,?,?)\";\n+\t\tInteger affectLine=0;\n+\t\twhile (true)\n+\t\t{\n+\t\t\tInteger j=1;\n+\t\t\tString awards[]=new String[4];\n+\t\t\tint count=0;\n+\t\t\ttry \n+\t\t\t{\n+\t\t\t\tfor(int i=0;i<4;i++)\n+\t\t\t\t{\n+\t\t\t\t\t\n+\t\t\t\t\tString temp=request.getParameter(awardName+index.toString()+j.toString());\n+\t\t\t\t\tif (temp!=null&&!(temp.equals(\"\"))) \n+\t\t\t\t\t{\n+\t\t\t\t\t\tawards[i]=temp;\n+\t\t\t\t\t\tj++;\n+\t\t\t\t\t\tSystem.out.print(awards[i]);\n+\t\t\t\t\t}\n+\t\t\t\t\telse\n+\t\t\t\t\t{\n+\t\t\t\t\t\tcount++;\n+\t\t\t\t\t}\n+\t\t\t\t}\n+\t\t\t\t\n+\t\t\t\t\n+\t\t\t} catch (Exception e) {\n+\t\t\t\tSystem.out.print(e.getMessage());\n+\t\t\t}\n+\t\t\tif (count==4) \n+\t\t\t{\n+\t\t\t\tbreak;\n+\t\t\t}\n+\t\t\taffectLine+=new SqlHelper().executeUpdate(sqltext2, awards);\n+\t\t\tindex++;\n+\t\t}\n+\t\tif (affectLine>0) \n+\t\t{\n+\t\t\tSystem.out.println(\"插入\"+affectLine.toString()+\"条记录\");\n+\t\t}\n+\t\tresponse.sendRedirect(\"1414080902225/AssessmentInfo.jsp\");\n+\t\t\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void init() throws ServletException {\n+\t\t\n+\t}\n+}"
+  }, {
+    "sha" : "c53b884d470e1939934aa16be5db26b1a8419029",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetFormMessageServlet.java",
+    "status" : "modified",
+    "additions" : 38,
+    "deletions" : 7,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetFormMessageServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetFormMessageServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetFormMessageServlet.java?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -2,6 +2,8 @@\n \n import java.io.IOException;\n import java.io.PrintWriter;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n \n import javax.servlet.ServletException;\n import javax.servlet.annotation.WebServlet;\n@@ -10,9 +12,11 @@\n import javax.servlet.http.HttpServletResponse;\n import javax.servlet.http.HttpSession;\n \n+import MainController.SqlHelper;\n \n \n-@WebServlet(value=\"/GetFormMessageServlet\")\n+\n+//@WebServlet(value=\"/GetFormMessageServlet\")\n public class GetFormMessageServlet extends HttpServlet {\n \n \n@@ -38,12 +42,39 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\t\tString user=request.getParameter(\"user\");\n \t\t\tString pwd=request.getParameter(\"pwd\");\n \t\t\tString role=request.getParameter(\"login\");\n-\t\t\tHttpSession loginSession=request.getSession(true);\n-\t\t\tloginSession.setAttribute(\"user\",user);\n-\t\t\tloginSession.setAttribute(\"pwd\", pwd);\n-\t\t\tloginSession.setAttribute(\"role\", role);\n-\t\t\t\n-\t\t\tresponse.sendRedirect(\"1414080902225/Message.jsp\");\n+\t\t\tString sqltext=\"select account,password from userinfo where account=? and password=? and role=?\";\n+\t\t\tString parameter[]=new String [3];\n+\t\t\tparameter[0]=user;\n+\t\t\tparameter[1]=pwd;\n+\t\t\tparameter[2]=role;\n+\t\t\tResultSet loginMessage= new SqlHelper().executeQueryRS(sqltext, parameter);\n+\t\t\tString dbuser = null,dbpwd = null;\n+\t\t\ttry\n+\t\t\t{\n+\t\t\t\twhile (loginMessage.next())\n+\t\t\t\t{\n+\t\t\t\t\tdbuser=loginMessage.getString(1);\n+\t\t\t\t\tdbpwd=loginMessage.getString(2);\n+\t\t\t\t\t\n+\t\t\t\t}\n+\t\t\t\t\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\tSystem.out.print(e.getMessage());\n+\t\t\t}\n+\t\t\tboolean islegal=(user.equals(dbuser)&&dbpwd.equals(pwd));\n+\t\t\tif (islegal)\n+\t\t\t{\n+\t\t\t\tHttpSession loginSession=request.getSession(true);\n+\t\t\t\tloginSession.setAttribute(\"user\",user);\n+\t\t\t\tloginSession.setAttribute(\"pwd\", pwd);\n+\t\t\t\tloginSession.setAttribute(\"role\", role);\n+\t\t\t\tresponse.sendRedirect(\"InitSubjectInfo\");\n+\t\t\t}\n+\t\t\telse\n+\t\t\t{\n+\t\t\t\tresponse.sendRedirect(\"1414080902225/index.jsp\");\n+\t\t\t}\n+ \t\t\t\n \t\t\n \t}\n "
+  }, {
+    "sha" : "71817acbc76b38e838702db5c7c0b6452c4a9c3c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/Grades.java",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 5,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/Grades.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/Grades.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/Grades.java?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -5,29 +5,30 @@\n \tprivate String sno;\n \tprivate String courseName;\n \tprivate double grade;\n-\tprivate int credit;\n+\tprivate double credit;\n \t\n \t\n-\tpublic Grades(String CourseName,String Sno,int Credit)\n+\tpublic Grades(String CourseName,String Sno,double Credit)\n \t{\n \t\tthis.courseName=CourseName;\n \t\tthis.sno=Sno;\n \t\tthis.credit=Credit;\n \t}\n \t\n \t\n-\tpublic Grades(String CourseName,int Credit)\n+\tpublic Grades(String CourseName,double Credit)\n \t{\n \t\tthis.courseName=CourseName;\n \t\tthis.credit=Credit;\n+\t\tthis.grade=0;\n \t}\n \t\n-\tpublic int getCredit() \n+\tpublic double getCredit() \n \t{\n \t\treturn credit;\n \t}\n \n-\tpublic void setCredit(int credit) \n+\tpublic void setCredit(double credit) \n \t{\n \t\tthis.credit = credit;\n \t}"
+  }, {
+    "sha" : "cf83e509d7d51e5b36e5ba6681a049b19cc8275e",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/InitilizeSqlConnect.java",
+    "status" : "added",
+    "additions" : 82,
+    "deletions" : 0,
+    "changes" : 82,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/InitilizeSqlConnect.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/InitilizeSqlConnect.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/InitilizeSqlConnect.java?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -0,0 +1,82 @@\n+package MainController;\n+import java.sql.*;\n+import java.util.Properties;\n+\n+public class InitilizeSqlConnect \n+{\n+\t\tprivate static String driver ;\n+\t\tprivate static String url ;\n+\t\tprivate static String user ;\n+\t\tprivate static String password ;\n+\t\t\n+\t\tprivate static Properties pr=new Properties(); \n+\t\t\n+\t\tprivate InitilizeSqlConnect()\n+\t\t{\n+\t\t\t\n+\t\t}\n+\t\t\n+\t\tstatic \n+\t\t{ \n+\t\t\t   try {\n+\t\t\t\t  pr.load(InitilizeSqlConnect.class.getClassLoader().getResourceAsStream(\"db.properties\"));\n+\t\t\t\t  driver=pr.getProperty(\"driver\");\n+\t\t\t\t  url=pr.getProperty(\"url\");\n+\t\t\t\t  user=pr.getProperty(\"username\");\n+\t\t\t\t  password=pr.getProperty(\"password\");\n+\t\t\t\t  Class.forName(driver);\n+\t\t\t\t} catch (Exception e) \n+\t\t\t\t{\n+\t\t\t\t\tthrow new ExceptionInInitializerError(e);\n+\t\t\t\t}\n+\t\t}\n+\t\t\n+\t\tpublic static Connection getConnection() throws SQLException \n+\t\t{\n+\t\t\treturn DriverManager.getConnection(url, user, password);\n+\t\t}\n+\t\t\n+\t\t\n+\t\tpublic static void free(ResultSet rs, Statement st, Connection conn) \n+\t\t{\n+\t\t\ttry \n+\t\t\t{ \n+\t\t\t\tif (rs != null) \n+\t\t\t\t\trs.close();\n+\t\t\t} \n+\t\t\tcatch (SQLException e) \n+\t\t\t{\n+\t\t\t\te.printStackTrace();\n+\t\t\t} \n+\t\t\tfinally \n+\t\t\t{\n+\t\t\t\ttry \n+\t\t\t\t{ \n+\t\t\t\t\tif (st != null) \n+\t\t\t\t\t\tst.close();\n+\t\t\t\t} \n+\t\t\t\tcatch (SQLException e) \n+\t\t\t\t{\n+\t\t\t\t\te.printStackTrace();\n+\t\t\t\t} \n+\t\t\t\tfinally\n+\t\t\t\t{\n+\t\t\t\t\t  if (conn != null)\n+\t\t\t\t\t    try \n+\t\t\t\t\t  \t{ \n+\t\t\t\t\t    \tconn.close();\n+\t\t\t\t\t    } \n+\t\t\t\t\t  \tcatch (SQLException e)\n+\t\t\t\t\t  \t{\n+\t\t\t\t\t  \t\te.printStackTrace();\n+\t\t\t\t\t  \t}\n+\t\t\t     }\n+\t\t\t}\n+\t\t}\n+\t\t\n+\t\t\n+\t\t\n+\t\t\n+\t\n+\n+}"
+  }, {
+    "sha" : "eff7a4f549378d52e8adfd0ad5dfa929c7b40271",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/SqlHelper.java",
+    "status" : "added",
+    "additions" : 68,
+    "deletions" : 0,
+    "changes" : 68,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/SqlHelper.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/src/edu/hzu/javaweb/labs/se1414080902225/SqlHelper.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/SqlHelper.java?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -0,0 +1,68 @@\n+package MainController;\n+\n+import java.sql.*;\n+import java.util.*;\n+\n+\n+public class SqlHelper \n+{\n+\t public int executeUpdate(String sql, Object[] params) \n+\t {\n+\t        int affectedLine = 0;    \n+\t        Connection conn = null;\n+\t    \tPreparedStatement ps = null;    \n+\t        try \n+\t        {    \n+\t            conn = InitilizeSqlConnect.getConnection();    \n+\t            ps = conn.prepareStatement(sql);    \n+\t                \n+\t            if (params != null) \n+\t            {    \n+\t                for (int i = 0; i < params.length; i++) \n+\t                {    \n+\t                    ps.setObject(i + 1, params[i]);    \n+\t                }    \n+\t            }    \n+\t                \n+\t            affectedLine = ps.executeUpdate();    \n+\t    \n+\t        } catch (SQLException e) \n+\t        {    \n+\t            System.out.println(e.getMessage());    \n+\t        } finally {    \n+\t            \n+\t            InitilizeSqlConnect.free(null, ps, conn);  \n+\t        }    \n+\t        return affectedLine;    \n+\t    }  \n+\t \n+\t \n+\t \n+\t \n+\t public ResultSet executeQueryRS(String sql, Object[] params) {    \n+\t\t \tConnection conn = null;\n+\t\t \tPreparedStatement ps = null; \n+\t\t \tResultSet rs=null;\n+\t\t \ttry {    \n+\t            conn = InitilizeSqlConnect.getConnection();    \n+\t            ps = conn.prepareStatement(sql);    \n+\t            if (params != null) \n+\t            {  \n+\t            \tint len=params.length;\n+\t                for (int i = 0; i < len; i++) \n+\t                {    \n+\t                    ps.setObject(i+1, params[i]);    \n+\t                } \n+\t                \n+\t            }      \n+\t            rs= ps.executeQuery();    \n+\t    \n+\t        } catch (SQLException e) {    \n+\t            System.out.println(e.getMessage());    \n+\t        }    \n+\t    \n+\t        return rs;    \n+\t    }    \n+\t    \n+\t    \n+}"
+  }, {
+    "sha" : "fb09642f6d1244fc0b358d65c65e439a8d312089",
+    "filename" : "jweb/web/1414080902225/AssessmentInfo.jsp",
+    "status" : "modified",
+    "additions" : 144,
+    "deletions" : 52,
+    "changes" : 196,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/web/1414080902225/AssessmentInfo.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/web/1414080902225/AssessmentInfo.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902225/AssessmentInfo.jsp?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -1,86 +1,156 @@\n <%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@page import=\"java.text.*\" %>\n+<%@page import=\"java.util.Date,java.lang.*\" %>\n <%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+\tString path = request.getContextPath();\n+\tString basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n %>\n <%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n \n <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n <html>\n   <head>\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n-    <link rel=\"stylesheet\" href=\"http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css\">\n-    <script src=\"http://code.jquery.com/jquery-1.9.1.min.js\"></script>\n-    <script src=\"http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js\"></script>\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n     <base href=\"<%=basePath%>\">\n     \n-    <title>My JSP 'AssessmentInfo.jsp' starting page</title>\n-    \n-\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n-\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n-\t<meta http-equiv=\"expires\" content=\"0\">    \n-\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n-\t<meta http-equiv=\"description\" content=\"This is my page\">\n-\t<!--\n-\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n-\t-->\n+    <title>填写综合测评信息</title>\n \t<style type=\"text/css\">\n-\t\t#tb,tr,th,td{\n- \t\t border: 1px solid blue;\n-\t\t}\n-\n+\t\t\n \t\t#tb{\t\n   \t\t\tborder-collapse:collapse; /*//设置单边框*/\n \t\t}\n-\t\t\n \t\ttd{\n-\t\t\twidth: 250px;\n-  \t\t\theight: 30px;\n-  \t\t\ttext-align:center;\n+\t\t\ttext-align:center;\n \t\t}\n \t\t\n-\t\t#div1{\n-\t\t\tmargin:5% 25% 5% 25%;\n-\t\t\tpadding:5% 5% 5% 5%;\n-\t\t}\n \t\tbody{\n-\t\t\tbackground:#333333;\n-\t\t\tcolor:#333;\n+\t\t\tbackground:#777;\n+\t\t\t\n+\t\t}\n+\t\t\n+\t\tinput{\n+\t\t\tbackground-color: #666;\n+\t\t\tborder:none;\n+\t\t\tborder-radius:10px;\n+\t\t\ttext-align:center;\n+\t\t\twidth:150px;\n \t\t}\n-\t\t.head{\n-\t\t\tmargin: 0 auto;\n-\t\t\twidth: 200px;\n+\t\t\n+\t\ttextarea{\n+\t\t\tbackground-color: #666;\n+\t\t\tborder:none;\n+\t\t\tborder-radius:8px;\n+\t\t\ttext-align:center;\n \t\t}\n \t\t\n+\t\t\n \t</style>\n \n   </head>\n   \n   <body>\n-  \n-    <div id=\"div1\">\n-        <form id=\"form1\" action=\"<%=request.getContextPath() %>/UpdateGrades\" method=\"post\">\n-        \t<div >\n-        \t\t<table id=\"tb\">\n-        \t\t<div class=\"head\"> 基本成绩</div>\n-        \t\t\t<c:forEach var=\"grade\" items=\"${gradesList }\">\n-        \t\t\t\t<tr>\n-        \t\t\t\t\t<td>${grade.courseName }</td>\n-        \t\t\t\t\t<td><input type=\"text\" value=\"\"></td>\n-        \t\t\t\t</tr>        \t\t\t\n-        \t\t\t</c:forEach>\n-        \t\t</table>\n-        \t\t<button type=\"submit\" id=\"sub\">保存</button>\n-        \t</div>\n-        </form>\n-    </div>\n+  \t\n+  \t\t<%!Date date=new Date(); %>\n+      \t<%!DateFormat df= DateFormat.getDateTimeInstance(); %>\n+      \t<% String username=(String)session.getAttribute(\"user\");  %>\n+                \t           \n+  \t<div class=\"row\"> \n+      <div class=\"col-md-8\"></div>\n+      <div class=\"col-md-4\">\n+        <div class=\"col-md-6\">\n+        \t<button type=\"button\" class=\"btn btn-info\">\n+  \t\t\t\t<span class=\"glyphicon glyphicon-time\"></span> <%=df.format(date) %>\n+\t\t\t</button>\n+        </div>\n+        <div class=\"col-md-4\">\n+            <button type=\"button\" class=\"btn btn-info btn-sm\">\n+                <span class=\"glyphicon glyphicon-user\"></span> \n+                <label>你好！<%if(username!=null)out.write(username);%>,欢迎登录</label>\n+            </button>\n+        </div>\n+        <div class=\"col-md-2\"></div>\n+      </div>\n+\t</div>\n+    <br><br><br><br>\n+    <div class=\"row\" id=\"div1\">\n+    \t<div id=\"div1\" class=\"col-md-12\">\n+\t        <form id=\"form1\" action=\"<%=request.getContextPath() %>/UpdateGrades\" method=\"post\">\n+\t        \t<div >\n+\t        \t\t<table id=\"tb\" class=\"table table-bordered\">\n+\t        \t\t\t<tr><td>课程名</td><td>成绩</td></tr>\n+\t        \t\t\t<c:forEach var=\"grade\" items=\"${gradesList }\">\n+\t        \t\t\t\t<tr>\n+\t        \t\t\t\t\t<td>${grade.courseName }</td>\n+\t        \t\t\t\t\t<td><input type=\"text\" value=\"\"></td>\n+\t        \t\t\t\t</tr>        \t\t\t\n+\t        \t\t\t</c:forEach>\n+\t        \t\t</table> \t\t\n+\t        \t</div>\n+\t        \t<div style=\"text-align:right\"><button type=\"submit\" id=\"sub\" class=\"btn btn-success\">保存</button></div>\n+\t        </form>\n+\t        <br><br><br>\n+\t    </div>\n+\t    \n+  \t\t<div class=\"col-md-12\">\n+  \t\t\t<form action=\"<%=request.getContextPath() %>/GetAwards\" method=\"post\">\n+\t  \t\t\t<table class=\"table table-bordered\" id=\"awardTable\">\n+\t  \t\t\t\t<tr><td>序号</td><td>奖励名称</td><td>获奖时间</td><td>名次</td><td>奖励描述</td></tr>\n+\t  \t\t\t\t<tr id=\"Acol1\">\n+\t  \t\t\t\t\t<td id=\"Acol10\">1</td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol11\" name=\"Acol11\"></textarea></td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol12\" name=\"Acol12\"></textarea></td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol13\" name=\"Acol13\"></textarea></td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol14\" name=\"Acol14\"></textarea></td>\t\n+\t  \t\t\t\t</tr>\n+\t  \t\t\t\t\n+\t  \t\t\t\t<tr id=\"Acol2\">\n+\t  \t\t\t\t\t<td id=\"Acol20\" name=\"Acol20\">2</td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol21\" name=\"Acol21\"></textarea></td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol22\" name=\"Acol22\"></textarea></td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol23\" name=\"Acol23\"></textarea></td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol24\" name=\"Acol24\"></textarea></td>\t\n+\t  \t\t\t\t</tr>\n+\t  \t\t\t\t\n+\t  \t\t\t\t<tr id=\"Acol3\">\n+\t  \t\t\t\t\t<td id=\"Acol30\" name=\"Acol30\">3</td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol31\" name=\"Acol31\"></textarea></td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol32\" name=\"Acol32\"></textarea></td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol33\" name=\"Acol33\"></textarea></td>\n+\t  \t\t\t\t\t<td ><textarea id=\"Acol34\" name=\"Acol34\"></textarea></td>\t\n+\t  \t\t\t\t</tr>\n+\t  \t\t\t</table>\n+\t  \t\t\t<div style=\"text-align:right\"><button type=\"submit\" id=\"sub1\" class=\"btn btn-success\">保存</button></div>\t\t\n+\t  \t\t</form>\t\t\t\t\n+\t  \t\t\t\n+  \t\t\t\n+  \t\t\t<br><br><br>\n+  \t\t</div>\n+  \t\t\n+  \t\t\n+  \t\t\n+  \t\t<br><br>\n+  \t\t<div class=\"col-md-12\">\n+  \t\t\t<table class=\"table table-bordered\" >\n+  \t\t\t\t<tr><td>序号</td><td>处罚名称</td><td>处罚时间</td><td>处罚原因</td><td>处罚结果</td></tr>\n+  \t\t\t\t<tr>\n+  \t\t\t\t\t<td>1</td>\n+  \t\t\t\t\t<td><textarea id=\"punish11\" name=\"punish11\"></textarea></td>\n+  \t\t\t\t\t<td><textarea id=\"punish12\" name=\"punish12\"></textarea></td>\n+  \t\t\t\t\t<td><textarea id=\"punish13\" name=\"punish13\"></textarea></td>\n+  \t\t\t\t\t<td><textarea id=\"punish14\" name=\"punish14\"></textarea></td>\n+  \t\t\t\t</tr>\n+  \t\t\t</table>\n+  \t\t\t<div style=\"text-align:right;\"><button type=\"button\" id=\"sub2\" class=\"btn btn-success\">保存</button></div>\n+  \t\t</div>\n+\t</div>\n+\t\n     \n     <script type=\"text/javascript\">\n     \t\n     \t\t$(function(){\n-    \t\t\n-    \t\t\t\n-    \t\t\t\n     \t\t\tvar name=\"subject\";\n     \t\t\tvar index=0;\n     \t\t\t$(\":text\").each(function(){\n@@ -90,6 +160,28 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n     \t\t\t\tindex++;\n     \t\t\t});\n     \t\t\t\n+    \t\t\tvar id=\"Acol\";\n+    \t\t\tvar j=4;\n+    \t\t\tvar i=0;\n+    \t\t\tvar table=$(\"#awardTable\");\n+    \t\t\t$(\"#Acol34\").change(function(){\n+    \t\t\t\tvar temp=$(\"<tr></tr>\");\n+    \t\t\t\ttemp.appendTo(table);\n+    \t\t\t\tvar first=$(\"<td></td>\").attr(\"id\",id+j+i).text(j).attr(\"name\",id+j+i);\n+    \t\t\t\tfirst.appendTo(temp);\n+    \t\t\t\tfor(i=1;i<4;i++)\n+    \t\t\t\t{\n+    \t\t\t\t\tvar t= $(\"<td></td>\");\n+    \t\t\t\t\tt.appendTo(temp);\n+    \t\t\t\t\tvar textarea=$(\"<textarea></textarea>\").attr(\"id\",id+j+i).attr(\"name\",id+j+i);\n+    \t\t\t\t\ttextarea.appendTo(t);\n+    \t\t\t\t}\n+    \t\t\t\tvar lastTd=$(\"<td></td>\");\n+    \t\t\t\tlastTd.appendTo(temp);\n+    \t\t\t\tvar textarea=$(\"<textarea></textarea>\").attr(\"id\",id+j+i).attr(\"name\",id+j+i);\n+    \t\t\t\ttextarea.appendTo(lastTd);\n+    \t\t\t});\n+    \t\t\t\n     \t\t\t});\n     </script>\n   </body>"
+  }, {
+    "sha" : "74a471a8dc2423537b409cc7e5260378daba16e5",
+    "filename" : "jweb/web/1414080902225/ShowAssessmentInfo.jsp",
+    "status" : "modified",
+    "additions" : 9,
+    "deletions" : 13,
+    "changes" : 22,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/web/1414080902225/ShowAssessmentInfo.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/web/1414080902225/ShowAssessmentInfo.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902225/ShowAssessmentInfo.jsp?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -1,4 +1,5 @@\n <%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n <%\n String path = request.getContextPath();\n String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n@@ -8,23 +9,15 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n <html>\n   <head>\n     <base href=\"<%=basePath%>\">\n-    \n-    <title>My JSP 'ShowAssessmentInfo.jsp' starting page</title>\n-    \n-\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n-\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n-\t<meta http-equiv=\"expires\" content=\"0\">    \n-\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n-\t<meta http-equiv=\"description\" content=\"This is my page\">\n-\t<!--\n-\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n-\t-->\n-\t<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\t\n \t<style type=\"text/css\">\n \t\t#div1{\n \t\t\tmargin:10% 10% 10% 10%;\n \t\t\tpadding:5% 5% 5% 5%;\n-\t\t\tbackground:#333;\n+\t\t\tbackground:#888;\n \t\t\tborder:1px solid blue;\n \t\t}\n \t\t\n@@ -37,6 +30,9 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n   \t\t\theight: 30px;\n   \t\t\ttext-align:center;\n \t\t}\n+\t\tbody{\n+\t\t\tbackground:#666;\n+\t\t}\n \t</style>\n \n   </head>"
+  }, {
+    "sha" : "3d7f7038d8e469766452906aa94f032173b4303f",
+    "filename" : "jweb/web/1414080902225/index.jsp",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 6,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/web/1414080902225/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed/jweb/web/1414080902225/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902225/index.jsp?ref=a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+    "patch" : "@@ -18,14 +18,9 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t<meta http-equiv=\"expires\" content=\"0\">    \n \t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n \t<meta http-equiv=\"description\" content=\"This is my page\">\n-\t<!--\n-\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n-\t-->\n-\t<!-- 新 Bootstrap 核心 CSS 文件 -->\n+\t\n     <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n     <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n     <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n   </head>\n   \n@@ -39,6 +34,7 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n             <br>\n             <br>\n             <br>\n+            <br>\n             <form class=\"form-horizontal \" role=\"form\" method=\"post\" action=\"GetFormMessageServlet\" >\n                 <div class=\"form-group\">\n                     <label class=\"col-md-2 control-label\" for=\"userName\">UserName:</label>"
+  } ],
+  "sha" : "a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a59992fcc4c0c41554683564c8b5a5e4e8ea05ed",
+  "parents" : [ {
+    "sha" : "5e1550d34ac32a8a42ccb1b02395ea71bb74aa1a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5e1550d34ac32a8a42ccb1b02395ea71bb74aa1a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/5e1550d34ac32a8a42ccb1b02395ea71bb74aa1a"
+  } ]
+}

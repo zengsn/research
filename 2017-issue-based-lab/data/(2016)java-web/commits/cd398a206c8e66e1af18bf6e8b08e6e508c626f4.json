@@ -1,0 +1,173 @@
+{
+  "committer" : {
+    "login" : "iDream666",
+    "id" : 18032727,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18032727?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/iDream666",
+    "html_url" : "https://github.com/iDream666",
+    "followers_url" : "https://api.github.com/users/iDream666/followers",
+    "following_url" : "https://api.github.com/users/iDream666/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/iDream666/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/iDream666/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/iDream666/subscriptions",
+    "organizations_url" : "https://api.github.com/users/iDream666/orgs",
+    "repos_url" : "https://api.github.com/users/iDream666/repos",
+    "events_url" : "https://api.github.com/users/iDream666/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/iDream666/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 299,
+    "additions" : 299,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "iDream666",
+    "id" : 18032727,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18032727?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/iDream666",
+    "html_url" : "https://github.com/iDream666",
+    "followers_url" : "https://api.github.com/users/iDream666/followers",
+    "following_url" : "https://api.github.com/users/iDream666/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/iDream666/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/iDream666/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/iDream666/subscriptions",
+    "organizations_url" : "https://api.github.com/users/iDream666/orgs",
+    "repos_url" : "https://api.github.com/users/iDream666/repos",
+    "events_url" : "https://api.github.com/users/iDream666/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/iDream666/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+  "commit" : {
+    "author" : {
+      "name" : "iDream666",
+      "email" : "1125458694@qq.com",
+      "date" : "2016-11-10T05:26:10Z"
+    },
+    "committer" : {
+      "name" : "iDream666",
+      "email" : "1125458694@qq.com",
+      "date" : "2016-11-10T05:26:10Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "7671adf96fe0561c18e94420813467623d393b2a",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/7671adf96fe0561c18e94420813467623d393b2a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/comments",
+  "files" : [ {
+    "sha" : "f4c8ebd8d218d563fb65f644051a0a3ad807422d",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902226/DaoHelper.java",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/DaoHelper.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/DaoHelper.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902226/DaoHelper.java?ref=cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "patch" : "@@ -0,0 +1,38 @@\n+package edu.hzu.javaweb.labs.se1414080902226;\n+\n+import java.sql.Connection;\n+import java.sql.DriverManager;\n+import java.sql.SQLException;\n+\n+\n+public class DaoHelper {\n+//\t private static final String URL = \"jdbc:mysql://127.0.0.1:3306/test\";\n+//\t  private static final String UNAME = \"root\";\n+//\t  private static final String PWD = \"root\";\n+//\t \n+//\t  private static Connection conn = null;\n+//\t \n+//\t  static\n+//\t  {\n+//\t    try\n+//\t    {\n+//\t      // 1.���������\n+//\t      Class.forName(\"com.mysql.jdbc.Driver\");\n+//\t      // 2.�����ݿ�����\n+//\t      conn = DriverManager.getConnection(URL, UNAME, PWD);\n+//\t    }\n+//\t    catch (ClassNotFoundException e)\n+//\t    {\n+//\t      e.printStackTrace();\n+//\t    }\n+//\t    catch (SQLException e)\n+//\t    {\n+//\t      e.printStackTrace();\n+//\t    }\n+//\t  }\n+//\t \n+//\t  public static Connection getConnection()\n+//\t  {\n+//\t    return conn;\n+//\t  }\n+}"
+  }, {
+    "sha" : "7cbbc969896f0592668e74c19554588422a2b320",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902226/InsertMoneyService.java",
+    "status" : "added",
+    "additions" : 23,
+    "deletions" : 0,
+    "changes" : 23,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/InsertMoneyService.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/InsertMoneyService.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902226/InsertMoneyService.java?ref=cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "patch" : "@@ -0,0 +1,23 @@\n+package edu.hzu.javaweb.labs.se1414080902226;\n+\n+import java.sql.Connection;\n+import java.sql.Date;\n+import java.sql.PreparedStatement;\n+import java.sql.SQLException;\n+\n+\n+public class InsertMoneyService {\n+\tpublic boolean insertMoney(ResultMap rm){\n+//\t\tConnection connection = DaoHelper.getConnection();\n+//\t\ttry {\n+//\t\t\tPreparedStatement ptmt = connection.prepareStatement(\"insert into goddess(name,money,pdata) values(?,?,curdate())\");\n+//\t\t\tptmt.setString(1, rm.getName());\n+//\t\t\tptmt.setLong(2,rm.getMoney());\n+//\t\t\treturn ptmt.execute();\n+//\t\t} catch (SQLException e) {\n+//\t\t\t TODO Auto-generated catch block\n+//\t\t\te.printStackTrace();\n+//\t\t}\n+\t\treturn false;\n+\t}\n+}"
+  }, {
+    "sha" : "845ac00f45950539df00e6391c0abe77bc0bd6d3",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902226/InsertMoneyServlet.java",
+    "status" : "added",
+    "additions" : 35,
+    "deletions" : 0,
+    "changes" : 35,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/InsertMoneyServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/InsertMoneyServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902226/InsertMoneyServlet.java?ref=cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "patch" : "@@ -0,0 +1,35 @@\n+package edu.hzu.javaweb.labs.se1414080902226;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+@WebServlet(name=\"InsertMoneyServlet\",urlPatterns=\"/1414080902226\")\n+public class InsertMoneyServlet extends HttpServlet {\n+\t@Override\n+\tprotected void doGet(HttpServletRequest req, HttpServletResponse resp)\n+\t\t\tthrows ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\tdoPost(req, resp);\n+\t}\n+\t@Override\n+\tprotected void doPost(HttpServletRequest req, HttpServletResponse resp)\n+\t\t\tthrows ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\tResultMap rm =new ResultMap();\n+\t\tif(req.getParameter(\"money\")!=null)\n+\t\t\trm.setMoney(Integer.valueOf(req.getParameter(\"money\")));\n+\t\telse\n+\t\t\tSystem.out.println(\"money�ò���������\");\n+\t\tif(req.getParameter(\"username\")!=null)\n+\t\t\trm.setName((String) req.getParameter(\"username\"));\n+//\t\tnew InsertMoneyService().insertMoney(rm);\n+\t\treq.setAttribute(\"msg\", \"����ɹ�\");\n+\t\treq.getRequestDispatcher(\"/insertmoneyres.jsp\").forward(req, resp);\n+\t}\n+\n+}"
+  }, {
+    "sha" : "1c0cfc39c3d9e00524f0d551cf28dfc9b790b57c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902226/QueryMoneyService.java",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/QueryMoneyService.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/QueryMoneyService.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902226/QueryMoneyService.java?ref=cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "patch" : "@@ -0,0 +1,33 @@\n+package edu.hzu.javaweb.labs.se1414080902226;\n+\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+\n+public class QueryMoneyService {\n+//\tpublic List<ResultMap> queryMoney(){\n+//\t\tList<ResultMap> l=new ArrayList<>();\n+//\t\tConnection connection = DaoHelper.getConnection();\n+//\t\tResultMap rms=null;\n+//\t\tString sql=\"select *from money\";\n+//\t\t try {\n+//\t\t\tPreparedStatement ptmt = connection.prepareStatement(sql);\n+//\t\t\tResultSet resultSet = ptmt.executeQuery();\n+//\t\t\twhile(resultSet.next()){\n+//\t\t\t\trms=new ResultMap();;\n+//\t\t\t\trms.setName(resultSet.getString(\"name\"));\n+//\t\t\t\trms.setMoney(resultSet.getInt(\"money\"));\n+//\t\t\t\trms.setData(resultSet.getDate(\"pdata\"));\n+//\t\t\t\tl.add(rms);\n+//\t\t\t}\n+//\t\t} catch (SQLException e) {\n+//\t\t\t// TODO Auto-generated catch block\n+//\t\t\te.printStackTrace();\n+//\t\t}\n+//\t\treturn l;\n+//\t}\n+}"
+  }, {
+    "sha" : "06e3b6e27a0fd8b8a24c9ee5e0b6d5a1e2212262",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902226/QueryMoneyServlet.java",
+    "status" : "added",
+    "additions" : 29,
+    "deletions" : 0,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/QueryMoneyServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/QueryMoneyServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902226/QueryMoneyServlet.java?ref=cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "patch" : "@@ -0,0 +1,29 @@\n+package edu.hzu.javaweb.labs.se1414080902226;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.List;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+\n+public class QueryMoneyServlet extends HttpServlet {\n+\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tdoPost(request, response);\n+\t}\n+\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+//\tQueryMoneyService qms=new QueryMoneyService();\n+//\t\tList<ResultMap> l=qms.queryMoney();\n+\t\trequest.setAttribute(\"msg\", \"��ݿ��û�н��أ�\");\n+\t\trequest.getRequestDispatcher(\"/querymoneyres.jsp\").forward(request, response);;\n+\t}\n+\n+}"
+  }, {
+    "sha" : "7a52227b7199a239dc264b0d426d77ead9632a4b",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902226/ResultMap.java",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/ResultMap.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/jweb/src/edu/hzu/javaweb/labs/se1414080902226/ResultMap.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902226/ResultMap.java?ref=cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "patch" : "@@ -0,0 +1,34 @@\n+package edu.hzu.javaweb.labs.se1414080902226;\n+\n+import java.sql.Date;\n+\n+\n+public class ResultMap {\n+\tprivate String name;\n+\n+\tprivate int money;\n+\tprivate Date data;\n+\tpublic String getName() {\n+\t\treturn name;\n+\t}\n+\tpublic void setName(String name) {\n+\t\tthis.name = name;\n+\t}\n+\tpublic int getMoney() {\n+\t\treturn money;\n+\t}\n+\tpublic void setMoney(int money) {\n+\t\tthis.money = money;\n+\t}\n+\tpublic Date getData() {\n+\t\treturn data;\n+\t}\n+\tpublic void setData(Date data) {\n+\t\tthis.data = data;\n+\t}\n+\t@Override\n+\tpublic String toString() {\n+\t\treturn \"ResultMap [name=\" + name + \", money=\" + money + \", data=\"\n+\t\t\t\t+ data + \"]\";\n+\t}\n+}"
+  }, {
+    "sha" : "415110c8b430e5849aa1093086a8ecee0e7b435e",
+    "filename" : "labs/1414080902226/insertmoneyres.jsp",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/labs/1414080902226/insertmoneyres.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/labs/1414080902226/insertmoneyres.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902226/insertmoneyres.jsp?ref=cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "patch" : "@@ -0,0 +1,34 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'querymoneyres.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+  \t<% if(request.getAttribute(\"msg\")!=null) {\n+  \t\tout.println(request.getAttribute(\"msg\"));\n+  \t}else{\n+  \t\tout.println(\"查询失败\");\n+  \t}%>\n+  \t\n+  </body>\n+</html>"
+  }, {
+    "sha" : "8f4b527f129c6d4e1164989c36cd6b6c90fbc63c",
+    "filename" : "labs/1414080902226/querymoney.jsp",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/labs/1414080902226/querymoney.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/labs/1414080902226/querymoney.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902226/querymoney.jsp?ref=cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "patch" : "@@ -0,0 +1,39 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'querymoney.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    \t<form action=\"/qiandaoxitong/servlet/QueryMoneyServlet\" method=\"post\">\n+    \t<h2>查询营业额模块</h2>\n+    \t\t加盟商姓名：<input type=\"text\" name=\"username\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\t\t<input type=\"submit\" value=\"查询\">\n+    \t</form>\n+    \t<form action=\"/qiandaoxitong/servlet/InsertMoneyServlet\" method=\"post\">\n+    \t<h2>添加营业额模块</h2>\n+    \t\t加盟商姓名：<input type=\"text\" name=\"username\" id=\"username\">\n+    \t\t<br>\n+    \t\t金额：<input type=\"text\" name=\"money\" id=\"money\">\n+    \t\t<br>\n+    \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" value=\"添加\">\n+    \t</form>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "415110c8b430e5849aa1093086a8ecee0e7b435e",
+    "filename" : "labs/1414080902226/querymoneyres.jsp",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/labs/1414080902226/querymoneyres.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/cd398a206c8e66e1af18bf6e8b08e6e508c626f4/labs/1414080902226/querymoneyres.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902226/querymoneyres.jsp?ref=cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+    "patch" : "@@ -0,0 +1,34 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'querymoneyres.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+  \t<% if(request.getAttribute(\"msg\")!=null) {\n+  \t\tout.println(request.getAttribute(\"msg\"));\n+  \t}else{\n+  \t\tout.println(\"查询失败\");\n+  \t}%>\n+  \t\n+  </body>\n+</html>"
+  } ],
+  "sha" : "cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/cd398a206c8e66e1af18bf6e8b08e6e508c626f4",
+  "parents" : [ {
+    "sha" : "b409ed7a7fcceba4103b9533166227b1457407aa",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b409ed7a7fcceba4103b9533166227b1457407aa",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/b409ed7a7fcceba4103b9533166227b1457407aa"
+  } ]
+}

@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "CXCong",
+    "id" : 22153757,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22153757?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/CXCong",
+    "html_url" : "https://github.com/CXCong",
+    "followers_url" : "https://api.github.com/users/CXCong/followers",
+    "following_url" : "https://api.github.com/users/CXCong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/CXCong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/CXCong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/CXCong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/CXCong/orgs",
+    "repos_url" : "https://api.github.com/users/CXCong/repos",
+    "events_url" : "https://api.github.com/users/CXCong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/CXCong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 112,
+    "additions" : 112,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "CXCong",
+    "id" : 22153757,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22153757?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/CXCong",
+    "html_url" : "https://github.com/CXCong",
+    "followers_url" : "https://api.github.com/users/CXCong/followers",
+    "following_url" : "https://api.github.com/users/CXCong/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/CXCong/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/CXCong/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/CXCong/subscriptions",
+    "organizations_url" : "https://api.github.com/users/CXCong/orgs",
+    "repos_url" : "https://api.github.com/users/CXCong/repos",
+    "events_url" : "https://api.github.com/users/CXCong/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/CXCong/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/9f8d6ab9551597d49c27e8b86e92a26954faff0a",
+  "commit" : {
+    "author" : {
+      "name" : "CXCong",
+      "email" : "513470959@qq.com",
+      "date" : "2016-07-14T03:19:13Z"
+    },
+    "committer" : {
+      "name" : "CXCong",
+      "email" : "513470959@qq.com",
+      "date" : "2016-07-14T03:19:13Z"
+    },
+    "message" : "here",
+    "tree" : {
+      "sha" : "e5a765eadfae4692f1cfe2317ca11bc5bfca46ba",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/e5a765eadfae4692f1cfe2317ca11bc5bfca46ba"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/9f8d6ab9551597d49c27e8b86e92a26954faff0a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/9f8d6ab9551597d49c27e8b86e92a26954faff0a/comments",
+  "files" : [ {
+    "sha" : "4512e65d9dbf68b26448dca1a2b2ebb336e51df8",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902111/Connect.java",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/9f8d6ab9551597d49c27e8b86e92a26954faff0a/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Connect.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/9f8d6ab9551597d49c27e8b86e92a26954faff0a/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Connect.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Connect.java?ref=9f8d6ab9551597d49c27e8b86e92a26954faff0a",
+    "patch" : "@@ -0,0 +1,30 @@\n+package edu.hzu.javaweb.labs.se1414080902111;\n+import java.sql.*;\n+public class Connect {\n+\tprivate static String driverName=\"com.mysql.jdbc.Driver\";\n+\tprivate static String userName=\"root\";\n+\tprivate static String userPwd=\"root\";\n+\tprivate static String dbName=\"Users\";\n+\t\n+\tpublic static Connection getConnect(){\n+\t\tString url1=\"jdbc:mysql:/localhost:3306/\"+dbName;\n+\t\tString url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+\t\tString url3=\"&userUnicode=true&characterEncoding=UTF-8\";\n+\t\tString url=url1+url2+url3;\n+        try{\n+        Class.forName(driverName);\n+        Connection con=DriverManager.getConnection(url);       \n+        return con;\n+ } catch(Exception e){e.printStackTrace();}\n+        return null;\n+  }\n+  public static void close(Connection con,PreparedStatement pstm,ResultSet rs)\n+  {\n+\t  try{\n+\t\t  if(rs!=null) rs.close();\n+\t\t  if(pstm!=null) pstm.close();\n+\t\t  if(con!=null) con.close();\n+\t  }catch(SQLException e)\n+\t  { e.printStackTrace();}\n+  }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "bf98b784b7765527f51c4b90382e4f87962cfdd7",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902111/Subinfo.java",
+    "status" : "added",
+    "additions" : 63,
+    "deletions" : 0,
+    "changes" : 63,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/9f8d6ab9551597d49c27e8b86e92a26954faff0a/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Subinfo.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/9f8d6ab9551597d49c27e8b86e92a26954faff0a/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Subinfo.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Subinfo.java?ref=9f8d6ab9551597d49c27e8b86e92a26954faff0a",
+    "patch" : "@@ -0,0 +1,63 @@\n+package edu.hzu.javaweb.labs.se1414080902111;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.*;\n+import java.sql.*;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import edu.hzu.javaweb.labs.se1414080902111.User;\n+\n+public class SetUser extends HttpServlet {\n+\n+\t \n+\t/**\n+\t * \n+\t */\n+\tprivate static final long serialVersionUID = 1L;\n+\n+\n+\tpublic SetUser() {\n+\t\tsuper();\n+\t}\n+\n+\t\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\t\t\n+\t\tresponse.setContentType(\"UTF-8\");\n+\t\tPrintWriter out=response.getWriter();\n+\t\tString email=request.getParameter(\"Email\");\n+        \tString name=request.getParameter(\"Name\");\n+\t\tString id=request.getParameter(\"ID\");\n+\t\tString password=request.getParameter(\"PW\");\n+\t\tString select=request.getParameter(\"Select\");\n+\t\tString pride=request.getParameter(\"Money\");\n+\t\tString sql=\"Insert into Users_info(email,name,id,password,select,pride) values(?,?,?,?,?,?)\";\n+\t\tUtil run=new Util();\n+        \tint n=run.updateSQL(sql);\n+        if(n>=1) out.println(\"�����ύ�ɹ���\"); \n+\telse  out.println(\"���׷���ʧ��\");\n+\t}\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tdoGet(request,response);\n+\t}\n+\n+\t\n+\tpublic void init() throws ServletException {\n+\t\t\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "428b2ade4ee25d45118018ed1fab38f377961a90",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902111/Util.java",
+    "status" : "added",
+    "additions" : 19,
+    "deletions" : 0,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/9f8d6ab9551597d49c27e8b86e92a26954faff0a/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Util.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/9f8d6ab9551597d49c27e8b86e92a26954faff0a/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Util.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Util.java?ref=9f8d6ab9551597d49c27e8b86e92a26954faff0a",
+    "patch" : "@@ -0,0 +1,19 @@\n+package edu.hzu.javaweb.labs.se1414080902111;\n+import java.sql.*;\n+public class Util {\n+\t   private Connection con=null;\n+\t   private PreparedStatement pstmt=null;\n+\t   private ResultSet rs=null;\n+\tpublic int updateSQL(String sql) {\n+\t\t   int n=-1;\n+\t\t   try{\n+\t\t\t   con=Connect.getConnect(); \n+\t\t\t   pstmt=con.prepareStatement(sql);\n+\t\t\t   n=pstmt.executeUpdate();\n+\t\t   }catch(SQLException e){e.printStackTrace();}\n+\t\t   Connect.close(con, pstmt, rs);\n+\t\t   return n; \n+\t\n+\t}\n+\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "9f8d6ab9551597d49c27e8b86e92a26954faff0a",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9f8d6ab9551597d49c27e8b86e92a26954faff0a",
+  "parents" : [ {
+    "sha" : "af5dd8054447019237c5ff9bd88f169fe7c4f484",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/af5dd8054447019237c5ff9bd88f169fe7c4f484",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/af5dd8054447019237c5ff9bd88f169fe7c4f484"
+  } ]
+}

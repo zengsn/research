@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "SilentIce",
+    "id" : 17781720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17781720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SilentIce",
+    "html_url" : "https://github.com/SilentIce",
+    "followers_url" : "https://api.github.com/users/SilentIce/followers",
+    "following_url" : "https://api.github.com/users/SilentIce/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SilentIce/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SilentIce/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SilentIce/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SilentIce/orgs",
+    "repos_url" : "https://api.github.com/users/SilentIce/repos",
+    "events_url" : "https://api.github.com/users/SilentIce/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SilentIce/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 29,
+    "additions" : 29,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "SilentIce",
+    "id" : 17781720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17781720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SilentIce",
+    "html_url" : "https://github.com/SilentIce",
+    "followers_url" : "https://api.github.com/users/SilentIce/followers",
+    "following_url" : "https://api.github.com/users/SilentIce/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SilentIce/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SilentIce/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SilentIce/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SilentIce/orgs",
+    "repos_url" : "https://api.github.com/users/SilentIce/repos",
+    "events_url" : "https://api.github.com/users/SilentIce/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SilentIce/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/1291e85e1923c1de6388eb641c85a976971748b4",
+  "commit" : {
+    "author" : {
+      "name" : "SilentIce",
+      "email" : "better_ice@163.com",
+      "date" : "2016-04-20T02:57:34Z"
+    },
+    "committer" : {
+      "name" : "SilentIce",
+      "email" : "better_ice@163.com",
+      "date" : "2016-04-20T02:57:34Z"
+    },
+    "message" : "#1 #18 labs1",
+    "tree" : {
+      "sha" : "6aefeb41b9deb82fa5d62234b27486d62cc3049d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/6aefeb41b9deb82fa5d62234b27486d62cc3049d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/1291e85e1923c1de6388eb641c85a976971748b4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1291e85e1923c1de6388eb641c85a976971748b4/comments",
+  "files" : [ {
+    "sha" : "1a4d03edeabc21b0a647b356ae46097815f4e298",
+    "filename" : "net1314080903209/Net1314080903209.java",
+    "status" : "added",
+    "additions" : 29,
+    "deletions" : 0,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/1291e85e1923c1de6388eb641c85a976971748b4/net1314080903209/Net1314080903209.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/1291e85e1923c1de6388eb641c85a976971748b4/net1314080903209/Net1314080903209.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/net1314080903209/Net1314080903209.java?ref=1291e85e1923c1de6388eb641c85a976971748b4",
+    "patch" : "@@ -0,0 +1,29 @@\n+package com.example.marryfang.myapplication;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+\n+public class Net1314080903209 extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n+\n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+    }\n+\n+}"
+  } ],
+  "sha" : "1291e85e1923c1de6388eb641c85a976971748b4",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1291e85e1923c1de6388eb641c85a976971748b4",
+  "parents" : [ {
+    "sha" : "fcc5f1085f75182b675bea975770314ec9da5294",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/fcc5f1085f75182b675bea975770314ec9da5294",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/fcc5f1085f75182b675bea975770314ec9da5294"
+  } ]
+}

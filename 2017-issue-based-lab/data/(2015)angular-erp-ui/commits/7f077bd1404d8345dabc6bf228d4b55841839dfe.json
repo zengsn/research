@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "baijihui416",
+    "id" : 15075423,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15075423?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/baijihui416",
+    "html_url" : "https://github.com/baijihui416",
+    "followers_url" : "https://api.github.com/users/baijihui416/followers",
+    "following_url" : "https://api.github.com/users/baijihui416/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/baijihui416/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/baijihui416/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/baijihui416/subscriptions",
+    "organizations_url" : "https://api.github.com/users/baijihui416/orgs",
+    "repos_url" : "https://api.github.com/users/baijihui416/repos",
+    "events_url" : "https://api.github.com/users/baijihui416/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/baijihui416/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 17,
+    "additions" : 16,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "baijihui416",
+    "id" : 15075423,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15075423?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/baijihui416",
+    "html_url" : "https://github.com/baijihui416",
+    "followers_url" : "https://api.github.com/users/baijihui416/followers",
+    "following_url" : "https://api.github.com/users/baijihui416/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/baijihui416/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/baijihui416/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/baijihui416/subscriptions",
+    "organizations_url" : "https://api.github.com/users/baijihui416/orgs",
+    "repos_url" : "https://api.github.com/users/baijihui416/repos",
+    "events_url" : "https://api.github.com/users/baijihui416/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/baijihui416/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/7f077bd1404d8345dabc6bf228d4b55841839dfe",
+  "commit" : {
+    "author" : {
+      "name" : "baijihui416",
+      "email" : "253759872@qq.com",
+      "date" : "2015-10-23T16:07:05Z"
+    },
+    "committer" : {
+      "name" : "baijihui416",
+      "email" : "253759872@qq.com",
+      "date" : "2015-10-23T16:07:05Z"
+    },
+    "message" : "实验三",
+    "tree" : {
+      "sha" : "ce680803493af16ef695cccd533a5fee743c6814",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/ce680803493af16ef695cccd533a5fee743c6814"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/7f077bd1404d8345dabc6bf228d4b55841839dfe",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7f077bd1404d8345dabc6bf228d4b55841839dfe/comments",
+  "files" : [ {
+    "sha" : "f9c010ab42c9a817609d107c6824d326afb69eb1",
+    "filename" : "works/1314080901101/index.html",
+    "status" : "modified",
+    "additions" : 16,
+    "deletions" : 1,
+    "changes" : 17,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7f077bd1404d8345dabc6bf228d4b55841839dfe/works/1314080901101/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7f077bd1404d8345dabc6bf228d4b55841839dfe/works/1314080901101/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901101/index.html?ref=7f077bd1404d8345dabc6bf228d4b55841839dfe",
+    "patch" : "@@ -5,7 +5,7 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>仓库-单据明细 1314080901101</title>\n+    <title>仓库-采购入库-导入采购材料 1314080901101</title>\n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -20,6 +20,21 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n+    <script>\n+    function MyFilterDemoCtrl($scope) {\n+        var documentsDetail = {\n+            number: '001',\n+            code: 'AAA',\n+            type: 'food',\n+            name: 'chicken',\n+            model: 'big',\n+            unit:'kg'\n+            quantity:10\n+            note:'taste good'\n+        };\n+        $scope.data = documentsDetail;\n+}\n+ </script>\n   </head>\n   <body>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">"
+  } ],
+  "sha" : "7f077bd1404d8345dabc6bf228d4b55841839dfe",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7f077bd1404d8345dabc6bf228d4b55841839dfe",
+  "parents" : [ {
+    "sha" : "b0d1fcb0fcfb2cc72d6ba1f3a24d8ecd80b9ed16",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/b0d1fcb0fcfb2cc72d6ba1f3a24d8ecd80b9ed16",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/b0d1fcb0fcfb2cc72d6ba1f3a24d8ecd80b9ed16"
+  } ]
+}

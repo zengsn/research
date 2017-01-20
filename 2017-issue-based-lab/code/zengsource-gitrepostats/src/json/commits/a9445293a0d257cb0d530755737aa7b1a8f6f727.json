@@ -1,0 +1,267 @@
+{
+  "committer" : {
+    "login" : "LGSEN",
+    "id" : 17819592,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17819592?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LGSEN",
+    "html_url" : "https://github.com/LGSEN",
+    "followers_url" : "https://api.github.com/users/LGSEN/followers",
+    "following_url" : "https://api.github.com/users/LGSEN/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LGSEN/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LGSEN/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LGSEN/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LGSEN/orgs",
+    "repos_url" : "https://api.github.com/users/LGSEN/repos",
+    "events_url" : "https://api.github.com/users/LGSEN/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LGSEN/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 639,
+    "additions" : 639,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "LGSEN",
+    "id" : 17819592,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17819592?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LGSEN",
+    "html_url" : "https://github.com/LGSEN",
+    "followers_url" : "https://api.github.com/users/LGSEN/followers",
+    "following_url" : "https://api.github.com/users/LGSEN/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LGSEN/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LGSEN/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LGSEN/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LGSEN/orgs",
+    "repos_url" : "https://api.github.com/users/LGSEN/repos",
+    "events_url" : "https://api.github.com/users/LGSEN/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LGSEN/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/a9445293a0d257cb0d530755737aa7b1a8f6f727",
+  "commit" : {
+    "author" : {
+      "name" : "LGSEN",
+      "email" : "525199370@qq.com",
+      "date" : "2016-05-13T04:00:30Z"
+    },
+    "committer" : {
+      "name" : "LGSEN",
+      "email" : "525199370@qq.com",
+      "date" : "2016-05-13T04:00:30Z"
+    },
+    "message" : "#91 #92 #93 #94 #95 #99 实验5-9",
+    "tree" : {
+      "sha" : "3bf2134b7ae269ed2bf7063a19eb66ad8eb13d5d",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/3bf2134b7ae269ed2bf7063a19eb66ad8eb13d5d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a9445293a0d257cb0d530755737aa7b1a8f6f727/comments",
+  "files" : [ {
+    "sha" : "8d99f9c8526254af8553b70e07a9f954bc9a8daf",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/AndroidManifest.xml",
+    "status" : "added",
+    "additions" : 32,
+    "deletions" : 0,
+    "changes" : 32,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/AndroidManifest.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/AndroidManifest.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/AndroidManifest.xml?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,32 @@\n+\n+<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    package=\"edu.hzuapps.androidworks.homeworks.net1314080903129\">\n+\n+    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n+\n+    <application\n+        android:allowBackup=\"true\"\n+        android:icon=\"@mipmap/color\"\n+        android:label=\"@string/app_name\"\n+        android:supportsRtl=\"true\"\n+        android:theme=\"@style/AppTheme\">\n+\n+        <activity android:name=\".Net1314080903129MainActivity\">\n+            <intent-filter>\n+                <action android:name=\"android.intent.action.MAIN\" />\n+                <category android:name=\"android.intent.category.LAUNCHER\" />\n+            </intent-filter>\n+        </activity>\n+        <activity android:name=\".ChatActivity\"\n+            android:launchMode=\"singleTask\">\n+            <!--用户聊天界面-->\n+        </activity>\n+        <!--注册广播接收器-->\n+        <receiver android:name=\".Net1314080903129NetworkBroadcast\">\n+            <intent-filter>\n+                <action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\" />\n+            </intent-filter>\n+        </receiver>\n+    </application>\n+\n+</manifest>\n\\ No newline at end of file"
+  }, {
+    "sha" : "152a2f198ea3f3d99984252184e81d05ab2a5bd7",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/ChatActivity.java",
+    "status" : "added",
+    "additions" : 130,
+    "deletions" : 0,
+    "changes" : 130,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/ChatActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/ChatActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/ChatActivity.java?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,130 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903129;\n+\n+/**\n+ * Created by Administrator on 2016/4/25.\n+ */\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.text.TextUtils;\n+import android.view.View;\n+import android.widget.AdapterView;\n+import android.widget.Button;\n+import android.widget.EditText;\n+import android.widget.ListView;\n+import android.widget.TextView;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+/**\n+ * Created by dudon on 2016/1/15.\n+ */\n+public class ChatActivity extends Activity {\n+    private List<Message> chatList;\n+    private Net1314080903129MessageAdapter adapter;\n+    private Net1314080903129ChatLayout net1314080903129ChatLayoutNet1314080903129;\n+    private ListView listView;\n+    private EditText editText;\n+    private Button button;\n+    private Net1314080903129User user;\n+\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.net1314080903129activity_chat);\n+        //Intent内容传递\n+        Intent intent = getIntent();\n+        user = (Net1314080903129User) intent.getSerializableExtra(\"user\");\n+        if (user.getChats() == null) {\n+            chatList = new ArrayList<Message>();\n+            user.setChats(chatList);\n+        } else {\n+            chatList = user.getChats();\n+        }\n+        //加载内容\n+        TextView chatTitle = (TextView) findViewById(R.id.user_center);\n+        chatTitle.setText(user.getName());\n+        //适配内容\n+        loadContent();\n+        listView = (ListView) findViewById(R.id.chat_list);\n+        adapter = new Net1314080903129MessageAdapter(ChatActivity.this, R.layout.net1314080903129chat_item, chatList);\n+        adapter.setUserImage(user.getImage());\n+        listView.setAdapter(adapter);\n+        //点击弹出内容\n+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {\n+            @Override\n+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {\n+                TextView white = (TextView) view.findViewById(R.id.white_message);\n+                TextView green = (TextView) view.findViewById(R.id.green_message);\n+                int type = chatList.get(position).getType();\n+                final String content = chatList.get(position).getContent();\n+                //点击气泡弹出消息\n+                if (type == Message.TYPE_RECEIVED) {\n+                    white.setOnClickListener(new View.OnClickListener() {\n+                        @Override\n+                        public void onClick(View v) {\n+                            //Toast.makeText(ChatActivity.this, content, Toast.LENGTH_SHORT).show();\n+                            chatList.remove(position);\n+                            adapter.notifyDataSetChanged();\n+                            listView.setSelection(chatList.size());\n+                        }\n+                    });\n+                } else if (type == Message.TYPE_SENT) {\n+                    green.setOnClickListener(new View.OnClickListener() {\n+                        @Override\n+                        public void onClick(View v) {\n+                            //Toast.makeText(ChatActivity.this, content, Toast.LENGTH_SHORT).show();\n+                            chatList.remove(position);\n+                            adapter.notifyDataSetChanged();\n+                            listView.setSelection(chatList.size());\n+                        }\n+                    });\n+                }\n+\n+            }\n+        });\n+        //发送信息\n+        button = (Button) findViewById(R.id.send_message);\n+        editText = (EditText) findViewById(R.id.edit_message);\n+        net1314080903129ChatLayoutNet1314080903129 = (Net1314080903129ChatLayout) findViewById(R.id.chat_layout);\n+\n+        net1314080903129ChatLayoutNet1314080903129.setUserName(user.getName());\n+\n+        button.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                String content = editText.getText().toString();\n+                if (!TextUtils.isEmpty(content)) {\n+\n+                    if (net1314080903129ChatLayoutNet1314080903129.getSendState() == Message.TYPE_RECEIVED) {\n+                        Message message = new Message(content, Message.TYPE_RECEIVED);\n+                        chatList.add(message);\n+                    } else if (net1314080903129ChatLayoutNet1314080903129.getSendState() == Message.TYPE_SENT) {\n+                        Message message = new Message(content, Message.TYPE_SENT);\n+                        chatList.add(message);\n+                    }\n+                    //当有新消息时，刷新ListView中的显示\n+                    adapter.notifyDataSetChanged();\n+                    //将ListView定位到最后一行\n+                    listView.setSelection(chatList.size());\n+                    //清空输入框中的内容\n+                    editText.setText(\"\");\n+                }\n+            }\n+        });\n+\n+    }\n+\n+    //手动初始化内容\n+    private void loadContent() {\n+//        Message Message1 = new Message(\"How are you?\", Message.TYPE_SENT);\n+//        Message Message2 = new Message(\"I am fine ,and you?\", Message.TYPE_RECEIVED);\n+//        Message Message3 = new Message(\"I am fine too.\", Message.TYPE_RECEIVED);\n+//        chatList.add(Message1);\n+//        chatList.add(Message2);\n+//        chatList.add(Message3);\n+    }\n+}\n+"
+  }, {
+    "sha" : "98d5161ab94a4d77f6157bf506a6f66574cdfd44",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Message.java",
+    "status" : "added",
+    "additions" : 25,
+    "deletions" : 0,
+    "changes" : 25,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Message.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Message.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Message.java?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,25 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903129;\n+\n+/**\n+ * Created by Administrator on 2016/4/25.\n+ */\n+public class Message {\n+    public static final int TYPE_RECEIVED = 0;\n+    public static final int TYPE_SENT = 1;\n+\n+    private String content;\n+    private int type;\n+\n+    public Message(String content, int type) {\n+        this.content = content;\n+        this.type = type;\n+    }\n+\n+    public String getContent() {\n+        return content;\n+    }\n+\n+    public int getType() {\n+        return type;\n+    }\n+}"
+  }, {
+    "sha" : "f96192e5f2b2c367ba4bc50ad0a88b1fa2db5d31",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129ChatLayout.java",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129ChatLayout.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129ChatLayout.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129ChatLayout.java?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,62 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903129;\n+\n+/**\n+ * Created by Administrator on 2016/4/25.\n+ */\n+import android.app.Activity;\n+import android.content.Context;\n+import android.util.AttributeSet;\n+import android.view.LayoutInflater;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.LinearLayout;\n+import android.widget.Toast;\n+\n+/**\n+ * Created by dudon on 2016/1/15.\n+ */\n+public class Net1314080903129ChatLayout extends LinearLayout {\n+    private boolean isMe = true;\n+    private String userName;\n+    private int sendState = Message.TYPE_SENT;\n+\n+    public Net1314080903129ChatLayout(final Context context, AttributeSet attr) {\n+        super(context, attr);\n+        //动态加载布局\n+        LayoutInflater.from(getContext()).inflate(R.layout.net1314080903129user_bar, this);\n+        Button btnBack = (Button) findViewById(R.id.text_back);\n+        Button btnEdit = (Button) findViewById(R.id.user_change);\n+        btnBack.setOnClickListener(new OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                //结束当前Activity\n+                ((Activity) getContext()).finish();\n+                //Context是Activity的父类\n+            }\n+        });\n+        btnEdit.setOnClickListener(new OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+\n+                if (isMe) {\n+                    Toast.makeText(getContext(), \"切换到 \" + userName, Toast.LENGTH_SHORT).show();\n+                    sendState = Message.TYPE_RECEIVED;\n+                    isMe = false;\n+                } else {\n+                    Toast.makeText(getContext(), \"切换至本地\", Toast.LENGTH_SHORT).show();\n+                    isMe = true;\n+                    sendState = Message.TYPE_SENT;\n+                }\n+\n+            }\n+        });\n+    }\n+\n+    public int getSendState() {\n+        return sendState;\n+    }\n+\n+    public void setUserName(String userName) {\n+        this.userName = userName;\n+    }\n+}"
+  }, {
+    "sha" : "619669e08bd0d7dd9707bb5574dd90fe9759fc71",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129MessageAdapter.java",
+    "status" : "added",
+    "additions" : 85,
+    "deletions" : 0,
+    "changes" : 85,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129MessageAdapter.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129MessageAdapter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129MessageAdapter.java?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,85 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903129;\n+\n+/**\n+ * Created by Administrator on 2016/4/25.\n+ */\n+import android.content.Context;\n+import android.graphics.Bitmap;\n+import android.view.LayoutInflater;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.widget.ArrayAdapter;\n+import android.widget.ImageView;\n+import android.widget.LinearLayout;\n+import android.widget.TextView;\n+\n+import java.util.List;\n+\n+public class Net1314080903129MessageAdapter extends ArrayAdapter<Message> {\n+\n+    private int resourceID;\n+    private Net1314080903129RoundRect net1314080903129RoundRectNet1314080903129 = new Net1314080903129RoundRect(100, 100, 50);\n+\n+    public void setUserImage(int userImage) {\n+        this.userImage = userImage;\n+    }\n+\n+    private int userImage;\n+\n+    public Net1314080903129MessageAdapter(Context context, int resource, List<Message> objects) {\n+        super(context, resource, objects);\n+        resourceID = resource;\n+    }\n+\n+    @Override\n+    public View getView(int position, View convertView, ViewGroup parent) {\n+        Message message = getItem(position);\n+        View view;\n+        ViewHolder viewHolder;\n+\n+        if (convertView == null) {\n+            view = LayoutInflater.from(getContext()).inflate(resourceID, null);\n+            viewHolder = new ViewHolder();\n+            viewHolder.leftLayout = (LinearLayout) view.findViewById(R.id.receiver_layout);\n+            viewHolder.rightLayout = (LinearLayout) view.findViewById(R.id.send_layout);\n+            viewHolder.left_image = (ImageView) view.findViewById(R.id.left_user);\n+            viewHolder.right_image = (ImageView) view.findViewById(R.id.right_user);\n+            viewHolder.left_text = (TextView) view.findViewById(R.id.white_message);\n+            viewHolder.right_text = (TextView) view.findViewById(R.id.green_message);\n+            view.setTag(viewHolder);\n+\n+        } else {\n+            view = convertView;\n+            viewHolder = (ViewHolder) view.getTag();\n+        }\n+        //判断消息发送方\n+        if (message.getType() == Message.TYPE_RECEIVED) {\n+            viewHolder.leftLayout.setVisibility(View.VISIBLE);\n+            viewHolder.rightLayout.setVisibility(View.GONE);\n+            viewHolder.left_text.setText(message.getContent());\n+            //设置图片\n+            Bitmap bitmap = net1314080903129RoundRectNet1314080903129.toRoundRect(getContext(), userImage);\n+            viewHolder.left_image.setImageBitmap(bitmap);\n+\n+        } else if (message.getType() == Message.TYPE_SENT) {\n+            viewHolder.rightLayout.setVisibility(View.VISIBLE);\n+            viewHolder.leftLayout.setVisibility(View.GONE);\n+            viewHolder.right_text.setText(message.getContent());\n+            //设置图片\n+            Bitmap bitmap = net1314080903129RoundRectNet1314080903129.toRoundRect(getContext(), R.drawable.net1314080903129me);\n+            viewHolder.right_image.setImageBitmap(bitmap);\n+        }\n+\n+        return view;\n+    }\n+\n+    class ViewHolder {\n+        LinearLayout leftLayout;\n+        LinearLayout rightLayout;\n+        ImageView left_image;\n+        ImageView right_image;\n+        TextView left_text;\n+        TextView right_text;\n+\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "9c4f9d9e531c60599c6ba871a09304980a429d86",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129NetworkBroadcast.java",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129NetworkBroadcast.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129NetworkBroadcast.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129NetworkBroadcast.java?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,62 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903129;\n+\n+/**\n+ * Created by Administrator on 2016/4/25.\n+ */\n+import android.content.BroadcastReceiver;\n+import android.content.Context;\n+import android.content.Intent;\n+import android.net.ConnectivityManager;\n+import android.net.NetworkInfo;\n+import android.widget.ImageView;\n+import android.widget.Toast;\n+\n+/**\n+ * Created by dudon on 2016/1/14.\n+ */\n+public class Net1314080903129NetworkBroadcast extends BroadcastReceiver {\n+\n+    @Override\n+    public void onReceive(Context context, Intent intent) {\n+        //动态注册广播接收器\n+        //接收系统网络状态\n+        ConnectivityManager connectivityManager = null;\n+        connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);\n+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();\n+        //判断是否连接网络\n+        if (networkInfo != null && networkInfo.isAvailable()) {\n+\n+            if(networkInfo.getType()==0){\n+                //mobile连接状态\n+                ImageView imageView = new ImageView(context);\n+                imageView.setImageResource(R.drawable.net1314080903129mobile);\n+                imageView.setMaxHeight(40);\n+                Toast toast = new Toast(context);\n+                toast.setView(imageView);\n+                toast.setDuration(Toast.LENGTH_SHORT);\n+                toast.show();\n+            }\n+            if(networkInfo.getType()==1){\n+                //Wifi连接状态\n+                ImageView imageView = new ImageView(context);\n+                imageView.setImageResource(R.drawable.net1314080903129wifi);\n+                imageView.setMaxHeight(40);\n+                Toast toast = new Toast(context);\n+                toast.setView(imageView);\n+                toast.setDuration(Toast.LENGTH_SHORT);\n+                toast.show();\n+            }\n+\n+            //Log.d(\"woider\",networkInfo.getType()+networkInfo.getTypeName());\n+        } else {\n+            //网络不可用\n+            ImageView imageView = new ImageView(context);\n+            imageView.setImageResource(R.drawable.net1314080903129shutdown);\n+            imageView.setMaxHeight(40);\n+            Toast toast = new Toast(context);\n+            toast.setView(imageView);\n+            toast.setDuration(Toast.LENGTH_SHORT);\n+            toast.show();\n+        }\n+    }\n+}"
+  }, {
+    "sha" : "e2176bc0a3baae5b2cf1907502df262abec95aef",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129RoundRect.java",
+    "status" : "added",
+    "additions" : 79,
+    "deletions" : 0,
+    "changes" : 79,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129RoundRect.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129RoundRect.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129RoundRect.java?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,79 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903129;\n+\n+/**\n+ * Created by Administrator on 2016/4/25.\n+ */\n+import android.content.Context;\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.graphics.Canvas;\n+import android.graphics.Color;\n+import android.graphics.Paint;\n+import android.graphics.PorterDuff;\n+import android.graphics.PorterDuffXfermode;\n+import android.graphics.RectF;\n+import android.graphics.drawable.BitmapDrawable;\n+import android.graphics.drawable.Drawable;\n+\n+\n+public class Net1314080903129RoundRect {\n+\n+    private int width;\n+    private int height;\n+    private float cornerRadius;\n+\n+    /**\n+     * 用于初始化圆角矩形基本参数\n+     *\n+     * @param width        图片宽度\n+     * @param height       图片高度\n+     * @param cornerRadius 圆角半径\n+     */\n+\n+    public Net1314080903129RoundRect(int width, int height, float cornerRadius) {\n+        this.width = width;\n+        this.height = height;\n+        this.cornerRadius = cornerRadius;\n+    }\n+\n+    /**\n+     * 用于把普通图片转换为圆角矩形图像\n+     *\n+     * @param imageID 图片资源ID\n+     * @param context 上下文对象\n+     * @return output 转换后的圆角矩形图像\n+     */\n+\n+    Bitmap toRoundRect(Context context, int imageID) {\n+\n+\n+        //创建位图对象\n+        Bitmap photo = BitmapFactory.decodeResource(context.getResources(), imageID);\n+\n+\n+        //根据源文件新建一个darwable对象\n+        Drawable imageDrawable = new BitmapDrawable(photo);\n+\n+        // 新建一个新的输出图片\n+        Bitmap output = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);\n+        Canvas canvas = new Canvas(output);\n+\n+        // 新建一个矩形\n+        RectF outerRect = new RectF(0, 0, width, height);\n+\n+        // 产生一个红色的圆角矩形\n+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);\n+        paint.setColor(Color.RED);\n+        canvas.drawRoundRect(outerRect, cornerRadius, cornerRadius, paint);\n+\n+        // 将源图片绘制到这个圆角矩形上\n+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));\n+        imageDrawable.setBounds(0, 0, width, height);\n+        canvas.saveLayer(outerRect, paint, Canvas.ALL_SAVE_FLAG);\n+        imageDrawable.draw(canvas);\n+        canvas.restore();\n+\n+        return output;\n+    }\n+\n+}"
+  }, {
+    "sha" : "68997fe543bbfb5e2a32db3cab1468b2b184ffdc",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129TitleLayout.java",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129TitleLayout.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129TitleLayout.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129TitleLayout.java?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,43 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903129;\n+\n+/**\n+ * Created by Administrator on 2016/4/25.\n+ */\n+import android.app.Activity;\n+import android.content.Context;\n+import android.content.Intent;\n+import android.net.Uri;\n+import android.util.AttributeSet;\n+import android.view.LayoutInflater;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.LinearLayout;\n+\n+/**\n+ * Created by dudon on 2016/1/14.\n+ */\n+public class Net1314080903129TitleLayout extends LinearLayout {\n+    public Net1314080903129TitleLayout(final Context context, AttributeSet attr) {\n+        super(context, attr);\n+        //动态加载布局\n+        LayoutInflater.from(context).inflate(R.layout.net1314080903129title_bar, this);\n+        Button btnBack = (Button) findViewById(R.id.title_left);\n+        Button btnWeb = (Button) findViewById(R.id.title_right);\n+        btnBack.setOnClickListener(new OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                ((Activity)context).finish();\n+            }\n+        });\n+        btnWeb.setOnClickListener(new OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                Intent intent = new Intent(Intent.ACTION_VIEW);\n+                intent.setData(Uri.parse(\"http://huaban.com\"));\n+                ((Activity) context).startActivity(intent);\n+            }\n+\n+\n+        });\n+    }\n+}"
+  }, {
+    "sha" : "a2b86d67fe0a7498c856eeb91b00a42bfba37e05",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129UserAdapter.java",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129UserAdapter.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129UserAdapter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903129/Net1314080903129UserAdapter.java?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,62 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903129;\n+\n+/**\n+ * Created by Administrator on 2016/4/25.\n+ */\n+import android.content.Context;\n+import android.graphics.Bitmap;\n+import android.view.LayoutInflater;\n+import android.view.View;\n+import android.view.ViewGroup;\n+import android.widget.ArrayAdapter;\n+import android.widget.ImageView;\n+import android.widget.TextView;\n+\n+import java.util.List;\n+\n+/**\n+ * Created by dudon on 2016/1/14.\n+ */\n+public class Net1314080903129UserAdapter extends ArrayAdapter<Net1314080903129User> {\n+\n+    private int resourceID;\n+    private Net1314080903129RoundRect net1314080903129RoundRectNet1314080903129 = new Net1314080903129RoundRect(160, 160, 80);\n+\n+    public Net1314080903129UserAdapter(Context context, int resource, List<Net1314080903129User> objects) {\n+        super(context, resource, objects);\n+        resourceID = resource;\n+    }\n+\n+    @Override\n+    public View getView(int position, View convertView, ViewGroup parent) {\n+\n+        Net1314080903129User user = getItem(position);\n+        View view;\n+        ViewHolder viewHolder;\n+        //缂撳瓨鏈哄埗\n+        if (convertView == null) {\n+            view = LayoutInflater.from(getContext()).inflate(resourceID, null);\n+            viewHolder = new ViewHolder();\n+            viewHolder.userImage = (ImageView) view.findViewById(R.id.user_image);\n+            viewHolder.userName = (TextView) view.findViewById(R.id.user_name);\n+            viewHolder.userMessage = (TextView) view.findViewById(R.id.user_massage);\n+            view.setTag(viewHolder);\n+        } else {\n+            view = convertView;\n+            viewHolder = (ViewHolder) view.getTag();\n+        }\n+        //鍦嗗舰澶村儚\n+        Bitmap bitmap = net1314080903129RoundRectNet1314080903129.toRoundRect(getContext(), user.getImage());\n+        viewHolder.userImage.setImageBitmap(bitmap);\n+        viewHolder.userName.setText(user.getName());\n+        viewHolder.userMessage.setText(user.getMessage());\n+\n+        return view;\n+    }\n+\n+    class ViewHolder {\n+        ImageView userImage;\n+        TextView userName;\n+        TextView userMessage;\n+    }\n+}"
+  }, {
+    "sha" : "471d8bcdb9435ccfa66933d4cfb540f4ef7eb138",
+    "filename" : "app/src/main/res/mipmap-hdpi/color.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-hdpi/color.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-hdpi/color.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/mipmap-hdpi/color.png?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727"
+  }, {
+    "sha" : "32ea59ca6182f1b28d5b6d215235842154a9b4d1",
+    "filename" : "app/src/main/res/mipmap-mdpi/color.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-mdpi/color.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-mdpi/color.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/mipmap-mdpi/color.png?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727"
+  }, {
+    "sha" : "5482c8791ef9a4cee372924f77f9f545eaa4264a",
+    "filename" : "app/src/main/res/mipmap-xhdpi/color.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-xhdpi/color.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-xhdpi/color.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/mipmap-xhdpi/color.png?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727"
+  }, {
+    "sha" : "255bd4be496199443b2a15c383937e0653b307ec",
+    "filename" : "app/src/main/res/mipmap-xxhdpi/color.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-xxhdpi/color.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-xxhdpi/color.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/mipmap-xxhdpi/color.png?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727"
+  }, {
+    "sha" : "805fc6474fec538e5b68c7d1a9f92a95729d416a",
+    "filename" : "app/src/main/res/mipmap-xxxhdpi/color.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-xxxhdpi/color.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/mipmap-xxxhdpi/color.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/mipmap-xxxhdpi/color.png?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727"
+  }, {
+    "sha" : "8c9cae002225b10919e5106c60037a0ed488f161",
+    "filename" : "app/src/main/res/values/net1314080903129array.xml",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/values/net1314080903129array.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/values/net1314080903129array.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903129array.xml?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,31 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+    <string-array name=\"user_name\">\n+        <item>\"左手倒影\"</item>\n+        <item>\"公主范\"</item>\n+        <item>\"酷酷猫\"</item>\n+        <item>\"海绵宝宝\"</item>\n+        <item>\"苏染\"</item>\n+        <item>\"白衣未央\"</item>\n+        <item>\"Smoke\"</item>\n+        <item>\"冰柠檬\"</item>\n+        <item>\"Purity\"</item>\n+        <item>\"心有阳光\"</item>\n+        <item>\"德邦总管\"</item>\n+        <item>\"小青春\"</item>\n+        <item>\"Dreamboy\"</item>\n+        <item>\"蓝胖纸\"</item>\n+        <item>\"冰蓝\"</item>\n+        <item>\"殇依旧羙\"</item>\n+        <item>\"微笑似年华\"</item>\n+        <item>\"箫声巷陌\"</item>\n+        <item>\"我爱洗澡\"</item>\n+        <item>\"loveR\"</item>\n+        <item>\"时光小偷\"</item>\n+        <item>\"azure蔚蓝\"</item>\n+        <item>\"扯淡的生活\"</item>\n+        <item>\"何日许我红装\"</item>\n+        <item>\"萌系美男子\"</item>\n+        <item>\"ONLY\"</item>\n+    </string-array>\n+</resources>\n\\ No newline at end of file"
+  }, {
+    "sha" : "d53126803a196e7e0dfd30f294809fa6a3fe7466",
+    "filename" : "app/src/main/res/values/net1314080903129colors.xml",
+    "status" : "added",
+    "additions" : 13,
+    "deletions" : 0,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/values/net1314080903129colors.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/values/net1314080903129colors.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903129colors.xml?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,13 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<resources>\n+    <color name=\"colorPrimary\">#3F51B5</color>\n+    <color name=\"colorPrimaryDark\">#303F9F</color>\n+    <color name=\"colorAccent\">#FF4081</color>\n+    <color name=\"colorTitle\">#6c4bf1</color>\n+    <color name=\"colorFont\">#ffffff</color>\n+    <color name=\"colorName\">#383838</color>\n+    <color name=\"colorText\">#555555</color>\n+    <color name=\"colorWhite\">#ffffff</color>\n+    <color name=\"colorBlack\">#000000</color>\n+    <color name=\"colorBackground\">#ffffff</color>\n+</resources>"
+  }, {
+    "sha" : "a5f6d6a313d29a0ba6cef9e8650d0083222b4e8f",
+    "filename" : "app/src/main/res/values/net1314080903129strings.xml",
+    "status" : "added",
+    "additions" : 4,
+    "deletions" : 0,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/values/net1314080903129strings.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/values/net1314080903129strings.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903129strings.xml?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,4 @@\n+<resources>\n+    <string name=\"app_name\">\"Chat\"</string>\n+    <string name=\"app_title\">\"chat\"</string>\n+</resources>"
+  }, {
+    "sha" : "5885930df6d10edf3d6df40d6556297d11f953da",
+    "filename" : "app/src/main/res/values/net1314080903129styles.xml",
+    "status" : "added",
+    "additions" : 11,
+    "deletions" : 0,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/values/net1314080903129styles.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/a9445293a0d257cb0d530755737aa7b1a8f6f727/app/src/main/res/values/net1314080903129styles.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/values/net1314080903129styles.xml?ref=a9445293a0d257cb0d530755737aa7b1a8f6f727",
+    "patch" : "@@ -0,0 +1,11 @@\n+<resources>\n+\n+    <!-- Base application theme. -->\n+    <style name=\"AppTheme\" parent=\"Theme.AppCompat.Light.DarkActionBar\">\n+        <!-- Customize your theme here. -->\n+        <item name=\"colorPrimary\">@color/colorPrimary</item>\n+        <item name=\"colorPrimaryDark\">@color/colorPrimaryDark</item>\n+        <item name=\"colorAccent\">@color/colorAccent</item>\n+    </style>\n+\n+</resources>"
+  } ],
+  "sha" : "a9445293a0d257cb0d530755737aa7b1a8f6f727",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a9445293a0d257cb0d530755737aa7b1a8f6f727",
+  "parents" : [ {
+    "sha" : "f0d43c8415d625c008f0e397bb03bd9f5110f0a2",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f0d43c8415d625c008f0e397bb03bd9f5110f0a2",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/f0d43c8415d625c008f0e397bb03bd9f5110f0a2"
+  } ]
+}

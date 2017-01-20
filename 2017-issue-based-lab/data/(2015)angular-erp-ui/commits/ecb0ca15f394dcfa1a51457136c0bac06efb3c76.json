@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "czgshy",
+    "id" : 15098123,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098123?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/czgshy",
+    "html_url" : "https://github.com/czgshy",
+    "followers_url" : "https://api.github.com/users/czgshy/followers",
+    "following_url" : "https://api.github.com/users/czgshy/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/czgshy/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/czgshy/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/czgshy/subscriptions",
+    "organizations_url" : "https://api.github.com/users/czgshy/orgs",
+    "repos_url" : "https://api.github.com/users/czgshy/repos",
+    "events_url" : "https://api.github.com/users/czgshy/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/czgshy/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 68,
+    "additions" : 52,
+    "deletions" : 16
+  },
+  "author" : {
+    "login" : "czgshy",
+    "id" : 15098123,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098123?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/czgshy",
+    "html_url" : "https://github.com/czgshy",
+    "followers_url" : "https://api.github.com/users/czgshy/followers",
+    "following_url" : "https://api.github.com/users/czgshy/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/czgshy/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/czgshy/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/czgshy/subscriptions",
+    "organizations_url" : "https://api.github.com/users/czgshy/orgs",
+    "repos_url" : "https://api.github.com/users/czgshy/repos",
+    "events_url" : "https://api.github.com/users/czgshy/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/czgshy/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/ecb0ca15f394dcfa1a51457136c0bac06efb3c76",
+  "commit" : {
+    "author" : {
+      "name" : "czgshy",
+      "email" : "532247474@qq.com",
+      "date" : "2015-12-24T17:28:23Z"
+    },
+    "committer" : {
+      "name" : "czgshy",
+      "email" : "532247474@qq.com",
+      "date" : "2015-12-24T17:28:23Z"
+    },
+    "message" : "实验6",
+    "tree" : {
+      "sha" : "b2eec9162d2a8495dd07b23e23fc7a9486ba64af",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/b2eec9162d2a8495dd07b23e23fc7a9486ba64af"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/ecb0ca15f394dcfa1a51457136c0bac06efb3c76",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ecb0ca15f394dcfa1a51457136c0bac06efb3c76/comments",
+  "files" : [ {
+    "sha" : "08976bd9b263bfc9d809bbd7c8e6405e0d062a00",
+    "filename" : "works/1314080901108/index.html",
+    "status" : "modified",
+    "additions" : 17,
+    "deletions" : 13,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ecb0ca15f394dcfa1a51457136c0bac06efb3c76/works/1314080901108/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ecb0ca15f394dcfa1a51457136c0bac06efb3c76/works/1314080901108/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901108/index.html?ref=ecb0ca15f394dcfa1a51457136c0bac06efb3c76",
+    "patch" : "@@ -23,7 +23,7 @@\n      <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n \t<script src=\"js/news_TemplateModule.js\"></script>\n   </head>\n-  <body ng-controller=\"news_TemplateModuleDemoCtrl\">\n+  <body ng-controller=\"news_Template\">\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -58,19 +58,19 @@\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n-    <form class=\"form-inline\">\n+    <form class=\"form-inline\" ng-submit=\"register()\" novalidate>\n     <div class=\"container\">\n     <div class=\"row col-lg-offset-2\" role=\"form\">\n   <div class=\"form-group\">\n   <div class=\"row\">\n     <label for=\"data.template_Name\">模板名称:</label>\n-    <input type=\"text\" class=\"form-control\" ng-model=\"template_Name\" id=\"data.template_Name\" >\n+    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"news.template_Name\" id=\"data.template_Name\" required/ >\n  \n     <label for=\"data.other_Name\">别名:</label>\n-    <input type=\"text\" class=\"form-control\" ng-model=\"other_Name\" id=\"data.other_Name\" >\n+    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"news.other_Name\" id=\"data.other_Name\" required/ >\n  \n     <label for=\"data.news_People\">建模人:</label>\n-    <input type=\"text\" class=\"form-control\" ng-model=\"news_People\" id=\"data.news_People\" >\n+    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"news.news_People\" id=\"data.news_People\" required/ >\n   </div>\n   </div>\n   <br>\n@@ -78,29 +78,33 @@\n   <div class=\"form-group\">\n   <div class=\"row\">\n     <label for=\"data.price\">计价方式:</label>\n-    <input type=\"text\" class=\"form-control\" ng-model=\"price\" id=\"data.price\" >\n+    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"news.price\" id=\"data.price\" required/ >\n \n     <label for=\"data.type\">类别:</label>\n-    <input type=\"text\" class=\"form-control\" ng-model=\"type\" id=\"data.type\" >\n+    <input type=\"text\" class=\"form-control input-sm\" ng-model=\"news.type\" id=\"data.type\" required/ >\n   </div>\n   </div>\n   <br>\n <div class=\"btn-group col-xs-offset-1 ng-cloak\" role=\"group\" ng-cloak>\n-<button type=\"button\" class=\"btn btn-default\" ng-click=\"showInput()\">\n+<button type=\"submit\" class=\"btn btn-default\" >\n   {{isHidden ? '新建' : '隐藏'}}\n </button>\n </div>\n </form>\n </div>\n </div>\n+            <!-- SHOW ERROR/SUCCESS MESSAGES\n+             <div id=\"messages\" class=\"ng-cloak\" ng-show=\"backMess\" ng-hide=\"isHidden\">\n+                 <p>{{ backMess[0].message }}</p>\n+             </div>-->\n <div class=\"container col-xs-offset-3 ng-cloak\" ng-cloak>\n   <p class=\"lead\">\n   <div ng-hide=\"isHidden\">您输入的数据为：</div>\n-  <div id=\"data.template_Name\" ng-hide=\"isHidden\">模板名称->{{template_Name}}</div>\n-  <div id=\"data.other_Name\" ng-hide=\"isHidden\">别名->{{other_Name}}</div>\n-  <div id=\"data.news_People\" ng-hide=\"isHidden\">建模人->{{news_People}}</div>\n-  <div id=\"data.price\" ng-hide=\"isHidden\">计价方式->{{price}}</div>\n-  <div id=\"data.type\" ng-hide=\"isHidden\">类别->{{type}}</div>\n+  <div id=\"data.template_Name\" ng-hide=\"isHidden\">模板名称->{{news.template_Name}}</div>\n+  <div id=\"data.other_Name\" ng-hide=\"isHidden\">别名->{{news.other_Name}}</div>\n+  <div id=\"data.news_People\" ng-hide=\"isHidden\">建模人->{{news.news_People}}</div>\n+  <div id=\"data.price\" ng-hide=\"isHidden\">计价方式->{{news.price}}</div>\n+  <div id=\"data.type\" ng-hide=\"isHidden\">类别->{{news.type}}</div>\n   </p>\n </div>\n   </body>"
+  }, {
+    "sha" : "c9ba8b67bef995024a6d5aec3036f231b2d8f0f0",
+    "filename" : "works/1314080901108/js/news_TemplateModule.js",
+    "status" : "modified",
+    "additions" : 28,
+    "deletions" : 3,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ecb0ca15f394dcfa1a51457136c0bac06efb3c76/works/1314080901108/js/news_TemplateModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ecb0ca15f394dcfa1a51457136c0bac06efb3c76/works/1314080901108/js/news_TemplateModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901108/js/news_TemplateModule.js?ref=ecb0ca15f394dcfa1a51457136c0bac06efb3c76",
+    "patch" : "@@ -4,7 +4,14 @@ var news_TemplateModule = angular.module('news_TemplateModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-news_TemplateModule.controller('news_TemplateModuleDemoCtrl', function ($scope) {\n+news_TemplateModule.factory('news_TemplateService', function ($http) {\n+    var dataStroe = {};\n+    dataStroe.newData = function (theData) {\n+        var promise = $http({method: 'post',url: 'json/message.json',data: theData});\n+        return promise;\n+    }\n+    return dataStroe;\n+}).controller('news_Template',function ($scope,news_TemplateService){\n        // controller code would go here\n var Project_Template = {\n              template_Name: 'czg',\n@@ -18,8 +25,26 @@ var Project_Template = {\n          $scope.showInput = function () {\n             $scope.isHidden = !$scope.isHidden;\n          }\n-    }\n-);\n+\n+         $scope.news = {};\n+         $scope.register = function () {\n+             var promise = news_TemplateService.newData($scope.news);\n+             promise.success(function (data, status, headers, config, statusText) {\n+                 $scope.backMess = data.success;\n+                 $scope.isHidden = !$scope.isHidden;\n+                 if(!$scope.isHidden){\n+                    alert($scope.backMess[0].message + \"\\n\" + \"\\n\" + \"Your newId is \" + $scope.news.template_Name);\n+                 }\n+             });\n+             promise.error(function (data, status, headers, config, statusText) {\n+                 $scope.backMess = data.error;\n+                 $scope.isHidden = !$scope.isHidden;\n+                 if(!$scope.isHidden){\n+                     alert($scope.backMess[0].message);\n+                 }\n+             });\n+         }\n+ });\n \n // use the myAppModule variable to\n // configure the module with a filter"
+  }, {
+    "sha" : "939ecb7169812b97ba2d21fb893849f5cf9b8f46",
+    "filename" : "works/1314080901108/json/message.json",
+    "status" : "added",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ecb0ca15f394dcfa1a51457136c0bac06efb3c76/works/1314080901108/json/message.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ecb0ca15f394dcfa1a51457136c0bac06efb3c76/works/1314080901108/json/message.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901108/json/message.json?ref=ecb0ca15f394dcfa1a51457136c0bac06efb3c76",
+    "patch" : "@@ -0,0 +1,7 @@\n+{\n+     \"success\": [\n+         {\n+             \"message\": \"Thank you for taking the time to register!\"\n+         }\n+     ]\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "ecb0ca15f394dcfa1a51457136c0bac06efb3c76",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ecb0ca15f394dcfa1a51457136c0bac06efb3c76",
+  "parents" : [ {
+    "sha" : "025ddf2c354acae188770efcdc6d25a552a0a7cd",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/025ddf2c354acae188770efcdc6d25a552a0a7cd",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/025ddf2c354acae188770efcdc6d25a552a0a7cd"
+  } ]
+}

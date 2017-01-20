@@ -1,0 +1,93 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 255,
+    "additions" : 231,
+    "deletions" : 24
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+  "commit" : {
+    "author" : {
+      "name" : "Linco_Dell",
+      "email" : "Linco_Dell",
+      "date" : "2016-11-12T04:51:11Z"
+    },
+    "committer" : {
+      "name" : "Linco_Dell",
+      "email" : "Linco_Dell",
+      "date" : "2016-11-12T04:51:11Z"
+    },
+    "message" : "#5 提交实验代码 #62",
+    "tree" : {
+      "sha" : "66b0c93de854636afac86f354126b90c1a7e4a42",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/66b0c93de854636afac86f354126b90c1a7e4a42"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/comments",
+  "files" : [ {
+    "sha" : "bdc3cf8a08c2c80a030427ac0ad98d84105e9295",
+    "filename" : "jweb/src/hzu/javaweb/labs/se1414080902212/EncodingFilter.java",
+    "status" : "added",
+    "additions" : 44,
+    "deletions" : 0,
+    "changes" : 44,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/src/hzu/javaweb/labs/se1414080902212/EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/src/hzu/javaweb/labs/se1414080902212/EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/hzu/javaweb/labs/se1414080902212/EncodingFilter.java?ref=77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+    "patch" : "@@ -0,0 +1,44 @@\n+package Linco;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+/**\n+ * Servlet Filter implementation class LincoFilter\n+ */\n+@WebFilter(filterName = \"EncodingFilter\", urlPatterns = \"/*\")\n+public class EncodingFilter implements Filter {\n+\n+    public EncodingFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+    @Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\tString coding = \"UTF-8\";\n+\t\trequest.setCharacterEncoding(coding);\n+\t\tresponse.setCharacterEncoding(coding);\n+\t\tchain.doFilter(request, response);\n+\t\tSystem.out.println(\"change CharacterEncoding To utf-8\");\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig arg0) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+}"
+  }, {
+    "sha" : "446b8d3fdddf779fed1f4c93ad74495adf56aa9b",
+    "filename" : "jweb/src/hzu/javaweb/labs/se1414080902212/LoginFilter.java",
+    "status" : "added",
+    "additions" : 56,
+    "deletions" : 0,
+    "changes" : 56,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/src/hzu/javaweb/labs/se1414080902212/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/src/hzu/javaweb/labs/se1414080902212/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/hzu/javaweb/labs/se1414080902212/LoginFilter.java?ref=77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+    "patch" : "@@ -0,0 +1,56 @@\n+package Linco;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+/**\n+ * Servlet Filter implementation class LoginFilter\n+ */\n+@WebFilter(filterName = \"LoginFilter\", urlPatterns = \"/My_Main.jsp\")\n+public class LoginFilter implements Filter {\n+\n+    /**\n+     * Default constructor. \n+     */\n+    public LoginFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see Filter#destroy()\n+\t */\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n+\t */\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\tHttpServletRequest requ = (HttpServletRequest)request;\n+\t\tHttpServletResponse resp = (HttpServletResponse)response;\n+\t\tif(requ.getParameter(\"userName\").equals(\"Linco\")||requ.getParameter(\"password\").equals(\"Lincokey\")){\n+\t\t\tchain.doFilter(request, response);\n+\t\t} else {\n+\t\t\tresp.sendRedirect(\"LincoLogin.html\");\n+\t\t}\n+\t\tSystem.out.println(\"登录验证!\");\n+\t}\n+\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+}"
+  }, {
+    "sha" : "3a883bd6b2ec826bdafe18426f2a2e88c11868d6",
+    "filename" : "jweb/web/1414080902212/LincoLogin.html",
+    "status" : "added",
+    "additions" : 92,
+    "deletions" : 0,
+    "changes" : 92,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/web/1414080902212/LincoLogin.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/web/1414080902212/LincoLogin.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/LincoLogin.html?ref=77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+    "patch" : "@@ -0,0 +1,92 @@\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+\t<head>\n+\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n+\t\t<title>Login</title>\n+\t</head>\n+\n+<style type=\"text/css\">\n+\t#container{\n+\t\theight: 640px;\n+\t\twidth: 1046px;\n+\t\tbackground: #563c55 url(src/LoginBackground.jpg) no-repeat center top;\n+\t\tposition: relative;\n+\t}\n+\t#welcome{\n+\t\theight: 180px;\n+\t\tpadding-top: 60px;\n+\t}\n+\t#welcome *{\n+\t\tcolor: rgba(255,255,255,0.25);\n+\t\t/*简单文本的居中方式*/\n+\t\ttext-align: center;\n+\t}\n+\n+\t#login_form{\n+\t\twidth: 300px;\n+    \tmargin: 60px auto 30px;\n+    /* Styles */\n+    \tborder-radius: 5px;\n+    \tbox-shadow: 0 0 5px rgba(0,0,0,0.1), 0 3px 2px rgba(0,0,0,0.1);\n+    \toverflow: hidden;\n+\t}\n+\t#inputArea{\n+\t\twidth: 70%;\n+\t    border-radius: 5px 0 0 5px;\n+\t    border: 1px solid #fff;\n+\t    float: left;\n+\t}\n+\t#inputArea input{\n+\t\theight: 48px;\n+\t\tborder: none; /* Remove the default border */\n+\t    background: white; /* Fallback */\n+\t    background: rgba(255,255,255,0.2);\n+\t    box-shadow: \n+\t        inset 0 0 10px rgba(255,255,255,0.5);\n+\n+\t    /* Font styles */\n+\t    font-family: 'Montserrat', sans-serif;\n+\t    text-indent: 10px;\n+\t    color: #66d9d0;\n+\t    text-shadow: 0 1px 2px rgba(0,0,0,0.3);\n+\t    font-size: 20px;\n+\t}\n+\t#submit_btn{\n+\t\t/* Size and position */\n+\t    width: 29%;\n+\t    height: 102px;\n+\t    float: right;\n+\n+\t\tborder-radius: 0 5px 5px 0;\n+    \tbox-shadow:\n+        inset 0 0 4px rgba(255, 255, 255, 0.7), \n+        inset 0 0 0 1px rgba(0, 0, 0, 0.2);\n+\t    border: none;\n+\t    border-left: 1px solid silver;\n+\t     /* Font styles */\n+\t    font-family: 'Montserrat', sans-serif;\n+\t    text-indent: 10px;\n+\t    color: white;\n+\t    font-size: 22px;\n+\t    background: rgba(145,198,84,1);\n+\t}\n+</style>\n+\n+<body>\n+\t<div id=\"container\">\n+\t\t<div id=\"welcome\">\n+\t\t\t<h1>Welcome to Linco.com</h1>\n+\t\t\t<h3>Please Login first</h3>\n+\t\t</div>\n+\t\t<div id=\"form_div\">\n+\t\t\t<form id=\"login_form\" action=\"My_Main.jsp\" method=\"post\">\n+\t\t\t\t<div id=\"inputArea\">\n+\t\t\t\t\t<input type=\"text\" name=\"userName\" value=\"UserName\">\n+\t\t\t\t\t<input type=\"password\" name=\"password\">\n+\t\t\t\t</div>\n+\t\t\t\t<button type=\"submit\" id=\"submit_btn\">login</button>\n+\t\t\t</form>\n+\t\t</div>\n+\t</div>\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "b420522b3d6f475db47346220dcd96ea24832502",
+    "filename" : "jweb/web/1414080902212/My_Main.jsp",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/web/1414080902212/My_Main.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/77c4df31a3d56f5292a3a877bf08e1fff4d495e0/jweb/web/1414080902212/My_Main.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/My_Main.jsp?ref=77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+    "patch" : "@@ -0,0 +1,39 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+\n+<!DOCTYPE html>\n+<html lang=\"en\">\n+<head>\n+\t<meta charset=\"UTF-8\">\n+\t<title>上传文件</title>\n+</head>\n+<link rel=\"stylesheet\" type=\"text/css\" href=\"css/File_upload.css\">\n+<body>\n+\t<div id=\"head\">\n+\t\t<div id=\"head_left\">\n+\t\t\t<a class=\"title_text\" href=\"\">主页</a>\n+\t\t\t<a class=\"title_text\" href=\"\">文件</a>\n+\t\t\t<a class=\"title_text\" href=\"\">上传</a>\n+\t\t\t<a class=\"title_text\" href=\"\">(敬请期待)</a>\n+\t\t</div>\n+\t\t<div id=\"head_right\">\n+\t\t\t<img id=\"head_right_img\" src=\"src/head.png\" alt=\"usrename\">\n+\t\t</div>\n+\t</div>\n+\t<div id=\"content\">\n+\t\t<!-- 如果上传文件,必须使用此句 enctype=\"multipart/form-data\",表示不对文件进行编码\n+\t\taction值前面不加\"/\"表示项目根目录(即项目名),加\"/\"到主机根目录 -->\n+\t\t<form action=\"LincoServlet\" id=\"content_center\" method=\"post\" enctype=\"multipart/form-data\">\n+\t\t\t<input type=\"text\" value=\"文件名\" /><br>\n+\t\t\t<input type=\"text\" value=\"文件描述\"/><br>\n+\t\t\t<input type=\"file\"/>\n+\t\t\t<input type=\"submit\" value=\"提交\">\n+\t\t</form>\n+\t</div>\n+\t<div id=\"tail\"></div>\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "9581d814735bd795675dcb3c72ed44c1dc1f370a",
+    "filename" : "jweb/web/1414080902212/upLoad_Response.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 24,
+    "changes" : 24,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7ef71354facf5e9d2a0b51960718cd509c97353c/jweb/web/1414080902212/upLoad_Response.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7ef71354facf5e9d2a0b51960718cd509c97353c/jweb/web/1414080902212/upLoad_Response.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902212/upLoad_Response.jsp?ref=7ef71354facf5e9d2a0b51960718cd509c97353c",
+    "patch" : "@@ -1,24 +0,0 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"ISO-8859-1\"%>\n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n-\n-<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n-<html>\n-  <head>\n-    <base href=\"<%=basePath%>\">\n-    \n-    <title>文件上传</title>\n-\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n-\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n-\t<meta http-equiv=\"expires\" content=\"0\">    \n-\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n-\t<meta http-equiv=\"description\" content=\"This is my page\">\n-\t\n-  </head>\n-  \n-  <body>\n-    文件已上传 <br>\n-  </body>\n-</html>"
+  } ],
+  "sha" : "77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/77c4df31a3d56f5292a3a877bf08e1fff4d495e0",
+  "parents" : [ {
+    "sha" : "7ef71354facf5e9d2a0b51960718cd509c97353c",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7ef71354facf5e9d2a0b51960718cd509c97353c",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/7ef71354facf5e9d2a0b51960718cd509c97353c"
+  } ]
+}

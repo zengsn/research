@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 28,
+    "additions" : 0,
+    "deletions" : 28
+  },
+  "author" : {
+    "login" : "HCJ0HCJ",
+    "id" : 22111873,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111873?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HCJ0HCJ",
+    "html_url" : "https://github.com/HCJ0HCJ",
+    "followers_url" : "https://api.github.com/users/HCJ0HCJ/followers",
+    "following_url" : "https://api.github.com/users/HCJ0HCJ/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HCJ0HCJ/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HCJ0HCJ/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HCJ0HCJ/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HCJ0HCJ/orgs",
+    "repos_url" : "https://api.github.com/users/HCJ0HCJ/repos",
+    "events_url" : "https://api.github.com/users/HCJ0HCJ/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HCJ0HCJ/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/fa6f3bfff6ba7d1f4d5671f544cb60b59d4b5a53",
+  "commit" : {
+    "author" : {
+      "name" : "HCJ0HCJ",
+      "email" : "HCJHCJ0@163.COM",
+      "date" : "2016-10-30T14:58:29Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-30T14:58:29Z"
+    },
+    "message" : "Delete info.jsp",
+    "tree" : {
+      "sha" : "edea231ccad295e8cb77bb5219bba87e1e361f3e",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/edea231ccad295e8cb77bb5219bba87e1e361f3e"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/fa6f3bfff6ba7d1f4d5671f544cb60b59d4b5a53",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/fa6f3bfff6ba7d1f4d5671f544cb60b59d4b5a53/comments",
+  "files" : [ {
+    "sha" : "dc1c439de0eab47b82c28845f354a5c93866c221",
+    "filename" : "jweb/web/info.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 28,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/d0571aeec86f713e9441e082893bb32954ded9c7/jweb/web/info.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/d0571aeec86f713e9441e082893bb32954ded9c7/jweb/web/info.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/info.jsp?ref=d0571aeec86f713e9441e082893bb32954ded9c7",
+    "patch" : "@@ -1,28 +0,0 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"ISO-8859-1\"%>\n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n-\n-<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n-<html>\n-  <head>\n-    <base href=\"<%=basePath%>\">\n-    \n-    <title>My JSP 'info.jsp' starting page</title>\n-    \n-\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n-\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n-\t<meta http-equiv=\"expires\" content=\"0\">    \n-\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n-\t<meta http-equiv=\"description\" content=\"This is my page\">\n-\t<!--\n-\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n-\t-->\n-\n-  </head>\n-  \n-  <body>\n-    <%=request.getAttribute(\"outputMessage\")%>\n-  </body>\n-</html>"
+  } ],
+  "sha" : "fa6f3bfff6ba7d1f4d5671f544cb60b59d4b5a53",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/fa6f3bfff6ba7d1f4d5671f544cb60b59d4b5a53",
+  "parents" : [ {
+    "sha" : "d0571aeec86f713e9441e082893bb32954ded9c7",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d0571aeec86f713e9441e082893bb32954ded9c7",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/d0571aeec86f713e9441e082893bb32954ded9c7"
+  } ]
+}

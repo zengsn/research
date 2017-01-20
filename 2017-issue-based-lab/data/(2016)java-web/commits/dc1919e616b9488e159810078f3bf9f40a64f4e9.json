@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "heymanheymanheyman",
+    "id" : 22111501,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111501?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/heymanheymanheyman",
+    "html_url" : "https://github.com/heymanheymanheyman",
+    "followers_url" : "https://api.github.com/users/heymanheymanheyman/followers",
+    "following_url" : "https://api.github.com/users/heymanheymanheyman/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/heymanheymanheyman/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/heymanheymanheyman/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/heymanheymanheyman/subscriptions",
+    "organizations_url" : "https://api.github.com/users/heymanheymanheyman/orgs",
+    "repos_url" : "https://api.github.com/users/heymanheymanheyman/repos",
+    "events_url" : "https://api.github.com/users/heymanheymanheyman/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/heymanheymanheyman/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 83,
+    "additions" : 83,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "heymanheymanheyman",
+    "id" : 22111501,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111501?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/heymanheymanheyman",
+    "html_url" : "https://github.com/heymanheymanheyman",
+    "followers_url" : "https://api.github.com/users/heymanheymanheyman/followers",
+    "following_url" : "https://api.github.com/users/heymanheymanheyman/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/heymanheymanheyman/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/heymanheymanheyman/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/heymanheymanheyman/subscriptions",
+    "organizations_url" : "https://api.github.com/users/heymanheymanheyman/orgs",
+    "repos_url" : "https://api.github.com/users/heymanheymanheyman/repos",
+    "events_url" : "https://api.github.com/users/heymanheymanheyman/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/heymanheymanheyman/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/dc1919e616b9488e159810078f3bf9f40a64f4e9",
+  "commit" : {
+    "author" : {
+      "name" : "heymanheymanheyman",
+      "email" : "747073320@qq.com",
+      "date" : "2016-11-13T16:11:30Z"
+    },
+    "committer" : {
+      "name" : "heymanheymanheyman",
+      "email" : "747073320@qq.com",
+      "date" : "2016-11-13T16:11:30Z"
+    },
+    "message" : "#5 #109 提交实验代码",
+    "tree" : {
+      "sha" : "7854bb6f2dfc08f1bea82c0521a6765fa183166a",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/7854bb6f2dfc08f1bea82c0521a6765fa183166a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/dc1919e616b9488e159810078f3bf9f40a64f4e9",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/dc1919e616b9488e159810078f3bf9f40a64f4e9/comments",
+  "files" : [ {
+    "sha" : "1b7de13983d4a743fd5e10a0fa46ae72bb6d9fbe",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/dc1919e616b9488e159810078f3bf9f40a64f4e9/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/dc1919e616b9488e159810078f3bf9f40a64f4e9/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java?ref=dc1919e616b9488e159810078f3bf9f40a64f4e9",
+    "patch" : "@@ -0,0 +1,34 @@\n+package edu.hzu.javaweb.labs.se1414080902202;\n+\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+@WebFilter(filterName = \"EncodingFilter\", urlPatterns = \"/*\")\n+public class Encoding implements Filter {\n+\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tresponse.setCharacterEncoding(\"UTF-8\");\n+\t\tchain.doFilter(request, response);\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "358d5382a78c6fd2744fd6aebb407c860c96db29",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902202/Loginfilter.java",
+    "status" : "added",
+    "additions" : 49,
+    "deletions" : 0,
+    "changes" : 49,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/dc1919e616b9488e159810078f3bf9f40a64f4e9/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Loginfilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/dc1919e616b9488e159810078f3bf9f40a64f4e9/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Loginfilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Loginfilter.java?ref=dc1919e616b9488e159810078f3bf9f40a64f4e9",
+    "patch" : "@@ -0,0 +1,49 @@\n+package edu.hzu.javaweb.labs.se1414080902202;\n+\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+@WebFilter(filterName = \"Loginfilter\", urlPatterns = \"/index.jsp\")\n+public class Loginfilter implements Filter {\n+\n+\t public Loginfilter() {\n+\t        // TODO Auto-generated constructor stub\n+\t    }\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\tHttpServletRequest req = (HttpServletRequest) request;\n+\t\tHttpServletResponse res = (HttpServletResponse) response;\n+\n+\t\tHttpSession session = req.getSession();\n+\t\tif (session.getAttribute(\"DENGLUHAO\") == null) {\n+\t\t\tres.sendRedirect(\"DengLu.jsp\");\t\t}\n+\t\telse {\n+\t\t\tchain.doFilter(request, response);\n+\t\t}\n+\t}\n+\t\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "dc1919e616b9488e159810078f3bf9f40a64f4e9",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/dc1919e616b9488e159810078f3bf9f40a64f4e9",
+  "parents" : [ {
+    "sha" : "8826046882c0734a94583b312d1c4f8330bacc24",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/8826046882c0734a94583b312d1c4f8330bacc24",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/8826046882c0734a94583b312d1c4f8330bacc24"
+  } ]
+}

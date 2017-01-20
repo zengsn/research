@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "xinxin06",
+    "id" : 15074302,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15074302?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xinxin06",
+    "html_url" : "https://github.com/xinxin06",
+    "followers_url" : "https://api.github.com/users/xinxin06/followers",
+    "following_url" : "https://api.github.com/users/xinxin06/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xinxin06/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xinxin06/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xinxin06/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xinxin06/orgs",
+    "repos_url" : "https://api.github.com/users/xinxin06/repos",
+    "events_url" : "https://api.github.com/users/xinxin06/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xinxin06/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 33,
+    "additions" : 33,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "xinxin06",
+    "id" : 15074302,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15074302?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/xinxin06",
+    "html_url" : "https://github.com/xinxin06",
+    "followers_url" : "https://api.github.com/users/xinxin06/followers",
+    "following_url" : "https://api.github.com/users/xinxin06/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/xinxin06/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/xinxin06/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/xinxin06/subscriptions",
+    "organizations_url" : "https://api.github.com/users/xinxin06/orgs",
+    "repos_url" : "https://api.github.com/users/xinxin06/repos",
+    "events_url" : "https://api.github.com/users/xinxin06/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/xinxin06/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/5cd504af68d369b2c08190e4f23ed4dfb0f653a1",
+  "commit" : {
+    "author" : {
+      "name" : "xinxin06",
+      "email" : "952751382@qq.com",
+      "date" : "2016-05-11T07:29:07Z"
+    },
+    "committer" : {
+      "name" : "xinxin06",
+      "email" : "952751382@qq.com",
+      "date" : "2016-05-11T07:29:07Z"
+    },
+    "message" : "#90 #48 lab4...\n\n提交布局文件，完成界面的代码编写",
+    "tree" : {
+      "sha" : "744d249a8e743c283c88b0dd15e8d82a08dd398f",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/744d249a8e743c283c88b0dd15e8d82a08dd398f"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/5cd504af68d369b2c08190e4f23ed4dfb0f653a1",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5cd504af68d369b2c08190e4f23ed4dfb0f653a1/comments",
+  "files" : [ {
+    "sha" : "fb9c72cc99a901ae2f33a1997da03bca26d41821",
+    "filename" : "app/src/main/res/layout/content_com1314080901106.xml",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/5cd504af68d369b2c08190e4f23ed4dfb0f653a1/app/src/main/res/layout/content_com1314080901106.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/5cd504af68d369b2c08190e4f23ed4dfb0f653a1/app/src/main/res/layout/content_com1314080901106.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/content_com1314080901106.xml?ref=5cd504af68d369b2c08190e4f23ed4dfb0f653a1",
+    "patch" : "@@ -0,0 +1,33 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\" android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\" android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"\n+    tools:showIn=\"@layout/activity_com1314080901106activity\"\n+    tools:context=\".Com1314080901106activity\"\n+    android:weightSum=\"1\">\n+\n+    <Button\n+        android:layout_width=\"94dp\"\n+        android:layout_height=\"80dp\"\n+        android:text=\"发送消息\"\n+        android:id=\"@+id/btnSendMsg\"\n+        android:layout_weight=\"0.28\" />\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"74dp\"\n+        android:text=\"注册接收器\"\n+        android:id=\"@+id/btnReg\" />\n+\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"68dp\"\n+        android:text=\"注销接收器\"\n+        android:id=\"@+id/btnunReg\" />\n+\n+</LinearLayout>"
+  } ],
+  "sha" : "5cd504af68d369b2c08190e4f23ed4dfb0f653a1",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5cd504af68d369b2c08190e4f23ed4dfb0f653a1",
+  "parents" : [ {
+    "sha" : "985cbb12cd716e7cce1e23dda430b83651949c0d",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/985cbb12cd716e7cce1e23dda430b83651949c0d",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/985cbb12cd716e7cce1e23dda430b83651949c0d"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "huidachc",
+    "id" : 15098099,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098099?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/huidachc",
+    "html_url" : "https://github.com/huidachc",
+    "followers_url" : "https://api.github.com/users/huidachc/followers",
+    "following_url" : "https://api.github.com/users/huidachc/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/huidachc/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/huidachc/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/huidachc/subscriptions",
+    "organizations_url" : "https://api.github.com/users/huidachc/orgs",
+    "repos_url" : "https://api.github.com/users/huidachc/repos",
+    "events_url" : "https://api.github.com/users/huidachc/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/huidachc/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 85,
+    "additions" : 85,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "huidachc",
+    "id" : 15098099,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15098099?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/huidachc",
+    "html_url" : "https://github.com/huidachc",
+    "followers_url" : "https://api.github.com/users/huidachc/followers",
+    "following_url" : "https://api.github.com/users/huidachc/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/huidachc/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/huidachc/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/huidachc/subscriptions",
+    "organizations_url" : "https://api.github.com/users/huidachc/orgs",
+    "repos_url" : "https://api.github.com/users/huidachc/repos",
+    "events_url" : "https://api.github.com/users/huidachc/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/huidachc/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/8f2895ca4e1fcda00f991bc2ec459e56c704b5f1",
+  "commit" : {
+    "author" : {
+      "name" : "wschc",
+      "email" : "994673537@qq.com",
+      "date" : "2016-06-28T16:18:39Z"
+    },
+    "committer" : {
+      "name" : "wschc",
+      "email" : "994673537@qq.com",
+      "date" : "2016-06-28T16:18:39Z"
+    },
+    "message" : "#88 #104",
+    "tree" : {
+      "sha" : "bb2f9502ee8ad614e90904b6e7e8f7aeb412c3fa",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/bb2f9502ee8ad614e90904b6e7e8f7aeb412c3fa"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/8f2895ca4e1fcda00f991bc2ec459e56c704b5f1",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/8f2895ca4e1fcda00f991bc2ec459e56c704b5f1/comments",
+  "files" : [ {
+    "sha" : "4238c1499d5a732e05075343197290649bde2d89",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/1314080901202推箱子.java",
+    "status" : "added",
+    "additions" : 85,
+    "deletions" : 0,
+    "changes" : 85,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/8f2895ca4e1fcda00f991bc2ec459e56c704b5f1/app/src/main/java/edu/hzuapps/androidworks/homeworks/1314080901202%E6%8E%A8%E7%AE%B1%E5%AD%90.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/8f2895ca4e1fcda00f991bc2ec459e56c704b5f1/app/src/main/java/edu/hzuapps/androidworks/homeworks/1314080901202%E6%8E%A8%E7%AE%B1%E5%AD%90.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/1314080901202%E6%8E%A8%E7%AE%B1%E5%AD%90.java?ref=8f2895ca4e1fcda00f991bc2ec459e56c704b5f1",
+    "patch" : "@@ -0,0 +1,85 @@\n+package wyf.ytl;\n+\n+import android.graphics.Bitmap;\n+import android.graphics.BitmapFactory;\n+import android.graphics.Canvas;\n+import android.graphics.Color;\n+import android.graphics.Paint;\n+import android.view.SurfaceHolder;\n+import android.view.SurfaceView;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+\n+public class WelcomeView extends SurfaceView implements SurfaceHolder.Callback, OnClickListener{\n+\tPushBoxActivity pushBoxActivity;\n+\tWelcomeViewDrawThread welcomeViewDrawThread = null;\n+\tBitmap bitmap;\n+\tBitmap wallLeft;//�����ǽ\n+\tBitmap wallRight;//�����ǽ\n+\tBitmap iron;//����\n+\tBitmap woodLeft;//�����ľ��\n+\tBitmap woodRight;//�����ľ��\n+\tBitmap background;\n+\tBitmap mountain;//������ɽ\n+\t\n+\tint wallLeftX = 15;//ǽ�����\n+\tint wallLeftY = 10;\n+\tint wallRightX = 150;\n+\tint wallRightY = 10;\n+\n+\tint ironX = 15;//���ŵ����\n+\tint ironY = 10;\n+\t\n+\tint woodLeftX = 15;//ľ�ŵ����\n+\tint woodLeftY = 10;\n+\tint woodRightX = 150;\n+\tint woodRightY = 10; \t\t\n+\tpublic WelcomeView(PushBoxActivity pushBoxActivity) {//������\n+\t\tsuper(pushBoxActivity);\n+\t\tthis.pushBoxActivity = pushBoxActivity;\n+\t\tgetHolder().addCallback(this);\n+\t\twelcomeViewDrawThread = new WelcomeViewDrawThread(this,getHolder());\n+\t\twallRight = BitmapFactory.decodeResource(getResources(), R.drawable.wallright);\n+\t\twallLeft = BitmapFactory.decodeResource(getResources(), R.drawable.wallleft); \n+\t\tbitmap = BitmapFactory.decodeResource(getResources(), R.drawable.image4);\n+\t\tiron = BitmapFactory.decodeResource(getResources(), R.drawable.image2);\n+\t\twoodLeft = BitmapFactory.decodeResource(getResources(), R.drawable.image33);\n+\t\twoodRight = BitmapFactory.decodeResource(getResources(), R.drawable.image3);\n+\t\tbackground = BitmapFactory.decodeResource(getResources(), R.drawable.background);//������ˮ\n+\t\tmountain = BitmapFactory.decodeResource(getResources(), R.drawable.mountain2);\t\t\n+\t}\n+\tprotected void onDraw(Canvas canvas) {\n+\t\tcanvas.drawColor(Color.WHITE);//������ɫ\n+\t\tcanvas.drawBitmap(background, 0, 0, new Paint());//���Ʊ���\n+\t\tcanvas.drawBitmap(mountain, 0, 0, new Paint());//�����ɽͼƬ\n+\t\tcanvas.drawBitmap(wallLeft, wallLeftX, wallLeftY,new Paint());//ǽ������\n+\t\tcanvas.drawBitmap(wallRight, wallRightX, wallRightY,new Paint());//ǽ������\n+\t\tcanvas.drawBitmap(iron, ironX, ironY,new Paint());//����\n+\t\tcanvas.drawBitmap(woodLeft, woodLeftX, woodLeftY,new Paint());//ľͷ������\n+\t\tcanvas.drawBitmap(woodRight, woodRightX, woodRightY,new Paint());//ľͷ������\n+\t\tcanvas.drawBitmap(bitmap, 0, 0, new Paint());\n+\t\tthis.setOnClickListener(this);\n+\t}\t\n+\tpublic void surfaceChanged(SurfaceHolder holder, int format, int width,\n+\t\t\tint height) {\n+\t}\n+\tpublic void surfaceCreated(SurfaceHolder holder) {\n+\t\twelcomeViewDrawThread.setFlag(true);\n+\t\twelcomeViewDrawThread.start();//��ˢ֡�߳�\n+\t}\n+\tpublic void surfaceDestroyed(SurfaceHolder holder) {\n+        boolean retry = true;\n+        welcomeViewDrawThread.setFlag(false);//ֹͣˢ֡�߳�\n+        while (retry) {\n+            try {\n+            \twelcomeViewDrawThread.join();//�ȴ�ˢ֡�߳̽���\n+                retry = false;\n+            } \n+            catch (InterruptedException e) {//���ϵ�ѭ����ֱ���ȴ���߳̽���\n+            }\n+        }\n+\t}\n+\tpublic void onClick(View v) {\n+\t\tpushBoxActivity.myHandler.sendEmptyMessage(1);\n+\t}\t\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "8f2895ca4e1fcda00f991bc2ec459e56c704b5f1",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/8f2895ca4e1fcda00f991bc2ec459e56c704b5f1",
+  "parents" : [ {
+    "sha" : "a7ee3cdf219824a9d5cbd966b822ca27d1c1e7fb",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/a7ee3cdf219824a9d5cbd966b822ca27d1c1e7fb",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/a7ee3cdf219824a9d5cbd966b822ca27d1c1e7fb"
+  } ]
+}

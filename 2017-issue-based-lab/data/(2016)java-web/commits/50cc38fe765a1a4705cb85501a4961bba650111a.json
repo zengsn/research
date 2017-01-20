@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "SlowSoulWen",
+    "id" : 18480097,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18480097?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SlowSoulWen",
+    "html_url" : "https://github.com/SlowSoulWen",
+    "followers_url" : "https://api.github.com/users/SlowSoulWen/followers",
+    "following_url" : "https://api.github.com/users/SlowSoulWen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SlowSoulWen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SlowSoulWen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SlowSoulWen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SlowSoulWen/orgs",
+    "repos_url" : "https://api.github.com/users/SlowSoulWen/repos",
+    "events_url" : "https://api.github.com/users/SlowSoulWen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SlowSoulWen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 371,
+    "additions" : 371,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "SlowSoulWen",
+    "id" : 18480097,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18480097?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SlowSoulWen",
+    "html_url" : "https://github.com/SlowSoulWen",
+    "followers_url" : "https://api.github.com/users/SlowSoulWen/followers",
+    "following_url" : "https://api.github.com/users/SlowSoulWen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SlowSoulWen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SlowSoulWen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SlowSoulWen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SlowSoulWen/orgs",
+    "repos_url" : "https://api.github.com/users/SlowSoulWen/repos",
+    "events_url" : "https://api.github.com/users/SlowSoulWen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SlowSoulWen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/50cc38fe765a1a4705cb85501a4961bba650111a",
+  "commit" : {
+    "author" : {
+      "name" : "SlowSoulWen",
+      "email" : "664381601@qq.com",
+      "date" : "2016-12-05T02:36:38Z"
+    },
+    "committer" : {
+      "name" : "SlowSoulWen",
+      "email" : "664381601@qq.com",
+      "date" : "2016-12-05T02:36:38Z"
+    },
+    "message" : "#6 提交实验5代码",
+    "tree" : {
+      "sha" : "abe1b670c0e07fe768b2e3761bcf27e194bc5980",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/abe1b670c0e07fe768b2e3761bcf27e194bc5980"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/50cc38fe765a1a4705cb85501a4961bba650111a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/50cc38fe765a1a4705cb85501a4961bba650111a/comments",
+  "files" : [ {
+    "sha" : "4ad6788292244ad8271b6e9f5bf206efe8d89461",
+    "filename" : "jweb/web/1414080902237/login.jsp",
+    "status" : "added",
+    "additions" : 371,
+    "deletions" : 0,
+    "changes" : 371,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/50cc38fe765a1a4705cb85501a4961bba650111a/jweb/web/1414080902237/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/50cc38fe765a1a4705cb85501a4961bba650111a/jweb/web/1414080902237/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902237/login.jsp?ref=50cc38fe765a1a4705cb85501a4961bba650111a",
+    "patch" : "@@ -0,0 +1,371 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+<!DOCTYPE>\n+<html>\n+<head>\n+<title>鸡皮疙瘩图书馆</title>\n+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js\" type=\"text/javascript\"></script>\n+<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+<script type=\"text/javascript\">\n+var account_name = \"\";\n+\n+jQuery(document).ready(function($) {\n+\t//记录各种信息\n+\tvar book_num = 0;\n+\tvar book_name = \"\";\n+\tvar book_author = \"\";\n+\tvar book_url = \"\";\n+\tvar book_id = 0;\n+\tvar ready_denglu = 0;\n+\tvar user_name = \" \";\n+\n+\t\n+\n+\t$(\"#book\").click(function(event) {\n+\t\t$(\"#all_book_show\").css('display','none');\n+\t\t$(\"#borrow_book\").css('display','none');\n+\t\t$(\"#show_mybook\").css('display','none');\n+\t\t$(\"#character_introduction\").css('display','none');\n+\t\t$(\"#all\").css({\n+\t\t\tdisplay: 'none'\n+\t\t});\n+\t\t$(\"#jumu\").css({\n+\t\t\tbackground: 'url(\"img/heheda.jpg\")'\n+\t\t});\n+\t\t$(\"#hehe\").css({\n+\t\t\tdisplay: 'block'\n+\t\t});\n+\t\t$(\"#show\").css({\n+\t\t\tdisplay: 'none'\n+\t\t});\t\t\n+\t\t$(\"#all\").fadeIn(\"slow\");\n+\t});\n+\n+\n+\t$(\"#continue\").click(function(event) {\n+\t\t$(\"#character_introduction\").css('display','none');\n+\t\t$(\"#show\").css({\n+\t\t\tdisplay: 'none'\n+\t\t});\n+\t\t$(\"#hehe\").fadeIn('slow');\n+\t});\n+\t\n+\t\n+\t\n+\t//登录确定\n+\t$(\"#ready\").click(function(){\n+\t\t\tvar account = $(\"#recipient-name\").val();\n+\t\t\tvar password = $(\"#message-text\").val();\n+\t\t\t$.ajax({\n+\t\t\t\turl: 'http://localhost:8080/Library/Login',\n+\t\t\t\ttype: \"GET\",\n+\t\t\t\tdata: {\n+\t\t\t\t\taccount:account,\n+\t\t\t\t\tpassword:password\n+\t\t\t\t},\n+\t\t\t\tsuccess:function(data){\n+\t\t\t\t\tvar a = data;\n+\t\t\t\t\tvar arr = new Array();\n+\t\t\t\t\tarr = a.split(\" \");\n+\t\t\t\t\tif(arr[0] == \"true\"){\n+\t\t\t\t\t\talert(\"登录成功！\");\n+\t\t\t\t\t\t$(\"#all_book_show\").css('display','none');\n+\t\t\t\t\t\t$(\"#borrow_book\").css('display','none');\n+\t\t\t\t\t\t$(\"#show_mybook\").css('display','none');\n+\t\t\t\t\t\t$(\"#character_introduction\").css('display','none');\n+\t\t\t\t\t\t$(\"#all\").css({\n+\t\t\t\t\t\t\tdisplay: 'none'\n+\t\t\t\t\t\t});\n+\t\t\t\t\t\t$(\"#jumu\").css({\n+\t\t\t\t\t\t\tbackground: 'url(\"img/heheda.jpg\")'\n+\t\t\t\t\t\t});\n+\t\t\t\t\t\t$(\"#hehe\").css({\n+\t\t\t\t\t\t\tdisplay: 'block'\n+\t\t\t\t\t\t});\n+\t\t\t\t\t\t$(\"#show\").css({\n+\t\t\t\t\t\t\tdisplay: 'none'\n+\t\t\t\t\t\t});\t\t\n+\t\t\t\t\t\t$(\"#all\").fadeIn(\"slow\");\n+\t\t\t\t\t\taccount_name = account;\n+\t\t\t\t\t\tuser_name = arr[1];\n+\t\t\t\t\t\tready_denglu=1;\n+\t\t\t\t\t\t$(\"#denglu\").text(\"用户:\"+user_name);\n+\t\t\t\t\t\t\n+\t\t\t\t\t}\n+\t\t\t\t\telse{\n+\t\t\t\t\t\talert(\"账号或密码不正确！\");\t\t\t\t\t\n+\t\t\t\t\t}\n+\t\t\t\t},\n+\t\t\t\terror:function(data)\n+\t\t\t\t{\n+\t\t\t\t\talert(\"提交失败\");\n+\t\t\t\t}\n+\t\t\t});\t\t\n+\t});\n+\t\n+\n+\t//确认注册\n+\t$(\"#register_page_ready\").click(function(){\n+\t\tvar account = \"\",username = \"\",sex = \"\",password = \"\";\n+\t\taccount = $(\"#register_page_account\").val();\n+\t\tusername = $(\"#register_pag_user_name\").val();\n+\t\tsex = $(\"#register_pag_sex\").val();\n+\t\tpassword = $(\"#register_pag_passwordr\").val();\n+\t\talert(account + \" \" + username +\" \" + sex + \" \" + password);\n+\t\t\n+\t\t $.ajax({\n+\t\t\t\turl: 'http://localhost:8080/Library/create_user',\n+\t\t\t\ttype: \"GET\",\n+\t\t\t\tdata: {\n+\t\t\t\t\taccount:account,\n+\t\t\t\t\tusername:username,\n+\t\t\t\t\tsex:sex,\n+\t\t\t\t\tpassword:password\n+\t\t\t\t},\n+\t\t\t\tsuccess:function(data){\n+\t\t\t\t\talert(\"注册成功！\");\n+\t\t\t\t} ,\n+\t\t\t\terror:function(data)\n+\t\t\t\t{\n+\t\t\t\t\talert(\"注册失败\");\n+\t\t\t\t}\n+\t\t\t})\n+\t\t\n+\t})\n+\t\n+\t\n+\t$(\"#searched\").click(function(event) {\t\n+\t\tsearching();\t\n+\t});\n+\n+});\n+</script>\n+<title>example</title>\n+<style type=\"text/css\">\n+\t\n+\tbody {\n+  \t\tposition: relative;\n+  \t\toverflow-x:hidden ;\n+\t}\n+\n+\ta{\n+\t\ttext-align: center;\n+\t}\n+\n+\t#jumu{\n+\t\theight: 85%;\n+\t\tbackground:url(\"img/heheda.jpg\");\n+\t\tbackground-attachment:fixed; \n+\t\tbackground-size: cover; \n+\t\toverflow: hidden;\n+\t}\n+\n+\t#jumu2{\n+\t\theight: 100%;\n+\t\tbackground-color: rgba(225, 225, 225, 0.3);\n+\t}\n+\n+\t#search{\n+\t\twidth:40%;\n+\t}\n+\n+\n+\t#jumu2 p,#jumu2 h1{\n+\t\tcolor: white;\t\n+\t}\n+\n+\t#jumu2 p{\n+\t\tmargin-left: 1%; \n+\t}\n+\n+\t.actived{\n+\t\tbackground-color: black;\n+\t}\n+\n+\t#show{\n+\t\tdisplay: none;\n+\t\tmargin-left: 10%;\n+\t\ttext-align: center;\n+\t\tmargin-top: -6%;\n+\t}\n+\n+\t#show p{\n+\t\tdisplay: block;\n+\t}\n+\t\n+\t/*//右侧文字简介部分*/\n+\t#character_introduction{\n+\t\t\n+\t\tdisplay:none;\n+\t\twidth: 850px;\n+\t\theight: 100%;\n+\t\t/*border: 1px solid red;*/\n+\t\tmargin-left: 30%;\n+\t\tbackground-color: rgba(255, 255, 255, 0.6);\n+\t\tborder-radius: 10px;\n+\t\tpadding-left: 1px;\n+\t\tpadding-right: 1px;\n+\t\tpadding-top:5px;\n+\t}\n+\t\n+\t#character_introduction h3{\n+\t\tfont-weight: bold;\n+\t\tpadding-left:10px;\t\n+\t\n+\t}\n+\n+\t#character_introduction p{\n+\t\tcolor: black;\n+\t\tfont-size: 16px;\n+\t\tfont-family:楷体;\n+\t}\n+\n+\n+</style>\n+</head>\n+\n+\n+\n+\n+<body scroll=\"auto\">\n+\t<!-- 头部菜单 -->\n+\t<ul class=\"nav nav-tabs\" class=\"well\">\n+  \t\t<li role=\"presentation\" class=\"col-md-6\" class=\"actived\"><a href=\"#jumu\" data-toggle=\"tab\" id=\"book\">找书</a></li>\n+  \t\t<li role=\"presentation\" class=\"col-md-6\"><a href=\"#\" data-toggle=\"modal\" \n+   \t\t\tdata-target=\"#myModal\" id = \"denglu\">登录</a></li>\n+\t</ul>\n+\n+<!-- 找书页面-  -->\n+<div id=\"myTabContent\" class=\"tab-content\">\n+\t<div id=\"all\">\n+\t<div class=\"jumbotron\" class=\"tab-pane fade in active\" id=\"jumu\">\n+\t\t<div class=\"jumbotron\"  id=\"jumu2\">\n+  \t\t\t<div class=\"container\" id=\"hehe\">\n+  \t\t\t\t<h1>鸡皮疙瘩图书馆</h1>\n+ \t\t\t\t<p>欢迎你</p>\n+ \t\t\t\t<div class=\"col-lg-6\">\n+    \t\t\t\t<div class=\"input-group\">\n+      \t\t\t\t\t<div class=\"input-group-btn\">\n+        \t\t\t\t\t<button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" \taria-expanded=\"false\">信息<span class=\"caret\"></span></button>\n+        \t\t\t\t\t<ul class=\"dropdown-menu\">\n+          \t\t\t\t\t\t<li><a href=\"#\">更多功能敬请期待</a></li>\n+          \t\t\t\t\t\t<li role=\"separator\" class=\"divider\"></li>\n+          \t\t\t\t\t\t<li><a href=\"#\">作者--温广</a></li>\n+          \t\t\t\t\t\t<li><a href=\"#\">软件工程2班</a></li>\n+          \t\t\t\t\t\t<li><a href=\"#\">学号:1414080902237</a></li>\n+        \t\t\t\t\t</ul>\n+      \t\t\t\t\t</div><!-- /btn-group -->\n+      \t\t\t\t\t<input type=\"text\" class=\"form-control\" aria-label=\"...\" id=\"search\">\n+        \t\t\t\t<button class=\"btn btn-default\" type=\"button\" id=\"searched\">搜索</button>\n+    \t\t\t\t</div><!-- /input-group -->\n+  \t\t\t\t</div><!-- /.col-lg-6 -->\n+  \t\t\t</div>\n+\t\t\t\n+\t\t\t\n+\t\t\t</div>\n+\t\t</div>\n+\t</div>\n+\t<div class=\"row\">\n+ \t<div class=\"tab-pane fade\" id=\"home\">\n+   </div>\n+\n+    <div class=\"tab-pane fade\" id=\"ios\">\n+      <p>\n+      \t\n+      </p>\n+   </div>\n+</div>\n+\n+<!-- 登录页面 -->\n+<div class=\"modal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" \n+   aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">\n+   <div class=\"modal-dialog\">\n+      <div class=\"modal-content\">\n+         <div class=\"modal-header\">\n+            <button type=\"button\" class=\"close\" \n+               data-dismiss=\"modal\" aria-hidden=\"true\">\n+                  &times;\n+            </button>\n+            <h4 class=\"modal-title\" id=\"myModalLabel\">\n+               登录\n+            </h4>\n+         </div>\n+         <div class=\"modal-body\">\n+            <form >\n+          \t\t<div class=\"form-group\">\n+            \t\t<label for=\"recipient-name\" class=\"control-label\">账号:</label>\n+            \t\t<input type=\"text\" class=\"form-control\" id=\"recipient-name\">\n+          \t\t</div>\n+          \t\t<div class=\"form-group\">\n+            \t\t<label for=\"message-text\" class=\"control-label\">密码:</label>\n+            \t\t<input type=\"password\" class=\"form-control\" id=\"message-text\"></input>\n+          \t\t</div>\n+        \t</form>\n+         </div>\n+         <div class=\"modal-footer\">\n+         <button type=\"button\" class=\"btn btn-default\" \n+               data-dismiss=\"modal\" id = \"register\" data-toggle=\"modal\" data-target=\"#register_page\">注册账号\n+            </button>\n+            <button type=\"button\" class=\"btn btn-default\" \n+               data-dismiss=\"modal\" id = \"ready\">确认\n+            </button>\n+         </div>\n+      </div>\n+</div>\n+</div>\n+\n+\n+<!-- 注册页面 -->\n+<div class=\"modal fade\" id=\"register_page\" tabindex=\"-1\" role=\"dialog\" \n+   aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">\n+   <div class=\"modal-dialog\">\n+      <div class=\"modal-content\">\n+         <div class=\"modal-header\">\n+            <button type=\"button\" class=\"close\" \n+               data-dismiss=\"modal\" aria-hidden=\"true\">\n+                  &times;\n+            </button>\n+            <h4 class=\"modal-title\" id=\"myModalLabel\">\n+           \t\t用户注册\n+            </h4>\n+         </div>\n+         <div class=\"modal-body\">\n+            <form>\n+          \t\t<div class=\"form-group\">\n+            \t\t<label for=\"recipient-name\" class=\"control-label\">账号:</label>\n+            \t\t<input type=\"text\" class=\"form-control\" id=\"register_page_account\" placeholder=\"\">\n+          \t\t</div>\n+           \t\t<div class=\"form-group\">\n+            \t\t<label for=\"recipient-name\" class=\"control-label\">昵称:</label>\n+            \t\t<input type=\"text\" class=\"form-control\" id=\"register_pag_user_name\" placeholder=\"\">\n+          \t\t</div>\n+           \t\t<div class=\"form-group\">\n+            \t\t<label for=\"recipient-name\" class=\"control-label\">密码:</label>\n+            \t\t<input type=\"text\" class=\"form-control\" id=\"register_pag_passwordr\" placeholder=\"\">\n+          \t\t</div>  \n+            \t<div class=\"form-group\">\n+            \t\t<label for=\"recipient-name\" class=\"control-label\">性别:</label>\n+            \t\t<input type=\"text\" class=\"form-control\" id=\"register_pag_sex\" placeholder=\"\">\n+          \t\t</div>           \t\t       \t\t          \t\t\n+        \t</form>\n+         </div>\n+         <div class=\"modal-footer\">\n+            <button type=\"button\" class=\"btn btn-default\" \n+               data-dismiss=\"modal\" id = \"register_page_ready\">注册\n+            </button>\n+         </div>\n+      </div>\n+</div>\n+</div>\n+\n+\n+\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "50cc38fe765a1a4705cb85501a4961bba650111a",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/50cc38fe765a1a4705cb85501a4961bba650111a",
+  "parents" : [ {
+    "sha" : "71298077bfa26538933dd747e761f7681cd44b34",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/71298077bfa26538933dd747e761f7681cd44b34",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/71298077bfa26538933dd747e761f7681cd44b34"
+  } ]
+}

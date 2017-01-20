@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "HurricanGod",
+    "id" : 22078850,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078850?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HurricanGod",
+    "html_url" : "https://github.com/HurricanGod",
+    "followers_url" : "https://api.github.com/users/HurricanGod/followers",
+    "following_url" : "https://api.github.com/users/HurricanGod/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HurricanGod/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HurricanGod/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HurricanGod/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HurricanGod/orgs",
+    "repos_url" : "https://api.github.com/users/HurricanGod/repos",
+    "events_url" : "https://api.github.com/users/HurricanGod/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HurricanGod/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 396,
+    "additions" : 396,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "HurricanGod",
+    "id" : 22078850,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078850?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HurricanGod",
+    "html_url" : "https://github.com/HurricanGod",
+    "followers_url" : "https://api.github.com/users/HurricanGod/followers",
+    "following_url" : "https://api.github.com/users/HurricanGod/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HurricanGod/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HurricanGod/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HurricanGod/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HurricanGod/orgs",
+    "repos_url" : "https://api.github.com/users/HurricanGod/repos",
+    "events_url" : "https://api.github.com/users/HurricanGod/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HurricanGod/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/f80230f033083c8f7060d8db1a81765b244fa209",
+  "commit" : {
+    "author" : {
+      "name" : "HurricanGod",
+      "email" : "1807363937@qq.com",
+      "date" : "2016-11-10T17:04:58Z"
+    },
+    "committer" : {
+      "name" : "HurricanGod",
+      "email" : "1807363937@qq.com",
+      "date" : "2016-11-10T17:04:58Z"
+    },
+    "message" : "#6 提交实验5代码",
+    "tree" : {
+      "sha" : "fc57dd25e05b13319457f55d1cd031f58f17c40c",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/fc57dd25e05b13319457f55d1cd031f58f17c40c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/f80230f033083c8f7060d8db1a81765b244fa209",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/f80230f033083c8f7060d8db1a81765b244fa209/comments",
+  "files" : [ {
+    "sha" : "e704ad7a0594447cd27bd9aed1f326a41709bd2d",
+    "filename" : "jweb/src/edu/hzu/javaweb/bean/Grades.java",
+    "status" : "added",
+    "additions" : 66,
+    "deletions" : 0,
+    "changes" : 66,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f80230f033083c8f7060d8db1a81765b244fa209/jweb/src/edu/hzu/javaweb/bean/Grades.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f80230f033083c8f7060d8db1a81765b244fa209/jweb/src/edu/hzu/javaweb/bean/Grades.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/bean/Grades.java?ref=f80230f033083c8f7060d8db1a81765b244fa209",
+    "patch" : "@@ -0,0 +1,66 @@\n+package edu.hzu.javaweb.bean;\n+\n+public class Grades \n+{\n+\tprivate String sno;\n+\tprivate String courseName;\n+\tprivate double grade;\n+\tprivate int credit;\n+\t\n+\t\n+\tpublic Grades(String CourseName,String Sno,int Credit)\n+\t{\n+\t\tthis.courseName=CourseName;\n+\t\tthis.sno=Sno;\n+\t\tthis.credit=Credit;\n+\t}\n+\t\n+\t\n+\tpublic Grades(String CourseName,int Credit)\n+\t{\n+\t\tthis.courseName=CourseName;\n+\t\tthis.credit=Credit;\n+\t}\n+\t\n+\tpublic int getCredit() \n+\t{\n+\t\treturn credit;\n+\t}\n+\n+\tpublic void setCredit(int credit) \n+\t{\n+\t\tthis.credit = credit;\n+\t}\n+\n+\tpublic String getSno() \n+\t{\n+\t\treturn sno;\n+\t}\n+\t\n+\tpublic void setSno(String sno) \n+\t{\n+\t\tthis.sno = sno;\n+\t}\n+\t\n+\tpublic String getCourseName() \n+\t{\n+\t\treturn courseName;\n+\t}\n+\t\n+\tpublic void setCourseName(String courseName) \n+\t{\n+\t\tthis.courseName = courseName;\n+\t}\n+\t\n+\tpublic double getGrade()\n+\t{\n+\t\treturn grade;\n+\t}\n+\t\n+\tpublic void setGrade(double grade) {\n+\t\tthis.grade = grade;\n+\t}\n+\t\n+\t\n+\t\n+}"
+  }, {
+    "sha" : "8be75d80b7ff2f4a7ebe9b1483bdf938db192cbd",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/AddGrades.java",
+    "status" : "added",
+    "additions" : 79,
+    "deletions" : 0,
+    "changes" : 79,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f80230f033083c8f7060d8db1a81765b244fa209/jweb/src/edu/hzu/javaweb/labs/se1414080902225/AddGrades.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f80230f033083c8f7060d8db1a81765b244fa209/jweb/src/edu/hzu/javaweb/labs/se1414080902225/AddGrades.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/AddGrades.java?ref=f80230f033083c8f7060d8db1a81765b244fa209",
+    "patch" : "@@ -0,0 +1,79 @@\n+package edu.hzu.javaweb.labs.se1414080902225;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.List;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+import edu.hzu.javaweb.bean.Grades;\n+\n+@WebServlet(urlPatterns=\"/UpdateGrades\")\n+public class AddGrades extends HttpServlet {\n+\t\n+\tpublic AddGrades() {\n+\t\tsuper();\n+\t}\n+\n+\t\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tString sub1=request.getParameter(\"subject0\");\n+\t\tSystem.out.println(sub1);\n+\t\tSystem.out.println(\"I'm calling and i will be send to Show page\");\n+\t\tresponse.sendRedirect(\"1414080902225/ShowAssessmentInfo.jsp\");\n+\n+\t\t\n+\t}\n+\n+\t\n+\t@SuppressWarnings(\"unchecked\")\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\t\n+\t\t\n+\t\tHttpSession hs=request.getSession(true);\n+\t\tList<Grades> gl=(List<Grades>)hs.getAttribute(\"gradesList\");\n+\t\tint len=gl.size();\n+\t\t\n+\t\t\n+\t\tString[] subjectGrades=new String[len];\n+\t\tint i=0;\n+\t\ttry {\n+\t\t\t\n+\t\t\twhile(i<len)\n+\t\t\t{\n+\t\t\t\tString key=new StringBuffer().append(\"subject\").append(((Integer)i).toString()).toString();\n+\t\t\t\tsubjectGrades[i]=request.getParameter(key);\n+\t\t\t\ti++;\n+\t\t\t}\n+\t\t\t\n+\t\t\tint k=0;\n+\t\t\tfor (Grades grade : gl) {\n+\t\t\t\tgrade.setGrade(Double.parseDouble(subjectGrades[k++]));\n+\t\t\t\t\n+\t\t\t}\n+\t\t\ths.setAttribute(\"gradesList\", gl);\n+\t\t} catch (Exception e) {\n+\t\t\tSystem.out.print(e.getMessage());\n+\t\t}\n+\t\t\n+\t\tresponse.sendRedirect(\"1414080902225/ShowAssessmentInfo.jsp\");\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void init() throws ServletException {\n+\t\t\n+\t}\n+}"
+  }, {
+    "sha" : "33030e9d7c85934d6212cef10ee4aaa8a38b602b",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/CreateSubjects.java",
+    "status" : "added",
+    "additions" : 64,
+    "deletions" : 0,
+    "changes" : 64,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f80230f033083c8f7060d8db1a81765b244fa209/jweb/src/edu/hzu/javaweb/labs/se1414080902225/CreateSubjects.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f80230f033083c8f7060d8db1a81765b244fa209/jweb/src/edu/hzu/javaweb/labs/se1414080902225/CreateSubjects.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/CreateSubjects.java?ref=f80230f033083c8f7060d8db1a81765b244fa209",
+    "patch" : "@@ -0,0 +1,64 @@\n+package edu.hzu.javaweb.labs.se1414080902225;\n+import edu.hzu.javaweb.bean.*;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.*;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+@WebServlet(urlPatterns=\"/InitSubjectInfo\")\n+public class CreateSubjects extends HttpServlet {\n+\t\n+\tpublic CreateSubjects() {\n+\t\tsuper();\n+\t}\n+\n+\t\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\tList<Grades> grades=new ArrayList<Grades>();\n+\t\tgrades.add(new Grades(\"数据库概念\", 3));\n+\t\tgrades.add(new Grades(\"操作系统\", 3));\n+\t\tgrades.add(new Grades(\"计算机网络\", 2));\n+\t\tgrades.add(new Grades(\"博弈论基础\", 1));\n+\t\tgrades.add(new Grades(\"高等数学\", 5));\n+\t\tgrades.add(new Grades(\"概率论基础\", 2));\n+\t\tgrades.add(new Grades(\"汇编语言\", 2));\n+\t\tgrades.add(new Grades(\"大学体育\", 2));\n+\t\tHttpSession subjectsSession=request.getSession(true);\n+\t\t\n+\t\tsubjectsSession.setAttribute(\"gradesList\", grades);\n+\t\tSystem.out.println(\"I'm calling and i will be send to AssessmentInfo page\");\n+\t\tresponse.sendRedirect(\"1414080902225/AssessmentInfo.jsp\");\n+\t\t\n+\t\t//request.getRequestDispatcher(\"1414080902225/AssessmentInfo.jsp\").forward(request, response);\n+\t\t\n+\t\t\n+\t\t\n+\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void init() throws ServletException {\n+\t\t\n+\t}\n+}"
+  }, {
+    "sha" : "1d0481597cb27e1d8acced0adf9b713e618e9cbb",
+    "filename" : "jweb/web/1414080902225/AssessmentInfo.jsp",
+    "status" : "added",
+    "additions" : 96,
+    "deletions" : 0,
+    "changes" : 96,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f80230f033083c8f7060d8db1a81765b244fa209/jweb/web/1414080902225/AssessmentInfo.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f80230f033083c8f7060d8db1a81765b244fa209/jweb/web/1414080902225/AssessmentInfo.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902225/AssessmentInfo.jsp?ref=f80230f033083c8f7060d8db1a81765b244fa209",
+    "patch" : "@@ -0,0 +1,96 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <link rel=\"stylesheet\" href=\"http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css\">\n+    <script src=\"http://code.jquery.com/jquery-1.9.1.min.js\"></script>\n+    <script src=\"http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js\"></script>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'AssessmentInfo.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t<style type=\"text/css\">\n+\t\t#tb,tr,th,td{\n+ \t\t border: 1px solid blue;\n+\t\t}\n+\n+\t\t#tb{\t\n+  \t\t\tborder-collapse:collapse; /*//设置单边框*/\n+\t\t}\n+\t\t\n+\t\ttd{\n+\t\t\twidth: 250px;\n+  \t\t\theight: 30px;\n+  \t\t\ttext-align:center;\n+\t\t}\n+\t\t\n+\t\t#div1{\n+\t\t\tmargin:5% 25% 5% 25%;\n+\t\t\tpadding:5% 5% 5% 5%;\n+\t\t}\n+\t\tbody{\n+\t\t\tbackground:#333333;\n+\t\t\tcolor:#333;\n+\t\t}\n+\t\t.head{\n+\t\t\tmargin: 0 auto;\n+\t\t\twidth: 200px;\n+\t\t}\n+\t\t\n+\t</style>\n+\n+  </head>\n+  \n+  <body>\n+  \n+    <div id=\"div1\">\n+        <form id=\"form1\" action=\"<%=request.getContextPath() %>/UpdateGrades\" method=\"post\">\n+        \t<div >\n+        \t\t<table id=\"tb\">\n+        \t\t<div class=\"head\"> 基本成绩</div>\n+        \t\t\t<c:forEach var=\"grade\" items=\"${gradesList }\">\n+        \t\t\t\t<tr>\n+        \t\t\t\t\t<td>${grade.courseName }</td>\n+        \t\t\t\t\t<td><input type=\"text\" value=\"\"></td>\n+        \t\t\t\t</tr>        \t\t\t\n+        \t\t\t</c:forEach>\n+        \t\t</table>\n+        \t\t<button type=\"submit\" id=\"sub\">保存</button>\n+        \t</div>\n+        </form>\n+    </div>\n+    \n+    <script type=\"text/javascript\">\n+    \t\n+    \t\t$(function(){\n+    \t\t\n+    \t\t\t\n+    \t\t\t\n+    \t\t\tvar name=\"subject\";\n+    \t\t\tvar index=0;\n+    \t\t\t$(\":text\").each(function(){\n+    \t\t\n+    \t\t\t\t$(this).attr(\"name\",name+index).attr(\"id\",name+index);\n+    \t\t\t\t//alert($(this).val());\n+    \t\t\t\tindex++;\n+    \t\t\t});\n+    \t\t\t\n+    \t\t\t});\n+    </script>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "64d607f4ce67ee56a92b30ecddc8d0d80efcef54",
+    "filename" : "jweb/web/1414080902225/ShowAssessmentInfo.jsp",
+    "status" : "added",
+    "additions" : 91,
+    "deletions" : 0,
+    "changes" : 91,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/f80230f033083c8f7060d8db1a81765b244fa209/jweb/web/1414080902225/ShowAssessmentInfo.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/f80230f033083c8f7060d8db1a81765b244fa209/jweb/web/1414080902225/ShowAssessmentInfo.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902225/ShowAssessmentInfo.jsp?ref=f80230f033083c8f7060d8db1a81765b244fa209",
+    "patch" : "@@ -0,0 +1,91 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'ShowAssessmentInfo.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n+\t<style type=\"text/css\">\n+\t\t#div1{\n+\t\t\tmargin:10% 10% 10% 10%;\n+\t\t\tpadding:5% 5% 5% 5%;\n+\t\t\tbackground:#333;\n+\t\t\tborder:1px solid blue;\n+\t\t}\n+\t\t\n+\t\t#tb{\t\n+  \t\t\tborder-collapse:collapse; /*//设置单边框*/\n+\t\t}\n+\t\t\n+\t\ttd{\n+\t\t\twidth: 150px;\n+  \t\t\theight: 30px;\n+  \t\t\ttext-align:center;\n+\t\t}\n+\t</style>\n+\n+  </head>\n+  \n+  <body>\n+  \t<p>你好！<c:out value=\"${sessionScope.user }\"/></p>\n+  <hr>\n+    <div id=\"div1\">\n+    \t\t<h4 style=\"text-align=center\"><c:out value=\"${sessionScope.user }\"/>的基础成绩为：</h4>\n+    \t\t<table>\n+    \t\t\t<tr>\n+    \t\t\t\t<td>课程名</td>\n+    \t\t\t\t<td>学分</td>\n+    \t\t\t\t<td>成绩</td>\n+    \t\t\t</tr>\n+    \t\t\t<c:forEach var=\"index\" items=\"${gradesList}\">\n+    \t\t\t\t<tr>\n+\t    \t\t\t\t<td>\n+\t    \t\t\t\t\t<c:if test=\"${ not empty index.courseName }\"> \n+\t    \t\t\t\t\t\t${index.courseName }\n+\t    \t\t\t\t\t</c:if>\n+\t    \t\t\t\t</td>\n+\t    \t\t\t\t\n+\t    \t\t\t\t<td>\n+\t    \t\t\t\t\t<c:if test=\"${not empty index.credit  }\"> \n+\t    \t\t\t\t\t\t<c:out value=\"${index.credit}\"/>\n+\t    \t\t\t\t\t</c:if>\n+\t    \t\t\t\t\t\n+\t    \t\t\t\t</td>\n+\t    \t\t\t\t\n+\t    \t\t\t\t<td>\n+\t    \t\t\t\t\t\n+\t    \t\t\t\t\t\n+\t    \t\t\t\t\t<c:choose>\n+   \t\t\t\t\t\t\t\t<c:when test=\"${index.grade>=0&&index.grade<=100 }\">\n+   \t\t\t\t\t\t\t\t\t${ index.grade }\t    \n+   \t\t\t\t\t\t\t\t</c:when>\n+   \t\t\t\t\t\t\t\t<c:otherwise> \n+   \t\t\t\t\t\t\t\t\t<c:out value=\"成绩为空\"></c:out> \n+   \t\t\t\t\t\t\t\t</c:otherwise>\n+\t\t\t\t\t\t\t</c:choose>\n+\t    \t\t\t\t\t\n+\t\t\t\t\t\t\t\n+\t    \t\t\t\t</td>\t\n+    \t\t\t\t</tr>\n+    \t\t\t</c:forEach>\n+    \t\t</table>\n+    \t\t\n+    \t\n+    </div>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "f80230f033083c8f7060d8db1a81765b244fa209",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f80230f033083c8f7060d8db1a81765b244fa209",
+  "parents" : [ {
+    "sha" : "5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d"
+  } ]
+}

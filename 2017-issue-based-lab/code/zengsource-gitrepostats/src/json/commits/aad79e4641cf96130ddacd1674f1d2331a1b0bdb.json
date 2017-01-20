@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 72,
+    "additions" : 72,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "1019940946",
+    "id" : 18134037,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18134037?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/1019940946",
+    "html_url" : "https://github.com/1019940946",
+    "followers_url" : "https://api.github.com/users/1019940946/followers",
+    "following_url" : "https://api.github.com/users/1019940946/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/1019940946/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/1019940946/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/1019940946/subscriptions",
+    "organizations_url" : "https://api.github.com/users/1019940946/orgs",
+    "repos_url" : "https://api.github.com/users/1019940946/repos",
+    "events_url" : "https://api.github.com/users/1019940946/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/1019940946/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/aad79e4641cf96130ddacd1674f1d2331a1b0bdb",
+  "commit" : {
+    "author" : {
+      "name" : "1019940946",
+      "email" : "1019940946@qq.com",
+      "date" : "2016-06-14T16:16:09Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-06-14T16:16:09Z"
+    },
+    "message" : "Add files via upload",
+    "tree" : {
+      "sha" : "d6282e77dde3a43ae6307e44815435f61a0b87ca",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/d6282e77dde3a43ae6307e44815435f61a0b87ca"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/aad79e4641cf96130ddacd1674f1d2331a1b0bdb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/aad79e4641cf96130ddacd1674f1d2331a1b0bdb/comments",
+  "files" : [ {
+    "sha" : "462457f1716acf877bb05fe99664e7c85142940e",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_Account.java",
+    "status" : "added",
+    "additions" : 15,
+    "deletions" : 0,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/aad79e4641cf96130ddacd1674f1d2331a1b0bdb/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_Account.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/aad79e4641cf96130ddacd1674f1d2331a1b0bdb/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_Account.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_Account.java?ref=aad79e4641cf96130ddacd1674f1d2331a1b0bdb",
+    "patch" : "@@ -0,0 +1,15 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903115.db;\r\n+\r\n+/**\r\n+ * Created by lzf on 2016/6/14.\r\n+ */\r\n+public class Net1314080903115_Account {\r\n+\r\n+    public int State=0;//0数据库里没数据，1有数据，还没通过网络验证,2通过网络验证\r\n+    public int ID;\r\n+    public String Phone;\r\n+    public String PassWord;\r\n+    public String UserName;\r\n+    public String HeadPortrait;\r\n+    public String NoteTable;\r\n+}\r"
+  }, {
+    "sha" : "b067476754d49a9a70fd8c21f1203009569c8271",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_Constant.java",
+    "status" : "added",
+    "additions" : 24,
+    "deletions" : 0,
+    "changes" : 24,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/aad79e4641cf96130ddacd1674f1d2331a1b0bdb/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_Constant.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/aad79e4641cf96130ddacd1674f1d2331a1b0bdb/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_Constant.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_Constant.java?ref=aad79e4641cf96130ddacd1674f1d2331a1b0bdb",
+    "patch" : "@@ -0,0 +1,24 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903115.db;\n+\n+public class Net1314080903115_Constant {\n+\t// 数据库名称\n+\tpublic static final String DATABASE_NAME = \"CloudNotes.db\";\n+\n+\t// 数据库中各表名\n+\tpublic static final String TABLE_Account = \"Account\";\n+\n+\t// Account表\n+\tpublic static final String Account_ID = \"ID\";\n+\tpublic static final String Account_Phone = \"Phone\";\n+\tpublic static final String Account_PassWord = \"PassWord\";\n+\tpublic static final String Account_UserName = \"UserName\";\n+\tpublic static final String Account_HeadPortrait = \"HeadPortrait\";\n+\tpublic static final String Account_NoteTable = \"NoteTable\";\n+\n+\t// 笔记表\n+\tpublic static final String NoteTable_ID = \"ID\";\n+\tpublic static final String NoteTable_Title = \"Title\";\n+\tpublic static final String NoteTable_Text = \"Text\";\n+\tpublic static final String NoteTable_Edition = \"Edition\";\n+\tpublic static final String NoteTable_Date = \"Date\";\n+}"
+  }, {
+    "sha" : "450680d83a171aa60ad63976ad0963f1063bdfd7",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_MySQLiteOpenHelper.java",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/aad79e4641cf96130ddacd1674f1d2331a1b0bdb/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_MySQLiteOpenHelper.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/aad79e4641cf96130ddacd1674f1d2331a1b0bdb/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_MySQLiteOpenHelper.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903115/db/Net1314080903115_MySQLiteOpenHelper.java?ref=aad79e4641cf96130ddacd1674f1d2331a1b0bdb",
+    "patch" : "@@ -0,0 +1,33 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903115.db;\n+\n+import android.content.Context;\n+import android.database.sqlite.SQLiteDatabase;\n+import android.database.sqlite.SQLiteOpenHelper;\n+\n+public class Net1314080903115_MySQLiteOpenHelper extends SQLiteOpenHelper {\n+\t/*\n+\t * 创建数据库\n+\t */\n+\tpublic Net1314080903115_MySQLiteOpenHelper(Context context) {\n+\t\tsuper(context, Net1314080903115_Constant.DATABASE_NAME, null, 1);\n+\t}\n+\n+\t// 初始化表\n+\t@Override\n+\tpublic void onCreate(SQLiteDatabase db) {\n+\t\t// 创建用户表\n+\t\tdb.execSQL(\"create table \" + Net1314080903115_Constant.TABLE_Account + \"(\"\n+\t\t\t\t+ Net1314080903115_Constant.Account_ID + \" integer primary key not null,\"\n+\t\t\t\t+ Net1314080903115_Constant.Account_Phone+ \" text not null,\"\n+\t\t\t\t+ Net1314080903115_Constant.Account_PassWord+ \" text not null,\"\n+\t\t\t\t+ Net1314080903115_Constant.Account_UserName + \" text not null,\"\n+\t\t\t\t+ Net1314080903115_Constant.Account_HeadPortrait + \" text, \"\n+\t\t\t\t+ Net1314080903115_Constant.Account_NoteTable + \" text not null);\");\n+\t}\n+\n+\t@Override\n+\tpublic void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {\n+\n+\t}\n+\n+}"
+  } ],
+  "sha" : "aad79e4641cf96130ddacd1674f1d2331a1b0bdb",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/aad79e4641cf96130ddacd1674f1d2331a1b0bdb",
+  "parents" : [ {
+    "sha" : "0b21bb55fa9f0ae86894c5848355967a4bbee1dc",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0b21bb55fa9f0ae86894c5848355967a4bbee1dc",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/0b21bb55fa9f0ae86894c5848355967a4bbee1dc"
+  } ]
+}

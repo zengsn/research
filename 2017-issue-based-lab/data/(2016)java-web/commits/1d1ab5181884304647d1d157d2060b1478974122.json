@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 61,
+    "additions" : 61,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1d1ab5181884304647d1d157d2060b1478974122",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "小疯疯",
+      "date" : "2016-11-10T12:52:18Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "小疯疯",
+      "date" : "2016-11-10T12:52:18Z"
+    },
+    "message" : "#3 提交实验代码",
+    "tree" : {
+      "sha" : "98435dc2b5aa825a70c10c65dd601a032beb45e7",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/98435dc2b5aa825a70c10c65dd601a032beb45e7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1d1ab5181884304647d1d157d2060b1478974122",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1d1ab5181884304647d1d157d2060b1478974122/comments",
+  "files" : [ {
+    "sha" : "008937a4e07dc451cf61c3e27c2aff3398766e75",
+    "filename" : "labs/1414080902127/MyJsp.jsp",
+    "status" : "added",
+    "additions" : 61,
+    "deletions" : 0,
+    "changes" : 61,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1d1ab5181884304647d1d157d2060b1478974122/labs/1414080902127/MyJsp.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1d1ab5181884304647d1d157d2060b1478974122/labs/1414080902127/MyJsp.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902127/MyJsp.jsp?ref=1d1ab5181884304647d1d157d2060b1478974122",
+    "patch" : "@@ -0,0 +1,61 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"ISO-8859-1\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+  \t<title>录入学生信息</title>\n+  </head>\n+  \n+  <body>\n+  \t<h2 align=\"center\">录入学生信息</h2>\n+  \t\t<form name=\"stu\" action=\"\">\n+  \t\t\t<table>\n+  \t\t\t<tr><td>学号：</td><td><input type=\"text\" name=\"stuNum\"></td></tr>\n+  \t\t\t<tr><td>姓名：</td><td><input type=\"text\" name=\"stuName\"></td></tr>\n+  \t\t\t<tr><td>性别：</td>\n+  \t\t\t\t<td><input type=\"radio\"name=\"stuSex\" checked=\"checked\">男\n+  \t\t\t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+  \t\t\t\t\t<input type=\"radio\"name=\"stuSex\">女\n+  \t\t\t\t</td>\n+  \t\t\t</tr>\n+  \t\t\t<tr><td>院系：</td>\n+ \t\t\t\t<td><select name=\"stuSelect\">\n+\t\t\t\t\t<option selected>电子信息与电气学院</option>\n+\t\t\t\t\t<option>旭日广东服装学院</option>\n+\t\t\t\t\t<option>化学与材料工程学院</option>\n+  \t\t\t\t\t<option>信息科学技术学院</option>\n+  \t\t\t\t\t<option>经济管理学院</option>\n+  \t\t\t\t\t<option>建筑与土木工程学院</option>\n+  \t\t\t\t\t<option>地理与旅游学院</option>\n+  \t\t\t\t\t<option>美术与设计学院</option>\n+  \t\t\t\t\t<option>数学与大数据学院</option>\n+  \t\t\t\t\t<option>生命科学学院</option>\n+  \t\t\t\t\t<option>体育学院</option>\n+  \t\t\t\t\t<option>外国语学院</option>\n+  \t\t\t\t\t<option>音乐学院</option>\n+  \t\t\t\t\t<option>文学与传媒学院</option>\n+  \t\t\t\t\t<option>政法学院</option>\n+  \t\t\t\t\t<option>马克思主义学院</option>\n+  \t\t\t\t\t<option>教育科学学院</option>\n+  \t\t\t\t\t<option>继续教育学院</option>\n+  \t\t\t\t\t</select>\n+  \t\t\t\t</td>\n+  \t\t\t</tr>\n+  \t\t\t<tr><td>专业:</td><td><input type=\"text\" name=\"stuSelect2\"></td></tr>\n+  \t\t\t<tr><td>原毕业学校：</td><td><input type=\"text\"name=\"stuSchool\"></td></tr>\n+  \t\t\t<tr><td>身份证号：</td><td><input type=\"text\" name=\"stuNumber\"></td></tr>\n+  \t\t\t<tr><td>政治面貌：</td>\n+  \t\t\t\t<td><input type=\"radio\"name=\"stuChoose\" checked=\"checked\">群众\n+  \t\t\t\t\t<input type=\"radio\"name=\"stuChoose\">团员\n+  \t\t\t\t\t<input type=\"radio\"name=\"stuChoose\">党员\n+  \t\t\t\t</td>\n+  \t\t\t</tr>\n+  \t\t\t<tr><td><input type=\"submit\" value=\"录入信息\"></td><td><input type=\"reset\" value=\"取消录入\"></td></tr>\n+  \t\t\t</table>\n+  \t\t</form>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "1d1ab5181884304647d1d157d2060b1478974122",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1d1ab5181884304647d1d157d2060b1478974122",
+  "parents" : [ {
+    "sha" : "ea591984a9f7f76ac8928cdc1a71224de4f412c5",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ea591984a9f7f76ac8928cdc1a71224de4f412c5",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ea591984a9f7f76ac8928cdc1a71224de4f412c5"
+  } ]
+}

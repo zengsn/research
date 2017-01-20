@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "Hongsf",
+    "id" : 22068396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hongsf",
+    "html_url" : "https://github.com/Hongsf",
+    "followers_url" : "https://api.github.com/users/Hongsf/followers",
+    "following_url" : "https://api.github.com/users/Hongsf/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hongsf/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hongsf/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hongsf/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hongsf/orgs",
+    "repos_url" : "https://api.github.com/users/Hongsf/repos",
+    "events_url" : "https://api.github.com/users/Hongsf/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hongsf/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 58,
+    "additions" : 0,
+    "deletions" : 58
+  },
+  "author" : {
+    "login" : "Hongsf",
+    "id" : 22068396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hongsf",
+    "html_url" : "https://github.com/Hongsf",
+    "followers_url" : "https://api.github.com/users/Hongsf/followers",
+    "following_url" : "https://api.github.com/users/Hongsf/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hongsf/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hongsf/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hongsf/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hongsf/orgs",
+    "repos_url" : "https://api.github.com/users/Hongsf/repos",
+    "events_url" : "https://api.github.com/users/Hongsf/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hongsf/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/e2bb68d6de8cf0fcc8626d0f29ef85887df18d67",
+  "commit" : {
+    "author" : {
+      "name" : "Hongsf",
+      "email" : "1083178465@qq.com",
+      "date" : "2016-11-07T05:11:53Z"
+    },
+    "committer" : {
+      "name" : "Hongsf",
+      "email" : "1083178465@qq.com",
+      "date" : "2016-11-07T05:11:53Z"
+    },
+    "message" : "#6 #77 提交实验代码",
+    "tree" : {
+      "sha" : "1c06feba0f8d8ac53b123c981bafc02436cf6458",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/1c06feba0f8d8ac53b123c981bafc02436cf6458"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/e2bb68d6de8cf0fcc8626d0f29ef85887df18d67",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/e2bb68d6de8cf0fcc8626d0f29ef85887df18d67/comments",
+  "files" : [ {
+    "sha" : "9a50c9ed1ca92e62005d42ebc09eb9cdca97f83a",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902110/Messay.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 58,
+    "changes" : 58,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/36211ac18e82fef3d48fa6aa8128b805127ac419/jweb/src/edu/hzu/javaweb/labs/se1414080902110/Messay.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/36211ac18e82fef3d48fa6aa8128b805127ac419/jweb/src/edu/hzu/javaweb/labs/se1414080902110/Messay.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902110/Messay.java?ref=36211ac18e82fef3d48fa6aa8128b805127ac419",
+    "patch" : "@@ -1,58 +0,0 @@\n-package bean;\n-\n-public class Messay {\n-\tprivate int essay_Id, click;\n-\tprivate String essay_title, classify, user_name;\n-\n-\tpublic Messay() {\n-\t}\n-\n-\tpublic Messay(int essay_Id, String essay_title, String classify, int click, String user_name) {\n-\t\tthis.essay_Id = essay_Id;\n-\t\tthis.essay_title = essay_title;\n-\t\tthis.classify = classify;\n-\t\tthis.click = click;\n-\t\tthis.user_name = user_name;\n-\t}\n-\n-\tpublic int getEssay_Id() {\n-\t\treturn essay_Id;\n-\t}\n-\n-\tpublic void setEssay_Id(int essay_Id) {\n-\t\tthis.essay_Id = essay_Id;\n-\t}\n-\n-\tpublic String getEssay_title() {\n-\t\treturn essay_title;\n-\t}\n-\n-\tpublic void setEssay_title(String essay_title) {\n-\t\tthis.essay_title = essay_title;\n-\t}\n-\n-\tpublic String getClassify() {\n-\t\treturn classify;\n-\t}\n-\n-\tpublic void setClassify(String classify) {\n-\t\tthis.classify = classify;\n-\t}\n-\n-\tpublic int getClick() {\n-\t\treturn click;\n-\t}\n-\n-\tpublic void setClick(int click) {\n-\t\tthis.click = click;\n-\t}\n-\n-\tpublic String getUser_name() {\n-\t\treturn user_name;\n-\t}\n-\n-\tpublic void setUser_name(String user_name) {\n-\t\tthis.user_name = user_name;\n-\t}\n-\n-}\n\\ No newline at end of file"
+  } ],
+  "sha" : "e2bb68d6de8cf0fcc8626d0f29ef85887df18d67",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/e2bb68d6de8cf0fcc8626d0f29ef85887df18d67",
+  "parents" : [ {
+    "sha" : "36211ac18e82fef3d48fa6aa8128b805127ac419",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/36211ac18e82fef3d48fa6aa8128b805127ac419",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/36211ac18e82fef3d48fa6aa8128b805127ac419"
+  } ]
+}

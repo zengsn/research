@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 43,
+    "additions" : 0,
+    "deletions" : 43
+  },
+  "author" : {
+    "login" : "HCJ0HCJ",
+    "id" : 22111873,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22111873?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HCJ0HCJ",
+    "html_url" : "https://github.com/HCJ0HCJ",
+    "followers_url" : "https://api.github.com/users/HCJ0HCJ/followers",
+    "following_url" : "https://api.github.com/users/HCJ0HCJ/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HCJ0HCJ/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HCJ0HCJ/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HCJ0HCJ/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HCJ0HCJ/orgs",
+    "repos_url" : "https://api.github.com/users/HCJ0HCJ/repos",
+    "events_url" : "https://api.github.com/users/HCJ0HCJ/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HCJ0HCJ/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/d0571aeec86f713e9441e082893bb32954ded9c7",
+  "commit" : {
+    "author" : {
+      "name" : "HCJ0HCJ",
+      "email" : "HCJHCJ0@163.COM",
+      "date" : "2016-10-30T14:58:22Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-30T14:58:22Z"
+    },
+    "message" : "Delete index.jsp",
+    "tree" : {
+      "sha" : "24862ed4a5e7f06502fdc9a10de9fa3d8d68a506",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/24862ed4a5e7f06502fdc9a10de9fa3d8d68a506"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/d0571aeec86f713e9441e082893bb32954ded9c7",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/d0571aeec86f713e9441e082893bb32954ded9c7/comments",
+  "files" : [ {
+    "sha" : "cb3f879d45de0c88a4d0375f05887853003c7aa4",
+    "filename" : "jweb/web/index.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 43,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/64945e9ac73e41ae52315ab4133a71fff166a28e/jweb/web/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/64945e9ac73e41ae52315ab4133a71fff166a28e/jweb/web/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/index.jsp?ref=64945e9ac73e41ae52315ab4133a71fff166a28e",
+    "patch" : "@@ -1,43 +0,0 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n-\n-<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n-<html>\n-<!-- 新 Bootstrap 核心 CSS 文件 -->\n-<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n-<!-- 可选的Bootstrap主题文件（一般不用引入） -->\n-<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n-<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n-<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n-<style type=\"text/css\">\n-body{color:#FF7B0B;font-size:18px;}\n-.title{text-align: center;font-size:50px;}\n-.login{text-align: center;}\n-#InputName,#InputPassword{width:250px; margin:0 auto;}\n-.checkbox{margin-left: -130px;}\n-.btn{width: 253px;}\n-</style>\n-  <head>       \n-    <title>Login Page</title>    \n-  </head> \n-  <body>\n-    <h1 class=\"title\"><br/>Login</h1><br/>\n-<div class=\"container\" >\n-<form role=\"form\" class=\"login\" action=\"123\" method=\"get\">\n-  <div class=\"form-group\">\n-    <label for=\"InputName\">Name</label>\n-    <input type=\"name\" class=\"form-control\" id=\"InputName\"  name=\"Username\" placeholder=\"please enter your name\">\n-  </div>\n-  <div class=\"form-group\">\n-    <label for=\"InputPassword\">Password</label>\n-    <input type=\"password\" class=\"form-control\" id=\"InputPassword\" name=\"UserPwd\" placeholder=\"please enter your password\">\n-  </div>\n-  <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\"/>\n-</form>\n-  </body>\n-</html>"
+  } ],
+  "sha" : "d0571aeec86f713e9441e082893bb32954ded9c7",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d0571aeec86f713e9441e082893bb32954ded9c7",
+  "parents" : [ {
+    "sha" : "64945e9ac73e41ae52315ab4133a71fff166a28e",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/64945e9ac73e41ae52315ab4133a71fff166a28e",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/64945e9ac73e41ae52315ab4133a71fff166a28e"
+  } ]
+}

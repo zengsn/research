@@ -1,0 +1,238 @@
+{
+  "committer" : {
+    "login" : "Vialyn",
+    "id" : 22266193,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22266193?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Vialyn",
+    "html_url" : "https://github.com/Vialyn",
+    "followers_url" : "https://api.github.com/users/Vialyn/followers",
+    "following_url" : "https://api.github.com/users/Vialyn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Vialyn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Vialyn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Vialyn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Vialyn/orgs",
+    "repos_url" : "https://api.github.com/users/Vialyn/repos",
+    "events_url" : "https://api.github.com/users/Vialyn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Vialyn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 755,
+    "additions" : 755,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Vialyn",
+    "id" : 22266193,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22266193?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Vialyn",
+    "html_url" : "https://github.com/Vialyn",
+    "followers_url" : "https://api.github.com/users/Vialyn/followers",
+    "following_url" : "https://api.github.com/users/Vialyn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Vialyn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Vialyn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Vialyn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Vialyn/orgs",
+    "repos_url" : "https://api.github.com/users/Vialyn/repos",
+    "events_url" : "https://api.github.com/users/Vialyn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Vialyn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+  "commit" : {
+    "author" : {
+      "name" : "Vialyn",
+      "email" : "2916153488@qq.com",
+      "date" : "2016-10-16T03:01:14Z"
+    },
+    "committer" : {
+      "name" : "Vialyn",
+      "email" : "2916153488@qq.com",
+      "date" : "2016-10-16T03:01:14Z"
+    },
+    "message" : "#7 #105 提交实验代码",
+    "tree" : {
+      "sha" : "2884eda175f3cee0c338b2c73a10572ba3e65802",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/2884eda175f3cee0c338b2c73a10572ba3e65802"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/comments",
+  "files" : [ {
+    "sha" : "c1a696c1c3f494fcff56a17aab48edeba7e6900e",
+    "filename" : "jweb/web/1414080902131/delete_bill.jsp",
+    "status" : "added",
+    "additions" : 59,
+    "deletions" : 0,
+    "changes" : 59,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/delete_bill.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/delete_bill.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/delete_bill.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,59 @@\n+<%@ page language=\"java\" import=\"java.sql.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>利用提交条件删除记录页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+     <% Connection conn=null;\n+       PreparedStatement pstmt=null;\n+       ResultSet rs=null;\n+       String driverName=\"com.mysql.jdbc.Driver\";\n+       String userName=\"root\";\n+       String userPwd=\"653975\";\n+       String dbName=\"bees\";\n+       String url1=\"jdbc:mysql://localhost:3306/\"+dbName;\n+       String url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+       String url3=\"&useUnicode=true&characterEncoding=UTF-8\";\n+       String url=url1+url2+url3;\n+       request.setCharacterEncoding(\"UTF-8\");\n+       try{\n+       Class.forName(driverName);\n+       conn=DriverManager.getConnection(url);\n+       String jname=request.getParameter(\"jname\");\n+       String state=request.getParameter(\"state\");\n+      \n+       String sql=\"delete from bill where jname=? and state=?\";\n+       pstmt=conn.prepareStatement(sql);\n+       pstmt.setString(1,jname);\n+       pstmt.setString(2,state);\n+      \n+       \n+       int n=pstmt.executeUpdate();\n+       if(n>=1){%>删除数据操作成功！<br><%}\n+       else{%>删除数据操作失败！<%=n %><br><%}\n+       }catch(Exception e){%>出现意外，信息是：<%=e.getMessage() %><%}\n+       finally{\n+       if(pstmt!=null){pstmt.close();}\n+       if(conn!=null){conn.close();}\n+       }%>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "40d6065f8106775d698bca72bdcdf8fd45ffc9c7",
+    "filename" : "jweb/web/1414080902131/delete_bill_tijiao.jsp",
+    "status" : "added",
+    "additions" : 37,
+    "deletions" : 0,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/delete_bill_tijiao.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/delete_bill_tijiao.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/delete_bill_tijiao.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,37 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>删除条件提交页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    请选择删除记录条件<hr width=\"100%\"size=\"3\">\n+    <form action=\"delete_bill.jsp\"method=\"post\">\n+       姓名：<input type=\"text\"name=\"jname\"><br><br>\n+       状态：未还款<input type=\"radio\"value=\"未还款\"name=\"state\">\n+                    已还款<input type=\"radio\"value=\"已还款\"name=\"state\"><br><br>\n+       \n+       <input type=\"submit\"value=\"提交\">&nbsp;&nbsp;&nbsp;\n+       <input type=\"reset\"value=\"取消\">\n+    </form>\n+    \n+  </body>\n+</html>"
+  }, {
+    "sha" : "153e4dc74667966d39d18127b50c32de64aa5641",
+    "filename" : "jweb/web/1414080902131/ex.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/ex.jpg",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/ex.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/ex.jpg?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2"
+  }, {
+    "sha" : "c081fe73976219e6a2285ccfdeed905ea0c58958",
+    "filename" : "jweb/web/1414080902131/index_bill.jsp",
+    "status" : "added",
+    "additions" : 30,
+    "deletions" : 0,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/index_bill.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/index_bill.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/index_bill.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,30 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>借款账单管理系统</title>\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+  </head>\n+  \n+  <frameset rows=\"80,*\">\n+  <frame src=\"index_title.jsp\"scrolling=\"no\">\n+  <frameset cols=\"140,*\">\n+  <frame src=\"index_bill_left.jsp\"scrolling=\"no\">\n+  <frame src=\"index_bill_right.jsp\"name=\"right\"scrolling=\"no\">\n+  </frameset>\n+  </frameset>\n+</html>"
+  }, {
+    "sha" : "dc757cd2d637d5bedb5b7549efe76f288cd00362",
+    "filename" : "jweb/web/1414080902131/index_bill_left.jsp",
+    "status" : "added",
+    "additions" : 33,
+    "deletions" : 0,
+    "changes" : 33,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/index_bill_left.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/index_bill_left.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/index_bill_left.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,33 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"GB2312\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>�˵�ҳ��</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <br><br><br><br><br><br>\n+    <p><a href=\"showall.jsp\"target=\"right\">�г�ȫ������˵�</a></p>\n+     <p><a href=\"query_bill_tijiao.jsp\"target=\"right\">��ѯ����˵�״̬</a></p>\n+     <p><a href=\"insert_bill_tijiao.jsp\"target=\"right\">����ӽ���˵�</a></p>\n+     <p><a href=\"delete_bill_tijiao.jsp\"target=\"right\">�����ɾ�����˵�</a></p>\n+      <p><a href=\"update_bill_tijiao.jsp\"target=\"right\">������޸Ľ���˵�</a></p>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "5fb61782e9fc9183e12d50eb3fdec287bdee98f1",
+    "filename" : "jweb/web/1414080902131/index_bill_right.jsp",
+    "status" : "added",
+    "additions" : 29,
+    "deletions" : 0,
+    "changes" : 29,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/index_bill_right.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/index_bill_right.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/index_bill_right.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,29 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>信息显示页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <center><h1>欢迎使用Bee借呗！</h1></center> \n+    <img src=\"ex.jpg\"width=\"200\"height=\"100\"align=\"middle\" >\n+  </body>\n+</html>"
+  }, {
+    "sha" : "81d8bca28370accb422f3e0612e5579032763f25",
+    "filename" : "jweb/web/1414080902131/index_title.jsp",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/index_title.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/index_title.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/index_title.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,28 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>页面标题</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <center><h1>借款账单管理系统</h1></center>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "b17dea5ee1d35bd05e82f6f46d35a66a0ff09542",
+    "filename" : "jweb/web/1414080902131/insert_bill.jsp",
+    "status" : "added",
+    "additions" : 67,
+    "deletions" : 0,
+    "changes" : 67,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/insert_bill.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/insert_bill.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/insert_bill.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,67 @@\n+<%@ page language=\"java\" import=\"java.sql.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>利用PreparedStatement对象添加一条记录页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <% Connection conn=null;\n+       PreparedStatement pstmt=null;\n+       String driverName=\"com.mysql.jdbc.Driver\";\n+       String userName=\"root\";\n+       String userPwd=\"653975\";\n+       String dbName=\"bees\";\n+       String url1=\"jdbc:mysql://localhost:3306/\"+dbName;\n+       String url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+       String url3=\"&useUnicode=true&characterEncoding=UTF-8\";\n+       String url=url1+url2+url3;\n+       request.setCharacterEncoding(\"UTF-8\");\n+       try{\n+       Class.forName(driverName);\n+       conn=DriverManager.getConnection(url);\n+       String sql=\"Insert into bill(zno,jname,money,qixian,rate,sum,way,state)value(?,?,?,?,?,?,?,?)\";\n+       pstmt=conn.prepareStatement(sql);\n+       request.setCharacterEncoding(\"UTF-8\");\n+       int zno=Integer.parseInt(request.getParameter(\"zno\"));\n+       String jname=request.getParameter(\"jname\");\n+\t   int money=Integer.parseInt(request.getParameter(\"money\"));\n+\t   String qixian=request.getParameter(\"qixian\");\n+       Double rate=Double.parseDouble(request.getParameter(\"rate\"));\n+       Double sum=Double.parseDouble(request.getParameter(\"sum\"));\n+       String way=request.getParameter(\"way\");\n+\t   String state=request.getParameter(\"state\");\n+       pstmt.setInt(1,zno);\n+       pstmt.setString(2,jname);\n+       pstmt.setInt(3,money);\n+       pstmt.setString(4,qixian);\n+       pstmt.setDouble(5,rate);\n+       pstmt.setDouble(6,sum);\n+\t   pstmt.setString(7,way);\n+       pstmt.setString(8,state);\n+       int n=pstmt.executeUpdate();\n+       if(n==1){%>数据插入操作成功！<br><%}\n+       else{%>数据插入操作失败！<br><%}\n+       }catch(Exception e){%>出现意外，信息是：<%=e.getMessage() %><%} \n+       finally{if(pstmt!=null){pstmt.close();}\n+       if(pstmt!=null){pstmt.close();}\n+     }%>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "036a0cff23d4fd54d64f12ab62ec078256ed281c",
+    "filename" : "jweb/web/1414080902131/insert_bill_tijiao.jsp",
+    "status" : "added",
+    "additions" : 77,
+    "deletions" : 0,
+    "changes" : 77,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/insert_bill_tijiao.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/insert_bill_tijiao.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/insert_bill_tijiao.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,77 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>添加任意借款账单的提交页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <form action=\"insert_bill.jsp\"method=\"post\">\n+    <table border=\"0\"width=\"300\"height=\"252\">\n+    <tr><td>账单号</td><td><input type=\"text\"name=\"zno\"></td></tr>\n+    <tr><td>借款人</td><td><input type=\"text\"name=\"jname\"></td></tr>\n+    <tr><td>借款数目</td><td><input type=\"text\"name=\"money\"></td></tr>\n+    <tr><td>借款期限</td>\n+    <td>\n+    <select class=\"form-control\"name=\"qixian\"id=\"time\">\n+    <option value=\"1个月\">1个月</option>\n+    <option value=\"3个月\">3个月</option>\n+    <option value=\"6个月\">6个月</option>\n+    <option value=\"1年\">1年</option>\n+    <option value=\"3年\">3年</option>\n+    <option value=\"5年\">5年</option>\n+    </select>\n+    </td>\n+    </tr>\n+    <tr><td>还款方式</td>\n+\t<td><input type=\"radio\"name=\"way\"id=\"repayment1\"value=\"一次性还款\">一次性还款\n+    <input type=\"radio\"name=\"way\"id=\"repayment2\"value=\"分期还款\">分期还款</td>\n+\t</tr>\n+\t<tr><td>利率</td>\n+\t<td>\n+\t<select class=\"form-control\"name=\"rate\"id=\"rate0\">\n+    <option>0</option>\n+    <option>0.05</option>\n+    <option>0.10</option>\n+    <option>0.15</option>\n+    <option>0.20</option>\n+    <option>0.25</option>\n+    </select>\n+\t</td>\n+\t</tr>\n+\t<tr><td>应还总额</td><td><input type=\"text\"name=\"sum\"></td></tr>\n+    <tr><td>状态</td>\n+    <td>\n+    <select class=\"form-control\"name=\"state\"id=\"zhuangtai\">\n+    <option value=\"未还款\">未还款</option>\n+    <option value=\"已还款\">已还款</option>\n+    </select>\n+    </td>\n+    </tr>\n+    <tr align=\"center\">\n+    <td colspan=\"2\">\n+    <input type=\"submit\"value=\"提交\">&nbsp;&nbsp;&nbsp;\n+    <input type=\"reset\"value=\"取消\">\n+    </td>\n+    </tr>\n+    </table>\n+    </form>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "fec0e3626f1e5f498e14e3c6c07fcf7212166509",
+    "filename" : "jweb/web/1414080902131/query_bill.jsp",
+    "status" : "added",
+    "additions" : 81,
+    "deletions" : 0,
+    "changes" : 81,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/query_bill.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/query_bill.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/query_bill.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,81 @@\n+<%@ page language=\"java\" import=\"java.sql.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>由提交页面获取查询条件并实现查询的页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <center>\n+    <% Connection conn=null;\n+       PreparedStatement pstmt=null;\n+       ResultSet rs=null;\n+       String driverName=\"com.mysql.jdbc.Driver\";\n+       String userName=\"root\";\n+       String userPwd=\"653975\";\n+       String dbName=\"bees\";\n+       String url1=\"jdbc:mysql://localhost:3306/\"+dbName;\n+       String url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+       String url3=\"&useUnicode=true&characterEncoding=UTF-8\";\n+       request.setCharacterEncoding(\"UTF-8\");\n+       String url=url1+url2+url3;\n+       try{\n+       Class.forName(driverName);\n+       conn=DriverManager.getConnection(url);\n+       \n+       \n+       String state=request.getParameter(\"state\");\n+       String sql=\"select * from bill where state=?\";\n+       pstmt=conn.prepareStatement(sql);\n+       pstmt.setString(1,state);\n+       \n+       rs=pstmt.executeQuery();\n+       rs.last();\n+     %>你要查询的借款账单中共有\n+     <font size=\"5\"color=\"red\"><%=rs.getRow() %></font>单\n+     <table border=\"2\"bgcolor=\"ccceee\"width=\"650\">\n+     <tr bgcolor=\"CCCCCC\"align=\"center\">\n+     <td>记录条数</td><td>账单号</td><td>借款人</td>\n+     <td>借款数目</td><td>借款期限</td><td>还款方式</td><td>利率</td><td>应还总额</td><td>状态</td>\n+     </tr>\n+     <% rs.beforeFirst();\n+        while(rs.next()){\n+     %> <tr align=\"center\">\n+        <td><%=rs.getRow() %></td>\n+        <td><%=rs.getString(\"zno\") %></td>\n+        <td><%=rs.getString(\"jname\") %></td>\n+        <td><%=rs.getString(\"money\") %></td>\n+        <td><%=rs.getString(\"qixian\") %></td>\n+        <td><%=rs.getString(\"way\") %></td>\n+        <td><%=rs.getString(\"rate\") %></td>\n+\t\t<td><%=rs.getString(\"sum\") %></td>\n+\t\t<td><%=rs.getString(\"state\") %></td>\n+        </tr>\n+        <%} %>\n+     </table>\n+    </center>\n+    <%}catch(Exception e){%>出现意外，信息是：<%=e.getMessage() %><%}\n+    finally{\n+    if(rs!=null){rs.close();}\n+    if(pstmt!=null){pstmt.close();}\n+    if(conn!=null){conn.close();}\n+    }%>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "4d8cdfb2915407d60ff53176c16195264e7ecd0a",
+    "filename" : "jweb/web/1414080902131/query_bill_tijiao.jsp",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/query_bill_tijiao.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/query_bill_tijiao.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/query_bill_tijiao.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,38 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>查询条件提交页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+       请选择查询条件<hr width=\"100%\"size=\"3\">\n+    <form action=\"query_bill.jsp\"method=\"post\">\n+  \n+    账单状态：未还款<input type=\"radio\"value=\"未还款\"name=\"state\"checked=\"checked\">\n+    已还款<input type=\"radio\"value=\"已还款\"name=\"state\"><br><br>\n+    \n+    \n+    <input type=\"submit\"value=\"提交\">\n+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+    <input type=\"reset\"value=\"取消\">\n+    </form>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "202dfe0012881ca2f1b16a4563bb22fa57b2cc35",
+    "filename" : "jweb/web/1414080902131/showall.jsp",
+    "status" : "added",
+    "additions" : 76,
+    "deletions" : 0,
+    "changes" : 76,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/showall.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/showall.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/showall.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,76 @@\n+<%@ page contentType=\"text/html\" import=\"java.sql.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>显示所有借款账单的页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <center>\n+    <% Connection conn=null;\n+       PreparedStatement pstmt=null;\n+       ResultSet rs=null;\n+       String driverName=\"com.mysql.jdbc.Driver\";\n+       String userName=\"root\";\n+       String userPwd=\"653975\";\n+       String dbName=\"bees\";\n+       String url1=\"jdbc:mysql://localhost:3306/\"+dbName;\n+       String url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+       String url3=\"&useUnicode=true&characterEncoding=UTF-8\";\n+       String url=url1+url2+url3;\n+       request.setCharacterEncoding(\"UTF-8\");\n+       try{Class.forName(driverName);\n+        conn=DriverManager.getConnection(url);\n+           String sql=\"select * from bill\";\n+            pstmt=conn.prepareStatement(sql);\n+           rs=pstmt.executeQuery();\n+           rs.last();\n+     %>你要查询的借款账单中共有\n+     <font size=\"5\"color=\"red\"><%=rs.getRow() %></font>单\n+     <table border=\"2\"bgcolor=\"ccceee\"width=\"650\">\n+     <tr bgcolor=\"CCCCCC\"align=\"center\">\n+     <td>记录条数</td><td>账单号</td><td>借款人</td>\n+     <td>借款数目</td><td>借款期限</td><td>利率</td><td>还款总额</td><td>还款方式</td><td>状态</td>\n+     </tr>\n+     <% rs.beforeFirst();\n+        while(rs.next()){\n+     %> <tr align=\"center\">\n+        <td><%=rs.getRow() %></td>\n+        <td><%=rs.getString(\"zno\") %></td>\n+        <td><%=rs.getString(\"jname\") %></td>\n+        <td><%=rs.getString(\"money\") %></td>\n+        <td><%=rs.getString(\"qixian\") %></td>\n+        <td><%=rs.getString(\"rate\") %></td>\n+        <td><%=rs.getString(\"sum\") %></td>\n+\t\t<td><%=rs.getString(\"way\") %></td>\n+\t\t<td><%=rs.getString(\"state\") %></td>\n+        </tr>\n+        <%} %>\n+     </table>\n+     </center>\n+     <%}catch(Exception e){%>出现意外，信息是：<%=e.getMessage() %>\n+     <%}\n+     finally{\n+    if(rs!=null){rs.close();}\n+      if(pstmt!=null){pstmt.close();}\n+      if(conn!=null){conn.close();}\n+     }%>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "96b975c00bf0919a262aed814d351250286668a0",
+    "filename" : "jweb/web/1414080902131/update_bill.jsp",
+    "status" : "added",
+    "additions" : 71,
+    "deletions" : 0,
+    "changes" : 71,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/update_bill.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/update_bill.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/update_bill.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,71 @@\n+<%@ page language=\"java\" import=\"java.sql.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>修改后重写记录页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    <% Connection conn=null;\n+       PreparedStatement pstmt=null;\n+       String driverName=\"com.mysql.jdbc.Driver\";\n+       String userName=\"root\";\n+       String userPwd=\"653975\";\n+       String dbName=\"bees\";\n+       String url1=\"jdbc:mysql://localhost:3306/\"+dbName;\n+       String url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+       String url3=\"&useUnicode=true&characterEncoding=UTF-8\";\n+       String url=url1+url2+url3;\n+       request.setCharacterEncoding(\"UTF-8\");\n+       try{\n+       Class.forName(driverName);\n+       conn=DriverManager.getConnection(url);\n+       String sql=\"update bill set zno=?,jname=?,money=?,qixian=?,way=?,rate=?,sum=?,state=? where jname=?and state=?\";\n+        pstmt=conn.prepareStatement(sql);\n+       request.setCharacterEncoding(\"UTF-8\");\n+       int zno=Integer.parseInt(request.getParameter(\"zno\"));\n+       String jname2=request.getParameter(\"jname2\");\n+       int money=Integer.parseInt(request.getParameter(\"money\"));\n+\t   String qixian=request.getParameter(\"qixian\");\n+\t   String way=request.getParameter(\"way\");\n+       Double rate=Double.parseDouble(request.getParameter(\"rate\"));\n+       Double sum=Double.parseDouble(request.getParameter(\"sum\"));\n+\t   String state2=request.getParameter(\"state2\");\n+       String jname=(String)session.getAttribute(\"jname\");\n+       String state=(String)session.getAttribute(\"state\");\n+       pstmt.setInt(1,zno);\n+       pstmt.setString(2,jname2);\n+       pstmt.setInt(3,money);\n+       pstmt.setString(4,qixian);\n+       pstmt.setString(5,way);\n+       pstmt.setDouble(6,rate);\n+       pstmt.setDouble(7,sum);\n+       pstmt.setString(8,state2);\n+       pstmt.setString(9,jname);\n+       pstmt.setString(10,state);\n+       int n=pstmt.executeUpdate();\n+       if(n>=1){%>数据重写操作成功！<br><%}\n+       else{%>数据重写操作失败！<br><%}\n+       }catch(Exception e){%>出现意外，信息是：<%=e.getMessage() %><%} \n+       finally{if(pstmt!=null){pstmt.close();}\n+       if(pstmt!=null){pstmt.close();}\n+     }%>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "f6f3e41eb093712e21ed87f58a9c90c7d4d27b33",
+    "filename" : "jweb/web/1414080902131/update_bill_edit.jsp",
+    "status" : "added",
+    "additions" : 93,
+    "deletions" : 0,
+    "changes" : 93,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/update_bill_edit.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/update_bill_edit.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/update_bill_edit.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,93 @@\n+<%@ page language=\"java\" import=\"java.sql.*\" pageEncoding=\"GB2312\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>�޸ı༭ҳ��</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+   <%  Connection conn=null;\n+       PreparedStatement pstmt=null;\n+       ResultSet rs=null;\n+       String driverName=\"com.mysql.jdbc.Driver\";\n+       String userName=\"root\";\n+       String userPwd=\"653975\";\n+       String dbName=\"bees\";\n+       String url1=\"jdbc:mysql://localhost:3306/\"+dbName;\n+       String url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+       String url3=\"&useUnicode=true&characterEncoding=UTF-8\";\n+       String url=url1+url2+url3;\n+       request.setCharacterEncoding(\"UTF-8\");\n+      try{\n+       Class.forName(driverName);\n+       conn=DriverManager.getConnection(url);\n+       String jname=request.getParameter(\"jname\");\n+       String state=request.getParameter(\"state\");\n+       session.setAttribute(\"jname\",jname);\n+       session.setAttribute(\"state\",state);\n+       String sql=\"select * from bill where jname=?and state=?\";\n+       pstmt=conn.prepareStatement(sql);\n+       pstmt.setString(1,jname);\n+       pstmt.setString(2,state);\n+       rs=pstmt.executeQuery();\n+       if(rs.next()){\n+       int zno=rs.getInt(\"zno\");\n+       String jname2=rs.getString(\"jname\");\n+       int money=rs.getInt(\"money\");\n+\t   String qixian=rs.getString(\"qixian\");\n+\t   String way=rs.getString(\"way\");\n+       double rate=rs.getDouble(\"rate\");\n+       double sum=rs.getDouble(\"sum\");\n+       String state2=rs.getString(\"state\");\n+       if(rs!=null){rs.close();}\n+       if(pstmt!=null){pstmt.close();}\n+       if(conn!=null){conn.close();}\n+       %>\n+       <form action=\"update_bill.jsp\" method=\"post\">\n+       <table border=\"0\"width=\"238\"height=\"252\">\n+       <tr><td>�˵���</td><td><input name=\"zno\"value=<%=zno%>></td></tr>\n+       <tr><td>�����</td><td><input name=\"jname2\"value=<%=jname2 %>></td></tr>\n+       <tr><td>�����Ŀ</td><td><input name=\"money\"value=<%=money %>></td></tr>\n+       <tr><td>�������</td><td><input name=\"qixian\"value=<%=qixian %>></td></tr>\n+       <tr><td>���ʽ</td><td><input name=\"way\"value=<%=way%>></td></tr>\n+       <tr><td>����</td><td><input name=\"rate\"value=<%=rate%>></td></tr>\n+\t    <tr><td>�����ܶ�</td><td><input name=\"sum\"value=<%=sum%>></td></tr>\n+       <tr><td>״̬</td><td><input name=\"state2\"value=<%=state2%>></td></tr>\n+       <tr align=\"center\">\n+       <td colspan=\"2\">\n+       <input type=\"submit\"value=\"�ύ\">&nbsp;&nbsp;&nbsp;&nbsp;\n+       <input type=\"reset\"value=\"ȡ��\">\n+       </td>\n+       </tr>\n+       </table>\n+       </form>\n+       <%}\n+       else{%>\n+       û���ҵ���������ļ�¼����\n+       <%}\n+       }catch (Exception e){%>�������⣬��Ϣ�ǣ�<%=e.getMessage() %><%}\n+       finally{\n+       if(rs!=null){rs.close();}\n+       if(pstmt!=null){pstmt.close();}\n+       if(conn!=null){conn.close();}\n+       }%>\n+       \n+  </body>\n+</html>"
+  }, {
+    "sha" : "4a2fb89ebcad89b16485517b03894b1641a808ba",
+    "filename" : "jweb/web/1414080902131/update_bill_tijiao.jsp",
+    "status" : "added",
+    "additions" : 36,
+    "deletions" : 0,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/update_bill_tijiao.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2/jweb/web/1414080902131/update_bill_tijiao.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902131/update_bill_tijiao.jsp?ref=b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+    "patch" : "@@ -0,0 +1,36 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>修改记录的条件提交页面</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+    请选择修改记录所满足的条件<hr width=\"100%\"size=\"3\">\n+    <form action=\"update_bill_edit.jsp\"method=\"post\"><br>\n+     姓名：<input type=\"text\"name=\"jname\"><br><br>\n+    状态：未还款<input type=\"radio\"value=\"未还款\"name=\"state\">\n+           已还款<input type=\"radio\" value=\"已还款\"name=\"state\"><br><br>\n+           <input type=\"submit\"value=\"提交\">\n+           &nbsp;&nbsp;&nbsp;&nbsp;\n+           <input type=\"reset\"value=\"取消\">\n+    </form>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b4f161c6bc2c5b4661c2c40ff542181dd887cbc2",
+  "parents" : [ {
+    "sha" : "b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b3c70bcb58af49b9416fd3cbd115909cda04eb48",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/b3c70bcb58af49b9416fd3cbd115909cda04eb48"
+  } ]
+}

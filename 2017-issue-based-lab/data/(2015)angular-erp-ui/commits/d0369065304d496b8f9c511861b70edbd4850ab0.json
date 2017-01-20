@@ -1,0 +1,122 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 158,
+    "additions" : 144,
+    "deletions" : 14
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/d0369065304d496b8f9c511861b70edbd4850ab0",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-07T13:41:57Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-12-07T13:41:57Z"
+    },
+    "message" : "Merge pull request #407 from linxingwei/master\n\n实验3到5 from linxingwei",
+    "tree" : {
+      "sha" : "6dec85eb76d2294cda066267a9633d1789ba0c82",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/6dec85eb76d2294cda066267a9633d1789ba0c82"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/d0369065304d496b8f9c511861b70edbd4850ab0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/d0369065304d496b8f9c511861b70edbd4850ab0/comments",
+  "files" : [ {
+    "sha" : "d6c494c3f7bc6bbbea3797099682803ac39b3ede",
+    "filename" : "works/1314080901224/index.html",
+    "status" : "modified",
+    "additions" : 52,
+    "deletions" : 13,
+    "changes" : 65,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/d0369065304d496b8f9c511861b70edbd4850ab0/works/1314080901224/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/d0369065304d496b8f9c511861b70edbd4850ab0/works/1314080901224/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901224/index.html?ref=d0369065304d496b8f9c511861b70edbd4850ab0",
+    "patch" : "@@ -1,11 +1,16 @@\n <!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+<html lang=\"zh-CN\" ng-app=\"operationModule\">\n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>{{流程-审核-操作明细}} by 1314080901224</title>\n+    <title>流程-审核-操作明细 by 1314080901224</title>\n+ <!--引用js-->\n+    \n+      <script src=\"../../lib/angular-1.4.5/angular.js\"></script>\n+      <script src=\"js/operatingDetails.js\"></script>\n+  \n     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n     \n     <!-- Bootstrap -->\n@@ -13,15 +18,8 @@\n \n     <!-- Custom styles for this template -->\n     <link href=\"css/style.css\" rel=\"stylesheet\">\n-\t<script>\n-+    function MyFilterDemoCtrl($scope) {\n-+        var Operation = {\n-+            operate-name: \"lin\",\n-+            detail: 'xing',\n-+            notes: \"wei\",\n-+        };\n-+        $scope.data = someData;\n-+} </script>\n+\n+\n \n     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n@@ -31,7 +29,7 @@\n     <![endif]-->\n   </head>\n   \n-  <body>\n+  <body ng-controller=\"CreateOperation\" >\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">\n@@ -59,7 +57,47 @@\n         <h1>Bootstrap starter template</h1>\n         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n       </div>\n+      \n+      <div style=\"width:80%;margin:auto;font-size:20px;margin-left:150px;margin-bottom:20px;sh\" >\n+        <div style=\"width:90px;text-shadow:2px 2px 2px #808080;\">\n+          操作明细:\n+          </div>\n+        </div>\n+\n+        <div style=\"width:70%;margin:auto;\">\n+\n \n+          <div style=\"margin-bottom:10px;margin-left:4px;\">\n+            名称：<thename></thename>\n+          </div> \n+\n+          <div style=\"margin-bottom:8px;\">\n+\n+            <div style=\"display:inline-block;width:42px;vertical-align:top;\">\n+              明细：\n+            </div>\n+            <div style=\"display:inline-block;width:400px;\">\n+              <thedetail></thedetail>\n+            </div>\n+            <div style=\"display:inline-block;width:100px;vertical-align:top;margin-left:0px;\">\n+             <input type=\"button\" style=\"width:100px;height:100px;\" value=\"详细数据PDF\">\n+            </div>\n+             \n+          </div>\n+\n+          <div>\n+            <div style=\"display:inline-block;width:42px;vertical-align:top;\">\n+              批示：\n+            </div>\n+            <div style=\"display:inline-block;width:500px;height:120px;\">\n+              <thenotes></thenotes>\n+            </div>\n+             \n+          </div>\n+          \n+      </div>\n+      <div style=\"height:500px;\">\n+      </div>\n     </div><!-- /.container -->\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n@@ -67,4 +105,5 @@\n     <!-- Include all compiled plugins (below), or include individual files as needed -->\n     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n   </body>\n-</html>\n\\ No newline at end of file\n+</html>\n+"
+  }, {
+    "sha" : "9d423d93044030f44b8b3ea8d95176637ea0a6fd",
+    "filename" : "works/1314080901224/js/javascript.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 1,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/e8106c0663a87bd3a67a1698d22ae08530b54efc/works/1314080901224/js/javascript.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/e8106c0663a87bd3a67a1698d22ae08530b54efc/works/1314080901224/js/javascript.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901224/js/javascript.js?ref=e8106c0663a87bd3a67a1698d22ae08530b54efc",
+    "patch" : "@@ -1 +0,0 @@\n-// javascript.js\n\\ No newline at end of file"
+  }, {
+    "sha" : "c21fcf3f3390c7ecd8fe913e1747c7b599b79bb4",
+    "filename" : "works/1314080901224/js/operatingDetails.js",
+    "status" : "added",
+    "additions" : 87,
+    "deletions" : 0,
+    "changes" : 87,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/d0369065304d496b8f9c511861b70edbd4850ab0/works/1314080901224/js/operatingDetails.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/d0369065304d496b8f9c511861b70edbd4850ab0/works/1314080901224/js/operatingDetails.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901224/js/operatingDetails.js?ref=d0369065304d496b8f9c511861b70edbd4850ab0",
+    "patch" : "@@ -0,0 +1,87 @@\n+//流程-审核-操作明细js文件\n+\n+//定义操作明细的数据实体\n+var operationData = {\n+\toperateName: 'theOperationName',\n+\tdetail: 'operationDetail',\n+\tnotes: 'theNotes'};\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+var myOperationModule=angular.module(\"operationModule\",[]);\n+\n+myOperationModule.factory(\"operationService\",function($http){\n+\tvar getOperationData={};\n+\tgetOperationData.getData=function(){\n+\t\tvar promise=$http({\n+\t\t\turl:\"jsonData/operationData.json\",\n+\t\t\tmethod:\"get\",\n+\t\t});\n+\t\treturn promise;\n+\t}\n+\treturn getOperationData;\n+\n+});\n+\n+\n+//定义控制器\n+myOperationModule.controller(\"CreateOperation\",function($scope,operationService){\n+  var promise=operationService.getData();\n+  promise.success(function(data,status){  \n+        var operationData1=operationData;\n+            operationData1.operateName=data[\"operateName\"];\n+            operationData1.detail=data[\"detail\"];\n+            operationData1.notes=data[\"notes\"];\n+\n+            $scope.theData=operationData1;\n+  });\n+\n+\n+});\n+\n+\n+//实用derective\n+//操作名\n+myOperationModule.directive(\"thename\",function(){\n+return{\n+      restrict:\"AEC\",\n+      template:'<input id=\"operationName\" type=\"text\" style=\"width:200px;height:30px;\" ng-model=\"theData.operateName\">',\n+      replace:true\n+\n+};\n+});\n+\n+//操作明细\n+myOperationModule.directive(\"thedetail\",function(){\n+return{\n+      restrict:\"AEC\",\n+      template:'<textarea id=\"operationDetail\" style=\"width:400px;height:100px;\" ng-model=\"theData.detail\"></textarea>',\n+      replace:true\n+\n+};\n+});\n+\n+//操作批示\n+myOperationModule.directive(\"thenotes\",function(){\n+return{\n+      restrict:\"AEC\",\n+      template:'<textarea id=\"operationNotes\" style=\"width:500px;height:100px;\" ng-model=\"theData.notes\"></textarea>',\n+      replace:true\n+\n+};\n+});\n+\n+\n+\n+\n+\n+\n+\n+\n+"
+  }, {
+    "sha" : "502a57d78bc8563b2bdd01af16805934cb7c5b34",
+    "filename" : "works/1314080901224/jsonData/operationData.json",
+    "status" : "added",
+    "additions" : 5,
+    "deletions" : 0,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/d0369065304d496b8f9c511861b70edbd4850ab0/works/1314080901224/jsonData/operationData.json",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/d0369065304d496b8f9c511861b70edbd4850ab0/works/1314080901224/jsonData/operationData.json",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901224/jsonData/operationData.json?ref=d0369065304d496b8f9c511861b70edbd4850ab0",
+    "patch" : "@@ -0,0 +1,5 @@\n+{\n+\t\"operateName\": \"theOperationName2\",\n+\t\"detail\": \"operationDetail2\",\n+\t\"notes\": \"theNotes2\"\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "d0369065304d496b8f9c511861b70edbd4850ab0",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/d0369065304d496b8f9c511861b70edbd4850ab0",
+  "parents" : [ {
+    "sha" : "e8106c0663a87bd3a67a1698d22ae08530b54efc",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/e8106c0663a87bd3a67a1698d22ae08530b54efc",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/e8106c0663a87bd3a67a1698d22ae08530b54efc"
+  }, {
+    "sha" : "66d1236cca8c4417b343522369e3b07194ad9f92",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/66d1236cca8c4417b343522369e3b07194ad9f92",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/66d1236cca8c4417b343522369e3b07194ad9f92"
+  } ]
+}

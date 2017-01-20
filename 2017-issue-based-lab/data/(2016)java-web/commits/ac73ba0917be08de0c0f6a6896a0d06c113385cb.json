@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "Zjwjerry",
+    "id" : 22068622,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068622?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zjwjerry",
+    "html_url" : "https://github.com/Zjwjerry",
+    "followers_url" : "https://api.github.com/users/Zjwjerry/followers",
+    "following_url" : "https://api.github.com/users/Zjwjerry/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zjwjerry/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zjwjerry/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zjwjerry/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zjwjerry/orgs",
+    "repos_url" : "https://api.github.com/users/Zjwjerry/repos",
+    "events_url" : "https://api.github.com/users/Zjwjerry/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zjwjerry/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 124,
+    "additions" : 124,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Zjwjerry",
+    "id" : 22068622,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068622?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Zjwjerry",
+    "html_url" : "https://github.com/Zjwjerry",
+    "followers_url" : "https://api.github.com/users/Zjwjerry/followers",
+    "following_url" : "https://api.github.com/users/Zjwjerry/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Zjwjerry/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Zjwjerry/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Zjwjerry/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Zjwjerry/orgs",
+    "repos_url" : "https://api.github.com/users/Zjwjerry/repos",
+    "events_url" : "https://api.github.com/users/Zjwjerry/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Zjwjerry/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/ac73ba0917be08de0c0f6a6896a0d06c113385cb",
+  "commit" : {
+    "author" : {
+      "name" : "ZjwJerry",
+      "email" : "565691343@qq.com",
+      "date" : "2016-11-28T13:33:45Z"
+    },
+    "committer" : {
+      "name" : "ZjwJerry",
+      "email" : "565691343@qq.com",
+      "date" : "2016-11-28T13:33:45Z"
+    },
+    "message" : "#7 JDBC",
+    "tree" : {
+      "sha" : "ea2c644949c7748eb58544222914e246e3a42229",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/ea2c644949c7748eb58544222914e246e3a42229"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/ac73ba0917be08de0c0f6a6896a0d06c113385cb",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/ac73ba0917be08de0c0f6a6896a0d06c113385cb/comments",
+  "files" : [ {
+    "sha" : "d357fc24ea3564e3bed70b6b4da893917551e4dc",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902203/DBConnection.java",
+    "status" : "added",
+    "additions" : 36,
+    "deletions" : 0,
+    "changes" : 36,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ac73ba0917be08de0c0f6a6896a0d06c113385cb/jweb/src/edu/hzu/javaweb/labs/se1414080902203/DBConnection.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ac73ba0917be08de0c0f6a6896a0d06c113385cb/jweb/src/edu/hzu/javaweb/labs/se1414080902203/DBConnection.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902203/DBConnection.java?ref=ac73ba0917be08de0c0f6a6896a0d06c113385cb",
+    "patch" : "@@ -0,0 +1,36 @@\n+package edu.hzu.javaweb.labs.se1414080902203;\n+\n+import java.sql.*;\n+\n+public class DBConnection {\n+\tprivate static String driverName=\"com.mysql.jdbc.Driver\";\n+\tprivate static String userName=\"root\";\n+\tprivate static String userPwd=\"\";\n+\tprivate static String dbName=\"Register\";\n+\t\n+\tpublic static Connection getDBconnection()\n+\t{\n+\t\tString url1=\"jdbc:mysql://localhost/\"+dbName;\n+\t\tString url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+\t\tString url3=\"&useUnicode=true&characterEncoding=UTF-8\";\n+\t\tString url=url1+url2+url3;\n+\t\ttry{\n+\t\t\tClass.forName(driverName);\n+\t\t\tConnection con=DriverManager.getConnection(url);\n+\t\t\t\n+\t\t\treturn con;\n+\t\t}catch(Exception e)\n+\t\t\t{e.printStackTrace();\n+\t\t\t\n+\t\t}\n+\t\treturn null;\n+\t}\n+\t\n+\tpublic static void closeDB(Connection con,PreparedStatement pstmt,ResultSet rs){\n+\t\ttry{\n+\t\t\tif(rs!=null) rs.close();\n+\t\t\tif(pstmt!=null)pstmt.close();\n+\t\t\tif(con!=null)con.close();\n+\t\t}catch(SQLException e){e.printStackTrace();}\n+\t}\n+}"
+  }, {
+    "sha" : "b627c434a8416d37cc94c5e785025b4ec05d5376",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902203/DBUtil.java",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ac73ba0917be08de0c0f6a6896a0d06c113385cb/jweb/src/edu/hzu/javaweb/labs/se1414080902203/DBUtil.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ac73ba0917be08de0c0f6a6896a0d06c113385cb/jweb/src/edu/hzu/javaweb/labs/se1414080902203/DBUtil.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902203/DBUtil.java?ref=ac73ba0917be08de0c0f6a6896a0d06c113385cb",
+    "patch" : "@@ -0,0 +1,34 @@\n+package edu.hzu.javaweb.labs.se1414080902203;\n+\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+import edu.hzu.javaweb.labs.se1414080902203.DBConnection;\n+\n+public class DBUtil {\n+\n+\tprivate Connection con=null;\n+\tprivate PreparedStatement pstm=null;\n+\tprivate ResultSet rs=null;\n+\n+\tpublic int updateSql(String sql){\n+\t\tint n=-1;\n+\t\ttry{\n+\t\t\tcon=DBConnection.getDBconnection();\n+\t\t\tpstm=con.prepareStatement(sql);\n+\t\t\tn=pstm.executeUpdate();\n+\t\t}\n+\t\tcatch(SQLException e){e.printStackTrace();}\n+\t\tDBConnection.closeDB(con,pstm,rs);\n+\t\treturn n;\n+\t\t\n+\t}\n+\tpublic ResultSet QuerySQL(String sql){\n+\t\ttry{\n+\t\t\tcon=DBConnection.getDBconnection();\n+\t\t\tpstm=con.prepareStatement(sql);\n+\t\t\trs=pstm.executeQuery();\n+\t\t}catch(SQLException e) {e.printStackTrace();}\n+\t\treturn null;}\n+}"
+  }, {
+    "sha" : "f255231bede19e9a43170edaeddf92170a547b2f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902203/register.java",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/ac73ba0917be08de0c0f6a6896a0d06c113385cb/jweb/src/edu/hzu/javaweb/labs/se1414080902203/register.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/ac73ba0917be08de0c0f6a6896a0d06c113385cb/jweb/src/edu/hzu/javaweb/labs/se1414080902203/register.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902203/register.java?ref=ac73ba0917be08de0c0f6a6896a0d06c113385cb",
+    "patch" : "@@ -0,0 +1,54 @@\n+package edu.hzu.javaweb.labs.se1414080902203;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import edu.hzu.javaweb.labs.se1414080902203.DBUtil;\n+\n+public class register extends HttpServlet {\n+\n+\tpublic register() {\n+\t\tsuper();\n+\t}\n+\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\t\t\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tint year=Integer.parseInt(request.getParameter(\"year\"));\n+\t\tint month=Integer.parseInt(request.getParameter(\"month\"));\n+\t\tint day=Integer.parseInt(request.getParameter(\"day\"));\n+\t\t\n+\t\tString sql1=\"Insert into sign(Year,Month,Day)\";\n+\t\tString sql2=\"values(\"+year+\",\"+month+\",\"+day+\");\";\n+\t\tString sql=sql1+sql2;\n+\t\t\n+\t\tDBUtil run=new DBUtil();\n+\t\tint n=run.updateSql(sql);\n+\t\tSystem.out.print(n);\n+\t\tif(n<1)\n+\t\t\trequest.getRequestDispatcher(\"Error.jsp\").forward(request,response);\n+\t\telse\n+\t\t\trequest.getRequestDispatcher(\"Success.jsp\").forward(request,response);\n+\t}\n+\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\t\t\n+\t\tdoGet(request,response);\n+\t}\n+\tpublic void init() throws ServletException {\n+\t\t\n+\t}\n+\n+}"
+  } ],
+  "sha" : "ac73ba0917be08de0c0f6a6896a0d06c113385cb",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ac73ba0917be08de0c0f6a6896a0d06c113385cb",
+  "parents" : [ {
+    "sha" : "c01b0040a0a35a238b8fac564067f503bd0f1477",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c01b0040a0a35a238b8fac564067f503bd0f1477",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/c01b0040a0a35a238b8fac564067f503bd0f1477"
+  } ]
+}

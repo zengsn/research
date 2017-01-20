@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "zhenglide",
+    "id" : 15066318,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15066318?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhenglide",
+    "html_url" : "https://github.com/zhenglide",
+    "followers_url" : "https://api.github.com/users/zhenglide/followers",
+    "following_url" : "https://api.github.com/users/zhenglide/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhenglide/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhenglide/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhenglide/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhenglide/orgs",
+    "repos_url" : "https://api.github.com/users/zhenglide/repos",
+    "events_url" : "https://api.github.com/users/zhenglide/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhenglide/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 358,
+    "additions" : 358,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zhenglide",
+    "id" : 15066318,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15066318?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zhenglide",
+    "html_url" : "https://github.com/zhenglide",
+    "followers_url" : "https://api.github.com/users/zhenglide/followers",
+    "following_url" : "https://api.github.com/users/zhenglide/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zhenglide/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zhenglide/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zhenglide/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zhenglide/orgs",
+    "repos_url" : "https://api.github.com/users/zhenglide/repos",
+    "events_url" : "https://api.github.com/users/zhenglide/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zhenglide/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/8f82d65abfece130a6ebc2d6711c9b9312e83836",
+  "commit" : {
+    "author" : {
+      "name" : "zhenglide",
+      "email" : "844416001@qq.com",
+      "date" : "2016-04-20T07:46:40Z"
+    },
+    "committer" : {
+      "name" : "zhenglide",
+      "email" : "844416001@qq.com",
+      "date" : "2016-04-20T07:46:40Z"
+    },
+    "message" : "#88 #23创建数据库服务",
+    "tree" : {
+      "sha" : "a95dba5f1d749b6623e4d2886320be2e57ba8aac",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/a95dba5f1d749b6623e4d2886320be2e57ba8aac"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/8f82d65abfece130a6ebc2d6711c9b9312e83836",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/8f82d65abfece130a6ebc2d6711c9b9312e83836/comments",
+  "files" : [ {
+    "sha" : "b0580b3510860c7912e26f364488ab9b472a3ccb",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Com1314080901145Activity.java",
+    "status" : "added",
+    "additions" : 94,
+    "deletions" : 0,
+    "changes" : 94,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Com1314080901145Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Com1314080901145Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Com1314080901145Activity.java?ref=8f82d65abfece130a6ebc2d6711c9b9312e83836",
+    "patch" : "@@ -0,0 +1,94 @@\n+package com.example.zhenglide.exam;\n+\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.Button;\n+\n+import java.io.File;\n+import java.io.FileOutputStream;\n+import java.io.IOException;\n+import java.io.InputStream;\n+import java.io.OutputStream;\n+\n+public class Com1314080901145Activity extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+     String DB_PATH=\"/data/data/com.example.zhenglide.exam/dataabase/\";\n+        String DB_NAME=\"question.db\";\n+        if(new File(DB_PATH+DB_NAME).exists()==false)\n+\n+        {File dir=new File(DB_PATH);\n+            if (!dir.exists()){\n+                dir.mkdir();\n+            }\n+            try {\n+                InputStream is=getBaseContext().getAssets().open(DB_NAME);\n+                OutputStream os=new FileOutputStream(DB_PATH+DB_NAME);\n+                byte[] buffer=new  byte[1024];\n+                int length;\n+                while((length=is.read(buffer))>0)\n+                {\n+                    os.write(buffer,0,length);\n+                }\n+                os.flush();\n+                is.close();\n+                os.close();\n+            } catch (IOException e) {\n+                e.printStackTrace();\n+            }\n+\n+        }\n+        Button btn=(Button)findViewById(R.id.button);\n+        btn.setOnClickListener(new View.OnClickListener()\n+        {\n+            @Override\n+            public void onClick(View v) {\n+                Intent intent=new Intent(Com1314080901145Activity.this,ExamActivity.class);\n+                startActivity(intent);\n+            }\n+        });\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n+\n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_main, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  }, {
+    "sha" : "f87c038435851b9e4ee1611fc3cfe839e1479013",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/DBservice.java",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/DBservice.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/DBservice.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/DBservice.java?ref=8f82d65abfece130a6ebc2d6711c9b9312e83836",
+    "patch" : "@@ -0,0 +1,43 @@\n+package com.example.zhenglide.exam;\n+\n+import android.database.Cursor;\n+import android.database.sqlite.SQLiteDatabase;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+/**\n+ * Created by zhenglide on 2016/4/4.\n+ */\n+public class DBservice {\n+    private SQLiteDatabase db;\n+\n+    public DBservice() {\n+        db = SQLiteDatabase.openDatabase(\"data/data/com.example.zhenglide.exam/database/question.db\", null, SQLiteDatabase.OPEN_READONLY);\n+    }\n+\n+    public List<Question> getQuestion() {\n+        List<Question> list = new ArrayList<Question>();\n+        Cursor cursor = db.rawQuery(\"select * from question\", null);\n+        if (cursor.getCount() > 0) {\n+            cursor.moveToFirst();\n+            int count = cursor.getCount();\n+            for (int i = 0; i < count; i++) {\n+                cursor.moveToPosition(i);\n+                Question question = new Question();\n+                question.question = cursor.getString(cursor.getColumnIndex(\"question\"));\n+\n+                question.AnswerA = cursor.getString(cursor.getColumnIndex(\"answerA\"));\n+                question.answerB = cursor.getString(cursor.getColumnIndex(\"answerB\"));\n+                question.answerC = cursor.getString(cursor.getColumnIndex(\"answerC\"));\n+                question.answerD = cursor.getString(cursor.getColumnIndex(\"answerD\"));\n+                question.answer = cursor.getInt(cursor.getColumnIndex(\"answer\"));\n+                question.explaination = cursor.getString(cursor.getColumnIndex(\"explaination\"));\n+                question.selectedAnswer = -1;\n+                list.add(question);\n+\n+\n+            }\n+        }return  list;\n+    }\n+}"
+  }, {
+    "sha" : "2b14900fafc0d6988b914f023413871c455c9483",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/ExamActivity.java",
+    "status" : "added",
+    "additions" : 171,
+    "deletions" : 0,
+    "changes" : 171,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/ExamActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/ExamActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/ExamActivity.java?ref=8f82d65abfece130a6ebc2d6711c9b9312e83836",
+    "patch" : "@@ -0,0 +1,171 @@\n+package com.example.zhenglide.exam;\n+\n+import android.annotation.TargetApi;\n+import android.net.Uri;\n+import android.os.Build;\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.RadioButton;\n+import android.widget.RadioGroup;\n+import android.widget.TextView;\n+\n+import com.google.android.gms.appindexing.Action;\n+import com.google.android.gms.appindexing.AppIndex;\n+import com.google.android.gms.common.api.GoogleApiClient;\n+\n+import java.util.List;\n+\n+public class ExamActivity extends AppCompatActivity {\n+    private int count;\n+    private int current;\n+    /**\n+     * ATTENTION: This was auto-generated to implement the App Indexing API.\n+     * See https://g.co/AppIndexing/AndroidStudio for more information.\n+     */\n+    private GoogleApiClient client;\n+\n+    @TargetApi(Build.VERSION_CODES.M)\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_exam);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n+        DBservice dBservice = new DBservice();\n+        final List<Question> list = dBservice.getQuestion();\n+        count = list.size();\n+        current = 0;\n+        final TextView tv_question = (TextView) findViewById(R.id.question);\n+        final RadioButton[] radioButtons = new RadioButton[4];\n+        radioButtons[0] = (RadioButton) findViewById(R.id.answerA);\n+        radioButtons[1] = (RadioButton) findViewById(R.id.answerB);\n+        radioButtons[2] = (RadioButton) findViewById(R.id.answerC);\n+        radioButtons[3] = (RadioButton) findViewById(R.id.answerD);\n+        final TextView tv_explaination = (TextView) findViewById(R.id.explaination);\n+        Button btn_next = (Button) findViewById(R.id.button);\n+        Button btn_previous = (Button) findViewById(R.id.button);\n+        final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.RadioGroup);\n+        Question q = list.get(0);\n+        tv_question.setText(q.question);\n+        tv_explaination.setText(q.explaination);\n+        radioButtons[0].setText(q.AnswerA);\n+        radioButtons[1].setText(q.answerB);\n+        radioButtons[2].setText(q.answerC);\n+        radioButtons[3].setText(q.answerD);\n+        btn_next.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                if (current < count - 1) {\n+                    current++;\n+                    Question q = list.get(current);\n+                    tv_question.setText(q.question);\n+                    tv_explaination.setText(q.explaination);\n+                    radioButtons[0].setText(q.AnswerA);\n+                    radioButtons[1].setText(q.answerB);\n+                    radioButtons[2].setText(q.answerC);\n+                    radioButtons[3].setText(q.answerD);\n+                    radioGroup.clearCheck();\n+                    if (q.selectedAnswer != -1) {\n+                        radioButtons[q.selectedAnswer].setChecked(true);\n+\n+                    }\n+                }\n+            }\n+        });\n+\n+        btn_previous.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                if (current > 0) {\n+                    current--;\n+                    Question q = list.get(current);\n+                    tv_question.setText(q.question);\n+                    tv_explaination.setText(q.explaination);\n+                    radioButtons[0].setText(q.AnswerA);\n+                    radioButtons[1].setText(q.answerB);\n+                    radioButtons[2].setText(q.answerC);\n+                    radioButtons[3].setText(q.answerD);\n+                    radioGroup.clearCheck();\n+                    if (q.selectedAnswer != -1) {\n+                        radioButtons[q.selectedAnswer].setChecked(true);\n+\n+                    }\n+\n+\n+                }\n+\n+            }\n+        });\n+\n+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {\n+            @Override\n+            public void onCheckedChanged(RadioGroup group, int checkedId) {\n+                for (int i=0;i<4;i++){\n+                    if(radioButtons[i].isChecked()==true){\n+                        list.get(current).selectedAnswer=i;\n+                        break;\n+                    }\n+\n+                }\n+\n+            }\n+        });\n+\n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+        // ATTENTION: This was auto-generated to implement the App Indexing API.\n+        // See https://g.co/AppIndexing/AndroidStudio for more information.\n+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();\n+    }\n+\n+    @Override\n+    public void onStart() {\n+        super.onStart();\n+\n+        // ATTENTION: This was auto-generated to implement the App Indexing API.\n+        // See https://g.co/AppIndexing/AndroidStudio for more information.\n+        client.connect();\n+        Action viewAction = Action.newAction(\n+                Action.TYPE_VIEW, // TODO: choose an action type.\n+                \"Exam Page\", // TODO: Define a title for the content shown.\n+                // TODO: If you have web page content that matches this app activity's content,\n+                // make sure this auto-generated web page URL is correct.\n+                // Otherwise, set the URL to null.\n+                Uri.parse(\"http://host/path\"),\n+                // TODO: Make sure this auto-generated app URL is correct.\n+                Uri.parse(\"android-app://com.example.zhenglide.exam/http/host/path\")\n+        );\n+        AppIndex.AppIndexApi.start(client, viewAction);\n+    }\n+\n+    @Override\n+    public void onStop() {\n+        super.onStop();\n+\n+        // ATTENTION: This was auto-generated to implement the App Indexing API.\n+        // See https://g.co/AppIndexing/AndroidStudio for more information.\n+        Action viewAction = Action.newAction(\n+                Action.TYPE_VIEW, // TODO: choose an action type.\n+                \"Exam Page\", // TODO: Define a title for the content shown.\n+                // TODO: If you have web page content that matches this app activity's content,\n+                // make sure this auto-generated web page URL is correct.\n+                // Otherwise, set the URL to null.\n+                Uri.parse(\"http://host/path\"),\n+                // TODO: Make sure this auto-generated app URL is correct.\n+                Uri.parse(\"android-app://com.example.zhenglide.exam/http/host/path\")\n+        );\n+        AppIndex.AppIndexApi.end(client, viewAction);\n+        client.disconnect();\n+    }\n+}"
+  }, {
+    "sha" : "56d99821e538e8d82b08473f21604640d44d327b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Question.java",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Question.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Question.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/Question.java?ref=8f82d65abfece130a6ebc2d6711c9b9312e83836",
+    "patch" : "@@ -0,0 +1,16 @@\n+package com.example.zhenglide.exam;\n+\n+/**\n+ * Created by zhenglide on 2016/4/4.\n+ */\n+public class Question {\n+    public String question;\n+    public  String AnswerA;\n+    public  String answerB;\n+     public  String answerC;\n+    public String answerD;\n+    public  int answer;\n+    public String explaination;\n+    public int ID;\n+    public int selectedAnswer;\n+}"
+  }, {
+    "sha" : "b866f75e8963ecf3232746c98b75b90be12eb80f",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/activity_main.xml",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/8f82d65abfece130a6ebc2d6711c9b9312e83836/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901145/activity_main.xml?ref=8f82d65abfece130a6ebc2d6711c9b9312e83836",
+    "patch" : "@@ -0,0 +1,34 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<android.support.design.widget.CoordinatorLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:fitsSystemWindows=\"true\"\n+    tools:context=\"com.example.zhenglide.exam.MainActivity\">\n+\n+    <android.support.design.widget.AppBarLayout\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:theme=\"@style/AppTheme.AppBarOverlay\">\n+\n+        <android.support.v7.widget.Toolbar\n+            android:id=\"@+id/toolbar\"\n+            android:layout_width=\"match_parent\"\n+            android:layout_height=\"?attr/actionBarSize\"\n+            android:background=\"?attr/colorPrimary\"\n+            app:popupTheme=\"@style/AppTheme.PopupOverlay\" />\n+\n+    </android.support.design.widget.AppBarLayout>\n+\n+    <include layout=\"@layout/content_main\" />\n+\n+    <android.support.design.widget.FloatingActionButton\n+        android:id=\"@+id/fab\"\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_gravity=\"bottom|end\"\n+        android:layout_margin=\"@dimen/fab_margin\"\n+        android:src=\"@android:drawable/ic_dialog_email\" />\n+\n+</android.support.design.widget.CoordinatorLayout>"
+  } ],
+  "sha" : "8f82d65abfece130a6ebc2d6711c9b9312e83836",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/8f82d65abfece130a6ebc2d6711c9b9312e83836",
+  "parents" : [ {
+    "sha" : "5b052aa561e28b6ad3fe39123ecc9d6aaa71bef0",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5b052aa561e28b6ad3fe39123ecc9d6aaa71bef0",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5b052aa561e28b6ad3fe39123ecc9d6aaa71bef0"
+  } ]
+}

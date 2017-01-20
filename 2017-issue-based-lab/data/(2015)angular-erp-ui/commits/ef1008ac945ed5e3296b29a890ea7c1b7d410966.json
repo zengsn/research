@@ -1,0 +1,89 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 143,
+    "additions" : 101,
+    "deletions" : 42
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/ef1008ac945ed5e3296b29a890ea7c1b7d410966",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:58:28Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2015-11-23T13:58:28Z"
+    },
+    "message" : "Merge pull request #312 from wings15/master\n\nUpdate index.html",
+    "tree" : {
+      "sha" : "787321545e7feb9532fea3a5150a1f6cdf9dfad4",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/787321545e7feb9532fea3a5150a1f6cdf9dfad4"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/ef1008ac945ed5e3296b29a890ea7c1b7d410966",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ef1008ac945ed5e3296b29a890ea7c1b7d410966/comments",
+  "files" : [ {
+    "sha" : "992cfbf36b6f1d705a81c772fdf1a5917f8f2fb1",
+    "filename" : "works/1314080901212/index.html",
+    "status" : "modified",
+    "additions" : 101,
+    "deletions" : 42,
+    "changes" : 143,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/ef1008ac945ed5e3296b29a890ea7c1b7d410966/works/1314080901212/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/ef1008ac945ed5e3296b29a890ea7c1b7d410966/works/1314080901212/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901212/index.html?ref=ef1008ac945ed5e3296b29a890ea7c1b7d410966",
+    "patch" : "@@ -59,59 +59,118 @@\n     </nav>\n     \n     <div margin:0px;width:614px;right:auto;left:0px;top:0px;height:154px;>\n-    <p style=\"background-color:#99bce8;color:blue;font-weight:bold\">供应商信息</p>\n-    <label for=\"number\">供应商编号：</label>\n+    <p style=\"background-color:#99bce8;color:blue;font-weight:bold\">单据信息</p>\n+    <label for=\"number\">供应商：</label>\n     <input type=\"text\" name=\"number\" id=\"number\" value=\"\"/>\n-    <label for=\"date\">建档日期：</label>\n-    <input type=\"text\" name=\"date\" id=\"date\" value=\"\"/>\n-    <label for=\"sort\">供应商类别：</label>\n+    \n+    <label for=\"sort\">仓库：</label>\n    <select> \n-    <option value=\"五金类\" >五金类</option>\n-    <option value=\"电器类\">电器类</option>\n-    <option value=\"板材类\">板材类</option>\n-    <option value=\"油漆类\">油漆类</option>\n-    <option value=\"刀具类\">刀具类</option>\n-    <option value=\"其它\">其它</option>\n+    <option value=\"001\" >001</option>\n+    <option value=\"002\">002</option>\n+    <option value=\"003\">003</option>\n+    <option value=\"004\">004</option>\n+    <option value=\"005\">005</option>\n+    <option value=\"006\">006</option>\n    </select>\n+   \n+    <label for=\"Hand\">经手人：</label>\n+   <select> \n+    <option value=\"礼品盒\" >礼品盒</option>\n+    <option value=\"按时\">按时</option>\n+    <option value=\"6564564\">6564564</option>\n+    <option value=\"叶良辰\">叶良辰</option>\n+    <option value=\"李哲\">李哲</option>\n+    <option value=\"泽拉图\">泽拉图</option>\n+   </select>\n+   \n+    <label for=\"Handing date\">经办日期：</label>\n+-    <input type=\"text\" name=\"Handing date\" id=\"Handing date\" value=\"\"/>\n+\n    </div>\n    \n    <div>\n-    <label for=\"name\">供应商全称：</label>\n-    <input type=\"text\" name=\"name\" id=\"name\" value=\"\"/>\n-    <label for=\"code\">拼音码：</label>\n-    <input type=\"text\" name=\"code\" id=\"code\" value=\"\"/>\n-    <label for=\"homepage\">供应商主页：</label>\n-    <input type=\"text\" name=\"homepage\" id=\"homepage\" value=\"\"/>\n+    <label for=\"State\">状态：</label>\n+    <input type=\"text\" name=\"State\" id=\"State\" value=\"\"/>\n+    <label for=\"Remark\">备注：</label>\n+    <input type=\"text\" name=\"Remark\" id=\"Remark\" value=\"\"/>\n+   \n     </div>\n     \n+\t\n   <div style=\"width: 1270px;height: 155px\">\n-  <label for=\"jc\">供应商简称：</label>\n-    <input type=\"text\" name=\"jc\" id=\"jc\" value=\"\"/>\n-    <label for=\"area\">行政区域：</label>\n-    <input type=\"text\" name=\"area\" id=\"area\" value=\"\"/>\n-    <label for=\"synposis\">供应商简介：</label>\n-    <input type=\"text\" name=\"synposis\" id=\"synposis\" value=\"\"/><br/>\n-    <lable for=\"stop or not\">是否停用：</lable>\n-    <input type=\"checkbox\" value=\"\" name=\"stop or not\" checked=\"checked\" >\n-    <input type=\"submit\" value=\"+保存/修改\" name=\"submit\"/>\n+    <input type=\"submit\" value=\"+新建\" name=\"submit\"/>\n+    <input type=\"submit\" value=\"+保存\" name=\"submit\"/>\n   </div>\n   \n-\n-  <div>\n-  <table style=\"background-color:#c5c5c5;margin:0px;width:614px;right:auto;left:0px;top:0px;border:1px solid black\">\n-   <caption style=\"background-color:#99bce8;color:blue;font-weight:bold\">供应商联系人</caption>\n-     <tr> \n-      <th>名称</th>\n-      <th>手机</th>\n-      <th>办公电话</th>\n-      <th>传真号码</th>\n-      <th>QQ</th>\n-      <th>邮箱地址</th>\n-      <th>职务</th>\n-      <th>备注</th>\n-     </tr>\n-      </table>\n-  </div>\n+<DIV style=\"position:relative; top:0px; left:0px; width:80px; height:120px;  overflow: hidden\">\n+<SCRIPT language=javascript>\n+function Year_Month(){  \n+    var now = new Date();  \n+    var yy = now.getFullYear();  \n+    var mm = now.getMonth()+1;  \n+    var cl = '<font color=\"#000000\">';  \n+    if (now.getDay() == 0) cl = '<font color=\"#000000\">';  \n+    if (now.getDay() == 6) cl = '<font color=\"#000000\">';  \n+    return(cl +  yy + '年' + mm + '月</font>');  \n+}  \n+ \n+function Date_of_Today(){  \n+    var now = new Date();  \n+    var cl = '<font color=\"#000000\">';  \n+    if (now.getDay() == 0) cl = '<font color=\"#000000\">';  \n+    if (now.getDay() == 6) cl = '<font color=\"#000000\">';  \n+    return(cl +  now.getDate() + '<b>日</b></font>');  \n+}  \n+ \n+function Day_of_Today(){  \n+    var day = new Array();  \n+    day[0] = \"星期日\";  \n+    day[1] = \"星期一\";  \n+    day[2] = \"星期二\";  \n+    day[3] = \"星期三\";  \n+    day[4] = \"星期四\";  \n+    day[5] = \"星期五\";  \n+    day[6] = \"星期六\";  \n+    var now = new Date();  \n+    var cl = '<font color=\"#000000\">';  \n+    if (now.getDay() == 0) cl = '<font color=\"#000000\">';  \n+    if (now.getDay() == 6) cl = '<font color=\"#000000\">';  \n+    return(cl +  day[now.getDay()] + '</font>');  \n+}  \n+ \n+function CurentTime(){  \n+    var now = new Date();  \n+    var hh = now.getHours();  \n+    var mm = now.getMinutes();  \n+    var ss = now.getTime() % 60000;  \n+    ss = (ss - (ss % 1000)) / 1000;  \n+    var clock = hh+':';  \n+    if (mm < 10) clock += '0';  \n+    clock += mm+':';  \n+    if (ss < 10) clock += '0';  \n+    clock += ss;  \n+    return(clock);  \n+}  \n+ \n+function refreshCalendarClock(){  \n+document.all.calendarClock1.innerHTML = Year_Month();  \n+document.all.calendarClock2.innerHTML = Date_of_Today();  \n+document.all.calendarClock3.innerHTML = Day_of_Today();  \n+document.all.calendarClock4.innerHTML = CurentTime();  \n+}  \n+document.write('<table border=\"0\" cellpadding=\"0\" cellspacing=\"1\" width=\"68\" bgcolor=\"#000000\" height=\"60\">'); \n+document.write('<tr><td width=\"100%\" height=\"100%\" align=\"center\">'); \n+document.write('<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" hight=\"100%\" bgcolor=\"#f2f2f2\" height=\"60\">'); \n+document.write('<tr><td align=\"center\" width=\"100%\" height=\"100%\">'); \n+document.write('<font id=\"calendarClock1\" style=\"font-family:宋体;font-size:9pt\"> </font><br>'); \n+document.write('<font id=\"calendarClock2\" style=\"font-family:Arial;font-size:14pt;Line-Height=100%\"> </font><br>'); \n+document.write('<font id=\"calendarClock3\" style=\"font-family:宋体;font-size:9pt;Line-Height=100%\"> </font><br>'); \n+document.write('<font id=\"calendarClock4\" style=\"color:#000000;font-family:Arial;font-size:8pt;Line-Height=100%\"><b> </b></font>'); \n+document.write('</td></tr></table>'); \n+document.write('</td></tr></table>'); \n+setInterval('refreshCalendarClock()',1000);\n+      \n+</SCRIPT></DIV>\n \n     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>"
+  } ],
+  "sha" : "ef1008ac945ed5e3296b29a890ea7c1b7d410966",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/ef1008ac945ed5e3296b29a890ea7c1b7d410966",
+  "parents" : [ {
+    "sha" : "14ff4e4341465b17b49db12aeb1fac8bbbd8f539",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/14ff4e4341465b17b49db12aeb1fac8bbbd8f539",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/14ff4e4341465b17b49db12aeb1fac8bbbd8f539"
+  }, {
+    "sha" : "5cbbe2e7e38638053d58763a6abecfb2c33fe9a8",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/5cbbe2e7e38638053d58763a6abecfb2c33fe9a8",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/5cbbe2e7e38638053d58763a6abecfb2c33fe9a8"
+  } ]
+}

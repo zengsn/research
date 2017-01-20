@@ -1,0 +1,139 @@
+{
+  "committer" : {
+    "login" : "RImpression",
+    "id" : 15820088,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15820088?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/RImpression",
+    "html_url" : "https://github.com/RImpression",
+    "followers_url" : "https://api.github.com/users/RImpression/followers",
+    "following_url" : "https://api.github.com/users/RImpression/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/RImpression/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/RImpression/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/RImpression/subscriptions",
+    "organizations_url" : "https://api.github.com/users/RImpression/orgs",
+    "repos_url" : "https://api.github.com/users/RImpression/repos",
+    "events_url" : "https://api.github.com/users/RImpression/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/RImpression/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 195,
+    "additions" : 194,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "RImpression",
+    "id" : 15820088,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15820088?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/RImpression",
+    "html_url" : "https://github.com/RImpression",
+    "followers_url" : "https://api.github.com/users/RImpression/followers",
+    "following_url" : "https://api.github.com/users/RImpression/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/RImpression/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/RImpression/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/RImpression/subscriptions",
+    "organizations_url" : "https://api.github.com/users/RImpression/orgs",
+    "repos_url" : "https://api.github.com/users/RImpression/repos",
+    "events_url" : "https://api.github.com/users/RImpression/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/RImpression/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/f06036513dbc8c7a8de60915b2ee2107033788a0",
+  "commit" : {
+    "author" : {
+      "name" : "RImpression",
+      "email" : "120769625@qq.com",
+      "date" : "2016-05-25T00:42:14Z"
+    },
+    "committer" : {
+      "name" : "RImpression",
+      "email" : "120769625@qq.com",
+      "date" : "2016-05-25T00:42:14Z"
+    },
+    "message" : "#94 #95 #41 实验已全部完成",
+    "tree" : {
+      "sha" : "3f8810c3a53f6b2ba9ba08e1577085f6928cb989",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/3f8810c3a53f6b2ba9ba08e1577085f6928cb989"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/f06036513dbc8c7a8de60915b2ee2107033788a0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f06036513dbc8c7a8de60915b2ee2107033788a0/comments",
+  "files" : [ {
+    "sha" : "59922dd2ecf2644d6e3a65853fa9b5bef79ee51d",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118Activity.java",
+    "status" : "modified",
+    "additions" : 27,
+    "deletions" : 1,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118Activity.java?ref=f06036513dbc8c7a8de60915b2ee2107033788a0",
+    "patch" : "@@ -1,12 +1,16 @@\n package edu.hzuapps.androidworks.homeworks.net1314080903118;\n \n import android.content.Context;\n+import android.content.Intent;\n import android.os.Handler;\n import android.support.annotation.Nullable;\n import android.support.v4.view.ViewPager;\n import android.support.v7.app.ActionBarActivity;\n import android.os.Bundle;\n+import android.support.v7.app.AppCompatActivity;\n import android.util.Log;\n+import android.view.Menu;\n+import android.view.MenuItem;\n import android.view.View;\n import android.widget.ImageView;\n import android.widget.ListView;\n@@ -24,7 +28,7 @@\n import java.util.concurrent.ScheduledExecutorService;\n import java.util.concurrent.TimeUnit;\n \n-public class Net1314080903118Activity extends ActionBarActivity {\n+public class Net1314080903118Activity extends AppCompatActivity {\n     //获取阅读API\n     private static final String URL_ARITICLE = \"http://v3.wufazhuce.com:8000/api/reading/index/0?\";\n     //获取轮播图片API\n@@ -342,4 +346,26 @@ private void loadViewPager() {\n         }\n         return articleEntityList;\n     }\n+\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        getMenuInflater().inflate(R.menu.net1314080903118_menu, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        int id = item.getItemId();\n+        if (id == R.id.action_settings) {\n+            Intent intent = new Intent();\n+            intent.setClass(Net1314080903118Activity.this,Net1314080903118Camera.class);\n+            startActivity(intent);\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+\n+\n }"
+  }, {
+    "sha" : "ab746fc788ecb50a448547e69f39f5cf8bd05db8",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118Camera.java",
+    "status" : "added",
+    "additions" : 114,
+    "deletions" : 0,
+    "changes" : 114,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118Camera.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118Camera.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118Camera.java?ref=f06036513dbc8c7a8de60915b2ee2107033788a0",
+    "patch" : "@@ -0,0 +1,114 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903118;\n+\n+import android.content.Intent;\n+import android.hardware.Camera;\n+import android.os.Bundle;\n+import android.support.annotation.Nullable;\n+import android.support.v7.app.AppCompatActivity;\n+import android.view.SurfaceHolder;\n+import android.view.SurfaceView;\n+import android.view.View;\n+import android.widget.Button;\n+import android.widget.Toast;\n+\n+import com.example.androidwork.R;\n+\n+import java.io.File;\n+import java.io.FileOutputStream;\n+import java.io.IOException;\n+\n+/**\n+ * Created by RImpression on 2016/5/18 0018.\n+ */\n+public class Net1314080903118Camera extends AppCompatActivity {\n+\n+    private SurfaceView sfvPreview;\n+    private Button btnTake;\n+    private Camera camera = null;\n+\n+    private SurfaceHolder.Callback cpHolderCallback = new SurfaceHolder.Callback() {\n+        @Override\n+        public void surfaceCreated(SurfaceHolder holder) {\n+            startPreview();\n+        }\n+\n+        @Override\n+        public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {\n+\n+        }\n+\n+        @Override\n+        public void surfaceDestroyed(SurfaceHolder holder) {\n+            stopPreview();\n+        }\n+    };\n+\n+    @Override\n+    protected void onCreate(@Nullable Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.net1314080903118_camera);\n+        bindViews();\n+    }\n+\n+    private void bindViews() {\n+        sfvPreview = (SurfaceView) findViewById(R.id.sfv_preview);\n+        btnTake = (Button) findViewById(R.id.btn_take);\n+        sfvPreview.getHolder().addCallback(cpHolderCallback);\n+\n+        btnTake.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                camera.takePicture(null, null, new Camera.PictureCallback() {\n+                    @Override\n+                    public void onPictureTaken(byte[] data, Camera camera) {\n+                        String path = \"\";\n+                        if ((path = saveFile(data)) != null) {\n+                            Intent it = new Intent(Net1314080903118Camera.this, Net1314080903118PreviewActivity.class);\n+                            it.putExtra(\"path\", path);\n+                            startActivity(it);\n+                        } else {\n+                            Toast.makeText(Net1314080903118Camera.this, \"保存照片失败\", Toast.LENGTH_SHORT).show();\n+                        }\n+                    }\n+                });\n+            }\n+        });\n+    }\n+\n+    //保存临时文件的方法\n+    private String saveFile(byte[] bytes){\n+        try {\n+            File file = File.createTempFile(\"img\",\"\");\n+            FileOutputStream fos = new FileOutputStream(file);\n+            fos.write(bytes);\n+            fos.flush();\n+            fos.close();\n+            return file.getAbsolutePath();\n+        } catch (IOException e) {\n+            e.printStackTrace();\n+        }\n+        return \"\";\n+    }\n+\n+\n+\n+    //开始预览\n+    private void startPreview(){\n+        camera = Camera.open();\n+        try {\n+            camera.setPreviewDisplay(sfvPreview.getHolder());\n+            camera.setDisplayOrientation(90);   //让相机旋转90度\n+            camera.startPreview();\n+        } catch (IOException e) {\n+            e.printStackTrace();\n+        }\n+    }\n+\n+    //停止预览\n+    private void stopPreview() {\n+        camera.stopPreview();\n+        camera.release();\n+        camera = null;\n+    }\n+\n+}"
+  }, {
+    "sha" : "017f6332703b8b7124e333805728b92f114d5b13",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118PreviewActivity.java",
+    "status" : "added",
+    "additions" : 26,
+    "deletions" : 0,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118PreviewActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118PreviewActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903118/Net1314080903118PreviewActivity.java?ref=f06036513dbc8c7a8de60915b2ee2107033788a0",
+    "patch" : "@@ -0,0 +1,26 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903118;\n+\n+import android.net.Uri;\n+import android.os.Bundle;\n+import android.support.annotation.Nullable;\n+import android.support.v7.app.AppCompatActivity;\n+import android.widget.ImageView;\n+\n+import java.io.File;\n+\n+/**\n+ * Created by RImpression on 2016/5/18 0018.\n+ */\n+public class Net1314080903118PreviewActivity extends AppCompatActivity{\n+\n+    @Override\n+    protected void onCreate(@Nullable Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        ImageView img = new ImageView(this);\n+        String path = getIntent().getStringExtra(\"path\");\n+        if (path != null) {\n+            img.setImageURI(Uri.fromFile(new File(path)));\n+        }\n+        setContentView(img);\n+    }\n+}"
+  }, {
+    "sha" : "958d5f6a3d117334246ce2d38495336de1663f19",
+    "filename" : "app/src/main/res/drawable/net314080903118_camera.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/res/drawable/net314080903118_camera.png",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/res/drawable/net314080903118_camera.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/net314080903118_camera.png?ref=f06036513dbc8c7a8de60915b2ee2107033788a0"
+  }, {
+    "sha" : "12ffc90475438fbb4b705e12dffd9f058ac228ad",
+    "filename" : "app/src/main/res/layout/net1314080903118_camera.xml",
+    "status" : "added",
+    "additions" : 19,
+    "deletions" : 0,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/res/layout/net1314080903118_camera.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/res/layout/net1314080903118_camera.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/net1314080903118_camera.xml?ref=f06036513dbc8c7a8de60915b2ee2107033788a0",
+    "patch" : "@@ -0,0 +1,19 @@\n+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:orientation=\"vertical\">\n+\n+    <SurfaceView\n+        android:id=\"@+id/sfv_preview\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:layout_weight=\"1\" />\n+\n+    <Button\n+        android:id=\"@+id/btn_take\"\n+        android:layout_width=\"match_parent\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"调用系统照相机\" />\n+\n+</LinearLayout>\n\\ No newline at end of file"
+  }, {
+    "sha" : "e567843e3bf6334a6dad7f4a3901988bf9e822e0",
+    "filename" : "app/src/main/res/menu/net1314080903118_menu.xml",
+    "status" : "added",
+    "additions" : 8,
+    "deletions" : 0,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/res/menu/net1314080903118_menu.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/f06036513dbc8c7a8de60915b2ee2107033788a0/app/src/main/res/menu/net1314080903118_menu.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/menu/net1314080903118_menu.xml?ref=f06036513dbc8c7a8de60915b2ee2107033788a0",
+    "patch" : "@@ -0,0 +1,8 @@\n+<menu xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.net1314080903118.Net1314080903118Activity\">\n+    <item android:id=\"@+id/action_settings\" android:title=\"@string/action_settings\"\n+        android:icon=\"@drawable/net314080903118_camera\"\n+        android:orderInCategory=\"100\" app:showAsAction=\"always\" />\n+</menu>"
+  } ],
+  "sha" : "f06036513dbc8c7a8de60915b2ee2107033788a0",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/f06036513dbc8c7a8de60915b2ee2107033788a0",
+  "parents" : [ {
+    "sha" : "1e0defc7fdd705758c6a18946a00e7f7e3f932e6",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1e0defc7fdd705758c6a18946a00e7f7e3f932e6",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1e0defc7fdd705758c6a18946a00e7f7e3f932e6"
+  } ]
+}

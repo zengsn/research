@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 215,
+    "additions" : 215,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/457eebb8130c50ddfeb67316ce72b8b5f3d3ae69",
+  "commit" : {
+    "author" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-12-06T05:09:49Z"
+    },
+    "committer" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-12-06T05:09:49Z"
+    },
+    "message" : "#7 # 86 提交实验代码",
+    "tree" : {
+      "sha" : "57da3122bda659fdd269d5c587f1342fd9bcf0f0",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/57da3122bda659fdd269d5c587f1342fd9bcf0f0"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/457eebb8130c50ddfeb67316ce72b8b5f3d3ae69",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/457eebb8130c50ddfeb67316ce72b8b5f3d3ae69/comments",
+  "files" : [ {
+    "sha" : "53ee1105876da987bc6bc728e3da0a4cea6f9204",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902114/UsersAction.java",
+    "status" : "added",
+    "additions" : 215,
+    "deletions" : 0,
+    "changes" : 215,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/457eebb8130c50ddfeb67316ce72b8b5f3d3ae69/jweb/src/edu/hzu/javaweb/labs/se1414080902114/UsersAction.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/457eebb8130c50ddfeb67316ce72b8b5f3d3ae69/jweb/src/edu/hzu/javaweb/labs/se1414080902114/UsersAction.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902114/UsersAction.java?ref=457eebb8130c50ddfeb67316ce72b8b5f3d3ae69",
+    "patch" : "@@ -0,0 +1,215 @@\n+package se1414080902114;\n+\n+import java.io.IOException;\n+import java.net.URLDecoder;\n+import java.sql.Connection;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+import java.sql.Statement;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import javax.servlet.Servlet;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import net.sf.json.JSONObject;\n+\n+import org.json.JSONArray;\n+\n+import se1414080902114.Users;\n+import se1414080902114.Dbconnection;\n+\n+public class UsersAction {\n+\tprivate static final long serialVersionUID = 1L;\n+\tString insert=\"insert\";      //从前端传回来的信息是增加信息\n+    String delete=\"delete\";      //从前端传回来的信息是删除信息\n+    String query=\"query\";        //从前端传回来的信息是查询信息\n+    String update=\"update\";      //从前端传回来的信息是更新信息\n+    String mainParameter;        //获取前端请求的参数值\n+    static String ses=null;      //包存需要的session数据\n+    \n+\t//Post方法提交过来的处理函数\n+\tpublic void doPost(ServletRequest request, ServletRequest response,Servlet session) throws ServletException, IOException {\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tresponse.setCharacterEncoding(\"utf-8\");//设置HTTP响应的编码方式\n+\t\t((ServletResponse) response).setContentType(\"text/html;charset=utf-8\");//设置前端浏览器显示数据的编码方式和\n+\t\tString method=request.getParameter(\"method\");\n+\t\tString tr=request.getParameter(\"b\");\n+\t\tSystem.out.println(\"b=\");\n+\t\tSystem.out.println(tr);\n+\t\t\n+\t\tif(tr!=null){\n+\t\t\tses=((ServletRequest) session).getAttribute(\"judge\").toString();\n+\t\t\t((ServletRequest) session).removeAttribute(\"judge\");\t\n+\t\t}else{\n+\t\t\tmainParameter=request.getParameter(\"a\");\n+\t\t\t((ServletRequest) session).setAttribute(\"judge\", mainParameter);\n+\t\t\trequest.getRequestDispatcher(\"/users/users.jsp\").forward(request, (ServletResponse) response);\n+\t\t}\n+\t\t\n+\t\tif(method!=null){\n+\t\t\tif(insert.equals(method)){\n+\t\t\t\tSystem.out.print(\"选择插入操作！\");\n+\t\t\t\tInsert(request,response);\n+\t\t\t\t\n+\t\t\t}else if(update.equals(method)){\n+\t\t\t\tUpdate(request,response);\n+\t\t\t}else if(delete.equals(method)){\n+\t\t\t\tDelete(request,response);\n+\t\t\t}\n+\t\t}\n+\t}\n+\t\n+\t\n+\t//数据库插入操作\n+\tpublic void Insert(ServletRequest request, ServletRequest response)\n+\t\t\tthrows ServletException, IOException {\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tString method=request.getParameter(\"method\");\n+\t    String Type = request.getParameter(\"Type\");\n+\t\tType = URLDecoder.decode(Type,\"utf-8\");\n+\t\tString Username = request.getParameter(\"Username\");\n+\t\tUsername = URLDecoder.decode(Username,\"utf-8\");\n+\n+\t\tString sql = \"insert into trees(Type,Username,uniqueId) values(\"+Type+\",'\"+Username+\"','\"+ses+\"')\";\n+\t\tif(insert.equals(method)){\n+\t\t\t Connection conn = new Dbconnection().getConn();\n+\t\t\t Statement stmt=null;\n+\t\t\ttry{\n+\t\t\t\tstmt=conn.createStatement();\n+\t\t\t\tint a=stmt.executeUpdate(sql);\n+\t\t\t\tif(a>0){\n+\t\t\t\t\tSystem.out.println(\"添加成功！\");\n+\t\t\t\t}else{\n+\t\t\t\t\tSystem.out.println(\"添加失败！\");\n+\t\t\t\t}\n+\t\t\t}catch (SQLException e){\n+\t\t\t\t System.out.println(\"添加失败\");\n+\t\t\t} finally {\n+\t\t\t\ttry {\n+\t\t\t\t\tif (conn != null)\n+\t\t\t\t\t\tconn.close();\n+\t\t\t\t\tif (stmt != null)\n+\t\t\t\t\t\tstmt.close();\n+\t\t\t\t\t\n+\t\t\t\t} catch (SQLException e) {\n+\t\t\t\t\te.printStackTrace();\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t}\n+\t\n+\t//数据库删除操作\n+\tpublic void Delete(ServletRequest request, ServletRequest response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tString method=request.getParameter(\"method\");\n+\t\tString dId=request.getParameter(\"Info\");\n+\t\tdId = URLDecoder.decode(dId,\"utf-8\");\n+\t\tSystem.out.println(\"dId=\");\n+\t\tSystem.out.println(dId);\n+\t\tString sql = \"delete  from trees where Info='\"+dId+\"'\";\n+\t\tif(delete.equals(method)){\n+\t\t\tConnection conn = new Dbconnection().getConn();\n+\t\t    Statement stmt=null;\n+\t\t\ttry{\n+\t\t\t\tstmt=conn.createStatement();\n+\t\t\t\tint a=stmt.executeUpdate(sql);\n+\t\t\t\tif(a>0){\n+\t\t\t\t\tSystem.out.println(\"删除成功！\");\n+\t\t\t\t\tSystem.out.println(\"a=\");\n+\t\t\t\t\tSystem.out.println(a);\n+\t\t\t\t}else{\n+\t\t\t\t\tSystem.out.println(\"删除失败！\");\n+\t\t\t\t}\n+\t\t\t}catch (SQLException e){\n+\t\t\t\t System.out.println(\"删除失败\");\n+\t\t\t} finally {\n+\t\t\t\ttry {\n+\t\t\t\t\tif (conn != null)\n+\t\t\t\t\t\tconn.close();\n+\t\t\t\t\tif (stmt != null)\n+\t\t\t\t\t\tstmt.close();\n+\t\t\t\t\t\n+\t\t\t\t} catch (SQLException e) {\n+\t\t\t\t\te.printStackTrace();\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t}\n+\t\n+\t//数据库查询操作\n+\tpublic void Query(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tString method=request.getParameter(\"method\");\n+\t\tif(delete.equals(method)){\n+\t\t\t\n+\t\t}\n+\t}\n+\t\n+\t//数据库更新数操作\n+\tpublic void Update(ServletRequest request, ServletRequest response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tString method=request.getParameter(\"method\");\n+\t\tif(update.equals(method)){\n+\t\t\t\n+\t\t}\n+\t}\n+    \n+\n+\t\n+\tpublic void getJson(String str,ServletRequest request, ServletResponse response) throws IOException{\n+\t\tString sql = \"select * from trees where uniqueId='\"+str+\"'\";\n+\t\tJSONArray treeArray = new JSONArray();\n+\t\tStatement stat = null;\n+\t\tResultSet rs = null;//创建对象，用来保存从数据表中查询到的数据\n+\t\tConnection conn = new Dbconnection().getConn();\n+\t\tList<Users> userslist=new ArrayList<Users>();//实例化List对象\n+\t\ttry{\n+\t\t\tstat = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);//获取连接状态\n+\t\t\trs = stat.executeQuery(sql);//执行SQL语句查询\n+\t\t\twhile(rs.next()){\n+\t\t\t\t        Users usersbean=new Users();\n+\t\t\t\t\t\tusersbean.setInfo(rs.getString(\"Info\"));\n+\t\t\t\t\t\tusersbean.setType(rs.getString(\"Type\"));\n+\t\t\t\t\t\tusersbean.setUsername(rs.getString(\"Username\"));\n+\t\t\t\t\t\tuserslist.add(usersbean);\t\t\t\t\t\t\n+\t\t\t     }\n+\n+\t\t\tfor(Users users: userslist){\n+\t\t\t\t\tJSONObject jsonObject = new JSONObject();\n+\t\t\t\t\tjsonObject.put(\"Info\",users.getInfo());\n+\t\t\t\t\tjsonObject.put(\"Username\",users.getUsername());\n+\t\t\t\t\tjsonObject.put(\"Type\",users.getType());\n+\t\t\t\t\ttreeArray.put(jsonObject);\n+\t\t\t}\n+\t\t\tSystem.out.println(treeArray.toString());\n+\t\t    \n+\t\t}catch (SQLException e) {\n+\t\t\te.printStackTrace();//有异常把异常打印到命令控制行中\n+\t\t} finally {\n+\t\t\ttry {\n+\t\t\t\tif (conn != null)\n+\t\t\t\t\tconn.close();\n+\t\t\t\tif (stat != null)\n+\t\t\t\t\tstat.close();\n+\t\t\t\tif (rs != null)\n+\t\t\t\t\trs.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\t}\n+//\t\treturn treeArray.toString();\n+\t\tString data = treeArray.toString();\n+ \t\t\n+\t\tresponse.getWriter().write(data);\n+\t\t\n+\t}\n+\n+}"
+  } ],
+  "sha" : "457eebb8130c50ddfeb67316ce72b8b5f3d3ae69",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/457eebb8130c50ddfeb67316ce72b8b5f3d3ae69",
+  "parents" : [ {
+    "sha" : "a38308bec603f77c722d3bef7116338c34299053",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a38308bec603f77c722d3bef7116338c34299053",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/a38308bec603f77c722d3bef7116338c34299053"
+  } ]
+}

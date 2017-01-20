@@ -1,0 +1,60 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 61,
+    "additions" : 61,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/145d348fca04f9373dd094de0c8566f27958fa32",
+  "commit" : {
+    "author" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-12-06T01:41:50Z"
+    },
+    "committer" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-12-06T01:41:50Z"
+    },
+    "message" : "#6 # 86 提交实验代码",
+    "tree" : {
+      "sha" : "f73738f47cf6102d1d7295f62eaafc847a6bc955",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/f73738f47cf6102d1d7295f62eaafc847a6bc955"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/145d348fca04f9373dd094de0c8566f27958fa32",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/145d348fca04f9373dd094de0c8566f27958fa32/comments",
+  "files" : [ {
+    "sha" : "0556f5ebceb89ca310e7801552f214aa76132447",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902114/Dbconnection.java",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/145d348fca04f9373dd094de0c8566f27958fa32/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Dbconnection.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/145d348fca04f9373dd094de0c8566f27958fa32/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Dbconnection.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Dbconnection.java?ref=145d348fca04f9373dd094de0c8566f27958fa32",
+    "patch" : "@@ -0,0 +1,54 @@\n+package se1414080902114;\n+\n+import java.sql.Connection;\n+import java.sql.DriverManager;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+\n+public class Dbconnection {\n+\tprivate String dbUrl=\"jdbc:mysql://localhost:3306/shetuan\";\n+\tprivate String dbUser=\"root\";\n+\tprivate String dbPassword=\"qwc525431\";\n+\tprivate String jdbcName=\"com.mysql.jdbc.Driver\";\n+\t\n+\t//数据库连接\n+\tpublic Connection getConn(){\n+\t\tConnection conn = null;\n+\t\ttry{\n+\t\t\tClass.forName(jdbcName);\n+\t\t}\n+\t\tcatch(Exception e){}\n+\t\ttry{\n+\t\t\tconn=DriverManager.getConnection(dbUrl,dbUser,dbPassword);\n+\t\t}\n+\t\tcatch(SQLException ex){}\n+\t\treturn conn;\t\t\n+\t}\n+\t\n+\t//数据库释放\n+\tpublic void close(Connection conn, PreparedStatement pstmt, ResultSet rs) {\n+\t\tif (rs != null)\n+\t\t\ttry {\n+\t\t\t\trs.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\tif (pstmt != null)\n+\t\t\ttry {\n+\t\t\t\tpstmt.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\tif (conn != null)\n+\t\t\ttry {\n+\t\t\t\tconn.close();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}\n+\t\t\n+\t}\n+}"
+  }, {
+    "sha" : "c122d433758bb2969d3ee7cc0e186213c8e38bb1",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902114/Users.java",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 0,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/145d348fca04f9373dd094de0c8566f27958fa32/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Users.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/145d348fca04f9373dd094de0c8566f27958fa32/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Users.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902114/Users.java?ref=145d348fca04f9373dd094de0c8566f27958fa32",
+    "patch" : "@@ -4,6 +4,13 @@\n \tprivate String Type;\n \tprivate String Username;\n \tprivate String Password;\n+\tprivate String Info;\n+\tpublic String getInfo() {\n+\t\treturn Info;\n+\t}\n+\tpublic void setInfo(String info) {\n+\t\tthis.Info = info;\n+\t}\n \tpublic String getType() {\n \t\treturn Type;\n \t}"
+  } ],
+  "sha" : "145d348fca04f9373dd094de0c8566f27958fa32",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/145d348fca04f9373dd094de0c8566f27958fa32",
+  "parents" : [ {
+    "sha" : "f6e6c3d0fe2a2053490d56aff234086c6ea55276",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f6e6c3d0fe2a2053490d56aff234086c6ea55276",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f6e6c3d0fe2a2053490d56aff234086c6ea55276"
+  } ]
+}

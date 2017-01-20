@@ -1,0 +1,148 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 361,
+    "additions" : 333,
+    "deletions" : 28
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "木易当夏浅韵",
+      "date" : "2016-12-02T14:40:51Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "木易当夏浅韵",
+      "date" : "2016-12-02T14:40:51Z"
+    },
+    "message" : "#7 提交实验代码",
+    "tree" : {
+      "sha" : "9067d4702fc3b38c5c5bf3b3ef3cbe04fd1ee7c3",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/9067d4702fc3b38c5c5bf3b3ef3cbe04fd1ee7c3"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/comments",
+  "files" : [ {
+    "sha" : "60d9c94bbf0efcab2550eb5bc2cbba2cc9f88897",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902139/AddServlet.java",
+    "status" : "added",
+    "additions" : 106,
+    "deletions" : 0,
+    "changes" : 106,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/src/edu/hzu/javaweb/labs/se1414080902139/AddServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/src/edu/hzu/javaweb/labs/se1414080902139/AddServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902139/AddServlet.java?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -0,0 +1,106 @@\n+package edu.hzu.javaweb.labs.se1414080902139;\n+\n+import java.io.IOException;\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import edu.hzu.javaweb.labs.se1414080902139.db.DbConnect;\n+\n+@WebServlet(\"/1414080902139\")\n+public class AddServlet extends HttpServlet {\n+\n+\t/**\n+\t * \n+\t */\n+\tprivate static final long serialVersionUID = 1L;\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\t//@SuppressWarnings(\"unused\")\n+\t//定义的变量在代码中并未使用且无法访问。\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tString name=request.getParameter(\"name\");\n+\t\tif(request.getSession().getAttribute(\"_username\")==null){\n+\t\t\trequest.setAttribute(\"message\", \"请登录再添加。<a href='login.jsp'>登录</a>\");\n+\t\t\trequest.getRequestDispatcher(\"/message.jsp\").forward(request, response);\n+\t\t}\n+\t\telse if(\"\".equals(name)){\n+\t\t\trequest.setAttribute(\"message\", \"请输入姓名。<input type='button' value='返回' onclick=history.go(-1)>\");\n+\t\t\trequest.getRequestDispatcher(\"/message.jsp\").forward(request, response);\n+\t\t}\n+\t\telse{\n+\t\t\tString sex=request.getParameter(\"sex\");\n+\t\t\tString profession=request.getParameter(\"profession\");\n+\t\t\tString education=request.getParameter(\"education\");\n+\t\t\tString tel=request.getParameter(\"tel\");\n+\t\t\tString email=request.getParameter(\"email\");\n+\t\t\tString hobby=request.getParameter(\"hobby\");\n+\t\t\tString experience=request.getParameter(\"experience\");\n+\t\t\tString skill=request.getParameter(\"skill\");\n+\t\t\tString honor=request.getParameter(\"honor\");\n+\t\t\tConnection con=null;\n+\t\t\tPreparedStatement pstm=null;\n+\t\t\tResultSet rs=null;\n+\t\t\tint n=-1;\n+\t\t\tString sql=\"insert into resume(name,sex,profession,education,tel,\"\n+\t\t\t\t\t+ \"email,hobby,experience,skill,honor)\"+\"values(?,?,?,?,?,?,?,?,?,?)\";\n+\t\t\ttry {\n+\t\t\t\tcon=DbConnect.getDBconnection();\n+\t\t\t\tpstm=con.prepareStatement(sql);\n+\t\t\t\tpstm.setString(1, name);\n+\t\t\t\tpstm.setString(2, sex);\n+\t\t\t\tpstm.setString(3, profession);\n+\t\t\t\tpstm.setString(4, education);\n+\t\t\t\tpstm.setString(5, tel);\n+\t\t\t\tpstm.setString(6, email);\n+\t\t\t\tpstm.setString(7, hobby);\n+\t\t\t\tpstm.setString(8, experience);\n+\t\t\t\tpstm.setString(9, skill);\n+\t\t\t\tpstm.setString(10, honor);\n+\t\t\t\tn=pstm.executeUpdate();\n+\t\t\t} catch (SQLException e) {\n+\t\t\t\t// TODO Auto-generated catch block\n+\t\t\t\te.printStackTrace();\n+\t\t\t}finally{\n+\t\t\t\tDbConnect.closeDB(con, pstm, rs);\n+\t\t\t}\n+\t\t\tif(n==1){\n+\t\t\t\trequest.setAttribute(\"_name\", name);\n+\t\t\t\trequest.setAttribute(\"_sex\", sex);\n+\t\t\t\trequest.setAttribute(\"_profession\", profession);\n+\t\t\t\trequest.setAttribute(\"_education\", education);\n+\t\t\t\trequest.setAttribute(\"_tel\", tel);\n+\t\t\t\trequest.setAttribute(\"_email\", email);\n+\t\t\t\trequest.setAttribute(\"_hobby\", hobby);\n+\t\t\t\trequest.setAttribute(\"_experience\", experience);\n+\t\t\t\trequest.setAttribute(\"_skill\", skill);\n+\t\t\t\trequest.setAttribute(\"_honor\", honor);\n+\t\t\t\trequest.getRequestDispatcher(\"/show.jsp\").forward(request, response);\n+\t\t\t}\n+\t\t\telse{\n+\t\t\t\trequest.setAttribute(\"message\", \"姓名已经存在。<input type='button' value='返回' onclick=history.go(-1)>\");\n+\t\t\t\trequest.getRequestDispatcher(\"/message.jsp\").forward(request, response);\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "cc512a71c7ac35c5c3d57a522f7891ab31cf13ad",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902139/FindServlet.java",
+    "status" : "modified",
+    "additions" : 74,
+    "deletions" : 5,
+    "changes" : 79,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/src/edu/hzu/javaweb/labs/se1414080902139/FindServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/src/edu/hzu/javaweb/labs/se1414080902139/FindServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902139/FindServlet.java?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -1,6 +1,9 @@\n package edu.hzu.javaweb.labs.se1414080902139;\n \n import java.io.IOException;\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n import java.util.ArrayList;\n import java.util.List;\n \n@@ -10,6 +13,7 @@\n import javax.servlet.http.HttpServletResponse;\n \n import edu.hzu.javaweb.labs.se1414080902139.bean.Resume;\n+import edu.hzu.javaweb.labs.se1414080902139.db.DbConnect;\n \n public class FindServlet extends HttpServlet {\n \n@@ -31,12 +35,77 @@\n \tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\t\tthrows ServletException, IOException {\n \n-\t\tresponse.setCharacterEncoding(\"utf-8\");\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tString name=request.getParameter(\"name\");\n+\t\tString profession=request.getParameter(\"profession\");\n+\t\tString education=request.getParameter(\"education\");\n+\t\tConnection con=null;\n+\t\tPreparedStatement pstm=null;\n+\t\tResultSet rs= null;\n+\t\tString string=null;\n \t\tList<Resume> resumelist = new ArrayList<Resume>();\n-\t\tresumelist.add(new Resume(\"小黄\",\"男\",\"软件工程\",\"大学本科\",\"\",\"\",\"\",\"\",\"擅长Java\",\"\"));\n-\t\tresumelist.add(new Resume(\"小白\",\"男\",\"信息工程\",\"\",\"\",\"\",\"\",\"\",\"擅长C++和C#\",\"三好学生\"));\n-\t\trequest.setAttribute(\"findresult\", resumelist);\n-\t\trequest.getRequestDispatcher(\"findresult.jsp\").forward(request, response);\n+\t\tif(!\"\".equals(name)){//姓名不为空\n+\t\t\tstring = \"name='\"+name+\"'\";\n+\t\t\tif(!\"\".equals(profession)){//专业不空\n+\t\t\t\tstring=string+\" and profession='\"+profession+\"'\";\n+\t\t\t\tif(!\"\".equals(education)){//学历不空\n+\t\t\t\t\tstring=string+\" and education='\"+education+\"'\";\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\telse{//专业空\n+\t\t\t\tif(!\"\".equals(education)){//学历不空\n+\t\t\t\t\tstring=string+\" and education='\"+education+\"'\";\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t\telse{//姓名空\n+\t\t\tif(!\"\".equals(profession)){//专业不空\n+\t\t\t\tstring=\"profession='\"+profession+\"'\";\n+\t\t\t\tif(!\"\".equals(education)){//学历不空\n+\t\t\t\t\tstring=string+\" and education='\"+education+\"'\";\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\telse{//专业空\n+\t\t\t\tif(!\"\".equals(education)){//学历不空\n+\t\t\t\t\tstring=\"education='\"+education+\"'\";\n+\t\t\t\t}\n+\t\t\t\telse{\n+\t\t\t\t\t//全为空\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t\tif(string==null){\n+\t\t\trequest.setAttribute(\"message\", \"请输入一个条件。<input type='button' value='返回' onclick=history.go(-1)>\");\n+\t\t\trequest.getRequestDispatcher(\"/message.jsp\").forward(request, response);\n+\t\t}\n+\t\telse{\n+\t\t\tString sql=\"select * from resume where \"+string;\t\n+\t\t\ttry {\n+\t\t\t\tcon=DbConnect.getDBconnection();\n+\t\t\t\tpstm=con.prepareStatement(sql);\n+\t\t\t\trs=pstm.executeQuery();\n+\t\t\t\twhile(rs.next()) {\n+\t\t\t\t\tResume resume=new Resume();\n+\t\t\t\t\tresume.setName(rs.getString(1));\n+\t\t\t\t\tresume.setSex(rs.getString(2));\n+\t\t\t\t\tresume.setProfession(rs.getString(3));\n+\t\t\t\t\tresume.setEducation(rs.getString(4));\n+\t\t\t\t\tresume.setTel(rs.getString(5));\n+\t\t\t\t\tresume.setEmail(rs.getString(6));\n+\t\t\t\t\tresume.setHobby(rs.getString(7));\n+\t\t\t\t\tresume.setExperience(rs.getString(8));\n+\t\t\t\t\tresume.setSkill(rs.getString(9));\n+\t\t\t\t\tresume.setHonor(rs.getString(10));\n+\t\t\t\t\tresumelist.add(resume);\n+\t\t\t\t}\n+\t\t\t} catch (Exception e) {\n+\t\t\t\t// TODO: handle exception\n+\t\t\t}finally{\n+\t\t\t\tDbConnect.closeDB(con, pstm, rs);\n+\t\t\t}\n+\t\t\trequest.setAttribute(\"findresult\", resumelist);\n+\t\t\trequest.getRequestDispatcher(\"findresult.jsp\").forward(request, response);\n+\t\t}\n \t}\n \n }"
+  }, {
+    "sha" : "605dab104123d2eedf10cb4b161cdee683d767e3",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902139/LoginServlet.java",
+    "status" : "added",
+    "additions" : 72,
+    "deletions" : 0,
+    "changes" : 72,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/src/edu/hzu/javaweb/labs/se1414080902139/LoginServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/src/edu/hzu/javaweb/labs/se1414080902139/LoginServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902139/LoginServlet.java?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -0,0 +1,72 @@\n+package edu.hzu.javaweb.labs.se1414080902139;\n+\n+import java.io.IOException;\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import edu.hzu.javaweb.labs.se1414080902139.db.DbConnect;\n+\n+/**\n+ * Servlet implementation class LoginServlet\n+ */\n+@WebServlet(\"/1414080902139\")\n+public class LoginServlet extends HttpServlet {\n+\t\n+\tprivate static final long serialVersionUID = 1L;\n+\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\t\n+\t\tConnection con=null;\n+\t\tPreparedStatement pstm=null;\n+\t\tResultSet rs=null;\n+\t\tString sql=\"select pwd from user where id=?\";\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tString username=request.getParameter(\"username\");\n+\t\tString password=request.getParameter(\"password\");\n+\t\tString pwd=null;//using null is better than \"\",why?\n+//\t\tit's bad that the pwd is \"\" if the rs inquired from database is 0 \n+//\t\tand the password is not inputed\n+\t\tif(!\"\".equals(username)){//username is not null\n+\t\t\ttry{\n+\t\t\t\tcon=DbConnect.getDBconnection();\n+\t\t\t\tpstm=con.prepareStatement(sql);\n+\t\t\t\tpstm.setString(1, username);\n+\t\t\t\trs=pstm.executeQuery();//密码\n+\t\t\t\tif(rs.next())\n+\t\t\t\t\tpwd=rs.getString(1);\n+\t\t\t}catch(Exception e){\n+\t\t\t\t//\n+\t\t\t}finally{\n+\t\t\t\tDbConnect.closeDB(con, pstm, rs);\n+\t\t\t}\n+\t\t\tif(pwd==null){\n+\t\t\t\trequest.setAttribute(\"message\", \"用户名不存在。<input type='button' value='返回' onclick=history.go(-1)>\");\n+\t\t\t\trequest.getRequestDispatcher(\"/message.jsp\").forward(request, response);\n+\t\t\t}\n+\t\t\telse{\n+\t\t\t\tif(password.equals(pwd)){\n+\t//\t\t\t\t在这里设置session属性\n+\t\t\t\t\trequest.getSession().setAttribute(\"_username\", username);\n+\t\t\t\t\trequest.getRequestDispatcher(\"/home.jsp\").forward(request, response);\n+\t\t\t\t}\n+\t\t\t\telse{\n+\t\t\t\t\trequest.setAttribute(\"message\", \"密码错误。<input type='button' value='返回' onclick=history.go(-1)>\");\n+\t\t\t\t\trequest.getRequestDispatcher(\"/message.jsp\").forward(request, response);\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t\telse{//username is null\n+\t\t\trequest.setAttribute(\"message\", \"请输入用户名。<input type='button' value='返回' onclick=history.go(-1)>\");\n+\t\t\trequest.getRequestDispatcher(\"/message.jsp\").forward(request, response);\n+\t\t}\t\t\t\t\n+\t}\n+\t\n+}"
+  }, {
+    "sha" : "1f5e8253069fe5485bb4e96c6b2ee6d93aa6c7e9",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902139/db/DbConnect.java",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/src/edu/hzu/javaweb/labs/se1414080902139/db/DbConnect.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/src/edu/hzu/javaweb/labs/se1414080902139/db/DbConnect.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902139/db/DbConnect.java?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -0,0 +1,34 @@\n+package edu.hzu.javaweb.labs.se1414080902139.db;\n+\n+import java.sql.*;\n+\n+public class DbConnect {\n+\tprivate static String driverName=\"com.mysql.jdbc.Driver\";\n+\tprivate static String userName=\"root\";\n+\tprivate static String userPwd=\"mysqlroot\";\n+\tprivate static String dbName=\"resumes\";\n+\tpublic static Connection getDBconnection(){\n+\t\tString url1=\"jdbc:mysql://localhost:3306/\"+dbName;\n+\t\tString url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+\t\tString url3=\"&useUnicode=true&characterEncoding=UTF-8&useSSL=true\";\n+\t\tString url=url1+url2+url3;\n+\t\ttry{\n+\t\t\tClass.forName(driverName);\n+\t\t\tConnection con=DriverManager.getConnection(url);\n+\t\t\treturn con;\n+\t\t}catch(Exception e){\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t\treturn null;\n+\t}\n+\tpublic static void closeDB(Connection con,PreparedStatement pstm,ResultSet rs){\n+\t\ttry{\n+\t\t\tif(rs!=null)rs.close();\n+\t\t\tif(pstm!=null)pstm.close();\n+\t\t\tif(con!=null)con.close();\n+\t\t}catch(SQLException e){\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t}\n+\t\n+}"
+  }, {
+    "sha" : "96f8dc3e1a660d8c2484c41e9105b4dbaf0096b5",
+    "filename" : "jweb/web/1414080902139/add.jsp",
+    "status" : "modified",
+    "additions" : 8,
+    "deletions" : 8,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/add.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/add.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902139/add.jsp?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -83,22 +83,22 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t\t\t<a href=\"home.jsp\" class=\"home\">返回首页</a>\n \t\t\t<ul class=\"right\">\n \t\t\t\t<li>\n-\t\t\t\t\t<c:if test=\"${ _username == null }\">\n+\t\t\t\t\t<c:if test=\"${ _username == null || _username ==''}\">\n \t\t\t\t\t\t<a href=\"login.jsp\">你好，请登录</a>\n \t\t\t\t\t</c:if>\n \t\t\t\t\t<c:if test=\"${ _username != null }\">\n-\t\t\t\t\t\t\t<c:out value=\"${ _username }\"></c:out>,欢迎你\n+\t\t\t\t\t\t\t欢迎你，<c:out value=\"${ _username }\"></c:out>\n   \t\t\t\t\t</c:if>\n \t\t\t\t</li>\n \t\t\t\t<li><a href=\"#\">注册</a></li>\n \t\t\t</ul>  \t\t\t\n \t\t</div>\n \t\t<h1 class=\"text-center\">录入简历</h1>\n-\t\t<form class=\"form-horizontal\" action=\"Se1414080902139Servlet\" method=\"post\">\n+\t\t<form class=\"form-horizontal\" action=\"servlet/addServlet\" method=\"post\">\n         \t<div class=\"form-group\">\n \t\t    \t<label for=\"\" class=\"col-sm-4 control-label\">姓名</label>\n \t\t    \t<div class=\"col-sm-5\">\n-\t\t      \t\t<input type=\"text\" name=\"name\" class=\"form-control\" id=\"\" placeholder=\"\">\n+\t\t      \t\t<input type=\"text\" name=\"name\" class=\"form-control\" id=\"\">\n \t\t    \t</div>\n \t\t\t</div>\n \n@@ -115,28 +115,28 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t\t\t<div class=\"form-group\">\n \t\t    \t<label for=\"\" class=\"col-sm-4 control-label\">专业</label>\n \t\t    \t<div class=\"col-sm-5\">\n-\t\t      \t\t<input type=\"text\" name=\"profession\" class=\"form-control\" id=\"\" placeholder=\"\">\n+\t\t      \t\t<input type=\"text\" name=\"profession\" class=\"form-control\" id=\"\">\n \t\t    \t</div>\n \t\t\t</div>\n \n \t\t\t<div class=\"form-group\">\n \t\t    \t<label for=\"\" class=\"col-sm-4 control-label\">学历</label>\n \t\t    \t<div class=\"col-sm-5\">\n-\t\t      \t\t<input type=\"text\" name=\"education\" class=\"form-control\" id=\"\" placeholder=\"\">\n+\t\t      \t\t<input type=\"text\" name=\"education\" class=\"form-control\" id=\"\">\n \t\t    \t</div>\n \t\t\t</div>\n \n \t\t\t<div class=\"form-group\">\n \t\t    \t<label for=\"\" class=\"col-sm-4 control-label\">电话</label>\n \t\t    \t<div class=\"col-sm-5\">\n-\t\t      \t\t<input type=\"tel\" name=\"tel\" class=\"form-control\" id=\"\" placeholder=\"\">\n+\t\t      \t\t<input type=\"tel\" name=\"tel\" class=\"form-control\" id=\"\">\n \t\t    \t</div>\n \t\t\t</div>\n \n \t\t\t<div class=\"form-group\">\n \t\t    \t<label for=\"\" class=\"col-sm-4 control-label\">邮箱</label>\n \t\t    \t<div class=\"col-sm-5\">\n-\t\t      \t\t<input type=\"email\" name=\"email\" class=\"form-control\" id=\"\" placeholder=\"\">\n+\t\t      \t\t<input type=\"email\" name=\"email\" class=\"form-control\" id=\"\">\n \t\t    \t</div>\n \t\t\t</div>\n "
+  }, {
+    "sha" : "9e8beafa061ccf3b861ec135c0ed30a699d3b4a3",
+    "filename" : "jweb/web/1414080902139/find.jsp",
+    "status" : "modified",
+    "additions" : 4,
+    "deletions" : 4,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/find.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/find.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902139/find.jsp?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -83,18 +83,18 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t\t\t<a href=\"home.jsp\" class=\"home\">返回首页</a>\n \t\t\t<ul class=\"right\">\n \t\t\t\t<li>\n-\t\t\t\t\t<c:if test=\"${ _username == null }\">\n+\t\t\t\t\t<c:if test=\"${ _username == null || _username ==''}\">\n \t\t\t\t\t\t<a href=\"login.jsp\">你好，请登录</a>\n \t\t\t\t\t</c:if>\n-\t\t\t\t\t<c:if test=\"${ _username != null }\">\n-\t\t\t\t\t\t\t<c:out value=\"${ _username }\"></c:out>,欢迎你\n+\t\t\t\t\t<c:if test=\"${ _username != null && _username !=''}\">\n+\t\t\t\t\t\t\t欢迎你，<c:out value=\"${ _username }\"></c:out>\n   \t\t\t\t\t</c:if>\n \t\t\t\t</li>\n \t\t\t\t<li><a href=\"#\">注册</a></li>\n \t\t\t</ul>  \t\t\t\n \t\t</div>\n \t\t<h1 class=\"text-center\">查询简历</h1>\n-\t\t<form class=\"form-horizontal\" action=\"FindServlet\" method=\"post\">\n+\t\t<form class=\"form-horizontal\" action=\"findServlet\" method=\"post\">\n         \t<div class=\"form-group\">\n \t\t    \t<label for=\"\" class=\"col-sm-4 control-label\">姓名</label>\n \t\t    \t<div class=\"col-sm-5\">"
+  }, {
+    "sha" : "5275c5675b4ef645a97286fe2cd0c1b2b470e13d",
+    "filename" : "jweb/web/1414080902139/findresult.jsp",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 3,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/findresult.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/findresult.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902139/findresult.jsp?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -85,19 +85,18 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t\t\t\t\t\t<a href=\"login.jsp\">你好，请登录</a>\n \t\t\t\t\t</c:if>\n \t\t\t\t\t<c:if test=\"${ _username != null }\">\n-\t\t\t\t\t\t\t<c:out value=\"${ _username }\"></c:out>,欢迎你\n+\t\t\t\t\t\t\t欢迎你，<c:out value=\"${ _username }\"></c:out>\n   \t\t\t\t\t</c:if>\n \t\t\t\t</li>\n \t\t\t\t<li><a href=\"#\">注册</a></li>\n \t\t\t</ul>  \t\t\t\n \t\t</div>\n-\t\t<h1 class=\"text-center\">我的简历</h1>\n+\t\t<h1 class=\"text-center\">查询结果</h1>\n \t\t<c:forEach var=\"resume\" items=\"${findresult }\">\n \t\t<div class=\"row\">\n \t\t\t<label class=\"col-sm-4\">姓名</label>\n \t\t\t<div class=\"col-sm-5 show\">${resume.name }</div>\n \t\t</div>\n-\t\t<%-- <%=request.getAttribute(\"_name\") %> --%>\n \t\t<div class=\"row\">\n \t\t\t<label class=\"col-sm-4\">性别</label>\n \t\t\t<div class=\"col-sm-5 show\">${resume.sex }</div>"
+  }, {
+    "sha" : "978c4cefe2fe6a271d77d8ef47acc96076900cd9",
+    "filename" : "jweb/web/1414080902139/home.jsp",
+    "status" : "modified",
+    "additions" : 9,
+    "deletions" : 4,
+    "changes" : 13,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/home.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/home.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902139/home.jsp?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -71,21 +71,26 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t\t<div class=\"nav\">\n \t\t\t<ul class=\"right\">\n \t\t\t\t<li>\n-\t\t\t\t\t<c:if test=\"${ _username == null }\">\n+\t\t\t\t\t<c:if test=\"${ _username == null || _username ==''}\">\n \t\t\t\t\t\t<a href=\"login.jsp\">你好，请登录</a>\n \t\t\t\t\t</c:if>\n-\t\t\t\t\t<c:if test=\"${ _username != null }\">\n-\t\t\t\t\t\t\t<c:out value=\"${ _username }\"></c:out>,欢迎你\n+\t\t\t\t\t<c:if test=\"${ _username != null && _username !=''}\">\n+\t\t\t\t\t\t\t欢迎你，<c:out value=\"${ _username }\"></c:out>\n   \t\t\t\t\t</c:if>\n \t\t\t\t</li>\n \t\t\t\t<li><a href=\"#\">注册</a></li>\n+\t\t\t\t<c:if test=\"${ _username != null && _username !=''}\">\n+\t\t\t\t<li>\n+\t\t\t\t\t<a href=\"login.jsp\">退出</a>\n+\t\t\t\t</li>\n+  \t\t\t\t</c:if>\n \t\t\t</ul>  \t\t\t\n \t\t</div>\n \t\t<h1 class=\"text-center\">简历管理系统</h1>\n \t\t<div class=\"navbar navbar-default\">\n \t\t  \t<ul class=\"nav navbar-nav\">\n \t\t  \t\t<li><a href=\"add.jsp\">录入简历</a></li>\n-\t\t  \t\t<li><a href=\"#\">修改简历</a></li>\n+\t\t  \t\t<li><a href=\"modify.jsp\">修改简历</a></li>\n \t\t  \t\t<li><a href=\"find.jsp\">查询简历</a></li>\n \t\t  \t</ul>\t\n \t\t</div>\t"
+  }, {
+    "sha" : "883d1ba0ca1f284fea9e1d39b6a31cebca245546",
+    "filename" : "jweb/web/1414080902139/login.jsp",
+    "status" : "modified",
+    "additions" : 4,
+    "deletions" : 4,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902139/login.jsp?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -16,7 +16,7 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t<meta http-equiv=\"expires\" content=\"0\">    \n \t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n \t<meta http-equiv=\"description\" content=\"This is my page\">\n-\t\n+\t<script type=\"text/javascript\" src=\"ajax.js\"></script>\n \t<style type=\"text/css\">\n \tbody{\n \t\tmargin: 0;\n@@ -141,12 +141,12 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t\t\t<h2 class=\"h2_title\">登录系统\n \t\t\t\t<a target=\"_blank\" class=\"fr\" href=\"#\">注册</a>\n \t\t\t</h2>\n-\t\t\t<form id=\"target\" method=\"post\" action=\"LoginCheckServlet\">\n+\t\t\t<form id=\"target\" method=\"post\" name=\"login\" action=\"loginServlet\">\t\t\t\n \t\t\t\t<!-- 账号 -->\n \t\t\t\t<div class=\"form_group\">\n \t\t\t\t\t<label class=\"control_label\">账号</label>\n \t\t\t\t\t<div class=\"\">\n-\t\t\t\t\t\t<input class=\"form_control\" type=\"text\" name=\"username\" placeholder=\"邮箱/用户名\">\n+\t\t\t\t\t\t<input class=\"form_control\" type=\"text\" name=\"username\" id=\"username\" placeholder=\"邮箱/用户名\" >\n \t\t\t\t\t</div>\n \t\t\t\t</div>\n \t\t\t\t<!-- 密码 -->\n@@ -166,7 +166,7 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t\t\t\t\t\t\t<a class=\"fr for_passwordbtn\" href=\"#\">忘记密码</a>\n \t\t\t\t\t\t</span>\n \t\t\t\t\t</div>\n-\t\t\t\t\t<input type=\"submit\" class=\"login_btn\" id=\"\" name=\"\" value=\"登录\">\n+\t\t\t\t\t<input type=\"submit\" class=\"login_btn\" id=\"\" name=\"\" onclick=\"\" value=\"登录\">\n \t\t\t\t</div>\n \t\t\t</form>\n \t\t</div>"
+  }, {
+    "sha" : "fe3df0d2ac94d82278a80da92f567d5f0f398521",
+    "filename" : "jweb/web/1414080902139/message.jsp",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/message.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/aa9b07734c8cbb3db5d35dd373c20d052251e4e6/jweb/web/1414080902139/message.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902139/message.jsp?ref=aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+    "patch" : "@@ -0,0 +1,20 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>消息页面</title>\n+\n+  </head>\n+  \n+  <body>\n+  \t<a href=\"login.jsp\"></a>\n+  \t<%=request.getAttribute(\"message\") %>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/aa9b07734c8cbb3db5d35dd373c20d052251e4e6",
+  "parents" : [ {
+    "sha" : "cc49f3088a7b010573d969ab9d55f9e5139dcee9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/cc49f3088a7b010573d969ab9d55f9e5139dcee9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/cc49f3088a7b010573d969ab9d55f9e5139dcee9"
+  } ]
+}

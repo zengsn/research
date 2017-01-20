@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "fanrenaren",
+    "id" : 14196142,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14196142?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fanrenaren",
+    "html_url" : "https://github.com/fanrenaren",
+    "followers_url" : "https://api.github.com/users/fanrenaren/followers",
+    "following_url" : "https://api.github.com/users/fanrenaren/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fanrenaren/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fanrenaren/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fanrenaren/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fanrenaren/orgs",
+    "repos_url" : "https://api.github.com/users/fanrenaren/repos",
+    "events_url" : "https://api.github.com/users/fanrenaren/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fanrenaren/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 64,
+    "additions" : 52,
+    "deletions" : 12
+  },
+  "author" : {
+    "login" : "fanrenaren",
+    "id" : 14196142,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14196142?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/fanrenaren",
+    "html_url" : "https://github.com/fanrenaren",
+    "followers_url" : "https://api.github.com/users/fanrenaren/followers",
+    "following_url" : "https://api.github.com/users/fanrenaren/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/fanrenaren/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/fanrenaren/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/fanrenaren/subscriptions",
+    "organizations_url" : "https://api.github.com/users/fanrenaren/orgs",
+    "repos_url" : "https://api.github.com/users/fanrenaren/repos",
+    "events_url" : "https://api.github.com/users/fanrenaren/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/fanrenaren/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/f076972f6491bb67b953fbb7232079e6352d0f63",
+  "commit" : {
+    "author" : {
+      "name" : "fanrenaren",
+      "email" : "fanrenaren608@163.com",
+      "date" : "2015-11-08T01:02:08Z"
+    },
+    "committer" : {
+      "name" : "fanrenaren",
+      "email" : "fanrenaren608@163.com",
+      "date" : "2015-11-08T01:02:08Z"
+    },
+    "message" : "第四次实验  1314080901231\n\n修改index文件和materialSetModule.js文件",
+    "tree" : {
+      "sha" : "9a9082f7c9b22487203ec372055b2e4602024b13",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/9a9082f7c9b22487203ec372055b2e4602024b13"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/f076972f6491bb67b953fbb7232079e6352d0f63",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/f076972f6491bb67b953fbb7232079e6352d0f63/comments",
+  "files" : [ {
+    "sha" : "e49677849cc26d82f38c0f31e9f5521207bb647c",
+    "filename" : "works/1314080901231/index.html",
+    "status" : "modified",
+    "additions" : 50,
+    "deletions" : 10,
+    "changes" : 60,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/f076972f6491bb67b953fbb7232079e6352d0f63/works/1314080901231/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/f076972f6491bb67b953fbb7232079e6352d0f63/works/1314080901231/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901231/index.html?ref=f076972f6491bb67b953fbb7232079e6352d0f63",
+    "patch" : "@@ -1,11 +1,51 @@\n-<!DOCTYPE html >\n-<html ng-app=\"materialSetModule\"> <head lang=\"en\">\n-<meta charset=\"UTF-8\">\n-<title>物料设置</title>\n-  <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n-  <script src=\"js/materialSetModule.js\"></script>\n-</head>\n-<body ng-controller=\"MyFilterDemoCtrl\">\n-  {{data}}\n-</body>\n+<!DOCTYPE html>\n+ <html ng-app=\"materialSetModule\"> <head lang=\"en\">\n+     <meta charset=\"utf-8\">\n+     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n+     <title>物料设置_物料类别设置 by 1314080901231</title>\n+     <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n+          \n+     <!-- Bootstrap -->\n+     <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n+ \t\t \n+     <!-- Custom styles for this template -->\n+     <link href=\"css/style.css\" rel=\"stylesheet\">\n+ \t\t \n+     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n+     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n+     <!--[if lt IE 9]>\n+       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n+       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n+     <![endif]-->\n+\n+   </head>\n+   <body ng-controller=\"creatematerialSetCtrl\">\n+     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n+                   <ul class=\"nav navbar-nav\">\n+             <li class=\"active\"><a href=\"#\">Home</a></li>\n+             <li><a href=\"#about\">About</a></li>\n+             <li><a href=\"#contact\">Contact</a></li>\n+           </ul>\n+         </div><!--/.nav-collapse -->\n+       </div>\n+     </nav>\n+ \t\t \n+     <div class=\"container\">\n+ \t\t \n+       <div class=\"starter-template\">\n+         <h1>Bootstrap starter template</h1>\n+         <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\t\t    \n+       </div>\n+ \t\t \n+     </div><!-- /.container -->\n+ \t\t \n+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\t\t    \n+     <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\t\n+     <!-- Include all compiled plugins (below), or include individual files as needed -->\n+     <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n+     <script src=\"../../lib/angular-1.4.5/angular.min.js\"></script>\n+        <script src=\"js/creatematerialSetModule.js\"></script>\n+   </body>\n </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "ac717eb286a937bd2f4230831571b1d44e3cf4e8",
+    "filename" : "works/1314080901231/js/materialSetModule.js",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/f076972f6491bb67b953fbb7232079e6352d0f63/works/1314080901231/js/materialSetModule.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/f076972f6491bb67b953fbb7232079e6352d0f63/works/1314080901231/js/materialSetModule.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901231/js/materialSetModule.js?ref=f076972f6491bb67b953fbb7232079e6352d0f63",
+    "patch" : "@@ -4,7 +4,7 @@ var materialSetModule = angular.module('materialSetModule', []);\n \n // use the myAppModule variable to\n // configure the module with a controller\n-materialSetModule.controller('MyFilterDemoCtrl', function ($scope) {\n+materialSetModule.controller('creatematerialSetDemoCtrl', function ($scope) {\n        // controller code would go here\n         var materialSet = {\n             typeName:\" ��� \",\n@@ -19,4 +19,4 @@ materialSetModule.controller('MyFilterDemoCtrl', function ($scope) {\n materialSetModule.filter('stripDashes', function() {\n     return function(txt) {\n         // filter code would go here\n-}; });\n\\ No newline at end of file\n+}; }); // javascript.js"
+  } ],
+  "sha" : "f076972f6491bb67b953fbb7232079e6352d0f63",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/f076972f6491bb67b953fbb7232079e6352d0f63",
+  "parents" : [ {
+    "sha" : "08a29a1a81394f9c502684adec64b0dd8ed8414b",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/08a29a1a81394f9c502684adec64b0dd8ed8414b",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/08a29a1a81394f9c502684adec64b0dd8ed8414b"
+  } ]
+}

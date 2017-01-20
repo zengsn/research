@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "zyzpig",
+    "id" : 18029384,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18029384?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zyzpig",
+    "html_url" : "https://github.com/zyzpig",
+    "followers_url" : "https://api.github.com/users/zyzpig/followers",
+    "following_url" : "https://api.github.com/users/zyzpig/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zyzpig/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zyzpig/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zyzpig/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zyzpig/orgs",
+    "repos_url" : "https://api.github.com/users/zyzpig/repos",
+    "events_url" : "https://api.github.com/users/zyzpig/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zyzpig/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 88,
+    "additions" : 88,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zyzpig",
+    "id" : 18029384,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18029384?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zyzpig",
+    "html_url" : "https://github.com/zyzpig",
+    "followers_url" : "https://api.github.com/users/zyzpig/followers",
+    "following_url" : "https://api.github.com/users/zyzpig/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zyzpig/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zyzpig/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zyzpig/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zyzpig/orgs",
+    "repos_url" : "https://api.github.com/users/zyzpig/repos",
+    "events_url" : "https://api.github.com/users/zyzpig/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zyzpig/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/17acae917853055406ef1767b9ead4098b94dff2",
+  "commit" : {
+    "author" : {
+      "name" : "zyzpig",
+      "email" : "451829679@qq.com",
+      "date" : "2016-05-18T00:28:43Z"
+    },
+    "committer" : {
+      "name" : "zyzpig",
+      "email" : "451829679@qq.com",
+      "date" : "2016-05-18T00:28:43Z"
+    },
+    "message" : "#95 #36 lab9",
+    "tree" : {
+      "sha" : "cf2a201946e8d40caadaf40a4d4bea8835254bf1",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/cf2a201946e8d40caadaf40a4d4bea8835254bf1"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/17acae917853055406ef1767b9ead4098b94dff2",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/17acae917853055406ef1767b9ead4098b94dff2/comments",
+  "files" : [ {
+    "sha" : "cba9d27078699d27134093e4c6645d41f76cd28b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903249/net1314080903249caculatorMainActivity.java",
+    "status" : "added",
+    "additions" : 88,
+    "deletions" : 0,
+    "changes" : 88,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/17acae917853055406ef1767b9ead4098b94dff2/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903249/net1314080903249caculatorMainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/17acae917853055406ef1767b9ead4098b94dff2/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903249/net1314080903249caculatorMainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903249/net1314080903249caculatorMainActivity.java?ref=17acae917853055406ef1767b9ead4098b94dff2",
+    "patch" : "@@ -0,0 +1,88 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903249;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.Button;\n+import android.widget.EditText;\n+\n+public class MainActivity extends AppCompatActivity {\n+\n+    private EditText ea,eb,ec,ed;\n+    private Button ba,bb,bc,bd,be;\n+    private int number1,number2,number3;\n+    int a,b,c,d;\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_main);\n+\n+        ea=(EditText)findViewById(R.id.ea);\n+        eb=(EditText)findViewById(R.id.eb);\n+        ec=(EditText)findViewById(R.id.ec);\n+        ed=(EditText)findViewById(R.id.ed);\n+        be=(Button)findViewById(R.id.be);\n+        ba=(Button)findViewById(R.id.ba);\n+        bb=(Button)findViewById(R.id.bb);\n+        bc=(Button)findViewById(R.id.bc);\n+        bd=(Button)findViewById(R.id.bd);\n+        be=(Button)findViewById(R.id.be);\n+\n+//监听按钮点击事件\n+        this.ba.setOnClickListener(new View.OnClickListener(){\n+            public void onClick(View arg0) {\n+//从EditText获取文本并转换成数字\n+                String str1 = ea.getText().toString();\n+                number1 = Integer.parseInt(str1);\n+                String str2 = ec.getText().toString();\n+                number2 = Integer.parseInt(str2);\n+                number3 = number2 + number1;\n+                eb.setText(\"+ \");\n+                ed.setText(number3+\"\");\n+            }\n+        });\n+        this.bb.setOnClickListener(new View.OnClickListener(){\n+            public void onClick(View arg0) {\n+//从EditText获取文本并转换成数字\n+                String str1 = ea.getText().toString();\n+                number1 = Integer.parseInt(str1);\n+                String str2 = ec.getText().toString();\n+                number2 = Integer.parseInt(str2);\n+                number3 = number1 - number2;\n+                ed.setText(number3+\"\");\n+            }\n+        });\n+        this.bc.setOnClickListener(new View.OnClickListener(){\n+            public void onClick(View arg0) {\n+//从EditText获取文本并转换成数字\n+                String str1 = ea.getText().toString();\n+                number1 = Integer.parseInt(str1);\n+                String str2 = ec.getText().toString();\n+                number2 = Integer.parseInt(str2);\n+                number3 = number2 * number1;\n+                ed.setText(number3+\"\");\n+            }\n+        });\n+        this.bd.setOnClickListener(new View.OnClickListener(){\n+            public void onClick(View arg0) {\n+//从EditText获取文本并转换成数字\n+                String str1 = ea.getText().toString();\n+                number1 = Integer.parseInt(str1);\n+                String str2 = ec.getText().toString();\n+                number2 = Integer.parseInt(str2);\n+                number3 = number1 / number2;\n+                ed.setText(number3+\"\");\n+            }\n+        });\n+\n+    }\n+\n+\n+\n+}"
+  } ],
+  "sha" : "17acae917853055406ef1767b9ead4098b94dff2",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/17acae917853055406ef1767b9ead4098b94dff2",
+  "parents" : [ {
+    "sha" : "24bdf7c8ef74bd1e8a6b64d8b951fc90c5b2ffe9",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/24bdf7c8ef74bd1e8a6b64d8b951fc90c5b2ffe9",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/24bdf7c8ef74bd1e8a6b64d8b951fc90c5b2ffe9"
+  } ]
+}

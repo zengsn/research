@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 69,
+    "additions" : 0,
+    "deletions" : 69
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/d5357e2c664779641e3f7b8e3b61d2b8f2b4d979",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T01:35:01Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T01:35:01Z"
+    },
+    "message" : "Delete qiandao.jsp",
+    "tree" : {
+      "sha" : "80807bb23d7dec5edca9e2c10eba140434ef9be2",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/80807bb23d7dec5edca9e2c10eba140434ef9be2"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/d5357e2c664779641e3f7b8e3b61d2b8f2b4d979",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/d5357e2c664779641e3f7b8e3b61d2b8f2b4d979/comments",
+  "files" : [ {
+    "sha" : "ed05a7a72a72b0a2b76f45ed00ea81a4916291f6",
+    "filename" : "jweb/web/1414080902226/qiandao.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 69,
+    "changes" : 69,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e4887cf36c8a4afd73d5563e4e187acff6699f5/jweb/web/1414080902226/qiandao.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e4887cf36c8a4afd73d5563e4e187acff6699f5/jweb/web/1414080902226/qiandao.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902226/qiandao.jsp?ref=6e4887cf36c8a4afd73d5563e4e187acff6699f5",
+    "patch" : "@@ -1,69 +0,0 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf-8\"%>\n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n-\n-<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n-<html>\n-  <head>\n-    <base href=\"<%=basePath%>\">\n-    \n-    <title>My JSP 'index.jsp' starting page</title>\n-\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n-\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n-\t<meta http-equiv=\"expires\" content=\"0\">    \n-\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n-\t<meta http-equiv=\"description\" content=\"This is my page\">\n-\t<!--\n-\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n-\t-->\n-  </head>\n-  <body > \n-  \t现在时间是：<%=new Date() %>\n-    <img src=\"timg.jpg\"width=100% height=100% >\n-    <div style=\"position:absolute; left:0; top:0; width:100%; height:100%\"> \n-    <script  type='text/javascript'>\n-\t\t\t    \n-\t\t\tfunction submitform(form){\n-\t\t\t    if(form.count.value=='') {\n-\t\t\t                alert(\"请输入学号!\");\n-\t\t\t                form.count.focus();\n-\t\t\t                return false;\n-\t\t\t           }\n-\t\t\t       if(form.password.value==''){\n-\t\t\t                alert(\"请输入班级!\");\n-\t\t\t                form.password.focus();\n-\t\t\t                return false;\n-\t\t\t         }\n-\t\t\t        form.action=\"/qiandaoxitong/servlet/qiandao.do\";\n-\t\t\t        form.submit();\n-\t\t\t}\n-\t\t\tfunction test(){\n-\t\t\t    alert(\"test\");\n-\t\t\t}\n-    </script>\n-\t<br>\n-\t<br>\n-        <form id=\"login_form\" method=\"post\"  >\n-            <div  style=\"width:100%;text-align:center\">\n-                   <p ><font color=\"#F00\" ><font size=\"4\">上课签到系统</font></font></p> </div>\n-            <div style=\"width:100%;text-align:center\">\n-                <label  class=\"t\"><font color=\"#F00\" >学 号：</font></label> \n-                <input id=\"count\" value=\"\" name=\"count\" type=\"text\">\n-            </div>\n-            \n-            <div style=\"width:100%;text-align:center\">\n-                <label  class=\"t\"><font color=\"#F00\" >班 级：</font></label> \n-                <input id=\"password\" value=\"\" name=\"password\" type=\"password\" >\n-            </div>\n-            <div style=\"width:100%;text-align:center\">\n-                <label class=\"t\"></label>　　　\n-                <input type=\"submit\"   onclick=\"submitform(this.form)\" value=\"&nbsp;签&nbsp;到&nbsp;\"> \n-                <input type=\"reset\" value=\"&nbsp;重&nbsp;置&nbsp;\">\n-            </div>\n-        </form>\n-    </div>\n-       \n-  </body>\n-</html>"
+  } ],
+  "sha" : "d5357e2c664779641e3f7b8e3b61d2b8f2b4d979",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d5357e2c664779641e3f7b8e3b61d2b8f2b4d979",
+  "parents" : [ {
+    "sha" : "6e4887cf36c8a4afd73d5563e4e187acff6699f5",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6e4887cf36c8a4afd73d5563e4e187acff6699f5",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/6e4887cf36c8a4afd73d5563e4e187acff6699f5"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "hahamg",
+    "id" : 22512215,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512215?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hahamg",
+    "html_url" : "https://github.com/hahamg",
+    "followers_url" : "https://api.github.com/users/hahamg/followers",
+    "following_url" : "https://api.github.com/users/hahamg/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hahamg/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hahamg/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hahamg/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hahamg/orgs",
+    "repos_url" : "https://api.github.com/users/hahamg/repos",
+    "events_url" : "https://api.github.com/users/hahamg/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hahamg/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 128,
+    "additions" : 0,
+    "deletions" : 128
+  },
+  "author" : {
+    "login" : "hahamg",
+    "id" : 22512215,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512215?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/hahamg",
+    "html_url" : "https://github.com/hahamg",
+    "followers_url" : "https://api.github.com/users/hahamg/followers",
+    "following_url" : "https://api.github.com/users/hahamg/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/hahamg/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/hahamg/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/hahamg/subscriptions",
+    "organizations_url" : "https://api.github.com/users/hahamg/orgs",
+    "repos_url" : "https://api.github.com/users/hahamg/repos",
+    "events_url" : "https://api.github.com/users/hahamg/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/hahamg/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/d1a98b9f7366f999b60deab048f4b64bf4a55a88",
+  "commit" : {
+    "author" : {
+      "name" : "hahamg",
+      "email" : "741778746@qq.com",
+      "date" : "2016-10-24T16:58:12Z"
+    },
+    "committer" : {
+      "name" : "hahamg",
+      "email" : "741778746@qq.com",
+      "date" : "2016-10-24T16:58:12Z"
+    },
+    "message" : "delete",
+    "tree" : {
+      "sha" : "ff3090c537a2e93142719a199e0d92f9c5e06660",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/ff3090c537a2e93142719a199e0d92f9c5e06660"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/d1a98b9f7366f999b60deab048f4b64bf4a55a88",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/d1a98b9f7366f999b60deab048f4b64bf4a55a88/comments",
+  "files" : [ {
+    "sha" : "820d3e08161623fc8d3108e8160e5553635fd5d4",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902222/Se1414080902222Servlet.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 46,
+    "changes" : 46,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/811ecf27e359fb7e4133d1921cd9e3334b114245/jweb/src/edu/hzu/javaweb/labs/se1414080902222/Se1414080902222Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/811ecf27e359fb7e4133d1921cd9e3334b114245/jweb/src/edu/hzu/javaweb/labs/se1414080902222/Se1414080902222Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902222/Se1414080902222Servlet.java?ref=811ecf27e359fb7e4133d1921cd9e3334b114245",
+    "patch" : "@@ -1,46 +0,0 @@\n-package edu.hzu.javaweb.labs.se1414080902222;\n-\n-import java.io.IOException;\n-import javax.servlet.ServletException;\n-import javax.servlet.annotation.WebServlet;\n-import javax.servlet.http.HttpServlet;\n-import javax.servlet.http.HttpServletRequest;\n-import javax.servlet.http.HttpServletResponse;\n-\n-/**\n- * Servlet implementation class Se1414080902222Servlet\n- */\n-@WebServlet(\"/Se1414080902222Servlet\")\n-public class Se1414080902222Servlet extends HttpServlet {\n-\tprivate static final long serialVersionUID = 1L;\n-       \n-    /**\n-     * @see HttpServlet#HttpServlet()\n-     */\n-    public Se1414080902222Servlet() {\n-        super();\n-        // TODO Auto-generated constructor stub\n-    }\n-\n-\t/**\n-\t * @see Servlet#destroy()\n-\t */\n-\tpublic void destroy() {\n-\t\t// TODO Auto-generated method stub\n-\t}\n-\n-\t/**\n-\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n-\t */\n-\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\t\t// TODO Auto-generated method stub\n-\t}\n-\n-\t/**\n-\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n-\t */\n-\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\t\t// TODO Auto-generated method stub\n-\t}\n-\n-}"
+  }, {
+    "sha" : "fb73abfae1acd95c466e8cf9fe3a24d25edd700e",
+    "filename" : "jweb/web/1414080902222/index.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 82,
+    "changes" : 82,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/811ecf27e359fb7e4133d1921cd9e3334b114245/jweb/web/1414080902222/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/811ecf27e359fb7e4133d1921cd9e3334b114245/jweb/web/1414080902222/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902222/index.jsp?ref=811ecf27e359fb7e4133d1921cd9e3334b114245",
+    "patch" : "@@ -1,82 +0,0 @@\n-<%@ page language=\"java\" import=\"java.util.*\" import=\"java.text.*\" pageEncoding=\"utf-8\"%>\n-<%\n-String path = request.getContextPath();\n-String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n-%>\n-\n-<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n-<html>\n-  <head> \n-   <meta charset=\"UTF-8\">\n-   <% SimpleDateFormat format = new SimpleDateFormat(\"yyyy年MM月dd日\");\n- out.println(format.format(new Date()));%>\n-    <title>比赛节目喜好调查</title>\n-    \n-    <link rel=\"stylesheet\" href=\"http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css\">  \n-  \n-\n-  </head>  \n-  <body> \n-     <% \n-     Date date = new Date();\n-     date.getTime() ;\n-    %>\n-\n-   <h3 align=\"center\">比赛节目喜好调查</h3>\n-     <form  name=\"stu\" action=\"\"> \n-      <table> \n-       \n-       <tr> <td>性别：</td>\n-           <td><input type=\"radio\" name=\"stuSex\" checked=\"checked\" >男 \n-               <input type=\"radio\" name=\"stuSex\" >女\n-           </td>\n-       </tr> \n-       <tr> <td>出生日期</td> \n-          <td><input type=\"text\" name=\"stuBirthday\" class=\"form-control\"></td> \n-       </tr> \n-       <tr> <td>职业：</td><td><input type=\"text\" name=\"jobs\" class=\"form-control\"></td></tr> \n-       <tr><td>偏好：</td>\n-          <td><select name =\"stuSelect2\">\n-                <option selected>篮球</option>\n-                <option >足球</option>   \n-                <option >拳击</option>\n-                <option >游戏竞技</option>\n-             <lect>\n-          </td>\n-       </tr> \n-       <tr> <td>平时有看：</td>\n-           <td colspan=\"2\">\n-              <input type=\"checkbox\" name=\"stuCheck\" >NBA\n-              <input type=\"checkbox\" name=\"stuCheck\" >欧冠\n-              <input type=\"checkbox\" name=\"stuCheck\" >WWE\n-              <input type=\"checkbox\" name=\"stuCheck\" >LOL比赛\n-          </td>\n-       </tr> \n-       \n-       <tr><td>您的建议：</td>\n-          <td colspan=\"2\"><textarea name=\"Letter\" rows=\"4\" cols=\"40\" class=\"form-control\"></textarea> </td>\n-       </tr> \n-       <tr>\n-         <td><button type=\"button\" class=\"btn btn-default\">提交</td>\n-         <td><input type=\"reset\" value=\"取消\"></td>\n-       </tr> \n-     </table> \n-   </form> \n-  </body>\n- \t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n-    <script type=\"text/javascript\">\n-      $( \".btn\" ).click(function() {\n-        $.ajax({ \n-          url: \"servlet/Se1414080902222Servlet\",\n-          type : \"get\",\n-          datatype:\"html\",\n-          success: function(data){\n-            alert(data);\n-        }});\n-      });\n-    </script>\n-\n-\n-</script>\n-</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "d1a98b9f7366f999b60deab048f4b64bf4a55a88",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/d1a98b9f7366f999b60deab048f4b64bf4a55a88",
+  "parents" : [ {
+    "sha" : "811ecf27e359fb7e4133d1921cd9e3334b114245",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/811ecf27e359fb7e4133d1921cd9e3334b114245",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/811ecf27e359fb7e4133d1921cd9e3334b114245"
+  } ]
+}

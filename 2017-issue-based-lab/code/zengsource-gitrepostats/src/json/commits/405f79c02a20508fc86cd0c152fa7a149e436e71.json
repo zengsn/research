@@ -1,0 +1,117 @@
+{
+  "committer" : {
+    "login" : "Liuzhuanglin",
+    "id" : 17776669,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17776669?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Liuzhuanglin",
+    "html_url" : "https://github.com/Liuzhuanglin",
+    "followers_url" : "https://api.github.com/users/Liuzhuanglin/followers",
+    "following_url" : "https://api.github.com/users/Liuzhuanglin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Liuzhuanglin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Liuzhuanglin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Liuzhuanglin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Liuzhuanglin/orgs",
+    "repos_url" : "https://api.github.com/users/Liuzhuanglin/repos",
+    "events_url" : "https://api.github.com/users/Liuzhuanglin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Liuzhuanglin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 420,
+    "additions" : 418,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "Liuzhuanglin",
+    "id" : 17776669,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17776669?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Liuzhuanglin",
+    "html_url" : "https://github.com/Liuzhuanglin",
+    "followers_url" : "https://api.github.com/users/Liuzhuanglin/followers",
+    "following_url" : "https://api.github.com/users/Liuzhuanglin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Liuzhuanglin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Liuzhuanglin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Liuzhuanglin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Liuzhuanglin/orgs",
+    "repos_url" : "https://api.github.com/users/Liuzhuanglin/repos",
+    "events_url" : "https://api.github.com/users/Liuzhuanglin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Liuzhuanglin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/405f79c02a20508fc86cd0c152fa7a149e436e71",
+  "commit" : {
+    "author" : {
+      "name" : "Liuzhuanglin",
+      "email" : "1213212374@qq.com",
+      "date" : "2016-04-28T15:18:02Z"
+    },
+    "committer" : {
+      "name" : "Liuzhuanglin",
+      "email" : "1213212374@qq.com",
+      "date" : "2016-04-28T15:18:02Z"
+    },
+    "message" : "#88 #89 #378 lab2 lab3",
+    "tree" : {
+      "sha" : "f7fac36e4fce5565e486b3c0931ec4d2bcd7d595",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/f7fac36e4fce5565e486b3c0931ec4d2bcd7d595"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/405f79c02a20508fc86cd0c152fa7a149e436e71",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/405f79c02a20508fc86cd0c152fa7a149e436e71/comments",
+  "files" : [ {
+    "sha" : "201e2ba640826d09b6380fdf9bcc1fe37bcc760b",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/CustomDigitalClock.java",
+    "status" : "added",
+    "additions" : 181,
+    "deletions" : 0,
+    "changes" : 181,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/405f79c02a20508fc86cd0c152fa7a149e436e71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/CustomDigitalClock.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/405f79c02a20508fc86cd0c152fa7a149e436e71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/CustomDigitalClock.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/CustomDigitalClock.java?ref=405f79c02a20508fc86cd0c152fa7a149e436e71",
+    "patch" : "@@ -0,0 +1,181 @@\n+package net1314080903128.homeworks.androidworks.hzuapps.edu.net1314080903128;\n+import java.util.Calendar;\n+import android.content.Context;\n+import android.database.ContentObserver;\n+import android.os.Handler;\n+import android.os.SystemClock;\n+import android.provider.Settings;\n+import android.text.Html;\n+import android.text.Spannable;\n+import android.text.Spanned;\n+import android.text.style.AbsoluteSizeSpan;\n+import android.util.AttributeSet;\n+import android.widget.DigitalClock;\n+/**\n+ * Created by LZL on 2016/4/27.\n+ */\n+public class CustomDigitalClock extends DigitalClock {\n+    Calendar mCalendar;\n+    private final static String m12 = \"h:mm aa\";\n+    private final static String m24 = \"k:mm\";\n+    private FormatChangeObserver mFormatChangeObserver;\n+    private Runnable mTicker;\n+    private Handler mHandler;\n+    private long endTime;\n+    public static long distanceTime;\n+    private ClockListener mClockListener;\n+    private static boolean isFirst;\n+    private boolean mTickerStopped;\n+    @SuppressWarnings(\"unused\")\n+    private String mFormat;\n+    public CustomDigitalClock(Context context) {\n+        super(context);\n+        initClock(context);\n+    }\n+    public CustomDigitalClock(Context context, AttributeSet attrs) {\n+        super(context, attrs);\n+        initClock(context);\n+    }\n+    private void initClock(Context context) {\n+        if (mCalendar == null) {\n+            mCalendar = Calendar.getInstance();\n+        }\n+        mFormatChangeObserver = new FormatChangeObserver();\n+        getContext().getContentResolver().registerContentObserver(\n+                Settings.System.CONTENT_URI, true, mFormatChangeObserver);\n+        setFormat();\n+    }\n+    @Override\n+    protected void onAttachedToWindow() {\n+        mTickerStopped = false;\n+        super.onAttachedToWindow();\n+        mHandler = new Handler();\n+/**\n+ * requests a tick on the next hard-second boundary\n+ */\n+        mTicker = new Runnable() {\n+            public void run() {\n+                if (mTickerStopped)\n+                    return;\n+                long currentTime = System.currentTimeMillis();\n+                if (currentTime / 1000 == endTime / 1000 - 5 * 60) {\n+                    mClockListener.remainFiveMinutes();\n+                }\n+                distanceTime = endTime - currentTime;\n+                distanceTime /= 1000;\n+                if (distanceTime == 0) {\n+                    setText(\"00:00:00\");\n+                    onDetachedFromWindow();\n+                } else if (distanceTime < 0) {\n+                    setText(\"00:00:00\");\n+                    onDetachedFromWindow();\n+                } else {\n+                    setText(dealTime(distanceTime));\n+                }\n+                invalidate();\n+                long now = SystemClock.uptimeMillis();\n+                long next = now + (1000 - now % 1000);\n+                mHandler.postAtTime(mTicker, next);\n+            }\n+        };\n+        mTicker.run();\n+    }\n+    /**\n+     * deal time string\n+     *\n+     * @param time\n+     * @return\n+     */\n+    public static Spanned dealTime(long time) {\n+        Spanned str;\n+        StringBuffer returnString = new StringBuffer();\n+        long day = time / (24 * 60 * 60);\n+        long hours = (time % (24 * 60 * 60)) / (60 * 60);\n+        long minutes = ((time % (24 * 60 * 60)) % (60 * 60)) / 60;\n+        long second = ((time % (24 * 60 * 60)) % (60 * 60)) % 60;\n+        String dayStr = String.valueOf(day);\n+        String hoursStr = timeStrFormat(String.valueOf(hours));\n+        String minutesStr = timeStrFormat(String.valueOf(minutes));\n+        String secondStr = timeStrFormat(String.valueOf(second));\n+        returnString.append(dayStr).append(\"天\").append(hoursStr).append(\"小时\")\n+                .append(minutesStr).append(\"分钟\").append(secondStr).append(\"秒\");\n+        str = Html.fromHtml(returnString.toString());\n+        if (day >= 10) {\n+            ((Spannable) str).setSpan(new AbsoluteSizeSpan(16), 2, 3,\n+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);\n+            ((Spannable) str).setSpan(new AbsoluteSizeSpan(16), 5, 7,\n+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);\n+            ((Spannable) str).setSpan(new AbsoluteSizeSpan(16), 9, 11,\n+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);\n+            ((Spannable) str).setSpan(new AbsoluteSizeSpan(16), 13, 14,\n+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);\n+        } else {\n+            ((Spannable) str).setSpan(new AbsoluteSizeSpan(16), 1, 2,\n+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);\n+            ((Spannable) str).setSpan(new AbsoluteSizeSpan(16), 4, 6,\n+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);\n+            ((Spannable) str).setSpan(new AbsoluteSizeSpan(16), 8, 10,\n+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);\n+            ((Spannable) str).setSpan(new AbsoluteSizeSpan(16), 12, 13,\n+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);\n+        }\n+// return returnString.toString();\n+        return str;\n+    }\n+    /**\n+     * format time\n+     *\n+     * @param timeStr\n+     * @return\n+     */\n+    private static String timeStrFormat(String timeStr) {\n+        switch (timeStr.length()) {\n+            case 1:\n+                timeStr = \"0\" + timeStr;\n+                break;\n+        }\n+        return timeStr;\n+    }\n+    @Override\n+    protected void onDetachedFromWindow() {\n+        super.onDetachedFromWindow();\n+        mTickerStopped = true;\n+    }\n+    /**\n+     * Clock end time from now on.\n+     *\n+     * @param endTime\n+     */\n+    public void setEndTime(long endTime) {\n+        this.endTime = endTime;\n+    }\n+    /**\n+     * Pulls 12/24 mode from system settings\n+     */\n+    private boolean get24HourMode() {\n+        return android.text.format.DateFormat.is24HourFormat(getContext());\n+    }\n+    private void setFormat() {\n+        if (get24HourMode()) {\n+            mFormat = m24;\n+        } else {\n+            mFormat = m12;\n+        }\n+    }\n+    private class FormatChangeObserver extends ContentObserver {\n+        public FormatChangeObserver() {\n+            super(new Handler());\n+        }\n+        @Override\n+        public void onChange(boolean selfChange) {\n+            setFormat();\n+        }\n+    }\n+    public void setClockListener(ClockListener clockListener) {\n+        this.mClockListener = clockListener;\n+    }\n+    public interface ClockListener {\n+        void timeEnd();\n+        void remainFiveMinutes();\n+    }\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "37d4521603ceef3973c5550c84f614a9ce253177",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/Net1314080903128Activity.java",
+    "status" : "modified",
+    "additions" : 80,
+    "deletions" : 2,
+    "changes" : 82,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/405f79c02a20508fc86cd0c152fa7a149e436e71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/Net1314080903128Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/405f79c02a20508fc86cd0c152fa7a149e436e71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/Net1314080903128Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/Net1314080903128Activity.java?ref=405f79c02a20508fc86cd0c152fa7a149e436e71",
+    "patch" : "@@ -1,13 +1,91 @@\n package net1314080903128.homeworks.androidworks.hzuapps.edu.net1314080903128;\n \n+\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+\n import android.support.v7.app.AppCompatActivity;\n import android.os.Bundle;\n \n-public class Net1314080903128Activity extends AppCompatActivity {\n+\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.view.Window;\n+import android.widget.Button;\n+import android.widget.EditText;\n+\n+import java.util.ArrayList;\n+\n+\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.view.Window;\n+import android.widget.Button;\n+import android.widget.EditText;\n+\n+public class Net1314080903128Activity extends Activity {\n+\n+    Button startButton;\n+    EditText minuteText;\n+    EditText secondText;\n+    int minute;\n+    int second;\n \n     @Override\n-    protected void onCreate(Bundle savedInstanceState) {\n+    public void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n+        requestWindowFeature(Window.FEATURE_NO_TITLE);\n         setContentView(R.layout.activity_net1314080903128);\n+\n+        startButton = (Button) findViewById(R.id.button_start);\n+        minuteText = (EditText) findViewById(R.id.minute);\n+        secondText = (EditText) findViewById(R.id.second);\n+\n+        startButton.setOnClickListener(new OnClickListener() {\n+\n+            @Override\n+            public void onClick(View v) {\n+                if (!minuteText.getText().toString().equals(\"\")) {\n+                    minute = Integer.parseInt(minuteText.getText().toString());\n+                }\n+                if (!secondText.getText().toString().equals(\"\")) {\n+                    second = Integer.parseInt(secondText.getText().toString());\n+                }\n+                if (minute != 0 || second != 0) {\n+                    System.out.println(minute + \":\" + second);\n+\n+                    ArrayList<Integer> list = new ArrayList<Integer>();\n+                    list.add(minute);\n+                    list.add(second);\n+\n+                    Intent intent = new Intent();\n+                    intent.setAction(\"com.huazi.MyTimer.StartActivity\");\n+\n+                    intent.putIntegerArrayListExtra(\"times\", list);\n+                    startActivity(intent);\n+                }\n+            }\n+        });\n+    }\n+\n+    @Override\n+    protected void onResume() {\n+        // TODO Auto-generated method stub\n+        minute = 0;\n+        second = 0;\n+        super.onResume();\n     }\n }\n+\n+\n+\n+\n+"
+  }, {
+    "sha" : "65aae9836fbc12eff9a9e2e98a4711eefda3f138",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/StartActivity.java",
+    "status" : "added",
+    "additions" : 157,
+    "deletions" : 0,
+    "changes" : 157,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/405f79c02a20508fc86cd0c152fa7a149e436e71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/StartActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/405f79c02a20508fc86cd0c152fa7a149e436e71/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/StartActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903128/StartActivity.java?ref=405f79c02a20508fc86cd0c152fa7a149e436e71",
+    "patch" : "@@ -0,0 +1,157 @@\n+package net1314080903128.homeworks.androidworks.hzuapps.edu.net1314080903128;\n+\n+/**\n+ * Created by LZL on 2016/4/28.\n+ */\n+import java.util.ArrayList;\n+import java.util.Timer;\n+import java.util.TimerTask;\n+\n+import android.app.Activity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.util.Log;\n+import android.view.Window;\n+import android.widget.TextView;\n+\n+\n+\n+public class StartActivity extends Activity{\n+\n+    static int minute = -1;\n+    static int second = -1;\n+    final static String tag = \"tag\";\n+    TextView timeView;\n+    Timer timer;\n+    TimerTask  timerTask;\n+    Handler handler = new Handler(){\n+        public void handleMessage(Message msg) {\n+            System.out.println(\"handle!\");\n+            if (minute == 0) {\n+                if (second == 0) {\n+                    timeView.setText(\"下课啦!\");\n+                    if (timer != null) {\n+                        timer.cancel();\n+                        timer = null;\n+                    }\n+                    if (timerTask != null) {\n+                        timerTask = null;\n+                    }\n+                }else {\n+                    second--;\n+                    if (second >= 10) {\n+                        timeView.setText(\"0\"+minute + \":\" + second);\n+                    }else {\n+                        timeView.setText(\"0\"+minute + \":0\" + second);\n+                    }\n+                }\n+            }else {\n+                if (second == 0) {\n+                    second =59;\n+                    minute--;\n+                    if (minute >= 10) {\n+                        timeView.setText(minute + \":\" + second);\n+                    }else {\n+                        timeView.setText(\"0\"+minute + \":\" + second);\n+                    }\n+                }else {\n+                    second--;\n+                    if (second >= 10) {\n+                        if (minute >= 10) {\n+                            timeView.setText(minute + \":\" + second);\n+                        }else {\n+                            timeView.setText(\"0\"+minute + \":\" + second);\n+                        }\n+                    }else {\n+                        if (minute >= 10) {\n+                            timeView.setText(minute + \":0\" + second);\n+                        }else {\n+                            timeView.setText(\"0\"+minute + \":0\" + second);\n+                        }\n+                    }\n+                }\n+            }\n+        };\n+    };\n+\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        Log.v(tag, \"log---------->onCreate!\");\n+        requestWindowFeature(Window.FEATURE_NO_TITLE);\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.start);\n+        timeView = (TextView)findViewById(R.id.myTime);\n+\n+        if (minute == -1 && second == -1) {\n+            Intent intent = getIntent();\n+            ArrayList<Integer> times = intent.getIntegerArrayListExtra(\"times\");\n+            minute = times.get(0);\n+            second = times.get(1);\n+        }\n+\n+        timeView.setText(minute + \":\" + second);\n+\n+        timerTask = new TimerTask() {\n+\n+            @Override\n+            public void run() {\n+                Message msg = new Message();\n+                msg.what = 0;\n+                handler.sendMessage(msg);\n+            }\n+        };\n+\n+        timer = new Timer();\n+        timer.schedule(timerTask,0,1000);\n+\n+    }\n+\n+    @Override\n+    protected void onDestroy() {\n+        Log.v(tag, \"log---------->onDestroy!\");\n+        if (timer != null) {\n+            timer.cancel();\n+            timer = null;\n+        }\n+        if (timerTask != null) {\n+            timerTask = null;\n+        }\n+        minute = -1;\n+        second = -1;\n+        super.onDestroy();\n+    }\n+\n+    @Override\n+    protected void onStart() {\n+        Log.v(tag, \"log---------->onStart!\");\n+        super.onStart();\n+    }\n+\n+    @Override\n+    protected void onStop() {\n+        Log.v(tag, \"log---------->onStop!\");\n+        super.onStop();\n+    }\n+\n+    @Override\n+    protected void onResume() {\n+        Log.v(tag, \"log---------->onResume!\");\n+        super.onResume();\n+    }\n+\n+    @Override\n+    protected void onRestart() {\n+        Log.v(tag, \"log---------->onRestart!\");\n+        super.onRestart();\n+    }\n+\n+    @Override\n+    protected void onPause() {\n+        Log.v(tag, \"log---------->onPause!\");\n+        super.onPause();\n+    }\n+\n+}"
+  }, {
+    "sha" : "3d1bf656df5352406434b77fd77e4a66232b9e6a",
+    "filename" : "app/src/main/res/drawable/Net1314080903128Timer.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/405f79c02a20508fc86cd0c152fa7a149e436e71/app/src/main/res/drawable/Net1314080903128Timer.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/405f79c02a20508fc86cd0c152fa7a149e436e71/app/src/main/res/drawable/Net1314080903128Timer.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/Net1314080903128Timer.jpg?ref=405f79c02a20508fc86cd0c152fa7a149e436e71"
+  } ],
+  "sha" : "405f79c02a20508fc86cd0c152fa7a149e436e71",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/405f79c02a20508fc86cd0c152fa7a149e436e71",
+  "parents" : [ {
+    "sha" : "9ef4413f022b79043235c812f3503836a6de1214",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/9ef4413f022b79043235c812f3503836a6de1214",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/9ef4413f022b79043235c812f3503836a6de1214"
+  } ]
+}

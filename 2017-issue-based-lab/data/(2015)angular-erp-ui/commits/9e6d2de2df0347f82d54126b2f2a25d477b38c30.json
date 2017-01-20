@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Pyanz",
+    "id" : 14278249,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14278249?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Pyanz",
+    "html_url" : "https://github.com/Pyanz",
+    "followers_url" : "https://api.github.com/users/Pyanz/followers",
+    "following_url" : "https://api.github.com/users/Pyanz/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Pyanz/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Pyanz/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Pyanz/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Pyanz/orgs",
+    "repos_url" : "https://api.github.com/users/Pyanz/repos",
+    "events_url" : "https://api.github.com/users/Pyanz/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Pyanz/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 47,
+    "additions" : 33,
+    "deletions" : 14
+  },
+  "author" : {
+    "login" : "Pyanz",
+    "id" : 14278249,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14278249?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Pyanz",
+    "html_url" : "https://github.com/Pyanz",
+    "followers_url" : "https://api.github.com/users/Pyanz/followers",
+    "following_url" : "https://api.github.com/users/Pyanz/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Pyanz/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Pyanz/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Pyanz/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Pyanz/orgs",
+    "repos_url" : "https://api.github.com/users/Pyanz/repos",
+    "events_url" : "https://api.github.com/users/Pyanz/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Pyanz/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/9e6d2de2df0347f82d54126b2f2a25d477b38c30",
+  "commit" : {
+    "author" : {
+      "name" : "Pyanz",
+      "email" : "506370037@qq.com",
+      "date" : "2015-10-28T04:37:26Z"
+    },
+    "committer" : {
+      "name" : "Pyanz",
+      "email" : "506370037@qq.com",
+      "date" : "2015-10-28T04:37:26Z"
+    },
+    "message" : "实验四\n\n添加.js文件",
+    "tree" : {
+      "sha" : "56e57efbc70320aa8fa2c776d574237ec76fad7d",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/56e57efbc70320aa8fa2c776d574237ec76fad7d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/9e6d2de2df0347f82d54126b2f2a25d477b38c30",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9e6d2de2df0347f82d54126b2f2a25d477b38c30/comments",
+  "files" : [ {
+    "sha" : "2ad32f7a13d3599f9cee7b493ebaf8978e2f8088",
+    "filename" : "works/1314080901227/index.html",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 14,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9e6d2de2df0347f82d54126b2f2a25d477b38c30/works/1314080901227/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9e6d2de2df0347f82d54126b2f2a25d477b38c30/works/1314080901227/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901227/index.html?ref=9e6d2de2df0347f82d54126b2f2a25d477b38c30",
+    "patch" : "@@ -1,5 +1,6 @@\n <!DOCTYPE html>\n-<html lang=\"zh-CN\">\n+<html ng-app=\"Processingflow\">\n+<head lang=\"en\">\n   <head>\n     <meta charset=\"utf-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n@@ -20,21 +21,12 @@\n       <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n       <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n     <![endif]-->\n-    <script>\n-    function MyFilterDemoCtrl($scope) {\n-        var someData = {\n-          id: '待处理流程编号',\n-          name: '流程名称',\n-          operation: '操作',\n-          fitness: '状态',\n-          dateJoined: new Date(2010, 2, 23),\n-        };\n-        $scope.data = someData;\n-        } \n-    </script>\n+  <script src=\"../lib/angular-1.4.5/angular.min.js\"></script>\n+  <script src=\"js/Processingflow.js\"></script>\n     \n   </head>\n-  <body>\n+  <body ng-controller=\"MyFilterDemoCtrl\">\n+    <p>名字：{{data.name}}</p>\n     <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n       <div class=\"container\">\n         <div class=\"navbar-header\">"
+  }, {
+    "sha" : "06a7570c6bacbd6765d53e40b896aff2b155109c",
+    "filename" : "works/1314080901227/js/Processingflow.js",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/9e6d2de2df0347f82d54126b2f2a25d477b38c30/works/1314080901227/js/Processingflow.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/9e6d2de2df0347f82d54126b2f2a25d477b38c30/works/1314080901227/js/Processingflow.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901227/js/Processingflow.js?ref=9e6d2de2df0347f82d54126b2f2a25d477b38c30",
+    "patch" : "@@ -0,0 +1,27 @@\n+// create a new module called 'myAppModule' and save \n+// a reference to it in a variable called myAppModule \n+var myAppModule = angular.module('supplierInformationModule', []);\n+\n+// use the myAppModule variable to\n+// configure the module with a controller\n+myAppModule.controller('MyFilterDemoCtrl', function ($scope) {\n+// function MyFilterDemoCtrl($scope) {\n+        var someData = {\n+          id: '待处理流程编号',\n+          name: '流程名称',\n+          operation: '操作',\n+          fitness: '状态',\n+          dateJoined: new Date(2010, 2, 23),\n+        };\n+        $scope.data = someData;\n+    }\n+       // controller code would go here\n+);\n+ \n+\n+// use the myAppModule variable to\n+// configure the module with a filter\n+myAppModule.filter('stripDashes', function() {\n+    return function(txt) {\n+        // filter code would go here\n+}; });\n\\ No newline at end of file"
+  } ],
+  "sha" : "9e6d2de2df0347f82d54126b2f2a25d477b38c30",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/9e6d2de2df0347f82d54126b2f2a25d477b38c30",
+  "parents" : [ {
+    "sha" : "08cc00dad7e87a3b030c6dd6f50247be4bbc4546",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/08cc00dad7e87a3b030c6dd6f50247be4bbc4546",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/08cc00dad7e87a3b030c6dd6f50247be4bbc4546"
+  } ]
+}

@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "SilentIce",
+    "id" : 17781720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17781720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SilentIce",
+    "html_url" : "https://github.com/SilentIce",
+    "followers_url" : "https://api.github.com/users/SilentIce/followers",
+    "following_url" : "https://api.github.com/users/SilentIce/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SilentIce/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SilentIce/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SilentIce/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SilentIce/orgs",
+    "repos_url" : "https://api.github.com/users/SilentIce/repos",
+    "events_url" : "https://api.github.com/users/SilentIce/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SilentIce/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 74,
+    "additions" : 74,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "SilentIce",
+    "id" : 17781720,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17781720?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SilentIce",
+    "html_url" : "https://github.com/SilentIce",
+    "followers_url" : "https://api.github.com/users/SilentIce/followers",
+    "following_url" : "https://api.github.com/users/SilentIce/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SilentIce/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SilentIce/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SilentIce/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SilentIce/orgs",
+    "repos_url" : "https://api.github.com/users/SilentIce/repos",
+    "events_url" : "https://api.github.com/users/SilentIce/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SilentIce/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/392c07decb29036e229040c66f377412d51c36e6",
+  "commit" : {
+    "author" : {
+      "name" : "SilentIce",
+      "email" : "better_ice@163.com",
+      "date" : "2016-04-27T08:08:17Z"
+    },
+    "committer" : {
+      "name" : "SilentIce",
+      "email" : "better_ice@163.com",
+      "date" : "2016-04-27T08:08:17Z"
+    },
+    "message" : "#88 #18 lab2",
+    "tree" : {
+      "sha" : "29b3e4a271041e71b537ffdb4bb4ce3307505231",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/29b3e4a271041e71b537ffdb4bb4ce3307505231"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/392c07decb29036e229040c66f377412d51c36e6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/392c07decb29036e229040c66f377412d51c36e6/comments",
+  "files" : [ {
+    "sha" : "8e8a4a828916e755e5b22390b024a3201c8f6119",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_MainActivity.java",
+    "status" : "added",
+    "additions" : 74,
+    "deletions" : 0,
+    "changes" : 74,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/392c07decb29036e229040c66f377412d51c36e6/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/392c07decb29036e229040c66f377412d51c36e6/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903209/Net1314080903209_MainActivity.java?ref=392c07decb29036e229040c66f377412d51c36e6",
+    "patch" : "@@ -0,0 +1,74 @@\n+package com.example.ice.myapplication;\n+\n+import android.net.Uri;\n+import android.os.Handler;\n+import android.os.Message;\n+import android.support.v7.app.AppCompatActivity;\n+import android.os.Bundle;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+import android.widget.EditText;\n+\n+import com.example.ice.myapplication.SmsObserver;\n+\n+public class Net1314080903209_MainActivity extends AppCompatActivity {\n+\n+    public static final int MSG_RECEIVED_CODE = 1;\n+\n+    private EditText et_ValidateCode = null;\n+\n+    private SmsObserver mObserver;\n+    private Handler mHandler = new Handler() {\n+        @Override\n+        public void handleMessage(Message msg) {\n+            if (msg.what == MSG_RECEIVED_CODE) {\n+                String code = (String)msg.obj;\n+                //update the UI\n+                et_ValidateCode.setText(code);\n+            }\n+        }\n+    };\n+\n+    @Override\n+    protected void onPause() {\n+        super.onPause();\n+        getContentResolver().unregisterContentObserver(mObserver);\n+    }\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903209_main);\n+\n+        et_ValidateCode = (EditText)findViewById(R.id.et_validateCode);\n+\n+        mObserver = new SmsObserver(Net1314080903209_MainActivity.this, mHandler);\n+        Uri uri = Uri.parse(\"content://sms\");\n+        getContentResolver().registerContentObserver(uri, true, mObserver);\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+//        getMenuInflater().inflate(R.menu.menu_main, menu);\n+        getMenuInflater().inflate(R.menu.menu_net1314080903209__main, menu);\n+\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        //如果发送号码相同，执行验证码提取\n+        if (id == R.id.action_settings) {\n+           return true;\n+       }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  } ],
+  "sha" : "392c07decb29036e229040c66f377412d51c36e6",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/392c07decb29036e229040c66f377412d51c36e6",
+  "parents" : [ {
+    "sha" : "1f79f229e0ebeb18f3a9f92171829be355c7f6ce",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/1f79f229e0ebeb18f3a9f92171829be355c7f6ce",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/1f79f229e0ebeb18f3a9f92171829be355c7f6ce"
+  } ]
+}

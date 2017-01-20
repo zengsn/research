@@ -1,0 +1,82 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 225,
+    "additions" : 225,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1a00432b55283a7394250e1c4fde60f8979fe7c1",
+  "commit" : {
+    "author" : {
+      "name" : "zoukewen",
+      "email" : "zoukewen",
+      "date" : "2016-12-09T03:12:42Z"
+    },
+    "committer" : {
+      "name" : "zoukewen",
+      "email" : "zoukewen",
+      "date" : "2016-12-09T03:12:42Z"
+    },
+    "message" : "#7",
+    "tree" : {
+      "sha" : "0c71e72ab6512e03a5cfdfec1168f980cb2b4ed6",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/0c71e72ab6512e03a5cfdfec1168f980cb2b4ed6"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1a00432b55283a7394250e1c4fde60f8979fe7c1",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1a00432b55283a7394250e1c4fde60f8979fe7c1/comments",
+  "files" : [ {
+    "sha" : "0e0d811bfe2e982713a23af8b78b464df843e4a3",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902104/DbConnection.java",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1a00432b55283a7394250e1c4fde60f8979fe7c1/jweb/src/edu/hzu/javaweb/labs/se1414080902104/DbConnection.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1a00432b55283a7394250e1c4fde60f8979fe7c1/jweb/src/edu/hzu/javaweb/labs/se1414080902104/DbConnection.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902104/DbConnection.java?ref=1a00432b55283a7394250e1c4fde60f8979fe7c1",
+    "patch" : "@@ -0,0 +1,39 @@\n+package JDBC;\n+ \n+ import java.sql.Connection;\n+ import java.sql.DriverManager;\n+ import java.sql.PreparedStatement;\n+ import java.sql.ResultSet;\n+ import java.sql.SQLException;\n+ \n+  public class DbConnect {\n+  private static String driverName=\"com.mysql.jdbc.Driver\";\n+  private static String userName=\"root\";\n+  private static String userPwd=\"root\";\n+  private static String dbName=\"students\";\n+  static Connection getDBConnection(){\n+ \t String url1=\"jdbc:mysql://localhost:3306/\"+dbName;\n+ \t String url2=\"?user=\"+userName+\"&password=\"+userPwd;\n+ \t String url3=\"&userUnicode=true&characterEncoding=utf8&useSSL=true\";\n+\t String url=url1+url2+url3;\n+ \t try{\n+ \t\t Class.forName(driverName);\n+ \t\t Connection con=DriverManager.getConnection(url);\n+ \t\t return con;\n+ \t }catch(Exception e){\n+ \t\t e.printStackTrace();\n+ \t }\n+ \treturn null;\n+ \t \n+  }\n+  public static void closeDB(Connection con,PreparedStatement pstm,ResultSet rs){\n+ \t try{\n+ \t\t if(rs!=null)rs.close();\n+ \t\t if(pstm!=null)pstm.close();\n+ \t\t if(con!=null)con.close();\n+ \t }catch(SQLException e){\n+ \t\t e.printStackTrace();\n+ \t }\n+  }\n+ \t\t \n+ }\n\\ No newline at end of file"
+  }, {
+    "sha" : "76c8271c5e43c4953248c558b4a4cb56f216d00c",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902104/Index.jsp",
+    "status" : "added",
+    "additions" : 11,
+    "deletions" : 0,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1a00432b55283a7394250e1c4fde60f8979fe7c1/jweb/src/edu/hzu/javaweb/labs/se1414080902104/Index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1a00432b55283a7394250e1c4fde60f8979fe7c1/jweb/src/edu/hzu/javaweb/labs/se1414080902104/Index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902104/Index.jsp?ref=1a00432b55283a7394250e1c4fde60f8979fe7c1",
+    "patch" : "@@ -0,0 +1,11 @@\n+</div>\n+  \t<div class=\"row\">\n+  \t\t<div class=\"span4\" style=\"float:left;width: 20%\" >\n+ \t\t\t<form class=\"form-horizontal\" id=\"target\" style=\"height: 250px;margin-top:2%\" action=\"loginServlet\" method=\"get\">\n+ \t\t\t<form class=\"form-horizontal\" id=\"target\" style=\"height: 250px;margin-top:2%\" action=\"Second.jsp\" method=\"get\">\n+  \t\t\t\t<div class=\"control-group\">\n+ \t\t\t\t\t<label class=\"control-label\" for=\"inputEmail\">��&nbsp;��</label>\n+ \t\t\t\t\t<label class=\"control-label\" for=\"inputEmail\">ѧ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;��</label>\n+  \t\t\t\t\t<div class=\"controls\">\n+  \t\t\t\t\t\t<input id=\"inputEmail\" type=\"text\" name=\"username\" />\n+  \t\t\t\t\t</div>\n\\ No newline at end of file"
+  }, {
+    "sha" : "5862f9813fb7879724725e54e7bb65d83838420e",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902104/Student.java",
+    "status" : "added",
+    "additions" : 48,
+    "deletions" : 0,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1a00432b55283a7394250e1c4fde60f8979fe7c1/jweb/src/edu/hzu/javaweb/labs/se1414080902104/Student.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1a00432b55283a7394250e1c4fde60f8979fe7c1/jweb/src/edu/hzu/javaweb/labs/se1414080902104/Student.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902104/Student.java?ref=1a00432b55283a7394250e1c4fde60f8979fe7c1",
+    "patch" : "@@ -0,0 +1,48 @@\n+package JDBC;\n+ \n+ public class Student {\n+ private int id;\n+ private String name;\n+ private String sex;\n+ private int age;\n+ private float weight;\n+ private float height;\n+ \n+ public int getId() {\n+ \treturn id;\n+ }\n+ public void setId(int id) {\n+ \tthis.id = id;\n+ }\n+ public String getName() {\n+ \treturn name;\n+ }\n+ public void setName(String name) {\n+ \tthis.name = name;\n+ }\n+ public String getSex() {\n+ \treturn sex;\n+ }\n+ public void setSex(String sex) {\n+ \tthis.sex = sex;\n+ }\n+ public int getAge() {\n+ \treturn age;\n+ }\n+ public void setAge(int age) {\n+ \tthis.age = age;\n+ }\n+ public float getWeight() {\n+ \treturn weight;\n+ }\n+ public void setWeight(float weight) {\n+ \tthis.weight = weight;\n+ }\n+ public float getHeight() {\n+ \treturn height;\n+ }\n+ public void setHeight(float height) {\n+ \tthis.height = height;\n+ }\n+ \n+ }\n\\ No newline at end of file"
+  }, {
+    "sha" : "d1058a7eda9c3ee5f92400332526d5479fcf2025",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902104/StudentDAO.java",
+    "status" : "added",
+    "additions" : 127,
+    "deletions" : 0,
+    "changes" : 127,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/1a00432b55283a7394250e1c4fde60f8979fe7c1/jweb/src/edu/hzu/javaweb/labs/se1414080902104/StudentDAO.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/1a00432b55283a7394250e1c4fde60f8979fe7c1/jweb/src/edu/hzu/javaweb/labs/se1414080902104/StudentDAO.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902104/StudentDAO.java?ref=1a00432b55283a7394250e1c4fde60f8979fe7c1",
+    "patch" : "@@ -0,0 +1,127 @@\n+package JDBC;\n+ \n+ import java.sql.Connection;\n+ import java.sql.PreparedStatement;\n+ import java.sql.ResultSet;\n+ import java.util.ArrayList;\n+ import java.util.List;\n+ \n+ public class StudentDAO {\n+ \tprotected static final String FIELDS_INSERT =\"id,name,sex,age,weight,height\";\n+ \tprotected static String INSERT_SQL=\"insert into student_info (\"\n+                                     +FIELDS_INSERT+\")\"+\"values (?,?,?,?,?,?)\";\n+ \tprotected static String SELECT_SQL=\"select \"\n+                                     +FIELDS_INSERT+\" from student_info where id=?\";\n+ \tprotected static String UPDATE_SQL=\"update student_info set \"\n+                               +\"id=?,name=?,sex=?,age=?,weight=?,height=? where id=?\";\n+\tprotected static String DELETE_SQL =\"delete from student_info where id=?\"; \n+ \tpublic Student create(Student stu) throws Exception{\n+ \t\t Connection con=null;\n+ \t      PreparedStatement prepStmt=null;\n+ \t      ResultSet rs=null;\n+ \t      try{\n+ \t    \t  con=DbConnect.getDBConnection();\n+ \t    \t  prepStmt =con.prepareStatement(INSERT_SQL); \n+ \t    \t  prepStmt.setInt(1,stu.getId());\n+\t    \t  prepStmt.setString(2,stu.getName());\n+\t    \t  prepStmt.setString(3,stu.getSex());\n+ \t    \t  prepStmt.setInt(4,stu.getAge());\n+ \t    \t  prepStmt.setFloat(5,stu.getWeight());\n+ \t    \t  prepStmt.setFloat(6,stu.getHeight()); \n+ \t          prepStmt.executeUpdate();\n+\t          //System.out.println(\"charuchenggong\");\n+ \t      } catch(Exception e){\n+ \t    \t  e.printStackTrace();\n+ \t      } finally{\n+ \t    \t     DbConnect.closeDB(con, prepStmt, rs);\n+ \t      }\n+ \t     return stu;\n+ \t}\n+ \tpublic Student find(Student stu) throws Exception {\n+ \t    Connection con=null;\n+ \t    PreparedStatement prepStmt=null;\n+ \t    ResultSet rs=null;\n+ \t    Student stu2 = null;\n+ \t    try {\n+ \t       con=DbConnect.getDBConnection();\n+             prepStmt = con.prepareStatement(SELECT_SQL);\n+            prepStmt.setInt(1,stu.getId());\n+             rs = prepStmt.executeQuery();\n+             if (rs.next()){\n+             \tstu2 = new Student();\n+                 stu2.setId(rs.getInt(1)); \n+                 stu2.setName(rs.getString(2));\n+                 stu2.setSex(rs.getString(3));\n+                 stu2.setAge(rs.getInt(4)); \n+                 stu2.setWeight(rs.getFloat(5));\n+                 stu2.setHeight(rs.getFloat(6)); \n+            }\n+       } catch (Exception e) {\n+           \n+       } finally {\n+     \t     DbConnect.closeDB(con, prepStmt, rs);\n+       }\n+      return stu2;\n+ \t} \n+       public List<Student> findAll() throws Exception {\n+ \t\tConnection con=null;\n+ \t    PreparedStatement prepStmt=null;\n+ \t    ResultSet rs=null;\t\n+ \t    List<Student> student = new ArrayList<Student>();\n+ \t    con=DbConnect.getDBConnection();\n+ \t    prepStmt = con.prepareStatement(\"select * from student_info\");\n+         rs = prepStmt.executeQuery();\n+         while(rs.next()) {\n+         \tStudent stu2 = new Student();\n+             stu2.setId(rs.getInt(1)); \n+             stu2.setName(rs.getString(2));\n+             stu2.setSex(rs.getString(3));\n+             stu2.setAge(rs.getInt(4)); \n+             stu2.setWeight(rs.getFloat(5));\n+             stu2.setHeight(rs.getFloat(6)); \n+             student.add(stu2);\n+         }\n+         DbConnect.closeDB(con, prepStmt, rs); \n+         return student;\n+\t}\n+ \tpublic void remove(Student stu) throws Exception {\n+ \t\tConnection con=null;\n+ \t    PreparedStatement prepStmt=null;\n+ \t    ResultSet rs=null;\n+ \t    try {\n+ \t    \tcon=DbConnect.getDBConnection();\n+ \t    \tprepStmt = con.prepareStatement(DELETE_SQL);\n+ \t        prepStmt.setInt(1,stu.getId());\n+ \t        prepStmt.executeUpdate();\n+\t    }catch(Exception e) {\n+\t          \n+ \t    } finally{\n+ \t    \t DbConnect.closeDB(con, prepStmt, rs);\n+ \t    }\n+ \t} \n+ \tpublic void update(Student stu) throws Exception {\n+ \t\tConnection con=null;\n+ \t    PreparedStatement prepStmt=null;\n+ \t    ResultSet rs=null;\n+\t    try {\n+\t    \tcon=DbConnect.getDBConnection();\n+          prepStmt = con.prepareStatement(UPDATE_SQL);\n+          prepStmt.setInt(1,stu.getId());\n+ \t    \tprepStmt.setString(2,stu.getName());\n+ \t    \tprepStmt.setString(3,stu.getSex());\n+ \t    \tprepStmt.setInt(4,stu.getAge());\n+ \t    \tprepStmt.setFloat(5,stu.getWeight());\n+ \t    \tprepStmt.setFloat(6,stu.getHeight());\n+ \t    \tprepStmt.setInt(7,stu.getId());\n+\t    \tint rowCount=prepStmt.executeUpdate();\n+            if (rowCount == 0) {\n+                   throw new Exception(\"Update Error:Student Id:\" + stu.getId());\n+             }\n+         } catch (Exception e) {\n+              \n+         } finally {\n+        \t DbConnect.closeDB(con, prepStmt, rs);\n+        }\n+     }\n+   \n+ }\n\\ No newline at end of file"
+  } ],
+  "sha" : "1a00432b55283a7394250e1c4fde60f8979fe7c1",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1a00432b55283a7394250e1c4fde60f8979fe7c1",
+  "parents" : [ {
+    "sha" : "57e3b425bedb7bb14b63e3839753bc82bc0b1d0f",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/57e3b425bedb7bb14b63e3839753bc82bc0b1d0f",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/57e3b425bedb7bb14b63e3839753bc82bc0b1d0f"
+  } ]
+}

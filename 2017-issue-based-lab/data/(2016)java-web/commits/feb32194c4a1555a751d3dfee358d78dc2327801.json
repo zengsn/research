@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "zzwwhao",
+    "id" : 22068172,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068172?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zzwwhao",
+    "html_url" : "https://github.com/zzwwhao",
+    "followers_url" : "https://api.github.com/users/zzwwhao/followers",
+    "following_url" : "https://api.github.com/users/zzwwhao/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zzwwhao/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zzwwhao/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zzwwhao/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zzwwhao/orgs",
+    "repos_url" : "https://api.github.com/users/zzwwhao/repos",
+    "events_url" : "https://api.github.com/users/zzwwhao/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zzwwhao/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 96,
+    "additions" : 96,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "zzwwhao",
+    "id" : 22068172,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068172?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zzwwhao",
+    "html_url" : "https://github.com/zzwwhao",
+    "followers_url" : "https://api.github.com/users/zzwwhao/followers",
+    "following_url" : "https://api.github.com/users/zzwwhao/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zzwwhao/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zzwwhao/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zzwwhao/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zzwwhao/orgs",
+    "repos_url" : "https://api.github.com/users/zzwwhao/repos",
+    "events_url" : "https://api.github.com/users/zzwwhao/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zzwwhao/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/feb32194c4a1555a751d3dfee358d78dc2327801",
+  "commit" : {
+    "author" : {
+      "name" : "zzwwhao",
+      "email" : "614143944@qq.com",
+      "date" : "2016-11-24T03:09:17Z"
+    },
+    "committer" : {
+      "name" : "zzwwhao",
+      "email" : "614143944@qq.com",
+      "date" : "2016-11-24T03:09:17Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "d19016d8faef2d75412f3ca3e5108f30e2358da0",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d19016d8faef2d75412f3ca3e5108f30e2358da0"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/feb32194c4a1555a751d3dfee358d78dc2327801",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/feb32194c4a1555a751d3dfee358d78dc2327801/comments",
+  "files" : [ {
+    "sha" : "190482b2fe21dc33419841288172bce17ca401cd",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902224/loginServlet.java",
+    "status" : "added",
+    "additions" : 75,
+    "deletions" : 0,
+    "changes" : 75,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/feb32194c4a1555a751d3dfee358d78dc2327801/jweb/src/edu/hzu/javaweb/labs/se1414080902224/loginServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/feb32194c4a1555a751d3dfee358d78dc2327801/jweb/src/edu/hzu/javaweb/labs/se1414080902224/loginServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902224/loginServlet.java?ref=feb32194c4a1555a751d3dfee358d78dc2327801",
+    "patch" : "@@ -0,0 +1,75 @@\n+package z;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+@WebServlet(\"/loginServlet\")\n+public class loginServlet extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic loginServlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\t\tString username=request.getParameter(\"username\");\n+\t\t\tString password=request.getParameter(\"password\");\n+\t\t\tHttpSession Session=request.getSession();\n+\t\t\tSession.setAttribute(\"username\", username);\n+\t\t\trequest.getRequestDispatcher(\"login.jsp\").forward(request, response);\n+\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tdoGet(request,response);\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "366638054c3e1a27a2e5dd4b73a4ebfa90f6d312",
+    "filename" : "jweb/web/1414080902224/login.jsp",
+    "status" : "added",
+    "additions" : 21,
+    "deletions" : 0,
+    "changes" : 21,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/feb32194c4a1555a751d3dfee358d78dc2327801/jweb/web/1414080902224/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/feb32194c4a1555a751d3dfee358d78dc2327801/jweb/web/1414080902224/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902224/login.jsp?ref=feb32194c4a1555a751d3dfee358d78dc2327801",
+    "patch" : "@@ -0,0 +1,21 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>   \n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+\t<title>用户登录</title>\n+</head>\n+<body>\n+\t<form action=\"loginServlet\">\n+\t\t<h2>登录</h2>\n+\t\t\t账号<input type=\"text\"  name=\"username\"><br>\n+\t\t\t密码&nbsp;<input type=\"password\" name=\"password\"><br>\n+\t\t\t<input type=\"checkbox\">记住密码&nbsp;&nbsp;\n+\t\t\t<input type=\"submit\" value=\"登录\">\n+\t\t<c:if test=\"${sessionScope.username=='admin' }\"><br>\n+\t\t\t<c:out value=\"${'欢迎登陆' }\"></c:out>\n+\t\t</c:if>\n+\t</form>\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "feb32194c4a1555a751d3dfee358d78dc2327801",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/feb32194c4a1555a751d3dfee358d78dc2327801",
+  "parents" : [ {
+    "sha" : "a3462b922b8c8875a15ce133c874e92f72a24e74",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a3462b922b8c8875a15ce133c874e92f72a24e74",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/a3462b922b8c8875a15ce133c874e92f72a24e74"
+  } ]
+}

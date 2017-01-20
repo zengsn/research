@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 74,
+    "additions" : 74,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "YellowYt",
+    "id" : 17826162,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17826162?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/YellowYt",
+    "html_url" : "https://github.com/YellowYt",
+    "followers_url" : "https://api.github.com/users/YellowYt/followers",
+    "following_url" : "https://api.github.com/users/YellowYt/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/YellowYt/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/YellowYt/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/YellowYt/subscriptions",
+    "organizations_url" : "https://api.github.com/users/YellowYt/orgs",
+    "repos_url" : "https://api.github.com/users/YellowYt/repos",
+    "events_url" : "https://api.github.com/users/YellowYt/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/YellowYt/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/c1d6f8bada46c2dda87affdb3513f5e9b653e791",
+  "commit" : {
+    "author" : {
+      "name" : "YellowYt",
+      "email" : "1009734465@qq.com",
+      "date" : "2016-11-08T22:31:03Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-08T22:31:03Z"
+    },
+    "message" : "Create Se1414080902107Servlet.java\n\n#4提交实验代码",
+    "tree" : {
+      "sha" : "4e6cb0bc1ff93aa7bd595f7c1314ae93ba56abd5",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/4e6cb0bc1ff93aa7bd595f7c1314ae93ba56abd5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/c1d6f8bada46c2dda87affdb3513f5e9b653e791",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/c1d6f8bada46c2dda87affdb3513f5e9b653e791/comments",
+  "files" : [ {
+    "sha" : "63fc76ed5fa77aed14a212978512f29812aa685b",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902107/Se1414080902107Servlet.java",
+    "status" : "added",
+    "additions" : 74,
+    "deletions" : 0,
+    "changes" : 74,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/c1d6f8bada46c2dda87affdb3513f5e9b653e791/jweb/src/edu/hzu/javaweb/labs/se1414080902107/Se1414080902107Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/c1d6f8bada46c2dda87affdb3513f5e9b653e791/jweb/src/edu/hzu/javaweb/labs/se1414080902107/Se1414080902107Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902107/Se1414080902107Servlet.java?ref=c1d6f8bada46c2dda87affdb3513f5e9b653e791",
+    "patch" : "@@ -0,0 +1,74 @@\n+package edu.hzu.javaweb.labs.se1414080902107;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+/**\n+ * Servlet implementation class Se1414080902107\n+ */\n+@WebServlet(\"/Se1414080902107\")\n+public class Se1414080902107Servlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    /**\n+     * @see HttpServlet#HttpServlet()\n+     */\n+    public Se1414080902107Servlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\t\n+\t\tresponse.setContentType(\"text/html;charset=UTF-8\");\n+\t\t\n+\t\tString name =new String(request.getParameter(\"name\").getBytes(\"ISO8859-1\"),\"UTF-8\");\n+\t\tString phone =new String(request.getParameter(\"phone\").getBytes(\"ISO8859-1\"),\"UTF-8\");\n+\t\tString position = new String(request.getParameter(\"position\").getBytes(\"ISO8859-1\"),\"UTF-8\");\n+\t\tString description = new String(request.getParameter(\"description\").getBytes(\"ISO8859-1\"),\"UTF-8\");\n+\t\t\n+\t\tPrintWriter out = response.getWriter();\n+\t\t\n+\t\tString docType = \"<!DOCTYPE html> \\n\";\n+\t\tout.println(docType +\n+\t\t    \"<html>\\n\" +\n+\t\t    \"<head><meta charset=\\\"utf-8\\\"><title>确认报修信息</title></head>\\n\" +\n+\t\t    \"<body bgcolor=\\\"#f0f0f0\\\">\\n\" +\n+\t\t    \"<h1 align=\\\"center\\\">\" + \"报修单信息：\" + \"</h1>\\n\" +\n+\t\t    \"<ul>\\n\" +\n+\t\t    \"  <li><b>姓名：</b>\"\n+\t\t    + name + \"\\n\" +\n+\t\t    \"  <li><b>电话：</b>\"\n+\t\t    + phone + \"\\n\" +\n+\t\t    \"  <li><b>地点：</b>\"\n+\t\t    + position + \"\\n\" +\n+\t\t    \"  <li><b>详情：</b>\"\n+\t\t    + description + \"\\n\" +\n+\t\t    \"</ul>\\n\" +\n+\t\t    \"<div align=\\\"center\\\">\"+\n+\t\t    \"<button type=\\\"submit\\\" >确认</button> \"+\n+\t\t    \"<button type=\\\"submit\\\" >返回</button>\"+\n+\t\t    \"</div>\"+\n+\t\t    \"</body></html>\");\n+\t\n+\t}\n+\n+\t/**\n+\t * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)\n+\t */\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t\tdoGet(request, response);\n+\t}\n+\n+}"
+  } ],
+  "sha" : "c1d6f8bada46c2dda87affdb3513f5e9b653e791",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c1d6f8bada46c2dda87affdb3513f5e9b653e791",
+  "parents" : [ {
+    "sha" : "6945bf90d47885a5f106ba9a805bd6ab0fdd0c12",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6945bf90d47885a5f106ba9a805bd6ab0fdd0c12",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/6945bf90d47885a5f106ba9a805bd6ab0fdd0c12"
+  } ]
+}

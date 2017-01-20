@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "SlowSoulWen",
+    "id" : 18480097,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18480097?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SlowSoulWen",
+    "html_url" : "https://github.com/SlowSoulWen",
+    "followers_url" : "https://api.github.com/users/SlowSoulWen/followers",
+    "following_url" : "https://api.github.com/users/SlowSoulWen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SlowSoulWen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SlowSoulWen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SlowSoulWen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SlowSoulWen/orgs",
+    "repos_url" : "https://api.github.com/users/SlowSoulWen/repos",
+    "events_url" : "https://api.github.com/users/SlowSoulWen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SlowSoulWen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 31,
+    "additions" : 31,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "SlowSoulWen",
+    "id" : 18480097,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18480097?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/SlowSoulWen",
+    "html_url" : "https://github.com/SlowSoulWen",
+    "followers_url" : "https://api.github.com/users/SlowSoulWen/followers",
+    "following_url" : "https://api.github.com/users/SlowSoulWen/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/SlowSoulWen/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/SlowSoulWen/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/SlowSoulWen/subscriptions",
+    "organizations_url" : "https://api.github.com/users/SlowSoulWen/orgs",
+    "repos_url" : "https://api.github.com/users/SlowSoulWen/repos",
+    "events_url" : "https://api.github.com/users/SlowSoulWen/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/SlowSoulWen/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/fc004d35c16e6fcbc8f3adbca6120fe6bb4a5fb3",
+  "commit" : {
+    "author" : {
+      "name" : "SlowSoulWen",
+      "email" : "664381601@qq.com",
+      "date" : "2016-12-21T12:41:44Z"
+    },
+    "committer" : {
+      "name" : "SlowSoulWen",
+      "email" : "664381601@qq.com",
+      "date" : "2016-12-21T12:41:44Z"
+    },
+    "message" : "#7 提交实验6代码",
+    "tree" : {
+      "sha" : "c3f715d308168208d1c089c9cc056f467daeb5ac",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/c3f715d308168208d1c089c9cc056f467daeb5ac"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/fc004d35c16e6fcbc8f3adbca6120fe6bb4a5fb3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/fc004d35c16e6fcbc8f3adbca6120fe6bb4a5fb3/comments",
+  "files" : [ {
+    "sha" : "c55b3fb469e95233fa9ef5290b925c00788b6c01",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902237/DBConnection.java",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/fc004d35c16e6fcbc8f3adbca6120fe6bb4a5fb3/jweb/src/edu/hzu/javaweb/labs/se1414080902237/DBConnection.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/fc004d35c16e6fcbc8f3adbca6120fe6bb4a5fb3/jweb/src/edu/hzu/javaweb/labs/se1414080902237/DBConnection.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902237/DBConnection.java?ref=fc004d35c16e6fcbc8f3adbca6120fe6bb4a5fb3",
+    "patch" : "@@ -0,0 +1,31 @@\n+package edu.hzu.javaweb.labs.se1414080902237;\n+\n+import java.sql.Connection;\n+import java.sql.DriverManager;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.sql.SQLException;\n+\n+public class DBConnect {\n+\tpublic static Connection getDBconnection(){\n+\t\tString url=\"jdbc:sqlite:d:\\\\test.db\";//数据库地址\n+\t\tString  driverName =\"org.sqlite.JDBC\";//驱动程序名\n+\t\ttry{\n+\t\t    Class.forName(driverName);\n+\t\t    Connection con=DriverManager.getConnection(url); \n+\t\t    return con; \n+\t    }catch (Exception e) {\n+\t\t\t   e.printStackTrace();\n+\t\t}\n+\t\treturn null;\n+    } \n+    public static void closeDB(Connection con,PreparedStatement pstm, ResultSet rs){\n+ \t   try{\n+ \t\t   if(rs!=null) rs.close(); \n+ \t\t   if(pstm!=null) pstm.close();\n+\t\t   if(con!=null) con.close();\n+\t   }catch (SQLException e) {\n+\t\t\te.printStackTrace();\n+\t   }\n+\t}\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "fc004d35c16e6fcbc8f3adbca6120fe6bb4a5fb3",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/fc004d35c16e6fcbc8f3adbca6120fe6bb4a5fb3",
+  "parents" : [ {
+    "sha" : "50cc38fe765a1a4705cb85501a4961bba650111a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/50cc38fe765a1a4705cb85501a4961bba650111a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/50cc38fe765a1a4705cb85501a4961bba650111a"
+  } ]
+}

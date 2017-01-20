@@ -1,0 +1,60 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 112,
+    "additions" : 102,
+    "deletions" : 10
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/5da393d702597cb33b40371089c8523feee4a5b8",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "我到底失去了什么",
+      "date" : "2016-10-30T12:50:20Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "我到底失去了什么",
+      "date" : "2016-10-30T12:50:20Z"
+    },
+    "message" : "#3 提交实验代码",
+    "tree" : {
+      "sha" : "56b98cf1a5417427221428520ac4570f3dc3dd48",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/56b98cf1a5417427221428520ac4570f3dc3dd48"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/5da393d702597cb33b40371089c8523feee4a5b8",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/5da393d702597cb33b40371089c8523feee4a5b8/comments",
+  "files" : [ {
+    "sha" : "3cf1a5423955f1d344df842b69e61605559a598d",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902113/Se1414080902113Servlet.java",
+    "status" : "added",
+    "additions" : 92,
+    "deletions" : 0,
+    "changes" : 92,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5da393d702597cb33b40371089c8523feee4a5b8/jweb/src/edu/hzu/javaweb/labs/se1414080902113/Se1414080902113Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5da393d702597cb33b40371089c8523feee4a5b8/jweb/src/edu/hzu/javaweb/labs/se1414080902113/Se1414080902113Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902113/Se1414080902113Servlet.java?ref=5da393d702597cb33b40371089c8523feee4a5b8",
+    "patch" : "@@ -0,0 +1,92 @@\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+\n+public class Se1414080902113Servlet extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic Se1414080902113Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"    This is \");\n+\t\tout.print(this.getClass());\n+\t\tout.println(\", using the GET method\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"    This is \");\n+\t\tout.print(this.getClass());\n+\t\tout.println(\", using the POST method\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "8fb0cbdf2db8b5ac03f02a0217d48a6caa944728",
+    "filename" : "labs/1414080902113/index.js",
+    "status" : "modified",
+    "additions" : 10,
+    "deletions" : 10,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5da393d702597cb33b40371089c8523feee4a5b8/labs/1414080902113/index.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5da393d702597cb33b40371089c8523feee4a5b8/labs/1414080902113/index.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902113/index.js?ref=5da393d702597cb33b40371089c8523feee4a5b8",
+    "patch" : "@@ -1,10 +1,10 @@\n-$( \"#target\" ).submit(function( event ) { \n-$.ajax({\n-  url: \"success.json\"\n-}).done(function(data) {\n-  if ( console && console.log ) {\n-      console.dir(data);\n-      alert(data.msg);\n-    }\n-});\n-});\n\\ No newline at end of file\n+$.a=function(){\n+  \t\t$.ajax({\n+  \t\t\ttype:\"post\",\n+  \t\t\tdatatype:\"html\",\n+   \t\t\turl:\"1414080902113\",\n+  \t\t\tsuccess:function(data){\n+  \t\t\talert(data);\n+   \t\t\t}\n+   \t\t});\t\t\n+  \t};\n\\ No newline at end of file"
+  } ],
+  "sha" : "5da393d702597cb33b40371089c8523feee4a5b8",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5da393d702597cb33b40371089c8523feee4a5b8",
+  "parents" : [ {
+    "sha" : "ab254c337179e6ad2202f7d10d466833f7243932",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ab254c337179e6ad2202f7d10d466833f7243932",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ab254c337179e6ad2202f7d10d466833f7243932"
+  } ]
+}

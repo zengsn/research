@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "Yveemi",
+    "id" : 22067630,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22067630?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Yveemi",
+    "html_url" : "https://github.com/Yveemi",
+    "followers_url" : "https://api.github.com/users/Yveemi/followers",
+    "following_url" : "https://api.github.com/users/Yveemi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Yveemi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Yveemi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Yveemi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Yveemi/orgs",
+    "repos_url" : "https://api.github.com/users/Yveemi/repos",
+    "events_url" : "https://api.github.com/users/Yveemi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Yveemi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 175,
+    "additions" : 174,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "Yveemi",
+    "id" : 22067630,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22067630?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Yveemi",
+    "html_url" : "https://github.com/Yveemi",
+    "followers_url" : "https://api.github.com/users/Yveemi/followers",
+    "following_url" : "https://api.github.com/users/Yveemi/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Yveemi/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Yveemi/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Yveemi/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Yveemi/orgs",
+    "repos_url" : "https://api.github.com/users/Yveemi/repos",
+    "events_url" : "https://api.github.com/users/Yveemi/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Yveemi/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591",
+  "commit" : {
+    "author" : {
+      "name" : "Yveemi",
+      "email" : "258378002@qq.com",
+      "date" : "2016-11-07T08:35:01Z"
+    },
+    "committer" : {
+      "name" : "Yveemi",
+      "email" : "258378002@qq.com",
+      "date" : "2016-11-07T08:35:01Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "8c6a57fa39a668a9e3154be697baed0ae780c33c",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/8c6a57fa39a668a9e3154be697baed0ae780c33c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591/comments",
+  "files" : [ {
+    "sha" : "28e823e7e26c92dea46adffca6767045d20732fc",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902240/LoginFilter.java",
+    "status" : "added",
+    "additions" : 58,
+    "deletions" : 0,
+    "changes" : 58,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591/jweb/src/edu/hzu/javaweb/labs/se1414080902240/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591/jweb/src/edu/hzu/javaweb/labs/se1414080902240/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902240/LoginFilter.java?ref=2c68de387dfdd4de8dd1a2e57ca37a1990a9b591",
+    "patch" : "@@ -0,0 +1,58 @@\n+package edu.hzu.javaweb.labs.se1414080902240;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+/**\n+ * Servlet Filter implementation class LoginFilter\n+ */\n+@WebFilter(filterName=\"LoginFilter\",urlPatterns=\"/1414080902240\")\n+public class LoginFilter implements Filter {\n+\n+    /**\n+     * Default constructor. \n+     */\n+    public LoginFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see Filter#destroy()\n+\t */\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n+\t */\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\tHttpServletRequest req = (HttpServletRequest) request;\n+        HttpServletResponse resp = (HttpServletResponse) response;\n+        \n+        HttpSession session = req.getSession();\n+        if (session.getAttribute(\"username\") == null) {\n+        \tresp.sendRedirect(\"login.jsp\");\n+        } else {   \n+        \tchain.doFilter(request, response);\n+        }\n+\t\t\n+\t}\n+\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\tSystem.out.println(\"������\"); \n+\t}\n+\n+}"
+  }, {
+    "sha" : "e87e27ef401962a6e1e46a8f9e68136858e365de",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902240/Se1414080902240Servlet.java",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591/jweb/src/edu/hzu/javaweb/labs/se1414080902240/Se1414080902240Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591/jweb/src/edu/hzu/javaweb/labs/se1414080902240/Se1414080902240Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902240/Se1414080902240Servlet.java?ref=2c68de387dfdd4de8dd1a2e57ca37a1990a9b591",
+    "patch" : "@@ -12,7 +12,7 @@\n /**\n  * Servlet implementation class Se1414080902240Servlet\n  */\n-@WebServlet(\"/Se1414080902240Servlet\")\n+@WebServlet(name=\"Se1414080902240Servlet\",urlPatterns=\"/1414080902240\")\n public class Se1414080902240Servlet extends HttpServlet {\n \tprivate static final long serialVersionUID = 1L;\n        "
+  }, {
+    "sha" : "ee139d9d8f6e0ea87d5104b13b877adf93ab0939",
+    "filename" : "jweb/web/1414080902240/login.jsp",
+    "status" : "added",
+    "additions" : 115,
+    "deletions" : 0,
+    "changes" : 115,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591/jweb/web/1414080902240/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591/jweb/web/1414080902240/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902240/login.jsp?ref=2c68de387dfdd4de8dd1a2e57ca37a1990a9b591",
+    "patch" : "@@ -0,0 +1,115 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=utf-8\"\n+    pageEncoding=\"utf-8\"%>\n+<!DOCTYPE html>\n+<head>\n+    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/> \n+\n+\t<!-- 网页随屏幕的大小变化而变化 --> \n+\t<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\"> \n+\t<!-- 支持IE浏览器 --> \n+\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE-edge\"> \n+\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\"> \n+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 --> \n+   <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script> \n+   <!-- 最新的 Bootstrap 核心 JavaScript 文件 --> \n+   <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script> \n+   <script src=\"index.js\"></script> \n+   \n+    <style>\n+    #login_panel\n+    {\n+    width: 302px;\n+    height: 371px;\n+    top: 92px;\n+    background-color: rgba(0,0,0,0.05);\n+    position: relative;\n+    border-radius: 5px;\n+    border: 1px solid rgba(201,201,201,0.5);\n+    float: left;;\n+    padding-left: 35px;\n+    padding-right: 35px;\n+    padding-top: 45px;\n+    }\n+    .xform {\n+        display: block;\n+        margin-top: 0em;\n+    }\n+    .form-icon {\n+        display: inline-block;\n+        position: relative;\n+        max-width: 100%;\n+    }\n+    .uk-button {\n+        -webkit-appearance: none;\n+        margin: 0;\n+        overflow: visible;\n+        font: inherit;\n+        color: #FFFFFF;\n+        text-transform: none;\n+        display: inline-block;\n+        box-sizing: border-box;\n+        padding: 0 12px;\n+        background: #000000;\n+        vertical-align: middle;\n+        line-height: 28px;\n+        min-height: 30px;\n+        font-size: 12px;\n+        text-decoration: none;\n+        text-align: center;\n+        border: 1px solid rgba(0, 0, 0, 0.06);\n+        border-radius: 4px;\n+    }\n+    .uk-width-1-1 {\n+        width: 100%;\n+    }\n+    .uk-button-large {\n+        min-height: 40px;\n+        padding: 0 15px;\n+        line-height: 38px;\n+        font-size: 16px;\n+        border-radius: 5px;\n+    }\n+    .uk-margin {\n+        margin-bottom: 20px;\n+    }\n+    .checkbox {\n+        position: relative;\n+        display: block;\n+        margin-top: 10px;\n+        margin-bottom: 10px;\n+    }\n+\n+   \n+    </style>\n+\n+</head>\n+<body>\n+<div id=\"login_panel\">\n+    <form class=\"xform\" id=\"target\">\n+        <div class=\"uk-margin\" style=\"margin-bottom: 5px;\">\n+            <h3>\n+                     用户登录</h3>\n+        </div>\n+        <div class=\"form-icon \" style=\"height:65px;width:300px;\" >\n+            <input type=\"text\"  placeholder=\"用户名\"  maxlength=\"35\">\n+        </div>\n+        <div class=\"form-icon\"  style=\"height:65px;width:300px;\">\n+            <input type=\"password\"  placeholder=\"密码\"  maxlength=\"16\" onkeypress=\"if(event.keyCode==13) {login.loginDo();return false;}\">\n+        </div>\n+        <div class=\"checkbox\">\n+            <label>\n+                <input type=\"checkbox\"> 记住我\n+            </label>\n+        </div>\n+        <button class=\"uk-button uk-width-1-1 uk-button-large uk-margin\"  type=\"submit\"  style=\"margin-top: 5px;\">\n+            登录\n+        </button>\n+\t\n+    </form>\n+    <div id=\"wx_login\" style=\"width: 302px; height: 300px; overflow: hidden; display: none;\"></div>\n+    \n+\n+</div>\n+\n+\n+</body></html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "2c68de387dfdd4de8dd1a2e57ca37a1990a9b591",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/2c68de387dfdd4de8dd1a2e57ca37a1990a9b591",
+  "parents" : [ {
+    "sha" : "068ace2c98dcc9d444eac6ad6ab01084377a5ef4",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/068ace2c98dcc9d444eac6ad6ab01084377a5ef4",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/068ace2c98dcc9d444eac6ad6ab01084377a5ef4"
+  } ]
+}

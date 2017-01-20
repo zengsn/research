@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 335,
+    "additions" : 0,
+    "deletions" : 335
+  },
+  "author" : {
+    "login" : "Hongsf",
+    "id" : 22068396,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22068396?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Hongsf",
+    "html_url" : "https://github.com/Hongsf",
+    "followers_url" : "https://api.github.com/users/Hongsf/followers",
+    "following_url" : "https://api.github.com/users/Hongsf/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Hongsf/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Hongsf/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Hongsf/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Hongsf/orgs",
+    "repos_url" : "https://api.github.com/users/Hongsf/repos",
+    "events_url" : "https://api.github.com/users/Hongsf/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Hongsf/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/07c34c2d2187fa9d79fd8bc1fadfa5cc5c7c4622",
+  "commit" : {
+    "author" : {
+      "name" : "洪生锋",
+      "email" : "1083178465@qq.com",
+      "date" : "2016-10-02T10:56:45Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-02T10:56:45Z"
+    },
+    "message" : "Delete bootstrap-typeahead.js",
+    "tree" : {
+      "sha" : "d1576ebd3fd4c6253e00e097297012c8deb87e8d",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d1576ebd3fd4c6253e00e097297012c8deb87e8d"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/07c34c2d2187fa9d79fd8bc1fadfa5cc5c7c4622",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/07c34c2d2187fa9d79fd8bc1fadfa5cc5c7c4622/comments",
+  "files" : [ {
+    "sha" : "c5c1597ff184f718276b4e40d3b7ac48caf631c4",
+    "filename" : "labs/1414080902110/bootstrap/js/bootstrap-typeahead.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 335,
+    "changes" : 335,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/532cc32ac6f42bbdc218a66deb02b0bd4caf020a/labs/1414080902110/bootstrap/js/bootstrap-typeahead.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/532cc32ac6f42bbdc218a66deb02b0bd4caf020a/labs/1414080902110/bootstrap/js/bootstrap-typeahead.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902110/bootstrap/js/bootstrap-typeahead.js?ref=532cc32ac6f42bbdc218a66deb02b0bd4caf020a",
+    "patch" : "@@ -1,335 +0,0 @@\n-/* =============================================================\n- * bootstrap-typeahead.js v2.3.2\n- * http://twbs.github.com/bootstrap/javascript.html#typeahead\n- * =============================================================\n- * Copyright 2013 Twitter, Inc.\n- *\n- * Licensed under the Apache License, Version 2.0 (the \"License\");\n- * you may not use this file except in compliance with the License.\n- * You may obtain a copy of the License at\n- *\n- * http://www.apache.org/licenses/LICENSE-2.0\n- *\n- * Unless required by applicable law or agreed to in writing, software\n- * distributed under the License is distributed on an \"AS IS\" BASIS,\n- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n- * See the License for the specific language governing permissions and\n- * limitations under the License.\n- * ============================================================ */\n-\n-\n-!function($){\n-\n-  \"use strict\"; // jshint ;_;\n-\n-\n- /* TYPEAHEAD PUBLIC CLASS DEFINITION\n-  * ================================= */\n-\n-  var Typeahead = function (element, options) {\n-    this.$element = $(element)\n-    this.options = $.extend({}, $.fn.typeahead.defaults, options)\n-    this.matcher = this.options.matcher || this.matcher\n-    this.sorter = this.options.sorter || this.sorter\n-    this.highlighter = this.options.highlighter || this.highlighter\n-    this.updater = this.options.updater || this.updater\n-    this.source = this.options.source\n-    this.$menu = $(this.options.menu)\n-    this.shown = false\n-    this.listen()\n-  }\n-\n-  Typeahead.prototype = {\n-\n-    constructor: Typeahead\n-\n-  , select: function () {\n-      var val = this.$menu.find('.active').attr('data-value')\n-      this.$element\n-        .val(this.updater(val))\n-        .change()\n-      return this.hide()\n-    }\n-\n-  , updater: function (item) {\n-      return item\n-    }\n-\n-  , show: function () {\n-      var pos = $.extend({}, this.$element.position(), {\n-        height: this.$element[0].offsetHeight\n-      })\n-\n-      this.$menu\n-        .insertAfter(this.$element)\n-        .css({\n-          top: pos.top + pos.height\n-        , left: pos.left\n-        })\n-        .show()\n-\n-      this.shown = true\n-      return this\n-    }\n-\n-  , hide: function () {\n-      this.$menu.hide()\n-      this.shown = false\n-      return this\n-    }\n-\n-  , lookup: function (event) {\n-      var items\n-\n-      this.query = this.$element.val()\n-\n-      if (!this.query || this.query.length < this.options.minLength) {\n-        return this.shown ? this.hide() : this\n-      }\n-\n-      items = $.isFunction(this.source) ? this.source(this.query, $.proxy(this.process, this)) : this.source\n-\n-      return items ? this.process(items) : this\n-    }\n-\n-  , process: function (items) {\n-      var that = this\n-\n-      items = $.grep(items, function (item) {\n-        return that.matcher(item)\n-      })\n-\n-      items = this.sorter(items)\n-\n-      if (!items.length) {\n-        return this.shown ? this.hide() : this\n-      }\n-\n-      return this.render(items.slice(0, this.options.items)).show()\n-    }\n-\n-  , matcher: function (item) {\n-      return ~item.toLowerCase().indexOf(this.query.toLowerCase())\n-    }\n-\n-  , sorter: function (items) {\n-      var beginswith = []\n-        , caseSensitive = []\n-        , caseInsensitive = []\n-        , item\n-\n-      while (item = items.shift()) {\n-        if (!item.toLowerCase().indexOf(this.query.toLowerCase())) beginswith.push(item)\n-        else if (~item.indexOf(this.query)) caseSensitive.push(item)\n-        else caseInsensitive.push(item)\n-      }\n-\n-      return beginswith.concat(caseSensitive, caseInsensitive)\n-    }\n-\n-  , highlighter: function (item) {\n-      var query = this.query.replace(/[\\-\\[\\]{}()*+?.,\\\\\\^$|#\\s]/g, '\\\\$&')\n-      return item.replace(new RegExp('(' + query + ')', 'ig'), function ($1, match) {\n-        return '<strong>' + match + '</strong>'\n-      })\n-    }\n-\n-  , render: function (items) {\n-      var that = this\n-\n-      items = $(items).map(function (i, item) {\n-        i = $(that.options.item).attr('data-value', item)\n-        i.find('a').html(that.highlighter(item))\n-        return i[0]\n-      })\n-\n-      items.first().addClass('active')\n-      this.$menu.html(items)\n-      return this\n-    }\n-\n-  , next: function (event) {\n-      var active = this.$menu.find('.active').removeClass('active')\n-        , next = active.next()\n-\n-      if (!next.length) {\n-        next = $(this.$menu.find('li')[0])\n-      }\n-\n-      next.addClass('active')\n-    }\n-\n-  , prev: function (event) {\n-      var active = this.$menu.find('.active').removeClass('active')\n-        , prev = active.prev()\n-\n-      if (!prev.length) {\n-        prev = this.$menu.find('li').last()\n-      }\n-\n-      prev.addClass('active')\n-    }\n-\n-  , listen: function () {\n-      this.$element\n-        .on('focus',    $.proxy(this.focus, this))\n-        .on('blur',     $.proxy(this.blur, this))\n-        .on('keypress', $.proxy(this.keypress, this))\n-        .on('keyup',    $.proxy(this.keyup, this))\n-\n-      if (this.eventSupported('keydown')) {\n-        this.$element.on('keydown', $.proxy(this.keydown, this))\n-      }\n-\n-      this.$menu\n-        .on('click', $.proxy(this.click, this))\n-        .on('mouseenter', 'li', $.proxy(this.mouseenter, this))\n-        .on('mouseleave', 'li', $.proxy(this.mouseleave, this))\n-    }\n-\n-  , eventSupported: function(eventName) {\n-      var isSupported = eventName in this.$element\n-      if (!isSupported) {\n-        this.$element.setAttribute(eventName, 'return;')\n-        isSupported = typeof this.$element[eventName] === 'function'\n-      }\n-      return isSupported\n-    }\n-\n-  , move: function (e) {\n-      if (!this.shown) return\n-\n-      switch(e.keyCode) {\n-        case 9: // tab\n-        case 13: // enter\n-        case 27: // escape\n-          e.preventDefault()\n-          break\n-\n-        case 38: // up arrow\n-          e.preventDefault()\n-          this.prev()\n-          break\n-\n-        case 40: // down arrow\n-          e.preventDefault()\n-          this.next()\n-          break\n-      }\n-\n-      e.stopPropagation()\n-    }\n-\n-  , keydown: function (e) {\n-      this.suppressKeyPressRepeat = ~$.inArray(e.keyCode, [40,38,9,13,27])\n-      this.move(e)\n-    }\n-\n-  , keypress: function (e) {\n-      if (this.suppressKeyPressRepeat) return\n-      this.move(e)\n-    }\n-\n-  , keyup: function (e) {\n-      switch(e.keyCode) {\n-        case 40: // down arrow\n-        case 38: // up arrow\n-        case 16: // shift\n-        case 17: // ctrl\n-        case 18: // alt\n-          break\n-\n-        case 9: // tab\n-        case 13: // enter\n-          if (!this.shown) return\n-          this.select()\n-          break\n-\n-        case 27: // escape\n-          if (!this.shown) return\n-          this.hide()\n-          break\n-\n-        default:\n-          this.lookup()\n-      }\n-\n-      e.stopPropagation()\n-      e.preventDefault()\n-  }\n-\n-  , focus: function (e) {\n-      this.focused = true\n-    }\n-\n-  , blur: function (e) {\n-      this.focused = false\n-      if (!this.mousedover && this.shown) this.hide()\n-    }\n-\n-  , click: function (e) {\n-      e.stopPropagation()\n-      e.preventDefault()\n-      this.select()\n-      this.$element.focus()\n-    }\n-\n-  , mouseenter: function (e) {\n-      this.mousedover = true\n-      this.$menu.find('.active').removeClass('active')\n-      $(e.currentTarget).addClass('active')\n-    }\n-\n-  , mouseleave: function (e) {\n-      this.mousedover = false\n-      if (!this.focused && this.shown) this.hide()\n-    }\n-\n-  }\n-\n-\n-  /* TYPEAHEAD PLUGIN DEFINITION\n-   * =========================== */\n-\n-  var old = $.fn.typeahead\n-\n-  $.fn.typeahead = function (option) {\n-    return this.each(function () {\n-      var $this = $(this)\n-        , data = $this.data('typeahead')\n-        , options = typeof option == 'object' && option\n-      if (!data) $this.data('typeahead', (data = new Typeahead(this, options)))\n-      if (typeof option == 'string') data[option]()\n-    })\n-  }\n-\n-  $.fn.typeahead.defaults = {\n-    source: []\n-  , items: 8\n-  , menu: '<ul class=\"typeahead dropdown-menu\"></ul>'\n-  , item: '<li><a href=\"#\"></a></li>'\n-  , minLength: 1\n-  }\n-\n-  $.fn.typeahead.Constructor = Typeahead\n-\n-\n- /* TYPEAHEAD NO CONFLICT\n-  * =================== */\n-\n-  $.fn.typeahead.noConflict = function () {\n-    $.fn.typeahead = old\n-    return this\n-  }\n-\n-\n- /* TYPEAHEAD DATA-API\n-  * ================== */\n-\n-  $(document).on('focus.typeahead.data-api', '[data-provide=\"typeahead\"]', function (e) {\n-    var $this = $(this)\n-    if ($this.data('typeahead')) return\n-    $this.typeahead($this.data())\n-  })\n-\n-}(window.jQuery);"
+  } ],
+  "sha" : "07c34c2d2187fa9d79fd8bc1fadfa5cc5c7c4622",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/07c34c2d2187fa9d79fd8bc1fadfa5cc5c7c4622",
+  "parents" : [ {
+    "sha" : "532cc32ac6f42bbdc218a66deb02b0bd4caf020a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/532cc32ac6f42bbdc218a66deb02b0bd4caf020a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/532cc32ac6f42bbdc218a66deb02b0bd4caf020a"
+  } ]
+}

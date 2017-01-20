@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "Ysunshine",
+    "id" : 22511991,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511991?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Ysunshine",
+    "html_url" : "https://github.com/Ysunshine",
+    "followers_url" : "https://api.github.com/users/Ysunshine/followers",
+    "following_url" : "https://api.github.com/users/Ysunshine/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Ysunshine/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Ysunshine/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Ysunshine/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Ysunshine/orgs",
+    "repos_url" : "https://api.github.com/users/Ysunshine/repos",
+    "events_url" : "https://api.github.com/users/Ysunshine/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Ysunshine/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 166,
+    "additions" : 166,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "Ysunshine",
+    "id" : 22511991,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511991?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Ysunshine",
+    "html_url" : "https://github.com/Ysunshine",
+    "followers_url" : "https://api.github.com/users/Ysunshine/followers",
+    "following_url" : "https://api.github.com/users/Ysunshine/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Ysunshine/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Ysunshine/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Ysunshine/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Ysunshine/orgs",
+    "repos_url" : "https://api.github.com/users/Ysunshine/repos",
+    "events_url" : "https://api.github.com/users/Ysunshine/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Ysunshine/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/4f8e126e4be653e020937390ff95b0241e4a7d87",
+  "commit" : {
+    "author" : {
+      "name" : "Ysunshine",
+      "email" : "1083688285@qq.com",
+      "date" : "2016-10-19T14:00:26Z"
+    },
+    "committer" : {
+      "name" : "Ysunshine",
+      "email" : "1083688285@qq.com",
+      "date" : "2016-10-19T14:00:26Z"
+    },
+    "message" : "#3 提交实验代码",
+    "tree" : {
+      "sha" : "64f1716869d1861550ed0a65ee0be24a6fbb93d3",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/64f1716869d1861550ed0a65ee0be24a6fbb93d3"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/4f8e126e4be653e020937390ff95b0241e4a7d87",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/4f8e126e4be653e020937390ff95b0241e4a7d87/comments",
+  "files" : [ {
+    "sha" : "358ebc298b718f170bd5fe328f965c1ed366fdbc",
+    "filename" : "labs/1414080902233/index.jsp",
+    "status" : "added",
+    "additions" : 166,
+    "deletions" : 0,
+    "changes" : 166,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/4f8e126e4be653e020937390ff95b0241e4a7d87/labs/1414080902233/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/4f8e126e4be653e020937390ff95b0241e4a7d87/labs/1414080902233/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902233/index.jsp?ref=4f8e126e4be653e020937390ff95b0241e4a7d87",
+    "patch" : "@@ -0,0 +1,166 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html lang=\"zh-cn\">\n+  <head>\n+    <meta charset=\"utf-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+    <title>线路查询系统</title>\n+    <!-- Bootstrap -->\n+    <!-- 新 Bootstrap 核心 CSS 文件 -->\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\n+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\n+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\n+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    <script src=\"index.js\"></script>\n+    <style>\n+      *{\n+      \tmargin:0px;\n+      \tpadding:0px;\n+      }\n+      /*设置整体框架*/\n+      #d-all{\n+      \twidth: 400px;\n+        height: 500px;\n+        background:#F0F0F0;\n+        border-color: black;\n+      \tborder:2px solid black;\n+        position: absolute;\n+        left:450px;\n+        top:50px;\n+      }\n+      /*设置顶部框架*/\n+      #d-all .d-top{\n+        width:396px;\n+        height:80px;\n+      \t/*border:1px solid red;\n+        border-top: none;*/\n+      \tbackground:#26B1EB;\n+      }\n+      /*顶部介绍*/\n+      #d-all .d-top .d-top-top{\n+        width:400px;\n+        height:40px;\n+        text-align: center;\n+        line-height: 40px;\n+        font-weight:700;\n+        font-size: 12pt;\n+      }\n+      /*设置logo*/\n+      #d-all .d-top .d-top-left{\n+        width: 80px;\n+        height:40px;\n+        text-align: center;\n+        font-weight: 700;\n+        line-height: 20px;\n+        position: absolute;\n+        top:40px;\n+      }\n+      /*设置搜索框*/\n+      #d-all .d-top form{\n+        width: 236px;\n+        height:80px;\n+        position:absolute;\n+        left:90px;\n+        top:40px;\n+      }\n+      /*搜索框表单设置*/\n+      input{\n+        display: block;\n+        float:left;\n+        height:25px;\n+      }\n+      /*表单提交按钮*/\n+      .sub{\n+        width: 22px;\n+        height:25px;\n+        background:url(location1.png);\n+      }\n+      /*登录注册区域*/\n+      #d-all .d-top .right{\n+        height:50px;\n+        width:80px;\n+        position: absolute;\n+        left:316px;\n+        top:25px;\n+      }\n+      /*登录注册单个区域*/\n+      #d-all .d-top .right div{\n+        width:39px;\n+        height:50px;\n+        line-height: 50px;\n+        float: left;\n+        font-weight: 700;\n+      }\n+      #d-all .d-top .right a{\n+        text-decoration: none;\n+        color:red;\n+      }\n+      a:hover{\n+        text-decoration: none;\n+      }\n+      /*设置两个功能*/\n+      #d-all .func1{\n+        width:172px;\n+        height:72px;\n+        border:1px solid blue;\n+        position: absolute;\n+        top:150px;\n+        left:110px;\n+        background:#A1CAE9;\n+        text-align: center;\n+        font-weight: 700;\n+        font-size: 20pt;\n+        line-height: 72px;\n+      }\n+      #d-all .func2{\n+        width:172px;\n+        height:72px;\n+        border:1px solid blue;\n+        position: absolute;\n+        top:270px;\n+        left:110px;\n+        background:#A1CAE9;\n+        text-align: center;\n+        font-weight: 700;\n+        font-size: 20pt;\n+        line-height: 72px;\n+      }\n+    </style>\n+  </head>\n+  <body>\n+    <% Date date=new Date();%>\n+    <div id=d-all>\n+    \t<!-- 设置顶部 -->\n+    \t<div class=\"d-top\">\n+        <!-- 顶部logo -->\n+        <div class=\"d-top-top\">线路查询系统</div>\n+        <!-- 动态时间 -->\n+        <div class=\"d-top-left\">欢迎使用</div>\n+        <form action=\"\" id=\"form-all\">\n+          <input type=\"text\" placeholder=\"输入位置进行定位\">\n+          <input type=\"submit\" value=\"\" class=\"sub\">\n+        </form>\n+        <!-- 右边区域 -->\n+        <div class=\"right\">\n+          <div><a href=\"\">登录</a></div>\n+          <div><a href=\"\">注册</a></div>\n+        </div>\n+      </div>\n+    \t<!-- 设置中间两个功能 -->\n+    \t<div class=\"func1\"><a href=\"\">路线查询</a></div>\n+      <div class=\"func2\"><a href=\"\">路线规划</a></div>\n+    </div>\n+  </body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "4f8e126e4be653e020937390ff95b0241e4a7d87",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/4f8e126e4be653e020937390ff95b0241e4a7d87",
+  "parents" : [ {
+    "sha" : "b90eba816c4f0ce76bd60b7724e0c57aa71c0d9c",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/b90eba816c4f0ce76bd60b7724e0c57aa71c0d9c",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/b90eba816c4f0ce76bd60b7724e0c57aa71c0d9c"
+  } ]
+}

@@ -1,0 +1,151 @@
+{
+  "committer" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 367,
+    "additions" : 367,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-14T15:26:55Z"
+    },
+    "committer" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-14T15:26:55Z"
+    },
+    "message" : "#5 #109 提交实验代码",
+    "tree" : {
+      "sha" : "7854bb6f2dfc08f1bea82c0521a6765fa183166a",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/7854bb6f2dfc08f1bea82c0521a6765fa183166a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/comments",
+  "files" : [ {
+    "sha" : "1b7de13983d4a743fd5e10a0fa46ae72bb6d9fbe",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Encoding.java?ref=8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+    "patch" : "@@ -0,0 +1,34 @@\n+package edu.hzu.javaweb.labs.se1414080902202;\n+\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+@WebFilter(filterName = \"EncodingFilter\", urlPatterns = \"/*\")\n+public class Encoding implements Filter {\n+\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tresponse.setCharacterEncoding(\"UTF-8\");\n+\t\tchain.doFilter(request, response);\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "358d5382a78c6fd2744fd6aebb407c860c96db29",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902202/Loginfilter.java",
+    "status" : "added",
+    "additions" : 49,
+    "deletions" : 0,
+    "changes" : 49,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Loginfilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Loginfilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902202/Loginfilter.java?ref=8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+    "patch" : "@@ -0,0 +1,49 @@\n+package edu.hzu.javaweb.labs.se1414080902202;\n+\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+@WebFilter(filterName = \"Loginfilter\", urlPatterns = \"/index.jsp\")\n+public class Loginfilter implements Filter {\n+\n+\t public Loginfilter() {\n+\t        // TODO Auto-generated constructor stub\n+\t    }\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException {\n+\t\tHttpServletRequest req = (HttpServletRequest) request;\n+\t\tHttpServletResponse res = (HttpServletResponse) response;\n+\n+\t\tHttpSession session = req.getSession();\n+\t\tif (session.getAttribute(\"DENGLUHAO\") == null) {\n+\t\t\tres.sendRedirect(\"DengLu.jsp\");\t\t}\n+\t\telse {\n+\t\t\tchain.doFilter(request, response);\n+\t\t}\n+\t}\n+\t\n+\t@Override\n+\tpublic void init(FilterConfig filterConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "65d38ffcd1f52fc80b3fbe87146915a8ad909b41",
+    "filename" : "jweb/web/1414080902202/DengLu.jsp",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/DengLu.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/DengLu.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902202/DengLu.jsp?ref=8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+    "patch" : "@@ -0,0 +1,54 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML>\n+<html>\n+<meta charset=\"utf-8\">\n+ <!-- 新 Bootstrap 核心 CSS 文件 -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+ <!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+ <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+ <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+ <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+ <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+ <style type=\"text/css\">\n+ body{\n+   background-color:#FFCC00;\n+ }\n+.text2{border:3px;width:350px;height:50px;font-size:16px;line-height:1.6;}\n+.bt{\n+      width:100px; \n+    }\n+ </style>\n+ <head>\n+<title>某滴出行登录</title>\n+</head>\n+<body bgcolor=\"yellow\">\n+<form action=\"index.jsp\" method=\"post\"id=\"target\">\n+<p >\n+<font size=\"6\"color=\"#FFFFFF\">某滴出行账户登录</font>\n+</p>\n+<hr size=\"15px\" noshade>\n+<p>\n+<b>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</b><input name=\"textfield3\"type=\"text\"class=\"text2\"id=\"textfield3\"placeholder=\"用户名/邮箱/手机号\"/>\n+<br>\n+<br>\n+<br>\n+<p>\n+<b>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</b><input name=\"textfield4\"type=\"password\"class=\"text2\"id=\"textfield4\"value=\"\"/>\n+<input type=\"checkbox\" checked=\"ischecked\">记住密码\n+<br> \n+<br>\n+<br>\n+\n+<p>\n+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" class=\"btn\"id=\"button1\"value=\"登录\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"reset\" class=\"btn\"value=\"重置\"></p>\n+</form>\n+<% String str1=request.getParameter(\"textfield3\");\n+session.setAttribute(\"DENGLUHAO\",str1); %>\n+</body>\n\\ No newline at end of file"
+  }, {
+    "sha" : "f0d7b121c49563ddafa8707e767231de381bba83",
+    "filename" : "jweb/web/1414080902202/FuKuan.jsp",
+    "status" : "added",
+    "additions" : 51,
+    "deletions" : 0,
+    "changes" : 51,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/FuKuan.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/FuKuan.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902202/FuKuan.jsp?ref=8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+    "patch" : "@@ -0,0 +1,51 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML>\n+<html>\n+<meta charset=\"utf-8\">\n+ <!-- 新 Bootstrap 核心 CSS 文件 -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+ <!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+ <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+ <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+ <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+ <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+ <style type=\"text/css\">\n+ body{\n+   background-color:#FFCC00;\n+ }\n+.text2{border:2px;width:150px;height:30px;font-size:12px;}\n+.bt{\n+      width:100px; \n+    }\n+ </style>\n+ <head>\n+ <title>客户付款界面</title>\n+ </head>\n+ <body bgcolor=\"yellow\">\n+<form action=\"\"method=\"post\"id=\"target\">\n+<p><font size=\"6\"color=\"#FFFFFF\">尊敬的客户，感谢使用某滴出行。</font></p>\n+<p><input style=\"background:#ffffff;color:black;width: 250px; height: 50px;\"type=\"submit\"class=\"btn\"id=\"button1\"value=\"已经到达目的地。我要付款。\"></input></p>\n+<p>请按照以下提示输入：</p> \n+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</b><input name=\"textfield3\"type=\"text\"class=\"text3\"id=\"textfield33\"value=\"用户名/邮箱/手机号\"/></P>\n+<p>\n+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</b><input name=\"textfield4\"type=\"password\"class=\"text4\"id=\"textfield44\"value=\"\"/></p>\n+ <p>\n+<font size=\"5\"color=\"black\"><b>支付方式：</b></font>\n+</p>\n+<p>\n+<input type=\"checkbox\"name=\"way1\"value=\"A1\"><font size=\"4\"color=\"#ff6600\">微信</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way2\"value=\"A2\"><font size=\"4\"color=\"#ff6600\">支付宝</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way3\"value=\"A3\"><font size=\"4\"color=\"#ff6600\">银行卡</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way4\"value=\"A4\"><font size=\"4\"color=\"#ff6600\">其他</font></input>\n+</p>\n+<p>\n+<input style=\"background:#ffffff;color:black;width: 150px; height: 50px;\"type=\"submit\"class=\"btn\"id=\"button1\"value=\"确认支付\"></input>\n+<input style=\"background:#ffffff;color:black;width: 150px; height: 50px;\"type=\"submit\"class=\"btn\"id=\"button1\"value=\"取消支付\"></input>\n+</p>\n+ </body>"
+  }, {
+    "sha" : "41f02c36a3242fea589badfc7c5affdca05c9306",
+    "filename" : "jweb/web/1414080902202/JieDan.jsp",
+    "status" : "added",
+    "additions" : 57,
+    "deletions" : 0,
+    "changes" : 57,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/JieDan.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/JieDan.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902202/JieDan.jsp?ref=8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+    "patch" : "@@ -0,0 +1,57 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML>\n+<html>\n+<meta charset=\"utf-8\">\n+ <!-- 新 Bootstrap 核心 CSS 文件 -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+ <!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+ <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+ <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+ <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+ <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+ <script src=\"index.js\"></script>\n+ <style type=\"text/css\">\n+ body{\n+   background-color:#FFCC00;\n+ }\n+.text2{border:3px;width:350px;height:50px;font-size:16px;line-height:1.6;}\n+.bt{\n+      width:100px; \n+    }\n+ </style>\n+ <head>\n+ <title>车主接单界面</title>\n+ </head>\n+ <body bgcolor=\"yellow\">\n+ <form action=\"\"method=\"post\"id=\"target\">\n+ <p><font size=\"6\"color=\"#FFFFFF\">祝君一路平安</font></p>\n+ <hr size=\"15px\" noshade>\n+<p>\n+<a href=\"http://developer.baidu.com/map/carhome.htm\"><font size=\"5\"color=\"#ffffff\">请您确认所在位置！(查看定位)</font></a>\n+</p>\n+<p>\n+<input style=\"background:#ffffff;color:black;width:80px;height:40px;\"type=\"submit\"class=\"btn0\"id=\"button0\"value=\"位置正确\"></input>\n+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input style=\"background:#ffffff;color:black;width:80px;height:40px;\"type=\"submit\"class=\"but1\"id=\"button1\"value=\"位置错误\"></input>\n+</p>\n+<p>\n+<font size=\"5\"color=\"#ffffff\"><b>您要接：</b></font>\n+</p>\n+<p>\n+<input type=\"checkbox\"name=\"way1\"value=\"A1\"><font size=\"4\"color=\"#ff6600\">长途订单</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way2\"value=\"A2\"><font size=\"4\"color=\"#ff6600\">短途订单</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+</p>\n+<br>\n+<p><font size=\"5\"color=\"#ffffff\">确认后，系统会自动为您匹配最优质的客户。</font></p>\n+<br>\n+<p align=\"center\">\n+<input style=\"background:#ffffff;color:black;width: 250px; height: 50px;\"type=\"submit\"class=\"btn\"id=\"button1\"value=\"确定寻找\"></input>\n+</p>\n+ </form>\n+ </body>"
+  }, {
+    "sha" : "6ddfb65476c8109d8f89874ee814c43e2da41741",
+    "filename" : "jweb/web/1414080902202/ShouKuan.jsp",
+    "status" : "added",
+    "additions" : 48,
+    "deletions" : 0,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/ShouKuan.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/ShouKuan.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902202/ShouKuan.jsp?ref=8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+    "patch" : "@@ -0,0 +1,48 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML>\n+<html>\n+<meta charset=\"utf-8\">\n+ <!-- 新 Bootstrap 核心 CSS 文件 -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+ <!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+ <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+ <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+ <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+ <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+ <script src=\"index.js\"></script>\n+ <style type=\"text/css\">\n+ body{\n+   background-color:#FFCC00;\n+ }\n+.text2{border:2px;width:150px;height:30px;font-size:12px;}\n+.bt{\n+      width:100px; \n+    }\n+ </style>\n+ <head>\n+ <title>车主收款界面</title>\n+ </head>\n+ <body bgcolor=\"yellow\">\n+<form action=\"\"method=\"post\"id=\"target\">\n+<p><font size=\"6\"color=\"#FFFFFF\">感谢您优质的服务。</font></p>\n+<p><input style=\"background:#ffffff;color:black;width: 250px; height: 50px;\"type=\"submit\"class=\"btn\"id=\"button1\"value=\"客户已到达目的地，我要收款。\"></input></p>\n+<p><b>请输入订单号：</b><input name=\"textfield3\"type=\"text\"class=\"text2\"id=\"textfield3\"value=\"\"/></P>\n+ <p>\n+<font size=\"5\"color=\"black\"><b>请选择收款方式：</b></font>\n+</p>\n+<p>\n+<input type=\"checkbox\"name=\"way1\"value=\"A1\"><font size=\"4\"color=\"#ff6600\">微信</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way2\"value=\"A2\"><font size=\"4\"color=\"#ff6600\">支付宝</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way3\"value=\"A3\"><font size=\"4\"color=\"#ff6600\">银行卡</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way4\"value=\"A4\"><font size=\"4\"color=\"#ff6600\">其他</font></input>\n+</p>\n+<p>\n+<input style=\"background:#ffffff;color:black;width: 150px; height: 50px;\"type=\"submit\"class=\"btn\"id=\"button1\"value=\"确认收款\"></input>\n+</p>\n+ </body>"
+  }, {
+    "sha" : "480933d8b87805c47f0aa2c451c08963a2bcbee6",
+    "filename" : "jweb/web/1414080902202/index.jsp",
+    "status" : "added",
+    "additions" : 74,
+    "deletions" : 0,
+    "changes" : 74,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/8489733860d6b3e9adcf92d2a5acc4e6613b15aa/jweb/web/1414080902202/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902202/index.jsp?ref=8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+    "patch" : "@@ -0,0 +1,74 @@\n+<%@ page language=\"java\" import=\"java.util.*\" contentType=\"text/html;charset=utf-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML>\n+<html>\n+<meta charset=\"utf-8\">\n+ <!-- 新 Bootstrap 核心 CSS 文件 -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+ <!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+ <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+ <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+ <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+ <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+ <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+ <script src=\"index.js\"></script>\n+ <style type=\"text/css\">\n+ body{\n+   background-color:#FFCC00;\n+ }\n+.text2{border:3px;width:350px;height:50px;font-size:16px;line-height:1.6;}\n+.bt{\n+      width:100px; \n+    }\n+ </style>\n+ <head>\n+<title>某滴出行网。</title>\n+</head>\n+\n+<body bgcolor=\"yellow\">\n+<form action=\"\"method=\"post\"id=\"target\">\n+<p >\n+<font size=\"6\"color=\"#FFFFFF\">某滴欢迎您~</font>\n+</p>\n+<hr size=\"15px\" noshade>\n+<p align=\"center\"><font size=\"5\"color=\"#ffffff\"><b>您好，您现在要去哪儿？</b></font></p>\n+<ul>\n+<li>\n+<p>\n+<a href=\"http://developer.baidu.com/map/carhome.htm\"><font size=\"5\"color=\"#ffffff\">您现在在哪？(查看定位)</font></a>\n+</p></li>\n+<br>\n+<li>\n+<p>\n+<a href=\"http://developer.baidu.com/map/carhome.htm\"><font size=\"5\"color=\"#ffffff\">您要去哪儿？</font></a>\n+</p>\n+</li>\n+</ul>\n+<hr size=\"15px\" noshade>\n+<p>\n+<font size=\"5\"color=\"#ffffff\"><b>您想搭乘：</b></font>\n+</p>\n+<p>\n+<input type=\"checkbox\"name=\"way1\"value=\"A1\"><font size=\"4\"color=\"#ff6600\">快车</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way2\"value=\"A2\"><font size=\"4\"color=\"#ff6600\">出租车</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way3\"value=\"A3\"><font size=\"4\"color=\"#ff6600\">专车</font></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n+<input type=\"checkbox\"name=\"way4\"value=\"A4\"><font size=\"4\"color=\"#ff6600\">顺风车</font></input>\n+</p>\n+<p align=\"center\">\n+<a href=\"1414080902202\"><font size=\"5\"color=\"#ffffff\">计价规则</font></a>\n+</p>\n+<br> \n+<p align=\"center\">\n+<input style=\"background:#ffffff;color:black;width: 250px; height: 50px;\"type=\"submit\"class=\"btn\"id=\"button1\"value=\"呼叫快车\"></input>\n+</p>\n+<br>\n+<p>\n+<font size=\"5\"color=\"#ffffff\"><b>祝您乘坐愉快！*—*</b></font>\n+</p>\n+</form>\n+</body>\n+</html>"
+  } ],
+  "sha" : "8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/8489733860d6b3e9adcf92d2a5acc4e6613b15aa",
+  "parents" : [ {
+    "sha" : "03642069bc7dd5086c7b5db0d620a2a80fd915da",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/03642069bc7dd5086c7b5db0d620a2a80fd915da",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/03642069bc7dd5086c7b5db0d620a2a80fd915da"
+  } ]
+}

@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 132,
+    "additions" : 132,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/58ec4e263c26630355b5261a2d04eb37ceb3ca43",
+  "commit" : {
+    "author" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-12-19T09:00:26Z"
+    },
+    "committer" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-12-19T09:00:26Z"
+    },
+    "message" : "#7 提交实验代码",
+    "tree" : {
+      "sha" : "e1b2613e5d79ff879d66cbf207d92930167a14a8",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/e1b2613e5d79ff879d66cbf207d92930167a14a8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/58ec4e263c26630355b5261a2d04eb37ceb3ca43",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/58ec4e263c26630355b5261a2d04eb37ceb3ca43/comments",
+  "files" : [ {
+    "sha" : "fcca0566424837e2251ae0ca25fa6c5e2b86afde",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902121/database.java",
+    "status" : "added",
+    "additions" : 48,
+    "deletions" : 0,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/58ec4e263c26630355b5261a2d04eb37ceb3ca43/jweb/src/edu/hzu/javaweb/labs/se1414080902121/database.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/58ec4e263c26630355b5261a2d04eb37ceb3ca43/jweb/src/edu/hzu/javaweb/labs/se1414080902121/database.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902121/database.java?ref=58ec4e263c26630355b5261a2d04eb37ceb3ca43",
+    "patch" : "@@ -0,0 +1,48 @@\n+package javabean;\n+import java.sql.*;\n+public class database {\n+boolean bInited = false;\n+\n+public void initJDBC() throws ClassNotFoundException {\n+\n+Class.forName(\"com.mysql.jdbc.Driver\");\n+bInited = true;\n+System.out.println(\"Success!\");\n+\n+}\n+public Connection getConnection() throws ClassNotFoundException,\n+SQLException{\n+if(!bInited){\n+initJDBC();\n+}\n+Connection conn = DriverManager.getConnection(\n+\"jdbc:mysql://localhost:3306/user\",\"root\",\"\");\n+return conn;\n+}\n+public boolean loginSuccess(String userName,String password){\n+boolean returnValue = false;\n+String sql = \"SELECT * FROM user\";\n+Connection conn = null;\n+Statement stmt = null;\n+ResultSet rs = null;\n+try{\n+conn = getConnection();\n+stmt = conn.createStatement();\n+rs = stmt.executeQuery(sql);\n+while(rs.next()){\n+String userNameInDB = rs.getString(\"name\");\n+String passwordInDB = rs.getString(\"pwd\");\n+if(userNameInDB.equals(userName) &&\n+passwordInDB.equals(password)){\n+returnValue = true;\n+break;\n+}\n+}\n+}catch (ClassNotFoundException e) {\n+e.printStackTrace();\n+}catch (SQLException e) {\n+e.printStackTrace();\n+}\n+return returnValue;\n+}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "7403ace98c0443c9ecd4c95030dc0d11771f59de",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902121/servlet.java",
+    "status" : "added",
+    "additions" : 42,
+    "deletions" : 0,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/58ec4e263c26630355b5261a2d04eb37ceb3ca43/jweb/src/edu/hzu/javaweb/labs/se1414080902121/servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/58ec4e263c26630355b5261a2d04eb37ceb3ca43/jweb/src/edu/hzu/javaweb/labs/se1414080902121/servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902121/servlet.java?ref=58ec4e263c26630355b5261a2d04eb37ceb3ca43",
+    "patch" : "@@ -0,0 +1,42 @@\n+package edu.hzu.javaweb.labs.se1414080902121;\n+import java.io.IOException;\n+import javax.servlet.ServletConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javabean.database;\n+public class servlet implements javax.servlet.Servlet{\n+public void destroy() {\n+\n+}\n+public ServletConfig getServletConfig() {\n+return null;\n+}\n+public String getServletInfo() {\n+return null;\n+}\n+public void init(ServletConfig arg0) throws ServletException {\n+\n+}\n+public void doPost(HttpServletRequest request,HttpServletResponse response)\n+throws ServletException,IOException{\n+String userName = request.getParameter(\"username\");\n+String password = request.getParameter(\"password\");\n+database db = new database();\n+boolean canLogin = db.loginSuccess(userName, password);\n+if(canLogin){\n+response.sendRedirect(\"display.jsp\");\n+}else{\n+response.sendRedirect(\"failure.jsp\");\n+}\n+}\n+public void service(ServletRequest request, ServletResponse response)\n+throws ServletException, IOException {\n+HttpServletRequest rq = (HttpServletRequest)request;\n+HttpServletResponse rs = (HttpServletResponse) response;\n+doPost(rq,rs);\n+}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "8efdc8919746901618228bcf7c63cf1f7b1e645d",
+    "filename" : "jweb/web/1414080902121/login.jsp",
+    "status" : "added",
+    "additions" : 42,
+    "deletions" : 0,
+    "changes" : 42,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/58ec4e263c26630355b5261a2d04eb37ceb3ca43/jweb/web/1414080902121/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/58ec4e263c26630355b5261a2d04eb37ceb3ca43/jweb/web/1414080902121/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902121/login.jsp?ref=58ec4e263c26630355b5261a2d04eb37ceb3ca43",
+    "patch" : "@@ -0,0 +1,42 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<!DOCTYPE html>\n+<html>\n+<head>\n+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n+<title>登陆</title>\n+<style>\n+form{width:350px;height:200px;}  \n+form fieldset{border:0;align:center;}  \n+form label{display:inline-block;width:60px;text-align:right}  \n+input{width:300px;height:35px;}  \n+#submit{width:200px;height:35px;position:relative;left:60px;}  \n+#submit:hover{  \n+        cursor: pointer;  \n+        background: #FDF5E6;  \n+    }  \n+body{  \n+    width:100%;   \n+    height:100%;  \n+    background: #CCDDFF;   \n+    }  \n+#box{position:fixed;left:0px;right:0px;width:606px;margin-left:auto;margin-right:auto;top:100px;}   \n+a{position:relative;bottom:-10px;} \n+</style>\n+</head>\n+<body>\n+<div id=\"box\">\n+<form action=\"login\" style=\"background:#cccccc\" method=\"post\">\n+<fieldset> \n+  <p>\n+    <label for=\"user\">用户：</label>\n+    <input type=\"text\" class=\"\" id=\"user\" name=\"username\" placeholder=\"user\">\n+<br>\n+    <label for=\"password\">密码：</label>\n+    <input type=\"password\" class=\"\" id=\"password\" name=\"password\" placeholder=\"password\">\n+  <button type=\"submit\" id=\"submit\">登录</button>\n+  </fieldset>\n+</form>\n+</div>\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "58ec4e263c26630355b5261a2d04eb37ceb3ca43",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/58ec4e263c26630355b5261a2d04eb37ceb3ca43",
+  "parents" : [ {
+    "sha" : "de2cb2d57014b4b04c93802fe54c0c755440daab",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/de2cb2d57014b4b04c93802fe54c0c755440daab",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/de2cb2d57014b4b04c93802fe54c0c755440daab"
+  } ]
+}

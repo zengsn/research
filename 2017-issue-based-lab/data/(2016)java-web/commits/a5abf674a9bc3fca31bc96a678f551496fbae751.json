@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "jordankobejames",
+    "id" : 22511957,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511957?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jordankobejames",
+    "html_url" : "https://github.com/jordankobejames",
+    "followers_url" : "https://api.github.com/users/jordankobejames/followers",
+    "following_url" : "https://api.github.com/users/jordankobejames/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jordankobejames/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jordankobejames/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jordankobejames/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jordankobejames/orgs",
+    "repos_url" : "https://api.github.com/users/jordankobejames/repos",
+    "events_url" : "https://api.github.com/users/jordankobejames/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jordankobejames/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 68,
+    "additions" : 68,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "jordankobejames",
+    "id" : 22511957,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511957?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/jordankobejames",
+    "html_url" : "https://github.com/jordankobejames",
+    "followers_url" : "https://api.github.com/users/jordankobejames/followers",
+    "following_url" : "https://api.github.com/users/jordankobejames/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/jordankobejames/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/jordankobejames/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/jordankobejames/subscriptions",
+    "organizations_url" : "https://api.github.com/users/jordankobejames/orgs",
+    "repos_url" : "https://api.github.com/users/jordankobejames/repos",
+    "events_url" : "https://api.github.com/users/jordankobejames/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/jordankobejames/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/a5abf674a9bc3fca31bc96a678f551496fbae751",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "451505087@qq.com",
+      "date" : "2016-10-24T02:46:46Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "451505087@qq.com",
+      "date" : "2016-10-24T02:46:46Z"
+    },
+    "message" : "#121 提交实验代码",
+    "tree" : {
+      "sha" : "6ecfea60be008741191e9f098efeea37d54ebb14",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/6ecfea60be008741191e9f098efeea37d54ebb14"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/a5abf674a9bc3fca31bc96a678f551496fbae751",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/a5abf674a9bc3fca31bc96a678f551496fbae751/comments",
+  "files" : [ {
+    "sha" : "0236403258075d1a02ae6d0411b018b46c7bab13",
+    "filename" : "labs/1414080902116/index.jsp",
+    "status" : "added",
+    "additions" : 68,
+    "deletions" : 0,
+    "changes" : 68,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/a5abf674a9bc3fca31bc96a678f551496fbae751/labs/1414080902116/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/a5abf674a9bc3fca31bc96a678f551496fbae751/labs/1414080902116/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902116/index.jsp?ref=a5abf674a9bc3fca31bc96a678f551496fbae751",
+    "patch" : "@@ -0,0 +1,68 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"utf8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'index.jsp' starting page</title>\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+  </head>\n+<body><h4 align=\"center\">租房信息发布系统</h4></br>\n+输入你的姓名：<input type=\"text\" name=\"uersName\"/></br>\n+输入你的电话联系方式:<input type=\"text\" name=\"uersphone\"/></br>\n+输入你出租房所在地址：<input type=\"text\" name=\"uershome\"/></br>\n+选择你所出租的房子类型：</br>\n+类型：\n+<select name=\"select2\">\n+<option select>三房一厅</option>\n+<option>两房两厅</option>\n+<option>两房一厅</option>\n+<option>四房两厅</option>\n+</br>\n+输入你出租的类型:<input type=\"text\" name=\"typeName\"/></br>\n+输入你所出售房子的价格：<input type=\"text\" name=\"typeprice\"/></br>\n+房子装修的类型：\n+<select name=\"select3\">\n+<option select>普通装修</option>\n+<option>居家精细装修</option>\n+<option>豪华装修</option>\n+<option>欧美风格装修</option>\n+输入你房子装修的类型:<input type=\"text\" name=\"typedecorate\"/></br>\n+出租房子的楼层：\n+<select name=\"select4\">\n+<option select>一楼</option>\n+<option>二楼</option>\n+<option>三楼</option>\n+<option>四楼</option>\n+<option>五楼</option>\n+输入你房子楼层:<input type=\"text\" name=\"type1e\"/></br>\n+房子所拥有家具或者电器：\n+<td= cospan=\"2\">\n+<input type=\"checkbox\" name=\"stucheck\">冰箱\n+<input type=\"checkbox\" name=\"stucheck\">空调\n+<input type=\"checkbox\" name=\"stucheck\">电视\n+<input type=\"checkbox\" name=\"stucheck\">沙发\n+<input type=\"checkbox\" name=\"stucheck\">风扇\n+\n+\n+房东说明：</br>\n+<td=colspan=\"2\"><textarea name=\"letter\" rows=\"8\" cols=\"60\"></textarea></br>\n+\n+<input type=submit value=\"提交\"><input type=reset value=\"取消\"></br>\n+\n+\n+   <p>:<%=new Date() %> </p>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "a5abf674a9bc3fca31bc96a678f551496fbae751",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a5abf674a9bc3fca31bc96a678f551496fbae751",
+  "parents" : [ {
+    "sha" : "a22ba8e8ddc00590721e3daff8c73a5e013f711e",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a22ba8e8ddc00590721e3daff8c73a5e013f711e",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/a22ba8e8ddc00590721e3daff8c73a5e013f711e"
+  } ]
+}

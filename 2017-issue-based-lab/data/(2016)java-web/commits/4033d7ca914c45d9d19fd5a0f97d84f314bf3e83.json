@@ -1,0 +1,107 @@
+{
+  "committer" : {
+    "login" : "HurricanGod",
+    "id" : 22078850,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078850?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HurricanGod",
+    "html_url" : "https://github.com/HurricanGod",
+    "followers_url" : "https://api.github.com/users/HurricanGod/followers",
+    "following_url" : "https://api.github.com/users/HurricanGod/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HurricanGod/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HurricanGod/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HurricanGod/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HurricanGod/orgs",
+    "repos_url" : "https://api.github.com/users/HurricanGod/repos",
+    "events_url" : "https://api.github.com/users/HurricanGod/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HurricanGod/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 356,
+    "additions" : 351,
+    "deletions" : 5
+  },
+  "author" : {
+    "login" : "HurricanGod",
+    "id" : 22078850,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078850?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HurricanGod",
+    "html_url" : "https://github.com/HurricanGod",
+    "followers_url" : "https://api.github.com/users/HurricanGod/followers",
+    "following_url" : "https://api.github.com/users/HurricanGod/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HurricanGod/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HurricanGod/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HurricanGod/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HurricanGod/orgs",
+    "repos_url" : "https://api.github.com/users/HurricanGod/repos",
+    "events_url" : "https://api.github.com/users/HurricanGod/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HurricanGod/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83",
+  "commit" : {
+    "author" : {
+      "name" : "HurricanGod",
+      "email" : "1807363937@qq.com",
+      "date" : "2016-10-18T04:17:28Z"
+    },
+    "committer" : {
+      "name" : "HurricanGod",
+      "email" : "1807363937@qq.com",
+      "date" : "2016-10-18T04:17:28Z"
+    },
+    "message" : "#3 提交实验代码",
+    "tree" : {
+      "sha" : "490ac22d7b46f940232bb5da42b56cf8e3ecd460",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/490ac22d7b46f940232bb5da42b56cf8e3ecd460"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83/comments",
+  "files" : [ {
+    "sha" : "d26b345027690bb01997da688fb6e9414ea6c16e",
+    "filename" : "labs/1414080902225/Message.jsp",
+    "status" : "added",
+    "additions" : 219,
+    "deletions" : 0,
+    "changes" : 219,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83/labs/1414080902225/Message.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83/labs/1414080902225/Message.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902225/Message.jsp?ref=4033d7ca914c45d9d19fd5a0f97d84f314bf3e83",
+    "patch" : "@@ -0,0 +1,219 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    <meta charset=\"utf-8\">\n+    <title>成绩填写</title>\n+    <script src=\"js/jquery-1.7.1.min.js\"></script>\n+\t\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t\n+\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    <%@page import=\"java.text.*\" %>\n+\t<%@page import=\"java.util.Date,java.lang.*\" %>\n+  </head>\n+  \n+  <body>\n+    \n+    <nav class=\"navbar navbar-inverse\" role=\"navigation\">\n+        <div class=\"container-fluid\">\n+            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n+              <ul class=\"nav navbar-nav\">\n+                <li class=\"active\"><a href=\"#\">首页</a></li>\n+                \n+                <li class=\"dropdown\">\n+                  <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">详情 <span class=\"caret\"></span></a>\n+                  <ul class=\"dropdown-menu\" role=\"menu\">\n+                    <li><a href=\"#\">精神文明</a></li>\n+                    <li><a href=\"#\">技术水平</a></li>\n+                    <li><a href=\"#\">社会实践</a></li>\n+                    <li class=\"divider\"></li>\n+                    <li><a href=\"#\">帮助</a></li>\n+                    <li class=\"divider\"></li>\n+                    <li><a href=\"#\">关于我们</a></li>\n+                  </ul>\n+                </li>\n+              </ul>\n+            </div>\n+        </div>            \n+    </nav>\n+\n+    <div class=\"row\">\n+      \n+      <div class=\"col-md-9\">\n+        <ol class=\"breadcrumb\">\n+            <li><a href=\"#\">主页</a></li>\n+            <li><a href=\"#\">个人</a></li>\n+            <li class=\"active\">成绩</li>   \n+        </ol>\n+      </div>\n+      \n+      <%!Date date=new Date(); %>\n+      <%!DateFormat df= DateFormat.getDateTimeInstance(); %>\n+      <div class=\"col-md-3\">\n+        <div class=\"col-md-4\">\n+        \t<span ><%=df.format(date) %></span> \n+        </div>\n+        <div class=\"col-md-4\">\n+            <button type=\"button\" class=\"btn btn-info btn-sm\">\n+                <span class=\"glyphicon glyphicon-user\"></span> \n+                <%String userName =request.getParameter(\"user\"); %>\n+                <label>你好！<%=userName %>,欢迎登录</label>\n+            </button>\n+        </div>\n+        \n+        <div class=\"col-md-4\">\n+        \n+      </div>\n+\n+    </div>\n+    <div class=\"container-fluid\">\n+        <div class=\"col-md-2 \"></div>  \n+        <div class=\"col-md-8 bg-success\">\n+            <h2><span class=\"label label-primary col-md-offset-5\">成绩</span></h2>\n+            <hr>\n+            <form class=\"form-horizontal\" role=\"form\" method=\"post\" action=\"\">\n+                \n+                <div class=\"form-group\">\n+                    <label for=\"subject4\" class=\"col-md-4 control-label\">离散数学</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" class=\"form-control\" id=\"subject4\" >\n+                    </div>\n+                </div>\n+\n+                \n+                <div class=\"form-group\">\n+                    <label for=\"subject6\" class=\"col-md-4 control-label\">汇编语言</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" class=\"form-control\" id=\"subject6\" >\n+                    </div>\n+                </div>\n+\n+                <div class=\"form-group\">\n+                    <label for=\"subject2\" class=\"col-md-4 control-label\">大学英语4</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" class=\"form-control\" id=\"subject2\" >\n+                    </div>\n+                </div>\n+\n+                <div class=\"form-group\">\n+                    <label for=\"subject3\" class=\"col-md-4 control-label\">公共体育4</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" class=\"form-control\" id=\"subject3\" >\n+                    </div>\n+                </div>\n+\n+                <div class=\"form-group\">\n+                    <label for=\"subject8\" class=\"col-md-4 control-label\">数据库系统概论</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" class=\"form-control\" id=\"subject8\" >\n+                    </div>\n+                </div>\n+\n+                <div class=\"form-group\">\n+                    <label for=\"subject5\" class=\"col-md-4 control-label\">计算机组成原理</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" class=\"form-control\" id=\"subject5\" >\n+                    </div>\n+                </div>\n+\n+                <div class=\"form-group\">\n+                    <label for=\"subject7\" class=\"col-md-4 control-label\">马克思主义基本原理</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" class=\"form-control\" id=\"subject7\" >\n+                    </div>\n+                </div>\n+\n+                <div class=\"form-group\">\n+                    <label for=\"subject1\" class=\"col-md-4 control-label\">数据库系统课程设计</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" class=\"form-control\" id=\"subject1\" >\n+                    </div>\n+                </div>\n+\n+                <div class=\"form-group\" id=\"s\">\n+                    \n+                    <div class=\"col-md-offset-7\" id=\"sub\">\n+                         <input type=\"button\" class=\"btn btn-success\" value=\"完成\" id=\"subm\">\n+                    </div>\n+                </div>   \n+            </form>\n+        </div> \n+        <div class=\"col-md-2 \"></div>  \n+        <div class=\"col-md-12 \"></div>     \n+    </div>\n+\n+    <script>\n+    $(document).ready(function() {\n+        \n+        var data={};\n+        $(\"#subm\").click(function(){\n+\n+            if($(\"#subject1\").val()!=\"\" && $(\"#subject2\").val()!=\"\" && $(\"#subject3\").val()!=\"\" && $(\"#subject4\").val()!=\"\" && $(\"#subject5\").val()!=\"\" && $(\"#subject5\").val()!=\"\" && $(\"#subject7\").val()!=\"\" && $(\"#subject8\").val()!=\"\")\n+            {\n+                var result=\"保存成绩：\\n\"+\"离散数学：\"+$(\"#subject4\").val()+\"\\n汇编语言：\"+$(\"#subject6\").val()+\n+                       \"\\n大学英语4：\"+$(\"#subject2\").val()+\"\\n公共体育4：\"+$(\"#subject3\").val()+\n+                       \"\\n数据库系统概论：\"+$(\"#subject8\").val()+\"\\n计算机组成原理：\"+$(\"#subject5\").val()+\n+                       \"\\n马克思主义基本原理：\"+$(\"#subject7\").val()+\"\\n数据库系统课程设计：\"+$(\"#subject1\").val();\n+                alert(result);\n+            }\n+\n+            else\n+            {\n+                alert(\"成绩不允许有空！\");\n+\n+            }\n+            \n+            \n+            \n+\n+        })\n+    });\n+\n+\n+        $.ajax(\n+            {\n+               type: \"POST\",\n+               url: \"success.json\",\n+               data: {name:\"John\", location: \"Boston\"}\n+               \n+            }).done(function( subject1 ) \n+         {\n+            $(\"#subject4\").val(String (subject1[\"subject1\"]));\n+             $(\"#subject6\").val(String (subject1[\"subject2\"]));\n+              $(\"#subject2\").val(String (subject1[\"subject3\"]));\n+               $(\"#subject3\").val(String (subject1[\"subject4\"]));\n+                $(\"#subject8\").val(String (subject1[\"subject5\"]));\n+                 $(\"#subject5\").val(String (subject1[\"subject6\"]));\n+                  $(\"#subject7\").val(String (subject1[\"subject7\"]));\n+                   $(\"#subject1\").val(String (subject1[\"subject8\"]));\n+\n+            alert( \"保存成绩:\\n \"+ \n+                \"离散数学：\"+subject1[\"subject1\"]+\"\\n汇编语言：\"+subject1[\"subject2\"]+\n+                \"\\n大学英语4：\"+subject1[\"subject3\"]+\"\\n公共体育4：\"+subject1[\"subject4\"]+\n+                \"\\n数据库系统概论：\"+subject1[\"subject5\"]+\"\\n计算机组成原理：\"+subject1[\"subject6\"]+\n+                \"\\n马克思主义基本原理：\"+subject1[\"subject7\"]+\"\\n数据库系统课程设计：\"+subject1[\"subject8\"]\n+                );\n+         });\n+    </script>\n+   \n+  </body>\n+</html>"
+  }, {
+    "sha" : "6b18d9e95fbea3c55dac3a7c48275ddd1f85ad0f",
+    "filename" : "labs/1414080902225/index.jsp",
+    "status" : "added",
+    "additions" : 107,
+    "deletions" : 0,
+    "changes" : 107,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83/labs/1414080902225/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83/labs/1414080902225/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902225/index.jsp?ref=4033d7ca914c45d9d19fd5a0f97d84f314bf3e83",
+    "patch" : "@@ -0,0 +1,107 @@\n+<%@page import=\"java.sql.Date\"%>\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>欢迎登录</title>\n+    \n+    <meta charset=\"utf-8\">\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t<!-- 新 Bootstrap 核心 CSS 文件 -->\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+  </head>\n+  \n+  <body> \n+    <nav class=\"navbar navbar-inverse\" role=\"navigation\">\n+    </nav>\n+     \n+    <div class=\"container-fluid\" id=\"main\">\n+        <div class=\"col-md-2 \"></div>  \n+        <div class=\"col-md-8 bg-success\" >\n+            <br>\n+            <br>\n+            <br>\n+            <form class=\"form-horizontal \" role=\"form\" method=\"post\" action=\"Message.jsp\" >\n+                <div class=\"form-group\">\n+                    <label class=\"col-md-2 control-label\" for=\"userName\">UserName:</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" id=\"userName\" class=\"form-control\" placeholder=\"Hurrican\" name=\"user\">\n+                    </div>\n+                </div>\n+\n+\n+                <div class=\"form-group\">\n+                    <label class=\"col-md-2 control-label\" for=\"pwd\">Password:</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"password\" id=\"pwd\" class=\"form-control\" placeholder=\"*********\">\n+                    </div>           \n+                </div>\n+\n+                \n+                <div class=\"form-group\">\n+                    <div class=\"col-md-offset-4 col-md-8\" >\n+                        <div class=\"checkbox\">\n+                            <label>\n+                                <input type=\"checkbox\" >Remember me\n+                            </label>\n+                        </div>\n+                    </div>\n+                </div> \n+\n+\n+                <div class=\"col-md-offset-4\">\n+                    <div class=\"btn-group\">\n+                        <input type=\"submit\" class=\"btn btn-success\" value=\"Register\" id=\"login\" onclick=\"return chkform()\">\n+                        <input type=\"reset\" class=\"btn btn-warning\" value=\"Reset\" >\n+                    </div>  \n+                </div>       \n+            </form>\n+        </div> \n+        <div class=\"col-md-2 \"></div>  \n+        <div class=\"col-md-12 \"></div>     \n+    </div>\n+\n+    <script type=\"text/javascript\">\n+\n+        var checkUserName=document.getElementById(\"userName\");\n+            var checkUserPwd=document.getElementById(\"pwd\");\n+            var submit=document.getElementById(\"login\");\n+           \n+            function chkform()\n+            { \n+                 if(checkUserName.value==\"\")\n+                 { \n+                      alert(\"用户名不能为空！\"); \n+                      return false; \n+                 } \n+\n+                 if(checkUserPwd.value==\"\") \n+                 { \n+                      alert(\"密码不能为空！\"); \n+                      return false; \n+                 }  \n+                 self.location='Message.jsp';  \n+\n+             };\n+    </script>\n+    \n+  </body>\n+</html>"
+  }, {
+    "sha" : "a5badf17528f62807d3692205bd926b107dfb18c",
+    "filename" : "labs/1414080902225/message.html",
+    "status" : "modified",
+    "additions" : 25,
+    "deletions" : 5,
+    "changes" : 30,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83/labs/1414080902225/message.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83/labs/1414080902225/message.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902225/message.html?ref=4033d7ca914c45d9d19fd5a0f97d84f314bf3e83",
+    "patch" : "@@ -39,11 +39,31 @@\n         </div>            \n     </nav>\n \n-    <ol class=\"breadcrumb\">\n-        <li><a href=\"#\">主页</a></li>\n-        <li><a href=\"#\">个人</a></li>\n-        <li class=\"active\">成绩</li>   \n-    </ol>\n+    <div class=\"row\">\n+      \n+      <div class=\"col-md-9\">\n+        <ol class=\"breadcrumb\">\n+            <li><a href=\"#\">主页</a></li>\n+            <li><a href=\"#\">个人</a></li>\n+            <li class=\"active\">成绩</li>   \n+        </ol>\n+      </div>\n+      \n+      <div class=\"col-md-3\">\n+        <div class=\"col-md-4\"></div>\n+        <div class=\"col-md-4\">\n+            <button type=\"button\" class=\"btn btn-info btn-sm\">\n+                <span class=\"glyphicon glyphicon-user\"></span> \n+                <label value=\"Jim\">你好！</label>\n+            </button>\n+        </div>\n+        <div class=\"col-md-4\"></div>\n+      </div>\n+\n+    </div>\n+\n+    \n+    \n \n     <div class=\"container-fluid\">\n         <div class=\"col-md-2 \"></div>  "
+  } ],
+  "sha" : "4033d7ca914c45d9d19fd5a0f97d84f314bf3e83",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/4033d7ca914c45d9d19fd5a0f97d84f314bf3e83",
+  "parents" : [ {
+    "sha" : "13aae9278ddb7b28a9e933c69616e1626d743706",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/13aae9278ddb7b28a9e933c69616e1626d743706",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/13aae9278ddb7b28a9e933c69616e1626d743706"
+  } ]
+}

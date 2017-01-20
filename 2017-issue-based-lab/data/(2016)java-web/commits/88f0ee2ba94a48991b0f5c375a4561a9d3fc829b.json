@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "Ysunshine",
+    "id" : 22511991,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511991?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Ysunshine",
+    "html_url" : "https://github.com/Ysunshine",
+    "followers_url" : "https://api.github.com/users/Ysunshine/followers",
+    "following_url" : "https://api.github.com/users/Ysunshine/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Ysunshine/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Ysunshine/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Ysunshine/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Ysunshine/orgs",
+    "repos_url" : "https://api.github.com/users/Ysunshine/repos",
+    "events_url" : "https://api.github.com/users/Ysunshine/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Ysunshine/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 50,
+    "additions" : 30,
+    "deletions" : 20
+  },
+  "author" : {
+    "login" : "Ysunshine",
+    "id" : 22511991,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22511991?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Ysunshine",
+    "html_url" : "https://github.com/Ysunshine",
+    "followers_url" : "https://api.github.com/users/Ysunshine/followers",
+    "following_url" : "https://api.github.com/users/Ysunshine/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Ysunshine/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Ysunshine/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Ysunshine/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Ysunshine/orgs",
+    "repos_url" : "https://api.github.com/users/Ysunshine/repos",
+    "events_url" : "https://api.github.com/users/Ysunshine/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Ysunshine/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/88f0ee2ba94a48991b0f5c375a4561a9d3fc829b",
+  "commit" : {
+    "author" : {
+      "name" : "Ysunshine",
+      "email" : "1083688285@qq.com",
+      "date" : "2016-10-08T02:59:37Z"
+    },
+    "committer" : {
+      "name" : "Ysunshine",
+      "email" : "1083688285@qq.com",
+      "date" : "2016-10-08T02:59:37Z"
+    },
+    "message" : "#2重新提交实验代码",
+    "tree" : {
+      "sha" : "a5af2c6f14c19c89f1bc878912d1f1a64a0ff8f0",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/a5af2c6f14c19c89f1bc878912d1f1a64a0ff8f0"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/88f0ee2ba94a48991b0f5c375a4561a9d3fc829b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/88f0ee2ba94a48991b0f5c375a4561a9d3fc829b/comments",
+  "files" : [ {
+    "sha" : "f31e93367a8044ef068d99d18dbb350551be2e12",
+    "filename" : "labs/1414080902233/index.html",
+    "status" : "modified",
+    "additions" : 18,
+    "deletions" : 20,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/88f0ee2ba94a48991b0f5c375a4561a9d3fc829b/labs/1414080902233/index.html",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/88f0ee2ba94a48991b0f5c375a4561a9d3fc829b/labs/1414080902233/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902233/index.html?ref=88f0ee2ba94a48991b0f5c375a4561a9d3fc829b",
+    "patch" : "@@ -6,27 +6,25 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n     <title>用户登录</title>\n     <!-- Bootstrap -->\n-    <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n-    <link href=\"css/first.css\" rel=\"stylesheet\">\n-    <script src=\"js/jquery-3.1.1.min.js\"></script>  \n+    <!-- 新 Bootstrap 核心 CSS 文件 -->\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\n+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\n+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n     <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-    <script src=\"js/bootstrap.min.js\"></script>\n-    <script>\n-        $(\"#form-all\").submit(function(event){\n-          alert( \"Handler for .submit() called.\" );\n-          event.preventDefault();\n-        });\n-    </script>\n-    <script>\n-      $.ajax({\n-          url: \"success.json\"\n-      }).done(function(data) {\n-          if ( console && console.log ) {\n-              console.dir(data);\n-              alert(data.msg);\n-              }\n-      });\n-    </script>\n+\n+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    <script src=\"index.js\"></script>\n+    <style>\n+      #form-all{\n+       position: absolute;\n+        left:40%;\n+        top: 150px;\n+      }\n+    </style>\n   </head>\n   <body>\n     <form id=\"form-all\" role=\"form\">"
+  }, {
+    "sha" : "9d5ab6513a137d5178914e250cc597482af89460",
+    "filename" : "labs/1414080902233/index.js",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/88f0ee2ba94a48991b0f5c375a4561a9d3fc829b/labs/1414080902233/index.js",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/88f0ee2ba94a48991b0f5c375a4561a9d3fc829b/labs/1414080902233/index.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902233/index.js?ref=88f0ee2ba94a48991b0f5c375a4561a9d3fc829b",
+    "patch" : "@@ -0,0 +1,12 @@\n+$(\"#form-all\").submit(function(event){\n+    alert( \"Handler for .submit() called.\" );\n+    event.preventDefault();\n+});\n+$.ajax({\n+    url: \"success.json\"\n+}).done(function(data) {\n+    if ( console && console.log ) {\n+        console.dir(data);\n+        alert(data.msg);\n+    }\n+});\n\\ No newline at end of file"
+  } ],
+  "sha" : "88f0ee2ba94a48991b0f5c375a4561a9d3fc829b",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/88f0ee2ba94a48991b0f5c375a4561a9d3fc829b",
+  "parents" : [ {
+    "sha" : "42b26ed445c303ed836187550495a91c6f2628d9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/42b26ed445c303ed836187550495a91c6f2628d9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/42b26ed445c303ed836187550495a91c6f2628d9"
+  } ]
+}

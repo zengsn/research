@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 131,
+    "additions" : 0,
+    "deletions" : 131
+  },
+  "author" : {
+    "login" : "bestwayr",
+    "id" : 22132336,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22132336?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/bestwayr",
+    "html_url" : "https://github.com/bestwayr",
+    "followers_url" : "https://api.github.com/users/bestwayr/followers",
+    "following_url" : "https://api.github.com/users/bestwayr/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/bestwayr/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/bestwayr/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/bestwayr/subscriptions",
+    "organizations_url" : "https://api.github.com/users/bestwayr/orgs",
+    "repos_url" : "https://api.github.com/users/bestwayr/repos",
+    "events_url" : "https://api.github.com/users/bestwayr/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/bestwayr/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/42bf72cc90abd38f053bc0653b0fd55f8ba58002",
+  "commit" : {
+    "author" : {
+      "name" : "bestwayr",
+      "email" : "964226814@qq.com",
+      "date" : "2016-11-04T00:41:05Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-04T00:41:05Z"
+    },
+    "message" : "Delete Se1414080902139Servlet.java",
+    "tree" : {
+      "sha" : "fcc9034e59658f9aa90f1b31f54189445fab7be7",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/fcc9034e59658f9aa90f1b31f54189445fab7be7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/42bf72cc90abd38f053bc0653b0fd55f8ba58002",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/42bf72cc90abd38f053bc0653b0fd55f8ba58002/comments",
+  "files" : [ {
+    "sha" : "64697704ef8572c888ab4505f1f1b12343b98072",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902139/Se1414080902139Servlet.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 131,
+    "changes" : 131,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/26f41b4d92062e3a43252dcc56253f82e2368772/jweb/src/edu/hzu/javaweb/labs/se1414080902139/Se1414080902139Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/26f41b4d92062e3a43252dcc56253f82e2368772/jweb/src/edu/hzu/javaweb/labs/se1414080902139/Se1414080902139Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902139/Se1414080902139Servlet.java?ref=26f41b4d92062e3a43252dcc56253f82e2368772",
+    "patch" : "@@ -1,131 +0,0 @@\n-package edu.hzu.javaweb.labs.se1414080902139;\n-\n-import java.io.IOException;\n-import java.io.PrintWriter;\n-import javax.servlet.ServletConfig;\n-\n-import javax.servlet.ServletException;\n-import javax.servlet.annotation.WebServlet;\n-import javax.servlet.http.HttpServlet;\n-import javax.servlet.http.HttpServletRequest;\n-import javax.servlet.http.HttpServletResponse;\n-import javax.servlet.http.HttpSession;\n-\n-@WebServlet(\"/1414080902139\")\n-public class Se1414080902139Servlet extends HttpServlet {\n-\n-\t/**\n-\t * \n-\t */\n-\tprivate static final long serialVersionUID = 1L;\n-\n-\t/**\n-\t * Constructor of the object.\n-\t */\n-\tpublic Se1414080902139Servlet() {\n-\t\tsuper();\n-\t}\n-\n-\t/**\n-\t * Destruction of the servlet. <br>\n-\t */\n-\tpublic void destroy() {\n-\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n-\t\t// Put your code here\n-\t}\n-\n-\t/**\n-\t * The doGet method of the servlet. <br>\n-\t *\n-\t * This method is called when a form has its tag value method equals to get.\n-\t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n-\t */\n-\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\t\t\n-\t\tString ful = request.getParameter(\"fullnameinfo\");\n-\t\tString sex = request.getParameter(\"sexinfo\");\n-\t\tString grade = request.getParameter(\"gradeinfo\");\n-\t\tString pro = request.getParameter(\"proinfo\");\n-\t\tString tel = request.getParameter(\"telinfo\");\n-\t\tString email = request.getParameter(\"emailinfo\");\n-\t\tString hobby = request.getParameter(\"hobbyinfo\");\n-\t\tString spe = request.getParameter(\"speinfo\");\n-\t\tString exp = request.getParameter(\"expinfo\");\n-\t\t\n-\t\tString message=\"\";\n-\n-\t\trequest.setAttribute(\"outputful\", ful);\n-\t\trequest.setAttribute(\"outputsex\", sex);\n-\t\trequest.setAttribute(\"outputgrade\", grade);\n-\t\trequest.setAttribute(\"outputpro\", pro);\n-\t\trequest.setAttribute(\"outputtel\", tel);\n-\t\trequest.setAttribute(\"outputemail\", email);\n-\t\trequest.setAttribute(\"outputhobby\", hobby);\n-\t\trequest.setAttribute(\"outputspe\", spe);\n-\t\trequest.setAttribute(\"outputexp\", exp);\n-\t\trequest.getRequestDispatcher(\"/inforeceive.jsp\").forward(request, response);\n-//\t\tresponse.setContentType(\"text/html\");\n-//\t\tPrintWriter out = response.getWriter();\n-//\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n-//\t\tout.println(\"<HTML>\");\n-//\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n-//\t\tout.println(\"  <BODY>\");\n-//\t\tout.print(\"    This is \");\n-//\t\tout.print(this.getClass());\n-//\t\tout.println(\", using the GET method\");\n-//\t\tout.println(\"  </BODY>\");\n-//\t\tout.println(\"</HTML>\");\n-//\t\tout.flush();\n-//\t\tout.close();\n-\t}\n-\n-\t/**\n-\t * The doPost method of the servlet. <br>\n-\t *\n-\t * This method is called when a form has its tag value method equals to post.\n-\t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n-\t */\n-\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\t\t\n-\t\tString fullname = request.getParameter(\"fullnameinfo\");\n-\t\tString message=\"\";\n-\t\tif(fullname.length()<=0){\n-\t\t\tmessage=\"用户名不能为空\";\n-\t\t}\n-\t\trequest.setAttribute(\"M\", message);\n-\t\trequest.getRequestDispatcher(\"/info.jsp\").forward(request, response);\n-//\t\tresponse.setContentType(\"text/html\");\n-//\t\tPrintWriter out = response.getWriter();\n-//\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n-//\t\tout.println(\"<HTML>\");\n-//\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n-//\t\tout.println(\"  <BODY>\");\n-//\t\tout.print(\"    This is \");\n-//\t\tout.print(this.getClass());\n-//\t\tout.println(\", using the POST method\");\n-//\t\tout.println(\"  </BODY>\");\n-//\t\tout.println(\"</HTML>\");\n-//\t\tout.flush();\n-//\t\tout.close();\n-\t}\n-\n-\t/**\n-\t * Initialization of the servlet. <br>\n-\t *\n-\t * @throws ServletException if an error occurs\n-\t */\n-\tpublic void init() throws ServletException {\n-\t\t// Put your code here\n-\t}\n-\n-}\n\\ No newline at end of file"
+  } ],
+  "sha" : "42bf72cc90abd38f053bc0653b0fd55f8ba58002",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/42bf72cc90abd38f053bc0653b0fd55f8ba58002",
+  "parents" : [ {
+    "sha" : "26f41b4d92062e3a43252dcc56253f82e2368772",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/26f41b4d92062e3a43252dcc56253f82e2368772",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/26f41b4d92062e3a43252dcc56253f82e2368772"
+  } ]
+}

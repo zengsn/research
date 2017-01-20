@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "mengyi520",
+    "id" : 18068937,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18068937?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mengyi520",
+    "html_url" : "https://github.com/mengyi520",
+    "followers_url" : "https://api.github.com/users/mengyi520/followers",
+    "following_url" : "https://api.github.com/users/mengyi520/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mengyi520/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mengyi520/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mengyi520/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mengyi520/orgs",
+    "repos_url" : "https://api.github.com/users/mengyi520/repos",
+    "events_url" : "https://api.github.com/users/mengyi520/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mengyi520/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 216,
+    "additions" : 216,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "mengyi520",
+    "id" : 18068937,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18068937?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mengyi520",
+    "html_url" : "https://github.com/mengyi520",
+    "followers_url" : "https://api.github.com/users/mengyi520/followers",
+    "following_url" : "https://api.github.com/users/mengyi520/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mengyi520/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mengyi520/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mengyi520/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mengyi520/orgs",
+    "repos_url" : "https://api.github.com/users/mengyi520/repos",
+    "events_url" : "https://api.github.com/users/mengyi520/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mengyi520/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/965b6f02b6e5b911604116aed7c3bca577467749",
+  "commit" : {
+    "author" : {
+      "name" : "mengyi520",
+      "email" : "834874378@qq.com",
+      "date" : "2016-06-06T17:02:36Z"
+    },
+    "committer" : {
+      "name" : "mengyi520",
+      "email" : "834874378@qq.com",
+      "date" : "2016-06-06T17:02:36Z"
+    },
+    "message" : "#90 #95 #13 labs4 labs9",
+    "tree" : {
+      "sha" : "1317c367616ac3d50c8407ca144c8f8f300511db",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/1317c367616ac3d50c8407ca144c8f8f300511db"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/965b6f02b6e5b911604116aed7c3bca577467749",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/965b6f02b6e5b911604116aed7c3bca577467749/comments",
+  "files" : [ {
+    "sha" : "45d140438c49b86f019906840cc5ec4b67ec4bd2",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214AlarmView.java",
+    "status" : "added",
+    "additions" : 216,
+    "deletions" : 0,
+    "changes" : 216,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/965b6f02b6e5b911604116aed7c3bca577467749/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214AlarmView.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/965b6f02b6e5b911604116aed7c3bca577467749/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214AlarmView.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214AlarmView.java?ref=965b6f02b6e5b911604116aed7c3bca577467749",
+    "patch" : "@@ -0,0 +1,216 @@\n+package edu.hzuapps.androidworks.homeworks.net1314080903214;\n+\n+import android.app.AlarmManager;\n+import android.app.AlertDialog;\n+import android.app.PendingIntent;\n+import android.app.TimePickerDialog;\n+import android.content.Context;\n+import android.content.DialogInterface;\n+import android.content.Intent;\n+import android.content.SharedPreferences;\n+import android.util.AttributeSet;\n+import android.view.View;\n+import android.widget.AdapterView;\n+import android.widget.ArrayAdapter;\n+import android.widget.Button;\n+import android.widget.LinearLayout;\n+import android.widget.ListView;\n+import android.widget.TimePicker;\n+\n+import java.util.Calendar;\n+\n+\n+public class Net1314080903214AlarmView extends LinearLayout{\n+\n+    private Button btnAddAlarm;     // 添加闹钟的按钮\n+    private ListView lvAlarmList;   // 用于显示添加的闹钟\n+    private static final String KEY_ALARM_LIST = \"alarmlist\";\n+    private ArrayAdapter<AlarmData> adapter;\n+    private AlarmManager alarmManager;  // 提供对系统闹钟服务的访问接口，在特定时刻为我们广播一个特定的Intent\n+\n+    public Net1314080903214AlarmView(Context context) {\n+        super(context);\n+        init();\n+    }\n+\n+    public Net1314080903214AlarmView(Context context, AttributeSet attrs) {\n+        super(context, attrs);\n+        init();\n+    }\n+\n+    public Net1314080903214AlarmView(Context context, AttributeSet attrs, int defStyleAttr) {\n+        super(context, attrs, defStyleAttr);\n+        init();\n+    }\n+\n+    private void init(){    // 获取系统闹钟服务\n+        alarmManager = (AlarmManager) getContext().getSystemService(Context.ALARM_SERVICE);\n+    }\n+\n+    @Override\n+    protected void onFinishInflate() {\n+        super.onFinishInflate();\n+\n+        btnAddAlarm = (Button) findViewById(R.id.btnAddAlarm);      // 绑定界面中的按钮\n+        lvAlarmList = (ListView) findViewById(R.id.lvAlarmList);    // 绑定界面中的ListView\n+\n+        adapter = new ArrayAdapter<Net1314080903214AlarmView.AlarmData>(getContext(), android.R.layout.simple_list_item_1);// android.R.layout.simple_expandable_list_item_1是android里已提供的样式，也可以换成自己的\n+        // 添加并显示\n+        lvAlarmList.setAdapter(adapter);\n+        // 读取已经保存的闹钟数据\n+        readSaveAlarmList();\n+\n+        // 为添加时钟按钮添加点击事件\n+        btnAddAlarm.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View v) {\n+                addAlarm(); // 添加时钟\n+            }\n+        });\n+\n+        // 为ListView添加长按点击事件\n+        lvAlarmList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {\n+            @Override\n+            public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {\n+                // 弹出对话框，选择将要执行的操作\n+                new AlertDialog.Builder(getContext()).setTitle(\"操作选项\").setItems(new CharSequence[]{\"删除\"}, new DialogInterface.OnClickListener() {\n+                    @Override\n+                    public void onClick(DialogInterface dialog, int which) {\n+                        switch (which) {\n+                            case 0:\n+                                deleteAlarm(position);  // 删除该时钟\n+                                break;\n+                            default:\n+                                break;\n+                        }\n+                    }\n+                }).setNegativeButton(\"取消\", null).show();\n+                return true;\n+            }\n+        });\n+    }\n+\n+    // 删除闹钟\n+    private void deleteAlarm(int position){\n+        AlarmData ad = adapter.getItem(position);   // 获得被长按的那个闹钟\n+        adapter.remove(ad); // 从adapter中移除被长按的那个闹钟\n+        saveAlarmList();    // 保存ListView列表\n+\n+        // 移除闹钟\n+        alarmManager.cancel(PendingIntent.getBroadcast(getContext(), ad.getId(), new Intent(getContext(), Net1314080903214AlarmReceiver.class), 0));\n+    }\n+\n+    private void addAlarm(){\n+        // 获取当前的时间\n+        Calendar c = Calendar.getInstance();\n+\n+        // 时间对话框。第一个参数（MenuView.this）为弹出的时间对话框所在的activity指针；\n+        // 第三个参数（hour）和第四个参数（minute）为弹出的时间对话框的初始显示的小时和分钟；\n+        // 第五个参数为设置24时显示参数，true代表时间以24时制显示时间。\n+        new TimePickerDialog(getContext(), new TimePickerDialog.OnTimeSetListener(){\n+            @Override\n+            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {\n+                Calendar calendar = Calendar.getInstance();\n+\n+                // 获取设置的时间\n+                calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);\n+                calendar.set(Calendar.MINUTE, minute);\n+                calendar.set(Calendar.SECOND, 0);   // 秒数清零\n+                calendar.set(Calendar.MILLISECOND, 0);  // 毫秒清零\n+\n+                Calendar currentTime = Calendar.getInstance();\n+\n+                // 如果设置的时间比当前的时间要小，则是设置的闹钟是第二天的\n+                if(calendar.getTimeInMillis()<=currentTime.getTimeInMillis()){\n+                    calendar.setTimeInMillis(calendar.getTimeInMillis()+24*60*60*1000);\n+                }\n+\n+                AlarmData ad = new AlarmData(calendar.getTimeInMillis());\n+                // 添加闹钟\n+                adapter.add(ad);\n+                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,\n+                        ad.getTime(),\n+                        10*60*1000, // 每10分钟重复一次闹铃\n+                        PendingIntent.getBroadcast(getContext(), ad.getId(), new Intent(getContext(), Net1314080903214AlarmReceiver.class), 0));\n+                saveAlarmList();\n+            }\n+        }, c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE), true).show();\n+    }\n+\n+    // 保存闹钟\n+    private void saveAlarmList(){\n+        // SharedPreferences是Android平台上一个轻量级的存储类，简单的说就是可以存储一些我们需要的变量信息。\n+        // 数据写入，需要使用SharedPreferences的一个内部接口Editor，可使用edit()函数得到\n+        SharedPreferences.Editor editor = getContext().getSharedPreferences(Net1314080903214AlarmView.class.getName(), Context.MODE_PRIVATE).edit();\n+\n+        StringBuffer sb = new StringBuffer();\n+        for(int i=0; i<adapter.getCount(); i++){\n+            sb.append(adapter.getItem(i).getTime()).append(\",\");\n+        }\n+        // 去掉最后的逗号\n+        if(sb.length()>1){\n+            String content = sb.toString().substring(0, sb.length() - 1);\n+            // 向editor对象里写入数据，使用的是像Map一样的方法写入键值对，调用普通XX()的方法\n+            editor.putString(KEY_ALARM_LIST, content);\n+        }else{\n+            editor.putString(KEY_ALARM_LIST, null);\n+        }\n+\n+        // 写完数据后，要关闭editor\n+        editor.commit();\n+    }\n+\n+    // 读取已经保存的闹钟数据\n+    private void readSaveAlarmList(){\n+        // getSharedPreferences()打开一个SharedPreferences的数据Map\n+        SharedPreferences sp = getContext().getSharedPreferences(Net1314080903214AlarmView.class.getName(), Context.MODE_PRIVATE);\n+        // 数据的读取\n+        // 调用getXX的方法，第一个是键（key）名，第二个，如果没有值，那么返回的默认值\n+        String content = sp.getString(KEY_ALARM_LIST, null);\n+\n+        if(content!=null){\n+            String[] timeStrings = content.split(\",\");\n+            for(String string : timeStrings){\n+                adapter.add(new AlarmData(Long.parseLong(string)));\n+            }\n+\n+        }\n+    }\n+\n+    private static class AlarmData{\n+\n+        private String timeLabel = \"\";\n+        private long time = 0;\n+        private Calendar date;\n+\n+        public AlarmData(long time){\n+            this.time = time;\n+\n+            date = Calendar.getInstance();\n+            // 用给定的long值设置此Calendar的当前时间值\n+            date.setTimeInMillis(time);\n+\n+            timeLabel = String.format(\"%d月%d日 %d:%d\",\n+                    date.get(Calendar.MONTH)+1,\n+                    date.get(Calendar.DAY_OF_MONTH),\n+                    date.get(Calendar.HOUR_OF_DAY),\n+                    date.get(Calendar.MINUTE));\n+        }\n+        public long getTime(){\n+            return time;\n+        }\n+        public String getTimeLabel(){\n+            return timeLabel;\n+        }\n+\n+        public int getId(){\n+            return (int) (getTime()/1000/60);   // 返回分钟\n+        }\n+\n+        @Override\n+        public String toString() {\n+            return getTimeLabel();\n+        }\n+\n+    }\n+}"
+  } ],
+  "sha" : "965b6f02b6e5b911604116aed7c3bca577467749",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/965b6f02b6e5b911604116aed7c3bca577467749",
+  "parents" : [ {
+    "sha" : "d9e403f398f853fe2f6c8f34fa1c89164b633fc1",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/d9e403f398f853fe2f6c8f34fa1c89164b633fc1",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/d9e403f398f853fe2f6c8f34fa1c89164b633fc1"
+  } ]
+}

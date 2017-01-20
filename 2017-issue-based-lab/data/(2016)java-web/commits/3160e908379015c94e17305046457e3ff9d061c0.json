@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "CaiRencai",
+    "id" : 20382321,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/20382321?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/CaiRencai",
+    "html_url" : "https://github.com/CaiRencai",
+    "followers_url" : "https://api.github.com/users/CaiRencai/followers",
+    "following_url" : "https://api.github.com/users/CaiRencai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/CaiRencai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/CaiRencai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/CaiRencai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/CaiRencai/orgs",
+    "repos_url" : "https://api.github.com/users/CaiRencai/repos",
+    "events_url" : "https://api.github.com/users/CaiRencai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/CaiRencai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 54,
+    "additions" : 54,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "CaiRencai",
+    "id" : 20382321,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/20382321?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/CaiRencai",
+    "html_url" : "https://github.com/CaiRencai",
+    "followers_url" : "https://api.github.com/users/CaiRencai/followers",
+    "following_url" : "https://api.github.com/users/CaiRencai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/CaiRencai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/CaiRencai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/CaiRencai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/CaiRencai/orgs",
+    "repos_url" : "https://api.github.com/users/CaiRencai/repos",
+    "events_url" : "https://api.github.com/users/CaiRencai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/CaiRencai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/3160e908379015c94e17305046457e3ff9d061c0",
+  "commit" : {
+    "author" : {
+      "name" : "CaiRencai",
+      "email" : "caijet@qq.com",
+      "date" : "2016-10-18T12:26:00Z"
+    },
+    "committer" : {
+      "name" : "CaiRencai",
+      "email" : "caijet@qq.com",
+      "date" : "2016-10-18T12:26:00Z"
+    },
+    "message" : "#3 提交实验代码",
+    "tree" : {
+      "sha" : "609e67a55ec0d237429a9da57818b1aaccc67562",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/609e67a55ec0d237429a9da57818b1aaccc67562"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/3160e908379015c94e17305046457e3ff9d061c0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/3160e908379015c94e17305046457e3ff9d061c0/comments",
+  "files" : [ {
+    "sha" : "39a09143bfb7cfb591975e189da79fdd46c0089b",
+    "filename" : "labs/1414080902228/index.jsp",
+    "status" : "added",
+    "additions" : 54,
+    "deletions" : 0,
+    "changes" : 54,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3160e908379015c94e17305046457e3ff9d061c0/labs/1414080902228/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3160e908379015c94e17305046457e3ff9d061c0/labs/1414080902228/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902228/index.jsp?ref=3160e908379015c94e17305046457e3ff9d061c0",
+    "patch" : "@@ -0,0 +1,54 @@\n+<!DOCTYPE html>\n+<html>\n+<head>\n+  <title>\n+    实验三\n+  </title>\n+  <meta charset=\"utf-8\">\n+  <link rel=\"stylesheet\" type=\"text/css\" href=\"css/bootstrap.min.css\">\n+  <%@ page import=\"java.io.*,java.util.*, javax.servlet.*\" %>\n+</head>\n+<body>\n+\n+<%\n+   Date date = new Date();\n+   out.print( \"<h2 align=\\\"center\\\">\" +date.toString()+\"</h2>\");\n+%>\n+\n+<form role=\"form\">\n+  <div class=\"form-group\">\n+    <label for=\"exampleInputEmail1\">Email address</label>\n+    <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Enter email\">\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"exampleInputPassword1\">Password</label>\n+    <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"exampleInputFile\">File input</label>\n+    <input type=\"file\" id=\"exampleInputFile\">\n+    <p class=\"help-block\">Example block-level help text here.</p>\n+  </div>\n+  <div class=\"checkbox\">\n+    <label>\n+      <input type=\"checkbox\"> Check me out\n+    </label>\n+  </div>\n+  <button type=\"button\" class=\"btn btn-default\">Submit</button>\n+  <script src=\"http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js\">\n+  <script src=\"js/bootstrap.min.js\"></script>\n+  <script type='text/javascript'>\n+  $('.btn').click(function(){\n+    $.ajax({\n+      url: \"success.json\"\n+    }).done(function(data) {\n+      if ( console && console.log ) {\n+          alert(data.msg);\n+        }\n+    });    \n+  });\n+\n+  </script>\n+</form>\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "3160e908379015c94e17305046457e3ff9d061c0",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/3160e908379015c94e17305046457e3ff9d061c0",
+  "parents" : [ {
+    "sha" : "df77d8515db32e0cc86c4c55930ca160d628f82e",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/df77d8515db32e0cc86c4c55930ca160d628f82e",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/df77d8515db32e0cc86c4c55930ca160d628f82e"
+  } ]
+}

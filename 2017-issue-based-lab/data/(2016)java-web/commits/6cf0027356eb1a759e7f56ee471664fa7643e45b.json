@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 6,
+    "additions" : 3,
+    "deletions" : 3
+  },
+  "author" : {
+    "login" : "LinPaiMin",
+    "id" : 22171010,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22171010?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LinPaiMin",
+    "html_url" : "https://github.com/LinPaiMin",
+    "followers_url" : "https://api.github.com/users/LinPaiMin/followers",
+    "following_url" : "https://api.github.com/users/LinPaiMin/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LinPaiMin/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LinPaiMin/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LinPaiMin/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LinPaiMin/orgs",
+    "repos_url" : "https://api.github.com/users/LinPaiMin/repos",
+    "events_url" : "https://api.github.com/users/LinPaiMin/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LinPaiMin/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/6cf0027356eb1a759e7f56ee471664fa7643e45b",
+  "commit" : {
+    "author" : {
+      "name" : "LinPaiMin",
+      "email" : "2217561306@qq.com",
+      "date" : "2016-10-31T01:23:42Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-31T01:23:42Z"
+    },
+    "message" : "Update se1414080902125.java",
+    "tree" : {
+      "sha" : "1801b06f77c41dadb4fed72221a0e33f366180db",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/1801b06f77c41dadb4fed72221a0e33f366180db"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/6cf0027356eb1a759e7f56ee471664fa7643e45b",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/6cf0027356eb1a759e7f56ee471664fa7643e45b/comments",
+  "files" : [ {
+    "sha" : "c8740db380bf529454ec62e4402424e553841ab9",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902125/se1414080902125.java",
+    "status" : "modified",
+    "additions" : 3,
+    "deletions" : 3,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6cf0027356eb1a759e7f56ee471664fa7643e45b/jweb/src/edu/hzu/javaweb/labs/se1414080902125/se1414080902125.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6cf0027356eb1a759e7f56ee471664fa7643e45b/jweb/src/edu/hzu/javaweb/labs/se1414080902125/se1414080902125.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902125/se1414080902125.java?ref=6cf0027356eb1a759e7f56ee471664fa7643e45b",
+    "patch" : "@@ -1,4 +1,4 @@\n-package edu.hzu.javaweb.labs;\n+package edu.hzu.javaweb.labs.se1414080902125;\n \n import java.io.IOException;\n import java.io.PrintWriter;\n@@ -13,7 +13,7 @@\n  * Servlet implementation class se1414080902125\n  */\n @WebServlet(\"/1414080902125\")\n-public class se1414080902125 extends HttpServlet {\n+public class Se1414080902125 extends HttpServlet {\n \tprivate static final long serialVersionUID = 1L;\n        \n     /**\n@@ -45,7 +45,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response)\n \t\tString school=request.getParameter(\"SCHOOL\");\n \t\tString majo=request.getParameter(\"MAJO\");\n \t\t\n-\t\tString info= \"�û���\"+name+\"�����룺\"+pw+\"����ݣ�\"+user+\"��ѧУ��\"+school+\"��רҵ��\"+majo;\n+\t\tString info= \"用户名：\"+name+\"；密码：\"+pw+\"；身份：\"+user+\"；学校：\"+school+\"；专业：\"+majo;\n \t\t\n \t\trequest.setAttribute(\"outputMessage\", info);\n \t\trequest.getRequestDispatcher(\"/info.jsp\").forward(request,response);"
+  } ],
+  "sha" : "6cf0027356eb1a759e7f56ee471664fa7643e45b",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6cf0027356eb1a759e7f56ee471664fa7643e45b",
+  "parents" : [ {
+    "sha" : "7f7ff49c782395bf4f5f5509fda8b99daca4a49b",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7f7ff49c782395bf4f5f5509fda8b99daca4a49b",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/7f7ff49c782395bf4f5f5509fda8b99daca4a49b"
+  } ]
+}

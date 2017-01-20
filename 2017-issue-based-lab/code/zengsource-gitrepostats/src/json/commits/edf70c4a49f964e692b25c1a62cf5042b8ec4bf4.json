@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "mengyi520",
+    "id" : 18068937,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18068937?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mengyi520",
+    "html_url" : "https://github.com/mengyi520",
+    "followers_url" : "https://api.github.com/users/mengyi520/followers",
+    "following_url" : "https://api.github.com/users/mengyi520/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mengyi520/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mengyi520/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mengyi520/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mengyi520/orgs",
+    "repos_url" : "https://api.github.com/users/mengyi520/repos",
+    "events_url" : "https://api.github.com/users/mengyi520/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mengyi520/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 52,
+    "additions" : 52,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "mengyi520",
+    "id" : 18068937,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18068937?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/mengyi520",
+    "html_url" : "https://github.com/mengyi520",
+    "followers_url" : "https://api.github.com/users/mengyi520/followers",
+    "following_url" : "https://api.github.com/users/mengyi520/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/mengyi520/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/mengyi520/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/mengyi520/subscriptions",
+    "organizations_url" : "https://api.github.com/users/mengyi520/orgs",
+    "repos_url" : "https://api.github.com/users/mengyi520/repos",
+    "events_url" : "https://api.github.com/users/mengyi520/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/mengyi520/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/edf70c4a49f964e692b25c1a62cf5042b8ec4bf4",
+  "commit" : {
+    "author" : {
+      "name" : "mengyi520",
+      "email" : "834874378@qq.com",
+      "date" : "2016-04-26T16:10:19Z"
+    },
+    "committer" : {
+      "name" : "mengyi520",
+      "email" : "834874378@qq.com",
+      "date" : "2016-04-26T16:10:19Z"
+    },
+    "message" : "#1 #13 labs1",
+    "tree" : {
+      "sha" : "ce112095225bd64f645033b8baa87d39bb15389b",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/ce112095225bd64f645033b8baa87d39bb15389b"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/edf70c4a49f964e692b25c1a62cf5042b8ec4bf4",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/edf70c4a49f964e692b25c1a62cf5042b8ec4bf4/comments",
+  "files" : [ {
+    "sha" : "975e690b4d858b0ec411bf70600a84e3659bcab6",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214Activity.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/edf70c4a49f964e692b25c1a62cf5042b8ec4bf4/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/edf70c4a49f964e692b25c1a62cf5042b8ec4bf4/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/net1314080903214/Net1314080903214Activity.java?ref=edf70c4a49f964e692b25c1a62cf5042b8ec4bf4",
+    "patch" : "@@ -0,0 +1,52 @@\n+package com.example.administrator.clock;\n+\n+import android.os.Bundle;\n+import android.support.design.widget.FloatingActionButton;\n+import android.support.design.widget.Snackbar;\n+import android.support.v7.app.AppCompatActivity;\n+import android.support.v7.widget.Toolbar;\n+import android.view.View;\n+import android.view.Menu;\n+import android.view.MenuItem;\n+\n+public class Net1314080903214Activity extends AppCompatActivity {\n+\n+    @Override\n+    protected void onCreate(Bundle savedInstanceState) {\n+        super.onCreate(savedInstanceState);\n+        setContentView(R.layout.activity_net1314080903214);\n+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n+        setSupportActionBar(toolbar);\n+\n+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n+        fab.setOnClickListener(new View.OnClickListener() {\n+            @Override\n+            public void onClick(View view) {\n+                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n+                        .setAction(\"Action\", null).show();\n+            }\n+        });\n+    }\n+\n+    @Override\n+    public boolean onCreateOptionsMenu(Menu menu) {\n+        // Inflate the menu; this adds items to the action bar if it is present.\n+        getMenuInflater().inflate(R.menu.menu_net1314080903214, menu);\n+        return true;\n+    }\n+\n+    @Override\n+    public boolean onOptionsItemSelected(MenuItem item) {\n+        // Handle action bar item clicks here. The action bar will\n+        // automatically handle clicks on the Home/Up button, so long\n+        // as you specify a parent activity in AndroidManifest.xml.\n+        int id = item.getItemId();\n+\n+        //noinspection SimplifiableIfStatement\n+        if (id == R.id.action_settings) {\n+            return true;\n+        }\n+\n+        return super.onOptionsItemSelected(item);\n+    }\n+}"
+  } ],
+  "sha" : "edf70c4a49f964e692b25c1a62cf5042b8ec4bf4",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/edf70c4a49f964e692b25c1a62cf5042b8ec4bf4",
+  "parents" : [ {
+    "sha" : "755939e832417183611789a78a7cd58f9c2fec00",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/755939e832417183611789a78a7cd58f9c2fec00",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/755939e832417183611789a78a7cd58f9c2fec00"
+  } ]
+}

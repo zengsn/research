@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 63,
+    "additions" : 0,
+    "deletions" : 63
+  },
+  "author" : {
+    "login" : "tangjianliang",
+    "id" : 22502144,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22502144?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/tangjianliang",
+    "html_url" : "https://github.com/tangjianliang",
+    "followers_url" : "https://api.github.com/users/tangjianliang/followers",
+    "following_url" : "https://api.github.com/users/tangjianliang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/tangjianliang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/tangjianliang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/tangjianliang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/tangjianliang/orgs",
+    "repos_url" : "https://api.github.com/users/tangjianliang/repos",
+    "events_url" : "https://api.github.com/users/tangjianliang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/tangjianliang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/9d9119f59fb2078beb846a09e2fbdc58e84b7721",
+  "commit" : {
+    "author" : {
+      "name" : "tangjianliang",
+      "email" : "1285848867@qq.com",
+      "date" : "2016-12-05T03:26:33Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-12-05T03:26:33Z"
+    },
+    "message" : "Delete Subinfo.java",
+    "tree" : {
+      "sha" : "40be3a4aaf7cbe126f6ab5e241595ffce648f4f5",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/40be3a4aaf7cbe126f6ab5e241595ffce648f4f5"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/9d9119f59fb2078beb846a09e2fbdc58e84b7721",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/9d9119f59fb2078beb846a09e2fbdc58e84b7721/comments",
+  "files" : [ {
+    "sha" : "bf98b784b7765527f51c4b90382e4f87962cfdd7",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902111/Subinfo.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 63,
+    "changes" : 63,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/4d7bce57b97db61df5f6f50259c4ee931bff6b78/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Subinfo.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/4d7bce57b97db61df5f6f50259c4ee931bff6b78/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Subinfo.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902111/Subinfo.java?ref=4d7bce57b97db61df5f6f50259c4ee931bff6b78",
+    "patch" : "@@ -1,63 +0,0 @@\n-package edu.hzu.javaweb.labs.se1414080902111;\n-\n-import java.io.IOException;\n-import java.io.PrintWriter;\n-import java.util.*;\n-import java.sql.*;\n-\n-import javax.servlet.ServletException;\n-import javax.servlet.http.HttpServlet;\n-import javax.servlet.http.HttpServletRequest;\n-import javax.servlet.http.HttpServletResponse;\n-\n-import edu.hzu.javaweb.labs.se1414080902111.User;\n-\n-public class SetUser extends HttpServlet {\n-\n-\t \n-\t/**\n-\t * \n-\t */\n-\tprivate static final long serialVersionUID = 1L;\n-\n-\n-\tpublic SetUser() {\n-\t\tsuper();\n-\t}\n-\n-\t\n-\tpublic void destroy() {\n-\t\tsuper.destroy(); \n-\t}\n-\n-\t\n-\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\t\trequest.setCharacterEncoding(\"UTF-8\");\t\t\n-\t\tresponse.setContentType(\"UTF-8\");\n-\t\tPrintWriter out=response.getWriter();\n-\t\tString email=request.getParameter(\"Email\");\n-        \tString name=request.getParameter(\"Name\");\n-\t\tString id=request.getParameter(\"ID\");\n-\t\tString password=request.getParameter(\"PW\");\n-\t\tString select=request.getParameter(\"Select\");\n-\t\tString pride=request.getParameter(\"Money\");\n-\t\tString sql=\"Insert into Users_info(email,name,id,password,select,pride) values(?,?,?,?,?,?)\";\n-\t\tUtil run=new Util();\n-        \tint n=run.updateSQL(sql);\n-        if(n>=1) out.println(\"�����ύ�ɹ���\"); \n-\telse  out.println(\"���׷���ʧ��\");\n-\t}\n-\t\n-\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\n-\t\tdoGet(request,response);\n-\t}\n-\n-\t\n-\tpublic void init() throws ServletException {\n-\t\t\n-\t}\n-\n-}\n\\ No newline at end of file"
+  } ],
+  "sha" : "9d9119f59fb2078beb846a09e2fbdc58e84b7721",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/9d9119f59fb2078beb846a09e2fbdc58e84b7721",
+  "parents" : [ {
+    "sha" : "4d7bce57b97db61df5f6f50259c4ee931bff6b78",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/4d7bce57b97db61df5f6f50259c4ee931bff6b78",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/4d7bce57b97db61df5f6f50259c4ee931bff6b78"
+  } ]
+}

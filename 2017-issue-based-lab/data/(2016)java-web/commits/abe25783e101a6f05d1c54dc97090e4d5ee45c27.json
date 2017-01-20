@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 88,
+    "additions" : 88,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "iDream666",
+    "id" : 18032727,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18032727?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/iDream666",
+    "html_url" : "https://github.com/iDream666",
+    "followers_url" : "https://api.github.com/users/iDream666/followers",
+    "following_url" : "https://api.github.com/users/iDream666/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/iDream666/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/iDream666/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/iDream666/subscriptions",
+    "organizations_url" : "https://api.github.com/users/iDream666/orgs",
+    "repos_url" : "https://api.github.com/users/iDream666/repos",
+    "events_url" : "https://api.github.com/users/iDream666/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/iDream666/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/abe25783e101a6f05d1c54dc97090e4d5ee45c27",
+  "commit" : {
+    "author" : {
+      "name" : "iDream666",
+      "email" : "1125458694@qq.com",
+      "date" : "2016-11-11T13:26:08Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-11-11T13:26:08Z"
+    },
+    "message" : "#5 提交实验代码\n\n以filter为基础的AOP拦截",
+    "tree" : {
+      "sha" : "29fdc2f3d2c21d80127bddc6c3e60a26d259da0a",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/29fdc2f3d2c21d80127bddc6c3e60a26d259da0a"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/abe25783e101a6f05d1c54dc97090e4d5ee45c27",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/abe25783e101a6f05d1c54dc97090e4d5ee45c27/comments",
+  "files" : [ {
+    "sha" : "54c0bf4a0b517d051fe59edeeafa4b00df9de54a",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902207/AppActionAop.java",
+    "status" : "added",
+    "additions" : 77,
+    "deletions" : 0,
+    "changes" : 77,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/abe25783e101a6f05d1c54dc97090e4d5ee45c27/jweb/src/edu/hzu/javaweb/labs/se1414080902207/AppActionAop.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/abe25783e101a6f05d1c54dc97090e4d5ee45c27/jweb/src/edu/hzu/javaweb/labs/se1414080902207/AppActionAop.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902207/AppActionAop.java?ref=abe25783e101a6f05d1c54dc97090e4d5ee45c27",
+    "patch" : "@@ -0,0 +1,77 @@\n+package indi.xiao.ext.aop;\r\n+\r\n+import indi.xiao.ext.common.AppBaseService;\r\n+import indi.xiao.ext.util.JsonUtil;\r\n+import org.aspectj.lang.ProceedingJoinPoint;\r\n+import org.aspectj.lang.annotation.Around;\r\n+import org.aspectj.lang.annotation.Aspect;\r\n+import org.aspectj.lang.annotation.Pointcut;\r\n+import org.slf4j.Logger;\r\n+import org.slf4j.LoggerFactory;\r\n+\r\n+import javax.annotation.Resource;\r\n+import javax.servlet.http.Cookie;\r\n+import javax.servlet.http.HttpServletRequest;\r\n+import javax.servlet.http.HttpServletResponse;\r\n+import java.util.List;\r\n+\r\n+/**\r\n+ * 请求拦截处理,\r\n+ * 对于任何action请求进行拦截,\r\n+ * 做验证处理.\r\n+ *\r\n+ * @Author xiaoyq\r\n+ */\r\n+@Aspect\r\n+public class AppActionAop extends AppBaseService {\r\n+    public static Logger logger = LoggerFactory.getLogger(AppActionAop.class);\r\n+\r\n+    @Pointcut(\"execution(* indi.xiao.app.*.action..*(..))\")\r\n+    private void anyMethod() {\r\n+    }\r\n+\r\n+    @Around(\"anyMethod()\")\r\n+    public Object appsActionMethod(ProceedingJoinPoint pjp) throws Throwable {\r\n+\r\n+        Object[] obs = pjp.getArgs();\r\n+        HttpServletRequest request = null;\r\n+        HttpServletResponse response = null;\r\n+        Boolean loginFlag = false;\r\n+\r\n+        if (obs != null) {\r\n+            for (int i = 0; i < obs.length; i++) {\r\n+                Object obj = obs[i];\r\n+                if (obj instanceof HttpServletRequest) {\r\n+                    request = (HttpServletRequest) obj;\r\n+                }\r\n+                if (obj instanceof HttpServletResponse) {\r\n+                    response = (HttpServletResponse) obj;\r\n+                }\r\n+            }\r\n+\r\n+            // 如果拦截到的类继承了接口LoginAopSkip，不执行登陆验证\r\n+            if (!(pjp.getThis() instanceof LoginAopSkip)) {\r\n+                //校验登陆合法性，cookie校验\r\n+                Cookie[] cookies = request.getCookies();\r\n+                if(cookies!=null && cookies.length>0){\r\n+                    for (Cookie ck : cookies) {\r\n+                        if (\"login\".equals(ck.getName()) && ck.getValue() != null) {\r\n+                            loginFlag = true;\r\n+                        }\r\n+                    }\r\n+                }\r\n+            }else{\r\n+                loginFlag = true;\r\n+            }\r\n+\r\n+            // 登陆验证通过时，进行权限验证\r\n+            if (loginFlag) {\r\n+                pjp.proceed();\r\n+            } else {\r\n+                response.sendRedirect(\"/infoManager/login.html\");\r\n+            }\r\n+        }\r\n+        return \"\";\r\n+    }\r\n+\r\n+}\r"
+  }, {
+    "sha" : "09db29868a976ec99a9c1ee5bc77445df5bc9695",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902207/LoginAopSkip.java",
+    "status" : "added",
+    "additions" : 11,
+    "deletions" : 0,
+    "changes" : 11,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/abe25783e101a6f05d1c54dc97090e4d5ee45c27/jweb/src/edu/hzu/javaweb/labs/se1414080902207/LoginAopSkip.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/abe25783e101a6f05d1c54dc97090e4d5ee45c27/jweb/src/edu/hzu/javaweb/labs/se1414080902207/LoginAopSkip.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902207/LoginAopSkip.java?ref=abe25783e101a6f05d1c54dc97090e4d5ee45c27",
+    "patch" : "@@ -0,0 +1,11 @@\n+package indi.xiao.ext.aop;\r\n+\r\n+/**\r\n+ * 实现本接口的类不会被AOP登陆验证拦截.\r\n+ *\r\n+ * @Date 2016/04/22\r\n+ * @Author lidong\r\n+ */\r\n+public interface LoginAopSkip {\r\n+\r\n+}\r"
+  } ],
+  "sha" : "abe25783e101a6f05d1c54dc97090e4d5ee45c27",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/abe25783e101a6f05d1c54dc97090e4d5ee45c27",
+  "parents" : [ {
+    "sha" : "4b721f88e81355bab4baadc3d27a26605963c26e",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/4b721f88e81355bab4baadc3d27a26605963c26e",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/4b721f88e81355bab4baadc3d27a26605963c26e"
+  } ]
+}

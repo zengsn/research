@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "cyk0505",
+    "id" : 22512010,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512010?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/cyk0505",
+    "html_url" : "https://github.com/cyk0505",
+    "followers_url" : "https://api.github.com/users/cyk0505/followers",
+    "following_url" : "https://api.github.com/users/cyk0505/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/cyk0505/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/cyk0505/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/cyk0505/subscriptions",
+    "organizations_url" : "https://api.github.com/users/cyk0505/orgs",
+    "repos_url" : "https://api.github.com/users/cyk0505/repos",
+    "events_url" : "https://api.github.com/users/cyk0505/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/cyk0505/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 4,
+    "additions" : 2,
+    "deletions" : 2
+  },
+  "author" : {
+    "login" : "cyk0505",
+    "id" : 22512010,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512010?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/cyk0505",
+    "html_url" : "https://github.com/cyk0505",
+    "followers_url" : "https://api.github.com/users/cyk0505/followers",
+    "following_url" : "https://api.github.com/users/cyk0505/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/cyk0505/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/cyk0505/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/cyk0505/subscriptions",
+    "organizations_url" : "https://api.github.com/users/cyk0505/orgs",
+    "repos_url" : "https://api.github.com/users/cyk0505/repos",
+    "events_url" : "https://api.github.com/users/cyk0505/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/cyk0505/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/41fa6f9f73a19d372a9923f8c092b93b8f962056",
+  "commit" : {
+    "author" : {
+      "name" : "cyk0505",
+      "email" : "350401605@qq.com",
+      "date" : "2016-11-07T04:07:01Z"
+    },
+    "committer" : {
+      "name" : "cyk0505",
+      "email" : "350401605@qq.com",
+      "date" : "2016-11-07T04:07:01Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "8f4ecf603e3e7ecb3ce2ee5bfeb4e18b1260e3f9",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/8f4ecf603e3e7ecb3ce2ee5bfeb4e18b1260e3f9"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/41fa6f9f73a19d372a9923f8c092b93b8f962056",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/41fa6f9f73a19d372a9923f8c092b93b8f962056/comments",
+  "files" : [ {
+    "sha" : "d29f661b37ddc1c8963ecff28f7c5059f38987e7",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902112/LoginFilter.java",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/41fa6f9f73a19d372a9923f8c092b93b8f962056/jweb/src/edu/hzu/javaweb/labs/se1414080902112/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/41fa6f9f73a19d372a9923f8c092b93b8f962056/jweb/src/edu/hzu/javaweb/labs/se1414080902112/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902112/LoginFilter.java?ref=41fa6f9f73a19d372a9923f8c092b93b8f962056",
+    "patch" : "@@ -28,10 +28,10 @@ public void doFilter(ServletRequest request, ServletResponse response,\n \t     HttpServletResponse res = (HttpServletResponse) response;   \n \t  \n \t     HttpSession session = req.getSession();   \n-\t    if (session.getAttribute(\"username\") != null) {//��¼����ܷ���   \n+\t    if (session.getAttribute(\"username\") != null) { \n \t         chain.doFilter(request, response);   \n \t     } else {   \n-\t         res.sendRedirect(\"../failure.jsp\");   \n+\t         res.sendRedirect(\"failure.jsp\");   \n \t     }   \n \t}  \n "
+  } ],
+  "sha" : "41fa6f9f73a19d372a9923f8c092b93b8f962056",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/41fa6f9f73a19d372a9923f8c092b93b8f962056",
+  "parents" : [ {
+    "sha" : "c0c795072d8dfae4dbfd0b9204b8ccecf16aa56b",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c0c795072d8dfae4dbfd0b9204b8ccecf16aa56b",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/c0c795072d8dfae4dbfd0b9204b8ccecf16aa56b"
+  } ]
+}

@@ -1,0 +1,130 @@
+{
+  "committer" : {
+    "login" : "kangwen123",
+    "id" : 22269277,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22269277?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/kangwen123",
+    "html_url" : "https://github.com/kangwen123",
+    "followers_url" : "https://api.github.com/users/kangwen123/followers",
+    "following_url" : "https://api.github.com/users/kangwen123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/kangwen123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/kangwen123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/kangwen123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/kangwen123/orgs",
+    "repos_url" : "https://api.github.com/users/kangwen123/repos",
+    "events_url" : "https://api.github.com/users/kangwen123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/kangwen123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 123,
+    "additions" : 16,
+    "deletions" : 107
+  },
+  "author" : {
+    "login" : "kangwen123",
+    "id" : 22269277,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22269277?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/kangwen123",
+    "html_url" : "https://github.com/kangwen123",
+    "followers_url" : "https://api.github.com/users/kangwen123/followers",
+    "following_url" : "https://api.github.com/users/kangwen123/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/kangwen123/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/kangwen123/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/kangwen123/subscriptions",
+    "organizations_url" : "https://api.github.com/users/kangwen123/orgs",
+    "repos_url" : "https://api.github.com/users/kangwen123/repos",
+    "events_url" : "https://api.github.com/users/kangwen123/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/kangwen123/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/488bb2dd5c0cd392f084916e35ecb0d56fb24547",
+  "commit" : {
+    "author" : {
+      "name" : "kangwen123",
+      "email" : "454552677@qq.com",
+      "date" : "2016-11-16T08:17:41Z"
+    },
+    "committer" : {
+      "name" : "kangwen123",
+      "email" : "454552677@qq.com",
+      "date" : "2016-11-16T08:17:41Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "4bd15f2b9d77eef1a5b0e2ce2b5eaa2abd9fa531",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/4bd15f2b9d77eef1a5b0e2ce2b5eaa2abd9fa531"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/488bb2dd5c0cd392f084916e35ecb0d56fb24547",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/488bb2dd5c0cd392f084916e35ecb0d56fb24547/comments",
+  "files" : [ {
+    "sha" : "f41c7390dd30ab23f0df2cb67a6eafa6ba938fb8",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902102/LoginFliter.java",
+    "status" : "renamed",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/488bb2dd5c0cd392f084916e35ecb0d56fb24547/jweb/src/edu/hzu/javaweb/labs/se1414080902102/LoginFliter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/488bb2dd5c0cd392f084916e35ecb0d56fb24547/jweb/src/edu/hzu/javaweb/labs/se1414080902102/LoginFliter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902102/LoginFliter.java?ref=488bb2dd5c0cd392f084916e35ecb0d56fb24547",
+    "patch" : "@@ -1,4 +1,4 @@\n-package jweb;\n+package filter;\n \n import java.io.IOException;\n \n@@ -11,7 +11,7 @@\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n import javax.servlet.http.HttpSession;\n-public class filter implements Filter {\n+public class LoginFliter implements Filter {\n \n \t@Override\n \tpublic void destroy() {",
+    "previous_filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902102/filter.java"
+  }, {
+    "sha" : "854b99321a4de452ea7790d4486fa4ff5c538799",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902102/Se1414080902102Servlet.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 80,
+    "changes" : 80,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6b262c72b519020f8b5f492a9e8be4865de9f82a/jweb/src/edu/hzu/javaweb/labs/se1414080902102/Se1414080902102Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6b262c72b519020f8b5f492a9e8be4865de9f82a/jweb/src/edu/hzu/javaweb/labs/se1414080902102/Se1414080902102Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902102/Se1414080902102Servlet.java?ref=6b262c72b519020f8b5f492a9e8be4865de9f82a",
+    "patch" : "@@ -1,80 +0,0 @@\n-package se1414080902102;\n-\n-import java.io.IOException;\n-import java.io.PrintWriter;\n-\n-import javax.servlet.ServletException;\n-import javax.servlet.http.HttpServlet;\n-import javax.servlet.http.HttpServletRequest;\n-import javax.servlet.http.HttpServletResponse;\n-\n-public class Se1414080902102Servlet extends HttpServlet {\n-\n-\t/**\n-\t * Constructor of the object.\n-\t */\n-\tpublic Se1414080902102Servlet() {\n-\t\tsuper();\n-\t}\n-\n-\t/**\n-\t * Destruction of the servlet. <br>\n-\t */\n-\tpublic void destroy() {\n-\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n-\t\t// Put your code here\n-\t}\n-\n-\t/**\n-\t * The doGet method of the servlet. <br>\n-\t *\n-\t * This method is called when a form has its tag value method equals to get.\n-\t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n-\t */\n-\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\n-\t\tdoPost(request,response);\n-\t}\n-\n-\t/**\n-\t * The doPost method of the servlet. <br>\n-\t *\n-\t * This method is called when a form has its tag value method equals to post.\n-\t * \n-\t * @param request the request send by the client to the server\n-\t * @param response the response send by the server to the client\n-\t * @throws ServletException if an error occurred\n-\t * @throws IOException if an error occurred\n-\t */\n-\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n-\t\t\tthrows ServletException, IOException {\n-\n-\t\tString username=request.getParameter(\"username\");\n-\t\tString password=request.getParameter(\"password\");\n-\t\tString cat=request.getParameter(\"whichcat\");\n-\t\tString info=\"\";\n-\t\tif(cat!=null){\n-\t\t\tinfo=username+\"�������⳵������Ϊ\"+cat;\n-\t\t}\n-\t\telse{\n-\t\t\tinfo=username+\"�����⳵ʧ�ܣ��������⳵\";\n-\t\t}\n-\t\trequest.setAttribute(\"output\", info);\n-\t\trequest.getRequestDispatcher(\"/index.jsp\").forward(request, response);\n-\t}\n-\n-\t/**\n-\t * Initialization of the servlet. <br>\n-\t *\n-\t * @throws ServletException if an error occurs\n-\t */\n-\tpublic void init() throws ServletException {\n-\t\t// Put your code here\n-\t}\n-\n-}"
+  }, {
+    "sha" : "7e24531de6370b4b95ddf728d5f96c02d64ee740",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902102/encodingfilter.java",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/488bb2dd5c0cd392f084916e35ecb0d56fb24547/jweb/src/edu/hzu/javaweb/labs/se1414080902102/encodingfilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/488bb2dd5c0cd392f084916e35ecb0d56fb24547/jweb/src/edu/hzu/javaweb/labs/se1414080902102/encodingfilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902102/encodingfilter.java?ref=488bb2dd5c0cd392f084916e35ecb0d56fb24547",
+    "patch" : "@@ -1,4 +1,4 @@\n-package jweb;\n+package filter;\n \n import java.io.IOException;\n \n@@ -9,7 +9,7 @@\n import javax.servlet.ServletRequest;\n import javax.servlet.ServletResponse;\n \n-public class encodingfilter implements Filter {\n+public class EncodingFilter implements Filter {\n \n \t@Override\n \tpublic void destroy() {"
+  }, {
+    "sha" : "31ca3b47168a3d6aa9741b0b84eadbca06335e91",
+    "filename" : "jweb/web/se1414080902102/web.xml",
+    "status" : "modified",
+    "additions" : 12,
+    "deletions" : 3,
+    "changes" : 15,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/488bb2dd5c0cd392f084916e35ecb0d56fb24547/jweb/web/se1414080902102/web.xml",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/488bb2dd5c0cd392f084916e35ecb0d56fb24547/jweb/web/se1414080902102/web.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/se1414080902102/web.xml?ref=488bb2dd5c0cd392f084916e35ecb0d56fb24547",
+    "patch" : "@@ -1,6 +1,6 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n <web-app xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://java.sun.com/xml/ns/javaee\" xsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd\" id=\"WebApp_ID\" version=\"3.0\">\n-  <display-name>jweb</display-name>\n+  <display-name>filter</display-name>\n   <welcome-file-list>\n     <welcome-file>index.html</welcome-file>\n     <welcome-file>index.htm</welcome-file>\n@@ -15,6 +15,15 @@\n   </filter>\n   <filter-mapping>\n   <filter-name>filter</filter-name>\n-  <url-pattern>/jweb/*</url-pattern>\n+  <url-pattern>/租车/*</url-pattern>\n   </filter-mapping>\n-</web-app>\n\\ No newline at end of file\n+\n+ <filter>\n+  <filter-name>EncodingFilter</filter-name>\n+  <filter-class>filters.EncodingFilter</filter-class>\n+  </filter>\n+  <filter-mapping>\n+  <filter-name>EncodingFilter</filter-name>\n+  <url-pattern>/filter/*</url-pattern>\n+  </filter-mapping>\n+  </web-app>\n\\ No newline at end of file"
+  }, {
+    "sha" : "4308afb24f4f629b3cbdd29d346ac1d8b3ae3b29",
+    "filename" : "jweb/web/se1414080902102/web2.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 20,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6b262c72b519020f8b5f492a9e8be4865de9f82a/jweb/web/se1414080902102/web2.xml",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6b262c72b519020f8b5f492a9e8be4865de9f82a/jweb/web/se1414080902102/web2.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/se1414080902102/web2.xml?ref=6b262c72b519020f8b5f492a9e8be4865de9f82a",
+    "patch" : "@@ -1,20 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n-<web-app xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://java.sun.com/xml/ns/javaee\" xsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd\" id=\"WebApp_ID\" version=\"3.0\">\n-  <display-name>jweb</display-name>\n-  <welcome-file-list>\n-    <welcome-file>index.html</welcome-file>\n-    <welcome-file>index.htm</welcome-file>\n-    <welcome-file>index.jsp</welcome-file>\n-    <welcome-file>default.html</welcome-file>\n-    <welcome-file>default.htm</welcome-file>\n-    <welcome-file>default.jsp</welcome-file>\n-  </welcome-file-list>\n-  <filter>\n-  <filter-name>EncodingFilter</filter-name>\n-  <filter-class>filters.EncodingFilter</filter-class>\n-  </filter>\n-  <filter-mapping>\n-  <filter-name>EncodingFilter</filter-name>\n-  <url-pattern>/jweb/*</url-pattern>\n-  </filter-mapping>\n-</web-app>\n\\ No newline at end of file"
+  } ],
+  "sha" : "488bb2dd5c0cd392f084916e35ecb0d56fb24547",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/488bb2dd5c0cd392f084916e35ecb0d56fb24547",
+  "parents" : [ {
+    "sha" : "6b262c72b519020f8b5f492a9e8be4865de9f82a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6b262c72b519020f8b5f492a9e8be4865de9f82a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/6b262c72b519020f8b5f492a9e8be4865de9f82a"
+  } ]
+}

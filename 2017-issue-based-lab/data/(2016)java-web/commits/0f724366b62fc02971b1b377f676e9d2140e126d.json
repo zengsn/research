@@ -1,0 +1,82 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 211,
+    "additions" : 184,
+    "deletions" : 27
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/0f724366b62fc02971b1b377f676e9d2140e126d",
+  "commit" : {
+    "author" : {
+      "name" : "一定要开心~",
+      "email" : "一定要开心~",
+      "date" : "2016-11-19T07:09:35Z"
+    },
+    "committer" : {
+      "name" : "一定要开心~",
+      "email" : "一定要开心~",
+      "date" : "2016-11-19T07:09:35Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "f1790aa3069d72a99612da4d325b2f7cc24c2e84",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/f1790aa3069d72a99612da4d325b2f7cc24c2e84"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/0f724366b62fc02971b1b377f676e9d2140e126d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/0f724366b62fc02971b1b377f676e9d2140e126d/comments",
+  "files" : [ {
+    "sha" : "8ae0dea26232f5f1c34c6aefc4a12927760edef6",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902113/Book.java",
+    "status" : "added",
+    "additions" : 49,
+    "deletions" : 0,
+    "changes" : 49,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/0f724366b62fc02971b1b377f676e9d2140e126d/jweb/src/edu/hzu/javaweb/labs/se1414080902113/Book.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/0f724366b62fc02971b1b377f676e9d2140e126d/jweb/src/edu/hzu/javaweb/labs/se1414080902113/Book.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902113/Book.java?ref=0f724366b62fc02971b1b377f676e9d2140e126d",
+    "patch" : "@@ -0,0 +1,49 @@\n+package edu.hzu.javaweb.labs.se1414080902113;\n+\n+public class Book {\n+\tprivate String name;\n+\tprivate String writer;\n+\tprivate String date;\n+\tprivate String publish;\n+\tprivate String main;\n+\tpublic Book(){}\n+\tpublic Book(String sname,String swriter,String sdate,String spublish,String smain)\n+\t{\n+\t\tthis.name=sname;\n+\t\tthis.writer=swriter;\n+\t\tthis.date=sdate;\n+\t\tthis.publish=spublish;\n+\t\tthis.main=smain;\n+\t}\n+\tpublic String getName() {\n+\t\treturn name;\n+\t}\n+\tpublic void setName(String name) {\n+\t\tthis.name = name;\n+\t}\n+\tpublic String getWriter() {\n+\t\treturn writer;\n+\t}\n+\tpublic void setWriter(String writer) {\n+\t\tthis.writer = writer;\n+\t}\n+\tpublic String getDate() {\n+\t\treturn date;\n+\t}\n+\tpublic void setDate(String date) {\n+\t\tthis.date = date;\n+\t}\n+\tpublic String getPublish() {\n+\t\treturn publish;\n+\t}\n+\tpublic void setPublish(String publish) {\n+\t\tthis.publish = publish;\n+\t}\n+\tpublic String getMain() {\n+\t\treturn main;\n+\t}\n+\tpublic void setMain(String main) {\n+\t\tthis.main = main;\n+\t}\n+\n+}"
+  }, {
+    "sha" : "2159d866ff8ab056debd8c6f56a2de4fe7da1952",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902113/BookServlet.java",
+    "status" : "added",
+    "additions" : 78,
+    "deletions" : 0,
+    "changes" : 78,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/0f724366b62fc02971b1b377f676e9d2140e126d/jweb/src/edu/hzu/javaweb/labs/se1414080902113/BookServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/0f724366b62fc02971b1b377f676e9d2140e126d/jweb/src/edu/hzu/javaweb/labs/se1414080902113/BookServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902113/BookServlet.java?ref=0f724366b62fc02971b1b377f676e9d2140e126d",
+    "patch" : "@@ -0,0 +1,78 @@\n+package edu.hzu.javaweb.labs.se1414080902113;\n+\n+import java.io.IOException;\n+import java.util.*;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+\n+public class BookServlet extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic BookServlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tString sname=request.getParameter(\"name\");\n+\t\tString swriter=request.getParameter(\"writer\");\n+\t\tString sdate=request.getParameter(\"date\");\n+\t\tString spublish=request.getParameter(\"publish\");\n+\t\tString smain=request.getParameter(\"main\");\n+\t  List<Book> booklist=new ArrayList<Book>();\n+\t   booklist.add(new Book(sname,swriter,sdate,spublish,smain));\n+\t   request.setAttribute(\"sbook\", booklist);\n+\t   request.getRequestDispatcher(\"show.jsp\").forward(request, response);\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tdoGet(request,response);\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t\t// Put your code here\n+\t}\n+\n+}"
+  }, {
+    "sha" : "16e30df3c4c657f854f64648c5b56770272c3697",
+    "filename" : "labs/1414080902113/index.jsp",
+    "status" : "modified",
+    "additions" : 18,
+    "deletions" : 27,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/0f724366b62fc02971b1b377f676e9d2140e126d/labs/1414080902113/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/0f724366b62fc02971b1b377f676e9d2140e126d/labs/1414080902113/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902113/index.jsp?ref=0f724366b62fc02971b1b377f676e9d2140e126d",
+    "patch" : "@@ -1,4 +1,5 @@\n-<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+﻿<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@taglib uri=\"http://java.sun.com/jstl/core\"  prefix=\"c\"%>\n <%\n String path = request.getContextPath();\n String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n@@ -8,8 +9,9 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n <html>\n   <head>\n     <base href=\"<%=basePath%>\">\n-    <link href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\"> \n-    <title>My JSP 'index.jsp' starting page</title>\n+    \n+    <title>My JSP '1.jsp' starting page</title>\n+    \n \t<meta http-equiv=\"pragma\" content=\"no-cache\">\n \t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n \t<meta http-equiv=\"expires\" content=\"0\">    \n@@ -18,31 +20,20 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t<!--\n \t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n \t-->\n+\n   </head>\n   \n-<body>\n-  <%Date time=new Date(); %>\n-  程序运行的时间是：<%=time %>\n-     <form role=\"form\" id=\"target\">\n-  <div class=\"form-group\">\n-    <label for=\"exampleInputEmail1\">Email address</label>\n-    <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Enter email\">\n-  </div>\n-  <div class=\"form-group\">\n-    <label for=\"exampleInputPassword1\">Password</label>\n-    <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\n-  </div>\n-  <div class=\"form-group\">\n-    <label for=\"exampleInputFile\">File input</label>\n-    <input type=\"file\" id=\"exampleInputFile\">\n-    <p class=\"help-block\">Example block-level help text here.</p>\n-  </div>\n-  <div class=\"checkbox\">\n-    <label>\n-      <input type=\"checkbox\"> Check me out\n-    </label>\n-  </div>\n-  <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n-</form>\n+  <body>\n+\n+   <form action=\"BookServlet\" method=\"post\">\n+   <table>\n+   <tr><td>书籍名称：</td><td><input name=\"name\"></td></tr>\n+<tr><td>作者：</td><td><input name=\"writer\"></td></tr>\n+<tr><td> 出版日期：</td><td><input name=\"date\"></td></tr>\n+<tr><td>出版社：</td><td><input name=\"publish\"></td></tr>\n+ <tr><td>主要内容：</td><td><input name=\"main\"></td></tr>\n+ <tr><td><input type=submit value=\"添加书籍\"> </td></tr>\n+ </table>\n+   </form>\n   </body>\n </html>"
+  }, {
+    "sha" : "abc1ccab1a0976360e39a9b32b86a413a9419c2d",
+    "filename" : "labs/1414080902113/show.jsp",
+    "status" : "added",
+    "additions" : 39,
+    "deletions" : 0,
+    "changes" : 39,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/0f724366b62fc02971b1b377f676e9d2140e126d/labs/1414080902113/show.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/0f724366b62fc02971b1b377f676e9d2140e126d/labs/1414080902113/show.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902113/show.jsp?ref=0f724366b62fc02971b1b377f676e9d2140e126d",
+    "patch" : "@@ -0,0 +1,39 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@taglib uri=\"http://java.sun.com/jsp/jstl/core\"  prefix=\"c\"%>\n+<%@ page import=\"KK.Book\"%>\n+\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'show.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+  <c:forEach var=\"book\" items=\"${sbook}\">\n+   书名：${book.name}<br> \n+   作者：${book.writer} <br>\n+ 出版日期：  ${book.date} <br>\n+  出版社： ${book.publish} <br>\n+ 主要内容：  ${book.main}<br>\n+   </c:forEach><br>\n+   <c:out value=\"书籍添加成功！\"/>\n+   \n+  </body>\n+</html>"
+  } ],
+  "sha" : "0f724366b62fc02971b1b377f676e9d2140e126d",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/0f724366b62fc02971b1b377f676e9d2140e126d",
+  "parents" : [ {
+    "sha" : "ba8870b81f8385337ab0034703863325a0382754",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/ba8870b81f8385337ab0034703863325a0382754",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/ba8870b81f8385337ab0034703863325a0382754"
+  } ]
+}

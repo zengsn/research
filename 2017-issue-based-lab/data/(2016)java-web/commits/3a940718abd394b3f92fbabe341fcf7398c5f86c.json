@@ -1,0 +1,233 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 346,
+    "additions" : 291,
+    "deletions" : 55
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/3a940718abd394b3f92fbabe341fcf7398c5f86c",
+  "commit" : {
+    "author" : {
+      "name" : "hao zh",
+      "email" : "hao zh",
+      "date" : "2016-11-18T04:36:58Z"
+    },
+    "committer" : {
+      "name" : "hao zh",
+      "email" : "hao zh",
+      "date" : "2016-11-18T04:36:58Z"
+    },
+    "message" : "#6 实验提交代码",
+    "tree" : {
+      "sha" : "71e8b19d6a41ff86d243c6ae72905731639c2359",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/71e8b19d6a41ff86d243c6ae72905731639c2359"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/3a940718abd394b3f92fbabe341fcf7398c5f86c/comments",
+  "files" : [ {
+    "sha" : "cf35a81c9e9f886497eed48e57798b8f5ee92342",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/Se1414080902217/Se1414080902217Servlet.java",
+    "status" : "modified",
+    "additions" : 18,
+    "deletions" : 8,
+    "changes" : 26,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/Se1414080902217/Se1414080902217Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/Se1414080902217/Se1414080902217Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/Se1414080902217/Se1414080902217Servlet.java?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -1,13 +1,16 @@\n-package Se1414080902217;\n+package se1414080902217;\n \n import java.io.IOException;\n-import javax.servlet.ServletConfig;\n+\n import javax.servlet.ServletException;\n import javax.servlet.annotation.WebServlet;\n import javax.servlet.http.HttpServlet;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.http.HttpServletResponse;\n \n+import vo.User;\n+import dao.UserDao;\n+\n /**\n  * Servlet implementation class loginCheck\n  */\n@@ -18,13 +21,20 @@\n \tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n \t\tString userName = request.getParameter(\"username\");\n \t\tString userPwd = request.getParameter(\"userpwd\");\n-\t\tif(userName.equals(\"\") || userPwd.equals(\"\"))\n-\t\t{\n-\t\t\trequest.getRequestDispatcher(\"check.jsp\").forward(request, response);\n+\t\t\n+\t\tUser user = new User();\n+\t\tUserDao dao = new UserDao();\n+\t\ttry {\n+\t\t\tuser = dao.findUserByName(userName);\n+\t\t} catch (Exception e) {\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t\tif(user == null || !user.getPassword().equals(userPwd)){\n+\t\t\trequest.setAttribute(\"userName\", userName);\n+\t\t\trequest.getRequestDispatcher(\"index.jsp\").forward(request, response);\n \t\t}\n-\t\telse\n-\t\t{\n-\t\t\trequest.getSession().setAttribute(\"userName\", userName);\n+\t\telse{\n+\t\t\trequest.getSession().setAttribute(\"customerName\", user.getcustomerName());\n \t\t\trequest.getRequestDispatcher(\"select.jsp\").forward(request, response);\n \t\t}\n \t}"
+  }, {
+    "sha" : "b2586bab09bca9021e1cd84f49d2b23ae87cb145",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902217/RegisterServlet.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/se1414080902217/RegisterServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/se1414080902217/RegisterServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902217/RegisterServlet.java?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -0,0 +1,52 @@\n+package se1414080902217;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import vo.User;\n+import dao.UserDao;\n+\n+@WebServlet(\"/register\")\n+public class RegisterServlet extends HttpServlet {\n+\tprivate static final long serialVersionUID = 1L;\n+       \n+    public RegisterServlet() {\n+        super();\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tString userName = request.getParameter(\"username\");\n+\t\tString userPwd = request.getParameter(\"userpwd\");\n+\t\tString cName = request.getParameter(\"cname\");\n+\t\tString userAddr = request.getParameter(\"useraddr\");\n+\t\n+\t\tUser user = new User();\n+\t\tuser.setcustomerName(cName);\n+\t\tuser.setUsername(userName);\n+\t\tuser.setPassword(userPwd);\n+\t\tuser.setUseraddr(userAddr);\n+\t\trequest.setAttribute(\"user\", user);\n+\t\tUserDao dao = new UserDao();\n+\t\ttry{\n+\t\t\tdao.add(user);\n+\t\t\trequest.getSession().setAttribute(\"userName\", user.getUsername());\n+\t\t\trequest.getSession().setAttribute(\"customerName\", user.getcustomerName());\n+\t\t\trequest.removeAttribute(\"user\");\n+\t\t\trequest.getRequestDispatcher(\"success.jsp\").forward(request, response);\n+\t\t}catch(Exception e){\n+\t\t\tthrow new ExceptionInInitializerError(e);\n+\t\t}finally{request.getRequestDispatcher(\"/registered.jsp\").forward(request, response);}\n+\t}\n+\n+}"
+  }, {
+    "sha" : "6de6a59390d1bb9ff68dff986a2fa9aae3321f7d",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902217/clear.java",
+    "status" : "modified",
+    "additions" : 4,
+    "deletions" : 4,
+    "changes" : 8,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/se1414080902217/clear.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/se1414080902217/clear.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902217/clear.java?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -1,4 +1,4 @@\n-package Se1414080902217;\n+package se1414080902217;\n \n import java.io.IOException;\n import javax.servlet.ServletException;\n@@ -11,17 +11,17 @@\n  * Servlet implementation class clear\n  */\n @WebServlet(\"/clear\")\n-public class clear extends HttpServlet {\n+public class Clear extends HttpServlet {\n \tprivate static final long serialVersionUID = 1L;\n \n \tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\t\trequest.getSession().removeAttribute(\"userName\");\n+\t\trequest.getSession().removeAttribute(\"customerName\");\n \t\trequest.getRequestDispatcher(\"index.jsp\").forward(request, response);\n \t}\n \n \n \tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n-\t\trequest.getSession().removeAttribute(\"userName\");\n+\t\trequest.getSession().removeAttribute(\"customerName\");\n \t\trequest.getRequestDispatcher(\"index.jsp\").forward(request, response);\n \t}\n "
+  }, {
+    "sha" : "1b6bdd6bc901d34a30b8c463554eb50fd8483fcc",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902217/filter_login.java",
+    "status" : "modified",
+    "additions" : 6,
+    "deletions" : 6,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/se1414080902217/filter_login.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/se1414080902217/filter_login.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902217/filter_login.java?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -1,4 +1,4 @@\n-package Se1414080902217;\n+package se1414080902217;\n \n import java.io.IOException;\n import javax.servlet.Filter;\n@@ -15,10 +15,10 @@\n /**\n  * Servlet Filter implementation class filter_login\n  */\n-@WebFilter(filterName = \"filter_login\", urlPatterns = {\"/makeOrder.jsp\"})\n-public class filter_login implements Filter {\n+@WebFilter(filterName = \"filter_login\", urlPatterns = {\"/Orders/makeOrder.jsp\"})\n+public class Filter_login implements Filter {\n \n-    public filter_login() {\n+    public Filter_login() {\n         // TODO Auto-generated constructor stub\n     }\n \n@@ -33,8 +33,8 @@ public void doFilter(ServletRequest request, ServletResponse response, FilterCha\n \t\tHttpServletResponse res = (HttpServletResponse) response;\n \n \t\tHttpSession session = req.getSession();\n-\t\tif (session.getAttribute(\"userName\")==null) {\n-\t\t\tres.sendRedirect(\"check.jsp\");\n+\t\tif (session.getAttribute(\"customerName\")==null) {\n+\t\t\tres.sendRedirect(\"/zhhao/error/error1.jsp\");\n \t\t} else {\n \t\t\tchain.doFilter(request, response);\n \t\t}"
+  }, {
+    "sha" : "ecf93f8d746d1d5d3459b7af275474ac52b26436",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902217/filter_setEncoding.java",
+    "status" : "modified",
+    "additions" : 2,
+    "deletions" : 2,
+    "changes" : 4,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/se1414080902217/filter_setEncoding.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/src/edu/hzu/javaweb/labs/se1414080902217/filter_setEncoding.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902217/filter_setEncoding.java?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -1,4 +1,4 @@\n-package Se1414080902217;\n+package se1414080902217;\n \n import java.io.IOException;\n import javax.servlet.Filter;\n@@ -11,7 +11,7 @@\n \n \n @WebFilter(filterName = \"filter_setEncoding\", urlPatterns = \"/*\")\n-public class filter_setEncoding implements Filter {\n+public class Filter_setEncoding implements Filter {\n \n \tpublic void destroy() {\n \t\t// TODO Auto-generated method stub"
+  }, {
+    "sha" : "254272e1c0740423e25eb40be9a98ce1556474b1",
+    "filename" : "jweb/web/1414080902217/META-INF/MANIFEST.MF",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 3,
+    "changes" : 3,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/META-INF/MANIFEST.MF",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/META-INF/MANIFEST.MF",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/META-INF/MANIFEST.MF?ref=dd11e9a190d50abde4228e713bfdd08eb7ad7b18",
+    "patch" : "@@ -1,3 +0,0 @@\n-Manifest-Version: 1.0\n-Class-Path: \n-"
+  }, {
+    "sha" : "72175f9f19c5036d0e9f0199bd950d7a5369163f",
+    "filename" : "jweb/web/1414080902217/Orders/lookOrder.jsp",
+    "status" : "renamed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/Orders/lookOrder.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/Orders/lookOrder.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/Orders/lookOrder.jsp?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "previous_filename" : "jweb/web/1414080902217/lookOrder.jsp"
+  }, {
+    "sha" : "7662d3da572c46c3312ce971c53b356750ac8fff",
+    "filename" : "jweb/web/1414080902217/Orders/makeOrder.jsp",
+    "status" : "added",
+    "additions" : 70,
+    "deletions" : 0,
+    "changes" : 70,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/Orders/makeOrder.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/Orders/makeOrder.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/Orders/makeOrder.jsp?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -0,0 +1,70 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<html>\n+<head>\n+    <meta charset=\"UTF-8\">\n+    <!-- 新 Bootstrap 核心 CSS 文件 -->\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\n+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\n+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+    <title>提交订单界面</title>\n+</head>\n+\n+<body>\n+<p></p>\n+<div>&nbsp;</div>\n+<div>&nbsp;</div>\n+<div class=\"text-center\"><font size=\"5\"face=\"微软雅黑\">填写订单信息</font></div>\n+<div>&nbsp;</div>\n+<p></p>\n+<p></p>\n+<form action=\"register\"method=\"post\"class=\"form-horizontal\" >\n+\t<div class=\"form-group\">\n+    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">商品名:</label>\n+    <div class=\"col-xs-4\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"goodsname\" placeholder=\"商品名\">\n+    </div>\n+  \t</div>\n+\t\n+\t<div class=\"form-group\">\n+    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">商品价格:</label>\n+    <div class=\"col-xs-4 input-group\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"goodsvalue\" placeholder=\"商品价格\">\n+      \t<span class=\"input-group-addon\">元</span>\n+    </div>\n+  \t</div>\n+  \t\n+  \t<div class=\"form-group\">\n+    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">下单时间:</label>\n+    <div class=\"col-xs-4 input-group\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"year\" placeholder=\"年\">\n+      \t<span class=\"input-group-addon\">年</span>\n+      \t<input type=\"text\" class=\"form-control\" name=\"month\" placeholder=\"月\">\n+      \t<span class=\"input-group-addon\">月</span>\n+      \t<input type=\"text\" class=\"form-control\" name=\"day\" placeholder=\"日\">\n+      \t<span class=\"input-group-addon\">日</span>\n+    </div>\n+  \t</div>\n+  \t\n+  \t<div class=\"form-group\">\n+    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">送货时长:</label>\n+    <div class=\"col-xs-4 input-group\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"time\" placeholder=\"送货时长\">\n+      \t<span class=\"input-group-addon\">天</span>\n+    </div>\n+  \t</div>\n+  \t\n+\t<div class=\"form-group\">\n+    <div class=\"row\">\n+      <div class=\"col-xs-offset-5 col-xs-1\"><button type=\"submit\" class=\"btn btn-default\">提交</button></div>\n+      <div class=\"col-xs-5\"><a class=\"btn btn-default\" href=\"/zhhao/select.jsp\" role=\"button\">返回</a></div>\n+    </div>\n+  \t</div>\n+  \t\n+</form>       \n+</body>\n+</html>"
+  }, {
+    "sha" : "3d18d1306d890047516ba299b42b4c10c5bb9983",
+    "filename" : "jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/Se1414080902217Servlet.class",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/Se1414080902217Servlet.class",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/Se1414080902217Servlet.class",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/Se1414080902217Servlet.class?ref=dd11e9a190d50abde4228e713bfdd08eb7ad7b18"
+  }, {
+    "sha" : "70aaac69821d0754d3406b07d5d2aa1846fd4026",
+    "filename" : "jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/clear.class",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/clear.class",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/clear.class",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/clear.class?ref=dd11e9a190d50abde4228e713bfdd08eb7ad7b18"
+  }, {
+    "sha" : "3c4296eb3c041cc8155486f436800404a311794c",
+    "filename" : "jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/filter_login.class",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/filter_login.class",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/filter_login.class",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/filter_login.class?ref=dd11e9a190d50abde4228e713bfdd08eb7ad7b18"
+  }, {
+    "sha" : "ba0800c7a45cee1f091abf07b19fd4d0742c5d54",
+    "filename" : "jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/filter_setEncoding.class",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/filter_setEncoding.class",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/filter_setEncoding.class",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/WEB-INF/classes/Se1414080902217/filter_setEncoding.class?ref=dd11e9a190d50abde4228e713bfdd08eb7ad7b18"
+  }, {
+    "sha" : "229845a9c595911172ede5257f5ddf5cda9f8d24",
+    "filename" : "jweb/web/1414080902217/error/error1.jsp",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/error/error1.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/error/error1.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/error/error1.jsp?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -0,0 +1,20 @@\n+<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+<head>\n+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+<title>错误</title>\n+</head>\n+<body>\n+\t<div>&nbsp;</div>\n+\t<div>&nbsp;</div>\n+\t<div>&nbsp;</div>\n+\t<div>&nbsp;</div>\n+\t<div>&nbsp;</div>\n+\t<div class=\"text-center\"><h4>未登录无法使用此功能</h4></div>\n+\t<p></p>\n+\t<div class=\"text-center\">点击<a href=/zhhao/index.jsp>登录</a></div>\t\n+</body>\n+</html>"
+  }, {
+    "sha" : "43b3a0483a4fa270370cd6a62d4870ae68a94ce1",
+    "filename" : "jweb/web/1414080902217/index.jsp",
+    "status" : "modified",
+    "additions" : 37,
+    "deletions" : 6,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/index.jsp?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -1,5 +1,6 @@\n <%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n     pageEncoding=\"UTF-8\"%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\"%>\n <html>\n <head>\n     <meta charset=\"UTF-8\">\n@@ -16,15 +17,22 @@\n \n <body>\n <p></p>\n-<p></p>\n+<div>&nbsp;</div>\n+<div>&nbsp;</div>\n+<div>&nbsp;</div>\n <div class=\"text-center\"><font size=\"5\"face=\"微软雅黑\">填写登录信息</font></div>\n+<div>&nbsp;</div>\n <p></p>\n-<p></p>\n-<form action=\"1414080902217\"method=\"post\"class=\"form-horizontal\" >\n+<form name=\"form1\" action=\"1414080902217\" onSubmit=\"return checksubmit();\" method=\"post\" class=\"form-horizontal\" >\n \t<div class=\"form-group\">\n-    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">用户名:</label>\n+    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">账号:</label>\n     <div class=\"col-xs-4\">\n-      \t<input type=\"text\" class=\"form-control\" name=\"username\" placeholder=\"用户名\">\n+    \t<c:if test = \"${userName != null }\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"username\" value=\"${userName}\" >\n+      \t</c:if>\n+      \t<c:if test = \"${userName == null }\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"username\" placeholder=\"账号\" >\n+      \t</c:if>\n     </div>\n     <div class=\"col-xs-2\"><a class=\"btn btn-default\" href=\"select.jsp\" role=\"button\">游客登录</a></div>\n   \t</div>\n@@ -43,6 +51,29 @@\n       <div class=\"col-xs-1\"><button type=\"reset\" class=\"btn btn-default\">取消</button></div>\n     </div>\n   \t</div>\n-</form>       \n+</form>\n+\n+<c:if test = \"${userName != null }\">\n+<script type=\"text/javascript\">\n+ \talert(\"账号或密码错误！\");\n+</script>\n+</c:if>\n+    \t\n+<script type=\"text/javascript\">\n+function checksubmit()\n+{\n+  if (document.form1.username.value == \"\")\n+        {\n+           alert(\"账号不能为空！\");\n+           return false;\n+        } \n+        else if(document.form1.userpwd.value == \"\")\n+        {\n+        \talert(\"密码不能为空！\");\n+           return false;\n+        }\n+}\n+</script>\n+       \n </body>\n </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "765212d112f21705277f6c8b23369833a5822807",
+    "filename" : "jweb/web/1414080902217/makeOrder.jsp",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 14,
+    "changes" : 14,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/makeOrder.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/dd11e9a190d50abde4228e713bfdd08eb7ad7b18/jweb/web/1414080902217/makeOrder.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/makeOrder.jsp?ref=dd11e9a190d50abde4228e713bfdd08eb7ad7b18",
+    "patch" : "@@ -1,14 +0,0 @@\n-<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n-    pageEncoding=\"UTF-8\"%>\n-<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n-<html>\n-<head>\n-<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n-<title>提交订单</title>\n-</head>\n-<body>\n-<p>\n-\t提交订单页面！\n-</p>\n-</body>\n-</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "c67032b53167c62a5d11bb0fb25f7d73a54223fe",
+    "filename" : "jweb/web/1414080902217/registered.jsp",
+    "status" : "modified",
+    "additions" : 70,
+    "deletions" : 6,
+    "changes" : 76,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/registered.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/registered.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/registered.jsp?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -1,5 +1,6 @@\n <%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n     pageEncoding=\"UTF-8\"%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\"%>\n <html>\n <head>\n     <meta charset=\"UTF-8\">\n@@ -16,32 +17,95 @@\n \n <body>\n <p></p>\n-<p></p>\n+<div>&nbsp;</div>\n+<div>&nbsp;</div>\n <div class=\"text-center\"><font size=\"5\"face=\"微软雅黑\">填写注册信息</font></div>\n+<div>&nbsp;</div>\n <p></p>\n <p></p>\n-<form action=\"1414080902217\"method=\"post\"class=\"form-horizontal\" >\n+<form action=\"register\" method=\"post\" class=\"form-horizontal\" onSubmit=\"return checksubmit(this);\" >\n \t<div class=\"form-group\">\n-    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">用户名:</label>\n+    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">账号:</label>\n     <div class=\"col-xs-4\">\n-      \t<input type=\"text\" class=\"form-control\" name=\"username\" placeholder=\"用户名\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"username\" placeholder=\"账号\">\n     </div>\n+    <p class=\"form-control-static\"><font size=\"3\"face=\"微软雅黑\">(必填)</font></p>\n   \t</div>\n \t\n \t<div class=\"form-group\">\n     <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">密码:</label>\n     <div class=\"col-xs-4\">\n       \t<input type=\"password\" class=\"form-control\" name=\"userpwd\" placeholder=\"密码\">\n     </div>\n+    <p class=\"form-control-static\"><font size=\"3\"face=\"微软雅黑\">(必填)</font></p>\n+  \t</div>\n+  \t\n+  \t<div class=\"form-group\">\n+    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">名称:</label>\n+    <div class=\"col-xs-4\">\n+    \t<c:if test = \"${user != null }\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"cname\" value=\"${user.getcustomerName()}\">\n+      \t</c:if>\n+      \t<c:if test = \"${user == null }\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"cname\" placeholder=\"名称\" >\n+      \t</c:if>\n+    </div>\n+    <p class=\"form-control-static\"><font size=\"3\"face=\"微软雅黑\">(必填)</font></p>\n+  \t</div>\n+  \t\n+  \t<div class=\"form-group\">\n+    <label for=\"inputEmail3\" class=\"col-xs-4 control-label\">收货地址:</label>\n+    <div class=\"col-xs-4\">\n+    \t<c:if test = \"${user != null }\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"useraddr\" value=\"${user.getUseraddr()}\">\n+      \t</c:if>\n+      \t<c:if test = \"${user == null }\">\n+      \t<input type=\"text\" class=\"form-control\" name=\"useraddr\" placeholder=\"收货地址\" >\n+      \t</c:if>\n+    </div>\n+    <p class=\"form-control-static\"><font size=\"3\"face=\"微软雅黑\">(必填)</font></p>\n   \t</div>\n   \t\n \t<div class=\"form-group\">\n     <div class=\"row\">\n-      <div class=\"col-xs-offset-5 col-xs-1\"><button type=\"submit\" class=\"btn btn-default\">登录</button></div>\n+      <div class=\"col-xs-offset-5 col-xs-1\"><button type=\"submit\" class=\"btn btn-default\">注册</button></div>\n       <div class=\"col-xs-5\"><a class=\"btn btn-default\" href=\"index.jsp\" role=\"button\">返回</a></div>\n     </div>\n   \t</div>\n   \t\n-</form>       \n+</form>\n+\n+<c:if test = \"${user != null }\">\n+<script type=\"text/javascript\">\n+ \talert(\"用户名存在！\");\n+</script>\n+</c:if>\n+\n+<script type=\"text/javascript\">\n+function checksubmit(obj)\n+{\n+  if (obj.username.value == \"\")\n+        {\n+           alert(\"账号不能为空！\");\n+           return false;\n+        } \n+        else if(obj.userpwd.value == \"\")\n+        {\n+        \talert(\"密码不能为空！\");\n+           return false;\n+        }\n+        else if(obj.cname.value == \"\")\n+        {\n+        \talert(\"名称不能为空！\");\n+           return false;\n+        }\n+        else if(obj.useraddr.value == \"\")\n+        {\n+        \talert(\"收货地址不能为空！\");\n+           return false;\n+        }\n+}\n+</script>\n+       \n </body>\n </html>"
+  }, {
+    "sha" : "a34ae5bdd72c6072ea68adaa61f05483774aa268",
+    "filename" : "jweb/web/1414080902217/select.jsp",
+    "status" : "modified",
+    "additions" : 9,
+    "deletions" : 3,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/select.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/select.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/select.jsp?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -1,5 +1,6 @@\n <%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n     pageEncoding=\"UTF-8\"%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\"%>\n <html>\n \n <head>\n@@ -19,7 +20,12 @@\n <br>\n <div class=\"row\">\n    \t<div class=\"col-xs-offset-1 col-xs-8\"><font size=\"3\"face=\"微软雅黑\">现在时间是: <%= (new java.util.Date()).toLocaleString()%></font></div>\n-   \t<div class=\"col-xs-2\"><font size=\"3\"face=\"微软雅黑\"><%=request.getSession().getAttribute(\"userName\") + \"，欢迎你\"%></font></div>\n+   \t<c:if test=\"${customerName != null}\">\n+   \t<div class=\"col-xs-2\"><font size=\"3\"face=\"微软雅黑\"><%=request.getSession().getAttribute(\"customerName\") + \"，欢迎你\"%></font></div>\n+   \t</c:if>\n+   \t<c:if test=\"${customerName == null}\">\n+   \t<div class=\"col-xs-2\"><font size=\"3\"face=\"微软雅黑\">游客，欢迎你！</font></div>\n+   \t</c:if>\n </div>\n <div class=\"row\">\n \t<div class=\"col-xs-offset-9 col-xs-1\"><a class=\"btn btn-default btn-sm\" href=\"clear\" role=\"button\">退出登陆</a></div>\n@@ -29,14 +35,14 @@\n            <font size=\"6\"face=\"微软雅黑\">业务选择</font>\n </div>\n <br>\n-<form action=\"makeOrder.jsp\">\n+<form action=\"/zhhao/Orders/makeOrder.jsp\">\n \t<div class=\"text-center\">\n            <input class=\"btn btn-default btn-lg\"type=\"submit\" value=\"提交订单\" name=\"button1\"><br>\n            <label class=\"col-xs-12 control-label\">(添加新的订单信息)</label>\n \t</div>\n </form>\n <br>\n-<form action=\"lookOrder.jsp\">\n+<form action=\"/zhhao/Orders/lookOrder.jsp\">\n \t<div class=\"text-center\">\n            <input class=\"btn btn-default btn-lg\"type=\"submit\" value=\"查看订单\" name=\"button2\">\n            <label class=\"col-xs-12 control-label\">(查看已有订单信息)</label>"
+  }, {
+    "sha" : "41f4ed9ea68e39ed6897c7d8dccecd6c42d9399d",
+    "filename" : "jweb/web/1414080902217/success.jsp",
+    "status" : "renamed",
+    "additions" : 3,
+    "deletions" : 3,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/success.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3a940718abd394b3f92fbabe341fcf7398c5f86c/jweb/web/1414080902217/success.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902217/success.jsp?ref=3a940718abd394b3f92fbabe341fcf7398c5f86c",
+    "patch" : "@@ -8,8 +8,8 @@\n <title>登录错误</title>\n </head>\n <body>\n-\t<div class=\"text-center\"><h4>请重新登录</h4></div>\n+\t<div class=\"text-center\"><h4>注册成功</h4></div>\n \t<p></p>\n-\t<div class=\"text-center\">点击<a href=index.jsp>返回</a></div>\t\n+\t<div class=\"text-center\">点击<a href=select.jsp>登录</a></div>\t\n </body>\n-</html>\n\\ No newline at end of file\n+</html>",
+    "previous_filename" : "jweb/web/1414080902217/check.jsp"
+  } ],
+  "sha" : "3a940718abd394b3f92fbabe341fcf7398c5f86c",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/3a940718abd394b3f92fbabe341fcf7398c5f86c",
+  "parents" : [ {
+    "sha" : "dd11e9a190d50abde4228e713bfdd08eb7ad7b18",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/dd11e9a190d50abde4228e713bfdd08eb7ad7b18",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/dd11e9a190d50abde4228e713bfdd08eb7ad7b18"
+  } ]
+}

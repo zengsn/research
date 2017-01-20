@@ -1,0 +1,49 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 45,
+    "additions" : 45,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/7a8346f55d505ea838655174620d21d7fa7ecc0a",
+  "commit" : {
+    "author" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-11-11T01:56:46Z"
+    },
+    "committer" : {
+      "name" : "ruizhuzhiling",
+      "email" : "ruizhuzhiling",
+      "date" : "2016-11-11T01:56:46Z"
+    },
+    "message" : "#5 #86提交实验代码",
+    "tree" : {
+      "sha" : "bcd5ef3cd8d26e1b38f5db7118e281821eb2629c",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/bcd5ef3cd8d26e1b38f5db7118e281821eb2629c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/7a8346f55d505ea838655174620d21d7fa7ecc0a",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/7a8346f55d505ea838655174620d21d7fa7ecc0a/comments",
+  "files" : [ {
+    "sha" : "c83b79905b36f01b699ec8220aac6756c469346a",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902114/loginFilter.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/7a8346f55d505ea838655174620d21d7fa7ecc0a/jweb/src/edu/hzu/javaweb/labs/se1414080902114/loginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/7a8346f55d505ea838655174620d21d7fa7ecc0a/jweb/src/edu/hzu/javaweb/labs/se1414080902114/loginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902114/loginFilter.java?ref=7a8346f55d505ea838655174620d21d7fa7ecc0a",
+    "patch" : "@@ -0,0 +1,45 @@\n+package com.filter;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+@WebFilter(filterName=\"loginFilter\",urlPatterns=\"/login/main.jsp\")\n+public class loginFilter implements Filter {\n+\n+\t@Override\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain filter) throws IOException, ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t\tHttpServletRequest requ=(HttpServletRequest)request;\n+\t\tHttpServletResponse resp=(HttpServletResponse)response;\n+\t\tHttpSession session=requ.getSession(true);\n+\t\tif(session.getAttribute(\"Username\")==null||session.getAttribute(\"Password\")==null||session.getAttribute(\"Type\")==null){\n+\t\t\tresp.sendRedirect(\"./login_error.jsp\");\n+\t\t}else{\n+\t\t\tfilter.doFilter(request, response);\n+\t\t}\n+\t}\n+\n+\t@Override\n+\tpublic void init(FilterConfig arg0) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\n+\t}\n+\n+}"
+  } ],
+  "sha" : "7a8346f55d505ea838655174620d21d7fa7ecc0a",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/7a8346f55d505ea838655174620d21d7fa7ecc0a",
+  "parents" : [ {
+    "sha" : "f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f9284b501c16e5f7111c9fb6b348bdd88b83469d",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f9284b501c16e5f7111c9fb6b348bdd88b83469d"
+  } ]
+}

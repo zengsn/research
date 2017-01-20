@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 133,
+    "additions" : 0,
+    "deletions" : 133
+  },
+  "author" : {
+    "login" : "iDream666",
+    "id" : 18032727,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/18032727?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/iDream666",
+    "html_url" : "https://github.com/iDream666",
+    "followers_url" : "https://api.github.com/users/iDream666/followers",
+    "following_url" : "https://api.github.com/users/iDream666/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/iDream666/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/iDream666/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/iDream666/subscriptions",
+    "organizations_url" : "https://api.github.com/users/iDream666/orgs",
+    "repos_url" : "https://api.github.com/users/iDream666/repos",
+    "events_url" : "https://api.github.com/users/iDream666/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/iDream666/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/1fb2f10f31617d111b3c784eba856e9872a1c2d0",
+  "commit" : {
+    "author" : {
+      "name" : "iDream666",
+      "email" : "1125458694@qq.com",
+      "date" : "2016-10-30T11:50:25Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-10-30T11:50:25Z"
+    },
+    "message" : "Delete OrganizationPojo.java",
+    "tree" : {
+      "sha" : "62ee54071636cc7b2e43e59664a0fc26edbb3ccd",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/62ee54071636cc7b2e43e59664a0fc26edbb3ccd"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/1fb2f10f31617d111b3c784eba856e9872a1c2d0",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/1fb2f10f31617d111b3c784eba856e9872a1c2d0/comments",
+  "files" : [ {
+    "sha" : "403747c1bf530d80e7882936ee7a221f7606f059",
+    "filename" : "labs/OrganizationPojo.java",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 133,
+    "changes" : 133,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3e1d94673aee6e490d13e1c3dcee6867ea9eaa80/labs/OrganizationPojo.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3e1d94673aee6e490d13e1c3dcee6867ea9eaa80/labs/OrganizationPojo.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/OrganizationPojo.java?ref=3e1d94673aee6e490d13e1c3dcee6867ea9eaa80",
+    "patch" : "@@ -1,133 +0,0 @@\n-package indi.xiao.app.databaseDef;\r\n-\r\n-import java.util.List;\r\n-\r\n-/**\r\n- * Created by Administrator on 2016/8/25.\r\n- */\r\n-public class OrganizationPojo implements Comparable<OrganizationPojo>{\r\n-\r\n-    /**\r\n-     * 业务无关主键\r\n-     */\r\n-    private String id;\r\n-\r\n-    /**\r\n-     * 组织代码\r\n-     */\r\n-    private String code;\r\n-\r\n-    /**\r\n-     * 组织名称\r\n-     */\r\n-    private String name;\r\n-\r\n-    /**\r\n-     * 说明\r\n-     */\r\n-    private String description;\r\n-\r\n-    /**\r\n-     * 父节点代码\r\n-     */\r\n-    private String pcode;\r\n-\r\n-    /**\r\n-     * 节点排序序号\r\n-     */\r\n-    private Integer sort;\r\n-\r\n-    /**\r\n-     * 逻辑删除标志\r\n-     */\r\n-    private String disable;\r\n-\r\n-    /**\r\n-     * 是否已递归标志，默认false\r\n-     */\r\n-    private boolean dfsVis = false;\r\n-\r\n-    /**\r\n-     * 子组织树（递归）\r\n-     */\r\n-    private List<OrganizationPojo> children;\r\n-\r\n-\r\n-    public String getId() {\r\n-        return id;\r\n-    }\r\n-\r\n-    public void setId(String id) {\r\n-        this.id = id;\r\n-    }\r\n-\r\n-    public String getCode() {\r\n-        return code;\r\n-    }\r\n-\r\n-    public void setCode(String code) {\r\n-        this.code = code;\r\n-    }\r\n-\r\n-    public String getName() {\r\n-        return name;\r\n-    }\r\n-\r\n-    public void setName(String name) {\r\n-        this.name = name;\r\n-    }\r\n-\r\n-    public String getDescription() {\r\n-        return description;\r\n-    }\r\n-\r\n-    public void setDescription(String description) {\r\n-        this.description = description;\r\n-    }\r\n-\r\n-    public String getPcode() {\r\n-        return pcode;\r\n-    }\r\n-\r\n-    public void setPcode(String pcode) {\r\n-        this.pcode = pcode;\r\n-    }\r\n-\r\n-    public Integer getSort() { return sort; }\r\n-\r\n-    public void setSort(Integer sort) { this.sort = sort; }\r\n-\r\n-    public boolean getDfsVis(){\r\n-        return dfsVis;\r\n-    }\r\n-\r\n-    public void setDfsVis(boolean dfsVis){\r\n-        this.dfsVis = dfsVis;\r\n-    }\r\n-\r\n-    public List<OrganizationPojo> getChildren() {\r\n-        return children;\r\n-    }\r\n-\r\n-    public void setChildren(List<OrganizationPojo> children) {\r\n-        this.children = children;\r\n-    }\r\n-\r\n-    public void setDisable(String disable){\r\n-        this.disable = disable;\r\n-    }\r\n-\r\n-    public String getDisable(){\r\n-        return this.disable;\r\n-    }\r\n-    /**\r\n-     * 重载排序规则\r\n-     */\r\n-    public int compareTo(OrganizationPojo nb){\r\n-        if(this.sort<nb.sort){\r\n-            return -1;\r\n-        }else{\r\n-            return 1;\r\n-        }\r\n-    }\r\n-}\r"
+  } ],
+  "sha" : "1fb2f10f31617d111b3c784eba856e9872a1c2d0",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/1fb2f10f31617d111b3c784eba856e9872a1c2d0",
+  "parents" : [ {
+    "sha" : "3e1d94673aee6e490d13e1c3dcee6867ea9eaa80",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/3e1d94673aee6e490d13e1c3dcee6867ea9eaa80",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/3e1d94673aee6e490d13e1c3dcee6867ea9eaa80"
+  } ]
+}

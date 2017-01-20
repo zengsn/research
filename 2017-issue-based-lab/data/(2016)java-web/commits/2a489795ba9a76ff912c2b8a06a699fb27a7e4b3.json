@@ -1,0 +1,128 @@
+{
+  "committer" : {
+    "login" : "LIMITAYANG",
+    "id" : 22512059,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512059?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LIMITAYANG",
+    "html_url" : "https://github.com/LIMITAYANG",
+    "followers_url" : "https://api.github.com/users/LIMITAYANG/followers",
+    "following_url" : "https://api.github.com/users/LIMITAYANG/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LIMITAYANG/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LIMITAYANG/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LIMITAYANG/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LIMITAYANG/orgs",
+    "repos_url" : "https://api.github.com/users/LIMITAYANG/repos",
+    "events_url" : "https://api.github.com/users/LIMITAYANG/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LIMITAYANG/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 196,
+    "additions" : 195,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "LIMITAYANG",
+    "id" : 22512059,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512059?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/LIMITAYANG",
+    "html_url" : "https://github.com/LIMITAYANG",
+    "followers_url" : "https://api.github.com/users/LIMITAYANG/followers",
+    "following_url" : "https://api.github.com/users/LIMITAYANG/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/LIMITAYANG/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/LIMITAYANG/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/LIMITAYANG/subscriptions",
+    "organizations_url" : "https://api.github.com/users/LIMITAYANG/orgs",
+    "repos_url" : "https://api.github.com/users/LIMITAYANG/repos",
+    "events_url" : "https://api.github.com/users/LIMITAYANG/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/LIMITAYANG/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3",
+  "commit" : {
+    "author" : {
+      "name" : "LIMITAYANG",
+      "email" : "962401409@qq.com",
+      "date" : "2016-12-17T01:37:30Z"
+    },
+    "committer" : {
+      "name" : "LIMITAYANG",
+      "email" : "962401409@qq.com",
+      "date" : "2016-12-17T01:37:30Z"
+    },
+    "message" : "#6 提交实验代码",
+    "tree" : {
+      "sha" : "baf45acc9c1b5219d2178db9b731c431b7ce6943",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/baf45acc9c1b5219d2178db9b731c431b7ce6943"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/comments",
+  "files" : [ {
+    "sha" : "0f50a8ca49757f442adf193d9674aeb4cfbfa4e3",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902220/Expend.java",
+    "status" : "added",
+    "additions" : 70,
+    "deletions" : 0,
+    "changes" : 70,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/src/edu/hzu/javaweb/labs/se1414080902220/Expend.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/src/edu/hzu/javaweb/labs/se1414080902220/Expend.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902220/Expend.java?ref=2a489795ba9a76ff912c2b8a06a699fb27a7e4b3",
+    "patch" : "@@ -0,0 +1,70 @@\n+package edu.hzu.javaweb.labs.se1414080902220;\n+\n+public class Expend \n+{\n+\tprivate Integer id;\n+\tprivate Double number;\n+\tprivate String expendTime;\n+\tprivate String flowing;\n+\tprivate String purpose;\n+\t\n+\tpublic Integer getId()\n+\t{\n+\t\treturn id;\n+\t}\n+\t\n+\tpublic void setId(Integer id) \n+\t{\n+\t\tthis.id = id;\n+\t}\n+\t\n+\tpublic Double getNumber() \n+\t{\n+\t\treturn number;\n+\t}\n+\t\n+\tpublic void setNumber(Double number) \n+\t{\n+\t\tthis.number = number;\n+\t}\n+\t\n+\tpublic String getExpendTime() \n+\t{\n+\t\treturn expendTime;\n+\t}\n+\tpublic void setExpendTime(String expendTime) \n+\t{\n+\t\tthis.expendTime = expendTime;\n+\t}\n+\tpublic String getFlowing() {\n+\t\treturn flowing;\n+\t}\n+\t\n+\tpublic void setFlowing(String flowing) \n+\t{\n+\t\tthis.flowing = flowing;\n+\t}\n+\t\n+\tpublic String getPurpose()\n+\t{\n+\t\treturn purpose;\n+\t}\n+\t\n+\tpublic void setPurpose(String purpose) \n+\t{\n+\t\tthis.purpose = purpose;\n+\t}\n+\tpublic Expend()\n+\t{\n+\t\t\n+\t}\n+\tpublic Expend (Integer Id,Double Number, String ExpendTime,String Flowing) \n+\t{\n+\t\tthis.id=Id;  \n+\t\tthis.number=Number;\n+\t\tthis.flowing=Flowing;\n+\t\tthis.expendTime=ExpendTime;\n+\t\tthis.purpose=\"未知\";\n+\t}\n+\t\n+}"
+  }, {
+    "sha" : "e2fd55afdc445ff4dc8f267945306cac806e0051",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902220/SelectExpendInfo.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/src/edu/hzu/javaweb/labs/se1414080902220/SelectExpendInfo.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/src/edu/hzu/javaweb/labs/se1414080902220/SelectExpendInfo.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902220/SelectExpendInfo.java?ref=2a489795ba9a76ff912c2b8a06a699fb27a7e4b3",
+    "patch" : "@@ -0,0 +1,52 @@\n+package edu.hzu.javaweb.labs.se1414080902220;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+import java.util.*;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+@WebServlet(urlPatterns=\"/SelectExpendInfo\")\n+public class SelectExpendInfo extends HttpServlet {\n+\t\n+\tpublic SelectExpendInfo() {\n+\t\tsuper();\n+\t}\n+\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException\n+\t{\n+\t\tArrayList<Expend> expendInfos=new ArrayList<Expend>();\n+\t\texpendInfos.add(new Expend(1,100.00,\"2016年11月17日 \",\"购物\"));\n+\t\texpendInfos.add(new Expend(2,10.00,\"2016年11月7日 \",\"午饭\"));\n+\t\texpendInfos.add(new Expend(3,8.00,\"2016年11月2日 \",\"外卖\"));\n+\t\texpendInfos.add(new Expend(4,30.00,\"2016年11月5日 \",\"看电影\"));\n+\t\texpendInfos.add(new Expend(5,100.00,\"2016年11月25日 \",\"聚餐\"));\n+\t\texpendInfos.add(new Expend(6,10.00,\"2016年11月11日 \",\"外卖\"));\n+\t\trequest.setAttribute(\"expends\", expendInfos);\n+\t\trequest.getRequestDispatcher(\"/1414080902220/showExpendMoney.jsp\").forward(request, response);\n+\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void init() throws ServletException {\n+\t\t\n+\t}\n+}"
+  }, {
+    "sha" : "d7261eae448a4d89910f557763fe5487005edd53",
+    "filename" : "jweb/web/1414080902220/Jsp截图.png",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/web/1414080902220/Jsp%E6%88%AA%E5%9B%BE.png",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/web/1414080902220/Jsp%E6%88%AA%E5%9B%BE.png",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902220/Jsp%E6%88%AA%E5%9B%BE.png?ref=2a489795ba9a76ff912c2b8a06a699fb27a7e4b3"
+  }, {
+    "sha" : "b2fe29bdbb42f357a15b854aa838dd9eac54a954",
+    "filename" : "jweb/web/1414080902220/addinfo.jsp",
+    "status" : "modified",
+    "additions" : 11,
+    "deletions" : 1,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/web/1414080902220/addinfo.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/web/1414080902220/addinfo.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902220/addinfo.jsp?ref=2a489795ba9a76ff912c2b8a06a699fb27a7e4b3",
+    "patch" : "@@ -47,10 +47,20 @@ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.\n \t        \t<input type=\"text\" name=\"time\"><br/><br/>\n \t        \t<label for=\"texts\">来源：</label>\n \t        \t<input type=\"text\" name=\"description\" id=\"texts\"><br/><br/>\n-\t        \t<input type=\"submit\" value=\"添加\">\n+\t        \t<div class=\"btn-group\">\n+  \t\t\t\t\t<button type=\"submit\" class=\"btn btn-info\" value=\"添加\">添加</button>\n+  \t\t\t\t\t<button type=\"button\" class=\"btn btn-warning\" id=\"expend\">查看支出明细</button>\n+  \t\t\t\t\t<button type=\"button\" class=\"btn btn-success\" id=\"income\">查看收入明细</button>\n+\t\t\t\t</div>\n+\t        \t\n \t    </form>\n   \t</div>\n   \t<div class=\"col-md-2\"></div>\n     \n   </body>\n+  <script>\n+  \t$(\"#expend\").click(function(){\n+  \t\twindow.location.href=\"SelectExpendInfo\";\n+  \t});\n+  </script>\n </html>"
+  }, {
+    "sha" : "f6f14df1637a84d552f39bef0a0afc0fae67efe5",
+    "filename" : "jweb/web/1414080902220/showExpendMoney.jsp",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/web/1414080902220/showExpendMoney.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3/jweb/web/1414080902220/showExpendMoney.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902220/showExpendMoney.jsp?ref=2a489795ba9a76ff912c2b8a06a699fb27a7e4b3",
+    "patch" : "@@ -0,0 +1,62 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>月花费情况</title>\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\t<style type=\"text/css\">\n+\t\ttd,th{\n+\t\t\ttext-align:center;\n+\t\t}\n+\t\t\n+\t\tbody{\n+\t\t\tbackground:#777;\n+\t\t}\n+\t\t\n+\t</style>\n+  </head>\n+  \n+  <body>\n+    \t<div class=\"row\">\n+  \t\t\t<div class=\"col-xs-12 col-md-8\">\n+  \t\t\t\t<table class=\"table table-hover\">\n+  \t\t\t\t\t<caption>支出费用明细</caption>\n+ \t\t\t\t\t<thead>\n+\t\t\t\t\t\t<tr>\n+\t\t\t\t\t\t\t<th>序号</th>\n+\t\t\t\t\t\t\t<th>金额</th>\n+\t\t\t\t\t\t\t<th>时间</th>\n+\t\t\t\t\t\t\t<th>用途</th>\n+\t\t\t\t\t\t\t<th>去向</th>\n+\t\t\t\t\t\t</tr>\n+\t\t\t\t\t</thead>\n+\t\t\t\t\t<tbody>\n+\t\t\t\t\t\t<c:forEach var=\"expend\" items=\"${expends}\">\n+\t\t\t\t\t\t\t<tr>\n+\t\t\t\t\t\t\t<td><c:out value=\"${expend.id}\"></c:out></td>\n+\t\t\t\t\t\t\t<td><c:out value=\"${expend.number}\" ></c:out></td>\n+\t\t\t\t\t\t\t<td><c:out value=\"${expend.expendTime}\" ></c:out></td>\n+\t\t\t\t\t\t\t<td><c:out value=\"${expend.flowing}\" ></c:out></td>\n+\t\t\t\t\t\t\t<td>\n+\t\t\t\t\t\t\t<c:if test=\"${ expend.purpose ne '未知'}\"> \n+\t\t\t\t\t\t\t\t${expend.purpose }\n+\t\t\t\t\t\t\t</c:if>\n+\t\t\t\t\t\t\t</td>\n+\t\t\t\t\t\t\t</tr>\n+\t\t\t\t\t\t</c:forEach>\n+\t\t\t\t\t</tbody>\n+  \t\t\t\t</table>\n+  \t\t\t</div>\n+  \t\t\t<div class=\"col-xs-6 col-md-4\"></div>\n+\t\t</div>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "2a489795ba9a76ff912c2b8a06a699fb27a7e4b3",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/2a489795ba9a76ff912c2b8a06a699fb27a7e4b3",
+  "parents" : [ {
+    "sha" : "73962a075616501c49798b0da960da646f8f1044",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/73962a075616501c49798b0da960da646f8f1044",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/73962a075616501c49798b0da960da646f8f1044"
+  } ]
+}

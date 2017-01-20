@@ -1,0 +1,82 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 123,
+    "additions" : 121,
+    "deletions" : 2
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/c72c08a6758c25fba91ad55264468e8256f0baa5",
+  "commit" : {
+    "author" : {
+      "name" : "unknown",
+      "email" : "张洋豪",
+      "date" : "2016-11-27T07:57:54Z"
+    },
+    "committer" : {
+      "name" : "unknown",
+      "email" : "张洋豪",
+      "date" : "2016-11-27T07:57:54Z"
+    },
+    "message" : "#7 提交实验六代码",
+    "tree" : {
+      "sha" : "1cae7060a1ee306e455004a1cf7caadd5f0699a7",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/1cae7060a1ee306e455004a1cf7caadd5f0699a7"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/c72c08a6758c25fba91ad55264468e8256f0baa5",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/c72c08a6758c25fba91ad55264468e8256f0baa5/comments",
+  "files" : [ {
+    "sha" : "e600a04d07964436263dd0bb743087b85b8da648",
+    "filename" : "jweb/web/1414080902209/Fillresume.jsp",
+    "status" : "added",
+    "additions" : 27,
+    "deletions" : 0,
+    "changes" : 27,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/c72c08a6758c25fba91ad55264468e8256f0baa5/jweb/web/1414080902209/Fillresume.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/c72c08a6758c25fba91ad55264468e8256f0baa5/jweb/web/1414080902209/Fillresume.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902209/Fillresume.jsp?ref=c72c08a6758c25fba91ad55264468e8256f0baa5",
+    "patch" : "@@ -0,0 +1,27 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+ <%@ page import=\"java.io.*,java.util.*,java.sql.*\"%>\n+ <%\n+ String path = request.getContextPath();\n+ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+ %>\n+ <html>\n+ \t<head>\n+ \t\t<title>Fillresume</title>\n+ \t</head>\n+ \t<body>\n+ \t\t <p size=\"5\" color=\"red\" align=\"center\">填写简历</p>\n+ \t\t <form action=\"sinsert.jsp\" method=\"post\">\n+ \t\t <table border=\"0\"  width=\"250\" align=\"center\">\n+ \t\t \t<tr><td>学号</td><td><input type=\"text\" name=\"snum\"></td></tr>\n+ \t\t \t<tr><td>姓名</td><td><input type=\"text\" name=\"sname\"></td></tr>\n+ \t\t \t<tr><td>个人简介</td><td><textarea name=\"sintrod\" rows=\"5\" cols=\"22\"></textarea></td></tr>\n+ \t\t \t<tr>\n+ \t\t \t\t<td align=\"center\" colspan=\"2\">\n+ \t\t \t\t<input type=\"submit\" value=\"提交\">\n+ \t\t \t\t<input type=\"reset\" value=\"取消\">\n+ \t\t \t\t</td>\n+ \t\t \t</tr>\t \t\n+ \t\t </table>\n+ \t\t </form>\n+ \t</body>\n+ </html> \n\\ No newline at end of file"
+  }, {
+    "sha" : "30027bf1793683f47f65371c06cf7af01b00c02b",
+    "filename" : "jweb/web/1414080902209/Viewdepart.jsp",
+    "status" : "added",
+    "additions" : 47,
+    "deletions" : 0,
+    "changes" : 47,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/c72c08a6758c25fba91ad55264468e8256f0baa5/jweb/web/1414080902209/Viewdepart.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/c72c08a6758c25fba91ad55264468e8256f0baa5/jweb/web/1414080902209/Viewdepart.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902209/Viewdepart.jsp?ref=c72c08a6758c25fba91ad55264468e8256f0baa5",
+    "patch" : "@@ -0,0 +1,47 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+ <%@ page import=\"java.io.*,java.util.*,java.sql.*\"%>\n+ <%\n+ String path = request.getContextPath();\n+ String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+ %>\n+ <html>\n+ \t<head>\n+ \t\t<title>department introduction</title>\n+ \t</head>\n+ \t<body>\n+ \t\t<%\n+ \t\t\tString driveName = \"com.mysql.jdbc.Drive\";\n+ \t\t\tString userName = \"root\";\n+ \t\t\tString userPwd = \"123\";\n+ \t\t\tString dbName = \"dtable\";\n+ \t\t\tString url1 = \"jdbc:mysql://localhost:3306/dtable\";\n+ \t\t\tString url2 = \"?user=root&password=123\";\n+ \t\t\tString url3 = \"&useUnicode=true&characterEncoding=UTF8\";\n+ \t\t\tString url = url1+url2+url3;\n+ \t\t\tClass.forName(\"com.mysql.jdbc.Driver\");\n+ \t\t\tConnection conn = DriverManager.getConnection(url);\n+ \t\t\tString sql = \"select *from dlist\";\n+ \t\t\tPreparedStatement pstmt = conn.prepareStatement(sql);\n+ \t\t\tResultSet rs = pstmt.executeQuery();\n+ \t\t\trs.last();\n+ \t\t %>\n+ \t\t <p size=\"5\" color=\"red\" align=\"center\">部门职能介绍</p>\n+ \t\t <table border=\"2\" bgcolor=\"ccceee\" width=\"650\" align=\"center\">\n+ \t\t \t<tr bgcolor=\"CCCCCC\" align=\"center\">\n+ \t\t \t\t<td>编号</td><td>部门</td><td>职能介绍</td>\n+ \t\t \t</tr>\n+ \t\t \t<%rs.beforeFirst();\n+ \t\t \t\twhile(rs.next()){\n+ \t\t \t %><tr align=\"center\">\n+ \t\t \t <td><%=rs.getString(\"id\") %></td>\n+ \t\t \t <td><%=rs.getString(\"name\") %></td>\n+ \t\t \t <td><%=rs.getString(\"introd\") %></td>\n+ \t\t \t </tr>\n+ \t\t \t <%} %>\n+ \t\t </table>\n+ \t\t <%if(rs!=null){rs.close();} \n+ \t\t \tif(pstmt!=null){pstmt.close();}\n+ \t\t \tif(conn!=null){conn.close();}\n+ \t\t %>\n+ \t</body>\n+ </html> \n\\ No newline at end of file"
+  }, {
+    "sha" : "efa99bf6500de2a76c870605c83e4a61ae134f05",
+    "filename" : "jweb/web/1414080902209/index.jsp",
+    "status" : "modified",
+    "additions" : 4,
+    "deletions" : 2,
+    "changes" : 6,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/c72c08a6758c25fba91ad55264468e8256f0baa5/jweb/web/1414080902209/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/c72c08a6758c25fba91ad55264468e8256f0baa5/jweb/web/1414080902209/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902209/index.jsp?ref=c72c08a6758c25fba91ad55264468e8256f0baa5",
+    "patch" : "@@ -34,6 +34,8 @@ span{\n  \t  margin-right: 20px;\n   \t font-size: 30px;\t  \n  \t}\n+ \ta:hover,a:visited,a:active,a:link\n+ \t{color:white;text-decoration: none; }  \n </style>\n </head>\n \n@@ -60,8 +62,8 @@ span{\n \t\t\t\n \t\t\t<% out.println(\"<h2>Now you can:</h2></br>\");  %>\n            <center>\n-           <c:forEach var=\"item\" items=\"View the information of departments,Fill in the personal information\" begin=\"0\" step=\"1\">\n- \t \t<button type=\"submit\" class=\"btn btn-success\"><c:out value=\"${item}\"/></button>\n+           <c:forEach var=\"item\" items=\"Viewdepart,Fillresume\" begin=\"0\" step=\"1\">\n+ \t \t<button type=\"submit\" class=\"btn btn-success\"><a href='${item}.jsp'>${item}</a></button>\n  \t </c:forEach>\n   \t     \n   \t      \t"
+  }, {
+    "sha" : "5ba4f73bd990298112b84875acd10c1dadd22571",
+    "filename" : "jweb/web/1414080902209/sinsert.jsp",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/c72c08a6758c25fba91ad55264468e8256f0baa5/jweb/web/1414080902209/sinsert.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/c72c08a6758c25fba91ad55264468e8256f0baa5/jweb/web/1414080902209/sinsert.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902209/sinsert.jsp?ref=c72c08a6758c25fba91ad55264468e8256f0baa5",
+    "patch" : "@@ -0,0 +1,43 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ page import=\"java.io.*,java.util.*,java.sql.*\"%>\n+<%request.setCharacterEncoding(\"UTF-8\"); %>\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <title>添加学生简历</title>\n+  </head>\n+  \n+  <body>\n+    <%\n+    \tString driveName = \"com.mysql.jdbc.Drive\";\n+\t\tString userName = \"root\";\n+\t\tString userPwd = \"123\";\n+\t\tString dbName = \"dtable\";\n+\t\tString url1 = \"jdbc:mysql://localhost:3306/dtable\";\n+\t\tString url2 = \"?user=root&password=123\";\n+\t\tString url3 = \"&useUnicode=true&characterEncoding=UTF8\";\n+\t\tString url = url1+url2+url3;\n+\t\tClass.forName(\"com.mysql.jdbc.Driver\");\n+\t\tConnection conn = DriverManager.getConnection(url);\n+    \tString sql=\"Insert into slist(snum,sname,sintrod)values(?,?,?)\";\n+    \tPreparedStatement pstmt=conn.prepareStatement(sql);\n+    \trequest.setCharacterEncoding(\"UTF-8\");\t\n+\t\tString snum=request.getParameter(\"snum\");\n+    \tString sname=request.getParameter(\"sname\");\n+    \tString sintrod=request.getParameter(\"sintrod\");\n+    \tint n=0;\n+    \tif(snum!=\"\"&&sname!=\"\"&&sintrod!=\"\")\n+    \t{\n+    \tpstmt.setString(1,snum);\n+    \tpstmt.setString(2,sname);\n+    \tpstmt.setString(3,sintrod);\n+    \tn=pstmt.executeUpdate();\n+    \t}\n+    \t\n+    \tif(n==1){%>数据插入操作成功！<br><%}\t\n+    \telse{%>数据插入操作失败!<%}\n+    \tif(pstmt!=null){pstmt.close();}\n+    \tif(conn!=null){conn.close();}\n+     %>\n+  </body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "c72c08a6758c25fba91ad55264468e8256f0baa5",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c72c08a6758c25fba91ad55264468e8256f0baa5",
+  "parents" : [ {
+    "sha" : "318e4dcb1ecfd877c99ce52248e50238c06ab546",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/318e4dcb1ecfd877c99ce52248e50238c06ab546",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/318e4dcb1ecfd877c99ce52248e50238c06ab546"
+  } ]
+}

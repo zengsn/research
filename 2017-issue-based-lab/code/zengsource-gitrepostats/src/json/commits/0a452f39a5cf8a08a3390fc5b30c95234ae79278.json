@@ -1,0 +1,221 @@
+{
+  "committer" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 963,
+    "additions" : 962,
+    "deletions" : 1
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-18T08:04:49Z"
+    },
+    "committer" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-05-18T08:04:49Z"
+    },
+    "message" : "Merge pull request #779 from zjhua/master\n\n#90 #169",
+    "tree" : {
+      "sha" : "417ad9ab2bbb57a7841229790b657c41a3f0b546",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/417ad9ab2bbb57a7841229790b657c41a3f0b546"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0a452f39a5cf8a08a3390fc5b30c95234ae79278/comments",
+  "files" : [ {
+    "sha" : "caec38f1813a441c235e98bf95801d54d7152c4c",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Block.java",
+    "status" : "added",
+    "additions" : 44,
+    "deletions" : 0,
+    "changes" : 44,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Block.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Block.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Block.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,44 @@\n+﻿package com1314080901144;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import com.example.com1314080901144.util.Coordinate;\n+import com.example.com1314080901144.util.Function;\n+\n+/**\n+ * 棋块\n+ *\n+ */\n+public class Block {\n+\tprivate List<Coordinate> block=new ArrayList<Coordinate>();\n+\tprivate int airCount=0;//气数\n+\tprivate int bw;//颜色\n+\t\n+\tpublic Block(int bw){\n+\t\tthis.bw=bw;\n+\t}\n+\t\n+\tpublic int getBw(){\n+\t\treturn bw;\n+\t}\n+\t\n+\tpublic void add(Coordinate c){\n+\t\tblock.add(c);\n+\t}\n+\t\n+\tpublic void addAir(int air){\n+\t\tairCount+=air;\n+\t}\n+\t\n+\tpublic boolean isLive(){\n+\t\tif(airCount>0 && block.size()>0)return true;\n+\t\treturn false;\n+\t}\n+\t\n+\tpublic void each(Function f){\n+\t\tfor(Coordinate c:block){\n+\t\t\tf.apply(c);\n+\t\t}\n+\t}\n+}"
+  }, {
+    "sha" : "202a9bb563798c97d1f6e91ee17ede4f767753e3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Board.java",
+    "status" : "added",
+    "additions" : 149,
+    "deletions" : 0,
+    "changes" : 149,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Board.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Board.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Board.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,149 @@\n+﻿package com1314080901144;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import android.os.Bundle;\n+\n+import com.example.com1314080901144.util.Coordinate;\n+import com.example.com1314080901144.util.Function;\n+import com.example.com1314080901144.util.Utils;\n+\n+public class Board {\n+\n+\tpublic static int n = 19;\n+\tpublic static final int None = 0;\n+\tpublic static final int Black = 1;\n+\tpublic static final int White = 2;\n+\n+\t//行棋记录\n+\tprivate List<PieceProcess> list = new ArrayList<PieceProcess>();\n+\t\n+\tprivate Grid currentGrid = new Grid();//当前盘面\n+\t\n+\tprivate int expBw = Black;//轮到哪一方下\n+\tprivate Function listener;\n+\n+\t//------------------------------------------------------------------\n+\t\n+\tpublic boolean put(int x, int y) {\n+\t\tCoordinate c = new Coordinate(x, y);\n+\t\tPieceProcess p=new PieceProcess(expBw,c);\n+\t\t\n+\t\tif (currentGrid.putPiece(p)) {\n+\t\t\tif(!check(p)){\n+\t\t\t\tcurrentGrid.executePieceProcess(p, true);\n+\t\t\t\treturn false;\n+\t\t\t}\n+\t\t\t\n+\t\t\tlist.add(p);\n+\t\t\tfinishedPut();\n+\t\t\treturn true;\n+\t\t}\n+\t\treturn false;\n+\t}\n+\t\n+\tprivate void finishedPut(){\n+\t\texpBw = Utils.getReBW(expBw);\n+\t\tpostEnvet();\n+\t}\n+\t\n+\t//打劫检测\n+\tprivate boolean check(PieceProcess p){\n+\t\tint i=0;\n+\t\tfor(PieceProcess pp:list){\n+\t\t\tif(pp.resultBlackCount==p.resultBlackCount \n+\t\t\t\t\t&& pp.resultWhiteCount==p.resultWhiteCount){\n+\t\t\t\tif(isOverEqualse(i,p)){\n+\t\t\t\t\treturn false;\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\ti++;\n+\t\t}\n+\t\treturn true;\n+\t}\n+\t\n+\tprivate boolean isOverEqualse(int position,PieceProcess p){\n+\t\tBoard sb=getSubBoard(position+1);\n+\t\treturn sb.currentGrid.equals(this.currentGrid);\n+\t}\n+\t\n+\t//------------------------------------------------------------------rebuilt\n+\t\n+\tpublic SubBoard getSubBoard(int index){\n+\t\tSubBoard board=new SubBoard(this);\n+\t\tboard.gotoIt(index);\n+\t\treturn board;\n+\t}\n+\t\n+\tprotected void cleanGrid(){\n+\t\tthis.currentGrid = new Grid();\n+\t}\n+\t\n+\tprotected void addPieceProcess(PieceProcess p) {\n+\t\tcurrentGrid.executePieceProcess(p, false);\n+\t\tlist.add(p);\n+\t\tfinishedPut();\n+\t}\n+\t\n+\tprotected void removePieceProcess(){\n+\t\tif(list.size()==0)return;\n+\t\tPieceProcess p=list.remove(getCount()-1);\n+\t\tcurrentGrid.executePieceProcess(p, true);\n+\t\tfinishedPut();\n+\t}\n+\n+\t//------------------------------------------------------------------getter\n+\t\n+\n+\tpublic int getValue(int x, int y) {\n+\t\treturn currentGrid.getValue(new Coordinate(x, y));\n+\t}\n+\n+\tprivate void postEnvet() {\n+\t\tif(listener==null)return;\n+\t\tlistener.apply(getCount(),expBw);\n+\t}\n+\t\n+\tpublic void setListener(Function listener){\n+\t\tthis.listener=listener;\n+\t}\n+\n+\tpublic Coordinate getLastPosition() {\n+\t\tif(getCount()==0)return null;\n+\t\treturn list.get(getCount() - 1).c;\n+\t}\n+\n+\tpublic int getCount() {\n+\t\treturn list.size();\n+\t}\n+\t\n+\tpublic PieceProcess getPieceProcess(int i){\n+\t\tif(i>=getCount())return null;\n+\t\treturn list.get(i);\n+\t}\n+\t\n+\t//------------------------------------------------------------------status\n+\t\n+\tpublic Bundle saveState() {\n+        Bundle map = new Bundle();\n+        map.putInt(\"count\", getCount());\n+        int i=0;\n+        for(PieceProcess p:list){\n+        \tmap.putInt(\"x\"+i, p.c.x);\n+        \tmap.putInt(\"y\"+i, p.c.y);\n+        \ti++;\n+        }\n+        return map;\n+    }\n+\t\n+\tpublic void restoreState(Bundle map) {\n+\t\tint n=map.getInt(\"count\");\n+\t\tfor(int i=0;i<n;i++){\n+\t\t\tint x=map.getInt(\"x\"+i);\n+\t\t\tint y=map.getInt(\"y\"+i);\n+\t\t\t\n+\t\t\tthis.put(x, y);\n+\t\t}\n+    }\n+}"
+  }, {
+    "sha" : "1c908457f10baa520653900ac36680bd1376673a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Grid.java",
+    "status" : "added",
+    "additions" : 191,
+    "deletions" : 0,
+    "changes" : 191,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Grid.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Grid.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/Grid.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,191 @@\n+﻿package com1314080901144;\n+\n+import java.util.Arrays;\n+import java.util.List;\n+\n+import com.example.com1314080901144.util.Coordinate;\n+import com.example.com1314080901144.util.Function;\n+import com.example.com1314080901144.util.Utils;\n+\n+public class Grid {\n+\tprivate int[][] a;\n+\n+\tpublic Grid() {\n+\t\ta = new int[Board.n][Board.n];\n+\t}\n+\n+\tpublic int getValue(Coordinate c) {\n+\t\treturn a[c.x][c.y];\n+\t}\n+\n+\tprivate void setValue(Coordinate c, int value) {\n+\t\ta[c.x][c.y] = value;\n+\t}\n+\n+\t//执行棋子过程\n+\tpublic void executePieceProcess(PieceProcess p, boolean reverse) {\n+\t\tif (!reverse) {\n+\t\t\tsetValue(p.c, p.bw);\n+\t\t\tfor (PieceProcess pp : p.removedList) {\n+\t\t\t\tsetValue(pp.c, Board.None);\n+\t\t\t}\n+\t\t} else {\n+\t\t\tfor (PieceProcess pp : p.removedList) {\n+\t\t\t\tsetValue(pp.c, pp.bw);\n+\t\t\t}\n+\t\t\tsetValue(p.c, Board.None);\n+\t\t}\n+\t}\n+\n+\t//落子\n+\tpublic boolean putPiece(PieceProcess piece) {\n+\t\tif (!piece.c.isValid())\n+\t\t\treturn false;\n+\t\tif (getValue(piece.c) != Board.None)\n+\t\t\treturn false;\n+\n+\t\tsetValue(piece.c, piece.bw);\n+\t\tstartPick(piece.c, piece.bw, piece.removedList);\n+\n+\t\tpiece.resultBlackCount=getPieceCount(Board.Black);\n+\t\tpiece.resultWhiteCount=getPieceCount(Board.White);\n+\t\t\n+\t\treturn true;\n+\t}\n+\n+\t//统计盘面棋子数量\n+\tprivate int getPieceCount(int bw) {\n+\t\tint c = 0;\n+\t\tfor (int i = 0; i < Board.n; i++) {\n+\t\t\tfor (int j = 0; j < Board.n; j++) {\n+\t\t\t\tif (a[i][j] == bw) {\n+\t\t\t\t\tc++;\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t\treturn c;\n+\t}\n+\t\n+\t// ------------------------------------------------------------------提子\n+\n+\tprivate void startPick(Coordinate c, int bw, List<PieceProcess> removedList) {\n+\t\tint reBw = Utils.getReBW(bw);\n+\t\tpickOther(c, reBw, removedList);\n+\n+\t\tif (removedList.size() > 0)\n+\t\t\treturn;\n+\t\tpickSelf(c, bw, removedList);\n+\t}\n+\n+\tprivate void pickOther(Coordinate c, int bw, List<PieceProcess> removedList) {\n+\t\tboolean[][] v = new boolean[Board.n][Board.n];\n+\n+\t\tfor (int i = 0; i < 4; i++) {\n+\t\t\tCoordinate nc = c.getNear(i);\n+\t\t\tBlock block = new Block(bw);\n+\t\t\tpick(nc, v, bw, block);\n+\n+\t\t\tif (!block.isLive()) {\n+\t\t\t\tdeleteBlock(block, removedList);\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\tprivate void pickSelf(Coordinate c, int bw, List<PieceProcess> removedList) {\n+\t\tboolean[][] v = new boolean[Board.n][Board.n];\n+\t\tBlock block = new Block(bw);\n+\t\tpick(c, v, bw, block);\n+\t\tif (!block.isLive()) {\n+\t\t\tdeleteBlock(block, removedList);\n+\t\t}\n+\t}\n+\n+\t// 递归构造为块\n+\tprivate void pick(Coordinate c, boolean[][] v, int bw, Block block) {\n+\t\tif (c == null)\n+\t\t\treturn;\n+\t\tif (v[c.x][c.y] == true)\n+\t\t\treturn;\n+\n+\t\tif (getValue(c) == Board.None) {\n+\t\t\tblock.addAir(1);\n+\t\t\treturn;\n+\t\t} else if (getValue(c) != bw) {\n+\t\t\treturn;\n+\t\t}\n+\n+\t\tv[c.x][c.y] = true;\n+\t\tblock.add(c);\n+\n+\t\tfor (int i = 0; i < 4; i++) {\n+\t\t\tCoordinate nc = c.getNear(i);\n+\t\t\tpick(nc, v, bw, block);\n+\t\t}\n+\t}\n+\n+\tprivate void deleteBlock(final Block block, final List<PieceProcess> removedList) {\n+\t\tblock.each(new Function() {\n+\t\t\t@Override\n+\t\t\tpublic Object apply(Object... obj) {\n+\t\t\t\tCoordinate c = (Coordinate) obj[0];\n+\n+\t\t\t\ta[c.x][c.y] = Board.None;\n+\t\t\t\tremovedList.add(new PieceProcess(block.getBw(),c,null));\n+\n+\t\t\t\treturn null;\n+\t\t\t}\n+\t\t});\n+\t}\n+\n+\t// ------------------------------------------------------------------\n+\n+\t@Override\n+\tpublic String toString() {\n+\t\tString s = \"\";\n+\t\tfor (int j = 0; j < Board.n; j++) {\n+\t\t\tfor (int i = 0; i < Board.n; i++) {\n+\t\t\t\tif (a[i][j] == Board.None) {\n+\t\t\t\t\ts += \" +\";\n+\t\t\t\t} else if (a[i][j] == Board.White) {\n+\t\t\t\t\ts += \" o\";\n+\t\t\t\t} else if (a[i][j] == Board.Black) {\n+\t\t\t\t\ts += \" x\";\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\ts += \"\\n\";\n+\t\t}\n+\t\treturn s;\n+\t}\n+\n+\t@Override\n+\tpublic int hashCode() {\n+\t\tfinal int prime = 31;\n+\t\tint result = 1;\n+\t\tresult = prime * result + Arrays.hashCode(a);\n+\t\treturn result;\n+\t}\n+\n+\t@Override\n+\tpublic boolean equals(Object obj) {\n+\t\tif (this == obj)\n+\t\t\treturn true;\n+\t\tif (obj == null)\n+\t\t\treturn false;\n+\t\tif (getClass() != obj.getClass())\n+\t\t\treturn false;\n+\t\tGrid other = (Grid) obj;\n+\t\tif (!myEqualse(a, other.a,Board.n))\n+\t\t\treturn false;\n+\t\treturn true;\n+\t}\n+\t\n+\tprivate boolean myEqualse(int[][] a,int b[][],int n){\n+\t\tfor (int j = 0; j < n; j++) {\n+\t\t\tfor (int i = 0; i < n; i++) {\n+\t\t\t\tif(a[j][i]!=b[j][i])\n+\t\t\t\t\treturn false;\n+\t\t\t}\n+\t\t}\n+\t\treturn true;\n+\t}\n+}"
+  }, {
+    "sha" : "8b44931db81d2029aba321a16e43efdb054fc744",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/PieceProcess.java",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/PieceProcess.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/PieceProcess.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/PieceProcess.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,34 @@\n+﻿/**\n+ * \n+ */\n+package com1314080901144;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import com.example.com1314080901144.util.Coordinate;\n+\n+/**\n+ * 每一步棋的记录\n+ *\n+ */\n+public class PieceProcess {\n+\tpublic int bw;\n+\tpublic Coordinate c;\n+\tpublic List<PieceProcess> removedList;\n+\t\n+\tpublic int resultBlackCount;\n+\tpublic int resultWhiteCount;\n+\n+\tpublic PieceProcess(int bw, Coordinate c,List<PieceProcess> removedList) {\n+\t\tthis.bw = bw;\n+\t\tthis.c = c;\n+\t\tthis.removedList=removedList;\n+\t}\n+\t\n+\tpublic PieceProcess(int bw, Coordinate c ) {\n+\t\tthis.bw = bw;\n+\t\tthis.c = c;\n+\t\tthis.removedList=new ArrayList<PieceProcess>();\n+\t}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "b9535090ef33eaa3b55457e252f42753bf114304",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/SubBoard.java",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/SubBoard.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/SubBoard.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/SubBoard.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,45 @@\n+package com1314080901144;\n+\n+\n+public class SubBoard extends Board {\n+\tprivate Board parent;\n+\tprivate int position = -1;\n+\n+\tpublic SubBoard(Board parent) {\n+\t\tsuper();\n+\t\tthis.parent = parent;\n+\t}\n+\n+\tpublic void forward() {\n+\t\tif (position + 1 < parent.getCount()) {\n+\t\t\tposition++;\n+\t\t\tPieceProcess p = parent.getPieceProcess(position);\n+\t\t\tthis.addPieceProcess(p);\n+\t\t}\n+\t}\n+\n+\tpublic void back() {\n+\t\tif (position < 0)return; \n+\n+\t\tthis.removePieceProcess();\n+\t\tposition--;\n+\t}\n+\n+\tpublic void gotoIt(int n) {\n+\t\tif (n > parent.getCount() || n < 0)\n+\t\t\treturn;\n+\n+\t\tthis.cleanGrid();\n+\t\tfor (int i = 0; i < n; i++) {\n+\t\t\tforward();\n+\t\t}\n+\t}\n+\t@Override\n+\tpublic boolean put(int x,int y){\n+\t\tboolean r=super.put(x, y);\n+\t\tif(r==true){\n+\t\t\tposition++;\n+\t\t}\n+\t\treturn r;\n+\t}\n+}"
+  }, {
+    "sha" : "75513fe4f7b16ae5cc336900052fcd86d3a9b677",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/TileView.java",
+    "status" : "added",
+    "additions" : 173,
+    "deletions" : 0,
+    "changes" : 173,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/TileView.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/TileView.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/TileView.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,173 @@\n+﻿package com1314080901144;\n+\n+import com.example.com1314080901144.util.Coordinate;\n+import com.example.com1314080901144.util.Utils;\n+\n+import android.content.Context;\n+import android.graphics.Canvas;\n+import android.graphics.Color;\n+import android.graphics.Paint;\n+import android.util.AttributeSet;\n+import android.util.Log;\n+import android.view.MotionEvent;\n+import android.view.View;\n+\n+public class TileView extends View {\n+\n+\tprivate Board board;\n+\tprivate Paint paint;\n+\tprivate double xOffset;\n+\tprivate double yOffset;\n+\tprivate double tileSize;\n+\n+\tpublic TileView(Context context, AttributeSet attrs) {\n+\t\tsuper(context, attrs);\n+\n+\t\tthis.paint = new Paint();\n+\t\tthis.xOffset = 0.5;\n+\t\tthis.yOffset = 0.5;\n+\t\tthis.tileSize = 1;\n+\t\tthis.board = new Board();\n+\t\t\n+\t\tLog.d(Com1314080901144Activity.Tag, \"newTileView\");\n+\t}\n+\n+\tpublic Board getBoard() {\n+\t\treturn board;\n+\t}\n+\t\n+\tpublic void setBoard(Board board){\n+\t\tthis.board=board;\n+\t\tthis.invalidate();\n+\t}\n+\n+\t//------------------------------------------------------------------画图\n+\t\n+\t@Override\n+\tpublic void onDraw(Canvas canvas) {\n+\t\tsuper.onDraw(canvas);\n+\t\t\n+\t\t//画棋盘\n+\t\tdrawLineGrid(canvas);\n+\t\tdrawStar(canvas);\n+\n+\t\t//画棋子\n+\t\tdrawPiece(canvas);\n+\t\tdrawFlag(canvas);\n+\t}\n+\n+\t//画棋子\n+\tprivate void drawPiece(Canvas canvas) {\n+\t\tfor (int x = 0; x < Board.n; x += 1) {\n+\t\t\tfor (int y = 0; y < Board.n; y += 1) {\n+\t\t\t\tint bw = board.getValue(x, y);\n+\t\t\t\tif (bw != Board.None) {\n+\t\t\t\t\tif (bw == Board.Black)\n+\t\t\t\t\t\tpaint.setColor(Color.BLACK);\n+\t\t\t\t\telse\n+\t\t\t\t\t\tpaint.setColor(Color.WHITE);\n+\n+\t\t\t\t\tcanvas.drawCircle(x2Screen(x), y2Screen(y),\n+\t\t\t\t\t\t\t(float) (tileSize / 2d), paint);\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\t//画最后落子位置的标记\n+\tprivate void drawFlag(Canvas canvas) {\n+\t\tpaint.setColor(Color.RED);\n+\t\tCoordinate c=board.getLastPosition();\n+\t\tif(c!=null){\n+\t\t\tcanvas.drawRect(x2Screen(c.x)-3, y2Screen(c.y)-3\n+\t\t\t\t, x2Screen(c.x)+3f, y2Screen(c.y)+3f, paint);\n+\t\t}\n+\t}\n+\t\n+\t//画棋盘的星\n+\tprivate void drawStar(Canvas canvas) {\n+\t\tpaint.setColor(Color.BLUE);\n+\t\t\n+\t\tfor(Coordinate c:Utils.createStar()){\n+\t\t\tif(c!=null){\n+\t\t\t\tcanvas.drawCircle(x2Screen(c.x), y2Screen(c.y),\n+\t\t\t\t\t\t3f, paint);\n+\t\t\t}\n+\t\t}\n+\t}\n+\n+\t//画棋盘网格线\n+\tprivate void drawLineGrid(Canvas canvas) {\n+\t\tpaint.setColor(Color.BLUE);\n+\t\tfor (int i = 0; i < Board.n; i++) {\n+\t\t\tdrawVLine(canvas, i);\n+\t\t\tdrawHLine(canvas, i);\n+\t\t}\n+\t}\n+\n+\t//垂直线\n+\tprivate void drawVLine(Canvas canvas, int i) {\n+\t\tcanvas.drawLine(x2Screen(i), y2Screen(0), x2Screen(i),\n+\t\t\t\ty2Screen(Board.n - 1), paint);\n+\t}\n+\n+\t//水平线\n+\tprivate void drawHLine(Canvas canvas, int i) {\n+\t\tcanvas.drawLine(x2Screen(0), y2Screen(i), x2Screen(Board.n - 1),\n+\t\t\t\ty2Screen(i), paint);\n+\t}\n+\n+\t//------------------------------------------------------------------坐标变换\n+\t\n+\tprivate float x2Screen(int x) {\n+\t\treturn (float) (x * tileSize + xOffset);\n+\t}\n+\n+\tprivate float y2Screen(int y) {\n+\t\treturn (float) (y * tileSize + yOffset);\n+\t}\n+\n+\tprivate int x2Coordinate(float x) {\n+\t\treturn (int) Math.round((x - xOffset) / tileSize);\n+\t}\n+\n+\tprivate int y2Coordinate(float y) {\n+\t\treturn (int) Math.round((y - yOffset) / tileSize);\n+\t}\n+\n+\t//------------------------------------------------------------------事件\n+\t\n+\t@Override\n+\tprotected void onSizeChanged(int w, int h, int oldw, int oldh) {\n+\t\tint wh = Math.min(w, h);\n+\t\ttileSize = wh / (double) Board.n;\n+\n+\t\txOffset = tileSize / 2;\n+\t\tyOffset = tileSize / 2;\n+\n+\t\tsuper.onSizeChanged(w, wh, oldw, oldh);\n+\t}\n+\n+\t@Override\n+\tpublic boolean onTouchEvent(MotionEvent event) {\n+\t\tif (event.getAction() == MotionEvent.ACTION_UP) {\n+\n+\t\t\tfloat xf = event.getX();\n+\t\t\tfloat yf = event.getY();\n+\n+\t\t\tint x = x2Coordinate(xf);\n+\t\t\tint y = y2Coordinate(yf);\n+\n+\t\t\tif (board.put(x, y)) {\n+\t\t\t\tthis.invalidate();\n+\t\t\t\treturn true;\n+\t\t\t}\n+\t\t}\n+\t\treturn true;\n+\t}\n+\t@Override\n+\tprotected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {\n+\t\tint m=Math.max(widthMeasureSpec, heightMeasureSpec);\n+\t\tsuper.onMeasure(m, m);\n+\t}\n+}"
+  }, {
+    "sha" : "9be4ccd5fb4219462d65eb4a5605f9a3eaf71101",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/com1314080901144Activity.java",
+    "status" : "modified",
+    "additions" : 1,
+    "deletions" : 1,
+    "changes" : 2,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/com1314080901144Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/com1314080901144Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/com1314080901144Activity.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -1,4 +1,4 @@\n-package com.example.com1314080901144;\n+package com1314080901144;\n \n import java.io.IOException;\n import java.util.List;"
+  }, {
+    "sha" : "47ec79ff8aef5a6e0edf7c7df4c1437998450434",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/sgf/FileList.java",
+    "status" : "added",
+    "additions" : 95,
+    "deletions" : 0,
+    "changes" : 95,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/sgf/FileList.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/sgf/FileList.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/sgf/FileList.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,95 @@\n+package com1314080901144.sgf;\n+\n+import java.io.File;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import android.app.ListActivity;\n+import android.content.Intent;\n+import android.os.Bundle;\n+import android.view.KeyEvent;\n+import android.view.View;\n+import android.widget.ArrayAdapter;\n+import android.widget.ListView;\n+import android.widget.Toast;\n+\n+public class FileList extends ListActivity {\n+\n+\tprivate List<String> _items = null;\n+\tprivate String filePath = \"/\";\n+\tprivate String filter=null;\n+\n+\t@Override\n+\tpublic void onCreate(Bundle icicle) {\n+\t\tsuper.onCreate(icicle);\n+\t\tfilter=request();\n+\t\tfillList(new File(\"/\").listFiles());\n+\t}\n+\n+\t@Override\n+\tprotected void onListItemClick(ListView l, View v, int position, long id) {\n+\t\tif (_items == null || _items.size() == 0)\n+\t\t\treturn;\n+\n+\t\tfilePath = _items.get((int) id);\n+\t\tFile file = new File(filePath);\n+\t\tif (file.isDirectory()) {\n+\t\t\ttry {\n+\t\t\t\tfillList(file.listFiles());\n+\t\t\t} catch (Exception ex) {\n+\t\t\t\tToast.makeText(FileList.this, ex.getMessage(),\n+\t\t\t\t\t\tToast.LENGTH_SHORT).show();\n+\t\t\t}\n+\t\t} else{\n+\t\t\tresponse(filePath);\n+\t\t}\n+\t}\n+\n+\tprivate void fillList(File[] files) {\n+\t\tList<String> items = new ArrayList<String>();\n+\t\tfor (File file : files){\n+\t\t\tif(file.canRead()){\n+\t\t\t\tif(file.isFile() && !file.getName().endsWith(filter))\n+\t\t\t\t\tcontinue;\n+\t\t\t\titems.add(file.getPath());\n+\t\t\t}\n+\t\t}\n+\n+\t\tArrayAdapter<String> fileList = new ArrayAdapter<String>(this,\n+\t\t\t\tandroid.R.layout.simple_list_item_1, items);\n+\t\tsetListAdapter(fileList);\n+\n+\t\tthis._items = items;\n+\t}\n+\n+\t@Override\n+\tpublic boolean onKeyDown(int keyCode, KeyEvent event) {\n+\t\tswitch (keyCode) {\n+\t\tcase KeyEvent.KEYCODE_BACK:\n+\t\t\tresponse(\"\");\n+\t\t\treturn true;\n+\t\tcase KeyEvent.KEYCODE_DPAD_UP:\n+\t\t\tfillList(new File(\"/\").listFiles());\n+\t\t\tfilePath = \"/\";\n+\t\t\treturn true;\n+\t\t}\n+\t\treturn super.onKeyDown(keyCode, event);\n+\t}\n+\n+\tprivate void response(String value) {\n+\t\tIntent i = new Intent();\n+\t\tBundle b = new Bundle();\n+\t\tb.putString(\"result\", value);\n+\t\ti.putExtras(b);\n+\n+\t\tthis.setResult(RESULT_OK, i);\n+\t\tthis.finish();\n+\t}\n+\t\n+\tprivate String request(){\n+\t\t Intent i = this.getIntent();\n+\t\t Bundle b = i.getExtras();\n+\t\t String s = b.getString(\"filter\");\n+\t\t return s;\n+\t}\n+}"
+  }, {
+    "sha" : "9f480257f49a3cee2e6676c1a25dc117bf4da653",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/sgf/SgfHelper.java",
+    "status" : "added",
+    "additions" : 86,
+    "deletions" : 0,
+    "changes" : 86,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/sgf/SgfHelper.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/sgf/SgfHelper.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/sgf/SgfHelper.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,86 @@\n+﻿package com1314080901144.sgf;\n+\n+import java.io.File;\n+import java.io.IOException;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+import com.example.com1314080901144.Board;\n+import com.example.com1314080901144.PieceProcess;\n+import com.example.com1314080901144.util.Coordinate;\n+\n+import net.mindview.util.TextFile;\n+\n+/**\n+ * 读取Sgf文件\n+ */\n+public class SgfHelper {\n+\tprivate static final int ACode = (int) 'a';\n+\n+\tpublic static List<Coordinate> getCoordList(String fileName)\n+\t\t\tthrows IOException {\n+\t\tString str = TextFile.read(fileName);\n+\t\tList<Coordinate> cs = new ArrayList<Coordinate>();\n+\t\tif (str == \"\")\n+\t\t\treturn cs;\n+\n+\t\tString data = str.substring(0, str.indexOf(\")\"));\n+\t\tString[] ds = data.split(\";\");\n+\n+\t\tfor (String s : ds) {\n+\t\t\tif (s == \"\")\n+\t\t\t\tcontinue;\n+\n+\t\t\tString ns = s.toLowerCase();\n+\n+\t\t\tif (ns.length() > 5\n+\t\t\t\t\t&& (ns.charAt(0) == 'b' || ns.charAt(0) == 'w')) {\n+\t\t\t\tchar xChar = ns.charAt(2);\n+\t\t\t\tchar yChar = ns.charAt(3);\n+\n+\t\t\t\tint x = (int) xChar - ACode;\n+\t\t\t\tint y = (int) yChar - ACode;\n+\t\t\t\tCoordinate c = new Coordinate(x, y);\n+\t\t\t\tcs.add(c);\n+\t\t\t}\n+\t\t}\n+\t\treturn cs;\n+\t}\n+\n+\tpublic static void save(Board b, String fileName) throws IOException {\n+\t\tif(b.getCount()==0)return;\n+\t\t\n+\t\tTextFile textFile = new TextFile();\n+\t\ttextFile.add(\"(;US[ChunGo]\");\n+\t\tfor (int i = 0, n = b.getCount(); i < n; i++) {\n+\t\t\tPieceProcess p = b.getPieceProcess(i);\n+\t\t\ttextFile.add(Coordinate2String(p));\n+\t\t}\n+\t\ttextFile.add(\")\");\n+\t\t\n+\t\tString dir=\"/sdcard/ChunGo\";\n+\t\tFile file=new File(dir);\n+\t\tif(!file.exists()){\n+\t\t\tfile.mkdir();\n+\t\t}\n+\t\t\n+\t\tfileName=dir+\"/\"+fileName;\n+\t\ttextFile.write(fileName);\n+\t}\n+\n+\tprivate static String Coordinate2String(PieceProcess p) {\n+\t\tString s = \";\" +pw2String(p.bw)+ \"[\"+int2String(p.c.x) + int2String(p.c.y)+\"]\";\n+\t\treturn s;\n+\t}\n+\n+\tprivate static String int2String(int a) {\n+\t\tint code = a + ACode;\n+\t\tchar c = (char) code;\n+\t\treturn String.valueOf(c);\n+\t}\n+\tprivate static String pw2String(int bw){\n+\t\tif(bw==Board.Black)return \"B\";\n+\t\tif(bw==Board.White)return \"W\";\n+\t\treturn \"X\";\n+\t}\n+}"
+  }, {
+    "sha" : "ea4e78f7fb98a974c94341851d4e62f50b0451bf",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Coordinate.java",
+    "status" : "added",
+    "additions" : 93,
+    "deletions" : 0,
+    "changes" : 93,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Coordinate.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Coordinate.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Coordinate.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,93 @@\n+package com1314080901144.util;\n+\n+import com.example.com1314080901144.Board;\n+\n+public class Coordinate {\n+\tpublic final int x;\n+\tpublic final int y;\n+\n+\tprivate Coordinate[] near;\n+\tpublic static final int up = 0;\n+\tpublic static final int down = 1;\n+\tpublic static final int right = 2;\n+\tpublic static final int left = 3;\n+\n+\tpublic Coordinate(int x, int y) {\n+\t\tthis.x = x;\n+\t\tthis.y = y;\n+\t}\n+\n+\tprivate Coordinate up() {\n+\t\tCoordinate c = new Coordinate(x, y - 1);\n+\t\treturn c.isValid() ? c : null;\n+\t}\n+\n+\tprivate Coordinate down() {\n+\t\tCoordinate c = new Coordinate(x, y + 1);\n+\t\treturn c.isValid() ? c : null;\n+\t}\n+\n+\tprivate Coordinate right() {\n+\t\tCoordinate c = new Coordinate(x + 1, y);\n+\t\treturn c.isValid() ? c : null;\n+\t}\n+\n+\tprivate Coordinate left() {\n+\t\tCoordinate c = new Coordinate(x - 1, y);\n+\t\treturn c.isValid() ? c : null;\n+\t}\n+\n+\tprivate void initNear() {\n+\t\tif (near == null) {\n+\t\t\tnear = new Coordinate[4];\n+\t\t\tnear[up] = up();\n+\t\t\tnear[down] = down();\n+\t\t\tnear[right] = right();\n+\t\t\tnear[left] = left();\n+\t\t}\n+\t}\n+\n+\tpublic Coordinate getNear(int direction) {\n+\t\tinitNear();\n+\t\treturn near[direction];\n+\t}\n+\n+\t//------------------------------------------------------------------------\n+\t\n+\tpublic boolean isValid() {\n+\t\tif (x < 0)\n+\t\t\treturn false;\n+\t\tif (y < 0)\n+\t\t\treturn false;\n+\t\tif (x > Board.n - 1)\n+\t\t\treturn false;\n+\t\tif (y > Board.n - 1)\n+\t\t\treturn false;\n+\t\treturn true;\n+\t}\n+\n+\t@Override\n+\tpublic boolean equals(Object obj) {\n+\t\tif (this == obj)\n+\t\t\treturn true;\n+\t\tif (obj == null)\n+\t\t\treturn false;\n+\t\tif (getClass() != obj.getClass())\n+\t\t\treturn false;\n+\t\tCoordinate other = (Coordinate) obj;\n+\t\tif (x != other.x)\n+\t\t\treturn false;\n+\t\tif (y != other.y)\n+\t\t\treturn false;\n+\t\treturn true;\n+\t}\n+\n+\t@Override\n+\tpublic int hashCode() {\n+\t\tfinal int prime = 31;\n+\t\tint result = 1;\n+\t\tresult = prime * result + x;\n+\t\tresult = prime * result + y;\n+\t\treturn result;\n+\t}\n+}"
+  }, {
+    "sha" : "ca9abdcc867f8f48815821b177c23fe27953fd9c",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Function.java",
+    "status" : "added",
+    "additions" : 5,
+    "deletions" : 0,
+    "changes" : 5,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Function.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Function.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Function.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,5 @@\n+package com1314080901144.util;\n+\n+public interface Function {\n+\tpublic Object apply(Object... obj);\n+}"
+  }, {
+    "sha" : "f2371590630bfde61f528f205212be0a46699bea",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/MyException.java",
+    "status" : "added",
+    "additions" : 9,
+    "deletions" : 0,
+    "changes" : 9,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/MyException.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/MyException.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/MyException.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,9 @@\n+package com1314080901144.util;\n+\n+public class MyException extends RuntimeException {\n+    private static final long serialVersionUID = 1L;\n+\n+    public MyException(String s) {\n+        super(s);\n+    }\n+}"
+  }, {
+    "sha" : "e900a33d22b40f4369cad603d43f93671e3ccd9a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Utils.java",
+    "status" : "added",
+    "additions" : 37,
+    "deletions" : 0,
+    "changes" : 37,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Utils.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/0a452f39a5cf8a08a3390fc5b30c95234ae79278/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Utils.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901144/util/Utils.java?ref=0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+    "patch" : "@@ -0,0 +1,37 @@\n+﻿package com1314080901144.util;\n+\n+import com.example.com1314080901144.Board;\n+\n+public class Utils {\n+\t//创建棋盘的星\n+\tpublic static Coordinate[] createStar(){\n+\t\tCoordinate[] cs=new Coordinate[9];\n+\t\t\n+\t\tint dao3=Board.n-4;\n+\t\tcs[0]=new Coordinate(3,3);\n+\t\tcs[1]=new Coordinate(dao3,3);\n+\t\tcs[2]=new Coordinate(3,dao3);\n+\t\tcs[3]=new Coordinate(dao3,dao3);\n+\t\t\n+\t\tint zhong=Board.n/2;\n+\t\t\n+\t\tcs[4]=new Coordinate(3,zhong);\n+\t\tcs[5]=new Coordinate(zhong,3);\n+\t\tcs[6]=new Coordinate(zhong,dao3);\n+\t\tcs[7]=new Coordinate(dao3,zhong);\n+\t\t\n+\t\tcs[8]=new Coordinate(zhong,zhong);\n+\t\t\n+\t\treturn cs;\n+\t}\n+\t\n+\t// 翻转颜色\n+\tpublic static int getReBW(int bw) {\n+\t\tif (bw == Board.White)\n+\t\t\treturn Board.Black;\n+\t\tif (bw == Board.Black)\n+\t\t\treturn Board.White;\n+\n+\t\tthrow new MyException(\"ilegateState\");\n+\t}\n+}"
+  } ],
+  "sha" : "0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/0a452f39a5cf8a08a3390fc5b30c95234ae79278",
+  "parents" : [ {
+    "sha" : "de92e4dcf57344b7eb794c5711018b62ca3f2d85",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/de92e4dcf57344b7eb794c5711018b62ca3f2d85",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/de92e4dcf57344b7eb794c5711018b62ca3f2d85"
+  }, {
+    "sha" : "5f4b708e0294e110dca8d699fb4683717ac10f26",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/5f4b708e0294e110dca8d699fb4683717ac10f26",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/5f4b708e0294e110dca8d699fb4683717ac10f26"
+  } ]
+}

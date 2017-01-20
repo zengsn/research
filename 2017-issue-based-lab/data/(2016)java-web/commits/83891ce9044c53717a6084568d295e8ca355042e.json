@@ -1,0 +1,60 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 114,
+    "additions" : 114,
+    "deletions" : 0
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/83891ce9044c53717a6084568d295e8ca355042e",
+  "commit" : {
+    "author" : {
+      "name" : "pigever Pig",
+      "email" : "pigever Pig",
+      "date" : "2016-11-16T17:35:15Z"
+    },
+    "committer" : {
+      "name" : "pigever Pig",
+      "email" : "pigever Pig",
+      "date" : "2016-11-16T17:35:15Z"
+    },
+    "message" : "#5 提交实验代码",
+    "tree" : {
+      "sha" : "78aef1d12c43c69cf67487cb9ddec4ed101157f4",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/78aef1d12c43c69cf67487cb9ddec4ed101157f4"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/83891ce9044c53717a6084568d295e8ca355042e",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/83891ce9044c53717a6084568d295e8ca355042e/comments",
+  "files" : [ {
+    "sha" : "7d64dca9dbdcb0afb127959de05bf40a6b00065b",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902227/EncodeFilter.java",
+    "status" : "added",
+    "additions" : 52,
+    "deletions" : 0,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/83891ce9044c53717a6084568d295e8ca355042e/jweb/src/edu/hzu/javaweb/labs/se1414080902227/EncodeFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/83891ce9044c53717a6084568d295e8ca355042e/jweb/src/edu/hzu/javaweb/labs/se1414080902227/EncodeFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902227/EncodeFilter.java?ref=83891ce9044c53717a6084568d295e8ca355042e",
+    "patch" : "@@ -0,0 +1,52 @@\n+package edu.hzu.javaweb.labs.se1414080902227;\n+\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+/**\n+ * Servlet Filter implementation class EncodeFilter\n+ */\n+@WebFilter(filterName=\"EncodeFilter\",urlPatterns=\"/*\")\n+public class EncodeFilter implements Filter {\n+\n+    /**\n+     * Default constructor. \n+     */\n+    public EncodeFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see Filter#destroy()\n+\t */\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n+\t */\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\t// �������\n+\t\tSystem.out.println(\"�������...\");\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+        //�������\n+        response.setContentType(\"text/html;charset=UTF-8\");\n+\n+\t\tchain.doFilter(request, response);\n+\t}\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\tSystem.out.println(\"ͳһ����...\");\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "2c63092a965154004825e0a2a58c7501ba21e0d6",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902227/LoginFilter.java",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/83891ce9044c53717a6084568d295e8ca355042e/jweb/src/edu/hzu/javaweb/labs/se1414080902227/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/83891ce9044c53717a6084568d295e8ca355042e/jweb/src/edu/hzu/javaweb/labs/se1414080902227/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902227/LoginFilter.java?ref=83891ce9044c53717a6084568d295e8ca355042e",
+    "patch" : "@@ -0,0 +1,62 @@\n+package edu.hzu.javaweb.labs.se1414080902227;\n+\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+/**\n+ * Servlet Filter implementation class LoginFilter\n+ */\n+@WebFilter(filterName=\"LoginFilter\",urlPatterns=\"/login.jsp\")\n+public class LoginFilter implements Filter {\n+\n+    /**\n+     * Default constructor. \n+     */\n+    public LoginFilter() {\n+        // TODO Auto-generated constructor stub\n+    }\n+\n+\t/**\n+\t * @see Filter#destroy()\n+\t */\n+\tpublic void destroy() {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+\t/**\n+\t * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)\n+\t */\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\t//��ȡhttp����������\n+\t\tHttpServletRequest req = (HttpServletRequest) request;\n+        HttpServletResponse resp = (HttpServletResponse) response;\n+        \n+        HttpSession session = req.getSession();\n+        String path=req.getContextPath();\n+        String basePath=req.getScheme()+\"://\"+req.getServerName()+\":\"+req.getServerPort()+path;\n+        String userName=(String)session.getAttribute(\"username\");\n+        if (userName==null) {\n+        \tresp.sendRedirect(basePath+\"/faile.jsp\");\n+        } else {   \n+        \tchain.doFilter(request, response);\n+        }  \n+\t}\n+\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\tSystem.out.println(\"��¼����...\");\n+\t}\n+\n+}\n\\ No newline at end of file"
+  } ],
+  "sha" : "83891ce9044c53717a6084568d295e8ca355042e",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/83891ce9044c53717a6084568d295e8ca355042e",
+  "parents" : [ {
+    "sha" : "f096bb195c1622a9d80faeeb9b2c591a6728efdd",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/f096bb195c1622a9d80faeeb9b2c591a6728efdd",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/f096bb195c1622a9d80faeeb9b2c591a6728efdd"
+  } ]
+}

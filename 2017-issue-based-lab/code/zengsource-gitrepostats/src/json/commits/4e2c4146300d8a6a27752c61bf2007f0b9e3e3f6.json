@@ -1,0 +1,161 @@
+{
+  "committer" : {
+    "login" : "Mepeekaboo",
+    "id" : 14156851,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14156851?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Mepeekaboo",
+    "html_url" : "https://github.com/Mepeekaboo",
+    "followers_url" : "https://api.github.com/users/Mepeekaboo/followers",
+    "following_url" : "https://api.github.com/users/Mepeekaboo/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Mepeekaboo/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Mepeekaboo/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Mepeekaboo/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Mepeekaboo/orgs",
+    "repos_url" : "https://api.github.com/users/Mepeekaboo/repos",
+    "events_url" : "https://api.github.com/users/Mepeekaboo/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Mepeekaboo/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 422,
+    "additions" : 366,
+    "deletions" : 56
+  },
+  "author" : {
+    "login" : "Mepeekaboo",
+    "id" : 14156851,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/14156851?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/Mepeekaboo",
+    "html_url" : "https://github.com/Mepeekaboo",
+    "followers_url" : "https://api.github.com/users/Mepeekaboo/followers",
+    "following_url" : "https://api.github.com/users/Mepeekaboo/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/Mepeekaboo/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/Mepeekaboo/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/Mepeekaboo/subscriptions",
+    "organizations_url" : "https://api.github.com/users/Mepeekaboo/orgs",
+    "repos_url" : "https://api.github.com/users/Mepeekaboo/repos",
+    "events_url" : "https://api.github.com/users/Mepeekaboo/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/Mepeekaboo/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+  "commit" : {
+    "author" : {
+      "name" : "Mepeekaboo",
+      "email" : "83719348@qq.com",
+      "date" : "2016-05-10T07:14:24Z"
+    },
+    "committer" : {
+      "name" : "Mepeekaboo",
+      "email" : "83719348@qq.com",
+      "date" : "2016-05-10T07:14:24Z"
+    },
+    "message" : "实验3,4",
+    "tree" : {
+      "sha" : "62fb585e3beb38cbc130ef54906f0db64d8b0b34",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/62fb585e3beb38cbc130ef54906f0db64d8b0b34"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/comments",
+  "files" : [ {
+    "sha" : "877a6c8291346c3a9670ef049e6383abf267701a",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/JNIMp3Encode.java",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/JNIMp3Encode.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/JNIMp3Encode.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/JNIMp3Encode.java?ref=4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+    "patch" : "@@ -0,0 +1,12 @@\n+package com.example.mp3encodedemo;\n+\n+public class JNIMp3Encode {\n+\n+\tpublic native void init(int channel, int sampleRate, int brate);\n+\tpublic native void destroy();\n+\tpublic native byte[] encode(short[] buffer, int len);\n+\t\n+\tstatic{\n+\t\tSystem.loadLibrary(\"mp3lame\");\n+\t}\n+}"
+  }, {
+    "sha" : "bfabb8ed729066cf30ae665c0a881c1831227276",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/MainActivity.java",
+    "status" : "added",
+    "additions" : 72,
+    "deletions" : 0,
+    "changes" : 72,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/MainActivity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/MainActivity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/MainActivity.java?ref=4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+    "patch" : "@@ -0,0 +1,72 @@\n+package com.example.mp3encodedemo;\n+\n+import java.io.File;\n+import android.os.Bundle;\n+import android.os.Environment;\n+import android.app.Activity;\n+import android.view.Menu;\n+import android.view.View;\n+import android.view.View.OnClickListener;\n+import android.widget.Button;\n+import android.widget.Toast;\n+\n+public class MainActivity extends Activity implements OnClickListener{\n+\n+\tprivate Mp3EncodeClient mp3EncodeClient;\n+\tprivate Button startRecordingBtn;\n+\tprivate Button stopRecordingBtn;\n+\t\n+\t@Override\n+\tprotected void onCreate(Bundle savedInstanceState) {\n+\t\tsuper.onCreate(savedInstanceState);\n+\t\tsetContentView(R.layout.activity_main);\n+\t\t\n+\t\tstartRecordingBtn = (Button) this.findViewById(R.id.start_recording_btn); \n+\t\tstartRecordingBtn = (Button) this.findViewById(R.id.pass_btn); \n+\t\tstartRecordingBtn.setOnClickListener(this);     \n+        stopRecordingBtn = (Button) this.findViewById(R.id.stop_recording_btn); \n+        stopRecordingBtn.setOnClickListener(this);\n+        \n+        mp3EncodeClient = new Mp3EncodeClient();\n+        \n+        // 检查sdcard状态\n+        String state = Environment.getExternalStorageState();\n+\t\tif(state.equals(Environment.MEDIA_MOUNTED)){\n+\t\t\t\n+\t\t\tFile yzsPath = new File(Settings.recordingPath);\n+\t        if(!yzsPath.isDirectory()){\n+\t        \tyzsPath.mkdir();\n+\t        }\n+\t        \n+\t    }else{\n+\t    \tToast.makeText(this, \"sdcard error!\", 0).show();\n+\t    }\n+\t}\n+\n+\t@Override\n+\tpublic void onClick(View v) {\n+\t\t\n+\t\tswitch (v.getId()) {\n+\t\tcase R.id.start_recording_btn:\n+\t\t\t\n+\t\t\tstartRecordingBtn.setVisibility(View.INVISIBLE);\n+\t\t\tstopRecordingBtn.setVisibility(View.VISIBLE);\n+\t\t\t\n+\t\t\tmp3EncodeClient.start();\n+\t\t\tbreak;\n+\n+\t\tcase R.id.stop_recording_btn:\n+\t\t\t\n+\t\t\tstartRecordingBtn.setVisibility(View.VISIBLE);\n+\t\t\tstopRecordingBtn.setVisibility(View.INVISIBLE);\n+\t\t\t\n+\t\t\tmp3EncodeClient.stop();\n+\t\t\t\n+\t\t\tbreak;\n+\t\t}\n+\t\t\n+\t}\n+\n+\t\n+\n+}"
+  }, {
+    "sha" : "361c97ad4013345563811cff46b33a9bc9c14499",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Mp3EncodeClient.java",
+    "status" : "added",
+    "additions" : 41,
+    "deletions" : 0,
+    "changes" : 41,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Mp3EncodeClient.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Mp3EncodeClient.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Mp3EncodeClient.java?ref=4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+    "patch" : "@@ -0,0 +1,41 @@\n+package com.example.mp3encodedemo;\n+\n+import java.util.concurrent.BlockingQueue;\n+import java.util.concurrent.LinkedBlockingQueue;\n+import android.os.Handler;\n+import android.os.Message;\n+\n+public class Mp3EncodeClient {\n+\n+\tprivate BlockingQueue<short[]> recordQueue = new LinkedBlockingQueue<short[]>();\n+\tprivate RecordingThread recordingThread;\n+\tprivate Mp3EncodeThread mp3EncodeThread;\n+\t\n+\tprivate Handler handler = new Handler(){\n+\t\t\n+\t\tpublic void handleMessage(Message msg) {\n+\t\t\t\n+\t\t\tswitch (msg.what) {\n+\t\t\t\n+\t\t\t}\n+\t\t};\n+\t\t\n+\t};\n+\t\n+\t\n+\tpublic void start(){\n+\t\trecordQueue.clear();\n+\t\t\n+\t\trecordingThread = new RecordingThread(handler, recordQueue);\n+\t\trecordingThread.start();\n+\t\t\n+\t\tmp3EncodeThread = new Mp3EncodeThread(handler, recordQueue);\n+\t\tmp3EncodeThread.start();\n+\t}\n+\t\n+\tpublic void stop(){\n+\t\trecordingThread.stopRecording();\n+\t\tmp3EncodeThread.stopMp3Encode();\n+\t}\n+\t\n+}"
+  }, {
+    "sha" : "02b0ebd9afeaa49cba53672d39ab9f088837aee3",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Mp3EncodeThread.java",
+    "status" : "added",
+    "additions" : 62,
+    "deletions" : 0,
+    "changes" : 62,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Mp3EncodeThread.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Mp3EncodeThread.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Mp3EncodeThread.java?ref=4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+    "patch" : "@@ -0,0 +1,62 @@\n+package com.example.mp3encodedemo;\n+\n+import java.io.FileOutputStream;\n+import java.util.ArrayList;\n+import java.util.concurrent.BlockingQueue;\n+import java.util.concurrent.TimeUnit;\n+import android.os.Handler;\n+\n+public class Mp3EncodeThread extends Thread {\n+\n+\tprivate BlockingQueue<short[]> recordQueue;\t\n+\tprivate Handler handler;\t\n+\tprivate static final long TIME_WAIT_RECORDING = 100;\n+\tprivate volatile boolean setToStopped = false;\n+\tprivate JNIMp3Encode mp3Encode = new JNIMp3Encode();\n+\tprivate int channel = 1;\n+\tprivate int sampleRate = 16000;\n+\tprivate int brate = 128;\n+\t\n+\tpublic Mp3EncodeThread(Handler handler, BlockingQueue<short[]> recordQueue) {\n+\t\tthis.recordQueue = recordQueue;\n+\t\tthis.handler = handler;\n+\t}\n+\n+\n+\tpublic void stopMp3Encode(){\n+\t\tsetToStopped = true;\n+\t}\n+\t\n+\n+\t@Override\n+\tpublic void run() {\n+\t\t\n+\t\tmp3Encode.init(channel, sampleRate, brate);\n+\t\tFileOutputStream out = null;\n+\t\t\n+\t\ttry {\n+\t\t\t\n+\t\t\tout = new FileOutputStream(Settings.recordingPath  + \"recording.mp3\");\n+\t\t\tshort[] queueHeadBuffer = null;\n+\t\t\twhile(true)\t{\n+\t\t\t\t\n+\t\t\t\tqueueHeadBuffer = recordQueue.poll(TIME_WAIT_RECORDING, TimeUnit.MILLISECONDS);\t\t\t\t\n+\t\t\t\tif(queueHeadBuffer != null) {\n+\t\t\t\t\tbyte[] mp3Datas = mp3Encode.encode(queueHeadBuffer, queueHeadBuffer.length);\n+\t\t\t\t\tout.write(mp3Datas);\n+\t\t\t\t}\n+\t\t\t\t\n+\t\t\t\tif(setToStopped\t&& recordQueue.size()==0) {\n+\t\t\t\t\tbreak;\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\t\t\t\t\n+\t\t\tout.close();\n+\t\t\tmp3Encode.destroy();\n+\t\t\t\n+\t\t} catch (Exception e) {\n+\t\t\t\n+\t\t}\n+\t}\n+\t\n+}"
+  }, {
+    "sha" : "2b41dff6125b9a0e435bcdf38756459e6b384c94",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/RecordingThread.java",
+    "status" : "added",
+    "additions" : 124,
+    "deletions" : 0,
+    "changes" : 124,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/RecordingThread.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/RecordingThread.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/RecordingThread.java?ref=4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+    "patch" : "@@ -0,0 +1,124 @@\n+package com.example.mp3encodedemo;\n+\n+import java.io.FileOutputStream;\n+import java.util.ArrayList;\n+import java.util.concurrent.BlockingQueue;\n+\n+import android.media.AudioFormat;\n+import android.media.AudioRecord;\n+import android.media.MediaRecorder;\n+import android.os.Handler;\n+import android.util.Log;\n+import android.widget.Toast;\n+\n+\n+public class RecordingThread extends Thread {\n+\t\n+\tprivate static int FREQUENCY = 16000;\n+\tprivate static int CHANNEL = AudioFormat.CHANNEL_IN_MONO;\n+\tprivate static int ENCODING = AudioFormat.ENCODING_PCM_16BIT;\n+\t\n+\n+\tprivate volatile boolean setToStopped = false;\n+\tprivate Handler handler;\n+\t\n+\t\n+\tprivate static int bufferSize = AudioRecord.getMinBufferSize(FREQUENCY, CHANNEL, ENCODING);\n+\tprivate BlockingQueue<short[]> recordQueue;\n+\t\n+\tpublic RecordingThread(Handler handler, BlockingQueue<short[]> recordQueue){\n+\t\tthis.handler = handler;\n+\t\tthis.recordQueue = recordQueue;\n+\t}\n+\t\n+\tpublic void stopRecording(){\n+\t\tthis.setToStopped = true;\n+\t}\n+\t\n+\t\n+\t\n+\t@Override\n+\tpublic void run(){\n+\t\t\n+\t\t\tAudioRecord audioRecord = null;\n+\t\t\t\n+\t\t\ttry {\n+\t\t\t\t\t\n+\t\t\t\tshort[] buffer = new short[bufferSize];\n+\t\t\t\taudioRecord = new AudioRecord(\n+\t\t\t\t\t\tMediaRecorder.AudioSource.MIC, FREQUENCY,\n+\t\t\t\t\t\tCHANNEL, ENCODING, bufferSize);\n+\t\t\t\t\n+\t\t\t\tint state = audioRecord.getState();\t\t\t\t\n+\t\t\t\tif (state == AudioRecord.STATE_INITIALIZED) {\n+\t\t\t\t\t\n+\t\t\t\t\taudioRecord.startRecording();\t\t\t\n+\t\t\t\t\thandler.obtainMessage(Settings.MSG_RECORDING_START).sendToTarget();\t\t\t\t\t\t\t\t\t\t\n+\t\t\t\t\tboolean flag = true;\n+\t\t\t\t\t\n+\t\t\t\t\twhile (!setToStopped) {\n+\t\t\t\t\t\t\n+\t\t\t\t\t\tint len = audioRecord.read(buffer, 0, buffer.length);\t\n+\t\t\t\t\t\t\n+\t\t\t\t\t\t// 去掉全0数据\n+\t\t\t\t\t\tif(flag){\n+\t\t\t\t\t\t\t\n+\t\t\t\t\t\t\tdouble sum = 0.0;\n+\t\t\t\t\t\t\tfor(int i = 0; i < len; i++){\n+\t\t\t\t\t\t\t\tsum += buffer[i];\n+\t\t\t\t\t\t\t}\n+\t\t\t\t\t\t\tif(sum == 0.0){\n+\t\t\t\t\t\t\t\tcontinue;\n+\t\t\t\t\t\t\t\t\n+\t\t\t\t\t\t\t}else{\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n+\t\t\t\t\t\t\t\thandler.obtainMessage(Settings.MSG_RECORDING_START).sendToTarget();\n+\t\t\t\t\t\t\t\tflag = false;\n+\t\t\t\t\t\t\t\t\t\t\t\t\n+\t\t\t\t\t\t\t}\n+\t\t\t\t\t\t}\n+\t\t\t\t\t\t\n+\t\t\t\t\t\t\n+\t\t\t\t\t\tshort[] data = new short[len]; \n+\t\t\t\t\t\tSystem.arraycopy(buffer, 0, data, 0, len);\t\n+\t\t\t\t\t\t\n+\t\t\t\t\t\t// bolcking queue\n+\t\t\t\t\t\trecordQueue.add(data);\t\t\t\t\t\t\t\n+\t\t\t\t\t\n+\t\t\t\t\t}\n+\t\t\t\t\t\n+\t\t\t\t\t\n+\t\t\t\t\thandler.sendEmptyMessage(Settings.MSG_RECORDING_STOP);\n+\t\t\t\t\taudioRecord.stop();\n+\n+\t\t\t\t} else {\n+\t\t\t\t\t\n+\t\t\t\t\thandler.sendEmptyMessage(Settings.MSG_RECORDING_STATE_ERROR);\n+\n+\t\t\t\t}\n+\n+\t\t\t} catch (Exception e) {\n+\t\t\t\t\n+\t\t\t\thandler.sendEmptyMessage(Settings.MSG_RECORDING_EXCEPTION);\t\n+\t\t\t\t\n+\t\t\t} finally {\n+\t\t\t\t\t\t\t\n+\t\t\t\ttry {\n+\t\t\t\t\t\n+\t\t\t\t\t\n+\t\t\t\t\taudioRecord.release();\n+\t\t\t\t\taudioRecord = null;\n+\t\t\t\t\t\n+\t\t\t\t\thandler.sendEmptyMessage(Settings.MSG_RECORDING_RELEASE);\t\t\t\n+\t\t\t\t\t\t\t\t\t\t\n+\t\t\t\t} catch (Exception e) {\n+\t\t\t\t\t\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\t\n+\t\t}\n+\t\t\n+\t\t\n+\t\n+\t\n+}"
+  }, {
+    "sha" : "a3812e43df4313ed25d7681f972268363756ff77",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Settings.java",
+    "status" : "added",
+    "additions" : 20,
+    "deletions" : 0,
+    "changes" : 20,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Settings.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Settings.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901215/Settings.java?ref=4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+    "patch" : "@@ -0,0 +1,20 @@\n+package com.example.mp3encodedemo;\n+\n+import java.util.ArrayList;\n+import android.os.Environment;\n+\n+public class Settings {\n+\t\n+\tpublic static String sdcardPath = Environment.getExternalStorageDirectory().toString();\n+\tpublic static String recordingPath = sdcardPath + \"/mp3_recording/\";\n+\t\n+\t\n+\tpublic static final int MSG_RECORDING_START = 1;\n+\tpublic static final int MSG_RECORDING_STOP = 2;\n+\tpublic static final int MSG_RECORDING_STATE_ERROR = 3;\n+\tpublic static final int MSG_RECORDING_EXCEPTION = 4;\n+\tpublic static final int MSG_RECORDING_RELEASE = 5;\n+\tpublic static final int MSG_DRAW_ENDING = 6;\n+    public static final int MSG_FILE_EXCEPTION = 7;\n+\n+}"
+  }, {
+    "sha" : "5cbcca91eb1a34ea8e500e4675b5771a521cc37f",
+    "filename" : "app/src/main/res/drawable/m.jpg",
+    "status" : "added",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/res/drawable/m.jpg",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/res/drawable/m.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/drawable/m.jpg?ref=4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6"
+  }, {
+    "sha" : "28eedefa5a017219f8a67eaf8ac30e4a5e643073",
+    "filename" : "app/src/main/res/layout/activity_main.xml",
+    "status" : "modified",
+    "additions" : 35,
+    "deletions" : 56,
+    "changes" : 91,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/res/layout/activity_main.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6/app/src/main/res/layout/activity_main.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_main.xml?ref=4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+    "patch" : "@@ -1,62 +1,41 @@\n-<?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<LinearLayout \n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n     xmlns:tools=\"http://schemas.android.com/tools\"\n     android:layout_width=\"match_parent\"\n     android:layout_height=\"match_parent\"\n-    android:orientation=\"vertical\"\n     android:paddingBottom=\"@dimen/activity_vertical_margin\"\n     android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n     android:paddingRight=\"@dimen/activity_horizontal_margin\"\n-    android:paddingTop=\"@dimen/activity_vertical_margin\"\n-    tools:context=\"edu.hzuapps.androidworks.MainActivity\">\n-\n-    <Button\n-        android:id=\"@+id/button_activitybasic\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"Activity 基本用法\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_viewbasic\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"View 基本用法\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_fragmentdemo\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"Fragment 功能演示\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_servicedemo\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"Service 功能演示\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_broadcastdemo\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"Broadcast 功能演示\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_contentprovidedemo\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"ContentProvider 功能演示\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_viewdemo\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"各种布局及界面演示\"/>\n-\n-    <Button\n-        android:id=\"@+id/button_random\"\n-        android:layout_width=\"match_parent\"\n-        android:layout_height=\"wrap_content\"\n-        android:text=\"随机看一位同学的作业\"/>\n-\n-</LinearLayout>\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\t\n+    android:background=\"@drawable/m\"\n+    tools:context=\".MainActivity\" >\n+    \n+\t<Button \n+        android:id=\"@+id/start_recording_btn\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"50dip\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:background=\"@color/red\"\n+        android:text=\"开始说话\"\n+        />\n+    \n+    <Button \n+        android:id=\"@+id/stop_recording_btn\"\n+        android:layout_width=\"fill_parent\"\n+        android:layout_height=\"50dip\"\n+        android:layout_alignParentBottom=\"true\"\n+        android:background=\"@color/green\"\n+        android:text=\"说完了\"\n+        android:visibility=\"invisible\"\n+        />\n+\n+    <Button\n+        android:id=\"@+id/pass_btn\"\n+        android:layout_width=\"50dp\"\n+        android:layout_height=\"50dp\"\n+        android:layout_above=\"@+id/start_recording_btn\"\n+        android:layout_alignLeft=\"@+id/start_recording_btn\"\n+        android:background=\"@color/blue\"\n+        android:visibility=\"visible\"\n+        android:text=\"暂停\" />\n+\n+</RelativeLayout>\n\\ No newline at end of file"
+  } ],
+  "sha" : "4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/4e2c4146300d8a6a27752c61bf2007f0b9e3e3f6",
+  "parents" : [ {
+    "sha" : "e8a7107c689c6b1048b1e3679e3cff302ced2386",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e8a7107c689c6b1048b1e3679e3cff302ced2386",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/e8a7107c689c6b1048b1e3679e3cff302ced2386"
+  } ]
+}

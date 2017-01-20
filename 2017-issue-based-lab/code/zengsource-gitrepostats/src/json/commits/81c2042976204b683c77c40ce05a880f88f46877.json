@@ -1,0 +1,111 @@
+{
+  "committer" : {
+    "login" : "web-flow",
+    "id" : 19864447,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/19864447?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/web-flow",
+    "html_url" : "https://github.com/web-flow",
+    "followers_url" : "https://api.github.com/users/web-flow/followers",
+    "following_url" : "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url" : "https://api.github.com/users/web-flow/orgs",
+    "repos_url" : "https://api.github.com/users/web-flow/repos",
+    "events_url" : "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/web-flow/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 138,
+    "additions" : 77,
+    "deletions" : 61
+  },
+  "author" : {
+    "login" : "zengsn",
+    "id" : 627946,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/627946?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/zengsn",
+    "html_url" : "https://github.com/zengsn",
+    "followers_url" : "https://api.github.com/users/zengsn/followers",
+    "following_url" : "https://api.github.com/users/zengsn/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/zengsn/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/zengsn/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/zengsn/subscriptions",
+    "organizations_url" : "https://api.github.com/users/zengsn/orgs",
+    "repos_url" : "https://api.github.com/users/zengsn/repos",
+    "events_url" : "https://api.github.com/users/zengsn/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/zengsn/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/android-labs/commit/81c2042976204b683c77c40ce05a880f88f46877",
+  "commit" : {
+    "author" : {
+      "name" : "Zeng Shaoning",
+      "email" : "shaoning.zeng@gmail.com",
+      "date" : "2016-06-17T02:07:07Z"
+    },
+    "committer" : {
+      "name" : "GitHub",
+      "email" : "noreply@github.com",
+      "date" : "2016-06-17T02:07:07Z"
+    },
+    "message" : "Merge pull request #979 from xinxin06/master\n\n#91......#48  lab5....lab9",
+    "tree" : {
+      "sha" : "e970af7d5551fb36dc5ddb4c7f36a81b70251fac",
+      "url" : "https://api.github.com/repos/hzuapps/android-labs/git/trees/e970af7d5551fb36dc5ddb4c7f36a81b70251fac"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/git/commits/81c2042976204b683c77c40ce05a880f88f46877",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/android-labs/commits/81c2042976204b683c77c40ce05a880f88f46877/comments",
+  "files" : [ {
+    "sha" : "5c62b82a276b176cf5c3ae701a6e20cee23c5c97",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901106/Com1314080901106Activity.java",
+    "status" : "modified",
+    "additions" : 35,
+    "deletions" : 35,
+    "changes" : 70,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/81c2042976204b683c77c40ce05a880f88f46877/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901106/Com1314080901106Activity.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/81c2042976204b683c77c40ce05a880f88f46877/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901106/Com1314080901106Activity.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901106/Com1314080901106Activity.java?ref=81c2042976204b683c77c40ce05a880f88f46877",
+    "patch" : "@@ -1,52 +1,52 @@\n-package com.example.chenpeixin.com1314080901106;\n+package edu.hzuapps.androidworks.homeworks.com1314080901106;\n \n-import android.os.Bundle;\n-import android.support.design.widget.FloatingActionButton;\n-import android.support.design.widget.Snackbar;\n+import android.content.Intent;\n+import android.content.IntentFilter;\n import android.support.v7.app.AppCompatActivity;\n-import android.support.v7.widget.Toolbar;\n+import android.os.Bundle;\n import android.view.View;\n-import android.view.Menu;\n-import android.view.MenuItem;\n \n-public class Com1314080901106Activity extends AppCompatActivity {\n+public class Com1314080901106Activity extends AppCompatActivity implements View.OnClickListener {\n \n     @Override\n     protected void onCreate(Bundle savedInstanceState) {\n         super.onCreate(savedInstanceState);\n         setContentView(R.layout.activity_com1314080901106);\n-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n-        setSupportActionBar(toolbar);\n-\n-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);\n-        fab.setOnClickListener(new View.OnClickListener() {\n-            @Override\n-            public void onClick(View view) {\n-                Snackbar.make(view, \"Replace with your own action\", Snackbar.LENGTH_LONG)\n-                        .setAction(\"Action\", null).show();\n-            }\n-        });\n-    }\n \n-    @Override\n-    public boolean onCreateOptionsMenu(Menu menu) {\n-        // Inflate the menu; this adds items to the action bar if it is present.\n-        getMenuInflater().inflate(R.menu.menu_com1314080901106, menu);\n-        return true;\n+        findViewById(R.id.btnSendMsg).setOnClickListener(this);\n+        findViewById(R.id.btnReg).setOnClickListener(this);\n+        findViewById(R.id.btnunReg).setOnClickListener(this);\n     }\n \n+\n+\n+\n     @Override\n-    public boolean onOptionsItemSelected(MenuItem item) {\n-        // Handle action bar item clicks here. The action bar will\n-        // automatically handle clicks on the Home/Up button, so long\n-        // as you specify a parent activity in AndroidManifest.xml.\n-        int id = item.getItemId();\n-\n-        //noinspection SimplifiableIfStatement\n-        if (id == R.id.action_settings) {\n-            return true;\n+    public void onClick(View v) {\n+\n+        switch (v.getId()) {\n+            case  R.id.btnSendMsg:\n+                //Intent i =new Intent(this,MyReceiver.class);\n+                Intent i =new Intent(Com1314080901106Receiver.ACTION);\n+                i.putExtra(\"data\",\"HzuUniversity\");\n+                sendBroadcast(i);\n+                break;\n+            case  R.id.btnReg:\n+                if(receiver==null) {\n+                    receiver=new Com1314080901106Receiver();\n+                    registerReceiver(receiver,new IntentFilter(Com1314080901106Receiver.ACTION));\n+                }\n+                break;\n+            case  R.id.btnunReg:\n+                if(receiver!=null) {\n+                    unregisterReceiver(receiver);\n+                    receiver =null;\n+                }\n+                break;\n+\n         }\n \n-        return super.onOptionsItemSelected(item);\n     }\n+\n+    private Com1314080901106Receiver receiver = null;\n }"
+  }, {
+    "sha" : "df70d0828e9e3343dad684ecdeacb7b998114a32",
+    "filename" : "app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901106/Com1314080901106Receiver.java",
+    "status" : "added",
+    "additions" : 16,
+    "deletions" : 0,
+    "changes" : 16,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/81c2042976204b683c77c40ce05a880f88f46877/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901106/Com1314080901106Receiver.java",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/81c2042976204b683c77c40ce05a880f88f46877/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901106/Com1314080901106Receiver.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901106/Com1314080901106Receiver.java?ref=81c2042976204b683c77c40ce05a880f88f46877",
+    "patch" : "@@ -0,0 +1,16 @@\n+package edu.hzuapps.androidworks.homeworks.com1314080901106;\n+\n+import android.content.BroadcastReceiver;\n+import android.content.Context;\n+import android.content.Intent;\n+\n+public class Com1314080901106Receiver extends BroadcastReceiver {\n+    public static final String ACTION =\"edu.hzuapps.androidworks.homeworks.com1314080901106.intent.action.Com1314080901106Receiver\";\n+    public Com1314080901106Receiver() {\n+    }\n+\n+    @Override\n+    public void onReceive(Context context, Intent intent) {\n+        System.out.println(\"接收到了消息,消息的内容是：\"+intent.getStringExtra(\"data\"));\n+    }\n+}"
+  }, {
+    "sha" : "b25998f40503508bedefaf20403683417a50187a",
+    "filename" : "app/src/main/res/layout/activity_com1314080901106.xml",
+    "status" : "modified",
+    "additions" : 26,
+    "deletions" : 26,
+    "changes" : 52,
+    "blob_url" : "https://github.com/hzuapps/android-labs/blob/81c2042976204b683c77c40ce05a880f88f46877/app/src/main/res/layout/activity_com1314080901106.xml",
+    "raw_url" : "https://github.com/hzuapps/android-labs/raw/81c2042976204b683c77c40ce05a880f88f46877/app/src/main/res/layout/activity_com1314080901106.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/android-labs/contents/app/src/main/res/layout/activity_com1314080901106.xml?ref=81c2042976204b683c77c40ce05a880f88f46877",
+    "patch" : "@@ -1,30 +1,30 @@\n <?xml version=\"1.0\" encoding=\"utf-8\"?>\n-<android.support.design.widget.CoordinatorLayout\n-    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n-    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n-    xmlns:tools=\"http://schemas.android.com/tools\" android:layout_width=\"match_parent\"\n-    android:layout_height=\"match_parent\" android:fitsSystemWindows=\"true\"\n-    tools:context=\".Com1314080901106\">\n+<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n+    xmlns:tools=\"http://schemas.android.com/tools\"\n+    android:layout_width=\"match_parent\"\n+    android:layout_height=\"match_parent\"\n+    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n+    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n+    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n+    android:paddingTop=\"@dimen/activity_vertical_margin\"\n+    android:orientation=\"vertical\"\n+    tools:context=\"edu.hzuapps.androidworks.homeworks.com1314080901106.Com1314080901106Activity\">\n \n-    <android.support.design.widget.AppBarLayout android:layout_height=\"wrap_content\"\n-        android:layout_width=\"match_parent\" android:theme=\"@style/AppTheme.AppBarOverlay\">\n+    <Button\n+        android:layout_width=\"94dp\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"发送消息\"\n+        android:id=\"@+id/btnSendMsg\" />\n \n-        <android.support.v7.widget.Toolbar android:id=\"@+id/toolbar\"\n-            android:layout_width=\"match_parent\" android:layout_height=\"?attr/actionBarSize\"\n-            android:background=\"?attr/colorPrimary\" app:popupTheme=\"@style/AppTheme.PopupOverlay\" />\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"注册接收器\"\n+        android:id=\"@+id/btnReg\" />\n \n-    </android.support.design.widget.AppBarLayout>\n-\n-    <include layout=\"@layout/content_com1314080901106\" />\n-\n-    <android.support.design.widget.FloatingActionButton android:id=\"@+id/fab\"\n-        android:layout_width=\"wrap_content\" android:layout_height=\"wrap_content\"\n-        android:layout_gravity=\"bottom|end\" android:layout_margin=\"@dimen/fab_margin\"\n-        android:src=\"@android:drawable/ic_dialog_email\" />\n-\n-    <ImageView\n-        android:layout_width=\"fill_parent\"\n-        android:layout_height=\"fill_parent\"\n-        android:src=\"@drawable/link\"/>\n-\n-</android.support.design.widget.CoordinatorLayout>\n+    <Button\n+        android:layout_width=\"wrap_content\"\n+        android:layout_height=\"wrap_content\"\n+        android:text=\"注销接收器\"\n+        android:id=\"@+id/btnunReg\" />\n+</LinearLayout>"
+  } ],
+  "sha" : "81c2042976204b683c77c40ce05a880f88f46877",
+  "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/81c2042976204b683c77c40ce05a880f88f46877",
+  "parents" : [ {
+    "sha" : "e7f82b1e6c3aa7c4f9b9fc2ed18c1015600edf25",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/e7f82b1e6c3aa7c4f9b9fc2ed18c1015600edf25",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/e7f82b1e6c3aa7c4f9b9fc2ed18c1015600edf25"
+  }, {
+    "sha" : "ec7feef5888d8b2d4a11fc3a7ce507707a75dd13",
+    "url" : "https://api.github.com/repos/hzuapps/android-labs/commits/ec7feef5888d8b2d4a11fc3a7ce507707a75dd13",
+    "html_url" : "https://github.com/hzuapps/android-labs/commit/ec7feef5888d8b2d4a11fc3a7ce507707a75dd13"
+  } ]
+}

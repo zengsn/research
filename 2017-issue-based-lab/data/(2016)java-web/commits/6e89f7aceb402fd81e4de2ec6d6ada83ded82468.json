@@ -1,0 +1,181 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 716,
+    "additions" : 679,
+    "deletions" : 37
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+  "commit" : {
+    "author" : {
+      "name" : "hom yu",
+      "email" : "hom yu",
+      "date" : "2016-11-23T12:52:26Z"
+    },
+    "committer" : {
+      "name" : "hom yu",
+      "email" : "hom yu",
+      "date" : "2016-11-23T12:52:26Z"
+    },
+    "message" : "#7 提交实验六代码",
+    "tree" : {
+      "sha" : "0beec95fa592deb50447df714588e4b5dd111e68",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/0beec95fa592deb50447df714588e4b5dd111e68"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/comments",
+  "files" : [ {
+    "sha" : "5610ab7541be8393d01ae98d469abc0e9747cc94",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/DeleteServlet.java",
+    "status" : "added",
+    "additions" : 46,
+    "deletions" : 0,
+    "changes" : 46,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/DeleteServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/DeleteServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/DeleteServlet.java?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,46 @@\n+package Controller_Servlet;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import Bean.Student;\n+import dao.StudentDao;\n+@WebServlet(\"/DeleteServlet\")\n+public class DeleteServlet extends HttpServlet {\n+\t\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tdoPost(request, response);\n+\t}\n+\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t\n+\t\t\n+\t\tint sno=Integer.parseInt(request.getParameter(\"sno\"));\t\t\n+\t\tStudent stu=new Student();\n+\t\tstu.setSno(sno);\n+\t\tStudentDao stuDao=new StudentDao();\n+\t\t\n+\t\tint n;\n+\t\ttry {\n+\t\t\tn = stuDao.remove(stu);\n+\t\t\tif (n>=1) {\n+\t\t\t\trequest.setAttribute(\"message\", \"ɾ��ɹ���\");\n+\t\t\t\trequest.getRequestDispatcher(\"message.jsp\").forward(request, response);\n+\t\t\t}\n+\t\t\telse {\n+\t\t\t\trequest.setAttribute(\"message\", \"ɾ��ʧ�ܣ�\");\n+\t\t\t\trequest.getRequestDispatcher(\"message.jsp\").forward(request, response);\n+\t\t\t}\n+\t\t} catch (Exception e) {\n+\t\t\t\n+\t\t\te.printStackTrace();\n+\t\t}\n+\t\t\n+\t\t\n+\t}\n+\n+}"
+  }, {
+    "sha" : "152d2dd03b6e92dfffc1aa3ade60a72c75601100",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/FindServlet.java",
+    "status" : "added",
+    "additions" : 55,
+    "deletions" : 0,
+    "changes" : 55,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/FindServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/FindServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/FindServlet.java?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,55 @@\n+package Controller_Servlet;\n+\n+import java.io.IOException;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import Bean.Student;\n+import dao.StudentDao;\n+@WebServlet(\"/FindServlet\")\n+public class FindServlet extends HttpServlet {\n+\n+\tprotected void doGet(HttpServletRequest request,\n+\t\t\tHttpServletResponse response) throws ServletException, IOException {\n+\n+\t}\n+\n+\tprotected void doPost(HttpServletRequest request,\n+\t\t\tHttpServletResponse response) throws ServletException, IOException {\n+\t\tStudentDao stuDao = new StudentDao();\n+\t\tint sno = Integer.parseInt(request.getParameter(\"sno\"));\n+        Student stu = new Student();\n+\t\tstu.setSno(sno);\n+\t\ttry {\n+\t\t\tstu = stuDao.find(stu);\n+\t\t\tint sno1 = stu.getSno();\n+\t\t\tString name1 = stu.getName();\n+\t\t\tString sex1 = stu.getSex();\n+\t\t\tint age1 = stu.getAge();\n+\t\t\tdouble hight1 = stu.getHight();\n+\t\t\tdouble weight1 = stu.getWeight();\n+\t\t\tdouble longRun1 = stu.getLongRun();\n+\t\t\tdouble shortRun2 = stu.getShortRun();\n+\t\t\tint pulmonary1 = stu.getPulmonary();\n+\t\t\trequest.setAttribute(\"sno\", sno1);\n+\t\t\trequest.setAttribute(\"name\", name1);\n+\t\t\trequest.setAttribute(\"sex\", sex1);\n+\t\t\trequest.setAttribute(\"age\", age1);\n+\t\t\trequest.setAttribute(\"hight\", hight1);\n+\t\t\trequest.setAttribute(\"weight\", weight1);\n+\t\t\trequest.setAttribute(\"longRun\", longRun1);\n+\t\t\trequest.setAttribute(\"shortRun\", shortRun2);\n+\t\t\trequest.setAttribute(\"pulmonary\", pulmonary1);\n+\t\t\trequest.getRequestDispatcher(\"findResult.jsp\").forward(request,\n+\t\t\t\t\tresponse);\n+\t\t} catch (Exception e) {\n+\t\t\trequest.setAttribute(\"message\", \"��ѯʧ�ܣ������ڸ�ѧ�ŵļ�¼��\");\n+\t\t\trequest.getRequestDispatcher(\"message\").forward(request, response );\n+\t\t\te.printStackTrace();\n+\t\t}\n+\n+\t}\n+\n+}"
+  }, {
+    "sha" : "c7d240b45c0779db525003bb80058c1c5959c403",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/FindallServlet.java",
+    "status" : "added",
+    "additions" : 44,
+    "deletions" : 0,
+    "changes" : 44,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/FindallServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/FindallServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/FindallServlet.java?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,44 @@\n+package Controller_Servlet;\n+import java.io.IOException;\n+import java.util.ArrayList;\n+import java.util.List;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import dao.StudentDao;\n+import Bean.Student;\n+@WebServlet(\"/FindallServlet\")\n+public class FindallServlet extends HttpServlet {\n+\t\n+\tprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\tSystem.out.println(\"1321312312\");\n+\t\tdoPost(request, response);\n+\t}\n+\n+\t\n+\tprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n+\t\t\n+\t\tStudentDao stuDao=new StudentDao();\n+\t\tStudent stu=new Student();\n+\t\t\n+\t\ttry {\n+\t\t\t\n+\t\t\tstuDao.findAll();\n+\t\t\tList<Student> studentlist=new ArrayList<Student>();\n+\t\t\t\n+\t\t\tstudentlist.add(stu);\n+\t\t\trequest.setAttribute(\"result\", studentlist);\n+\t\t\trequest.getRequestDispatcher(\"findAll.jsp\").forward(request, response);;\n+\t\t} catch (Exception e) {\n+\t\t\t\n+\t\t\te.printStackTrace();\n+\t\t}\n+\n+\t\t\n+\t\t\n+\t\t\n+\t}\n+\n+}"
+  }, {
+    "sha" : "5b7f74d0f3d2ea7513790e33ba3d46dbfa073925",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/InsertServlet.java",
+    "status" : "added",
+    "additions" : 53,
+    "deletions" : 0,
+    "changes" : 53,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/InsertServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/InsertServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/InsertServlet.java?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,53 @@\n+package Controller_Servlet;\n+import java.io.IOException;\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+\n+import Bean.Student;\n+import dao.StudentDao;\n+\n+@WebServlet(\"/InsertServlet\")\n+public class InsertServlet extends HttpServlet {\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\tdoPost(request, response);\n+\t\t\n+\t}\n+\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\t        request.setCharacterEncoding(\"UTF-8\");\n+\t\t         StudentDao stuDao = new StudentDao();\n+\t\t        int sno = Integer.parseInt(request.getParameter(\"sno\"));\n+\t\t        String name = request.getParameter(\"name\");\n+\t\t\t    String sex = request.getParameter(\"sex\");\n+\t\t\t\tint age = Integer.parseInt(request.getParameter(\"age\"));\n+\t\t\t\tdouble hight = Double.parseDouble(request.getParameter(\"hight\"));\n+\t\t\t\tdouble weight = Double.parseDouble(request.getParameter(\"weight\"));\n+\t\t\t\tint pulmonary = Integer.parseInt(request.getParameter(\"pulmonary\"));\n+\t\t\t\tdouble longRun = Double.parseDouble(request.getParameter(\"longRun\"));\n+\t\t\t\tdouble shortRun = Double.parseDouble(request.getParameter(\"shortRun\"));\n+\t\t\t\tStudent s1 = new Student(sno, name, sex, age, weight, hight,\n+\t\t\t\t\t\tlongRun, shortRun, pulmonary);\n+\n+\t\t\t\tint n;\n+\t\t\t\ttry {\n+\t\t\t\t\tn = stuDao.create(s1);\n+\t\t\t\t\tif (n >= 1) {\n+\t\t\t\t\t\trequest.setAttribute(\"message\", \"�ύ�ɹ���\");\n+\t\t\t\t\t\trequest.getRequestDispatcher(\"message.jsp\").forward(\n+\t\t\t\t\t\t\t\trequest, response);\n+\t\t\t\t\t} else {\n+\t\t\t\t\t\trequest.setAttribute(\"message\", \"�ύʧ�ܣ���������2��ѧ����ͬ�ļ�¼�����ʵѧ��ѧ�ţ�����\");\n+\t\t\t\t\t\trequest.getRequestDispatcher(\"message.jsp\").forward(\n+\t\t\t\t\t\t\t\trequest, response);\n+\t\t\t\t\t}\n+\t\t\t\t} catch (Exception e) {\n+\t\t\t\t\te.printStackTrace();\n+\t\t\t\t}\n+\n+}\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "96ac553aee2065c2c6367139a862c0ea15fd86b0",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/JdbcUtil.java",
+    "status" : "added",
+    "additions" : 43,
+    "deletions" : 0,
+    "changes" : 43,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/JdbcUtil.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/JdbcUtil.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/JdbcUtil.java?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,43 @@\n+package dao;\n+\n+import java.sql.*;\n+import java.util.Properties;\n+public final class JdbcUtil {\n+\tprivate static String driver ;\n+\tprivate static String url ;\n+\tprivate static String user ;\n+\tprivate static String password ;\n+     private static Properties pr=new Properties();\n+\tprivate JdbcUtil() {}\n+\t\n+\tstatic { \n+\t   try {pr.load(JdbcUtil.class.getClassLoader().getResourceAsStream(\"db.properties\"));\n+\t\t  driver=pr.getProperty(\"driver\");\n+\t\t  url=pr.getProperty(\"url\");\n+\t\t  user=pr.getProperty(\"username\");\n+\t\t  password=pr.getProperty(\"password\");\n+\t\t  Class.forName(driver);\n+\t\t} catch (Exception e) {\n+\t\t\tthrow new ExceptionInInitializerError(e);\n+\t\t}\n+\t}\n+\t\n+\tpublic static Connection getConnection() throws SQLException {\n+\t\treturn DriverManager.getConnection(url, user, password);\n+\t}\n+\t\n+\tpublic static void close(ResultSet rs, PreparedStatement ps, Connection con) {\n+\t\ttry { if (rs != null) rs.close();\n+\t\t} catch (SQLException e) {e.printStackTrace();\n+\t\t} finally {\n+\t\t\ttry { if (ps != null) ps.close();\n+\t\t\t} catch (SQLException e) {e.printStackTrace();\n+\t\t\t} finally {\n+\t\t\t\t  if (con != null)\n+\t\t\t\t    try { con.close();\n+\t\t\t\t    } catch (SQLException e) {e.printStackTrace();\n+\t\t\t\t   }\n+\t\t             }\n+\t\t     }\n+\t    }\n+\t}\n\\ No newline at end of file"
+  }, {
+    "sha" : "65947eab6dc67abddb2a27d5b71aadfe56e3402e",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/Student.java",
+    "status" : "modified",
+    "additions" : 56,
+    "deletions" : 37,
+    "changes" : 93,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/Student.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/Student.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/Student.java?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -1,13 +1,32 @@\n-package edu.hzu.javaweb.labs.se1414080902140;\n+package Bean;\n \n public class Student {\n-\tprivate String name, sex,\n-\t sno, age, hight, weight, pulmonary,\n-\t longRun, shortRun;\n+\tprivate int sno;\n+\tprivate String name;\n+\tprivate String sex;\n+\tprivate int age;\n+\tprivate double weight;\n+\tprivate double hight;\n+\tprivate double longRun;\n+\tprivate double shortRun;\n+\tprivate int pulmonary;\n+\n+\tpublic Student(int sno, String name, String sex, int age, double weight,\n+\t\t\tdouble hight, double longRun, double shortRun, int pulmonary) {\n+\t\tsuper();\n+\t\tthis.sno = sno;\n+\t\tthis.name = name;\n+\t\tthis.sex = sex;\n+\t\tthis.age = age;\n+\t\tthis.weight = weight;\n+\t\tthis.hight = hight;\n+\t\tthis.longRun = longRun;\n+\t\tthis.shortRun = shortRun;\n+\t\tthis.pulmonary = pulmonary;\n+\t}\n \n-\tpublic Student(String name, String sex, String sno, String age,\n-\t\t\tString hight, String weight, String pulmonary, String longRun,\n-\t\t\tString shortRun) {\n+\tpublic Student(String name, String sex, int sno, int age, double hight,\n+\t\t\tdouble weight, int pulmonary, double longRun, double shortRun) {\n \t\tsuper();\n \t\tthis.name = name;\n \t\tthis.sex = sex;\n@@ -20,6 +39,18 @@ public Student(String name, String sex, String sno, String age,\n \t\tthis.shortRun = shortRun;\n \t}\n \n+\tpublic Student() {\n+\n+\t}\n+\n+\tpublic int getSno() {\n+\t\treturn sno;\n+\t}\n+\n+\tpublic void setSno(int sno) {\n+\t\tthis.sno = sno;\n+\t}\n+\n \tpublic String getName() {\n \t\treturn name;\n \t}\n@@ -36,64 +67,52 @@ public void setSex(String sex) {\n \t\tthis.sex = sex;\n \t}\n \n-\tpublic String getSno() {\n-\t\treturn sno;\n-\t}\n-\n-\tpublic void setSno(String sno) {\n-\t\tthis.sno = sno;\n-\t}\n-\n-\tpublic String getAge() {\n+\tpublic int getAge() {\n \t\treturn age;\n \t}\n \n-\tpublic void setAge(String age) {\n+\tpublic void setAge(int age) {\n \t\tthis.age = age;\n \t}\n \n-\tpublic String getHight() {\n-\t\treturn hight;\n-\t}\n-\n-\tpublic void setHight(String hight) {\n-\t\tthis.hight = hight;\n-\t}\n-\n-\tpublic String getWeight() {\n+\tpublic double getWeight() {\n \t\treturn weight;\n \t}\n \n-\tpublic void setWeight(String weight) {\n+\tpublic void setWeight(double weight) {\n \t\tthis.weight = weight;\n \t}\n \n-\tpublic String getPulmonary() {\n-\t\treturn pulmonary;\n+\tpublic double getHight() {\n+\t\treturn hight;\n \t}\n \n-\tpublic void setPulmonary(String pulmonary) {\n-\t\tthis.pulmonary = pulmonary;\n+\tpublic void setHight(double hight) {\n+\t\tthis.hight = hight;\n \t}\n \n-\tpublic String getLongRun() {\n+\tpublic double getLongRun() {\n \t\treturn longRun;\n \t}\n \n-\tpublic void setLongRun(String longRun) {\n+\tpublic void setLongRun(double longRun) {\n \t\tthis.longRun = longRun;\n \t}\n \n-\tpublic String getShortRun() {\n+\tpublic double getShortRun() {\n \t\treturn shortRun;\n \t}\n \n-\tpublic void setShortRun(String shortRun) {\n+\tpublic void setShortRun(double shortRun) {\n \t\tthis.shortRun = shortRun;\n \t}\n \n+\tpublic int getPulmonary() {\n+\t\treturn pulmonary;\n+\t}\n \n-\t\n+\tpublic void setPulmonary(int pulmonary) {\n+\t\tthis.pulmonary = pulmonary;\n+\t}\n \n }\n-"
+  }, {
+    "sha" : "78a1b99a862c76649f9f40725481f21a2d7a1025",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902140/StudentDao.java",
+    "status" : "added",
+    "additions" : 145,
+    "deletions" : 0,
+    "changes" : 145,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/StudentDao.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/src/edu/hzu/javaweb/labs/se1414080902140/StudentDao.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902140/StudentDao.java?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,145 @@\n+package dao;\n+import java.sql.Connection;\n+import java.sql.PreparedStatement;\n+import java.sql.ResultSet;\n+import java.util.ArrayList;\n+import java.util.List;\n+import Bean.Student;\n+public  class StudentDao {\n+      protected final static String str=\"sno,name,sex,age,weight,hight,longRun,shortRun,pulmonary\";\n+       protected static String insertSql=\"insert into stu_info(\"+str+\")\"+\"values(?,?,?,?,?,?,?,?,?)\";\n+\t   protected static String selectSql=\"select \"+str+\" from stu_info where sno=?\";\n+\t   protected static String updateSql=\"update stu_info set \"+\"sno=?,name=?,sex=?,age=? ,weight=?,hight=?,longRun=?,shortRun=?,pulmonary=?\";\n+\t\tprotected static String deleteSql=\"delete from stu_info where sno=?\";\n+\t\tpublic int create(Student stu) throws Exception{\n+\t\t\t Connection con=null;\n+\t\t      PreparedStatement ps=null;\n+\t\t      ResultSet rs=null;\n+\t\t      int n=-1;\n+\t\t      try{\n+\t\t    \t  con=JdbcUtil.getConnection();\n+\t\t    \t  ps =con.prepareStatement(insertSql); \n+\t\t    \t  ps.setInt(1,stu.getSno());\n+\t\t    \t  ps.setString(2,stu.getName());\n+\t\t    \t  ps.setString(3,stu.getSex());\n+\t\t    \t  ps.setInt(4,stu.getAge());\n+\t\t    \t  ps.setDouble(5,stu.getWeight());\n+\t\t    \t  ps.setDouble(6,stu.getHight()); \n+\t\t    \t  ps.setDouble(7, stu.getLongRun());\n+\t\t    \t  ps.setDouble(8,stu.getShortRun());\n+\t\t    \t  ps.setInt(9,stu.getPulmonary());\n+\t\t          n = ps.executeUpdate();\n+\t\t          \n+\t\t      } catch(Exception e){\n+\t\t    \t  e.printStackTrace(); \n+\t\t      } finally{\n+\t\t    \t    JdbcUtil.close(rs, ps, con);\n+\t\t      }\n+\t\t     return n;\n+\t\t}\n+\t\n+\t\tpublic Student find(Student stu) throws Exception {\n+\t\t    Connection con=null;\n+\t\t    PreparedStatement ps=null;\n+\t\t    ResultSet rs=null;\n+\t\t    Student stu2 = null;\n+\t\t    int n=-1;\n+\t\t    try {\n+\t\t       con=JdbcUtil.getConnection();\n+\t            ps = con.prepareStatement(selectSql);\n+\t            ps.setInt(1,stu.getSno());\n+\t            rs = ps.executeQuery();\n+\t            if (rs.next()){\n+\t            \tstu2 = new Student();\n+\t                stu2.setSno(rs.getInt(1)); \n+\t                stu2.setName(rs.getString(2));\n+\t                stu2.setSex(rs.getString(3));\n+\t                stu2.setAge(rs.getInt(4)); \n+\t                stu2.setWeight(rs.getDouble(5));\n+\t                stu2.setHight(rs.getDouble(6)); \n+\t                stu2.setLongRun(rs.getDouble(7));\n+\t                stu2.setShortRun(rs.getDouble(8));\n+\t                stu2.setPulmonary(rs.getInt(9));\n+\t           }\n+\t      } catch (Exception e) {\n+\t    \t  e.printStackTrace(); \n+\t      } finally {\n+\t    \t     JdbcUtil.close(rs, ps, con);\n+\t      }\n+\t     return stu2;\n+\t\t}\n+\t   \n+\t\tpublic List<Student> findAll() throws Exception {\n+\t\t\tConnection con=null;\n+\t\t    PreparedStatement ps=null;\n+\t\t    ResultSet rs=null;\t\n+\t\t    List<Student> student = new ArrayList<Student>();\n+\t\t    con=JdbcUtil.getConnection();\n+\t\t    ps = con.prepareStatement(\"select * from stu_info\");\n+\t        rs = ps.executeQuery();\n+\t        while(rs.next()) {\n+\t        \tStudent stu2 = new Student();\n+\t            stu2.setSno(rs.getInt(1)); \n+\t            stu2.setName(rs.getString(2));\n+\t            stu2.setSex(rs.getString(3));\n+\t            stu2.setAge(rs.getInt(4)); \n+\t            stu2.setWeight(rs.getDouble(5));\n+\t            stu2.setHight(rs.getDouble(6)); \n+\t            stu2.setLongRun(rs.getDouble(7));\n+\t            stu2.setShortRun(rs.getDouble(8));\n+\t            stu2.setPulmonary(rs.getInt(9));\n+\t            student.add(stu2);\n+\t        }\n+\t        JdbcUtil.close(rs, ps, con); \n+\t        return student;\n+\t\t}\n+\t\n+\t\tpublic int remove(Student stu) throws Exception {\n+\t\t\tConnection con=null;\n+\t\t    PreparedStatement ps=null;\n+\t\t    ResultSet rs=null;\n+\t\t    int n=-1;\n+\t\t    try {\n+\t\t    \tcon=JdbcUtil.getConnection();\n+\t\t    \tps = con.prepareStatement(deleteSql);\n+\t\t        ps.setInt(1,stu.getSno());\n+\t\t        \n+\t\t        n = ps.executeUpdate();\n+\t\t    }catch(Exception e) {\n+\t\t    \te.printStackTrace(); \n+\t\t    } finally{\n+\t\t    \t JdbcUtil.close(rs, ps, con);\n+\t\t    }\n+\t\t    return n;\n+\t\t}\n+\t\n+\t\tpublic void update(Student stu) throws Exception {\n+\t\t\tConnection con=null;\n+\t\t    PreparedStatement ps=null;\n+\t\t    ResultSet rs=null;\n+\t\t    try {\n+\t\t    \tcon=JdbcUtil.getConnection();\n+\t         ps = con.prepareStatement(updateSql);\n+\t         ps.setInt(1,stu.getSno());\n+\t\t    \tps.setString(2,stu.getName());\n+\t\t    \tps.setString(3,stu.getSex());\n+\t\t    \tps.setInt(4,stu.getAge());\n+\t\t    \tps.setDouble(5,stu.getWeight());\n+\t\t    \tps.setDouble(6,stu.getHight());\n+\t\t    \tps.setDouble(7, stu.getLongRun());\n+\t\t    \tps.setDouble(8, stu.getShortRun());\n+\t\t    \tps.setInt(9, stu.getPulmonary());\n+\t\t    \tint rowCount=ps.executeUpdate();\n+\t            if (rowCount == 0) {\n+\t                   throw new Exception(\"Update Error:Student sno:\" + stu.getSno());\n+\t            }\n+\t        } catch (Exception e) {\n+\t               e.printStackTrace(); \n+\t        } finally {\n+\t        \t JdbcUtil.close(rs, ps, con);\n+\t        }\n+\t    }\n+\t}\n+\t\t\t\t\n+\t\t\n+"
+  }, {
+    "sha" : "cc227d89a191549e8336fbf3b1043ec5e4a1b48a",
+    "filename" : "jweb/web/1414080902140/delete.jsp",
+    "status" : "added",
+    "additions" : 19,
+    "deletions" : 0,
+    "changes" : 19,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/delete.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/delete.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902140/delete.jsp?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,19 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <title>删除页面</title>\n+  </head>\n+   <body>\n+    <form action=DeleteServlet method=\"post\">\n+    <h3>删除记录</h3>\n+    学号：<input type=\"text\" name=\"sno\">\n+   <input type=\"submit\"  value=\"提交\">\n+    </form>\n+  </body>\n+</html>"
+  }, {
+    "sha" : "f74069d73c7c0d118403b6afe1ec051be528f28f",
+    "filename" : "jweb/web/1414080902140/find.jsp",
+    "status" : "added",
+    "additions" : 31,
+    "deletions" : 0,
+    "changes" : 31,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/find.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/find.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902140/find.jsp?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,31 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+\tString path = request.getContextPath();\n+\tString basePath = request.getScheme() + \"://\"\n+\t\t\t+ request.getServerName() + \":\" + request.getServerPort()\n+\t\t\t+ path + \"/\";\n+%>\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+<head>\n+<base href=\"<%=basePath%>\">\n+<title>查询界面</title>\n+<style type=\"text/css\">\n+.onediv {\n+\twidth: 390px;\n+\theight: 250px;\n+\tfloat: left;\n+\tmargin: 0 0 0 5px\n+}\n+</style>\n+</head>\n+<body>\n+     <div class=\"onediv\">\n+\t\t<form action=\"FindServlet\" method=\"post\">\n+     <h2>查询页面</h2>\n+\t\t\t请输入学号：<input type=\"text\" name=\"sno\"><br> <input\n+\t\t\t\ttype=\"submit\" value=\"提交\"><br>\n+\t</form>\n+\t</div>\n+</body>\n+</html>"
+  }, {
+    "sha" : "41eda4bc425d903cf9da3fbfb0525655e5cf7127",
+    "filename" : "jweb/web/1414080902140/findAll.jsp",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/findAll.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/findAll.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902140/findAll.jsp?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,45 @@\n+\n+<%@ page language=\"java\" import=\"java.util.*,Bean.Student,dao.StudentDao\" pageEncoding=\"UTF-8\"%>\n+\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+ \n+    <title>更新</title>\n+    \n+<%  StudentDao studao=new StudentDao();\n+    List<Student> student=studao.findAll(); \n+    %>\n+</head>\n+  <body>\n+    <font size=\"5\" color=\"red\"></font>\n+\t\t<table border=\"2\" bgcolor=\"ccceee\" width=\"650\">\n+\t\t\t<tr bgcolor=\"CCCCCC\" align=\"center\">\n+\t\t\t\t<td>学号</td>\n+\t\t\t\t<td>姓名</td>\n+\t\t\t\t<td>性别</td>\n+\t\t\t\t<td>年龄</td>\n+\t\t\t\t<td>体重</td>\n+\t\t\t\t<td>身高</td>\n+\t\t\t\t<td>长跑</td>\n+\t\t\t\t<td>短跑</td>\n+\t\t\t\t<td>肺活量</td>\n+\t\t\t</tr>\n+\t\t\t<% \n+\t\t\t for(Student stu:student){%>\n+\t\t\t<tr>\n+\t\t\t<td><%=stu.getSno() %></td>\n+\t\t\t<td><%=stu.getName() %></td>\n+\t\t\t<td><%=stu.getSex() %></td>\n+\t\t\t<td><%=stu.getAge() %></td>\n+\t\t\t<td><%=stu.getWeight() %></td>\n+\t\t\t<td><%=stu.getHight() %></td>\n+\t\t\t<td><%=stu.getLongRun() %></td>\n+\t\t\t<td><%=stu.getShortRun() %></td>\n+\t\t\t<td><%=stu.getPulmonary() %></td>\n+\t\t\t</tr>\n+\t\t\t<% }%>\n+\n+  </body>\n+</html>"
+  }, {
+    "sha" : "51d8089a826aaa2ee82dffc1910f77bdb1dbe1da",
+    "filename" : "jweb/web/1414080902140/findResult.jsp",
+    "status" : "added",
+    "additions" : 69,
+    "deletions" : 0,
+    "changes" : 69,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/findResult.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/findResult.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902140/findResult.jsp?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,69 @@\n+\n+\n+<%@page import=\"java.sql.ResultSet\"%>\n+<%@page import=\"java.sql.PreparedStatement\"%>\n+<%@page import=\"java.sql.Connection\"%>\n+<%@page import=\"java.sql.DriverManager\"%>\n+\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+\tString path = request.getContextPath();\n+\tString basePath = request.getScheme() + \"://\"\n+\t\t\t+ request.getServerName() + \":\" + request.getServerPort()\n+\t\t\t+ path + \"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+<head>\n+<base href=\"<%=basePath%>\">\n+\n+<title>My JSP 'find_stu_1.jsp' starting page</title>\n+\n+<meta http-equiv=\"pragma\" content=\"no-cache\">\n+<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+<meta http-equiv=\"expires\" content=\"0\">\n+<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+<meta http-equiv=\"description\" content=\"This is my page\">\n+<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+</head>\n+\n+<body>\n+\t<center>\n+\t\t 根据学号查询<font size=\"5\" color=\"red\"></font>\n+\t\t<table border=\"2\" bgcolor=\"ccceee\" width=\"650\">\n+\t\t\t<tr bgcolor=\"CCCCCC\" align=\"center\">\n+\t\t\t\t<td>学号</td>\n+\t\t\t\t<td>姓名</td>\n+\t\t\t\t<td>性别</td>\n+\t\t\t\t<td>年龄</td>\n+\t\t\t\t<td>体重</td>\n+\t\t\t\t<td>身高</td>\n+\t\t\t\t<td>长跑</td>\n+\t\t\t\t<td>短跑</td>\n+\t\t\t\t<td>肺活量</td>\n+\t\t\t</tr>\n+\n+\n+\t\t\t<tr align=\"center\">\n+\t\t\t\t<td><%=request.getAttribute(\"sno\")%></td>\n+\t\t\t\t<td><%=request.getAttribute(\"name\")%></td>\n+\t\t\t\t<td><%=request.getAttribute(\"sex\")%></td>\n+\t\t\t\t<td><%=request.getAttribute(\"age\")%></td>\n+\t\t\t\t<td><%=request.getAttribute(\"weight\")%></td>\n+\t\t\t\t<td><%=request.getAttribute(\"hight\")%></td>\n+\t\t\t\t<td><%=request.getAttribute(\"longRun\")%></td>\n+\t\t\t\t<td><%=request.getAttribute(\"shortRun\")%></td>\n+\t\t\t\t<td><%=request.getAttribute(\"pulmonary\")%></td>\n+\t\t\t</tr>\n+\n+\t\t</table>\n+\t</center>\n+\n+</body>\n+</html>\n+\n+"
+  }, {
+    "sha" : "8e97cff3e2c0efa64c0288cb5f180e3837f8271b",
+    "filename" : "jweb/web/1414080902140/insert.jsp",
+    "status" : "added",
+    "additions" : 45,
+    "deletions" : 0,
+    "changes" : 45,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/insert.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/insert.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902140/insert.jsp?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,45 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\"%>\n+<%\n+\tString path = request.getContextPath();\n+\tString basePath = request.getScheme() + \"://\"\n+\t\t\t+ request.getServerName() + \":\" + request.getServerPort()\n+\t\t\t+ path + \"/\";\n+%>\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+<head>\n+<style>\n+div {\n+\twidth: 1300px;\n+\theight: 200px;\n+\tposition: absolute;\n+\tleft: 50%;\n+\ttop: 50%;\n+\tmargin: -100px 0 0 -150px\n+}\n+</style>\n+<base href=\"<%=basePath%>\">\n+<title>体侧信息提交页面</title>\n+</head>\n+<body>\n+\t<c:if test=\"${username != null}\">\n+\t\t<c:out value=\"${username}\" />您好\n+    </c:if>\n+\t<div>\n+\t\t<h3>添加学生体侧信息</h3>\n+\t\t<form action=\"InsertServlet\" method=\"post\">\n+\t\t\t学号<input type=\"text\" name=\"sno\"><br> 姓名<input\n+\t\t\t\ttype=\"text\" name=\"name\"><br> 性别<input type=\"checkbox\"\n+\t\t\t\tname=\"sex\" value=\"男\">男&nbsp; <input type=\"checkbox\"\n+\t\t\t\tname=\"sex\" value=\"女\">女<br> 年龄<input type=\"text\"\n+\t\t\t\tname=\"age\"><br> 身高<input type=\"text\" name=\"hight\"><br>\n+\t\t\t体重<input type=\"text\" name=\"weight\"><br> 长跑<input\n+\t\t\t\ttype=\"text\" name=\"longRun\"><br> 短跑<input type=\"text\"\n+\t\t\t\tname=\"shortRun\"><br> 肺活量<input type=\"text\"\n+\t\t\t\tname=\"pulmonary\"><br> <input type=\"submit\" value=\"提交\"\n+\t\t\t\tonclick=\"check()\">&nbsp;<input type=\"reset\" value=\"重置\">\n+\t\t</form>\n+\t</div>\n+</body>\n+</html>"
+  }, {
+    "sha" : "466827155ead999673deabda4083bbad52836ee8",
+    "filename" : "jweb/web/1414080902140/message.jsp",
+    "status" : "added",
+    "additions" : 28,
+    "deletions" : 0,
+    "changes" : 28,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/message.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/6e89f7aceb402fd81e4de2ec6d6ada83ded82468/jweb/web/1414080902140/message.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902140/message.jsp?ref=6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+    "patch" : "@@ -0,0 +1,28 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'success.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\n+  </head>\n+  \n+  <body>\n+   <%=request.getAttribute(\"message\") %>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/6e89f7aceb402fd81e4de2ec6d6ada83ded82468",
+  "parents" : [ {
+    "sha" : "c9a5da4ae790af56ccfcc0fa9685a98c229a88a9",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/c9a5da4ae790af56ccfcc0fa9685a98c229a88a9",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/c9a5da4ae790af56ccfcc0fa9685a98c229a88a9"
+  } ]
+}

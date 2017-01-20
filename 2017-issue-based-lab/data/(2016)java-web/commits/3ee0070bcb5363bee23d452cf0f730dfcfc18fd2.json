@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "nihaomahenhaoba",
+    "id" : 22512347,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512347?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/nihaomahenhaoba",
+    "html_url" : "https://github.com/nihaomahenhaoba",
+    "followers_url" : "https://api.github.com/users/nihaomahenhaoba/followers",
+    "following_url" : "https://api.github.com/users/nihaomahenhaoba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/nihaomahenhaoba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/nihaomahenhaoba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/nihaomahenhaoba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/nihaomahenhaoba/orgs",
+    "repos_url" : "https://api.github.com/users/nihaomahenhaoba/repos",
+    "events_url" : "https://api.github.com/users/nihaomahenhaoba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/nihaomahenhaoba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 47,
+    "additions" : 47,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "nihaomahenhaoba",
+    "id" : 22512347,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22512347?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/nihaomahenhaoba",
+    "html_url" : "https://github.com/nihaomahenhaoba",
+    "followers_url" : "https://api.github.com/users/nihaomahenhaoba/followers",
+    "following_url" : "https://api.github.com/users/nihaomahenhaoba/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/nihaomahenhaoba/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/nihaomahenhaoba/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/nihaomahenhaoba/subscriptions",
+    "organizations_url" : "https://api.github.com/users/nihaomahenhaoba/orgs",
+    "repos_url" : "https://api.github.com/users/nihaomahenhaoba/repos",
+    "events_url" : "https://api.github.com/users/nihaomahenhaoba/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/nihaomahenhaoba/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/3ee0070bcb5363bee23d452cf0f730dfcfc18fd2",
+  "commit" : {
+    "author" : {
+      "name" : "nihaomahenhaoba",
+      "email" : "1819434204@qq.com",
+      "date" : "2016-12-01T04:37:34Z"
+    },
+    "committer" : {
+      "name" : "nihaomahenhaoba",
+      "email" : "1819434204@qq.com",
+      "date" : "2016-12-01T04:37:34Z"
+    },
+    "message" : "#7 提交实验代码",
+    "tree" : {
+      "sha" : "aa2010fa9a3c975b865316ae2b52ffdf4fe8097c",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/aa2010fa9a3c975b865316ae2b52ffdf4fe8097c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/3ee0070bcb5363bee23d452cf0f730dfcfc18fd2",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/3ee0070bcb5363bee23d452cf0f730dfcfc18fd2/comments",
+  "files" : [ {
+    "sha" : "e6da9f74bba8122cc39a4518dc969cba11ba63d2",
+    "filename" : "jweb/web/1414080902216/jilu.jsp",
+    "status" : "added",
+    "additions" : 47,
+    "deletions" : 0,
+    "changes" : 47,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/3ee0070bcb5363bee23d452cf0f730dfcfc18fd2/jweb/web/1414080902216/jilu.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/3ee0070bcb5363bee23d452cf0f730dfcfc18fd2/jweb/web/1414080902216/jilu.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902216/jilu.jsp?ref=3ee0070bcb5363bee23d452cf0f730dfcfc18fd2",
+    "patch" : "@@ -0,0 +1,47 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%@ page import=\"java.io.*,java.util.*,java.sql.*\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+<html>\n+\t<head>\n+\t\t<title>聚会记录</title>\n+\t</head>\n+\t<body>\n+\t\t<%\n+\t\t\tString driveName = \"com.mysql.jdbc.Drive\";\n+\t\t\tString userName = \"root\";\n+\t\t\tString userPwd = \"123456\";\n+\t\t\tString dbName = \"meet\";\n+\t\t\tString url1 = \"jdbc:mysql://localhost:3306/meet\";\n+\t\t\tString url2 = \"?user=root&password=123456\";\n+\t\t\tString url3 = \"&useUnicode=true&characterEncoding=UTF-8\";\n+\t\t\tString url = url1+url2+url3;\n+\t\t\tClass.forName(\"com.mysql.jdbc.Driver\");\n+\t\t\tConnection conn = DriverManager.getConnection(url);\n+\t\t\tString sql = \"select *from meets\";\n+\t\t\tPreparedStatement p = conn.prepareStatement(sql);\n+\t\t\tResultSet r = p.executeQuery();\n+\t\t\tr.last();\n+\t\t %>\n+\t\t <p size=\"3\" color=\"black\" align=\"center\">您现在的聚会有<%=r.getRow() %>个</p>\n+\t\t <table border=\"1\" bgcolor=\"ccceee\" width=\"500\" align=\"center\">\n+\t\t \t<tr bgcolor=\"CCCCCC\" align=\"center\">\n+\t\t \t\t<td>聚会</td><td>聚会时间</td><td>开始时间</td>\n+\t\t \t</tr>\n+\t\t \t<%r.beforeFirst();\n+\t\t \t\twhile(r.next()){\n+\t\t \t %><tr align=\"center\">\n+\t\t \t <td><%=r.getString(\"miid\") %></td>\n+\t\t \t <td><%=r.getString(\"malltime\") %></td>\n+\t\t \t <td><%=r.getString(\"mstarttime\") %></td>\n+\t\t \t </tr>\n+\t\t \t <%} %>\n+\t\t </table>\n+\t\t <%if(r!=null){r.close();} \n+\t\t \tif(p!=null){p.close();}\n+\t\t \tif(conn!=null){conn.close();}\n+\t\t %>\n+\t</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "3ee0070bcb5363bee23d452cf0f730dfcfc18fd2",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/3ee0070bcb5363bee23d452cf0f730dfcfc18fd2",
+  "parents" : [ {
+    "sha" : "a49566de50a2b6431db0f832d293127781e273b7",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/a49566de50a2b6431db0f832d293127781e273b7",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/a49566de50a2b6431db0f832d293127781e273b7"
+  } ]
+}

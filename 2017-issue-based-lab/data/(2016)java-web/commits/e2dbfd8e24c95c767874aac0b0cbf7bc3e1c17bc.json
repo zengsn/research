@@ -1,0 +1,85 @@
+{
+  "committer" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 48,
+    "additions" : 48,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "yoxiang",
+    "id" : 22080098,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22080098?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/yoxiang",
+    "html_url" : "https://github.com/yoxiang",
+    "followers_url" : "https://api.github.com/users/yoxiang/followers",
+    "following_url" : "https://api.github.com/users/yoxiang/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/yoxiang/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/yoxiang/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/yoxiang/subscriptions",
+    "organizations_url" : "https://api.github.com/users/yoxiang/orgs",
+    "repos_url" : "https://api.github.com/users/yoxiang/repos",
+    "events_url" : "https://api.github.com/users/yoxiang/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/yoxiang/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/e2dbfd8e24c95c767874aac0b0cbf7bc3e1c17bc",
+  "commit" : {
+    "author" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-10-22T08:32:12Z"
+    },
+    "committer" : {
+      "name" : "yoxiang",
+      "email" : "18003021640@163.com",
+      "date" : "2016-10-22T08:32:12Z"
+    },
+    "message" : "#3 提交实验代码",
+    "tree" : {
+      "sha" : "d2943ada686b76e582279b1fe8b083ce13669783",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/d2943ada686b76e582279b1fe8b083ce13669783"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/e2dbfd8e24c95c767874aac0b0cbf7bc3e1c17bc",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/e2dbfd8e24c95c767874aac0b0cbf7bc3e1c17bc/comments",
+  "files" : [ {
+    "sha" : "85379cc3b0e0f9b7b5f417aabd9da109dfaae18c",
+    "filename" : "labs/1414080902121/index.jsp",
+    "status" : "added",
+    "additions" : 48,
+    "deletions" : 0,
+    "changes" : 48,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/e2dbfd8e24c95c767874aac0b0cbf7bc3e1c17bc/labs/1414080902121/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/e2dbfd8e24c95c767874aac0b0cbf7bc3e1c17bc/labs/1414080902121/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/labs/1414080902121/index.jsp?ref=e2dbfd8e24c95c767874aac0b0cbf7bc3e1c17bc",
+    "patch" : "@@ -0,0 +1,48 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"GB18030\"%>\n+\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html lang=\"zh-CN\">\n+<head>\n+<meta charset=\"utf-8\">\n+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n+<title>��desu -</title>\n+<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+</head>\n+\n+<link rel=\"stylesheet\" href=\"style.css\">\n+\n+<body>\n+\n+<div class=\"login-container\">\n+\t<h2>GiliGili Timetable</h2>\n+\t\n+\t<form action=\"\" method=\"post\" id=\"loginForm\">\n+\t\t<div>\n+\t\t\t<input type=\"text\" name=\"username\" class=\"username\" placeholder=\"admin\" autocomplete=\"off\"/>\n+\t\t</div>\n+\t\t<div>\n+\t\t\t<input type=\"password\" name=\"password\" class=\"password\" placeholder=\"password\" oncontextmenu=\"return false\" onpaste=\"return false\" />\n+\t\t</div>\n+\t\t<button id=\"submit\" type=\"submit\">logn in</button>\n+\t</form>\n+</div>\n+<script src=\"index.js\"></script>\n+<script type=\"text/javascript\">\n+$(\"#form-all\").submit(function(event){\n+    alert( \"Handler for .submit() called.\" );\n+    event.preventDefault();\n+});\n+$.ajax({\n+    url: \"success.json\"\n+}).done(function(data) {\n+    if ( console && console.log ) {\n+        console.dir(data);\n+        alert(data.msg);\n+    }\n+});\n+</script>\n+\n+</div>\n+</body>\n+</html>"
+  } ],
+  "sha" : "e2dbfd8e24c95c767874aac0b0cbf7bc3e1c17bc",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/e2dbfd8e24c95c767874aac0b0cbf7bc3e1c17bc",
+  "parents" : [ {
+    "sha" : "daf183582d4903f73df23b3a8a5f003b50c21c4e",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/daf183582d4903f73df23b3a8a5f003b50c21c4e",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/daf183582d4903f73df23b3a8a5f003b50c21c4e"
+  } ]
+}

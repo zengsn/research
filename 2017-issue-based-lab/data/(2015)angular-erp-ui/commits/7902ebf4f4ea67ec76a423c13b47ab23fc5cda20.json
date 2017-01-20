@@ -1,0 +1,149 @@
+{
+  "committer" : {
+    "login" : "renrendashai",
+    "id" : 15085143,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085143?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/renrendashai",
+    "html_url" : "https://github.com/renrendashai",
+    "followers_url" : "https://api.github.com/users/renrendashai/followers",
+    "following_url" : "https://api.github.com/users/renrendashai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/renrendashai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/renrendashai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/renrendashai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/renrendashai/orgs",
+    "repos_url" : "https://api.github.com/users/renrendashai/repos",
+    "events_url" : "https://api.github.com/users/renrendashai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/renrendashai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 102,
+    "additions" : 7,
+    "deletions" : 95
+  },
+  "author" : {
+    "login" : "renrendashai",
+    "id" : 15085143,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/15085143?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/renrendashai",
+    "html_url" : "https://github.com/renrendashai",
+    "followers_url" : "https://api.github.com/users/renrendashai/followers",
+    "following_url" : "https://api.github.com/users/renrendashai/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/renrendashai/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/renrendashai/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/renrendashai/subscriptions",
+    "organizations_url" : "https://api.github.com/users/renrendashai/orgs",
+    "repos_url" : "https://api.github.com/users/renrendashai/repos",
+    "events_url" : "https://api.github.com/users/renrendashai/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/renrendashai/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/7902ebf4f4ea67ec76a423c13b47ab23fc5cda20",
+  "commit" : {
+    "author" : {
+      "name" : "renrendashai",
+      "email" : "297259225@qq.com",
+      "date" : "2015-10-29T13:50:58Z"
+    },
+    "committer" : {
+      "name" : "renrendashai",
+      "email" : "297259225@qq.com",
+      "date" : "2015-10-29T13:50:58Z"
+    },
+    "message" : "Revert \"1314080901109实验二\"\n\nThis reverts commit 25705f410e5c71b5b02fb8a43f8476ee02c07189.",
+    "tree" : {
+      "sha" : "237c4d28e5376056b75e355c4da057140e7603fa",
+      "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/trees/237c4d28e5376056b75e355c4da057140e7603fa"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/git/commits/7902ebf4f4ea67ec76a423c13b47ab23fc5cda20",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7902ebf4f4ea67ec76a423c13b47ab23fc5cda20/comments",
+  "files" : [ {
+    "sha" : "e7a0737cda3bb444d46a8d50b20acc807296a345",
+    "filename" : "angularjs/4.1-raw-sample-data.html",
+    "status" : "modified",
+    "additions" : 7,
+    "deletions" : 11,
+    "changes" : 18,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/7902ebf4f4ea67ec76a423c13b47ab23fc5cda20/angularjs/4.1-raw-sample-data.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/7902ebf4f4ea67ec76a423c13b47ab23fc5cda20/angularjs/4.1-raw-sample-data.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/angularjs/4.1-raw-sample-data.html?ref=7902ebf4f4ea67ec76a423c13b47ab23fc5cda20",
+    "patch" : "@@ -1,15 +1,11 @@\n <script>\n     function MyFilterDemoCtrl($scope) {\n-        var Danjumingxi = {\n-            XUHAO: '01',\n-            BIANMA: '1008611',\n-            LEIBIE: 'watch',\n-            NAME: 'SEIKO,\n-            XINGHAO: '1008612'\n-            DANWEI: '100',\n-            SHULIANG: '1000',\n-            SHOUHUOSHULIANG: '998',\n-            BEIZHU: 'NOTHING',\n+        var someData = {\n+            firstName: 'JENNA',\n+            surname: 'GRANT',\n+            dateJoined: new Date(2010, 2, 23),\n+            consumption: 123.659855,\n+            plan: 'super-basic-plan'\n         };\n-        $scope.data = Danjumingxi;\n+        $scope.data = someData;\n } </script>\n\\ No newline at end of file"
+  }, {
+    "sha" : "4af7a6177f9df95d4eafaf127f99970945586730",
+    "filename" : "works/1314080901109/css/style.css",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 7,
+    "changes" : 7,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/css/style.css",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/css/style.css",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901109/css/style.css?ref=25705f410e5c71b5b02fb8a43f8476ee02c07189",
+    "patch" : "@@ -1,7 +0,0 @@\n-body {\n-  padding-top: 50px;\n-}\n-.starter-template {\n-  padding: 40px 15px;\n-  text-align: center;\n-}"
+  }, {
+    "sha" : "9f347c96c2633ce0b5cbd7df58913a021d48d2e5",
+    "filename" : "works/1314080901109/icons/favicon.ico",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/icons/favicon.ico",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/icons/favicon.ico",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901109/icons/favicon.ico?ref=25705f410e5c71b5b02fb8a43f8476ee02c07189"
+  }, {
+    "sha" : "25630d5ac8313b8ff58d855ebda3359c5242bd76",
+    "filename" : "works/1314080901109/images/zengshaoningwx.jpg",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 0,
+    "changes" : 0,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/images/zengshaoningwx.jpg",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/images/zengshaoningwx.jpg",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901109/images/zengshaoningwx.jpg?ref=25705f410e5c71b5b02fb8a43f8476ee02c07189"
+  }, {
+    "sha" : "ffc537ad8885f167b116ce7f1fcf9545261acffd",
+    "filename" : "works/1314080901109/index.html",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 75,
+    "changes" : 75,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/index.html",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/index.html",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901109/index.html?ref=25705f410e5c71b5b02fb8a43f8476ee02c07189",
+    "patch" : "@@ -1,75 +0,0 @@\n-﻿<!DOCTYPE html>\n-<html lang=\"zh-CN\">\n-  <head>\n-    <meta charset=\"utf-8\">\n-    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->\n-    <title>仓库 领料申请 1314080901109</title>\n-    <link rel=\"shortcut icon\" href=\"icons/favicon.ico\" />\n-    \n-    <!-- Bootstrap -->\n-    <link href=\"../../lib/bootstrap-3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\n-\n-    <!-- Custom styles for this template -->\n-    <link href=\"css/style.css\" rel=\"stylesheet\">\n-\n-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n-    <!--[if lt IE 9]>\n-      <script src=\"//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n-      <script src=\"//cdn.bootcss.com/respond.js/1.4.2/respond.min.js\"></script>\n-    <![endif]-->\n-<script>\n-    function MyFilterDemoCtrl($scope) {\n-        var Danjumingxi = {\n-            XUHAO: '01',\n-            BIANMA: '1008611',\n-            LEIBIE: 'watch',\n-            NAME: 'SEIKO,\n-            XINGHAO: '1008612'\n-            DANWEI: '100',\n-            SHULIANG: '1000',\n-            SHOUHUOSHULIANG: '998',\n-            BEIZHU: 'NOTHING',\n-        };\n-        $scope.data = Danjumingxi;\n-} </script>\n-  </head>\n-  <body>\n-    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n-      <div class=\"container\">\n-        <div class=\"navbar-header\">\n-          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n-            <span class=\"sr-only\">Toggle navigation</span>\n-            <span class=\"icon-bar\"></span>\n-            <span class=\"icon-bar\"></span>\n-            <span class=\"icon-bar\"></span>\n-          </button>\n-          <a class=\"navbar-brand\" href=\"#\">Project name</a>\n-        </div>\n-        <div id=\"navbar\" class=\"collapse navbar-collapse\">\n-          <ul class=\"nav navbar-nav\">\n-            <li class=\"active\"><a href=\"#\">Home</a></li>\n-            <li><a href=\"#about\">About</a></li>\n-            <li><a href=\"#contact\">Contact</a></li>\n-          </ul>\n-        </div><!--/.nav-collapse -->\n-      </div>\n-    </nav>\n-\n-    <div class=\"container\">\n-\n-      <div class=\"starter-template\">\n-        <h1>Bootstrap starter template</h1>\n-        <p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>\n-      </div>\n-\n-    </div><!-- /.container -->\n-\n-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n-    <script src=\"//cdn.bootcss.com/jquery/1.11.3/jquery.min.js\"></script>\n-    <!-- Include all compiled plugins (below), or include individual files as needed -->\n-    <script src=\"../../lib/bootstrap-3.3.5/js/bootstrap.min.js\"></script>\n-  </body>\n-</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "9d423d93044030f44b8b3ea8d95176637ea0a6fd",
+    "filename" : "works/1314080901109/js/javascript.js",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 1,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/js/javascript.js",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/js/javascript.js",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901109/js/javascript.js?ref=25705f410e5c71b5b02fb8a43f8476ee02c07189",
+    "patch" : "@@ -1 +0,0 @@\n-// javascript.js\n\\ No newline at end of file"
+  }, {
+    "sha" : "2282cc3e0997ecbb0935e8df601039d6ce7006d3",
+    "filename" : "works/1314080901109/仓库 领料申请.txt",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 1,
+    "changes" : 1,
+    "blob_url" : "https://github.com/hzuapps/angular-erp-ui/blob/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/%E4%BB%93%E5%BA%93%20%E9%A2%86%E6%96%99%E7%94%B3%E8%AF%B7.txt",
+    "raw_url" : "https://github.com/hzuapps/angular-erp-ui/raw/25705f410e5c71b5b02fb8a43f8476ee02c07189/works/1314080901109/%E4%BB%93%E5%BA%93%20%E9%A2%86%E6%96%99%E7%94%B3%E8%AF%B7.txt",
+    "contents_url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/contents/works/1314080901109/%E4%BB%93%E5%BA%93%20%E9%A2%86%E6%96%99%E7%94%B3%E8%AF%B7.txt?ref=25705f410e5c71b5b02fb8a43f8476ee02c07189",
+    "patch" : "@@ -1 +0,0 @@\n-﻿仓库 领料申请\n\\ No newline at end of file"
+  } ],
+  "sha" : "7902ebf4f4ea67ec76a423c13b47ab23fc5cda20",
+  "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/7902ebf4f4ea67ec76a423c13b47ab23fc5cda20",
+  "parents" : [ {
+    "sha" : "25705f410e5c71b5b02fb8a43f8476ee02c07189",
+    "url" : "https://api.github.com/repos/hzuapps/angular-erp-ui/commits/25705f410e5c71b5b02fb8a43f8476ee02c07189",
+    "html_url" : "https://github.com/hzuapps/angular-erp-ui/commit/25705f410e5c71b5b02fb8a43f8476ee02c07189"
+  } ]
+}

@@ -1,0 +1,129 @@
+{
+  "committer" : {
+    "login" : "HurricanGod",
+    "id" : 22078850,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078850?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HurricanGod",
+    "html_url" : "https://github.com/HurricanGod",
+    "followers_url" : "https://api.github.com/users/HurricanGod/followers",
+    "following_url" : "https://api.github.com/users/HurricanGod/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HurricanGod/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HurricanGod/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HurricanGod/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HurricanGod/orgs",
+    "repos_url" : "https://api.github.com/users/HurricanGod/repos",
+    "events_url" : "https://api.github.com/users/HurricanGod/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HurricanGod/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 319,
+    "additions" : 319,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "HurricanGod",
+    "id" : 22078850,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/22078850?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/HurricanGod",
+    "html_url" : "https://github.com/HurricanGod",
+    "followers_url" : "https://api.github.com/users/HurricanGod/followers",
+    "following_url" : "https://api.github.com/users/HurricanGod/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/HurricanGod/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/HurricanGod/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/HurricanGod/subscriptions",
+    "organizations_url" : "https://api.github.com/users/HurricanGod/orgs",
+    "repos_url" : "https://api.github.com/users/HurricanGod/repos",
+    "events_url" : "https://api.github.com/users/HurricanGod/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/HurricanGod/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+  "commit" : {
+    "author" : {
+      "name" : "HurricanGod",
+      "email" : "1807363937@qq.com",
+      "date" : "2016-11-03T08:05:14Z"
+    },
+    "committer" : {
+      "name" : "HurricanGod",
+      "email" : "1807363937@qq.com",
+      "date" : "2016-11-03T08:05:14Z"
+    },
+    "message" : "#5 提交实验4代码",
+    "tree" : {
+      "sha" : "c8b2d4776467850167bb67eff57ba02bdb608cd8",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/c8b2d4776467850167bb67eff57ba02bdb608cd8"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/comments",
+  "files" : [ {
+    "sha" : "7232a94c91c34110eb2736866811efa99021f193",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/CheckLoginFilter.java",
+    "status" : "added",
+    "additions" : 66,
+    "deletions" : 0,
+    "changes" : 66,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/src/edu/hzu/javaweb/labs/se1414080902225/CheckLoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/src/edu/hzu/javaweb/labs/se1414080902225/CheckLoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/CheckLoginFilter.java?ref=5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+    "patch" : "@@ -0,0 +1,66 @@\n+package edu.hzu.javaweb.labs.se1414080902225;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+@WebFilter(filterName=\"CheckLoginFilter\",urlPatterns=\"/1414080902225/Message.jsp\")\n+public class CheckLoginFilter implements Filter {\n+\tpublic class className {\n+\n+\t}\n+\n+\t\n+\t@Override\n+\tpublic void destroy() {\n+\t\t\n+\n+\t}\n+\n+\t\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse reponse,\n+\t\t\tFilterChain chain) throws IOException, ServletException \n+\t{\n+\t\tHttpServletRequest checkRequest=(HttpServletRequest)request;\n+\t\tHttpServletResponse checkReponse=(HttpServletResponse)reponse;\n+\t\tHttpSession mySession=checkRequest.getSession(true);\n+\t\tString a=(String)mySession.getAttribute(\"user\");\n+\t\tString b=(String)mySession.getAttribute(\"pwd\");\n+\t\tString c=(String)mySession.getAttribute(\"role\");\n+\t\tif (a!=null&&b!=null)\n+\t\t{\n+\t\t\tif (c.equals(\"student\"))\n+\t\t\t{\n+\t\t\t\tchain.doFilter(checkRequest, checkReponse);\n+\t\t\t}\n+\t\t\telse \n+\t\t\t{\n+\t\t\t\tcheckReponse.sendRedirect(\"unable.jsp\");\n+\t\t\t}\n+\t\t\t\n+\t\t\t\n+\t\t}\n+\t\telse\n+\t\t{\n+\t\t\trequest.getRequestDispatcher(\"index.jsp\").forward(checkRequest, checkReponse);\n+\t\t}\n+\n+\t}\n+\n+\t\n+\t@Override\n+\tpublic void init(FilterConfig arg0) throws ServletException {\n+\t\t\n+\n+\t}\n+}"
+  }, {
+    "sha" : "022f5b2fd421ee85fbe2a80a58c9fd753d770f7f",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetFormMessageServlet.java",
+    "status" : "added",
+    "additions" : 53,
+    "deletions" : 0,
+    "changes" : 53,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetFormMessageServlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetFormMessageServlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/GetFormMessageServlet.java?ref=5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+    "patch" : "@@ -0,0 +1,53 @@\n+package edu.hzu.javaweb.labs.se1414080902225;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.annotation.WebServlet;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+\n+\n+@WebServlet(value=\"/GetFormMessageServlet\")\n+public class GetFormMessageServlet extends HttpServlet {\n+\n+\n+\tpublic GetFormMessageServlet() {\n+\t\tsuper();\n+\t}\n+\n+\t\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); \n+\t}\n+\n+\t\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\t\t\tString user=request.getParameter(\"user\");\n+\t\t\tString pwd=request.getParameter(\"pwd\");\n+\t\t\tString role=request.getParameter(\"login\");\n+\t\t\tHttpSession loginSession=request.getSession(true);\n+\t\t\tloginSession.setAttribute(\"user\",user);\n+\t\t\tloginSession.setAttribute(\"pwd\", pwd);\n+\t\t\tloginSession.setAttribute(\"role\", role);\n+\t\t\t\n+\t\t\tresponse.sendRedirect(\"1414080902225/Message.jsp\");\n+\t\t\n+\t}\n+\n+\t\n+\tpublic void init() throws ServletException {\n+\t}\n+}"
+  }, {
+    "sha" : "b1449bb5715e29c249bf994f159ef8b12171c699",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902225/SetEncodingFilter.java",
+    "status" : "added",
+    "additions" : 47,
+    "deletions" : 0,
+    "changes" : 47,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/src/edu/hzu/javaweb/labs/se1414080902225/SetEncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/src/edu/hzu/javaweb/labs/se1414080902225/SetEncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902225/SetEncodingFilter.java?ref=5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+    "patch" : "@@ -0,0 +1,47 @@\n+package edu.hzu.javaweb.labs.se1414080902225;\n+\n+import java.io.IOException;\n+\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+@WebFilter(filterName=\"SetEncodingFilter\",urlPatterns=\"/*\")\n+public class SetEncodingFilter implements Filter {\n+\n+\tprivate String encoding = null; \n+\t@Override\n+\tpublic void destroy() \n+\t{\n+\t\t encoding = null; \n+\t}\n+\t\n+\tprivate String getEncoding() {   \n+        return this.encoding;   \n+     }   \n+\n+\t\n+\t@Override\n+\tpublic void doFilter(ServletRequest request, ServletResponse response,\n+\t\t\tFilterChain chain) throws IOException, ServletException \n+\t{\n+\t\tif (encoding == null){   \n+            encoding = \"UTF-8\";   \n+        }   \n+        request.setCharacterEncoding(encoding);  \n+        chain.doFilter(request, response);   \n+        System.out.println(\"secesss to set encoding to request\");\n+\t\t\n+\t}\n+\n+\t\n+\t@Override\n+\tpublic void init(FilterConfig arg0) throws ServletException {\n+\t\t\n+\n+\t}\n+}"
+  }, {
+    "sha" : "90c68862d93f2423fb9ce54e98e7339662dbae5f",
+    "filename" : "jweb/web/1414080902225/index.jsp",
+    "status" : "added",
+    "additions" : 113,
+    "deletions" : 0,
+    "changes" : 113,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/web/1414080902225/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/web/1414080902225/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902225/index.jsp?ref=5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+    "patch" : "@@ -0,0 +1,113 @@\n+<%@page import=\"java.sql.Date\"%>\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>欢迎登录</title>\n+    \n+    <meta charset=\"utf-8\">\n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t<!-- 新 Bootstrap 核心 CSS 文件 -->\n+    <link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\n+    <script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\n+    <script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+  </head>\n+  \n+  <body> \n+    <nav class=\"navbar navbar-inverse\" role=\"navigation\">\n+    </nav>\n+     \n+    <div class=\"container-fluid\" id=\"main\">\n+        <div class=\"col-md-2 \"></div>  \n+        <div class=\"col-md-8 bg-success\" >\n+            <br>\n+            <br>\n+            <br>\n+            <form class=\"form-horizontal \" role=\"form\" method=\"post\" action=\"GetFormMessageServlet\" >\n+                <div class=\"form-group\">\n+                    <label class=\"col-md-2 control-label\" for=\"userName\">UserName:</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"text\" id=\"userName\" class=\"form-control\" placeholder=\"Hurrican\" name=\"user\">\n+                    </div>\n+                </div>\n+\n+\n+                <div class=\"form-group\">\n+                    <label class=\"col-md-2 control-label\" for=\"pwd\">Password:</label>\n+                    <div class=\"col-md-4\">\n+                         <input type=\"password\" id=\"pwd\" class=\"form-control\" placeholder=\"*********\" name=\"pwd\">\n+                    </div>           \n+                </div>\n+\n+                \n+                <div class=\"form-group\">\n+                    <div class=\"col-md-offset-4 col-md-8\" >\n+                        <div class=\"checkbox\">\n+                            <label>\n+                                <input type=\"checkbox\" >Remember me\n+                            </label>\n+                        </div>\n+                    </div>\n+                </div> \n+                \n+                <div class=\"col-md-4\">\n+                    <input type=\"radio\" name=\"login\" value=\"student\" checked=\"checked\">student &nbsp; &nbsp;\n+                    <input type=\"radio\" name=\"login\" value=\"admin\">admin &nbsp; &nbsp;\n+                    <input type=\"radio\" name=\"login\" value=\"teacher\">teacher &nbsp; &nbsp;\n+                </div>  \n+\n+\n+                <div class=\"col-md-offset-4\">&nbsp;\n+                    <div class=\"btn-group\">\n+                        <input type=\"submit\" class=\"btn btn-success\" value=\"Register\" id=\"login\" onclick=\"return chkform()\">\n+                        <input type=\"reset\" class=\"btn btn-warning\" value=\"Reset\" >\n+                    </div>  \n+                </div>       \n+            </form>\n+        </div> \n+        <div class=\"col-md-2 \"></div>  \n+        <div class=\"col-md-12 \"></div>     \n+    </div>\n+\n+    <script type=\"text/javascript\">\n+\n+        var checkUserName=document.getElementById(\"userName\");\n+            var checkUserPwd=document.getElementById(\"pwd\");\n+            var submit=document.getElementById(\"login\");\n+           \n+            function chkform()\n+            { \n+                 if(checkUserName.value==\"\")\n+                 { \n+                      alert(\"用户名不能为空！\"); \n+                      return false; \n+                 } \n+\n+                 if(checkUserPwd.value==\"\") \n+                 { \n+                      alert(\"密码不能为空！\"); \n+                      return false; \n+                 }  \n+                 self.location='GetFormMessageServlet';  \n+\n+             };\n+    </script>\n+    \n+  </body>\n+</html>"
+  }, {
+    "sha" : "1a2b34e3a1e6ee6b98008c11deedff7878dc62fc",
+    "filename" : "jweb/web/1414080902225/unable.jsp",
+    "status" : "added",
+    "additions" : 40,
+    "deletions" : 0,
+    "changes" : 40,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/web/1414080902225/unable.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d/jweb/web/1414080902225/unable.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902225/unable.jsp?ref=5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+    "patch" : "@@ -0,0 +1,40 @@\n+<%@ page language=\"java\" import=\"java.util.*\" pageEncoding=\"UTF-8\"%>\n+<%\n+String path = request.getContextPath();\n+String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+request.getServerPort()+path+\"/\";\n+%>\n+\n+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n+<html>\n+  <head>\n+    <base href=\"<%=basePath%>\">\n+    \n+    <title>My JSP 'unable.jsp' starting page</title>\n+    \n+\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n+\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n+\t<meta http-equiv=\"expires\" content=\"0\">    \n+\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n+\t<meta http-equiv=\"description\" content=\"This is my page\">\n+\t<!--\n+\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n+\t-->\n+\t<style type=\"text/css\">\n+\t\t#div{\n+\t\tmargin:10%,15%;\n+\t\tpadding:20%,20%;\n+\t\tbackaground:#555;\n+\t\t}\n+\t\tp{\n+\t\t\ttext-align:center;\n+\t\t}\n+\t</style>\n+\n+  </head>\n+  \n+  <body>\n+    <div id=\"#div\">\n+    <p>对不起，你没有权限访问该网页！</p>\n+    </div>\n+  </body>\n+</html>"
+  } ],
+  "sha" : "5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5b4fefd70b5945d25b1ee45c20ff3ee613344d1d",
+  "parents" : [ {
+    "sha" : "543885aa38159f00c8e000217d617f0791265016",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/543885aa38159f00c8e000217d617f0791265016",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/543885aa38159f00c8e000217d617f0791265016"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "committer" : {
+    "login" : "sinner77",
+    "id" : 17792166,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17792166?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/sinner77",
+    "html_url" : "https://github.com/sinner77",
+    "followers_url" : "https://api.github.com/users/sinner77/followers",
+    "following_url" : "https://api.github.com/users/sinner77/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/sinner77/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/sinner77/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/sinner77/subscriptions",
+    "organizations_url" : "https://api.github.com/users/sinner77/orgs",
+    "repos_url" : "https://api.github.com/users/sinner77/repos",
+    "events_url" : "https://api.github.com/users/sinner77/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/sinner77/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "stats" : {
+    "total" : 141,
+    "additions" : 141,
+    "deletions" : 0
+  },
+  "author" : {
+    "login" : "sinner77",
+    "id" : 17792166,
+    "avatar_url" : "https://avatars.githubusercontent.com/u/17792166?v=3",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/sinner77",
+    "html_url" : "https://github.com/sinner77",
+    "followers_url" : "https://api.github.com/users/sinner77/followers",
+    "following_url" : "https://api.github.com/users/sinner77/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/sinner77/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/sinner77/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/sinner77/subscriptions",
+    "organizations_url" : "https://api.github.com/users/sinner77/orgs",
+    "repos_url" : "https://api.github.com/users/sinner77/repos",
+    "events_url" : "https://api.github.com/users/sinner77/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/sinner77/received_events",
+    "type" : "User",
+    "site_admin" : false
+  },
+  "html_url" : "https://github.com/hzuapps/java-web/commit/5b09f18888d56771c15f474ec3448153a29040ed",
+  "commit" : {
+    "author" : {
+      "name" : "sinner77",
+      "email" : "525136628@qq.com",
+      "date" : "2016-10-24T03:12:59Z"
+    },
+    "committer" : {
+      "name" : "sinner77",
+      "email" : "525136628@qq.com",
+      "date" : "2016-10-24T03:12:59Z"
+    },
+    "message" : "#4",
+    "tree" : {
+      "sha" : "a69c53832981fe1f4818849c7632475bf661e327",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/a69c53832981fe1f4818849c7632475bf661e327"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/5b09f18888d56771c15f474ec3448153a29040ed",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/5b09f18888d56771c15f474ec3448153a29040ed/comments",
+  "files" : [ {
+    "sha" : "6b435d16d5a8f6448ebf4100eb8f5aa5eab3e9f8",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902213/Se1414080902213Servlet.java",
+    "status" : "added",
+    "additions" : 84,
+    "deletions" : 0,
+    "changes" : 84,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b09f18888d56771c15f474ec3448153a29040ed/jweb/src/edu/hzu/javaweb/labs/se1414080902213/Se1414080902213Servlet.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b09f18888d56771c15f474ec3448153a29040ed/jweb/src/edu/hzu/javaweb/labs/se1414080902213/Se1414080902213Servlet.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902213/Se1414080902213Servlet.java?ref=5b09f18888d56771c15f474ec3448153a29040ed",
+    "patch" : "@@ -0,0 +1,84 @@\n+package edu.hzu.javaweb.labs.se1414080902213;\n+\n+import java.io.IOException;\n+import java.io.PrintWriter;\n+\n+import javax.servlet.ServletException;\n+import javax.servlet.http.HttpServlet;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+ @WebServlet(\"/1414080902213\")\n+public class Se1414080902232Servlet extends HttpServlet {\n+\n+\t/**\n+\t * Constructor of the object.\n+\t */\n+\tpublic Se1414080902213Servlet() {\n+\t\tsuper();\n+\t}\n+\n+\t/**\n+\t * Destruction of the servlet. <br>\n+\t */\n+\tpublic void destroy() {\n+\t\tsuper.destroy(); // Just puts \"destroy\" string in log\n+\t\t// Put your code here\n+\t}\n+\n+\t/**\n+\t * The doGet method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to get.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doGet(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01 Transitional//EN\\\">\");\n+\t\tout.println(\"<HTML>\");\n+\t\tout.println(\"  <HEAD><TITLE>A Servlet</TITLE></HEAD>\");\n+\t\tout.println(\"  <BODY>\");\n+\t\tout.print(\"    This is \");\n+\t\tout.print(this.getClass());\n+\t\tout.println(\", using the GET method\");\n+\t\tout.println(\"  </BODY>\");\n+\t\tout.println(\"</HTML>\");\n+\t\tout.flush();\n+\t\tout.close();\n+\t}\n+\n+\t/**\n+\t * The doPost method of the servlet. <br>\n+\t *\n+\t * This method is called when a form has its tag value method equals to post.\n+\t * \n+\t * @param request the request send by the client to the server\n+\t * @param response the response send by the server to the client\n+\t * @throws ServletException if an error occurred\n+\t * @throws IOException if an error occurred\n+\t */\n+\tpublic void doPost(HttpServletRequest request, HttpServletResponse response)\n+\t\t\tthrows ServletException, IOException {\n+\n+\t\tresponse.setContentType(\"text/html\");\n+\t\trequest.setCharacterEncoding(\"utf-8\");\n+\t\tresponse.setCharacterEncoding(\"utf-8\");\n+\t\tPrintWriter out = response.getWriter();\n+\t\tout.println(\"����??3��1|��?\");\n+\t}\n+\n+\t/**\n+\t * Initialization of the servlet. <br>\n+\t *\n+\t * @throws ServletException if an error occurs\n+\t */\n+\tpublic void init() throws ServletException {\n+\t}\n+\n+}\n\\ No newline at end of file"
+  }, {
+    "sha" : "1342f0a0cb3bb9df268f84d8dd26c88ce8f51c3e",
+    "filename" : "jweb/web/1414080902213/index.jsp",
+    "status" : "added",
+    "additions" : 57,
+    "deletions" : 0,
+    "changes" : 57,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/5b09f18888d56771c15f474ec3448153a29040ed/jweb/web/1414080902213/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/5b09f18888d56771c15f474ec3448153a29040ed/jweb/web/1414080902213/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902213/index.jsp?ref=5b09f18888d56771c15f474ec3448153a29040ed",
+    "patch" : "@@ -0,0 +1,57 @@\n+<%@ page language=\"java\" contentType=\"text/html;  charset=utf-8\"%>\n+<!DOCTYPE html>\n+<html lang=\"en\">\n+<head>\n+\t<meta charset=\"UTF-8\">\n+\t<title>Document</title>\n+\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\t<script>\n+\t$(function(){\n+\t\t$('form').submit(function(e){\n+\t\t\tvar emailText = $('input[type=email]').val();\n+\t\t\tvar passwordText = $('input[type=password]').val();\n+\t\t\t$.ajax({\n+\t\t\t\turl: 'servlet/Se1414080902213Servlet',\n+\t\t\t\tdata: {email:emailText,password:passwordText},\n+\t\t\t\tdatatype: 'html',\n+\t\t\t\tsuccess: function(data){\n+\t\t\t\t\talert(data.msg);\n+\t\t\t\t}\n+\t\t\t});\n+\t\t});\n+\t})\n+\t</script>\n+</head>\n+<body>\n+<form class=\"form-horizontal\" role=\"form\" style=\"margin-top:300px\">\n+  <div class=\"form-group\">\n+    <label for=\"inputEmail3\" class=\"col-sm-2 control-label\">Email</label>\n+    <div class=\"col-sm-8\">\n+      <input type=\"email\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Email\">\n+    </div>\n+  </div>\n+  <div class=\"form-group\">\n+    <label for=\"inputPassword3\" class=\"col-sm-2 control-label\">Password</label>\n+    <div class=\"col-sm-8\">\n+      <input type=\"password\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"Password\">\n+    </div>\n+  </div>\n+  <div class=\"form-group\">\n+    <div class=\"col-sm-offset-2 col-sm-8\">\n+      <div class=\"checkbox\">\n+        <label>\n+          <input type=\"checkbox\"> Remember me!!!\n+        </label>\n+      </div>\n+    </div>\n+  </div>\n+  <div class=\"form-group\">\n+    <div class=\"col-sm-offset-2 col-sm-10\">\n+      <button type=\"submit\" class=\"btn btn-default\">登录</button>\n+    </div>\n+  </div>\n+</form>\n+</body>\n+</html>\n\\ No newline at end of file"
+  } ],
+  "sha" : "5b09f18888d56771c15f474ec3448153a29040ed",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/5b09f18888d56771c15f474ec3448153a29040ed",
+  "parents" : [ {
+    "sha" : "4e1f4cb54e9635c5822fbdfb21260352f0582b0c",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/4e1f4cb54e9635c5822fbdfb21260352f0582b0c",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/4e1f4cb54e9635c5822fbdfb21260352f0582b0c"
+  } ]
+}

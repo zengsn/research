@@ -1,0 +1,104 @@
+{
+  "committer" : null,
+  "stats" : {
+    "total" : 266,
+    "additions" : 181,
+    "deletions" : 85
+  },
+  "author" : null,
+  "html_url" : "https://github.com/hzuapps/java-web/commit/93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+  "commit" : {
+    "author" : {
+      "name" : "pigosy",
+      "email" : "“892365482@qq.com",
+      "date" : "2016-11-04T09:05:23Z"
+    },
+    "committer" : {
+      "name" : "pigosy",
+      "email" : "“892365482@qq.com",
+      "date" : "2016-11-04T09:05:23Z"
+    },
+    "message" : "#5 提交实验4",
+    "tree" : {
+      "sha" : "629fe4ef039836396ba09e8d215dbdf41db1ac2c",
+      "url" : "https://api.github.com/repos/hzuapps/java-web/git/trees/629fe4ef039836396ba09e8d215dbdf41db1ac2c"
+    },
+    "url" : "https://api.github.com/repos/hzuapps/java-web/git/commits/93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+    "comment_count" : 0
+  },
+  "comments_url" : "https://api.github.com/repos/hzuapps/java-web/commits/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/comments",
+  "files" : [ {
+    "sha" : "863063ebbfda72a396e1ed0c20ee8c7b17c61042",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902231/EncodingFilter.java",
+    "status" : "added",
+    "additions" : 34,
+    "deletions" : 0,
+    "changes" : 34,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/src/edu/hzu/javaweb/labs/se1414080902231/EncodingFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/src/edu/hzu/javaweb/labs/se1414080902231/EncodingFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902231/EncodingFilter.java?ref=93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+    "patch" : "@@ -0,0 +1,34 @@\n+package edu.hzu.javaweb.labs.se1414080902231;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+\n+@WebFilter(filterName = \"EncodingFilter\",urlPatterns=\"/*\")\n+public class EncodingFilter implements Filter {\n+\n+    public EncodingFilter() {\n+    }\n+\n+\tpublic void destroy() {\n+\t}\n+\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\trequest.setCharacterEncoding(\"UTF-8\");\n+\t\tresponse.setCharacterEncoding(\"UTF-8\");\n+\t\tchain.doFilter(request, response);\n+\t}\n+\n+\t/**\n+\t * @see Filter#init(FilterConfig)\n+\t */\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\t// TODO Auto-generated method stub\n+\t}\n+\n+}"
+  }, {
+    "sha" : "d0e116ccaa9def7828c880e4ee9556f081dbf354",
+    "filename" : "jweb/src/edu/hzu/javaweb/labs/se1414080902231/LoginFilter.java",
+    "status" : "added",
+    "additions" : 38,
+    "deletions" : 0,
+    "changes" : 38,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/src/edu/hzu/javaweb/labs/se1414080902231/LoginFilter.java",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/src/edu/hzu/javaweb/labs/se1414080902231/LoginFilter.java",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/src/edu/hzu/javaweb/labs/se1414080902231/LoginFilter.java?ref=93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+    "patch" : "@@ -0,0 +1,38 @@\n+package edu.hzu.javaweb.labs.se1414080902231;\n+\n+import java.io.IOException;\n+import javax.servlet.Filter;\n+import javax.servlet.FilterChain;\n+import javax.servlet.FilterConfig;\n+import javax.servlet.ServletException;\n+import javax.servlet.ServletRequest;\n+import javax.servlet.ServletResponse;\n+import javax.servlet.annotation.WebFilter;\n+import javax.servlet.http.HttpServletRequest;\n+import javax.servlet.http.HttpServletResponse;\n+import javax.servlet.http.HttpSession;\n+\n+@WebFilter(filterName = \"LoginFilter\",urlPatterns=\"/issue.jsp\")\n+public class LoginFilter implements Filter {\n+\n+    public LoginFilter() {\n+    }\n+\n+\tpublic void destroy() {\n+\t}\n+\n+\tpublic void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {\n+\t\tHttpServletRequest requ=(HttpServletRequest)request;\n+\t\tHttpServletResponse resp=(HttpServletResponse)response;\n+\t\tHttpSession session=requ.getSession(true);\n+\t\tif(session.getAttribute(\"username\")==null)\n+\t\t\tresp.sendRedirect(\"login.jsp\");\n+\t\telse\n+\t\t\tchain.doFilter(request, response);\n+\t}\n+\n+\tpublic void init(FilterConfig fConfig) throws ServletException {\n+\t\t\n+\t}\n+\n+}"
+  }, {
+    "sha" : "fb2f79fab57bc41cd5aae50362847f6e70efda5b",
+    "filename" : "jweb/web/1414080902231/index.jsp",
+    "status" : "modified",
+    "additions" : 18,
+    "deletions" : 67,
+    "changes" : 85,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/web/1414080902231/index.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/web/1414080902231/index.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902231/index.jsp?ref=93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+    "patch" : "@@ -1,70 +1,21 @@\n-﻿<%@page contentType=\"text/html\" pageEncoding=\"UTF-8\" %>\n-<!DOCTYPE html>\n+<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\"\n+    pageEncoding=\"UTF-8\"%>\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n <html>\n-\t<head>\t\t\n-\t\t<meta charset=\"utf-8\">\n-\t\t<title>javaweb 实验三</title>\n-\n-\t\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n-\t\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n-\t\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n-\t\t<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n-\t\t<script type=\"text/javascript\" src=\"index.js\"></script>\n-\t\t\n-\t</head>\n-\t<body>\n-\t\t<%=new java.util.Date().toLocaleString() %>\n-\t\t<p style=\"\"><b>发布二手货物</b></p>\n-\t\t<form  id=\"fm\"  method=\"post\">\n-\t\t  <div class=\"form-group\">\n-\t\t    <p><label for=\"GoodsName\">Goods Name</label><span style=\"color:red\" id=\"p1\"></span></p>\n-\t\t    <input type=\"text\"  id=\"GoodsName\" name=\"GoodsName\" placeholder=\"Goods Name\" style=\"width:320px\"/>\n-\t\t  </div>\n-\t\t  <div class=\"form-group\">\n-\t\t    <p><label for=\"Detail\">Detail</label><span style=\"color:red\" id=\"p2\"></span></p>\n-\t\t     <textarea name=\"Detail\" id=\"Detail\" cols=\"50\" rows=\"10\" placeholder=\"Detail\"></textarea>\n-\t\t  </div>\t\t \n-\t\t  <div class=\"form-group\">\n-\t\t    <p><label for=\"imgfile\">Pictures input</label><span style=\"color:red\" id=\"p3\"></span></p>\n-\t\t    <input name=\"imgfile\" type=\"file\" id=\"imgfile\" accept=\"image/*\">\n-\t\t  </div>\n-\t\t</form>\n-\t\t\n-\t\t<button id=\"btn\" type=\"submit\" onclick=\"fun()\">submit</button>\n-\t</body>\t\n-\t<% %>\n-\t\n-\t<script type=\"text/javascript\" >\n-  \t\t\n-  \t\tfunction fun(){\n-  \t\t\t\n-\t\t\tif(document.getElementById(\"GoodsName\").value=='')\n-\t\t\t\tdocument.getElementById(\"p1\").innerHTML=\"* not null\";\n-\t\t\t\t\n-\t\t\tif(\tdocument.getElementById(\"Detail\").value=='')\n-\t\t\t\tdocument.getElementById(\"p2\").innerHTML=\"* not null\";\n-\t\t\t\t\n-\t\t\tif(\tdocument.getElementById(\"imgfile\").value=='')\n-\t\t\t   document.getElementById(\"p3\").innerHTML=\"* not null\";\n-\t\t\telse\n-\t\t\t\t//document.getElementById(\"fm\").submit();\n-\t\t\t\t$.a();\n-\t\t}\n-  </script>\n-  <script type=\"text/javascript\" >\n-  \t$.a=function(){\n-  \t\t$.ajax({\n-  \t\t\ttype:\"post\",\n-  \t\t\tdatatype:\"html\",\n-  \t\t\turl:\"1414080902231\",\n-  \t\t\tsuccess:function(data){\n-  \t\t\talert(data);\n-  \t\t\t}\n-  \t\t});\t\t\n-  \t};\n-  </script>\n-\t\n-\n-\n+<head>\n+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n+<title>Insert title here</title>\n+</head>\n+<body>\n+\t\t<button onclick=\"gotofabu()\">发布二手货物</button><br/>\n+\t\t<br/>\n+\t\t<button onclick=\"\">搜索二手货物</button>\n+</body>\n+<script>\n+\tfunction gotofabu()\n+\t{\n+\t\twindow.location.href=\"issue.jsp\";\n+\t}\n \t\n+</script>\n </html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "9b6fb65e88cab2689c5be5e7ff64d0531e5c4e1d",
+    "filename" : "jweb/web/1414080902231/issue.jsp",
+    "status" : "added",
+    "additions" : 79,
+    "deletions" : 0,
+    "changes" : 79,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/web/1414080902231/issue.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/web/1414080902231/issue.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902231/issue.jsp?ref=93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+    "patch" : "@@ -0,0 +1,79 @@\n+﻿<%@page contentType=\"text/html\" pageEncoding=\"UTF-8\" %>\n+<!DOCTYPE html>\n+<html>\n+\t<head>\t\t\n+\t\t<meta charset=\"utf-8\">\n+\t\t<title>javaweb 实验二</title>\n+\n+\t\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css\">\n+\t\t<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css\">\n+\t\t<script src=\"http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js\"></script>\n+\t\t<script src=\"http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n+\t\t<script type=\"text/javascript\" src=\"index.js\"></script>\n+\t\t\n+\t</head>\n+\t<body>\n+\t\t<p id=\"time\"></p>\n+\t\t<p style=\"\"><b>发布二手货物</b></p>\n+\t\t<form  id=\"fm\"  method=\"post\">\n+\t\t  <div class=\"form-group\">\n+\t\t    <p><label for=\"GoodsName\">Goods Name</label><span style=\"color:red\" id=\"p1\"></span></p>\n+\t\t    <input type=\"text\"  id=\"GoodsName\" name=\"GoodsName\" placeholder=\"Goods Name\" style=\"width:320px\"/>\n+\t\t  </div>\n+\t\t  <div class=\"form-group\">\n+\t\t    <p><label for=\"Detail\">Detail</label><span style=\"color:red\" id=\"p2\"></span></p>\n+\t\t     <textarea name=\"Detail\" id=\"Detail\" cols=\"50\" rows=\"10\" placeholder=\"Detail\"></textarea>\n+\t\t  </div>\t\t \n+\t\t  <div class=\"form-group\">\n+\t\t    <p><label for=\"imgfile\">Pictures input</label><span style=\"color:red\" id=\"p3\"></span></p>\n+\t\t    <input name=\"imgfile\" type=\"file\" id=\"imgfile\" accept=\"image/*\">\n+\t\t  </div>\n+\t\t</form>\n+\t\t\n+\t\t<button id=\"btn\" type=\"submit\" onclick=\"fun()\">submit</button>\n+\t</body>\t\n+\t<% %>\n+\t\n+\t<script type=\"text/javascript\" >\n+  \t\t\n+  \t\tfunction fun(){\n+  \t\t\t\n+\t\t\tif(document.getElementById(\"GoodsName\").value=='')\n+\t\t\t\tdocument.getElementById(\"p1\").innerHTML=\"* not null\";\n+\t\t\t\t\n+\t\t\tif(\tdocument.getElementById(\"Detail\").value=='')\n+\t\t\t\tdocument.getElementById(\"p2\").innerHTML=\"* not null\";\n+\t\t\t\t\n+\t\t\tif(\tdocument.getElementById(\"imgfile\").value=='')\n+\t\t\t   document.getElementById(\"p3\").innerHTML=\"* not null\";\n+\t\t\telse\n+\t\t\t\t//document.getElementById(\"fm\").submit();\n+\t\t\t\t$.a();\n+\t\t}\n+  \n+  \t$.a=function(){\n+  \t\t$.ajax({\n+  \t\t\ttype:\"post\",\n+  \t\t\tdatatype:\"html\",\n+  \t\t\turl:\"1414080902231\",\n+  \t\t\tsuccess:function(data){\n+  \t\t\talert(data);\n+  \t\t\t}\n+  \t\t});\t\t\n+  \t};\n+  \t</script>\n+\t<script type=\"text/javascript\">\n+\t\tfunction getTime(){\n+\t\t\tvar d=new Date();\n+\t\t\tdocument.getElementById(\"time\").innerHTML=d.toLocaleString();\n+\t\t//\t$(\"time\").html(d);//why not?\n+\t\t}\n+\t\t\n+\t\t$(function(){\n+\t\t\tsetInterval(\"getTime()\",1000);\n+\t\t});\n+\t</script>\n+\n+\n+\t\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "6bd66dca6f83f524f27cca4641e46db9014ca57b",
+    "filename" : "jweb/web/1414080902231/login.jsp",
+    "status" : "added",
+    "additions" : 12,
+    "deletions" : 0,
+    "changes" : 12,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/web/1414080902231/login.jsp",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/93e8ec2d8609c314d15a7a99fd5842c4e90ae686/jweb/web/1414080902231/login.jsp",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902231/login.jsp?ref=93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+    "patch" : "@@ -0,0 +1,12 @@\n+<%@ page language=\"java\" contentType=\"text/html\"\n+    pageEncoding=\"UTF-8\"%>\n+<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n+<html>\n+<head>\n+\n+<title>Insert title here</title>\n+</head>\n+<body>\n+登陆界面！暂未修改，敬请期待！\n+</body>\n+</html>\n\\ No newline at end of file"
+  }, {
+    "sha" : "d36d7015a43c8377885c89c4009a5571b2f92822",
+    "filename" : "jweb/web/1414080902231/web.xml",
+    "status" : "removed",
+    "additions" : 0,
+    "deletions" : 18,
+    "changes" : 18,
+    "blob_url" : "https://github.com/hzuapps/java-web/blob/58c40d20707a69d0c0d6aedbd84748f7999f3f9a/jweb/web/1414080902231/web.xml",
+    "raw_url" : "https://github.com/hzuapps/java-web/raw/58c40d20707a69d0c0d6aedbd84748f7999f3f9a/jweb/web/1414080902231/web.xml",
+    "contents_url" : "https://api.github.com/repos/hzuapps/java-web/contents/jweb/web/1414080902231/web.xml?ref=58c40d20707a69d0c0d6aedbd84748f7999f3f9a",
+    "patch" : "@@ -1,18 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n-<web-app version=\"3.0\"\n-    xmlns=\"http://java.sun.com/xml/ns/javaee\"\n-    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n-    xsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd\">\n-  <servlet>\n-    <description>This is the description of my J2EE component</description>\n-    <display-name>This is the display name of my J2EE component</display-name>\n-    <servlet-name>Se1414080902231Servlet</servlet-name>\n-    <servlet-class>edu.hzu.javaweb.labs.se1414080902231.Se1414080902231Servlet</servlet-class>\n-  </servlet>\n-\n-  <servlet-mapping>\n-    <servlet-name>Se1414080902231Servlet</servlet-name>\n-    <url-pattern>/1414080902231</url-pattern>\n-  </servlet-mapping>\n-\n-</web-app>\n\\ No newline at end of file"
+  } ],
+  "sha" : "93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+  "url" : "https://api.github.com/repos/hzuapps/java-web/commits/93e8ec2d8609c314d15a7a99fd5842c4e90ae686",
+  "parents" : [ {
+    "sha" : "58c40d20707a69d0c0d6aedbd84748f7999f3f9a",
+    "url" : "https://api.github.com/repos/hzuapps/java-web/commits/58c40d20707a69d0c0d6aedbd84748f7999f3f9a",
+    "html_url" : "https://github.com/hzuapps/java-web/commit/58c40d20707a69d0c0d6aedbd84748f7999f3f9a"
+  } ]
+}
