@@ -9,16 +9,19 @@ https://link.springer.com/article/10.1007/s00521-017-2900-4
 
 # Code
 
-## SQ_SRC.m 
-~ Square sparse representation
+## runOne.m
+~ Run experiments.
+
+## prepareData.m
+~ Prepare train and test data.
+
+## prepareNoisyData.m
+~ Prepare train data and noisy test data.
 
 ## SQF_SRC.m
-~ Square and fused sparse representation
-
-## SQ_CRC.m
-~ Square collaborative representation
+~ Square and fused sparse representation.
 
 ## SQF_CRC.m
-~ Square and fused collaborative representation
+~ Square and fused collaborative representation.
 
 
