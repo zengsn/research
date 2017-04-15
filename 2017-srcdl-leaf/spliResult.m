@@ -1,0 +1,14 @@
+SRDL    =result(1,:);
+SRC     =result(2,:);
+LCLEDL  =result(3,:);
+FISTA   =result(4,:);
+CRC     =result(5,:);
+L1LS    =result(6,:);
+DALM    =result(7,:);
+INCC    =result(8,:);
+KNN     =result(9,:);
+SCRC    =result(10,:);
+SQSRC   =result(11,:);
+SQCRC   =result(12,:);
+AntiL1L2=result(13,:);
+DSRL2   =result(14,:);
