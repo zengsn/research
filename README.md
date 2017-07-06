@@ -10,6 +10,7 @@
 # Education Papers
 
 1. 曾少宁. 基于GitHub平台的协同式实验教学方法[J]. 计算机教育, 2016(12):144-148. [[Code](https://github.com/zengsn/research/tree/master/2016-github-based-lab), [Paper](http://d.wanfangdata.com.cn/Periodical/jsjjy201612038)]
+2. 曾少宁,李慧,袁秀莲. 基于GitHub平台的问题驱动式编程实验教学方法[J]. 计算机教育, 2017(9). [[Code](https://github.com/zengsn/research/tree/master/2017-issue-based-lab), [Paper](http://d.wanfangdata.com.cn/Periodical/jsjjy201612038)]
 
 # Dataset copies
 
