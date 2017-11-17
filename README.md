@@ -9,6 +9,12 @@
 7. **S. Zeng**, X. Yang, Weighted average integration of sparse representation and collaborative representation for robust face recognition, Computational Visual Media (2016) 2(4):357-365. doi:10.1007/s41095-016-0061-5. [[Code](https://github.com/zengsn/research/tree/master/2016-cvmj-wscrc), [Paper](http://link.springer.com/article/10.1007/s41095-016-0061-5)]
 8. **S. Zeng**, X. Yang, J. Gou, J. Wen, Integrating absolute distances in collaborative representation for robust image classification, CAAI Transactions on Intelligence Technology (2016) 1(2):189–196. [[Code](https://github.com/zengsn/research/tree/master/2016-caai-trit-crc-abs-fusion), [Paper](http://www.sciencedirect.com/science/article/pii/S2468232216300294)]
 
+# Conferences
+
+1. Z. Chi, **S. Zeng\***, J. Gou. Fusion of Probabilistic Collaborative and Sparse Representation for Robust Image Classification. International Conference on Security, Pattern Analysis, and Cybernetics (IEEE-SPAC) (2017):1-6, Shenzhen, China, Dec. 15-17. [Poster]
+2. Y. Zhang, **S. Zeng\***, W. Zeng and J. Gou. GNN-CRC: Discriminative Collaborative Representation based Classification via Gabor Wavelet Transformation and NN. International Conference on Progress in Informatics and Computing (IEEE-PIC) (2017):1-7, Nanjing, China, Dec. 15-17. [Oral Presentation]
+
+
 # Education Papers
 
 1. **曾少宁**. 基于GitHub平台的协同式实验教学方法[J]. 计算机教育, 2016(12):144-148. [[Code](https://github.com/zengsn/research/tree/master/2016-github-based-lab), [Paper](http://d.wanfangdata.com.cn/Periodical/jsjjy201612038)]
