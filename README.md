@@ -11,8 +11,8 @@
 
 # Conferences
 
-1. Z. Chi, **S. Zeng\***, J. Gou. Fusion of Probabilistic Collaborative and Sparse Representation for Robust Image Classification. International Conference on Security, Pattern Analysis, and Cybernetics (IEEE-SPAC) (2017):1-6, Shenzhen, China, Dec. 15-17. [[Poster](http://ieee-spac.org)]
-2. Y. Zhang, **S. Zeng\***, W. Zeng and J. Gou. GNN-CRC: Discriminative Collaborative Representation based Classification via Gabor Wavelet Transformation and NN. International Conference on Progress in Informatics and Computing (IEEE-PIC) (2017):1-7, Nanjing, China, Dec. 15-17. [[Oral Presentation](http://pic2017.njust.edu.cn)]
+1. Z. Chi, **S. Zeng\***, J. Gou. Fusion of Probabilistic Collaborative and Sparse Representation for Robust Image Classification. International Conference on Security, Pattern Analysis, and Cybernetics (IEEE-SPAC) (2017):1-6, Shenzhen, China, Dec. 15-17. [[Student Paper accepted as Poster](http://ieee-spac.org)]
+2. Y. Zhang, **S. Zeng\***, W. Zeng and J. Gou. GNN-CRC: Discriminative Collaborative Representation based Classification via Gabor Wavelet Transformation and NN. International Conference on Progress in Informatics and Computing (IEEE-PIC) (2017):1-7, Nanjing, China, Dec. 15-17. [[Student Paper accepted as Oral Presentation](http://pic2017.njust.edu.cn)]
 
 
 # Education Papers
