@@ -34,3 +34,7 @@ https://scholar.google.com/citations?user=4ySzHlYAAAAJ
 # Contact 
 
 ![Scholarly](./Scholarly.jpg "Scholarly on WeChat")
+
+# WeScholar学术会议
+
+![WeScholar学术会议](./WeScholar.jpg "『WeScholar学术会议』微信小程序")
