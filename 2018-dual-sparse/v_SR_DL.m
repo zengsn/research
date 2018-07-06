@@ -3,10 +3,8 @@
 
 algName = 'v_SR_DL';
 
-if exist('dimDeep','var')
-    dim = dimDeep;
-else
-    dim = row*col;
+if isTuning==0
+    [sparsityThres,iterations4init,knn,alpha,beta,gamma,iterations,bestLambda] = getBestParameters(dbName,algName);
 end
 
 %addpath(genpath('../../Lab4_Benchmark/FISTA'));
@@ -22,6 +20,8 @@ addpath(genpath('../lcle-dl/OMPbox')); % add sparse coding algorithem OMP
 %beta=1e-1;
 %gamma=1e-1;
 
+dimOfData=size(trainData,2);
+
 % Prepare for LCKSVD
 [numOfAllTrain,at]=size(trainLabel);
 [numOfAllTest,bt]=size(testLabel);
@@ -36,22 +36,31 @@ for jTest=1:numOfAllTest
     hTest(b,jTest)=1;
 end
 
-% dictionary learning
+%% dictionary learning 
 % sizeOfDict = numOfClasses;
-disp('Dictionary learning using virutal samples ...');
-tic
-[dInit,tInit,cInit,qTrain,xInit,dLabel] = initialization4LCKSVD(trainData',hTrain,sizeOfDict,iterations4init,sparsityThres);
-[Q]=construct_Q(dLabel);
-[D,X,V] = Learn_D_X(xInit,dInit,Q,alpha,beta,gamma,trainData,knn,iterations);
-Wx = inv(X*X'+eye(size(X*X')))*X*hTrain';
-Wx = Wx';
-Wx=normcols(Wx);
-G = D'*D;
-gammaOMP = omp(D'*testData',G,sparsityThres);
-errorsDL=0;
+disp('dictionary learning using virtual samples ...');
+if useDeep==1
+    [dInit,tInit,cInit,qTrain,xInit,dLabel] = initialization4LCKSVD(trainDataDeep',hTrain,sizeOfDict,iterations4init,sparsityThres);
+    [Q]=construct_Q(dLabel);
+    [D,X,V] = Learn_D_X(xInit,dInit,Q,alpha,beta,gamma,trainDataDeep,knn,iterations);
+    Wx = inv(X*X'+eye(size(X*X')))*X*hTrain';
+    Wx = Wx';
+    Wx=normcols(Wx);
+    G = D'*D;
+    gammaOMP = omp(D'*testDataDeep',G,sparsityThres);
+else % image
+    [dInit,tInit,cInit,qTrain,xInit,dLabel] = initialization4LCKSVD(trainData',hTrain,sizeOfDict,iterations4init,sparsityThres);
+    [Q]=construct_Q(dLabel);
+    [D,X,V] = Learn_D_X(xInit,dInit,Q,alpha,beta,gamma,trainData,knn,iterations);
+    Wx = inv(X*X'+eye(size(X*X')))*X*hTrain';
+    Wx = Wx';
+    Wx=normcols(Wx);
+    G = D'*D;
+    gammaOMP = omp(D'*testData',G,sparsityThres);
+end
+errorsDL=0; 
 deviationsDL = zeros(numOfAllTest,numOfClasses);
-for kk=1:numOfAllTest
-    testSample=testData(kk,:);
+for kk=1:numOfAllTest 
     % deviation by DL
     clear deviationDL;
     spcode = gammaOMP(:,kk);
@@ -65,31 +74,31 @@ for kk=1:numOfAllTest
     % record for comparison
     labelsDL(kk)=labelDL;
 end
-time_DL = toc;
 accuracyDL = 1-errorsDL/numOfAllTest;
-fprintf('\t done in %.3f with accuracyDL=%.4f.\n',time_DL,accuracyDL);
 
-% Sparse representation
-disp('Sparse learning using virtual samples ...');
-if exist('lastAccuracySRC','var') && exist('lastTrain','var') && lastTrain==numOfTrain
-    fprintf('\t already done in %.3f with accuracySRC=%.4f.\n',time_SRC,accuracySRC);
-else % run one time
-    tic
+%% Sparse representation
+disp('sparse learning using virtual samples...');
+if exist('lastAccuracySRC','var') && exist('lastNumOfTrain','var') && lastNumOfTrain==numOfTrain
+    fprintf('\t already done with accuracySRC=%.4f', lastAccuracySRC);
+else % perform SRC once
     errorsSRC=0;
     deviationsSRC = zeros(numOfAllTest,numOfClasses);
     for kk=1:numOfAllTest
         testSample=testData(kk,:);
         % print progress
         %fprintf('%d ', kk);
-        %if mod(kk,20)==0
-        %    fprintf('\n');
-        %end
-        % SRC by FISTA
+        if mod(kk,20)==0
+            fprintf('%d, ', kk);
+        end
+        if mod(kk,200)==0
+            fprintf('\n');
+        end
+        % SRC
         %[solutionSRC, total_iter] = SolveFISTA(trainData',testSample');
         [solutionSRC, total_iter] = SolveOMP(trainData',testSample','isnonnegative',1);
         clear contributionSRC;
         for cc=1:numOfClasses
-            contributionSRC(:,cc)=zeros(dim,1);
+            contributionSRC(:,cc)=zeros(dimOfData,1);
             for tt=1:numOfTrain*2 % C(i) = sum(S(i)*T)
                 contributionSRC(:,cc)=contributionSRC(:,cc)+solutionSRC((cc-1)*numOfTrain*2+tt)*trainData((cc-1)*numOfTrain*2+tt,:)';
             end
@@ -115,17 +124,20 @@ else % run one time
         % save all deviations
         deviationsSRC(kk,:)=deviationSRC;
     end
-    time_SRC = toc;
-    % result by SRC
+    fprintf('\n');
+    % result by SRC and DL
     accuracySRC = 1-errorsSRC/numOfAllTest;
-    lastAccuracySRC=accuracySRC;
-    lastTrain=numOfTrain;
-    fprintf('\t done in %.3f with accuracySRC=%.4f.\n',time_SRC,accuracySRC);
+    lastNumOfTrain = numOfTrain;
+    lastAccuracySRC = accuracySRC;
+    %fprintf('\t accuracySRC=%.4f', lastAccuracySRC);
 end
 
-% fusion
+%% fusion
 lambdas = [-100,-50,-10,-5,-0.5,1,0.5,5,10,50,100];
 %lambdas = [-5];
+if exist('bestLambda','var')
+    lambdas = [bestLambda];
+end
 [one,numOfCases] = size(lambdas);
 bestLambda = 0;
 bestAccuracy = 0;
@@ -142,30 +154,30 @@ for cii=1:numOfCases
             errorsFusion=errorsFusion+1;
         end
         % record for comparison
-        %labelsFusion(kk)=labelFusion;
+        %labelsFusion(kk)=labelFusion;        
         % pick a case for analysis
-        %         if labelFusion == testLabel(kk,1) && labelsSRC(kk)~= testLabel(kk,1) && labelsDL(kk)~= testLabel(kk,1)
-        %             fprintf('Improve SRC and DL case : %d \n', kk);
-        %             jsonFile = [dbName '-' algName '-train' num2str(numOfTrain) ',test' num2str(kk) '.json'];
-        %             dbJson = savejson('', [deviationSRC;deviationDL;deviationFusion], jsonFile);
-        %             foundSRC = 1; foundDL = 1;
-        %         end
-        %         if foundSRC==0 && labelFusion == testLabel(kk,1) && labelsSRC(kk)~= testLabel(kk,1)
-        %             fprintf('Improve SRC case : %d \n', kk);
-        %             jsonFile = [dbName '-src-train' num2str(numOfTrain) ',test' num2str(kk) '.json'];
-        %             dbJson = savejson('', [deviationSRC;deviationDL;deviationFusion], jsonFile);
-        %             foundSRC = 1;
-        %         end
-        %         if foundDL==0 && labelFusion == testLabel(kk,1) && labelsDL(kk)~= testLabel(kk,1)
-        %             fprintf('Improve SRC case : %d \n', kk);
-        %             jsonFile = [dbName '-dl-train' num2str(numOfTrain) ',test' num2str(kk) '.json'];
-        %             dbJson = savejson('', [deviationSRC;deviationDL;deviationFusion], jsonFile);
-        %             foundDL = 1;
-        %         end
-        %         if foundSRC==1 && foundDL==1
-        %             break; % stop
-        %         end
-    end
+%         if labelFusion == testLabel(kk,1) && labelsSRC(kk)~= testLabel(kk,1) && labelsDL(kk)~= testLabel(kk,1) 
+%             fprintf('Improve SRC and DL case : %d \n', kk);
+%             jsonFile = [dbName '-' algName '-train' num2str(numOfTrain) ',test' num2str(kk) '.json'];
+%             dbJson = savejson('', [deviationSRC;deviationDL;deviationFusion], jsonFile);
+%             foundSRC = 1; foundDL = 1;
+%         end
+%         if foundSRC==0 && labelFusion == testLabel(kk,1) && labelsSRC(kk)~= testLabel(kk,1) 
+%             fprintf('Improve SRC case : %d \n', kk);
+%             jsonFile = [dbName '-src-train' num2str(numOfTrain) ',test' num2str(kk) '.json'];
+%             dbJson = savejson('', [deviationSRC;deviationDL;deviationFusion], jsonFile);
+%             foundSRC = 1;
+%         end
+%         if foundDL==0 && labelFusion == testLabel(kk,1) && labelsDL(kk)~= testLabel(kk,1) 
+%             fprintf('Improve SRC case : %d \n', kk);
+%             jsonFile = [dbName '-dl-train' num2str(numOfTrain) ',test' num2str(kk) '.json'];
+%             dbJson = savejson('', [deviationSRC;deviationDL;deviationFusion], jsonFile);
+%             foundDL = 1;
+%         end
+%         if foundSRC==1 && foundDL==1
+%             break; % stop
+%         end
+    end    
     accuracyFusion = 1-errorsFusion/numOfAllTest;
     if accuracyFusion>bestAccuracy
         bestLambda = lambda; %
@@ -176,35 +188,32 @@ end
 % best case
 lambda = bestLambda; %
 accuracyFusion = bestAccuracy; %
+
 fprintf('\nSRC=%.4f\tDL=%.4f\tFusion=%.4f\tlambda=%d\n', accuracySRC,accuracyDL,accuracyFusion,lambda);
+
+% improvement
+improve1 = (accuracyFusion-accuracySRC)*100/accuracySRC;
+improve2 = (accuracyFusion-accuracyDL)*100/accuracyDL;
 
 % result path
 if ~isequal(exist(dbName, 'dir'),7)
     mkdir(dbName);
 end
 
-% improvement
-improve1 = (accuracyFusion-accuracySRC)*100/accuracySRC;
-improve2 = (accuracyFusion-accuracyDL)*100/accuracyDL;
+if ~exist('lastAccuracy','var')
+    lastAccuracy=0;
+end
 
 % save to json
-jsonFile = [dbName '/' algName '_' num2str(numOfTrain) '_' num2str(accuracyFusion,'%.4f') '(' num2str(improve1,'%.1f') '%,' num2str(improve2,'%.1f') '%)_' num2str(sizeOfDict) '_' num2str(lambda)];
+jsonFile = [dbName '/_' algName '_' num2str(numOfTrain) '_' num2str(accuracyFusion,'%.4f') '(' num2str(improve1,'%.1f') '%,' num2str(improve2,'%.1f') '%)_' num2str(sizeOfDict) '_' num2str(lambda)];
 jsonFile = [jsonFile '~' num2str(sparsityThres) ',' num2str(iterations4init) ',' num2str(knn)]; % save parameters
 jsonFile = [jsonFile ',' num2str(alpha) ',' num2str(beta) ',' num2str(gamma) ',' num2str(iterations)];
 jsonFile = [jsonFile  '.json'];
 oneResult = [accuracySRC, accuracyDL, accuracyFusion, lambda, trainIndices];
-
-if ~exist('highestAccuracy','var')
-    highestAccuracy=accuracyFusion;
-end
-if exist('highestAccuracy','var') && highestAccuracy<accuracyFusion+0.005
-    if highestAccuracy<accuracyFusion
-        highestAccuracy = max([highestAccuracy,accuracyFusion]);
-        highestJsonFile = jsonFile;
-        highestResult   = oneResult;
-    end
+if isTuning==0 || accuracyFusion>=lastAccuracy
+    lastAccuracy=accuracyFusion;
     dbJson = savejson('', oneResult, jsonFile);
-    if exist('sendEmail','file')==2 && ~exist('isTuning','var')
+    if exist('sendEmail','file')==2 && isTuning==1
         sendEmail(jsonFile,mat2str(oneResult),jsonFile);
     end
 end

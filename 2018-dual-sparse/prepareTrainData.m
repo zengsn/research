@@ -2,13 +2,13 @@
 % Prepare training data
 
 numOfAllSamples=size(inputLabel ,1);
+numOfTrain %
 
 if ~exist('dim','var')
     dim = size(inputData,1);
 end
 
 % locate matrix for train and test data
-clear trainData;
 trainData_0 = zeros(numOfClasses*numOfTrain, dim);
 testData    = zeros(numOfAllSamples-numOfClasses*numOfTrain,dim);
 clear trainLabel_0;
@@ -37,10 +37,14 @@ for jClass=1:numOfClasses
     %    randIdx=randperm(eachClass(jClass)-mFirstSamples)+mFirstSamples;
     %    trainIndices_0 = [1:mFirstSamples,randIdx(1:numOfTrain-mFirstSamples)]; % relative indies
     %    testIndices_0  = [randIdx(numOfTrain-mFirstSamples+1:eachClass(jClass)-mFirstSamples)];
-    %else % do not add random
-    trainIndices_0 = [1:numOfTrain]; % no random
-    testIndices_0  = [numOfTrain+1:eachClass(jClass)]; % no random
-    %end
+    if isTuning==0 && isRandom==1 % add random
+        randIdx=randperm(eachClass(jClass));
+        trainIndices_0 = randIdx(1:numOfTrain); % relative indies
+        testIndices_0  = randIdx(numOfTrain+1:eachClass(jClass));
+    else % do not add random
+        trainIndices_0 = [1:numOfTrain]; % no random
+        testIndices_0  = [numOfTrain+1:eachClass(jClass)]; % no random
+    end
     trainIndices=idx1st+trainIndices_0; % abosulte indies to all samples
     testIndices=idx1st+testIndices_0;   % abosulte indies to all samples
     
@@ -66,11 +70,28 @@ for iTran=1:numOfAllTrain
     % resulted training data
     trainData(2*iTran-1,:)=trainData_0(iTran,:);
     tempory=trainData_0(iTran,:);
-    tempory1=reshape(tempory,row,col);
-    for iCol=1:col % revert the image
-        tempory2(:,col-iCol+1)=tempory1(:,iCol);
+    if exist('isRGB','var') && isRGB==1
+        R=reshape(tempory(1,1          :1*row*col),row,col);
+        G=reshape(tempory(1,1+1*row*col:2*row*col),row,col);
+        B=reshape(tempory(1,1+2*row*col:3*row*col),row,col);
+        for iCol=1:col % revert the image
+            R1(:,col-iCol+1)=R(:,iCol);
+            G1(:,col-iCol+1)=G(:,iCol);
+            B1(:,col-iCol+1)=B(:,iCol);
+        end
+        R2=reshape(R1,row*col,1);
+        G2=reshape(G1,row*col,1);
+        B2=reshape(B1,row*col,1);
+        tempory3(1,1          :1*row*col)=R2;
+        tempory3(1,1+1*row*col:2*row*col)=G2;
+        tempory3(1,1+2*row*col:3*row*col)=B2;
+    else
+        tempory1=reshape(tempory,row,col);
+        for iCol=1:col % revert the image
+            tempory2(:,col-iCol+1)=tempory1(:,iCol);
+        end
+        tempory3=reshape(tempory2,row*col,1);
     end
-    tempory3=reshape(tempory2,row*col,1);
     trainData(2*iTran,:)=tempory3(:);
 end
  
