@@ -35,6 +35,6 @@ https://scholar.google.com/citations?user=4ySzHlYAAAAJ
 
 ![Scholarly](./Scholarly.jpg "Scholarly on WeChat")
 
-# WeScholar学术会议微信小程序
+# 学术会议库 微信小程序
 
-![WeScholar学术会议](./WeScholar.jpg "『WeScholar学术会议』微信小程序")
+![学术会议库](./WeScholar.jpg "『学术会议库』微信小程序")
