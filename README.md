@@ -13,7 +13,7 @@
 
 # Conferences
 
-1. **S. Zeng**, B. Zhang*, Y. Zhang and J. Gou, Collaboratively Weighting Deep and Classic Representation via L2 Regularization for Image Classification, *Volume 95: Asian Conference on Machine Learning, 2018*. [[Code](https://github.com/zengsn/pub-2018-acml-deepcwc),  [Paper](http://proceedings.mlr.press/v95/)]  
+1. **S. Zeng**, B. Zhang*, Y. Zhang and J. Gou, Collaboratively Weighting Deep and Classic Representation via L2 Regularization for Image Classification, *Volume 95:502-517, Asian Conference on Machine Learning, 2018*. [[Code](https://github.com/zengsn/pub-2018-acml-deepcwc),  [Paper](http://proceedings.mlr.press/v95/)]  
 2. Y. Zhang, **S. Zeng***, W. Zeng, and H. Jiang, Synthetic Training Samples for Enhanced Locality-Constrained Dictionary Learning, *The Journal of Engineering* (2018). [doi:10.1049/joe.2018.8311](https://doi.org/10.1049/joe.2018.8311). [EI, CA, [Student Paper accepted as Oral Presentation](http://digital-library.theiet.org/content/journals/10.1049/joe.2018.8311), **Best Paper**, Code (Comming)]
 3. Z. Chi, **S. Zeng\***, J. Gou. Fusion of Probabilistic Collaborative and Sparse Representation for Robust Image Classification. International Conference on Security, Pattern Analysis, and Cybernetics (IEEE-SPAC) (2017):1-6, Shenzhen, China, Dec. 15-17. [[Student Paper accepted as Poster](http://ieee-spac.org)]
 4. Y. Zhang, **S. Zeng\***, W. Zeng and J. Gou. GNN-CRC: Discriminative Collaborative Representation based Classification via Gabor Wavelet Transformation and NN. International Conference on Progress in Informatics and Computing (IEEE-PIC) (2017):1-7, Nanjing, China, Dec. 15-17. [[Student Paper accepted as Oral Presentation](http://pic2017.njust.edu.cn)]
