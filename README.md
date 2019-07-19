@@ -1,3 +1,5 @@
+I am pursuing Ph.D. in UNIVERSITY of MACAU since Jan, 2018.
+
 # Publications
 
 1. **S. Zeng**, J. Gou, X. Yang, Improving sparsity of coefficients for robust sparse and collaborative representation-based image classification, *Neural Computing & Applications* (2018), 30(10):2965–2978. doi:10.1007/s00521-017-2900-4. [SCI, [Code](https://github.com/zengsn/pub-2017-ncaa-square-sparsity), [Paper](https://link.springer.com/article/10.1007/s00521-017-2900-4)] (Web of Science: 6+)
